@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1396932816,
+        hash: 3187440551,
         creator: function (require, exports) {
           exports.txt = {
             "title": "¡Crea una clase increíble!",
@@ -38,8 +38,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "title": "Temas",
               "description": "Agrega la lista de puntos a repasar como objetivos en la clase."
             },
-            "generate": "Generate",
-            "state": "Estado",
             "submit": "Crear clase",
             "actions": {
               "next": "Siguiente",
@@ -48,7 +46,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "content": "Contenido",
               "assessment": "Evaluación"
             },
+            "generate": "Generate",
+            "state": "Estado",
             "processAlert": "Estamos generando tu clase, por favor espera, este proceso puede tardar unos minutos.",
+            "empty": {
+              "title": "No hay información disponible.",
+              "subtitle": "Puedes crearla con IA."
+            },
             "generator": {
               "title": "Generador de clases",
               "empty": "No hay contenido para mostrar",
@@ -56,7 +60,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "classTopics": {
               "synthesis": "Resumen",
-              "relevance": "Relevancia",
               "assessment": "Evaluación"
             },
             "generalTopics": {

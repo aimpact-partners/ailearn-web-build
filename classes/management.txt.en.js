@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2282350634,
+        hash: 3175623124,
         creator: function (require, exports) {
           exports.txt = {
             "title": "Create an awesome class!",
@@ -50,7 +50,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "state": "State",
             "processAlert": "We are generating your class, please wait, this process may take a few minutes.",
             "empty": {
-              "title": "There is no information available about the synthesis of your class.",
+              "title": "There is no information available.",
               "subtitle": "You can create it with AI."
             },
             "generator": {
