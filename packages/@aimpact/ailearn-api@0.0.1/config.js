@@ -14,7 +14,9 @@ System.register([], function (_export, _context) {
         "global.css": true,
         "params": {},
         "ssr": {},
-        "backend": {}
+        "backend": {
+		  "host": "https://ailearn-api-ws-build-rb5caohzgq-uc.a.run.app"
+		}
       });
     }
   };
