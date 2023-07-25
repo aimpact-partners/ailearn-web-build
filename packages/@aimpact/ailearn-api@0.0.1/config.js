@@ -15,8 +15,8 @@ System.register([], function (_export, _context) {
         "params": {},
         "ssr": {},
         "backend": {
-		  "host": "https://chat-api-ws-6dlchqr2za-uc.a.run.app"
-		}
+          "host": "https://ailearn-api-ws-6dlchqr2za-uc.a.run.app"
+        }
       });
     }
   };
