@@ -13,11 +13,11 @@ System.register([], function (_export, _context) {
         },
         "global.css": true,
         "params": {
-          "AGENT_API": "https://agent-api-rb5caohzgq-uc.a.run.app/agent"
+          "AGENT_API": "https://agent-6dlchqr2za-uc.a.run.app/agent"
         },
         "ssr": {},
         "backend": {
-          "host": "https://chat-api-ws-rb5caohzgq-uc.a.run.app"
+          "host": "https://chat-api-ws-6dlchqr2za-uc.a.run.app"
         }
       });
     }
