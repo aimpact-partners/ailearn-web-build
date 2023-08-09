@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@0.1.4/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@0.0.6/page", "@beyond-js/reactive@1.1.2/model", "@beyond-js/reactive@1.1.2/examples/models", "react@18.2.0", "@beyond-js/react-18-widgets@0.0.6/hooks"], function (_export, _context2) {
+System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.0.1/page", "@beyond-js/reactive@1.1.2/model", "@beyond-js/reactive@1.1.2/examples/models", "react@18.2.0", "@beyond-js/react-18-widgets@1.0.1/hooks"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, bimport, __Bundle, __pkg, ims, Controller, Page, Item, __beyond_pkg, hmr;
@@ -8,26 +8,26 @@ System.register(["@beyond-js/widgets@0.1.4/render", "@beyond-js/kernel@0.1.9/bun
     Item: void 0
   });
   return {
-    setters: [function (_beyondJsWidgets014Render) {
-      dependency_0 = _beyondJsWidgets014Render;
+    setters: [function (_beyondJsWidgets015Render) {
+      dependency_0 = _beyondJsWidgets015Render;
     }, function (_beyondJsKernel019Bundle) {
       dependency_1 = _beyondJsKernel019Bundle;
     }, function (_beyondJsKernel019Styles) {
       dependency_2 = _beyondJsKernel019Styles;
-    }, function (_beyondJsReact18Widgets006Page) {
-      dependency_3 = _beyondJsReact18Widgets006Page;
+    }, function (_beyondJsReact18Widgets101Page) {
+      dependency_3 = _beyondJsReact18Widgets101Page;
     }, function (_beyondJsReactive112Model) {
       dependency_4 = _beyondJsReactive112Model;
     }, function (_beyondJsReactive112ExamplesModels) {
       dependency_5 = _beyondJsReactive112ExamplesModels;
     }, function (_react) {
       dependency_6 = _react;
-    }, function (_beyondJsReact18Widgets006Hooks) {
-      dependency_7 = _beyondJsReact18Widgets006Hooks;
+    }, function (_beyondJsReact18Widgets101Hooks) {
+      dependency_7 = _beyondJsReact18Widgets101Hooks;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/backend", "0.1.5"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "0.0.5"], ["dexie", "3.2.3"], ["socket.io-client", "4.6.1"], ["uuid", "9.0.0"], ["@beyond-js/reactive", "1.1.2"], ["@aimpact/ailearn-app", "0.0.1"]]);
+        const dependencies = new Map([["@beyond-js/backend", "0.1.5"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "0.0.5"], ["dexie", "3.2.3"], ["socket.io-client", "4.6.1"], ["uuid", "9.0.0"], ["@beyond-js/ssr", "0.1.2"], ["@types/dexie", "1.3.1"], ["@types/react", "18.2.0"], ["@types/react-dom", "18.2.0"], ["sqlite", "4.1.2"], ["sqlite3", "5.1.6"], ["@beyond-js/reactive", "1.1.2"], ["@aimpact/ailearn-app", "1.0.0"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

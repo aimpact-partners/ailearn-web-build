@@ -15,7 +15,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/reactive", "0.0.3"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.7.1"], ["prismjs", "1.29.0"], ["swiper", "8.4.7"], ["pragmate-ui", "0.0.36"], ["@aimpact/ailearn-app", "0.0.1"]]);
+        const dependencies = new Map([["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/reactive", "0.0.3"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.7.1"], ["prismjs", "1.29.0"], ["swiper", "8.4.7"], ["@beyond-js/backend", "0.1.8"], ["@types/react", "18.2.15"], ["@types/react-dom", "18.2.7"], ["pragmate-ui", "0.0.36"], ["@aimpact/ailearn-app", "1.0.0"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -36,7 +36,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       INTERNAL MODULE: ./alert
       ***********************/
       ims.set('./alert', {
-        hash: 514420927,
+        hash: 2475328760,
         creator: function (require, exports) {
           "use strict";
 
@@ -46,61 +46,96 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
           exports.Alert = Alert;
           var _react = require("react");
           var _icons = require("pragmate-ui/icons");
+          var _content = require("./content");
           /*bundle*/
           function Alert(props) {
             const {
               message,
-              show,
               className,
-              mode,
+              type,
               title,
-              isClose,
-              children
+              children,
+              closable,
+              onClose,
+              icon
             } = props;
-            const [state, setState] = _react.default.useState({
-              show: show ?? false,
-              text: message ?? 'texto de la alerta'
-            });
-            _react.default.useEffect(() => {
-              setState({
-                ...state,
-                show: show
-              });
-            }, [show]);
-            if (!state.show) return null;
-            const close = () => setState({
-              ...state,
-              show: false,
-              text: ''
-            });
-            const cls = className ? `${className} alert ${mode ?? 'success'}` : `alert ${mode ?? 'success'}`;
+            const [show, setShow] = _react.default.useState(true);
+            if (!show || !message && !children) {
+              return null;
+            }
+            const onCloseClick = async () => {
+              if (onClose) await onClose();
+              setShow(false);
+            };
+            let cls = `${className ? '${className} ' : ''}alert${type ? ` alert--${type}` : ''}`;
+            cls = icon ? `${cls} alert--icon` : cls;
             const icons = {
               error: 'error',
               warning: 'circle-exclamation',
               success: 'circle-check',
               info: 'info'
             };
-            const defaulIcon = icons[mode ?? 'success'];
+            const defaultIcon = icons[type ?? 'success'];
+            const hasIcon = !!defaultIcon;
             return _react.default.createElement("div", {
               className: cls,
               onClick: close
-            }, ' ', title && _react.default.createElement("div", {
-              className: 'alert__title'
-            }, _react.default.createElement(_icons.Icon, {
-              icon: defaulIcon
-            }), ' ', _react.default.createElement("span", {
-              className: 'alert__title-span',
-              dangerouslySetInnerHTML: {
-                __html: title
-              }
-            })), children, message && _react.default.createElement("span", {
-              dangerouslySetInnerHTML: {
-                __html: message
-              }
-            }), isClose && _react.default.createElement(_icons.IconButton, {
+            }, icon && _react.default.createElement("section", null, _react.default.createElement(_icons.Icon, {
+              icon: defaultIcon
+            })), _react.default.createElement(_content.Content, {
+              message: message,
+              type: type,
+              title: title,
+              icon: hasIcon
+            }, children), closable && _react.default.createElement(_icons.IconButton, {
               icon: 'close',
-              onClick: close
+              onClick: onCloseClick
             }));
+          }
+        }
+      });
+
+      /*************************
+      INTERNAL MODULE: ./content
+      *************************/
+
+      ims.set('./content', {
+        hash: 2219652321,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Content = Content;
+          var React = require("react");
+          function Content({
+            type,
+            message,
+            children,
+            title,
+            icon
+          }) {
+            let output = null;
+            if (title) {
+              output.push = React.createElement("header", {
+                className: 'alert__title'
+              }, React.createElement("h3", {
+                className: 'alert__title-span',
+                dangerouslySetInnerHTML: {
+                  __html: title
+                }
+              }));
+            }
+            if (message) {
+              output.push(React.createElement("span", {
+                dangerouslySetInnerHTML: {
+                  __html: message
+                }
+              }));
+            }
+            const Control = icon ? 'section' : React.Fragment;
+            return React.createElement(Control, null, children);
           }
         }
       });
@@ -126,4 +161,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFnQk87VUFBVSxTQUNSQSxLQUFLLENBQUNDLEtBQWE7WUFDM0IsTUFBTTtjQUFFQyxPQUFPO2NBQUVDLElBQUk7Y0FBRUMsU0FBUztjQUFFQyxJQUFJO2NBQUVDLEtBQUs7Y0FBRUMsT0FBTztjQUFFQztZQUFRLENBQUUsR0FBR1AsS0FBSztZQUMxRSxNQUFNLENBQUNRLEtBQUssRUFBRUMsUUFBUSxDQUFDLEdBQUdDLGNBQUssQ0FBQ0MsUUFBUSxDQUFDO2NBQ3hDVCxJQUFJLEVBQUVBLElBQUksSUFBSSxLQUFLO2NBQ25CVSxJQUFJLEVBQUVYLE9BQU8sSUFBSTthQUNqQixDQUFDO1lBQ0ZTLGNBQUssQ0FBQ0csU0FBUyxDQUFDLE1BQUs7Y0FDcEJKLFFBQVEsQ0FBQztnQkFBRSxHQUFHRCxLQUFLO2dCQUFFTixJQUFJLEVBQUVBO2NBQUksQ0FBRSxDQUFDO1lBQ25DLENBQUMsRUFBRSxDQUFDQSxJQUFJLENBQUMsQ0FBQztZQUNWLElBQUksQ0FBQ00sS0FBSyxDQUFDTixJQUFJLEVBQUUsT0FBTyxJQUFJO1lBQzVCLE1BQU1ZLEtBQUssR0FBRyxNQUFZTCxRQUFRLENBQUM7Y0FBRSxHQUFHRCxLQUFLO2NBQUVOLElBQUksRUFBRSxLQUFLO2NBQUVVLElBQUksRUFBRTtZQUFFLENBQUUsQ0FBQztZQUN2RSxNQUFNRyxHQUFHLEdBQVdaLFNBQVMsR0FBRyxHQUFHQSxTQUFTLFVBQVVDLElBQUksSUFBSSxTQUFTLEVBQUUsR0FBRyxTQUFTQSxJQUFJLElBQUksU0FBUyxFQUFFO1lBRXhHLE1BQU1ZLEtBQUssR0FBWTtjQUN0QkMsS0FBSyxFQUFFLE9BQU87Y0FDZEMsT0FBTyxFQUFFLG9CQUFvQjtjQUM3QkMsT0FBTyxFQUFFLGNBQWM7Y0FDdkJDLElBQUksRUFBRTthQUNOO1lBRUQsTUFBTUMsVUFBVSxHQUFHTCxLQUFLLENBQUNaLElBQUksSUFBSSxTQUFTLENBQUM7WUFFM0MsT0FDQ007Y0FBS1AsU0FBUyxFQUFFWSxHQUFHO2NBQUVPLE9BQU8sRUFBRVI7WUFBSyxHQUNqQyxHQUFHLEVBQ0hULEtBQUssSUFDTEs7Y0FBS1AsU0FBUyxFQUFDO1lBQWMsR0FDNUJPLDZCQUFDYSxXQUFJO2NBQUNDLElBQUksRUFBRUg7WUFBVSxFQUFJLEVBQUMsR0FBRyxFQUM5Qlg7Y0FBTVAsU0FBUyxFQUFDLG1CQUFtQjtjQUFDc0IsdUJBQXVCLEVBQUU7Z0JBQUVDLE1BQU0sRUFBRXJCO2NBQUs7WUFBRSxFQUFJLENBRW5GLEVBQ0FFLFFBQVEsRUFDUk4sT0FBTyxJQUFJUztjQUFNZSx1QkFBdUIsRUFBRTtnQkFBRUMsTUFBTSxFQUFFekI7Y0FBTztZQUFFLEVBQVMsRUFDdEVLLE9BQU8sSUFBSUksNkJBQUNpQixpQkFBVTtjQUFDSCxJQUFJLEVBQUMsT0FBTztjQUFDRixPQUFPLEVBQUVSO1lBQUssRUFBSSxDQUNsRDtVQUVSIiwibmFtZXMiOlsiQWxlcnQiLCJwcm9wcyIsIm1lc3NhZ2UiLCJzaG93IiwiY2xhc3NOYW1lIiwibW9kZSIsInRpdGxlIiwiaXNDbG9zZSIsImNoaWxkcmVuIiwic3RhdGUiLCJzZXRTdGF0ZSIsIlJlYWN0IiwidXNlU3RhdGUiLCJ0ZXh0IiwidXNlRWZmZWN0IiwiY2xvc2UiLCJjbHMiLCJpY29ucyIsImVycm9yIiwid2FybmluZyIsInN1Y2Nlc3MiLCJpbmZvIiwiZGVmYXVsSWNvbiIsIm9uQ2xpY2siLCJJY29uIiwiaWNvbiIsImRhbmdlcm91c2x5U2V0SW5uZXJIVE1MIiwiX19odG1sIiwiSWNvbkJ1dHRvbiJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsiY29kZS90cy9hbGVydC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFDQTtVQWtCTztVQUFVLFNBQ1JBLEtBQUssQ0FBQ0MsS0FBYTtZQUMzQixNQUFNO2NBQUVDLE9BQU87Y0FBRUMsU0FBUztjQUFFQyxJQUFJO2NBQUVDLEtBQUs7Y0FBRUMsUUFBUTtjQUFFQyxRQUFRO2NBQUVDLE9BQU87Y0FBRUM7WUFBSSxDQUFFLEdBQUdSLEtBQUs7WUFDcEYsTUFBTSxDQUFDUyxJQUFJLEVBQUVDLE9BQU8sQ0FBQyxHQUFHQyxjQUFLLENBQUNDLFFBQVEsQ0FBQyxJQUFJLENBQUM7WUFFNUMsSUFBSSxDQUFDSCxJQUFJLElBQUssQ0FBQ1IsT0FBTyxJQUFJLENBQUNJLFFBQVMsRUFBRTtjQUNyQyxPQUFPLElBQUk7O1lBR1osTUFBTVEsWUFBWSxHQUFHLFlBQVc7Y0FDL0IsSUFBSU4sT0FBTyxFQUFFLE1BQU1BLE9BQU8sRUFBRTtjQUM1QkcsT0FBTyxDQUFDLEtBQUssQ0FBQztZQUNmLENBQUM7WUFFRCxJQUFJSSxHQUFHLEdBQUcsR0FBR1osU0FBUyxHQUFHLGVBQWUsR0FBRyxFQUFFLFFBQVFDLElBQUksR0FBRyxXQUFXQSxJQUFJLEVBQUUsR0FBRyxFQUFFLEVBQUU7WUFDcEZXLEdBQUcsR0FBR04sSUFBSSxHQUFHLEdBQUdNLEdBQUcsY0FBYyxHQUFHQSxHQUFHO1lBRXZDLE1BQU1DLEtBQUssR0FBWTtjQUN0QkMsS0FBSyxFQUFFLE9BQU87Y0FDZEMsT0FBTyxFQUFFLG9CQUFvQjtjQUM3QkMsT0FBTyxFQUFFLGNBQWM7Y0FDdkJDLElBQUksRUFBRTthQUNOO1lBRUQsTUFBTUMsV0FBVyxHQUFHTCxLQUFLLENBQUNaLElBQUksSUFBSSxTQUFTLENBQUM7WUFDNUMsTUFBTWtCLE9BQU8sR0FBRyxDQUFDLENBQUNELFdBQVc7WUFDN0IsT0FDQ1Q7Y0FBS1QsU0FBUyxFQUFFWSxHQUFHO2NBQUVRLE9BQU8sRUFBRUM7WUFBSyxHQUNqQ2YsSUFBSSxJQUNKRyw4Q0FDQ0EsNkJBQUNhLFdBQUk7Y0FBQ2hCLElBQUksRUFBRVk7WUFBVyxFQUFJLENBRTVCLEVBRURULDZCQUFDYyxnQkFBTztjQUFDeEIsT0FBTyxFQUFFQSxPQUFPO2NBQUVFLElBQUksRUFBRUEsSUFBSTtjQUFFQyxLQUFLLEVBQUVBLEtBQUs7Y0FBRUksSUFBSSxFQUFFYTtZQUFPLEdBQ2hFaEIsUUFBUSxDQUNBLEVBQ1RDLFFBQVEsSUFBSUssNkJBQUNlLGlCQUFVO2NBQUNsQixJQUFJLEVBQUMsT0FBTztjQUFDYyxPQUFPLEVBQUVUO1lBQVksRUFBSSxDQUMxRDtVQUVSOzs7Ozs7Ozs7Ozs7Ozs7OztVQzVEQTtVQUVNLFNBQVVZLE9BQU8sQ0FBQztZQUFFdEIsSUFBSTtZQUFFRixPQUFPO1lBQUVJLFFBQVE7WUFBRUQsS0FBSztZQUFFSTtVQUFJLENBQUU7WUFDL0QsSUFBSW1CLE1BQU0sR0FBRyxJQUFJO1lBRWpCLElBQUl2QixLQUFLLEVBQUU7Y0FDVnVCLE1BQU0sQ0FBQ0MsSUFBSSxHQUNWakI7Z0JBQVFULFNBQVMsRUFBQztjQUFjLEdBQy9CUztnQkFBSVQsU0FBUyxFQUFDLG1CQUFtQjtnQkFBQzJCLHVCQUF1QixFQUFFO2tCQUFFQyxNQUFNLEVBQUUxQjtnQkFBSztjQUFFLEVBQUksQ0FFakY7O1lBR0YsSUFBSUgsT0FBTyxFQUFFO2NBQ1owQixNQUFNLENBQUNDLElBQUksQ0FBQ2pCO2dCQUFNa0IsdUJBQXVCLEVBQUU7a0JBQUVDLE1BQU0sRUFBRTdCO2dCQUFPO2NBQUUsRUFBUyxDQUFDOztZQUV6RSxNQUFNOEIsT0FBTyxHQUFHdkIsSUFBSSxHQUFHLFNBQVMsR0FBR0csS0FBSyxDQUFDcUIsUUFBUTtZQUNqRCxPQUFPckIsb0JBQUNvQixPQUFPLFFBQUUxQixRQUFRLENBQVc7VUFDckMiLCJuYW1lcyI6WyJBbGVydCIsInByb3BzIiwibWVzc2FnZSIsImNsYXNzTmFtZSIsInR5cGUiLCJ0aXRsZSIsImNoaWxkcmVuIiwiY2xvc2FibGUiLCJvbkNsb3NlIiwiaWNvbiIsInNob3ciLCJzZXRTaG93IiwiUmVhY3QiLCJ1c2VTdGF0ZSIsIm9uQ2xvc2VDbGljayIsImNscyIsImljb25zIiwiZXJyb3IiLCJ3YXJuaW5nIiwic3VjY2VzcyIsImluZm8iLCJkZWZhdWx0SWNvbiIsImhhc0ljb24iLCJvbkNsaWNrIiwiY2xvc2UiLCJJY29uIiwiQ29udGVudCIsIkljb25CdXR0b24iLCJvdXRwdXQiLCJwdXNoIiwiZGFuZ2Vyb3VzbHlTZXRJbm5lckhUTUwiLCJfX2h0bWwiLCJDb250cm9sIiwiRnJhZ21lbnQiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbInRzL2FsZXJ0LnRzeCIsInRzL2NvbnRlbnQudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsXX0=

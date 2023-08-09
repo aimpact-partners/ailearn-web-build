@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "@aimpact/ailearn-app",
-        "version": "0.0.1",
+        "version": "1.0.0",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]
@@ -25,6 +25,11 @@ System.register([], function (_export, _context) {
           "elevenlabs": {
             "key": "ebe05ca0a4d9aafb4024d0666471a0c7",
             "id": "pNInz6obpgDQGcFmaJgB"
+          },
+          "baseUrl": "https://ailearn-test.netlify.app/",
+          "apis": {
+            "ailearn": "https://ailearn-api-http-6dlchqr2za-uc.a.run.app",
+            "chat": "https://chat-api-http-j2rcifstnq-uc.a.run.app"
           }
         },
         "ssr": {},
