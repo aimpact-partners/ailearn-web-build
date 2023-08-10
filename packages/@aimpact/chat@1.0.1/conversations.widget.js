@@ -58,7 +58,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       ;
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/base', dependency_3], ['@beyond-js/reactive/model', dependency_4], ['@aimpact/chat-sdk/core', dependency_5], ['@aimpact/chat/wrapper', dependency_6], ['@aimpact/chat-sdk/session', dependency_7], ['react', dependency_8], ['pragmate-ui/form', dependency_9], ['pragmate-ui/icons', dependency_10], ['pragmate-ui/link', dependency_11], ['@beyond-js/kernel/routing', dependency_12], ['@aimpact/chat/shared/components', dependency_13], ['@beyond-js/react-18-widgets/hooks', dependency_14], ['@aimpact/chat/ui/manager', dependency_15]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
-        "name": "conversations-explorer",
+        "name": "chat-explorer-view",
         "vspecifier": "@aimpact/chat@1.0.1/conversations.widget"
       }]);
       brequire('@beyond-js/kernel/styles').styles.register('@aimpact/chat@1.0.1/conversations.widget');

@@ -41,7 +41,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "page",
         "route": "/chat-api/tests"
       }, {
-        "name": "conversations-explorer",
+        "name": "chat-explorer-view",
         "vspecifier": "@aimpact/chat@1.0.1/conversations.widget"
       }, {
         "name": "auth-layout",
@@ -98,10 +98,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/tests/reactive"
       }, {
         "name": "aimpact-chat-user-profile",
-        "vspecifier": "@aimpact/chat@1.0.1/user/profile.widget",
-        "is": "page",
-        "route": "/me/profile",
-        "layout": "chat-layout"
+        "vspecifier": "@aimpact/chat@1.0.1/user/profile.widget"
       }, {
         "name": "api-test",
         "vspecifier": "@aimpact/ailearn-api@1.0.0/test",
