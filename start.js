@@ -340,7 +340,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ***********************/
 
         ims.set('./index', {
-          hash: 2153778500,
+          hash: 1337217491,
           creator: function (require, exports) {
             "use strict";
 
@@ -356,15 +356,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             /*bundle */ //import {appModules} from '@aimpact/chat/registry';
 
             const appModules = [{
+              id: 'chat',
               name: 'Chat',
               href: 'chat',
               icon: 'chat',
-              Explorer: 'chats-explorer'
+              Explorer: 'chat-explorer-view'
             }, {
               name: 'Documents',
               href: 'documents',
+              idhref: 'documents',
               icon: 'doc'
             }, {
+              id: 'lessons',
               name: 'Lessons',
               href: 'lessons/list',
               icon: 'class'
@@ -392,11 +395,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 authorized,
                 unauthorized
               } = settings;
-              _navigation.AppNavigation.update('Lessons', _gclassroom.gclassroom.authorized ? authorized : unauthorized);
+              _navigation.AppNavigation.update('lessons', _gclassroom.gclassroom.authorized ? authorized : unauthorized);
               if (_gclassroom.gclassroom.authorized) {
                 _navigation.AppNavigation.update('courses', {
+                  id: 'courses',
                   icon: _icons.GoogleClassRoom,
-                  name: 'Classes',
+                  name: 'Google classes',
                   Explorer: 'ailearn-gclassroom-explorer'
                 });
               }

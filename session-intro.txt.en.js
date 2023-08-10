@@ -29,13 +29,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4246274170,
+        hash: 3239069499,
         creator: function (require, exports) {
           exports.txt = {
             "header": {
               "title": "Objectives"
             },
-            "intro": "Main topics we will work during the class are:"
+            "intro": {
+              "hello": "Hi",
+              "message": "the topic that we will see deals with the following"
+            },
+            "synthesis": "Main topics we will work during the class are:"
           };
         }
       });

@@ -2,7 +2,11 @@
 
 ## URL de la aplicacion web
 
-[]
+development []
+
+testing [https://ailearn-test.netlify.app/]
+
+production []
 
 ## Actualizar propiedades de urls cloud en la propiedad "params" del package.json
 

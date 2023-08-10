@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3159938582,
+        hash: 3882349222,
         creator: function (require, exports) {
           exports.txt = {
             "title": "Create an awesome lesson!",
@@ -43,7 +43,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "topics": {
               "title": "Topics list",
-              "description": "Add the list of points to review as objetives in your lesson"
+              "description": "Add the list of points to review as objetives in your lesson",
+              "elements": {
+                "content": "Contenido",
+                "synthesis": "Síntesis",
+                "assessment": "Evaluación",
+                "previous": "Previous"
+              }
             },
             "titles": {
               "lessons": "Lesson",
