@@ -28,7 +28,7 @@ System.register([], function (_export, _context) {
           },
           "baseUrl": "https://ailearn-test.netlify.app/",
           "apis": {
-            "ailearn": "https://ailearn-api-http-6dlchqr2za-uc.a.run.app",
+            "ailearn": "https://ailearn-http-v2-6dlchqr2za-uc.a.run.app",
             "chat": "https://chat-api-http-6dlchqr2za-uc.a.run.app"
           }
         },

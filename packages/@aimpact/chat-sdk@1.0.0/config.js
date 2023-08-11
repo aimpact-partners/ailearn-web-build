@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "@aimpact/chat-sdk",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]

@@ -17,7 +17,7 @@ System.register([], function (_export, _context) {
         },
         "ssr": {},
         "backend": {
-          "host": "https://ailearn-api-ws-6dlchqr2za-uc.a.run.app"
+          "host": "https://ailearn-ws-v2-6dlchqr2za-uc.a.run.app"
         }
       });
     }
