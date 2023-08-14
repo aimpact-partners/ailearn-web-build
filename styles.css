@@ -202,6 +202,7 @@
   --on-primary: #ffffff;
   --primary-container: #f2f9ff;
   --on-primary-container: #000000;
+  --link-hover-color: var(--primary);
   --secondary: #2cb0fd;
   --on-secondary: #000000;
   --secondary-container: #e2f6ff;
@@ -260,6 +261,7 @@
     --on-primary: #fff;
     --primary-container: #222222;
     --on-primary-container: #dddddd;
+    --link-hover-color: var(--primary);
     --secondary: #666666;
     --on-secondary: #999999;
     --secondary-container: #444444;
@@ -299,6 +301,7 @@ html[data-beyond-mode=light] {
   --on-primary: #ffffff;
   --primary-container: #f2f9ff;
   --on-primary-container: #000000;
+  --link-hover-color: var(--primary);
   --secondary: #2cb0fd;
   --on-secondary: #000000;
   --secondary-container: #e2f6ff;
@@ -357,6 +360,7 @@ html[data-beyond-mode=dark] {
   --on-primary: #fff;
   --primary-container: #222222;
   --on-primary-container: #dddddd;
+  --link-hover-color: var(--primary);
   --secondary: #666666;
   --on-secondary: #999999;
   --secondary-container: #444444;

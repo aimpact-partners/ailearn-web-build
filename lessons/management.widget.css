@@ -1,0 +1,204 @@
+.bullet-points-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  list-style: square;
+}
+.bullet-points-form .bullet-points-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.bullet-points-form .bullet-points-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  flex-grow: 1;
+  margin-block: 0.5rem;
+  transition: all 0.3s ease;
+  color: var(--color-gray-20);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-gray-20);
+  padding: 0.5rem;
+}
+.bullet-points-form .bullet-points-item input {
+  color: var(--color-gray-20);
+}
+.bullet-points-form .bullet-points-item .delete-bullet-point {
+  display: block;
+  cursor: pointer;
+}
+.bullet-points-form .bullet-points-item .drag-bullet-point {
+  display: block;
+  cursor: grab;
+  fill: var(--color-gray-40);
+}
+.bullet-points-form .bullet-points-item p {
+  line-height: 0px;
+}
+.bullet-points-form .bullet-points-item:has(.bullet-points-input:focus) {
+  border: 1px solid var(--primary);
+  color: var(--text-color);
+  background-color: var(--surface);
+}
+.bullet-points-form .bullet-points-item:has(.bullet-points-input:focus) input {
+  color: var(--text-color);
+}
+.bullet-points-form .bullet-points-input {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: auto;
+}
+.lesson-generator {
+  background-color: var(--surface-variant);
+  border-radius: var(--border-radius-sm);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 0.5px solid var(--color-gray-20);
+  position: relative;
+}
+.lesson-generator.lesson-generator--introduction {
+  background: var(--surface-accent);
+}
+.lesson-generator .is-hidden {
+  display: none;
+}
+.lesson-generator .class-areas__actions {
+  margin-left: auto;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  padding: 0.5rem;
+}
+.lesson-generator .generator-header {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+.lesson-generator .generator-header .collapse-topic {
+  transform: rotate(-90deg);
+  transition: transform 0.2s ease;
+}
+.lesson-generator .generator-header .collapse-topic.visible {
+  transform: rotate(90deg);
+}
+.lesson-generator .generator-header .tab-container {
+  min-width: 50%;
+}
+.lesson-generator .class-areas {
+  display: flex;
+  gap: 2rem;
+}
+.lesson-generator .class-areas .area-tab {
+  display: flex;
+  align-items: center;
+  padding-block: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+  text-transform: capitalize;
+  position: relative;
+}
+.lesson-generator .class-areas .area-tab::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 5%;
+  background-color: var(--primary);
+  transition: width 0.2s ease;
+}
+.lesson-generator .class-areas .area-tab.active::before {
+  width: 100%;
+}
+.lesson-generator .class-areas .area-tab:not(.active):hover::before {
+  width: 100%;
+  background-color: var(--color-gray-20);
+}
+.lesson-generator .topic-title {
+  text-transform: capitalize;
+}
+.lesson-generator .lesson__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+.lesson-generator .lesson__content.visible {
+  max-height: 1500px;
+  transition: max-height 0.4s ease;
+}
+.lesson-generator .lesson__content .empty-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block: 2rem;
+}
+.lesson-generator .lesson__content .content-wrapper {
+  padding: 1rem;
+  background-color: var(--background);
+  min-height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item__detail {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  align-items: center;
+}
+.item__detail span {
+  margin-bottom: 0.5rem;
+}
+.item__detail:not(:last-child) {
+  border-bottom: var(--outline) 1px solid;
+}
+.loading__block {
+  padding: 2.5rem;
+}
+.class-view {
+  height: 100%;
+  width: 100%;
+}
+.class-view .class-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.class-view .class-form > span,
+.class-view .class-form .form__field {
+  width: 100%;
+  margin-block: 1rem;
+}
+.class-view .class-form > span hr,
+.class-view .class-form .form__field hr {
+  margin-block: 1.5rem;
+  background-color: var(--color-gray-20);
+}
+.class-view .class-form button[type=submit] {
+  margin-left: auto;
+}
+.class-view .alert.info {
+  background: var(--info-container);
+  margin: 1rem 0;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGJ1bGxldC1wb2ludC5zY3NzIiwic2Nzc1xcZ2VuZXJhdG9yXFxpbmRleC5zY3NzIiwic2Nzc1xcZ2VuZXJhdG9yXFxpdGVtLWRldGFpbC5zY3NzIiwic2Nzc1xcbG9hZGluZy1ibG9jay5zY3NzIiwic2Nzc1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQzs7QUFFRDtFQUNDO0VBQ0E7O0FBRUQ7RUFDQztFQUNBO0VBQ0E7O0FBRUQ7RUFDQzs7QUFFRDtFQUNDO0VBQ0E7RUFDQTs7QUFDQTtFQUNDOztBQUlIO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUN6REY7RUFDQztFQUNBO0VBQ0E7RUFFQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDOztBQUdEO0VBQ0M7O0FBRUQ7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0M7RUFDQTs7QUFDQTtFQUNDOztBQUdGO0VBQ0M7O0FBSUY7RUFDQztFQUNBOztBQUNBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7RUFDQTs7QUFLSDtFQUNDOztBQUdEO0VBQ0M7RUFFQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUNqSEg7RUFDQztFQUNBO0VBQ0E7O0FBQ0E7RUFDQzs7QUFFRDtFQUNDOztBQ1JGO0VBQ0M7O0FDREQ7RUFDQztFQUNBOztBQUNBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7QUFBQTtFQUVDO0VBQ0E7O0FBRUE7QUFBQTtFQUNDO0VBQ0E7O0FBR0Y7RUFDQzs7QUFJRjtFQUNDO0VBQ0EiLCJmaWxlIjoiIn0= */
