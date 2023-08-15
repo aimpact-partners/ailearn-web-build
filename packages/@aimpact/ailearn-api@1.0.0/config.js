@@ -13,11 +13,11 @@ System.register([], function (_export, _context) {
         },
         "global.css": true,
         "params": {
-          "chatAPI": "https://chat-api-http-j2rcifstnq-uc.a.run.app"
+          "chatAPI": "https://chat-api-http-6dlchqr2za-uc.a.run.app"
         },
         "ssr": {},
         "backend": {
-          "host": "https://ailearn-ws-v2-j2rcifstnq-uc.a.run.app"
+          "host": "https://ailearn-ws-v2-6dlchqr2za-uc.a.run.app"
         }
       });
     }
