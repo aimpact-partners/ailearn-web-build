@@ -13,7 +13,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/reactive", "0.0.3"], ["@beyond-js/widgets", "0.1.5"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.7.2"], ["prismjs", "1.29.0"], ["swiper", "8.4.7"], ["@beyond-js/backend", "0.1.8"], ["@types/react", "18.2.18"], ["@types/react-dom", "18.2.7"], ["pragmate-ui", "0.0.36"], ["@aimpact/ailearn-app", "1.0.0"]]);
+        const dependencies = new Map([["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/reactive", "0.0.3"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.7.1"], ["prismjs", "1.29.0"], ["swiper", "8.4.7"], ["@beyond-js/backend", "0.1.8"], ["@types/react", "18.2.15"], ["@types/react-dom", "18.2.7"], ["pragmate-ui", "0.0.36"], ["@aimpact/ailearn-app", "1.0.0"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -99,4 +99,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJDb250cm9sIiwiY29uc3RydWN0b3IiLCJleHBvcnRzIiwiUmVhY3QiLCJyZXF1aXJlIiwiQnV0dG9uR3JvdXAiLCJ2YXJpYW50Iiwib3JpZW50YXRpb24iLCJzaXplIiwiY2hpbGRyZW4iLCJjbHMiLCJjcmVhdGVFbGVtZW50IiwiY2xhc3NOYW1lIl0sInNvdXJjZXMiOlsiL2NvZGUvdHMvY29udHJvbC50cyIsIi9jb2RlL3RzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQU87VUFBVSxNQUNYQSxPQUFPO1lBRVRDLFlBQUEsR0FFQTs7VUFFSEMsT0FBQSxDQUFBRixPQUFBLEdBQUFBLE9BQUE7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDUEQsSUFBQUcsS0FBQSxHQUFBQyxPQUFBO1VBTU87VUFBTSxTQUFVQyxXQUFXQSxDQUFDO1lBQUVDLE9BQU87WUFBRUMsV0FBVztZQUFFQyxJQUFJO1lBQUVDO1VBQVEsQ0FBRTtZQUN6RSxNQUFNQyxHQUFHLEdBQUcseUJBQXlCSixPQUFPLEVBQUU7WUFFOUMsT0FBT0gsS0FBQSxDQUFBUSxhQUFBO2NBQUtDLFNBQVMsRUFBRUY7WUFBRyxHQUFHRCxRQUFRLENBQU87VUFDOUMifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFPO1VBQVUsTUFDWEEsT0FBTztZQUVUQyxlQUVBOztVQUVIQzs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNQRDtVQU1PO1VBQU0sU0FBVUMsV0FBVyxDQUFDO1lBQUVDLE9BQU87WUFBRUMsV0FBVztZQUFFQyxJQUFJO1lBQUVDO1VBQVEsQ0FBRTtZQUN6RSxNQUFNQyxHQUFHLEdBQUcseUJBQXlCSixPQUFPLEVBQUU7WUFFOUMsT0FBT0s7Y0FBS0MsU0FBUyxFQUFFRjtZQUFHLEdBQUdELFFBQVEsQ0FBTztVQUM5QyIsIm5hbWVzIjpbIkNvbnRyb2wiLCJjb25zdHJ1Y3RvciIsImV4cG9ydHMiLCJCdXR0b25Hcm91cCIsInZhcmlhbnQiLCJvcmllbnRhdGlvbiIsInNpemUiLCJjaGlsZHJlbiIsImNscyIsIlJlYWN0IiwiY2xhc3NOYW1lIl0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJjb2RlL3RzL2NvbnRyb2wudHMiLCJjb2RlL3RzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF19
