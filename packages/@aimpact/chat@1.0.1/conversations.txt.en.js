@@ -29,10 +29,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4270249038,
+        hash: 349970240,
         creator: function (require, exports) {
           exports.txt = {
-            "header": "Header title"
+            "header": "Create New Chat",
+            "closeButton": "Close",
+            "error": "Error",
+            "noKbInfo": "You don't have any Knowledge Box yet.",
+            "createNewKb": "You can create a new one in",
+            "documentsLink": "Documents",
+            "continueCreatingChat": "or continue creating a new chat",
+            "chatWithModel": "Chat with model",
+            "cancelButton": "Cancel",
+            "saveButton": "Save"
           };
         }
       });
