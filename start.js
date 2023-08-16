@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/transversals", "@beyond-js/widgets@0.1.5/render", "@aimpact/chat-sdk@0.0.1/session", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat-sdk@0.0.1/initialize", "@aimpact/chat@0.0.2/extensions", "@aimpact/ailearn-app@0.0.11/model/gclassroom", "@aimpact/chat@0.0.2/navigation", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/transversals", "@beyond-js/widgets@0.1.5/render", "@aimpact/chat-sdk@0.0.1/session", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat-sdk@0.0.1/initialize", "@aimpact/chat@0.0.2/extensions", "@aimpact/ailearn-app@1.0.0/model/gclassroom", "@aimpact/chat@0.0.2/navigation", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, Transversal, __beyond_transversal, widgets, bundles;
@@ -17,8 +17,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
       dependency_5 = _aimpactChatSdk001Initialize;
     }, function (_aimpactChat002Extensions) {
       dependency_6 = _aimpactChat002Extensions;
-    }, function (_aimpactAilearnApp0011ModelGclassroom) {
-      dependency_7 = _aimpactAilearnApp0011ModelGclassroom;
+    }, function (_aimpactAilearnApp100ModelGclassroom) {
+      dependency_7 = _aimpactAilearnApp100ModelGclassroom;
     }, function (_aimpactChat002Navigation) {
       dependency_8 = _aimpactChat002Navigation;
     }, function (_beyondJsKernel019Texts) {
@@ -128,48 +128,48 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/components/coming-soon"
       }, {
         "name": "ailearn-gclassrooms-access",
-        "vspecifier": "@aimpact/ailearn-app@0.0.11/gclassrooms/access.widget",
+        "vspecifier": "@aimpact/ailearn-app@1.0.0/gclassrooms/access.widget",
         "is": "page",
         "route": "/gclassroom/access",
         "layout": "chat-layout"
       }, {
         "name": "ailearn-gclassroom-explorer",
-        "vspecifier": "@aimpact/ailearn-app@0.0.11/gclassroom-explorer.widget"
+        "vspecifier": "@aimpact/ailearn-app@1.0.0/gclassroom-explorer.widget"
       }, {
         "name": "main-layout",
-        "vspecifier": "@aimpact/ailearn-app@0.0.11/layout/main",
+        "vspecifier": "@aimpact/ailearn-app@1.0.0/layout/main",
         "is": "layout"
       }, {
         "name": "ailearn-lessons-create",
-        "vspecifier": "@aimpact/ailearn-app@0.0.11/lessons/create.widget",
+        "vspecifier": "@aimpact/ailearn-app@1.0.0/lessons/create.widget",
         "is": "page",
         "route": "/lessons/create",
         "layout": "chat-layout"
       }, {
         "name": "ailearn-classes-list",
-        "vspecifier": "@aimpact/ailearn-app@0.0.11/lessons/list.widget",
+        "vspecifier": "@aimpact/ailearn-app@1.0.0/lessons/list.widget",
         "is": "page",
         "route": "/lessons/list",
         "layout": "chat-layout"
       }, {
         "name": "class-management",
-        "vspecifier": "@aimpact/ailearn-app@0.0.11/lessons/management.widget",
+        "vspecifier": "@aimpact/ailearn-app@1.0.0/lessons/management.widget",
         "is": "page",
         "route": "/lessons/management/${id}",
         "layout": "chat-layout"
       }, {
         "name": "ailearn-sessions-access",
-        "vspecifier": "@aimpact/ailearn-app@0.0.11/sessions/access.widget",
+        "vspecifier": "@aimpact/ailearn-app@1.0.0/sessions/access.widget",
         "is": "page",
         "route": "/sessions/access/${id}",
         "layout": "chat-layout"
       }, {
         "name": "session-intro",
         "attrs": ["metadata"],
-        "vspecifier": "@aimpact/ailearn-app@0.0.11/session-intro.widget"
+        "vspecifier": "@aimpact/ailearn-app@1.0.0/session-intro.widget"
       }, {
         "name": "ailearn-sessions-list",
-        "vspecifier": "@aimpact/ailearn-app@0.0.11/sessions/list.widget",
+        "vspecifier": "@aimpact/ailearn-app@1.0.0/sessions/list.widget",
         "is": "page",
         "route": "/sessions/list/${id}",
         "layout": "chat-layout"
