@@ -352,6 +352,17 @@ a {
 .is-authorized {
   color: var(--success-container);
 }
+
+.flex-container {
+  display: flex;
+}
+.flex-container.space-between {
+  justify-content: space-between;
+}
+
+.mb-30 {
+  margin-bottom: 2rem;
+}
 @media (max-width: 1920px) {
   h1 {
     font-size: 26px;
