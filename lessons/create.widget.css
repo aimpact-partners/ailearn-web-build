@@ -1,0 +1,90 @@
+.bullet-points-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  list-style: square;
+}
+.bullet-points-form .bullet-points-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.bullet-points-form .bullet-points-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  flex-grow: 1;
+  margin-block: 0.5rem;
+  transition: all 0.3s ease;
+  color: var(--color-gray-20);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-gray-20);
+  padding: 0.5rem;
+}
+.bullet-points-form .bullet-points-item input {
+  color: var(--color-gray-20);
+}
+.bullet-points-form .bullet-points-item .delete-bullet-point {
+  display: block;
+  cursor: pointer;
+}
+.bullet-points-form .bullet-points-item .drag-bullet-point {
+  display: block;
+  cursor: grab;
+  fill: var(--color-gray-40);
+}
+.bullet-points-form .bullet-points-item p {
+  line-height: 0px;
+}
+.bullet-points-form .bullet-points-item:has(.bullet-points-input:focus) {
+  border: 1px solid var(--primary);
+  color: var(--text-color);
+  background-color: var(--surface);
+}
+.bullet-points-form .bullet-points-item:has(.bullet-points-input:focus) input {
+  color: var(--text-color);
+}
+.bullet-points-form .bullet-points-input {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: auto;
+}
+.loading__block {
+  padding: 2.5rem;
+}
+.class-view {
+  height: 100%;
+  width: 100%;
+}
+.class-view .class-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.class-view .class-form > span,
+.class-view .class-form .form__field {
+  width: 100%;
+  margin-block: 1rem;
+}
+.class-view .class-form > span hr,
+.class-view .class-form .form__field hr {
+  margin-block: 1.5rem;
+  background-color: var(--color-gray-20);
+}
+.class-view .class-form button[type=submit] {
+  margin-left: auto;
+}
+.class-view .alert.info {
+  background: var(--info-container);
+  margin: 1rem 0;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGJ1bGxldC1wb2ludC5zY3NzIiwic2Nzc1xcbG9hZGluZy1ibG9jay5zY3NzIiwic2Nzc1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQzs7QUFFRDtFQUNDO0VBQ0E7O0FBRUQ7RUFDQztFQUNBO0VBQ0E7O0FBRUQ7RUFDQzs7QUFFRDtFQUNDO0VBQ0E7RUFDQTs7QUFDQTtFQUNDOztBQUlIO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUN6REY7RUFDQzs7QUNERDtFQUNDO0VBQ0E7O0FBQ0E7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFFQTtBQUFBO0VBRUM7RUFDQTs7QUFFQTtBQUFBO0VBQ0M7RUFDQTs7QUFHRjtFQUNDOztBQUlGO0VBQ0M7RUFDQSIsImZpbGUiOiIifQ== */
