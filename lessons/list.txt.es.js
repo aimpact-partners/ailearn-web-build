@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1510048211,
+        hash: 3448023877,
         creator: function (require, exports) {
           exports.txt = {
             "access": {
@@ -48,12 +48,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "copied": "Link copiado al portapapeles"
             },
             "empty": "Los trabajos de clase no existen aún.",
+            "create": "Crear",
             "classes": {
               "search": "Buscar trabajos de clase",
               "topics-list": "Ver lista de trabajos de clase",
-              "classes": "Lecciones",
+              "classes": "Trabajos de clase",
               "status": "Status",
-              "create": "Creá",
+              "create": "Crear",
               "elements": {
                 "relevance": "Relevancia",
                 "synthesis": "Sintesis",
