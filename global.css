@@ -340,6 +340,10 @@ option {
   display: flex;
   justify-content: flex-end;
 }
+
+.page__container--empty {
+  height: 100%;
+}
 .list__item .list__item__header {
   display: grid;
   grid-template-columns: 70% 1fr;
@@ -453,6 +457,9 @@ a {
 }
 .flex-container.space-between {
   justify-content: space-between;
+}
+.flex-container.flex-column {
+  flex-direction: column;
 }
 
 .mb-30 {

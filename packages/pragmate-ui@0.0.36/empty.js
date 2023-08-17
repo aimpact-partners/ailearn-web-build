@@ -25,8 +25,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
         "module": {
           "vspecifier": "pragmate-ui@0.0.36/empty"
         },
-        "type": "code",
-        "name": "empty"
+        "type": "code"
       }, _context.meta.url).package();
       ;
       __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2], ['pragmate-ui/icons', dependency_3]]);
@@ -36,7 +35,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       INTERNAL MODULE: ./empty
       ***********************/
       ims.set('./empty', {
-        hash: 3338372180,
+        hash: 251007094,
         creator: function (require, exports) {
           "use strict";
 
@@ -48,12 +47,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
           var _icons = require("pragmate-ui/icons");
           /*bundle*/
           function Empty(props) {
-            const text = props.text ? props.text : "No hay registros";
-            const cls = `${props.className ?? ""} pragmate-element-empty`;
+            const text = props.text ? props.text : 'No hay registros';
+            const cls = `${props.className ?? ''} pui-empty-section`;
             return React.createElement("div", {
               className: cls
             }, React.createElement("div", {
-              className: "content"
+              className: 'content'
             }, props.icon && React.createElement(_icons.Icon, {
               icon: props.icon
             }), React.createElement("h3", null, text), props.additionalElement ? props.additionalElement : null, props.children ? props.children : null));
@@ -82,4 +81,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFRTztVQUFVLFNBQ1JBLEtBQUssQ0FBQ0MsS0FBWTtZQUN6QixNQUFNQyxJQUFJLEdBQVdELEtBQUssQ0FBQ0MsSUFBSSxHQUFHRCxLQUFLLENBQUNDLElBQUksR0FBRyxrQkFBa0I7WUFDakUsTUFBTUMsR0FBRyxHQUFHLEdBQUdGLEtBQUssQ0FBQ0csU0FBUyxJQUFJLEVBQUUseUJBQXlCO1lBQzdELE9BQ0VDO2NBQUtELFNBQVMsRUFBRUQ7WUFBRyxHQUNqQkU7Y0FBS0QsU0FBUyxFQUFDO1lBQVMsR0FDckJILEtBQUssQ0FBQ0ssSUFBSSxJQUFJRCxvQkFBQ0UsV0FBSTtjQUFDRCxJQUFJLEVBQUVMLEtBQUssQ0FBQ0s7WUFBSSxFQUFJLEVBQ3pDRCxnQ0FBS0gsSUFBSSxDQUFNLEVBQ2RELEtBQUssQ0FBQ08saUJBQWlCLEdBQUdQLEtBQUssQ0FBQ08saUJBQWlCLEdBQUcsSUFBSSxFQUN4RFAsS0FBSyxDQUFDUSxRQUFRLEdBQUdSLEtBQUssQ0FBQ1EsUUFBUSxHQUFHLElBQUksQ0FDbkMsQ0FDRjtVQUVWIiwibmFtZXMiOlsiRW1wdHkiLCJwcm9wcyIsInRleHQiLCJjbHMiLCJjbGFzc05hbWUiLCJSZWFjdCIsImljb24iLCJJY29uIiwiYWRkaXRpb25hbEVsZW1lbnQiLCJjaGlsZHJlbiJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsiY29kZS90cy9lbXB0eS50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUE7VUFDQTtVQVFPO1VBQVUsU0FDUkEsS0FBSyxDQUFDQyxLQUFZO1lBQzFCLE1BQU1DLElBQUksR0FBV0QsS0FBSyxDQUFDQyxJQUFJLEdBQUdELEtBQUssQ0FBQ0MsSUFBSSxHQUFHLGtCQUFrQjtZQUNqRSxNQUFNQyxHQUFHLEdBQUcsR0FBR0YsS0FBSyxDQUFDRyxTQUFTLElBQUksRUFBRSxvQkFBb0I7WUFDeEQsT0FDQ0M7Y0FBS0QsU0FBUyxFQUFFRDtZQUFHLEdBQ2xCRTtjQUFLRCxTQUFTLEVBQUM7WUFBUyxHQUN0QkgsS0FBSyxDQUFDSyxJQUFJLElBQUlELG9CQUFDRSxXQUFJO2NBQUNELElBQUksRUFBRUwsS0FBSyxDQUFDSztZQUFJLEVBQUksRUFDekNELGdDQUFLSCxJQUFJLENBQU0sRUFDZEQsS0FBSyxDQUFDTyxpQkFBaUIsR0FBR1AsS0FBSyxDQUFDTyxpQkFBaUIsR0FBRyxJQUFJLEVBQ3hEUCxLQUFLLENBQUNRLFFBQVEsR0FBR1IsS0FBSyxDQUFDUSxRQUFRLEdBQUcsSUFBSSxDQUNsQyxDQUNEO1VBRVIiLCJuYW1lcyI6WyJFbXB0eSIsInByb3BzIiwidGV4dCIsImNscyIsImNsYXNzTmFtZSIsIlJlYWN0IiwiaWNvbiIsIkljb24iLCJhZGRpdGlvbmFsRWxlbWVudCIsImNoaWxkcmVuIl0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJ0cy9lbXB0eS50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsXX0=
