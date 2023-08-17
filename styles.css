@@ -238,6 +238,7 @@
   --background: #f1f1f1;
   --on-background: #000000;
   --surface: #fbfcff;
+  --surface-accent: #e2e9ff;
   --surface-38: rgba(251, 252, 255, 0.38);
   --surface-60: rgba(251, 252, 255, 0.6);
   --on-surface: #000000;
@@ -301,6 +302,7 @@
     --background: #2c2c2c;
     --on-background: #ffffff;
     --surface: #1d1e20;
+    --surface-accent: #18191b;
     --surface-38: rgba(34, 34, 34, 0.38);
     --surface-60: rgba(34, 34, 34, 0.6);
     --on-surface: #dddddd;
@@ -331,6 +333,7 @@ html[data-beyond-mode=light] {
   --background: #f1f1f1;
   --on-background: #000000;
   --surface: #fbfcff;
+  --surface-accent: #e2e9ff;
   --surface-38: rgba(251, 252, 255, 0.38);
   --surface-60: rgba(251, 252, 255, 0.6);
   --on-surface: #000000;
@@ -394,6 +397,7 @@ html[data-beyond-mode=dark] {
   --background: #2c2c2c;
   --on-background: #ffffff;
   --surface: #1d1e20;
+  --surface-accent: #18191b;
   --surface-38: rgba(34, 34, 34, 0.38);
   --surface-60: rgba(34, 34, 34, 0.6);
   --on-surface: #dddddd;

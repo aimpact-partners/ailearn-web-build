@@ -330,6 +330,101 @@ option {
   word-break: break-all;
   text-overflow: ellipsis;
 }
+.empty-page__message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-grow: 0;
+}
+.empty-page__message-container .actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.list__item .list__item__header {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  padding: 0;
+  align-items: center;
+}
+.list__item .list__item__header header {
+  gap: 1rem;
+  text-overflow: ellipsis ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  flex-grow: 0;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+}
+.list__item .list__item__header header h4 {
+  display: flex;
+  gap: 0.5rem;
+}
+.list__item .list__item__header header:hover svg {
+  fill: var(--link-hover-color);
+}
+.list__item .list__item__header header,
+.list__item .list__item__header header h4 {
+  width: 100%;
+  flex-grow: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: "...";
+}
+.list__item .list__item__header .actions {
+  justify-content: end;
+  align-items: end;
+  display: flex;
+}
+.list__item .list__item__header .actions .pragmate-element-spinner {
+  justify-self: end;
+  align-self: end;
+  margin: 0;
+}
+.list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--surface);
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-4);
+  padding: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+.list__item:hover {
+  background: var(--surface-accent);
+}
+.list__item .class-actions {
+  margin-left: auto;
+}
+.list__item .item__actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+  justify-content: end;
+}
+.page__header {
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.page__header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background: var(--background);
+  border-radius: 0 0 50% 50%;
+  box-shadow: 0px 6px 8px -2px rgba(0, 0, 0, 0.4);
+}
 .is-fetching {
   opacity: 0.5;
   transition: all ease-in-out 0.3s;
