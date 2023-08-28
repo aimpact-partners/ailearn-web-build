@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "pragmate-ui@0.0.36/icons", "dayjs@1.11.9", "pragmate-ui@0.0.36/empty", "pragmate-ui@0.0.36/form", "@aimpact/chat@1.0.1/shared/components", "@aimpact/chat@1.0.1/ui/manager", "@aimpact/chat@1.0.1/wrapper", "pragmate-ui@0.0.36/toast", "@aimpact/ailearn-app@1.0.0/config", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/media-manager@1.0.0/uploader-code", "@beyond-js/react-18-widgets@1.0.1/page", "@beyond-js/reactive@1.1.3/model", "@aimpact/chat-sdk@1.0.0/core", "@beyond-js/react-18-widgets@1.0.1/hooks", "@aimpact/chat@1.0.1/shared/hooks"], function (_export, _context3) {
+System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "pragmate-ui@0.0.36/icons", "dayjs@1.11.9", "pragmate-ui@0.0.36/empty", "pragmate-ui@0.0.36/form", "@aimpact/chat@1.0.1/shared/components", "@aimpact/chat@1.0.1/ui/manager", "@aimpact/chat@1.0.1/wrapper", "pragmate-ui@0.0.36/toast", "@aimpact/ailearn-app@1.0.0/config", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/media-manager@1.0.0/uploader-code", "@beyond-js/react-18-widgets@1.0.1/page", "@beyond-js/reactive@1.1.4/model", "@aimpact/chat-sdk@1.0.0/core", "@beyond-js/react-18-widgets@1.0.1/hooks", "@aimpact/chat@1.0.1/shared/hooks"], function (_export, _context3) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, dependency_15, dependency_16, dependency_17, dependency_18, dependency_19, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
@@ -39,8 +39,8 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       dependency_14 = _aimpactMediaManager100UploaderCode;
     }, function (_beyondJsReact18Widgets101Page) {
       dependency_15 = _beyondJsReact18Widgets101Page;
-    }, function (_beyondJsReactive113Model) {
-      dependency_16 = _beyondJsReactive113Model;
+    }, function (_beyondJsReactive114Model) {
+      dependency_16 = _beyondJsReactive114Model;
     }, function (_aimpactChatSdk100Core) {
       dependency_17 = _aimpactChatSdk100Core;
     }, function (_beyondJsReact18Widgets101Hooks) {

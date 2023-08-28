@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "swiper@8.4.7", "@beyond-js/reactive@1.1.3/model", "pragmate-ui@0.0.36/icons", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "swiper@8.4.7", "@beyond-js/reactive@1.1.4/model", "pragmate-ui@0.0.36/icons", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, SwiperSlider, __beyond_pkg, hmr;
@@ -10,8 +10,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "swiper@8.4.7
       dependency_1 = _react;
     }, function (_swiper) {
       dependency_2 = _swiper;
-    }, function (_beyondJsReactive113Model) {
-      dependency_3 = _beyondJsReactive113Model;
+    }, function (_beyondJsReactive114Model) {
+      dependency_3 = _beyondJsReactive114Model;
     }, function (_pragmateUi0036Icons) {
       dependency_4 = _pragmateUi0036Icons;
     }, function (_beyondJsKernel019Styles) {
