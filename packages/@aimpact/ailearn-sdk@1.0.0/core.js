@@ -273,7 +273,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-api@1.0.0/c
       ********************************************/
 
       ims.set('./lessons/Introduction/index', {
-        hash: 1713130837,
+        hash: 3057534875,
         creator: function (require, exports) {
           "use strict";
 
