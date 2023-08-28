@@ -1,7 +1,7 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.0.1/base", "react@18.2.0", "pragmate-ui@0.0.36/form"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.0.1/base", "react@18.2.0", "pragmate-ui@0.0.36/form", "pragmate-ui@0.0.36/components", "@aimpact/chat@1.0.1/shared/hooks"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Controller, Quiz, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, Controller, Quiz, __beyond_pkg, hmr;
   _export({
     Controller: void 0,
     Quiz: void 0
@@ -17,6 +17,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_3 = _react2;
     }, function (_pragmateUi0036Form) {
       dependency_4 = _pragmateUi0036Form;
+    }, function (_pragmateUi0036Components) {
+      dependency_5 = _pragmateUi0036Components;
+    }, function (_aimpactChat101SharedHooks) {
+      dependency_6 = _aimpactChat101SharedHooks;
     }],
     execute: function () {
       bimport = specifier => {
@@ -34,7 +38,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
         "type": "code"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['@beyond-js/react-18-widgets/base', dependency_2], ['react', dependency_3], ['pragmate-ui/form', dependency_4]]);
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['@beyond-js/react-18-widgets/base', dependency_2], ['react', dependency_3], ['pragmate-ui/form', dependency_4], ['pragmate-ui/components', dependency_5], ['@aimpact/chat/shared/hooks', dependency_6]]);
       brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@1.0.0/assessments/form.code');
       ims = new Map();
       /****************************
@@ -90,7 +94,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       *****************************/
 
       ims.set('./views/Input', {
-        hash: 380648024,
+        hash: 3126064951,
         creator: function (require, exports) {
           "use strict";
 
@@ -103,15 +107,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
           const InputControl = ({
             option,
             name,
-            isMultiple,
-            currentValue
+            isMultiple
           }) => {
             const Control = isMultiple ? _form.CheckBox : _form.Radio;
-            return _react.default.createElement("label", null, _react.default.createElement(Control, {
+            return _react.default.createElement(Control, {
+              label: option,
               value: option,
-              name: name,
-              checked: currentValue === option
-            }), option);
+              name: name
+            });
           };
           exports.InputControl = InputControl;
         }
@@ -122,7 +125,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       ********************************/
 
       ims.set('./views/Question', {
-        hash: 2542118335,
+        hash: 3965328984,
         creator: function (require, exports) {
           "use strict";
 
@@ -135,24 +138,30 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
           const Question = ({
             question
           }) => {
-            const inputs = question.options.map((option, index) => React.createElement(_Input.InputControl, {
-              key: index,
-              option: option,
-              name: question.question,
-              isMultiple: question.isMultiple
-            }));
-            return React.createElement("div", null, React.createElement("h3", null, question.question), inputs);
+            console.log(10, question);
+            const inputs = question.options.map((option, index) => {
+              const name = question.text.replace(/[^a-zA-Z0-9]/g, '');
+              return React.createElement(_Input.InputControl, {
+                key: index,
+                option: option,
+                name: name,
+                isMultiple: question.isMultiple
+              });
+            });
+            return React.createElement("div", {
+              className: "question__container"
+            }, React.createElement("h4", null, question.text), inputs);
           };
           exports.Question = Question;
         }
       });
 
-      /*********************************
-      INTERNAL MODULE: ./views/QuizProps
-      *********************************/
+      /****************************
+      INTERNAL MODULE: ./views/Quiz
+      ****************************/
 
-      ims.set('./views/QuizProps', {
-        hash: 1335835654,
+      ims.set('./views/Quiz', {
+        hash: 2547136507,
         creator: function (require, exports) {
           "use strict";
 
@@ -162,10 +171,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
           exports.Quiz = void 0;
           var _react = require("react");
           var _Question = require("./Question");
+          var _components = require("pragmate-ui/components");
+          var _hooks = require("@aimpact/chat/shared/hooks");
+          var _beyond_context = require("beyond_context");
           /*bundle*/
           const Quiz = ({
-            questions
+            assessments
           }) => {
+            const [textsReady, texts] = (0, _hooks.useTexts)(_beyond_context.module.specifier);
             const handleSubmit = e => {
               e.preventDefault();
               const form = e.target;
@@ -173,15 +186,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
               console.log(formData); // Aquí puedes manejar los resultados
             };
 
-            const output = questions.map((question, index) => _react.default.createElement(_Question.Question, {
+            if (!textsReady) return _react.default.createElement(_components.Spinner, null);
+            const output = assessments.questions.map((question, index) => _react.default.createElement(_Question.Question, {
               key: index,
               question: question
             }));
             return _react.default.createElement("form", {
-              onSubmit: handleSubmit
-            }, output, _react.default.createElement("button", {
+              onSubmit: handleSubmit,
+              className: "assessment__container"
+            }, _react.default.createElement("h3", null, assessments.title), output, _react.default.createElement(_components.Button, {
+              variant: "primary",
               type: "submit"
-            }, "Finalizar"));
+            }, texts?.finish));
           };
           exports.Quiz = Quiz;
         }
@@ -191,7 +207,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
         "from": "Controller",
         "name": "Controller"
       }, {
-        "im": "./views/QuizProps",
+        "im": "./views/Quiz",
         "from": "Quiz",
         "name": "Quiz"
       }];
@@ -202,7 +218,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
         value
       }) {
         (require || prop === 'Controller') && _export("Controller", Controller = require ? require('./controller').Controller : value);
-        (require || prop === 'Quiz') && _export("Quiz", Quiz = require ? require('./views/QuizProps').Quiz : value);
+        (require || prop === 'Quiz') && _export("Quiz", Quiz = require ? require('./views/Quiz').Quiz : value);
       };
       _export("__beyond_pkg", __beyond_pkg = __pkg);
       _export("hmr", hmr = new function () {
@@ -213,4 +229,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUE7VUFDQTtVQUNBO1VBRU87VUFBVSxNQUNYQSxVQUFXLFNBQVFDLDJCQUFxQjtZQUM3QyxNQUFNO1lBQ05DLFdBQVc7Y0FDVixJQUFJLENBQUMsTUFBTSxHQUFHLElBQUlDLG1CQUFZLEVBQUU7Y0FDaEMsT0FBTyxJQUFJLENBQUMsTUFBTTtZQUNuQjtZQUNBLElBQUlDLE1BQU07Y0FDVCxPQUFPQSxnQkFBTTtZQUNkOztVQUNBQzs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNiSyxNQUFPRixZQUFZO1VBQTJCRTs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNEcEQ7VUFFQTtVQVNPLE1BQU1DLFlBQVksR0FBeUIsQ0FBQztZQUFFQyxNQUFNO1lBQUVDLElBQUk7WUFBRUMsVUFBVTtZQUFFQztVQUFZLENBQUUsS0FBSTtZQUNoRyxNQUFNQyxPQUFPLEdBQUdGLFVBQVUsR0FBR0csY0FBUSxHQUFHQyxXQUFLO1lBQzdDLE9BQ0NDLDRDQUNDQSw2QkFBQ0gsT0FBTztjQUFDSSxLQUFLLEVBQUVSLE1BQU07Y0FBRUMsSUFBSSxFQUFFQSxJQUFJO2NBQUVRLE9BQU8sRUFBRU4sWUFBWSxLQUFLSDtZQUFNLEVBQUksRUFDdkVBLE1BQU0sQ0FDQTtVQUVWLENBQUM7VUFBQ0Y7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDbkJGO1VBQ0E7VUFhTyxNQUFNWSxRQUFRLEdBQTRCLENBQUM7WUFBRUM7VUFBUSxDQUFFLEtBQUk7WUFDakUsTUFBTUMsTUFBTSxHQUFHRCxRQUFRLENBQUNFLE9BQU8sQ0FBQ0MsR0FBRyxDQUFDLENBQUNkLE1BQU0sRUFBRWUsS0FBSyxLQUNqRFIsb0JBQUNSLG1CQUFZO2NBQUNpQixHQUFHLEVBQUVELEtBQUs7Y0FBRWYsTUFBTSxFQUFFQSxNQUFNO2NBQUVDLElBQUksRUFBRVUsUUFBUSxDQUFDQSxRQUFRO2NBQUVULFVBQVUsRUFBRVMsUUFBUSxDQUFDVDtZQUFVLEVBQ2xHLENBQUM7WUFFRixPQUNDSyxpQ0FDQ0EsZ0NBQUtJLFFBQVEsQ0FBQ0EsUUFBUSxDQUFNLEVBQzNCQyxNQUFNLENBQ0Y7VUFFUixDQUFDO1VBQUNkOzs7Ozs7Ozs7Ozs7Ozs7OztVQ3pCRjtVQUNBO1VBS087VUFBVyxNQUFNbUIsSUFBSSxHQUF3QixDQUFDO1lBQUVDO1VBQVMsQ0FBRSxLQUFJO1lBQ3JFLE1BQU1DLFlBQVksR0FBSUMsQ0FBa0IsSUFBSTtjQUMzQ0EsQ0FBQyxDQUFDQyxjQUFjLEVBQUU7Y0FDbEIsTUFBTUMsSUFBSSxHQUFHRixDQUFDLENBQUNHLE1BQXlCO2NBQ3hDLE1BQU1DLFFBQVEsR0FBRyxJQUFJQyxRQUFRLENBQUNILElBQUksQ0FBQztjQUNuQ0ksT0FBTyxDQUFDQyxHQUFHLENBQUNILFFBQVEsQ0FBQyxDQUFDLENBQUM7WUFDeEIsQ0FBQzs7WUFFRCxNQUFNSSxNQUFNLEdBQUdWLFNBQVMsQ0FBQ0osR0FBRyxDQUFDLENBQUNILFFBQVEsRUFBRUksS0FBSyxLQUFLUiw2QkFBQ0csa0JBQVE7Y0FBQ00sR0FBRyxFQUFFRCxLQUFLO2NBQUVKLFFBQVEsRUFBRUE7WUFBUSxFQUFJLENBQUM7WUFFL0YsT0FDQ0o7Y0FBTXNCLFFBQVEsRUFBRVY7WUFBWSxHQUMxQlMsTUFBTSxFQUNQckI7Y0FBUXVCLElBQUksRUFBQztZQUFRLGVBQW1CLENBQ2xDO1VBRVQsQ0FBQztVQUFDaEMiLCJuYW1lcyI6WyJDb250cm9sbGVyIiwiUmVhY3RXaWRnZXRDb250cm9sbGVyIiwiY3JlYXRlU3RvcmUiLCJTdG9yZU1hbmFnZXIiLCJXaWRnZXQiLCJleHBvcnRzIiwiSW5wdXRDb250cm9sIiwib3B0aW9uIiwibmFtZSIsImlzTXVsdGlwbGUiLCJjdXJyZW50VmFsdWUiLCJDb250cm9sIiwiQ2hlY2tCb3giLCJSYWRpbyIsIlJlYWN0IiwidmFsdWUiLCJjaGVja2VkIiwiUXVlc3Rpb24iLCJxdWVzdGlvbiIsImlucHV0cyIsIm9wdGlvbnMiLCJtYXAiLCJpbmRleCIsImtleSIsIlF1aXoiLCJxdWVzdGlvbnMiLCJoYW5kbGVTdWJtaXQiLCJlIiwicHJldmVudERlZmF1bHQiLCJmb3JtIiwidGFyZ2V0IiwiZm9ybURhdGEiLCJGb3JtRGF0YSIsImNvbnNvbGUiLCJsb2ciLCJvdXRwdXQiLCJvblN1Ym1pdCIsInR5cGUiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbInRzL2NvbnRyb2xsZXIudHMiLCJ0cy9zdG9yZS50cyIsInRzL3ZpZXdzL0lucHV0LnRzeCIsInRzL3ZpZXdzL1F1ZXN0aW9uLnRzeCIsInRzL3ZpZXdzL1F1aXpQcm9wcy50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsLG51bGxdfQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,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Q1A3Qiw2QkFBQ2lDLGtCQUFNO2NBQUNDLE9BQU8sRUFBQyxTQUFTO2NBQUNDLElBQUksRUFBQztZQUFRLEdBQ3JDakIsS0FBSyxFQUFFa0IsTUFBTSxDQUNOLENBQ0g7VUFFVCxDQUFDO1VBQUM1QyIsIm5hbWVzIjpbIkNvbnRyb2xsZXIiLCJSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJjcmVhdGVTdG9yZSIsIlN0b3JlTWFuYWdlciIsIldpZGdldCIsImV4cG9ydHMiLCJJbnB1dENvbnRyb2wiLCJvcHRpb24iLCJuYW1lIiwiaXNNdWx0aXBsZSIsIkNvbnRyb2wiLCJDaGVja0JveCIsIlJhZGlvIiwiUmVhY3QiLCJsYWJlbCIsInZhbHVlIiwiUXVlc3Rpb24iLCJxdWVzdGlvbiIsImNvbnNvbGUiLCJsb2ciLCJpbnB1dHMiLCJvcHRpb25zIiwibWFwIiwiaW5kZXgiLCJ0ZXh0IiwicmVwbGFjZSIsImtleSIsImNsYXNzTmFtZSIsIlF1aXoiLCJhc3Nlc3NtZW50cyIsInRleHRzUmVhZHkiLCJ0ZXh0cyIsIm1vZHVsZSIsInNwZWNpZmllciIsImhhbmRsZVN1Ym1pdCIsImUiLCJwcmV2ZW50RGVmYXVsdCIsImZvcm0iLCJ0YXJnZXQiLCJmb3JtRGF0YSIsIkZvcm1EYXRhIiwiU3Bpbm5lciIsIm91dHB1dCIsInF1ZXN0aW9ucyIsIm9uU3VibWl0IiwidGl0bGUiLCJCdXR0b24iLCJ2YXJpYW50IiwidHlwZSIsImZpbmlzaCJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsidHMvY29udHJvbGxlci50cyIsInRzL3N0b3JlLnRzIiwidHMvdmlld3MvSW5wdXQudHN4IiwidHMvdmlld3MvUXVlc3Rpb24udHN4IiwidHMvdmlld3MvUXVpei50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsLG51bGxdfQ==

@@ -95,7 +95,7 @@
   --on-tertiary-container: var(--tertiary-10);
   --surface: var(--neutral-90);
   --surface-dim: var(--neutral-90);
-  --surface-bright: var(--neutral-90);
+  --surface-bright: var(--neutral-80);
   --surface-container-lowest: var(--neutral-100);
   --surface-container-low: var(--neutral-90);
   --surface-container: var(--neutral-90);
@@ -135,7 +135,7 @@
     --on-tertiary: var(--tertiary-20);
     --on-tertiary-container: var(--tertiary-90);
     --surface: var(--neutral-10);
-    --surface-dim: var(--neutral-10);
+    --surface-dim: var(--neutral-20);
     --surface-bright: var(--neutral-24);
     --surface-container-lowest: var(--neutral-4);
     --surface-container-low: var(--neutral-10);
@@ -147,7 +147,7 @@
     --on-surface-variant: var(--neutral-variant-80);
     --inverse-surface: var(--neutral-90);
     --inverse-on-surface: var(--neutral-20);
-    --background: var(--neutral-10);
+    --background: var(--neutral);
     --on-background: var(--neutral-90);
     --error: var(--error-80);
     --error-container: var(--error-30);
@@ -177,7 +177,7 @@ html[data-beyond-mode=light] {
   --on-tertiary-container: var(--tertiary-10);
   --surface: var(--neutral-90);
   --surface-dim: var(--neutral-90);
-  --surface-bright: var(--neutral-90);
+  --surface-bright: var(--neutral-80);
   --surface-container-lowest: var(--neutral-100);
   --surface-container-low: var(--neutral-90);
   --surface-container: var(--neutral-90);
@@ -217,7 +217,7 @@ html[data-beyond-mode=dark] {
   --on-tertiary: var(--tertiary-20);
   --on-tertiary-container: var(--tertiary-90);
   --surface: var(--neutral-10);
-  --surface-dim: var(--neutral-10);
+  --surface-dim: var(--neutral-20);
   --surface-bright: var(--neutral-24);
   --surface-container-lowest: var(--neutral-4);
   --surface-container-low: var(--neutral-10);
@@ -229,7 +229,7 @@ html[data-beyond-mode=dark] {
   --on-surface-variant: var(--neutral-variant-80);
   --inverse-surface: var(--neutral-90);
   --inverse-on-surface: var(--neutral-20);
-  --background: var(--neutral-10);
+  --background: var(--neutral);
   --on-background: var(--neutral-90);
   --error: var(--error-80);
   --error-container: var(--error-30);
