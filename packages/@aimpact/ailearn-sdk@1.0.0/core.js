@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-api@1.0.0/core", "@beyond-js/reactive@1.1.3/entities", "@beyond-js/reactive@1.1.3/model", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/ailearn-app@1.0.0/config", "@aimpact/chat@1.0.1/api", "@beyond-js/kernel@0.1.9/core", "uuid@9.0.0"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-api@1.0.0/core", "@beyond-js/reactive@1.1.4/entities", "@beyond-js/reactive@1.1.4/model", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/ailearn-app@1.0.0/config", "@aimpact/chat@1.0.1/api", "@beyond-js/kernel@0.1.9/core", "uuid@9.0.0"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, bimport, __Bundle, __pkg, ims, GClass, Topic, Lessons, Lesson, Sessions, Session, __beyond_pkg, hmr;
@@ -15,10 +15,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-api@1.0.0/c
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_aimpactAilearnApi100Core) {
       dependency_1 = _aimpactAilearnApi100Core;
-    }, function (_beyondJsReactive113Entities) {
-      dependency_2 = _beyondJsReactive113Entities;
-    }, function (_beyondJsReactive113Model) {
-      dependency_3 = _beyondJsReactive113Model;
+    }, function (_beyondJsReactive114Entities) {
+      dependency_2 = _beyondJsReactive114Entities;
+    }, function (_beyondJsReactive114Model) {
+      dependency_3 = _beyondJsReactive114Model;
     }, function (_aimpactChatSdk100Session) {
       dependency_4 = _aimpactChatSdk100Session;
     }, function (_aimpactAilearnApp100Config) {

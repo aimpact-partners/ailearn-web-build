@@ -110,11 +110,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/ailearn/test"
       }, {
         "name": "reactive-layout",
-        "vspecifier": "@beyond-js/reactive@1.1.3/reactive-layout",
+        "vspecifier": "@beyond-js/reactive@1.1.4/reactive-layout",
         "is": "layout"
       }, {
         "name": "reactive-tests",
-        "vspecifier": "@beyond-js/reactive@1.1.3/tests/tests",
+        "vspecifier": "@beyond-js/reactive@1.1.4/tests/tests",
         "is": "page",
         "route": "/reactive/tests"
       }, {

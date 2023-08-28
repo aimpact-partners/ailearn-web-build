@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/react-18-widgets@1.0.1/base", "@beyond-js/reactive@1.1.3/model", "@aimpact/chat-sdk@1.0.0/core", "@aimpact/chat@1.0.1/wrapper", "react@18.2.0", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context) {
+System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/react-18-widgets@1.0.1/base", "@beyond-js/reactive@1.1.4/model", "@aimpact/chat-sdk@1.0.0/core", "@aimpact/chat@1.0.1/wrapper", "react@18.2.0", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, bimport, __Bundle, __pkg, ims, Controller, __beyond_pkg, hmr;
@@ -10,8 +10,8 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       dependency_1 = _beyondJsKernel019Bundle;
     }, function (_beyondJsReact18Widgets101Base) {
       dependency_2 = _beyondJsReact18Widgets101Base;
-    }, function (_beyondJsReactive113Model) {
-      dependency_3 = _beyondJsReactive113Model;
+    }, function (_beyondJsReactive114Model) {
+      dependency_3 = _beyondJsReactive114Model;
     }, function (_aimpactChatSdk100Core) {
       dependency_4 = _aimpactChatSdk100Core;
     }, function (_aimpactChat101Wrapper) {
