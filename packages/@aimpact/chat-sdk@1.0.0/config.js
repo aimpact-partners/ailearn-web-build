@@ -13,7 +13,12 @@ System.register([], function (_export, _context) {
         },
         "global.css": true,
         "layout": "main-layout",
-        "params": {},
+        "params": {
+          "baseUrl": "http://localhost:4530",
+          "apis": {
+            "chat": "https://chat-api-http-rb5caohzgq-uc.a.run.app"
+          }
+        },
         "ssr": {},
         "backend": {}
       });

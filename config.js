@@ -26,7 +26,7 @@ System.register([], function (_export, _context) {
             "key": "ebe05ca0a4d9aafb4024d0666471a0c7",
             "id": "pNInz6obpgDQGcFmaJgB"
           },
-          "baseUrl": "https://ailearn-test.netlify.app",
+          "baseUrl": "https://app.rvd.aimpact.partners",
           "apis": {
             "ailearn": "https://ailearn-http-v2-6dlchqr2za-uc.a.run.app",
             "chat": "https://chat-api-http-rb5caohzgq-uc.a.run.app"

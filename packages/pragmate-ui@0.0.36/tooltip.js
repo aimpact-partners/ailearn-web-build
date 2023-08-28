@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "tippy.js@6.3.7"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, Tooltip, __beyond_pkg, hmr;
@@ -6,14 +6,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
-    }, function (_beyondJsKernel019Styles) {
-      dependency_1 = _beyondJsKernel019Styles;
-    }, function (_react2) {
-      dependency_2 = _react2;
+    }, function (_react) {
+      dependency_1 = _react;
+    }, function (_tippyJs) {
+      dependency_2 = _tippyJs;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/reactive", "0.0.3"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.7.1"], ["prismjs", "1.29.0"], ["swiper", "8.4.7"], ["@beyond-js/backend", "0.1.8"], ["@types/react", "18.2.15"], ["@types/react-dom", "18.2.7"], ["pragmate-ui", "0.0.36"], ["@aimpact/ailearn-app", "1.0.0"]]);
+        const dependencies = new Map([["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/reactive", "1.1.4"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.1"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.8"], ["@types/react", "18.2.15"], ["@types/react-dom", "18.2.7"], ["pragmate-ui", "0.0.36"], ["@aimpact/ailearn-app", "1.0.0"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -23,44 +23,62 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
         "module": {
           "vspecifier": "pragmate-ui@0.0.36/tooltip"
         },
-        "type": "code"
+        "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2]]);
-      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@0.0.36/tooltip');
+      __pkg.dependencies.update([['react', dependency_1], ['tippy.js', dependency_2]]);
       ims = new Map();
-      /***********************
-      INTERNAL MODULE: ./index
-      ***********************/
-      ims.set('./index', {
-        hash: 4105411953,
+      /********************************
+      INTERNAL MODULE: ./ITippySettings
+      ********************************/
+      ims.set('./ITippySettings', {
+        hash: 3730348027,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.Tooltip = void 0;
-          var _react = require("react");
-          /*bundle*/
-          const Tooltip = ({
-            children,
-            text,
-            position = 'bottom'
-          }) => {
-            const [showTooltip, setShowTooltip] = _react.default.useState(false);
-            const handleMouseEnter = () => setShowTooltip(true);
-            const handleMouseLeave = () => setShowTooltip(false);
-            const cls = `tooltip ${position} ${showTooltip ? 'visible' : ''}`;
-            return _react.default.createElement("div", {
-              className: 'tooltip-container',
-              onMouseLeave: handleMouseLeave,
-              onMouseEnter: handleMouseEnter
-            }, children, _react.default.createElement("div", {
-              className: cls
-            }, text));
-          };
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 1790509570,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
           exports.Tooltip = Tooltip;
+          var React = require("react");
+          var _tippy = require("tippy.js");
+          /*bundle*/
+          function Tooltip({
+            children,
+            content,
+            placement = 'top',
+            settings = {}
+          }) {
+            const ref = React.useRef(null);
+            const placements = ['top', 'top-start', 'top-end', 'right', 'right-start', 'right-end', 'bottom', 'bottom-start', 'bottom-end', 'left', 'left-start', 'left-end', 'auto', 'auto-start', 'auto-end'];
+            if (!placements.includes(placement)) placement = 'top';
+            const specs = {
+              placement,
+              content
+            };
+            React.useEffect(() => {
+              (0, _tippy.default)(ref.current, specs);
+            }, []);
+            return React.createElement("span", {
+              ref: ref,
+              className: 'pragmate-tooltip'
+            }, children);
+          }
         }
       });
       __pkg.exports.descriptor = [{
@@ -85,4 +103,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBUU87VUFBVyxNQUFNQSxPQUFPLEdBQUcsQ0FBQztZQUFFQyxRQUFRO1lBQUVDLElBQUk7WUFBRUMsUUFBUSxHQUFHO1VBQVEsQ0FBaUIsS0FBSTtZQUM1RixNQUFNLENBQUNDLFdBQVcsRUFBRUMsY0FBYyxDQUFDLEdBQUdDLGNBQUssQ0FBQ0MsUUFBUSxDQUFDLEtBQUssQ0FBQztZQUUzRCxNQUFNQyxnQkFBZ0IsR0FBRyxNQUFNSCxjQUFjLENBQUMsSUFBSSxDQUFDO1lBQ25ELE1BQU1JLGdCQUFnQixHQUFHLE1BQU1KLGNBQWMsQ0FBQyxLQUFLLENBQUM7WUFDcEQsTUFBTUssR0FBRyxHQUFHLFdBQVdQLFFBQVEsSUFBSUMsV0FBVyxHQUFHLFNBQVMsR0FBRyxFQUFFLEVBQUU7WUFFakUsT0FDQ0U7Y0FBS0ssU0FBUyxFQUFDLG1CQUFtQjtjQUFDQyxZQUFZLEVBQUVILGdCQUFnQjtjQUFFSSxZQUFZLEVBQUVMO1lBQWdCLEdBSy9GUCxRQUFRLEVBQ1RLO2NBQUtLLFNBQVMsRUFBRUQ7WUFBRyxHQUFHUixJQUFJLENBQU8sQ0FDNUI7VUFFUixDQUFDO1VBQUNZIiwibmFtZXMiOlsiVG9vbHRpcCIsImNoaWxkcmVuIiwidGV4dCIsInBvc2l0aW9uIiwic2hvd1Rvb2x0aXAiLCJzZXRTaG93VG9vbHRpcCIsIlJlYWN0IiwidXNlU3RhdGUiLCJoYW5kbGVNb3VzZUVudGVyIiwiaGFuZGxlTW91c2VMZWF2ZSIsImNscyIsImNsYXNzTmFtZSIsIm9uTW91c2VMZWF2ZSIsIm9uTW91c2VFbnRlciIsImV4cG9ydHMiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbImNvZGUvdHMvaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUE7O1VBRUFBO1lBQ0FDO1VBQ0E7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDSkE7VUFDQTtVQVFPO1VBQVUsU0FBVUMsT0FBTyxDQUFDO1lBQUVDLFFBQVE7WUFBRUMsT0FBTztZQUFFQyxTQUFTLEdBQUcsS0FBSztZQUFFQyxRQUFRLEdBQUc7VUFBRSxDQUFVO1lBQ2pHLE1BQU1DLEdBQUcsR0FBR0MsS0FBSyxDQUFDQyxNQUFNLENBQUMsSUFBSSxDQUFDO1lBQzlCLE1BQU1DLFVBQVUsR0FBYSxDQUM1QixLQUFLLEVBQ0wsV0FBVyxFQUNYLFNBQVMsRUFDVCxPQUFPLEVBQ1AsYUFBYSxFQUNiLFdBQVcsRUFDWCxRQUFRLEVBQ1IsY0FBYyxFQUNkLFlBQVksRUFDWixNQUFNLEVBQ04sWUFBWSxFQUNaLFVBQVUsRUFDVixNQUFNLEVBQ04sWUFBWSxFQUNaLFVBQVUsQ0FDVjtZQUVELElBQUksQ0FBQ0EsVUFBVSxDQUFDQyxRQUFRLENBQUNOLFNBQVMsQ0FBQyxFQUFFQSxTQUFTLEdBQUcsS0FBSztZQUN0RCxNQUFNTyxLQUFLLEdBQW1CO2NBQUVQLFNBQVM7Y0FBRUQ7WUFBTyxDQUFFO1lBQ3BESSxLQUFLLENBQUNLLFNBQVMsQ0FBQyxNQUFLO2NBQ3BCLGtCQUFLLEVBQUNOLEdBQUcsQ0FBQ08sT0FBTyxFQUFFRixLQUFLLENBQUM7WUFDMUIsQ0FBQyxFQUFFLEVBQUUsQ0FBQztZQUVOLE9BQ0NKO2NBQU1ELEdBQUcsRUFBRUEsR0FBRztjQUFFUSxTQUFTLEVBQUM7WUFBa0IsR0FDMUNaLFFBQVEsQ0FDSDtVQUVUIiwibmFtZXMiOlsiT2JqZWN0IiwidmFsdWUiLCJUb29sdGlwIiwiY2hpbGRyZW4iLCJjb250ZW50IiwicGxhY2VtZW50Iiwic2V0dGluZ3MiLCJyZWYiLCJSZWFjdCIsInVzZVJlZiIsInBsYWNlbWVudHMiLCJpbmNsdWRlcyIsInNwZWNzIiwidXNlRWZmZWN0IiwiY3VycmVudCIsImNsYXNzTmFtZSJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsiSVRpcHB5U2V0dGluZ3MudHMiLCJpbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGxdfQ==
