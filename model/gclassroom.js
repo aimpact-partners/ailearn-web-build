@@ -38,7 +38,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat@1.0.1/api", "@
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 3567588783,
+        hash: 3881436773,
         creator: function (require, exports) {
           "use strict";
 
