@@ -1,0 +1,28 @@
+.page__container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.palette-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0rem;
+  padding: 1rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+}
+.palette-container .pragmate-tooltip:nth-child(n+8) {
+  color: #000;
+}
+.palette-container .palette__color-container {
+  padding: 1rem;
+  font-size: 0.75rem;
+  aspect-ratio: 1/1;
+  display: grid;
+  padding: 0;
+  place-items: center;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTs7O0FBRUQ7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHQztFQUNDOztBQUdGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBIiwiZmlsZSI6IiJ9 */
