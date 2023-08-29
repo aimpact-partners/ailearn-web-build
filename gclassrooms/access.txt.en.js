@@ -29,11 +29,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2427358784,
+        hash: 4233625998,
         creator: function (require, exports) {
           exports.txt = {
-            "title": "Welcome to the world of the future",
-            "subtitle": "The access was given successfully",
+            "title": "We are ready to take off!",
+            "subtitle": "The configuration was done successfully",
             "error": "The page you are looking for does not exist"
           };
         }

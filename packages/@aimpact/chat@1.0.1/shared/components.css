@@ -87,12 +87,12 @@
   width: 100%;
 }
 .input-wrapper input {
-  border: 1px solid var(--color-gray-40);
+  border: 1px solid var(--surface-variant);
   outline: none;
   width: 100%;
-  background-color: var(--surface);
+  background-color: var(--surface-variant);
   color: var(--text-color);
-  border-radius: var(--border-radius-sm);
+  border-radius: var(--border-radius-base);
   padding: 0.75rem;
 }
 .input-wrapper input:focus ~ label, .input-wrapper input:valid ~ label {
