@@ -124,14 +124,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/components/coming-soon"
       }, {
         "name": "pui-template-palette-page",
-        "vspecifier": "pragmate-ui@0.0.36/template/generator.widget",
-        "is": "page",
-        "route": "/pui/palette/generator"
-      }, {
-        "name": "pui-template-palette-page",
         "vspecifier": "pragmate-ui@0.0.36/template/palette.widget",
         "is": "page",
-        "route": "/pui/palette"
+        "route": "/pui/palette/view"
       }, {
         "name": "ailearn-assessment-oral",
         "vspecifier": "@aimpact/ailearn-app@1.0.0/assessments/oral.widget"
@@ -150,7 +145,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "page",
         "route": "/gclassroom/permissions"
       }, {
-        "name": "main-layout",
+        "name": "ailearn-layout",
         "vspecifier": "@aimpact/ailearn-app@1.0.0/layout/main",
         "is": "layout"
       }, {
@@ -207,7 +202,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *************************************/
 
         ims.set('./handlers/gclassroom', {
-          hash: 2554059583,
+          hash: 186397415,
           creator: function (require, exports) {
             "use strict";
 
@@ -218,7 +213,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             var _gclassroom = require("@aimpact/ailearn-app/model/gclassroom");
             async function isGclassroomAuthorized(pathname) {
               await _gclassroom.gclassroom.isReady;
-              if (pathname === '/gclassroom/access') return true;
+              if (pathname === '/gclassroom/access' && !_gclassroom.gclassroom.authorized) return true;
               if (!_gclassroom.gclassroom.authorized) return {
                 pathname: '/gclassroom/permissions'
               };

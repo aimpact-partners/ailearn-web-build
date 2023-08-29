@@ -29,15 +29,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3250464114,
+        hash: 3506828136,
         creator: function (require, exports) {
           exports.txt = {
-            "title": "¡Por favor! Danos acceso a Google Classroom",
-            "ERROR_GETTING_URL": "Error obteniendo url, por favor inténtalo de nuevo más tarde",
-            "unauthorized": {
-              "text": "Necesitas dar acceso a google classroom para ver esta sección. Por favor, haz click en el botón de abajo para dar acceso.",
-              "action": "Dar acceso"
-            }
+            "title": "Welcome to RVD.AI",
+            "subtitle": "La nueva forma de enseñar y aprender con Inteligencia artificial",
+            "instructions": "Para comenzar, vincula tu usuario con tu cuenta de Google Classroom",
+            "error": "¡Algo salió mal! Por favor contacta al administrador",
+            "action": "Vincular ahora",
+            "ERROR_GETTING_URL": "Error al obtener la URL de Classroom"
           };
         }
       });

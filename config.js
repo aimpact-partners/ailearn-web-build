@@ -12,7 +12,7 @@ System.register([], function (_export, _context) {
           "supported": ["en", "es"]
         },
         "global.css": true,
-        "layout": "main-layout",
+        "layout": "ailearn-layout",
         "params": {
           "config": {
             "system": true

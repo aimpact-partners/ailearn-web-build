@@ -32,7 +32,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       ;
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/base', dependency_3], ['react', dependency_4]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
-        "name": "main-layout",
+        "name": "ailearn-layout",
         "vspecifier": "@aimpact/ailearn-app@1.0.0/layout/main",
         "is": "layout"
       }]);
