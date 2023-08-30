@@ -490,12 +490,12 @@ a {
 }
 @media (max-width: 1920px) {
   h1 {
-    font-size: 36px;
+    font-size: 26px;
   }
 }
 @media (max-width: 1370px) {
   h1 {
-    font-size: 36px;
+    font-size: 26px;
   }
 }
 
@@ -642,14 +642,6 @@ option {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: 400;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-h4 {
-  font-size: 20px;
 }
 
 h1,
