@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3625038179,
+        hash: 3413155483,
         creator: function (require, exports) {
           exports.txt = {
             "gclassrooms": {
@@ -54,7 +54,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "title": "Topics list",
               "description": "Add the list of points to review as objetives in your workclass.",
               "elements": {
-                "content": "Contenido",
+                "content": "Content",
                 "introduction": "Introduction",
                 "synthesis": "Synthesis",
                 "previous": "Previous Assessments",
