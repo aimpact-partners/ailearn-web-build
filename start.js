@@ -124,6 +124,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/components/coming-soon"
       }, {
         "name": "pui-template-palette-page",
+        "vspecifier": "pragmate-ui@0.0.36/template/generator.widget",
+        "is": "page",
+        "route": "/pui/palette/generator"
+      }, {
+        "name": "pui-template-palette-page",
         "vspecifier": "pragmate-ui@0.0.36/template/palette.widget",
         "is": "page",
         "route": "/pui/palette/view"

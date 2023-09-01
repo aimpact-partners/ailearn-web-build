@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3470511782,
+        hash: 1266799730,
         creator: function (require, exports) {
           exports.txt = {
             "elements": {
@@ -48,7 +48,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "assessments": {
               "quiz": "Evaluación",
-              "oral": "Oral"
+              "oral": "Oral",
+              "oralText": "%1, graba un audio donde resumas y comentes el contenido estudiado. Destaca los conceptos clave, usa un lenguaje adecuado y ofrece tu opinión personal. Mantén un orden lógico y fidelidad a los hechos del texto original.",
+              "record": "Grabar",
+              "recordAgain": "Volver a grabar",
+              "stop": "Detener",
+              "send": "Enviar audio",
+              "redo": "¡Volver a intentar!",
+              "analysisTitle": "Resultado del análisis",
+              "analysis": "Analysis",
+              "feedback": "Feedback"
             },
             "synthesis": "Puntos principales que trabajaremos durante la clase son:"
           };

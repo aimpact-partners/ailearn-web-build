@@ -1,8 +1,8 @@
 System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
-  _export("txt", void 0);
+  var dependency_0, bimport, __Bundle, __pkg, ims, ICONS, __beyond_pkg, hmr;
+  _export("ICONS", void 0);
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
@@ -17,56 +17,43 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@1.0.0/session-intro",
-          "multibundle": true
+          "vspecifier": "@aimpact/ailearn-app@1.0.0/components/icons"
         },
-        "type": "txt"
-      }, _context.meta.url).package('en');
+        "type": "ts"
+      }, _context.meta.url).package();
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
-      /*********************
-      INTERNAL MODULE: ./txt
-      *********************/
-      ims.set('./txt', {
-        hash: 1471674204,
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 2866026352,
         creator: function (require, exports) {
-          exports.txt = {
-            "elements": {
-              "synthesis": "Synthesis",
-              "content": "Content",
-              "intro": "Introduction",
-              "assessment": "Assessment"
-            },
-            "assessments": {
-              "quiz": "Assessment",
-              "oral": "Oral",
-              "oralText": "%1, record an audio where you summarize and comment on the content studied. Highlight the key concepts, use appropriate language and offer your personal opinion. Keep a logical order and fidelity to the facts of the original text.",
-              "record": "Record",
-              "recordAgain": "Record again",
-              "stop": "Stop",
-              "send": "Send audio",
-              "redo": "Do it again!",
-              "analysisTitle": "Analysis Result",
-              "analysis": "Analysis",
-              "feedback": "Feedback"
-            },
-            "header": {
-              "title": "Objectives",
-              "introduction": "Introduction"
-            },
-            "intro": {
-              "hello": "Hi",
-              "message": "the topic that we will see deals with the following"
-            },
-            "synthesis": "Main topics we will work during the class are:"
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ICONS = void 0;
+          const /*bundle*/ICONS = {
+            faces: {
+              outstanding: '🤩',
+              'very good': '😁',
+              good: '😀',
+              bad: '😡',
+              regular: '😐',
+              indifferent: '😑',
+              inappropriate: '🤢'
+            }
           };
+          exports.ICONS = ICONS;
         }
       });
       __pkg.exports.descriptor = [{
-        "im": "./txt",
-        "from": "txt",
-        "name": "txt"
+        "im": "./index",
+        "from": "ICONS",
+        "name": "ICONS"
       }];
       // Module exports
       __pkg.exports.process = function ({
@@ -74,7 +61,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
         prop,
         value
       }) {
-        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+        (require || prop === 'ICONS') && _export("ICONS", ICONS = require ? require('./index').ICONS : value);
       };
       _export("__beyond_pkg", __beyond_pkg = __pkg);
       _export("hmr", hmr = new function () {
@@ -85,3 +72,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }
   };
 });
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBTyxNQUFNLFVBQVdBLEtBQUssR0FBRztZQUM5QkMsS0FBSyxFQUFFO2NBQ05DLFdBQVcsRUFBRSxJQUFJO2NBQ2pCLFdBQVcsRUFBRSxJQUFJO2NBQ2pCQyxJQUFJLEVBQUUsSUFBSTtjQUNWQyxHQUFHLEVBQUUsSUFBSTtjQUNUQyxPQUFPLEVBQUUsSUFBSTtjQUNiQyxXQUFXLEVBQUUsSUFBSTtjQUNqQkMsYUFBYSxFQUFFOztXQUVoQjtVQUFDQyIsIm5hbWVzIjpbIklDT05TIiwiZmFjZXMiLCJvdXRzdGFuZGluZyIsImdvb2QiLCJiYWQiLCJyZWd1bGFyIiwiaW5kaWZmZXJlbnQiLCJpbmFwcHJvcHJpYXRlIiwiZXhwb3J0cyJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsiaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXX0=

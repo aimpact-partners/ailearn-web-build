@@ -1,11 +1,12 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-app@1.0.0/config"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
-  _export("txt", void 0);
+  var dependency_0, dependency_1, bimport, __Bundle, __pkg, ims, __beyond_pkg, hmr;
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
+    }, function (_aimpactAilearnApp100Config) {
+      dependency_1 = _aimpactAilearnApp100Config;
     }],
     execute: function () {
       bimport = specifier => {
@@ -17,39 +18,32 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@1.0.0/assessments/form",
-          "multibundle": true
+          "vspecifier": "@aimpact/ailearn-app@1.0.0/import-test"
         },
-        "type": "txt"
-      }, _context.meta.url).package('en');
+        "type": "ts"
+      }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([]);
+      __pkg.dependencies.update([['@aimpact/ailearn-app/config', dependency_1]]);
       ims = new Map();
-      /*********************
-      INTERNAL MODULE: ./txt
-      *********************/
-      ims.set('./txt', {
-        hash: 2584658875,
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 1701915390,
         creator: function (require, exports) {
-          exports.txt = {
-            "header": "Titulo de encabezado",
-            "finish": "Finish"
-          };
+          "use strict";
+
+          var _config = require("@aimpact/ailearn-app/config");
+          console.log('hello world', _config.default);
         }
       });
-      __pkg.exports.descriptor = [{
-        "im": "./txt",
-        "from": "txt",
-        "name": "txt"
-      }];
+
       // Module exports
       __pkg.exports.process = function ({
         require,
         prop,
         value
-      }) {
-        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
-      };
+      }) {};
       _export("__beyond_pkg", __beyond_pkg = __pkg);
       _export("hmr", hmr = new function () {
         this.on = (event, listener) => __pkg.hmr.on(event, listener);
@@ -59,3 +53,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }
   };
 });
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTtVQUVBQSxPQUFPLENBQUNDLEdBQUcsQ0FBQyxhQUFhLEVBQUVDLGVBQU0sQ0FBQyIsIm5hbWVzIjpbImNvbnNvbGUiLCJsb2ciLCJjb25maWciXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbImluZGV4LnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19

@@ -15,7 +15,7 @@ System.register([], function (_export, _context) {
         "layout": "default-layout",
         "params": {
           "config": {
-            "system": true
+            "system": false
           },
           "container": "file",
           "project": "ailearn-estrada",
