@@ -8,8 +8,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_beyondJsKernel019Styles) {
       dependency_1 = _beyondJsKernel019Styles;
-    }, function (_react) {
-      dependency_2 = _react;
+    }, function (_react2) {
+      dependency_2 = _react2;
     }, function (_pragmateUi0036Icons) {
       dependency_3 = _pragmateUi0036Icons;
     }, function (_pragmateUi0036Components) {
@@ -37,7 +37,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 959579523,
+        hash: 4250856443,
         creator: function (require, exports) {
           "use strict";
 
@@ -45,20 +45,20 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
             value: true
           });
           exports.Dialog = void 0;
-          var React = require("react");
+          var _react = require("react");
           var _icons = require("pragmate-ui/icons");
           const {
             forwardRef
-          } = React;
+          } = _react.default;
           /*bundle */
           const Dialog = forwardRef(function Dialog({
             children,
             closable,
             onClose
           }, ref) {
-            return React.createElement("dialog", {
+            return _react.default.createElement("dialog", {
               ref: ref
-            }, closable && React.createElement(_icons.IconButton, {
+            }, closable && _react.default.createElement(_icons.IconButton, {
               icon: 'close',
               className: 'close',
               onClick: onClose
@@ -89,4 +89,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTtVQUNBO1VBRUEsTUFBTTtZQUFFQTtVQUFVLENBQUUsR0FBR0MsS0FBSztVQU9yQjtVQUFZLE1BQU1DLE1BQU0sR0FBR0YsVUFBVSxDQUFDLFNBQVNFLE1BQU0sQ0FDM0Q7WUFBRUMsUUFBUTtZQUFFQyxRQUFRO1lBQUVDO1VBQU8sQ0FBVSxFQUN2Q0MsR0FBaUM7WUFFakMsT0FDQ0w7Y0FBUUssR0FBRyxFQUFFQTtZQUFHLEdBQ2RGLFFBQVEsSUFBSUgsb0JBQUNNLGlCQUFVO2NBQUNDLElBQUksRUFBQyxPQUFPO2NBQUNDLFNBQVMsRUFBQyxPQUFPO2NBQUNDLE9BQU8sRUFBRUw7WUFBTyxFQUFJLEVBQzNFRixRQUFRLENBQ0Q7VUFFWCxDQUFDLENBQUM7VUFBQ1EiLCJuYW1lcyI6WyJmb3J3YXJkUmVmIiwiUmVhY3QiLCJEaWFsb2ciLCJjaGlsZHJlbiIsImNsb3NhYmxlIiwib25DbG9zZSIsInJlZiIsIkljb25CdXR0b24iLCJpY29uIiwiY2xhc3NOYW1lIiwib25DbGljayIsImV4cG9ydHMiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbImNvZGUvdHMvaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTtVQUNBO1VBRUEsTUFBTTtZQUFFQTtVQUFVLENBQUUsR0FBR0MsY0FBSztVQU9yQjtVQUFZLE1BQU1DLE1BQU0sR0FBR0YsVUFBVSxDQUFDLFNBQVNFLE1BQU0sQ0FDM0Q7WUFBRUMsUUFBUTtZQUFFQyxRQUFRO1lBQUVDO1VBQU8sQ0FBVSxFQUN2Q0MsR0FBaUM7WUFFakMsT0FDQ0w7Y0FBUUssR0FBRyxFQUFFQTtZQUFHLEdBQ2RGLFFBQVEsSUFBSUgsNkJBQUNNLGlCQUFVO2NBQUNDLElBQUksRUFBQyxPQUFPO2NBQUNDLFNBQVMsRUFBQyxPQUFPO2NBQUNDLE9BQU8sRUFBRUw7WUFBTyxFQUFJLEVBQzNFRixRQUFRLENBQ0Q7VUFFWCxDQUFDLENBQUM7VUFBQ1EiLCJuYW1lcyI6WyJmb3J3YXJkUmVmIiwiUmVhY3QiLCJEaWFsb2ciLCJjaGlsZHJlbiIsImNsb3NhYmxlIiwib25DbG9zZSIsInJlZiIsIkljb25CdXR0b24iLCJpY29uIiwiY2xhc3NOYW1lIiwib25DbGljayIsImV4cG9ydHMiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbImNvZGUvdHMvaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19

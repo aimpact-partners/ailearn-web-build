@@ -333,7 +333,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.0.0/user
       ***********************/
 
       ims.set('./token', {
-        hash: 3689364598,
+        hash: 467389159,
         creator: function (require, exports) {
           "use strict";
 
