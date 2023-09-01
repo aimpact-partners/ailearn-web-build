@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1266799730,
+        hash: 2127785305,
         creator: function (require, exports) {
           exports.txt = {
             "elements": {
@@ -57,7 +57,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "redo": "¡Volver a intentar!",
               "analysisTitle": "Resultado del análisis",
               "analysis": "Analysis",
-              "feedback": "Feedback"
+              "feedback": "Feedback",
+              "competencies": "Competencias",
+              "processMessages": ["Estamos procesando el audio", "Ahora estamos Transcribiendo el texto", "Evaluando la comprensión lectora", "Analizando la coherencia y cohesión", "Evaluando síntesis y parafrasis", "¿Que tal estuvo el vocabulario?", "Escudriñando el pensamiento critico"]
             },
             "synthesis": "Puntos principales que trabajaremos durante la clase son:"
           };

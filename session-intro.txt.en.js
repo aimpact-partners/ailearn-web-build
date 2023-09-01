@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1471674204,
+        hash: 2655558559,
         creator: function (require, exports) {
           exports.txt = {
             "elements": {
@@ -49,7 +49,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "redo": "Do it again!",
               "analysisTitle": "Analysis Result",
               "analysis": "Analysis",
-              "feedback": "Feedback"
+              "feedback": "Feedback",
+              "competencies": "Competencias",
+              "processMessages": ["We are processing the audio", "Now we are Transcribing the text", "Evaluating reading comprehension", "Analyzing coherence and cohesion", "Evaluating synthesis and paraphrasing", "How was the vocabulary?", "Scrutinizing critical thinking"]
             },
             "header": {
               "title": "Objectives",
