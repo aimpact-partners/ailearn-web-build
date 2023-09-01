@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1471674204,
+        hash: 2965800708,
         creator: function (require, exports) {
           exports.txt = {
             "elements": {
@@ -48,8 +48,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "send": "Send audio",
               "redo": "Do it again!",
               "analysisTitle": "Analysis Result",
-              "analysis": "Analysis",
-              "feedback": "Feedback"
+              "analysis": "Report",
+              "feedback": "Knowledge",
+              "competencies": "Competences",
+              "processMessages": ["We are processing the audio", "Transcribing the text", "Evaluating reading comprehension and content", "Analyzing coherence and cohesion", "Evaluating synthesis and paraphrasing", "Evaluating use of vocabulary", "Analyzing critical thinking"]
             },
             "header": {
               "title": "Objectives",
