@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3511769223,
+        hash: 3389143646,
         creator: function (require, exports) {
           exports.txt = {
             "gclassrooms": {
@@ -49,8 +49,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "lesson": {
               "step": "Introducción",
               "elements": {
-                "introduction": "Introducción",
                 "content": "Contenido",
+                "introduction": "Introducción",
                 "synthesis": "Síntesis",
                 "assessment": "Evaluación"
               }
@@ -64,8 +64,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "title": "Temas",
               "description": "Agrega la lista de puntos a repasar como objetivos en el trabajo de clase.",
               "elements": {
-                "introduction": "Introducción",
                 "content": "Contenido",
+                "introduction": "Introducción",
                 "synthesis": "Síntesis",
                 "assessment": "Evaluación",
                 "previous": "Evaluación Previa"
