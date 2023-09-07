@@ -40,7 +40,7 @@
   transition: all 0.3s ease;
 }
 .list__item:hover {
-  background: var(--surface-accent);
+  background: var(--surface-container-lowest);
 }
 .list__item .class-actions {
   margin-left: auto;

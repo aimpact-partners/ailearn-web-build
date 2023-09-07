@@ -484,6 +484,11 @@ a {
 .flex-container.flex-column {
   flex-direction: column;
 }
+.flex-container.flex-center {
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 .mb-30 {
   margin-bottom: 2rem;
