@@ -489,6 +489,9 @@ a {
   align-items: center;
   gap: 0.5rem;
 }
+.flex-container.flex-end {
+  justify-content: flex-end;
+}
 
 .mb-30 {
   margin-bottom: 2rem;
