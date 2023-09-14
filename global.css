@@ -373,31 +373,6 @@ option {
   padding: 0;
   align-items: center;
 }
-.list__item .list__item__header header {
-  gap: 1rem;
-  text-overflow: ellipsis ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  flex-grow: 0;
-  min-height: 45px;
-  display: flex;
-  align-items: center;
-}
-.list__item .list__item__header header h4 {
-  display: flex;
-  gap: 0.5rem;
-}
-.list__item .list__item__header header:hover svg {
-  fill: var(--link-hover-color);
-}
-.list__item .list__item__header header,
-.list__item .list__item__header header h4 {
-  width: 100%;
-  flex-grow: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: "...";
-}
 .list__item .list__item__header .actions {
   justify-content: end;
   align-items: end;
@@ -483,6 +458,14 @@ a {
 }
 .flex-container.flex-column {
   flex-direction: column;
+}
+.flex-container.flex-center {
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.flex-container.flex-end {
+  justify-content: flex-end;
 }
 
 .mb-30 {

@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3413155483,
+        hash: 2430864594,
         creator: function (require, exports) {
           exports.txt = {
             "gclassrooms": {
@@ -40,6 +40,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "copied": "Link copied to clipboard"
             },
             "title": "Classwork",
+            "totalLegend": "Elements generated",
+            "lessonUpdated": "Lesson elements updated",
+            "topicUpdated": "topic %1 updated",
             "lesson": {
               "step": "Introduction",
               "elements": {

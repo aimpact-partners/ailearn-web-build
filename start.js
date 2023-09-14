@@ -54,6 +54,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "name": "chat-explorer-view",
         "vspecifier": "@aimpact/chat@1.0.1/conversations/explorer.widget"
       }, {
+        "name": "chat-documents-access",
+        "vspecifier": "@aimpact/chat@1.0.1/documents/access.widget",
+        "is": "page",
+        "route": "/documents/access",
+        "layout": "auth-layout"
+      }, {
+        "name": "app-documents-page",
+        "vspecifier": "@aimpact/chat@1.0.1/pages/documents.widget",
+        "is": "page",
+        "route": "/documents",
+        "layout": "chat-layout"
+      }, {
         "name": "auth-layout",
         "vspecifier": "@aimpact/chat@1.0.1/auth-layout",
         "is": "layout"
@@ -77,18 +89,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "page",
         "route": "/auth/register",
         "layout": "auth-layout"
-      }, {
-        "name": "app-documents-access",
-        "vspecifier": "@aimpact/chat@1.0.1/documents/access.widget",
-        "is": "page",
-        "route": "/documents/access",
-        "layout": "auth-layout"
-      }, {
-        "name": "app-documents-page",
-        "vspecifier": "@aimpact/chat@1.0.1/pages/documents.widget",
-        "is": "page",
-        "route": "/documents",
-        "layout": "chat-layout"
       }, {
         "name": "ailearn-home-page",
         "vspecifier": "@aimpact/chat@1.0.1/home.widget",

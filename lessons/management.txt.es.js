@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3511769223,
+        hash: 3238926984,
         creator: function (require, exports) {
           exports.txt = {
             "gclassrooms": {
@@ -40,6 +40,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "copied": "Link copiado al portapapeles"
             },
             "title": "Trabajo de clase",
+            "totalLegend": "Elementos generados",
+            "topicUpdated": "Tópico %1 actualizado",
+            "lessonUpdated": "Actualizados elementos de la lección",
             "assessmentReview": "¡Prepárate para Inspirar! Revisa esta evaluación cuidadosamente diseñada para asegurar que se alinee con tus objetivos educativos. Tu herramienta para moldear las mentes del mañana te espera.",
             "elements": {
               "content": "Contenido",
@@ -49,8 +52,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "lesson": {
               "step": "Introducción",
               "elements": {
-                "introduction": "Introducción",
                 "content": "Contenido",
+                "introduction": "Introducción",
                 "synthesis": "Síntesis",
                 "assessment": "Evaluación"
               }
@@ -64,8 +67,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "title": "Temas",
               "description": "Agrega la lista de puntos a repasar como objetivos en el trabajo de clase.",
               "elements": {
-                "introduction": "Introducción",
                 "content": "Contenido",
+                "introduction": "Introducción",
                 "synthesis": "Síntesis",
                 "assessment": "Evaluación",
                 "previous": "Evaluación Previa"
