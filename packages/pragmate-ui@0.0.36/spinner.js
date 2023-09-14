@@ -34,7 +34,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "@beyond-js/k
       INTERNAL MODULE: ./spinner
       *************************/
       ims.set('./spinner', {
-        hash: 3687874229,
+        hash: 1783514820,
         creator: function (require, exports) {
           "use strict";
 
@@ -52,22 +52,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "@beyond-js/k
               type,
               active
             } = props;
-            const types = ["on-primary", "on-secondary", "on-surface", "on-error", "primary", "secondary", "tertiary"];
-            const clsType = types.includes(type) ? type : "primary";
+            const types = ['on-primary', 'on-secondary', 'on-surface', 'on-error', 'primary', 'secondary', 'tertiary'];
+            const clsType = types.includes(type) ? type : 'primary';
             const style = {};
             if (color) style.stroke = color;
-            className = `${clsType}${className ? ` ${className}` : ""}`;
-            let cls = className ? `${className} pragmate-element-spinner` : "pragmate-element-spinner";
-            if (active) cls += " is-active";
-            const circleSize = size === "xs" ? 30 : size === "md" ? 40 : size === "lg" ? 50 : size === "xl" ? 60 : 30;
+            className = `${clsType}${className ? ` ${className}` : ''}`;
+            let cls = className ? `${className} pragmate-element-spinner` : 'pragmate-element-spinner';
+            if (active) cls += ' is-active';
+            const circleSize = size === 'xs' ? 30 : size === 'md' ? 40 : size === 'lg' ? 50 : size === 'xl' ? 60 : 30;
             return _react.default.createElement("div", {
               className: cls,
               ref: ref
             }, _react.default.createElement("svg", {
-              viewBox: "0 0 100 100"
+              viewBox: '0 0 100 100'
             }, _react.default.createElement("circle", {
-              cx: "50",
-              cy: "50",
+              cx: '50',
+              cy: '50',
               r: circleSize,
               style: style
             })));
@@ -97,4 +97,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "@beyond-js/k
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTtVQWFPO1VBQ1AsTUFBTUEsT0FBTyxHQUNYLHFCQUFVLEVBQ1IsQ0FBQ0MsS0FBaUIsRUFBRUMsR0FBOEIsS0FBaUI7WUFDakUsSUFBSTtjQUFFQyxLQUFLO2NBQUVDLFNBQVM7Y0FBRUMsSUFBSTtjQUFFQyxJQUFJO2NBQUVDO1lBQU0sQ0FBRSxHQUFHTixLQUFLO1lBRXBELE1BQU1PLEtBQUssR0FBRyxDQUNaLFlBQVksRUFDWixjQUFjLEVBQ2QsWUFBWSxFQUNaLFVBQVUsRUFDVixTQUFTLEVBQ1QsV0FBVyxFQUNYLFVBQVUsQ0FDWDtZQUNELE1BQU1DLE9BQU8sR0FBR0QsS0FBSyxDQUFDRSxRQUFRLENBQUNKLElBQUksQ0FBQyxHQUFHQSxJQUFJLEdBQUcsU0FBUztZQUV2RCxNQUFNSyxLQUFLLEdBQXdCLEVBQUU7WUFDckMsSUFBSVIsS0FBSyxFQUFFUSxLQUFLLENBQUNDLE1BQU0sR0FBR1QsS0FBSztZQUMvQkMsU0FBUyxHQUFHLEdBQUdLLE9BQU8sR0FBR0wsU0FBUyxHQUFHLElBQUlBLFNBQVMsRUFBRSxHQUFHLEVBQUUsRUFBRTtZQUMzRCxJQUFJUyxHQUFHLEdBQVdULFNBQVMsR0FDdkIsR0FBR0EsU0FBUywyQkFBMkIsR0FDdkMsMEJBQTBCO1lBQzlCLElBQUlHLE1BQU0sRUFBRU0sR0FBRyxJQUFJLFlBQVk7WUFFL0IsTUFBTUMsVUFBVSxHQUNkVCxJQUFJLEtBQUssSUFBSSxHQUNULEVBQUUsR0FDRkEsSUFBSSxLQUFLLElBQUksR0FDYixFQUFFLEdBQ0ZBLElBQUksS0FBSyxJQUFJLEdBQ2IsRUFBRSxHQUNGQSxJQUFJLEtBQUssSUFBSSxHQUNiLEVBQUUsR0FDRixFQUFFO1lBRVIsT0FDRVU7Y0FBS1gsU0FBUyxFQUFFUyxHQUFHO2NBQUVYLEdBQUcsRUFBRUE7WUFBRyxHQUMzQmE7Y0FBS0MsT0FBTyxFQUFDO1lBQWEsR0FDeEJEO2NBQVFFLEVBQUUsRUFBQyxJQUFJO2NBQUNDLEVBQUUsRUFBQyxJQUFJO2NBQUNDLENBQUMsRUFBRUwsVUFBVTtjQUFFSCxLQUFLLEVBQUVBO1lBQUssRUFBSSxDQUNuRCxDQUNGO1VBRVYsQ0FBQyxDQUNGO1VBQUNTIiwibmFtZXMiOlsiU3Bpbm5lciIsInByb3BzIiwicmVmIiwiY29sb3IiLCJjbGFzc05hbWUiLCJzaXplIiwidHlwZSIsImFjdGl2ZSIsInR5cGVzIiwiY2xzVHlwZSIsImluY2x1ZGVzIiwic3R5bGUiLCJzdHJva2UiLCJjbHMiLCJjaXJjbGVTaXplIiwiUmVhY3QiLCJ2aWV3Qm94IiwiY3giLCJjeSIsInIiLCJleHBvcnRzIl0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJjb2RlL3RzL3NwaW5uZXIudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTtVQVFPO1VBQ1AsTUFBTUEsT0FBTyxHQUFrRCxxQkFBVSxFQUN4RSxDQUFDQyxLQUFpQixFQUFFQyxHQUE4QixLQUFpQjtZQUNsRSxJQUFJO2NBQUVDLEtBQUs7Y0FBRUMsU0FBUztjQUFFQyxJQUFJO2NBQUVDLElBQUk7Y0FBRUM7WUFBTSxDQUFFLEdBQUdOLEtBQUs7WUFFcEQsTUFBTU8sS0FBSyxHQUFHLENBQUMsWUFBWSxFQUFFLGNBQWMsRUFBRSxZQUFZLEVBQUUsVUFBVSxFQUFFLFNBQVMsRUFBRSxXQUFXLEVBQUUsVUFBVSxDQUFDO1lBQzFHLE1BQU1DLE9BQU8sR0FBR0QsS0FBSyxDQUFDRSxRQUFRLENBQUNKLElBQUksQ0FBQyxHQUFHQSxJQUFJLEdBQUcsU0FBUztZQUV2RCxNQUFNSyxLQUFLLEdBQXdCLEVBQUU7WUFDckMsSUFBSVIsS0FBSyxFQUFFUSxLQUFLLENBQUNDLE1BQU0sR0FBR1QsS0FBSztZQUMvQkMsU0FBUyxHQUFHLEdBQUdLLE9BQU8sR0FBR0wsU0FBUyxHQUFHLElBQUlBLFNBQVMsRUFBRSxHQUFHLEVBQUUsRUFBRTtZQUMzRCxJQUFJUyxHQUFHLEdBQVdULFNBQVMsR0FBRyxHQUFHQSxTQUFTLDJCQUEyQixHQUFHLDBCQUEwQjtZQUNsRyxJQUFJRyxNQUFNLEVBQUVNLEdBQUcsSUFBSSxZQUFZO1lBRS9CLE1BQU1DLFVBQVUsR0FBR1QsSUFBSSxLQUFLLElBQUksR0FBRyxFQUFFLEdBQUdBLElBQUksS0FBSyxJQUFJLEdBQUcsRUFBRSxHQUFHQSxJQUFJLEtBQUssSUFBSSxHQUFHLEVBQUUsR0FBR0EsSUFBSSxLQUFLLElBQUksR0FBRyxFQUFFLEdBQUcsRUFBRTtZQUV6RyxPQUNDVTtjQUFLWCxTQUFTLEVBQUVTLEdBQUc7Y0FBRVgsR0FBRyxFQUFFQTtZQUFHLEdBQzVCYTtjQUFLQyxPQUFPLEVBQUM7WUFBYSxHQUN6QkQ7Y0FBUUUsRUFBRSxFQUFDLElBQUk7Y0FBQ0MsRUFBRSxFQUFDLElBQUk7Y0FBQ0MsQ0FBQyxFQUFFTCxVQUFVO2NBQUVILEtBQUssRUFBRUE7WUFBSyxFQUFJLENBQ2xELENBQ0Q7VUFFUixDQUFDLENBQ0Q7VUFBQ1MiLCJuYW1lcyI6WyJTcGlubmVyIiwicHJvcHMiLCJyZWYiLCJjb2xvciIsImNsYXNzTmFtZSIsInNpemUiLCJ0eXBlIiwiYWN0aXZlIiwidHlwZXMiLCJjbHNUeXBlIiwiaW5jbHVkZXMiLCJzdHlsZSIsInN0cm9rZSIsImNscyIsImNpcmNsZVNpemUiLCJSZWFjdCIsInZpZXdCb3giLCJjeCIsImN5IiwiciIsImV4cG9ydHMiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbImNvZGUvdHMvc3Bpbm5lci50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsXX0=
