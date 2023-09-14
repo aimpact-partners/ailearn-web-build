@@ -29,22 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1722077698,
+        hash: 955077071,
         creator: function (require, exports) {
           exports.txt = {
-            "title": "Create an awesome classwork!",
-            "curriculumObjective": "Curriculum objective",
-            "topics": {
-              "title": "Topics list",
-              "description": "Add the list of points to review as objetives in your classwork",
-              "elements": {
-                "introduction": "Introduction",
-                "content": "Contenido",
-                "synthesis": "Síntesis",
-                "assessment": "Evaluación",
-                "previous": "Previous"
-              }
-            },
             "actions": {
               "next": "Next",
               "synthesis": "Synthesis",
@@ -52,6 +39,35 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "content": "Content",
               "assessment": "Assessment",
               "generateTopics": "Generate topics"
+            },
+            "contentTypeTitle": "Content types",
+            "contentTypesLabels": ["Creative", "Theoretical"],
+            "contentTypesCharacteristics": ["Use simple language, with entertaining passages, with short sentences, and that continually capture the student's attention.", "Uses theoretical language that is simple to understand with practical examples."],
+            "title": "Create an awesome classwork!",
+            "curriculumObjective": "Curriculum objective",
+            "languages": {
+              "es": "Spanish",
+              "en": "English",
+              "fr": "French",
+              "it": "Italian",
+              "de": "German",
+              "pt": "Portuguese"
+            },
+            "contentType": {
+              "theory": "Theory",
+              "creative": "Creative"
+            },
+            "language": "Class language",
+            "topics": {
+              "title": "Temas",
+              "description": "Agrega la lista de puntos a repasar como objetivos en la clase.",
+              "elements": {
+                "introduction": "Introducción",
+                "content": "Contenido",
+                "synthesis": "Síntesis",
+                "assessment": "Evaluación",
+                "previous": "Previo"
+              }
             }
           };
         }

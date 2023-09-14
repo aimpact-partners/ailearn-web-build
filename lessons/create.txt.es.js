@@ -29,22 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 714553217,
+        hash: 3294185653,
         creator: function (require, exports) {
           exports.txt = {
-            "title": "¡Crea un trabajo de clase increíble!",
-            "curriculumObjective": "Objetivo curricular",
-            "topics": {
-              "title": "Temas",
-              "description": "Agrega la lista de puntos a repasar como objetivos en la clase.",
-              "elements": {
-                "introduction": "Introducción",
-                "content": "Contenido",
-                "synthesis": "Síntesis",
-                "assessment": "Evaluación",
-                "previous": "Previo"
-              }
-            },
             "actions": {
               "next": "Siguiente",
               "synthesis": "Síntesis",
@@ -52,6 +39,31 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "content": "Contenido",
               "assessment": "Evaluación",
               "generateTopics": "Generar tópicos"
+            },
+            "contentTypeTitle": "Tipos de contenido",
+            "contentTypesLabels": ["Creativo", "Teórico"],
+            "contentTypesCharacteristics": ["Utiliza lenguaje simple, con pasajes entretenidos, con oraciones cortas, y que capten continuamente la atención del alumno.", "Utiliza lenguaje teórico pero simple de entender con ejemplos prácticos."],
+            "title": "¡Crea un trabajo de clase increíble!",
+            "curriculumObjective": "Objetivo curricular",
+            "language": "Idioma de la clase",
+            "languages": {
+              "es": "Español",
+              "en": "Inglés",
+              "fr": "Francés",
+              "it": "Italiano",
+              "de": "Alemán",
+              "pt": "Portugués"
+            },
+            "topics": {
+              "title": "Topics list",
+              "description": "Add the list of points to review as objetives in your classwork",
+              "elements": {
+                "introduction": "Introduction",
+                "content": "Contenido",
+                "synthesis": "Síntesis",
+                "assessment": "Evaluación",
+                "previous": "Previous"
+              }
             }
           };
         }
