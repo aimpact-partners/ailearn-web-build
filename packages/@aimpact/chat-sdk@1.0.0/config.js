@@ -16,7 +16,7 @@ System.register([], function (_export, _context) {
         "params": {
           "baseUrl": "http://localhost:4530",
           "apis": {
-            "chat": "https://chat-api-http-rb5caohzgq-uc.a.run.app"
+            "chat": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app"
           },
           "firebaseConfig": {
             "apiKey": "AIzaSyBYiZcPNBky2QvNdVwgCgU_v2B7feLtbQU",
