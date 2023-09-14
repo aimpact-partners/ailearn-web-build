@@ -29,7 +29,7 @@ System.register([], function (_export, _context) {
           "baseUrl": "https://test.app.rvd.ai",
           "apis": {
             "ailearn": "https://ailearn-http-v2-6dlchqr2za-uc.a.run.app",
-            "chat": "https://chat-api-http-rb5caohzgq-uc.a.run.app"
+            "chat": "https://chat-api-http-skvkre4apq-uc.a.run.app"
           }
         },
         "ssr": {},
