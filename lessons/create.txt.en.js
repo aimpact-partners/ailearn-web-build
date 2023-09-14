@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 955077071,
+        hash: 1427116772,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -42,7 +42,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "contentTypeTitle": "Content types",
             "contentTypesLabels": ["Creative", "Theoretical"],
-            "contentTypesCharacteristics": ["Use simple language, with entertaining passages, with short sentences, and that continually capture the student's attention.", "Uses theoretical language that is simple to understand with practical examples."],
+            "contentTypesCharacteristics": ["Simple language, with entertaining passages, with short sentences, and that continually capture the student's attention.", "Theoretical language that is simple to understand with practical examples."],
             "title": "Create an awesome classwork!",
             "curriculumObjective": "Curriculum objective",
             "languages": {
