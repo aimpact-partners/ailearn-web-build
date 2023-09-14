@@ -13,7 +13,7 @@ System.register([], function (_export, _context) {
         },
         "global.css": true,
         "params": {
-          "chatAPI": "https://chat-api-http-rb5caohzgq-uc.a.run.app",
+          "chatAPI": "https://chat-api-http-skvkre4apq-uc.a.run.app",
           "baseUrl": "https://ailearn-http-v2-6dlchqr2za-uc.a.run.app"
         },
         "ssr": {},
