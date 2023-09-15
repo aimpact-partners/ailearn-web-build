@@ -29,15 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2965800708,
+        hash: 3254130963,
         creator: function (require, exports) {
           exports.txt = {
-            "elements": {
-              "synthesis": "Synthesis",
-              "content": "Content",
-              "intro": "Introduction",
-              "assessment": "Assessment"
-            },
             "assessments": {
               "quiz": "Assessment",
               "oral": "Oral",
@@ -53,9 +47,23 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "competencies": "Competences",
               "processMessages": ["We are processing the audio", "Transcribing the text", "Evaluating reading comprehension and content", "Analyzing coherence and cohesion", "Evaluating synthesis and paraphrasing", "Evaluating use of vocabulary", "Analyzing critical thinking"]
             },
+            "elements": {
+              "synthesis": "Synthesis",
+              "content": "Content",
+              "intro": "Introduction",
+              "assessment": "Assessment"
+            },
             "header": {
-              "title": "Objectives",
-              "introduction": "Introduction"
+              "titles": {
+                "spoken": "Spoken assessment",
+                "selection": "Selection assessment",
+                "content": "Objectives"
+              },
+              "actions": {
+                "spoken": "Spoken assess.",
+                "content": "Introduction",
+                "selection": "Selection assess."
+              }
             },
             "intro": {
               "hello": "Hi",

@@ -1,10 +1,13 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.4/model"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, bimport, __Bundle, __pkg, ims, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, bimport, __Bundle, __pkg, ims, AiLearnWrapper, __beyond_pkg, hmr;
+  _export("AiLearnWrapper", void 0);
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
+    }, function (_beyondJsReactive114Model) {
+      dependency_1 = _beyondJsReactive114Model;
     }],
     execute: function () {
       bimport = specifier => {
@@ -21,13 +24,45 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([]);
-      ims = new Map(); // Module exports
+      __pkg.dependencies.update([['@beyond-js/reactive/model', dependency_1]]);
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 1174516303,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.AiLearnWrapper = void 0;
+          var _model = require("@beyond-js/reactive/model");
+          /*bundle*/
+          const AiLearnWrapper = new class extends _model.ReactiveModel {
+            constructor(args) {
+              super(args);
+              this.reactiveProps(['sessionModel', 'sessionAssessment']);
+              globalThis.wrapper = this;
+            }
+          }('');
+          exports.AiLearnWrapper = AiLearnWrapper;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "AiLearnWrapper",
+        "name": "AiLearnWrapper"
+      }];
+      // Module exports
       __pkg.exports.process = function ({
         require,
         prop,
         value
-      }) {};
+      }) {
+        (require || prop === 'AiLearnWrapper') && _export("AiLearnWrapper", AiLearnWrapper = require ? require('./index').AiLearnWrapper : value);
+      };
       _export("__beyond_pkg", __beyond_pkg = __pkg);
       _export("hmr", hmr = new function () {
         this.on = (event, listener) => __pkg.hmr.on(event, listener);
@@ -37,3 +72,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }
   };
 });
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBRU87VUFBVyxNQUFNQSxjQUFjLEdBQUcsSUFBSyxjQUFjQyxvQkFBdUI7WUFDbEZDLFlBQVlDLElBQUk7Y0FDZixLQUFLLENBQUNBLElBQUksQ0FBQztjQUNYLElBQUksQ0FBQ0MsYUFBYSxDQUFDLENBQUMsY0FBYyxFQUFFLG1CQUFtQixDQUFDLENBQUM7Y0FDekRDLFVBQVUsQ0FBQ0MsT0FBTyxHQUFHLElBQUk7WUFDMUI7V0FDQSxDQUFFLEVBQUUsQ0FBQztVQUFDQyIsIm5hbWVzIjpbIkFpTGVhcm5XcmFwcGVyIiwiUmVhY3RpdmVNb2RlbCIsImNvbnN0cnVjdG9yIiwiYXJncyIsInJlYWN0aXZlUHJvcHMiLCJnbG9iYWxUaGlzIiwid3JhcHBlciIsImV4cG9ydHMiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbImluZGV4LnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19

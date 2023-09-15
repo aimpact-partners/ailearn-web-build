@@ -29,23 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1063857839,
+        hash: 614718451,
         creator: function (require, exports) {
           exports.txt = {
-            "elements": {
-              "synthesis": "Síntesis",
-              "content": "Contenido",
-              "intro": "Introducción",
-              "assessment": "Evaluación"
-            },
-            "header": {
-              "title": "Objetivos",
-              "introduction": "Introducción"
-            },
-            "intro": {
-              "hello": "Hola",
-              "message": "el tema que vamos a ver aborda lo siguiente"
-            },
             "assessments": {
               "quiz": "Evaluación",
               "oral": "Oral",
@@ -60,6 +46,28 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "feedback": "Conocimientos",
               "competencies": "Competencias",
               "processMessages": ["Estamos procesando el audio", "Transcribiendo el texto", "Evaluando la comprensión lectora y del contenido", "Analizando la coherencia y cohesión", "Evaluando síntesis y parafrasis", "Evaluando uso de vocabulario", "Analizando el pensamiento critico"]
+            },
+            "elements": {
+              "synthesis": "Síntesis",
+              "content": "Contenido",
+              "intro": "Introducción",
+              "assessment": "Evaluación"
+            },
+            "header": {
+              "titles": {
+                "content": "Objetivos",
+                "introduction": "Introducción",
+                "spoken": "Evaluación oral",
+                "selection": "Evaluación de selección"
+              },
+              "actions": {
+                "spoken": "Eval. oral",
+                "selection": "Eval. de selección"
+              }
+            },
+            "intro": {
+              "hello": "Hola",
+              "message": "el tema que vamos a ver aborda lo siguiente"
             },
             "synthesis": "Puntos principales que trabajaremos durante la clase son:"
           };

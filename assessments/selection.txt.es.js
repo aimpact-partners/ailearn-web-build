@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@1.0.0/assessments/quiz",
+          "vspecifier": "@aimpact/ailearn-app@1.0.0/assessments/selection",
           "multibundle": true
         },
         "type": "txt"
@@ -29,11 +29,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1960173174,
+        hash: 3252572453,
         creator: function (require, exports) {
           exports.txt = {
-            "header": "Titulo de encabezado",
-            "finish": "Finalizar"
+            "results": "Resultados",
+            "total:": "Totales",
+            "correct": "Respuestas correctas",
+            "wrong": "Respuestas incorrectas"
           };
         }
       });
