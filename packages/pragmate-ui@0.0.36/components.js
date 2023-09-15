@@ -111,7 +111,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       ***********************************/
 
       ims.set('./button-group/type', {
-        hash: 540619799,
+        hash: 196687777,
         creator: function (require, exports) {
           "use strict";
 
