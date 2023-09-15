@@ -13,7 +13,7 @@ System.register([], function (_export, _context) {
         },
         "global.css": true,
         "params": {
-          "ailearnAPI": "https://ailearn-http-v2-j2rcifstnq-uc.a.run.app"
+          "ailearnAPI": "http://localhost:5050"
         },
         "ssr": {},
         "backend": {}

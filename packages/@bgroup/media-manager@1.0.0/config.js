@@ -5,21 +5,17 @@ System.register([], function (_export, _context) {
     setters: [],
     execute: function () {
       _export("default", {
-        "package": "@aimpact/ailearn-api",
+        "package": "@bgroup/media-manager",
         "version": "1.0.0",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]
         },
         "global.css": true,
-        "params": {
-          "chatAPI": "http://localhost:5040",
-          "baseUrl": "http://localhost:5050"
-        },
+        "layout": "main-layout",
+        "params": {},
         "ssr": {},
-        "backend": {
-          "host": "http://localhost:5050"
-        }
+        "backend": {}
       });
     }
   };

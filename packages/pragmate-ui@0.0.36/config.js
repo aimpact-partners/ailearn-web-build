@@ -5,21 +5,20 @@ System.register([], function (_export, _context) {
     setters: [],
     execute: function () {
       _export("default", {
-        "package": "@aimpact/ailearn-api",
-        "version": "1.0.0",
+        "package": "pragmate-ui",
+        "version": "0.0.36",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]
         },
         "global.css": true,
         "params": {
-          "chatAPI": "http://localhost:5040",
-          "baseUrl": "http://localhost:5050"
+          "application": {
+            "token": "abcdefg123"
+          }
         },
         "ssr": {},
-        "backend": {
-          "host": "http://localhost:5050"
-        }
+        "backend": {}
       });
     }
   };

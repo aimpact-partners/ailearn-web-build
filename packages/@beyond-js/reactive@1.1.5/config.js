@@ -5,21 +5,17 @@ System.register([], function (_export, _context) {
     setters: [],
     execute: function () {
       _export("default", {
-        "package": "@aimpact/ailearn-api",
-        "version": "1.0.0",
+        "package": "@beyond-js/reactive",
+        "version": "1.1.5",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]
         },
         "global.css": true,
-        "params": {
-          "chatAPI": "http://localhost:5040",
-          "baseUrl": "http://localhost:5050"
-        },
+        "layout": "reactive-layout",
+        "params": {},
         "ssr": {},
-        "backend": {
-          "host": "http://localhost:5050"
-        }
+        "backend": {}
       });
     }
   };
