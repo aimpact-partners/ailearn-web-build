@@ -12,7 +12,7 @@ System.register([], function (_export, _context) {
           "supported": ["en", "es"]
         },
         "global.css": true,
-        "layout": "main-layout",
+        "layout": "ailearn-layout",
         "params": {
           "config": {
             "system": true
@@ -21,15 +21,15 @@ System.register([], function (_export, _context) {
           "project": "ailearn-estrada",
           "url": "https://documents-rb5caohzgq-wl.a.run.app/upload",
           "DOCUMENTS_SERVER": "https://documents-rb5caohzgq-wl.a.run.app",
-          "CHAT_API_SERVER": "https://chat-api-http-rb5caohzgq-uc.a.run.app/upload",
+          "CHAT_API_SERVER": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload",
           "elevenlabs": {
             "key": "ebe05ca0a4d9aafb4024d0666471a0c7",
             "id": "pNInz6obpgDQGcFmaJgB"
           },
-          "baseUrl": "https://ailearn-test.netlify.app",
+          "baseUrl": "https://dev.app.rvd.ai",
           "apis": {
-            "ailearn": "https://ailearn-http-v2-6dlchqr2za-uc.a.run.app",
-            "chat": "https://chat-api-http-rb5caohzgq-uc.a.run.app"
+            "ailearn": "https://ailearn-http-v2-j2rcifstnq-uc.a.run.app",
+            "chat": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app"
           }
         },
         "ssr": {},

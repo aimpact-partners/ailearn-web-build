@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "swiper@8.4.7", "@beyond-js/reactive@1.1.4/model", "pragmate-ui@0.0.36/icons", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "swiper@8.4.7", "@beyond-js/reactive@1.1.5/model", "pragmate-ui@0.0.36/icons", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, SwiperSlider, __beyond_pkg, hmr;
@@ -10,8 +10,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "swiper@8.4.7
       dependency_1 = _react;
     }, function (_swiper) {
       dependency_2 = _swiper;
-    }, function (_beyondJsReactive114Model) {
-      dependency_3 = _beyondJsReactive114Model;
+    }, function (_beyondJsReactive115Model) {
+      dependency_3 = _beyondJsReactive115Model;
     }, function (_pragmateUi0036Icons) {
       dependency_4 = _pragmateUi0036Icons;
     }, function (_beyondJsKernel019Styles) {
@@ -19,7 +19,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "swiper@8.4.7
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/react-18-widgets", "0.0.5"], ["@beyond-js/reactive", "0.0.3"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.6.1"], ["prismjs", "1.29.0"], ["swiper", "8.4.7"], ["@beyond-js/backend", "0.1.5"], ["@types/react", "18.0.37"], ["@types/react-dom", "18.0.11"], ["pragmate-ui", "0.0.36"], ["@aimpact/ailearn-app", "1.0.0"]]);
+        const dependencies = new Map([["@beyond-js/react-18-widgets", "0.0.5"], ["@beyond-js/reactive", "1.1.4"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.6.1"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.0.37"], ["@types/react-dom", "18.0.11"], ["pragmate-ui", "0.0.36"], ["@aimpact/ailearn-app", "1.0.0"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
