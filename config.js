@@ -19,8 +19,8 @@ System.register([], function (_export, _context) {
           },
           "container": "file",
           "project": "ailearn-estrada",
-          "url": "https://documents-rb5caohzgq-wl.a.run.app/upload",
-          "DOCUMENTS_SERVER": "https://documents-rb5caohzgq-wl.a.run.app",
+          "url": "https://chat-api-http-skvkre4apq-uc.a.run.app/upload",
+          "DOCUMENTS_SERVER": "https://chat-api-http-skvkre4apq-uc.a.run.app",
           "CHAT_API_SERVER": "https://chat-api-http-rb5caohzgq-uc.a.run.app/upload",
           "elevenlabs": {
             "key": "ebe05ca0a4d9aafb4024d0666471a0c7",
