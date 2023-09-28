@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.0.0/users", "firebase@10.0.0/auth", "firebase@10.0.0/app", "@beyond-js/reactive@1.1.6/model", "@beyond-js/kernel@0.1.9/core", "react@18.2.0"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.0.0/users", "firebase@10.0.0/auth", "@beyond-js/kernel@0.1.9/core", "firebase@10.0.0/app", "@beyond-js/reactive@1.1.6/model", "react@18.2.0"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, sessionWrapper, __beyond_pkg, hmr;
@@ -10,12 +10,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.0.0/user
       dependency_1 = _aimpactChatSdk100Users;
     }, function (_firebase1000Auth) {
       dependency_2 = _firebase1000Auth;
-    }, function (_firebase1000App) {
-      dependency_3 = _firebase1000App;
-    }, function (_beyondJsReactive116Model) {
-      dependency_4 = _beyondJsReactive116Model;
     }, function (_beyondJsKernel019Core) {
-      dependency_5 = _beyondJsKernel019Core;
+      dependency_3 = _beyondJsKernel019Core;
+    }, function (_firebase1000App) {
+      dependency_4 = _firebase1000App;
+    }, function (_beyondJsReactive116Model) {
+      dependency_5 = _beyondJsReactive116Model;
     }, function (_react) {
       dependency_6 = _react;
     }],
@@ -34,7 +34,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.0.0/user
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@aimpact/chat-sdk/users', dependency_1], ['firebase/auth', dependency_2], ['firebase/app', dependency_3], ['@beyond-js/reactive/model', dependency_4], ['@beyond-js/kernel/core', dependency_5], ['react', dependency_6]]);
+      __pkg.dependencies.update([['@aimpact/chat-sdk/users', dependency_1], ['firebase/auth', dependency_2], ['@beyond-js/kernel/core', dependency_3], ['firebase/app', dependency_4], ['@beyond-js/reactive/model', dependency_5], ['react', dependency_6]]);
       ims = new Map();
       /**********************
       INTERNAL MODULE: ./auth

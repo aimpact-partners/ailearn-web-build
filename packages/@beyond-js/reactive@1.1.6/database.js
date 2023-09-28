@@ -26,7 +26,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "dexie@3.2.4", "@beyond-js/ev
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@beyond-js/reactive@1.1.4/database"
+          "vspecifier": "@beyond-js/reactive@1.1.6/database"
         },
         "type": "ts"
       }, _context.meta.url).package();
