@@ -29,14 +29,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2008072285,
+        hash: 984977759,
         creator: function (require, exports) {
           exports.txt = {
+            "dyslexia": "Modo de Accesibilidad para Dislexia",
             "header": "Titulo de encabezado",
             "title": "Perfil",
             "details": "Detalles del usuario",
             "language": "Idioma",
-            "save": "Guardar"
+            "save": "Guardar",
+            "audio": {
+              "title": "Configuración de audio",
+              "speed": "Velocidad"
+            }
           };
         }
       });

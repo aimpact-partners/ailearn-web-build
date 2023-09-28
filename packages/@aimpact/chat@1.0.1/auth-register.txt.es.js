@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1233456322,
+        hash: 558900096,
         creator: function (require, exports) {
           exports.txt = {
             "createAccount": "Crea una nueva cuenta",
@@ -39,9 +39,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "email": "Correo electrónico",
             "termsCondition": "Al crear una cuenta, aceptas nuestros Términos de servicio y Política de privacidad",
             "signIn": "Registrarse",
-            "socialLogin": "O inicia sesión con una cuenta social",
-            "googleSignIn": "Inicia sesión con Google",
-            "facebookSignIn": "Inicia sesión con Facebook",
+            "socialLogin": "O inicia sesión con una cuenta de redes sociales",
+            "googleSignIn": "Iniciar sesión con Google",
+            "facebookSignIn": "Iniciar sesión con Facebook",
             "helpSignIn": "¿Necesitas ayuda para iniciar sesión?",
             "alreadyAccount": "¿Ya tienes una cuenta?"
           };
