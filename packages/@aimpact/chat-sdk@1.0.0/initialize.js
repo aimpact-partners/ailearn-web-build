@@ -30,7 +30,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/da
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 524875641,
+        hash: 1756282961,
         creator: function (require, exports) {
           "use strict";
 
@@ -41,7 +41,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/da
           var _database = require("@beyond-js/reactive/database");
           async function initialize() {
             try {
-              const db = await _database.DBManager.config('chat-api@15', {
+              const db = await _database.DBManager.config('chat-api@16', {
                 Chat: 'id, name, userId, category, usage, system, knowledgeBoxId',
                 Conversations: 'id, name, userId, system',
                 User: 'id',
@@ -50,7 +50,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/da
                 KnowledgeBoxes: 'id, userId',
                 SharedKnowledgeBases: 'id, knowledgeBaseId, sharedWithUserId',
                 Documents: 'id, knowledgeBaseId',
-                Lessons: 'id, curriculumObjective',
+                Lessons: 'id, curriculumObjective, userId',
                 Topics: 'id, lessonId, title',
                 Sessions: 'id, lessonId, classRoomId',
                 GClasses: 'id, sessions'
@@ -88,4 +88,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/da
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBRUEsZUFBZUEsVUFBVTtZQUN4QixJQUFJO2NBQ0gsTUFBTUMsRUFBRSxHQUFHLE1BQU1DLG1CQUFTLENBQUNDLE1BQU0sQ0FBQyxhQUFhLEVBQUU7Z0JBQ2hEQyxJQUFJLEVBQUUsMkRBQTJEO2dCQUNqRUMsYUFBYSxFQUFFLDBCQUEwQjtnQkFDekNDLElBQUksRUFBRSxJQUFJO2dCQUNWQyxRQUFRLEVBQUUsa0RBQWtEO2dCQUM1REMsWUFBWSxFQUFFLGVBQWU7Z0JBQzdCQyxjQUFjLEVBQUUsWUFBWTtnQkFDNUJDLG9CQUFvQixFQUFFLHVDQUF1QztnQkFDN0RDLFNBQVMsRUFBRSxxQkFBcUI7Z0JBQ2hDQyxPQUFPLEVBQUUseUJBQXlCO2dCQUNsQ0MsTUFBTSxFQUFFLHFCQUFxQjtnQkFDN0JDLFFBQVEsRUFBRSwyQkFBMkI7Z0JBQ3JDQyxRQUFRLEVBQUU7ZUFDVixDQUFDO2NBRUY7Y0FDQTthQUNBLENBQUMsT0FBT0MsQ0FBQyxFQUFFO2NBQ1hDLE9BQU8sQ0FBQ0MsS0FBSyxDQUFDLE9BQU8sRUFBRUYsQ0FBQyxDQUFDOztVQUUzQjtVQUVPO1VBQVksTUFBTUcsTUFBTSxHQUFHbkIsVUFBVTtVQUFDb0IiLCJuYW1lcyI6WyJpbml0aWFsaXplIiwiZGIiLCJEQk1hbmFnZXIiLCJjb25maWciLCJDaGF0IiwiQ29udmVyc2F0aW9ucyIsIlVzZXIiLCJNZXNzYWdlcyIsIkF1ZGlvUmVjb3JkcyIsIktub3dsZWRnZUJveGVzIiwiU2hhcmVkS25vd2xlZGdlQmFzZXMiLCJEb2N1bWVudHMiLCJMZXNzb25zIiwiVG9waWNzIiwiU2Vzc2lvbnMiLCJHQ2xhc3NlcyIsImUiLCJjb25zb2xlIiwidHJhY2UiLCJpbml0REIiLCJleHBvcnRzIl0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdfQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBRUEsZUFBZUEsVUFBVTtZQUN4QixJQUFJO2NBQ0gsTUFBTUMsRUFBRSxHQUFHLE1BQU1DLG1CQUFTLENBQUNDLE1BQU0sQ0FBQyxhQUFhLEVBQUU7Z0JBQ2hEQyxJQUFJLEVBQUUsMkRBQTJEO2dCQUNqRUMsYUFBYSxFQUFFLDBCQUEwQjtnQkFDekNDLElBQUksRUFBRSxJQUFJO2dCQUNWQyxRQUFRLEVBQUUsa0RBQWtEO2dCQUM1REMsWUFBWSxFQUFFLGVBQWU7Z0JBQzdCQyxjQUFjLEVBQUUsWUFBWTtnQkFDNUJDLG9CQUFvQixFQUFFLHVDQUF1QztnQkFDN0RDLFNBQVMsRUFBRSxxQkFBcUI7Z0JBQ2hDQyxPQUFPLEVBQUUsaUNBQWlDO2dCQUMxQ0MsTUFBTSxFQUFFLHFCQUFxQjtnQkFDN0JDLFFBQVEsRUFBRSwyQkFBMkI7Z0JBQ3JDQyxRQUFRLEVBQUU7ZUFDVixDQUFDO2NBRUY7Y0FDQTthQUNBLENBQUMsT0FBT0MsQ0FBQyxFQUFFO2NBQ1hDLE9BQU8sQ0FBQ0MsS0FBSyxDQUFDLE9BQU8sRUFBRUYsQ0FBQyxDQUFDOztVQUUzQjtVQUVPO1VBQVksTUFBTUcsTUFBTSxHQUFHbkIsVUFBVTtVQUFDb0IiLCJuYW1lcyI6WyJpbml0aWFsaXplIiwiZGIiLCJEQk1hbmFnZXIiLCJjb25maWciLCJDaGF0IiwiQ29udmVyc2F0aW9ucyIsIlVzZXIiLCJNZXNzYWdlcyIsIkF1ZGlvUmVjb3JkcyIsIktub3dsZWRnZUJveGVzIiwiU2hhcmVkS25vd2xlZGdlQmFzZXMiLCJEb2N1bWVudHMiLCJMZXNzb25zIiwiVG9waWNzIiwiU2Vzc2lvbnMiLCJHQ2xhc3NlcyIsImUiLCJjb25zb2xlIiwidHJhY2UiLCJpbml0REIiLCJleHBvcnRzIl0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdfQ==
