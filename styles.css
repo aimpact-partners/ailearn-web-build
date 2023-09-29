@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 :root {
-  --font-family: "Rubik", sans-serif;
   --secondary-font-family: "Roboto", sans-serif;
+  --font-family: "Roboto", sans-serif;
   --border-radius-sm: 6px;
   --border-radius-base: 10px;
   --border-radius-lg: 25px;
@@ -154,8 +154,7 @@
     --scrim: var(--neutral-0);
   }
 }
-
-html[data-beyond-mode=light] {
+:root[data-beyond-mode=light] {
   --text-color: #1a1a1a;
   --primary-container: var(--primary-90);
   --on-primary: var(--primary-100);
@@ -194,46 +193,47 @@ html[data-beyond-mode=light] {
   --surface-tint-color: var(--primary);
   --scrim: var(--neutral-0);
 }
-
-html[data-beyond-mode=dark] {
-  --text-color: #fff;
-  --primary: var(--primary-80);
-  --primary-container: var(--primary-30);
-  --on-primary: #fff;
-  --on-primary-container: var(--primary-90);
-  --inverse-primary: var(--primary-40);
-  --secondary: var(--secondary-80);
-  --secondary-container: var(--secondary-30);
-  --on-secondary: #fff;
-  --on-secondary-container: var(--secondary-90);
-  --tertiary: var(--tertiary-80);
-  --tertiary-container: var(--tertiary-30);
-  --on-tertiary: var(--tertiary-20);
-  --on-tertiary-container: var(--tertiary-90);
-  --surface: var(--neutral-10);
-  --surface-dim: var(--neutral-12);
-  --surface-bright: var(--neutral-25);
-  --surface-container-lowest: var(--neutral-4);
-  --surface-container-low: var(--neutral-10);
-  --surface-container: var(--neutral-12);
-  --surface-container-high: var(--neutral-20);
-  --surface-container-highest: var(--neutral-22);
-  --surface-variant: var(--neutral-variant-30);
-  --on-surface: var(--neutral-90);
-  --on-surface-variant: var(--neutral-variant-80);
-  --inverse-surface: var(--neutral-90);
-  --inverse-on-surface: var(--neutral-20);
-  --background: var(--neutral-6);
-  --on-background: var(--neutral-90);
-  --error: var(--error-80);
-  --error-container: var(--error-30);
-  --on-error: var(--error-20);
-  --on-error-container: var(--error-90);
-  --outline: var(--neutral-variant-60);
-  --outline-variant: var(--neutral-variant-30);
+:root[data-beyond-mode=dark] {
+  --text-color: #1a1a1a;
+  --primary-container: var(--primary-90);
+  --on-primary: var(--primary-100);
+  --on-primary-container: var(--primary-10);
+  --inverse-primary: var(--primary-80);
+  --secondary: var(--secondary-40);
+  --secondary-container: var(--secondary-90);
+  --on-secondary: var(--secondary-100);
+  --on-secondary-container: var(--secondary-10);
+  --tertiary: var(--tertiary-40);
+  --tertiary-container: var(--tertiary-90);
+  --on-tertiary: var(--tertiary-100);
+  --on-tertiary-container: var(--tertiary-10);
+  --surface: var(--neutral-98);
+  --surface-dim: var(--neutral-80);
+  --surface-bright: var(--neutral-98);
+  --surface-container-lowest: var(--neutral-100);
+  --surface-container-low: var(--neutral-90);
+  --surface-container: var(--neutral-94);
+  --surface-container-high: var(--neutral-92);
+  --surface-container-highest: var(--neutral-90);
+  --surface-variant: var(--neutral-variant-90);
+  --on-surface: var(--neutral-10);
+  --on-surface-variant: var(--neutral-variant-30);
+  --inverse-surface: var(--neutral-20);
+  --inverse-on-surface: var(--neutral-95);
+  --background: #f1f1f1;
+  --on-background: var(--neutral-10);
+  --error: var(--error-40);
+  --error-container: var(--error-90);
+  --on-error: var(--error-100);
+  --on-error-container: var(--error-10);
+  --outline: var(--neutral-variant-50);
+  --outline-variant: var(--neutral-variant-80);
   --shadow: var(--neutral-0);
-  --surface-tint-color: var(--md.sys.color.primary);
+  --surface-tint-color: var(--primary);
   --scrim: var(--neutral-0);
+}
+:root[data-accessibility-mode=dyslexia] {
+  --font-family: "OpenDyslexic";
 }
 .elevation-1 {
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
@@ -357,6 +357,30 @@ html[data-beyond-mode=dark] {
   --warning-95: #ffff00;
   --warning-98: #ffff00;
   --warning-100: #ffffff;
+}
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("/assets/fonts/OpenDyslexic-Regular.woff2") format("woff2"), url("/assets/fonts/OpenDyslexic-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("/assets/fonts/OpenDyslexic-Bold.woff2") format("woff2"), url("/assets/fonts/OpenDyslexic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("/assets/fonts/OpenDyslexic-Italic.woff2") format("woff2"), url("/assets/fonts/OpenDyslexic-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("/assets/fonts/OpenDyslexic-Bold-Italic.woff2") format("woff2"), url("/assets/fonts/OpenDyslexic-Bold-Italic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
 }
 html,
 body {
