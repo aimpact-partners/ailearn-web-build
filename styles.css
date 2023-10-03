@@ -188,6 +188,7 @@
   --shadow: var(--neutral-0);
   --surface-tint-color: var(--primary);
   --scrim: var(--neutral-0);
+  --app-text-highlight: rgba(172, 18, 18, 0.8);
 }
 :root[data-beyond-mode=light] {
   --text-color: #1a1a1a;
@@ -227,6 +228,7 @@
   --shadow: var(--neutral-0);
   --surface-tint-color: var(--primary);
   --scrim: var(--neutral-0);
+  --app-text-highlight: rgba(172, 18, 18, 0.8);
 }
 :root[data-beyond-mode=dark] {
   --text-color: #fff;
@@ -267,6 +269,7 @@
   --shadow: var(--neutral-0);
   --surface-tint-color: var(--md.sys.color.primary);
   --scrim: var(--neutral-0);
+  --app-text-highlight: rgba(17, 159, 224, 1);
 }
 :root[data-accessibility-mode=dyslexia] {
   --font-family: "OpenDyslexic";
