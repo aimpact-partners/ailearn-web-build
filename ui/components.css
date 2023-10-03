@@ -1,0 +1,25 @@
+main {
+  padding: 1rem 0;
+}
+main .tab-container .tab-content {
+  padding-top: 1rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.elements__container {
+  border: 1px solid var(--outline);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.pui-alert,
+.alert {
+  margin: 1rem 0;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7O0FBQ0E7RUFDQzs7O0FBR0Y7RUFDQztFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTs7O0FBR0Q7QUFBQTtFQUVDIiwiZmlsZSI6IiJ9 */

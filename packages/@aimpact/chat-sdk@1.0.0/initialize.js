@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.5/database"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/database"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, bimport, __Bundle, __pkg, ims, initDB, __beyond_pkg, hmr;
@@ -6,8 +6,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.5/da
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
-    }, function (_beyondJsReactive115Database) {
-      dependency_1 = _beyondJsReactive115Database;
+    }, function (_beyondJsReactive116Database) {
+      dependency_1 = _beyondJsReactive116Database;
     }],
     execute: function () {
       bimport = specifier => {
@@ -30,7 +30,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.5/da
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 524875641,
+        hash: 1756282961,
         creator: function (require, exports) {
           "use strict";
 
@@ -41,7 +41,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.5/da
           var _database = require("@beyond-js/reactive/database");
           async function initialize() {
             try {
-              const db = await _database.DBManager.config('chat-api@15', {
+              const db = await _database.DBManager.config('chat-api@16', {
                 Chat: 'id, name, userId, category, usage, system, knowledgeBoxId',
                 Conversations: 'id, name, userId, system',
                 User: 'id',
@@ -50,7 +50,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.5/da
                 KnowledgeBoxes: 'id, userId',
                 SharedKnowledgeBases: 'id, knowledgeBaseId, sharedWithUserId',
                 Documents: 'id, knowledgeBaseId',
-                Lessons: 'id, curriculumObjective',
+                Lessons: 'id, curriculumObjective, userId',
                 Topics: 'id, lessonId, title',
                 Sessions: 'id, lessonId, classRoomId',
                 GClasses: 'id, sessions'
@@ -88,4 +88,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.5/da
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGF0YWJhc2UiLCJyZXF1aXJlIiwiaW5pdGlhbGl6ZSIsImRiIiwiREJNYW5hZ2VyIiwiY29uZmlnIiwiQ2hhdCIsIkNvbnZlcnNhdGlvbnMiLCJVc2VyIiwiTWVzc2FnZXMiLCJBdWRpb1JlY29yZHMiLCJLbm93bGVkZ2VCb3hlcyIsIlNoYXJlZEtub3dsZWRnZUJhc2VzIiwiRG9jdW1lbnRzIiwiTGVzc29ucyIsIlRvcGljcyIsIlNlc3Npb25zIiwiR0NsYXNzZXMiLCJlIiwiY29uc29sZSIsInRyYWNlIiwiaW5pdERCIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIi9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLFNBQUEsR0FBQUMsT0FBQTtVQUVBLGVBQWVDLFVBQVVBLENBQUE7WUFDeEIsSUFBSTtjQUNILE1BQU1DLEVBQUUsR0FBRyxNQUFNSCxTQUFBLENBQUFJLFNBQVMsQ0FBQ0MsTUFBTSxDQUFDLGFBQWEsRUFBRTtnQkFDaERDLElBQUksRUFBRSwyREFBMkQ7Z0JBQ2pFQyxhQUFhLEVBQUUsMEJBQTBCO2dCQUN6Q0MsSUFBSSxFQUFFLElBQUk7Z0JBQ1ZDLFFBQVEsRUFBRSxrREFBa0Q7Z0JBQzVEQyxZQUFZLEVBQUUsZUFBZTtnQkFDN0JDLGNBQWMsRUFBRSxZQUFZO2dCQUM1QkMsb0JBQW9CLEVBQUUsdUNBQXVDO2dCQUM3REMsU0FBUyxFQUFFLHFCQUFxQjtnQkFDaENDLE9BQU8sRUFBRSx5QkFBeUI7Z0JBQ2xDQyxNQUFNLEVBQUUscUJBQXFCO2dCQUM3QkMsUUFBUSxFQUFFLDJCQUEyQjtnQkFDckNDLFFBQVEsRUFBRTtlQUNWLENBQUM7Y0FFRjtjQUNBO2FBQ0EsQ0FBQyxPQUFPQyxDQUFDLEVBQUU7Y0FDWEMsT0FBTyxDQUFDQyxLQUFLLENBQUMsT0FBTyxFQUFFRixDQUFDLENBQUM7O1VBRTNCO1VBRU87VUFBWSxNQUFNRyxNQUFNLEdBQUduQixVQUFVO1VBQUNvQixPQUFBLENBQUFELE1BQUEsR0FBQUEsTUFBQSJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGF0YWJhc2UiLCJyZXF1aXJlIiwiaW5pdGlhbGl6ZSIsImRiIiwiREJNYW5hZ2VyIiwiY29uZmlnIiwiQ2hhdCIsIkNvbnZlcnNhdGlvbnMiLCJVc2VyIiwiTWVzc2FnZXMiLCJBdWRpb1JlY29yZHMiLCJLbm93bGVkZ2VCb3hlcyIsIlNoYXJlZEtub3dsZWRnZUJhc2VzIiwiRG9jdW1lbnRzIiwiTGVzc29ucyIsIlRvcGljcyIsIlNlc3Npb25zIiwiR0NsYXNzZXMiLCJlIiwiY29uc29sZSIsInRyYWNlIiwiaW5pdERCIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIi9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLFNBQUEsR0FBQUMsT0FBQTtVQUVBLGVBQWVDLFVBQVVBLENBQUE7WUFDeEIsSUFBSTtjQUNILE1BQU1DLEVBQUUsR0FBRyxNQUFNSCxTQUFBLENBQUFJLFNBQVMsQ0FBQ0MsTUFBTSxDQUFDLGFBQWEsRUFBRTtnQkFDaERDLElBQUksRUFBRSwyREFBMkQ7Z0JBQ2pFQyxhQUFhLEVBQUUsMEJBQTBCO2dCQUN6Q0MsSUFBSSxFQUFFLElBQUk7Z0JBQ1ZDLFFBQVEsRUFBRSxrREFBa0Q7Z0JBQzVEQyxZQUFZLEVBQUUsZUFBZTtnQkFDN0JDLGNBQWMsRUFBRSxZQUFZO2dCQUM1QkMsb0JBQW9CLEVBQUUsdUNBQXVDO2dCQUM3REMsU0FBUyxFQUFFLHFCQUFxQjtnQkFDaENDLE9BQU8sRUFBRSxpQ0FBaUM7Z0JBQzFDQyxNQUFNLEVBQUUscUJBQXFCO2dCQUM3QkMsUUFBUSxFQUFFLDJCQUEyQjtnQkFDckNDLFFBQVEsRUFBRTtlQUNWLENBQUM7Y0FFRjtjQUNBO2FBQ0EsQ0FBQyxPQUFPQyxDQUFDLEVBQUU7Y0FDWEMsT0FBTyxDQUFDQyxLQUFLLENBQUMsT0FBTyxFQUFFRixDQUFDLENBQUM7O1VBRTNCO1VBRU87VUFBWSxNQUFNRyxNQUFNLEdBQUduQixVQUFVO1VBQUNvQixPQUFBLENBQUFELE1BQUEsR0FBQUEsTUFBQSJ9

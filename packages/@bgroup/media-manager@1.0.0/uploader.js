@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.5/model", "@bgroup/media-manager@1.0.0/main", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/model", "@bgroup/media-manager@1.0.0/main", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, Uploader, XHRLoader, __beyond_pkg, hmr;
@@ -9,8 +9,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.5/mo
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
-    }, function (_beyondJsReactive115Model) {
-      dependency_1 = _beyondJsReactive115Model;
+    }, function (_beyondJsReactive116Model) {
+      dependency_1 = _beyondJsReactive116Model;
     }, function (_bgroupMediaManager100Main) {
       dependency_2 = _bgroupMediaManager100Main;
     }, function (_beyondJsKernel019Core) {
@@ -18,7 +18,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.5/mo
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/reactive", "1.1.4"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "0.0.6"], ["socket.io-client", "4.7.2"], ["@bgroup/media-manager", "1.0.0"], ["@aimpact/ailearn-app", "1.0.0"]]);
+        const dependencies = new Map([["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/reactive", "1.1.6"], ["socket.io-client", "4.7.2"], ["@bgroup/media-manager", "1.0.0"], ["@aimpact/ailearn-app", "1.0.0"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

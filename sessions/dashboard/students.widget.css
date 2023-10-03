@@ -1,0 +1,26 @@
+.page__container {
+  background: var(--surface);
+  border: 1px solid var(--outline);
+  border-radius: var(--border-radius-base);
+  padding: 1rem;
+}
+.pragmate-icon.icon--success {
+  fill: var(--success);
+}
+.pragmate-icon.icon--danger {
+  fill: var(--error);
+}
+
+ul.list-unstyled {
+  list-style: none;
+  display: inline-flex;
+  gap: 1rem;
+}
+ul.list-unstyled li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHBhZ2Uuc2NzcyIsInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUVBO0VBQ0E7O0FDSkE7RUFDQzs7QUFFRDtFQUNDOzs7QUFHRjtFQUNDO0VBQ0E7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7RUFDQSIsImZpbGUiOiIifQ== */

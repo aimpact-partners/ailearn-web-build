@@ -13,12 +13,12 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       dependency_1 = _beyondJsKernel019Bundle;
     }, function (_beyondJsReact18Widgets101Page) {
       dependency_2 = _beyondJsReact18Widgets101Page;
-    }, function (_react2) {
-      dependency_3 = _react2;
+    }, function (_react) {
+      dependency_3 = _react;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/reactive", "1.1.5"], ["@beyond-js/backend", "0.1.8"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@google-cloud/storage", "6.11.0"], ["@google-cloud/tasks", "3.2.0"], ["@pinecone-database/pinecone", "0.1.6"], ["langchain", "0.0.96"], ["axios", "1.4.0"], ["busboy", "1.6.0"], ["dayjs", "1.11.9"], ["dexie", "3.2.4"], ["dotenv", "16.3.1"], ["express", "4.18.2"], ["express-openapi-validator", "5.0.4"], ["firebase", "8.6.8"], ["firebase-admin", "11.9.0"], ["fluent-ffmpeg", "2.1.2"], ["form-data", "4.0.0"], ["google-auth-library", "8.9.0"], ["jsonwebtoken", "9.0.1"], ["node-fetch", "2.6.12"], ["openai", "3.3.0"], ["socket.io-client", "4.7.1"], ["uuid", "9.0.0"], ["@beyond-js/bee", "0.0.6"], ["@beyond-js/local", "0.1.3"], ["@types/jsonwebtoken", "9.0.2"], ["@types/react", "18.2.14"], ["@types/react-dom", "18.2.6"], ["swagger-ui-express", "5.0.0"], ["yaml", "2.3.1"], ["@aimpact/chat-api", "1.0.1"], ["@aimpact/ailearn-app", "1.0.0"]]);
+        const dependencies = new Map([["@beyond-js/reactive", "1.1.6"], ["@beyond-js/backend", "0.1.8"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@google-cloud/storage", "6.11.0"], ["@google-cloud/tasks", "3.2.0"], ["@pinecone-database/pinecone", "0.1.6"], ["langchain", "0.0.96"], ["axios", "1.4.0"], ["busboy", "1.6.0"], ["dayjs", "1.11.9"], ["dexie", "3.2.4"], ["dotenv", "16.3.1"], ["express", "4.18.2"], ["express-openapi-validator", "5.0.4"], ["firebase", "8.6.8"], ["firebase-admin", "11.9.0"], ["fluent-ffmpeg", "2.1.2"], ["form-data", "4.0.0"], ["google-auth-library", "8.9.0"], ["jsonwebtoken", "9.0.1"], ["node-fetch", "2.6.12"], ["openai", "3.3.0"], ["socket.io-client", "4.7.1"], ["uuid", "9.0.0"], ["@beyond-js/bee", "0.0.6"], ["@beyond-js/local", "0.1.3"], ["@types/jsonwebtoken", "9.0.2"], ["@types/react", "18.2.14"], ["@types/react-dom", "18.2.6"], ["swagger-ui-express", "5.0.0"], ["yaml", "2.3.1"], ["@aimpact/chat-api", "1.0.1"], ["@aimpact/ailearn-app", "1.0.0"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -68,7 +68,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       *****************************/
 
       ims.set('./views/index', {
-        hash: 3083324786,
+        hash: 2740985082,
         creator: function (require, exports) {
           "use strict";
 
@@ -76,10 +76,10 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
             value: true
           });
           exports.View = View;
-          var _react = require("react");
+          var React = require("react");
           /*bundle*/
           function View() {
-            return _react.default.createElement("h2", null, "Chat Api tests");
+            return React.createElement("h2", null, "Chat Api tests");
           }
         }
       });
@@ -110,4 +110,4 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIldpZGdldCIsIlZpZXciLCJleHBvcnRzIiwiX3JlYWN0IiwiZGVmYXVsdCIsImNyZWF0ZUVsZW1lbnQiXSwic291cmNlcyI6WyIvd2lkZ2V0L3RzL2NvbnRyb2xsZXIudHMiLCIvd2lkZ2V0L3RzL3ZpZXdzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLEtBQUEsR0FBQUMsT0FBQTtVQUNBLElBQUFDLE1BQUEsR0FBQUQsT0FBQTtVQUVPO1VBQVUsTUFDWEUsVUFBVyxTQUFRSCxLQUFBLENBQUFJLHlCQUF5QjtZQUM5QyxJQUFJQyxNQUFNQSxDQUFBO2NBQ04sT0FBT0gsTUFBQSxDQUFBSSxJQUFJO1lBQ2Y7O1VBQ0hDLE9BQUEsQ0FBQUosVUFBQSxHQUFBQSxVQUFBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JELElBQUFLLE1BQUEsR0FBQVAsT0FBQTtVQUVPO1VBQVUsU0FDUkssSUFBSUEsQ0FBQTtZQUNaLE9BQU9FLE1BQUEsQ0FBQUMsT0FBQSxDQUFBQyxhQUFBLDhCQUF1QjtVQUMvQiJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIldpZGdldCIsIlZpZXciLCJleHBvcnRzIiwiUmVhY3QiLCJjcmVhdGVFbGVtZW50Il0sInNvdXJjZXMiOlsiL3dpZGdldC90cy9jb250cm9sbGVyLnRzIiwiL3dpZGdldC90cy92aWV3cy9pbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxLQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxNQUFBLEdBQUFELE9BQUE7VUFFTztVQUFVLE1BQ1hFLFVBQVcsU0FBUUgsS0FBQSxDQUFBSSx5QkFBeUI7WUFDOUMsSUFBSUMsTUFBTUEsQ0FBQTtjQUNOLE9BQU9ILE1BQUEsQ0FBQUksSUFBSTtZQUNmOztVQUNIQyxPQUFBLENBQUFKLFVBQUEsR0FBQUEsVUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNSRCxJQUFBSyxLQUFBLEdBQUFQLE9BQUE7VUFFTztVQUFVLFNBQ1JLLElBQUlBLENBQUE7WUFDWixPQUFPRSxLQUFBLENBQUFDLGFBQUEsOEJBQXVCO1VBQy9CIn0=
