@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3254130963,
+        hash: 483659226,
         creator: function (require, exports) {
           exports.txt = {
             "assessments": {
@@ -56,6 +56,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "header": {
               "titles": {
                 "spoken": "Spoken assessment",
+                "introduction": "Introduction",
                 "selection": "Selection assessment",
                 "content": "Objectives"
               },
@@ -69,7 +70,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "hello": "Hi",
               "message": "the topic that we will see deals with the following"
             },
-            "synthesis": "Main topics we will work during the class are:"
+            "synthesis": "Main topics we will work during the class are:",
+            "permissions": {
+              "title": "Permissions",
+              "description": "You need to provide access to the microphone to be able to send an audio.",
+              "button": "Accept"
+            }
           };
         }
       });

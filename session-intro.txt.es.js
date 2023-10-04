@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 614718451,
+        hash: 1311182415,
         creator: function (require, exports) {
           exports.txt = {
             "assessments": {
@@ -69,7 +69,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "hello": "Hola",
               "message": "el tema que vamos a ver aborda lo siguiente"
             },
-            "synthesis": "Puntos principales que trabajaremos durante la clase son:"
+            "synthesis": "Puntos principales que trabajaremos durante la clase son:",
+            "permissions": {
+              "title": "Permisos",
+              "description": "Necesitas brindar acceso al microfono para poder enviar un audio.",
+              "button": "Aceptar"
+            }
           };
         }
       });

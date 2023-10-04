@@ -29,20 +29,20 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1934531353,
+        hash: 1733944976,
         creator: function (require, exports) {
           exports.txt = {
+            "permissions": {
+              "title": "Permissões",
+              "description": "Você precisa fornecer acesso ao microfone para poder enviar um áudio",
+              "button": "Aceitar"
+            },
             "system": {
               "success": "Sistema atualizado com sucesso"
             },
             "assistant": {
               "title": "Missão do Assistente",
               "message": "A missão que o agente terá para interagir no chat"
-            },
-            "permissions": {
-              "title": "Permissões",
-              "description": "Você precisa fornecer acesso ao microfone para poder enviar um áudio",
-              "button": "Aceitar"
             }
           };
         }

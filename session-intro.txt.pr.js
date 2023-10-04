@@ -29,9 +29,54 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2745614147,
+        hash: 2167306167,
         creator: function (require, exports) {
-          exports.txt = {};
+          exports.txt = {
+            "assessments": {
+              "quiz": "Avaliação",
+              "oral": "Oral",
+              "oralText": "%1, grave um áudio onde você resume e comenta o conteúdo estudado. Destaque os conceitos-chave, use linguagem apropriada e ofereça sua opinião pessoal. Mantenha uma ordem lógica e fidelidade aos fatos do texto original.",
+              "record": "Gravar",
+              "recordAgain": "Gravar novamente",
+              "stop": "Parar",
+              "send": "Enviar áudio",
+              "redo": "Faça de novo!",
+              "analysisTitle": "Resultado da análise",
+              "analysis": "Relatório",
+              "feedback": "Conhecimento",
+              "competencies": "Competências",
+              "processMessages": ["Estamos processando o áudio", "Transcrevendo o texto", "Avaliando a compreensão da leitura e do conteúdo", "Analisando coerência e coesão", "Avaliando síntese e parafraseando", "Avaliando o uso do vocabulário", "Analisando o pensamento crítico"]
+            },
+            "header": {
+              "titles": {
+                "spoken": "Avaliação oral",
+                "introduction": "Introdução",
+                "selection": "Avaliação de seleção",
+                "content": "Objetivos"
+              },
+              "actions": {
+                "spoken": "Aval. oral",
+                "content": "Introdução",
+                "selection": "Aval. de seleção"
+              }
+            },
+            "intro": {
+              "hello": "Olá",
+              "message": "o tema que vamos ver aborda o seguinte"
+            },
+            "synthesis": "Pontos principais que trabalharemos durante a aula são:",
+            "elements": {
+              "synthesis": "Síntese",
+              "content": "Conteúdo",
+              "intro": "Introdução",
+              "assessment": "Avaliação"
+            },
+            "permissions": {
+              "title": "Permissões",
+              "description": "Você precisa fornecer acesso ao microfone para poder enviar um áudio",
+              "button": "Aceitar"
+            }
+          };
         }
       });
       __pkg.exports.descriptor = [{
