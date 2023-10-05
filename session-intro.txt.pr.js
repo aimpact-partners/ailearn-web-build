@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2167306167,
+        hash: 486712476,
         creator: function (require, exports) {
           exports.txt = {
             "assessments": {
@@ -47,6 +47,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "competencies": "Competências",
               "processMessages": ["Estamos processando o áudio", "Transcrevendo o texto", "Avaliando a compreensão da leitura e do conteúdo", "Analisando coerência e coesão", "Avaliando síntese e parafraseando", "Avaliando o uso do vocabulário", "Analisando o pensamento crítico"]
             },
+            "elements": {
+              "synthesis": "Síntese",
+              "content": "Conteúdo",
+              "intro": "Introdução",
+              "assessment": "Avaliação"
+            },
             "header": {
               "titles": {
                 "spoken": "Avaliação oral",
@@ -60,22 +66,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "selection": "Aval. de seleção"
               }
             },
-            "intro": {
-              "hello": "Olá",
-              "message": "o tema que vamos ver aborda o seguinte"
-            },
-            "synthesis": "Pontos principais que trabalharemos durante a aula são:",
-            "elements": {
-              "synthesis": "Síntese",
-              "content": "Conteúdo",
-              "intro": "Introdução",
-              "assessment": "Avaliação"
-            },
             "permissions": {
               "title": "Permissões",
               "description": "Você precisa fornecer acesso ao microfone para poder enviar um áudio",
               "button": "Aceitar"
-            }
+            },
+            "intro": {
+              "hello": "Olá",
+              "message": "o tema que vamos ver aborda o seguinte"
+            },
+            "synthesis": "Pontos principais que trabalharemos durante a aula são:"
           };
         }
       });
