@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/react-18-widgets@1.0.1/page", "@beyond-js/reactive@1.1.6/model", "@aimpact/chat-sdk@1.0.0/core", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/chat@1.0.1/wrapper", "pragmate-ui@0.0.1/icons", "dayjs@1.11.9", "pragmate-ui@0.0.1/empty", "pragmate-ui@0.0.1/components", "@aimpact/chat@1.0.1/shared/components", "@aimpact/chat@1.0.1/ui/manager", "pragmate-ui@0.0.1/toast", "@beyond-js/react-18-widgets@1.0.1/hooks", "@aimpact/chat@1.0.1/shared/hooks", "pragmate-ui@0.0.1/modal", "@aimpact/ailearn-app@1.0.0/config", "@bgroup/media-manager@1.0.0/uploader-code", "pragmate-ui@0.0.1/form"], function (_export, _context3) {
+System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/react-18-widgets@1.0.1/page", "@beyond-js/reactive@1.1.6/model", "@aimpact/chat-sdk@1.0.0/core", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/chat@1.0.1/wrapper", "pragmate-ui@0.0.37/icons", "dayjs@1.11.9", "pragmate-ui@0.0.37/empty", "pragmate-ui@0.0.37/components", "@aimpact/chat@1.0.1/shared/components", "@aimpact/chat@1.0.1/ui/manager", "pragmate-ui@0.0.37/toast", "@beyond-js/react-18-widgets@1.0.1/hooks", "@aimpact/chat@1.0.1/shared/hooks", "pragmate-ui@0.0.37/modal", "@aimpact/ailearn-app@0.0.2/config", "@bgroup/media-manager@1.0.0/uploader-code", "pragmate-ui@0.0.37/form"], function (_export, _context3) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, dependency_15, dependency_16, dependency_17, dependency_18, dependency_19, dependency_20, dependency_21, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
@@ -25,36 +25,36 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       dependency_7 = _aimpactChatSdk100Session;
     }, function (_aimpactChat101Wrapper) {
       dependency_8 = _aimpactChat101Wrapper;
-    }, function (_pragmateUi001Icons) {
-      dependency_9 = _pragmateUi001Icons;
+    }, function (_pragmateUi0037Icons) {
+      dependency_9 = _pragmateUi0037Icons;
     }, function (_dayjs2) {
       dependency_10 = _dayjs2;
-    }, function (_pragmateUi001Empty) {
-      dependency_11 = _pragmateUi001Empty;
-    }, function (_pragmateUi001Components) {
-      dependency_12 = _pragmateUi001Components;
+    }, function (_pragmateUi0037Empty) {
+      dependency_11 = _pragmateUi0037Empty;
+    }, function (_pragmateUi0037Components) {
+      dependency_12 = _pragmateUi0037Components;
     }, function (_aimpactChat101SharedComponents) {
       dependency_13 = _aimpactChat101SharedComponents;
     }, function (_aimpactChat101UiManager) {
       dependency_14 = _aimpactChat101UiManager;
-    }, function (_pragmateUi001Toast) {
-      dependency_15 = _pragmateUi001Toast;
+    }, function (_pragmateUi0037Toast) {
+      dependency_15 = _pragmateUi0037Toast;
     }, function (_beyondJsReact18Widgets101Hooks) {
       dependency_16 = _beyondJsReact18Widgets101Hooks;
     }, function (_aimpactChat101SharedHooks) {
       dependency_17 = _aimpactChat101SharedHooks;
-    }, function (_pragmateUi001Modal) {
-      dependency_18 = _pragmateUi001Modal;
-    }, function (_aimpactAilearnApp100Config) {
-      dependency_19 = _aimpactAilearnApp100Config;
+    }, function (_pragmateUi0037Modal) {
+      dependency_18 = _pragmateUi0037Modal;
+    }, function (_aimpactAilearnApp002Config) {
+      dependency_19 = _aimpactAilearnApp002Config;
     }, function (_bgroupMediaManager100UploaderCode) {
       dependency_20 = _bgroupMediaManager100UploaderCode;
-    }, function (_pragmateUi001Form) {
-      dependency_21 = _pragmateUi001Form;
+    }, function (_pragmateUi0037Form) {
+      dependency_21 = _pragmateUi0037Form;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/reactive", "1.1.2"], ["@aimpact/chat-api", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", "1.0.0"], ["@bgroup/media-manager", "1.0.0"], ["pragmate-ui", "0.0.1"], ["@beyond-js/backend", "0.1.8"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.0"], ["@beyond-js/widgets", "0.1.4"], ["@firebase/component", "0.6.4"], ["@firebase/logger", "0.4.0"], ["@firebase/util", "1.9.3"], ["@google-cloud/error-reporting", "3.0.5"], ["@google-cloud/logging", "10.5.0"], ["@types/dom-mediacapture-record", "1.0.16"], ["dayjs", "1.11.9"], ["dexie", "3.2.4"], ["dompurify", "3.0.5"], ["firebase", "9.23.0"], ["firebase-admin", "11.9.0"], ["highlight.js", "11.8.0"], ["marked", "5.1.1"], ["marked-highlight", "2.0.1"], ["marked-mangle", "1.1.0"], ["openai", "3.3.0"], ["prismjs", "1.29.0"], ["react-select", "5.7.3"], ["socket.io-client", "4.7.1"], ["tippy.js", "6.3.7"], ["uuid", "9.0.0"], ["@types/react", "18.2.14"], ["@types/react-dom", "18.2.6"], ["@aimpact/chat", "1.0.1"], ["@aimpact/ailearn-app", "1.0.0"]]);
+        const dependencies = new Map([["@beyond-js/reactive", "1.1.2"], ["@aimpact/chat-api", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", "1.0.0"], ["@bgroup/media-manager", "1.0.0"], ["pragmate-ui", "0.0.37"], ["@beyond-js/backend", "0.1.8"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.0"], ["@beyond-js/widgets", "0.1.4"], ["@firebase/component", "0.6.4"], ["@firebase/logger", "0.4.0"], ["@firebase/util", "1.9.3"], ["@google-cloud/error-reporting", "3.0.5"], ["@google-cloud/logging", "10.5.0"], ["@types/dom-mediacapture-record", "1.0.16"], ["dayjs", "1.11.9"], ["dexie", "3.2.4"], ["dompurify", "3.0.5"], ["firebase", "9.23.0"], ["firebase-admin", "11.9.0"], ["highlight.js", "11.8.0"], ["marked", "5.1.1"], ["marked-highlight", "2.0.1"], ["marked-mangle", "1.1.0"], ["openai", "3.3.0"], ["prismjs", "1.29.0"], ["react-select", "5.7.3"], ["socket.io-client", "4.7.1"], ["tippy.js", "6.3.7"], ["uuid", "9.0.0"], ["@types/react", "18.2.14"], ["@types/react-dom", "18.2.6"], ["@aimpact/chat", "1.0.1"], ["@aimpact/ailearn-app", "0.0.2"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
