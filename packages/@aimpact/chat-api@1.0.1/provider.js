@@ -277,7 +277,7 @@ System.register(["@beyond-js/backend@0.1.8/client", "@beyond-js/kernel@0.1.9/bun
       **************************/
 
       ims.set('./messages', {
-        hash: 1498538243,
+        hash: 2560780649,
         creator: function (require, exports) {
           "use strict";
 
