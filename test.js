@@ -1,11 +1,12 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
+System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
-  _export("txt", void 0);
+  var dependency_0, dependency_1, bimport, __Bundle, __pkg, ims, __beyond_pkg, hmr;
   return {
-    setters: [function (_beyondJsKernel019Bundle) {
-      dependency_0 = _beyondJsKernel019Bundle;
+    setters: [function (_beyondJsWidgets015Render) {
+      dependency_0 = _beyondJsWidgets015Render;
+    }, function (_beyondJsKernel019Bundle) {
+      dependency_1 = _beyondJsKernel019Bundle;
     }],
     execute: function () {
       bimport = specifier => {
@@ -14,46 +15,27 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       };
       ({
         Bundle: __Bundle
-      } = dependency_0);
+      } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.2/gclassroom/permissions",
-          "multibundle": true
+          "vspecifier": "@aimpact/ailearn-app@0.0.2/test"
         },
-        "type": "txt"
-      }, _context.meta.url).package('es');
+        "type": "widget"
+      }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([]);
-      ims = new Map();
-      /*********************
-      INTERNAL MODULE: ./txt
-      *********************/
-      ims.set('./txt', {
-        hash: 3506828136,
-        creator: function (require, exports) {
-          exports.txt = {
-            "title": "Welcome to RVD.AI",
-            "subtitle": "La nueva forma de enseñar y aprender con Inteligencia artificial",
-            "instructions": "Para comenzar, vincula tu usuario con tu cuenta de Google Classroom",
-            "error": "¡Algo salió mal! Por favor contacta al administrador",
-            "action": "Vincular ahora",
-            "ERROR_GETTING_URL": "Error al obtener la URL de Classroom"
-          };
-        }
-      });
-      __pkg.exports.descriptor = [{
-        "im": "./txt",
-        "from": "txt",
-        "name": "txt"
-      }];
-      // Module exports
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0]]);
+      brequire('@beyond-js/widgets/render').widgets.register([{
+        "name": "ailearn-test-page",
+        "vspecifier": "@aimpact/ailearn-app@0.0.2/test",
+        "is": "page",
+        "route": "/ailearn/test"
+      }]);
+      ims = new Map(); // Module exports
       __pkg.exports.process = function ({
         require,
         prop,
         value
-      }) {
-        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
-      };
+      }) {};
       _export("__beyond_pkg", __beyond_pkg = __pkg);
       _export("hmr", hmr = new function () {
         this.on = (event, listener) => __pkg.hmr.on(event, listener);

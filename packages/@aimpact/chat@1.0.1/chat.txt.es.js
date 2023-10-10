@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3197707075,
+        hash: 475180296,
         creator: function (require, exports) {
           exports.txt = {
             "permissions": {
@@ -43,6 +43,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "assistant": {
               "title": "Assistant mission",
               "message": "La misión que tendrá el agente para interactuar en el chat"
+            },
+            "tools": {
+              "function": "Consultando contenidos...",
+              "kb-response": "Analizando respuesta..."
             }
           };
         }
