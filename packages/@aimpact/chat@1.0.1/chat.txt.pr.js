@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3318266783,
+        hash: 4142097672,
         creator: function (require, exports) {
           exports.txt = {
             "permissions": {
@@ -37,16 +37,20 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "description": "Você precisa fornecer acesso ao microfone para poder enviar um áudio",
               "button": "Aceitar"
             },
+            "systemActions": {
+              "kb-response": "Dados obtidos da base de conhecimento:",
+              "fetching-tool-data": "Vou consultar os documentos da classe",
+              "kb-processed-response": "Análise sobre conteúdo finalizado",
+              "functions": {
+                "kb": "Consultando a base de conhecimento sobre: "
+              }
+            },
             "system": {
               "success": "Sistema atualizado com sucesso"
             },
             "assistant": {
               "title": "Missão do Assistente",
               "message": "A missão que o agente terá para interagir no chat"
-            },
-            "tools": {
-              "function": "Consultando conteúdos...",
-              "kb-response": "Analisando resposta..."
             }
           };
         }
