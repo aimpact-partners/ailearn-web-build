@@ -397,6 +397,48 @@ option {
   transition: all 0.3s ease;
 }
 .list__item:hover {
+  background: var(--surface-container-lowest);
+}
+.list__item .class-actions {
+  margin-left: auto;
+}
+.list__item .list__item__header {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  padding: 0;
+  align-items: center;
+}
+.list__item .list__item__header header > a {
+  display: grid-inline;
+  transition: 300ms ease-in all;
+  grid-gap: 1rem;
+}
+.list__item .list__item__header header h4 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 0.5rem;
+}
+.list__item .list__item__header header h4 svg {
+  height: 24px;
+  transition: 300ms ease-in all;
+}
+.list__item .list__item__header header:hover svg {
+  fill: var(--primary);
+}
+.list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--surface);
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-4);
+  padding: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+.list__item:hover {
   background: var(--surface-accent);
 }
 .list__item .class-actions {
@@ -453,7 +495,10 @@ a {
 .flex-container {
   display: flex;
 }
-.flex-container.space-between {
+.flex-container.flex-100 {
+  width: 100%;
+}
+.flex-container.flex-space-between {
   justify-content: space-between;
 }
 .flex-container.flex-column {
@@ -464,6 +509,9 @@ a {
   align-items: center;
   gap: 0.5rem;
 }
+.flex-container.flex-vertical-center {
+  align-items: center;
+}
 .flex-container.flex-end {
   justify-content: flex-end;
 }
@@ -471,139 +519,55 @@ a {
 .mb-30 {
   margin-bottom: 2rem;
 }
-@media (max-width: 1920px) {
-  h1 {
-    font-size: 26px;
-  }
-}
-@media (max-width: 1370px) {
-  h1 {
-    font-size: 26px;
-  }
-}
 
-@media (max-width: 1920px) {
-  h2 {
-    font-size: 22px;
-  }
+.m-1 {
+  margin: 1rem 0;
 }
-
-@media (max-width: 1920px) {
-  h3 {
-    font-size: 22px;
-  }
+.reader__container {
+  position: fixed;
+  transition: all 300ms ease-in;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 300;
+  background: #fff;
+  margin: auto;
 }
-@media (max-width: 1370px) {
-  h3 {
-    font-size: 22px;
-  }
+.reader__container p,
+.reader__container ul,
+.reader__container li,
+.reader__container a,
+.reader__container span,
+.reader__container div,
+.reader__container button,
+.reader__container input,
+.reader__container label,
+.reader__container select,
+.reader__container option,
+.reader__container form,
+.reader__container fieldset,
+.reader__container legend,
+.reader__container table,
+.reader__container tbody,
+.reader__container tfoot,
+.reader__container thead,
+.reader__container tr,
+.reader__container th,
+.reader__container td {
+  font-size: 1.4rem !important;
+  line-height: 2.5rem;
 }
-
-@media (max-width: 1920px) {
-  h4 {
-    font-size: 20px;
-  }
+.reader__container .intro__panes ul li {
+  padding: 1rem;
 }
-
-@media (max-width: 1920px) {
-  a {
-    font-size: 16px;
-  }
+.reader__container .collapsible-header,
+.reader__container .chat__content {
+  letter-spacing: 0.15rem;
+  line-height: 2.5rem;
+  margin: auto;
+  max-width: 800px;
 }
-@media (max-width: 1370px) {
-  a {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1920px) {
-  p {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1370px) {
-  p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1920px) {
-  input {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1370px) {
-  input {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1920px) {
-  textarea {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1370px) {
-  textarea {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1920px) {
-  select {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1370px) {
-  select {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1920px) {
-  option {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1370px) {
-  option {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1920px) {
-  button {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1370px) {
-  button {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1920px) {
-  label {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1370px) {
-  label {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1920px) {
-  caption {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1370px) {
-  caption {
-    font-size: 14px;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -618,7 +582,6 @@ textarea,
 input,
 select,
 option {
-  font-family: "Rubik", sans-serif;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -627,38 +590,14 @@ option {
   font-weight: 400;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 500;
-}
-
-h1 {
-  line-height: 31px;
-}
-
-h2 {
-  line-height: 26px;
-}
-
-h3 {
-  line-height: 24px;
-}
-
-h4 {
-  line-height: 18px;
-}
-
-button {
-  line-height: 19px;
-}
-
-p,
 input,
 textarea,
 select {
   line-height: 22px;
+}
+
+* {
+  line-height: 1.5rem;
 }
 
 label {

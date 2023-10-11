@@ -13,12 +13,12 @@ System.register([], function (_export, _context) {
         },
         "global.css": true,
         "params": {
-          "chatAPI": "https://chat-api-http-skvkre4apq-uc.a.run.app",
-          "baseUrl": "https://ailearn-http-v2-6dlchqr2za-uc.a.run.app"
+          "chatAPI": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app",
+          "baseUrl": "https://ailearn-http-v2-j2rcifstnq-uc.a.run.app"
         },
         "ssr": {},
         "backend": {
-          "host": "https://ailearn-ws-v2-6dlchqr2za-uc.a.run.app"
+          "host": "https://ailearn-ws-v2-j2rcifstnq-uc.a.run.app"
         }
       });
     }
