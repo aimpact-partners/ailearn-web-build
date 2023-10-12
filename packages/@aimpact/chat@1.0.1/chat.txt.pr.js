@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4142097672,
+        hash: 1187552164,
         creator: function (require, exports) {
           exports.txt = {
             "permissions": {
@@ -41,6 +41,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "kb-response": "Dados obtidos da base de conhecimento:",
               "fetching-tool-data": "Vou consultar os documentos da classe",
               "kb-processed-response": "Análise sobre conteúdo finalizado",
+              "transcription": "Obtendo transcrição",
               "functions": {
                 "kb": "Consultando a base de conhecimento sobre: "
               }
