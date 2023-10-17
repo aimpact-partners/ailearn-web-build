@@ -5,19 +5,20 @@ System.register([], function (_export, _context) {
     setters: [],
     execute: function () {
       _export("default", {
-        "package": "@aimpact/chat-api",
-        "version": "1.1.0",
+        "package": "@aimpact/ailearn-api",
+        "version": "0.1.0",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]
         },
         "global.css": true,
         "params": {
-          "AGENT_API": "https://agent-api-rb5caohzgq-uc.a.run.app/agent"
+          "chatAPI": "https://chat-api-http-skvkre4apq-uc.a.run.app",
+          "baseUrl": "https://ailearn-http-v2-6dlchqr2za-uc.a.run.app"
         },
         "ssr": {},
         "backend": {
-          "host": "https://chat-api-ws-skvkre4apq-uc.a.run.app"
+          "host": "https://ailearn-ws-v2-6dlchqr2za-uc.a.run.app"
         }
       });
     }
