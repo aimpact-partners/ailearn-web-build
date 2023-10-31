@@ -11,7 +11,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/da
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/backend", "0.1.8"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/reactive", "1.1.2"], ["firebase", "10.1.0"], ["dompurify", "3.0.5"], ["prismjs", "1.29.0"], ["highlight.js", "11.8.0"], ["marked", "5.1.2"], ["marked-highlight", "2.0.4"], ["marked-mangle", "1.1.2"], ["socket.io-client", "4.7.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.15"], ["@types/react-dom", "18.2.7"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-app", "0.0.2"]]);
+        const dependencies = new Map([["@beyond-js/backend", "0.1.8"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/reactive", "1.1.2"], ["firebase", "10.1.0"], ["dompurify", "3.0.5"], ["prismjs", "1.29.0"], ["highlight.js", "11.8.0"], ["marked", "5.1.2"], ["marked-highlight", "2.0.4"], ["marked-mangle", "1.1.2"], ["socket.io-client", "4.7.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.15"], ["@types/react-dom", "18.2.7"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-app", "0.0.10"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -30,7 +30,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/da
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 1286393856,
+        hash: 1183757381,
         creator: function (require, exports) {
           "use strict";
 
@@ -41,7 +41,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/da
           var _database = require("@beyond-js/reactive/database");
           async function initialize() {
             try {
-              const db = await _database.DBManager.config('chat-api@17', {
+              const db = await _database.DBManager.config('chat-api@19', {
                 Chat: 'id, name, userId, category, usage, system, knowledgeBoxId',
                 Conversations: 'id, name, userId, system',
                 User: 'id',
@@ -53,7 +53,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/da
                 Lessons: 'id, curriculumObjective, userId',
                 Topics: 'id, lessonId, title',
                 Sessions: 'id, lessonId, classRoomId',
-                GClasses: 'id, sessions'
+                GClasses: 'id, sessions',
+                Projects: 'id, project',
+                PromptCategories: 'id',
+                Prompts: 'id'
               });
               // For example, if you have user data to add you can use:
               // db.Chat.bulkAdd(chats);
@@ -62,8 +65,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/da
             }
           }
           /*bundle */
-          const initDB = initialize;
-          exports.initDB = initDB;
+          const initDB = exports.initDB = initialize;
         }
       });
       __pkg.exports.descriptor = [{
@@ -88,4 +90,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/da
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGF0YWJhc2UiLCJyZXF1aXJlIiwiaW5pdGlhbGl6ZSIsImRiIiwiREJNYW5hZ2VyIiwiY29uZmlnIiwiQ2hhdCIsIkNvbnZlcnNhdGlvbnMiLCJVc2VyIiwiTWVzc2FnZXMiLCJBdWRpb1JlY29yZHMiLCJLbm93bGVkZ2VCb3hlcyIsIlNoYXJlZEtub3dsZWRnZUJhc2VzIiwiRG9jdW1lbnRzIiwiTGVzc29ucyIsIlRvcGljcyIsIlNlc3Npb25zIiwiR0NsYXNzZXMiLCJlIiwiY29uc29sZSIsInRyYWNlIiwiaW5pdERCIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIi9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLFNBQUEsR0FBQUMsT0FBQTtVQUVBLGVBQWVDLFVBQVVBLENBQUE7WUFDeEIsSUFBSTtjQUNILE1BQU1DLEVBQUUsR0FBRyxNQUFNSCxTQUFBLENBQUFJLFNBQVMsQ0FBQ0MsTUFBTSxDQUFDLGFBQWEsRUFBRTtnQkFDaERDLElBQUksRUFBRSwyREFBMkQ7Z0JBQ2pFQyxhQUFhLEVBQUUsMEJBQTBCO2dCQUN6Q0MsSUFBSSxFQUFFLElBQUk7Z0JBQ1ZDLFFBQVEsRUFBRSxrRUFBa0U7Z0JBQzVFQyxZQUFZLEVBQUUsZUFBZTtnQkFDN0JDLGNBQWMsRUFBRSxZQUFZO2dCQUM1QkMsb0JBQW9CLEVBQUUsdUNBQXVDO2dCQUM3REMsU0FBUyxFQUFFLHFCQUFxQjtnQkFDaENDLE9BQU8sRUFBRSxpQ0FBaUM7Z0JBQzFDQyxNQUFNLEVBQUUscUJBQXFCO2dCQUM3QkMsUUFBUSxFQUFFLDJCQUEyQjtnQkFDckNDLFFBQVEsRUFBRTtlQUNWLENBQUM7Y0FFRjtjQUNBO2FBQ0EsQ0FBQyxPQUFPQyxDQUFDLEVBQUU7Y0FDWEMsT0FBTyxDQUFDQyxLQUFLLENBQUMsT0FBTyxFQUFFRixDQUFDLENBQUM7O1VBRTNCO1VBRU87VUFBWSxNQUFNRyxNQUFNLEdBQUduQixVQUFVO1VBQUNvQixPQUFBLENBQUFELE1BQUEsR0FBQUEsTUFBQSJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGF0YWJhc2UiLCJyZXF1aXJlIiwiaW5pdGlhbGl6ZSIsImRiIiwiREJNYW5hZ2VyIiwiY29uZmlnIiwiQ2hhdCIsIkNvbnZlcnNhdGlvbnMiLCJVc2VyIiwiTWVzc2FnZXMiLCJBdWRpb1JlY29yZHMiLCJLbm93bGVkZ2VCb3hlcyIsIlNoYXJlZEtub3dsZWRnZUJhc2VzIiwiRG9jdW1lbnRzIiwiTGVzc29ucyIsIlRvcGljcyIsIlNlc3Npb25zIiwiR0NsYXNzZXMiLCJQcm9qZWN0cyIsIlByb21wdENhdGVnb3JpZXMiLCJQcm9tcHRzIiwiZSIsImNvbnNvbGUiLCJ0cmFjZSIsImluaXREQiIsImV4cG9ydHMiXSwic291cmNlcyI6WyIvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxTQUFBLEdBQUFDLE9BQUE7VUFFQSxlQUFlQyxVQUFVQSxDQUFBO1lBQ3hCLElBQUk7Y0FDSCxNQUFNQyxFQUFFLEdBQUcsTUFBTUgsU0FBQSxDQUFBSSxTQUFTLENBQUNDLE1BQU0sQ0FBQyxhQUFhLEVBQUU7Z0JBQ2hEQyxJQUFJLEVBQUUsMkRBQTJEO2dCQUNqRUMsYUFBYSxFQUFFLDBCQUEwQjtnQkFDekNDLElBQUksRUFBRSxJQUFJO2dCQUNWQyxRQUFRLEVBQUUsa0VBQWtFO2dCQUM1RUMsWUFBWSxFQUFFLGVBQWU7Z0JBQzdCQyxjQUFjLEVBQUUsWUFBWTtnQkFDNUJDLG9CQUFvQixFQUFFLHVDQUF1QztnQkFDN0RDLFNBQVMsRUFBRSxxQkFBcUI7Z0JBQ2hDQyxPQUFPLEVBQUUsaUNBQWlDO2dCQUMxQ0MsTUFBTSxFQUFFLHFCQUFxQjtnQkFDN0JDLFFBQVEsRUFBRSwyQkFBMkI7Z0JBQ3JDQyxRQUFRLEVBQUUsY0FBYztnQkFDeEJDLFFBQVEsRUFBRSxhQUFhO2dCQUN2QkMsZ0JBQWdCLEVBQUUsSUFBSTtnQkFDdEJDLE9BQU8sRUFBRTtlQUNULENBQUM7Y0FFRjtjQUNBO2FBQ0EsQ0FBQyxPQUFPQyxDQUFDLEVBQUU7Y0FDWEMsT0FBTyxDQUFDQyxLQUFLLENBQUMsT0FBTyxFQUFFRixDQUFDLENBQUM7O1VBRTNCO1VBRU87VUFBWSxNQUFNRyxNQUFNLEdBQUFDLE9BQUEsQ0FBQUQsTUFBQSxHQUFHdEIsVUFBVSJ9
