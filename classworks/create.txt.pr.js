@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 787916347,
+        hash: 239112489,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -40,7 +40,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "assessment": "Avaliação",
               "generateTopics": "Gerar tópicos"
             },
-            "contentTypeTitle": "Tipos de apresentação do conteúdo curricular",
+            "contentTypeTitle": "Tipo de apresentação",
             "contentTypesLabels": ["Equilibrado", "Teórico"],
             "contentTypesCharacteristics": ["Utilize uma linguagem simples, com passagens divertidas, com frases curtas e que captem continuamente a atenção do aluno.", "Utilize linguagem teórica, mas simples de entender com exemplos práticos."],
             "title": "Crie um trabalho de aula!",
