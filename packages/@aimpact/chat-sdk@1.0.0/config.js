@@ -14,7 +14,7 @@ System.register([], function (_export, _context) {
         "global.css": true,
         "layout": "main-layout",
         "params": {
-          "baseUrl": "https://test.app.rvd.ai",
+          "baseUrl": "https://dev.app.rvd.ai",
           "apis": {
             "chat": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app"
           },
