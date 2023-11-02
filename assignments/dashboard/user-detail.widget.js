@@ -60,7 +60,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.10/assignments/dashboard/user-detail",
+          "vspecifier": "@aimpact/ailearn-app@0.0.11/assignments/dashboard/user-detail",
           "multibundle": true
         },
         "type": "widget"
@@ -69,12 +69,12 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@beyond-js/reactive/model', dependency_4], ['@aimpact/ailearn-sdk/core', dependency_5], ['@aimpact/chat-sdk/voice', dependency_6], ['@aimpact/chat/wrapper', dependency_7], ['react', dependency_8], ['@bgroup/media-manager/audio-player', dependency_9], ['@aimpact/ailearn-app/config', dependency_10], ['@beyond-js/react-18-widgets/hooks', dependency_11], ['@aimpact/ailearn-app/chat/messages', dependency_12], ['@aimpact/chat-sdk/widgets/markdown', dependency_13], ['pragmate-ui/components', dependency_14], ['@aimpact/chat/shared/hooks', dependency_15], ['@aimpact/chat/shared/components', dependency_16], ['pragmate-ui/tabs', dependency_17], ['pragmate-ui/alert', dependency_18], ['pragmate-ui/empty', dependency_19]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "ailearn-assigment-user-detail-dashboard",
-        "vspecifier": "@aimpact/ailearn-app@0.0.10/assignments/dashboard/user-detail.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.11/assignments/dashboard/user-detail.widget",
         "is": "page",
         "route": "/assignments/dashboard/user-detail/${id}",
         "layout": "chat-layout"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.10/assignments/dashboard/user-detail.widget');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.11/assignments/dashboard/user-detail.widget');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller

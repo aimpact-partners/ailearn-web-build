@@ -58,7 +58,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.10/assignments/dashboard",
+          "vspecifier": "@aimpact/ailearn-app@0.0.11/assignments/dashboard",
           "multibundle": true
         },
         "type": "widget"
@@ -67,12 +67,12 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['react', dependency_4], ['@beyond-js/reactive/model', dependency_5], ['@aimpact/chat/api', dependency_6], ['@aimpact/ailearn-sdk/config', dependency_7], ['@aimpact/chat-sdk/session', dependency_8], ['@aimpact/chat/wrapper', dependency_9], ['@aimpact/ailearn-sdk/core', dependency_10], ['@aimpact/ailearn-app/shared/charts', dependency_11], ['@aimpact/chat/shared/components', dependency_12], ['pragmate-ui/empty', dependency_13], ['@beyond-js/react-18-widgets/hooks', dependency_14], ['pragmate-ui/components', dependency_15], ['pragmate-ui/list', dependency_16], ['@aimpact/ailearn-app/components/charts', dependency_17], ['pragmate-ui/icons', dependency_18], ['pragmate-ui/tooltip', dependency_19]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "ailearn-session-dashboard",
-        "vspecifier": "@aimpact/ailearn-app@0.0.10/assignments/dashboard.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.11/assignments/dashboard.widget",
         "is": "page",
         "route": "/assignments/dashboard/${id}/classwork",
         "layout": "chat-layout"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.10/assignments/dashboard.widget');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.11/assignments/dashboard.widget');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller

@@ -47,7 +47,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.10/classworks/create",
+          "vspecifier": "@aimpact/ailearn-app@0.0.11/classworks/create",
           "multibundle": true
         },
         "type": "widget"
@@ -56,12 +56,12 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@beyond-js/reactive/model', dependency_4], ['@aimpact/ailearn-sdk/core', dependency_5], ['@aimpact/chat-sdk/session', dependency_6], ['@beyond-js/kernel/core', dependency_7], ['react', dependency_8], ['pragmate-ui/alert', dependency_9], ['pragmate-ui/components', dependency_10], ['pragmate-ui/icons', dependency_11], ['@aimpact/chat/shared/components', dependency_12], ['@beyond-js/react-18-widgets/hooks', dependency_13], ['@beyond-js/kernel/routing', dependency_14], ['@aimpact/chat/shared/hooks', dependency_15]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "ailearn-classworks-create",
-        "vspecifier": "@aimpact/ailearn-app@0.0.10/classworks/create.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.11/classworks/create.widget",
         "is": "page",
         "route": "/classworks/create",
         "layout": "chat-layout"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.10/classworks/create.widget');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.11/classworks/create.widget');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller
