@@ -26,7 +26,7 @@ System.register([], function (_export, _context) {
             "key": "ebe05ca0a4d9aafb4024d0666471a0c7",
             "id": "pNInz6obpgDQGcFmaJgB"
           },
-          "baseUrl": "http://localhost:4530",
+          "baseUrl": "https://test.app.rvd.ai",
           "apis": {
             "chat": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app"
           }

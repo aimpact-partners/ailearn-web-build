@@ -17,11 +17,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.10/classworks/create",
+          "vspecifier": "@aimpact/ailearn-app@0.0.10/gclassrooms/access",
           "multibundle": true
         },
         "type": "txt"
-      }, _context.meta.url).package('es');
+      }, _context.meta.url).package('en');
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
@@ -29,43 +29,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2754580470,
+        hash: 4233625998,
         creator: function (require, exports) {
           exports.txt = {
-            "actions": {
-              "next": "Siguiente",
-              "synthesis": "Síntesis",
-              "prerequisites": "Prerrequisitos",
-              "content": "Contenido",
-              "assessment": "Evaluación",
-              "generateTopics": "Generar tópicos"
-            },
-            "contentTypeTitle": "Tipo de contenido",
-            "contentTypesLabels": ["Creativo", "Teórico"],
-            "contentTypesCharacteristics": ["Lenguaje simple, con pasajes entretenidos, con oraciones cortas, y que capten continuamente la atención del alumno.", "Lenguaje teórico sencillo de entender con ejemplos prácticos."],
-            "title": "Crea un trabajo de clase",
-            "curriculumObjective": "Objetivo curricular",
-            "language": "Idioma de la clase",
-            "languages": {
-              "es": "Español",
-              "en": "Inglés",
-              "fr": "Francés",
-              "it": "Italiano",
-              "de": "Alemán",
-              "pr": "Portugués"
-            },
-            "topics": {
-              "title": "Lista de tópicos",
-              "add": "Agregar tópicos",
-              "description": "Elimina los tópicos que no quieres incluir en el trabajo de clase",
-              "elements": {
-                "introduction": "Introducción",
-                "content": "Contenido",
-                "synthesis": "Síntesis",
-                "assessment": "Evaluación",
-                "previous": "Previo"
-              }
-            }
+            "title": "We are ready to take off!",
+            "subtitle": "The configuration was done successfully",
+            "error": "The page you are looking for does not exist"
           };
         }
       });
