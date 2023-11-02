@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.0.0/core", "@aimpact/chat-sdk@1.0.0/session", "@beyond-js/reactive@1.2.0/model", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.0.0/core", "@aimpact/chat-sdk@1.0.0/session", "@beyond-js/reactive@1.1.6/model", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Wrapper, AppWrapper, __beyond_pkg, hmr;
@@ -13,8 +13,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.0.0/core
       dependency_1 = _aimpactChatSdk100Core;
     }, function (_aimpactChatSdk100Session) {
       dependency_2 = _aimpactChatSdk100Session;
-    }, function (_beyondJsReactive120Model) {
-      dependency_3 = _beyondJsReactive120Model;
+    }, function (_beyondJsReactive116Model) {
+      dependency_3 = _beyondJsReactive116Model;
     }, function (_beyondJsKernel019Core) {
       dependency_4 = _beyondJsKernel019Core;
     }],

@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.0.0/users", "firebase@10.0.0/auth", "@beyond-js/kernel@0.1.9/core", "firebase@10.0.0/app", "@beyond-js/reactive@1.2.0/model", "react@18.2.0"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.0.0/users", "firebase@10.0.0/auth", "@beyond-js/kernel@0.1.9/core", "firebase@10.0.0/app", "@beyond-js/reactive@1.1.6/model", "react@18.2.0"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, sessionWrapper, __beyond_pkg, hmr;
@@ -14,8 +14,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.0.0/user
       dependency_3 = _beyondJsKernel019Core;
     }, function (_firebase1000App) {
       dependency_4 = _firebase1000App;
-    }, function (_beyondJsReactive120Model) {
-      dependency_5 = _beyondJsReactive120Model;
+    }, function (_beyondJsReactive116Model) {
+      dependency_5 = _beyondJsReactive116Model;
     }, function (_react) {
       dependency_6 = _react;
     }],
