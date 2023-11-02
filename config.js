@@ -28,8 +28,8 @@ System.register([], function (_export, _context) {
           },
           "baseUrl": "https://test.app.rvd.ai",
           "apis": {
-            "ailearn": "https://ailearn-http-v2-6dlchqr2za-uc.a.run.app",
-            "chat": "https://chat-api-http-skvkre4apq-uc.a.run.app"
+            "ailearn": "https://ailearn-http-v2-j2rcifstnq-uc.a.run.app",
+            "chat": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app"
           }
         },
         "ssr": {},

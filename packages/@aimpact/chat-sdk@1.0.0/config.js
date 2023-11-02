@@ -16,15 +16,17 @@ System.register([], function (_export, _context) {
         "params": {
           "baseUrl": "https://test.app.rvd.ai",
           "apis": {
-            "chat": "https://chat-api-http-skvkre4apq-uc.a.run.app"
+            "chat": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app"
           },
           "firebaseConfig": {
-            "apiKey": "AIzaSyDiwwiF_O_WZHyq7QrjnxqIg9EXz1vavV0",
-            "authDomain": "chat-api-test-393820.firebaseapp.com",
-            "projectId": "chat-api-test-393820",
-            "storageBucket": "chat-api-test-393820.appspot.com",
-            "messagingSenderId": "1083395329827",
-            "appId": "1:1083395329827:web:c6fead0e2d4124b4f90696"
+            "apiKey": "AIzaSyBYiZcPNBky2QvNdVwgCgU_v2B7feLtbQU",
+            "authDomain": "aimpact-partners-dev.firebaseapp.com",
+            "databaseURL": "https://aimpact-partners-dev-default-rtdb.firebaseio.com",
+            "projectId": "aimpact-partners-dev",
+            "storageBucket": "aimpact-partners-dev.appspot.com",
+            "messagingSenderId": "1081434267674",
+            "appId": "1:1081434267674:web:9396cc23e55385b5d171a3",
+            "measurementId": "G-QLL5WFH89Y"
           }
         },
         "ssr": {},
