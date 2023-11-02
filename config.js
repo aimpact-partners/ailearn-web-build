@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "@aimpact/ailearn-app",
-        "version": "0.0.10",
+        "version": "0.0.11",
         "languages": {
           "default": "en",
           "supported": ["en", "es", "pr"]
@@ -26,7 +26,7 @@ System.register([], function (_export, _context) {
             "key": "ebe05ca0a4d9aafb4024d0666471a0c7",
             "id": "pNInz6obpgDQGcFmaJgB"
           },
-          "baseUrl": "http://localhost:4530",
+          "baseUrl": "https://test.app.rvd.ai",
           "apis": {
             "ailearn": "https://ailearn-http-v2-j2rcifstnq-uc.a.run.app",
             "chat": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app"

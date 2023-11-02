@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/transversals", "@beyond-js/widgets@0.1.5/render", "@aimpact/ailearn-app@0.0.10/model/gclassroom", "@aimpact/chat-sdk@1.0.0/session", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat-sdk@1.0.0/initialize", "@aimpact/chat@1.0.1/extensions", "@aimpact/chat@1.0.1/sidebar/manager", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core", "@aimpact/ailearn-app@0.0.10/shared/icons"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/transversals", "@beyond-js/widgets@0.1.5/render", "@aimpact/ailearn-app@0.0.11/model/gclassroom", "@aimpact/chat-sdk@1.0.0/session", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat-sdk@1.0.0/initialize", "@aimpact/chat@1.0.1/extensions", "@aimpact/chat@1.0.1/sidebar/manager", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core", "@aimpact/ailearn-app@0.0.11/shared/icons"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, Transversal, __beyond_transversal, widgets, bundles;
@@ -9,8 +9,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
       dependency_1 = _beyondJsKernel019Transversals;
     }, function (_beyondJsWidgets015Render) {
       dependency_2 = _beyondJsWidgets015Render;
-    }, function (_aimpactAilearnApp0010ModelGclassroom) {
-      dependency_3 = _aimpactAilearnApp0010ModelGclassroom;
+    }, function (_aimpactAilearnApp0011ModelGclassroom) {
+      dependency_3 = _aimpactAilearnApp0011ModelGclassroom;
     }, function (_aimpactChatSdk100Session) {
       dependency_4 = _aimpactChatSdk100Session;
     }, function (_beyondJsKernel019Routing) {
@@ -25,8 +25,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
       dependency_9 = _beyondJsKernel019Texts;
     }, function (_beyondJsKernel019Core) {
       dependency_10 = _beyondJsKernel019Core;
-    }, function (_aimpactAilearnApp0010SharedIcons) {
-      dependency_11 = _aimpactAilearnApp0010SharedIcons;
+    }, function (_aimpactAilearnApp0011SharedIcons) {
+      dependency_11 = _aimpactAilearnApp0011SharedIcons;
     }],
     execute: function () {
       ({
