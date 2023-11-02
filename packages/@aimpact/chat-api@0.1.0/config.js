@@ -13,7 +13,7 @@ System.register([], function (_export, _context) {
         },
         "global.css": true,
         "params": {
-          "AGENT_API": "http://localhost:5050"
+          "AGENT_API": "https://agent-api-rb5caohzgq-uc.a.run.app/agent"
         },
         "ssr": {},
         "backend": {
