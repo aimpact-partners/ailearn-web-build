@@ -1,0 +1,297 @@
+.answering {
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  background-color: var(--surface-60);
+}
+.answering .dot-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.answering .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-gray-50);
+  margin-right: 0.5rem;
+  animation: pulse 1s infinite;
+}
+.answering .dot:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.answering .dot:nth-child(3) {
+  animation-delay: 0.2s;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+.message .message__container {
+  width: 100%;
+}
+.message .message-text__container + .player__container {
+  margin-top: 0.5rem;
+}
+.message .message-text__container p:not(:first-child) {
+  margin-top: 1rem;
+}
+.message .message-text__container code {
+  margin: 1rem 0;
+  display: block;
+}
+.message .message-text__container .word {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.message .message-text__container .word:after {
+  position: absolute;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: all 300ms ease-in-out;
+}
+.message .message-text__container .word:hover:after, .message .message-text__container .word.highlight:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  transform: scale(1.1);
+  background: var(--app-text-highlight);
+  z-index: 0;
+  opacity: 0.2;
+}
+.message {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem;
+  border-radius: var(--border-radius-base);
+  color: var(--on-surface);
+}
+.message.user {
+  background-color: var(--surface-dim);
+}
+.message.system {
+  background-color: var(--surface-bright);
+}
+.message .player__container {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .message {
+    flex-direction: column;
+  }
+  .message .message__actions {
+    align-self: end;
+  }
+}
+.message .picture__container img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.message .tokens {
+  white-space: nowrap;
+  margin-top: 1rem;
+}
+.message:nth-last-child(2) {
+  animation: dash 0.2s;
+}
+.message .message__actions {
+  display: flex;
+  margin-top: 0.5rem;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+.message .audio__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.message-action {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: var(--surface-container-low);
+  border-radius: var(--border-radius-base);
+}
+.message-action h4 {
+  font-weight: bolder;
+}
+.message-action h4 + .detail__content {
+  margin-top: 0.5rem;
+}
+.message-action.last-action {
+  border: 1px solid var(--outline);
+  border-radius: var(--border-radius-base);
+  background: var(--surface-container);
+}
+.message-action.last-action .detail__content {
+  --max-lines: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-lines);
+}
+
+.actions__log {
+  padding: 1rem;
+  border: 1px solid var(--outline);
+  background: var(--surface-container);
+  margin: 1rem 0;
+}
+.assessment-analysis__container {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  grid-gap: 1rem;
+}
+.assessment-analysis__container .item__icon__container {
+  display: grid;
+  place-items: center;
+}
+.assessment-analysis__container .assessment__analysis-item {
+  background: var(--surface-dim);
+  padding: 1rem;
+  border-radius: var(--border-radius-base);
+  display: grid;
+  grid-template-columns: 15% 1fr;
+}
+.assessment-analysis__container header {
+  width: 100%;
+}
+
+.item__icon__container {
+  display: grid;
+  justify-content: left;
+  font-size: 3rem;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease backwards;
+}
+
+.fade-out-up {
+  animation: fadeOutUp 1s ease backwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.01;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+.pane__container {
+  margin: 1rem 0;
+  border-radius: var(--border-radius-base);
+  background: var(--surface-container-low);
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+:host-context(html[data-beyond-mode=dark]) {
+  --option-success-bg: var(--success-40);
+  --option-error-bg: var(--error-40);
+}
+
+:host-context(html) {
+  --option-success-bg: var(--success-70);
+  --option-error-bg: var(--error-70);
+}
+
+:host-context(html[data-beyond-mode=light]) {
+  --option-success-bg: var(--success-70);
+  --option-error-bg: var(--error-70);
+}
+
+.question__container--results .option-item {
+  padding: 0.34rem;
+  border-radius: var(--border-radius-base);
+  margin: 0.5rem 0;
+  border: 1px solid var(--outline);
+}
+.question__container--results .option-item.option--selected {
+  background: var(--option-success-bg);
+}
+.question__container--results .option-item.option--wrong {
+  background: var(--option-error-bg);
+}
+.assessment__container {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.question__container {
+  background: var(--surface-dim);
+  padding: 1rem;
+  border-radius: var(--border-radius-base);
+}
+.question__container h4 {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+}
+.question__container label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.pragmate-icon.icon--success {
+  fill: var(--success);
+}
+.pragmate-icon.icon--danger {
+  fill: var(--error);
+}
+
+ul.list-unstyled {
+  list-style: none;
+  display: inline-flex;
+  gap: 1rem;
+}
+ul.list-unstyled li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXG1lc3NhZ2VcXGFuc3dlcmluZy5zY3NzIiwic2Nzc1xcbWVzc2FnZVxcY29udGFpbmVyLnNjc3MiLCJzY3NzXFxtZXNzYWdlXFxtZXNzYWdlLnNjc3MiLCJzY3NzXFxtZXNzYWdlXFxzeXN0ZW0tYWN0aW9ucy5zY3NzIiwic2Nzc1xcb3JhbC1hc3Nlc3NtZW50LnNjc3MiLCJzY3NzXFxwYW5lLnNjc3MiLCJzY3NzXFxzZWxlY3Rpb25cXGV2YWx1YXRpb24uc2NzcyIsInNjc3NcXHNlbGVjdGlvblxcc3R5bGVzLnNjc3MiLCJzY3NzXFxzdHlsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQzs7QUFFRDtFQUNDOztBQUlGO0VBQ0M7SUFDQztJQUNBOztFQUVEO0lBQ0M7O0VBRUQ7SUFDQztJQUNBOzs7QUN0Q0Y7RUFDQzs7QUFPQTtFQUNDOztBQUdBO0VBQ0M7O0FBR0Y7RUFDQztFQUNBOztBQUVEO0VBQ0M7RUFDQTtFQUNBOztBQUNBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUlBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FDakNMO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7O0FBRUQ7RUFDQzs7QUFHRDtFQUVDOztBQUdEO0VBdkJEO0lBd0JFOztFQUVBO0lBQ0M7OztBQUtEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBR0Y7RUFDQztFQUNBOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFFQTs7QUNwRUY7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNDOztBQUVBO0VBQ0M7O0FBSUY7RUFDQztFQUNBO0VBQ0E7O0FBQ0E7RUFDQztFQUNBO0VBRUE7RUFDQTtFQUNBOzs7QUFLSDtFQUNDO0VBQ0E7RUFFQTtFQUNBOztBQ2pDRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7O0FBRUQ7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVEO0VBQ0M7OztBQUdGO0VBQ0M7RUFDQTtFQUNBOzs7QUFHRDtFQUNDOzs7QUFHRDtFQUNDOzs7QUFFRDtFQUNDO0lBQ0M7SUFDQTs7RUFFRDtJQUNDO0lBQ0E7OztBQUlGO0VBQ0M7SUFDQzs7RUFFRDtJQUNDO0lBQ0E7SUFDQTs7RUFFRDtJQUNDO0lBQ0E7SUFDQTs7O0FDMURGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQ05EO0VBQ0M7RUFDQTs7O0FBR0Q7RUFDQztFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7OztBQUdBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDQzs7QUFFRDtFQUNDOztBQ3hCSDtFQUNDO0VBQ0E7RUFDQTs7O0FBRUQ7RUFDQztFQUVBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBRUQ7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQ3BCRDtFQUNDOztBQUVEO0VBQ0M7OztBQUdGO0VBQ0M7RUFDQTtFQUNBOztBQUNBO0VBQ0M7RUFDQTtFQUNBIiwiZmlsZSI6IiJ9 */
