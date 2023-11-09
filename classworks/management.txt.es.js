@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 48218674,
+        hash: 2496819804,
         creator: function (require, exports) {
           exports.txt = {
             "empty": {
@@ -54,9 +54,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "assessment": "Evaluación"
               }
             },
-            "title": "Trabajo de clase",
+            "title": "",
             "totalLegend": "Elementos generados",
-            "topicUpdated": "Tópico %1 actualizado",
+            "topicUpdated": "Tema %1 actualizado",
             "lessonUpdated": "Actualizados elementos de la lección",
             "assign": "Asignar",
             "assessmentReview": "¡Prepárate para Inspirar! Revisa esta evaluación cuidadosamente diseñada para asegurar que se alinee con tus objetivos educativos. Tu herramienta para moldear las mentes del mañana te espera.",
@@ -68,8 +68,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "titles": {
               "lessons": "Clase",
-              "topic": "Tópico",
-              "topics": "Tópicos"
+              "topic": "Módulo",
+              "topics": "Módulos"
             },
             "topics": {
               "title": "Temas",

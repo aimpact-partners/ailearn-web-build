@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 852572306,
+        hash: 2007587876,
         creator: function (require, exports) {
           exports.txt = {
             "empty": {
@@ -54,10 +54,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "assessment": "Avaliações"
               }
             },
-            "title": "Trabalho de classe",
+            "title": "",
             "totalLegend": "Elementos gerados",
             "lessonUpdated": "Elementos da lição atualizados",
-            "topicUpdated": "Tópico %1 atualizado",
+            "topicUpdated": "Tema %1 atualizado",
             "assessmentReview": "Prepare-se para inspirar! Revise esta avaliação cuidadosamente elaborada para garantir que esteja alinhada com seus objetivos educacionais. Sua ferramenta para moldar as mentes de amanhã está à sua espera.",
             "assign": "Atribuir",
             "processAlert": "Estamos gerando seu trabalho de classe, por favor aguarde, esse processo pode levar alguns minutos.",
@@ -67,12 +67,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "assessment": "Avaliação"
             },
             "titles": {
-              "lessons": "Trabalho de Classe",
+              "lessons": "Classe",
               "topic": "Tópico",
               "topics": "Tópicos"
             },
             "topics": {
-              "title": "Lista de tópicos",
+              "title": "Lista de temas",
               "description": "Adicione a lista de pontos a serem revisados como objetivos em seu trabalho de classe.",
               "elements": {
                 "content": "Conteúdo",
