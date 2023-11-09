@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3401485124,
+        hash: 2496819804,
         creator: function (require, exports) {
           exports.txt = {
             "empty": {
@@ -54,7 +54,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "assessment": "Evaluación"
               }
             },
-            "title": "Trabajo de clase",
+            "title": "",
             "totalLegend": "Elementos generados",
             "topicUpdated": "Tema %1 actualizado",
             "lessonUpdated": "Actualizados elementos de la lección",
@@ -68,8 +68,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "titles": {
               "lessons": "Clase",
-              "topic": "Tema",
-              "topics": "Temas"
+              "topic": "Módulo",
+              "topics": "Módulos"
             },
             "topics": {
               "title": "Temas",
