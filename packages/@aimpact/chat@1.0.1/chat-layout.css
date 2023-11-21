@@ -17,23 +17,11 @@ body {
 
 main {
   height: 100%;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   overflow-y: scroll;
   display: flex;
-}
-@media (max-width: 1368px) {
-  main {
-    padding: 1rem;
-    width: 70%;
-  }
-}
-@media (max-width: 1080px) {
-  main {
-    padding: 1rem;
-    width: 80%;
-  }
 }
 @media (max-width: 768px) {
   main {
@@ -47,4 +35,4 @@ main beyond-layout-children {
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7OztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQVBEO0lBUUU7Ozs7QUFJRjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQVJEO0lBU0U7SUFDQTs7O0FBR0Q7RUFiRDtJQWNFO0lBQ0E7OztBQUVEO0VBakJEO0lBa0JFO0lBQ0E7OztBQUdEO0VBQ0M7RUFDQSIsImZpbGUiOiIifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7OztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQVBEO0lBUUU7Ozs7QUFJRjtFQUNDO0VBRUE7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQVREO0lBVUU7SUFDQTs7O0FBR0Q7RUFDQztFQUNBIiwiZmlsZSI6IiJ9 */

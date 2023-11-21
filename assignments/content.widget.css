@@ -1,0 +1,42 @@
+.badges__container {
+  display: grid;
+}
+.badges__container .pui-button-group {
+  gap: 1rem;
+  border-color: transparent;
+}
+.intro__panes {
+  margin-top: 2rem;
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+.intro__panes .intro__pane {
+  display: none;
+}
+.intro__panes .intro__pane.active {
+  display: flex;
+}
+.intro__content__header {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.intro__actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+}
+
+.chat-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  padding: 0.5rem;
+  border-radius: var(--border-radius-base);
+}
+.chat-link:hover {
+  background: var(--surface-bright);
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGJhZGdlcy5zY3NzIiwic2Nzc1xccGFuZXMuc2NzcyIsInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7O0FBQ0E7RUFDRTtFQUNBOztBQ0pKO0VBQ0M7RUFDQTtFQUNBOztBQUNBO0VBQ0M7O0FBQ0E7RUFDQzs7QUNQSDtFQUNDO0VBQ0E7OztBQUdEO0VBQ0M7RUFDQTtFQUNBOzs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDQyIsImZpbGUiOiIifQ== */
