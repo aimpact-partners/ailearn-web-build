@@ -1,7 +1,7 @@
-System.register(["@firebase/util@1.9.3","@firebase/component@0.6.4","@firebase/logger@0.4.0","idb@7.1.1","@firebase/app@0.9.14"], (_exports, _context) => {
+System.register(["@firebase/util@1.9.3","@firebase/component@0.6.4","@firebase/logger@0.4.0","idb@7.1.1","@firebase/app@0.9.20"], (_exports, _context) => {
 
 const bimport = specifier => {
-	const dependencies = new Map([["@firebase/util","1.9.3"],["@firebase/component","0.6.4"],["@firebase/logger","0.4.0"],["idb","7.1.1"],["@firebase/app","0.9.14"],["firebase","10.0.0"]]);
+	const dependencies = new Map([["@firebase/util","1.9.3"],["@firebase/component","0.6.4"],["@firebase/logger","0.4.0"],["idb","7.1.1"],["@firebase/app","0.9.20"],["firebase","10.5.0"]]);
 	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
 };
 
@@ -9,7 +9,7 @@ const bimport = specifier => {
 var dependencies = new Map();
 var require = dependency => dependencies.get(dependency);
 return {
-setters: [dep => dependencies.set('@firebase/util@1.9.3', dep), dep => dependencies.set('@firebase/component@0.6.4', dep), dep => dependencies.set('@firebase/logger@0.4.0', dep), dep => dependencies.set('idb@7.1.1', dep), dep => dependencies.set('@firebase/app@0.9.14', dep)],
+setters: [dep => dependencies.set('@firebase/util@1.9.3', dep), dep => dependencies.set('@firebase/component@0.6.4', dep), dep => dependencies.set('@firebase/logger@0.4.0', dep), dep => dependencies.set('idb@7.1.1', dep), dep => dependencies.set('@firebase/app@0.9.20', dep)],
 execute: function() {
 // Prevent esbuild from considering the context to be amd
 const define = void 0;
@@ -34,20 +34,20 @@ var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
   value: true
 }), mod);
 
-// .beyond/uimport/temp/firebase/app.10.0.0.js
-var app_10_0_0_exports = {};
-module.exports = __toCommonJS(app_10_0_0_exports);
+// .beyond/uimport/firebase/app.10.5.0.js
+var app_10_5_0_exports = {};
+module.exports = __toCommonJS(app_10_5_0_exports);
 
 // node_modules/firebase/app/dist/esm/index.esm.js
 var index_esm_exports = {};
-var import_app = require("@firebase/app@0.9.14");
-__reExport(index_esm_exports, require("@firebase/app@0.9.14"));
+var import_app = require("@firebase/app@0.9.20");
+__reExport(index_esm_exports, require("@firebase/app@0.9.20"));
 var name = "firebase";
-var version = "10.0.0";
+var version = "10.5.0";
 (0, import_app.registerVersion)(name, version, "app");
 
-// .beyond/uimport/temp/firebase/app.10.0.0.js
-__reExport(app_10_0_0_exports, index_esm_exports, module.exports);
+// .beyond/uimport/firebase/app.10.5.0.js
+__reExport(app_10_5_0_exports, index_esm_exports, module.exports);
 /**
  * @license
  * Copyright 2020 Google LLC
@@ -70,4 +70,4 @@ code(module, require);
 _exports(module.exports);
 }}});
 
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC90ZW1wL2ZpcmViYXNlL2FwcC4xMC4wLjAuanMiLCIuLi9ub2RlX21vZHVsZXMvZmlyZWJhc2UvYXBwL2luZGV4LnRzIl0sIm5hbWVzIjpbImFwcF8xMF8wXzBfZXhwb3J0cyIsIm1vZHVsZSIsImV4cG9ydHMiLCJfX3RvQ29tbW9uSlMiLCJpbXBvcnRfYXBwIiwicmVnaXN0ZXJWZXJzaW9uIiwibmFtZSIsInZlcnNpb24iLCJfX3JlRXhwb3J0IiwiaW5kZXhfZXNtX2V4cG9ydHMiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxJQUFBQSxrQkFBQTtBQUFBQyxNQUFBLENBQUFDLE9BQUEsR0FBQUMsWUFBQSxDQUFBSCxrQkFBQTs7Ozs7Ozs7SUNtQkFJLFVBQUEsQ0FBQUMsZUFBQSxFQUFnQkMsSUFBQSxFQUFNQyxPQUFBLEVBQVMsS0FBSzs7O0FEbkJwQ0MsVUFBQSxDQUFBUixrQkFBQSxFQUFjUyxpQkFBQSxFQUFkUixNQUFBLENBQUFDLE9BQUEiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii9haWxlYXJuL2FwcC9vdXQifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC9maXJlYmFzZS9hcHAuMTAuNS4wLmpzIiwiLi4vbm9kZV9tb2R1bGVzL2ZpcmViYXNlL2FwcC9pbmRleC50cyJdLCJuYW1lcyI6WyJhcHBfMTBfNV8wX2V4cG9ydHMiLCJtb2R1bGUiLCJleHBvcnRzIiwiX190b0NvbW1vbkpTIiwiaW1wb3J0X2FwcCIsInJlZ2lzdGVyVmVyc2lvbiIsIm5hbWUiLCJ2ZXJzaW9uIiwiX19yZUV4cG9ydCIsImluZGV4X2VzbV9leHBvcnRzIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsSUFBQUEsa0JBQUE7QUFBQUMsTUFBQSxDQUFBQyxPQUFBLEdBQUFDLFlBQUEsQ0FBQUgsa0JBQUE7Ozs7Ozs7O0lDbUJBSSxVQUFBLENBQUFDLGVBQUEsRUFBZ0JDLElBQUEsRUFBTUMsT0FBQSxFQUFTLEtBQUs7OztBRG5CcENDLFVBQUEsQ0FBQVIsa0JBQUEsRUFBY1MsaUJBQUEsRUFBZFIsTUFBQSxDQUFBQyxPQUFBIiwiZmlsZSI6IiIsInNvdXJjZVJvb3QiOiIvYWlsZWFybi9hcHAvb3V0In0=

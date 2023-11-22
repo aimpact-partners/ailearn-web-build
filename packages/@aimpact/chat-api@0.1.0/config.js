@@ -15,7 +15,7 @@ System.register([], function (_export, _context) {
         "params": {},
         "ssr": {},
         "backend": {
-          "host": "https://chat-api-ws-pjv2z6fura-uc.a.run.app"
+          "host": "https://chat-api-ws-skvkre4apq-uc.a.run.app"
         }
       });
     }

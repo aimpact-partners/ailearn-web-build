@@ -596,12 +596,6 @@ b,
 u,
 i,
 center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
 fieldset,
 form,
 label,
@@ -633,6 +627,9 @@ summary,
 time,
 mark,
 audio,
+ul,
+ol,
+li,
 video {
   margin: 0;
   padding: 0;
@@ -659,11 +656,6 @@ section {
 
 body {
   line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
 }
 
 blockquote,
@@ -1315,7 +1307,9 @@ h5,
   font-size: 1rem;
 }
 
-p {
+p,
+ul,
+li {
   font-size: 1.25rem;
   line-height: 28px;
 }
