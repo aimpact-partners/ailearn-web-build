@@ -29,22 +29,20 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3145353253,
+        hash: 2193325455,
         creator: function (require, exports) {
           exports.txt = {
-            "loginTitle": "Iniciar sesión",
+            "logo": "aip-chat-logo",
+            "loginTitle": "Iniciar sesión en AILearn",
             "emailLabel": "Correo electrónico",
             "passwordLabel": "Contraseña",
             "termsAndPrivacy": "Al crear una cuenta, aceptas nuestros Términos de servicio y Política de privacidad",
             "signInButton": "Iniciar sesión",
             "socialLoginTitle": "O inicia sesión con una cuenta de redes sociales",
             "googleSignInButton": "Iniciar sesión con Google",
-            "emailSignInButton": "Continuar con tu correo",
-            "closeButton": "Cerrar",
             "facebookSignInButton": "Iniciar sesión con Facebook",
             "forgotPasswordLink": "¿Olvidaste tu contraseña?",
-            "createAccountLink": "Crear una cuenta nueva",
-            "theme": "Modo %them"
+            "createAccountLink": "Crear una cuenta nueva"
           };
         }
       });

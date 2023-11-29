@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 880810871,
+        hash: 3949095134,
         creator: function (require, exports) {
           exports.txt = {
             "header": "Titulo de encabezado",
@@ -37,8 +37,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "preevaluation": "Pre-evaluación",
             "multiple": "Selección múltiple",
             "spoken": "Evaluación oral",
-            "empty": "Aún no existen participaciones en esta asignación",
-            "percentil": "Total de participación",
+            "empty": "Aún no existen registros en el trabajo de clase",
             "participation": {
               "total": "Participación total",
               "pending": "Estudiantes sin participar"

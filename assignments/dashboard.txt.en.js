@@ -29,16 +29,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4084209614,
+        hash: 1549533262,
         creator: function (require, exports) {
           exports.txt = {
             "header": "Header title",
             "interaction": "Interaction",
-            "percentil": "Total participation",
             "preevaluation": "Pre-evaluation",
             "multiple": "Multiple choice",
             "spoken": "Oral evaluation",
-            "empty": "There are no participations in this assignment yet",
+            "empty": "There are no records in the classwork yet",
             "participation": {
               "total": "Total participation",
               "pending": "Students without participation"

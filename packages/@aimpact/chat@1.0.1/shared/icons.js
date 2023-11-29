@@ -39,7 +39,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       INTERNAL MODULE: ./icons
       ***********************/
       ims.set('./icons', {
-        hash: 1256948712,
+        hash: 745277336,
         creator: function (require, exports) {
           "use strict";
 
