@@ -12,12 +12,10 @@ System.register([], function (_export, _context) {
           "supported": ["en", "es"]
         },
         "global.css": true,
-        "params": {
-          "AGENT_API": "https://agent-api-rb5caohzgq-uc.a.run.app/agent"
-        },
+        "params": {},
         "ssr": {},
         "backend": {
-          "host": "https://chat-api-ws-skvkre4apq-uc.a.run.app"
+          "host": "https://chat-api-ws-v2-rb5caohzgq-uc.a.run.app"
         }
       });
     }
