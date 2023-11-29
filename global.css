@@ -101,7 +101,7 @@
 }
 .page-container form .form-actions button {
   border-radius: var(--border-radius-lg);
-  min-width: 100px;
+  min-width: 188px;
 }
 @media (max-width: 768px) {
   .page-container form .form-actions {
