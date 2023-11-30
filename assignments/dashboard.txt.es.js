@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 880810871,
+        hash: 4040503121,
         creator: function (require, exports) {
           exports.txt = {
             "header": "Titulo de encabezado",
@@ -42,7 +42,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "participation": {
               "total": "Participación total",
               "pending": "Estudiantes sin participar"
-            }
+            },
+            "messageCounter": "Mensajes "
           };
         }
       });
