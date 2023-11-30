@@ -1,7 +1,7 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle","react@18.2.0","scheduler@0.23.0","react-dom@18.2.0","react-dom@18.2.0/client","@beyond-js/kernel@0.1.9/core","@beyond-js/widgets@0.1.5/render","@beyond-js/kernel@0.1.9/styles","@beyond-js/widgets@0.1.5/controller","@beyond-js/react-18-widgets@1.0.1/base","@beyond-js/kernel@0.1.9/routing","@beyond-js/widgets@0.1.5/routing"], (_exports, _context) => {
+System.register(["@beyond-js/kernel@0.1.9/bundle","react@18.2.0","scheduler@0.23.0","react-dom@18.2.0","react-dom@18.2.0/client","@beyond-js/kernel@0.1.9/core","@beyond-js/widgets@0.1.5/render","@beyond-js/kernel@0.1.9/styles","@beyond-js/widgets@0.1.5/controller","@beyond-js/react-18-widgets@1.0.3/base","@beyond-js/kernel@0.1.9/routing","@beyond-js/widgets@0.1.5/routing"], (_exports, _context) => {
 
 const bimport = specifier => {
-	const dependencies = new Map([["@beyond-js/kernel","0.1.9"],["react","18.2.0"],["scheduler","0.23.0"],["react-dom","18.2.0"],["@beyond-js/widgets","0.1.5"],["@beyond-js/react-18-widgets","1.0.1"]]);
+	const dependencies = new Map([["@beyond-js/kernel","0.1.9"],["react","18.2.0"],["scheduler","0.23.0"],["react-dom","18.2.0"],["@beyond-js/widgets","0.1.5"],["@beyond-js/react-18-widgets","1.0.3"]]);
 	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
 };
 
@@ -9,7 +9,7 @@ const bimport = specifier => {
 var dependencies = new Map();
 var require = dependency => dependencies.get(dependency);
 return {
-setters: [dep => dependencies.set('@beyond-js/kernel@0.1.9/bundle', dep), dep => dependencies.set('react@18.2.0', dep), dep => dependencies.set('scheduler@0.23.0', dep), dep => dependencies.set('react-dom@18.2.0', dep), dep => dependencies.set('react-dom@18.2.0/client', dep), dep => dependencies.set('@beyond-js/kernel@0.1.9/core', dep), dep => dependencies.set('@beyond-js/widgets@0.1.5/render', dep), dep => dependencies.set('@beyond-js/kernel@0.1.9/styles', dep), dep => dependencies.set('@beyond-js/widgets@0.1.5/controller', dep), dep => dependencies.set('@beyond-js/react-18-widgets@1.0.1/base', dep), dep => dependencies.set('@beyond-js/kernel@0.1.9/routing', dep), dep => dependencies.set('@beyond-js/widgets@0.1.5/routing', dep)],
+setters: [dep => dependencies.set('@beyond-js/kernel@0.1.9/bundle', dep), dep => dependencies.set('react@18.2.0', dep), dep => dependencies.set('scheduler@0.23.0', dep), dep => dependencies.set('react-dom@18.2.0', dep), dep => dependencies.set('react-dom@18.2.0/client', dep), dep => dependencies.set('@beyond-js/kernel@0.1.9/core', dep), dep => dependencies.set('@beyond-js/widgets@0.1.5/render', dep), dep => dependencies.set('@beyond-js/kernel@0.1.9/styles', dep), dep => dependencies.set('@beyond-js/widgets@0.1.5/controller', dep), dep => dependencies.set('@beyond-js/react-18-widgets@1.0.3/base', dep), dep => dependencies.set('@beyond-js/kernel@0.1.9/routing', dep), dep => dependencies.set('@beyond-js/widgets@0.1.5/routing', dep)],
 execute: function() {
 // Prevent esbuild from considering the context to be amd
 const define = void 0;
@@ -45,18 +45,18 @@ var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
   value: true
 }), mod);
 
-// .beyond/uimport/temp/@beyond-js/react-18-widgets/page.1.0.1.js
-var page_1_0_1_exports = {};
-__export(page_1_0_1_exports, {
+// .beyond/uimport/temp/@beyond-js/react-18-widgets/page.1.0.3.js
+var page_1_0_3_exports = {};
+__export(page_1_0_3_exports, {
   PageReactWidgetController: () => PageReactWidgetController,
   __beyond_pkg: () => __beyond_pkg,
   hmr: () => hmr
 });
-module.exports = __toCommonJS(page_1_0_1_exports);
+module.exports = __toCommonJS(page_1_0_3_exports);
 
 // node_modules/@beyond-js/react-18-widgets/page/page.browser.mjs
 var dependency_0 = __toESM(require("@beyond-js/kernel@0.1.9/bundle"), 0);
-var dependency_1 = __toESM(require("@beyond-js/react-18-widgets@1.0.1/base"), 0);
+var dependency_1 = __toESM(require("@beyond-js/react-18-widgets@1.0.3/base"), 0);
 var dependency_2 = __toESM(require("@beyond-js/widgets@0.1.5/routing"), 0);
 var import_meta = {};
 var {
@@ -64,7 +64,7 @@ var {
 } = dependency_0;
 var __pkg = new __Bundle({
   "module": {
-    "vspecifier": "@beyond-js/react-18-widgets@1.0.1/page"
+    "vspecifier": "@beyond-js/react-18-widgets@1.0.3/page"
   },
   "type": "ts"
 }, _context.meta.url).package();
@@ -127,4 +127,4 @@ code(module, require);
 _exports(module.exports);
 }}});
 
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC90ZW1wL0BiZXlvbmQtanMvcmVhY3QtMTgtd2lkZ2V0cy9wYWdlLjEuMC4xLmpzIiwiLi4vbm9kZV9tb2R1bGVzL0BiZXlvbmQtanMvcmVhY3QtMTgtd2lkZ2V0cy9wYWdlL19fc291cmNlcy9wYWdlL3BhZ2UudHMiXSwibmFtZXMiOlsicGFnZV8xXzBfMV9leHBvcnRzIiwiX19leHBvcnQiLCJQYWdlUmVhY3RXaWRnZXRDb250cm9sbGVyIiwiX19iZXlvbmRfcGtnIiwiaG1yIiwibW9kdWxlIiwiZXhwb3J0cyIsIl9fdG9Db21tb25KUyIsIl9iYXNlIiwicmVxdWlyZTIiLCJfcm91dGluZyIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIyIiwiUmVhY3RXaWRnZXRDb250cm9sbGVyIiwidXJpIiwibW91bnQiLCJpbml0aWFsaXNlIiwiUGFnZVVSSSIsIndpZGdldCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsSUFBQUEsa0JBQUE7QUFBQUMsUUFBQSxDQUFBRCxrQkFBQTtFQUFBRSx5QkFBQSxFQUFBQSxDQUFBLEtBQUFBLHlCQUFBO0VBQUFDLFlBQUEsRUFBQUEsQ0FBQSxLQUFBQSxZQUFBO0VBQUFDLEdBQUEsRUFBQUEsQ0FBQSxLQUFBQTtBQUFBO0FBQUFDLE1BQUEsQ0FBQUMsT0FBQSxHQUFBQyxZQUFBLENBQUFQLGtCQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lDQUEsSUFBQVEsS0FBQSxHQUFBQyxRQUFBO0lBQ0EsSUFBQUMsUUFBQSxHQUFBRCxRQUFBO0lBRWlCLE1BQ0ZFLDBCQUFBLFNBQWtDSCxLQUFBLENBQUFJLHFCQUFBLENBQXFCO01BQ3JFLENBQUFDLEdBQUE7TUFDQSxJQUFJQSxJQUFBLEVBQUc7UUFDTixPQUFPLEtBQUssQ0FBQUEsR0FBQTtNQUNiO01BRUFDLE1BQUEsRUFBSztRQUNKLE9BQU8sTUFBTUEsS0FBQSxDQUFNO1VBQUVELEdBQUEsRUFBSyxLQUFLLENBQUFBO1FBQUksQ0FBRTtNQUN0QztNQUVBLE1BQU1FLFdBQUEsRUFBVTtRQUNmLEtBQUssQ0FBQUYsR0FBQSxHQUFPLElBQUlILFFBQUEsQ0FBQU0sT0FBQSxDQUFRO1VBQUVDLE1BQUEsRUFBYSxLQUFLQTtRQUFNLENBQUU7UUFDcEQsTUFBTSxNQUFNRixVQUFBLENBQVU7TUFDdkI7O0lBQ0FULE9BQUEsQ0FBQUoseUJBQUEsR0FBQVMsMEJBQUEiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii9haWxlYXJuL2FwcC9vdXQifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC90ZW1wL0BiZXlvbmQtanMvcmVhY3QtMTgtd2lkZ2V0cy9wYWdlLjEuMC4zLmpzIiwiLi4vbm9kZV9tb2R1bGVzL0BiZXlvbmQtanMvcmVhY3QtMTgtd2lkZ2V0cy9wYWdlL19fc291cmNlcy9wYWdlL3BhZ2UudHMiXSwibmFtZXMiOlsicGFnZV8xXzBfM19leHBvcnRzIiwiX19leHBvcnQiLCJQYWdlUmVhY3RXaWRnZXRDb250cm9sbGVyIiwiX19iZXlvbmRfcGtnIiwiaG1yIiwibW9kdWxlIiwiZXhwb3J0cyIsIl9fdG9Db21tb25KUyIsIl9iYXNlIiwicmVxdWlyZTIiLCJfcm91dGluZyIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIyIiwiUmVhY3RXaWRnZXRDb250cm9sbGVyIiwidXJpIiwibW91bnQiLCJpbml0aWFsaXNlIiwiUGFnZVVSSSIsIndpZGdldCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsSUFBQUEsa0JBQUE7QUFBQUMsUUFBQSxDQUFBRCxrQkFBQTtFQUFBRSx5QkFBQSxFQUFBQSxDQUFBLEtBQUFBLHlCQUFBO0VBQUFDLFlBQUEsRUFBQUEsQ0FBQSxLQUFBQSxZQUFBO0VBQUFDLEdBQUEsRUFBQUEsQ0FBQSxLQUFBQTtBQUFBO0FBQUFDLE1BQUEsQ0FBQUMsT0FBQSxHQUFBQyxZQUFBLENBQUFQLGtCQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lDQUEsSUFBQVEsS0FBQSxHQUFBQyxRQUFBO0lBQ0EsSUFBQUMsUUFBQSxHQUFBRCxRQUFBO0lBRWlCLE1BQ0ZFLDBCQUFBLFNBQWtDSCxLQUFBLENBQUFJLHFCQUFBLENBQXFCO01BQ3JFLENBQUFDLEdBQUE7TUFDQSxJQUFJQSxJQUFBLEVBQUc7UUFDTixPQUFPLEtBQUssQ0FBQUEsR0FBQTtNQUNiO01BRUFDLE1BQUEsRUFBSztRQUNKLE9BQU8sTUFBTUEsS0FBQSxDQUFNO1VBQUVELEdBQUEsRUFBSyxLQUFLLENBQUFBO1FBQUksQ0FBRTtNQUN0QztNQUVBLE1BQU1FLFdBQUEsRUFBVTtRQUNmLEtBQUssQ0FBQUYsR0FBQSxHQUFPLElBQUlILFFBQUEsQ0FBQU0sT0FBQSxDQUFRO1VBQUVDLE1BQUEsRUFBYSxLQUFLQTtRQUFNLENBQUU7UUFDcEQsTUFBTSxNQUFNRixVQUFBLENBQVU7TUFDdkI7O0lBQ0FULE9BQUEsQ0FBQUoseUJBQUEsR0FBQVMsMEJBQUEiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii9haWxlYXJuL2FwcC9vdXQifQ==
