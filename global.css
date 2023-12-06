@@ -763,6 +763,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 .reader__container {
   position: fixed;
   transition: all 300ms ease-in;
