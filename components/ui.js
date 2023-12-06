@@ -56,13 +56,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/components/ui"
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/components/ui"
         },
         "type": "code"
       }, _context.meta.url).package();
       ;
       __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2], ['pragmate-ui/image', dependency_3], ['pragmate-ui/components', dependency_4], ['pragmate-ui/empty', dependency_5], ['@aimpact/ailearn-app/shared/icons', dependency_6], ['pragmate-ui/icons', dependency_7], ['pragmate-ui/link', dependency_8], ['pragmate-ui/list', dependency_9], ['pragmate-ui/alert', dependency_10], ['@aimpact/chat/shared/components', dependency_11], ['pragmate-ui/breadcrumb', dependency_12]]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.19/components/ui');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.21/components/ui');
       ims = new Map();
       /******************************
       INTERNAL MODULE: ./card/content

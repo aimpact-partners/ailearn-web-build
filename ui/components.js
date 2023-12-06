@@ -34,7 +34,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/ui/components"
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/ui/components"
         },
         "type": "widget"
       }, _context.meta.url).package();
@@ -42,12 +42,12 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['pragmate-ui/alert', dependency_4], ['react', dependency_5], ['pragmate-ui/components', dependency_6], ['pragmate-ui/tabs', dependency_7]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "ailearn-ui-components",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/ui/components",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/ui/components",
         "is": "page",
         "route": "/ui/components",
         "layout": "chat-layout"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.19/ui/components');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.21/ui/components');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller

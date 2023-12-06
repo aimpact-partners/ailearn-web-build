@@ -46,7 +46,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/sessions/access",
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/sessions/access",
           "multibundle": true
         },
         "type": "widget"
@@ -55,12 +55,12 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@aimpact/ailearn-sdk/core', dependency_4], ['@beyond-js/reactive/model', dependency_5], ['@aimpact/chat-sdk/session', dependency_6], ['@aimpact/ailearn-app/model/gclassroom', dependency_7], ['react', dependency_8], ['@beyond-js/react-18-widgets/hooks', dependency_9], ['@aimpact/chat/shared/hooks', dependency_10], ['@aimpact/chat/shared/components', dependency_11], ['pragmate-ui/components', dependency_12], ['@beyond-js/kernel/routing', dependency_13]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "ailearn-sessions-access",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/sessions/access.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/sessions/access.widget",
         "is": "page",
         "route": "/sessions/access/${id}",
         "layout": "chat-layout"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.19/sessions/access.widget');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.21/sessions/access.widget');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller

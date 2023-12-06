@@ -45,14 +45,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/assessments/selection",
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/assessments/selection",
           "multibundle": true
         },
         "type": "code"
       }, _context.meta.url).package();
       ;
       __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['@beyond-js/react-18-widgets/base', dependency_2], ['@beyond-js/reactive/model', dependency_3], ['@aimpact/ailearn-app/model/wrapper', dependency_4], ['@aimpact/ailearn-sdk/core', dependency_5], ['react', dependency_6], ['pragmate-ui/form', dependency_7], ['pragmate-ui/components', dependency_8], ['@beyond-js/react-18-widgets/hooks', dependency_9], ['@aimpact/chat/shared/hooks', dependency_10], ['pragmate-ui/alert', dependency_11]]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.19/assessments/selection.code');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.21/assessments/selection.code');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller

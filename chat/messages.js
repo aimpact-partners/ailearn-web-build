@@ -39,7 +39,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/chat/messages"
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/chat/messages"
         },
         "type": "code"
       }, _context.meta.url).package();

@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/assignments/chat",
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/assignments/chat",
           "multibundle": true
         },
         "type": "txt"

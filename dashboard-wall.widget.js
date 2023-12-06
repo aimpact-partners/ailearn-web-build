@@ -50,7 +50,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/dashboard-wall",
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/dashboard-wall",
           "multibundle": true
         },
         "type": "widget"
@@ -59,12 +59,12 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@aimpact/ailearn-sdk/core', dependency_4], ['@beyond-js/reactive/model', dependency_5], ['react', dependency_6], ['pragmate-ui/icons', dependency_7], ['@aimpact/chat/shared/icons', dependency_8], ['pragmate-ui/list', dependency_9], ['@aimpact/ailearn-app/components/ui', dependency_10], ['pragmate-ui/components', dependency_11], ['@beyond-js/react-18-widgets/hooks', dependency_12], ['pragmate-ui/alert', dependency_13], ['react/jsx-runtime', dependency_14]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "dashboard-wall",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/dashboard-wall.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/dashboard-wall.widget",
         "is": "page",
         "route": "/assignments/${id}/wall",
         "layout": "general-layout"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.19/dashboard-wall.widget');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.21/dashboard-wall.widget');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller

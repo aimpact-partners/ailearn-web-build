@@ -140,132 +140,132 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "pragmate-ui@0.0.3/pui/template/palette"
       }, {
         "name": "ailearn-sessions-access",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/sessions/access.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/sessions/access.widget",
         "is": "page",
         "route": "/sessions/access/${id}",
         "layout": "chat-layout"
       }, {
         "name": "ailearn-assignments-all-in-one",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assignments/all-in-one.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assignments/all-in-one.widget",
         "is": "page",
         "route": "/assignments/${assignmentId}/all-in-one/${id}",
         "layout": "chat-layout"
       }, {
         "name": "ailearn-assignments-assessment",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assignments/assessment.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assignments/assessment.widget",
         "is": "page",
         "route": "/assignments/${assignmentId}/assessment/${id}",
         "layout": "general-layout"
       }, {
         "name": "ailearn-assignments-chat",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assignments/chat.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assignments/chat.widget",
         "is": "page",
         "route": "/assignments/${assignmentId}/activity/${activityId}/chat/${chatId}",
         "layout": "general-layout"
       }, {
         "name": "ailearn-assignments-spoken",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assignments/spoken.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assignments/spoken.widget",
         "is": "page",
         "route": "/assignments/${assignmentId}/spoken/${id}",
         "layout": "general-layout"
       }, {
         "name": "ailearn-assessment-oral",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assessments/oral-test.widget"
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assessments/oral-test.widget"
       }, {
         "name": "ailearn-session-dashboard",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assignments/dashboard.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assignments/dashboard.widget",
         "is": "page",
         "route": "/assignments/${id}/dashboard/classroom",
         "layout": "general-layout"
       }, {
         "name": "assignment-dashboard-participant",
         "attrs": ["id", "participant-id"],
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assignment-dashboard-participant.widget"
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assignment-dashboard-participant.widget"
       }, {
         "name": "assignment-dashboard-participant-page",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assignments/dashboard/participant",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assignments/dashboard/participant",
         "is": "page",
         "route": "/assignments/${assignmentId}/dashboard/participant/${participantId}",
         "layout": "general-layout"
       }, {
         "name": "dashboard-wall",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/dashboard-wall.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/dashboard-wall.widget",
         "is": "page",
         "route": "/assignments/${id}/wall",
         "layout": "general-layout"
       }, {
         "name": "assignment-intro",
         "attrs": ["metadata"],
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assignment-intro.widget"
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assignment-intro.widget"
       }, {
         "name": "ailearn-assignments-coach-list",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assignments/coach/list.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assignments/coach/list.widget",
         "is": "page",
         "route": "/assignments/${id}/coach/list",
         "layout": "general-layout"
       }, {
         "name": "ailearn-assignments-student-list",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assignments/student/list.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assignments/student/list.widget",
         "is": "page",
         "route": "/assignments/${id}/student/list",
         "layout": "general-layout"
       }, {
         "name": "ailearn-gclassroom-permissions",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/gclassroom/permissions.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/gclassroom/permissions.widget",
         "is": "page",
         "route": "/gclassroom/permissions"
       }, {
         "name": "ailearn-assignment-view",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assignment/view.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assignment/view.widget",
         "is": "page",
         "route": "/assignments/${id}",
         "layout": "general-layout"
       }, {
         "name": "ailearn-gclassrooms-access",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/gclassroom/access.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/gclassroom/access.widget",
         "is": "page",
         "route": "/gclassroom/access",
         "layout": "chat-layout"
       }, {
         "name": "ailearn-gclassroom-explorer",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/gclassroom-explorer.widget"
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/gclassroom-explorer.widget"
       }, {
         "name": "ailearn-classworks-create",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/classworks/create.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/classworks/create.widget",
         "is": "page",
         "route": "/classworks/create",
         "layout": "chat-layout"
       }, {
         "name": "ailearn-modules-list",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/modules/list.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/modules/list.widget",
         "is": "page",
         "route": "/modules/list",
         "layout": "general-layout"
       }, {
         "name": "ailearn-classworks-management",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/classworks/management.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/classworks/management.widget",
         "is": "page",
         "route": "/classworks/management/${id}",
         "layout": "chat-layout"
       }, {
         "name": "ailearn-layout",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/layout/main",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/layout/main",
         "is": "layout"
       }, {
         "name": "student-home",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/home.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/home.widget",
         "is": "page",
         "route": "/home",
         "layout": "general-layout"
       }, {
         "name": "ailearn-template-tipography",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/template/typography",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/template/typography",
         "is": "page",
         "route": "/template/typography",
         "layout": "chat-layout"
       }, {
         "name": "ailearn-ui-components",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/ui/components",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/ui/components",
         "is": "page",
         "route": "/ui/components",
         "layout": "chat-layout"
@@ -276,7 +276,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
       ****************************************/
       bundles.push([{
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/core/routing"
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/core/routing"
         },
         "type": "start"
       }, function (ims, exports) {
@@ -451,7 +451,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
 
       bundles.push([{
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/initialize-app",
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/initialize-app",
           "multibundle": true
         },
         "type": "start"

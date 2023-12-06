@@ -28,7 +28,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/shared/icons"
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/shared/icons"
         },
         "type": "code"
       }, _context.meta.url).package();

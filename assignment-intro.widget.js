@@ -77,7 +77,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/assignment-intro",
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/assignment-intro",
           "multibundle": true
         },
         "type": "widget"
@@ -87,9 +87,9 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "assignment-intro",
         "attrs": ["metadata"],
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/assignment-intro.widget"
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/assignment-intro.widget"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.19/assignment-intro.widget');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.21/assignment-intro.widget');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller

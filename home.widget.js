@@ -44,7 +44,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/home",
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/home",
           "multibundle": true
         },
         "type": "widget"
@@ -53,12 +53,12 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@beyond-js/reactive/model', dependency_4], ['@aimpact/ailearn-sdk/core', dependency_5], ['react', dependency_6], ['pragmate-ui/icons', dependency_7], ['@aimpact/ailearn-app/components/ui', dependency_8], ['@beyond-js/react-18-widgets/hooks', dependency_9], ['@aimpact/ailearn-app/shared/icons', dependency_10], ['pragmate-ui/components', dependency_11], ['@aimpact/chat-sdk/session', dependency_12]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "student-home",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/home.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/home.widget",
         "is": "page",
         "route": "/home",
         "layout": "general-layout"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.19/home.widget');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.21/home.widget');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller

@@ -58,7 +58,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/modules/list",
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/modules/list",
           "multibundle": true
         },
         "type": "widget"
@@ -67,12 +67,12 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@beyond-js/reactive/model', dependency_4], ['@aimpact/ailearn-sdk/core', dependency_5], ['@aimpact/chat-sdk/session', dependency_6], ['@aimpact/ailearn-app/model/gclassroom', dependency_7], ['react', dependency_8], ['pragmate-ui/components', dependency_9], ['@aimpact/ailearn-app/components/ui', dependency_10], ['@aimpact/chat/shared/components', dependency_11], ['@beyond-js/react-18-widgets/hooks', dependency_12], ['@aimpact/chat/shared/hooks', dependency_13], ['pragmate-ui/icons', dependency_14], ['@aimpact/ailearn-app/classworks/assign', dependency_15], ['pragmate-ui/collapsible', dependency_16], ['pragmate-ui/link', dependency_17], ['pragmate-ui/list', dependency_18], ['pragmate-ui/alert', dependency_19]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "ailearn-modules-list",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/modules/list.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/modules/list.widget",
         "is": "page",
         "route": "/modules/list",
         "layout": "general-layout"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.19/modules/list.widget');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.21/modules/list.widget');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller

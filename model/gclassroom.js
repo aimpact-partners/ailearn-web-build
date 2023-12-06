@@ -31,7 +31,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/mo
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/model/gclassroom"
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/model/gclassroom"
         },
         "type": "ts"
       }, _context.meta.url).package();

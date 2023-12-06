@@ -48,7 +48,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/gclassroom-explorer",
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/gclassroom-explorer",
           "multibundle": true
         },
         "type": "widget"
@@ -57,9 +57,9 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/base', dependency_3], ['@aimpact/ailearn-app/model/gclassroom', dependency_4], ['@beyond-js/reactive/model', dependency_5], ['@aimpact/chat-sdk/core', dependency_6], ['dayjs', dependency_7], ['react', dependency_8], ['pragmate-ui/icons', dependency_9], ['pragmate-ui/components', dependency_10], ['@beyond-js/react-18-widgets/hooks', dependency_11], ['@aimpact/chat/shared/hooks', dependency_12], ['@aimpact/ailearn-app/model/wrapper', dependency_13], ['@beyond-js/kernel/routing', dependency_14]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "ailearn-gclassroom-explorer",
-        "vspecifier": "@aimpact/ailearn-app@0.0.19/gclassroom-explorer.widget"
+        "vspecifier": "@aimpact/ailearn-app@0.0.21/gclassroom-explorer.widget"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.19/gclassroom-explorer.widget');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.21/gclassroom-explorer.widget');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller

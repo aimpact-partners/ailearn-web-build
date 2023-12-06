@@ -26,13 +26,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/components/tabs"
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/components/tabs"
         },
         "type": "code"
       }, _context2.meta.url).package();
       ;
       __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2]]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.19/components/tabs');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.21/components/tabs');
       ims = new Map();
       /*************************
       INTERNAL MODULE: ./context

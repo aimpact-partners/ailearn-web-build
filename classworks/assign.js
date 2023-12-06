@@ -31,13 +31,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.19/classworks/assign"
+          "vspecifier": "@aimpact/ailearn-app@0.0.21/classworks/assign"
         },
         "type": "code"
       }, _context.meta.url).package();
       ;
       __pkg.dependencies.update([['react', dependency_1], ['pragmate-ui/components', dependency_2], ['pragmate-ui/modal', dependency_3], ['@aimpact/chat/shared/components', dependency_4], ['@aimpact/ailearn-app/config', dependency_5], ['pragmate-ui/toast', dependency_6], ['@beyond-js/kernel/styles', dependency_7]]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.19/classworks/assign');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.21/classworks/assign');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./classrooms
