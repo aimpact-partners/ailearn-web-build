@@ -1,30 +1,19 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "marked-mangle@1.1.4", "marked@5.1.2", "marked-highlight@2.0.6", "highlight.js@11.9.0", "@beyond-js/kernel@0.1.9/texts"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "@beyond-js/kernel@0.1.9/texts"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, useMarked, useTexts, __beyond_pkg, hmr;
-  _export({
-    useMarked: void 0,
-    useTexts: void 0
-  });
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, useTexts, __beyond_pkg, hmr;
+  _export("useTexts", void 0);
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_react2) {
       dependency_1 = _react2;
-    }, function (_markedMangle2) {
-      dependency_2 = _markedMangle2;
-    }, function (_marked2) {
-      dependency_3 = _marked2;
-    }, function (_markedHighlight2) {
-      dependency_4 = _markedHighlight2;
-    }, function (_highlightJs) {
-      dependency_5 = _highlightJs;
     }, function (_beyondJsKernel019Texts) {
-      dependency_6 = _beyondJsKernel019Texts;
+      dependency_2 = _beyondJsKernel019Texts;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/reactive", "1.1.2"], ["@aimpact/chat-api", "0.1.0"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", "0.2.0"], ["@bgroup/media-manager", "1.0.0"], ["pragmate-ui", "0.0.3"], ["@beyond-js/backend", "0.1.8"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.0"], ["@beyond-js/widgets", "0.1.4"], ["@firebase/component", "0.6.4"], ["@firebase/logger", "0.4.0"], ["@firebase/util", "1.9.3"], ["@google-cloud/error-reporting", "3.0.5"], ["@google-cloud/logging", "10.5.0"], ["@types/dom-mediacapture-record", "1.0.16"], ["dayjs", "1.11.9"], ["dexie", "3.2.4"], ["dompurify", "3.0.5"], ["firebase", "9.23.0"], ["firebase-admin", "11.10.1"], ["highlight.js", "11.8.0"], ["marked", "5.1.1"], ["marked-highlight", "2.0.1"], ["marked-mangle", "1.1.0"], ["openai", "3.3.0"], ["prismjs", "1.29.0"], ["react-select", "5.7.4"], ["socket.io-client", "4.7.1"], ["tippy.js", "6.3.7"], ["uuid", "9.0.0"], ["@types/react", "18.2.15"], ["@types/react-dom", "18.2.7"], ["@aimpact/chat", "1.0.1"], ["@aimpact/ailearn-app", "0.0.18"]]);
+        const dependencies = new Map([["@beyond-js/reactive", "1.1.2"], ["@aimpact/chat-api", "0.1.0"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", "0.2.0"], ["@bgroup/media-manager", "1.0.0"], ["pragmate-ui", "0.0.3"], ["@beyond-js/backend", "0.1.8"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.0"], ["@firebase/component", "0.6.4"], ["@firebase/logger", "0.4.0"], ["@firebase/util", "1.9.3"], ["@google-cloud/error-reporting", "3.0.5"], ["@google-cloud/logging", "10.5.0"], ["@types/dom-mediacapture-record", "1.0.16"], ["dayjs", "1.11.9"], ["dexie", "3.2.4"], ["dompurify", "3.0.5"], ["firebase", "9.23.0"], ["firebase-admin", "11.10.1"], ["highlight.js", "11.8.0"], ["marked", "5.1.1"], ["marked-highlight", "2.0.1"], ["marked-mangle", "1.1.0"], ["openai", "3.3.0"], ["prismjs", "1.29.0"], ["react-select", "5.7.4"], ["socket.io-client", "4.7.1"], ["tippy.js", "6.3.7"], ["uuid", "9.0.0"], ["@beyond-js/widgets", "0.1.5"], ["@types/react", "18.2.15"], ["@types/react-dom", "18.2.7"], ["@aimpact/chat", "1.0.1"], ["@aimpact/ailearn-app", "0.0.19"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -37,56 +26,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "marked-mangl
         "type": "code"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['react', dependency_1], ['marked-mangle', dependency_2], ['marked', dependency_3], ['marked-highlight', dependency_4], ['highlight.js', dependency_5], ['@beyond-js/kernel/texts', dependency_6]]);
+      __pkg.dependencies.update([['react', dependency_1], ['@beyond-js/kernel/texts', dependency_2]]);
       ims = new Map();
-      /****************************
-      INTERNAL MODULE: ./use-marked
-      ****************************/
-      ims.set('./use-marked', {
-        hash: 1749741654,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.useMarked = useMarked;
-          var _react = require("react");
-          var _markedMangle = require("marked-mangle");
-          var _marked = require("marked");
-          var _markedHighlight = require("marked-highlight");
-          var _highlight = require("highlight.js");
-          /* bundle */
-          function useMarked() {
-            _marked.marked.use((0, _markedMangle.mangle)());
-            _marked.marked.use((0, _markedHighlight.markedHighlight)({
-              langPrefix: 'hljs language-',
-              highlight(code, lang) {
-                const language = _highlight.default.getLanguage(lang) ? lang : 'plaintext';
-                return _highlight.default.highlight(code, {
-                  language
-                }).value;
-              }
-            }));
-            _react.default.useEffect(() => {
-              _highlight.default.highlightAll();
-            }, []);
-            function markContent(content) {
-              if (!content) return '';
-              return (0, _marked.marked)(content, {
-                headerIds: false,
-                headerPrefix: false
-              });
-            }
-            return markContent;
-          }
-        }
-      });
-
       /***************************
       INTERNAL MODULE: ./use-texts
       ***************************/
-
       ims.set('./use-texts', {
         hash: 1600604292,
         creator: function (require, exports) {
@@ -128,10 +72,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "marked-mangl
         }
       });
       __pkg.exports.descriptor = [{
-        "im": "./use-marked",
-        "from": "useMarked",
-        "name": "useMarked"
-      }, {
         "im": "./use-texts",
         "from": "useTexts",
         "name": "useTexts"
@@ -142,7 +82,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "marked-mangl
         prop,
         value
       }) {
-        (require || prop === 'useMarked') && _export("useMarked", useMarked = require ? require('./use-marked').useMarked : value);
         (require || prop === 'useTexts') && _export("useTexts", useTexts = require ? require('./use-texts').useTexts : value);
       };
       _export("__beyond_pkg", __beyond_pkg = __pkg);
@@ -154,4 +93,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "marked-mangl
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX21hcmtlZE1hbmdsZSIsIl9tYXJrZWQiLCJfbWFya2VkSGlnaGxpZ2h0IiwiX2hpZ2hsaWdodCIsInVzZU1hcmtlZCIsIm1hcmtlZCIsInVzZSIsIm1hbmdsZSIsIm1hcmtlZEhpZ2hsaWdodCIsImxhbmdQcmVmaXgiLCJoaWdobGlnaHQiLCJjb2RlIiwibGFuZyIsImxhbmd1YWdlIiwiZGVmYXVsdCIsImdldExhbmd1YWdlIiwidmFsdWUiLCJ1c2VFZmZlY3QiLCJoaWdobGlnaHRBbGwiLCJtYXJrQ29udGVudCIsImNvbnRlbnQiLCJoZWFkZXJJZHMiLCJoZWFkZXJQcmVmaXgiLCJfdGV4dHMiLCJ1c2VUZXh0cyIsInNwZWNpZmllciIsImtleSIsInJlYWR5Iiwic2V0UmVhZHkiLCJ1c2VTdGF0ZSIsInRleHRzIiwic2V0VGV4dHMiLCJtb2RlbFRleHRzIiwiQ3VycmVudFRleHRzIiwidHJpZ2dlckV2ZW50IiwiaGFzT3duUHJvcGVydHkiLCJjb25zb2xlIiwid2FybiIsIm9uIiwib2ZmIiwiaXNSZWFkeSJdLCJzb3VyY2VzIjpbIi90cy91c2UtbWFya2VkLnRzIiwiL3RzL3VzZS10ZXh0cy50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLE1BQUEsR0FBQUMsT0FBQTtVQUNBLElBQUFDLGFBQUEsR0FBQUQsT0FBQTtVQUNBLElBQUFFLE9BQUEsR0FBQUYsT0FBQTtVQUNBLElBQUFHLGdCQUFBLEdBQUFILE9BQUE7VUFDQSxJQUFBSSxVQUFBLEdBQUFKLE9BQUE7VUFFTztVQUFZLFNBQVVLLFNBQVNBLENBQUE7WUFDckNILE9BQUEsQ0FBQUksTUFBTSxDQUFDQyxHQUFHLENBQUMsSUFBQU4sYUFBQSxDQUFBTyxNQUFNLEdBQUUsQ0FBQztZQUNwQk4sT0FBQSxDQUFBSSxNQUFN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
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX3RleHRzIiwidXNlVGV4dHMiLCJzcGVjaWZpZXIiLCJrZXkiLCJyZWFkeSIsInNldFJlYWR5IiwiZGVmYXVsdCIsInVzZVN0YXRlIiwidGV4dHMiLCJzZXRUZXh0cyIsInVzZUVmZmVjdCIsIm1vZGVsVGV4dHMiLCJDdXJyZW50VGV4dHMiLCJ0cmlnZ2VyRXZlbnQiLCJ2YWx1ZSIsImhhc093blByb3BlcnR5IiwiY29uc29sZSIsIndhcm4iLCJvbiIsIm9mZiIsImlzUmVhZHkiXSwic291cmNlcyI6WyIvdHMvdXNlLXRleHRzLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxNQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxNQUFBLEdBQUFELE9BQUE7VUFLTztVQUFVLFNBQVVFLFFBQVFBLENBQUNDLFNBQWlCLEVBQUVDLEdBQVk7WUFDbEUsTUFBTSxDQUFDQyxLQUFLLEVBQUVDLFFBQVEsQ0FBQyxHQUFHUCxNQUFBLENBQUFRLE9BQUssQ0FBQ0MsUUFBUSxDQUFVLEtBQUssQ0FBQztZQUN4RCxNQUFNLENBQUNDLEtBQUssRUFBRUMsUUFBUSxDQUFDLEdBQUdYLE1BQUEsQ0FBQVEsT0FBSyxDQUFDQyxRQUFRLENBQVMsRUFBRSxDQUFDO1lBRXBEVCxNQUFBLENBQUFRLE9BQUssQ0FBQ0ksU0FBUyxDQUFDLE1BQUs7Y0FDcEIsTUFBTUMsVUFBVSxHQUFHLElBQUlYLE1BQUEsQ0FBQVksWUFBWSxDQUFDVixTQUFTLENBQUM7Y0FDOUMsTUFBTVcsWUFBWSxHQUFHQSxDQUFBLEtBQUs7Z0JBQ3pCLElBQUlDLEtBQUssR0FBR0gsVUFBVSxDQUFDRyxLQUFlO2dCQUN0QyxJQUFJSCxVQUFVLENBQUNQLEtBQUssSUFBSUQsR0FBRyxFQUFFO2tCQUM1QixJQUFJLENBQUNXLEtBQUssQ0FBQ0MsY0FBYyxDQUFDWixHQUFHLENBQUMsRUFBRTtvQkFDL0JhLE9BQU8sQ0FBQ0MsSUFBSSxDQUNYLDBEQUEwRGQsR0FBRyx1QkFBdUJELFNBQVMsRUFBRSxDQUMvRjs7a0JBRUY7a0JBQ0FZLEtBQUssR0FBR0gsVUFBVSxDQUFDRyxLQUFLLENBQUNYLEdBQUcsQ0FBQzs7Z0JBRTlCTSxRQUFRLENBQUNLLEtBQUssQ0FBQztnQkFDZlQsUUFBUSxDQUFDTSxVQUFVLENBQUNQLEtBQUssQ0FBQztjQUMzQixDQUFDO2NBQ0RPLFVBQVUsQ0FBQ08sRUFBRSxDQUFDLFFBQVEsRUFBRUwsWUFBWSxDQUFDO2NBQ3JDQSxZQUFZLEVBQUU7Y0FDZCxPQUFPLE1BQUs7Z0JBQ1hGLFVBQVUsQ0FBQ1EsR0FBRyxDQUFDLFFBQVEsRUFBRU4sWUFBWSxDQUFDLENBQUMsQ0FBQztjQUN6QyxDQUFDO1lBQ0YsQ0FBQyxFQUFFLEVBQUUsQ0FBQztZQUNOLE1BQU1PLE9BQU8sR0FBWWhCLEtBQUssSUFBSSxDQUFDLENBQUNJLEtBQUs7WUFDekMsT0FBTyxDQUFDWSxPQUFPLEVBQUVaLEtBQUssQ0FBQztVQUN4QiJ9

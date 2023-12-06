@@ -1,12 +1,13 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@0.0.3/icons", "pragmate-ui@0.0.3/spinner", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@0.0.3/icons", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Checkbox, Form, Input, Radio, Switch, Textarea, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, Radio, Form, Error, Label, Input, Switch, Textarea, __beyond_pkg, hmr;
   _export({
-    Checkbox: void 0,
-    Form: void 0,
-    Input: void 0,
     Radio: void 0,
+    Form: void 0,
+    Error: void 0,
+    Label: void 0,
+    Input: void 0,
     Switch: void 0,
     Textarea: void 0
   });
@@ -17,14 +18,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       dependency_1 = _react2;
     }, function (_pragmateUi003Icons) {
       dependency_2 = _pragmateUi003Icons;
-    }, function (_pragmateUi003Spinner) {
-      dependency_3 = _pragmateUi003Spinner;
     }, function (_beyondJsKernel019Styles) {
-      dependency_4 = _beyondJsKernel019Styles;
+      dependency_3 = _beyondJsKernel019Styles;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.5"], ["@beyond-js/reactive", "1.1.4"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.6.1"], ["swiper", "10.3.0"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.0.37"], ["@types/react-dom", "18.0.11"], ["pragmate-ui", "0.0.3"], ["@aimpact/ailearn-app", "0.0.18"]]);
+        const dependencies = new Map([["@beyond-js/react-18-widgets", "0.0.5"], ["@beyond-js/reactive", "1.1.4"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.6.1"], ["swiper", "10.3.0"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.0.37"], ["@types/react-dom", "18.0.11"], ["pragmate-ui", "0.0.3"], ["@aimpact/ailearn-app", "0.0.19"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -38,70 +37,47 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
         "name": "form"
       }, _context2.meta.url).package();
       ;
-      __pkg.dependencies.update([['react', dependency_1], ['pragmate-ui/icons', dependency_2], ['pragmate-ui/spinner', dependency_3], ['@beyond-js/kernel/styles', dependency_4]]);
+      __pkg.dependencies.update([['react', dependency_1], ['pragmate-ui/icons', dependency_2], ['@beyond-js/kernel/styles', dependency_3]]);
       brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@0.0.3/form');
       ims = new Map();
       /**************************
       INTERNAL MODULE: ./checkbox
       **************************/
       ims.set('./checkbox', {
-        hash: 3068273179,
+        hash: 1019112771,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.Checkbox = void 0;
+          exports.Radio = Radio;
           var _react = require("react");
-          var React = _react;
           /*bundle*/
-          const Checkbox = exports.Checkbox = (0, _react.forwardRef)((props, ref) => {
-            const {
-              checked,
-              name,
-              disabled,
-              className,
-              onChange,
-              label
-            } = props;
-            const [value, setValue] = (0, _react.useState)(!!checked);
-            const handleChange = event => {
+          function Radio(props) {
+            const input = (0, _react.useRef)();
+            const onClick = event => {
               event.stopPropagation();
-              setValue(!!checked);
-              onChange && onChange(event);
+              input.current.checked = true;
+              if (!!props.onChange) props.onChange(event);
             };
-            let cls = `pragmate-checkbox ${className ? className : ""}`;
-            cls += disabled ? " disabled" : "";
-            const properties = Object.assign({}, props);
-            ["className", "checked", "name", "onChange"].forEach(prop => {
-              delete properties[prop];
-            });
-            return React.createElement("div", {
-              className: cls
-            }, React.createElement("input", {
-              style: {
-                display: "none"
-              },
-              ref: ref,
-              type: "checkbox",
-              className: "inp-cbx",
-              id: name,
-              name: name,
-              checked: checked ?? value,
-              onChange: handleChange,
-              ...properties
-            }), React.createElement("label", {
-              className: "cbx",
-              htmlFor: name
-            }, React.createElement("span", null, React.createElement("svg", {
-              width: "12px",
-              height: "9px",
-              viewBox: "0 0 12 9"
-            }, React.createElement("polyline", {
-              points: "1 5 4 8 11 1"
-            }))), React.createElement("span", null, label)));
-          });
+            const properties = {
+              ...props
+            };
+            delete properties.onChange;
+            const cls = `pui-input-radio ${properties.className ? properties.className : ''}`;
+            return _react.default.createElement("span", {
+              className: cls,
+              onClick: onClick
+            }, _react.default.createElement("input", {
+              ref: input,
+              ...properties,
+              type: 'radio',
+              onChange: onClick
+            }), _react.default.createElement("label", {
+              className: 'pui-radio-label'
+            }, properties.label));
+          }
         }
       });
 
@@ -138,20 +114,78 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
         }
       });
 
-      /**********************************
-      INTERNAL MODULE: ./input/class-list
-      **********************************/
+      /****************************************
+      INTERNAL MODULE: ./input/components/error
+      ****************************************/
 
-      ims.set('./input/class-list', {
-        hash: 3929296419,
+      ims.set('./input/components/error', {
+        hash: 280265354,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.listClassName = void 0;
-          const listClassName = exports.listClassName = ['className', 'hasError', 'errorMessage', 'children', 'icon', 'floating', 'label', 'password', 'loading', 'colorSpinner'];
+          exports.Error = Error;
+          var _react = require("react");
+          var _context = require("../context");
+          /*bundle*/
+          function Error({
+            show,
+            message,
+            className,
+            children
+          }) {
+            const {
+              value
+            } = (0, _context.useInputContext)();
+            if (!show) return null;
+            const cls = `pui-input-error-label${className ? ` ${className}` : ''}`;
+            return _react.default.createElement("span", {
+              className: cls
+            }, message, " ", children);
+          }
+        }
+      });
+
+      /****************************************
+      INTERNAL MODULE: ./input/components/label
+      ****************************************/
+
+      ims.set('./input/components/label', {
+        hash: 3579854098,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Label = Label;
+          var _react = require("react");
+          var _context = require("../context");
+          /*bundle */
+          function Label({
+            required,
+            position,
+            children
+          } = {}) {
+            const {
+              name,
+              id
+            } = (0, _context.useInputContext)();
+            const variants = {
+              floating: 'floating-label',
+              right: 'pui-input__label--right',
+              bottom: 'pui-input__label--bottom',
+              'bottom-right': 'pui-input__label--bottom-right'
+            };
+            let cls = `pui-input__label ${variants[position] ? ` ${variants[position]}` : ''}`;
+            if (required) cls += ' is-required';
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("label", {
+              htmlFor: id ?? name,
+              className: cls
+            }, _react.default.createElement("span", null, " ", children)));
+          }
         }
       });
 
@@ -160,7 +194,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       *******************************/
 
       ims.set('./input/context', {
-        hash: 4275197622,
+        hash: 4215830211,
         creator: function (require, exports) {
           "use strict";
 
@@ -175,38 +209,72 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
         }
       });
 
-      /*********************************
-      INTERNAL MODULE: ./input/get-error
-      *********************************/
+      /*******************************
+      INTERNAL MODULE: ./input/control
+      *******************************/
 
-      ims.set('./input/get-error', {
-        hash: 2901727103,
+      ims.set('./input/control', {
+        hash: 3540147954,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.getError = getError;
+          exports.ControlSelector = ControlSelector;
           var _react = require("react");
-          function getError(state, inputRef, props) {
+          var _context = require("./context");
+          var _internalProps = require("./internal-props");
+          var _icons = require("pragmate-ui/icons");
+          function ControlSelector() {
+            const input = (0, _react.useRef)(null);
             const {
-              hasError,
-              max,
-              lengthMessage,
-              errorMessage
+              setState,
+              state,
+              value,
+              setValue,
+              props: {
+                name,
+                id,
+                placeholder
+              },
+              props
+            } = (0, _context.useInputContext)();
+            let properties = {
+              ...props
+            };
+            _internalProps.internalProps.forEach(prop => delete properties[prop]);
+            const handleChange = event => {
+              if (!!props.onChange && typeof props.onChange === 'function') props.onChange(event);
+              const currentValue = event.currentTarget.value;
+              setValue(currentValue);
+              setState({
+                ...state,
+                _hasError: false,
+                value: event.currentTarget.value
+              });
+            };
+            const {
+              type
             } = props;
-            if (!state._hasError && !hasError) return null;
-            let messageError = state.emptyMessage;
-            if (hasError || inputRef.current.value !== '') {
-              messageError = errorMessage ? errorMessage : state.errorMessage;
+            const children = [];
+            if (type === 'date') {
+              children.push(_react.default.createElement(_icons.Icon, {
+                key: 'icon',
+                icon: 'calendar',
+                className: 'pui-input__icon',
+                onClick: () => input.current.showPicker()
+              }));
             }
-            if (max && parseFloat(inputRef.current.value) > parseInt(max)) {
-              messageError = lengthMessage ? lengthMessage : state.lengthMessage + ` (max ${props.max})`;
-            }
-            return _react.default.createElement("span", {
-              className: "pui-element-input-error"
-            }, errorMessage);
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("input", {
+              ref: input,
+              ...properties,
+              name: name,
+              onChange: handleChange,
+              value: value,
+              placeholder: placeholder ?? ' ',
+              id: id ?? name
+            }), children);
           }
         }
       });
@@ -216,7 +284,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       *****************************/
 
       ims.set('./input/index', {
-        hash: 1180496239,
+        hash: 676060169,
         creator: function (require, exports) {
           "use strict";
 
@@ -225,269 +293,138 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
           });
           exports.Input = Input;
           var _react = require("react");
-          var _classList = require("./class-list");
           var _context = require("./context");
-          var _renderingProps = require("./rendering-props");
-          /*bundle*/
+          var _label = require("./components/label");
+          var _control = require("./control");
+          var _error = require("./components/error");
+          /*bundle*/ /**
+                      *
+                      * @param props
+                      *
+                         
+                      * 1. pattern property + existing error.
+                      * 2. Controlled Input where the implementer defines the error.
+                      * 3. Automated Input with multiple validations and error management.
+                      *	hasError
+                         errorMessage="afkawmneofnawoiefa"
+                      *
+                      * <input type="text" pattern="/\d/"  />
+                      * @returns
+                      */
           function Input(props) {
-            const input = (0, _react.useRef)(null);
             const {
-              value,
-              errorMessage,
-              floating,
               hasError,
-              disabled,
-              icon,
+              errorMessage,
+              variant,
               className,
-              password,
-              required,
-              loading,
+              label,
               children,
-              id,
-              name,
-              placeholder
+              type
             } = props;
-            const [state, setState] = (0, _react.useState)({
-              value: value ?? '',
-              errorMessage: errorMessage ?? 'Formato incorrecto',
-              lengthMessage: 'Cantidad máxima: ',
-              emptyMessage: 'Este campo es requerido',
-              type: props.type ?? 'text'
-            });
-            const handleChange = event => {
-              if (!!props.onChange && typeof props.onChange === 'function') props.onChange(event);
-              setState({
-                ...state,
-                _hasError: false,
-                value: event.target.value
-              });
+            const [value, setValue] = _react.default.useState(props.value ?? '');
+            const [state, setState] = (0, _react.useState)({});
+            let cls = `pui-input${className ? ` ${className}` : ''}`;
+            if (props.type === 'date') cls += ' pui-input--date';
+            const variants = {
+              unstyled: 'pui-input--unstyled',
+              floating: 'pui-input--floating'
             };
-            let properties = {
-              ...props
-            };
-            let cls = className ? `${className} pui-element-input` : 'pui-element-input';
-            cls += icon || loading || password || required ? ' has-icon' : '';
-            cls += disabled ? ' disabled' : '';
-            cls += hasError ? ' error' : '';
-            cls += floating ? ' floating--label' : '';
-            _classList.listClassName.forEach(prop => {
-              delete properties[prop];
-            });
-            const listValue = {
-              state,
+            if (props.variant && variants[props.variant]) cls += ` ${variants[props.variant]}`;
+            const providerValue = {
               props,
+              state,
               setState,
-              input
+              value,
+              setValue
             };
-            const isValue = typeof value !== 'undefined' ? value : state.value;
+            const labelSpecs = {
+              required: props.required
+            };
+            const attrs = {};
+            /**
+             * todo: review it.
+             */
+            if (variant === 'floating') labelSpecs.position = variant;
+            if (variant !== 'unstyled') attrs.className = cls;
             return _react.default.createElement(_context.InputContext.Provider, {
-              value: listValue
+              value: providerValue
             }, _react.default.createElement("div", {
               className: cls
-            }, _react.default.createElement("input", {
-              ref: input,
-              ...properties,
-              name: name,
-              onChange: handleChange,
-              type: state.type,
-              value: isValue,
-              placeholder: placeholder ?? ' ',
-              id: id ?? name
-            }), _react.default.createElement(_renderingProps.RenderingProps, null), children));
+            }, _react.default.createElement(_control.ControlSelector, null), children, label && _react.default.createElement(_label.Label, {
+              ...labelSpecs
+            }, label), errorMessage && _react.default.createElement(_error.Error, {
+              show: !!hasError,
+              message: errorMessage
+            })));
           }
+        }
+      });
+
+      /**************************************
+      INTERNAL MODULE: ./input/internal-props
+      **************************************/
+
+      ims.set('./input/internal-props', {
+        hash: 100120639,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.internalProps = void 0;
+          /**
+           * Internal props of the input component.
+           * This array is used to filter the props passed to the input component.
+           */
+          const internalProps = exports.internalProps = ['className', 'hasError', 'errorMessage', 'children', 'icon', 'label', 'password', 'loading', 'colorSpinner', 'variant'];
         }
       });
 
       /*****************************
-      INTERNAL MODULE: ./input/label
+      INTERNAL MODULE: ./input/types
       *****************************/
 
-      ims.set('./input/label', {
-        hash: 2254490969,
+      ims.set('./input/types', {
+        hash: 3733937293,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.Label = Label;
-          var _react = require("react");
-          var _context = require("./context");
-          function Label() {
-            const {
-              props
-            } = (0, _context.useInputContext)();
-            const {
-              required,
-              label,
-              id,
-              name
-            } = props;
-            const spanRequired = required && _react.default.createElement("span", {
-              className: "pui-input__required-label"
-            }, "(*)");
-            const showLabel = label && _react.default.createElement("label", {
-              htmlFor: id ?? name
-            }, label, " ", spanRequired, ' ');
-            return _react.default.createElement(_react.default.Fragment, null, showLabel);
-          }
         }
       });
 
-      /***************************************
-      INTERNAL MODULE: ./input/props-rendering
-      ***************************************/
+      /*******************************
+      INTERNAL MODULE: ./model/manager
+      *******************************/
 
-      ims.set('./input/props-rendering', {
-        hash: 1192986606,
+      ims.set('./model/manager', {
+        hash: 3171752923,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.PropsRendering = PropsRendering;
-          var _react = require("react");
-          var _context = require("./context");
-          var _icons = require("pragmate-ui/icons");
-          var _spinner = require("pragmate-ui/spinner");
-          var _getError = require("./get-error");
-          function PropsRendering() {
-            const {
-              state,
-              props,
-              setState,
-              input
-            } = (0, _context.useInputContext)();
-            const changeType = event => {
-              event.stopPropagation();
-              const target = event.currentTarget;
-              setState({
-                ...state,
-                type: target.dataset.type
-              });
-            };
-            const spanRequired = props.required && _react.default.createElement("span", {
-              className: "pragmate-input__required-label"
-            }, "(*)");
-            const controlInput = props.password && (state.type === 'password' ? _react.default.createElement(_icons.IconButton, {
-              onClick: changeType,
-              "data-type": "text",
-              className: "eye",
-              icon: "eye"
-            }) : _react.default.createElement(_icons.IconButton, {
-              onClick: changeType,
-              className: "eye",
-              "data-type": "password",
-              icon: "eye-slash"
-            }));
-            const isLabel = props.label && _react.default.createElement("label", {
-              htmlFor: props.id ?? props.name
-            }, props.label, " ", spanRequired, ' ');
-            const isIcon = props.icon && _react.default.createElement(_icons.Icon, {
-              icon: props.icon
-            });
-            const isLoading = props.loading && _react.default.createElement(_spinner.Spinner, {
-              color: props.colorSpinner ?? 'var(--primary)',
-              type: "primary",
-              active: true
-            });
-            const isRequiredWidthLabel = !props.label && props.required && _react.default.createElement("span", {
-              className: "pragmate-input__required-label"
-            }, "(*)");
-            const error = (0, _getError.getError)(state, props.hasError, input);
-            return _react.default.createElement(_react.default.Fragment, null, isIcon, isLabel, isLoading, controlInput, isRequiredWidthLabel, error);
+          exports.SelectorManager = void 0;
+          class SelectorManager {
+            static #instance;
+            #selector;
+            get selector() {
+              return this.#selector;
+            }
+            constructor(selector) {}
+            validate() {}
+            static get(selector) {
+              if (!this.#instance) {
+                this.#instance = new SelectorManager(selector);
+              }
+              return this.#instance;
+            }
           }
-        }
-      });
-
-      /***************************************
-      INTERNAL MODULE: ./input/rendering-props
-      ***************************************/
-
-      ims.set('./input/rendering-props', {
-        hash: 4168891464,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.RenderingProps = RenderingProps;
-          var _react = require("react");
-          var _context = require("./context");
-          var _icons = require("pragmate-ui/icons");
-          var _spinner = require("pragmate-ui/spinner");
-          var _getError = require("./get-error");
-          var _label = require("./label");
-          function RenderingProps() {
-            const {
-              state,
-              props,
-              setState,
-              input
-            } = (0, _context.useInputContext)();
-            const {
-              password,
-              required,
-              label,
-              icon,
-              hasError,
-              loading
-            } = props;
-            const changeType = event => {
-              event.stopPropagation();
-              const target = event.currentTarget;
-              setState({
-                ...state,
-                type: target.dataset.type
-              });
-            };
-            const iconButtonAttrs = {
-              className: 'eye',
-              onClick: changeType,
-              'data-type': state.type === 'password' ? 'text' : 'password',
-              icon: state.type === 'password' ? 'eye' : 'eye-slash'
-            };
-            const handleClick = () => {
-              input.current.focus();
-            };
-            const defaultIcon = !icon ? 'user' : icon;
-            const showIcon = state.type === 'date' ? _react.default.createElement(_icons.IconButton, {
-              onClick: handleClick,
-              icon: defaultIcon
-            }) : icon && _react.default.createElement(_icons.Icon, {
-              icon: icon
-            });
-            const controlInput = password && _react.default.createElement(_icons.IconButton, {
-              ...iconButtonAttrs
-            });
-            const showLoading = loading && _react.default.createElement(_spinner.Spinner, {
-              color: props.colorSpinner ?? 'var(--primary)',
-              type: "primary",
-              active: true
-            });
-            const showRequiredWidthLabel = !label && required && _react.default.createElement("span", {
-              className: "pui-input__required-label"
-            }, "(*)");
-            const error = (0, _getError.getError)(state, hasError, input);
-            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_label.Label, null), showLoading, controlInput, showIcon, showRequiredWidthLabel, error);
-          }
-        }
-      });
-
-      /****************************
-      INTERNAL MODULE: ./input/type
-      ****************************/
-
-      ims.set('./input/type', {
-        hash: 4265042366,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
+          exports.SelectorManager = SelectorManager;
         }
       });
 
@@ -536,7 +473,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       ************************/
 
       ims.set('./switch', {
-        hash: 2308429459,
+        hash: 3322157745,
         creator: function (require, exports) {
           "use strict";
 
@@ -553,12 +490,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
               variant = 'primary',
               disabled,
               size = 'md',
-              className
+              className,
+              id,
+              title,
+              required
             } = props;
             const [isChecked, setIsChecked] = _react.default.useState(checked);
             const handleChange = event => {
-              event.stopPropagation();
               setIsChecked(event.currentTarget.checked);
+              console.log(event);
               onChange && onChange(event);
             };
             let classNameSwitch = `pui-element-switch ${className ? className : ''}`;
@@ -566,25 +506,21 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
             let cls = isChecked ? `pui-element-switch__label active` : 'pui-element-switch__label';
             cls += variant ? ` ${variant}` : '';
             cls += size ? ` ${size}` : '';
-            const properties = {
-              ...props
-            };
-            ['className', 'checked', 'onChange', 'variant', 'size', "id"].forEach(prop => {
-              delete properties[prop];
-            });
-            const id = !!props.id ? props.id : props.name ?? "pui-element-switch";
+            let isId = !id ? `pui-element-switch` : id;
             return _react.default.createElement("div", {
               className: classNameSwitch
             }, _react.default.createElement("input", {
               className: 'pui-element-switch__checkbox',
-              id: id,
+              id: isId,
+              title: title,
+              required: required,
               type: 'checkbox',
+              disabled: disabled,
               checked: isChecked,
-              onChange: handleChange,
-              ...properties
+              onChange: handleChange
             }), _react.default.createElement("label", {
               className: cls,
-              htmlFor: id
+              htmlFor: isId
             }, _react.default.createElement("span", {
               className: `label__btn--slider`
             })));
@@ -663,12 +599,20 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       });
       __pkg.exports.descriptor = [{
         "im": "./checkbox",
-        "from": "Checkbox",
-        "name": "Checkbox"
+        "from": "Radio",
+        "name": "Radio"
       }, {
         "im": "./form",
         "from": "Form",
         "name": "Form"
+      }, {
+        "im": "./input/components/error",
+        "from": "Error",
+        "name": "Error"
+      }, {
+        "im": "./input/components/label",
+        "from": "Label",
+        "name": "Label"
       }, {
         "im": "./input/index",
         "from": "Input",
@@ -692,8 +636,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
         prop,
         value
       }) {
-        (require || prop === 'Checkbox') && _export("Checkbox", Checkbox = require ? require('./checkbox').Checkbox : value);
+        (require || prop === 'Radio') && _export("Radio", Radio = require ? require('./checkbox').Radio : value);
         (require || prop === 'Form') && _export("Form", Form = require ? require('./form').Form : value);
+        (require || prop === 'Error') && _export("Error", Error = require ? require('./input/components/error').Error : value);
+        (require || prop === 'Label') && _export("Label", Label = require ? require('./input/components/label').Label : value);
         (require || prop === 'Input') && _export("Input", Input = require ? require('./input/index').Input : value);
         (require || prop === 'Radio') && _export("Radio", Radio = require ? require('./radio').Radio : value);
         (require || prop === 'Switch') && _export("Switch", Switch = require ? require('./switch').Switch : value);
@@ -708,4 +654,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiUmVhY3QiLCJDaGVja2JveCIsImV4cG9ydHMiLCJmb3J3YXJkUmVmIiwicHJvcHMiLCJyZWYiLCJjaGVja2VkIiwibmFtZSIsImRpc2FibGVkIiwiY2xhc3NOYW1lIiwib25DaGFuZ2UiLCJsYWJlbCIsInZhbHVlIiwic2V0VmFsdWUiLCJ1c2VTdGF0ZSIsImhhbmRsZUNoYW5nZSIsImV2ZW50Iiwic3RvcFByb3BhZ2F0aW9uIiwiY2xzIiwicHJvcGVydGllcyIsIk9iamVjdCIsImFzc2lnbiIsImZvckVhY2giLCJwcm9wIiwiY3JlYXRlRWxlbWVudCIsInN0eWxlIiwiZGlzcGxheSIsInR5cGUiLCJpZCIsImh0bWxGb3IiLCJ3aWR0aCIsImhlaWdodCIsInZpZXdCb3giLCJwb2ludHMiLCJGb3JtIiwib25TdWJtaXQiLCJyZXN0UHJvcHMiLCJoYW5kbGVTdWJtaXQiLCJwcmV2ZW50RGVmYXVsdCIsImRlZmF1bHQiLCJjaGlsZHJlbiIsImxpc3RDbGFzc05hbWUiLCJJbnB1dENvbnRleHQiLCJjcmVhdGVDb250ZXh0IiwidXNlSW5wdXRDb250ZXh0IiwidXNlQ29udGV4dCIsImdldEVycm9yIiwic3RhdGUiLCJpbnB1dFJlZiIsImhhc0Vycm9yIiwibWF4IiwibGVuZ3RoTWVzc2FnZSIsImVycm9yTWVzc2FnZSIsIl9oYXNFcnJvciIsIm1lc3NhZ2VFcnJvciIsImVtcHR5TWVzc2FnZSIsImN1cnJlbnQiLCJwYXJzZUZsb2F0IiwicGFyc2VJbnQiLCJfY2xhc3NMaXN0IiwiX2NvbnRleHQiLCJfcmVuZGVyaW5nUHJvcHMiLCJJbnB1dCIsImlucHV0IiwidXNlUmVmIiwiZmxvYXRpbmciLCJpY29uIiwicGFzc3dvcmQiLCJyZXF1aXJlZCIsImxvYWRpbmciLCJwbGFjZWhvbGRlciIsInNldFN0YXRlIiwidGFyZ2V0IiwibGlzdFZhbHVlIiwiaXNWYWx1ZSIsIlByb3ZpZGVyIiwiUmVuZGVyaW5nUHJvcHMiLCJMYWJlbCIsInNwYW5SZXF1aXJlZCIsInNob3dMYWJlbCIsIkZyYWdtZW50IiwiX2ljb25zIiwiX3NwaW5uZXIiLCJfZ2V0RXJyb3IiLCJQcm9wc1JlbmRlcmluZyIsImNoYW5nZVR5cGUiLCJjdXJyZW50VGFyZ2V0IiwiZGF0YXNldCIsImNvbnRyb2xJbnB1dCIsIkljb25CdXR0b24iLCJvbkNsaWNrIiwiaXNMYWJlbCIsImlzSWNvbiIsIkljb24iLCJpc0xvYWRpbmciLCJTcGlubmVyIiwiY29sb3IiLCJjb2xvclNwaW5uZXIiLCJhY3RpdmUiLCJpc1JlcXVpcmVkV2lkdGhMYWJlbCIsImVycm9yIiwiX2xhYmVsIiwiaWNvbkJ1dHRvbkF0dHJzIiwiaGFuZGxlQ2xpY2siLCJmb2N1cyIsImRlZmF1bHRJY29uIiwic2hvd0ljb24iLCJzaG93TG9hZGluZyIsInNob3dSZXF1aXJlZFdpZHRoTGFiZWwiLCJkZWZpbmVQcm9wZXJ0eSIsIlJhZGlvIiwiU3dpdGNoIiwidmFyaWFudCIsInNpemUiLCJpc0NoZWNrZWQiLCJzZXRJc0NoZWNrZWQiLCJjbGFzc05hbWVTd2l0Y2giLCJUZXh0YXJlYSJdLCJzb3VyY2VzIjpbIi90cy9jaGVja2JveC50c3giLCIvdHMvZm9ybS50c3giLCIvdHMvaW5wdXQvY2xhc3MtbGlzdC50cyIsIi90cy9pbnB1dC9jb250ZXh0LnRzIiwiL3RzL2lucHV0L2dldC1lcnJvci50c3giLCIvdHMvaW5wdXQvaW5kZXgudHN4IiwiL3RzL2lucHV0L2xhYmVsLnRzeCIsIi90cy9pbnB1dC9wcm9wcy1yZW5kZXJpbmcudHN4IiwiL3RzL2lucHV0L3JlbmRlcmluZy1wcm9wcy50c3giLCIvdHlwZS50cyIsIi90cy9yYWRpby50c3giLCIvdHMvc3dpdGNoLnRzeCIsIi90cy90ZXh0YXJlYS50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7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
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiUmFkaW8iLCJwcm9wcyIsImlucHV0IiwidXNlUmVmIiwib25DbGljayIsImV2ZW50Iiwic3RvcFByb3BhZ2F0aW9uIiwiY3VycmVudCIsImNoZWNrZWQiLCJvbkNoYW5nZSIsInByb3BlcnRpZXMiLCJjbHMiLCJjbGFzc05hbWUiLCJkZWZhdWx0IiwiY3JlYXRlRWxlbWVudCIsInJlZiIsInR5cGUiLCJsYWJlbCIsIkZvcm0iLCJvblN1Ym1pdCIsInJlc3RQcm9wcyIsImhhbmRsZVN1Ym1pdCIsInByZXZlbnREZWZhdWx0IiwiY2hpbGRyZW4iLCJfY29udGV4dCIsIkVycm9yIiwic2hvdyIsIm1lc3NhZ2UiLCJ2YWx1ZSIsInVzZUlucHV0Q29udGV4dCIsIkxhYmVsIiwicmVxdWlyZWQiLCJwb3NpdGlvbiIsIm5hbWUiLCJpZCIsInZhcmlhbnRzIiwiZmxvYXRpbmciLCJyaWdodCIsImJvdHRvbSIsIkZyYWdtZW50IiwiaHRtbEZvciIsIklucHV0Q29udGV4dCIsImV4cG9ydHMiLCJjcmVhdGVDb250ZXh0IiwidXNlQ29udGV4dCIsIl9pbnRlcm5hbFByb3BzIiwiX2ljb25zIiwiQ29udHJvbFNlbGVjdG9yIiwic2V0U3RhdGUiLCJzdGF0ZSIsInNldFZhbHVlIiwicGxhY2Vob2xkZXIiLCJpbnRlcm5hbFByb3BzIiwiZm9yRWFjaCIsInByb3AiLCJoYW5kbGVDaGFuZ2UiLCJjdXJyZW50VmFsdWUiLCJjdXJyZW50VGFyZ2V0IiwiX2hhc0Vycm9yIiwicHVzaCIsIkljb24iLCJrZXkiLCJpY29uIiwic2hvd1BpY2tlciIsIl9sYWJlbCIsIl9jb250cm9sIiwiX2Vycm9yIiwiSW5wdXQiLCJoYXNFcnJvciIsImVycm9yTWVzc2FnZSIsInZhcmlhbnQiLCJ1c2VTdGF0ZSIsInVuc3R5bGVkIiwicHJvdmlkZXJWYWx1ZSIsImxhYmVsU3BlY3MiLCJhdHRycyIsIlByb3ZpZGVyIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJTZWxlY3Rvck1hbmFnZXIiLCJpbnN0YW5jZSIsInNlbGVjdG9yIiwiY29uc3RydWN0b3IiLCJ2YWxpZGF0ZSIsImdldCIsIlN3aXRjaCIsImRpc2FibGVkIiwic2l6ZSIsInRpdGxlIiwiaXNDaGVja2VkIiwic2V0SXNDaGVja2VkIiwiY29uc29sZSIsImxvZyIsImNsYXNzTmFtZVN3aXRjaCIsImlzSWQiLCJUZXh0YXJlYSIsImxlbmd0aE1lc3NhZ2UiLCJlbXB0eU1lc3NhZ2UiLCJ0YXJnZXQiLCJnZXRFcnJvciIsIm1heCIsInBhcnNlRmxvYXQiLCJwYXJzZUludCIsImVycm9yIl0sInNvdXJjZXMiOlsiL3RzL2NoZWNrYm94LnRzeCIsIi90cy9mb3JtLnRzeCIsIi90cy9pbnB1dC9jb21wb25lbnRzL2Vycm9yLnRzeCIsIi90cy9pbnB1dC9jb21wb25lbnRzL2xhYmVsLnRzeCIsIi90cy9pbnB1dC9jb250ZXh0LnRzIiwiL3RzL2lucHV0L2NvbnRyb2wudHN4IiwiL3RzL2lucHV0L2luZGV4LnRzeCIsIi90cy9pbnB1dC9pbnRlcm5hbC1wcm9wcy50cyIsIi90eXBlcy50cyIsIi90cy9tb2RlbC9tYW5hZ2VyLnRzIiwiL3RzL3JhZGlvLnRzeCIsIi90cy9zd2l0Y2gudHN4IiwiL3RzL3RleHRhcmVhLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO1VBT087VUFBVSxTQUFVQyxLQUFLQSxDQUFDQyxLQUFZO1lBQzVDLE1BQU1DLEtBQUssR0FBdUMsSUFBQUosTUFBQSxDQUFBSyxNQUFNLEdBQW9CO1lBRTVFLE1BQU1DLE9BQU8sR0FBSUMsS0FBSyxJQUFVO2NBQy9CQSxLQUFLLENBQUNDLGVBQWUsRUFBRTtjQUV2Qkos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
