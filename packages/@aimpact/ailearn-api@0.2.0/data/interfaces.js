@@ -1,13 +1,14 @@
 System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, bimport, __Bundle, __pkg, ims, IAssignmentActivityBase, IAssignmentData, IDashboardData, TrackingStatusType, IActivityTrackingBase, ITrackingData, IActivityTrackingData, IAssignmentWallMessageBase, IAssignmentWallData, IClassroomBaseData, IClassroomData, IGClassroomOAuthStateData, IModuleBaseData, IModuleData, IActivityBaseData, IActivityData, IOrganizationData, IStudentHomeData, __beyond_pkg, hmr;
+  var dependency_0, bimport, __Bundle, __pkg, ims, IAssignmentActivityBase, IAssignmentData, IDashboardData, TrackingStatusType, IActivityTrackingBase, ActivityItemType, ITrackingData, IActivityTrackingData, IAssignmentWallMessageBase, IAssignmentWallData, IClassroomBaseData, IClassroomData, IGClassroomOAuthStateData, IModuleBaseData, IModuleData, IActivityBaseData, IActivityData, IOrganizationData, IStudentHomeData, __beyond_pkg, hmr;
   _export({
     IAssignmentActivityBase: void 0,
     IAssignmentData: void 0,
     IDashboardData: void 0,
     TrackingStatusType: void 0,
     IActivityTrackingBase: void 0,
+    ActivityItemType: void 0,
     ITrackingData: void 0,
     IActivityTrackingData: void 0,
     IAssignmentWallMessageBase: void 0,
@@ -28,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/widgets", "0.1.5"], ["@beyond-js/pending-promise", "0.0.1"], ["@beyond-js/react-18-widgets", "1.0.3"], ["@beyond-js/firestore-collection", "0.0.5"], ["@beyond-js/response", "0.0.2"], ["@aimpact/agents-client", "0.0.8"], ["@google-cloud/tasks", "3.2.0"], ["@google-cloud/storage", "7.0.1"], ["@google-cloud/text-to-speech", "5.0.1"], ["googleapis", "122.0.0"], ["socket.io-client", "4.7.2"], ["openai", "4.2.0"], ["dotenv", "16.3.1"], ["uuid", "9.0.1"], ["express", "4.18.2"], ["express-openapi-validator", "5.1.0"], ["firebase", "9.23.0"], ["firebase-admin", "11.11.0"], ["node-fetch", "2.6.13"], ["form-data", "4.0.0"], ["busboy", "1.6.0"], ["@beyond-js/bee", "0.0.6"], ["@types/express", "4.17.21"], ["@types/node", "20.6.5"], ["@types/uuid", "9.0.7"], ["@types/busboy", "1.5.3"], ["@aimpact/ailearn-api", "0.2.0"], ["@aimpact/ailearn-app", "0.0.23"]]);
+        const dependencies = new Map([["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/widgets", "0.1.5"], ["@beyond-js/pending-promise", "0.0.1"], ["@beyond-js/react-18-widgets", "1.0.3"], ["@beyond-js/firestore-collection", "0.0.5"], ["@beyond-js/response", "0.0.2"], ["@aimpact/agents-client", "0.0.11"], ["@google-cloud/tasks", "3.2.0"], ["@google-cloud/storage", "7.0.1"], ["@google-cloud/text-to-speech", "5.0.1"], ["googleapis", "122.0.0"], ["socket.io-client", "4.7.2"], ["openai", "4.2.0"], ["dotenv", "16.3.1"], ["uuid", "9.0.1"], ["express", "4.18.2"], ["express-openapi-validator", "5.1.1"], ["firebase", "9.23.0"], ["firebase-admin", "11.11.1"], ["node-fetch", "2.6.13"], ["form-data", "4.0.0"], ["busboy", "1.6.0"], ["@beyond-js/bee", "0.0.6"], ["@types/express", "4.17.21"], ["@types/node", "20.6.5"], ["@types/uuid", "9.0.7"], ["@types/busboy", "1.5.3"], ["@aimpact/ailearn-api", "0.2.0"], ["@aimpact/ailearn-app", "0.0.21"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -77,7 +78,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       *************************************/
 
       ims.set('./assignment/tracking', {
-        hash: 1731805613,
+        hash: 3298339947,
         creator: function (require, exports) {
           "use strict";
 
@@ -92,7 +93,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       *********************************/
 
       ims.set('./assignment/wall', {
-        hash: 1140431916,
+        hash: 3372572621,
         creator: function (require, exports) {
           "use strict";
 
@@ -137,7 +138,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       ************************/
 
       ims.set('./module', {
-        hash: 1247373941,
+        hash: 3464604220,
         creator: function (require, exports) {
           "use strict";
 
@@ -204,6 +205,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
         "name": "IActivityTrackingBase"
       }, {
         "im": "./assignment/tracking",
+        "from": "ActivityItemType",
+        "name": "ActivityItemType"
+      }, {
+        "im": "./assignment/tracking",
         "from": "ITrackingData",
         "name": "ITrackingData"
       }, {
@@ -266,6 +271,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
         (require || prop === 'IDashboardData') && _export("IDashboardData", IDashboardData = require ? require('./assignment/dashboard').IDashboardData : value);
         (require || prop === 'TrackingStatusType') && _export("TrackingStatusType", TrackingStatusType = require ? require('./assignment/tracking').TrackingStatusType : value);
         (require || prop === 'IActivityTrackingBase') && _export("IActivityTrackingBase", IActivityTrackingBase = require ? require('./assignment/tracking').IActivityTrackingBase : value);
+        (require || prop === 'ActivityItemType') && _export("ActivityItemType", ActivityItemType = require ? require('./assignment/tracking').ActivityItemType : value);
         (require || prop === 'ITrackingData') && _export("ITrackingData", ITrackingData = require ? require('./assignment/tracking').ITrackingData : value);
         (require || prop === 'IActivityTrackingData') && _export("IActivityTrackingData", IActivityTrackingData = require ? require('./assignment/tracking').IActivityTrackingData : value);
         (require || prop === 'IAssignmentWallMessageBase') && _export("IAssignmentWallMessageBase", IAssignmentWallMessageBase = require ? require('./assignment/wall').IAssignmentWallMessageBase : value);
@@ -289,4 +295,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsImV4cG9ydHMiLCJ2YWx1ZSIsIklPcmdhbml6YXRpb25EYXRhIiwibmFtZSJdLCJzb3VyY2VzIjpbIi9hc3NpZ25tZW50LnRzIiwiL2Rhc2hib2FyZC50cyIsIi90cmFja2luZy50cyIsIi93YWxsLnRzIiwiL2NsYXNzcm9vbS50cyIsIi9nY2xhc3Nyb29tLnRzIiwiL21vZHVsZS50cyIsIi9vcmdhbml6YXRpb24udHMiLCIvaG9tZS50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBOztVQUVBQSxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0E7Ozs7Ozs7Ozs7O1VDSkE7O1VBRUFILE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO1lBQ0FDLEtBQUE7VUFDQTs7Ozs7Ozs7Ozs7VUNKQTs7VUFFQUgsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBOzs7Ozs7Ozs7OztVQ0pBOztVQUVBSCxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0E7Ozs7Ozs7Ozs7O1VDSkE7O1VBRUFILE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO1lBQ0FDLEtBQUE7VUFDQTs7Ozs7Ozs7Ozs7VUNKQTs7VUFFQUgsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBOzs7Ozs7Ozs7OztVQ0pBOztVQUVBSCxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0E7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDSk87VUFBVSxNQUFPQyxpQkFBaUI7WUFDeENDLElBQUk7O1VBQ0pILE9BQUEsQ0FBQUUsaUJBQUEsR0FBQUEsaUJBQUE7Ozs7Ozs7Ozs7O1VDRkQ7O1VBRUFKLE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO1lBQ0FDLEtBQUE7VUFDQSJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsImV4cG9ydHMiLCJ2YWx1ZSIsIklPcmdhbml6YXRpb25EYXRhIiwibmFtZSJdLCJzb3VyY2VzIjpbIi9hc3NpZ25tZW50LnRzIiwiL2Rhc2hib2FyZC50cyIsIi90cmFja2luZy50cyIsIi93YWxsLnRzIiwiL2NsYXNzcm9vbS50cyIsIi9nY2xhc3Nyb29tLnRzIiwiL21vZHVsZS50cyIsIi9vcmdhbml6YXRpb24udHMiLCIvaG9tZS50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTs7VUFFQUEsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBOzs7Ozs7Ozs7OztVQ0pBOztVQUVBSCxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0E7Ozs7Ozs7Ozs7O1VDSkE7O1VBRUFILE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO1lBQ0FDLEtBQUE7VUFDQTs7Ozs7Ozs7Ozs7VUNKQTs7VUFFQUgsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBOzs7Ozs7Ozs7OztVQ0pBOztVQUVBSCxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0E7Ozs7Ozs7Ozs7O1VDSkE7O1VBRUFILE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO1lBQ0FDLEtBQUE7VUFDQTs7Ozs7Ozs7Ozs7VUNKQTs7VUFFQUgsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ0pPO1VBQVUsTUFBT0MsaUJBQWlCO1lBQ3hDQyxJQUFJOztVQUNKSCxPQUFBLENBQUFFLGlCQUFBLEdBQUFBLGlCQUFBOzs7Ozs7Ozs7OztVQ0ZEOztVQUVBSixNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0EifQ==
