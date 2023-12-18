@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "@aimpact/chat-api",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]

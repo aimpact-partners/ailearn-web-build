@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/react-18-widgets@1.0.1/page", "react@18.2.0"], function (_export, _context) {
+System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/react-18-widgets@1.0.3/page", "react@18.2.0"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
@@ -11,14 +11,14 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       dependency_0 = _beyondJsWidgets015Render;
     }, function (_beyondJsKernel019Bundle) {
       dependency_1 = _beyondJsKernel019Bundle;
-    }, function (_beyondJsReact18Widgets101Page) {
-      dependency_2 = _beyondJsReact18Widgets101Page;
+    }, function (_beyondJsReact18Widgets103Page) {
+      dependency_2 = _beyondJsReact18Widgets103Page;
     }, function (_react) {
       dependency_3 = _react;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/reactive", "1.1.6"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/firestore-collection", "0.0.5"], ["@beyond-js/response", "0.0.2"], ["@google-cloud/storage", "6.12.0"], ["@google-cloud/tasks", "3.2.0"], ["@pinecone-database/pinecone", "0.1.6"], ["langchain", "0.0.145"], ["axios", "1.5.1"], ["busboy", "1.6.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.4"], ["dotenv", "16.3.1"], ["express", "4.18.2"], ["express-openapi-validator", "5.0.6"], ["firebase", "8.10.1"], ["firebase-admin", "11.11.0"], ["fluent-ffmpeg", "2.1.2"], ["form-data", "4.0.0"], ["google-auth-library", "8.9.0"], ["jsonwebtoken", "9.0.2"], ["node-fetch", "2.7.0"], ["openai", "4.5.0"], ["socket.io-client", "4.7.2"], ["uuid", "9.0.1"], ["@beyond-js/bee", "0.0.6"], ["@beyond-js/local", "0.1.3"], ["@types/express", "4.17.20"], ["@types/jsonwebtoken", "9.0.4"], ["@types/react", "18.2.29"], ["@types/react-dom", "18.2.14"], ["@types/node", "20.6.5"], ["@types/uuid", "9.0.7"], ["@types/busboy", "1.5.3"], ["swagger-ui-express", "5.0.0"], ["yaml", "2.3.3"], ["@aimpact/chat-api", "0.1.0"], ["@aimpact/ailearn-app", "0.0.21"]]);
+        const dependencies = new Map([["@beyond-js/reactive", "1.1.6"], ["@beyond-js/backend", "0.1.8"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/firestore-collection", "0.0.5"], ["@beyond-js/response", "0.0.2"], ["@google-cloud/storage", "6.11.0"], ["@google-cloud/tasks", "3.2.0"], ["@pinecone-database/pinecone", "0.1.6"], ["langchain", "0.0.145"], ["axios", "1.4.0"], ["busboy", "1.6.0"], ["dayjs", "1.11.9"], ["dexie", "3.2.4"], ["dotenv", "16.3.1"], ["express", "4.18.2"], ["express-openapi-validator", "5.0.4"], ["firebase", "8.6.8"], ["firebase-admin", "11.11.0"], ["fluent-ffmpeg", "2.1.2"], ["form-data", "4.0.0"], ["google-auth-library", "8.9.0"], ["jsonwebtoken", "9.0.1"], ["node-fetch", "2.6.12"], ["openai", "4.5.0"], ["socket.io-client", "4.7.1"], ["uuid", "9.0.0"], ["@beyond-js/bee", "0.0.6"], ["@beyond-js/local", "0.1.3"], ["@types/express", "4.17.17"], ["@types/jsonwebtoken", "9.0.2"], ["@types/react", "18.2.14"], ["@types/react-dom", "18.2.6"], ["@types/node", "20.6.5"], ["@types/uuid", "9.0.7"], ["@types/busboy", "1.5.3"], ["swagger-ui-express", "5.0.0"], ["yaml", "2.3.1"], ["@aimpact/chat-api", "0.2.0"], ["@aimpact/ailearn-app", "0.0.23"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -26,7 +26,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/chat-api@0.1.0//tests/page"
+          "vspecifier": "@aimpact/chat-api@0.2.0//tests/page"
         },
         "type": "widget"
       }, _context.meta.url).package();
@@ -34,7 +34,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-18-widgets/page', dependency_2], ['react', dependency_3]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "chat-api-test",
-        "vspecifier": "@aimpact/chat-api@0.1.0//tests/page",
+        "vspecifier": "@aimpact/chat-api@0.2.0//tests/page",
         "is": "page",
         "route": "/chat-api/tests"
       }]);
