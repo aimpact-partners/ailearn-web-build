@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/model", "@aimpact/ailearn-app@0.0.23/model/wrapper", "@aimpact/chat@1.0.1/api", "@beyond-js/kernel@0.1.9/core", "@aimpact/ailearn-app@0.0.23/config", "dayjs@1.11.10", "@aimpact/chat-sdk@1.0.0/session"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/model", "@aimpact/ailearn-app@0.0.23/model/wrapper", "@aimpact/chat-sdk@1.0.0/api", "@beyond-js/kernel@0.1.9/core", "@aimpact/ailearn-app@0.0.23/config", "dayjs@1.11.10", "@aimpact/chat-sdk@1.0.0/session"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, bimport, __Bundle, __pkg, ims, gclassroom, __beyond_pkg, hmr;
@@ -10,8 +10,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/mo
       dependency_1 = _beyondJsReactive116Model;
     }, function (_aimpactAilearnApp0023ModelWrapper) {
       dependency_2 = _aimpactAilearnApp0023ModelWrapper;
-    }, function (_aimpactChat101Api) {
-      dependency_3 = _aimpactChat101Api;
+    }, function (_aimpactChatSdk100Api) {
+      dependency_3 = _aimpactChatSdk100Api;
     }, function (_beyondJsKernel019Core) {
       dependency_4 = _beyondJsKernel019Core;
     }, function (_aimpactAilearnApp0023Config) {
@@ -36,7 +36,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/mo
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/reactive/model', dependency_1], ['@aimpact/ailearn-app/model/wrapper', dependency_2], ['@aimpact/chat/api', dependency_3], ['@beyond-js/kernel/core', dependency_4], ['@aimpact/ailearn-app/config', dependency_5], ['dayjs', dependency_6], ['@aimpact/chat-sdk/session', dependency_7]]);
+      __pkg.dependencies.update([['@beyond-js/reactive/model', dependency_1], ['@aimpact/ailearn-app/model/wrapper', dependency_2], ['@aimpact/chat-sdk/api', dependency_3], ['@beyond-js/kernel/core', dependency_4], ['@aimpact/ailearn-app/config', dependency_5], ['dayjs', dependency_6], ['@aimpact/chat-sdk/session', dependency_7]]);
       ims = new Map();
       /***********************
       INTERNAL MODULE: ./class
@@ -87,7 +87,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/mo
       ***********************/
 
       ims.set('./index', {
-        hash: 3834048213,
+        hash: 3026114931,
         creator: function (require, exports) {
           "use strict";
 
@@ -96,7 +96,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/mo
           });
           exports.gclassroom = exports.GClassRoom = void 0;
           var _wrapper = require("@aimpact/ailearn-app/model/wrapper");
-          var _api = require("@aimpact/chat/api");
+          var _api = require("@aimpact/chat-sdk/api");
           var _class = require("./class");
           var _core = require("@beyond-js/kernel/core");
           var _model = require("@beyond-js/reactive/model");

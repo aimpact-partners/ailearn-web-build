@@ -637,7 +637,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       *******************************/
 
       ims.set('./views/context', {
-        hash: 375502923,
+        hash: 3727116379,
         creator: function (require, exports) {
           "use strict";
 

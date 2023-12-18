@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.0.3/page", "react@18.2.0", "@beyond-js/reactive@1.1.6/model", "@aimpact/chat@1.0.1/api", "@aimpact/ailearn-app@0.0.23/config", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/ailearn-sdk@1.0.0/core", "@aimpact/ailearn-app@0.0.23/shared/charts", "@aimpact/ailearn-app@0.0.23/components/ui", "pragmate-ui@0.0.3/icons", "@aimpact/ailearn-app@0.0.23/shared/icons", "pragmate-ui@0.0.3/empty", "pragmate-ui@0.0.3/list", "pragmate-ui@0.0.3/link", "pragmate-ui@0.0.3/components", "@beyond-js/react-18-widgets@1.0.3/hooks", "pragmate-ui@0.0.3/chips", "pragmate-ui@0.0.3/image", "@aimpact/ailearn-app@0.0.23/utils", "pragmate-ui@0.0.3/tooltip"], function (_export, _context2) {
+System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.0.3/page", "react@18.2.0", "@beyond-js/reactive@1.1.6/model", "@aimpact/chat-sdk@1.0.0/api", "@aimpact/ailearn-app@0.0.23/config", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/ailearn-sdk@1.0.0/core", "@aimpact/ailearn-app@0.0.23/shared/charts", "@aimpact/ailearn-app@0.0.23/components/ui", "pragmate-ui@0.0.3/icons", "@aimpact/ailearn-app@0.0.23/shared/icons", "pragmate-ui@0.0.3/empty", "pragmate-ui@0.0.3/list", "pragmate-ui@0.0.3/link", "pragmate-ui@0.0.3/components", "@beyond-js/react-18-widgets@1.0.3/hooks", "pragmate-ui@0.0.3/chips", "pragmate-ui@0.0.3/image", "@aimpact/ailearn-app@0.0.23/utils", "pragmate-ui@0.0.3/tooltip"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, dependency_15, dependency_16, dependency_17, dependency_18, dependency_19, dependency_20, dependency_21, dependency_22, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
@@ -19,8 +19,8 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       dependency_4 = _react2;
     }, function (_beyondJsReactive116Model) {
       dependency_5 = _beyondJsReactive116Model;
-    }, function (_aimpactChat101Api) {
-      dependency_6 = _aimpactChat101Api;
+    }, function (_aimpactChatSdk100Api) {
+      dependency_6 = _aimpactChatSdk100Api;
     }, function (_aimpactAilearnApp0023Config) {
       dependency_7 = _aimpactAilearnApp0023Config;
     }, function (_aimpactChatSdk100Session) {
@@ -70,7 +70,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
         "type": "widget"
       }, _context2.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['react', dependency_4], ['@beyond-js/reactive/model', dependency_5], ['@aimpact/chat/api', dependency_6], ['@aimpact/ailearn-sdk/config', dependency_7], ['@aimpact/chat-sdk/session', dependency_8], ['@aimpact/ailearn-sdk/core', dependency_9], ['@aimpact/ailearn-app/shared/charts', dependency_10], ['@aimpact/ailearn-app/components/ui', dependency_11], ['pragmate-ui/icons', dependency_12], ['@aimpact/ailearn-app/shared/icons', dependency_13], ['pragmate-ui/empty', dependency_14], ['pragmate-ui/list', dependency_15], ['pragmate-ui/link', dependency_16], ['pragmate-ui/components', dependency_17], ['@beyond-js/react-18-widgets/hooks', dependency_18], ['pragmate-ui/chips', dependency_19], ['pragmate-ui/image', dependency_20], ['@aimpact/ailearn-app/utils', dependency_21], ['pragmate-ui/tooltip', dependency_22]]);
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['react', dependency_4], ['@beyond-js/reactive/model', dependency_5], ['@aimpact/chat-sdk/api', dependency_6], ['@aimpact/ailearn-sdk/config', dependency_7], ['@aimpact/chat-sdk/session', dependency_8], ['@aimpact/ailearn-sdk/core', dependency_9], ['@aimpact/ailearn-app/shared/charts', dependency_10], ['@aimpact/ailearn-app/components/ui', dependency_11], ['pragmate-ui/icons', dependency_12], ['@aimpact/ailearn-app/shared/icons', dependency_13], ['pragmate-ui/empty', dependency_14], ['pragmate-ui/list', dependency_15], ['pragmate-ui/link', dependency_16], ['pragmate-ui/components', dependency_17], ['@beyond-js/react-18-widgets/hooks', dependency_18], ['pragmate-ui/chips', dependency_19], ['pragmate-ui/image', dependency_20], ['@aimpact/ailearn-app/utils', dependency_21], ['pragmate-ui/tooltip', dependency_22]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "ailearn-session-dashboard",
         "vspecifier": "@aimpact/ailearn-app@0.0.23/assignments/dashboard.widget",
@@ -124,7 +124,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       *****************************/
 
       ims.set('./model/index', {
-        hash: 224813378,
+        hash: 4207996792,
         creator: function (require, exports) {
           "use strict";
 
@@ -133,7 +133,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
           });
           exports.Dashboard = void 0;
           var _model = require("@beyond-js/reactive/model");
-          var _api = require("@aimpact/chat/api");
+          var _api = require("@aimpact/chat-sdk/api");
           var _config = require("@aimpact/ailearn-sdk/config");
           var _session = require("@aimpact/chat-sdk/session");
           class Dashboard extends _model.ReactiveModel {

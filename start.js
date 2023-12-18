@@ -91,6 +91,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/documents",
         "layout": "chat-layout"
       }, {
+        "name": "aimpact-chat-user-profile",
+        "vspecifier": "@aimpact/chat@1.0.1/user/profile.widget"
+      }, {
         "name": "ailearn-home-page",
         "vspecifier": "@aimpact/chat@1.0.1/home.widget",
         "is": "page",
@@ -112,9 +115,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "name": "general-layout",
         "vspecifier": "@aimpact/chat@1.0.1/general-layout",
         "is": "layout"
-      }, {
-        "name": "aimpact-chat-user-profile",
-        "vspecifier": "@aimpact/chat@1.0.1/user/profile.widget"
       }, {
         "name": "chat-sdk-markdown-page",
         "vspecifier": "@aimpact/chat-sdk@1.0.0//chat-sdk/markdown",

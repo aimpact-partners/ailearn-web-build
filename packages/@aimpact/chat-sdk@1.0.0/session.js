@@ -193,7 +193,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.0.0/user
       *********************************/
 
       ims.set('./firebase/config', {
-        hash: 1287693483,
+        hash: 2755192558,
         creator: function (require, exports) {
           "use strict";
 
