@@ -16,7 +16,7 @@
   text-align: center;
   min-width: 500px;
 }
-.page__container .card h1 {
+.page__container .card h2 {
   margin-bottom: 1rem;
 }
 .page__container .card .card__content {
@@ -39,5 +39,18 @@
   width: 80%;
 }
 
+@media (max-width: 767px) {
+  .page__container .card {
+    min-width: auto;
+  }
+  .page__container .card h4 {
+    line-height: 1.2rem;
+  }
+  .page__container .card span {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7O0FBRUQ7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFFQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUQ7RUFDQzs7QUFDQTtFQUNDIiwiZmlsZSI6IiJ9 */
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7O0FBR0Q7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0Q7RUFDQzs7QUFDQTtFQUNDOzs7QUFNSjtFQUVFO0lBQ0M7O0VBRUE7SUFDQzs7RUFHRDtJQUNDO0lBQ0EiLCJmaWxlIjoiIn0= */
