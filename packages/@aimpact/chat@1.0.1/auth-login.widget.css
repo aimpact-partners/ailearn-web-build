@@ -27,22 +27,17 @@
 }
 .login-container .form-action-by-mail {
   opacity: 0;
-  transition: opacity 0.3s ease, height 0.22s, linear 0.3s;
   height: 0;
   overflow: hidden;
+  transition: opacity 0.3s ease, height 0.22s, linear 0.3s;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .login-container .form-action-by-mail.show {
   opacity: 1;
   height: auto;
   overflow: visible;
-}
-
-.divider-section {
-  width: 76%;
-  padding: 0.1rem;
-  margin: auto;
-  display: flex;
-  border-bottom: 1px solid var(--neutral-70);
 }
 
 .login__header {
@@ -75,6 +70,33 @@
   margin-top: 1.2rem;
 }
 
+.login-form-general__container {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
+}
+
+.conditions-pass__container {
+  text-align: left;
+  margin-top: 11px;
+}
+
+.term-login__container {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, height 0.22s, linear 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.term-login__container.show {
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+}
+
 .form__actions {
   display: flex;
   flex-direction: column;
@@ -82,15 +104,47 @@
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+.term__container {
+  gap: 1rem;
+}
+
+input {
+  min-width: 270px;
+  height: 3.5rem;
+}
+
+button {
+  height: 3.5rem;
+}
+
+.login-form-content__container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.divider-section {
+  width: 76%;
+  padding: 0.1rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  border-bottom: 1px solid var(--neutral-70);
+}
+
+@media (max-width: 768px) {
   .login__header {
     display: none;
   }
   .panel {
     flex: 0 0%;
   }
+  .login-form-content__container {
+    margin: 0px;
+  }
   .form-button-by-email {
-    margin-top: 1rem;
     flex-direction: column;
     gap: 1rem;
   }
@@ -105,4 +159,4 @@
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHBhbmVscy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7OztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBR0Q7RUFDQztFQUNBOztBQUlGO0VBQ0M7RUFDQTtFQU9BO0VBQ0E7O0FBTkE7RUFDQztFQUNBO0VBQ0E7OztBQU9IO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdEO0VBQ0M7RUFDQTtFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQztJQUNDOztFQUVEO0lBQ0M7O0VBR0Q7SUFDQztJQUNBO0lBQ0E7O0VBR0Q7SUFDQztJQUNBO0lBQ0E7SUFDQTtJQUNBO0lBQ0EiLCJmaWxlIjoiIn0= */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHBhbmVscy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7OztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBR0Q7RUFDQztFQUNBOztBQUlGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7OztBQUtIO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQztFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTs7O0FBSUY7RUFDQztFQUNBO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQzs7O0FBR0Q7RUFDQztFQUNBOzs7QUFHRDtFQUNDOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHRDtFQUNDO0lBQ0M7O0VBRUQ7SUFDQzs7RUFHRDtJQUNDOztFQUdEO0lBQ0M7SUFDQTs7RUFHRDtJQUNDO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7SUFDQSIsImZpbGUiOiIifQ== */

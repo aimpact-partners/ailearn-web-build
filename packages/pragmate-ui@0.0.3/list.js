@@ -13,7 +13,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.5"], ["@beyond-js/reactive", "1.1.4"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.6.1"], ["swiper", "10.3.0"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.0.37"], ["@types/react-dom", "18.0.11"], ["pragmate-ui", "0.0.3"], ["@aimpact/ailearn-app", "0.0.23"]]);
+        const dependencies = new Map([["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.5"], ["@beyond-js/reactive", "1.1.4"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.6.1"], ["swiper", "10.3.0"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.0.37"], ["@types/react-dom", "18.0.11"], ["pragmate-ui", "0.0.3"], ["@aimpact/ailearn-app", "0.0.24"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -33,7 +33,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 2737622715,
+        hash: 3541241282,
         creator: function (require, exports) {
           "use strict";
 
@@ -58,6 +58,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
             const output = items.map((item, idx) => {
               return _react.default.createElement(Control, {
                 key: item[index] || idx,
+                index: idx,
                 data: item
               });
             });
@@ -89,4 +90,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiTGlzdCIsIml0ZW1zIiwiY2xhc3NOYW1lIiwiaW5kZXgiLCJjb250cm9sIiwiY29udGFpbmVyIiwiQ29udGFpbmVyIiwiQ29udHJvbCIsIm91dHB1dCIsIm1hcCIsIml0ZW0iLCJpZHgiLCJkZWZhdWx0IiwiY3JlYXRlRWxlbWVudCIsImtleSIsImRhdGEiXSwic291cmNlcyI6WyIvdHMvaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO1VBVU87VUFBVyxTQUFVQyxJQUFJQSxDQUFJO1lBQ25DQyxLQUFLO1lBQ0xDLFNBQVM7WUFDVEMsS0FBSyxHQUFHLElBQUk7WUFDWkMsT0FBTztZQUNQQyxTQUFTLEdBQUc7VUFBSSxDQUNGO1lBQ2QsTUFBTUMsU0FBUyxHQUFHRCxTQUFTO1lBQzNCLE1BQU1FLE9BQU8sR0FBR0gsT0FBTztZQUV2QjtZQUNBO1lBQ0E7WUFFQSxNQUFNSSxNQUFNLEdBQWdCUCxLQUFLLENBQUNRLEdBQUcsQ0FBQyxDQUFDQyxJQUFJLEVBQUVDLEdBQUcsS0FBSTtjQUNuRCxPQUFPYixNQUFBLENBQUFjLE9BQUssQ0FBQ0MsYUFBYSxDQUFDTixPQUF5QyxFQUFFO2dCQUNyRU8sR0FBRyxFQUFHSixJQUFZLENBQUNQLEtBQUssQ0FBQyxJQUFJUSxHQUFHO2dCQUNoQ0ksSUFBSSxFQUFFTDtlQUNOLENBQUM7WUFDSCxDQUFDLENBQUM7WUFFRixPQUFPWixNQUFBLENBQUFjLE9BQUEsQ0FBQUMsYUFBQSxDQUFDUCxTQUFTO2NBQUNKLFNBQVMsRUFBRUE7WUFBUyxHQUFHTSxNQUFNLENBQWE7VUFDN0QifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiTGlzdCIsIml0ZW1zIiwiY2xhc3NOYW1lIiwiaW5kZXgiLCJjb250cm9sIiwiY29udGFpbmVyIiwiQ29udGFpbmVyIiwiQ29udHJvbCIsIm91dHB1dCIsIm1hcCIsIml0ZW0iLCJpZHgiLCJkZWZhdWx0IiwiY3JlYXRlRWxlbWVudCIsImtleSIsImRhdGEiXSwic291cmNlcyI6WyIvdHMvaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO1VBVU87VUFBVyxTQUFVQyxJQUFJQSxDQUFJO1lBQ25DQyxLQUFLO1lBQ0xDLFNBQVM7WUFDVEMsS0FBSyxHQUFHLElBQUk7WUFDWkMsT0FBTztZQUNQQyxTQUFTLEdBQUc7VUFBSSxDQUNGO1lBQ2QsTUFBTUMsU0FBUyxHQUFHRCxTQUFTO1lBQzNCLE1BQU1FLE9BQU8sR0FBR0gsT0FBTztZQUV2QjtZQUNBO1lBQ0E7WUFFQSxNQUFNSSxNQUFNLEdBQWdCUCxLQUFLLENBQUNRLEdBQUcsQ0FBQyxDQUFDQyxJQUFJLEVBQUVDLEdBQUcsS0FBSTtjQUNuRCxPQUFPYixNQUFBLENBQUFjLE9BQUssQ0FBQ0MsYUFBYSxDQUFDTixPQUF3RCxFQUFFO2dCQUNwRk8sR0FBRyxFQUFHSixJQUFZLENBQUNQLEtBQUssQ0FBQyxJQUFJUSxHQUFHO2dCQUNoQ1IsS0FBSyxFQUFFUSxHQUFHO2dCQUNWSSxJQUFJLEVBQUVMO2VBQ04sQ0FBQztZQUNILENBQUMsQ0FBQztZQUVGLE9BQU9aLE1BQUEsQ0FBQWMsT0FBQSxDQUFBQyxhQUFBLENBQUNQLFNBQVM7Y0FBQ0osU0FBUyxFQUFFQTtZQUFTLEdBQUdNLE1BQU0sQ0FBYTtVQUM3RCJ9
