@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/model", "@beyond-js/reactive@1.1.6/entities", "@aimpact/chat-sdk@1.0.0/core", "@aimpact/chat-sdk@1.0.0/api", "@aimpact/ailearn-app@0.0.24/config", "@aimpact/chat-sdk@1.0.0/session", "@bgroup/media-manager@1.0.0/uploader", "@beyond-js/kernel@0.1.9/core", "uuid@9.0.1"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/model", "@beyond-js/reactive@1.1.6/entities", "@aimpact/chat-sdk@1.0.0/core", "@aimpact/chat-sdk@1.0.0/api", "@aimpact/ailearn-app@0.0.23/config", "@aimpact/chat-sdk@1.0.0/session", "@bgroup/media-manager@1.0.0/uploader", "@beyond-js/kernel@0.1.9/core", "uuid@9.0.1"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, bimport, __Bundle, __pkg, ims, Activity, Assessment, DashboardWall, Assignment, Classroom, GClass, LearningModules, OldActivity, LearningModule, Sessions, Faces, Session, StudentsHome, __beyond_pkg, hmr;
@@ -28,8 +28,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/mo
       dependency_3 = _aimpactChatSdk100Core;
     }, function (_aimpactChatSdk100Api) {
       dependency_4 = _aimpactChatSdk100Api;
-    }, function (_aimpactAilearnApp0024Config) {
-      dependency_5 = _aimpactAilearnApp0024Config;
+    }, function (_aimpactAilearnApp0023Config) {
+      dependency_5 = _aimpactAilearnApp0023Config;
     }, function (_aimpactChatSdk100Session) {
       dependency_6 = _aimpactChatSdk100Session;
     }, function (_bgroupMediaManager100Uploader) {
@@ -41,7 +41,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.6/mo
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/backend", "0.1.8"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/reactive", "1.1.2"], ["socket.io-client", "4.7.1"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-app", "0.0.24"]]);
+        const dependencies = new Map([["@beyond-js/backend", "0.1.8"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/reactive", "1.1.2"], ["socket.io-client", "4.7.1"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-app", "0.0.23"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

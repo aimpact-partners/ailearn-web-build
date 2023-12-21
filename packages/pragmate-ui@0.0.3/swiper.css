@@ -60,7 +60,7 @@
 .swiper__navigation-btn.swiper-button-prev.swiper-button-next, .swiper__navigation-btn.swiper-button-next.swiper-button-next {
   right: 0.5rem;
 }
-.swiper__navigation-btn.swiper-button-prev svg.pragmate-icon, .swiper__navigation-btn.swiper-button-next svg.pragmate-icon {
+.swiper__navigation-btn.swiper-button-prev svg.pui-icon, .swiper__navigation-btn.swiper-button-next svg.pui-icon {
   fill: #fff;
 }
 /**

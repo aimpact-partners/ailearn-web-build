@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@0.0.3/icons", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@0.0.3/icons", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, Image, __beyond_pkg, hmr;
@@ -15,7 +15,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.5"], ["@beyond-js/reactive", "1.1.4"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.6.1"], ["swiper", "10.3.0"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.0.37"], ["@types/react-dom", "18.0.11"], ["pragmate-ui", "0.0.3"], ["@aimpact/ailearn-app", "0.0.24"]]);
+        const dependencies = new Map([["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.5"], ["@beyond-js/reactive", "1.1.4"], ["@beyond-js/widgets", "0.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.6.1"], ["swiper", "10.3.0"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.0.37"], ["@types/react-dom", "18.0.11"], ["pragmate-ui", "0.0.3"], ["@aimpact/ailearn-app", "0.0.23"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -27,46 +27,87 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
         },
         "type": "code",
         "name": "image"
-      }, _context.meta.url).package();
+      }, _context2.meta.url).package();
       ;
       __pkg.dependencies.update([['react', dependency_1], ['pragmate-ui/icons', dependency_2], ['@beyond-js/kernel/styles', dependency_3]]);
       brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@0.0.3/image');
       ims = new Map();
-      /***********************
-      INTERNAL MODULE: ./image
-      ***********************/
-      ims.set('./image', {
-        hash: 2620036535,
+      /*************************
+      INTERNAL MODULE: ./context
+      *************************/
+      ims.set('./context', {
+        hash: 3459801359,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.Image = Image;
+          exports.useImageContext = exports.ImageContext = void 0;
+          var React = require("react");
+          const ImageContext = exports.ImageContext = React.createContext({});
+          const useImageContext = () => React.useContext(ImageContext);
+          exports.useImageContext = useImageContext;
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./error/index
+      *****************************/
+
+      ims.set('./error/index', {
+        hash: 1634346444,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Error = Error;
           var _react = require("react");
+          var _context = require("../context");
           var _icons = require("pragmate-ui/icons");
-          /*bundle*/
-          function Image(props) {
+          function Error() {
+            const {
+              src,
+              onError
+            } = (0, _context.useImageContext)();
+            const onClickError = event => {
+              event.stopPropagation();
+              if (onError && typeof onError === 'function') onError(event);
+            };
+            return _react.default.createElement("div", {
+              "data-src": src,
+              className: 'content-error'
+            }, onError && _react.default.createElement(_icons.IconButton, {
+              onClick: onClickError,
+              icon: 'refresh'
+            }));
+          }
+        }
+      });
+
+      /***********************************
+      INTERNAL MODULE: ./hooks/use-loading
+      ***********************************/
+
+      ims.set('./hooks/use-loading', {
+        hash: 971814615,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useLoading = useLoading;
+          var _react = require("react");
+          function useLoading(props) {
             const initialState = {
               size: '200x200',
               loaded: false
             };
-            const {
-              className,
-              onClick,
-              children,
-              src,
-              alt,
-              onError
-            } = props;
             const [image, setImage] = (0, _react.useState)();
             const [state, setState] = (0, _react.useState)(initialState);
-            const onLoad = () => setState({
-              ...state,
-              error: false,
-              htmlLoaded: true
-            });
             const loadImage = (url, size) => {
               let finalSrc = url;
               const newImage = new globalThis.Image();
@@ -91,7 +132,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
               });
             };
             (0, _react.useEffect)(() => {
-              const currentSrc = src;
+              const currentSrc = props.src;
               if (state.url !== currentSrc) {
                 let size = props.size ?? state.size;
                 loadImage(currentSrc, size);
@@ -101,65 +142,202 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
                 onload: undefined,
                 onerror: undefined
               });
-              // eslint-disable-next-line
-            }, [src]);
-            const {
-              error,
-              loaded,
-              htmlLoaded
-            } = state;
-            let output;
-            const onClickError = event => {
-              event.stopPropagation();
-              if (onError && typeof onError === 'function') onError(event);
-            };
-            let cls = `pui-image ${className ? ` ${className}` : ''}`;
-            if (!loaded && !htmlLoaded) cls += ' pui-image-preload';
-            if (error) cls += ' pui-image-error';
-            const Error = _react.default.createElement("div", {
-              key: 'error',
-              "data-src": src,
-              className: 'content-error'
-            }, onError && _react.default.createElement(_icons.IconButton, {
-              onClick: onClickError,
-              icon: 'refresh'
-            }));
-            const Loaded = _react.default.createElement("img", {
-              src: src,
-              onLoad: onLoad,
-              loading: props.loading ?? 'eager',
-              alt: alt
-            });
-            output = error ? Error : Loaded;
-            const properties = {
-              ...props,
-              className: cls,
-              onClick
-            };
-            ['src', 'alt', 'onError', 'children', 'size', 'loading', 'error'].forEach(prop => delete properties[prop]);
-            return _react.default.createElement("figure", {
-              ...properties
-            }, output, children);
+            }, [props.src]);
+            return [state, setState];
           }
+          ;
         }
       });
 
-      /****************************
-      INTERNAL MODULE: ./interfaces
-      ****************************/
+      /*********************
+      INTERNAL MODULE: ./img
+      *********************/
 
-      ims.set('./interfaces', {
-        hash: 2547389877,
+      ims.set('./img', {
+        hash: 2913122704,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
+          exports.Img = Img;
+          var _react = require("react");
+          var _context = require("./context");
+          function Img() {
+            const {
+              src,
+              setState,
+              state,
+              loading,
+              alt
+            } = (0, _context.useImageContext)();
+            const onLoad = () => setState({
+              ...state,
+              error: false,
+              htmlLoaded: true
+            });
+            const loadingIMG = loading && loading === 'eager' || loading === 'lazy' ? loading : 'eager';
+            const altIMG = alt ?? ' ';
+            return _react.default.createElement("img", {
+              src: src,
+              onLoad: onLoad,
+              loading: loadingIMG,
+              alt: altIMG
+            });
+          }
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 3317177455,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Image = Image;
+          var _react = require("react");
+          var _context = require("./context");
+          var _error = require("./error");
+          var _img = require("./img");
+          var _sources = require("./sources");
+          var _useLoading = require("./hooks/use-loading");
+          /*bundle*/
+          function Image(props) {
+            const {
+              className,
+              onClick,
+              children,
+              sizeLoading
+            } = props;
+            const [state, setState] = (0, _useLoading.useLoading)(props);
+            const {
+              error,
+              loaded,
+              htmlLoaded
+            } = state;
+            let cls = `pui-image ${className ? ` ${className}` : ''}`;
+            if (!loaded && !htmlLoaded) cls += ' pui-image-preload';
+            if (error) cls += ' pui-image-error';
+            const Content = error ? _error.Error : _img.Img;
+            const properties = {
+              ...props,
+              className: cls,
+              onClick
+            };
+            ['src', 'alt', 'onError', 'children', 'size', 'loading', 'error', 'sources', 'sizeLoading'].forEach(prop => delete properties[prop]);
+            const value = {
+              ...props,
+              state,
+              setState
+            };
+            const styles = {};
+            if ((!loaded || !htmlLoaded || error) && !!sizeLoading && typeof sizeLoading === 'object' && sizeLoading.height && sizeLoading.width) {
+              styles.height = sizeLoading.height;
+              styles.width = sizeLoading.width;
+            }
+            return _react.default.createElement(_context.ImageContext.Provider, {
+              value: value
+            }, _react.default.createElement("picture", {
+              ...properties,
+              style: styles
+            }, _react.default.createElement(_sources.Sources, null), _react.default.createElement(Content, null), children));
+          }
+        }
+      });
+
+      /**********************************
+      INTERNAL MODULE: ./interfaces/index
+      **********************************/
+
+      ims.set('./interfaces/index', {
+        hash: 2835420986,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          ;
+          ;
+        }
+      });
+
+      /*******************************
+      INTERNAL MODULE: ./sources/index
+      *******************************/
+
+      ims.set('./sources/index', {
+        hash: 1128300086,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Sources = Sources;
+          var _react = require("react");
+          var _context = require("../context");
+          var _item = require("./item");
+          function Sources() {
+            const {
+              sources
+            } = (0, _context.useImageContext)();
+            if (!sources || !Array.isArray(sources) || !sources.length) return null;
+            const output = sources.map(item => _react.default.createElement(_item.Item, {
+              key: item.srcSet,
+              ...item
+            }));
+            return output;
+          }
+          ;
+        }
+      });
+
+      /******************************
+      INTERNAL MODULE: ./sources/item
+      ******************************/
+
+      ims.set('./sources/item', {
+        hash: 377065182,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Item = Item;
+          var _react = require("react");
+          function Item(props) {
+            if (!props.srcSet) return null;
+            let media = "";
+            const {
+              maxWidth,
+              minWidth
+            } = props;
+            if (!maxWidth && !!minWidth) media = `(min-width: ${minWidth}px)`;
+            if (!!maxWidth && !minWidth) media = `(max-width: ${maxWidth}px)`;
+            if (!!maxWidth && !!minWidth) media = `(min-width: ${minWidth}px) and (max-width: ${maxWidth}px)`;
+            const properties = {
+              ...props
+            };
+            ["maxWidth", "minWidth"].forEach(item => delete properties[item]);
+            return _react.default.createElement("source", {
+              media: media,
+              ...properties
+            });
+          }
+          ;
         }
       });
       __pkg.exports.descriptor = [{
-        "im": "./image",
+        "im": "./index",
         "from": "Image",
         "name": "Image"
       }];
@@ -169,7 +347,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
         prop,
         value
       }) {
-        (require || prop === 'Image') && _export("Image", Image = require ? require('./image').Image : value);
+        (require || prop === 'Image') && _export("Image", Image = require ? require('./index').Image : value);
       };
       _export("__beyond_pkg", __beyond_pkg = __pkg);
       _export("hmr", hmr = new function () {
@@ -180,4 +358,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX2ljb25zIiwiSW1hZ2UiLCJwcm9wcyIsImluaXRpYWxTdGF0ZSIsInNpemUiLCJsb2FkZWQiLCJjbGFzc05hbWUiLCJvbkNsaWNrIiwiY2hpbGRyZW4iLCJzcmMiLCJhbHQiLCJvbkVycm9yIiwiaW1hZ2UiLCJzZXRJbWFnZSIsInVzZVN0YXRlIiwic3RhdGUiLCJzZXRTdGF0ZSIsIm9uTG9hZCIsImVycm9yIiwiaHRtbExvYWRlZCIsImxvYWRJbWFnZSIsInVybCIsImZpbmFsU3JjIiwibmV3SW1hZ2UiLCJnbG9iYWxUaGlzIiwib25sb2FkIiwib25lcnJvciIsInVzZUVmZmVjdCIsImN1cnJlbnRTcmMiLCJ1bmRlZmluZWQiLCJvdXRwdXQiLCJvbkNsaWNrRXJyb3IiLCJldmVudCIsInN0b3BQcm9wYWdhdGlvbiIsImNscyIsIkVycm9yIiwiZGVmYXVsdCIsImNyZWF0ZUVsZW1lbnQiLCJrZXkiLCJJY29uQnV0dG9uIiwiaWNvbiIsIkxvYWRlZCIsImxvYWRpbmciLCJwcm9wZXJ0aWVzIiwiZm9yRWFjaCIsInByb3AiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsImV4cG9ydHMiLCJ2YWx1ZSJdLCJzb3VyY2VzIjpbIi90cy9pbWFnZS50c3giLCIvaW50ZXJmYWNlcy50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsTUFBQSxHQUFBRCxPQUFBO1VBR087VUFBVSxTQUNSRSxLQUFLQSxDQUFDQyxLQUFhO1lBQzNCLE1BQU1DLFlBQVksR0FBa0I7Y0FBRUMsSUFBSSxFQUFFLFNBQVM7Y0FBRUMsTUFBTSxFQUFFO1lBQUssQ0FBRTtZQUN0RSxNQUFNO2NBQUVDLFNBQVM7Y0FBRUMsT0FBTztjQUFFQyxRQUFRO2NBQUVDLEdBQUc7Y0FBRUMs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
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJSZWFjdCIsInJlcXVpcmUiLCJJbWFnZUNvbnRleHQiLCJleHBvcnRzIiwiY3JlYXRlQ29udGV4dCIsInVzZUltYWdlQ29udGV4dCIsInVzZUNvbnRleHQiLCJfcmVhY3QiLCJfY29udGV4dCIsIl9pY29ucyIsIkVycm9yIiwic3JjIiwib25FcnJvciIsIm9uQ2xpY2tFcnJvciIsImV2ZW50Iiwic3RvcFByb3BhZ2F0aW9uIiwiZGVmYXVsdCIsImNyZWF0ZUVsZW1lbnQiLCJjbGFzc05hbWUiLCJJY29uQnV0dG9uIiwib25DbGljayIsImljb24iLCJ1c2VMb2FkaW5nIiwicHJvcHMiLCJpbml0aWFsU3RhdGUiLCJzaXplIiwibG9hZGVkIiwiaW1hZ2UiLCJzZXRJbWFnZSIsInVzZVN0YXRlIiwic3RhdGUiLCJzZXRTdGF0ZSIsImxvYWRJbWFnZSIsInVybCIsImZpbmFsU3JjIiwibmV3SW1hZ2UiLCJnbG9iYWxUaGlzIiwiSW1hZ2UiLCJvbmxvYWQiLCJlcnJvciIsIm9uZXJyb3IiLCJ1c2VFZmZlY3QiLCJjdXJyZW50U3JjIiwidW5kZWZpbmVkIiwiSW1nIiwibG9hZGluZyIsImFsdCIsIm9uTG9hZCIsImh0bWxMb2FkZWQiLCJsb2FkaW5nSU1HIiwiYWx0SU1HIiwiX2Vycm9yIiwiX2ltZyIsIl9zb3VyY2VzIiwiX3VzZUxvYWRpbmciLCJjaGlsZHJlbiIsInNpemVMb2FkaW5nIiwiY2xzIiwiQ29udGVudCIsInByb3BlcnRpZXMiLCJmb3JFYWNoIiwicHJvcCIsInZhbHVlIiwic3R5bGVzIiwiaGVpZ2h0Iiwid2lkdGgiLCJQcm92aWRlciIsInN0eWxlIiwiU291cmNlcyIsIl9pdGVtIiwic291cmNlcyIsIkFycmF5IiwiaXNBcnJheSIsImxlbmd0aCIsIm91dHB1dCIsIm1hcCIsIml0ZW0iLCJJdGVtIiwia2V5Iiwic3JjU2V0IiwibWVkaWEiLCJtYXhXaWR0aCIsIm1pbldpZHRoIl0sInNvdXJjZXMiOlsiL3RzL2NvbnRleHQudHMiLCIvdHMvZXJyb3IvaW5kZXgudHN4IiwiL3RzL2hvb2tzL3VzZS1sb2FkaW5nLnRzIiwiL3RzL2ltZy50c3giLCIvdHMvaW5kZXgudHN4IiwiL3RzL2ludGVyZmFjZXMvaW5kZXgudHMiLCIvdHMvc291cmNlcy9pbmRleC50c3giLCIvdHMvc291cmNlcy9pdGVtLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsS0FBQSxHQUFBQyxPQUFBO1VBR08sTUFBTUMsWUFBWSxHQUFBQyxPQUFBLENBQUFELFlBQUEsR0FBNEJGLEtBQUssQ0FBQ0ksYUFBYSxDQUFDLEVBQUUsQ0FBQztVQUNyRSxNQUFNQyxlQUFlLEdBQUdBLENBQUEsS0FBZ0JMLEtBQUssQ0FBQ00sVUFBVSxDQUFDSixZQUFZLENBQUM7VUFBQ0MsT0FBQSxDQUFBRSxlQUFBLEdBQUFBLGVBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDSjlFLElBQUFFLE1BQUEsR0FBQU4sT0FBQTtVQUNBLElBQUFPLFFBQUEsR0FBQVAsT0FBQTtVQUNBLElBQUFRLE1BQUEsR0FBQVIsT0FBQTtVQUVNLFNBQVVTLEtBQUtBLENBQUE7WUFDakIsTUFBTTtjQUFFQyxHQUFHO2NBQUVDO1lBQU8sQ0FBRSxHQUFHLElBQUFKLFFBQUEsQ0FBQUgsZUFBZSxHQUFFO1lBQzFDLE1BQU1RLFlBQVksR0FBSUMsS0FBcUMsSUFBVTtjQUNqRUEsS0FBSyxDQUFDQyxlQUFlLEVBQUU7Y0FDdkIsSUFBSUgsT0FBTyxJQUFJLE9BQU9BLE9BQU8sS0FBSyxVQUFVLEVBQUVBLE9BQU8sQ0FBQ0UsS0FBSyxDQUFDO1lBQ2hFLENBQUM7WUFDRCxPQUNJUCxNQUFBLENBQUFTLE9BQUEsQ0FBQUMsYUFBQTtjQUFBLFlBQWVOLEdBQUc7Y0FBRU8sU0FBUyxFQUFDO1lBQWUsR0FDeENOLE9BQU8sSUFBSUwsTUFBQSxDQUFBUyxP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

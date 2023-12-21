@@ -1583,42 +1583,56 @@ h1,
 h2,
 .h2 {
   margin: 0;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 h3,
 .h3 {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.62rem;
 }
 
 h4,
 .h4 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.37rem;
 }
 
 h5,
 .h5 {
   margin: 0;
+  font-size: 1.125rem;
+}
+
+h6,
+.h6 {
+  margin: 0;
   font-size: 1rem;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
 }
 
 p,
 ul,
 li {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 28px;
 }
 
 .p1 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 28px;
 }
 
 .p2,
 .button-link {
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 22px;
 }
 
@@ -1629,12 +1643,12 @@ label.title {
 
 .caption.title {
   line-height: 14px;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 
 .overline.title {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 17px;
   text-transform: uppercase;
 }
@@ -1649,19 +1663,19 @@ ul {
   }
   h2,
   .h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   h3,
   .h3 {
-    font-size: 1.2rem;
+    font-size: 1.45rem;
   }
   h4,
   .h4 {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   h5,
   .h5 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   p,
   ul,

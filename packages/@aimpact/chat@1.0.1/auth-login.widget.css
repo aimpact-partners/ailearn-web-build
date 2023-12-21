@@ -110,11 +110,11 @@
 
 input {
   min-width: 270px;
-  height: 3.5rem;
+  height: 2.75rem;
 }
 
 button {
-  height: 3.5rem;
+  height: 2.75rem;
 }
 
 .login-form-content__container {

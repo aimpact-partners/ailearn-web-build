@@ -70,7 +70,7 @@
   color: var(--secondary);
   font-weight: bold;
 }
-.pull-down-menu__item svg.pragmate-icon {
+.pull-down-menu__item svg.pui-icon {
   width: 24px;
   height: 24px;
   fill: var(--secondary);
