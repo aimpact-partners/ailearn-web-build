@@ -1035,6 +1035,12 @@ template {
 .flex-container.flex-end {
   justify-content: flex-end;
 }
+.flex-container.flex-1 {
+  gap: 1rem;
+}
+.flex-container.flex-05 {
+  gap: 0.5rem;
+}
 .mt-15 {
   margin-top: 15px;
 }
@@ -1623,6 +1629,14 @@ ul,
 li {
   font-size: 1rem;
   line-height: 28px;
+}
+p .pui-chip,
+p .pui-button,
+ul .pui-chip,
+ul .pui-button,
+li .pui-chip,
+li .pui-button {
+  line-height: normal;
 }
 
 .p1 {
