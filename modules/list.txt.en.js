@@ -29,11 +29,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2300630526,
+        hash: 3601492983,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
-              "create": "Create"
+              "create": "Create",
+              "delete": "Delete item"
             },
             "errors": {
               "ERROR_GETTING_URL": "Error getting url"

@@ -29,35 +29,56 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2564149918,
+        hash: 888862018,
         creator: function (require, exports) {
           exports.txt = {
+            "processMessages": ["Evaluando la demografía de la audiencia...", "Estimando la duración óptima de la clase...", "Seleccionando actividades de aprendizaje potenciales...", "Determinando el propósito de cada actividad...", "Secuenciando actividades para un máximo compromiso...", "Adaptando el contenido a los objetivos de aprendizaje...", "Ajustando los niveles de dificultad para la competencia de la audiencia...", "Finalizando elementos interactivos para el aprendizaje activo...", "Creando estrategias de evaluación para la retención de conocimientos...", "Optimizando el flujo de contenido para una experiencia de aprendizaje sin problemas...", "Preparando los toques finales en el diseño educativo...", "Generación de contenido de microaprendizaje personalizado completo."],
             "title": "Crea un Módulo de aprendizaje",
             "module": "Objetivo Módulo de aprendizaje",
+            "empty": "Acá podrás visualizar el contenido personalizado, adaptado por nuestro asistente en función de tus entradas de formulario",
+            "audience": {
+              "school": "Escuela",
+              "university": "Universidad",
+              "company": "Empresa"
+            },
+            "moduleLength": {
+              "brief": "Breve",
+              "standard": "Estándar",
+              "extended": "Extendido"
+            },
             "languages": {
               "label": "Idiomas",
               "en": "Inglés",
               "es": "Español",
-              "pt": "Portugués"
+              "pt": "Portugués",
+              "fr": "Francés",
+              "de": "Alemán",
+              "it": "Italiano"
             },
             "form": {
-              "audience": "Público",
-              "target": "Objetivo",
-              "duration": "Minutos de duración",
-              "size": "Tamaño",
+              "audience": "¿Para quién es este módulo?",
+              "module": "¿Cuál es el objetivo de este módulo?",
+              "target": "Edad media de los alumnos",
+              "duration": "Duración del módulo",
               "languages": "Idiomas"
             },
             "actions": {
               "activities": "Generar actividades",
-              "save": "Guardar"
+              "save": "Guardar",
+              "edit": "Editar",
+              "delete": "Eliminar"
             },
             "activities": {
-              "minutes": "Minutos",
+              "minutes": "Mins",
               "description": "Descripción",
               "objective": "Objetivo",
               "type": "Tipo",
               "questions": "Preguntas",
               "topics": "Temas"
+            },
+            "labels": {
+              "title": "Título",
+              "description": "Descripción"
             }
           };
         }

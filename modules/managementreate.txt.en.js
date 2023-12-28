@@ -29,35 +29,57 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1336853706,
+        hash: 1134756675,
         creator: function (require, exports) {
           exports.txt = {
+            "processMessages": ["Evaluating audience demographics...", "Estimating optimal class duration...", "Selecting potential learning activities...", "Determining the purpose of each activity...", "Sequencing activities for maximum engagement...", "Tailoring content to learning objectives...", "Adjusting difficulty levels for audience proficiency...", "Finalizing interactive elements for active learning...", "Crafting assessment strategies for knowledge retention...", "Optimizing content flow for seamless learning experience...", "Preparing final touches on educational design...", "Generation of personalized microlearning content complete."],
             "title": "Create a Learning Module",
             "module": "Learning Module Objective",
+            "postTitle": "Selecciona los aspectos que debe tener el contenido a generar en el siguiente formulariona los aspectos que debe tener el contenido a generar en el siguiente formulario",
+            "empty": "View your custom-created content here, tailored by our assistant based on your form inputs",
             "languages": {
               "label": "Languages",
               "en": "English",
               "es": "Spanish",
-              "pt": "Portuguese"
+              "pt": "Portuguese",
+              "fr": "French",
+              "de": "German",
+              "it": "Italian"
+            },
+            "audience": {
+              "school": "School",
+              "university": "University",
+              "company": "Company"
+            },
+            "moduleLength": {
+              "brief": "Brief",
+              "standard": "Standard",
+              "extended": "Extended"
             },
             "form": {
-              "audience": "Audience",
-              "target": "Target",
-              "duration": "Duration minutes",
-              "size": "Size",
+              "audience": "Who is this module for?",
+              "module": "What's the goal of this module?",
+              "target": "Average Age of Learners",
+              "duration": "Module Length",
               "languages": "Languages"
             },
             "actions": {
               "activities": "Generate activities",
-              "save": "Save"
+              "save": "Save",
+              "edit": "Edit",
+              "delete": "Delete"
             },
             "activities": {
-              "minutes": "Minutes",
+              "minutes": "Min",
               "description": "Description",
               "objective": "Objective",
               "type": "Type",
               "questions": "Questions",
               "topics": "Topics"
+            },
+            "labels": {
+              "title": "Title",
+              "description": "Description"
             }
           };
         }

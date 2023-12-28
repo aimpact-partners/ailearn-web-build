@@ -130,6 +130,45 @@
 .page-container form .social-login::after {
   right: 0;
 }
+.pui-button-group {
+  background: var(--neutral-95);
+  border: 1px solid var--neutral-95;
+}
+.pui-button-group .pui-button.btn-default {
+  padding: 0.75rem 1rem;
+  background: var(--neutral-95);
+  border-radius: var(--border-radius-base);
+  color: var(--disabled);
+  font-size: 0.85rem;
+}
+.pui-button-group .pui-button.btn-default.pui-btn--active, .pui-button-group .pui-button.btn-default:active, .pui-button-group .pui-button.btn-default:focus {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+.pui-button-group .pui-button.btn-default:hover {
+  color: var(--disabled);
+  background: var(--neutral-90);
+}
+@media (max-width: 1000px) {
+  .pui-button-group .pui-button-group .pui-button.btn-default {
+    font-size: 0.75rem;
+  }
+}
+
+:host-context(html[data-beyond-mode=dark]) .pui-button-group {
+  background: var(--neutral-10);
+}
+:host-context(html[data-beyond-mode=dark]) .pui-button-group .pui-button.btn-default {
+  background: var(--neutral-10);
+}
+:host-context(html[data-beyond-mode=dark]) .pui-button-group .pui-button.btn-default.pui-btn--active, :host-context(html[data-beyond-mode=dark]) .pui-button-group .pui-button.btn-default:active, :host-context(html[data-beyond-mode=dark]) .pui-button-group .pui-button.btn-default:focus {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+:host-context(html[data-beyond-mode=dark]) .pui-button-group .pui-button.btn-default:hover {
+  color: var(--disabled);
+  background: var(--neutral-4);
+}
 /*!
   Theme: Gruvbox dark, hard
   Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
@@ -325,6 +364,14 @@ dialog::backdrop {
 .pui-empty-section.empty-section__container .title {
   margin: 0;
   font-weight: bolder;
+}
+.grid-container {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.grid-container.g-2-columns {
+  grid-template-columns: 1fr 1fr;
 }
 input {
   color: var(--text-color);

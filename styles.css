@@ -121,8 +121,8 @@
 :root {
   --secondary-font-family: "Rubik", sans-serif;
   --font-family: "Rubik", sans-serif;
-  --border-radius-sm: 6px;
-  --border-radius-base: 2rem;
+  --border-radius-sm: 10px;
+  --border-radius-base: 1rem;
   --border-radius-lg: 25px;
   /* neutral */
   --neutral-0: #000;
@@ -207,7 +207,7 @@
   --tertiary-container: var(--tertiary-90);
   --on-tertiary: var(--tertiary-100);
   --on-tertiary-container: var(--tertiary-10);
-  --surface: var(--neutral-98);
+  --surface: var(--neutral-100);
   --surface-dim: var(--neutral-80);
   --surface-bright: var(--neutral-98);
   --surface-container-lowest: var(--neutral-100);
@@ -254,7 +254,7 @@
   --tertiary-container: var(--tertiary-90);
   --on-tertiary: var(--tertiary-100);
   --on-tertiary-container: var(--tertiary-10);
-  --surface: var(--neutral-98);
+  --surface: var(--neutral-100);
   --surface-dim: var(--neutral-80);
   --surface-bright: var(--neutral-98);
   --surface-container-lowest: var(--neutral-100);
