@@ -141,13 +141,13 @@
   color: var(--disabled);
   font-size: 0.85rem;
 }
-.pui-button-group .pui-button.btn-default.pui-btn--active, .pui-button-group .pui-button.btn-default:active, .pui-button-group .pui-button.btn-default:focus {
-  background: var(--primary);
-  color: var(--on-primary);
-}
 .pui-button-group .pui-button.btn-default:hover {
   color: var(--disabled);
   background: var(--neutral-90);
+}
+.pui-button-group .pui-button.btn-default.pui-btn--active, .pui-button-group .pui-button.btn-default:active, .pui-button-group .pui-button.btn-default:focus {
+  background: var(--primary);
+  color: var(--on-primary);
 }
 @media (max-width: 1000px) {
   .pui-button-group .pui-button-group .pui-button.btn-default {
