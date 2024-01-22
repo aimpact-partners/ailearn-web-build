@@ -1,7 +1,7 @@
-.pragmate-modal {
+.pui-modal {
   position: relative;
 }
-.pragmate-modal .close-icon {
+.pui-modal .close-icon {
   position: absolute;
   top: 20px;
   right: 0;
@@ -14,7 +14,7 @@
   outline: none;
   cursor: pointer;
 }
-.pragmate-modal .close-icon:focus {
+.pui-modal .close-icon:focus {
   transition: all 100ms ease-in;
   opacity: 1;
 }
@@ -22,23 +22,23 @@
 pragmate-ui
 .pui-modal
 */
-.pragmate-confirm-dialog.pui-confirm-dialog-centered {
+.pui-confirm-dialog.pui-confirm-dialog-centered {
   justify-content: center;
   text-align: center;
 }
-.pragmate-confirm-dialog.pui-confirm-dialog-centered .confirm-dialog-content,
-.pragmate-confirm-dialog.pui-confirm-dialog-centered .actions {
+.pui-confirm-dialog.pui-confirm-dialog-centered .confirm-dialog-content,
+.pui-confirm-dialog.pui-confirm-dialog-centered .actions {
   display: grid;
   justify-content: center;
 }
-.pragmate-confirm-dialog.pui-confirm-dialog-centered :where(p, div) {
+.pui-confirm-dialog.pui-confirm-dialog-centered :where(p, div) {
   color: var(--text-color);
 }
-.pragmate-confirm-dialog .confirm-dialog-content :where(p, div, h3, h4) {
+.pui-confirm-dialog .confirm-dialog-content :where(p, div, h3, h4) {
   color: var(--text-color);
   margin: 0;
 }
-.pragmate-confirm-dialog .actions {
+.pui-confirm-dialog .actions {
   border-top: 1px solid var(--gray-light);
   padding: 15px 0 0;
   margin-top: 15px;
@@ -47,11 +47,11 @@ pragmate-ui
   grid-gap: 8px;
   justify-content: end;
 }
-.pragmate-confirm-dialog .actions .pragmate-button {
+.pui-confirm-dialog .actions .pragmate-button {
   margin: 0;
   min-width: 6rem;
 }
-.pragmate-confirm-dialog.modal-confirm {
+.pui-confirm-dialog.modal-confirm {
   transform: none;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -63,19 +63,19 @@ pragmate-ui
   display: flex;
   flex-direction: row-reverse;
 }
-.pragmate-confirm-dialog.modal-confirm .modal-content {
+.pui-confirm-dialog.modal-confirm .modal-content {
   padding: 8px 0px 0 0;
   max-width: 400px;
 }
-.pragmate-confirm-dialog.modal-confirm .modal-content p {
+.pui-confirm-dialog.modal-confirm .modal-content p {
   margin: 0;
   font-size: 15px;
 }
-.pragmate-confirm-dialog.modal-confirm .modal-content summary {
+.pui-confirm-dialog.modal-confirm .modal-content summary {
   font-size: 17px;
   font-weight: 500;
 }
-.pragmate-confirm-dialog.modal-confirm .close-modal {
+.pui-confirm-dialog.modal-confirm .close-modal {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -106,13 +106,13 @@ pragmate-ui
   justify-content: end;
   padding: 1rem 0 0;
 }
-body.body-pragmate-modal-opened {
+body.body-pui-modal-opened {
   height: 100vh;
   overflow-y: hidden;
   padding-right: 15px;
 }
 
-.pragmate-modal {
+.pui-modal {
   display: none;
   position: fixed;
   inset: 0;
@@ -121,13 +121,13 @@ body.body-pragmate-modal-opened {
   background-color: rgba(0, 0, 0, 0.4);
   color: var(--text);
 }
-.pragmate-modal.show-modal {
+.pui-modal.show-modal {
   display: block;
   z-index: 1000;
   height: 100vh;
   width: 100vw;
 }
-.pragmate-modal .modal-wrapper {
+.pui-modal .modal-wrapper {
   width: 100%;
   margin: auto;
   display: flex;
@@ -137,11 +137,12 @@ body.body-pragmate-modal-opened {
   height: 100%;
 }
 @media screen and (max-height: 500px) {
-  .pragmate-modal .modal-wrapper {
+  .pui-modal .modal-wrapper {
     height: auto;
   }
 }
-.pragmate-modal .modal-content {
+.pui-modal .modal-content {
+  overflow: hidden;
   position: relative;
   background: var(--surface);
   animation: show 0.5s ease-in-out;
@@ -161,4 +162,4 @@ body.body-pragmate-modal-opened {
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGNsb3NlLWljb24uc2NzcyIsInNjc3NcXGNvbmZpcm0uc2NzcyIsInNjc3NcXGRpYWxvZy5zY3NzIiwic2Nzc1xcbW9kYWwuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDOztBQUNBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7O0FDakJIO0FBQUE7QUFBQTtBQUFBO0FBS0M7RUFDQztFQUNBOztBQUVBO0FBQUE7RUFFQztFQUNBOztBQUdEO0VBQ0M7O0FBR0Y7RUFDQztFQUNBOztBQUVEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBOztBQUdGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7O0FBQ0E7RUFDQztFQUNBOztBQUNBO0VBQ0M7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7O0FBR0Y7RUFDQztFQUNBO0VBQ0E7RUFFQTtFQUVBO0VBRUE7RUFDQTtFQUNBO0VBQ0E7O0FDdkVEO0FBQUE7RUFFQztFQUNBOztBQUlGO0VBQ0M7RUFDQTtFQUNBOztBQUNBO0VBQ0M7O0FBSUY7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQ3ZCRjtFQUNDO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFSRDtJQVNFOzs7QUFJRjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUtGO0VBQ0M7SUFDQztJQUNBOztFQUdEO0lBQ0M7SUFDQSIsImZpbGUiOiIifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGNsb3NlLWljb24uc2NzcyIsInNjc3NcXGNvbmZpcm0uc2NzcyIsInNjc3NcXGRpYWxvZy5zY3NzIiwic2Nzc1xcbW9kYWwuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDOztBQUNBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7O0FDakJIO0FBQUE7QUFBQTtBQUFBO0FBS0M7RUFDQztFQUNBOztBQUVBO0FBQUE7RUFFQztFQUNBOztBQUdEO0VBQ0M7O0FBR0Y7RUFDQztFQUNBOztBQUVEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBOztBQUdGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7O0FBQ0E7RUFDQztFQUNBOztBQUNBO0VBQ0M7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7O0FBR0Y7RUFDQztFQUNBO0VBQ0E7RUFFQTtFQUVBO0VBRUE7RUFDQTtFQUNBO0VBQ0E7O0FDdkVEO0FBQUE7RUFFQztFQUNBOztBQUlGO0VBQ0M7RUFDQTtFQUNBOztBQUNBO0VBQ0M7O0FBSUY7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQ3ZCRjtFQUNDO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFSRDtJQVNFOzs7QUFJRjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBSUY7RUFDQztJQUNDO0lBQ0E7O0VBR0Q7SUFDQztJQUNBIiwiZmlsZSI6IiJ9 */

@@ -1,7 +1,7 @@
 System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, bimport, __Bundle, __pkg, ims, IAssignmentActivityBase, IAssignmentData, IDashboardData, TrackingStatusType, IActivityTrackingBase, ActivityItemType, ITrackingData, IActivityTrackingData, IAssignmentWallMessageBase, IAssignmentWallData, IClassroomBaseData, IClassroomData, IGClassroomOAuthStateData, IModuleBaseData, IModuleData, IActivityBaseData, IActivityData, IOrganizationData, IStudentHomeData, __beyond_pkg, hmr;
+  var dependency_0, bimport, __Bundle, __pkg, ims, IAssignmentActivityBase, IAssignmentData, IDashboardData, TrackingStatusType, IActivityTrackingBase, ActivityItemType, ITrackingData, IActivityTrackingData, IAssignmentWallMessageBase, IAssignmentWallData, IClassroomBaseData, IClassroomData, IGClassroomOAuthStateData, IActivityDraft, IModuleDraftBaseData, IModuleDraftData, IModulesDraftData, IModuleBaseData, IModuleData, IActivityBaseData, IActivityData, IOrganizationData, IStudentHomeData, __beyond_pkg, hmr;
   _export({
     IAssignmentActivityBase: void 0,
     IAssignmentData: void 0,
@@ -16,6 +16,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     IClassroomBaseData: void 0,
     IClassroomData: void 0,
     IGClassroomOAuthStateData: void 0,
+    IActivityDraft: void 0,
+    IModuleDraftBaseData: void 0,
+    IModuleDraftData: void 0,
+    IModulesDraftData: void 0,
     IModuleBaseData: void 0,
     IModuleData: void 0,
     IActivityBaseData: void 0,
@@ -138,7 +142,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       ************************/
 
       ims.set('./module', {
-        hash: 3464604220,
+        hash: 1670382149,
         creator: function (require, exports) {
           "use strict";
 
@@ -237,6 +241,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
         "name": "IGClassroomOAuthStateData"
       }, {
         "im": "./module",
+        "from": "IActivityDraft",
+        "name": "IActivityDraft"
+      }, {
+        "im": "./module",
+        "from": "IModuleDraftBaseData",
+        "name": "IModuleDraftBaseData"
+      }, {
+        "im": "./module",
+        "from": "IModuleDraftData",
+        "name": "IModuleDraftData"
+      }, {
+        "im": "./module",
+        "from": "IModulesDraftData",
+        "name": "IModulesDraftData"
+      }, {
+        "im": "./module",
         "from": "IModuleBaseData",
         "name": "IModuleBaseData"
       }, {
@@ -279,6 +299,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
         (require || prop === 'IClassroomBaseData') && _export("IClassroomBaseData", IClassroomBaseData = require ? require('./classroom').IClassroomBaseData : value);
         (require || prop === 'IClassroomData') && _export("IClassroomData", IClassroomData = require ? require('./classroom').IClassroomData : value);
         (require || prop === 'IGClassroomOAuthStateData') && _export("IGClassroomOAuthStateData", IGClassroomOAuthStateData = require ? require('./gclassroom').IGClassroomOAuthStateData : value);
+        (require || prop === 'IActivityDraft') && _export("IActivityDraft", IActivityDraft = require ? require('./module').IActivityDraft : value);
+        (require || prop === 'IModuleDraftBaseData') && _export("IModuleDraftBaseData", IModuleDraftBaseData = require ? require('./module').IModuleDraftBaseData : value);
+        (require || prop === 'IModuleDraftData') && _export("IModuleDraftData", IModuleDraftData = require ? require('./module').IModuleDraftData : value);
+        (require || prop === 'IModulesDraftData') && _export("IModulesDraftData", IModulesDraftData = require ? require('./module').IModulesDraftData : value);
         (require || prop === 'IModuleBaseData') && _export("IModuleBaseData", IModuleBaseData = require ? require('./module').IModuleBaseData : value);
         (require || prop === 'IModuleData') && _export("IModuleData", IModuleData = require ? require('./module').IModuleData : value);
         (require || prop === 'IActivityBaseData') && _export("IActivityBaseData", IActivityBaseData = require ? require('./module').IActivityBaseData : value);
@@ -295,4 +319,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsImV4cG9ydHMiLCJ2YWx1ZSIsIklPcmdhbml6YXRpb25EYXRhIiwibmFtZSJdLCJzb3VyY2VzIjpbIi9hc3NpZ25tZW50LnRzIiwiL2Rhc2hib2FyZC50cyIsIi90cmFja2luZy50cyIsIi93YWxsLnRzIiwiL2NsYXNzcm9vbS50cyIsIi9nY2xhc3Nyb29tLnRzIiwiL21vZHVsZS50cyIsIi9vcmdhbml6YXRpb24udHMiLCIvaG9tZS50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTs7VUFFQUEsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBOzs7Ozs7Ozs7OztVQ0pBOztVQUVBSCxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0E7Ozs7Ozs7Ozs7O1VDSkE7O1VBRUFILE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO1lBQ0FDLEtBQUE7VUFDQTs7Ozs7Ozs7Ozs7VUNKQTs7VUFFQUgsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBOzs7Ozs7Ozs7OztVQ0pBOztVQUVBSCxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0E7Ozs7Ozs7Ozs7O1VDSkE7O1VBRUFILE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO1lBQ0FDLEtBQUE7VUFDQTs7Ozs7Ozs7Ozs7VUNKQTs7VUFFQUgsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ0pPO1VBQVUsTUFBT0MsaUJBQWlCO1lBQ3hDQyxJQUFJOztVQUNKSCxPQUFBLENBQUFFLGlCQUFBLEdBQUFBLGlCQUFBOzs7Ozs7Ozs7OztVQ0ZEOztVQUVBSixNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0EifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsImV4cG9ydHMiLCJ2YWx1ZSIsIklPcmdhbml6YXRpb25EYXRhIiwibmFtZSJdLCJzb3VyY2VzIjpbIi9hc3NpZ25tZW50LnRzIiwiL2Rhc2hib2FyZC50cyIsIi90cmFja2luZy50cyIsIi93YWxsLnRzIiwiL2NsYXNzcm9vbS50cyIsIi9nY2xhc3Nyb29tLnRzIiwiL21vZHVsZS50cyIsIi9vcmdhbml6YXRpb24udHMiLCIvaG9tZS50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUE7O1VBRUFBLE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO1lBQ0FDLEtBQUE7VUFDQTs7Ozs7Ozs7Ozs7VUNKQTs7VUFFQUgsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBOzs7Ozs7Ozs7OztVQ0pBOztVQUVBSCxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0E7Ozs7Ozs7Ozs7O1VDSkE7O1VBRUFILE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO1lBQ0FDLEtBQUE7VUFDQTs7Ozs7Ozs7Ozs7VUNKQTs7VUFFQUgsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBOzs7Ozs7Ozs7OztVQ0pBOztVQUVBSCxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0E7Ozs7Ozs7Ozs7O1VDSkE7O1VBRUFILE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO1lBQ0FDLEtBQUE7VUFDQTs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNKTztVQUFVLE1BQU9DLGlCQUFpQjtZQUN4Q0MsSUFBSTs7VUFDSkgsT0FBQSxDQUFBRSxpQkFBQSxHQUFBQSxpQkFBQTs7Ozs7Ozs7Ozs7VUNGRDs7VUFFQUosTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBIn0=

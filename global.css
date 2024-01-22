@@ -10,8 +10,8 @@
 }
 .page-container .theme-switcher {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.75rem;
+  right: 1.25rem;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -105,7 +105,7 @@
 }
 @media (max-width: 768px) {
   .page-container form .form-actions {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     flex-direction: column;
     gap: 1rem;
   }
@@ -135,7 +135,6 @@
   border: 1px solid var--neutral-95;
 }
 .pui-button-group .pui-button.btn-default {
-  padding: 0.75rem 1rem;
   background: var(--neutral-95);
   border-radius: var(--border-radius-base);
   color: var(--disabled);
@@ -1088,6 +1087,9 @@ template {
 .flex-container.flex-05 {
   gap: 0.5rem;
 }
+.flex-container .flex-grow-1 {
+  flex-grow: 1;
+}
 .mt-15 {
   margin-top: 15px;
 }
@@ -1643,6 +1645,7 @@ h3,
 .h3 {
   margin: 0;
   font-size: 1.62rem;
+  font-weight: 500;
 }
 
 h4,
@@ -1688,13 +1691,13 @@ li .pui-button {
 
 .p1 {
   font-size: 1rem;
-  line-height: 28px;
+  line-height: 26px;
 }
 
 .p2,
 .button-link {
   font-size: 0.875rem;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 label.title {
@@ -1725,10 +1728,6 @@ ul {
   h2,
   .h2 {
     font-size: 1.8rem;
-  }
-  h3,
-  .h3 {
-    font-size: 1.45rem;
   }
   h4,
   .h4 {
@@ -1762,10 +1761,6 @@ ul {
   .h2 {
     font-size: 1.3rem;
   }
-  h3,
-  .h3 {
-    font-size: 1.1rem;
-  }
   h4,
   .h4 {
     font-size: 0.9rem;
@@ -1786,7 +1781,7 @@ ul {
   }
   .p2,
   .button-link {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     line-height: 18px;
   }
 }

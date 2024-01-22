@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.0.3/page", "@beyond-js/reactive@1.1.6/model", "react@18.2.0", "@aimpact/chat@1.0.1/ui/manager", "pragmate-ui@0.0.3/components", "pragmate-ui@0.0.3/icons", "@aimpact/chat@1.0.1/wrapper", "@aimpact/chat@1.0.1/shared/components", "@aimpact/chat@1.0.1/shared/icons"], function (_export, _context) {
+System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.0.3/page", "@beyond-js/reactive@1.1.9/model", "react@18.2.0", "@aimpact/chat@1.0.1/ui/manager", "pragmate-ui@0.0.3/components", "pragmate-ui@0.0.3/icons", "@aimpact/chat@1.0.1/wrapper", "@aimpact/chat@1.0.1/shared/components", "@aimpact/chat@1.0.1/shared/icons"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, bimport, __Bundle, __pkg, ims, Controller, __beyond_pkg, hmr;
@@ -12,8 +12,8 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       dependency_2 = _beyondJsKernel019Styles;
     }, function (_beyondJsReact18Widgets103Page) {
       dependency_3 = _beyondJsReact18Widgets103Page;
-    }, function (_beyondJsReactive116Model) {
-      dependency_4 = _beyondJsReactive116Model;
+    }, function (_beyondJsReactive119Model) {
+      dependency_4 = _beyondJsReactive119Model;
     }, function (_react2) {
       dependency_5 = _react2;
     }, function (_aimpactChat101UiManager) {

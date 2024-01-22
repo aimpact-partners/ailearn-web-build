@@ -1,9 +1,11 @@
 System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "apexcharts@3.44.0"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, Control, Chart, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, Control, ALGO, ALGO2, Chart, __beyond_pkg, hmr;
   _export({
     Control: void 0,
+    ALGO: void 0,
+    ALGO2: void 0,
     Chart: void 0
   });
   return {
@@ -18,7 +20,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/chat-api", "0.2.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", "0.2.0"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.6"], ["pragmate-ui", "0.0.3"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.3"], ["apexcharts", "3.44.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.4"], ["dompurify", "3.0.6"], ["firebase", "10.5.0"], ["firebase-admin", "11.11.0"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.2"], ["marked-highlight", "2.0.6"], ["marked-mangle", "1.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.2"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.32"], ["@types/react-dom", "18.2.14"], ["@aimpact/ailearn-app", "0.0.24"], ["@aimpact/ailearn-app", "0.0.24"]]);
+        const dependencies = new Map([["@aimpact/chat-api", "0.2.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", "0.2.0"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.6"], ["pragmate-ui", "0.0.3"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.3"], ["apexcharts", "3.44.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.4"], ["dompurify", "3.0.6"], ["firebase", "10.5.0"], ["firebase-admin", "11.11.0"], ["framer-motion", "10.17.8"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.2"], ["marked-highlight", "2.0.6"], ["marked-mangle", "1.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.2"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.32"], ["@types/react-dom", "18.2.14"], ["@aimpact/ailearn-app", "0.0.24"], ["@aimpact/ailearn-app", "0.0.24"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -38,19 +40,26 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       INTERNAL MODULE: ./control
       *************************/
       ims.set('./control', {
-        hash: 1043499290,
+        hash: 3537212923,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.Control = void 0;
+          exports.Control = exports.ALGO2 = exports.ALGO = void 0;
           /*bundle*/
           class Control {
             constructor() {}
+            testing() {
+              console.log('testing');
+            }
           }
           exports.Control = Control;
+          /*bundle*/
+          const ALGO = exports.ALGO = '11';
+          /*bundle*/
+          const ALGO2 = exports.ALGO2 = '11';
         }
       });
 
@@ -89,6 +98,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
         "from": "Control",
         "name": "Control"
       }, {
+        "im": "./control",
+        "from": "ALGO",
+        "name": "ALGO"
+      }, {
+        "im": "./control",
+        "from": "ALGO2",
+        "name": "ALGO2"
+      }, {
         "im": "./index",
         "from": "Chart",
         "name": "Chart"
@@ -100,6 +117,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
         value
       }) {
         (require || prop === 'Control') && _export("Control", Control = require ? require('./control').Control : value);
+        (require || prop === 'ALGO') && _export("ALGO", ALGO = require ? require('./control').ALGO : value);
+        (require || prop === 'ALGO2') && _export("ALGO2", ALGO2 = require ? require('./control').ALGO2 : value);
         (require || prop === 'Chart') && _export("Chart", Chart = require ? require('./index').Chart : value);
       };
       _export("__beyond_pkg", __beyond_pkg = __pkg);
@@ -111,4 +130,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJDb250cm9sIiwiY29uc3RydWN0b3IiLCJleHBvcnRzIiwiX3JlYWN0IiwicmVxdWlyZSIsIl9hcGV4Y2hhcnRzIiwiQ2hhcnQiLCJwcm9wcyIsInJlZiIsImRlZmF1bHQiLCJ1c2VSZWYiLCJjaGFydCIsInNldENoYXJ0IiwidXNlU3RhdGUiLCJ1c2VFZmZlY3QiLCJpbnN0YW5jZSIsImN1cnJlbnQiLCJvcHRpb25zIiwicmVuZGVyIiwiY3JlYXRlRWxlbWVudCJdLCJzb3VyY2VzIjpbIi90cy9jb250cm9sLnRzIiwiL3RzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBTztVQUFVLE1BQ1hBLE9BQU87WUFDWkMsWUFBQSxHQUFlOztVQUNmQyxPQUFBLENBQUFGLE9BQUEsR0FBQUEsT0FBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNIRCxJQUFBRyxNQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxXQUFBLEdBQUFELE9BQUE7VUFFTztVQUFXLFNBQVVFLEtBQUtBLENBQUNDLEtBQUs7WUFDdEMsTUFBTUMsR0FBRyxHQUFHTCxNQUFBLENBQUFNLE9BQUssQ0FBQ0MsTUFBTSxDQUFDLElBQUksQ0FBQztZQUM5QixNQUFNLENBQUNDLEtBQUssRUFBRUMsUUFBUSxDQUFDLEdBQUdULE1BQUEsQ0FBQU0sT0FBSyxDQUFDSSxRQUFRLENBQUMsSUFBSSxDQUFDO1lBQzlDVixNQUFBLENBQUFNLE9BQUssQ0FBQ0ssU0FBUyxDQUFDLE1BQUs7Y0FDcEIsTUFBTUMsUUFBUSxHQUFHLElBQUlWLFdBQUEsQ0FBQUksT0FBVSxDQUFDRCxHQUFHLENBQUNRLE9BQU8sRUFBRVQsS0FBSyxDQUFDVSxPQUFPLENBQUM7Y0FDM0RGLFFBQVEsQ0FBQ0csTUFBTSxFQUFFO2NBQ2pCTixRQUFRLENBQUNHLFFBQVEsQ0FBQztZQUNuQixDQUFDLEVBQUUsQ0FBQ1AsR0FBRyxDQUFDLENBQUM7WUFFVCxPQUFPTCxNQUFBLENBQUFNLE9BQUEsQ0FBQVUsYUFBQTtjQUFLWCxHQUFHLEVBQUVBO1lBQUcsRUFBSTtVQUN6QiJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJDb250cm9sIiwiY29uc3RydWN0b3IiLCJ0ZXN0aW5nIiwiY29uc29sZSIsImxvZyIsImV4cG9ydHMiLCJBTEdPIiwiQUxHTzIiLCJfcmVhY3QiLCJyZXF1aXJlIiwiX2FwZXhjaGFydHMiLCJDaGFydCIsInByb3BzIiwicmVmIiwiZGVmYXVsdCIsInVzZVJlZiIsImNoYXJ0Iiwic2V0Q2hhcnQiLCJ1c2VTdGF0ZSIsInVzZUVmZmVjdCIsImluc3RhbmNlIiwiY3VycmVudCIsIm9wdGlvbnMiLCJyZW5kZXIiLCJjcmVhdGVFbGVtZW50Il0sInNvdXJjZXMiOlsiL3RzL2NvbnRyb2wudHMiLCIvdHMvaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQU87VUFBVSxNQUNYQSxPQUFPO1lBQ1pDLFlBQUEsR0FBZTtZQUVmQyxPQUFPQSxDQUFBO2NBQ05DLE9BQU8sQ0FBQ0MsR0FBRyxDQUFDLFNBQVMsQ0FBQztZQUN2Qjs7VUFDQUMsT0FBQSxDQUFBTCxPQUFBLEdBQUFBLE9BQUE7VUFFTTtVQUFXLE1BQU1NLElBQUksR0FBQUQsT0FBQSxDQUFBQyxJQUFBLEdBQUcsSUFBSTtVQUM1QjtVQUFXLE1BQU1DLEtBQUssR0FBQUYsT0FBQSxDQUFBRSxLQUFBLEdBQUcsSUFBSTs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNWcEMsSUFBQUMsTUFBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsV0FBQSxHQUFBRCxPQUFBO1VBRU87VUFBVyxTQUFVRSxLQUFLQSxDQUFDQyxLQUFLO1lBQ3RDLE1BQU1DLEdBQUcsR0FBR0wsTUFBQSxDQUFBTSxPQUFLLENBQUNDLE1BQU0sQ0FBQyxJQUFJLENBQUM7WUFDOUIsTUFBTSxDQUFDQyxLQUFLLEVBQUVDLFFBQVEsQ0FBQyxHQUFHVCxNQUFBLENBQUFNLE9BQUssQ0FBQ0ksUUFBUSxDQUFDLElBQUksQ0FBQztZQUM5Q1YsTUFBQSxDQUFBTSxPQUFLLENBQUNLLFNBQVMsQ0FBQyxNQUFLO2NBQ3BCLE1BQU1DLFFBQVEsR0FBRyxJQUFJVixXQUFBLENBQUFJLE9BQVUsQ0FBQ0QsR0FBRyxDQUFDUSxPQUFPLEVBQUVULEtBQUssQ0FBQ1UsT0FBTyxDQUFDO2NBQzNERixRQUFRLENBQUNHLE1BQU0sRUFBRTtjQUNqQk4sUUFBUSxDQUFDRyxRQUFRLENBQUM7WUFDbkIsQ0FBQyxFQUFFLENBQUNQLEdBQUcsQ0FBQyxDQUFDO1lBRVQsT0FBT0wsTUFBQSxDQUFBTSxPQUFBLENBQUFVLGFBQUE7Y0FBS1gsR0FBRyxFQUFFQTtZQUFHLEVBQUk7VUFDekIifQ==

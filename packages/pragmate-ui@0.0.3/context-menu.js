@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "@beyond-js/reactive@1.1.6/model", "react-dom@18.2.0", "pragmate-ui@0.0.3/icons", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "@beyond-js/reactive@1.1.9/model", "react-dom@18.2.0", "pragmate-ui@0.0.3/icons", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, ContextMenuContainer, ContextMenuManager, ContextMenu, ContextItem, __beyond_pkg, hmr;
@@ -13,8 +13,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "@beyond-js/r
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_react2) {
       dependency_1 = _react2;
-    }, function (_beyondJsReactive116Model) {
-      dependency_2 = _beyondJsReactive116Model;
+    }, function (_beyondJsReactive119Model) {
+      dependency_2 = _beyondJsReactive119Model;
     }, function (_reactDom) {
       dependency_3 = _reactDom;
     }, function (_pragmateUi003Icons) {
