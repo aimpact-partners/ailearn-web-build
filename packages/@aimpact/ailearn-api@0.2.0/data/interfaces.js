@@ -142,7 +142,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       ************************/
 
       ims.set('./module', {
-        hash: 1670382149,
+        hash: 1805399612,
         creator: function (require, exports) {
           "use strict";
 

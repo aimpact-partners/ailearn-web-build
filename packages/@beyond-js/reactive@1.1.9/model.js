@@ -1,12 +1,13 @@
 System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/events@0.0.6/events"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, bimport, __Bundle, __pkg, ims, ReactiveModel, IReactiveProperties, ReactiveModelPublic, reactiveProps, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, bimport, __Bundle, __pkg, ims, ReactiveModel, IPropertyObject, IReactiveProperties, ReactiveModelPublic, ReactiveProperties, __beyond_pkg, hmr;
   _export({
     ReactiveModel: void 0,
+    IPropertyObject: void 0,
     IReactiveProperties: void 0,
     ReactiveModelPublic: void 0,
-    reactiveProps: void 0
+    ReactiveProperties: void 0
   });
   return {
     setters: [function (_beyondJsKernel019Bundle) {
@@ -35,7 +36,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/events@0.0.6/even
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 3309471061,
+        hash: 2948121196,
         creator: function (require, exports) {
           "use strict";
 
@@ -44,6 +45,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/events@0.0.6/even
           });
           exports.ReactiveModel = void 0;
           var _events = require("@beyond-js/events/events");
+          var _properties = require("./properties");
           /*bundle*/ /**
                       * The `ReactiveModel` class is a subclass of the `Events` class that provides a simple way to create
                       * reactive properties that can trigger events when they change. It also provides methods for setting
@@ -58,14 +60,30 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/events@0.0.6/even
             get isReactive() {
               return this.#isReactive;
             }
-            fetching;
-            fetched = false;
-            processing = false;
-            ready = false;
-            processed = false;
-            properties;
-            loaded = false;
+            /**
+             * An array of property names or objects defining properties to be treated as reactive.
+             * String values represent the names of the properties. Object values follow the IPropertyObject
+             * interface, allowing for more detailed property definitions.
+             *
+             * @type {(string | IPropertyObject)[]}
+             */
+            properties = [];
+            /**
+             * Initializes the model with given values. This method sets the initial state of the model's properties.
+             * If no values are provided, it returns the current initial values.
+             *
+             * @param {Partial<ReactiveModelPublic<T>> | null} values - An object containing initial values for the model's properties.
+             * @returns {Record<string, any>} The initial values of the model's properties.
+             */
             #initialValues = {};
+            /**
+             * Checks if there are any changes to the reactive properties of the model that haven't been published yet.
+             * It compares the current property values with their initial values. If any property value has changed
+             * (except for properties named 'id' or properties of type 'object'), this getter returns true, indicating
+             * that there are unpublished changes.
+             *
+             * @returns {boolean} True if there are unpublished changes, otherwise false.
+             */
             get isUnpublished() {
               const properties = this.getProperties();
               return Object.keys(properties).some(prop => {
@@ -73,10 +91,41 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/events@0.0.6/even
                 return properties[prop] !== this.#initialValues[prop];
               });
             }
-            constructor(properties) {
+            #properties;
+            constructor(specs) {
               super();
+              this.#properties = new _properties.ModelProperties(this);
+              if (specs?.properties) {
+                this.properties = specs.properties;
+                this.initialise();
+              }
+              this.initialValues(specs);
+            }
+            /**
+             * Initializes reactive properties for the model. This method should be called in child classes
+             * of the ReactiveModel after defining their specific `properties`. The `initialise` method
+             * sets up the reactive behavior for each property listed in the `properties` array. It ensures
+             * that any changes to these properties will correctly trigger events as defined in the reactive
+             * model structure.
+             *
+             * This method is essential for the proper functioning of the reactive model in child classes, as
+             * it dynamically assigns reactive characteristics to the properties defined by them. It should be
+             * called once during the initialization phase of the child class instance.
+             *
+             * Usage in a child class:
+             * ```
+             * class MyModel extends ReactiveModel<MyType> {
+             *     constructor() {
+             *         super();
+             *         this.properties = ['prop1', 'prop2', ...];
+             *         this.initialise(); // Initializes reactive properties
+             *     }
+             * }
+             * ```
+             */
+            initialise() {
+              this.reactiveProps(this.properties);
               this.reactiveProps(['fetching', 'fetched', 'processing', 'processed', 'loaded', 'ready']);
-              if (properties) this.initialValues(properties);
             }
             initialValues(values) {
               if (!values) return this.#initialValues;
@@ -84,42 +133,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/events@0.0.6/even
               this.#initialValues = values;
             }
             reactiveProps(props) {
-              for (const propKey of props) {
-                const descriptor = Object.getOwnPropertyDescriptor(this, propKey);
-                const initialValue = descriptor ? descriptor.value : undefined;
-                this.defineReactiveProp(propKey, initialValue);
-              }
+              this.#properties.reactiveProps(props);
             }
-            defineReactiveProp(propKey, initialValue) {
-              const privatePropKey = `__${String(propKey)}`;
-              Object.defineProperty(this, propKey, {
-                get() {
-                  if (!this.hasOwnProperty(privatePropKey)) {
-                    this[privatePropKey] = initialValue;
-                  }
-                  return this[privatePropKey];
-                },
-                set(newVal) {
-                  if (newVal === this[privatePropKey]) return;
-                  this[privatePropKey] = newVal;
-                  this.triggerEvent();
-                },
-                enumerable: true,
-                configurable: true
-              });
-            }
-            /**
-             * The `triggerEvent` method triggers a change event on the model, which can be used to notify
-             * subscribers of changes to the model's properties.
-             *
-             * @param {string} event - The name of the event to trigger.
-             * @returns {void}
-             */
-            triggerEvent = (event = 'change') => {
-              globalThis.setTimeout(() => {
-                this.trigger(event);
-              }, 0);
-            };
             /**
              * The `set` method sets one or more properties on the model.
              *
@@ -128,21 +143,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/events@0.0.6/even
              * @returns {void}
              */
             set(properties) {
-              let props = Object.keys(properties);
-              let updated = false;
               try {
                 Object.keys(properties).forEach(prop => {
-                  const sameObject = typeof properties[prop] === 'object' && JSON.stringify(properties[prop]) === JSON.stringify(this[prop]);
-                  if (this[prop] === properties[prop] || sameObject) return;
-                  const descriptor = Object.getOwnPropertyDescriptor(this, prop);
-                  if (descriptor?.set) return;
+                  this.#properties.multipleSet = true;
+                  if (!this.#properties.items.includes(prop)) {
+                    return;
+                  }
                   this[prop] = properties[prop];
-                  updated = true;
                 });
               } catch (e) {
                 throw new Error(`Error setting properties: ${e}`);
               } finally {
-                if (updated) this.triggerEvent();
+                if (this.#properties.hasChanges) {
+                  this.triggerEvent();
+                }
+                this.#properties.multipleSet = false;
+                this.#properties.hasChanges = false;
               }
             }
             getProperties() {
@@ -163,8 +179,50 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/events@0.0.6/even
               });
               return props;
             }
+            /**
+             * The `triggerEvent` method triggers a change event on the model, which can be used to notify
+             * subscribers of changes to the model's properties.
+             *
+             * @param {string} event - The name of the event to trigger.
+             * @returns {void}
+             */
+            triggerEvent = (event = 'change') => {
+              globalThis.setTimeout(() => {
+                this.trigger(event);
+              }, 0);
+            };
           }
           exports.ReactiveModel = ReactiveModel;
+        }
+      });
+
+      /****************************************
+      INTERNAL MODULE: ./interfaces/model-specs
+      ****************************************/
+
+      ims.set('./interfaces/model-specs', {
+        hash: 1731835366,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+
+      /********************************************
+      INTERNAL MODULE: ./interfaces/property-object
+      ********************************************/
+
+      ims.set('./interfaces/property-object', {
+        hash: 618683348,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
         }
       });
 
@@ -198,71 +256,96 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/events@0.0.6/even
         }
       });
 
-      /**************************
-      INTERNAL MODULE: ./property
-      **************************/
+      /**********************************
+      INTERNAL MODULE: ./interfaces/types
+      **********************************/
 
-      ims.set('./property', {
-        hash: 3124326805,
+      ims.set('./interfaces/types', {
+        hash: 152592241,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.defineReactiveProp = defineReactiveProp;
-          exports.reactiveProps = reactiveProps;
-          function _defineReactiveProp(target, propKey, initialValue) {
-            const privatePropKey = `__${String(propKey)}`;
-            Object.defineProperty(target, propKey, {
-              get() {
-                if (!target.hasOwnProperty(privatePropKey)) {
-                  target[privatePropKey] = initialValue;
-                }
-                return target[privatePropKey];
-              },
-              set(newVal) {
-                if (newVal === target[privatePropKey]) return;
-                target[privatePropKey] = newVal;
-                target.triggerEvent();
-              },
-              enumerable: true,
-              configurable: true
-            });
-          }
-          /*bundle */
-          function reactiveProps(props) {
-            return function (target) {
-              const targetProto = "prototype" in target ? target.prototype : target;
+        }
+      });
+
+      /****************************
+      INTERNAL MODULE: ./properties
+      ****************************/
+
+      ims.set('./properties', {
+        hash: 295200337,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ModelProperties = void 0;
+          class ModelProperties {
+            #parent;
+            #items = new Set();
+            multipleSet;
+            #reactiveProperties = ['fetching', 'fetched', 'processing', 'processed', 'loaded', 'ready'];
+            get items() {
+              return [...this.#items];
+            }
+            hasChanges;
+            constructor(parent) {
+              this.#parent = parent;
+              this.reactiveProps(this.#reactiveProperties);
+            }
+            reactiveProps(props) {
+              if (!props) return;
               for (const propKey of props) {
-                const descriptor = Object.getOwnPropertyDescriptor(targetProto, propKey);
-                const initialValue = descriptor ? descriptor.value : undefined;
-                defineReactiveProp(targetProto, propKey, initialValue);
-              }
-            };
-          }
-          function defineReactiveProp(target, propKey, initialValue) {
-            const privatePropKey = `__${String(propKey)}`;
-            Object.defineProperty(target, propKey, {
-              get() {
-                if (!target.hasOwnProperty(privatePropKey)) {
-                  target[privatePropKey] = initialValue;
+                if (typeof propKey === 'object') {
+                  console.log(`the props is an object`, propKey);
+                  continue;
                 }
-                return target[privatePropKey];
-              },
-              set(newVal) {
-                target.setReactiveProp(propKey, newVal);
-              },
-              enumerable: true,
-              configurable: true
-            });
+                if (!this.#reactiveProperties.includes(propKey)) {
+                  this.#items.add(propKey);
+                }
+                const descriptor = Object.getOwnPropertyDescriptor(this.#parent, propKey);
+                const initialValue = descriptor ? descriptor.value : undefined;
+                this.defineReactiveProp(propKey, initialValue);
+              }
+            }
+            defineReactiveProp(propKey, initialValue) {
+              const privatePropKey = `__${String(propKey)}`;
+              Object.defineProperty(this.#parent, propKey, {
+                enumerable: true,
+                configurable: true,
+                get: () => {
+                  if (!this.hasOwnProperty(privatePropKey)) {
+                    this[privatePropKey] = initialValue;
+                  }
+                  return this[privatePropKey];
+                },
+                set: newVal => {
+                  const sameObject = typeof newVal === 'object' && JSON.stringify(newVal) === JSON.stringify(this[privatePropKey]);
+                  if (this[privatePropKey] === newVal || sameObject) return;
+                  this.hasChanges = true;
+                  this[privatePropKey] = newVal;
+                  if (!this.multipleSet) {
+                    this.#parent.triggerEvent();
+                  }
+                }
+              });
+            }
           }
+          exports.ModelProperties = ModelProperties;
         }
       });
       __pkg.exports.descriptor = [{
         "im": "./index",
         "from": "ReactiveModel",
         "name": "ReactiveModel"
+      }, {
+        "im": "./interfaces/property-object",
+        "from": "IPropertyObject",
+        "name": "IPropertyObject"
       }, {
         "im": "./interfaces/reactive-props",
         "from": "IReactiveProperties",
@@ -272,9 +355,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/events@0.0.6/even
         "from": "ReactiveModelPublic",
         "name": "ReactiveModelPublic"
       }, {
-        "im": "./property",
-        "from": "reactiveProps",
-        "name": "reactiveProps"
+        "im": "./interfaces/types",
+        "from": "ReactiveProperties",
+        "name": "ReactiveProperties"
       }];
       // Module exports
       __pkg.exports.process = function ({
@@ -283,9 +366,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/events@0.0.6/even
         value
       }) {
         (require || prop === 'ReactiveModel') && _export("ReactiveModel", ReactiveModel = require ? require('./index').ReactiveModel : value);
+        (require || prop === 'IPropertyObject') && _export("IPropertyObject", IPropertyObject = require ? require('./interfaces/property-object').IPropertyObject : value);
         (require || prop === 'IReactiveProperties') && _export("IReactiveProperties", IReactiveProperties = require ? require('./interfaces/reactive-props').IReactiveProperties : value);
         (require || prop === 'ReactiveModelPublic') && _export("ReactiveModelPublic", ReactiveModelPublic = require ? require('./interfaces/reactive-public-props').ReactiveModelPublic : value);
-        (require || prop === 'reactiveProps') && _export("reactiveProps", reactiveProps = require ? require('./property').reactiveProps : value);
+        (require || prop === 'ReactiveProperties') && _export("ReactiveProperties", ReactiveProperties = require ? require('./interfaces/types').ReactiveProperties : value);
       };
       _export("__beyond_pkg", __beyond_pkg = __pkg);
       _export("hmr", hmr = new function () {
@@ -296,4 +380,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/events@0.0.6/even
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZXZlbnRzIiwicmVxdWlyZSIsIlJlYWN0aXZlTW9kZWwiLCJFdmVudHMiLCJzY2hlbWEiLCJpc1JlYWN0aXZlIiwiZmV0Y2hpbmciLCJmZXRjaGVkIiwicHJvY2Vzc2luZyIsInJlYWR5IiwicHJvY2Vzc2VkIiwicHJvcGVydGllcyIsImxvYWRlZCIsImluaXRpYWxWYWx1ZXMiLCJpc1VucHVibGlzaGVkIiwiZ2V0UHJvcGVydGllcyIsIk9iamVjdCIsImtleXMiLCJzb21lIiwicHJvcCIsImNvbnN0cnVjdG9yIiwicmVhY3RpdmVQcm9wcyIsInZhbHVlcyIsInNldCIsInByb3BzIiwicHJvcEtleSIsImRlc2NyaXB0b3IiLCJnZXRPd25Qcm9wZXJ0eURlc2NyaXB0b3IiLCJpbml0aWFsVmFsdWUiLCJ2YWx1ZSIsInVuZGVmaW5lZCIsImRlZmluZVJlYWN0aXZlUHJvcCIsInByaXZhdGVQcm9wS2V5IiwiU3RyaW5nIiwiZGVmaW5lUHJvcGVydHkiLCJnZXQiLCJoYXNPd25Qcm9wZXJ0eSIsIm5ld1ZhbCIsInRyaWdnZXJFdmVudCIsImVudW1lcmFibGUiLCJjb25maWd1cmFibGUiLCJldmVudCIsImdsb2JhbFRoaXMiLCJzZXRUaW1lb3V0IiwidHJpZ2dlciIsInVwZGF0ZWQiLCJmb3JFYWNoIiwic2FtZU9iamVjdCIsIkpTT04iLCJzdHJpbmdpZnkiLCJlIiwiRXJyb3IiLCJza2VsZXRvbiIsInByb3BlcnR5IiwiY29sbGVjdGlvbiIsInR5cGUiLCJuYW1lIiwiaXRlbXMiLCJtYXAiLCJpdGVtIiwiZXhwb3J0cyIsIl9kZWZpbmVSZWFjdGl2ZVByb3AiLCJ0YXJnZXQiLCJ0YXJnZXRQcm90byIsInByb3RvdHlwZSIsInNldFJlYWN0aXZlUHJvcCJdLCJzb3VyY2VzIjpbIi9pbmRleC50cyIsIi9yZWFjdGl2ZS1wcm9wcy50cyIsIi9yZWFjdGl2ZS1wdWJsaWMtcHJvcHMudHMiLCIvcHJvcGVydHkudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGws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
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZXZlbnRzIiwicmVxdWlyZSIsIl9wcm9wZXJ0aWVzIiwiUmVhY3RpdmVNb2RlbCIsIkV2ZW50cyIsInNjaGVtYSIsImlzUmVhY3RpdmUiLCJwcm9wZXJ0aWVzIiwiaW5pdGlhbFZhbHVlcyIsImlzVW5wdWJsaXNoZWQiLCJnZXRQcm9wZXJ0aWVzIiwiT2JqZWN0Iiwia2V5cyIsInNvbWUiLCJwcm9wIiwiY29uc3RydWN0b3IiLCJzcGVjcyIsIk1vZGVsUHJvcGVydGllcyIsImluaXRpYWxpc2UiLCJyZWFjdGl2ZVByb3BzIiwidmFsdWVzIiwic2V0IiwicHJvcHMiLCJmb3JFYWNoIiwibXVsdGlwbGVTZXQiLCJpdGVtcyIsImluY2x1ZGVzIiwiZSIsIkVycm9yIiwiaGFzQ2hhbmdlcyIsInRyaWdnZXJFdmVudCIsInNrZWxldG9uIiwicHJvcGVydHkiLCJoYXNPd25Qcm9wZXJ0eSIsImNvbGxlY3Rpb24iLCJ0eXBlIiwibmFtZSIsIm1hcCIsIml0ZW0iLCJldmVudCIsImdsb2JhbFRoaXMiLCJzZXRUaW1lb3V0IiwidHJpZ2dlciIsImV4cG9ydHMiLCJkZWZpbmVQcm9wZXJ0eSIsInZhbHVlIiwicGFyZW50IiwiU2V0IiwicmVhY3RpdmVQcm9wZXJ0aWVzIiwicHJvcEtleSIsImNvbnNvbGUiLCJsb2ciLCJhZGQiLCJkZXNjcmlwdG9yIiwiZ2V0T3duUHJvcGVydHlEZXNjcmlwdG9yIiwiaW5pdGlhbFZhbHVlIiwidW5kZWZpbmVkIiwiZGVmaW5lUmVhY3RpdmVQcm9wIiwicHJpdmF0ZVByb3BLZXkiLCJTdHJpbmciLCJlbnVtZXJhYmxlIiwiY29uZmlndXJhYmxlIiwiZ2V0IiwibmV3VmFsIiwic2FtZU9iamVjdCIsIkpTT04iLCJzdHJpbmdpZnkiXSwic291cmNlcyI6WyIvaW5kZXgudHMiLCIvbW9kZWwtc3BlY3MudHMiLCIvcHJvcGVydHktb2JqZWN0LnRzIiwiL3JlYWN0aXZlLXByb3BzLnRzIiwiL3JlYWN0aXZlLXB1YmxpYy1wcm9wcy50cyIsIi90eXBlcy50cyIsIi9wcm9wZXJ0aWVzLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsT0FBQSxHQUFBQyxPQUFBO1VBSUEsSUFBQUMsV0FBQSxHQUFBRCxPQUFBO1VBWU8sV0FUUDs7Ozs7Ozs7VUFTaUIsTUFBZ0JFLGFBQWlCLFNBQVFILE9BQUEsQ0FBQUksTUFBTTtZQUNyREMsTUFBTTtZQUNoQixDQUFBQyxVQUFXLEdBQVksSUFBSTtZQUMzQixJQUFJQSxVQUFVQSxDQUFBO2NBQ2IsT0FBTyxJQUFJLENBQUMsQ0FBQUEsVUFBVztZQUN4QjtZQVFBOzs7Ozs7O1lBT1VDLFVBQVUsR0FBdUIsRUFBRTtZQUM3Qzs7Ozs7OztZQU9BLENBQUFDLGFBQWMsR0FBd0IsRUFBRTtZQUV4Qzs7Ozs7Ozs7WUFRQSxJQUFJQyxhQUFhQSxDQUFBO2NBQ2hCLE1BQU1GLFVBQVUsR0FBRyxJQUFJLENBQUNHLGFBQWEsRUFBRTtjQUV2QyxPQUFPQyxNQUFNLENBQUNDLElBQUksQ0FBQ0wsVUFBVSxDQUFDLENBQUNNLElBQUksQ0FBQ0MsSUFBSSxJQUFHO2dCQUMxQyxJQUFJQSxJQUFJLEtBQUssSUFBSSxJQUFJLE9BQU9BLElBQUksS0FBSyxRQUFRLEVBQUUsT0FBTyxLQUFLO2dCQUMzRCxPQUFPUCxVQUFVLENBQUNPLElBQUksQ0FBQyxLQUFLLElBQUksQ0FBQyxDQUFBTixhQUFjLENBQUNNLElBQUksQ0FBQztjQUN0RCxDQUFDLENBQUM7WUFDSDtZQUNBLENBQUFQLFVBQVc7WUFDWFEsWUFBWUMsS0FBMkI7Y0FDdEMsS0FBSyxFQUFFO2NBRVAsSUFBSSxDQUFDLENBQUFULFVBQVcsR0FBRyxJQUFJTCxXQUFBLENBQUFlLGVBQWUsQ0FBQyxJQUFJLENBQUM7Y0FDNUMsSUFBSUQsS0FBSyxFQUFFVCxVQUFVLEVBQUU7Z0JBQ3RCLElBQUks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

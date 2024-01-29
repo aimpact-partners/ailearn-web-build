@@ -23,7 +23,7 @@
   display: block;
 }
 .accordion-item .accordion-item__content {
-  padding: 1rem;
+  padding: 1rem 0;
   height: 0;
   overflow: hidden;
   display: none;

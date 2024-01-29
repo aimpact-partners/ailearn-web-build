@@ -5,17 +5,18 @@ System.register([], function (_export, _context) {
     setters: [],
     execute: function () {
       _export("default", {
-        "package": "@bgroup/media-manager",
-        "version": "1.0.0",
+        "package": "@aimpact/chat-api",
+        "version": "0.1.0",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]
         },
         "global.css": true,
-        "layout": "main-layout",
         "params": {},
         "ssr": {},
-        "backend": {}
+        "backend": {
+          "host": "https://chat-api-ws-v2-rb5caohzgq-uc.a.run.app"
+        }
       });
     }
   };

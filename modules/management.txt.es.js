@@ -29,10 +29,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1215479711,
+        hash: 2420135024,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
+              "analyse": "Sugerir mejoras",
               "activities": "Generar actividades",
               "refine": "Refinar",
               "generate": "Generar",
@@ -50,9 +51,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "types": {
                 "content-theory": "Temas",
                 "multiple-choice": "Preguntas",
+                "questions": "Preguntas",
                 "spoken": "Criterios",
-                "topics": "Temas",
-                "questions": "Preguntas"
+                "topics": "Temas"
+              },
+              "materials": {
+                "article": "Artículo",
+                "synthesis": "Síntesis",
+                "introduction": "Introducción",
+                "flashcards": "Flashcards"
               },
               "actions": {
                 "generateAnswers": "Generar respuestas"
@@ -73,13 +80,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "answers": "Respuestas",
                   "questions": "Preguntas"
                 }
-              },
-              "materials": {
-                "article": "Artículo",
-                "synthesis": "Síntesis",
-                "instructions": "Instrucciones",
-                "flashcards": "Flashcards",
-                "introduction": "Introducción"
               }
             },
             "ERR_GENERATING_ACTIVITIES": "Error generando actividades",
@@ -107,7 +107,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "step0": {
                 "title": "Añade tus ideas",
                 "textArea": "Elabora el objetivo de tu módulo aquí",
-                "description": "Define el objetivo principal o resultado que los aprendices alcanzarán al completar este módulo"
+                "description": "Define tu objetivo principal de aprendizaje del módulo.",
+                "suggestions": "Si lo deseas, selecciona una de las siguientes opciones de mejora y se realizará un refinamiento del objetivo definido."
               },
               "step1": {
                 "titulo": "Definir Objetivo",

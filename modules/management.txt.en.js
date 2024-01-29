@@ -29,10 +29,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2965998667,
+        hash: 1681231386,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
+              "analyse": "Suggest Improvements",
               "activities": "Generate activities",
               "refine": "Refine",
               "generate": "Generate",
@@ -50,9 +51,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "types": {
                 "content-theory": "Topics",
                 "multiple-choice": "Questions",
+                "questions": "Questions",
                 "spoken": "Criterias",
-                "topics": "Topics",
-                "questions": "Questions"
+                "topics": "Topics"
+              },
+              "materials": {
+                "article": "Article",
+                "synthesis": "Synthesis",
+                "introduction": "Introduction",
+                "flashcards": "Flashcards"
               },
               "minutes": "Min",
               "description": "Description",
@@ -73,16 +80,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "answers": "Answers",
                   "questions": "Questions"
                 }
-              },
-              "materials": {
-                "article": "Article",
-                "synthesis": "Synthesis",
-                "instructions": "Instructions",
-                "flashcards": "Flashcards",
-                "topics": "Topics",
-                "criterias": "Criterias",
-                "": "Instructions",
-                "introduction": "Introduction"
               }
             },
             "ERR_GENERATING_ACTIVITIES": "Error generating activities",
@@ -110,7 +107,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "step0": {
                 "title": "Add your insights",
                 "textArea": "Craft your module's objective here",
-                "description": "Define the main goal or outcome that learners will achieve upon completing this module"
+                "description": "Define your module's main learning outcome.",
+                "suggestions": "If you wish, select one of the following improvement options and a refinement of the defined objective will be carried out."
               },
               "step1": {
                 "titulo": "Define Objective",

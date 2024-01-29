@@ -51,27 +51,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "page",
         "route": "/chat-api/tests"
       }, {
-        "name": "auth-login-page",
-        "vspecifier": "@aimpact/chat@1.0.1/auth-login.widget",
-        "is": "page",
-        "route": "/auth/login",
-        "layout": "auth-layout"
-      }, {
-        "name": "aimpact-login-presentation",
-        "vspecifier": "@aimpact/chat@1.0.1/auth/login/presentation.widget"
-      }, {
-        "name": "auth-recovery-page",
-        "vspecifier": "@aimpact/chat@1.0.1/auth-recovery.widget",
-        "is": "page",
-        "route": "/auth/recovery",
-        "layout": "auth-layout"
-      }, {
-        "name": "auth-register-page",
-        "vspecifier": "@aimpact/chat@1.0.1/auth-register.widget",
-        "is": "page",
-        "route": "/auth/register",
-        "layout": "auth-layout"
-      }, {
         "name": "aimpact-chat-control",
         "attrs": ["id"],
         "vspecifier": "@aimpact/chat@1.0.1/chat-control.widget"
@@ -373,7 +352,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         **********************************/
 
         ims.set('./handlers/session', {
-          hash: 4289956459,
+          hash: 294390580,
           creator: function (require, exports) {
             "use strict";
 
@@ -382,7 +361,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             });
             exports.checkSession = checkSession;
             var _session = require("@aimpact/chat-sdk/session");
-            const PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/documents/access', '/reactive/testing'];
+            const PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password', '/documents/access', '/reactive/testing'];
             const DEFAULT_ROUTE = '/auth/login';
             async function checkSession(pathname) {
               await _session.sessionWrapper.isReady;
