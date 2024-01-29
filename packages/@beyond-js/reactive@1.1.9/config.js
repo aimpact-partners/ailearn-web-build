@@ -5,16 +5,15 @@ System.register([], function (_export, _context) {
     setters: [],
     execute: function () {
       _export("default", {
-        "package": "@aimpact/ailearn-sdk",
-        "version": "1.0.0",
+        "package": "@beyond-js/reactive",
+        "version": "1.1.9",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]
         },
         "global.css": true,
-        "params": {
-          "ailearnAPI": "http://localhost:5050"
-        },
+        "layout": "reactive-layout",
+        "params": {},
         "ssr": {},
         "backend": {}
       });

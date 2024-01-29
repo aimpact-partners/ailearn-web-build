@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3417300658,
+        hash: 2965998667,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -50,7 +50,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "types": {
                 "content-theory": "Topics",
                 "multiple-choice": "Questions",
-                "spoken": "Criterias"
+                "spoken": "Criterias",
+                "topics": "Topics",
+                "questions": "Questions"
               },
               "minutes": "Min",
               "description": "Description",
@@ -71,6 +73,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "answers": "Answers",
                   "questions": "Questions"
                 }
+              },
+              "materials": {
+                "article": "Article",
+                "synthesis": "Synthesis",
+                "instructions": "Instructions",
+                "flashcards": "Flashcards",
+                "topics": "Topics",
+                "criterias": "Criterias",
+                "": "Instructions",
+                "introduction": "Introduction"
               }
             },
             "ERR_GENERATING_ACTIVITIES": "Error generating activities",
