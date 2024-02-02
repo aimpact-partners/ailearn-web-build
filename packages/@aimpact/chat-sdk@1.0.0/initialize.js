@@ -30,7 +30,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.9/da
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 1986265494,
+        hash: 2789937630,
         creator: function (require, exports) {
           "use strict";
 
@@ -41,7 +41,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.9/da
           var _database = require("@beyond-js/reactive/database");
           async function initialize() {
             try {
-              const db = await _database.DBManager.config('chat-api@23', {
+              const db = await _database.DBManager.config('chat-api@24', {
                 Chat: 'id, name, userId, category, usage, system, knowledgeBoxId',
                 Conversations: 'id, name, userId, system',
                 User: 'id',
@@ -58,7 +58,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.9/da
                 Prompts: 'id',
                 Activities: 'id',
                 StudentsHome: 'id',
-                Modules: 'id'
+                Modules: 'id, type'
               });
               // For example, if you have user data to add you can use:
               // db.Chat.bulkAdd(chats);
