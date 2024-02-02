@@ -367,7 +367,8 @@ dialog::backdrop {
 .grid-container {
   display: grid !important;
   grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  margin-top: 1rem;
+  grid-gap: 1rem;
 }
 .grid-container.g-2-columns {
   grid-template-columns: 1fr 1fr;
