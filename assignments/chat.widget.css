@@ -1,0 +1,27 @@
+.conversation__title {
+  padding: 0 0 1rem;
+  border-bottom: 1px solid var(--outline);
+  margin-bottom: 1rem;
+}
+
+.character-card__container {
+  min-width: 30%;
+  border: 1px solid var(--neutral-variant-80);
+  border-radius: 1.3rem;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 3rem;
+  padding: 3rem;
+  text-align: center;
+}
+.character-card__container .character-card__actions {
+  align-items: center;
+  justify-content: center;
+}
+.character-card__container .character-card__button {
+  border-radius: 2rem;
+  padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSUE7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQSIsImZpbGUiOiIifQ== */
