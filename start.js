@@ -187,9 +187,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/assignments/${assignmentId}/spoken/${id}",
         "layout": "general-layout"
       }, {
-        "name": "ailearn-assessment-oral",
-        "vspecifier": "@aimpact/ailearn-app@0.0.24/assessments/oral-test.widget"
-      }, {
         "name": "ailearn-session-dashboard",
         "vspecifier": "@aimpact/ailearn-app@0.0.24/assignments/dashboard.widget",
         "is": "page",

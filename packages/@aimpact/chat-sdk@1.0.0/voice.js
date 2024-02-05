@@ -31,13 +31,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/kernel/core', dependency_1], ['@aimpact/chat/config', dependency_2], ['@beyond-js/reactive/model', dependency_3]]);
+      __pkg.dependencies.update([['@beyond-js/kernel/core', dependency_1], ['@aimpact/chat-sdk/config', dependency_2], ['@beyond-js/reactive/model', dependency_3]]);
       ims = new Map();
       /***************************
       INTERNAL MODULE: ./voice-lab
       ***************************/
       ims.set('./voice-lab', {
-        hash: 2319831110,
+        hash: 3598784126,
         creator: function (require, exports) {
           "use strict";
 
@@ -46,7 +46,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
           });
           exports.VoiceLab = void 0;
           var _core = require("@beyond-js/kernel/core");
-          var _config = require("@aimpact/chat/config");
+          var _config = require("@aimpact/chat-sdk/config");
           /*bundle*/
           class VoiceLab extends _core.Events {
             #apiKey = _config.default.params.elevenlabs.key;

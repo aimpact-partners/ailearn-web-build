@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2757536693,
+        hash: 3840525916,
         creator: function (require, exports) {
           exports.txt = {
             "assign": {
@@ -49,6 +49,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "errors": {
               "ERROR_GETTING_URL": "Error getting url"
+            },
+            "loading": {
+              "title": "Loading Data",
+              "description": "We are loading your data. Please wait for a moment."
             },
             "empty": {
               "general": {

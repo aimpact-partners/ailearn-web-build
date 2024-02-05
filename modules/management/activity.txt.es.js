@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 610459971,
+        hash: 4182524823,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -85,6 +85,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "answers": "Respuestas",
                   "questions": "Preguntas"
                 }
+              },
+              "empty": {
+                "title": "Crea Este Elemento",
+                "description": "Utiliza la IA para dar forma a este elemento específico. Haz clic en 'Generar' para crear contenido atractivo sin esfuerzo. Eleva tu experiencia de enseñanza con una creación innovadora. 🚀"
               }
             },
             "conversation": {
