@@ -100,7 +100,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       ****************************/
 
       ims.set('./interfaces', {
-        hash: 428321904,
+        hash: 1404915735,
         creator: function (require, exports) {
           "use strict";
 
