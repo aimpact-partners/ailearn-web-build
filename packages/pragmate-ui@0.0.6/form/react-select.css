@@ -14,9 +14,8 @@
   box-shadow: 0 0 0 1px var(--border);
 }
 .pui-select .pui-react-select__menu {
-  background-color: var(--surface);
+  background-color: var(--surface) !important;
   color: var(--text);
-  max-height: 50px;
 }
 .pui-select .pui-react-select__option--is-selected {
   background-color: var(--selected-background);
@@ -28,4 +27,4 @@
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBOzs7QUFJQTtFQUNDO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7O0FBS0Y7RUFDQztFQUNBO0VBQ0E7O0FBS0E7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQSIsImZpbGUiOiIifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBOzs7QUFJQTtFQUNDO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7O0FBS0Y7RUFDQztFQUNBOztBQUtBO0VBQ0M7RUFDQTs7QUFHRDtFQUNDO0VBQ0EiLCJmaWxlIjoiIn0= */
