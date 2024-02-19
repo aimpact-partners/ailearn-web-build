@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core", "@beyond-js/reactive@1.1.9/model"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core", "@beyond-js/reactive@1.1.11/model"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, Recorder, __beyond_pkg, hmr;
@@ -8,8 +8,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_beyondJsKernel019Core) {
       dependency_1 = _beyondJsKernel019Core;
-    }, function (_beyondJsReactive119Model) {
-      dependency_2 = _beyondJsReactive119Model;
+    }, function (_beyondJsReactive1111Model) {
+      dependency_2 = _beyondJsReactive1111Model;
     }],
     execute: function () {
       bimport = specifier => {

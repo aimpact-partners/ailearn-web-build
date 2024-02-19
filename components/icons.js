@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.9"], ["pragmate-ui", "0.0.6"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.3"], ["@bgroup/http-suite", "1.0.3"], ["apexcharts", "3.44.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.4"], ["dompurify", "3.0.6"], ["firebase", "10.5.0"], ["firebase-admin", "11.11.0"], ["framer-motion", "10.17.8"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.2"], ["marked-highlight", "2.0.6"], ["marked-mangle", "1.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.2"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.32"], ["@types/react-dom", "18.2.14"], ["@aimpact/ailearn-app", "0.0.24"], ["@aimpact/ailearn-app", "0.0.24"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.11"], ["pragmate-ui", "0.0.6"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@bgroup/http-suite", "1.0.3"], ["apexcharts", "3.44.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.4"], ["dompurify", "3.0.6"], ["firebase", "10.5.0"], ["firebase-admin", "11.11.0"], ["framer-motion", "10.17.8"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.2"], ["marked-highlight", "2.0.6"], ["marked-mangle", "1.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.2"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.32"], ["@types/react-dom", "18.2.14"], ["@aimpact/ailearn-app", "0.0.24"], ["@aimpact/ailearn-app", "0.0.24"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -28,7 +28,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 3724569285,
+        hash: 4191941995,
         creator: function (require, exports) {
           "use strict";
 
@@ -74,6 +74,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
 <path fill-rule="evenodd" clip-rule="evenodd" d="M40 15H42C43.1046 15 44 15.8954 44 17V21H38V17C38 15.8954 38.8954 15 40 15Z" /></g>`
             },
             spoken: `<path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM6.75 14.14C6.75 14.55 6.41 14.89 6 14.89C5.59 14.89 5.25 14.55 5.25 14.14V9.86C5.25 9.45 5.59 9.11 6 9.11C6.41 9.11 6.75 9.45 6.75 9.86V14.14ZM9.75 15.57C9.75 15.98 9.41 16.32 9 16.32C8.59 16.32 8.25 15.98 8.25 15.57V8.43C8.25 8.02 8.59 7.68 9 7.68C9.41 7.68 9.75 8.02 9.75 8.43V15.57ZM12.75 17C12.75 17.41 12.41 17.75 12 17.75C11.59 17.75 11.25 17.41 11.25 17V7C11.25 6.59 11.59 6.25 12 6.25C12.41 6.25 12.75 6.59 12.75 7V17ZM15.75 15.57C15.75 15.98 15.41 16.32 15 16.32C14.59 16.32 14.25 15.98 14.25 15.57V8.43C14.25 8.02 14.59 7.68 15 7.68C15.41 7.68 15.75 8.02 15.75 8.43V15.57ZM18.75 14.14C18.75 14.55 18.41 14.89 18 14.89C17.59 14.89 17.25 14.55 17.25 14.14V9.86C17.25 9.45 17.59 9.11 18 9.11C18.41 9.11 18.75 9.45 18.75 9.86V14.14Z"/>`,
+            'written-spoken': `<path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM6.75 14.14C6.75 14.55 6.41 14.89 6 14.89C5.59 14.89 5.25 14.55 5.25 14.14V9.86C5.25 9.45 5.59 9.11 6 9.11C6.41 9.11 6.75 9.45 6.75 9.86V14.14ZM9.75 15.57C9.75 15.98 9.41 16.32 9 16.32C8.59 16.32 8.25 15.98 8.25 15.57V8.43C8.25 8.02 8.59 7.68 9 7.68C9.41 7.68 9.75 8.02 9.75 8.43V15.57ZM12.75 17C12.75 17.41 12.41 17.75 12 17.75C11.59 17.75 11.25 17.41 11.25 17V7C11.25 6.59 11.59 6.25 12 6.25C12.41 6.25 12.75 6.59 12.75 7V17ZM15.75 15.57C15.75 15.98 15.41 16.32 15 16.32C14.59 16.32 14.25 15.98 14.25 15.57V8.43C14.25 8.02 14.59 7.68 15 7.68C15.41 7.68 15.75 8.02 15.75 8.43V15.57ZM18.75 14.14C18.75 14.55 18.41 14.89 18 14.89C17.59 14.89 17.25 14.55 17.25 14.14V9.86C17.25 9.45 17.59 9.11 18 9.11C18.41 9.11 18.75 9.45 18.75 9.86V14.14Z"/>`,
             faces: {
               outstanding: '🤩',
               'very good': '😁',
@@ -108,6 +109,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             aiStars: {
               viewBox: '0 0 100 125',
               icon: `<path d="m90.64,59.09l-16.25-7.09c-3.93-1.71-7.06-4.85-8.77-8.77l-7.09-16.25c-.55-1.26-2.34-1.26-2.89,0l-7.09,16.25c-1.71,3.93-4.85,7.06-8.77,8.77l-16.27,7.1c-1.26.55-1.26,2.33,0,2.88l16.55,7.32c3.92,1.73,7.04,4.88,8.73,8.82l6.86,15.94c.54,1.27,2.34,1.27,2.89,0l7.08-16.22c1.71-3.93,4.85-7.06,8.77-8.77l16.25-7.09c1.26-.55,1.26-2.34,0-2.89Z"/><path d="m25.28,48.51l3.32-7.61c.8-1.84,2.27-3.31,4.11-4.11l7.62-3.32c.59-.26.59-1.1,0-1.35l-7.62-3.32c-1.84-.8-3.31-2.27-4.11-4.11l-3.32-7.62c-.26-.59-1.1-.59-1.35,0l-3.32,7.62c-.8,1.84-2.27,3.31-4.11,4.11l-7.63,3.33c-.59.26-.59,1.09,0,1.35l7.76,3.43c1.84.81,3.3,2.29,4.09,4.13l3.22,7.47c.26.59,1.1.6,1.35,0Z"/><path d="m39.89,13.95l4.12,1.82c.98.43,1.75,1.22,2.17,2.19l1.71,3.97c.14.32.58.32.72,0l1.76-4.04c.43-.98,1.21-1.76,2.18-2.18l4.04-1.76c.31-.14.31-.58,0-.72l-4.04-1.76c-.98-.43-1.76-1.21-2.18-2.18l-1.76-4.04c-.14-.31-.58-.31-.72,0l-1.76,4.04c-.43.98-1.21,1.76-2.18,2.18l-4.05,1.77c-.31.14-.31.58,0,.72Z"/>`
+            },
+            'character-talk': {
+              viewBox: '0 0 416.043 416.043',
+              icon: `<g>
+			<path style="fill:#030104;" d="M208.86,80.696C84.671,76.046-3.953,136.891,0.136,214.624c0,51.973,70.945,99.063,141.394,115.228
+				c0,0-0.357,20.263-24.416,53.068c52.804-9.686,91.313-46.161,91.313-46.161s16.252-0.813,17.884-0.87
+				c91.267-5.813,162.656-56.548,162.656-118.37C388.967,151.903,308.305,80.696,208.86,80.696z M111.467,236.684
+				c-16.106,0-29.188-13.035-29.188-29.181c0-16.122,13.082-29.196,29.188-29.196c16.138,0,29.22,13.074,29.22,29.196
+				C140.688,223.648,127.605,236.684,111.467,236.684z M191.467,236.684c-16.105,0-29.188-13.035-29.188-29.181
+				c0-16.122,13.082-29.196,29.188-29.196c16.138,0,29.222,13.074,29.222,29.196C220.689,223.648,207.605,236.684,191.467,236.684z
+				 M271.468,236.684c-16.105,0-29.188-13.035-29.188-29.181c0-16.122,13.082-29.196,29.188-29.196
+				c16.139,0,29.221,13.074,29.221,29.196C300.689,223.648,287.607,236.684,271.468,236.684z"/>
+			<path style="fill:#030104;" d="M272.189,33.322c-53.318-1.995-98.421,11.129-128.234,33.334c23.07-4.393,48.248-6.32,75.021-5.318
+				c92.221,0,168.932,58.788,184.655,119.916c7.976-11.806,12.412-24.883,12.412-38.65C416.042,90.196,351.617,33.322,272.189,33.322
+				z"/>
+		</g>`
             }
           };
         }
@@ -134,4 +151,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJJQ09OUyIsImV4cG9ydHMiLCJ2b2ljZSIsImNvbnZlcnNhdGlvbiIsInZpZXdCb3giLCJpY29uIiwiZGViYXRlIiwic3Bva2VuIiwiZmFjZXMiLCJvdXRzdGFuZGluZyIsImdvb2QiLCJiYWQiLCJyZWd1bGFyIiwiaW5kaWZmZXJlbnQiLCJpbmFwcHJvcHJpYXRlIiwid3JpdHRlbiIsImFpU3RhcnMiXSwic291cmNlcyI6WyIvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQU8sTUFBTSxVQUFXQSxLQUFLLEdBQUFDLE9BQUEsQ0FBQUQsS0FBQSxHQUFHO1lBQzlCRSxLQUFLLEVBQUUsc0dBQXNHO1lBQzdHQyxZQUFZLEVBQUU7Y0FDYkMsT0FBTyxFQUFFLFlBQVk7Y0FDckJDLElBQUksRUFBRTthQUNOO1lBQ0QsZ0JBQWdCLEVBQUU7Y0FDakJELE9BQU8sRUFBRSxXQUFXO2NBQ3BCQyxJQUFJLEVBQUU7YUFDTjtZQUNEQyxNQUFNLEVBQUU7Y0FDUEYsT0FBTyxFQUFFLGFBQWE7Y0FDdEJDLElBQUksRUFBRTs7Ozs7Ozs7Ozs7Ozs7Ozs7YUFpQk47WUFDRCxpQkFBaUIsRUFBRTtjQUNsQkQsT0FBTyxFQUFFLFdBQVc7Y0FDcEJDLElBQUksRUFBRTs7OzthQUlOO1lBQ0RFLE1BQU0sRUFBRSw2MEJBQTYwQjtZQUNyMUJDLEtBQUssRUFBRTtjQUNOQyxXQUFXLEVBQUUsSUFBSTtjQUNqQixXQUFXLEVBQUUsSUFBSTtjQUNqQkMsSUFBSSxFQUFFLElBQUk7Y0FDVkMsR0FBRyxFQUFFLElBQUk7Y0FDVEMsT0FBTyxFQUFFLElBQUk7Y0FDYkMsV0FBVyxFQUFFLElBQUk7Y0FDakJDLGFBQWEsRUFBRTthQUNmO1lBQ0RDLE9BQU8sRUFBRTtjQUNSWCxPQUFPLEVBQUUscUJBQXFCO2NBQzlCQyxJQUFJLEVBQUU7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7YUFtQk47WUFDRFcsT0FBTyxFQUFFO2NBQ1JaLE9BQU8sRUFBRSxhQUFhO2NBQ3RCQyxJQUFJLEVBQUU7O1dBRVAifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJJQ09OUyIsImV4cG9ydHMiLCJ2b2ljZSIsImNvbnZlcnNhdGlvbiIsInZpZXdCb3giLCJpY29uIiwiZGViYXRlIiwic3Bva2VuIiwiZmFjZXMiLCJvdXRzdGFuZGluZyIsImdvb2QiLCJiYWQiLCJyZWd1bGFyIiwiaW5kaWZmZXJlbnQiLCJpbmFwcHJvcHJpYXRlIiwid3JpdHRlbiIsImFpU3RhcnMiXSwic291cmNlcyI6WyIvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQU8sTUFBTSxVQUFXQSxLQUFLLEdBQUFDLE9BQUEsQ0FBQUQsS0FBQSxHQUFHO1lBQzlCRSxLQUFLLEVBQUUsc0dBQXNHO1lBQzdHQyxZQUFZLEVBQUU7Y0FDYkMsT0FBTyxFQUFFLFlBQVk7Y0FDckJDLElBQUksRUFBRTthQUNOO1lBQ0QsZ0JBQWdCLEVBQUU7Y0FDakJELE9BQU8sRUFBRSxXQUFXO2NBQ3BCQyxJQUFJLEVBQUU7YUFDTjtZQUNEQyxNQUFNLEVBQUU7Y0FDUEYsT0FBTyxFQUFFLGFBQWE7Y0FDdEJDLElBQUksRUFBRTs7Ozs7Ozs7Ozs7Ozs7Ozs7YUFpQk47WUFDRCxpQkFBaUIsRUFBRTtjQUNsQkQsT0FBTyxFQUFFLFdBQVc7Y0FDcEJDLElBQUksRUFBRTs7OzthQUlOO1lBQ0RFLE1BQU0sRUFBRSw2MEJBQTYwQjtZQUNyMUIsZ0JBQWdCLEVBQUUsNjBCQUE2MEI7WUFDLzFCQyxLQUFLLEVBQUU7Y0FDTkMsV0FBVyxFQUFFLElBQUk7Y0FDakIsV0FBVyxFQUFFLElBQUk7Y0FDakJDLElBQUksRUFBRSxJQUFJO2NBQ1ZDLEdBQUcsRUFBRSxJQUFJO2NBQ1RDLE9BQU8sRUFBRSxJQUFJO2NBQ2JDLFdBQVcsRUFBRSxJQUFJO2NBQ2pCQyxhQUFhLEVBQUU7YUFDZjtZQUNEQyxPQUFPLEVBQUU7Y0FDUlgsT0FBTyxFQUFFLHFCQUFxQjtjQUM5QkMsSUFBSSxFQUFFOzs7Ozs7Ozs7Ozs7Ozs7Ozs7O2FBbUJOO1lBQ0RXLE9BQU8sRUFBRTtjQUNSWixPQUFPLEVBQUUsYUFBYTtjQUN0QkMsSUFBSSxFQUFFO2FBQ047WUFDRCxnQkFBZ0IsRUFBRTtjQUNqQkQsT0FBTyxFQUFFLHFCQUFxQjtjQUM5QkMsSUFBSSxFQUFFOzs7Ozs7Ozs7Ozs7OztXQWNQIn0=

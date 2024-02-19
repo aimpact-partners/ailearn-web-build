@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/kernel@0.1.9/routing", "@beyond-js/react-18-widgets@1.0.3/hooks", "uuid@9.0.1", "pragmate-ui@0.0.6/components"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/kernel@0.1.9/routing", "@beyond-js/react-18-widgets@1.0.4/hooks", "uuid@9.0.1", "pragmate-ui@0.0.6/components"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, BreadCrumb, __beyond_pkg, hmr;
@@ -12,8 +12,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_2 = _react2;
     }, function (_beyondJsKernel019Routing) {
       dependency_3 = _beyondJsKernel019Routing;
-    }, function (_beyondJsReact18Widgets103Hooks) {
-      dependency_4 = _beyondJsReact18Widgets103Hooks;
+    }, function (_beyondJsReact18Widgets104Hooks) {
+      dependency_4 = _beyondJsReact18Widgets104Hooks;
     }, function (_uuid2) {
       dependency_5 = _uuid2;
     }, function (_pragmateUi006Components) {
