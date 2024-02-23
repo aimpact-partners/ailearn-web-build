@@ -29,10 +29,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3742148632,
+        hash: 3510556845,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
+              "add": "Agregar",
               "manual": "Generar manualmente",
               "confirm": "Confirmar",
               "analyse": "Sugerir mejoras",
@@ -113,7 +114,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "refiningQuestions": ["Formulando preguntas para evaluar la comprensión del tema central...", "Seleccionando opciones de respuesta que reflejen una variedad de perspectivas...", "Diseñando preguntas para abarcar los objetivos de aprendizaje específicos...", "Creando distractores plausibles para evaluar el pensamiento crítico...", "Elaborando preguntas que midan la aplicación práctica de los conceptos...", "Integrando preguntas de análisis para profundizar en la comprensión conceptual...", "Generando preguntas que fomenten la retención a largo plazo...", "Construyendo un flujo lógico en el cuestionario que refleje la estructura del contenido...", "Asegurando que las preguntas cubran todos los aspectos clave de la actividad...", "Finalizando la revisión de preguntas para garantizar la alineación con los objetivos educativos..."],
             "refiningAnswers": ["Compilando respuestas correctas basadas en los puntos clave de la materia...", "Incluyendo opciones variadas que desafíen la comprensión del estudiante...", "Asegurando que cada respuesta refuerce el conocimiento esencial de la actividad...", "Balanceando la dificultad de las respuestas para mantener un desafío apropiado...", "Vinculando respuestas con ejemplos prácticos para facilitar la aplicación del conocimiento...", "Seleccionando respuestas que requieran análisis y no solo memorización...", "Incorporando retroalimentación inmediata en respuestas para fomentar el aprendizaje...", "Estableciendo una secuencia coherente de preguntas y respuestas...", "Revisando que las respuestas representen un espectro completo de la lección...", "Completando la creación de un banco de respuestas que apoye el éxito del estudiante..."],
             "specs": {
-              "title": "Especificaciones",
+              "title": "Recursos",
               "objective": {
                 "label": "Objetivo",
                 "placeholder": "Agrega el objetivo de la actividad"
@@ -131,8 +132,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Agrega la tarea de la actividad"
               },
               "criteria": {
-                "label": "Criterios",
+                "title": "Criterios de evaluación",
+                "label": "Criterio",
                 "placeholder": "Agrega los criterios de la actividad"
+              },
+              "subject": {
+                "label": "Tema",
+                "placeholder": "Agrega el tema de los criterios"
               },
               "character": {
                 "label": "Personaje",

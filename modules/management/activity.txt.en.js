@@ -29,10 +29,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3366709359,
+        hash: 62231819,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
+              "add": "Add",
               "manual": "Generate manually",
               "confirm": "Confirm",
               "analyse": "Suggest Improvements",
@@ -114,7 +115,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "refiningQuestions": ["Formulating questions to assess understanding of the central topic...", "Selecting answer choices that reflect a variety of perspectives...", "Designing questions to encompass specific learning objectives...", "Creating plausible distractors to assess critical thinking...", "Crafting questions that measure practical application of concepts...", "Integrating analysis questions to deepen conceptual understanding...", "Generating questions that encourage long-term retention...", "Building a logical flow in the quiz that reflects content structure...", "Ensuring questions cover all key aspects of the activity...", "Finalizing question review to ensure alignment with educational objectives..."],
             "refiningAnswers": ["Compiling correct answers based on key points of the subject matter...", "Including varied choices that challenge student understanding...", "Ensuring each answer reinforces essential knowledge of the activity...", "Balancing answer difficulty to maintain appropriate challenge...", "Linking answers with practical examples to facilitate knowledge application...", "Selecting answers that require analysis and not just memorization...", "Incorporating immediate feedback in answers to encourage learning...", "Establishing a coherent sequence of questions and answers...", "Reviewing that answers represent a full spectrum of the lesson...", "Completing the creation of an answer bank that supports student success..."],
             "specs": {
-              "title": "Specifications",
+              "title": "Resources",
               "objective": {
                 "label": "Objective",
                 "placeholder": "Add the objective of the activity"
@@ -132,8 +133,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Add the task of the activity"
               },
               "criteria": {
+                "title": "Evaluation criteria",
                 "label": "Criteria",
                 "placeholder": "Add the criteria of the activity"
+              },
+              "subject": {
+                "label": "Subject",
+                "placeholder": "Add the subject of the criteria"
               },
               "character": {
                 "label": "Character",

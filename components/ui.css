@@ -415,7 +415,7 @@
   margin: auto;
   position: relative;
   padding: 1rem;
-  height: calc(100% - 110px);
+  min-height: calc(100% - 110px);
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -479,7 +479,7 @@
   margin: auto;
   position: relative;
   padding: 1rem;
-  height: calc(100% - 110px);
+  min-height: calc(100% - 110px);
   padding-bottom: 1rem;
 }
 @media (max-width: 1140px) {
