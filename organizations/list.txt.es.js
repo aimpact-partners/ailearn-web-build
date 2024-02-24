@@ -17,11 +17,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.24/lost",
+          "vspecifier": "@aimpact/ailearn-app@0.0.24/organizations/list",
           "multibundle": true
         },
         "type": "txt"
-      }, _context.meta.url).package('en');
+      }, _context.meta.url).package('es');
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
@@ -29,12 +29,42 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 523562514,
+        hash: 2074515936,
         creator: function (require, exports) {
           exports.txt = {
-            "title": "Lost Explorer",
-            "subtitle": "Oops! It seems you've stumbled upon uncharted territory.",
-            "description": "We're sorry, but the page you're looking for seems to have gotten lost in the vast digital landscape. Our intrepid team of cyber explorers is working tirelessly to rediscover it. In the meantime, you can head back to the main camp using familiar trails or take a detour to our homepage. The adventure continues!"
+            "actions": {
+              "join": "Unirse",
+              "create": "Crear",
+              "activities": "Generar actividades",
+              "refine": "Refinar",
+              "generate": "Generar",
+              "imported": "Importado",
+              "save": "Guardar",
+              "clean": "Limpiar",
+              "activity": "Actividades",
+              "update": "Subir Documento",
+              "edit": "Editar",
+              "delete": "Eliminar",
+              "cancel": "Cancelar",
+              "next": "Siguiente",
+              "back": "Atrás",
+              "link": "Vincular",
+              "gTooltip": "Aula importada desde Google",
+              "import": "Importar"
+            },
+            "welcome": {
+              "message": "Bienvenido %name a tu lista de organizaciones",
+              "actionInfo": "Aquí podrás ver y gestionar todas las organizaciones que tienes actualmente. Tendrás acceso a diversas acciones, incluyendo la creación, eliminación y edición de organizaciones. Aprovecha estas herramientas para personalizar cada organización de acuerdo a tus requerimientos."
+            },
+            "title": "Mis Organizaciones",
+            "subtitle": "Explora, ajusta y gestiona tus organizaciones según tus necesidades",
+            "errors": {
+              "ERROR_GETTING_URL": "Error obteniendo URL"
+            },
+            "empty": {
+              "title": "Crea tu primera organización",
+              "description": "Inicia tu travesía educativa dando vida a tu primer curso. Libera tu creatividad, da forma a un contenido atractivo y disfruta de la gratificante experiencia de enseñar a otros. 🚀"
+            }
           };
         }
       });

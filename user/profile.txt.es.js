@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1702560179,
+        hash: 4195085255,
         creator: function (require, exports) {
           exports.txt = {
             "textMode": "Modalidades",
@@ -42,7 +42,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "permissions": {
               "title": "Vinculaciones",
               "description": "Vincula tu cuenta con:",
-              "info": "Necesitamos vincular tu cuenta con Google Classroom para poder asignar las tareas que generas a tus clases. Haz clic en 'Conectar Ahora' para continuar.",
+              "info": "Necesitamos vincular tu cuenta con Google Classroom para poder asignar las tareas que generas a tus aulas. Haz clic en 'Conectar Ahora' para continuar.",
               "gclassroom": {
                 "title": "Google Classroom"
               },

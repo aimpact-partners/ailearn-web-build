@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.24/lost",
+          "vspecifier": "@aimpact/ailearn-app@0.0.24/classrooms/join",
           "multibundle": true
         },
         "type": "txt"

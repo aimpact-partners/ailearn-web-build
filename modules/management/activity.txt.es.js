@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3510556845,
+        hash: 3097033194,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -109,6 +109,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               }
             },
+            "multipleChoice": {
+              "labels": {
+                "correct": "Respuesta correcta",
+                "mark": "Marcar como correcta"
+              }
+            },
             "processMessages": ["Evaluando la demografía de la audiencia...", "Estimando la duración óptima de la clase...", "Seleccionando actividades de aprendizaje potenciales...", "Determinando el propósito de cada actividad...", "Secuenciando actividades para un máximo compromiso...", "Adaptando el contenido a los objetivos de aprendizaje...", "Ajustando los niveles de dificultad para la competencia de la audiencia...", "Finalizando elementos interactivos para el aprendizaje activo...", "Creando estrategias de evaluación para la retención de conocimientos...", "Optimizando el flujo de contenido para una experiencia de aprendizaje sin problemas...", "Preparando los toques finales en el diseño educativo...", "Generación de contenido de microaprendizaje personalizado completo."],
             "refiningActivity": ["Analizando el objetivo de la actividad para garantizar alineación con los resultados de aprendizaje...", "Revisando los componentes de la actividad para maximizar la participación estudiantil...", "Optimizando la estructura de la actividad para facilitar la comprensión y la aplicación del conocimiento...", "Ajustando los materiales didácticos para una mayor accesibilidad y diversidad...", "Evaluando métodos de entrega para una interacción efectiva y adaptativa...", "Incorporando feedback estudiantil para mejorar la experiencia de aprendizaje...", "Calibrando el nivel de dificultad para satisfacer un rango amplio de habilidades estudiantiles...", "Integrando tecnología educativa para enriquecer la actividad...", "Actualizando los recursos de la actividad para mantener relevancia y actualidad...", "Finalizando el proceso de refinamiento para una actividad educativa integral y atractiva..."],
             "refiningQuestions": ["Formulando preguntas para evaluar la comprensión del tema central...", "Seleccionando opciones de respuesta que reflejen una variedad de perspectivas...", "Diseñando preguntas para abarcar los objetivos de aprendizaje específicos...", "Creando distractores plausibles para evaluar el pensamiento crítico...", "Elaborando preguntas que midan la aplicación práctica de los conceptos...", "Integrando preguntas de análisis para profundizar en la comprensión conceptual...", "Generando preguntas que fomenten la retención a largo plazo...", "Construyendo un flujo lógico en el cuestionario que refleje la estructura del contenido...", "Asegurando que las preguntas cubran todos los aspectos clave de la actividad...", "Finalizando la revisión de preguntas para garantizar la alineación con los objetivos educativos..."],
@@ -147,6 +153,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "role": {
                 "label": "Rol",
                 "placeholder": "Agrega el rol del personaje"
+              },
+              "questions": {
+                "title": "Questions"
               }
             },
             "bulletPoint": {

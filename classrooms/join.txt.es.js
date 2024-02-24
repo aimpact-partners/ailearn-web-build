@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.24/lost",
+          "vspecifier": "@aimpact/ailearn-app@0.0.24/classrooms/join",
           "multibundle": true
         },
         "type": "txt"
@@ -29,12 +29,27 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3970006268,
+        hash: 3419403184,
         creator: function (require, exports) {
           exports.txt = {
-            "title": "Explorador Perdido",
-            "subtitle": "¡Oops! Parece que has tropezado con un territorio desconocido.",
-            "description": "Parece que te aventuraste por un camino digital inexplorado. Nuestro mapa se extravío temporalmente, pero no te preocupes, nuestros ingenieros están trabajando para restablecer la señal. Mientras tanto, siéntete libre de regresar al punto de partida o explorar otras rutas digitales desde nuestra página de inicio. En la era de la información, cada clic es una oportunidad de descubrimiento. ¡Buena suerte en tu travesía!"
+            "action": {
+              "join": "Unirme"
+            },
+            "title": "Únete a una Aula",
+            "describe": "Únete a una aula para acceder al contenido y participar en actividades educativas.",
+            "form": {
+              "title": "Código de Aula",
+              "subtitle": "Ingresa el código de la clase proporcionado por tu profesor",
+              "placeholder": "Código de aula"
+            },
+            "info": {
+              "title": "Cómo unirse con un código válido",
+              "rules": {
+                "first": "Utiliza una cuenta autorizada",
+                "second": "Ingresa un código de clase de 5 o 7 letras o números, sin espacios ni símbolos"
+              },
+              "help": "Si tienes problemas para unirte a un aula, consulta con el profesor o visita nuestro Centro de Ayuda."
+            }
           };
         }
       });

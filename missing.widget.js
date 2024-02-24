@@ -1,7 +1,7 @@
-System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.0.4/page", "react@18.2.0", "@aimpact/chat@1.0.1/shared/components", "pragmate-ui@0.0.6/image", "pragmate-ui@0.0.6/alert", "@aimpact/chat@1.0.1/shared/hooks"], function (_export, _context) {
+System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.0.4/page", "react@18.2.0", "@aimpact/chat@1.0.1/shared/components", "pragmate-ui@0.0.6/image", "pragmate-ui@0.0.6/alert", "@aimpact/chat@1.0.1/shared/hooks", "@aimpact/ailearn-app@0.0.24/components/ui"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
   _export({
     Controller: void 0,
     View: void 0
@@ -25,6 +25,8 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       dependency_7 = _pragmateUi006Alert;
     }, function (_aimpactChat101SharedHooks) {
       dependency_8 = _aimpactChat101SharedHooks;
+    }, function (_aimpactAilearnApp0024ComponentsUi) {
+      dependency_9 = _aimpactAilearnApp0024ComponentsUi;
     }],
     execute: function () {
       bimport = specifier => {
@@ -36,27 +38,27 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.24/lost",
+          "vspecifier": "@aimpact/ailearn-app@0.0.24/missing",
           "multibundle": true
         },
         "type": "widget"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['react', dependency_4], ['@aimpact/chat/shared/components', dependency_5], ['pragmate-ui/image', dependency_6], ['pragmate-ui/alert', dependency_7], ['@aimpact/chat/shared/hooks', dependency_8]]);
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['react', dependency_4], ['@aimpact/chat/shared/components', dependency_5], ['pragmate-ui/image', dependency_6], ['pragmate-ui/alert', dependency_7], ['@aimpact/chat/shared/hooks', dependency_8], ['@aimpact/ailearn-app/components/ui', dependency_9]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
-        "name": "ailearn-sessions-access",
-        "vspecifier": "@aimpact/ailearn-app@0.0.24/lost.widget",
+        "name": "ailearn-missing",
+        "vspecifier": "@aimpact/ailearn-app@0.0.24/missing.widget",
         "is": "page",
-        "route": "/lost",
-        "layout": "chat-layout"
+        "route": "/not-found",
+        "layout": "general-layout"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.24/lost.widget');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.24/missing.widget');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller
       ****************************/
       ims.set('./controller', {
-        hash: 1803575294,
+        hash: 1999589969,
         creator: function (require, exports) {
           "use strict";
 
@@ -81,7 +83,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       *****************************/
 
       ims.set('./views/index', {
-        hash: 1161608119,
+        hash: 926412780,
         creator: function (require, exports) {
           "use strict";
 
@@ -94,16 +96,18 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
           var _image = require("pragmate-ui/image");
           var _alert = require("pragmate-ui/alert");
           var _hooks = require("@aimpact/chat/shared/hooks");
+          var _beyond_context = require("beyond_context");
+          var _ui = require("@aimpact/ailearn-app/components/ui");
           /*bundle*/
-          function View() {
-            const [textsReady, texts] = (0, _hooks.useTexts)(module.specifier);
+          function View({}) {
+            const [textsReady, texts] = (0, _hooks.useTexts)(_beyond_context.module.specifier);
             if (!textsReady) return _react.default.createElement(_components.PreloadScreen, null);
             const {
               title,
               subtitle,
               description
             } = texts;
-            return _react.default.createElement("article", {
+            return _react.default.createElement(_ui.PageContainer, {
               className: "container__error place-center"
             }, _react.default.createElement("div", {
               className: "container-top__error"
@@ -151,4 +155,4 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIldpZGdldCIsIlZpZXciLCJleHBvcnRzIiwiX3JlYWN0IiwiX2NvbXBvbmVudHMiLCJfaW1hZ2UiLCJfYWxlcnQiLCJfaG9va3MiLCJ0ZXh0c1JlYWR5IiwidGV4dHMiLCJ1c2VUZXh0cyIsIm1vZHVsZSIsInNwZWNpZmllciIsImRlZmF1bHQiLCJjcmVhdGVFbGVtZW50IiwiUHJlbG9hZFNjcmVlbiIsInRpdGxlIiwic3VidGl0bGUiLCJkZXNjcmlwdGlvbiIsImNsYXNzTmFtZSIsIkltYWdlIiwic3JjIiwiYWx0IiwiQWxlcnQiLCJ0eXBlIl0sInNvdXJjZXMiOlsiL3RzL2NvbnRyb2xsZXIudHMiLCIvdHMvdmlld3MvaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLEtBQUEsR0FBQUMsT0FBQTtVQUVBLElBQUFDLE1BQUEsR0FBQUQsT0FBQTtVQUVPO1VBQVUsTUFDWEUsVUFBVyxTQUFRSCxLQUFBLENBQUFJLHlCQUF5QjtZQUNqRCxJQUFJQyxNQUFNQSxDQUFBO2NBQ1QsT0FBT0gsTUFBQSxDQUFBSSxJQUFJO1lBQ1o7O1VBQ0FDLE9BQUEsQ0FBQUosVUFBQSxHQUFBQSxVQUFBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1RELElBQUFLLE1BQUEsR0FBQVAsT0FBQTtVQUNBLElBQUFRLFdBQUEsR0FBQVIsT0FBQTtVQUNBLElBQUFTLE1BQUEsR0FBQVQsT0FBQTtVQUNBLElBQUFVLE1BQUEsR0FBQVYsT0FBQTtVQUNBLElBQUFXLE1BQUEsR0FBQVgsT0FBQTtVQUVPO1VBQVUsU0FDUkssSUFBSUEsQ0FBQTtZQUNaLE1BQU0sQ0FBQ08sVUFBVSxFQUFFQyxLQUFLLENBQUMsR0FBbUMsSUFBQUYsTUFBQSxDQUFBRyxRQUFRLEVBQUNDLE1BQU0sQ0FBQ0MsU0FBUyxDQUFDO1lBRXRGLElBQUksQ0FBQ0osVUFBVSxFQUFFLE9BQU9MLE1BQUEsQ0FBQVUsT0FBQSxDQUFBQyxhQUFBLENBQUNWLFdBQUEsQ0FBQVcsYUFBYSxPQUFHO1lBRXpDLE1BQU07Y0FBRUMsS0FBSztjQUFFQyxRQUFRO2NBQUVDO1lBQVcsQ0FBRSxHQUFHVCxLQUFLO1lBRTlDLE9BQ0NOLE1BQUEsQ0FBQVUsT0FBQSxDQUFBQyxhQUFBO2NBQVNLLFNBQVMsRUFBQztZQUErQixHQUNqRGhCLE1BQUEsQ0FBQVUsT0FBQSxDQUFBQyxhQUFBO2NBQUtLLFNBQVMsRUFBQztZQUFzQixHQUNwQ2hCLE1BQUEsQ0FBQVUsT0FBQSxDQUFBQyxhQUFBO2NBQUtLLFNBQVMsRUFBQztZQUFpQixHQUMvQmhCLE1BQUEsQ0FBQVUsT0FBQSxDQUFBQyxhQUFBO2NBQUlLLFNBQVMsRUFBQztZQUFVLEdBQUVILEtBQUssQ0FBTSxFQUNyQ2IsTUFBQSxDQUFBVSxPQUFBLENBQUFDLGFBQUE7Y0FBTUssU0FBUyxFQUFDO1lBQUksR0FBRUYsUUFBUSxDQUFRLENBQ2pDLEVBQ05kLE1BQUEsQ0FBQVUsT0FBQSxDQUFBQyxhQUFBLENBQUNULE1BQUEsQ0FBQWUsS0FBSztjQUNMQyxHQUFHLEVBQUMsb0dBQW9HO2NBQ3hHQyxHQUFHLEVBQUM7WUFBYyxFQUNqQixDQUNHLEVBQ05uQixNQUFBLENBQUFVLE9BQUEsQ0FBQUMsYUFBQTtjQUFLSyxTQUFTLEVBQUM7WUFBc0IsR0FDcENoQixNQUFBLENBQUFVLE9BQUEsQ0FBQUMsYUFBQSxDQUFDUixNQUFBLENBQUFpQixLQUFLO2NBQUNDLElBQUksRUFBQztZQUFNLEdBQUVOLFdBQVcsQ0FBUyxDQUNuQyxDQUNHO1VBRVoifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIldpZGdldCIsIlZpZXciLCJleHBvcnRzIiwiX3JlYWN0IiwiX2NvbXBvbmVudHMiLCJfaW1hZ2UiLCJfYWxlcnQiLCJfaG9va3MiLCJfYmV5b25kX2NvbnRleHQiLCJfdWkiLCJ0ZXh0c1JlYWR5IiwidGV4dHMiLCJ1c2VUZXh0cyIsIm1vZHVsZSIsInNwZWNpZmllciIsImRlZmF1bHQiLCJjcmVhdGVFbGVtZW50IiwiUHJlbG9hZFNjcmVlbiIsInRpdGxlIiwic3VidGl0bGUiLCJkZXNjcmlwdGlvbiIsIlBhZ2VDb250YWluZXIiLCJjbGFzc05hbWUiLCJJbWFnZSIsInNyYyIsImFsdCIsIkFsZXJ0IiwidHlwZSJdLCJzb3VyY2VzIjpbIi90cy9jb250cm9sbGVyLnRzIiwiL3RzL3ZpZXdzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLEtBQUEsR0FBQUMsT0FBQTtVQUNBLElBQUFDLE1BQUEsR0FBQUQsT0FBQTtVQUVPO1VBQVUsTUFDWEUsVUFBVyxTQUFRSCxLQUFBLENBQUFJLHlCQUF5QjtZQUNqRCxJQUFJQyxNQUFNQSxDQUFBO2NBQ1QsT0FBT0gsTUFBQSxDQUFBSSxJQUFJO1lBQ1o7O1VBQ0FDLE9BQUEsQ0FBQUosVUFBQSxHQUFBQSxVQUFBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JELElBQUFLLE1BQUEsR0FBQVAsT0FBQTtVQUNBLElBQUFRLFdBQUEsR0FBQVIsT0FBQTtVQUNBLElBQUFTLE1BQUEsR0FBQVQsT0FBQTtVQUNBLElBQUFVLE1BQUEsR0FBQVYsT0FBQTtVQUNBLElBQUFXLE1BQUEsR0FBQVgsT0FBQTtVQUNBLElBQUFZLGVBQUEsR0FBQVosT0FBQTtVQUNBLElBQUFhLEdBQUEsR0FBQWIsT0FBQTtVQUVPO1VBQVUsU0FDUkssSUFBSUEsQ0FBQyxFQUFFO1lBQ2YsTUFBTSxDQUFDUyxVQUFVLEVBQUVDLEtBQUssQ0FBQyxHQUFtQyxJQUFBSixNQUFBLENBQUFLLFFBQVEsRUFBQ0osZUFBQSxDQUFBSyxNQUFNLENBQUNDLFNBQVMsQ0FBQztZQUV0RixJQUFJLENBQUNKLFVBQVUsRUFBRSxPQUFPUCxNQUFBLENBQUFZLE9BQUEsQ0FBQUMsYUFBQSxDQUFDWixXQUFBLENBQUFhLGFBQWEsT0FBRztZQUV6QyxNQUFNO2NBQUVDLEtBQUs7Y0FBRUMsUUFBUTtjQUFFQztZQUFXLENBQUUsR0FBR1QsS0FBSztZQUU5QyxPQUNDUixNQUFBLENBQUFZLE9BQUEsQ0FBQUMsYUFBQSxDQUFDUCxHQUFBLENBQUFZLGFBQWE7Y0FBQ0MsU0FBUyxFQUFDO1lBQStCLEdBQ3ZEbkIsTUFBQSxDQUFBWSxPQUFBLENBQUFDLGFBQUE7Y0FBS00sU0FBUyxFQUFDO1lBQXNCLEdBQ3BDbkIsTUFBQSxDQUFBWSxPQUFBLENBQUFDLGFBQUE7Y0FBS00sU0FBUyxFQUFDO1lBQWlCLEdBQy9CbkIsTUFBQSxDQUFBWSxPQUFBLENBQUFDLGFBQUE7Y0FBSU0sU0FBUyxFQUFDO1lBQVUsR0FBRUosS0FBSyxDQUFNLEVBQ3JDZixNQUFBLENBQUFZLE9BQUEsQ0FBQUMsYUFBQTtjQUFNTSxTQUFTLEVBQUM7WUFBSSxHQUFFSCxRQUFRLENBQVEsQ0FDakMsRUFDTmhCLE1BQUEsQ0FBQVksT0FBQSxDQUFBQyxhQUFBLENBQUNYLE1BQUEsQ0FBQWtCLEtBQUs7Y0FDTEMsR0FBRyxFQUFDLG9HQUFvRztjQUN4R0MsR0FBRyxFQUFDO1lBQWMsRUFDakIsQ0FDRyxFQUNOdEIsTUFBQSxDQUFBWSxPQUFBLENBQUFDLGFBQUE7Y0FBS00sU0FBUyxFQUFDO1lBQXNCLEdBQ3BDbkIsTUFBQSxDQUFBWSxPQUFBLENBQUFDLGFBQUEsQ0FBQ1YsTUFBQSxDQUFBb0IsS0FBSztjQUFDQyxJQUFJLEVBQUM7WUFBTSxHQUFFUCxXQUFXLENBQVMsQ0FDbkMsQ0FDUztVQUVsQiJ9

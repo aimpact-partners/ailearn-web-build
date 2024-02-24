@@ -29,17 +29,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1770793948,
+        hash: 3392342466,
         creator: function (require, exports) {
           exports.txt = {
             "welcome": "Bienvenido a AI-Learn",
             "shared": "ha sido compartida contigo.",
             "action": "Comienza la clase",
-            "save": "Guarda tus la clase y empezá a aprender.",
-            "accessed": "Ingresa a los chats de tu clase y continua aprendiendo",
+            "save": "Guarda tus aulas y empezá a aprender.",
+            "accessed": "Ingresa a los chats de tu aula y continua aprendiendo",
             "empty": {
               "welcome": "Oops!",
-              "info": "No se encontró la clase.",
+              "info": "No se encontró la aula.",
               "action": "Revisa que el link se haya copiado correctamente."
             }
           };

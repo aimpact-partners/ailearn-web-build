@@ -29,10 +29,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1524541323,
+        hash: 1680850359,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
+              "add": "Agregar",
+              "approve": "Autorizar",
+              "reject": "Rechazar",
+              "invite": "Invitar",
+              "copy": "Copiar en el portapapeles",
               "create": "Crear",
               "activities": "Generar actividades",
               "refine": "Refinar",
@@ -40,7 +45,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "save": "Guardar",
               "clean": "Limpiar",
               "activity": "Actividades",
-              "update": "Subir Documento",
+              "upload": "Subir",
               "edit": "Editar",
               "delete": "Eliminar",
               "cancel": "Cancelar",
@@ -48,20 +53,51 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "back": "Atrás"
             },
             "ERR_GENERATING_ACTIVITIES": "Error generando classes",
-            "title": "Crea una Clase de Aprendizaje",
+            "classCode": "Código de Aula",
+            "title": "Crea una Aula",
             "postTitle": "Selecciona los aspectos que debe tener el contenido a generar en el siguiente formulariona los aspectos que debe tener el contenido a generar en el siguiente formulario",
-            "class": "Objetivo Clase de Aprendizaje",
+            "class": "Objetivo Aula de Aprendizaje",
             "empty": {
-              "title": "Classroom No Encontrado",
-              "description": "¡Ups! No se encontró el classroom. Existe la posibilidad de que estés utilizando un enlace antiguo o buscando un classroom inexistente. Te invitamos a crear uno nuevo y continuar explorando este increíble mundo de enseñanza y aprendizaje. ¡Embárcate en una nueva travesía educativa con nosotros! 🌟"
+              "title": "Aula no Encontrada",
+              "pending": "Excelente, ya no tiene asuntos pendientes que resolver. Todas las invitaciones se han resuelto.",
+              "description": "¡Ups! No se encontró el aula. Existe la posibilidad de que estés utilizando un enlace antiguo o buscando un aula inexistente. Te invitamos a crear una nueva y continuar explorando este increíble mundo de enseñanza y aprendizaje. ¡Embárcate en una nueva travesía educativa con nosotros! 🌟",
+              "labelList": "Suma usuarios en esta lista dándole click al botón de %action"
             },
-            "form": {
-              "classroom": "¿Cuál es la misión de esta clase?",
-              "target": "¿Cómo te gustaría darle estilo a esta clase?"
+            "placeholder": {
+              "name": "¿Cómo se llamará el aula?",
+              "description": "¿Cuál es la misión de esta aula?"
             },
             "labels": {
-              "name": "Nombre de la Clase",
-              "description": "Descripción de la Clase"
+              "name": "Nombre",
+              "description": "Descripción"
+            },
+            "list": {
+              "teachers": {
+                "title": "Docentes",
+                "single": "Docente"
+              },
+              "students": {
+                "title": "Alumnos",
+                "single": "Alumno"
+              },
+              "pending": {
+                "title": "Pendientes",
+                "single": ""
+              }
+            },
+            "modal": {
+              "edit": {
+                "title": "¿Deseas cambiar el rol del usuario?",
+                "info": "Recuerda que cambiar el rol también modifica el acceso y las acciones del usuario dentro del aula."
+              },
+              "invite": {
+                "title": "Invitar un usuario como %role"
+              }
+            },
+            "system": {
+              "invite": {
+                "success": "Invitación enviada"
+              }
             }
           };
         }

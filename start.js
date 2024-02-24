@@ -247,6 +247,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "name": "ailearn-gclassroom-explorer",
         "vspecifier": "@aimpact/ailearn-app@0.0.24/gclassroom-explorer.widget"
       }, {
+        "name": "ailearn-classroom-join",
+        "vspecifier": "@aimpact/ailearn-app@0.0.24/classrooms/join.widget",
+        "is": "page",
+        "route": "/classrooms/join",
+        "layout": "general-layout"
+      }, {
         "name": "ailearn-classroom-list",
         "vspecifier": "@aimpact/ailearn-app@0.0.24/classrooms/list.widget",
         "is": "page",
@@ -258,12 +264,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "page",
         "route": "/classroom/management/${id}",
         "layout": "general-layout"
-      }, {
-        "name": "ailearn-sessions-access",
-        "vspecifier": "@aimpact/ailearn-app@0.0.24/lost.widget",
-        "is": "page",
-        "route": "/lost",
-        "layout": "chat-layout"
       }, {
         "name": "ailearn-modules-list",
         "vspecifier": "@aimpact/ailearn-app@0.0.24/modules/list.widget",
@@ -281,6 +281,24 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/modules/management",
         "layout": "general-layout"
       }, {
+        "name": "ailearn-organization-join",
+        "vspecifier": "@aimpact/ailearn-app@0.0.24/organizations/join.widget",
+        "is": "page",
+        "route": "/organizations/join",
+        "layout": "general-layout"
+      }, {
+        "name": "ailearn-organizations-list",
+        "vspecifier": "@aimpact/ailearn-app@0.0.24/organizations/list.widget",
+        "is": "page",
+        "route": "/organizations/list",
+        "layout": "general-layout"
+      }, {
+        "name": "app-organization-management",
+        "vspecifier": "@aimpact/ailearn-app@0.0.24/organization/management.widget",
+        "is": "page",
+        "route": "/organization/management/${id}",
+        "layout": "general-layout"
+      }, {
         "name": "ailearn-user-profile",
         "vspecifier": "@aimpact/ailearn-app@0.0.24/user/profile.widget"
       }, {
@@ -292,6 +310,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.24/home.widget",
         "is": "page",
         "route": "/home",
+        "layout": "general-layout"
+      }, {
+        "name": "ailearn-missing",
+        "vspecifier": "@aimpact/ailearn-app@0.0.24/missing.widget",
+        "is": "page",
+        "route": "/not-found",
         "layout": "general-layout"
       }, {
         "name": "ailearn-template-tipography",
@@ -381,7 +405,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ************************/
 
         ims.set('./router', {
-          hash: 1377662046,
+          hash: 1391861491,
           creator: function (require, exports) {
             "use strict";
 
@@ -435,7 +459,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *************************/
 
         ims.set('./routing', {
-          hash: 153260853,
+          hash: 19167772,
           creator: function (require, exports) {
             "use strict";
 
@@ -447,6 +471,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             _routing.routing.redirect = async function redirect(uri) {
               const response = await router.validate(uri.pathname);
               return response.pathname;
+            };
+            _routing.routing.missing = async function redirect() {
+              return '/not-found';
             };
           }
         });

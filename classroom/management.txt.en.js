@@ -29,10 +29,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3758151281,
+        hash: 1876353531,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
+              "add": "Add",
+              "approve": "Approve",
+              "reject": "Reject",
+              "invite": "Invite",
+              "copy": "Copy to clipboard",
               "create": "Create",
               "activities": "Generate activities",
               "refine": "Refine",
@@ -42,26 +47,57 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "delete": "Delete",
               "clean": "Clean",
               "activity": "Activities",
-              "update": "Upload Document",
+              "upload": "Upload",
               "next": "Next",
               "back": "Back",
               "cancel": "Cancel"
             },
             "ERR_GENERATING_ACTIVITIES": "Error generating classes",
-            "title": "Create a Learning Class",
+            "classCode": "Classroom Code",
+            "title": "Create a Classroom",
             "postTitle": "Select the aspects that the content to be generated in the following form must have",
-            "class": "Learning Class Objective",
+            "class": "Learning Classroom Objective",
             "empty": {
               "title": "Classroom Not Found",
+              "pending": "Excellent, you no longer have any outstanding issues to resolve. All invitations have been resolved.",
+              "labelList": "Add users to this list by clicking the %action button.",
               "description": "Oops! The classroom was not found. There's a possibility you're using an outdated link or searching for a non-existent classroom. We invite you to create a new one and continue exploring this incredible world of teaching and learning. Let's embark on a new educational journey together! 🌟"
             },
-            "form": {
-              "classroom": "What's the mission of this class?",
-              "target": "How would you like to brand this class?"
+            "placeholder": {
+              "name": "What will be the name of the classroom?",
+              "description": "What's the mission of this classroom?"
             },
             "labels": {
-              "name": "Class Name",
-              "description": "Class Description"
+              "name": "Name",
+              "description": "Description"
+            },
+            "list": {
+              "teachers": {
+                "title": "Teachers",
+                "single": "Teacher"
+              },
+              "students": {
+                "title": "Students",
+                "single": "Student"
+              },
+              "pending": {
+                "title": "Pending",
+                "single": ""
+              }
+            },
+            "modal": {
+              "edit": {
+                "title": "Would you like to change the user role ?",
+                "info": "Remember that changing the role also modifies the user's access and actions inside the classroom."
+              },
+              "invite": {
+                "title": "Invite a user as %role"
+              }
+            },
+            "system": {
+              "invite": {
+                "success": "Invitation sent"
+              }
             }
           };
         }

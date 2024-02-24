@@ -29,10 +29,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3442634721,
+        hash: 3679134386,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
+              "join": "Unirse",
               "create": "Crear",
               "activities": "Generar actividades",
               "refine": "Refinar",
@@ -52,12 +53,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "import": "Importar"
             },
             "welcome": {
-              "message": "Bienvenido %name a tu lista de clases",
-              "actionInfo": "Aquí podrás ver y gestionar todas las clases que tienes actualmente. Tendrás acceso a diversas acciones, incluyendo la creación, eliminación y edición de clases. Aprovecha estas herramientas para personalizar cada clase de acuerdo a tus requerimientos."
+              "message": "Bienvenido %name a tu lista de aulas",
+              "actionInfo": "Aquí podrás ver y gestionar todas las aulas que tienes actualmente. Tendrás acceso a diversas acciones, incluyendo la creación, eliminación y edición de aulas. Aprovecha estas herramientas para personalizar cada clase de acuerdo a tus requerimientos."
             },
-            "title": "Mis Clases",
-            "subtitle": "Explora, ajusta y gestiona tus clases según tus necesidades",
-            "extraInfo": "¿Listo para compartir tus clases? Vincula tu cuenta de Google Classroom para habilitar esta función y agregarla a tus opciones. 📚",
+            "title": "Mis Aulas",
+            "subtitle": "Explora, ajusta y gestiona tus aulas según tus necesidades",
+            "extraInfo": "¿Listo para compartir tus aulas? Vincula tu cuenta de Google Classroom para habilitar esta función y agregarla a tus opciones. 📚",
             "import": {
               "title": "Importar classes desde Google"
             },
@@ -65,10 +66,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "ERROR_GETTING_URL": "Error obteniendo url"
             },
             "empty": {
-              "title": "Crea tu Primer Curso",
-              "titleImport": "Actualmente no tiene clases",
+              "title": "Crea tu primera aula",
+              "titleImport": "Actualmente no tiene aulas",
               "labelImport": "No hay elementos que mostrar",
-              "description": "Inicia tu travesía educativa dando vida a tu primer curso. Libera tu creatividad, da forma a un contenido atractivo y disfruta de la gratificante experiencia de enseñar a otros. 🚀"
+              "description": "Inicia tu travesía educativa dando vida a tu primer aula. Libera tu creatividad, da forma a un contenido atractivo y disfruta de la gratificante experiencia de enseñar a otros. 🚀"
             }
           };
         }

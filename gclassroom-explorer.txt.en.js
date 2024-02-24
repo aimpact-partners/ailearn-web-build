@@ -29,10 +29,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4046701373,
+        hash: 620171615,
         creator: function (require, exports) {
           exports.txt = {
-            "title": "Classes",
+            "title": "Classrooms",
             "unauthorized": {
               "text": "You need to give access to Google Classroom to see this section. Please, click the button below to give access.",
               "action": "Give access"
