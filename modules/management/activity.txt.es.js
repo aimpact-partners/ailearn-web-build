@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3097033194,
+        hash: 3633086228,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -113,6 +113,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "labels": {
                 "correct": "Respuesta correcta",
                 "mark": "Marcar como correcta"
+              },
+              "related": {
+                "label": "Actividad relacionada",
+                "independent": "Independiente"
               }
             },
             "processMessages": ["Evaluando la demografía de la audiencia...", "Estimando la duración óptima de la clase...", "Seleccionando actividades de aprendizaje potenciales...", "Determinando el propósito de cada actividad...", "Secuenciando actividades para un máximo compromiso...", "Adaptando el contenido a los objetivos de aprendizaje...", "Ajustando los niveles de dificultad para la competencia de la audiencia...", "Finalizando elementos interactivos para el aprendizaje activo...", "Creando estrategias de evaluación para la retención de conocimientos...", "Optimizando el flujo de contenido para una experiencia de aprendizaje sin problemas...", "Preparando los toques finales en el diseño educativo...", "Generación de contenido de microaprendizaje personalizado completo."],
