@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3996010105,
+        hash: 556056450,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -85,14 +85,27 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "manual": {
               "textarea": "Add the content of the activity",
-              "cancel": "Are you sure you want to cancel?"
+              "cancel": "Are you sure you want to cancel?",
+              "synthesis": {
+                "textarea": "Add your synthesis here"
+              },
+              "content": {
+                "textarea": "Add the content of the activity"
+              },
+              "article": {
+                "textarea": "Add the content of the activity"
+              },
+              "dyslexia": {
+                "textarea": "Add your content here"
+              }
             },
             "materials": {
               "article": "Content",
               "content": "Content",
               "synthesis": "Synthesis",
               "dyslexia": "Dyslexia",
-              "introduction": "introduction"
+              "introduction": "introduction",
+              "audio": "Audio"
             },
             "refine": {
               "title": "Enhance Content Quality",
@@ -129,7 +142,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Add the instructions of the activity"
               },
               "task": {
-                "label": "Task",
+                "label": "Task requested to the student",
                 "placeholder": "Add the task of the activity"
               },
               "criteria": {
@@ -151,6 +164,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "questions": {
                 "title": "Questions"
+              },
+              "assessment": {
+                "label": "Instructions",
+                "placeholder": "Add the instructions of the activity"
               }
             },
             "bulletPoint": {

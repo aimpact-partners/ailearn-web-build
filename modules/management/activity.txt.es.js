@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3633086228,
+        hash: 2821828566,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -84,14 +84,27 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "manual": {
               "textarea": "Agrega el contenido de la actividad",
-              "cancel": "¿Estás seguro que quieres cancelar?"
+              "cancel": "¿Estás seguro de que quieres cancelar?",
+              "article": {
+                "textarea": "Añade el contenido de la actividad"
+              },
+              "content": {
+                "textarea": "Añade el contenido de la actividad"
+              },
+              "synthesis": {
+                "textarea": "Añade tu síntesis aquí"
+              },
+              "dyslexia": {
+                "textarea": "Añade tu contenido aquí"
+              }
             },
             "materials": {
               "article": "Artículo",
               "content": "Contenido",
               "synthesis": "Síntesis",
               "dyslexia": "Dislexia",
-              "introduction": "introducción"
+              "introduction": "introducción",
+              "audio": "Audio"
             },
             "refine": {
               "title": "Mejorar la calidad del contenido",
@@ -138,7 +151,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Agrega las instrucciones de la actividad"
               },
               "task": {
-                "label": "Tarea",
+                "label": "Tarea solicitada al alumno",
                 "placeholder": "Agrega la tarea de la actividad"
               },
               "criteria": {
@@ -160,6 +173,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "questions": {
                 "title": "Questions"
+              },
+              "assess": {
+                "label": "Instrucciones",
+                "placeholder": "Agrega las instrucciones de la actividad"
+              },
+              "assessment": {
+                "label": "Forma de evaluación",
+                "placeholder": "Agrega las instrucciones de la actividad"
               }
             },
             "bulletPoint": {
