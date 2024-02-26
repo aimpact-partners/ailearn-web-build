@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3710777235,
+        hash: 1093610989,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -125,7 +125,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "grades": {
                 "label": "Año escolar",
-                "error": "Por favor seleccione un nivel de grado"
+                "error": "Por favor seleccione un nivel de grado",
+                "select": "Seleccionar año escolar"
               },
               "schools": {
                 "label": "Administrador",
