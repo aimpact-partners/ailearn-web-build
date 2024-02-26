@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 556056450,
+        hash: 200823893,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -105,7 +105,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "synthesis": "Synthesis",
               "dyslexia": "Dyslexia",
               "introduction": "introduction",
-              "audio": "Audio"
+              "audio": "Audio",
+              "audios": "Audios"
             },
             "refine": {
               "title": "Enhance Content Quality",
@@ -152,7 +153,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "subject": {
                 "label": "Subject",
-                "placeholder": "Add the subject of the criteria"
+                "placeholder": "Add the subject"
               },
               "character": {
                 "label": "Character",
@@ -168,6 +169,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "assessment": {
                 "label": "Instructions",
                 "placeholder": "Add the instructions of the activity"
+              },
+              "debateSubject": {
+                "label": "Subject",
+                "placeholder": "Add the subject"
+              },
+              "subjectDebate": {
+                "label": "Subject",
+                "placeholder": "Add the subject"
               }
             },
             "bulletPoint": {
@@ -195,6 +204,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "related": {
                 "label": "Related activity",
                 "independent": "Independent"
+              }
+            },
+            "picture": {
+              "title": "Generate the best image for your module",
+              "description": "This tool will help you generate the best image for your module. You can upload an image and we will generate the best image for your module. You can also use the image editor to edit the image and generate the best image for your module.",
+              "notes": {
+                "label": "Notes",
+                "placeholder": "Share your suggestions to create the best image for your module"
+              },
+              "confirm": {
+                "title": "Do you want to replace the current image?",
+                "subtitle": "If you confirm, the current image will be replaced."
               }
             }
           };

@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2821828566,
+        hash: 2783305551,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -104,7 +104,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "synthesis": "Síntesis",
               "dyslexia": "Dislexia",
               "introduction": "introducción",
-              "audio": "Audio"
+              "audio": "Audio",
+              "audios": "Audios"
             },
             "refine": {
               "title": "Mejorar la calidad del contenido",
@@ -181,6 +182,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "assessment": {
                 "label": "Forma de evaluación",
                 "placeholder": "Agrega las instrucciones de la actividad"
+              },
+              "subjectDebate": {
+                "label": "Moción del debate",
+                "placeholder": "Add the subject"
               }
             },
             "bulletPoint": {
@@ -199,6 +204,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "spoken/written": "Hablado/Escrito",
               "spoken": "Hablado",
               "written": "Escrito"
+            },
+            "picture": {
+              "title": "Genera la mejor imagen para tu módulo",
+              "description": "Esta herramienta te ayudará a generar la mejor imagen para tu módulo. Puedes subir una imagen y nosotros generaremos la mejor imagen para tu módulo. También puedes usar el editor de imágenes para editar la imagen y generar la mejor imagen para tu módulo.",
+              "notes": {
+                "label": "Notas",
+                "placeholder": "Comparte tus sugerencias para crear la mejor imagen para tu módulo"
+              },
+              "confirm": {
+                "title": "¿Quieres reemplazar la imagen actual?",
+                "subtitle": "Si confirmas, la imagen actual será reemplazada."
+              }
             }
           };
         }

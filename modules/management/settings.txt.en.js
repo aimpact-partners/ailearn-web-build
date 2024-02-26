@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3123289571,
+        hash: 325919846,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -133,7 +133,24 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "processMessages": ["Evaluating audience demographics...", "Estimating optimal class duration...", "Selecting potential learning activities...", "Determining the purpose of each activity...", "Sequencing activities for maximum engagement...", "Tailoring content to learning objectives...", "Adjusting difficulty levels for audience proficiency...", "Finalizing interactive elements for active learning...", "Crafting assessment strategies for knowledge retention...", "Optimizing content flow for seamless learning experience...", "Preparing final touches on educational design...", "Generation of personalized microlearning content complete."],
             "title": "Create a Learning Module",
             "postTitle": "Select the aspects that the content to be generated in the following form must have",
-            "empty": "View your custom-created content here, tailored by our assistant based on your form inputs"
+            "empty": "View your custom-created content here, tailored by our assistant based on your form inputs",
+            "description": "This tool will help you generate the best image for your module. You can upload an image and we will generate the best image for your module. You can also use the image editor to edit the image and generate the best image for your module.",
+            "notes": {
+              "label": "Notes",
+              "placeholder": "Share your suggestions to create the best image for your module"
+            },
+            "picture": {
+              "title": "Generate the best image for your module",
+              "description": "This tool will help you generate the best image for your module. You can upload an image and we will generate the best image for your module. You can also use the image editor to edit the image and generate the best image for your module.",
+              "notes": {
+                "label": "Notes",
+                "placeholder": "Share your suggestions to create the best image for your module"
+              },
+              "confirm": {
+                "title": "Do you want to replace the current image?",
+                "subtitle": "If you confirm, the current image will be replaced."
+              }
+            }
           };
         }
       });

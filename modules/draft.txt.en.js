@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 287006557,
+        hash: 4184437628,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -56,6 +56,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "upload": "Upload Image"
             },
             "grades": {
+              "7": "Year 7",
+              "8": "Year 8",
+              "9": "Year 9",
+              "10": "Year 10",
+              "11": "Year 11",
+              "12": "Year 12",
               "year-7": "Year 7",
               "year-8": "Year 8",
               "year-9": "Year 9",
