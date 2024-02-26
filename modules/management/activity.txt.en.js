@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1140163441,
+        hash: 2934348914,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -102,7 +102,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "article": "Content",
               "content": "Content",
               "synthesis": "Synthesis",
-              "dyslexia": "Dyslexia",
+              "dyslexia": "Adaptations",
               "introduction": "introduction",
               "audios": "Audios"
             },
@@ -207,7 +207,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "spoken/written": "Spoken/Written",
               "spoken": "Spoken",
               "written": "Written"
-            }
+            },
+            "generatingImage": ["Starting image generation for the module activity...", "Integrating activity parameters to customize the image...", "Selecting iconography and colors based on the activity content...", "Developing visual schemes to facilitate the understanding of the topic...", "Adapting the visual complexity to the educational level of the module...", "Enriching the image with interactive elements for the activity...", "Harmonizing the image with the module's design scheme...", "Making fine adjustments to the image composition...", "Verifying the alignment of the image with the learning objectives...", "Activity image successfully generated and ready for use."]
           };
         }
       });

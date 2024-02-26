@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3841652555,
+        hash: 3998977765,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -145,7 +145,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Do you want to replace the current image?",
                 "subtitle": "If you confirm, the current image will be replaced."
               }
-            }
+            },
+            "generatingImage": ["Receiving text for image generation...", "Analyzing educational module context...", "Selecting visual elements according to school year...", "Composing preliminary sketches based on text...", "Adjusting graphic details and visual style...", "Incorporating pedagogical criteria in the image...", "Optimizing the image for better educational retention...", "Finalizing image rendering...", "Reviewing quality and coherence with the module...", "Image successfully generated and ready for integration into the module."]
           };
         }
       });

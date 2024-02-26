@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4644120,
+        hash: 3710777235,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -77,11 +77,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "generatingDraft": ["Identificando las mejores actividades para el objetivo del módulo...", "Analizando la audiencia para adecuar las actividades educativas...", "Estimando la duración óptima de cada actividad del módulo...", "Seleccionando tipos de actividades para promover un aprendizaje dinámico...", "Creando objetivos individuales para cada actividad propuesta...", "Integrando actividades que fomenten la interacción y el debate...", "Diseñando tareas que refuercen el conocimiento teórico y práctico...", "Incorporando ejercicios para el análisis crítico de la información...", "Estableciendo actividades para desarrollar habilidades de investigación...", "Elaborando dinámicas que estimulen la reflexión sobre problemáticas actuales...", "Ajustando actividades para cubrir diferentes estilos de aprendizaje...", "Configurando evaluaciones formativas para medir el progreso...", "Incluyendo recursos interactivos para complementar la enseñanza...", "Finalizando la selección de actividades que aseguren el cumplimiento de los objetivos...", "Compilando el borrador final del módulo con todas las actividades diseñadas..."],
             "objectiveSuggestions": ["Evaluando las directrices educativas actuales...", "Adaptando sugerencias a los estándares del ministerio de educación...", "Incorporando mejores prácticas pedagógicas...", "Personalizando contenido para un aprendizaje integral...", "Optimizando sugerencias para competencias del siglo XXI...", "Integrando habilidades críticas y análisis reflexivo...", "Alineando objetivos con expectativas educativas nacionales...", "Enriqueciendo el módulo con enfoques interdisciplinarios...", "Fortaleciendo la propuesta con valores y ética educativa...", "Finalizando ajustes para un aprendizaje significativo y actualizado..."],
             "moduleSuggestion": {
-              "title": "¡Innovemos la Educación!",
-              "description": "Diseña tu módulo de aprendizaje y sus actividades con la IA como tu co-creador. Emprende un viaje educativo donde la tecnología se encuentra con la creatividad.",
+              "title": "Avancemos",
+              "description": "Diseñemos las actividades del módulo.",
               "buttons": {
-                "inspiration": "Enciende la Inspiración",
-                "manual": "Diseñar Manualmente"
+                "inspiration": "Diseño asistido con IA",
+                "manual": "Diseño manual"
               }
             },
             "suggestions": {
@@ -100,9 +100,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "company": "Empresa"
             },
             "moduleLength": {
-              "brief": "Breve",
-              "standard": "Estándar",
-              "extended": "Extendido"
+              "brief": "Breve (3 actividades)",
+              "standard": "Estándar (5 actividades)",
+              "extended": "Extendido (7 actividades)"
             },
             "form": {
               "audience": "¿Para quién es este módulo?",
@@ -120,27 +120,50 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "save": "Objetivo guardado con éxito"
               },
               "introduction": {
-                "title": "Construyamos juntos un nuevo módulo de aprendizaje",
-                "subtitle": "Seleccione las características que querés darle al módulo"
+                "title": "Construyamos un nuevo módulo de aprendizaje",
+                "subtitle": "Selecciona las características que querés darle al módulo"
               },
               "grades": {
-                "label": "Nivel de grado",
+                "label": "Año escolar",
                 "error": "Por favor seleccione un nivel de grado"
               },
               "schools": {
-                "label": "Propiedad",
-                "select": "Seleccionar propiedad",
+                "label": "Administrador",
+                "select": "Seleccionar administrador",
                 "account": "Cuenta actual",
-                "error": "Necesita especificar la propiedad del módulo de aprendizaje"
+                "error": "Necesita especificar el administrador del módulo de aprendizaje"
               },
               "objective": {
                 "title": "Tema u objetivo",
-                "textArea": "Escribe el objetivo de tu módulo aquí",
+                "textArea": "¿Qué quieres que tus alumnos aprendan en este módulo? ",
                 "description": "Define el principal resultado de aprendizaje de tu módulo."
               },
               "suggestions": "Si lo deseas, selecciona una de las siguientes opciones de mejora y se llevará a cabo una refinación del objetivo definido.",
               "forWhom": "Identifica para quién está diseñado el módulo para adaptar el contenido adecuadamente. Opciones: Escuela, Universidad, Empresa.",
-              "howLong": "Selecciona la duración aproximada del módulo. Opciones: Breve (una visión general rápida), Estándar (exploración en profundidad), Extendido (cobertura completa)."
+              "howLong": "Selecciona la duración aproximada del módulo. Opciones: Breve (una visión general rápida), Estándar (exploración en profundidad), Extendido (cobertura completa).",
+              "generatingModule": ["Iniciando diseño asistido por IA para el módulo de aprendizaje...", "Analizando el año escolar especificado y la duración del módulo...", "Recopilando estándares educativos para el año escolar seleccionado...", "Consultando bases de datos curriculares para actividades apropiadas para la edad...", "Aplicando creatividad IA para el borrador inicial de actividades de aprendizaje...", "Refinando actividades basadas en las mejores prácticas pedagógicas...", "Integrando elementos interactivos adaptados a la duración del módulo...", "Optimizando el flujo del módulo de aprendizaje para el compromiso del estudiante...", "Realizando revisiones finales en la coherencia y consistencia del módulo...", "Módulo de aprendizaje y actividades generadas con éxito por asistencia de IA."],
+              "moduleSuggestion": {
+                "title": "Avancemos",
+                "description": "Diseñemos las actividades del módulo.",
+                "buttons": {
+                  "inspiration": "Diseño asistido con IA",
+                  "manual": "Diseño manual"
+                }
+              },
+              "modalSuggestions": {
+                "title": "Avancemos",
+                "description": "Diseñemos las actividades del módulo.",
+                "buttons": {
+                  "inspiration": "Diseño asistido con IA",
+                  "manual": "Diseño manual"
+                }
+              }
+            },
+            "modules": "Módulos",
+            "Management": "Gestión",
+            "breadcrumb": {
+              "modules": "Módulos",
+              "management": "Gestión"
             }
           };
         }
