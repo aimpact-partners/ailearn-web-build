@@ -29,9 +29,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 662917249,
+        hash: 2692647636,
         creator: function (require, exports) {
           exports.txt = {
+            "breadcrumb": {
+              "modules": "Módulos",
+              "management": "Gestión",
+              "assignment": "Asignaciones",
+              "chat": "Chat"
+            },
             "welcome": "Soy Max tu asistente de aprendizaje para esta leccion. Hoy vamos a trabajar sobre la novela 'An Inspectors Calls' para eso te invitamos a realizar las siguientes actividades.",
             "title": "Trabajos de la clase",
             "search": "Buscar trabajo de clase",

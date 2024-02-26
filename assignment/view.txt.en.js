@@ -29,9 +29,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1437588702,
+        hash: 1968657032,
         creator: function (require, exports) {
           exports.txt = {
+            "breadcrumb": {
+              "modules": "Modules",
+              "management": "Management",
+              "assignment": "Assignment",
+              "chat": "Chat"
+            },
             "welcome": "I'm Max your learning assistant for this lesson. Today we are going to work on the novel 'An Inspectors Calls' for that we invite you to do the following activities.",
             "title": "Classwork",
             "search": "Search classwork",

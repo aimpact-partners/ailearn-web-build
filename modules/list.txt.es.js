@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2092510392,
+        hash: 3822235697,
         creator: function (require, exports) {
           exports.txt = {
             "assign": {
@@ -70,6 +70,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "No hay Módulos Publicados",
                 "description": "No hay módulos publicados disponibles. Trabaja en cada módulo y publícalos para actualizar este listado de publicaciones. 🎓"
               }
+            },
+            "breadcrumb": {
+              "modules": "Módulos",
+              "management": "Gestión",
+              "assignment": "Asignaciones",
+              "chat": "Chat"
             }
           };
         }
