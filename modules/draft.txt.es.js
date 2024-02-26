@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3299036528,
+        hash: 4644120,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -61,13 +61,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "9": "Año 9",
               "10": "Año 10",
               "11": "Año 11",
-              "12": "Año 12",
-              "year-7": "Año 7",
-              "year-8": "Año 8",
-              "year-9": "Año 9",
-              "year-10": "Año 10",
-              "year-11": "Año 11",
-              "year-12": "Año 12"
+              "12": "Año 12"
             },
             "languages": {
               "label": "Idiomas",

@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 200823893,
+        hash: 1140163441,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -84,16 +84,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "topics": "List all topics you want to talk about"
             },
             "manual": {
-              "textarea": "Add the content of the activity",
               "cancel": "Are you sure you want to cancel?",
-              "synthesis": {
-                "textarea": "Add your synthesis here"
+              "article": {
+                "textarea": "Add the content of the activity"
               },
               "content": {
                 "textarea": "Add the content of the activity"
               },
-              "article": {
-                "textarea": "Add the content of the activity"
+              "synthesis": {
+                "textarea": "Add your synthesis here"
               },
               "dyslexia": {
                 "textarea": "Add your content here"
@@ -105,7 +104,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "synthesis": "Synthesis",
               "dyslexia": "Dyslexia",
               "introduction": "introduction",
-              "audio": "Audio",
               "audios": "Audios"
             },
             "refine": {
@@ -123,78 +121,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "subtitle": "If you confirm, the current image will be replaced."
                 }
               }
-            },
-            "processMessages": ["Evaluating audience demographics...", "Estimating optimal class duration...", "Selecting potential learning activities...", "Determining the purpose of each activity...", "Sequencing activities for maximum engagement...", "Tailoring content to learning objectives...", "Adjusting difficulty levels for audience proficiency...", "Finalizing interactive elements for active learning...", "Crafting assessment strategies for knowledge retention...", "Optimizing content flow for seamless learning experience...", "Preparing final touches on educational design...", "Generation of personalized microlearning content complete."],
-            "refiningActivity": ["Analyzing the activity objective to ensure alignment with learning outcomes...", "Reviewing activity components to maximize student engagement...", "Optimizing activity structure to facilitate understanding and application of knowledge...", "Adjusting instructional materials for greater accessibility and diversity...", "Evaluating delivery methods for effective and adaptive interaction...", "Incorporating student feedback to enhance the learning experience...", "Calibrating difficulty level to satisfy a broad range of student abilities...", "Integrating educational technology to enrich the activity...", "Updating activity resources to maintain relevance and currency...", "Finalizing the refinement process for a comprehensive and engaging educational activity..."],
-            "refiningQuestions": ["Formulating questions to assess understanding of the central topic...", "Selecting answer choices that reflect a variety of perspectives...", "Designing questions to encompass specific learning objectives...", "Creating plausible distractors to assess critical thinking...", "Crafting questions that measure practical application of concepts...", "Integrating analysis questions to deepen conceptual understanding...", "Generating questions that encourage long-term retention...", "Building a logical flow in the quiz that reflects content structure...", "Ensuring questions cover all key aspects of the activity...", "Finalizing question review to ensure alignment with educational objectives..."],
-            "refiningAnswers": ["Compiling correct answers based on key points of the subject matter...", "Including varied choices that challenge student understanding...", "Ensuring each answer reinforces essential knowledge of the activity...", "Balancing answer difficulty to maintain appropriate challenge...", "Linking answers with practical examples to facilitate knowledge application...", "Selecting answers that require analysis and not just memorization...", "Incorporating immediate feedback in answers to encourage learning...", "Establishing a coherent sequence of questions and answers...", "Reviewing that answers represent a full spectrum of the lesson...", "Completing the creation of an answer bank that supports student success..."],
-            "specs": {
-              "title": "Resources",
-              "objective": {
-                "label": "Objective",
-                "placeholder": "Add the objective of the activity"
-              },
-              "related": {
-                "label": "Related activity",
-                "placeholder": "Select the related activity"
-              },
-              "instructions": {
-                "label": "Instructions",
-                "placeholder": "Add the instructions of the activity"
-              },
-              "task": {
-                "label": "Task requested to the student",
-                "placeholder": "Add the task of the activity"
-              },
-              "criteria": {
-                "title": "Evaluation criteria",
-                "label": "Criteria",
-                "placeholder": "Add the criteria of the activity"
-              },
-              "subject": {
-                "label": "Subject",
-                "placeholder": "Add the subject"
-              },
-              "character": {
-                "label": "Character",
-                "placeholder": "Add the character of the activity"
-              },
-              "role": {
-                "label": "Role",
-                "placeholder": "Add the role of the character"
-              },
-              "questions": {
-                "title": "Questions"
-              },
-              "assessment": {
-                "label": "Instructions",
-                "placeholder": "Add the instructions of the activity"
-              },
-              "debateSubject": {
-                "label": "Subject",
-                "placeholder": "Add the subject"
-              },
-              "subjectDebate": {
-                "label": "Subject",
-                "placeholder": "Add the subject"
-              }
-            },
-            "bulletPoint": {
-              "add": "Add elemento",
-              "refine": "Refine"
-            },
-            "labels": {
-              "title": "Title",
-              "description": "Description"
-            },
-            "types": {
-              "content-theory": "Content Theory",
-              "debate": "Debate",
-              "character-talk": "Character Talk",
-              "multiple-choice": "Multiple Choice",
-              "spoken/written": "Spoken/Written",
-              "spoken": "Spoken",
-              "written": "Written"
             },
             "multipleChoice": {
               "labels": {
@@ -217,6 +143,70 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Do you want to replace the current image?",
                 "subtitle": "If you confirm, the current image will be replaced."
               }
+            },
+            "processMessages": ["Evaluating audience demographics...", "Estimating optimal class duration...", "Selecting potential learning activities...", "Determining the purpose of each activity...", "Sequencing activities for maximum engagement...", "Tailoring content to learning objectives...", "Adjusting difficulty levels for audience proficiency...", "Finalizing interactive elements for active learning...", "Crafting assessment strategies for knowledge retention...", "Optimizing content flow for seamless learning experience...", "Preparing final touches on educational design...", "Generation of personalized microlearning content complete."],
+            "refiningActivity": ["Analyzing the activity objective to ensure alignment with learning outcomes...", "Reviewing activity components to maximize student engagement...", "Optimizing activity structure to facilitate understanding and application of knowledge...", "Adjusting instructional materials for greater accessibility and diversity...", "Evaluating delivery methods for effective and adaptive interaction...", "Incorporating student feedback to enhance the learning experience...", "Calibrating difficulty level to satisfy a broad range of student abilities...", "Integrating educational technology to enrich the activity...", "Updating activity resources to maintain relevance and currency...", "Finalizing the refinement process for a comprehensive and engaging educational activity..."],
+            "refiningQuestions": ["Formulating questions to assess understanding of the central topic...", "Selecting answer choices that reflect a variety of perspectives...", "Designing questions to encompass specific learning objectives...", "Creating plausible distractors to assess critical thinking...", "Crafting questions that measure practical application of concepts...", "Integrating analysis questions to deepen conceptual understanding...", "Generating questions that encourage long-term retention...", "Building a logical flow in the quiz that reflects content structure...", "Ensuring questions cover all key aspects of the activity...", "Finalizing question review to ensure alignment with educational objectives..."],
+            "refiningAnswers": ["Compiling correct answers based on key points of the subject matter...", "Including varied choices that challenge student understanding...", "Ensuring each answer reinforces essential knowledge of the activity...", "Balancing answer difficulty to maintain appropriate challenge...", "Linking answers with practical examples to facilitate knowledge application...", "Selecting answers that require analysis and not just memorization...", "Incorporating immediate feedback in answers to encourage learning...", "Establishing a coherent sequence of questions and answers...", "Reviewing that answers represent a full spectrum of the lesson...", "Completing the creation of an answer bank that supports student success..."],
+            "specs": {
+              "title": "Resources",
+              "objective": {
+                "label": "Objective",
+                "placeholder": "Add the objective of the activity"
+              },
+              "related": {
+                "label": "Related activity",
+                "placeholder": "Select the related activity"
+              },
+              "assessment": {
+                "label": "Instructions",
+                "placeholder": "Add the instructions of the activity"
+              },
+              "task": {
+                "label": "Task requested to the student",
+                "placeholder": "Add the task of the activity"
+              },
+              "criteria": {
+                "title": "Evaluation criteria",
+                "label": "Criteria",
+                "placeholder": "Add the criteria of the activity"
+              },
+              "subject": {
+                "label": "Subject",
+                "placeholder": "Add the subject"
+              },
+              "subjectDebate": {
+                "label": "Subject",
+                "placeholder": "Add the subject"
+              },
+              "character": {
+                "label": "Character",
+                "placeholder": "Add the character of the activity"
+              },
+              "role": {
+                "label": "Role",
+                "placeholder": "Add the role of the character"
+              },
+              "questions": {
+                "title": "Questions"
+              }
+            },
+            "bulletPoint": {
+              "add": "Add elemento",
+              "refine": "Refine"
+            },
+            "labels": {
+              "title": "Title",
+              "description": "Description"
+            },
+            "types": {
+              "content-theory": "Content Theory",
+              "debate": "Debate",
+              "character-talk": "Character Talk",
+              "multiple-choice": "Multiple Choice",
+              "spoken/written": "Spoken/Written",
+              "spoken": "Spoken",
+              "written": "Written"
             }
           };
         }

@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2325191105,
+        hash: 2403425040,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -54,8 +54,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "competencies": "Competencias"
             },
             "chat": {
-              "title": "User conversation",
+              "title": "Conversación del usuario",
               "empty": "Aún no existen mensajes en esta conversación",
+              "synthesis": "Síntesis de la conversación",
               "systemActions": {
                 "kb-response": "Datos obtenidos de la base de conocimientos: ",
                 "fetching-tool-data": "Voy a cosultar los documentos de la clase",

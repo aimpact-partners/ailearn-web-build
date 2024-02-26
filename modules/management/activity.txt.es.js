@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2783305551,
+        hash: 2501877047,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -83,7 +83,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "topics": "Enumere todos los temas sobre los que desea hablar"
             },
             "manual": {
-              "textarea": "Agrega el contenido de la actividad",
               "cancel": "¿Estás seguro de que quieres cancelar?",
               "article": {
                 "textarea": "Añade el contenido de la actividad"
@@ -103,9 +102,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "content": "Contenido",
               "synthesis": "Síntesis",
               "dyslexia": "Dislexia",
-              "introduction": "introducción",
-              "audio": "Audio",
-              "audios": "Audios"
+              "audios": "Audios",
+              "introduction": "introducción"
             },
             "refine": {
               "title": "Mejorar la calidad del contenido",
@@ -133,6 +131,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "independent": "Independiente"
               }
             },
+            "picture": {
+              "title": "Genera la mejor imagen para tu módulo",
+              "description": "Esta herramienta te ayudará a generar la mejor imagen para tu módulo. Puedes subir una imagen y nosotros generaremos la mejor imagen para tu módulo. También puedes usar el editor de imágenes para editar la imagen y generar la mejor imagen para tu módulo.",
+              "notes": {
+                "label": "Notas",
+                "placeholder": "Comparte tus sugerencias para crear la mejor imagen para tu módulo"
+              },
+              "confirm": {
+                "title": "¿Quieres reemplazar la imagen actual?",
+                "subtitle": "Si confirmas, la imagen actual será reemplazada."
+              }
+            },
             "processMessages": ["Evaluando la demografía de la audiencia...", "Estimando la duración óptima de la clase...", "Seleccionando actividades de aprendizaje potenciales...", "Determinando el propósito de cada actividad...", "Secuenciando actividades para un máximo compromiso...", "Adaptando el contenido a los objetivos de aprendizaje...", "Ajustando los niveles de dificultad para la competencia de la audiencia...", "Finalizando elementos interactivos para el aprendizaje activo...", "Creando estrategias de evaluación para la retención de conocimientos...", "Optimizando el flujo de contenido para una experiencia de aprendizaje sin problemas...", "Preparando los toques finales en el diseño educativo...", "Generación de contenido de microaprendizaje personalizado completo."],
             "refiningActivity": ["Analizando el objetivo de la actividad para garantizar alineación con los resultados de aprendizaje...", "Revisando los componentes de la actividad para maximizar la participación estudiantil...", "Optimizando la estructura de la actividad para facilitar la comprensión y la aplicación del conocimiento...", "Ajustando los materiales didácticos para una mayor accesibilidad y diversidad...", "Evaluando métodos de entrega para una interacción efectiva y adaptativa...", "Incorporando feedback estudiantil para mejorar la experiencia de aprendizaje...", "Calibrando el nivel de dificultad para satisfacer un rango amplio de habilidades estudiantiles...", "Integrando tecnología educativa para enriquecer la actividad...", "Actualizando los recursos de la actividad para mantener relevancia y actualidad...", "Finalizando el proceso de refinamiento para una actividad educativa integral y atractiva..."],
             "refiningQuestions": ["Formulando preguntas para evaluar la comprensión del tema central...", "Seleccionando opciones de respuesta que reflejen una variedad de perspectivas...", "Diseñando preguntas para abarcar los objetivos de aprendizaje específicos...", "Creando distractores plausibles para evaluar el pensamiento crítico...", "Elaborando preguntas que midan la aplicación práctica de los conceptos...", "Integrando preguntas de análisis para profundizar en la comprensión conceptual...", "Generando preguntas que fomenten la retención a largo plazo...", "Construyendo un flujo lógico en el cuestionario que refleje la estructura del contenido...", "Asegurando que las preguntas cubran todos los aspectos clave de la actividad...", "Finalizando la revisión de preguntas para garantizar la alineación con los objetivos educativos..."],
@@ -147,8 +157,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "label": "Actividad relacionada",
                 "placeholder": "Selecciona la actividad relacionada"
               },
-              "instructions": {
-                "label": "Instrucciones",
+              "assessment": {
+                "label": "Forma de evaluación",
                 "placeholder": "Agrega las instrucciones de la actividad"
               },
               "task": {
@@ -159,6 +169,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Criterios de evaluación",
                 "label": "Criterio",
                 "placeholder": "Agrega los criterios de la actividad"
+              },
+              "subjectDebate": {
+                "label": "Moción del debate",
+                "placeholder": "Add the subject"
               },
               "subject": {
                 "label": "Tema",
@@ -174,18 +188,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "questions": {
                 "title": "Questions"
-              },
-              "assess": {
-                "label": "Instrucciones",
-                "placeholder": "Agrega las instrucciones de la actividad"
-              },
-              "assessment": {
-                "label": "Forma de evaluación",
-                "placeholder": "Agrega las instrucciones de la actividad"
-              },
-              "subjectDebate": {
-                "label": "Moción del debate",
-                "placeholder": "Add the subject"
               }
             },
             "bulletPoint": {
@@ -204,18 +206,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "spoken/written": "Hablado/Escrito",
               "spoken": "Hablado",
               "written": "Escrito"
-            },
-            "picture": {
-              "title": "Genera la mejor imagen para tu módulo",
-              "description": "Esta herramienta te ayudará a generar la mejor imagen para tu módulo. Puedes subir una imagen y nosotros generaremos la mejor imagen para tu módulo. También puedes usar el editor de imágenes para editar la imagen y generar la mejor imagen para tu módulo.",
-              "notes": {
-                "label": "Notas",
-                "placeholder": "Comparte tus sugerencias para crear la mejor imagen para tu módulo"
-              },
-              "confirm": {
-                "title": "¿Quieres reemplazar la imagen actual?",
-                "subtitle": "Si confirmas, la imagen actual será reemplazada."
-              }
             }
           };
         }

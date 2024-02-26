@@ -19,6 +19,7 @@ System.register([], function (_export, _context) {
           },
           "container": "file",
           "project": "ailearn-estrada",
+          "APP_NAME": "RVD.AI",
           "url": "https://documents-rb5caohzgq-wl.a.run.app/upload",
           "DOCUMENTS_SERVER": "https://documents-rb5caohzgq-wl.a.run.app",
           "CHAT_API_SERVER": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload",

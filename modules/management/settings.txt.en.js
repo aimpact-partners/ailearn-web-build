@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 325919846,
+        hash: 3841652555,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -134,11 +134,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "title": "Create a Learning Module",
             "postTitle": "Select the aspects that the content to be generated in the following form must have",
             "empty": "View your custom-created content here, tailored by our assistant based on your form inputs",
-            "description": "This tool will help you generate the best image for your module. You can upload an image and we will generate the best image for your module. You can also use the image editor to edit the image and generate the best image for your module.",
-            "notes": {
-              "label": "Notes",
-              "placeholder": "Share your suggestions to create the best image for your module"
-            },
             "picture": {
               "title": "Generate the best image for your module",
               "description": "This tool will help you generate the best image for your module. You can upload an image and we will generate the best image for your module. You can also use the image editor to edit the image and generate the best image for your module.",

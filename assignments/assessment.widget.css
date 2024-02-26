@@ -1,0 +1,37 @@
+.question__form-container {
+  display: grid;
+  grid-gap: 1rem;
+  position: relative;
+}
+.question__form-container .question-title {
+  position: sticky;
+  top: 0;
+}
+
+.item__option {
+  border: 1px solid var(--outline);
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border-radius: var(--border-radius-base);
+}
+.item__option .pui-icon {
+  fill: var(--primary);
+  height: 18px;
+  aspect-ratio: 1/1;
+}
+.item__option:hover, .item__option.selected {
+  background: var(--surface-variant);
+}
+
+.assessment__footer {
+  position: sticky;
+  bottom: 1rem;
+}
+.assessment__footer .pui-button {
+  width: 100%;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBOztBQUNBO0VBQ0M7RUFDQTs7O0FBR0Y7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBRUQ7RUFFQzs7O0FBR0Y7RUFDQztFQUNBOztBQUVBO0VBQ0MiLCJmaWxlIjoiIn0= */
