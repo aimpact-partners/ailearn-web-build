@@ -6,19 +6,21 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "@aimpact/ailearn-app",
-        "version": "0.0.14",
+        "version": "0.0.24",
         "languages": {
           "default": "en",
           "supported": ["en", "es", "pr"]
         },
+        "environment": "testing",
         "global.css": true,
         "layout": "ailearn-layout",
         "params": {
           "config": {
-            "system": true
+            "system": false
           },
           "container": "file",
           "project": "ailearn-estrada",
+          "APP_NAME": "RVD.AI",
           "url": "https://documents-rb5caohzgq-wl.a.run.app/upload",
           "DOCUMENTS_SERVER": "https://documents-rb5caohzgq-wl.a.run.app",
           "CHAT_API_SERVER": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload",

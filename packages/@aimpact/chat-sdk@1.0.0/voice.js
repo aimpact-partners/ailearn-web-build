@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core", "@aimpact/ailearn-app@0.0.14/config", "@beyond-js/reactive@1.1.6/model"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core", "@aimpact/ailearn-app@0.0.24/config", "@beyond-js/reactive@1.1.11/model"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, VoiceLab, Voice, __beyond_pkg, hmr;
@@ -11,14 +11,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_beyondJsKernel019Core) {
       dependency_1 = _beyondJsKernel019Core;
-    }, function (_aimpactAilearnApp0014Config) {
-      dependency_2 = _aimpactAilearnApp0014Config;
-    }, function (_beyondJsReactive116Model) {
-      dependency_3 = _beyondJsReactive116Model;
+    }, function (_aimpactAilearnApp0024Config) {
+      dependency_2 = _aimpactAilearnApp0024Config;
+    }, function (_beyondJsReactive1111Model) {
+      dependency_3 = _beyondJsReactive1111Model;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/backend", "0.1.8"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/reactive", "1.1.2"], ["firebase", "10.1.0"], ["dompurify", "3.0.5"], ["prismjs", "1.29.0"], ["highlight.js", "11.8.0"], ["marked", "5.1.2"], ["marked-highlight", "2.0.4"], ["marked-mangle", "1.1.2"], ["socket.io-client", "4.7.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.15"], ["@types/react-dom", "18.2.7"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-app", "0.0.14"]]);
+        const dependencies = new Map([["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/reactive", "1.1.11"], ["dompurify", "3.0.6"], ["firebase", "10.5.0"], ["highlight.js", "11.9.0"], ["marked", "11.1.0"], ["marked-gfm-heading-id", "3.1.2"], ["marked-highlight", "2.1.0"], ["marked-mangle", "1.1.6"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.2"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.29"], ["@types/react-dom", "18.2.14"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-app", "0.0.24"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -31,13 +31,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/kernel/core', dependency_1], ['@aimpact/chat/config', dependency_2], ['@beyond-js/reactive/model', dependency_3]]);
+      __pkg.dependencies.update([['@beyond-js/kernel/core', dependency_1], ['@aimpact/chat-sdk/config', dependency_2], ['@beyond-js/reactive/model', dependency_3]]);
       ims = new Map();
       /***************************
       INTERNAL MODULE: ./voice-lab
       ***************************/
       ims.set('./voice-lab', {
-        hash: 2319831110,
+        hash: 3598784126,
         creator: function (require, exports) {
           "use strict";
 
@@ -46,7 +46,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
           });
           exports.VoiceLab = void 0;
           var _core = require("@beyond-js/kernel/core");
-          var _config = require("@aimpact/chat/config");
+          var _config = require("@aimpact/chat-sdk/config");
           /*bundle*/
           class VoiceLab extends _core.Events {
             #apiKey = _config.default.params.elevenlabs.key;
