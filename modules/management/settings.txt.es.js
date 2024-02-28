@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2388412342,
+        hash: 3653688551,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -80,14 +80,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "multiple-choice": "Selección Múltiple",
                 "character-talk": "Hablar con un Personaje",
                 "debate": "Debate",
-                "spoken": "Evaluación Hablada"
+                "spoken": "Exposición Oral Individual"
               },
               "descriptionTypes": {
-                "content-theory": "Actividad para proporcionar conocimiento y comprensión en un área particular",
-                "multiple-choice": "Selección Múltiple",
-                "character-talk": "Conversación con un personaje de ficción, como por ejemplo de un libro o una película",
-                "debate": "Debate individual con el docente",
-                "spoken": "Evaluación Hablada"
+                "content-theory": ": Artículo, adaptaciones y audios sobre un tema específico para construir una base teórica.",
+                "multiple-choice": "Preguntas de selección múltiple para evaluar comprensión",
+                "character-talk": "Aprender a través de una conversación con un personaje de ficción",
+                "debate": " Conversación uno-a-uno con un asistente virtual para explorar y profundizar temas",
+                "spoken": "Presentación oral sobre un tema asignado para evaluar conocimientos u otros usos como creatividad, presentaciones originales, etc"
               },
               "states": {
                 "empty": "Actividad vacia",
