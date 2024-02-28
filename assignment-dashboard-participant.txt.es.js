@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2403425040,
+        hash: 1990728350,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -76,7 +76,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "conversation": "Chat",
             "multiple": "Evaluación de selección múltiple",
             "spoken": "Evaluación oral",
-            "percentileDetail": "The student has currently completed a percentile%% of the activity."
+            "percentileDetail": "The student has currently completed a percentile%% of the activity.",
+            "studentAudio": "Audio del estudiante"
           };
         }
       });
