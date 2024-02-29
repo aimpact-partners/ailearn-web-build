@@ -13,7 +13,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/reactive", "1.1.4"], ["@beyond-js/widgets", "0.1.6"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.6.1"], ["swiper", "10.3.0"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.0.37"], ["@types/react-dom", "18.0.11"], ["pragmate-ui", "0.0.6"], ["@aimpact/ailearn-app", "0.0.24"]]);
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.3"], ["@beyond-js/reactive", "1.1.6"], ["@beyond-js/widgets", "0.1.5"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.2"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.2.37"], ["@types/react-dom", "18.2.15"], ["pragmate-ui", "0.0.6"], ["@aimpact/ailearn-app", "0.0.24"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -33,7 +33,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 571331918,
+        hash: 388105230,
         creator: function (require, exports) {
           "use strict";
 
@@ -55,17 +55,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
           }) {
             const Container = container;
             const Control = control;
+            // const output: ReactNode[] = items.map((data, idx) => {
+            // 	return <Control key={(data as any)[index as string] || idx} data={data} />;
+            // });
             try {
               const output = items.map((item, idx) => {
-                const element = _react.default.createElement(Control, {
+                return _react.default.createElement(Control, {
                   key: item[index] || idx,
                   index: idx,
                   data: item,
                   item,
                   specs
                 });
-                // if (container === 'ul') return <li key={idx}>{element}</li>;
-                return element;
               });
               return _react.default.createElement(Container, {
                 className: className
@@ -98,4 +99,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiTGlzdCIsIml0ZW1zIiwiY2xhc3NOYW1lIiwiY2hpbGRyZW4iLCJpbmRleCIsInNwZWNzIiwiY2hpbGRyZW5Qb3NpdGlvbiIsImNvbnRyb2wiLCJjb250YWluZXIiLCJDb250YWluZXIiLCJDb250cm9sIiwib3V0cHV0IiwibWFwIiwiaXRlbSIsImlkeCIsImVsZW1lbnQiLCJkZWZhdWx0IiwiY3JlYXRlRWxlbWVudCIsImtleSIsImRhdGEiLCJlIiwiY29uc29sZSIsImVycm9yIl0sInNvdXJjZXMiOlsiL3RzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLE1BQUEsR0FBQUMsT0FBQTtVQWFPO1VBQVcsU0FBVUMsSUFBSUEsQ0FBSTtZQUNuQ0MsS0FBSztZQUNMQyxTQUFTO1lBQ1RDLFFBQVE7WUFDUkMsS0FBSyxHQUFHLElBQUk7WUFDWkMsS0FBSztZQUNMQyxnQkFBZ0IsR0FBRyxLQUFLO1lBQ3hCQyxPQUFPO1lBQ1BDLFNBQVMsR0FBRztVQUFJLENBQ0Y7WUFDZCxNQUFNQyxTQUFTLEdBQUdELFNBQVM7WUFDM0IsTUFBTUUsT0FBTyxHQUFHSCxPQUFPO1lBRXZCLElBQUk7Y0FDSCxNQUFNSSxNQUFNLEdBQWdCVixLQUFLLENBQUNXLEdBQUcsQ0FBQyxDQUFDQyxJQUFJLEVBQUVDLEdBQUcsS0FBSTtnQkFDbkQsTUFBTUMsT0FBTyxHQUFHakIsTUFBQSxDQUFBa0IsT0FBSyxDQUFDQyxhQUFhLENBQ2xDUCxPQUE2RixFQUM3RjtrQkFDQ1EsR0FBRyxFQUFHTCxJQUFZLENBQUNULEtBQUssQ0FBQyxJQUFJVSxHQUFHO2tCQUNoQ1YsS0FBSyxFQUFFVSxHQUFHO2tCQUNWSyxJQUFJLEVBQUVOLElBQUk7a0JBQ1ZBLElBQUk7a0JBQ0pSO2lCQUNBLENBQ0Q7Z0JBQ0Q7Z0JBQ0EsT0FBT1UsT0FBTztjQUNmLENBQUMsQ0FBQztjQUNGLE9BQ0NqQixNQUFBLENBQUFrQixPQUFBLENBQUFDLGFBQUEsQ0FBQ1IsU0FBUztnQkFBQ1AsU0FBUyxFQUFFQTtjQUFTLEdBQzdCSSxnQkFBZ0IsS0FBSyxLQUFLLElBQUlILFFBQVEsR0FBR0EsUUFBUSxHQUFHLElBQUksRUFDeERRLE1BQU0sRUFDTkwsZ0JBQWdCLEtBQUssUUFBUSxJQUFJSCxRQUFRLEdBQUdBLFFBQVEsR0FBRyxJQUFJLENBQ2pEO2FBRWIsQ0FBQyxPQUFPaUIsQ0FBQyxFQUFFO2NBQ1hDLE9BQU8sQ0FBQ0MsS0FBSyxDQUFDLHdCQUF3QixFQUFFckIsS0FBSyxDQUFDOztVQUVoRCJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiTGlzdCIsIml0ZW1zIiwiY2xhc3NOYW1lIiwiY2hpbGRyZW4iLCJpbmRleCIsInNwZWNzIiwiY2hpbGRyZW5Qb3NpdGlvbiIsImNvbnRyb2wiLCJjb250YWluZXIiLCJDb250YWluZXIiLCJDb250cm9sIiwib3V0cHV0IiwibWFwIiwiaXRlbSIsImlkeCIsImRlZmF1bHQiLCJjcmVhdGVFbGVtZW50Iiwia2V5IiwiZGF0YSIsImUiLCJjb25zb2xlIiwiZXJyb3IiXSwic291cmNlcyI6WyIvdHMvaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO1VBYU87VUFBVyxTQUFVQyxJQUFJQSxDQUFJO1lBQ25DQyxLQUFLO1lBQ0xDLFNBQVM7WUFDVEMsUUFBUTtZQUNSQyxLQUFLLEdBQUcsSUFBSTtZQUNaQyxLQUFLO1lBQ0xDLGdCQUFnQixHQUFHLEtBQUs7WUFDeEJDLE9BQU87WUFDUEMsU0FBUyxHQUFHO1VBQUksQ0FDRjtZQUNkLE1BQU1DLFNBQVMsR0FBR0QsU0FBUztZQUMzQixNQUFNRSxPQUFPLEdBQUdILE9BQU87WUFFdkI7WUFDQTtZQUNBO1lBQ0EsSUFBSTtjQUNILE1BQU1JLE1BQU0sR0FBZ0JWLEtBQUssQ0FBQ1csR0FBRyxDQUFDLENBQUNDLElBQUksRUFBRUMsR0FBRyxLQUFJO2dCQUNuRCxPQUFPaEIsTUFBQSxDQUFBaUIsT0FBSyxDQUFDQyxhQUFhLENBQ3pCTixPQUE2RixFQUM3RjtrQkFDQ08sR0FBRyxFQUFHSixJQUFZLENBQUNULEtBQUssQ0FBQyxJQUFJVSxHQUFHO2tCQUNoQ1YsS0FBSyxFQUFFVSxHQUFHO2tCQUNWSSxJQUFJLEVBQUVMLElBQUk7a0JBQ1ZBLElBQUk7a0JBQ0pSO2lCQUNBLENBQ0Q7Y0FDRixDQUFDLENBQUM7Y0FDRixPQUNDUCxNQUFBLENBQUFpQixPQUFBLENBQUFDLGFBQUEsQ0FBQ1AsU0FBUztnQkFBQ1AsU0FBUyxFQUFFQTtjQUFTLEdBQzdCSSxnQkFBZ0IsS0FBSyxLQUFLLElBQUlILFFBQVEsR0FBR0EsUUFBUSxHQUFHLElBQUksRUFDeERRLE1BQU0sRUFDTkwsZ0JBQWdCLEtBQUssUUFBUSxJQUFJSCxRQUFRLEdBQUdBLFFBQVEsR0FBRyxJQUFJLENBQ2pEO2FBRWIsQ0FBQyxPQUFPZ0IsQ0FBQyxFQUFFO2NBQ1hDLE9BQU8sQ0FBQ0MsS0FBSyxDQUFDLHdCQUF3QixFQUFFcEIsS0FBSyxDQUFDOztVQUVoRCJ9
