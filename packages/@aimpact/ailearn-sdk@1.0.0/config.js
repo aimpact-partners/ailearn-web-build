@@ -11,6 +11,7 @@ System.register([], function (_export, _context) {
           "default": "en",
           "supported": ["en", "es"]
         },
+        "environment": "development",
         "global.css": true,
         "params": {
           "ailearnAPI": "https://ailearn-http-v2-j2rcifstnq-uc.a.run.app"

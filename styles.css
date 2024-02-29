@@ -1,5 +1,5 @@
 :root {
-  --primary: #115efa;
+  --primary: #164194;
   --primary-100: #ffffff;
   --primary-99: #fefbff;
   --primary-98: #faf8ff;
@@ -207,7 +207,6 @@
   --on-primary: var(--primary-100);
   --on-primary-container: var(--primary-10);
   --inverse-primary: var(--primary-80);
-  --secondary: var(--secondary-40);
   --secondary-container: var(--secondary-90);
   --on-secondary: var(--secondary-100);
   --on-secondary-container: var(--secondary-10);
@@ -255,7 +254,6 @@
   --on-primary: var(--primary-100);
   --on-primary-container: var(--primary-10);
   --inverse-primary: var(--primary-80);
-  --secondary: var(--secondary-40);
   --secondary-container: var(--secondary-90);
   --on-secondary: var(--secondary-100);
   --on-secondary-container: var(--secondary-10);
@@ -325,7 +323,7 @@
   --on-surface-variant: var(--neutral-variant-80);
   --inverse-surface: var(--neutral-90);
   --inverse-on-surface: var(--neutral-20);
-  --background: #fff;
+  --background: var(--neutral-4);
   --on-background: var(--neutral-90);
   --error: var(--error-80);
   --error-container: var(--error-30);
@@ -349,7 +347,7 @@
   --font-family: "OpenDyslexic";
 }
 :root {
-  --primary: #115efa;
+  --primary: #164194;
   --primary-100: #ffffff;
   --primary-99: #fefbff;
   --primary-98: #faf8ff;

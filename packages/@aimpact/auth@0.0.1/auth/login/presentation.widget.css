@@ -4,7 +4,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--primary);
+  background: var(--primary);
 }
 
 .presentation-container::before {
@@ -14,7 +14,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: transparent url("https://res.cloudinary.com/versus/image/upload/f_auto,q_auto/v1/AImpact/background-effect") 41.6% 0% no-repeat padding-box;
   mix-blend-mode: multiply;
   background-size: cover;
   opacity: 1;
@@ -24,13 +23,11 @@
   display: flex;
   align-self: flex-start;
   align-items: center;
-  margin-top: 1.5rem;
-  padding-left: 3rem;
+  padding: 4.5rem;
   font-size: 22px;
 }
 .presentation-header__container .logo__container {
-  width: 100%;
-  max-width: 13.55rem;
+  max-width: 150px;
 }
 
 .presentation-content__container {
@@ -38,7 +35,7 @@
   width: 60%;
   margin: auto;
   margin-left: 0;
-  padding-left: 3rem;
+  padding-left: 4.5rem;
   color: var(--on-primary);
   padding-bottom: 1.5rem;
 }
@@ -85,4 +82,4 @@
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBR0E7RUFDQTtFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7OztBQUlGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7OztBQUlGO0VBQ0M7SUFDQzs7RUFFQTtJQUNDOztFQUdGO0lBQ0M7SUFDQTtJQUNBOztFQUVBO0lBQ0M7O0VBSUY7SUFDQzs7RUFFQTtJQUNDO0lBQ0E7O0VBSUY7SUFDQzs7RUFFQTtJQUNDO0lBQ0E7O0VBR0Q7SUFDQyIsImZpbGUiOiIifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUVBOztBQUVBO0VBQ0M7OztBQUlGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7OztBQUlGO0VBQ0M7SUFDQzs7RUFFQTtJQUNDOztFQUdGO0lBQ0M7SUFDQTtJQUNBOztFQUVBO0lBQ0M7O0VBSUY7SUFDQzs7RUFFQTtJQUNDO0lBQ0E7O0VBSUY7SUFDQzs7RUFFQTtJQUNDO0lBQ0E7O0VBR0Q7SUFDQyIsImZpbGUiOiIifQ== */

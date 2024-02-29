@@ -11,6 +11,7 @@ System.register([], function (_export, _context) {
           "default": "en",
           "supported": ["en", "es", "pr"]
         },
+        "environment": "development",
         "global.css": true,
         "layout": "ailearn-layout",
         "params": {
@@ -20,6 +21,7 @@ System.register([], function (_export, _context) {
           "container": "file",
           "project": "ailearn-estrada",
           "APP_NAME": "RVD.AI",
+          "APP_LOGO": "/assets/RVD.AI.Branding.Negative.png",
           "url": "https://documents-rb5caohzgq-wl.a.run.app/upload",
           "DOCUMENTS_SERVER": "https://documents-rb5caohzgq-wl.a.run.app",
           "CHAT_API_SERVER": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload",
