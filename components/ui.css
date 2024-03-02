@@ -459,7 +459,7 @@
   justify-content: space-between;
   align-items: center;
   top: 0;
-  z-index: 10;
+  z-index: 9;
 }
 .page__header .pui-breadcrumb__container .breadcrumbs__item {
   font-weight: 500;

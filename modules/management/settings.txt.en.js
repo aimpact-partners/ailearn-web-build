@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3378235102,
+        hash: 66250633,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -83,7 +83,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "spoken": "Spoken"
               },
               "descriptionTypes": {
-                "content-theory": ": Article, adaptations and audios about a specific topic to build a theoretical base.",
+                "content-theory": "Article, adaptations and audios about a specific topic to build a theoretical base.",
                 "multiple-choice": "Multiple choice questions to evaluate comprehension",
                 "character-talk": "Learn through a conversation with a fictional character",
                 "debate": "One-on-one conversation with a virtual assistant to explore and deepen topics",

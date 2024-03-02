@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3653688551,
+        hash: 3589006221,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -83,7 +83,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "spoken": "Exposición Oral Individual"
               },
               "descriptionTypes": {
-                "content-theory": ": Artículo, adaptaciones y audios sobre un tema específico para construir una base teórica.",
+                "content-theory": "Artículo, adaptaciones y audios sobre un tema específico para construir una base teórica.",
                 "multiple-choice": "Preguntas de selección múltiple para evaluar comprensión",
                 "character-talk": "Aprender a través de una conversación con un personaje de ficción",
                 "debate": " Conversación uno-a-uno con un asistente virtual para explorar y profundizar temas",
