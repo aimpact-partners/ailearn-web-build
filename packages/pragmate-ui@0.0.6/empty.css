@@ -24,7 +24,7 @@
   display: flex;
   gap: 1rem;
 }
-.pui-empty-section svg {
+.pui-empty-section .pui-empty__icon {
   width: 45px;
   height: 45px;
   display: grid;
