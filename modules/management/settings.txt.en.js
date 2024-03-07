@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 66250633,
+        hash: 3889657642,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -65,11 +65,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "topics": "Topics",
               "title": "List of activities",
               "empty": {
-                "title": "Module without activities",
+                "title": "You don't have any activities yet",
                 "text": "Add one activity to your module"
               },
               "createModal": {
-                "title": "Select the activity type"
+                "title": "Select the activity type",
+                "validation": "You must complete the title and description of the module to be able to add an activity.",
+                "validationTitle": "Incomplete module"
               },
               "delete": {
                 "title": "Do you really want to delete this activity?",

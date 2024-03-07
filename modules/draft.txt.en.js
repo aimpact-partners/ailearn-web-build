@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1955922730,
+        hash: 1405945640,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -49,7 +49,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "generate": "Generate",
               "next": "Next",
               "publish": "Publish",
-              "removeSuggestions": "Cancel suggestions",
+              "removeSuggestions": "Remove suggestions",
               "refine": "Refine",
               "save": "Save",
               "update": "Upload Document",
@@ -76,10 +76,27 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "de": "German",
               "it": "Italian"
             },
+            "notifications": {
+              "saved": "You can now work your goal with Artificial Intelligence. Request AI credits to enable all AI functions.",
+              "credits": "You already have <strong>credits assigned</strong> to use AI functions that will be automatically discounted with use."
+            },
             "changingObjective": ["Adapting the module to effectively highlight key concepts...", "Configuring interactive activities to facilitate active learning...", "Adding adaptable content to various themes and areas of study...", "Structuring the module to promote critical thinking skills...", "Incorporating innovative teaching techniques to improve knowledge retention...", "Ensuring that the module meets general educational standards...", "Fostering curiosity and self-directed learning through module objectives...", "Implementing updated pedagogical methodologies for a comprehensive approach...", "Optimizing the module structure for a staggered and progressive learning process...", "Finalizing the customization of the module for an enriching and complete educational experience..."],
             "generatingDraft": ["Identifying the best activities for the module's objective...", "Analyzing the audience to adapt educational activities...", "Estimating the optimal duration of each module activity...", "Selecting types of activities to promote dynamic learning...", "Creating individual objectives for each proposed activity...", "Integrating activities that promote interaction and debate...", "Designing tasks that reinforce theoretical and practical knowledge...", "Incorporating exercises for critical analysis of information...", "Establishing activities to develop research skills...", "Developing dynamics that stimulate reflection on current issues...", "Adjusting activities to cover different learning styles...", "Configuring formative assessments to measure progress...", "Including interactive resources to complement teaching...", "Finalizing the selection of activities to ensure the fulfillment of the objectives...", "Compiling the final draft of the module with all the designed activities..."],
             "objectiveSuggestions": ["Evaluating current educational guidelines...", "Adapting suggestions to the ministry of education standards...", "Incorporating best pedagogical practices...", "Personalizing content for comprehensive learning...", "Optimizing suggestions for 21st century skills...", "Integrating critical skills and reflective analysis...", "Aligning objectives with national educational expectations...", "Enriching the module with interdisciplinary approaches...", "Strengthening the proposal with educational values and ethics...", "Finalizing adjustments for meaningful and updated learning..."],
             "processMessages": ["Evaluating audience demographics...", "Estimating optimal class duration...", "Selecting potential learning activities...", "Determining the purpose of each activity...", "Sequencing activities for maximum engagement...", "Tailoring content to learning objectives...", "Adjusting difficulty levels for audience proficiency...", "Finalizing interactive elements for active learning...", "Crafting assessment strategies for knowledge retention...", "Optimizing content flow for seamless learning experience...", "Preparing final touches on educational design...", "Generation of personalized microlearning content complete."],
+            "suggestions": {
+              "objective": {
+                "actions": {
+                  "label": "Would you like to use this enhanced version of your objective?",
+                  "cancel": "No, thanks",
+                  "confirm": "Yes, update my objective"
+                }
+              },
+              "total": "Selected suggestions",
+              "origin": "Ministry",
+              "label": "Suggestion",
+              "irrelevant": "The content added as an objective is not applicable for a module, please verify and try again"
+            },
             "title": "Create a Learning Module",
             "postTitle": "Select the aspects that the content to be generated in the following form must have",
             "module": "Learning Module Objective",
@@ -89,9 +106,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "university": "University",
               "company": "Company"
             },
-            "moduleLength": {
+            "duration": {
               "brief": "Brief (3 activities)",
-              "standard": "Standard (5 activities",
+              "standard": "Standard (5 activities)",
               "extended": "Extended (7 activities)"
             },
             "form": {
@@ -115,7 +132,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "grades": {
                 "label": "Grade level",
-                "error": "Please select a grade level"
+                "error": "Please select a grade level",
+                "select": "Select grade level"
               },
               "schools": {
                 "label": "Administrator",
@@ -131,7 +149,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "suggestions": "If you wish, select one of the following improvement options and a refinement of the defined objective will be carried out.",
               "forWhom": "Identify who the module is designed for to adapt the content accordingly. Options: School, University, Company.",
               "howLong": "Select the approximate duration of the module. Options: Brief (a quick overview), Standard (in-depth exploration), Extended (full coverage).",
-              "generatingModule": ["Starting AI-assisted design for the learning module...", "Analyzing the specified grade level and module duration...", "Gathering educational standards for the selected grade level...", "Consulting curricular databases for age-appropriate activities...", "Applying AI creativity for the initial draft of learning activities...", "Refining activities based on best pedagogical practices...", "Integrating interactive elements tailored to the module duration...", "Optimizing the flow of the learning module for student engagement...", "Performing final reviews on the coherence and consistency of the module...", "Learning module and activities successfully generated by AI assistance."]
+              "generatingModule": ["Starting AI-assisted design for the learning module...", "Analyzing the specified grade level and module duration...", "Gathering educational standards for the selected grade level...", "Consulting curricular databases for age-appropriate activities...", "Applying AI creativity for the initial draft of learning activities...", "Refining activities based on best pedagogical practices...", "Integrating interactive elements tailored to the module duration...", "Optimizing the flow of the learning module for student engagement...", "Performing final reviews on the coherence and consistency of the module...", "Learning module and activities successfully generated by AI assistance."],
+              "modalSuggestions": {
+                "title": "Let's move on",
+                "description": "Let's design the module activities.",
+                "buttons": {
+                  "inspiration": "AI-assisted design",
+                  "manual": "Manual design"
+                }
+              }
             }
           };
         }

@@ -17,11 +17,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.24/organizations/list",
+          "vspecifier": "@aimpact/ailearn-app@0.0.24/organizations/create",
           "multibundle": true
         },
         "type": "txt"
-      }, _context.meta.url).package('es');
+      }, _context.meta.url).package('en');
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
@@ -29,61 +29,28 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1052451252,
+        hash: 2522789732,
         creator: function (require, exports) {
           exports.txt = {
-            "actions": {
-              "join": "Unirse",
-              "create": "Crear",
-              "activities": "Generar actividades",
-              "refine": "Refinar",
-              "generate": "Generar",
-              "imported": "Importado",
-              "save": "Guardar",
-              "clean": "Limpiar",
-              "activity": "Actividades",
-              "update": "Subir Documento",
-              "edit": "Editar",
-              "delete": "Eliminar",
-              "cancel": "Cancelar",
-              "next": "Siguiente",
-              "back": "Atrás",
-              "link": "Vincular",
-              "gTooltip": "Aula importada desde Google",
-              "import": "Importar"
-            },
             "breadcrumb": {
-              "organizations": "Organización",
-              "management": "Gestión"
+              "organizations": "Organization",
+              "management": "Management"
             },
             "create": {
-              "title": "Agregar Organización",
-              "success": "Organización publicada con éxito",
-              "error": "Error al publicar la organización",
+              "title": "Add Organization",
+              "success": "Organization published successfully",
+              "error": "Error while publishing organization",
               "name": {
-                "label": "Nombre de la Organización",
-                "placeholder": "¿Cuál será el nombre de la Organización?"
+                "label": "Organization Name",
+                "placeholder": "What will be the name of the Organization?"
               },
               "description": {
-                "label": "Descripción de la Organización",
-                "placeholder": "¿Cuál es la misión de esta Organización?"
+                "label": "Organization Description",
+                "placeholder": "What's the mission of this Organization?"
               },
               "actions": {
-                "save": "Continuar"
+                "save": "Continue"
               }
-            },
-            "welcome": {
-              "message": "Bienvenido %name a tu lista de organizaciones",
-              "actionInfo": "Aquí podrás ver y gestionar todas las organizaciones que tienes actualmente. Tendrás acceso a diversas acciones, incluyendo la creación, eliminación y edición de organizaciones. Aprovecha estas herramientas para personalizar cada organización de acuerdo a tus requerimientos."
-            },
-            "title": "Mis Organizaciones",
-            "subtitle": "Explora, ajusta y gestiona tus organizaciones según tus necesidades",
-            "errors": {
-              "ERROR_GETTING_URL": "Error obteniendo URL"
-            },
-            "empty": {
-              "title": "Crea tu primera organización",
-              "description": "Inicia tu travesía educativa dando vida a tu primer curso. Libera tu creatividad, da forma a un contenido atractivo y disfruta de la gratificante experiencia de enseñar a otros. 🚀"
             }
           };
         }

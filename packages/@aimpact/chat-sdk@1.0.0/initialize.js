@@ -30,7 +30,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.11/d
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 2789937630,
+        hash: 3480114927,
         creator: function (require, exports) {
           "use strict";
 
@@ -41,7 +41,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.11/d
           var _database = require("@beyond-js/reactive/database");
           async function initialize() {
             try {
-              const db = await _database.DBManager.config('chat-api@24', {
+              const db = await _database.DBManager.config('chat-api@25', {
                 Chat: 'id, name, userId, category, usage, system, knowledgeBoxId',
                 Conversations: 'id, name, userId, system',
                 User: 'id',
@@ -58,7 +58,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.11/d
                 Prompts: 'id',
                 Activities: 'id',
                 StudentsHome: 'id',
-                Modules: 'id, type'
+                Modules: 'id, type',
+                Organizations: 'id'
               });
               // For example, if you have user data to add you can use:
               // db.Chat.bulkAdd(chats);
@@ -92,4 +93,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.11/d
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGF0YWJhc2UiLCJyZXF1aXJlIiwiaW5pdGlhbGl6ZSIsImRiIiwiREJNYW5hZ2VyIiwiY29uZmlnIiwiQ2hhdCIsIkNvbnZlcnNhdGlvbnMiLCJVc2VyIiwiTWVzc2FnZXMiLCJLbm93bGVkZ2VCb3hlcyIsIlNoYXJlZEtub3dsZWRnZUJhc2VzIiwiRG9jdW1lbnRzIiwiVG9waWNzIiwiU2Vzc2lvbnMiLCJDbGFzc3Jvb21zIiwiUHJvamVjdHMiLCJQcm9tcHRDYXRlZ29yaWVzIiwiQXNzaWdubWVudHMiLCJQcm9tcHRzIiwiQWN0aXZpdGllcyIsIlN0dWRlbnRzSG9tZSIsIk1vZHVsZXMiLCJlIiwiY29uc29sZSIsInRyYWNlIiwiaW5pdERCIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIi9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLFNBQUEsR0FBQUMsT0FBQTtVQUVBLGVBQWVDLFVBQVVBLENBQUE7WUFDeEIsSUFBSTtjQUNILE1BQU1DLEVBQUUsR0FBRyxNQUFNSCxTQUFBLENBQUFJLFNBQVMsQ0FBQ0MsTUFBTSxDQUFDLGFBQWEsRUFBRTtnQkFDaERDLElBQUksRUFBRSwyREFBMkQ7Z0JBQ2pFQyxhQUFhLEVBQUUsMEJBQTBCO2dCQUN6Q0MsSUFBSSxFQUFFLElBQUk7Z0JBQ1ZDLFFBQVEsRUFBRSxtREFBbUQ7Z0JBQzdEQyxjQUFjLEVBQUUsWUFBWTtnQkFDNUJDLG9CQUFvQixFQUFFLHVDQUF1QztnQkFDN0RDLFNBQVMsRUFBRSxxQkFBcUI7Z0JBQ2hDQyxNQUFNLEVBQUUsWUFBWTtnQkFDcEJDLFFBQVEsRUFBRSxrQkFBa0I7Z0JBQzVCQyxVQUFVLEVBQUUsVUFBVTtnQkFDdEJDLFFBQVEsRUFBRSxhQUFhO2dCQUN2QkMsZ0JBQWdCLEVBQUUsSUFBSTtnQkFDdEJDLFdBQVcsRUFBRSxVQUFVO2dCQUN2QkMsT0FBTyxFQUFFLElBQUk7Z0JBQ2JDLFVBQVUsRUFBRSxJQUFJO2dCQUNoQkMsWUFBWSxFQUFFLElBQUk7Z0JBQ2xCQyxPQUFPLEVBQUU7ZUFDVCxDQUFDO2NBRUY7Y0FDQTthQUNBLENBQUMsT0FBT0MsQ0FBQyxFQUFFO2NBQ1hDLE9BQU8sQ0FBQ0MsS0FBSyxDQUFDLE9BQU8sRUFBRUYsQ0FBQyxDQUFDOztVQUUzQjtVQUVPO1VBQVksTUFBTUcsTUFBTSxHQUFBQyxPQUFBLENBQUFELE1BQUEsR0FBR3hCLFVBQVUifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGF0YWJhc2UiLCJyZXF1aXJlIiwiaW5pdGlhbGl6ZSIsImRiIiwiREJNYW5hZ2VyIiwiY29uZmlnIiwiQ2hhdCIsIkNvbnZlcnNhdGlvbnMiLCJVc2VyIiwiTWVzc2FnZXMiLCJLbm93bGVkZ2VCb3hlcyIsIlNoYXJlZEtub3dsZWRnZUJhc2VzIiwiRG9jdW1lbnRzIiwiVG9waWNzIiwiU2Vzc2lvbnMiLCJDbGFzc3Jvb21zIiwiUHJvamVjdHMiLCJQcm9tcHRDYXRlZ29yaWVzIiwiQXNzaWdubWVudHMiLCJQcm9tcHRzIiwiQWN0aXZpdGllcyIsIlN0dWRlbnRzSG9tZSIsIk1vZHVsZXMiLCJPcmdhbml6YXRpb25zIiwiZSIsImNvbnNvbGUiLCJ0cmFjZSIsImluaXREQiIsImV4cG9ydHMiXSwic291cmNlcyI6WyIvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxTQUFBLEdBQUFDLE9BQUE7VUFFQSxlQUFlQyxVQUFVQSxDQUFBO1lBQ3hCLElBQUk7Y0FDSCxNQUFNQyxFQUFFLEdBQUcsTUFBTUgsU0FBQSxDQUFBSSxTQUFTLENBQUNDLE1BQU0sQ0FBQyxhQUFhLEVBQUU7Z0JBQ2hEQyxJQUFJLEVBQUUsMkRBQTJEO2dCQUNqRUMsYUFBYSxFQUFFLDBCQUEwQjtnQkFDekNDLElBQUksRUFBRSxJQUFJO2dCQUNWQyxRQUFRLEVBQUUsbURBQW1EO2dCQUM3REMsY0FBYyxFQUFFLFlBQVk7Z0JBQzVCQyxvQkFBb0IsRUFBRSx1Q0FBdUM7Z0JBQzdEQyxTQUFTLEVBQUUscUJBQXFCO2dCQUNoQ0MsTUFBTSxFQUFFLFlBQVk7Z0JBQ3BCQyxRQUFRLEVBQUUsa0JBQWtCO2dCQUM1QkMsVUFBVSxFQUFFLFVBQVU7Z0JBQ3RCQyxRQUFRLEVBQUUsYUFBYTtnQkFDdkJDLGdCQUFnQixFQUFFLElBQUk7Z0JBQ3RCQyxXQUFXLEVBQUUsVUFBVTtnQkFDdkJDLE9BQU8sRUFBRSxJQUFJO2dCQUNiQyxVQUFVLEVBQUUsSUFBSTtnQkFDaEJDLFlBQVksRUFBRSxJQUFJO2dCQUNsQkMsT0FBTyxFQUFFLFVBQVU7Z0JBQ25CQyxhQUFhLEVBQUU7ZUFDZixDQUFDO2NBRUY7Y0FDQTthQUNBLENBQUMsT0FBT0MsQ0FBQyxFQUFFO2NBQ1hDLE9BQU8sQ0FBQ0MsS0FBSyxDQUFDLE9BQU8sRUFBRUYsQ0FBQyxDQUFDOztVQUUzQjtVQUVPO1VBQVksTUFBTUcsTUFBTSxHQUFBQyxPQUFBLENBQUFELE1BQUEsR0FBR3pCLFVBQVUifQ==

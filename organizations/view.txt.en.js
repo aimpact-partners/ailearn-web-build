@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.24/organization/management",
+          "vspecifier": "@aimpact/ailearn-app@0.0.24/organizations/view",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 761559615,
+        hash: 3924253366,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -52,6 +52,34 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "back": "Back",
               "cancel": "Cancel"
             },
+            "breadcrumb": {
+              "organizations": "Organization",
+              "management": "Management"
+            },
+            "list": {
+              "managers": {
+                "title": "Administrators",
+                "role": "Admin",
+                "single": "Manager"
+              },
+              "members": {
+                "title": "Teachers",
+                "role": "Teacher",
+                "single": "Teacher"
+              },
+              "pendings": {
+                "title": "Pending",
+                "invited": "Invited"
+              }
+            },
+            "messages": {
+              "approval": {
+                "success": "Successfully approve user",
+                "error": "Error approving user"
+              },
+              "copy": "Text copied successfully ",
+              "copyError": "Error when copying to clipboard"
+            },
             "ERR_GENERATING_ACTIVITIES": "Error generating classes",
             "orgCode": "Organization Code",
             "title": "Create a Organization",
@@ -62,29 +90,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "pending": "Excellent, you no longer have any outstanding issues to resolve. All invitations have been resolved.",
               "labelList": "Add users to this list by clicking the %action button.",
               "description": "Oops! The Organization was not found. There's a possibility you're using an outdated link or searching for a non-existent Organization. We invite you to create a new one and continue exploring this incredible world of teaching and learning. Let's embark on a new educational journey together! 🌟"
-            },
-            "placeholder": {
-              "name": "What will be the name of the Organization?",
-              "description": "What's the mission of this Organization?"
-            },
-            "labels": {
-              "name": "Name",
-              "description": "Description"
-            },
-            "list": {
-              "admin": {
-                "title": "Administrators",
-                "single": "Manager"
-              },
-              "teachers": {
-                "title": "Teachers",
-                "single": "Teacher"
-              },
-              "pending": {
-                "title": "Pending",
-                "single": "",
-                "invited": "Invited"
-              }
             },
             "modal": {
               "edit": {

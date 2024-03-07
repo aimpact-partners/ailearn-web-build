@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.24/organization/management",
+          "vspecifier": "@aimpact/ailearn-app@0.0.24/organizations/view",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1030354863,
+        hash: 2785530264,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -52,39 +52,38 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "next": "Siguiente",
               "back": "Atrás"
             },
+            "breadcrumb": {
+              "organizations": "Organización",
+              "management": "Gestión"
+            },
+            "list": {
+              "managers": {
+                "title": "Administradores",
+                "role": "Administrador"
+              },
+              "members": {
+                "title": "Docentes",
+                "role": "Docente"
+              },
+              "pendings": {
+                "title": "Pendientes",
+                "invited": "Invitado"
+              }
+            },
             "ERR_GENERATING_ACTIVITIES": "Error generando classes",
             "orgCode": "Código de Organización",
             "title": "Crea una Organización",
             "postTitle": "Nos complace darle la bienvenida a este apasionante proceso de creación de su espacio educativo. Este formulario marca el primer paso hacia la excelencia en la gestión de su equipo educativo. Dispondrá de las herramientas necesarias para personalizar todos los aspectos de su organización y alcanzar sus objetivos académicos. Trabajando juntos, construiremos un entorno que refleje sus estándares de calidad y fomente un aprendizaje continuo y significativo. ¡Empecemos a construir juntos un futuro educativo brillante!",
             "class": "Objetivo Organización de Aprendizaje",
+            "messages": {
+              "copy": "Texto copiado con éxito",
+              "copyError": "Error al copiar al portapapeles"
+            },
             "empty": {
               "title": "Organización no Encontrada",
               "pending": "Excelente, ya no tiene asuntos pendientes que resolver. Todas las invitaciones se han resuelto.",
               "description": "¡Ups! No se encontró el Organización. Existe la posibilidad de que estés utilizando un enlace antiguo o buscando un Organización inexistente. Te invitamos a crear una nueva y continuar explorando este increíble mundo de enseñanza y aprendizaje. ¡Embárcate en una nueva travesía educativa con nosotros! 🌟",
               "labelList": "Suma usuarios en esta lista dándole click al botón de %action"
-            },
-            "placeholder": {
-              "name": "¿Cómo se llamará el Organización?",
-              "description": "¿Cuál es la misión de esta Organización?"
-            },
-            "labels": {
-              "name": "Nombre",
-              "description": "Descripción"
-            },
-            "list": {
-              "admin": {
-                "title": "Administradores",
-                "single": "Manager"
-              },
-              "teachers": {
-                "title": "Docentes",
-                "single": "Docente"
-              },
-              "pending": {
-                "title": "Pendientes",
-                "single": "",
-                "invited": "Invitado"
-              }
             },
             "modal": {
               "edit": {

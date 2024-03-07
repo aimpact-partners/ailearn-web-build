@@ -46,7 +46,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       ;
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['react', dependency_4], ['@aimpact/chat/shared/components', dependency_5], ['pragmate-ui/image', dependency_6], ['pragmate-ui/alert', dependency_7], ['@aimpact/chat/shared/hooks', dependency_8], ['@aimpact/ailearn-app/components/ui', dependency_9]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
-        "name": "ailearn-missing",
+        "name": "app-missing",
         "vspecifier": "@aimpact/ailearn-app@0.0.24/missing.widget",
         "is": "page",
         "route": "/not-found",

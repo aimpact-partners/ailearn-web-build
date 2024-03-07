@@ -17,11 +17,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.24/organizations/list",
+          "vspecifier": "@aimpact/ailearn-app@0.0.24/components/cover-image",
           "multibundle": true
         },
         "type": "txt"
-      }, _context.meta.url).package('en');
+      }, _context.meta.url).package('pr');
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
@@ -29,63 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1572286472,
+        hash: 2745614147,
         creator: function (require, exports) {
-          exports.txt = {
-            "actions": {
-              "join": "Join",
-              "create": "Create",
-              "activities": "Generate activities",
-              "refine": "Refine",
-              "generate": "Generate",
-              "save": "Save",
-              "imported": "Imported",
-              "edit": "Edit",
-              "delete": "Delete",
-              "clean": "Clean",
-              "activity": "Activities",
-              "update": "Upload Document",
-              "next": "Next",
-              "back": "Back",
-              "cancel": "Cancel",
-              "link": "Link",
-              "gTooltip": "Classroom imported from Google",
-              "import": "Import"
-            },
-            "breadcrumb": {
-              "organizations": "Organization",
-              "management": "Management"
-            },
-            "create": {
-              "title": "Add Organization",
-              "success": "Organization published successfully",
-              "error": "Error while publishing organization",
-              "name": {
-                "label": "Organization Name",
-                "placeholder": "What will be the name of the Organization?"
-              },
-              "description": {
-                "label": "Organization Description",
-                "placeholder": "What's the mission of this Organization?"
-              },
-              "actions": {
-                "save": "Continue"
-              }
-            },
-            "welcome": {
-              "message": "Welcome %name to your list of organizations",
-              "actionInfo": "Here you can view and manage all the organizations you currently have. You'll have access to various actions, including creating, deleting, and editing organizations. Take advantage of these tools to customize each organization according to your requirements."
-            },
-            "title": "My Organizations",
-            "subtitle": "Explore, adjust, and manage your organizations according to your needs",
-            "errors": {
-              "ERROR_GETTING_URL": "Error getting URL"
-            },
-            "empty": {
-              "title": "Create your first organization",
-              "description": "Start your educational journey by bringing your first course to life. Unleash your creativity, shape engaging content, and enjoy the rewarding experience of teaching others. 🚀"
-            }
-          };
+          exports.txt = {};
         }
       });
       __pkg.exports.descriptor = [{
