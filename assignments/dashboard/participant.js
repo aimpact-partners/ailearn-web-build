@@ -72,7 +72,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       ******************************/
 
       ims.set('./views/header', {
-        hash: 3406453126,
+        hash: 3261243151,
         creator: function (require, exports) {
           "use strict";
 
