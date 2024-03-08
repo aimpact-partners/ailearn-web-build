@@ -240,7 +240,7 @@ Modal style
 .header-module__container .header-container {
   width: 100%;
   max-width: 1140px;
-  padding: 2rem;
+  padding: 2rem 1rem;
   margin: auto;
   grid-gap: 1rem;
   display: flex;
@@ -253,7 +253,7 @@ Modal style
 @media (max-width: 1344px) {
   .header-module__container .header-container {
     max-width: 1050px;
-    padding: 1rem 3rem;
+    padding: 1rem;
   }
 }
 .header-module__container .pui-button.btn-link {

@@ -272,7 +272,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "layout": "general-layout"
       }, {
         "name": "app-modules-management",
-        "attrs": ["id"],
+        "attrs": ["id", "activityId"],
         "vspecifier": "@aimpact/ailearn-app@0.0.24/modules/management/settings.widget"
       }, {
         "name": "app-modules-management-ceate",
