@@ -240,7 +240,7 @@ Modal style
 .header-module__container .header-container {
   width: 100%;
   max-width: 1140px;
-  padding: 2rem 1rem;
+  padding: 0 1rem;
   margin: auto;
   grid-gap: 1rem;
   display: flex;
