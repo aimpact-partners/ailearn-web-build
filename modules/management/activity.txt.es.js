@@ -29,12 +29,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3611297348,
+        hash: 1860783210,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
               "add": "Agregar",
-              "manual": "Generar manualmente",
               "confirm": "Confirmar",
               "analyse": "Sugerir mejoras",
               "activities": "Generar actividades",
@@ -50,7 +49,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "next": "Siguiente",
               "back": "Atrás",
               "cover": "Generar portada",
-              "upload": "Subir Imagen"
+              "upload": "Subir Imagen",
+              "inspiration": "Diseño asistido con IA",
+              "manual": "Diseño manual"
             },
             "activities": {
               "minutes": "Mins",
@@ -76,6 +77,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "empty": {
                 "title": "Crea Este Elemento",
                 "description": "Utiliza la IA para dar forma a este elemento específico. Haz clic en 'Generar' para crear contenido atractivo sin esfuerzo. Eleva tu experiencia de enseñanza con una creación innovadora. 🚀"
+              },
+              "deleteModal": {
+                "title": "Eliminar Contenido",
+                "description": "¿Estás seguro de que quieres eliminar el contenido de esta actividad?"
               }
             },
             "conversation": {
@@ -120,6 +125,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "subtitle": "Si confirmas, la imagen actual será reemplazada."
                 }
               }
+            },
+            "delete": {
+              "title": "Eliminar contenido",
+              "description": "¿Estás seguro de que quieres eliminar el contenido de esta actividad?"
             },
             "multipleChoice": {
               "labels": {

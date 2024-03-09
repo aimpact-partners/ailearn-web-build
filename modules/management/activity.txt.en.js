@@ -29,12 +29,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3236725409,
+        hash: 3371099766,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
               "add": "Add",
-              "manual": "Generate manually",
               "confirm": "Confirm",
               "analyse": "Suggest Improvements",
               "activities": "Generate activities",
@@ -50,7 +49,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "back": "Back to",
               "cancel": "Cancel",
               "cover": "Generate cover",
-              "upload": "Upload Image"
+              "upload": "Upload Image",
+              "inspiration": "AI Assisted Design",
+              "manual": "Manual Design"
             },
             "activities": {
               "minutes": "Min",
@@ -77,6 +78,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "empty": {
                 "title": "Create This Element",
                 "description": "Use AI to shape this specific element. Click 'Generate' to effortlessly craft engaging content. Elevate your teaching experience with innovative creation! 🚀"
+              },
+              "deleteModal": {
+                "title": "Delete Content",
+                "description": "Are you sure you want to delete the content from this activity?"
               }
             },
             "conversation": {
