@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3371099766,
+        hash: 472785776,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -50,7 +50,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "cancel": "Cancel",
               "cover": "Generate cover",
               "upload": "Upload Image",
-              "inspiration": "AI Assisted Design",
+              "inspiration": "Generate with AI",
               "manual": "Manual Design"
             },
             "activities": {
@@ -127,6 +127,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               }
             },
+            "modal": {
+              "cancel": {
+                "title": "Are you sure?",
+                "description": "Your changes have not been saved. If you continue, you will lose them."
+              }
+            },
+            "delete": {
+              "title": "Delete Content",
+              "description": "Are you sure you want to delete the content of this activity?"
+            },
             "multipleChoice": {
               "labels": {
                 "correct": "Correct answer",
@@ -135,7 +145,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "related": {
                 "label": "Related activity",
                 "independent": "Independent"
-              }
+              },
+              "emptyOptions": "No options available"
             },
             "picture": {
               "title": "Generate the best image for your module",
