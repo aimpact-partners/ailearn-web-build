@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3889657642,
+        hash: 348777926,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -47,14 +47,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "confirm": "Confirm",
               "delete": "Delete",
               "edit": "Edit",
-              "generate": "Generate",
+              "generate": "Generate with AI",
               "next": "Next",
               "publish": "Publish",
               "removeSuggestions": "Cancel suggestions",
               "refine": "Refine",
               "save": "Save",
               "update": "Upload Document",
-              "upload": "Upload Image"
+              "upload": "Upload Image",
+              "manual": "Manual Design"
             },
             "activities": {
               "minutes": "Min",
@@ -117,6 +118,41 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               }
             },
+            "refine": {
+              "title": "AI Activity Design Assistant",
+              "description": "Use the AI activity design assistant to create, customize, and enhance your students' speaking activities.",
+              "description2": "Simply select one of the predefined suggestions or describe what you have in mind, and the AI will help you structure an activity that fits your learning objectives, providing recommendations to enrich your students' educational experience.",
+              "textarea": {
+                "label": "Your Insights",
+                "placeholder": "Share specific suggestions or areas for improvement..."
+              },
+              "image": {
+                "title": "Refine the quality of your image",
+                "subtitle": "Your insights will help us refine the content.",
+                "confirm": {
+                  "title": "Do you want to replace the current image?",
+                  "subtitle": "If you confirm, the current image will be replaced."
+                }
+              },
+              "module": {
+                "title": "Refine the quality of your module",
+                "subtitle": "Your insights will help us refine the content.",
+                "confirm": {
+                  "title": "Do you want to replace the current content?",
+                  "subtitle": "If you confirm, the genreration process will replace the current content with the new one. If you want to keep the current content, click cancel."
+                }
+              }
+            },
+            "modal": {
+              "cancel": {
+                "title": "Are you sure?",
+                "description": "Your changes have not been saved. If you continue, you will lose them."
+              }
+            },
+            "delete": {
+              "title": "Delete Content",
+              "description": "Are you sure you want to delete the content of this activity?"
+            },
             "picture": {
               "title": "Generate the best image for your module",
               "description": "This tool will help you generate the best image for your module. You can upload an image and we will generate the best image for your module. You can also use the image editor to edit the image and generate the best image for your module.",
@@ -129,29 +165,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "subtitle": "If you confirm, the current image will be replaced."
               }
             },
+            "refiningActivity": ["Analyzing the activity objective to ensure alignment with learning outcomes...", "Reviewing activity components to maximize student engagement...", "Optimizing activity structure to facilitate understanding and application of knowledge...", "Adjusting instructional materials for greater accessibility and diversity...", "Evaluating delivery methods for effective and adaptive interaction...", "Incorporating student feedback to enhance the learning experience...", "Calibrating difficulty level to satisfy a broad range of student abilities...", "Integrating educational technology to enrich the activity...", "Updating activity resources to maintain relevance and currency...", "Finalizing the refinement process for a comprehensive and engaging educational activity..."],
             "generatingImage": ["Receiving text for image generation...", "Analyzing educational module context...", "Selecting visual elements according to school year...", "Composing preliminary sketches based on text...", "Adjusting graphic details and visual style...", "Incorporating pedagogical criteria in the image...", "Optimizing the image for better educational retention...", "Finalizing image rendering...", "Reviewing quality and coherence with the module...", "Image successfully generated and ready for integration into the module."],
-            "refine": {
-              "module": {
-                "title": "Refine the quality of your module",
-                "subtitle": "Your insights will help us refine the content.",
-                "confirm": {
-                  "title": "Do you want to replace the current content?",
-                  "subtitle": "If you confirm, the genreration process will replace the current content with the new one. If you want to keep the current content, click cancel."
-                }
-              },
-              "textarea": {
-                "label": "Your Insights",
-                "placeholder": "Share specific suggestions or areas for improvement..."
-              },
-              "image": {
-                "title": "Refine the quality of your image",
-                "subtitle": "Your insights will help us refine the content.",
-                "confirm": {
-                  "title": "Do you want to replace the current image?",
-                  "subtitle": "If you confirm, the current image will be replaced."
-                }
-              }
-            },
             "toast": {
               "modulePublished": "'Module published successfully",
               "errorPublishingModule": "Error while publishing module"

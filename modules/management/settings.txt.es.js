@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3148979025,
+        hash: 2824228780,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -47,14 +47,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "confirm": "Confirmar",
               "delete": "Eliminar",
               "edit": "Editar",
-              "generate": "Generar",
+              "generate": "Generar con IA",
               "next": "Siguiente",
               "publish": "Publicar",
               "removeSuggestions": "Cancelar sugerencias",
               "refine": "Refinar",
               "save": "Guardar",
               "update": "Subir documento",
-              "upload": "Subir imagen"
+              "upload": "Subir imagen",
+              "manual": "Diseño manual"
             },
             "activities": {
               "minutes": "Min",
@@ -117,6 +118,41 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               }
             },
+            "refine": {
+              "title": "Asistente de Diseño de Actividad con IA",
+              "description": "Utiliza el asistente de diseño de actividad con IA para crear, personalizar y mejorar las actividades orales de tus estudiantes.",
+              "description2": "Simplemente selecciona una de las sugerencias predefinidas o describe lo que tienes en mente, y la IA te ayudará a estructurar una actividad que se ajuste a tus objetivos de aprendizaje, proporcionando recomendaciones para enriquecer la experiencia educativa de tus estudiantes.",
+              "textarea": {
+                "label": "Tus aportes",
+                "placeholder": "Comparte sugerencias específicas o áreas de mejora..."
+              },
+              "image": {
+                "title": "Refina la calidad de tu imagen",
+                "subtitle": "Tus aportes nos ayudarán a mejorar el contenido.",
+                "confirm": {
+                  "title": "¿Deseas reemplazar la imagen actual?",
+                  "subtitle": "Si confirmas, la imagen actual será reemplazada."
+                }
+              },
+              "module": {
+                "title": "Refina la calidad de tu módulo",
+                "subtitle": "Tus aportes nos ayudarán a mejorar el contenido.",
+                "confirm": {
+                  "title": "¿Deseas reemplazar el contenido actual?",
+                  "subtitle": "Si confirmas, el proceso de generación reemplazará el contenido actual con el nuevo. Si deseas conservar el contenido actual, haz clic en cancelar."
+                }
+              }
+            },
+            "modal": {
+              "cancel": {
+                "title": "¿Estás seguro?",
+                "description": "Tus cambios no han sido guardados. Si continúas, los perderás."
+              }
+            },
+            "delete": {
+              "title": "Eliminar contenido",
+              "description": "¿Estás seguro de que quieres eliminar el contenido de esta actividad?"
+            },
             "picture": {
               "title": "Genera la mejor imagen para tu módulo",
               "description": "Esta herramienta te ayudará a generar la mejor imagen para tu módulo. Puedes subir una imagen y nosotros generaremos la mejor imagen para tu módulo. También puedes usar el editor de imágenes para editar la imagen y generar la mejor imagen para tu módulo.",
@@ -129,29 +165,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "subtitle": "Si confirmas, la imagen actual será reemplazada."
               }
             },
+            "refiningActivity": ["Analizando el objetivo de la actividad para garantizar alineación con los resultados de aprendizaje...", "Revisando los componentes de la actividad para maximizar la participación estudiantil...", "Optimizando la estructura de la actividad para facilitar la comprensión y la aplicación del conocimiento...", "Ajustando los materiales didácticos para una mayor accesibilidad y diversidad...", "Evaluando métodos de entrega para una interacción efectiva y adaptativa...", "Incorporando feedback estudiantil para mejorar la experiencia de aprendizaje...", "Calibrando el nivel de dificultad para satisfacer un rango amplio de habilidades estudiantiles...", "Integrando tecnología educativa para enriquecer la actividad...", "Actualizando los recursos de la actividad para mantener relevancia y actualidad...", "Finalizando el proceso de refinamiento para una actividad educativa integral y atractiva..."],
             "generatingImage": ["Recepción del texto para la generación de la imagen...", "Análisis del contexto del módulo educativo...", "Selección de elementos visuales acorde al año escolar...", "Composición de bocetos preliminares basados en el texto...", "Ajuste de detalles gráficos y estilo visual...", "Incorporación de criterios pedagógicos en la imagen...", "Optimización de la imagen para una mejor retención educativa...", "Finalización de la renderización de la imagen...", "Revisión de calidad y coherencia con el módulo...", "Imagen generada con éxito y lista para su integración en el módulo."],
-            "refine": {
-              "module": {
-                "title": "Refina la calidad de tu módulo",
-                "subtitle": "Tus aportes nos ayudarán a mejorar el contenido.",
-                "confirm": {
-                  "title": "¿Deseas reemplazar el contenido actual?",
-                  "subtitle": "Si confirmas, el proceso de generación reemplazará el contenido actual con el nuevo. Si deseas conservar el contenido actual, haz clic en cancelar."
-                }
-              },
-              "textarea": {
-                "label": "Tus aportes",
-                "placeholder": "Comparte sugerencias específicas o áreas de mejora..."
-              },
-              "image": {
-                "title": "Refina la calidad de tu imagen",
-                "subtitle": "Tus aportes nos ayudarán a mejorar el contenido.",
-                "confirm": {
-                  "title": "¿Deseas reemplazar la imagen actual?",
-                  "subtitle": "Si confirmas, la imagen actual será reemplazada."
-                }
-              }
-            },
             "toast": {
               "modulePublished": "Módulo publicado correctamente",
               "errorPublishingModule": "Error al publicar el módulo"
