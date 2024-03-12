@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4026678758,
+        hash: 3834722088,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -148,8 +148,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "emptyOptions": "No hay opciones disponibles"
             },
             "picture": {
-              "title": "Genera la mejor imagen para tu módulo",
-              "description": "Esta herramienta te ayudará a generar la mejor imagen para tu módulo. Puedes subir una imagen y nosotros generaremos la mejor imagen para tu módulo. También puedes usar el editor de imágenes para editar la imagen y generar la mejor imagen para tu módulo.",
+              "title": "Genera la mejor imagen para tu actividad",
+              "description": "Esta herramienta te ayudará a generar la mejor imagen para tu actividad. Puedes subir una imagen y nosotros generaremos la mejor imagen para tu módulo. También puedes usar el editor de imágenes para editar la imagen y generar la mejor imagen para tu módulo.",
               "notes": {
                 "label": "Notas",
                 "placeholder": "Comparte tus sugerencias para crear la mejor imagen para tu módulo"
