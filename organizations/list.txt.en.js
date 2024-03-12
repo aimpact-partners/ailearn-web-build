@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2998085643,
+        hash: 1572286472,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -51,6 +51,26 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "link": "Link",
               "gTooltip": "Classroom imported from Google",
               "import": "Import"
+            },
+            "breadcrumb": {
+              "organizations": "Organization",
+              "management": "Management"
+            },
+            "create": {
+              "title": "Add Organization",
+              "success": "Organization published successfully",
+              "error": "Error while publishing organization",
+              "name": {
+                "label": "Organization Name",
+                "placeholder": "What will be the name of the Organization?"
+              },
+              "description": {
+                "label": "Organization Description",
+                "placeholder": "What's the mission of this Organization?"
+              },
+              "actions": {
+                "save": "Continue"
+              }
             },
             "welcome": {
               "message": "Welcome %name to your list of organizations",

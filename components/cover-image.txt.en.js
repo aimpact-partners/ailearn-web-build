@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.24/assignment-dashboard-participant",
+          "vspecifier": "@aimpact/ailearn-app@0.0.24/components/cover-image",
           "multibundle": true
         },
         "type": "txt"
@@ -29,62 +29,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 453559973,
+        hash: 2406465371,
         creator: function (require, exports) {
           exports.txt = {
-            "activities": {
-              "type": "Activity type",
-              "subtype": "Subtype",
-              "description": "Description",
-              "empty": "The student has not yet completed this activity"
+            "title": "Generate the best image for your module",
+            "description": "This tool will help you generate the best image for your module. You can upload an image and we will generate the best image for your module. You can also use the image editor to edit the image and generate the best image for your module.",
+            "notes": {
+              "label": "Notes",
+              "placeholder": "Share your suggestions to create the best image for your module"
             },
-            "assessments": {
-              "quiz": "Assessment",
-              "oral": "Oral",
-              "title": "Activity",
-              "oralText": "Record an audio where you summarize and comment on the content studied. Highlight the key concepts, use appropriate language and offer your personal opinion. Keep a logical order and fidelity to the facts of the original text.",
-              "record": "Record",
-              "recordAgain": "Record again",
-              "stop": "Stop",
-              "send": "Send audio",
-              "redo": "Do it again!",
-              "analysisTitle": "Analysis report",
-              "analysis": "Report",
-              "feedback": "Knowledge",
-              "competencies": "Competences"
-            },
-            "breadcrumb": {
-              "modules": "Modules",
-              "management": "Management",
-              "assignments": "Assignments",
-              "chat": "Chat",
-              "dashboard": "Dashboard"
-            },
-            "chat": {
-              "title": "User conversation",
-              "empty": "There are no messages in this conversation yet",
-              "synthesis": "Conversation synthesis",
-              "systemActions": {
-                "kb-response": "Data obtained from the knowledge base: ",
-                "fetching-tool-data": "I will query the documents of the class",
-                "kb-processed-response": "Analysis on content finished",
-                "transcription": "Getting transcription",
-                "functions": {
-                  "kb": "Querying the knowledge base about: "
-                }
-              }
-            },
-            "finish": "Finish",
-            "results": "Results",
-            "total": "Total questions",
-            "correct": "Correct answers",
-            "wrong": "Wrong answers",
-            "title": "Study detail",
-            "conversation": "Chat",
-            "multiple": "Multiple selection evaluation",
-            "spoken": "Oral evaluation",
-            "percentileDetail": "El estudiante ha completado actualmente un percentile%% de la actividad.",
-            "studentAudio": "Student audio"
+            "confirm": {
+              "title": "Do you want to replace the current image?",
+              "subtitle": "If you confirm, the current image will be replaced."
+            }
           };
         }
       });

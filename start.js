@@ -272,13 +272,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "layout": "general-layout"
       }, {
         "name": "app-modules-management",
-        "attrs": ["id"],
+        "attrs": ["id", "activityId"],
         "vspecifier": "@aimpact/ailearn-app@0.0.24/modules/management/settings.widget"
       }, {
         "name": "app-modules-management-ceate",
         "vspecifier": "@aimpact/ailearn-app@0.0.24/modules/draft.widget",
         "is": "page",
         "route": "/modules/management",
+        "layout": "general-layout"
+      }, {
+        "name": "app-organizations-create",
+        "vspecifier": "@aimpact/ailearn-app@0.0.24/organizations/create.widget",
+        "is": "page",
+        "route": "/organizations/create",
         "layout": "general-layout"
       }, {
         "name": "ailearn-organization-join",
@@ -293,10 +299,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/organizations/list",
         "layout": "general-layout"
       }, {
-        "name": "app-organization-management",
-        "vspecifier": "@aimpact/ailearn-app@0.0.24/organization/management.widget",
+        "name": "app-organizations-view",
+        "vspecifier": "@aimpact/ailearn-app@0.0.24/organizations/view.widget",
         "is": "page",
-        "route": "/organization/management/${id}",
+        "route": "/organizations/view/${id}",
         "layout": "general-layout"
       }, {
         "name": "ailearn-user-profile",
@@ -312,7 +318,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/home",
         "layout": "general-layout"
       }, {
-        "name": "ailearn-missing",
+        "name": "app-missing",
         "vspecifier": "@aimpact/ailearn-app@0.0.24/missing.widget",
         "is": "page",
         "route": "/not-found",
@@ -459,7 +465,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *************************/
 
         ims.set('./routing', {
-          hash: 19167772,
+          hash: 1077145698,
           creator: function (require, exports) {
             "use strict";
 
@@ -473,7 +479,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
               return response.pathname;
             };
             _routing.routing.missing = async function redirect() {
-              return '/not-found';
+              return 'app-missing';
             };
           }
         });

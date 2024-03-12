@@ -1,0 +1,22 @@
+.cover-image__container {
+  aspect-ratio: 16/9;
+  width: 100%;
+  background: var(--surface-variant);
+  height: auto;
+  position: relative;
+}
+.cover-image__container .pui-image img {
+  width: 100%;
+  height: auto;
+}
+.cover-image__container .actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHBvcnRyYWl0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQSIsImZpbGUiOiIifQ== */

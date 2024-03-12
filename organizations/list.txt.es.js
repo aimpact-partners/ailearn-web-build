@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2074515936,
+        hash: 1052451252,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -51,6 +51,26 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "link": "Vincular",
               "gTooltip": "Aula importada desde Google",
               "import": "Importar"
+            },
+            "breadcrumb": {
+              "organizations": "Organización",
+              "management": "Gestión"
+            },
+            "create": {
+              "title": "Agregar Organización",
+              "success": "Organización publicada con éxito",
+              "error": "Error al publicar la organización",
+              "name": {
+                "label": "Nombre de la Organización",
+                "placeholder": "¿Cuál será el nombre de la Organización?"
+              },
+              "description": {
+                "label": "Descripción de la Organización",
+                "placeholder": "¿Cuál es la misión de esta Organización?"
+              },
+              "actions": {
+                "save": "Continuar"
+              }
             },
             "welcome": {
               "message": "Bienvenido %name a tu lista de organizaciones",

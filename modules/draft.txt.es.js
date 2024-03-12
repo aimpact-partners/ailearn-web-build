@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3651696659,
+        hash: 928456592,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -46,10 +46,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "confirm": "Confirmar",
               "delete": "Eliminar",
               "edit": "Editar",
-              "generate": "Generar",
+              "generate": "Generar con IA",
               "next": "Siguiente",
               "publish": "Publicar",
-              "removeSuggestions": "Cancelar sugerencias",
+              "removeSuggestions": "Remover sugerencias",
               "refine": "Refinar",
               "save": "Guardar",
               "update": "Subir documento",
@@ -76,10 +76,27 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "de": "Alemán",
               "it": "Italiano"
             },
+            "notifications": {
+              "saved": "Ya puedes trabajar tu objetivo con Inteligencia Artificial. Solicita créditos IA para habilitar todas las funciones con inteligencia artificial.",
+              "credits": "Ya tienes <strong>créditos asignados</strong> para utilizar funciones con IA que se irán descontando automáticamente con el uso."
+            },
             "changingObjective": ["Adaptando el módulo para resaltar los conceptos clave de manera efectiva...", "Configurando actividades interactivas para facilitar el aprendizaje activo...", "Añadiendo contenido adaptable a diversos temas y áreas de estudio...", "Estructurando el módulo para promover habilidades de pensamiento crítico...", "Incorporando técnicas de enseñanza innovadoras para mejorar la retención de conocimiento...", "Asegurando que el módulo cumpla con los estándares educativos generales...", "Fomentando la curiosidad y el aprendizaje autodirigido a través de los objetivos del módulo...", "Implementando metodologías pedagógicas actualizadas para un enfoque integral...", "Optimizando la estructura del módulo para un proceso de aprendizaje escalonado y progresivo...", "Finalizando la personalización del módulo para una experiencia educativa enriquecedora y completa..."],
             "generatingDraft": ["Identificando las mejores actividades para el objetivo del módulo...", "Analizando la audiencia para adecuar las actividades educativas...", "Estimando la duración óptima de cada actividad del módulo...", "Seleccionando tipos de actividades para promover un aprendizaje dinámico...", "Creando objetivos individuales para cada actividad propuesta...", "Integrando actividades que fomenten la interacción y el debate...", "Diseñando tareas que refuercen el conocimiento teórico y práctico...", "Incorporando ejercicios para el análisis crítico de la información...", "Estableciendo actividades para desarrollar habilidades de investigación...", "Elaborando dinámicas que estimulen la reflexión sobre problemáticas actuales...", "Ajustando actividades para cubrir diferentes estilos de aprendizaje...", "Configurando evaluaciones formativas para medir el progreso...", "Incluyendo recursos interactivos para complementar la enseñanza...", "Finalizando la selección de actividades que aseguren el cumplimiento de los objetivos...", "Compilando el borrador final del módulo con todas las actividades diseñadas..."],
             "objectiveSuggestions": ["Evaluando las directrices educativas actuales...", "Adaptando sugerencias a los estándares del ministerio de educación...", "Incorporando mejores prácticas pedagógicas...", "Personalizando contenido para un aprendizaje integral...", "Optimizando sugerencias para competencias del siglo XXI...", "Integrando habilidades críticas y análisis reflexivo...", "Alineando objetivos con expectativas educativas nacionales...", "Enriqueciendo el módulo con enfoques interdisciplinarios...", "Fortaleciendo la propuesta con valores y ética educativa...", "Finalizando ajustes para un aprendizaje significativo y actualizado..."],
             "processMessages": ["Evaluando la demografía de la audiencia...", "Estimando la duración óptima de la clase...", "Seleccionando actividades de aprendizaje potenciales...", "Determinando el propósito de cada actividad...", "Secuenciando actividades para un máximo compromiso...", "Adaptando el contenido a los objetivos de aprendizaje...", "Ajustando los niveles de dificultad para la competencia de la audiencia...", "Finalizando elementos interactivos para el aprendizaje activo...", "Creando estrategias de evaluación para la retención de conocimientos...", "Optimizando el flujo de contenido para una experiencia de aprendizaje sin problemas...", "Preparando los toques finales en el diseño educativo...", "Generación de contenido de microaprendizaje personalizado completo."],
+            "suggestions": {
+              "objective": {
+                "actions": {
+                  "label": "¿Desea utilizar esta versión mejorada de tu objetivo?",
+                  "cancel": "No, gracias",
+                  "confirm": "Sí, actualizar mi objetivo"
+                }
+              },
+              "total": "Sugerencias seleccionadas",
+              "origin": "Ministerio",
+              "label": "Sugerencia",
+              "irrelevant": "El contenido agregado como objetivo no es aplicable para un módulo, por favor verificalo y vuelve a intentar"
+            },
             "title": "Crea un Módulo de aprendizaje",
             "postTitle": "Selecciona los aspectos que debe tener el contenido a generar en el siguiente formulariona los aspectos que debe tener el contenido a generar en el siguiente formulario",
             "module": "Objetivo Módulo de aprendizaje",
@@ -89,7 +106,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "university": "Universidad",
               "company": "Empresa"
             },
-            "moduleLength": {
+            "duration": {
               "brief": "Breve (3 actividades)",
               "standard": "Estándar (5 actividades)",
               "extended": "Extendido (7 actividades)"
@@ -126,7 +143,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "objective": {
                 "title": "Tema u objetivo",
-                "textArea": "¿Qué quieres que tus alumnos aprendan en este módulo? ",
+                "textArea": "Objetivo del módulo",
                 "description": "Define el principal resultado de aprendizaje de tu módulo."
               },
               "suggestions": "Si lo deseas, selecciona una de las siguientes opciones de mejora y se llevará a cabo una refinación del objetivo definido.",
@@ -137,7 +154,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Avancemos",
                 "description": "Diseñemos las actividades del módulo.",
                 "buttons": {
-                  "inspiration": "Diseño asistido con IA",
+                  "generate": "Generar con IA",
                   "manual": "Diseño manual"
                 }
               }

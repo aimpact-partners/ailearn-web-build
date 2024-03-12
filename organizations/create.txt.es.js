@@ -17,11 +17,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.24/assignment-dashboard-participant",
+          "vspecifier": "@aimpact/ailearn-app@0.0.24/organizations/create",
           "multibundle": true
         },
         "type": "txt"
-      }, _context.meta.url).package('en');
+      }, _context.meta.url).package('es');
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
@@ -29,62 +29,29 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 453559973,
+        hash: 4153551461,
         creator: function (require, exports) {
           exports.txt = {
-            "activities": {
-              "type": "Activity type",
-              "subtype": "Subtype",
-              "description": "Description",
-              "empty": "The student has not yet completed this activity"
-            },
-            "assessments": {
-              "quiz": "Assessment",
-              "oral": "Oral",
-              "title": "Activity",
-              "oralText": "Record an audio where you summarize and comment on the content studied. Highlight the key concepts, use appropriate language and offer your personal opinion. Keep a logical order and fidelity to the facts of the original text.",
-              "record": "Record",
-              "recordAgain": "Record again",
-              "stop": "Stop",
-              "send": "Send audio",
-              "redo": "Do it again!",
-              "analysisTitle": "Analysis report",
-              "analysis": "Report",
-              "feedback": "Knowledge",
-              "competencies": "Competences"
-            },
             "breadcrumb": {
-              "modules": "Modules",
-              "management": "Management",
-              "assignments": "Assignments",
-              "chat": "Chat",
-              "dashboard": "Dashboard"
+              "organizations": "Organización",
+              "management": "Gestión"
             },
-            "chat": {
-              "title": "User conversation",
-              "empty": "There are no messages in this conversation yet",
-              "synthesis": "Conversation synthesis",
-              "systemActions": {
-                "kb-response": "Data obtained from the knowledge base: ",
-                "fetching-tool-data": "I will query the documents of the class",
-                "kb-processed-response": "Analysis on content finished",
-                "transcription": "Getting transcription",
-                "functions": {
-                  "kb": "Querying the knowledge base about: "
-                }
+            "create": {
+              "title": "Agregar Organización",
+              "success": "Organización publicada con éxito",
+              "error": "Error al publicar la organización",
+              "name": {
+                "label": "Nombre de la Organización",
+                "placeholder": "¿Cuál será el nombre de la Organización?"
+              },
+              "description": {
+                "label": "Descripción de la Organización",
+                "placeholder": "¿Cuál es la misión de esta Organización?"
+              },
+              "actions": {
+                "save": "Continuar"
               }
-            },
-            "finish": "Finish",
-            "results": "Results",
-            "total": "Total questions",
-            "correct": "Correct answers",
-            "wrong": "Wrong answers",
-            "title": "Study detail",
-            "conversation": "Chat",
-            "multiple": "Multiple selection evaluation",
-            "spoken": "Oral evaluation",
-            "percentileDetail": "El estudiante ha completado actualmente un percentile%% de la actividad.",
-            "studentAudio": "Student audio"
+            }
           };
         }
       });

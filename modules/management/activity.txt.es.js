@@ -29,17 +29,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2474070070,
+        hash: 4026678758,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
               "add": "Agregar",
-              "manual": "Generar manualmente",
               "confirm": "Confirmar",
               "analyse": "Sugerir mejoras",
               "activities": "Generar actividades",
               "refine": "Refinar",
-              "generate": "Generar",
+              "generate": "Generar con IA",
               "save": "Guardar",
               "clean": "Limpiar",
               "activity": "Actividades",
@@ -50,7 +49,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "next": "Siguiente",
               "back": "Atrás",
               "cover": "Generar portada",
-              "upload": "Subir Imagen"
+              "upload": "Subir Imagen",
+              "inspiration": "Generar con IA",
+              "manual": "Diseño manual"
             },
             "activities": {
               "minutes": "Mins",
@@ -76,6 +77,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "empty": {
                 "title": "Crea Este Elemento",
                 "description": "Utiliza la IA para dar forma a este elemento específico. Haz clic en 'Generar' para crear contenido atractivo sin esfuerzo. Eleva tu experiencia de enseñanza con una creación innovadora. 🚀"
+              },
+              "deleteModal": {
+                "title": "Eliminar Contenido",
+                "description": "¿Estás seguro de que quieres eliminar el contenido de esta actividad?"
               }
             },
             "conversation": {
@@ -121,6 +126,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               }
             },
+            "modal": {
+              "cancel": {
+                "title": "¿Estás seguro?",
+                "description": "Tus cambios no han sido guardados. Si continúas, los perderás."
+              }
+            },
+            "delete": {
+              "title": "Eliminar contenido",
+              "description": "¿Estás seguro de que quieres eliminar el contenido de esta actividad?"
+            },
             "multipleChoice": {
               "labels": {
                 "correct": "Respuesta correcta",
@@ -129,7 +144,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "related": {
                 "label": "Actividad relacionada",
                 "independent": "Independiente"
-              }
+              },
+              "emptyOptions": "No hay opciones disponibles"
             },
             "picture": {
               "title": "Genera la mejor imagen para tu módulo",
@@ -145,8 +161,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "processMessages": ["Evaluando la demografía de la audiencia...", "Estimando la duración óptima de la clase...", "Seleccionando actividades de aprendizaje potenciales...", "Determinando el propósito de cada actividad...", "Secuenciando actividades para un máximo compromiso...", "Adaptando el contenido a los objetivos de aprendizaje...", "Ajustando los niveles de dificultad para la competencia de la audiencia...", "Finalizando elementos interactivos para el aprendizaje activo...", "Creando estrategias de evaluación para la retención de conocimientos...", "Optimizando el flujo de contenido para una experiencia de aprendizaje sin problemas...", "Preparando los toques finales en el diseño educativo...", "Generación de contenido de microaprendizaje personalizado completo."],
             "refiningActivity": ["Analizando el objetivo de la actividad para garantizar alineación con los resultados de aprendizaje...", "Revisando los componentes de la actividad para maximizar la participación estudiantil...", "Optimizando la estructura de la actividad para facilitar la comprensión y la aplicación del conocimiento...", "Ajustando los materiales didácticos para una mayor accesibilidad y diversidad...", "Evaluando métodos de entrega para una interacción efectiva y adaptativa...", "Incorporando feedback estudiantil para mejorar la experiencia de aprendizaje...", "Calibrando el nivel de dificultad para satisfacer un rango amplio de habilidades estudiantiles...", "Integrando tecnología educativa para enriquecer la actividad...", "Actualizando los recursos de la actividad para mantener relevancia y actualidad...", "Finalizando el proceso de refinamiento para una actividad educativa integral y atractiva..."],
-            "refiningQuestions": ["Formulando preguntas para evaluar la comprensión del tema central...", "Seleccionando opciones de respuesta que reflejen una variedad de perspectivas...", "Diseñando preguntas para abarcar los objetivos de aprendizaje específicos...", "Creando distractores plausibles para evaluar el pensamiento crítico...", "Elaborando preguntas que midan la aplicación práctica de los conceptos...", "Integrando preguntas de análisis para profundizar en la comprensión conceptual...", "Generando preguntas que fomenten la retención a largo plazo...", "Construyendo un flujo lógico en el cuestionario que refleje la estructura del contenido...", "Asegurando que las preguntas cubran todos los aspectos clave de la actividad...", "Finalizando la revisión de preguntas para garantizar la alineación con los objetivos educativos..."],
-            "refiningAnswers": ["Compilando respuestas correctas basadas en los puntos clave de la materia...", "Incluyendo opciones variadas que desafíen la comprensión del estudiante...", "Asegurando que cada respuesta refuerce el conocimiento esencial de la actividad...", "Balanceando la dificultad de las respuestas para mantener un desafío apropiado...", "Vinculando respuestas con ejemplos prácticos para facilitar la aplicación del conocimiento...", "Seleccionando respuestas que requieran análisis y no solo memorización...", "Incorporando retroalimentación inmediata en respuestas para fomentar el aprendizaje...", "Estableciendo una secuencia coherente de preguntas y respuestas...", "Revisando que las respuestas representen un espectro completo de la lección...", "Completando la creación de un banco de respuestas que apoye el éxito del estudiante..."],
+            "refiningQuestions": ["Formulando preguntas claras sobre el tema...", "Seleccionando diferentes perspectivas de respuesta...", "Diseñando preguntas específicas para aprender...", "Creando opciones para pensar críticamente...", "Elaborando preguntas para aplicar conceptos...", "Integrando preguntas para comprender mejor...", "Generando preguntas para recordar...", "Construyendo un cuestionario lógico...", "Asegurando cobertura completa de la actividad...", "Revisando preguntas para alinearse con objetivos educativos..."],
+            "refiningAnswers": ["Compilando respuestas correctas...", "Incluyendo opciones desafiantes...", "Reforzando conocimientos esenciales...", "Manteniendo un desafío apropiado...", "Incorporando retroalimentación inmediata...", "Estableciendo una secuencia coherente...", "Revisando respuestas completas...", "Creando un banco de respuestas para el éxito..."],
             "generatingImage": ["Iniciando generación de imagen para la actividad del módulo...", "Integrando parámetros de la actividad para personalizar la imagen...", "Seleccionando iconografía y colores basados en el contenido de la actividad...", "Elaborando esquemas visuales para facilitar la comprensión del tema...", "Adaptando la complejidad visual al nivel educativo del módulo...", "Enriqueciendo la imagen con elementos interactivos para la actividad...", "Armonizando la imagen con el esquema de diseño del módulo...", "Realizando ajustes finos en la composición de la imagen...", "Verificando la alineación de la imagen con los objetivos de aprendizaje...", "Imagen de actividad generada exitosamente y preparada para su uso."],
             "specs": {
               "title": "Recursos",
@@ -188,7 +204,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Agrega el rol del personaje"
               },
               "questions": {
-                "title": "Questions"
+                "title": "Preguntas"
               }
             },
             "bulletPoint": {
