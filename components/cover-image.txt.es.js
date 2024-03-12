@@ -29,9 +29,26 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2745614147,
+        hash: 3979349237,
         creator: function (require, exports) {
-          exports.txt = {};
+          exports.txt = {
+            "title": "Genera la mejor imagen para tu módulo",
+            "description": "Esta herramienta te ayudará a generar la mejor imagen para tu módulo. Puedes subir una imagen y nosotros generaremos la mejor imagen para tu módulo. También puedes usar el editor de imágenes para editar la imagen y generar la mejor imagen para tu módulo.",
+            "notes": {
+              "label": "Notas",
+              "placeholder": "Comparte tus sugerencias para crear la mejor imagen para tu módulo"
+            },
+            "actions": {
+              "confirm": "Confirmar",
+              "cancel": "Cancelar",
+              "generate": "Generar con IA"
+            },
+            "confirm": {
+              "title": "¿Quieres reemplazar la imagen actual?",
+              "subtitle": "Si confirmas, la imagen actual será reemplazada."
+            },
+            "generating": ["Recepción del texto para la generación de la imagen...", "Análisis del contexto del módulo educativo...", "Selección de elementos visuales acorde al año escolar...", "Composición de bocetos preliminares basados en el texto...", "Ajuste de detalles gráficos y estilo visual...", "Incorporación de criterios pedagógicos en la imagen...", "Optimización de la imagen para una mejor retención educativa...", "Finalización de la renderización de la imagen...", "Revisión de calidad y coherencia con el módulo...", "Imagen generada con éxito y lista para su integración en el módulo."]
+          };
         }
       });
       __pkg.exports.descriptor = [{
