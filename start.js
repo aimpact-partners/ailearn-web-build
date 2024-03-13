@@ -324,6 +324,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/not-found",
         "layout": "general-layout"
       }, {
+        "name": "app-policies-page",
+        "vspecifier": "@aimpact/ailearn-app@0.0.24/pages/policies.widget",
+        "is": "page",
+        "route": "/policies",
+        "layout": "general-layout"
+      }, {
         "name": "ailearn-template-tipography",
         "vspecifier": "@aimpact/ailearn-app@0.0.24/template/typography",
         "is": "page",

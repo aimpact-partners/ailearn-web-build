@@ -248,7 +248,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       ***********************/
 
       ims.set('./index', {
-        hash: 583652675,
+        hash: 2991129866,
         creator: function (require, exports) {
           "use strict";
 
