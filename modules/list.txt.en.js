@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/chat-api", "0.2.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", "0.2.0"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.6"], ["pragmate-ui", "0.0.3"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.3"], ["apexcharts", "3.44.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.4"], ["dompurify", "3.0.6"], ["firebase", "10.5.0"], ["firebase-admin", "11.11.0"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.2"], ["marked-highlight", "2.0.6"], ["marked-mangle", "1.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.2"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.32"], ["@types/react-dom", "18.2.14"], ["@aimpact/ailearn-app", "0.0.23"], ["@aimpact/ailearn-app", "0.0.23"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.11"], ["pragmate-ui", "0.0.6"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@bgroup/http-suite", "1.0.3"], ["apexcharts", "3.44.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.4"], ["dompurify", "3.0.6"], ["firebase", "10.5.0"], ["firebase-admin", "11.11.0"], ["framer-motion", "10.17.8"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.2"], ["marked-highlight", "2.0.6"], ["marked-mangle", "1.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.2"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.32"], ["@types/react-dom", "18.2.14"], ["@aimpact/ailearn-app", "0.0.24"], ["@aimpact/ailearn-app", "0.0.24"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.23/modules/list",
+          "vspecifier": "@aimpact/ailearn-app@0.0.24/modules/list",
           "multibundle": true
         },
         "type": "txt"
@@ -29,54 +29,54 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2599528122,
+        hash: 2632093607,
         creator: function (require, exports) {
           exports.txt = {
-            "classes": {
-              "search": "Search classwork",
-              "topicsList": "See list of topics",
-              "classes": "Classwork",
+            "assign": {
+              "title": "Assign module to classroom",
+              "actions": {
+                "assign": "Assign",
+                "copy": "Copy"
+              }
+            },
+            "breadcrumb": {
+              "modules": "Modules",
+              "management": "Management",
+              "assignment": "Assignment",
+              "chat": "Chat"
+            },
+            "tabs": {
+              "drafts": "Drafts",
+              "published": "Published"
+            },
+            "actions": {
               "create": "Create",
-              "status": "Status",
-              "elements": {
-                "relevance": "Relevance",
-                "synthesis": "Synthesis",
-                "assessment": "Assessment"
+              "delete": "Delete item"
+            },
+            "errors": {
+              "ERROR_GETTING_URL": "Error getting url"
+            },
+            "loading": {
+              "title": "Loading Data",
+              "description": "We are loading your data. Please wait for a moment."
+            },
+            "item": {
+              "description": "The module does not have a description yet"
+            },
+            "empty": {
+              "general": {
+                "title": "Create Your First Module",
+                "description": "Modernize your teaching approach by bringing your first module to life. Unleash your creativity, shape your content, and enjoy the experience of learning! 🚀"
               },
-              "share": {
-                "header": "Share your classwork",
-                "title": "Share your classwork with your students",
-                "description": "Copy the link below and share it with your students",
-                "close": "Close",
-                "copy": "Copy Link"
-              }
-            },
-            "gclassroom": {
-              "quantity": {
-                "number": "Module assigned to %s classrooms",
-                "empty": "Unassigned module"
+              "drafts": {
+                "title": "No Drafts Yet",
+                "description": "You don't have any drafts at the moment. Start creating and perfecting your content before publishing. 📚"
               },
-              "title": "Select the class where you want to share your class",
-              "confirm": "Confirm",
-              "assign": "Assign",
-              "copy": "Copy link",
-              "copied": "Link copied to clipboard"
-            },
-            "welcome": "Here you can generate your new classworks. Click on the new classwork button and fill the form to start",
-            "empty": "Classworks haven't been created yet.",
-            "create": "Create",
-            "topics": {
-              "elements": {
-                "relevance": "Relevance",
-                "synthesis": "Synthesis",
-                "prerequisites": "Prerequisites"
+              "published": {
+                "title": "No Published Modules",
+                "description": "There are no published modules available. Work on each module and publish them to update this list of publications. 🎓"
               }
-            },
-            "titleClassroom": "Google Classroom",
-            "textClassroom": "Your Google Classroom account was successfully linked.",
-            "spanClassroom": "We are ready for take-off!",
-            "titleInfo": "Important Information",
-            "spanInfo": "RVD.AI uses advanced artificial intelligence technology to generate content and responses. \n\n However, it is important to note that these results may include occasional inaccuracies or deviations.\n\n These inaccuracies are inherent to the nature of artificial intelligence today and are part of the process of learning and continuous improvement of the system."
+            }
           };
         }
       });

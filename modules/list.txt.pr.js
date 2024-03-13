@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/chat-api", "0.2.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", "0.2.0"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.6"], ["pragmate-ui", "0.0.3"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.3"], ["apexcharts", "3.44.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.4"], ["dompurify", "3.0.6"], ["firebase", "10.5.0"], ["firebase-admin", "11.11.0"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.2"], ["marked-highlight", "2.0.6"], ["marked-mangle", "1.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.2"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.32"], ["@types/react-dom", "18.2.14"], ["@aimpact/ailearn-app", "0.0.23"], ["@aimpact/ailearn-app", "0.0.23"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.11"], ["pragmate-ui", "0.0.6"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@bgroup/http-suite", "1.0.3"], ["apexcharts", "3.44.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.4"], ["dompurify", "3.0.6"], ["firebase", "10.5.0"], ["firebase-admin", "11.11.0"], ["framer-motion", "10.17.8"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.2"], ["marked-highlight", "2.0.6"], ["marked-mangle", "1.1.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.2"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.32"], ["@types/react-dom", "18.2.14"], ["@aimpact/ailearn-app", "0.0.24"], ["@aimpact/ailearn-app", "0.0.24"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.23/modules/list",
+          "vspecifier": "@aimpact/ailearn-app@0.0.24/modules/list",
           "multibundle": true
         },
         "type": "txt"
@@ -29,54 +29,41 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3960807941,
+        hash: 3164707391,
         creator: function (require, exports) {
           exports.txt = {
-            "classes": {
-              "search": "Buscar trabalhos de classe",
-              "topicsList": "Ver lista de tópicos",
-              "classes": "Trabalhos de classe",
-              "create": "Criar",
-              "status": "Status",
-              "elements": {
-                "relevance": "Relevância",
-                "synthesis": "Síntese",
-                "assessment": "Avaliação"
+            "tabs": {
+              "drafts": "Rascunhos",
+              "published": "Publicados"
+            },
+            "actions": {
+              "create": "Crear",
+              "delete": "Borrar item"
+            },
+            "loading": {
+              "title": "Carregando Dados",
+              "description": "Estamos carregando seus dados. Por favor, aguarde um momento."
+            },
+            "errors": {
+              "ERROR_GETTING_URL": "Error obteniendo url"
+            },
+            "item": {
+              "description": "O módulo ainda não tem uma descrição"
+            },
+            "empty": {
+              "general": {
+                "title": "Crie seu Primeiro Módulo",
+                "description": "Modernize sua abordagem educacional ao dar vida ao seu primeiro módulo. Liberte sua criatividade, dê forma ao seu conteúdo e aproveite a experiência da aprendizagem! 🚀"
               },
-              "share": {
-                "header": "Compartilhe seu trabalho de classe",
-                "title": "Compartilhe seu trabalho de classe com seus alunos",
-                "description": "Copie o link abaixo e compartilhe com seus alunos",
-                "close": "Fechar",
-                "copy": "Copiar Link"
-              }
-            },
-            "gclassroom": {
-              "quantity": {
-                "number": "Módulo atribuído a %s salas de aula",
-                "empty": "Módulo não atribuído"
+              "drafts": {
+                "title": "Sem Rascunhos Ainda",
+                "description": "Você não tem nenhum rascunho no momento. Comece a criar e aperfeiçoar seu conteúdo antes de publicar. 📚"
               },
-              "title": "Selecione a sala de aula  onde deseja compartilhar sua aula",
-              "confirm": "Confirmar",
-              "assign": "Atribuir",
-              "copy": "Copiar link",
-              "copied": "Link copiado para a área de transferência"
-            },
-            "welcome": "Aqui você pode gerar seus novos trabalhos de classe. Clique no botão novo trabalho de classe e preencha o formulário para começar",
-            "empty": "Trabalhos de classe ainda não foram criados.",
-            "create": "Criar",
-            "topics": {
-              "elements": {
-                "relevance": "Relevância",
-                "synthesis": "Síntese",
-                "prerequisites": "Pré-requisitos"
+              "published": {
+                "title": "Nenhum Módulo Publicado",
+                "description": "Não há módulos publicados disponíveis. Trabalhe em cada módulo e publique-os para atualizar esta lista de publicações. 🎓"
               }
-            },
-            "titleClassroom": "Google Classroom",
-            "textClassroom": "Your Google Classroom account was successfully linked.",
-            "spanClassroom": "We are ready for take-off!",
-            "titleInfo": "Important Information",
-            "spanInfo": "RVD.AI uses advanced artificial intelligence technology to generate content and responses. \n\n However, it is important to note that these results may include occasional inaccuracies or deviations.\n\n These inaccuracies are inherent to the nature of artificial intelligence today and are part of the process of learning and continuous improvement of the system."
+            }
           };
         }
       });
