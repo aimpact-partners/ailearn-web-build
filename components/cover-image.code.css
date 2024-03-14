@@ -78,7 +78,7 @@
   height: 1rem;
   width: 1rem;
 }
-.cover-image__container .actions:hover .pui-icon-button {
+.cover-image__container .actions:hover .pui-icon-button:not(:disabled) {
   opacity: 1;
 }
 
