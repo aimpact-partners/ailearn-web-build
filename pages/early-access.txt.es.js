@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.27/pages/policies",
+          "vspecifier": "@aimpact/ailearn-app@0.0.27/pages/early-access",
           "multibundle": true
         },
         "type": "txt"
@@ -29,40 +29,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4236060471,
+        hash: 733546522,
         creator: function (require, exports) {
           exports.txt = {
-            "checkbox": "<strong>Sí acepto</strong> los términos y condiciones expresados en este documento.",
-            "button": "Aceptar",
-            "actions": {
-              "save": "Enviar"
-            },
-            "age": {
-              "title": "Verificación de mayoría de edad",
-              "validation": "Declaro que los datos ingresados son verídicos y me hago responsable al respecto."
-            },
-            "months": {
-              "label": "Mes",
-              "items": ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
-            },
-            "days": {
-              "label": "Día",
-              "items": ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "sábado"]
-            },
-            "years": {
-              "label": "Año"
-            },
-            "breadcrumb": {
-              "modules": "Módulos",
-              "management": "Borrador"
-            },
-            "menu": {
-              "politic": "Políticias de privacidad",
-              "accept": "Aceptación de las condiciones generales de contratación",
-              "join": "Vinculación con la cuenta de mi hijo",
-              "majority": "Mayoría de edad",
-              "validation": "Validación de la mayoría de edad"
-            }
+            "title": "Bienvenido a RVD.AI",
+            "description": "Ingresa el código para acceder al piloto",
+            "button": "Ingresar",
+            "invalid": "El código ingresado es inválido"
           };
         }
       });

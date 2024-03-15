@@ -29,9 +29,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3484121768,
+        hash: 1913795556,
         creator: function (require, exports) {
           exports.txt = {
+            "checkbox": "<strong>Yes, I accept</strong> the terms and conditions expressed in this document.",
+            "button": "Accept",
+            "actions": {
+              "save": "Submit"
+            },
+            "age": {
+              "title": "Age verification",
+              "validation": "I declare that the data entered is true and I am responsible for it."
+            },
             "months": {
               "label": "Month",
               "items": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
