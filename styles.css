@@ -342,6 +342,7 @@
   --secondary-dark-container: var(--secondary-60);
   --secondary-light-container: var(--secondary-40);
   --disabled-text: var(--neutral-70);
+  --background-neutral: var(--neutral-10);
 }
 :root[data-accessibility-mode=dyslexia] {
   --font-family: "OpenDyslexic";

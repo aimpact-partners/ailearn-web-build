@@ -4,6 +4,10 @@
   --border: var(--surface);
 }
 
+.pui-select .pui-react-select__placeholder,
+.pui-select .pui-react-select__single-value {
+  color: var(--text-color);
+}
 .pui-select .pui-react-select__control {
   background-color: var(--background);
   color: var(--text);
@@ -27,4 +31,4 @@
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBOzs7QUFJQTtFQUNDO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7O0FBS0Y7RUFDQztFQUNBOztBQUtBO0VBQ0M7RUFDQTs7QUFHRDtFQUNDO0VBQ0EiLCJmaWxlIjoiIn0= */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBOzs7QUFHQTtBQUFBO0VBRUM7O0FBSUQ7RUFDQztFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBOztBQUtGO0VBQ0M7RUFDQTs7QUFLQTtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBIiwiZmlsZSI6IiJ9 */

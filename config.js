@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/ailearn-app',
-				version: 'test-0.0.26-01',
+				version: 'test-0.0.29-1',
 				languages: {
 					default: 'en',
 					supported: ['en', 'es', 'pr'],
