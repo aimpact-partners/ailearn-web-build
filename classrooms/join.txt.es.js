@@ -29,18 +29,27 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3419403184,
+        hash: 2922586031,
         creator: function (require, exports) {
           exports.txt = {
+            "breadcrumb": {
+              "classrooms": "Aula",
+              "management": "Gestión",
+              "join": "Unirse"
+            },
+            "errors": {
+              "INVALID_CODE": "El código de verificación no es válido",
+              "ERROR_PUBLISHING": "No se ha podido hacer la solicitud, vuelva a intentarlo más tarde"
+            },
             "action": {
               "join": "Unirme"
             },
             "title": "Únete a una Aula",
-            "describe": "Únete a una aula para acceder al contenido y participar en actividades educativas.",
+            "describe": "Únete a una organización para acceder al contenido y participar en actividades educativas.",
             "form": {
               "title": "Código de Aula",
               "subtitle": "Ingresa el código de la clase proporcionado por tu profesor",
-              "placeholder": "Código de aula"
+              "placeholder": "Código de organización"
             },
             "info": {
               "title": "Cómo unirse con un código válido",
@@ -48,7 +57,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "first": "Utiliza una cuenta autorizada",
                 "second": "Ingresa un código de clase de 5 o 7 letras o números, sin espacios ni símbolos"
               },
-              "help": "Si tienes problemas para unirte a un aula, consulta con el profesor o visita nuestro Centro de Ayuda."
+              "help": "Si tienes problemas para unirte a un organización, consulta con el profesor o visita nuestro Centro de Ayuda."
+            },
+            "messages": {
+              "authorized": "Ya tienes acceso al aula",
+              "pending": "Tu solicitud de acceso está pendiente de aprobación por el profesor"
             }
           };
         }

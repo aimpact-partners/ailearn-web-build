@@ -29,9 +29,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1586771511,
+        hash: 485383396,
         creator: function (require, exports) {
           exports.txt = {
+            "breadcrumb": {
+              "classrooms": "Classroom",
+              "management": "Management",
+              "join": "Join"
+            },
+            "errors": {
+              "INVALID_CODE": "The verification code is not valid",
+              "ERROR_PUBLISHING": "The request could not be made, please try again later"
+            },
             "action": {
               "join": "Join"
             },
@@ -49,6 +58,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "second": "Enter a class code of 5 or 7 letters or numbers, without spaces or symbols"
               },
               "help": "If you're having trouble joining a classroom, consult with your teacher or visit our Help Center."
+            },
+            "messages": {
+              "authorized": "You now have access to the classroom",
+              "pending": "Your access request is pending approval by the teacher"
             }
           };
         }

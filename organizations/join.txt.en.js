@@ -29,9 +29,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 981076052,
+        hash: 988441238,
         creator: function (require, exports) {
           exports.txt = {
+            "breadcrumb": {
+              "organizations": "Organization",
+              "management": "Management",
+              "join": "Join"
+            },
+            "errors": {
+              "ERROR_PUBLISHING": "The request could not be made, please try again later"
+            },
             "action": {
               "join": "Join"
             },

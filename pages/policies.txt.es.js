@@ -29,9 +29,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4236060471,
+        hash: 697936120,
         creator: function (require, exports) {
           exports.txt = {
+            "ERROR": "No se pudo procesar la solicitud. Por favor, inténtelo de nuevo más tarde.",
             "checkbox": "<strong>Sí acepto</strong> los términos y condiciones expresados en este documento.",
             "button": "Aceptar",
             "actions": {

@@ -17,11 +17,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.27/pages/policies",
+          "vspecifier": "@aimpact/ailearn-app@0.0.27/classrooms/create",
           "multibundle": true
         },
         "type": "txt"
-      }, _context.meta.url).package('en');
+      }, _context.meta.url).package('pr');
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
@@ -29,42 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3572124215,
+        hash: 2745614147,
         creator: function (require, exports) {
-          exports.txt = {
-            "ERROR": "The request could not be processed. Please try again later.",
-            "checkbox": "<strong>Yes, I accept</strong> the terms and conditions expressed in this document.",
-            "button": "Accept",
-            "actions": {
-              "save": "Submit"
-            },
-            "age": {
-              "title": "Age verification",
-              "validation": "I declare that the data entered is true and I am responsible for it."
-            },
-            "months": {
-              "label": "Month",
-              "items": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-            },
-            "days": {
-              "label": "Day",
-              "items": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-            },
-            "years": {
-              "label": "Year"
-            },
-            "breadcrumb": {
-              "modules": "Modules",
-              "management": "Draft"
-            },
-            "menu": {
-              "politic": "Privacy policy",
-              "accept": "Acceptance of the general terms and conditions of contract",
-              "join": "Linking to my child's account",
-              "majority": "Majority of age",
-              "validation": "Validation of majority of age"
-            }
-          };
+          exports.txt = {};
         }
       });
       __pkg.exports.descriptor = [{
