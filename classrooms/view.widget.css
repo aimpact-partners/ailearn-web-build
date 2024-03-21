@@ -57,24 +57,24 @@
   width: 1rem;
   height: 1rem;
 }
-.app-organization-creation-page .people-list__container .person-item__container {
+.app-classroom-creation-page .people-list__container .person-item__container {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   border-bottom: 2px solid var(--outline);
   align-items: center;
 }
-.app-organization-creation-page .people-list__container .person-item__container .user-personal-info {
+.app-classroom-creation-page .people-list__container .person-item__container .user-personal-info {
   display: flex;
   gap: 1rem;
   flex-grow: 1;
   align-items: center;
 }
-.app-organization-creation-page .people-list__container .person-item__container .user-personal-info .pui-image img {
+.app-classroom-creation-page .people-list__container .person-item__container .user-personal-info .pui-image img {
   max-height: 35px;
   border-radius: 50%;
 }
-.app-organization-creation-page .people-list__container .person-item__container .actions_buttons {
+.app-classroom-creation-page .people-list__container .person-item__container .actions_buttons {
   display: flex;
   justify-items: flex-end;
   align-items: flex-end;
@@ -82,22 +82,22 @@
   gap: 1.25rem;
   flex-grow: 1;
 }
-.app-organization-creation-page .people-list__container .person-item__container .actions_buttons .select-option {
+.app-classroom-creation-page .people-list__container .person-item__container .actions_buttons .select-option {
   width: 100%;
   min-width: 200px;
 }
-.app-organization-creation-page .people-list__container .person-item__container .actions_buttons .div-select__button label {
+.app-classroom-creation-page .people-list__container .person-item__container .actions_buttons .div-select__button label {
   display: none;
 }
-.app-organization-creation-page .people-list__container {
+.app-classroom-creation-page .people-list__container {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 }
-.app-organization-creation-page .people-list__container ul {
+.app-classroom-creation-page .people-list__container ul {
   padding: 0;
 }
-.app-organization-creation-page .people-list__container .subtitle-list_container {
+.app-classroom-creation-page .people-list__container .subtitle-list_container {
   display: flex;
   justify-content: space-between;
 }
@@ -155,13 +155,13 @@
   max-width: 270px;
   border: 1px solid var(--outline);
 }
-.app-organization-creation-page {
+.app-classroom-creation-page {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   background-color: var(--surface);
 }
-.app-organization-creation-page .actions-submit__container {
+.app-classroom-creation-page .actions-submit__container {
   text-align: end;
 }
 

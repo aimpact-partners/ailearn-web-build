@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.27/classroom/management",
+          "vspecifier": "@aimpact/ailearn-app@0.0.27/classrooms/view",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 532701546,
+        hash: 4048259760,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -52,44 +52,43 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "next": "Siguiente",
               "back": "Atrás"
             },
+            "breadcrumb": {
+              "classrooms": "Aulas",
+              "management": "Gestión"
+            },
+            "list": {
+              "managers": {
+                "title": "Administradores",
+                "role": "Administrador"
+              },
+              "members": {
+                "title": "Docentes",
+                "role": "Docente"
+              },
+              "pendings": {
+                "title": "Pendientes",
+                "invited": "Invitado"
+              }
+            },
             "ERR_GENERATING_ACTIVITIES": "Error generando classes",
-            "classCode": "Código de Aula",
+            "orgCode": "Código de Aula",
             "title": "Crea una Aula",
-            "postTitle": "Selecciona los aspectos que debe tener el contenido a generar en el siguiente formulariona los aspectos que debe tener el contenido a generar en el siguiente formulario",
+            "postTitle": "Nos complace darle la bienvenida a este apasionante proceso de creación de su espacio educativo. Este formulario marca el primer paso hacia la excelencia en la gestión de su equipo educativo. Dispondrá de las herramientas necesarias para personalizar todos los aspectos de su organización y alcanzar sus objetivos académicos. Trabajando juntos, construiremos un entorno que refleje sus estándares de calidad y fomente un aprendizaje continuo y significativo. ¡Empecemos a construir juntos un futuro educativo brillante!",
             "class": "Objetivo Aula de Aprendizaje",
+            "messages": {
+              "copy": "Texto copiado con éxito",
+              "copyError": "Error al copiar al portapapeles"
+            },
             "empty": {
               "title": "Aula no Encontrada",
               "pending": "Excelente, ya no tiene asuntos pendientes que resolver. Todas las invitaciones se han resuelto.",
-              "description": "¡Ups! No se encontró el aula. Existe la posibilidad de que estés utilizando un enlace antiguo o buscando un aula inexistente. Te invitamos a crear una nueva y continuar explorando este increíble mundo de enseñanza y aprendizaje. ¡Embárcate en una nueva travesía educativa con nosotros! 🌟",
+              "description": "¡Ups! No se encontró el Aula. Existe la posibilidad de que estés utilizando un enlace antiguo o buscando un Aula inexistente. Te invitamos a crear una nueva y continuar explorando este increíble mundo de enseñanza y aprendizaje. ¡Embárcate en una nueva travesía educativa con nosotros! 🌟",
               "labelList": "Suma usuarios en esta lista dándole click al botón de %action"
-            },
-            "placeholder": {
-              "name": "¿Cómo se llamará el aula?",
-              "description": "¿Cuál es la misión de esta aula?"
-            },
-            "labels": {
-              "name": "Nombre",
-              "description": "Descripción"
-            },
-            "list": {
-              "teachers": {
-                "title": "Docentes",
-                "single": "Docente"
-              },
-              "students": {
-                "title": "Alumnos",
-                "single": "Alumno"
-              },
-              "pending": {
-                "title": "Pendientes",
-                "single": "",
-                "invited": "Invitado"
-              }
             },
             "modal": {
               "edit": {
                 "title": "¿Deseas cambiar el rol del usuario?",
-                "info": "Recuerda que cambiar el rol también modifica el acceso y las acciones del usuario dentro del aula."
+                "info": "Recuerda que cambiar el rol también modifica el acceso y las acciones del usuario dentro de la organización."
               },
               "invite": {
                 "title": "Invitar un usuario como %role"

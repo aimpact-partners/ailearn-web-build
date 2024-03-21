@@ -244,6 +244,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/gclassroom/access",
         "layout": "chat-layout"
       }, {
+        "name": "app-classrooms-create",
+        "vspecifier": "@aimpact/ailearn-app@0.0.27/classrooms/create.widget",
+        "is": "page",
+        "route": "/classrooms/create",
+        "layout": "general-layout"
+      }, {
         "name": "ailearn-gclassroom-explorer",
         "vspecifier": "@aimpact/ailearn-app@0.0.27/gclassroom-explorer.widget"
       }, {
@@ -259,10 +265,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/classrooms/list",
         "layout": "general-layout"
       }, {
-        "name": "app-classroom-management",
-        "vspecifier": "@aimpact/ailearn-app@0.0.27/classroom/management.widget",
+        "name": "app-classrooms-view",
+        "vspecifier": "@aimpact/ailearn-app@0.0.27/classrooms/view.widget",
         "is": "page",
-        "route": "/classroom/management/${id}",
+        "route": "/classrooms/view/${id}",
         "layout": "general-layout"
       }, {
         "name": "ailearn-modules-list",
@@ -366,7 +372,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *********************************/
 
         ims.set('./handlers/access', {
-          hash: 3958979568,
+          hash: 3817180910,
           creator: function (require, exports) {
             "use strict";
 
@@ -376,7 +382,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             exports.checkAccess = checkAccess;
             var _session = require("@aimpact/chat-sdk/session");
             const PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password', '/documents/access', '/reactive/testing'];
-            const DEFAULT_ROUTE = '/auth/login';
             async function checkAccess(pathname) {
               await _session.sessionWrapper.isReady;
               if (!_session.sessionWrapper.logged && PUBLIC_ROUTES.includes(pathname)) return true;
@@ -417,12 +422,38 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
           }
         });
 
+        /***********************************
+        INTERNAL MODULE: ./handlers/policies
+        ***********************************/
+
+        ims.set('./handlers/policies', {
+          hash: 389794250,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.checkPolicies = checkPolicies;
+            var _session = require("@aimpact/chat-sdk/session");
+            async function checkPolicies(pathname) {
+              await _session.sessionWrapper.isReady;
+              if (!_session.sessionWrapper.user.termsAccepted || _session.sessionWrapper.user.underage) {
+                return {
+                  pathname: '/policies'
+                };
+              }
+              return true;
+            }
+          }
+        });
+
         /**********************************
         INTERNAL MODULE: ./handlers/session
         **********************************/
 
         ims.set('./handlers/session', {
-          hash: 294390580,
+          hash: 2041486888,
           creator: function (require, exports) {
             "use strict";
 
@@ -431,8 +462,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             });
             exports.checkSession = checkSession;
             var _session = require("@aimpact/chat-sdk/session");
+            var _routing = require("@beyond-js/kernel/routing");
             const PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password', '/documents/access', '/reactive/testing'];
             const DEFAULT_ROUTE = '/auth/login';
+            const onLogout = () => {
+              _routing.routing.replaceState({}, '', '/');
+            };
+            // sessionWrapper.on('logout', onLogout);
             async function checkSession(pathname) {
               await _session.sessionWrapper.isReady;
               if (!_session.sessionWrapper.logged && PUBLIC_ROUTES.includes(pathname)) return {
@@ -443,6 +479,23 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 pathname: DEFAULT_ROUTE
               };
             }
+          }
+        });
+
+        /*******************************
+        INTERNAL MODULE: ./public-routes
+        *******************************/
+
+        ims.set('./public-routes', {
+          hash: 2497449379,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.PUBLIC_ROUTES = void 0;
+            const PUBLIC_ROUTES = exports.PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password', '/documents/access', '/reactive/testing'];
           }
         });
 
@@ -505,7 +558,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *************************/
 
         ims.set('./routing', {
-          hash: 3257039757,
+          hash: 945938749,
           creator: function (require, exports) {
             "use strict";
 
@@ -514,7 +567,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             var _session = require("./handlers/session");
             var _home = require("./handlers/home");
             var _access = require("./handlers/access");
-            const router = new _router.Router([_session.checkSession, _access.checkAccess, _home.checkHome]);
+            var _policies = require("./handlers/policies");
+            const router = new _router.Router([_session.checkSession, _access.checkAccess, _policies.checkPolicies, _home.checkHome]);
             _routing.routing.redirect = async function redirect(uri) {
               const response = await router.validate(uri.pathname);
               return response.pathname;

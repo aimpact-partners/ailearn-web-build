@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.27/classroom/management",
+          "vspecifier": "@aimpact/ailearn-app@0.0.27/classrooms/view",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 555126895,
+        hash: 3697498525,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -52,43 +52,48 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "back": "Back",
               "cancel": "Cancel"
             },
+            "breadcrumb": {
+              "classrooms": "Classrooms",
+              "management": "Management"
+            },
+            "list": {
+              "managers": {
+                "title": "Administrators",
+                "role": "Admin",
+                "single": "Manager"
+              },
+              "members": {
+                "title": "Teachers",
+                "role": "Teacher",
+                "single": "Teacher"
+              },
+              "pendings": {
+                "title": "Pending",
+                "invited": "Invited"
+              }
+            },
+            "messages": {
+              "approval": {
+                "success": "Successfully approve user",
+                "error": "Error approving user"
+              },
+              "copy": "Text copied successfully ",
+              "copyError": "Error when copying to clipboard"
+            },
             "ERR_GENERATING_ACTIVITIES": "Error generating classes",
-            "classCode": "Classroom Code",
+            "orgCode": "Classroom Code",
             "title": "Create a Classroom",
-            "postTitle": "Select the aspects that the content to be generated in the following form must have",
+            "postTitle": "We are pleased to welcome you to this exciting process in the creation of your educational space! This form marks the first step towards excellence in the management of your educational team. You will have the tools you need to customise every aspect of your organisation and achieve your academic goals. Working together, we will build an environment that reflects your quality standards and fosters continuous and meaningful learning. Let's start building a bright educational future together!",
             "class": "Learning Classroom Objective",
             "empty": {
               "title": "Classroom Not Found",
               "pending": "Excellent, you no longer have any outstanding issues to resolve. All invitations have been resolved.",
               "labelList": "Add users to this list by clicking the %action button.",
-              "description": "Oops! The classroom was not found. There's a possibility you're using an outdated link or searching for a non-existent classroom. We invite you to create a new one and continue exploring this incredible world of teaching and learning. Let's embark on a new educational journey together! 🌟"
-            },
-            "placeholder": {
-              "name": "What will be the name of the classroom?",
-              "description": "What's the mission of this classroom?"
-            },
-            "labels": {
-              "name": "Name",
-              "description": "Description"
-            },
-            "list": {
-              "teachers": {
-                "title": "Teachers",
-                "single": "Teacher"
-              },
-              "students": {
-                "title": "Students",
-                "single": "Student"
-              },
-              "pending": {
-                "title": "Pending",
-                "single": "",
-                "invited": "Invited"
-              }
+              "description": "Oops! The Classroom was not found. There's a possibility you're using an outdated link or searching for a non-existent Classroom. We invite you to create a new one and continue exploring this incredible world of teaching and learning. Let's embark on a new educational journey together! 🌟"
             },
             "modal": {
               "edit": {
-                "title": "Would you like to change the user role ?",
+                "title": "Would you like to change the user role?",
                 "info": "Remember that changing the role also modifies the user's access and actions inside the classroom."
               },
               "invite": {

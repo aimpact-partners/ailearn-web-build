@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.27/modules/list",
+          "vspecifier": "@aimpact/ailearn-app@0.0.27/classrooms/create",
           "multibundle": true
         },
         "type": "txt"
@@ -29,53 +29,27 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2555576668,
+        hash: 1997726553,
         creator: function (require, exports) {
           exports.txt = {
-            "assign": {
-              "title": "Classrooms list",
-              "actions": {
-                "assign": "Assign",
-                "copy": "Copy",
-                "dashboard": "Dashboard"
-              }
-            },
             "breadcrumb": {
-              "modules": "Modules",
-              "management": "Management",
-              "assignment": "Assignment",
-              "chat": "Chat"
+              "classrooms": "Classroom",
+              "management": "Management"
             },
-            "tabs": {
-              "drafts": "Drafts",
-              "published": "Published"
-            },
-            "actions": {
-              "create": "Create",
-              "delete": "Delete item"
-            },
-            "errors": {
-              "ERROR_GETTING_URL": "Error getting url"
-            },
-            "loading": {
-              "title": "Loading Data",
-              "description": "We are loading your data. Please wait for a moment."
-            },
-            "item": {
-              "description": "The module does not have a description yet"
-            },
-            "empty": {
-              "general": {
-                "title": "Create Your First Module",
-                "description": "Modernize your teaching approach by bringing your first module to life. Unleash your creativity, shape your content, and enjoy the experience of learning! 🚀"
+            "create": {
+              "title": "Add Classroom",
+              "success": "Classroom published successfully",
+              "error": "Error while publishing organization",
+              "name": {
+                "label": "Classroom Name",
+                "placeholder": "What will be the name of the Classroom?"
               },
-              "drafts": {
-                "title": "No Drafts Yet",
-                "description": "You don't have any drafts at the moment. Start creating and perfecting your content before publishing. 📚"
+              "description": {
+                "label": "Classroom Description",
+                "placeholder": "Add some detail"
               },
-              "published": {
-                "title": "No Published Modules",
-                "description": "There are no published modules available. Work on each module and publish them to update this list of publications. 🎓"
+              "actions": {
+                "save": "Continue"
               }
             }
           };
