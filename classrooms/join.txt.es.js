@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 548962367,
+        hash: 2252755396,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -38,7 +38,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "join": "Unirse"
             },
             "errors": {
-              "ERROR_PUBLISHING": "No se ha podido hacer la solicitud, vuelva a intentarlo más tarde"
+              "ERROR_PUBLISHING": "No se ha podido hacer la solicitud, vuelva a intentarlo más tarde",
+              "INVALID_CODE": "El código de verificación no es válido"
             },
             "action": {
               "join": "Unirme"
@@ -57,6 +58,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "second": "Ingresa un código de clase de 5 o 7 letras o números, sin espacios ni símbolos"
               },
               "help": "Si tienes problemas para unirte a un organización, consulta con el profesor o visita nuestro Centro de Ayuda."
+            },
+            "success": "¡Te has unido a la aula!",
+            "messages": {
+              "success": "Ya tienes acceso al aula",
+              "pending": "Tu solicitud de acceso está pendiente de aprobación por el profesor",
+              "authorized": "Ya tienes acceso al aula"
             }
           };
         }
