@@ -29,13 +29,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1900644977,
+        hash: 3044845703,
         creator: function (require, exports) {
           exports.txt = {
             "title": "Welcome to RVD.AI",
             "description": "Enter the code to access the pilot",
             "button": "Enter",
-            "invalid": "The entered code is invalid"
+            "invalid": "Invalid code"
           };
         }
       });
