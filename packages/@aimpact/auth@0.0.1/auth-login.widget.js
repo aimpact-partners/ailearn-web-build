@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.0.4/page", "react@18.2.0", "pragmate-ui@0.0.6/form", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat-sdk@1.0.0/session", "pragmate-ui@0.0.6/alert", "pragmate-ui@0.0.6/components", "pragmate-ui@0.0.6/link", "@beyond-js/react-18-widgets@1.0.4/hooks", "@beyond-js/kernel@0.1.9/core", "@aimpact/auth@0.0.1/components", "pragmate-ui@0.0.6/image"], function (_export, _context) {
+System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.1/page", "react@18.2.0", "pragmate-ui@0.0.6/form", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat-sdk@1.0.0/session", "pragmate-ui@0.0.6/alert", "pragmate-ui@0.0.6/components", "pragmate-ui@0.0.6/link", "@beyond-js/react-18-widgets@1.1.1/hooks", "@beyond-js/kernel@0.1.9/core", "@aimpact/auth@0.0.1/components", "pragmate-ui@0.0.6/image"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, bimport, __Bundle, __pkg, ims, Controller, View, Languages, __beyond_pkg, hmr;
@@ -8,14 +8,14 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
     Languages: void 0
   });
   return {
-    setters: [function (_beyondJsWidgets015Render) {
-      dependency_0 = _beyondJsWidgets015Render;
+    setters: [function (_beyondJsWidgets110Render) {
+      dependency_0 = _beyondJsWidgets110Render;
     }, function (_beyondJsKernel019Bundle) {
       dependency_1 = _beyondJsKernel019Bundle;
     }, function (_beyondJsKernel019Styles) {
       dependency_2 = _beyondJsKernel019Styles;
-    }, function (_beyondJsReact18Widgets104Page) {
-      dependency_3 = _beyondJsReact18Widgets104Page;
+    }, function (_beyondJsReact18Widgets111Page) {
+      dependency_3 = _beyondJsReact18Widgets111Page;
     }, function (_react2) {
       dependency_4 = _react2;
     }, function (_pragmateUi006Form) {
@@ -30,8 +30,8 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
       dependency_9 = _pragmateUi006Components;
     }, function (_pragmateUi006Link) {
       dependency_10 = _pragmateUi006Link;
-    }, function (_beyondJsReact18Widgets104Hooks) {
-      dependency_11 = _beyondJsReact18Widgets104Hooks;
+    }, function (_beyondJsReact18Widgets111Hooks) {
+      dependency_11 = _beyondJsReact18Widgets111Hooks;
     }, function (_beyondJsKernel019Core) {
       dependency_12 = _beyondJsKernel019Core;
     }, function (_aimpactAuth001Components) {
@@ -41,7 +41,7 @@ System.register(["@beyond-js/widgets@0.1.5/render", "@beyond-js/kernel@0.1.9/bun
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/chat-sdk", "1.0.0"], ["@beyond-js/reactive", "1.1.11"], ["pragmate-ui", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["socket.io-client", "4.7.3"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.46"], ["@types/react-dom", "18.2.18"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.0.27"]]);
+        const dependencies = new Map([["@aimpact/chat-sdk", "1.0.0"], ["@beyond-js/reactive", "1.1.11"], ["pragmate-ui", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/widgets", "1.1.0"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["socket.io-client", "4.7.3"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.46"], ["@types/react-dom", "18.2.18"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.0.27"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
