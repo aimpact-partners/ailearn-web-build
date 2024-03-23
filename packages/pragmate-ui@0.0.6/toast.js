@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/react-18-widgets@1.0.4/hooks", "@beyond-js/reactive@1.1.11/model", "pragmate-ui@0.0.6/icons"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/react-18-widgets@1.1.1/hooks", "@beyond-js/reactive@1.1.11/model", "pragmate-ui@0.0.6/icons"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, Toasts, ToastTypes, IToast, toast, Toast, __beyond_pkg, hmr;
@@ -16,8 +16,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_1 = _beyondJsKernel019Styles;
     }, function (_react2) {
       dependency_2 = _react2;
-    }, function (_beyondJsReact18Widgets104Hooks) {
-      dependency_3 = _beyondJsReact18Widgets104Hooks;
+    }, function (_beyondJsReact18Widgets111Hooks) {
+      dependency_3 = _beyondJsReact18Widgets111Hooks;
     }, function (_beyondJsReactive1111Model) {
       dependency_4 = _beyondJsReactive1111Model;
     }, function (_pragmateUi006Icons) {
