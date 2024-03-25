@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 348777926,
+        hash: 2798969881,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -120,8 +120,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "refine": {
               "title": "AI Activity Design Assistant",
-              "description": "Use the AI activity design assistant to create, customize, and enhance your students' speaking activities.",
-              "description2": "Simply select one of the predefined suggestions or describe what you have in mind, and the AI will help you structure an activity that fits your learning objectives, providing recommendations to enrich your students' educational experience.",
+              "description": "Use the AI assistant to customize and improve the activity design.",
+              "description2": "Simply write what you have in mind, and the AI will help structure the activity to fit your learning goals.",
               "textarea": {
                 "label": "Your Insights",
                 "placeholder": "Share specific suggestions or areas for improvement..."

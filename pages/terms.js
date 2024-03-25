@@ -207,7 +207,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       ***********************************/
 
       ims.set('./views/privacy.mdx', {
-        hash: 942271863,
+        hash: 2568567038,
         creator: function (require, exports) {
           "use strict";
 
@@ -230,7 +230,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
               children: [(0, _jsxRuntime.jsx)(_components.h1, {
                 children: "Política de Privacidad RVD.AI"
               }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Fecha de última actualización: [Incluir fecha de actualización]"
+                children: "Fecha de última actualización: 4 de marzo de 2024"
               }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
                 children: "Esta Política de Privacidad forma parte integrante de los Términos y Condiciones de Uso de RVD.AI (los “Términos y\r\nCondiciones de Uso”). Todos los términos empleados en el presente documento que no se encuentran definidos especialmente\r\nen éste, tendrán el significado atribuidos a los mismos en los Términos y Condiciones de Uso. Esta Política de\r\nPrivacidad describe cómo el Prestador (en adelante, “El Prestador”) recopila, utiliza y protege la información personal\r\nque el Usuario proporciona al utilizar el Servicio."
               }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
@@ -325,7 +325,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       ************************************************/
 
       ims.set('./views/terms-and-conditions.mdx', {
-        hash: 298352271,
+        hash: 3018462259,
         creator: function (require, exports) {
           "use strict";
 
@@ -347,7 +347,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
               children: [(0, _jsxRuntime.jsx)(_components.h1, {
                 children: "Términos y condiciones de uso de RVD.AI"
               }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Última actualización: [indicar fecha de publicación]"
+                children: "Última actualización: 4 de marzo de 2024"
               }), "\n", (0, _jsxRuntime.jsx)(_components.h3, {
                 children: "Idioma de los Términos y Condiciones de Uso"
               }), "\n", (0, _jsxRuntime.jsx)(_components.p, {

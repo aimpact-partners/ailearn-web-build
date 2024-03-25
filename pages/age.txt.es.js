@@ -29,11 +29,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1941569915,
+        hash: 3516708190,
         creator: function (require, exports) {
           exports.txt = {
             "ERROR": "No se pudo procesar la solicitud. Por favor, inténtelo de nuevo más tarde.",
-            "checkbox": "<strong>a</strong> los términos y condiciones de RVD.AI.",
+            "checkbox": "<strong>Acepto</strong> los términos y condiciones de RVD.AI.",
             "button": "Aceptar",
             "claim": "RVD.AI utiliza inteligencia artificial para proporcionarte guías de estudio. Recuerda verificar las respuestas obtenidas.",
             "actions": {

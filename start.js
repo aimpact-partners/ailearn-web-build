@@ -707,7 +707,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         **********************/
 
         ims.set('./menu', {
-          hash: 2299350989,
+          hash: 2401345467,
           creator: function (require, exports) {
             "use strict";
 
@@ -724,12 +724,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 render();
               } else {
                 _session.sessionWrapper.on('login', render);
-                _session.sessionWrapper.on('logout', () => {
-                  console.log('me ejecuto', _session.sessionWrapper.user);
-                });
               }
+              const onLogout = () => _manager.SidebarManager.clear();
+              _session.sessionWrapper.on('logout', onLogout);
               function render() {
-                console.log(_session.sessionWrapper.user.teacher);
                 if (_session.sessionWrapper.user.teacher) {
                   const modules = [{
                     id: 'modules',
@@ -756,7 +754,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                   Explorer: 'ailearn-user-profile',
                   order: 'start'
                 }];
-                // console.log('AJA', bottomModules);
                 _manager.SidebarManager.register(bottomModules, 'bottom');
               }
             }
