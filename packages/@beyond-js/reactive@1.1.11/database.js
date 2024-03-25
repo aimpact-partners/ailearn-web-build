@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "dexie@3.2.4", "@beyond-js/events@0.0.6/events", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "dexie@3.2.7", "@beyond-js/events@0.0.7/events", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, DatabaseManager, DBManager, __beyond_pkg, hmr;
@@ -11,14 +11,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "dexie@3.2.4", "@beyond-js/ev
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_dexie2) {
       dependency_1 = _dexie2;
-    }, function (_beyondJsEvents006Events) {
-      dependency_2 = _beyondJsEvents006Events;
+    }, function (_beyondJsEvents007Events) {
+      dependency_2 = _beyondJsEvents007Events;
     }, function (_beyondJsKernel019Core) {
       dependency_3 = _beyondJsKernel019Core;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "0.0.5"], ["dexie", "3.2.3"], ["socket.io-client", "4.6.1"], ["uuid", "9.0.0"], ["@beyond-js/ssr", "0.1.2"], ["@types/dexie", "1.3.1"], ["@types/react", "18.2.0"], ["@types/react-dom", "18.2.0"], ["sqlite", "4.1.2"], ["sqlite3", "5.1.6"], ["@beyond-js/reactive", "1.1.11"], ["@aimpact/ailearn-app", "0.0.27"]]);
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["dexie", "3.2.3"], ["uuid", "9.0.0"], ["@beyond-js/ssr", "0.1.2"], ["@types/dexie", "1.3.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.0"], ["@types/react-dom", "18.2.0"], ["sqlite", "4.1.2"], ["sqlite3", "5.1.6"], ["@beyond-js/reactive", "1.1.11"], ["@aimpact/ailearn-app", "0.0.29"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
