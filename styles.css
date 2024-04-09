@@ -242,7 +242,6 @@
   --app-text-highlight: rgba(172, 18, 18, 0.8);
   --primary-dark-container: var(--primary-30);
   --primary-light-container: var(--primary-60);
-  --secondary-container: var(--secondary);
   --secondary-dark-container: var(--secondary-50);
   --secondary-light-container: var(--secondary-80);
   --disabled-text: var(--neutral-70);
@@ -289,7 +288,6 @@
   --app-text-highlight: rgba(172, 18, 18, 0.8);
   --primary-dark-container: var(--primary-30);
   --primary-light-container: var(--primary-60);
-  --secondary-container: var(--secondary);
   --secondary-dark-container: var(--secondary-50);
   --secondary-light-container: var(--secondary-80);
   --disabled-text: var(--neutral-70);
