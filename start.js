@@ -157,6 +157,28 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "name": "pui-template-view-widget",
         "vspecifier": "pragmate-ui@0.1.0/pui/template/palette"
       }, {
+        "name": "ailearn-session-dashboard",
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/dashboard.widget",
+        "is": "page",
+        "route": "/assignments/${id}/dashboard/classroom",
+        "layout": "general-layout"
+      }, {
+        "name": "assignment-dashboard-participant",
+        "attrs": ["id", "participant-id"],
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/assignment-dashboard-participant.widget"
+      }, {
+        "name": "assignment-dashboard-participant-page",
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/dashboard/participant",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/dashboard/participant/${participantId}",
+        "layout": "general-layout"
+      }, {
+        "name": "dashboard-wall",
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/dashboard-wall.widget",
+        "is": "page",
+        "route": "/assignments/${id}/wall",
+        "layout": "general-layout"
+      }, {
         "name": "ailearn-sessions-access",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/sessions/access.widget",
         "is": "page",
@@ -185,28 +207,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/spoken.widget",
         "is": "page",
         "route": "/assignments/${assignmentId}/spoken/${id}",
-        "layout": "general-layout"
-      }, {
-        "name": "ailearn-session-dashboard",
-        "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/dashboard.widget",
-        "is": "page",
-        "route": "/assignments/${id}/dashboard/classroom",
-        "layout": "general-layout"
-      }, {
-        "name": "assignment-dashboard-participant",
-        "attrs": ["id", "participant-id"],
-        "vspecifier": "@aimpact/ailearn-app@0.0.32/assignment-dashboard-participant.widget"
-      }, {
-        "name": "assignment-dashboard-participant-page",
-        "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/dashboard/participant",
-        "is": "page",
-        "route": "/assignments/${assignmentId}/dashboard/participant/${participantId}",
-        "layout": "general-layout"
-      }, {
-        "name": "dashboard-wall",
-        "vspecifier": "@aimpact/ailearn-app@0.0.32/dashboard-wall.widget",
-        "is": "page",
-        "route": "/assignments/${id}/wall",
         "layout": "general-layout"
       }, {
         "name": "assignment-intro",
