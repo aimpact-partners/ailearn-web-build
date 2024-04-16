@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/kernel@0.1.9/core", "pragmate-ui@0.1.0/icons"], function (_export, _context2) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/kernel@0.1.9/core", "pragmate-ui@0.1.1/icons"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, AudioPlayer, __beyond_pkg, hmr;
@@ -12,8 +12,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_2 = _react2;
     }, function (_beyondJsKernel019Core) {
       dependency_3 = _beyondJsKernel019Core;
-    }, function (_pragmateUi010Icons) {
-      dependency_4 = _pragmateUi010Icons;
+    }, function (_pragmateUi011Icons) {
+      dependency_4 = _pragmateUi011Icons;
     }],
     execute: function () {
       bimport = specifier => {

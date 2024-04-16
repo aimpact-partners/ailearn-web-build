@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/transversals", "@beyond-js/widgets@1.1.0/render", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/ailearn-app@0.0.32/model/wrapper", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat@1.0.1/extensions", "react@18.2.0", "pragmate-ui@0.1.0/icons", "pragmate-ui@0.1.0/image", "@beyond-js/reactive@1.1.12/model", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core", "@aimpact/chat-sdk@1.0.0/initialize", "@aimpact/ailearn-app@0.0.32/model/gclassroom", "@aimpact/ailearn-sdk@1.0.0/core", "@aimpact/chat-sdk@1.0.0/settings"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/transversals", "@beyond-js/widgets@1.1.0/render", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/ailearn-app@0.0.32/model/wrapper", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat@1.0.1/extensions", "react@18.2.0", "pragmate-ui@0.1.1/icons", "pragmate-ui@0.1.1/image", "@beyond-js/reactive@1.1.12/model", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core", "@aimpact/chat-sdk@1.0.0/initialize", "@aimpact/ailearn-app@0.0.32/model/gclassroom", "@aimpact/ailearn-sdk@1.0.0/core", "@aimpact/chat-sdk@1.0.0/settings"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, dependency_15, dependency_16, Transversal, __beyond_transversal, widgets, bundles;
@@ -19,10 +19,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
       dependency_6 = _aimpactChat101Extensions;
     }, function (_react2) {
       dependency_7 = _react2;
-    }, function (_pragmateUi010Icons) {
-      dependency_8 = _pragmateUi010Icons;
-    }, function (_pragmateUi010Image) {
-      dependency_9 = _pragmateUi010Image;
+    }, function (_pragmateUi011Icons) {
+      dependency_8 = _pragmateUi011Icons;
+    }, function (_pragmateUi011Image) {
+      dependency_9 = _pragmateUi011Image;
     }, function (_beyondJsReactive1112Model) {
       dependency_10 = _beyondJsReactive1112Model;
     }, function (_beyondJsKernel019Texts) {
@@ -150,12 +150,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "layout"
       }, {
         "name": "coming-soon",
-        "vspecifier": "pragmate-ui@0.1.0/coming-soon",
+        "vspecifier": "pragmate-ui@0.1.1/coming-soon",
         "is": "page",
         "route": "/components/coming-soon"
       }, {
         "name": "pui-template-view-widget",
-        "vspecifier": "pragmate-ui@0.1.0/pui/template/palette"
+        "vspecifier": "pragmate-ui@0.1.1/pui/template/palette"
       }, {
         "name": "ailearn-session-dashboard",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/dashboard.widget",
@@ -273,15 +273,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/modules/list",
         "layout": "general-layout"
       }, {
-        "name": "app-modules-management",
-        "attrs": ["id", "activityId"],
-        "vspecifier": "@aimpact/ailearn-app@0.0.32/modules/management/settings.widget"
-      }, {
         "name": "app-modules-management-ceate",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/modules/draft.widget",
         "is": "page",
         "route": "/modules/management",
         "layout": "general-layout"
+      }, {
+        "name": "app-modules-management",
+        "attrs": ["id", "activityId"],
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/modules/management/settings.widget"
       }, {
         "name": "app-organizations-create",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/organizations/create.widget",
@@ -313,8 +313,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/users/me",
         "layout": "general-layout"
       }, {
+        "name": "ailearn-identify-page",
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/identify.widget",
+        "is": "page",
+        "route": "/identify"
+      }, {
         "name": "ailearn-empty-layout",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/layout/empty",
+        "is": "layout"
+      }, {
+        "name": "coins-layout",
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/coins-layout",
         "is": "layout"
       }, {
         "name": "ailearn-layout",
@@ -371,7 +380,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "type": "start"
       }, function (ims, exports) {
         const bimport = specifier => {
-          const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/http-suite", "1.0.3"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.0"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.1.1"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.5"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["@aimpact/ailearn-app", "0.0.32"], ["@aimpact/ailearn-app", "0.0.32"]]);
+          const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/http-suite", "1.0.3"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.1.1"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.5"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["@aimpact/ailearn-app", "0.0.32"], ["@aimpact/ailearn-app", "0.0.32"]]);
           return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
         };
         /*********************************
@@ -379,7 +388,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *********************************/
 
         ims.set('./handlers/access', {
-          hash: 3522041985,
+          hash: 3204236982,
           creator: function (require, exports) {
             "use strict";
 
@@ -388,12 +397,21 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             });
             exports.checkAccess = checkAccess;
             var _session = require("@aimpact/chat-sdk/session");
-            const PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password', '/documents/access', '/reactive/testing', '/terms-and-conditions', '/privacy'];
-            async function checkAccess(pathname) {
+            var _publicRoutes = require("../public-routes");
+            async function checkAccess({
+              pathname
+            }, router, next) {
               await _session.sessionWrapper.isReady;
-              if (!_session.sessionWrapper.logged && PUBLIC_ROUTES.includes(pathname)) return true;
+              if (!_session.sessionWrapper.logged && _publicRoutes.PUBLIC_ROUTES.includes(pathname)) return next();
               if (_session.sessionWrapper.logged && (await _session.sessionWrapper.user.hasAccess())) {
-                return true;
+                if (router.previous) {
+                  const uri = router.previous;
+                  router.previous = void 0;
+                  return {
+                    pathname: uri
+                  };
+                }
+                return next();
               }
               return {
                 pathname: '/early-access'
@@ -407,7 +425,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *******************************/
 
         ims.set('./handlers/home', {
-          hash: 2813883843,
+          hash: 3464692361,
           creator: function (require, exports) {
             "use strict";
 
@@ -415,8 +433,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
               value: true
             });
             exports.checkHome = checkHome;
-            async function checkHome(pathname) {
-              return true;
+            async function checkHome({
+              pathname
+            }, router, next) {
+              return next();
             }
           }
         });
@@ -426,7 +446,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ***********************************/
 
         ims.set('./handlers/policies', {
-          hash: 4089028535,
+          hash: 231219580,
           creator: function (require, exports) {
             "use strict";
 
@@ -436,13 +456,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             exports.checkPolicies = checkPolicies;
             var _session = require("@aimpact/chat-sdk/session");
             const PUBLIC_ROUTES = ['/app/terms', '/app/privacy'];
-            async function checkPolicies(pathname, router) {
+            async function checkPolicies(pathname, router, next) {
               await _session.sessionWrapper.isReady;
               const {
                 termsAccepted,
                 age
               } = _session.sessionWrapper.user;
-              if (PUBLIC_ROUTES.includes(pathname)) return true;
+              if (PUBLIC_ROUTES.includes(pathname)) return next();
               if (!termsAccepted && age > 17 || !age) {
                 return {
                   pathname: '/user-validation'
@@ -455,7 +475,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                   pathname
                 };
               }
-              return true;
+              return next();
             }
           }
         });
@@ -465,7 +485,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         **********************************/
 
         ims.set('./handlers/session', {
-          hash: 4264826578,
+          hash: 320546719,
           creator: function (require, exports) {
             "use strict";
 
@@ -475,21 +495,31 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             exports.checkSession = checkSession;
             var _session = require("@aimpact/chat-sdk/session");
             var _routing = require("@beyond-js/kernel/routing");
-            const PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password', '/documents/access', '/reactive/testing'];
+            var _publicRoutes = require("../public-routes");
             const DEFAULT_ROUTE = '/auth/login';
             const onLogout = () => {
               _routing.routing.replaceState({}, '', '/');
             };
             _session.sessionWrapper.on('logout', onLogout);
-            async function checkSession(pathname, router) {
+            async function checkSession(uri, router, next) {
+              const {
+                pathname
+              } = uri;
               await _session.sessionWrapper.isReady;
-              if (!_session.sessionWrapper.logged && PUBLIC_ROUTES.includes(pathname)) {
+              if (!_session.sessionWrapper.logged && _publicRoutes.PUBLIC_ROUTES.includes(pathname)) {
                 return {
                   pathname
                 };
               }
-              if (PUBLIC_ROUTES.includes(pathname) || _session.sessionWrapper.logged) return true;
-              router.previous = pathname;
+              if (_session.sessionWrapper.logged && _publicRoutes.AUTH_ROUTES.includes(pathname)) {
+                return {
+                  pathname: '/'
+                };
+              }
+              if (!_publicRoutes.AUTH_ROUTES.includes(pathname) && _publicRoutes.PUBLIC_ROUTES.includes(pathname) || _session.sessionWrapper.logged) {
+                return next();
+              }
+              router.previous = uri.uri;
               return {
                 pathname: DEFAULT_ROUTE
               };
@@ -502,15 +532,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *******************************/
 
         ims.set('./public-routes', {
-          hash: 2497449379,
+          hash: 2390301440,
           creator: function (require, exports) {
             "use strict";
 
             Object.defineProperty(exports, "__esModule", {
               value: true
             });
-            exports.PUBLIC_ROUTES = void 0;
-            const PUBLIC_ROUTES = exports.PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password', '/documents/access', '/reactive/testing'];
+            exports.PUBLIC_ROUTES = exports.AUTH_ROUTES = void 0;
+            const PUBLIC_ROUTES = exports.PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password', '/documents/access', '/app/privacy', '/app/terms', '/reactive/testing'];
+            const AUTH_ROUTES = exports.AUTH_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password'];
           }
         });
 
@@ -519,7 +550,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ************************/
 
         ims.set('./router', {
-          hash: 2413344932,
+          hash: 4052659225,
           creator: function (require, exports) {
             "use strict";
 
@@ -548,6 +579,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 if (pathname === this.#previous) return;
                 this.#previous = pathname;
               }
+              #index;
               #handlers;
               constructor(handlers) {
                 if (!Array.isArray(handlers)) {
@@ -558,18 +590,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 });
                 this.#handlers = handlers;
               }
-              async validate(path) {
-                for (let handler of this.#handlers) {
-                  if (handler === undefined) continue;
-                  let response = await handler(path, this);
-                  if (response !== true) {
-                    return response;
-                    break;
+              async process(index, uri) {
+                const next = async () => {
+                  if (index < this.#handlers.length - 1) {
+                    return await this.process(index + 1, uri);
                   }
-                }
-                return {
-                  pathname: path
+                  // If there are no more handlers, just return the current URI.
+                  return uri.uri;
                 };
+                if (!this.#handlers.length) return uri.uri;
+                const response = await this.#handlers[index](uri, this, next);
+                return response;
+              }
+              async validate(uri) {
+                if (!this.#handlers.length) return uri.uri;
+                return this.process(0, uri);
+                // return uri.uri;
               }
             }
             exports.Router = Router;
@@ -581,7 +617,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *************************/
 
         ims.set('./routing', {
-          hash: 945938749,
+          hash: 2287109976,
           creator: function (require, exports) {
             "use strict";
 
@@ -591,10 +627,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             var _home = require("./handlers/home");
             var _access = require("./handlers/access");
             var _policies = require("./handlers/policies");
-            const router = new _router.Router([_session.checkSession, _access.checkAccess, _policies.checkPolicies, _home.checkHome]);
+            const handlers = [_session.checkSession, _access.checkAccess, _policies.checkPolicies, _home.checkHome];
+            // const handlers = [checkSession];
+            const router = new _router.Router(handlers);
             _routing.routing.redirect = async function redirect(uri) {
-              const response = await router.validate(uri.pathname);
-              return response.pathname;
+              try {
+                const response = await router.validate(uri);
+                return response.pathname;
+              } catch (e) {
+                console.log(20, e);
+                return '/error-500';
+              }
             };
             _routing.routing.missing = async function redirect() {
               return 'app-missing';
@@ -617,7 +660,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "type": "start"
       }, function (ims, exports) {
         const bimport = specifier => {
-          const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/http-suite", "1.0.3"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.0"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.1.1"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.5"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["@aimpact/ailearn-app", "0.0.32"], ["@aimpact/ailearn-app", "0.0.32"]]);
+          const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/http-suite", "1.0.3"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.1.1"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.5"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["@aimpact/ailearn-app", "0.0.32"], ["@aimpact/ailearn-app", "0.0.32"]]);
           return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
         };
         /****************************

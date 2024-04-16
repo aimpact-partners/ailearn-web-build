@@ -36,6 +36,13 @@
   color: var(--disabled);
   background: var(--neutral-4);
 }
+.pui-button {
+  text-transform: uppercase !important;
+  font-size: 0.75rem;
+}
+.pui-button .button-label {
+  font-size: 0.75rem;
+}
 /*!
   Theme: Gruvbox dark, hard
   Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
@@ -344,6 +351,9 @@ option {
 
 .page__container--empty {
   height: 100%;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 .list__item .list__item__header {
   display: grid;
