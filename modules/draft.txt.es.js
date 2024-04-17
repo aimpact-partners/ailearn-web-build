@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1826114164,
+        hash: 2020879980,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -108,10 +108,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "fr": "Francés",
               "de": "Alemán",
               "it": "Italiano"
-            },
-            "notifications": {
-              "saved": "Solicita créditos IA para habilitar todas las funciones con inteligencia artificial.",
-              "credits": "Ya tienes <strong>créditos asignados</strong> para utilizar funciones con IA que se irán descontando automáticamente con el uso."
             },
             "changingObjective": ["Adaptando el módulo para resaltar los conceptos clave de manera efectiva...", "Configurando actividades interactivas para facilitar el aprendizaje activo...", "Añadiendo contenido adaptable a diversos temas y áreas de estudio...", "Estructurando el módulo para promover habilidades de pensamiento crítico...", "Incorporando técnicas de enseñanza innovadoras para mejorar la retención de conocimiento...", "Asegurando que el módulo cumpla con los estándares educativos generales...", "Fomentando la curiosidad y el aprendizaje autodirigido a través de los objetivos del módulo...", "Implementando metodologías pedagógicas actualizadas para un enfoque integral...", "Optimizando la estructura del módulo para un proceso de aprendizaje escalonado y progresivo...", "Finalizando la personalización del módulo para una experiencia educativa enriquecedora y completa..."],
             "generatingDraft": ["Identificando las mejores actividades para el objetivo del módulo...", "Analizando la audiencia para adecuar las actividades educativas...", "Estimando la duración óptima de cada actividad del módulo...", "Seleccionando tipos de actividades para promover un aprendizaje dinámico...", "Creando objetivos individuales para cada actividad propuesta...", "Integrando actividades que fomenten la interacción y el debate...", "Diseñando tareas que refuercen el conocimiento teórico y práctico...", "Incorporando ejercicios para el análisis crítico de la información...", "Estableciendo actividades para desarrollar habilidades de investigación...", "Elaborando dinámicas que estimulen la reflexión sobre problemáticas actuales...", "Ajustando actividades para cubrir diferentes estilos de aprendizaje...", "Configurando evaluaciones formativas para medir el progreso...", "Incluyendo recursos interactivos para complementar la enseñanza...", "Finalizando la selección de actividades que aseguren el cumplimiento de los objetivos...", "Compilando el borrador final del módulo con todas las actividades diseñadas..."],

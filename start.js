@@ -277,7 +277,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.32/modules/draft.widget",
         "is": "page",
         "route": "/modules/management",
-        "layout": "general-layout"
+        "layout": "coins-layout"
       }, {
         "name": "app-modules-management",
         "attrs": ["id", "activityId"],
@@ -318,12 +318,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "page",
         "route": "/identify"
       }, {
-        "name": "ailearn-empty-layout",
-        "vspecifier": "@aimpact/ailearn-app@0.0.32/layout/empty",
+        "name": "coins-layout",
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/coins-layout.widget",
         "is": "layout"
       }, {
-        "name": "coins-layout",
-        "vspecifier": "@aimpact/ailearn-app@0.0.32/coins-layout",
+        "name": "ailearn-empty-layout",
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/layout/empty",
         "is": "layout"
       }, {
         "name": "ailearn-layout",
