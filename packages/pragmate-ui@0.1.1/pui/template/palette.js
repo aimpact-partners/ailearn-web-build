@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.1/base", "pragmate-ui@0.1.1/template/manager", "react@18.2.0", "pragmate-ui@0.1.1/components", "pragmate-ui@0.1.1/theme-switcher", "pragmate-ui@0.1.1/tooltip", "@beyond-js/react-18-widgets@1.1.1/hooks"], function (_export, _context) {
+System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/base", "pragmate-ui@0.1.1/template/manager", "react@18.2.0", "pragmate-ui@0.1.1/components", "pragmate-ui@0.1.1/theme-switcher", "pragmate-ui@0.1.1/tooltip", "@beyond-js/react-18-widgets@1.1.2/hooks"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
@@ -13,8 +13,8 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_1 = _beyondJsKernel019Bundle;
     }, function (_beyondJsKernel019Styles) {
       dependency_2 = _beyondJsKernel019Styles;
-    }, function (_beyondJsReact18Widgets111Base) {
-      dependency_3 = _beyondJsReact18Widgets111Base;
+    }, function (_beyondJsReact18Widgets112Base) {
+      dependency_3 = _beyondJsReact18Widgets112Base;
     }, function (_pragmateUi011TemplateManager) {
       dependency_4 = _pragmateUi011TemplateManager;
     }, function (_react2) {
@@ -25,8 +25,8 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_7 = _pragmateUi011ThemeSwitcher;
     }, function (_pragmateUi011Tooltip) {
       dependency_8 = _pragmateUi011Tooltip;
-    }, function (_beyondJsReact18Widgets111Hooks) {
-      dependency_9 = _beyondJsReact18Widgets111Hooks;
+    }, function (_beyondJsReact18Widgets112Hooks) {
+      dependency_9 = _beyondJsReact18Widgets112Hooks;
     }],
     execute: function () {
       bimport = specifier => {

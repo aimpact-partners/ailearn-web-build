@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "pragmate-ui@0.1.1/icons", "prismjs@1.29.0", "@beyond-js/react-18-widgets@1.1.1/hooks", "@aimpact/chat-sdk@1.0.0/widgets/markdown"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "pragmate-ui@0.1.1/icons", "prismjs@1.29.0", "@beyond-js/react-18-widgets@1.1.2/hooks", "@aimpact/chat-sdk@1.0.0/widgets/markdown"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, PlayerButton, parseText, Playable, __beyond_pkg, hmr;
@@ -18,8 +18,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_3 = _pragmateUi011Icons;
     }, function (_prismjs) {
       dependency_4 = _prismjs;
-    }, function (_beyondJsReact18Widgets111Hooks) {
-      dependency_5 = _beyondJsReact18Widgets111Hooks;
+    }, function (_beyondJsReact18Widgets112Hooks) {
+      dependency_5 = _beyondJsReact18Widgets112Hooks;
     }, function (_aimpactChatSdk100WidgetsMarkdown) {
       dependency_6 = _aimpactChatSdk100WidgetsMarkdown;
     }],

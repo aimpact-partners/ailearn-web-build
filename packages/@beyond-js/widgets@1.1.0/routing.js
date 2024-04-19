@@ -1,505 +1,568 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle","@beyond-js/kernel@0.1.9/core","@beyond-js/widgets@1.1.0/render","@beyond-js/kernel@0.1.9/routing","@beyond-js/events@0.0.7/events"], (_exports, _context) => {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core", "@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/routing", "@beyond-js/events@0.0.7/events"], function (_export, _context) {
+  "use strict";
 
-const bimport = specifier => {
-	const dependencies = new Map([["@beyond-js/kernel","0.1.9"],["@beyond-js/widgets","1.1.0"],["@beyond-js/events","0.0.7"]]);
-	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
-};
-
-
-var dependencies = new Map();
-var require = dependency => dependencies.get(dependency);
-return {
-setters: [dep => dependencies.set('@beyond-js/kernel@0.1.9/bundle', dep), dep => dependencies.set('@beyond-js/kernel@0.1.9/core', dep), dep => dependencies.set('@beyond-js/widgets@1.1.0/render', dep), dep => dependencies.set('@beyond-js/kernel@0.1.9/routing', dep), dep => dependencies.set('@beyond-js/events@0.0.7/events', dep)],
-execute: function() {
-// Prevent esbuild from considering the context to be amd
-const define = void 0;
-const module = {};
-
-const code = (module, require) => {
-var __create = Object.create;
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __export = (target, all) => {
-  for (var name in all) __defProp(target, name, {
-    get: all[name],
-    enumerable: true
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, LayoutInstance, manager, PageInstance, Route, PageURI, __beyond_pkg, hmr;
+  _export({
+    LayoutInstance: void 0,
+    manager: void 0,
+    PageInstance: void 0,
+    Route: void 0,
+    PageURI: void 0
   });
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, {
-      get: () => from[key],
-      enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
-    });
-  }
-  return to;
-};
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", {
-  value: mod,
-  enumerable: true
-}) : target, mod));
-var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
-  value: true
-}), mod);
-
-// .beyond/uimport/temp/@beyond-js/widgets/routing.1.1.0.js
-var routing_1_1_0_exports = {};
-__export(routing_1_1_0_exports, {
-  LayoutInstance: () => LayoutInstance,
-  PageInstance: () => PageInstance,
-  PageURI: () => PageURI,
-  Route: () => Route,
-  __beyond_pkg: () => __beyond_pkg,
-  hmr: () => hmr,
-  manager: () => manager
-});
-module.exports = __toCommonJS(routing_1_1_0_exports);
-
-// node_modules/@beyond-js/widgets/routing/routing.browser.mjs
-var dependency_0 = __toESM(require("@beyond-js/kernel@0.1.9/bundle"), 0);
-var dependency_1 = __toESM(require("@beyond-js/kernel@0.1.9/core"), 0);
-var dependency_2 = __toESM(require("@beyond-js/widgets@1.1.0/render"), 0);
-var dependency_3 = __toESM(require("@beyond-js/kernel@0.1.9/routing"), 0);
-var dependency_4 = __toESM(require("@beyond-js/events@0.0.7/events"), 0);
-var import_meta = {};
-var {
-  Bundle: __Bundle
-} = dependency_0;
-var __pkg = new __Bundle({
-  "module": {
-    "vspecifier": "@beyond-js/widgets@1.1.0/routing"
-  },
-  "type": "ts"
-}, _context.meta.url).package();
-;
-__pkg.dependencies.update([["@beyond-js/kernel/core", dependency_1], ["@beyond-js/widgets/render", dependency_2], ["@beyond-js/kernel/routing", dependency_3], ["@beyond-js/events/events", dependency_4]]);
-var ims = /* @__PURE__ */new Map();
-ims.set("./layouts/index", {
-  hash: 2720616762,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.default = void 0;
-    class _default extends Map {
-      register(layout) {
-        this.set(layout.id, layout);
-      }
-    }
-    exports.default = _default;
-  }
-});
-ims.set("./layouts/layout", {
-  hash: 2523911355,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.LayoutInstance = void 0;
-    var _core = require2("@beyond-js/kernel/core");
-    class LayoutInstance2 extends _core.Events {
-      get is() {
-        return "layout";
-      }
-      #layouts;
-      #element;
-      get element() {
-        return this.#element;
-      }
-      get id() {
-        return this.#element;
-      }
-      #active;
-      get active() {
-        return this.#active;
-      }
-      #parent;
-      #children = /* @__PURE__ */new Map();
-      get children() {
-        return this.#children;
-      }
-      constructor(layouts, element, parent) {
-        super();
-        this.#layouts = layouts;
-        this.#element = element ? element : "main";
-        this.#parent = parent;
-      }
-      select(page, descending) {
-        if (descending.length && descending[0].name === this.#element) {
-          console.log(`Invalid layout configuration. Layout element "${this.#element}" is already created`);
-          return;
-        }
-        const child = (() => {
-          if (!descending.length) return page;
-          const {
-            name: element
-          } = descending[0];
-          const found = [...this.#children.values()].find(child2 => child2.element === element);
-          if (found) return found;
-          const layout = new LayoutInstance2(this.#layouts, element, this);
-          this.#layouts.register(layout);
-          return layout;
-        })();
-        this.#children.set(child.id, child);
-        const changed = this.#active !== child;
-        this.#active = child;
-        descending.shift();
-        child.is === "layout" && child.select(page, descending);
-        changed && this.trigger("change");
-      }
-    }
-    exports.LayoutInstance = LayoutInstance2;
-  }
-});
-ims.set("./manager", {
-  hash: 913723722,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.manager = void 0;
-    var _core = require2("@beyond-js/kernel/core");
-    var _routing = require2("@beyond-js/kernel/routing");
-    var _layout = require2("./layouts/layout");
-    var _pages = require2("./pages");
-    var _layouts = require2("./layouts");
-    var _route = require2("./pages/route");
-    class Manager {
-      #instances = {
-        layouts: new _layouts.default(),
-        pages: new _pages.default()
+  return {
+    setters: [function (_beyondJsKernel019Bundle) {
+      dependency_0 = _beyondJsKernel019Bundle;
+    }, function (_beyondJsKernel019Core) {
+      dependency_1 = _beyondJsKernel019Core;
+    }, function (_beyondJsWidgets110Render) {
+      dependency_2 = _beyondJsWidgets110Render;
+    }, function (_beyondJsKernel019Routing) {
+      dependency_3 = _beyondJsKernel019Routing;
+    }, function (_beyondJsEvents007Events) {
+      dependency_4 = _beyondJsEvents007Events;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/kernel", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/widgets", "1.1.0"], ["@aimpact/ailearn-app", "0.0.32"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
-      #initialised = false;
-      get initialised() {
-        return this.#initialised;
-      }
-      #resolve;
-      #ready = new Promise(resolve => this.#resolve = resolve);
-      get ready() {
-        return this.#ready;
-      }
-      constructor() {
-        const set = () => this.set(_routing.routing.uri).catch(exc => console.log(exc.stack));
-        const {
-          specifier
-        } = globalThis.__app_package;
-        Promise.all([bimport(`${specifier}/config`), bimport(`${specifier}/start`)]).then(([{
-          default: config
-        }]) => {
-          this.#main = new _layout.LayoutInstance(this.#instances.layouts, config.layout);
-          _routing.routing.on("change", set);
-          _routing.routing.initialised ? set() : _routing.routing.ready.then(set);
-        });
-      }
-      get layouts() {
-        return this.#instances.layouts;
-      }
-      get pages() {
-        return this.#instances.pages;
-      }
-      #main;
-      get main() {
-        return this.#main;
-      }
-      #ct = new _core.CancellationToken();
-      async set(uri) {
-        const cid = this.#ct.reset();
-        const route = new _route.Route(uri.pathname);
-        await route.process();
-        if (!this.#ct.check(cid)) return;
-        const done = () => {
-          !this.#initialised && this.#resolve();
-          this.#initialised = true;
-        };
-        const {
-          page: element
-        } = route;
-        if (!element) {
-          console.error(`Pathname "${uri.pathname}" does not have a page widget associated to it`);
-          return done();
-        }
-        const page = this.#instances.pages.register(uri, route);
-        const {
-          error,
-          value: descending
-        } = page.parents;
-        if (error) {
-          console.error(`Page on "${uri.uri}" cannot be shown: ${error}`);
-          return done();
-        }
-        this.#main.select(page, descending);
-        return done();
-      }
-    }
-    const manager2 = exports.manager = typeof process === "object" ? void 0 : new Manager();
-  }
-});
-ims.set("./pages/index", {
-  hash: 2934692868,
-  creator: function (require2, exports) {
-    "use strict";
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@beyond-js/widgets@1.1.0/routing"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/core', dependency_1], ['@beyond-js/widgets/render', dependency_2], ['@beyond-js/kernel/routing', dependency_3], ['@beyond-js/events/events', dependency_4]]);
+      ims = new Map();
+      /*******************************
+      INTERNAL MODULE: ./layouts/index
+      *******************************/
+      ims.set('./layouts/index', {
+        hash: 2720616762,
+        creator: function (require, exports) {
+          "use strict";
 
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.default = void 0;
-    var _instance = require2("./instance");
-    class _default extends Map {
-      instance(id) {
-        return [...this.values()].find(instance => instance.id === id);
-      }
-      obtain({
-        widget,
-        id
-      }) {
-        if (id) return this.instance(id);
-        const child = widget.getAttribute("data-child-id");
-        return this.instance(child);
-      }
-      register(uri, route) {
-        const {
-          pathname
-        } = uri;
-        const instance = (() => {
-          if (!this.has(pathname)) return new _instance.PageInstance(uri, route);
-          const instance2 = this.get(pathname);
-          instance2.uri.update(uri);
-          return instance2;
-        })();
-        this.set(pathname, instance);
-        return instance;
-      }
-    }
-    exports.default = _default;
-  }
-});
-ims.set("./pages/instance", {
-  hash: 3428775175,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.PageInstance = void 0;
-    var _render = require2("@beyond-js/widgets/render");
-    var _uri = require2("./uri");
-    let id = 0;
-    class PageInstance2 {
-      #uri;
-      get uri() {
-        return this.#uri;
-      }
-      get route() {
-        return this.#uri.route;
-      }
-      get element() {
-        return this.#uri.route.page;
-      }
-      get is() {
-        return "page";
-      }
-      #id;
-      get id() {
-        return `${this.element}:${this.#id}`;
-      }
-      constructor(uri, route) {
-        this.#uri = new _uri.PageURI({
-          uri,
-          route
-        });
-        this.#id = ++id;
-      }
-      get parents() {
-        const value = [];
-        let {
-          layout
-        } = _render.widgets.get(this.element);
-        while (layout) {
-          const found = [..._render.widgets.values()].find(({
-            name
-          }) => name === layout);
-          if (!found) {
-            const error = `Layout "${layout}" not found`;
-            return {
-              error
-            };
-          }
-          value.unshift(found);
-          layout = found.layout;
-        }
-        return {
-          value
-        };
-      }
-    }
-    exports.PageInstance = PageInstance2;
-  }
-});
-ims.set("./pages/route", {
-  hash: 228538911,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.Route = void 0;
-    var _render = require2("@beyond-js/widgets/render");
-    var _routing = require2("@beyond-js/kernel/routing");
-    class Route2 {
-      #pathname;
-      get pathname() {
-        return this.#pathname;
-      }
-      #page;
-      get page() {
-        return this.#page;
-      }
-      #vars;
-      get vars() {
-        return this.#vars;
-      }
-      constructor(pathname) {
-        this.#pathname = pathname;
-      }
-      async process() {
-        const pathname = this.#pathname.split("/");
-        const registered = /* @__PURE__ */new Map();
-        _render.widgets.forEach(({
-          is,
-          name,
-          route
-        }) => is === "page" && registered.set(name, route.split("/")));
-        const target = [...registered].filter(([, route]) => route.length === pathname.length);
-        this.#vars = /* @__PURE__ */new Map();
-        const found = target.find(([, route]) => {
-          this.#vars.clear();
-          for (let i = 0; i < pathname.length; i++) {
-            const dir = route[i];
-            if (dir.startsWith("${") && dir.endsWith("}")) {
-              const vname = dir.slice(2, dir.length - 1);
-              this.#vars.set(vname, pathname[i]);
-              continue;
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.default = void 0;
+          /**
+           * The registry of all layouts instances registered in the session, except the main layout
+           */
+          class _default extends Map {
+            register(layout) {
+              this.set(layout.id, layout);
             }
-            if (dir !== pathname[i]) return false;
           }
-          return true;
-        });
-        this.#page = found ? found[0] : await _routing.routing.missing?.(this.#pathname);
-      }
-    }
-    exports.Route = Route2;
-  }
-});
-ims.set("./pages/uri", {
-  hash: 3243525408,
-  creator: function (require2, exports) {
-    "use strict";
+          exports.default = _default;
+        }
+      });
 
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.PageURI = void 0;
-    var _events = require2("@beyond-js/events/events");
-    class PageURI2 extends _events.Events {
-      #route;
-      get route() {
-        return this.#route;
-      }
-      #uri;
-      get uri() {
-        return this.#uri;
-      }
-      get pathname() {
-        return this.#uri.pathname;
-      }
-      get search() {
-        return this.#uri.search;
-      }
-      get qs() {
-        return this.#uri.qs;
-      }
-      get hash() {
-        return this.#uri.hash;
-      }
-      get vars() {
-        return this.#route.vars;
-      }
-      constructor({
-        uri,
-        route
+      /********************************
+      INTERNAL MODULE: ./layouts/layout
+      ********************************/
+
+      ims.set('./layouts/layout', {
+        hash: 3657772330,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.LayoutInstance = void 0;
+          var _core = require("@beyond-js/kernel/core");
+          /*bundle*/
+          class LayoutInstance extends _core.Events {
+            get is() {
+              return 'layout';
+            }
+            #layouts;
+            #element;
+            get element() {
+              return this.#element;
+            }
+            get id() {
+              return this.#element;
+            }
+            // The active child in the layout
+            #active;
+            get active() {
+              return this.#active;
+            }
+            // Property #parent is undefined only if it is the main layout
+            #parent;
+            // The layouts and pages that are contained in the current layout
+            #children = new Map();
+            get children() {
+              return this.#children;
+            }
+            /**
+             * Layout constructor
+             *
+             * @param {Layouts} layouts The layouts registry
+             * @param {string} element The element name of the widget. Undefined if the project does not set a layout
+             * and the index.html has a <beyond-layout-children/> as its main layout container
+             * @param {Layout} parent The parent layout. Undefined if it is the main layout
+             */
+            constructor(layouts, element, parent) {
+              super();
+              this.#layouts = layouts;
+              this.#element = element ? element : 'main';
+              this.#parent = parent;
+            }
+            /**
+             * Activates the current page being navigated
+             * Create the layout instance if not previously created
+             *
+             * @param {PageInstance} page The page being navigated
+             */
+            activate(page, layouts) {
+              // Get the child instance (page or layout)
+              // Create the layout instance if not previously created
+              const child = (() => {
+                if (!layouts.length) return page;
+                const {
+                  name: element
+                } = layouts[0];
+                const found = [...this.#children.values()].find(child => child.element === element);
+                if (found) return found;
+                const layout = new LayoutInstance(this.#layouts, element, this);
+                this.#layouts.register(layout);
+                return layout;
+              })();
+              this.#children.set(child.id, child);
+              // Check if current active child has changed
+              const changed = this.#active !== child;
+              // Deactivate layout if last active layout is not the current one
+              changed && this.#active?.is === 'layout' && this.#active.deactivate();
+              // Set the active child
+              this.#active = child;
+              // Continue iterating the following layouts in the list
+              layouts.shift();
+              child.is === 'layout' && child.activate(page, layouts);
+              changed && this.trigger('change');
+            }
+            deactivate() {
+              const active = this.#active;
+              if (!active) {
+                console.warn(`Layout "${this.#element}" doesn't have any active child`);
+                return;
+              }
+              this.#active = void 0;
+              active.is === 'layout' && active.deactivate();
+              this.trigger('change');
+            }
+          }
+          exports.LayoutInstance = LayoutInstance;
+        }
+      });
+
+      /*************************
+      INTERNAL MODULE: ./manager
+      *************************/
+
+      ims.set('./manager', {
+        hash: 772391908,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.manager = void 0;
+          var _core = require("@beyond-js/kernel/core");
+          var _routing = require("@beyond-js/kernel/routing");
+          var _layout = require("./layouts/layout");
+          var _pages = require("./pages");
+          var _layouts = require("./layouts");
+          var _route = require("./pages/route");
+          class Manager {
+            // The registry of all layouts (except the main layout) and pages instances registered in the session
+            #instances = {
+              layouts: new _layouts.default(),
+              pages: new _pages.default()
+            };
+            #initialised = false;
+            get initialised() {
+              return this.#initialised;
+            }
+            #resolve;
+            #ready = new Promise(resolve => this.#resolve = resolve);
+            get ready() {
+              return this.#ready;
+            }
+            constructor() {
+              const set = () => this.set(_routing.routing.uri).catch(exc => console.log(exc.stack));
+              // @TODO: move to the setup method
+              const {
+                specifier
+              } = globalThis.__app_package;
+              Promise.all([bimport(`${specifier}/config`), bimport(`${specifier}/start`)]).then(([{
+                default: config
+              }]) => {
+                // The main layout can be specified in the package.json,
+                // if it is not specified, then a beyond-layout-children will be
+                // set as default
+                this.#main = new _layout.LayoutInstance(this.#instances.layouts, config.layout);
+                _routing.routing.on('change', set);
+                _routing.routing.initialised ? set() : _routing.routing.ready.then(set);
+              });
+            }
+            get layouts() {
+              return this.#instances.layouts;
+            }
+            get pages() {
+              return this.#instances.pages;
+            }
+            // The main layout can be a custom element specified in the package.json
+            // Otherwise, if it is not specified, the beyond-layout-children
+            // will be set as default
+            #main;
+            get main() {
+              return this.#main;
+            }
+            #ct = new _core.CancellationToken();
+            async set(uri) {
+              const cid = this.#ct.reset();
+              const route = new _route.Route(uri.pathname);
+              await route.process();
+              if (!this.#ct.check(cid)) return;
+              const done = () => {
+                !this.#initialised && this.#resolve();
+                this.#initialised = true;
+              };
+              const {
+                page: element
+              } = route;
+              if (!element) {
+                console.error(`Pathname "${uri.pathname}" does not have a page widget associated to it`);
+                return done();
+              }
+              const page = this.#instances.pages.register(uri, route);
+              // Property page.parents.value is an array that contains the list of layouts where the page is contained
+              const {
+                error,
+                value: layouts
+              } = page.parents;
+              if (error) {
+                console.error(`Page on "${uri.uri}" cannot be shown: ${error}`);
+                return done();
+              }
+              // If the root layout specified in the page widget is the same as the application layout,
+              // then remove from the list
+              layouts.length && layouts[0].name === this.main.element && layouts.shift();
+              this.#main.activate(page, layouts);
+              return done();
+            }
+          }
+          /*bundle*/
+          const manager = exports.manager = typeof process === 'object' ? void 0 : new Manager();
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./pages/index
+      *****************************/
+
+      ims.set('./pages/index', {
+        hash: 2934692868,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.default = void 0;
+          var _instance = require("./instance");
+          class _default extends Map {
+            // @deprecated: Use .obtain instead of this method
+            instance(id) {
+              return [...this.values()].find(instance => instance.id === id);
+            }
+            obtain({
+              widget,
+              id
+            }) {
+              if (id) return this.instance(id);
+              const child = widget.getAttribute('data-child-id');
+              return this.instance(child);
+            }
+            register(uri, route) {
+              const {
+                pathname
+              } = uri;
+              const instance = (() => {
+                if (!this.has(pathname)) return new _instance.PageInstance(uri, route);
+                const instance = this.get(pathname);
+                instance.uri.update(uri);
+                return instance;
+              })();
+              this.set(pathname, instance);
+              return instance;
+            }
+          }
+          exports.default = _default;
+        }
+      });
+
+      /********************************
+      INTERNAL MODULE: ./pages/instance
+      ********************************/
+
+      ims.set('./pages/instance', {
+        hash: 901253096,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.PageInstance = void 0;
+          var _render = require("@beyond-js/widgets/render");
+          var _uri = require("./uri");
+          let id = 0;
+          /*bundle*/
+          class PageInstance {
+            #uri;
+            get uri() {
+              return this.#uri;
+            }
+            get route() {
+              return this.#uri.route;
+            }
+            get element() {
+              return this.#uri.route.page;
+            }
+            get is() {
+              return 'page';
+            }
+            #id;
+            get id() {
+              return `${this.element}:${this.#id}`;
+            }
+            constructor(uri, route) {
+              this.#uri = new _uri.PageURI({
+                uri,
+                route
+              });
+              this.#id = ++id;
+            }
+            /**
+             * Returns the ascending layouts for the current page
+             *
+             * @return {{error?: string, parents?: IWidgetSpecs[]}}
+             */
+            get parents() {
+              // List of container layouts of the current page
+              const output = [];
+              // Look for the page's layout in the widgets specifications registry
+              let {
+                layout
+              } = _render.widgets.get(this.element);
+              while (layout) {
+                // Look for the layout specification in the widgets specification
+                // (as the layout is also another widget)
+                const found = [..._render.widgets.values()].find(({
+                  name
+                }) => name === layout);
+                if (!found) {
+                  const error = `Layout "${layout}" not found`;
+                  return {
+                    error
+                  };
+                }
+                output.unshift(found);
+                layout = found.layout;
+              }
+              return {
+                value: output
+              };
+            }
+          }
+          exports.PageInstance = PageInstance;
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./pages/route
+      *****************************/
+
+      ims.set('./pages/route', {
+        hash: 228538911,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Route = void 0;
+          var _render = require("@beyond-js/widgets/render");
+          var _routing = require("@beyond-js/kernel/routing");
+          /*bundle*/
+          class Route {
+            #pathname;
+            get pathname() {
+              return this.#pathname;
+            }
+            #page;
+            get page() {
+              return this.#page;
+            }
+            #vars;
+            get vars() {
+              return this.#vars;
+            }
+            constructor(pathname) {
+              this.#pathname = pathname;
+            }
+            async process() {
+              const pathname = this.#pathname.split('/');
+              // Split the routes of each page to make it easier to find the route that applies to the pathname
+              // being requested
+              const registered = new Map();
+              _render.widgets.forEach(({
+                is,
+                name,
+                route
+              }) => is === 'page' && registered.set(name, route.split('/')));
+              // The pages whose routes apply by the length of their urls
+              const target = [...registered].filter(([, route]) => route.length === pathname.length);
+              this.#vars = new Map();
+              const found = target.find(([, route]) => {
+                this.#vars.clear();
+                for (let i = 0; i < pathname.length; i++) {
+                  const dir = route[i];
+                  // Check if it is a route var (ex: /article/${id})
+                  if (dir.startsWith('${') && dir.endsWith('}')) {
+                    const vname = dir.slice(2, dir.length - 1);
+                    this.#vars.set(vname, pathname[i]);
+                    continue;
+                  }
+                  if (dir !== pathname[i]) return false;
+                }
+                return true;
+              });
+              this.#page = found ? found[0] : await _routing.routing.missing?.(this.#pathname);
+            }
+          }
+          exports.Route = Route;
+        }
+      });
+
+      /***************************
+      INTERNAL MODULE: ./pages/uri
+      ***************************/
+
+      ims.set('./pages/uri', {
+        hash: 3243525408,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.PageURI = void 0;
+          var _events = require("@beyond-js/events/events");
+          /*bundle*/ /**
+                      * The PageURI class is designed to extend the URI structure provided by the BeyondJS kernel routing,
+                      * incorporating variables extracted from the pathname as defined by a Route object.
+                      *
+                      * Additionally, it is expected for the URI to change in response to modifications in the query string.
+                      * This class facilitates the tracking of these changes, ensuring that the page can respond dynamically
+                      * to query string updates.
+                      */
+          class PageURI extends _events.Events {
+            #route;
+            get route() {
+              return this.#route;
+            }
+            #uri;
+            get uri() {
+              return this.#uri;
+            }
+            get pathname() {
+              return this.#uri.pathname;
+            }
+            get search() {
+              return this.#uri.search;
+            }
+            get qs() {
+              return this.#uri.qs;
+            }
+            get hash() {
+              return this.#uri.hash;
+            }
+            get vars() {
+              return this.#route.vars;
+            }
+            constructor({
+              uri,
+              route
+            }) {
+              super(); // Call the super constructor
+              this.#route = route;
+              this.#uri = uri;
+            }
+            update(uri) {
+              if (this.#uri === uri) return;
+              this.#uri = uri;
+              // Dispatch the "change" event when the URI is updated
+              const {
+                qs
+              } = this;
+              this.trigger('change', {
+                qs
+              });
+            }
+          }
+          exports.PageURI = PageURI;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./layouts/layout",
+        "from": "LayoutInstance",
+        "name": "LayoutInstance"
+      }, {
+        "im": "./manager",
+        "from": "manager",
+        "name": "manager"
+      }, {
+        "im": "./pages/instance",
+        "from": "PageInstance",
+        "name": "PageInstance"
+      }, {
+        "im": "./pages/route",
+        "from": "Route",
+        "name": "Route"
+      }, {
+        "im": "./pages/uri",
+        "from": "PageURI",
+        "name": "PageURI"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
       }) {
-        super();
-        this.#route = route;
-        this.#uri = uri;
-      }
-      update(uri) {
-        if (this.#uri === uri) return;
-        this.#uri = uri;
-        const {
-          qs
-        } = this;
-        this.trigger("change", {
-          qs
-        });
-      }
+        (require || prop === 'LayoutInstance') && _export("LayoutInstance", LayoutInstance = require ? require('./layouts/layout').LayoutInstance : value);
+        (require || prop === 'manager') && _export("manager", manager = require ? require('./manager').manager : value);
+        (require || prop === 'PageInstance') && _export("PageInstance", PageInstance = require ? require('./pages/instance').PageInstance : value);
+        (require || prop === 'Route') && _export("Route", Route = require ? require('./pages/route').Route : value);
+        (require || prop === 'PageURI') && _export("PageURI", PageURI = require ? require('./pages/uri').PageURI : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
     }
-    exports.PageURI = PageURI2;
-  }
+  };
 });
-__pkg.exports.descriptor = [{
-  "im": "./layouts/layout",
-  "from": "LayoutInstance",
-  "name": "LayoutInstance"
-}, {
-  "im": "./manager",
-  "from": "manager",
-  "name": "manager"
-}, {
-  "im": "./pages/instance",
-  "from": "PageInstance",
-  "name": "PageInstance"
-}, {
-  "im": "./pages/route",
-  "from": "Route",
-  "name": "Route"
-}, {
-  "im": "./pages/uri",
-  "from": "PageURI",
-  "name": "PageURI"
-}];
-var LayoutInstance, manager, PageInstance, Route, PageURI;
-__pkg.exports.process = function ({
-  require: require2,
-  prop,
-  value
-}) {
-  (require2 || prop === "LayoutInstance") && (LayoutInstance = require2 ? require2("./layouts/layout").LayoutInstance : value);
-  (require2 || prop === "manager") && (manager = require2 ? require2("./manager").manager : value);
-  (require2 || prop === "PageInstance") && (PageInstance = require2 ? require2("./pages/instance").PageInstance : value);
-  (require2 || prop === "Route") && (Route = require2 ? require2("./pages/route").Route : value);
-  (require2 || prop === "PageURI") && (PageURI = require2 ? require2("./pages/uri").PageURI : value);
-};
-var __beyond_pkg = __pkg;
-var hmr = new function () {
-  this.on = (event, listener) => void 0;
-  this.off = (event, listener) => void 0;
-}();
-__pkg.initialise(ims);
-};
-
-code(module, require);
-_exports(module.exports);
-}}});
-
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC90ZW1wL0BiZXlvbmQtanMvd2lkZ2V0cy9yb3V0aW5nLjEuMS4wLmpzIiwiLi4vbm9kZV9tb2R1bGVzL0BiZXlvbmQtanMvd2lkZ2V0cy9yb3V0aW5nL19fc291cmNlcy9yb3V0aW5nL2xheW91dHMvaW5kZXgudHMiLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy93aWRnZXRzL3JvdXRpbmcvX19zb3VyY2VzL3JvdXRpbmcvbGF5b3V0cy9sYXlvdXQudHMiLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy93aWRnZXRzL3JvdXRpbmcvX19zb3VyY2VzL3JvdXRpbmcvbWFuYWdlci50cyIsIi4uL25vZGVfbW9kdWxlcy9AYmV5b25kLWpzL3dpZGdldHMvcm91dGluZy9fX3NvdXJjZXMvcm91dGluZy9wYWdlcy9pbmRleC50cyIsIi4uL25vZGVfbW9kdWxlcy9AYmV5b25kLWpzL3dpZGdldHMvcm91dGluZy9fX3NvdXJjZXMvcm91dGluZy9wYWdlcy9pbnN0YW5jZS50cyIsIi4uL25vZGVfbW9kdWxlcy9AYmV5b25kLWpzL3dpZGdldHMvcm91dGluZy9fX3NvdXJjZXMvcm91dGluZy9wYWdlcy9yb3V0ZS50cyIsIi4uL25vZGVfbW9kdWxlcy9AYmV5b25kLWpzL3dpZGdldHMvcm91dGluZy9fX3NvdXJjZXMvcm91dGluZy9wYWdlcy91cmkudHMiXSwibmFtZXMiOlsicm91dGluZ18xXzFfMF9leHBvcnRzIiwiX19leHBvcnQiLCJMYXlvdXRJbnN0YW5jZSIsIlBhZ2VJbnN0YW5jZSIsIlBhZ2VVUkkiLCJSb3V0ZSIsIl9fYmV5b25kX3BrZyIsImhtciIsIm1hbmFnZXIiLCJtb2R1bGUiLCJleHBvcnRzIiwiX190b0NvbW1vbkpTIiwiX2RlZmF1bHQiLCJNYXAiLCJyZWdpc3RlciIsImxheW91dCIsInNldCIsImlkIiwiZGVmYXVsdCIsIl9jb3JlIiwicmVxdWlyZTIiLCJMYXlvdXRJbnN0YW5jZTIiLCJFdmVudHMiLCJpcyIsImxheW91dHMiLCJlbGVtZW50IiwiYWN0aXZlIiwicGFyZW50IiwiY2hpbGRyZW4iLCJjb25zdHJ1Y3RvciIsInNlbGVjdCIsInBhZ2UiLCJkZXNjZW5kaW5nIiwibGVuZ3RoIiwibmFtZSIsImNvbnNvbGUiLCJsb2ciLCJjaGlsZCIsImZvdW5kIiwidmFsdWVzIiwiZmluZCIsImNoaWxkMiIsImNoYW5nZWQiLCJzaGlmdCIsInRyaWdnZXIiLCJfcm91dGluZyIsIl9sYXlvdXQiLCJfcGFnZXMiLCJfbGF5b3V0cyIsIl9yb3V0ZSIsIk1hbmFnZXIiLCJpbnN0YW5jZXMiLCJwYWdlcyIsImluaXRpYWxpc2VkIiwicmVzb2x2ZSIsInJlYWR5IiwiUHJvbWlzZSIsInJvdXRpbmciLCJ1cmkiLCJjYXRjaCIsImV4YyIsInN0YWNrIiwic3BlY2lmaWVyIiwiZ2xvYmFsVGhpcyIsIl9fYXBwX3BhY2thZ2UiLCJhbGwiLCJiaW1wb3J0IiwidGhlbiIsImNvbmZpZyIsIm1haW4iLCJvbiIsImN0IiwiQ2FuY2VsbGF0aW9uVG9rZW4iLCJjaWQiLCJyZXNldCIsInJvdXRlIiwicGF0aG5hbWUiLCJwcm9jZXNzIiwiY2hlY2siLCJkb25lIiwiZXJyb3IiLCJ2YWx1ZSIsInBhcmVudHMiLCJtYW5hZ2VyMiIsIl9pbnN0YW5jZSIsImluc3RhbmNlIiwib2J0YWluIiwid2lkZ2V0IiwiZ2V0QXR0cmlidXRlIiwiaGFzIiwiaW5zdGFuY2UyIiwiZ2V0IiwidXBkYXRlIiwiX3JlbmRlciIsIl91cmkiLCJQYWdlSW5zdGFuY2UyIiwid2lkZ2V0cyIsInVuc2hpZnQiLCJSb3V0ZTIiLCJ2YXJzIiwic3BsaXQiLCJyZWdpc3RlcmVkIiwiZm9yRWFjaCIsInRhcmdldCIsImZpbHRlciIsImNsZWFyIiwiaSIsImRpciIsInN0YXJ0c1dpdGgiLCJlbmRzV2l0aCIsInZuYW1lIiwic2xpY2UiLCJtaXNzaW5nIiwiX2V2ZW50cyIsIlBhZ2VVUkkyIiwic2VhcmNoIiwicXMiLCJoYXNoIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7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
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGVmYXVsdCIsIk1hcCIsInJlZ2lzdGVyIiwibGF5b3V0Iiwic2V0IiwiaWQiLCJleHBvcnRzIiwiZGVmYXVsdCIsIl9jb3JlIiwicmVxdWlyZSIsIkxheW91dEluc3RhbmNlIiwiRXZlbnRzIiwiaXMiLCJsYXlvdXRzIiwiZWxlbWVudCIsImFjdGl2ZSIsInBhcmVudCIsImNoaWxkcmVuIiwiY29uc3RydWN0b3IiLCJhY3RpdmF0ZSIsInBhZ2UiLCJjaGlsZCIsImxlbmd0aCIsIm5hbWUiLCJmb3VuZCIsInZhbHVlcyIsImZpbmQiLCJjaGFuZ2VkIiwiZGVhY3RpdmF0ZSIsInNoaWZ0IiwidHJpZ2dlciIsImNvbnNvbGUiLCJ3YXJuIiwiX3JvdXRpbmciLCJfbGF5b3V0IiwiX3BhZ2VzIiwiX2xheW91dHMiLCJfcm91dGUiLCJNYW5hZ2VyIiwiaW5zdGFuY2VzIiwicGFnZXMiLCJpbml0aWFsaXNlZCIsInJlc29sdmUiLCJyZWFkeSIsIlByb21pc2UiLCJyb3V0aW5nIiwidXJpIiwiY2F0Y2giLCJleGMiLCJsb2ciLCJzdGFjayIsInNwZWNpZmllciIsImdsb2JhbFRoaXMiLCJfX2FwcF9wYWNrYWdlIiwiYWxsIiwiYmltcG9ydCIsInRoZW4iLCJjb25maWciLCJtYWluIiwib24iLCJjdCIsIkNhbmNlbGxhdGlvblRva2VuIiwiY2lkIiwicmVzZXQiLCJyb3V0ZSIsIlJvdXRlIiwicGF0aG5hbWUiLCJwcm9jZXNzIiwiY2hlY2siLCJkb25lIiwiZXJyb3IiLCJ2YWx1ZSIsInBhcmVudHMiLCJtYW5hZ2VyIiwiX2luc3RhbmNlIiwiaW5zdGFuY2UiLCJvYnRhaW4iLCJ3aWRnZXQiLCJnZXRBdHRyaWJ1dGUiLCJoYXMiLCJQYWdlSW5zdGFuY2UiLCJnZXQiLCJ1cGRhdGUiLCJfcmVuZGVyIiwiX3VyaSIsIlBhZ2VVUkkiLCJvdXRwdXQiLCJ3aWRnZXRzIiwidW5zaGlmdCIsInZhcnMiLCJzcGxpdCIsInJlZ2lzdGVyZWQiLCJmb3JFYWNoIiwidGFyZ2V0IiwiZmlsdGVyIiwiY2xlYXIiLCJpIiwiZGlyIiwic3RhcnRzV2l0aCIsImVuZHNXaXRoIiwidm5hbWUiLCJzbGljZSIsIm1pc3NpbmciLCJfZXZlbnRzIiwic2VhcmNoIiwicXMiLCJoYXNoIl0sInNvdXJjZXMiOlsiL2xheW91dHMvaW5kZXgudHMiLCIvbGF5b3V0cy9sYXlvdXQudHMiLCIvbWFuYWdlci50cyIsIi9wYWdlcy9pbmRleC50cyIsIi9wYWdlcy9pbnN0YW5jZS50cyIsIi9wYWdlcy9yb3V0ZS50cyIsIi9wYWdlcy91cmkudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFFQTs7O1VBR2MsTUFBQUEsUUFBQSxTQUFlQyxHQUEyQjtZQUN2REMsUUFBUUEsQ0FBQ0MsTUFBc0I7Y0FDOUIsSUFBSSxDQUFDQyxHQUFHLENBQUNELE1BQU0sQ0FBQ0UsRUFBRSxFQUFFRixNQUFNLENBQUM7WUFDNUI7O1VBQ0FHLE9BQUEsQ0FBQUMsT0FBQSxHQUFBUCxRQUFBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1BELElBQUFRLEtBQUEsR0FBQUMsT0FBQTtVQUtPO1VBQVUsTUFDWEMsY0FBZSxTQUFRRixLQUFBLENBQUFHLE1BQU07WUFDbEMsSUFBSUMsRUFBRUEsQ0FBQTtjQUNMLE9BQU8sUUFBUTtZQUNoQjtZQUVTLENBQUFDLE9BQVE7WUFFUixDQUFBQyxPQUFRO1lBQ2pCLElBQUlBLE9BQU9BLENBQUE7Y0FDVixPQUFPLElBQUksQ0FBQyxDQUFBQSxPQUFRO1lBQ3JCO1lBRUEsSUFBSVQsRUFBRUEsQ0FBQTtjQUNMLE9BQU8sSUFBSSxDQUFDLENBQUFTLE9BQVE7WUFDckI7WUFFQTtZQUNBLENBQUFDLE1BQU87WUFDUCxJQUFJQSxNQUFNQSxDQUFBO2NBQ1QsT0FBTyxJQUFJLENBQUMsQ0FBQUEsTUFBTztZQUNwQjtZQUVBO1lBQ0EsQ0FB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

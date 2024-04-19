@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@0.1.1/icons", "@aimpact/chat@1.0.1/shared/icons", "pragmate-ui@0.1.1/empty", "@beyond-js/react-18-widgets@1.1.1/hooks", "pragmate-ui@0.1.1/toast", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/chat-sdk@1.0.0/widgets/playable", "@bgroup/media-manager@1.0.0/audio-player", "pragmate-ui@0.1.1/components", "@aimpact/chat-sdk@1.0.0/widgets/markdown", "pragmate-ui@0.1.1/collapsible", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@0.1.1/icons", "@aimpact/chat@1.0.1/shared/icons", "pragmate-ui@0.1.1/empty", "@beyond-js/react-18-widgets@1.1.2/hooks", "pragmate-ui@0.1.1/toast", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/chat-sdk@1.0.0/widgets/playable", "@bgroup/media-manager@1.0.0/audio-player", "pragmate-ui@0.1.1/components", "@aimpact/chat-sdk@1.0.0/widgets/markdown", "pragmate-ui@0.1.1/collapsible", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, bimport, __Bundle, __pkg, ims, Messages, __beyond_pkg, hmr;
@@ -14,8 +14,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       dependency_3 = _aimpactChat101SharedIcons;
     }, function (_pragmateUi011Empty) {
       dependency_4 = _pragmateUi011Empty;
-    }, function (_beyondJsReact18Widgets111Hooks) {
-      dependency_5 = _beyondJsReact18Widgets111Hooks;
+    }, function (_beyondJsReact18Widgets112Hooks) {
+      dependency_5 = _beyondJsReact18Widgets112Hooks;
     }, function (_pragmateUi011Toast) {
       dependency_6 = _pragmateUi011Toast;
     }, function (_aimpactChatSdk100Session) {

@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/react-18-widgets@1.1.1/base", "@beyond-js/kernel@0.1.9/core", "@beyond-js/reactive@1.1.12/model", "@aimpact/chat@1.0.1/wrapper", "@beyond-js/react-18-widgets@1.1.1/hooks", "pragmate-ui@0.1.1/components", "@aimpact/chat-sdk@1.0.0/session", "pragmate-ui@0.1.1/form", "pragmate-ui@0.1.1/toast"], function (_export, _context2) {
+System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/react-18-widgets@1.1.2/base", "@beyond-js/kernel@0.1.9/core", "@beyond-js/reactive@1.1.12/model", "@aimpact/chat@1.0.1/wrapper", "@beyond-js/react-18-widgets@1.1.2/hooks", "pragmate-ui@0.1.1/components", "@aimpact/chat-sdk@1.0.0/session", "pragmate-ui@0.1.1/form", "pragmate-ui@0.1.1/toast"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
@@ -15,16 +15,16 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_2 = _beyondJsKernel019Styles;
     }, function (_react2) {
       dependency_3 = _react2;
-    }, function (_beyondJsReact18Widgets111Base) {
-      dependency_4 = _beyondJsReact18Widgets111Base;
+    }, function (_beyondJsReact18Widgets112Base) {
+      dependency_4 = _beyondJsReact18Widgets112Base;
     }, function (_beyondJsKernel019Core) {
       dependency_5 = _beyondJsKernel019Core;
     }, function (_beyondJsReactive1112Model) {
       dependency_6 = _beyondJsReactive1112Model;
     }, function (_aimpactChat101Wrapper) {
       dependency_7 = _aimpactChat101Wrapper;
-    }, function (_beyondJsReact18Widgets111Hooks) {
-      dependency_8 = _beyondJsReact18Widgets111Hooks;
+    }, function (_beyondJsReact18Widgets112Hooks) {
+      dependency_8 = _beyondJsReact18Widgets112Hooks;
     }, function (_pragmateUi011Components) {
       dependency_9 = _pragmateUi011Components;
     }, function (_aimpactChatSdk100Session) {

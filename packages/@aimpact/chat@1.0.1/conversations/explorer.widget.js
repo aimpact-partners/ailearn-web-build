@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.1/base", "@beyond-js/reactive@1.1.12/model", "@aimpact/chat-sdk@1.0.0/core", "@aimpact/chat@1.0.1/wrapper", "@aimpact/chat-sdk@1.0.0/session", "@beyond-js/kernel@0.1.9/core", "react@18.2.0", "pragmate-ui@0.1.1/components", "pragmate-ui@0.1.1/form", "pragmate-ui@0.1.1/modal", "@aimpact/chat@1.0.1/shared/hooks", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat@1.0.1/shared/components", "@beyond-js/react-18-widgets@1.1.1/hooks", "@aimpact/chat@1.0.1/ui/manager", "pragmate-ui@0.1.1/icons", "pragmate-ui@0.1.1/tooltip"], function (_export, _context2) {
+System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/base", "@beyond-js/reactive@1.1.12/model", "@aimpact/chat-sdk@1.0.0/core", "@aimpact/chat@1.0.1/wrapper", "@aimpact/chat-sdk@1.0.0/session", "@beyond-js/kernel@0.1.9/core", "react@18.2.0", "pragmate-ui@0.1.1/components", "pragmate-ui@0.1.1/form", "pragmate-ui@0.1.1/modal", "@aimpact/chat@1.0.1/shared/hooks", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat@1.0.1/shared/components", "@beyond-js/react-18-widgets@1.1.2/hooks", "@aimpact/chat@1.0.1/ui/manager", "pragmate-ui@0.1.1/icons", "pragmate-ui@0.1.1/tooltip"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, dependency_15, dependency_16, dependency_17, dependency_18, dependency_19, bimport, __Bundle, __pkg, ims, Controller, Conversations, __beyond_pkg, hmr;
@@ -13,8 +13,8 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_1 = _beyondJsKernel019Bundle;
     }, function (_beyondJsKernel019Styles) {
       dependency_2 = _beyondJsKernel019Styles;
-    }, function (_beyondJsReact18Widgets111Base) {
-      dependency_3 = _beyondJsReact18Widgets111Base;
+    }, function (_beyondJsReact18Widgets112Base) {
+      dependency_3 = _beyondJsReact18Widgets112Base;
     }, function (_beyondJsReactive1112Model) {
       dependency_4 = _beyondJsReactive1112Model;
     }, function (_aimpactChatSdk100Core) {
@@ -39,8 +39,8 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_14 = _beyondJsKernel019Routing;
     }, function (_aimpactChat101SharedComponents) {
       dependency_15 = _aimpactChat101SharedComponents;
-    }, function (_beyondJsReact18Widgets111Hooks) {
-      dependency_16 = _beyondJsReact18Widgets111Hooks;
+    }, function (_beyondJsReact18Widgets112Hooks) {
+      dependency_16 = _beyondJsReact18Widgets112Hooks;
     }, function (_aimpactChat101UiManager) {
       dependency_17 = _aimpactChat101UiManager;
     }, function (_pragmateUi011Icons) {

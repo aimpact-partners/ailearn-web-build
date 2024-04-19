@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.1/page", "react@18.2.0", "pragmate-ui@0.1.1/form", "pragmate-ui@0.1.1/alert", "pragmate-ui@0.1.1/components", "@aimpact/auth@0.0.1/components", "@beyond-js/react-18-widgets@1.1.1/hooks"], function (_export, _context) {
+System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "react@18.2.0", "pragmate-ui@0.1.1/form", "pragmate-ui@0.1.1/alert", "pragmate-ui@0.1.1/components", "@aimpact/auth@0.0.1/components", "@beyond-js/react-18-widgets@1.1.2/hooks"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
@@ -13,8 +13,8 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_1 = _beyondJsKernel019Bundle;
     }, function (_beyondJsKernel019Styles) {
       dependency_2 = _beyondJsKernel019Styles;
-    }, function (_beyondJsReact18Widgets111Page) {
-      dependency_3 = _beyondJsReact18Widgets111Page;
+    }, function (_beyondJsReact18Widgets112Page) {
+      dependency_3 = _beyondJsReact18Widgets112Page;
     }, function (_react2) {
       dependency_4 = _react2;
     }, function (_pragmateUi011Form) {
@@ -25,8 +25,8 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_7 = _pragmateUi011Components;
     }, function (_aimpactAuth001Components) {
       dependency_8 = _aimpactAuth001Components;
-    }, function (_beyondJsReact18Widgets111Hooks) {
-      dependency_9 = _beyondJsReact18Widgets111Hooks;
+    }, function (_beyondJsReact18Widgets112Hooks) {
+      dependency_9 = _beyondJsReact18Widgets112Hooks;
     }],
     execute: function () {
       bimport = specifier => {

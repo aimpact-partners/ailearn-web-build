@@ -221,7 +221,7 @@
   --surface-container: var(--neutral-94);
   --surface-container-high: var(--neutral-92);
   --surface-container-highest: var(--neutral-90);
-  --surface-overlay: rgba(255, 255, 255, 0.8);
+  --surface-overlay: rgba(255, 255, 255, 1);
   --surface-variant: var(--secondary-95);
   --on-surface: var(--neutral-10);
   --on-surface-variant: var(--neutral-variant-30);
@@ -268,7 +268,7 @@
   --surface-container: var(--neutral-94);
   --surface-container-high: var(--neutral-92);
   --surface-container-highest: var(--neutral-90);
-  --surface-overlay: rgba(255, 255, 255, 0.8);
+  --surface-overlay: rgba(255, 255, 255, 1);
   --surface-variant: var(--secondary-95);
   --on-surface: var(--neutral-10);
   --on-surface-variant: var(--neutral-variant-30);

@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/react-18-widgets@1.1.1/base", "@beyond-js/reactive@1.1.12/model", "@aimpact/chat-sdk@1.0.0/core", "@aimpact/chat@1.0.1/wrapper", "react@18.2.0", "@beyond-js/react-18-widgets@1.1.1/hooks", "@aimpact/chat@1.0.1/shared/components", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context) {
+System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/react-18-widgets@1.1.2/base", "@beyond-js/reactive@1.1.12/model", "@aimpact/chat-sdk@1.0.0/core", "@aimpact/chat@1.0.1/wrapper", "react@18.2.0", "@beyond-js/react-18-widgets@1.1.2/hooks", "@aimpact/chat@1.0.1/shared/components", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, bimport, __Bundle, __pkg, ims, Controller, __beyond_pkg, hmr;
@@ -8,8 +8,8 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_0 = _beyondJsWidgets110Render;
     }, function (_beyondJsKernel019Bundle) {
       dependency_1 = _beyondJsKernel019Bundle;
-    }, function (_beyondJsReact18Widgets111Base) {
-      dependency_2 = _beyondJsReact18Widgets111Base;
+    }, function (_beyondJsReact18Widgets112Base) {
+      dependency_2 = _beyondJsReact18Widgets112Base;
     }, function (_beyondJsReactive1112Model) {
       dependency_3 = _beyondJsReactive1112Model;
     }, function (_aimpactChatSdk100Core) {
@@ -18,8 +18,8 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_5 = _aimpactChat101Wrapper;
     }, function (_react2) {
       dependency_6 = _react2;
-    }, function (_beyondJsReact18Widgets111Hooks) {
-      dependency_7 = _beyondJsReact18Widgets111Hooks;
+    }, function (_beyondJsReact18Widgets112Hooks) {
+      dependency_7 = _beyondJsReact18Widgets112Hooks;
     }, function (_aimpactChat101SharedComponents) {
       dependency_8 = _aimpactChat101SharedComponents;
     }, function (_beyondJsKernel019Styles) {

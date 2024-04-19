@@ -1,1032 +1,1123 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle","@beyond-js/kernel@0.1.9/core"], (_exports, _context) => {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
+  "use strict";
 
-const bimport = specifier => {
-	const dependencies = new Map([["@beyond-js/kernel","0.1.9"],["@beyond-js/widgets","1.1.0"]]);
-	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
-};
-
-
-var dependencies = new Map();
-var require = dependency => dependencies.get(dependency);
-return {
-setters: [dep => dependencies.set('@beyond-js/kernel@0.1.9/bundle', dep), dep => dependencies.set('@beyond-js/kernel@0.1.9/core', dep)],
-execute: function() {
-// Prevent esbuild from considering the context to be amd
-const define = void 0;
-const module = {};
-
-const code = (module, require) => {
-var __create = Object.create;
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __export = (target, all) => {
-  for (var name in all) __defProp(target, name, {
-    get: all[name],
-    enumerable: true
+  var dependency_0, dependency_1, bimport, __Bundle, __pkg, ims, attributes, NodeWidget, prerender, IBeyondWidgetController, WidgetCSR, IWidgetSpecs, BeyondWidget, GlobalCSS, StylesManager, widgets, __beyond_pkg, hmr;
+  _export({
+    attributes: void 0,
+    NodeWidget: void 0,
+    prerender: void 0,
+    IBeyondWidgetController: void 0,
+    WidgetCSR: void 0,
+    IWidgetSpecs: void 0,
+    BeyondWidget: void 0,
+    GlobalCSS: void 0,
+    StylesManager: void 0,
+    widgets: void 0
   });
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, {
-      get: () => from[key],
-      enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
-    });
-  }
-  return to;
-};
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", {
-  value: mod,
-  enumerable: true
-}) : target, mod));
-var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
-  value: true
-}), mod);
-
-// .beyond/uimport/temp/@beyond-js/widgets/render.1.1.0.js
-var render_1_1_0_exports = {};
-__export(render_1_1_0_exports, {
-  BeyondWidget: () => BeyondWidget,
-  GlobalCSS: () => GlobalCSS,
-  IBeyondWidgetController: () => IBeyondWidgetController,
-  IWidgetSpecs: () => IWidgetSpecs,
-  NodeWidget: () => NodeWidget,
-  StylesManager: () => StylesManager,
-  WidgetCSR: () => WidgetCSR,
-  __beyond_pkg: () => __beyond_pkg,
-  attributes: () => attributes,
-  hmr: () => hmr,
-  prerender: () => prerender,
-  widgets: () => widgets
-});
-module.exports = __toCommonJS(render_1_1_0_exports);
-
-// node_modules/@beyond-js/widgets/render/render.browser.mjs
-var dependency_0 = __toESM(require("@beyond-js/kernel@0.1.9/bundle"), 0);
-var dependency_1 = __toESM(require("@beyond-js/kernel@0.1.9/core"), 0);
-var import_meta = {};
-var {
-  Bundle: __Bundle
-} = dependency_0;
-var __pkg = new __Bundle({
-  "module": {
-    "vspecifier": "@beyond-js/widgets@1.1.0/render"
-  },
-  "type": "ts"
-}, _context.meta.url).package();
-;
-__pkg.dependencies.update([["@beyond-js/kernel/core", dependency_1]]);
-var ims = /* @__PURE__ */new Map();
-ims.set("./anchor", {
-  hash: 157107968,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    typeof process !== "object" && customElements.define("beyond-link", class extends HTMLElement {
-      #routing;
-      constructor() {
-        super();
-        bimport("@beyond-js/kernel/routing").then(({
-          routing
-        }) => this.#routing = routing);
-      }
-      connectedCallback() {
-        this.addEventListener("click", () => {
-          if (!this.hasAttribute("data-url")) return;
-          const url = this.getAttribute("data-url");
-          this.#routing?.pushState(url);
-        });
-      }
-    });
-  }
-});
-ims.set("./attributes", {
-  hash: 1948053846,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.attributes = exports.Attributes = void 0;
-    var _core = require2("@beyond-js/kernel/core");
-    class Attributes extends _core.Events {
-      #values = /* @__PURE__ */new Map();
-      get values() {
-        return this.#values;
-      }
-      add(name, value) {
-        this.#values.set(name, value);
-        this.trigger("add", name, value);
-        this.trigger("change");
-      }
-      remove(name) {
-        this.#values.delete(name);
-        this.trigger("remove", name);
-        this.trigger("change");
-      }
-    }
-    exports.Attributes = Attributes;
-    const attributes2 = exports.attributes = new Attributes();
-  }
-});
-ims.set("./instances/index", {
-  hash: 2203205286,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.instances = void 0;
-    var _node = require2("./node");
-    const instances = exports.instances = new class extends Set {
-      register(widget) {
-        this.add(widget);
-        const parent = (() => {
-          let parent2 = widget;
-          while (true) {
-            const root = parent2.getRootNode();
-            if (root === document) return;
-            parent2 = root.host;
-            if (this.has(parent2)) return parent2;
-          }
-        })();
-        const node = new _node.NodeWidget(widget, parent);
-        parent?.wnode.children.add(widget);
-        this.add(widget);
-        return node;
-      }
-    }();
-  }
-});
-ims.set("./instances/node", {
-  hash: 2635585213,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.NodeWidget = void 0;
-    class NodeWidget2 {
-      #widget;
-      get widget() {
-        return this.#widget;
-      }
-      #parent;
-      get parent() {
-        return this.#parent;
-      }
-      #children = /* @__PURE__ */new Set();
-      get children() {
-        return this.#children;
-      }
-      constructor(widget, parent) {
-        this.#widget = widget;
-        this.#parent = parent;
-      }
-    }
-    exports.NodeWidget = NodeWidget2;
-  }
-});
-ims.set("./prerendered/index", {
-  hash: 1802094002,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.prerender = void 0;
-    const prerender2 = exports.prerender = new class {
-      #ssr = [];
-      get ssr() {
-        return this.#ssr;
-      }
-      find(element, attrs) {
-        return this.#ssr.find(item => {
-          if (item.element !== element) return false;
-          const iattrs = new Map(item.attributes);
-          return [...attrs].reduce((prev, [name, value]) => prev || iattrs.get(name) === value, true);
-        });
-      }
-    }();
-  }
-});
-ims.set("./widget/attributes", {
-  hash: 1844817953,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.WidgetGlobalAttributes = void 0;
-    var _attributes = require2("../attributes");
-    class WidgetGlobalAttributes {
-      #holder;
-      get holder() {
-        return this.#holder;
-      }
-      #set = (name, value) => {
-        this.#holder.setAttribute(name, value);
+  return {
+    setters: [function (_beyondJsKernel019Bundle) {
+      dependency_0 = _beyondJsKernel019Bundle;
+    }, function (_beyondJsKernel019Core) {
+      dependency_1 = _beyondJsKernel019Core;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/kernel", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/widgets", "1.1.0"], ["@aimpact/ailearn-app", "0.0.32"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
-      #remove = name => {
-        this.#holder.removeAttribute(name);
-      };
-      initialise(holder) {
-        this.#holder = holder;
-        _attributes.attributes.values.forEach((value, name) => this.#set(name, value));
-        _attributes.attributes.on("add", this.#set);
-        _attributes.attributes.on("remove", this.#remove);
-      }
-      destroy() {
-        _attributes.attributes.off("add", this.#set);
-        _attributes.attributes.off("remove", this.#remove);
-      }
-    }
-    exports.WidgetGlobalAttributes = WidgetGlobalAttributes;
-  }
-});
-ims.set("./widget/checksum", {
-  hash: 1000731235,
-  creator: function (require2, exports) {
-    "use strict";
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@beyond-js/widgets@1.1.0/render"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/core', dependency_1]]);
+      ims = new Map();
+      /************************
+      INTERNAL MODULE: ./anchor
+      ************************/
+      ims.set('./anchor', {
+        hash: 157107968,
+        creator: function (require, exports) {
+          "use strict";
 
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.default = _default;
-    function _default(s) {
-      let hash = 0,
-        i,
-        c;
-      const length = s.length;
-      if (length === 0) {
-        return hash;
-      }
-      for (i = 0; i < length; i++) {
-        c = s.charCodeAt(i);
-        hash = (hash << 5) - hash + c;
-        hash = hash & hash;
-      }
-      return hash.toString().replace("-", "n");
-    }
-  }
-});
-ims.set("./widget/csr", {
-  hash: 3612276883,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.WidgetCSR = void 0;
-    var _core = require2("@beyond-js/kernel/core");
-    class WidgetCSR2 extends _core.Events {
-      #widget;
-      #bundle;
-      get bundle() {
-        return this.#bundle;
-      }
-      #controller;
-      get controller() {
-        return this.#controller;
-      }
-      #error;
-      get error() {
-        return this.#error;
-      }
-      #loading = false;
-      get loading() {
-        return this.#loading;
-      }
-      #loaded = false;
-      get loaded() {
-        return this.#loaded;
-      }
-      #holders = /* @__PURE__ */new Set(["initialised", "loaded"]);
-      initialise() {
-        if (!this.#widget.specs.render.csr) return;
-        if (!this.#holders.has("initialised")) throw new Error("Widget CSR already initialised");
-        this.#holders.delete("initialised");
-        this.#render();
-      }
-      constructor(widget) {
-        super();
-        const {
-          specifier,
-          specs
-        } = this.#widget = widget;
-        if (!specs.render.csr) return;
-        bimport(specifier).then(bundle => {
-          this.#bundle = bundle;
-          this.#loading = false;
-          this.#loaded = true;
-          this.#holders.delete("loaded");
-          this.#render();
-        }).catch(exc => {
-          console.error(`Error loading widget "${specifier}"`, exc.stack);
-          this.#error = exc.message;
-          this.#loading = false;
-        });
-      }
-      #render = () => {
-        if (this.#holders.size) return;
-        const {
-          Controller
-        } = this.#bundle;
-        if (!Controller || typeof Controller !== "function") {
-          const message = `Widget "${this.#widget.localName}" does not export its Controller`;
-          console.error(message);
-          this.#error = message;
-          return;
-        }
-        this.#controller = new Controller(this.#widget);
-        this.#controller.initialise().then(() => this.trigger("controller.initialised")).catch(exc => console.log(exc instanceof Error ? exc.stack : exc));
-      };
-      disconnect() {
-        this.#controller?.disconnect?.();
-      }
-      attributeChanged(name, old, value) {
-        this.#controller?.attributeChanged(name, old, value);
-      }
-    }
-    exports.WidgetCSR = WidgetCSR2;
-  }
-});
-ims.set("./widget/index", {
-  hash: 2614430817,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.BeyondWidget = void 0;
-    var _instances = require2("../instances");
-    var _sr = require2("./sr");
-    var _csr = require2("./csr");
-    var _ssr = require2("./ssr");
-    var _attributes = require2("./attributes");
-    var _styles = require2("./styles");
-    const Element = typeof HTMLElement === "undefined" ? null : HTMLElement;
-    class BeyondWidget2 extends Element {
-      #specs;
-      get specs() {
-        return this.#specs;
-      }
-      get name() {
-        return this.#specs.name;
-      }
-      get vspecifier() {
-        return this.#specs.vspecifier;
-      }
-      #specifier;
-      get specifier() {
-        return this.#specifier;
-      }
-      get host() {
-        return `${location.origin}/`;
-      }
-      get is() {
-        return this.#specs.is;
-      }
-      get route() {
-        return this.#specs.route;
-      }
-      get layout() {
-        return this.#specs.layout;
-      }
-      #holder;
-      get holder() {
-        return this.#holder;
-      }
-      #sr;
-      get sr() {
-        return this.#sr;
-      }
-      #csr;
-      get csr() {
-        return this.#csr;
-      }
-      get controller() {
-        return this.#csr.controller;
-      }
-      #ssr;
-      get ssr() {
-        return this.#ssr;
-      }
-      #attributes;
-      #styles;
-      get styles() {
-        return this.#styles;
-      }
-      #wnode;
-      get wnode() {
-        return this.#wnode;
-      }
-      get wparent() {
-        return this.#wnode.parent;
-      }
-      get wchildren() {
-        return [...this.#wnode.children];
-      }
-      #oncontroller = () => {
-        const event = new CustomEvent("controller.initialised", {
-          bubbles: false,
-          composed: false
-        });
-        this.dispatchEvent(event);
-      };
-      constructor(specs) {
-        super();
-        this.#specs = specs;
-        this.attachShadow({
-          mode: "open"
-        });
-        this.#specifier = (() => {
-          const split = specs.vspecifier.split("/");
-          const scope = split[0].startsWith("@") ? split.shift() : void 0;
-          const [name] = split.shift().split("@");
-          const subpath = split.join("/");
-          return (scope ? `${scope}/${name}` : name) + (subpath ? `/${subpath}` : "");
-        })();
-        this.#attributes = new _attributes.WidgetGlobalAttributes();
-        this.#sr = new _sr.WidgetSR(this);
-        this.#ssr = new _ssr.WidgetSSR(this);
-        this.#csr = new _csr.WidgetCSR(this);
-        this.#csr?.on("controller.initialised", this.#oncontroller);
-        this.#styles = new _styles.StylesManager(this);
-      }
-      connectedCallback() {
-        this.#wnode = _instances.instances.register(this);
-        this.#holder = document.createElement("span");
-        this.#holder.style.display = "none";
-        this.shadowRoot.append(this.#holder);
-        this.#attributes.initialise(this.#holder);
-        this.#ssr.initialise().catch(exc => console.error(exc.stack));
-        this.#sr.initialise().catch(exc => console.error(exc.stack));
-        this.#csr.initialise();
-      }
-      disconnectedCallback() {
-        this.#csr.disconnect();
-      }
-      attributeChangedCallback(name, old, value) {
-        this.#csr.attributeChanged(name, old, value);
-      }
-    }
-    exports.BeyondWidget = BeyondWidget2;
-  }
-});
-ims.set("./widget/renderer", {
-  hash: 2900055975,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.Renderer = void 0;
-    class Renderer {
-      #widget;
-      constructor(widget) {
-        this.#widget = widget;
-      }
-      #ct = 0;
-      async render(sr) {
-        const ct = ++this.#ct;
-        const {
-          name,
-          holder,
-          styles
-        } = this.#widget;
-        if (sr.errors?.length) {
-          console.error(`Error fetching static rendered widget "${name}":`, sr.errors);
-          return;
-        }
-        if (holder.children.length) return;
-        if (!sr.html) return "";
-        const host = await this.#widget.host;
-        holder.innerHTML = (() => sr.html.replace(/##_!(.*?)!_##/g, () => host))();
-        const links = [];
-        const resources = holder.querySelectorAll("link");
-        resources.forEach(node => links.push(node.href));
-        links.length && (await styles.initialise(links));
-        resources.forEach(node => node.localName === "link" && node.addEventListener("load", styles.onloaded));
-        await styles?.ready;
-        if (this.#ct !== ct) return;
-        holder.style.display = "";
-      }
-    }
-    exports.Renderer = Renderer;
-  }
-});
-ims.set("./widget/sr", {
-  hash: 828831605,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.WidgetSR = void 0;
-    var _checksum = require2("./checksum");
-    var _renderer = require2("./renderer");
-    class WidgetSR {
-      #widget;
-      #renderer;
-      #prerender;
-      get prerender() {
-        return this.#prerender;
-      }
-      constructor(widget) {
-        this.#widget = widget;
-        this.#renderer = new _renderer.Renderer(widget);
-      }
-      #initialised = false;
-      async initialise() {
-        if (this.#initialised) throw new Error("Widget SSR already initialised");
-        this.#initialised = true;
-        const {
-          specs
-        } = this.#widget;
-        if (!specs.render.sr) return;
-        const language = (() => {
-          const {
-            multilanguage
-          } = specs.render;
-          if (!multilanguage) return "";
-          let language2 = localStorage.__beyond_language;
-          language2 = language2 ? language2 : navigator.language;
-          language2 = language2.slice(0, 2);
-          return `${language2}:`;
-        })();
-        let resource;
-        if (specs.is === "page") {
-          let key = `${language}${specs.name}//${location.pathname}${location.search}`;
-          resource = (0, _checksum.default)(key);
-        } else if (specs.is === "layout") {
-          resource = (0, _checksum.default)(`${language}${specs.name}`);
-        } else {
-          const compute = /* @__PURE__ */new Map();
-          specs.attrs?.forEach(attr => {
-            const value = this.#widget.getAttribute(attr);
-            value && compute.set(attr, value);
+          Object.defineProperty(exports, "__esModule", {
+            value: true
           });
-          let key = language;
-          [...compute].sort((a, b) => a[0] < b[0] ? 1 : 0).forEach(([k, v]) => key += `${k}//${v}///`);
-          resource = (0, _checksum.default)(key);
-        }
-        const host = await this.#widget.host;
-        const url = `${host}__sr_widgets__/${specs.name}.${resource}.js`;
-        try {
-          const response = await fetch(url);
-          if (response.status !== 200) {
-            console.error(`Error fetching static rendered widget "${specs.name}". Status code: ${response.status}`);
-            return;
-          }
-          const sr = await response.json();
-          this.#prerender = sr;
-          await this.#renderer.render(sr);
-        } catch (exc) {
-          console.error("Widget static content fetch error:", exc.message);
-        }
-      }
-    }
-    exports.WidgetSR = WidgetSR;
-  }
-});
-ims.set("./widget/ssr", {
-  hash: 3024365739,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.WidgetSSR = void 0;
-    var _prerendered = require2("../prerendered");
-    var _renderer = require2("./renderer");
-    class WidgetSSR {
-      #widget;
-      #renderer;
-      #prerender;
-      get prerender() {
-        return this.#prerender;
-      }
-      constructor(widget) {
-        this.#widget = widget;
-        this.#renderer = new _renderer.Renderer(widget);
-      }
-      #initialised = false;
-      async initialise() {
-        if (!this.#widget.specs.render.ssr) return;
-        if (this.#initialised) throw new Error("Widget SSR already initialised");
-        this.#initialised = true;
-        const widget = this.#widget;
-        const {
-          specs
-        } = widget;
-        const attrs = new Map(specs.attrs ? specs.attrs.map(attr => [attr, widget.getAttribute(attr)]) : void 0);
-        const found = _prerendered.prerender.find(specs.name, attrs);
-        if (!found) {
-          return await this.#load();
-        }
-        this.#prerender = found;
-        await this.#renderer.render(found);
-      }
-      async #load() {
-        const {
-          specifier,
-          name
-        } = this.#widget;
-        const host = await (async () => {
-          const split = specifier.split("/");
-          const pkg = split[0].startsWith("@") ? `${split.shift()}/${split.shift()}` : split.shift();
-          const {
-            ssr: config
-          } = (await bimport(`${pkg}/config`)).default;
-          if (!config || !config.host) {
-            console.error(`Project "${pkg}" does not support SSR (host not configured). Required by "${name}" widget.`);
-            return;
-          }
-          return config.host;
-        })();
-        if (!host) return;
-        const language = (() => {
-          const {
-            specs
-          } = this.#widget;
-          const {
-            multilanguage
-          } = specs.render;
-          if (!multilanguage) return "";
-          let language2 = localStorage.__beyond_language;
-          language2 = language2 ? language2 : navigator.language;
-          language2 = language2.slice(0, 2);
-          return `&language=${language2}`;
-        })();
-        let attrs = (() => {
-          const {
-            specs
-          } = this.#widget;
-          if (!specs.attrs?.length) return "";
-          let attrs2 = "&attrs=" + specs.attrs.join(",");
-          specs.attrs.forEach(attr => {
-            const value = this.#widget.getAttribute(attr);
-            if (!value) return;
-            attrs2 += `&attr.${attr}=${value}`;
+          typeof process !== 'object' && customElements.define('beyond-link', class extends HTMLElement {
+            #routing;
+            constructor() {
+              super();
+              bimport('@beyond-js/kernel/routing').then(({
+                routing
+              }) => this.#routing = routing);
+            }
+            connectedCallback() {
+              this.addEventListener('click', () => {
+                if (!this.hasAttribute('data-url')) return;
+                const url = this.getAttribute('data-url');
+                this.#routing?.pushState(url);
+              });
+            }
           });
-        })();
-        const url = `${host}/widget?name=${name}${language}${attrs}`;
-        try {
-          const response = await fetch(url);
-          if (response.status !== 200) {
-            console.error(`Error fetching SSR of widget "${name}". Status code: ${response.status}`);
-            return;
-          }
-          const sr = await response.json();
-          this.#prerender = sr;
-          await this.#renderer.render(sr);
-        } catch (exc) {
-          console.error(exc.stack);
         }
-      }
-    }
-    exports.WidgetSSR = WidgetSSR;
-  }
-});
-ims.set("./widget/styles/global", {
-  hash: 1112922337,
-  creator: function (require2, exports) {
-    "use strict";
+      });
 
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.GlobalCSS = void 0;
-    var _core = require2("@beyond-js/kernel/core");
-    class GlobalCSS2 extends _core.Events {
-      #widget;
-      #version = 0;
-      constructor(widget) {
-        super();
-        this.#widget = widget;
-        const {
-          host
-        } = this.#widget;
-        const version = this.#version !== 0 ? `?version=${this.#version}` : "";
-        this.#link = `${host}global.css${version}`;
-      }
-      #link;
-      get link() {
-        return this.#link;
-      }
-      update() {
-        this.#version++;
-        this.trigger("change");
-      }
-    }
-    exports.GlobalCSS = GlobalCSS2;
-  }
-});
-ims.set("./widget/styles/index", {
-  hash: 3021483485,
-  creator: function (require2, exports) {
-    "use strict";
+      /****************************
+      INTERNAL MODULE: ./attributes
+      ****************************/
 
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.StylesManager = void 0;
-    var _core = require2("@beyond-js/kernel/core");
-    var _link = require2("./link");
-    var _global = require2("./global");
-    class StylesManager2 {
-      #events = new _core.Events();
-      on = (event, listener) => this.#events.on(event, listener);
-      off = (event, listener) => this.#events.off(event, listener);
-      #loaded = /* @__PURE__ */new Map();
-      #globalcss;
-      #version = 0;
-      get version() {
-        return this.#version;
-      }
-      #changed() {
-        this.#version++;
-        this.#resolved && this.#events.trigger("change");
-      }
-      get resources() {
-        return /* @__PURE__ */new Set([...this.#loaded.keys()]);
-      }
-      get loaded() {
-        this.#check();
-        return this.#resolved;
-      }
-      #promise;
-      #resolved = false;
-      #resolve;
-      get ready() {
-        this.#check();
-        return this.#promise;
-      }
-      onloaded = event => {
-        const href = typeof event === "string" ? event : event.currentTarget.getAttribute("href");
-        if (!this.#loaded.has(href)) {
-          console.warn(`Stylesheet href="${href}" not registered`);
-          return;
-        }
-        this.#loaded.set(href, true);
-        this.#check();
-        const changed = this.#purge();
-        changed && this.#changed();
-        return true;
-      };
-      #check() {
-        if (this.#resolved) return true;
-        const loaded = [...this.#loaded.values()].reduce((prev, loaded2) => prev && loaded2, true);
-        loaded && this.#resolve();
-        return this.#resolved = loaded;
-      }
-      #purge() {
-        const versions = {
-          last: /* @__PURE__ */new Map(),
-          values: /* @__PURE__ */new Map(),
-          lastLoaded: /* @__PURE__ */new Map()
-        };
-        [...this.#loaded.keys()].forEach(href => {
-          const link = new _link.default(href);
-          const prevLast = versions.last.get(link.resource);
-          const last = prevLast && prevLast > link.version ? prevLast : link.version;
-          versions.last.set(link.resource, last);
-          if (this.#loaded.get(link.href)) {
-            const prevLastLoaded = versions.lastLoaded.get(link.resource);
-            const lastLoaded = prevLastLoaded && prevLastLoaded > link.version ? prevLastLoaded : link.version;
-            versions.lastLoaded.set(link.resource, lastLoaded);
+      ims.set('./attributes', {
+        hash: 1948053846,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.attributes = exports.Attributes = void 0;
+          var _core = require("@beyond-js/kernel/core");
+          class Attributes extends _core.Events {
+            #values = new Map();
+            get values() {
+              return this.#values;
+            }
+            add(name, value) {
+              this.#values.set(name, value);
+              this.trigger('add', name, value);
+              this.trigger('change');
+            }
+            remove(name) {
+              this.#values.delete(name);
+              this.trigger('remove', name);
+              this.trigger('change');
+            }
           }
-          const values = versions.values.has(link.resource) ? versions.values.get(link.resource) : /* @__PURE__ */new Set();
-          values.add(link.version);
-          versions.values.set(link.resource, values);
-        });
-        const purge = [];
-        [...this.#loaded.keys()].forEach(href => {
-          const link = new _link.default(href);
-          const lastLoaded = versions.lastLoaded.get(link.resource);
-          link.version < lastLoaded && purge.push(link);
-        });
-        purge.forEach(link => this.#loaded.delete(link.href));
-        return !!purge.length;
-      }
-      #last;
-      #refresh = () => {
-        if (!this.#last) return;
-        const changed = this.#update(this.#last);
-        changed && this.#changed();
-      };
-      #update(_links) {
-        this.#last = _links;
-        _links.unshift(this.#globalcss.link);
-        const links = _links.map(link => new _link.default(link));
-        let changed = false;
-        links.forEach(link => {
-          if (this.#loaded.has(link.href)) return;
-          this.#loaded.set(link.href, false);
-          changed = true;
-        });
-        return changed;
-      }
-      update(links) {
-        const changed = this.#update(links);
-        changed && this.#changed();
-      }
-      constructor(widget) {
-        this.#globalcss = new _global.GlobalCSS(widget);
-        this.#promise = new Promise(resolve => this.#resolve = resolve);
-      }
-      #initialised = false;
-      get initialised() {
-        return this.#initialised;
-      }
-      async initialise(links) {
-        if (this.#initialised) throw new Error(`Widget styles already initialised`);
-        this.#initialised = true;
-        this.#update(links);
-        this.#globalcss.on("change", this.#refresh);
-      }
-      destroy() {
-        this.#globalcss.off("change", this.#refresh);
-      }
-    }
-    exports.StylesManager = StylesManager2;
-  }
-});
-ims.set("./widget/styles/link", {
-  hash: 2453054171,
-  creator: function (require2, exports) {
-    "use strict";
+          exports.Attributes = Attributes;
+          /*bundle*/
+          const attributes = exports.attributes = new Attributes();
+        }
+      });
 
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.default = void 0;
-    class _default {
-      #href;
-      get href() {
-        return this.#href;
-      }
-      #resource;
-      get resource() {
-        return this.#resource;
-      }
-      #version;
-      get version() {
-        return this.#version;
-      }
-      constructor(href) {
-        this.#href = href;
-        const iv = href.split("?version=");
-        this.#resource = iv[0];
-        this.#version = iv[1] ? parseInt(iv[1]) : 0;
-      }
-    }
-    exports.default = _default;
-  }
-});
-ims.set("./widgets", {
-  hash: 334125737,
-  creator: function (require2, exports) {
-    "use strict";
+      /*********************************
+      INTERNAL MODULE: ./instances/index
+      *********************************/
 
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.widgets = void 0;
-    var _widget = require2("./widget");
-    var _instances = require2("./instances");
-    var _attributes = require2("./attributes");
-    require2("./anchor");
-    class BeyondWidgets extends Map {
-      #ssr = true;
-      get ssr() {
-        return this.#ssr;
-      }
-      constructor() {
-        super();
-      }
-      setup(config) {
-        this.#ssr = typeof config?.ssr === "boolean" ? config.ssr : true;
-      }
-      get instances() {
-        return _instances.instances;
-      }
-      get attributes() {
-        return _attributes.attributes;
-      }
-      register(specs) {
-        specs.forEach(specs2 => {
-          if (this.has(specs2.name)) return;
-          specs2.render = specs2.render ? specs2.render : {
-            csr: true,
-            ssr: false,
-            sr: false
-          };
-          const {
-            name,
-            render
-          } = specs2;
-          render.csr = typeof render.csr === "boolean" ? render.csr : true;
-          this.set(name, specs2);
-          if (typeof process === "object") return;
-          customElements.define(name, class extends _widget.BeyondWidget {
-            static get observedAttributes() {
-              return specs2.attrs ? specs2.attrs : [];
+      ims.set('./instances/index', {
+        hash: 2203205286,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.instances = void 0;
+          var _node = require("./node");
+          // Maintains a tree of widget instances
+          // NodeWidget is an object with a tree structure (parent, children)
+          const instances = exports.instances = new class extends Set {
+            register(widget) {
+              this.add(widget);
+              // Find parent widget
+              const parent = (() => {
+                let parent = widget;
+                while (true) {
+                  const root = parent.getRootNode();
+                  if (root === document) return;
+                  parent = root.host;
+                  if (this.has(parent)) return parent;
+                }
+              })();
+              const node = new _node.NodeWidget(widget, parent);
+              parent?.wnode.children.add(widget);
+              this.add(widget);
+              return node;
+            }
+          }();
+        }
+      });
+
+      /********************************
+      INTERNAL MODULE: ./instances/node
+      ********************************/
+
+      ims.set('./instances/node', {
+        hash: 2635585213,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.NodeWidget = void 0;
+          /*bundle*/
+          class NodeWidget {
+            #widget;
+            get widget() {
+              return this.#widget;
+            }
+            #parent;
+            get parent() {
+              return this.#parent;
+            }
+            #children = new Set();
+            get children() {
+              return this.#children;
+            }
+            constructor(widget, parent) {
+              this.#widget = widget;
+              this.#parent = parent;
+            }
+          }
+          exports.NodeWidget = NodeWidget;
+        }
+      });
+
+      /***********************************
+      INTERNAL MODULE: ./prerendered/index
+      ***********************************/
+
+      ims.set('./prerendered/index', {
+        hash: 1802094002,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.prerender = void 0;
+          /*bundle*/
+          const prerender = exports.prerender = new class {
+            #ssr = [];
+            get ssr() {
+              return this.#ssr;
+            }
+            find(element, attrs) {
+              return this.#ssr.find(item => {
+                if (item.element !== element) return false;
+                const iattrs = new Map(item.attributes);
+                return [...attrs].reduce((prev, [name, value]) => prev || iattrs.get(name) === value, true);
+              });
+            }
+          }();
+        }
+      });
+
+      /***********************************
+      INTERNAL MODULE: ./widget/attributes
+      ***********************************/
+
+      ims.set('./widget/attributes', {
+        hash: 1844817953,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.WidgetGlobalAttributes = void 0;
+          var _attributes = require("../attributes");
+          /**
+           * The global attributes specified in widgets.attributes that apply to all the widgets in the application
+           */
+          class WidgetGlobalAttributes {
+            #holder;
+            get holder() {
+              return this.#holder;
+            }
+            #set = (name, value) => {
+              this.#holder.setAttribute(name, value);
+            };
+            #remove = name => {
+              this.#holder.removeAttribute(name);
+            };
+            initialise(holder) {
+              this.#holder = holder;
+              _attributes.attributes.values.forEach((value, name) => this.#set(name, value));
+              _attributes.attributes.on('add', this.#set);
+              _attributes.attributes.on('remove', this.#remove);
+            }
+            destroy() {
+              _attributes.attributes.off('add', this.#set);
+              _attributes.attributes.off('remove', this.#remove);
+            }
+          }
+          exports.WidgetGlobalAttributes = WidgetGlobalAttributes;
+        }
+      });
+
+      /*********************************
+      INTERNAL MODULE: ./widget/checksum
+      *********************************/
+
+      ims.set('./widget/checksum', {
+        hash: 1000731235,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.default = _default;
+          function _default(s) {
+            let hash = 0,
+              i,
+              c;
+            const length = s.length;
+            if (length === 0) {
+              return hash;
+            }
+            for (i = 0; i < length; i++) {
+              c = s.charCodeAt(i);
+              hash = (hash << 5) - hash + c;
+              hash = hash & hash; // Convert to 32bit integer
+            }
+            return hash.toString().replace('-', 'n');
+          }
+        }
+      });
+
+      /****************************
+      INTERNAL MODULE: ./widget/csr
+      ****************************/
+
+      ims.set('./widget/csr', {
+        hash: 3612276883,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.WidgetCSR = void 0;
+          var _core = require("@beyond-js/kernel/core");
+          /*bundle*/
+          class WidgetCSR extends _core.Events {
+            #widget;
+            #bundle;
+            get bundle() {
+              return this.#bundle;
+            }
+            #controller;
+            get controller() {
+              return this.#controller;
+            }
+            #error;
+            get error() {
+              return this.#error;
+            }
+            #loading = false;
+            get loading() {
+              return this.#loading;
+            }
+            #loaded = false;
+            get loaded() {
+              return this.#loaded;
+            }
+            #holders = new Set(['initialised', 'loaded']);
+            initialise() {
+              // Check if CSR is enabled (default) for this widget
+              if (!this.#widget.specs.render.csr) return;
+              if (!this.#holders.has('initialised')) throw new Error('Widget CSR already initialised');
+              this.#holders.delete('initialised');
+              this.#render();
+            }
+            constructor(widget) {
+              super();
+              const {
+                specifier,
+                specs
+              } = this.#widget = widget;
+              // Check if CSR is enabled (default) for this widget
+              if (!specs.render.csr) return;
+              bimport(specifier).then(bundle => {
+                this.#bundle = bundle;
+                this.#loading = false;
+                this.#loaded = true;
+                this.#holders.delete('loaded');
+                this.#render();
+              }).catch(exc => {
+                console.error(`Error loading widget "${specifier}"`, exc.stack);
+                this.#error = exc.message;
+                this.#loading = false;
+              });
+            }
+            #render = () => {
+              // Render the widget once the connectedCallback is called and the bundle was imported
+              if (this.#holders.size) return;
+              const {
+                Controller
+              } = this.#bundle;
+              if (!Controller || typeof Controller !== 'function') {
+                const message = `Widget "${this.#widget.localName}" does not export its Controller`;
+                console.error(message);
+                this.#error = message;
+                return;
+              }
+              this.#controller = new Controller(this.#widget);
+              this.#controller.initialise().then(() => this.trigger('controller.initialised')).catch(exc => console.log(exc instanceof Error ? exc.stack : exc));
+            };
+            disconnect() {
+              this.#controller?.disconnect?.();
+            }
+            attributeChanged(name, old, value) {
+              this.#controller?.attributeChanged(name, old, value);
+            }
+          }
+          exports.WidgetCSR = WidgetCSR;
+        }
+      });
+
+      /******************************
+      INTERNAL MODULE: ./widget/index
+      ******************************/
+
+      ims.set('./widget/index', {
+        hash: 2614430817,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.BeyondWidget = void 0;
+          var _instances = require("../instances");
+          var _sr = require("./sr");
+          var _csr = require("./csr");
+          var _ssr = require("./ssr");
+          var _attributes = require("./attributes");
+          var _styles = require("./styles");
+          // In SSR environment HTMLElement is not defined
+          const Element = typeof HTMLElement === 'undefined' ? null : HTMLElement;
+          /*bundle*/
+          class BeyondWidget extends Element {
+            #specs;
+            get specs() {
+              return this.#specs;
+            }
+            get name() {
+              return this.#specs.name;
+            }
+            get vspecifier() {
+              return this.#specs.vspecifier;
+            }
+            #specifier;
+            get specifier() {
+              return this.#specifier;
+            }
+            get host() {
+              return `${location.origin}/`;
+            }
+            get is() {
+              return this.#specs.is;
+            }
+            get route() {
+              return this.#specs.route;
+            }
+            get layout() {
+              return this.#specs.layout;
+            }
+            #holder;
+            get holder() {
+              return this.#holder;
+            }
+            #sr;
+            get sr() {
+              return this.#sr;
+            }
+            #csr;
+            get csr() {
+              return this.#csr;
+            }
+            get controller() {
+              return this.#csr.controller;
+            }
+            #ssr;
+            get ssr() {
+              return this.#ssr;
+            }
+            #attributes;
+            #styles;
+            get styles() {
+              return this.#styles;
+            }
+            // To identify where the widget is in the widgets tree
+            #wnode;
+            get wnode() {
+              return this.#wnode;
+            }
+            get wparent() {
+              return this.#wnode.parent;
+            }
+            get wchildren() {
+              return [...this.#wnode.children];
+            }
+            /**
+             * Actually required by routing to call the .show & .hide methods once the controller is initialised
+             */
+            #oncontroller = () => {
+              const event = new CustomEvent('controller.initialised', {
+                bubbles: false,
+                composed: false
+              });
+              this.dispatchEvent(event);
+            };
+            constructor(specs) {
+              super();
+              this.#specs = specs;
+              this.attachShadow({
+                mode: 'open'
+              });
+              /**
+               * Extract the version to the vspecifier
+               * @type {string}
+               */
+              this.#specifier = (() => {
+                const split = specs.vspecifier.split('/');
+                const scope = split[0].startsWith('@') ? split.shift() : void 0;
+                const [name] = split.shift().split('@');
+                const subpath = split.join('/');
+                return (scope ? `${scope}/${name}` : name) + (subpath ? `/${subpath}` : '');
+              })();
+              this.#attributes = new _attributes.WidgetGlobalAttributes();
+              this.#sr = new _sr.WidgetSR(this);
+              this.#ssr = new _ssr.WidgetSSR(this);
+              this.#csr = new _csr.WidgetCSR(this);
+              this.#csr?.on('controller.initialised', this.#oncontroller);
+              this.#styles = new _styles.StylesManager(this);
+            }
+            connectedCallback() {
+              // Register the widget in the instances registry after connectedCallback is done
+              this.#wnode = _instances.instances.register(this);
+              this.#holder = document.createElement('span');
+              this.#holder.style.display = 'none';
+              this.shadowRoot.append(this.#holder);
+              this.#attributes.initialise(this.#holder);
+              this.#ssr.initialise().catch(exc => console.error(exc.stack));
+              this.#sr.initialise().catch(exc => console.error(exc.stack));
+              this.#csr.initialise();
+            }
+            disconnectedCallback() {
+              this.#csr.disconnect();
+            }
+            attributeChangedCallback(name, old, value) {
+              this.#csr.attributeChanged(name, old, value);
+            }
+          }
+          exports.BeyondWidget = BeyondWidget;
+        }
+      });
+
+      /*********************************
+      INTERNAL MODULE: ./widget/renderer
+      *********************************/
+
+      ims.set('./widget/renderer', {
+        hash: 442693055,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Renderer = void 0;
+          class Renderer {
+            #widget;
+            constructor(widget) {
+              this.#widget = widget;
+            }
+            // Cancellation token
+            #ct = 0;
+            async render(sr) {
+              const ct = ++this.#ct;
+              const {
+                name,
+                holder,
+                styles
+              } = this.#widget;
+              if (sr.errors?.length) {
+                console.error(`Error fetching static rendered widget "${name}":`, sr.errors);
+                return;
+              }
+              // Check if already rendered by CSR
+              if (holder.children.length) return;
+              if (!sr.html) return '';
+              const host = await this.#widget.host;
+              holder.innerHTML = (() => sr.html.replace(/##_!(.*?)!_##/g, () => host))();
+              // Set the widget styles to be able to know when they are loaded to avoid FOUC (flash of unstyled content)
+              const links = [];
+              const resources = holder.querySelectorAll('link');
+              resources.forEach(node => links.push(node.href));
+              links.length && (await styles.initialise(links));
+              resources.forEach(node => node.localName === 'link' && node.addEventListener('load', styles.onloaded));
+              // Wait for style sheets be ready
+              await styles?.ready;
+              if (this.#ct !== ct) return;
+              // Once the styles are loaded, show the content of the widget
+              holder.style.display = '';
+            }
+          }
+          exports.Renderer = Renderer;
+        }
+      });
+
+      /***************************
+      INTERNAL MODULE: ./widget/sr
+      ***************************/
+
+      ims.set('./widget/sr', {
+        hash: 828831605,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.WidgetSR = void 0;
+          var _checksum = require("./checksum");
+          var _renderer = require("./renderer");
+          class WidgetSR {
+            #widget;
+            #renderer;
+            #prerender;
+            get prerender() {
+              return this.#prerender;
+            }
+            constructor(widget) {
+              this.#widget = widget;
+              this.#renderer = new _renderer.Renderer(widget);
+            }
+            #initialised = false;
+            async initialise() {
+              if (this.#initialised) throw new Error('Widget SSR already initialised');
+              this.#initialised = true;
+              const {
+                specs
+              } = this.#widget;
+              // Check if SR is enabled for this widget
+              if (!specs.render.sr) return;
+              const language = (() => {
+                const {
+                  multilanguage
+                } = specs.render;
+                if (!multilanguage) return '';
+                let language = localStorage.__beyond_language;
+                language = language ? language : navigator.language;
+                language = language.slice(0, 2);
+                return `${language}:`;
+              })();
+              let resource;
+              if (specs.is === 'page') {
+                let key = `${language}${specs.name}//${location.pathname}${location.search}`;
+                resource = (0, _checksum.default)(key);
+              } else if (specs.is === 'layout') {
+                resource = (0, _checksum.default)(`${language}${specs.name}`);
+              } else {
+                const compute = new Map();
+                specs.attrs?.forEach(attr => {
+                  const value = this.#widget.getAttribute(attr);
+                  value && compute.set(attr, value);
+                });
+                let key = language;
+                [...compute].sort((a, b) => a[0] < b[0] ? 1 : 0).forEach(([k, v]) => key += `${k}//${v}///`);
+                resource = (0, _checksum.default)(key);
+              }
+              const host = await this.#widget.host;
+              const url = `${host}__sr_widgets__/${specs.name}.${resource}.js`;
+              try {
+                const response = await fetch(url);
+                if (response.status !== 200) {
+                  console.error(`Error fetching static rendered widget "${specs.name}". Status code: ${response.status}`);
+                  return;
+                }
+                const sr = await response.json();
+                // Register as a pre-rendered widget (required to hydrate the store)
+                this.#prerender = sr;
+                // Finally render the widget
+                await this.#renderer.render(sr);
+              } catch (exc) {
+                console.error('Widget static content fetch error:', exc.message);
+              }
+            }
+          }
+          exports.WidgetSR = WidgetSR;
+        }
+      });
+
+      /****************************
+      INTERNAL MODULE: ./widget/ssr
+      ****************************/
+
+      ims.set('./widget/ssr', {
+        hash: 3024365739,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.WidgetSSR = void 0;
+          var _prerendered = require("../prerendered");
+          var _renderer = require("./renderer");
+          class WidgetSSR {
+            #widget;
+            #renderer;
+            #prerender;
+            get prerender() {
+              return this.#prerender;
+            }
+            constructor(widget) {
+              this.#widget = widget;
+              this.#renderer = new _renderer.Renderer(widget);
+            }
+            #initialised = false;
+            /**
+             * Check if widget is already pre-rendered (index.html makes a page ssr fetch)
+             */
+            async initialise() {
+              // Check if SSR is enabled for this widget
+              if (!this.#widget.specs.render.ssr) return;
+              if (this.#initialised) throw new Error('Widget SSR already initialised');
+              this.#initialised = true;
+              const widget = this.#widget;
+              const {
+                specs
+              } = widget;
+              const attrs = new Map(specs.attrs ? specs.attrs.map(attr => [attr, widget.getAttribute(attr)]) : void 0);
+              const found = _prerendered.prerender.find(specs.name, attrs);
+              // If the widget has not been loaded by routing SSR, then load the widget alone
+              if (!found) {
+                return await this.#load();
+              }
+              this.#prerender = found;
+              // Finally render the widget
+              await this.#renderer.render(found);
+            }
+            async #load() {
+              const {
+                specifier,
+                name
+              } = this.#widget;
+              const host = await (async () => {
+                const split = specifier.split('/');
+                const pkg = split[0].startsWith('@') ? `${split.shift()}/${split.shift()}` : split.shift();
+                const {
+                  ssr: config
+                } = (await bimport(`${pkg}/config`)).default;
+                if (!config || !config.host) {
+                  console.error(`Project "${pkg}" does not support SSR (host not configured). ` + `Required by "${name}" widget.`);
+                  return;
+                }
+                return config.host;
+              })();
+              if (!host) return;
+              const language = (() => {
+                const {
+                  specs
+                } = this.#widget;
+                const {
+                  multilanguage
+                } = specs.render;
+                if (!multilanguage) return '';
+                let language = localStorage.__beyond_language;
+                language = language ? language : navigator.language;
+                language = language.slice(0, 2);
+                return `&language=${language}`;
+              })();
+              let attrs = (() => {
+                const {
+                  specs
+                } = this.#widget;
+                if (!specs.attrs?.length) return '';
+                let attrs = '&attrs=' + specs.attrs.join(',');
+                specs.attrs.forEach(attr => {
+                  const value = this.#widget.getAttribute(attr);
+                  if (!value) return;
+                  attrs += `&attr.${attr}=${value}`;
+                });
+              })();
+              const url = `${host}/widget?name=${name}${language}${attrs}`;
+              try {
+                const response = await fetch(url);
+                if (response.status !== 200) {
+                  console.error(`Error fetching SSR of widget "${name}". Status code: ${response.status}`);
+                  return;
+                }
+                const sr = await response.json();
+                // Register as a pre-rendered widget (required to hydrate the store)
+                this.#prerender = sr;
+                // Finally render the widget
+                await this.#renderer.render(sr);
+              } catch (exc) {
+                console.error(exc.stack);
+              }
+            }
+          }
+          exports.WidgetSSR = WidgetSSR;
+        }
+      });
+
+      /**************************************
+      INTERNAL MODULE: ./widget/styles/global
+      **************************************/
+
+      ims.set('./widget/styles/global', {
+        hash: 1112922337,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.GlobalCSS = void 0;
+          var _core = require("@beyond-js/kernel/core");
+          /*bundle*/
+          class GlobalCSS extends _core.Events {
+            #widget;
+            #version = 0;
+            constructor(widget) {
+              super();
+              this.#widget = widget;
+              const {
+                host
+              } = this.#widget;
+              const version = this.#version !== 0 ? `?version=${this.#version}` : '';
+              this.#link = `${host}global.css${version}`;
+            }
+            #link;
+            get link() {
+              return this.#link;
+            }
+            update() {
+              this.#version++;
+              this.trigger('change');
+            }
+          }
+          exports.GlobalCSS = GlobalCSS;
+        }
+      });
+
+      /*************************************
+      INTERNAL MODULE: ./widget/styles/index
+      *************************************/
+
+      ims.set('./widget/styles/index', {
+        hash: 3021483485,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StylesManager = void 0;
+          var _core = require("@beyond-js/kernel/core");
+          var _link = require("./link");
+          var _global = require("./global");
+          /*bundle*/
+          class StylesManager {
+            #events = new _core.Events();
+            on = (event, listener) => this.#events.on(event, listener);
+            off = (event, listener) => this.#events.off(event, listener);
+            #loaded = new Map();
+            #globalcss;
+            #version = 0;
+            get version() {
+              return this.#version;
+            }
+            #changed() {
+              this.#version++;
+              this.#resolved && this.#events.trigger('change');
+            }
+            get resources() {
+              return new Set([...this.#loaded.keys()]);
+            }
+            get loaded() {
+              this.#check();
+              return this.#resolved;
+            }
+            #promise;
+            #resolved = false;
+            #resolve;
+            get ready() {
+              this.#check();
+              return this.#promise;
+            }
+            onloaded = event => {
+              const href = typeof event === 'string' ? event : event.currentTarget.getAttribute('href');
+              if (!this.#loaded.has(href)) {
+                console.warn(`Stylesheet href="${href}" not registered`);
+                return;
+              }
+              this.#loaded.set(href, true);
+              this.#check();
+              const changed = this.#purge();
+              changed && this.#changed();
+              return true;
+            };
+            #check() {
+              if (this.#resolved) return true;
+              // Check if all links are loaded
+              const loaded = [...this.#loaded.values()].reduce((prev, loaded) => prev && loaded, true);
+              loaded && this.#resolve();
+              return this.#resolved = loaded;
+            }
+            /**
+             * Remove style sheets that have been supplanted by newer hmr versions
+             * @private
+             */
+            #purge() {
+              const versions = {
+                last: new Map(),
+                values: new Map(),
+                lastLoaded: new Map()
+              };
+              [...this.#loaded.keys()].forEach(href => {
+                const link = new _link.default(href);
+                const prevLast = versions.last.get(link.resource);
+                const last = prevLast && prevLast > link.version ? prevLast : link.version;
+                versions.last.set(link.resource, last);
+                if (this.#loaded.get(link.href)) {
+                  const prevLastLoaded = versions.lastLoaded.get(link.resource);
+                  const lastLoaded = prevLastLoaded && prevLastLoaded > link.version ? prevLastLoaded : link.version;
+                  versions.lastLoaded.set(link.resource, lastLoaded);
+                }
+                const values = versions.values.has(link.resource) ? versions.values.get(link.resource) : new Set();
+                values.add(link.version);
+                versions.values.set(link.resource, values);
+              });
+              // Just keep the last loaded version and the loading versions
+              const purge = [];
+              [...this.#loaded.keys()].forEach(href => {
+                const link = new _link.default(href);
+                const lastLoaded = versions.lastLoaded.get(link.resource);
+                link.version < lastLoaded && purge.push(link);
+              });
+              purge.forEach(link => this.#loaded.delete(link.href));
+              return !!purge.length;
+            }
+            /**
+             * Required to support global.css HMR
+             *
+             * @type {string[]}
+             * @private
+             */
+            #last;
+            #refresh = () => {
+              if (!this.#last) return;
+              const changed = this.#update(this.#last);
+              changed && this.#changed();
+            };
+            #update(_links) {
+              this.#last = _links;
+              _links.unshift(this.#globalcss.link);
+              const links = _links.map(link => new _link.default(link));
+              // Add the new style sheets
+              let changed = false;
+              links.forEach(link => {
+                if (this.#loaded.has(link.href)) return;
+                this.#loaded.set(link.href, false);
+                changed = true;
+              });
+              return changed;
+            }
+            update(links) {
+              const changed = this.#update(links);
+              changed && this.#changed();
+            }
+            constructor(widget) {
+              this.#globalcss = new _global.GlobalCSS(widget);
+              this.#promise = new Promise(resolve => this.#resolve = resolve);
+            }
+            #initialised = false;
+            get initialised() {
+              return this.#initialised;
+            }
+            async initialise(links) {
+              if (this.#initialised) throw new Error(`Widget styles already initialised`);
+              this.#initialised = true;
+              this.#update(links);
+              this.#globalcss.on('change', this.#refresh);
+            }
+            destroy() {
+              this.#globalcss.off('change', this.#refresh);
+            }
+          }
+          exports.StylesManager = StylesManager;
+        }
+      });
+
+      /************************************
+      INTERNAL MODULE: ./widget/styles/link
+      ************************************/
+
+      ims.set('./widget/styles/link', {
+        hash: 2453054171,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.default = void 0;
+          class _default {
+            #href;
+            get href() {
+              return this.#href;
+            }
+            #resource;
+            get resource() {
+              return this.#resource;
+            }
+            #version;
+            get version() {
+              return this.#version;
+            }
+            constructor(href) {
+              this.#href = href;
+              const iv = href.split('?version=');
+              this.#resource = iv[0];
+              this.#version = iv[1] ? parseInt(iv[1]) : 0;
+            }
+          }
+          exports.default = _default;
+        }
+      });
+
+      /*************************
+      INTERNAL MODULE: ./widgets
+      *************************/
+
+      ims.set('./widgets', {
+        hash: 334125737,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.widgets = void 0;
+          var _widget = require("./widget");
+          var _instances = require("./instances");
+          var _attributes = require("./attributes");
+          require("./anchor");
+          class BeyondWidgets extends Map {
+            #ssr = true;
+            get ssr() {
+              return this.#ssr;
             }
             constructor() {
-              super(specs2);
+              super();
             }
-          });
-        });
-      }
+            setup(config) {
+              this.#ssr = typeof config?.ssr === 'boolean' ? config.ssr : true;
+            }
+            get instances() {
+              return _instances.instances;
+            }
+            get attributes() {
+              return _attributes.attributes;
+            }
+            register(specs) {
+              specs.forEach(specs => {
+                // Widgets can be registered at application start, and later by the widget bundle
+                if (this.has(specs.name)) return;
+                specs.render = specs.render ? specs.render : {
+                  csr: true,
+                  ssr: false,
+                  sr: false
+                };
+                const {
+                  name,
+                  render
+                } = specs;
+                render.csr = typeof render.csr === 'boolean' ? render.csr : true;
+                this.set(name, specs);
+                // Do not register the custom elements when rendering in the server
+                if (typeof process === 'object') return;
+                customElements.define(name, class extends _widget.BeyondWidget {
+                  static get observedAttributes() {
+                    return specs.attrs ? specs.attrs : [];
+                  }
+                  constructor() {
+                    super(specs);
+                  }
+                });
+              });
+            }
+          }
+          /*bundle*/
+          const widgets = exports.widgets = new BeyondWidgets();
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./attributes",
+        "from": "attributes",
+        "name": "attributes"
+      }, {
+        "im": "./instances/node",
+        "from": "NodeWidget",
+        "name": "NodeWidget"
+      }, {
+        "im": "./prerendered/index",
+        "from": "prerender",
+        "name": "prerender"
+      }, {
+        "im": "./widget/csr",
+        "from": "IBeyondWidgetController",
+        "name": "IBeyondWidgetController"
+      }, {
+        "im": "./widget/csr",
+        "from": "WidgetCSR",
+        "name": "WidgetCSR"
+      }, {
+        "im": "./widget/index",
+        "from": "IWidgetSpecs",
+        "name": "IWidgetSpecs"
+      }, {
+        "im": "./widget/index",
+        "from": "BeyondWidget",
+        "name": "BeyondWidget"
+      }, {
+        "im": "./widget/styles/global",
+        "from": "GlobalCSS",
+        "name": "GlobalCSS"
+      }, {
+        "im": "./widget/styles/index",
+        "from": "StylesManager",
+        "name": "StylesManager"
+      }, {
+        "im": "./widgets",
+        "from": "widgets",
+        "name": "widgets"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'attributes') && _export("attributes", attributes = require ? require('./attributes').attributes : value);
+        (require || prop === 'NodeWidget') && _export("NodeWidget", NodeWidget = require ? require('./instances/node').NodeWidget : value);
+        (require || prop === 'prerender') && _export("prerender", prerender = require ? require('./prerendered/index').prerender : value);
+        (require || prop === 'IBeyondWidgetController') && _export("IBeyondWidgetController", IBeyondWidgetController = require ? require('./widget/csr').IBeyondWidgetController : value);
+        (require || prop === 'WidgetCSR') && _export("WidgetCSR", WidgetCSR = require ? require('./widget/csr').WidgetCSR : value);
+        (require || prop === 'IWidgetSpecs') && _export("IWidgetSpecs", IWidgetSpecs = require ? require('./widget/index').IWidgetSpecs : value);
+        (require || prop === 'BeyondWidget') && _export("BeyondWidget", BeyondWidget = require ? require('./widget/index').BeyondWidget : value);
+        (require || prop === 'GlobalCSS') && _export("GlobalCSS", GlobalCSS = require ? require('./widget/styles/global').GlobalCSS : value);
+        (require || prop === 'StylesManager') && _export("StylesManager", StylesManager = require ? require('./widget/styles/index').StylesManager : value);
+        (require || prop === 'widgets') && _export("widgets", widgets = require ? require('./widgets').widgets : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
     }
-    const widgets2 = exports.widgets = new BeyondWidgets();
-  }
+  };
 });
-__pkg.exports.descriptor = [{
-  "im": "./attributes",
-  "from": "attributes",
-  "name": "attributes"
-}, {
-  "im": "./instances/node",
-  "from": "NodeWidget",
-  "name": "NodeWidget"
-}, {
-  "im": "./prerendered/index",
-  "from": "prerender",
-  "name": "prerender"
-}, {
-  "im": "./widget/csr",
-  "from": "IBeyondWidgetController",
-  "name": "IBeyondWidgetController"
-}, {
-  "im": "./widget/csr",
-  "from": "WidgetCSR",
-  "name": "WidgetCSR"
-}, {
-  "im": "./widget/index",
-  "from": "IWidgetSpecs",
-  "name": "IWidgetSpecs"
-}, {
-  "im": "./widget/index",
-  "from": "BeyondWidget",
-  "name": "BeyondWidget"
-}, {
-  "im": "./widget/styles/global",
-  "from": "GlobalCSS",
-  "name": "GlobalCSS"
-}, {
-  "im": "./widget/styles/index",
-  "from": "StylesManager",
-  "name": "StylesManager"
-}, {
-  "im": "./widgets",
-  "from": "widgets",
-  "name": "widgets"
-}];
-var attributes, NodeWidget, prerender, IBeyondWidgetController, WidgetCSR, IWidgetSpecs, BeyondWidget, GlobalCSS, StylesManager, widgets;
-__pkg.exports.process = function ({
-  require: require2,
-  prop,
-  value
-}) {
-  (require2 || prop === "attributes") && (attributes = require2 ? require2("./attributes").attributes : value);
-  (require2 || prop === "NodeWidget") && (NodeWidget = require2 ? require2("./instances/node").NodeWidget : value);
-  (require2 || prop === "prerender") && (prerender = require2 ? require2("./prerendered/index").prerender : value);
-  (require2 || prop === "IBeyondWidgetController") && (IBeyondWidgetController = require2 ? require2("./widget/csr").IBeyondWidgetController : value);
-  (require2 || prop === "WidgetCSR") && (WidgetCSR = require2 ? require2("./widget/csr").WidgetCSR : value);
-  (require2 || prop === "IWidgetSpecs") && (IWidgetSpecs = require2 ? require2("./widget/index").IWidgetSpecs : value);
-  (require2 || prop === "BeyondWidget") && (BeyondWidget = require2 ? require2("./widget/index").BeyondWidget : value);
-  (require2 || prop === "GlobalCSS") && (GlobalCSS = require2 ? require2("./widget/styles/global").GlobalCSS : value);
-  (require2 || prop === "StylesManager") && (StylesManager = require2 ? require2("./widget/styles/index").StylesManager : value);
-  (require2 || prop === "widgets") && (widgets = require2 ? require2("./widgets").widgets : value);
-};
-var __beyond_pkg = __pkg;
-var hmr = new function () {
-  this.on = (event, listener) => void 0;
-  this.off = (event, listener) => void 0;
-}();
-__pkg.initialise(ims);
-};
-
-code(module, require);
-_exports(module.exports);
-}}});
-
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC90ZW1wL0BiZXlvbmQtanMvd2lkZ2V0cy9yZW5kZXIuMS4xLjAuanMiLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy93aWRnZXRzL3JlbmRlci9fX3NvdXJjZXMvcmVuZGVyL2FuY2hvci50cyIsIi4uL25vZGVfbW9kdWxlcy9AYmV5b25kLWpzL3dpZGdldHMvcmVuZGVyL19fc291cmNlcy9yZW5kZXIvYXR0cmlidXRlcy50cyIsIi4uL25vZGVfbW9kdWxlcy9AYmV5b25kLWpzL3dpZGdldHMvcmVuZGVyL19fc291cmNlcy9yZW5kZXIvaW5zdGFuY2VzL2luZGV4LnRzIiwiLi4vbm9kZV9tb2R1bGVzL0BiZXlvbmQtanMvd2lkZ2V0cy9yZW5kZXIvX19zb3VyY2VzL3JlbmRlci9pbnN0YW5jZXMvbm9kZS50cyIsIi4uL25vZGVfbW9kdWxlcy9AYmV5b25kLWpzL3dpZGdldHMvcmVuZGVyL19fc291cmNlcy9yZW5kZXIvcHJlcmVuZGVyZWQvaW5kZXgudHMiLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy93aWRnZXRzL3JlbmRlci9fX3NvdXJjZXMvcmVuZGVyL3dpZGdldC9hdHRyaWJ1dGVzLnRzIiwiLi4vbm9kZV9tb2R1bGVzL0BiZXlvbmQtanMvd2lkZ2V0cy9yZW5kZXIvX19zb3VyY2VzL3JlbmRlci93aWRnZXQvY2hlY2tzdW0udHMiLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy93aWRnZXRzL3JlbmRlci9fX3NvdXJjZXMvcmVuZGVyL3dpZGdldC9jc3IudHMiLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy93aWRnZXRzL3JlbmRlci9fX3NvdXJjZXMvcmVuZGVyL3dpZGdldC9pbmRleC50cyIsIi4uL25vZGVfbW9kdWxlcy9AYmV5b25kLWpzL3dpZGdldHMvcmVuZGVyL19fc291cmNlcy9yZW5kZXIvd2lkZ2V0L3JlbmRlcmVyLnRzIiwiLi4vbm9kZV9tb2R1bGVzL0BiZXlvbmQtanMvd2lkZ2V0cy9yZW5kZXIvX19zb3VyY2VzL3JlbmRlci93aWRnZXQvc3IudHMiLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy93aWRnZXRzL3JlbmRlci9fX3NvdXJjZXMvcmVuZGVyL3dpZGdldC9zc3IudHMiLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy93aWRnZXRzL3JlbmRlci9fX3NvdXJjZXMvcmVuZGVyL3dpZGdldC9zdHlsZXMvZ2xvYmFsLnRzIiwiLi4vbm9kZV9tb2R1bGVzL0BiZXlvbmQtanMvd2lkZ2V0cy9yZW5kZXIvX19zb3VyY2VzL3JlbmRlci93aWRnZXQvc3R5bGVzL2luZGV4LnRzIiwiLi4vbm9kZV9tb2R1bGVzL0BiZXlvbmQtanMvd2lkZ2V0cy9yZW5kZXIvX19zb3VyY2VzL3JlbmRlci93aWRnZXQvc3R5bGVzL2xpbmsudHMiLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy93aWRnZXRzL3JlbmRlci9fX3NvdXJjZXMvcmVuZGVyL3dpZGdldHMudHMiXSwibmFtZXMiOlsicmVuZGVyXzFfMV8wX2V4cG9ydHMiLCJfX2V4cG9ydCIsIkJleW9uZFdpZGdldCIsIkdsb2JhbENTUyIsIklCZXlvbmRXaWRnZXRDb250cm9sbGVyIiwiSVdpZGdldFNwZWNzIiwiTm9kZVdpZGdldCIsIlN0eWxlc01hbmFnZXIiLCJXaWRnZXRDU1IiLCJfX2JleW9uZF9wa2ciLCJhdHRyaWJ1dGVzIiwiaG1yIiwicHJlcmVuZGVyIiwid2lkZ2V0cyIsIm1vZHVsZSIsImV4cG9ydHMiLCJfX3RvQ29tbW9uSlMiLCJwcm9jZXNzIiwiY3VzdG9tRWxlbWVudHMiLCJkZWZpbmUiLCJIVE1MRWxlbWVudCIsInJvdXRpbmciLCJjb25zdHJ1Y3RvciIsImJpbXBvcnQiLCJ0aGVuIiwiY29ubmVjdGVkQ2FsbGJhY2siLCJhZGRFdmVudExpc3RlbmVyIiwiaGFzQXR0cmlidXRlIiwidXJsIiwiZ2V0QXR0cmlidXRlIiwicHVzaFN0YXRlIiwiX2NvcmUiLCJyZXF1aXJlMiIsIkF0dHJpYnV0ZXMiLCJFdmVudHMiLCJ2YWx1ZXMiLCJNYXAiLCJhZGQiLCJuYW1lIiwidmFsdWUiLCJzZXQiLCJ0cmlnZ2VyIiwicmVtb3ZlIiwiZGVsZXRlIiwiYXR0cmlidXRlczIiLCJfbm9kZSIsImluc3RhbmNlcyIsIlNldCIsInJlZ2lzdGVyIiwid2lkZ2V0IiwicGFyZW50IiwicGFyZW50MiIsInJvb3QiLCJnZXRSb290Tm9kZSIsImRvY3VtZW50IiwiaG9zdCIsImhhcyIsIm5vZGUiLCJ3bm9kZSIsImNoaWxkcmVuIiwiTm9kZVdpZGdldDIiLCJwcmVyZW5kZXIyIiwic3NyIiwiZmluZCIsImVsZW1lbnQiLCJhdHRycyIsIml0ZW0iLCJpYXR0cnMiLCJyZWR1Y2UiLCJwcmV2IiwiZ2V0IiwiX2F0dHJpYnV0ZXMiLCJXaWRnZXRHbG9iYWxBdHRyaWJ1dGVzIiwiaG9sZGVyIiwiI3NldCIsInNldEF0dHJpYnV0ZSIsInJlbW92ZUF0dHJpYnV0ZSIsImluaXRpYWxpc2UiLCJmb3JFYWNoIiwib24iLCJkZXN0cm95Iiwib2ZmIiwiX2RlZmF1bHQiLCJzIiwiaGFzaCIsImkiLCJjIiwibGVuZ3RoIiwiY2hhckNvZGVBdCIsInRvU3RyaW5nIiwicmVwbGFjZSIsIldpZGdldENTUjIiLCJidW5kbGUiLCJjb250cm9sbGVyIiwiZXJyb3IiLCJsb2FkaW5nIiwibG9hZGVkIiwiaG9sZGVycyIsInNwZWNzIiwicmVuZGVyIiwiY3NyIiwiRXJyb3IiLCJzcGVjaWZpZXIiLCJjYXRjaCIsImV4YyIsImNvbnNvbGUiLCJzdGFjayIsIm1lc3NhZ2UiLCIjcmVuZGVyIiwic2l6ZSIsIkNvbnRyb2xsZXIiLCJsb2NhbE5hbWUiLCJsb2ciLCJkaXNjb25uZWN0IiwiYXR0cmlidXRlQ2hhbmdlZCIsIm9sZCIsIl9pbnN0YW5jZXMiLCJfc3IiLCJfY3NyIiwiX3NzciIsIl9zdHlsZXMiLCJFbGVtZW50IiwiQmV5b25kV2lkZ2V0MiIsInZzcGVjaWZpZXIiLCJsb2NhdGlvbiIsIm9yaWdpbiIsImlzIiwicm91dGUiLCJsYXlvdXQiLCJzciIsInN0eWxlcyIsIndwYXJlbnQiLCJ3Y2hpbGRyZW4iLCJvbmNvbnRyb2xsZXIiLCIjb25jb250cm9sbGVyIiwiZXZlbnQiLCJDdXN0b21FdmVudCIsImJ1YmJsZXMiLCJjb21wb3NlZCIsImRpc3BhdGNoRXZlbnQiLCJhdHRhY2hTaGFkb3ciLCJtb2RlIiwic3BsaXQiLCJzY29wZSIsInN0YXJ0c1dpdGgiLCJzaGlmdCIsInN1YnBhdGgiLCJqb2luIiwiV2lkZ2V0U1IiLCJXaWRnZXRTU1IiLCJjcmVhdGVFbGVtZW50Iiwic3R5bGUiLCJkaXNwbGF5Iiwic2hhZG93Um9vdCIsImFwcGVuZCIsImRpc2Nvbm5lY3RlZENhbGxiYWNrIiwiYXR0cmlidXRlQ2hhbmdlZENhbGxiYWNrIiwiUmVuZGVyZXIiLCJjdCIsImVycm9ycyIsImh0bWwiLCJpbm5lckhUTUwiLCJsaW5rcyIsInJlc291cmNlcyIsInF1ZXJ5U2VsZWN0b3JBbGwiLCJwdXNoIiwiaHJlZiIsIm9ubG9hZGVkIiwicmVhZHkiLCJfY2hlY2tzdW0iLCJfcmVuZGVyZXIiLCJyZW5kZXJlciIsImluaXRpYWxpc2VkIiwibGFuZ3VhZ2UiLCJtdWx0aWxhbmd1YWdlIiwibGFuZ3VhZ2UyIiwibG9jYWxTdG9yYWdlIiwiX19iZXlvbmRfbGFuZ3VhZ2UiLCJuYXZpZ2F0b3IiLCJzbGljZSIsInJlc291cmNlIiwia2V5IiwicGF0aG5hbWUiLCJzZWFyY2giLCJkZWZhdWx0IiwiY29tcHV0ZSIsImF0dHIiLCJzb3J0IiwiYSIsImIiLCJrIiwidiIsInJlc3BvbnNlIiwiZmV0Y2giLCJzdGF0dXMiLCJqc29uIiwiX3ByZXJlbmRlcmVkIiwibWFwIiwiZm91bmQiLCJsb2FkIiwiI2xvYWQiLCJwa2ciLCJjb25maWciLCJhdHRyczIiLCJHbG9iYWxDU1MyIiwidmVyc2lvbiIsImxpbmsiLCJ1cGRhdGUiLCJfbGluayIsIl9nbG9iYWwiLCJTdHlsZXNNYW5hZ2VyMiIsImV2ZW50cyIsImxpc3RlbmVyIiwiZ2xvYmFsY3NzIiwiY2hhbmdlZCIsIiNjaGFuZ2VkIiwicmVzb2x2ZWQiLCJrZXlzIiwiY2hlY2siLCJwcm9taXNlIiwicmVzb2x2ZSIsImN1cnJlbnRUYXJnZXQiLCJ3YXJuIiwicHVyZ2UiLCIjY2hlY2siLCJsb2FkZWQyIiwiI3B1cmdlIiwidmVyc2lvbnMiLCJsYXN0IiwibGFzdExvYWRlZCIsInByZXZMYXN0IiwicHJldkxhc3RMb2FkZWQiLCJyZWZyZXNoIiwiI3JlZnJlc2giLCIjdXBkYXRlIiwiX2xpbmtzIiwidW5zaGlmdCIsIlByb21pc2UiLCJpdiIsInBhcnNlSW50IiwiX3dpZGdldCIsIkJleW9uZFdpZGdldHMiLCJzZXR1cCIsInNwZWNzMiIsIm9ic2VydmVkQXR0cmlidXRlcyIsIndpZGdldHMyIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxJQUFBQSxvQkFBQTtBQUFBQyxRQUFBLENBQUFELG9CQUFBO0VBQUFFLFlBQUEsRUFBQUEsQ0FBQSxLQUFBQSxZQUFBO0VBQUFDLFNBQUEsRUFBQUEsQ0FBQSxLQUFBQSxTQUFBO0VBQUFDLHVCQUFBLEVBQUFBLENBQUEsS0FBQUEsdUJBQUE7RUFBQUMsWUFBQSxFQUFBQSxDQUFBLEtBQUFBLFlBQUE7RUFBQUMsVUFBQSxFQUFBQSxDQUFBLEtBQUFBLFVBQUE7RUFBQUMsYUFBQSxFQUFBQSxDQUFBLEtBQUFBLGFBQUE7RUFBQUMsU0FBQSxFQUFBQSxDQUFBLEtBQUFBLFNBQUE7RUFBQUMsWUFBQSxFQUFBQSxDQUFBLEtBQUFBLFlBQUE7RUFBQUMsVUFBQSxFQUFBQSxDQUFBLEtBQUFBLFVBQUE7RUFBQUMsR0FBQSxFQUFBQSxDQUFBLEtBQUFBLEdBQUE7RUFBQUMsU0FBQSxFQUFBQSxDQUFBLEtBQUFBLFNBQUE7RUFBQUMsT0FBQSxFQUFBQSxDQUFBLEtBQUFBO0FBQUE7QUFBQUMsTUFBQSxDQUFBQyxPQUFBLEdBQUFDLFlBQUEsQ0FBQWhCLG9CQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQ0tBLE9BQU9pQixPQUFBLEtB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
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJwcm9jZXNzIiwiY3VzdG9tRWxlbWVudHMiLCJkZWZpbmUiLCJIVE1MRWxlbWVudCIsInJvdXRpbmciLCJjb25zdHJ1Y3RvciIsImJpbXBvcnQiLCJ0aGVuIiwiY29ubmVjdGVkQ2FsbGJhY2siLCJhZGRFdmVudExpc3RlbmVyIiwiaGFzQXR0cmlidXRlIiwidXJsIiwiZ2V0QXR0cmlidXRlIiwicHVzaFN0YXRlIiwiX2NvcmUiLCJyZXF1aXJlIiwiQXR0cmlidXRlcyIsIkV2ZW50cyIsInZhbHVlcyIsIk1hcCIsImFkZCIsIm5hbWUiLCJ2YWx1ZSIsInNldCIsInRyaWdnZXIiLCJyZW1vdmUiLCJkZWxldGUiLCJleHBvcnRzIiwiYXR0cmlidXRlcyIsIl9ub2RlIiwiaW5zdGFuY2VzIiwiU2V0IiwicmVnaXN0ZXIiLCJ3aWRnZXQiLCJwYXJlbnQiLCJyb290IiwiZ2V0Um9vdE5vZGUiLCJkb2N1bWVudCIsImhvc3QiLCJoYXMiLCJub2RlIiwiTm9kZVdpZGdldCIsIndub2RlIiwiY2hpbGRyZW4iLCJwcmVyZW5kZXIiLCJzc3IiLCJmaW5kIiwiZWxlbWVudCIsImF0dHJzIiwiaXRlbSIsImlhdHRycyIsInJlZHVjZSIsInByZXYiLCJnZXQiLCJfYXR0cmlidXRlcyIsIldpZGdldEdsb2JhbEF0dHJpYnV0ZXMiLCJob2xkZXIiLCIjc2V0Iiwic2V0QXR0cmlidXRlIiwicmVtb3ZlQXR0cmlidXRlIiwiaW5pdGlhbGlzZSIsImZvckVhY2giLCJvbiIsImRlc3Ryb3kiLCJvZmYiLCJfZGVmYXVsdCIsInMiLCJoYXNoIiwiaSIsImMiLCJsZW5ndGgiLCJjaGFyQ29kZUF0IiwidG9TdHJpbmciLCJyZXBsYWNlIiwiV2lkZ2V0Q1NSIiwiYnVuZGxlIiwiY29udHJvbGxlciIsImVycm9yIiwibG9hZGluZyIsImxvYWRlZCIsImhvbGRlcnMiLCJzcGVjcyIsInJlbmRlciIsImNzciIsIkVycm9yIiwic3BlY2lmaWVyIiwiY2F0Y2giLCJleGMiLCJjb25zb2xlIiwic3RhY2siLCJtZXNzYWdlIiwiI3JlbmRlciIsInNpemUiLCJDb250cm9sbGVyIiwibG9jYWxOYW1lIiwibG9nIiwiZGlzY29ubmVjdCIsImF0dHJpYnV0ZUNoYW5nZWQiLCJvbGQiLCJfaW5zdGFuY2VzIiwiX3NyIiwiX2NzciIsIl9zc3IiLCJfc3R5bGVzIiwiRWxlbWVudCIsIkJleW9uZFdpZGdldCIsInZzcGVjaWZpZXIiLCJsb2NhdGlvbiIsIm9yaWdpbiIsImlzIiwicm91dGUiLCJsYXlvdXQiLCJzciIsInN0eWxlcyIsIndwYXJlbnQiLCJ3Y2hpbGRyZW4iLCJvbmNvbnRyb2xsZXIiLCIjb25jb250cm9sbGVyIiwiZXZlbnQiLCJDdXN0b21FdmVudCIsImJ1YmJsZXMiLCJjb21wb3NlZCIsImRpc3BhdGNoRXZlbnQiLCJhdHRhY2hTaGFkb3ciLCJtb2RlIiwic3BsaXQiLCJzY29wZSIsInN0YXJ0c1dpdGgiLCJzaGlmdCIsInN1YnBhdGgiLCJqb2luIiwiV2lkZ2V0U1IiLCJXaWRnZXRTU1IiLCJTdHlsZXNNYW5hZ2VyIiwiY3JlYXRlRWxlbWVudCIsInN0eWxlIiwiZGlzcGxheSIsInNoYWRvd1Jvb3QiLCJhcHBlbmQiLCJkaXNjb25uZWN0ZWRDYWxsYmFjayIsImF0dHJpYnV0ZUNoYW5nZWRDYWxsYmFjayIsIlJlbmRlcmVyIiwiY3QiLCJlcnJvcnMiLCJodG1sIiwiaW5uZXJIVE1MIiwibGlua3MiLCJyZXNvdXJjZXMiLCJxdWVyeVNlbGVjdG9yQWxsIiwicHVzaCIsImhyZWYiLCJvbmxvYWRlZCIsInJlYWR5IiwiX2NoZWNrc3VtIiwiX3JlbmRlcmVyIiwicmVuZGVyZXIiLCJpbml0aWFsaXNlZCIsImxhbmd1YWdlIiwibXVsdGlsYW5ndWFnZSIsImxvY2FsU3RvcmFnZSIsIl9fYmV5b25kX2xhbmd1YWdlIiwibmF2aWdhdG9yIiwic2xpY2UiLCJyZXNvdXJjZSIsImtleSIsInBhdGhuYW1lIiwic2VhcmNoIiwiZGVmYXVsdCIsImNvbXB1dGUiLCJhdHRyIiwic29ydCIsImEiLCJiIiwiayIsInYiLCJyZXNwb25zZSIsImZldGNoIiwic3RhdHVzIiwianNvbiIsIl9wcmVyZW5kZXJlZCIsIm1hcCIsImZvdW5kIiwibG9hZCIsIiNsb2FkIiwicGtnIiwiY29uZmlnIiwiR2xvYmFsQ1NTIiwidmVyc2lvbiIsImxpbmsiLCJ1cGRhdGUiLCJfbGluayIsIl9nbG9iYWwiLCJldmVudHMiLCJsaXN0ZW5lciIsImdsb2JhbGNzcyIsImNoYW5nZWQiLCIjY2hhbmdlZCIsInJlc29sdmVkIiwia2V5cyIsImNoZWNrIiwicHJvbWlzZSIsInJlc29sdmUiLCJjdXJyZW50VGFyZ2V0Iiwid2FybiIsInB1cmdlIiwiI2NoZWNrIiwiI3B1cmdlIiwidmVyc2lvbnMiLCJsYXN0IiwibGFzdExvYWRlZCIsInByZXZMYXN0IiwicHJldkxhc3RMb2FkZWQiLCJyZWZyZXNoIiwiI3JlZnJlc2giLCIjdXBkYXRlIiwiX2xpbmtzIiwidW5zaGlmdCIsIlByb21pc2UiLCJpdiIsInBhcnNlSW50IiwiX3dpZGdldCIsIkJleW9uZFdpZGdldHMiLCJzZXR1cCIsIm9ic2VydmVkQXR0cmlidXRlcyIsIndpZGdldHMiXSwic291cmNlcyI6WyIvYW5jaG9yLnRzIiwiL2F0dHJpYnV0ZXMudHMiLCIvaW5zdGFuY2VzL2luZGV4LnRzIiwiL2luc3RhbmNlcy9ub2RlLnRzIiwiL3ByZXJlbmRlcmVkL2luZGV4LnRzIiwiL3dpZGdldC9hdHRyaWJ1dGVzLnRzIiwiL3dpZGdldC9jaGVja3N1bS50cyIsIi93aWRnZXQvY3NyLnRzIiwiL3dpZGdldC9pbmRleC50cyIsIi93aWRnZXQvcmVuZGVyZXIudHMiLCIvd2lkZ2V0L3NyLnRzIiwiL3dpZGdldC9zc3IudHMiLCIvd2lkZ2V0L3N0eWxlcy9nbG9iYWwudHMiLCIvd2lkZ2V0L3N0eWxlcy9pbmRleC50cyIsIi93aWRnZXQvc3R5bGVzL2xpbmsudHMiLCIvd2lkZ2V0cy50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxu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QSxDQUFDckMsTUFBeUI7Y0FDOUIsSUFBSSxDQUFDLENBQUE1SSxHQUFJLEdBQUcsT0FBTzRJLE1BQU0sRUFBRTVJLEdBQUcsS0FBSyxTQUFTLEdBQUc0SSxNQUFNLENBQUM1SSxHQUFHLEdBQUcsSUFBSTtZQUNqRTtZQUVBLElBQUlmLFNBQVNBLENBQUE7Y0FDWixPQUFPcUUsVUFBQSxDQUFBckUsU0FBUztZQUNqQjtZQUVBLElBQUlGLFVBQVVBLENBQUE7Y0FDYixPQUFPMEIsV0FBQSxDQUFBMUIsVUFBVTtZQUNsQjtZQUVBSSxRQUFRQSxDQUFDaUQsS0FBcUI7Y0FDN0JBLEtBQUssQ0FBQ3BCLE9BQU8sQ0FBQ29CLEtBQUssSUFBRztnQkFDckI7Z0JBQ0EsSUFBSSxJQUFJLENBQUMxQyxHQUFHLENBQUMwQyxLQUFLLENBQUM1RCxJQUFJLENBQUMsRUFBRTtnQkFFMUI0RCxLQUFLLENBQUNDLE1BQU0sR0FBR0QsS0FBSyxDQUFDQyxNQUFNLEdBQUdELEtBQUssQ0FBQ0MsTUFBTSxHQUFHO2tCQUFFQyxHQUFHLEVBQUUsSUFBSTtrQkFBRXRDLEdBQUcsRUFBRSxLQUFLO2tCQUFFbUUsRUFBRSxFQUFFO2dCQUFLLENBQUU7Z0JBQ2pGLE1BQU07a0JBQUUzRixJQUFJO2tCQUFFNkQ7Z0JBQU0sQ0FBRSxHQUFHRCxLQUFLO2dCQUM5QkMsTUFBTSxDQUFDQyxHQUFHLEdBQUcsT0FBT0QsTUFBTSxDQUFDQyxHQUFHLEtBQUssU0FBUyxHQUFHRCxNQUFNLENBQUNDLEdBQUcsR0FBRyxJQUFJO2dCQUVoRSxJQUFJLENBQUM1RCxHQUFHLENBQUNGLElBQUksRUFBRTRELEtBQUssQ0FBQztnQkFFckI7Z0JBQ0EsSUFBSSxPQUFPakYsT0FBTyxLQUFLLFFBQVEsRUFBRTtnQkFFakNDLGNBQWMsQ0FBQ0MsTUFBTSxDQUNwQm1CLElBQUksRUFDSixjQUFjdU0sT0FBQSxDQUFBbkgsWUFBWTtrQkFDekIsV0FBV3NILGtCQUFrQkEsQ0FBQTtvQkFDNUIsT0FBTzlJLEtBQUssQ0FBQ2pDLEtBQUssR0FBR2lDLEtBQUssQ0FBQ2pDLEtBQUssR0FBRyxFQUFFO2tCQUN0QztrQkFFQTNDLFlBQUE7b0JBQ0MsS0FBSyxDQUFDNEUsS0FBSyxDQUFDO2tCQUNiO2lCQUNBLENBQ0Q7Y0FDRixDQUFDLENBQUM7WUFDSDs7VUFHTTtVQUFXLE1BQU0rSSxPQUFPLEdBQUFyTSxPQUFBLENBQUFxTSxPQUFBLEdBQWtCLElBQUlILGFBQWEsRUFBRSIsImlnbm9yZUxpc3QiOltdfQ==
