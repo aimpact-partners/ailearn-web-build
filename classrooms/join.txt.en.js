@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2306222488,
+        hash: 2554964448,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -39,7 +39,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "errors": {
               "INVALID_CODE": "The verification code is not valid",
-              "ERROR_PUBLISHING": "The request could not be made, please try again later"
+              "ERROR_PUBLISHING": "The request could not be made, please try again later",
+              "ALREADY_WAITING": "There is already a request pending for this classroom",
+              "ALREADY_MEMBER": "You are already a member of this classroom"
             },
             "action": {
               "join": "Join"

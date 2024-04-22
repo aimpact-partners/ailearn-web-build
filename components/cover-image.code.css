@@ -1,4 +1,4 @@
-.pui-modal .modal-content,
+.pui-modal.refine-modal .modal-content,
 .pui-modal.refine-modal .modal-content,
 .pragmate-modal.refine-modal .modal-content {
   min-width: 600px;
@@ -6,25 +6,25 @@
   overflow: hidden;
   text-align: center;
 }
-.pui-modal .modal-content header,
+.pui-modal.refine-modal .modal-content header,
 .pui-modal.refine-modal .modal-content header,
 .pragmate-modal.refine-modal .modal-content header {
   border-bottom: 1px solid var(--outline);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
-.pui-modal .modal-content textarea,
+.pui-modal.refine-modal .modal-content textarea,
 .pui-modal.refine-modal .modal-content textarea,
 .pragmate-modal.refine-modal .modal-content textarea {
   min-height: 150px;
 }
-.pui-modal .modal-content form,
+.pui-modal.refine-modal .modal-content form,
 .pui-modal.refine-modal .modal-content form,
 .pragmate-modal.refine-modal .modal-content form {
   display: grid;
   gap: 1rem;
 }
-.pui-modal .modal-content .actions,
+.pui-modal.refine-modal .modal-content .actions,
 .pui-modal.refine-modal .modal-content .actions,
 .pragmate-modal.refine-modal .modal-content .actions {
   width: 100%;

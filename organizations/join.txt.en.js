@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1803792711,
+        hash: 3143151528,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -39,7 +39,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "errors": {
               "ERROR_PUBLISHING": "The request could not be made, please try again later",
-              "INVALID_CODE": "The code is not valid"
+              "INVALID_CODE": "The code is not valid",
+              "ALREADY_WAITING": "You have already made the request to join the organization, wait for the administrator to accept you or contact him",
+              "ALREADY_MEMBER": "You are already a member of the organization"
             },
             "action": {
               "join": "Join"
