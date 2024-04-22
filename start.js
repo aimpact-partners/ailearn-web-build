@@ -195,19 +195,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/assessment.widget",
         "is": "page",
         "route": "/assignments/${assignmentId}/assessment/${id}",
-        "layout": "general-layout"
+        "layout": "coins-layout"
       }, {
         "name": "ailearn-assignments-chat",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/chat.widget",
         "is": "page",
         "route": "/assignments/${assignmentId}/activity/${activityId}/chat/${chatId}",
-        "layout": "general-layout"
+        "layout": "coins-layout"
       }, {
         "name": "ailearn-assignments-spoken",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/spoken.widget",
         "is": "page",
         "route": "/assignments/${assignmentId}/spoken/${id}",
-        "layout": "general-layout"
+        "layout": "coins-layout"
       }, {
         "name": "assignment-intro",
         "attrs": ["metadata"],
@@ -232,7 +232,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.32/assignment/view.widget",
         "is": "page",
         "route": "/assignments/${id}",
-        "layout": "general-layout"
+        "layout": "coins-layout"
       }, {
         "name": "ailearn-gclassrooms-access",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/gclassroom/access.widget",

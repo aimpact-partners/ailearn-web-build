@@ -219,7 +219,12 @@ dialog::backdrop {
   grid-gap: 1rem;
 }
 .grid-container.g-2-columns {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 600px) {
+  .grid-container.g-2-columns {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 input {
   color: var(--text-color);

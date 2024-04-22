@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2692647636,
+        hash: 2570256932,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -38,13 +38,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "assignment": "Asignaciones",
               "chat": "Chat"
             },
-            "welcome": "Soy Max tu asistente de aprendizaje para esta leccion. Hoy vamos a trabajar sobre la novela 'An Inspectors Calls' para eso te invitamos a realizar las siguientes actividades.",
-            "title": "Trabajos de la clase",
-            "search": "Buscar trabajo de clase",
+            "module": {
+              "description": "Descripción",
+              "objective": "Objetivo"
+            },
+            "activities": {
+              "title": "Listado de actividades"
+            },
             "empty": "No tienes trabajos de clase todavía",
             "access": "Acceder",
             "description": "Aqui encontraras los Módulos de aprendizaje que tu docente te compartirá para poder trabajar los objetivos curriculares. Ingresá a los diferentes classrooms y diviertete aprendiendo con tu tutor.",
-            "dividerTitle": "Actividades",
             "textCounter": "Actividad ",
             "moduleSubtitleText": "Actividades",
             "accessed": "Ya puedes acceder a las actividades",

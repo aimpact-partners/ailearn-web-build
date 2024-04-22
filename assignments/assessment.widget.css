@@ -1,3 +1,8 @@
+header.activity-header {
+  background: var(--multiple-choice);
+  color: var(--on-primary);
+  padding: 1rem;
+}
 .question__form-container {
   display: grid;
   grid-gap: 1rem;
@@ -5,15 +10,15 @@
 }
 .question__form-container .question-title {
   position: sticky;
-  top: 0;
+  top: 100px;
 }
 
 .item__option {
   border: 1px solid var(--outline);
   padding: 1rem;
   cursor: pointer;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 20px;
   border-radius: var(--border-radius-base);
 }
 .item__option .pui-icon {
@@ -34,4 +39,4 @@
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBOztBQUNBO0VBQ0M7RUFDQTs7O0FBR0Y7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBRUQ7RUFFQzs7O0FBR0Y7RUFDQztFQUNBOztBQUVBO0VBQ0MiLCJmaWxlIjoiIn0= */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGhlYWRlci5zY3NzIiwic2Nzc1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztFQUNBO0VBQ0E7O0FDSEQ7RUFDQztFQUNBO0VBQ0E7O0FBQ0E7RUFDQztFQUNBOzs7QUFHRjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTs7QUFFRDtFQUVDOzs7QUFHRjtFQUNDO0VBQ0E7O0FBRUE7RUFDQyIsImZpbGUiOiIifQ== */
