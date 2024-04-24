@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1513740666,
+        hash: 1665570177,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -86,6 +86,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "conversation": {
               "description": "Especifique todo lo que considere importante para la conversación. Esto ayudará al bot a entenderlo mejor y a proporcionarle las mejores respuestas posibles. También puede especificar los temas sobre los que desea hablar.",
               "topics": "Enumere todos los temas sobre los que desea hablar"
+            },
+            "languages": {
+              "select": {
+                "label": "Idioma",
+                "placeholder": "Seleccionar Idioma"
+              },
+              "label": "Idiomas",
+              "en": "Inglés",
+              "es": "Español",
+              "pt": "Portugués",
+              "fr": "Francés",
+              "de": "Alemán",
+              "it": "Italiano"
             },
             "manual": {
               "cancel": "¿Estás seguro de que quieres cancelar?",
