@@ -305,7 +305,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.32/organizations/list.widget",
         "is": "page",
         "route": "/organizations/list",
-        "layout": "general-layout"
+        "layout": "coins-layout"
       }, {
         "name": "app-organizations-view",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/organizations/view.widget",
