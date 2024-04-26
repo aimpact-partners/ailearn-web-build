@@ -1,16 +1,54 @@
+.assessment__container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
 header.activity-header {
   background: var(--multiple-choice);
   color: var(--on-primary);
-  padding: 1rem;
+  gap: 1rem;
+  align-items: start;
+}
+header.activity-header .container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+header.activity-header .container .pui-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: var(--on-primary);
+}
+@media (max-width: 500px) {
+  header.activity-header .container .pui-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: var(--on-primary);
+  }
+}
+.question__container {
+  padding: 1rem 0;
+  border-top: 1px solid var(--outline);
+}
+.question__container h5 {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+.question__container label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 0;
 }
 .question__form-container {
   display: grid;
   grid-gap: 1rem;
   position: relative;
-}
-.question__form-container .question-title {
-  position: sticky;
-  top: 100px;
 }
 
 .item__option {
@@ -37,6 +75,21 @@ header.activity-header {
 .assessment__footer .pui-button {
   width: 100%;
 }
+.question__form-container,
+.assessment__container {
+  position: relative;
+}
+.question__form-container .question-title,
+.assessment__container .question-title {
+  position: sticky;
+  top: 100px;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.question__form-container .question-title:first-child::first-letter,
+.assessment__container .question-title:first-child::first-letter {
+  text-transform: uppercase;
+}
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGhlYWRlci5zY3NzIiwic2Nzc1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztFQUNBO0VBQ0E7O0FDSEQ7RUFDQztFQUNBO0VBQ0E7O0FBQ0E7RUFDQztFQUNBOzs7QUFHRjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTs7QUFFRDtFQUVDOzs7QUFHRjtFQUNDO0VBQ0E7O0FBRUE7RUFDQyIsImZpbGUiOiIifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGFzc2Vzc21lbnQuc2NzcyIsInNjc3NcXGhlYWRlci5zY3NzIiwic2Nzc1xccXVlc3Rpb25zLnNjc3MiLCJzY3NzXFxzdHlsZXMuc2NzcyIsInNjc3NcXHRpdGxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBOztBQ0hEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7RUFDQTs7QUFFRDtFQUNDO0lBQ0M7SUFDQTtJQUNBOzs7QUNwQko7RUFDQztFQUVBOztBQUVBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FDakJGO0VBQ0M7RUFDQTtFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTs7QUFFRDtFQUVDOzs7QUFHRjtFQUNDO0VBQ0E7O0FBRUE7RUFDQzs7QUM3QkY7QUFBQTtFQUVDOztBQUNBO0FBQUE7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFHQztBQUFBO0VBQ0MiLCJmaWxlIjoiIn0= */

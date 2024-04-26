@@ -623,7 +623,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *************************/
 
         ims.set('./routing', {
-          hash: 2287109976,
+          hash: 1781955712,
           creator: function (require, exports) {
             "use strict";
 
@@ -641,7 +641,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 const response = await router.validate(uri);
                 return response.pathname;
               } catch (e) {
-                console.log(20, e);
                 return '/error-500';
               }
             };

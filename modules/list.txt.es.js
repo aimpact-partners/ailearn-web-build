@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2247903554,
+        hash: 2090148062,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -39,6 +39,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "assign": {
               "title": "Listado de aulas",
+              "noAssigned": "No hay aulas asignadas",
+              "module": "Módulo",
               "messages": {
                 "copied": "Enlace copiado al portapapeles",
                 "assigned": "Aula asignada"
@@ -47,17 +49,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "description": "El item no tiene descripción"
               },
               "actions": {
+                "dashboard": "Dashboard",
+                "copy": "Copiar link",
+                "test": "Probar",
                 "assign": {
                   "button": "Asignar",
                   "label": "El módulo no ha sido asignado a esta Aula"
-                },
-                "assignment": {
-                  "label": "Acceso a Asignación:",
-                  "button": "Copiar enlace"
-                },
-                "dashboard": {
-                  "label": "Dashboard",
-                  "button": "ir al Dashboard"
                 }
               }
             },

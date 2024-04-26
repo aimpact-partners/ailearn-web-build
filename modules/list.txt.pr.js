@@ -29,42 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3164707391,
+        hash: 2745614147,
         creator: function (require, exports) {
-          exports.txt = {
-            "tabs": {
-              "drafts": "Rascunhos",
-              "published": "Publicados"
-            },
-            "actions": {
-              "create": "Crear",
-              "delete": "Borrar item"
-            },
-            "loading": {
-              "title": "Carregando Dados",
-              "description": "Estamos carregando seus dados. Por favor, aguarde um momento."
-            },
-            "errors": {
-              "ERROR_GETTING_URL": "Error obteniendo url"
-            },
-            "item": {
-              "description": "O módulo ainda não tem uma descrição"
-            },
-            "empty": {
-              "general": {
-                "title": "Crie seu Primeiro Módulo",
-                "description": "Modernize sua abordagem educacional ao dar vida ao seu primeiro módulo. Liberte sua criatividade, dê forma ao seu conteúdo e aproveite a experiência da aprendizagem! 🚀"
-              },
-              "drafts": {
-                "title": "Sem Rascunhos Ainda",
-                "description": "Você não tem nenhum rascunho no momento. Comece a criar e aperfeiçoar seu conteúdo antes de publicar. 📚"
-              },
-              "published": {
-                "title": "Nenhum Módulo Publicado",
-                "description": "Não há módulos publicados disponíveis. Trabalhe em cada módulo e publique-os para atualizar esta lista de publicações. 🎓"
-              }
-            }
-          };
+          exports.txt = {};
         }
       });
       __pkg.exports.descriptor = [{

@@ -292,7 +292,7 @@
 }
 
 .question__container--results .option-item {
-  padding: 1rem;
+  padding: 1rem 0;
   border-radius: var(--border-radius-base);
   margin: 0.5rem 0;
   border: 1px solid var(--outline);
@@ -310,7 +310,7 @@
 .assessment__container {
   display: flex;
   flex-flow: column;
-  gap: 1rem;
+  gap: 0rem;
 }
 
 .assessment-counters {
@@ -321,7 +321,7 @@
 }
 
 .question__container {
-  padding: 1rem;
+  padding: 1rem 0;
   margin: 1rem 0;
   border-top: 1px solid var(--outline);
 }
