@@ -122,7 +122,7 @@
   --secondary-font-family: "Rubik", sans-serif;
   --font-family: "Rubik", sans-serif;
   --border-radius-sm: 10px;
-  --border-radius-base: 1rem;
+  --border-radius-base: 1.5rem;
   --border-radius-lg: 25px;
   --content-theory: var(--secondary);
   --conversation: rgb(240, 145, 36);

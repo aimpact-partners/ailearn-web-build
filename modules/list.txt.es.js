@@ -29,14 +29,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1807829311,
+        hash: 2247903554,
         creator: function (require, exports) {
           exports.txt = {
+            "actions": {
+              "assign": "Asignar",
+              "create": "Crear",
+              "delete": "Borrar item"
+            },
             "assign": {
               "title": "Listado de aulas",
               "messages": {
                 "copied": "Enlace copiado al portapapeles",
                 "assigned": "Aula asignada"
+              },
+              "item": {
+                "description": "El item no tiene descripción"
               },
               "actions": {
                 "assign": {
@@ -63,10 +71,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "tabs": {
               "drafts": "Borradores",
               "published": "Publicados"
-            },
-            "actions": {
-              "create": "Crear",
-              "delete": "Borrar item"
             },
             "loading": {
               "title": "Cargando Datos",

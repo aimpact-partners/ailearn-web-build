@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3679134386,
+        hash: 3445785520,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -51,6 +51,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "link": "Vincular",
               "gTooltip": "Aula importada desde Google",
               "import": "Importar"
+            },
+            "breadcrumb": {
+              "classrooms": "Aula",
+              "management": "Gestión",
+              "join": "Unirse"
             },
             "welcome": {
               "message": "Bienvenido %name a tu lista de aulas",

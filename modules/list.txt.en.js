@@ -29,12 +29,20 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4005858325,
+        hash: 536833761,
         creator: function (require, exports) {
           exports.txt = {
+            "actions": {
+              "assign": "Assign",
+              "create": "Create",
+              "delete": "Delete item"
+            },
             "assign": {
               "title": "Classrooms list",
               "noAssigned": "No assigned classrooms",
+              "item": {
+                "description": "The item does not have description"
+              },
               "messages": {
                 "copied": "Link copied to clipboard",
                 "assigned": "Classroom assigned"
@@ -64,10 +72,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "tabs": {
               "drafts": "Drafts",
               "published": "Published"
-            },
-            "actions": {
-              "create": "Create",
-              "delete": "Delete item"
             },
             "errors": {
               "ERROR_GETTING_URL": "Error getting url"
