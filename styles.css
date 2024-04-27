@@ -214,8 +214,8 @@
   --on-tertiary: var(--tertiary-100);
   --on-tertiary-container: var(--tertiary-10);
   --surface: var(--neutral-100);
-  --surface-dim: var(--neutral-80);
-  --surface-bright: var(--neutral-98);
+  --surface-dim: var(--neutral-94);
+  --surface-bright: var(--neutral-90);
   --surface-container-lowest: var(--neutral-100);
   --surface-container-low: var(--neutral-90);
   --surface-container: var(--neutral-94);
@@ -261,8 +261,8 @@
   --on-tertiary: var(--tertiary-100);
   --on-tertiary-container: var(--tertiary-10);
   --surface: var(--neutral-100);
-  --surface-dim: var(--neutral-80);
-  --surface-bright: var(--neutral-98);
+  --surface-dim: var(--neutral-94);
+  --surface-bright: var(--neutral-90);
   --surface-container-lowest: var(--neutral-100);
   --surface-container-low: var(--neutral-90);
   --surface-container: var(--neutral-94);

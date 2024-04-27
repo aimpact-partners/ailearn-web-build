@@ -3,30 +3,6 @@
   gap: 1rem;
   flex-direction: column;
 }
-header.activity-header {
-  background: var(--multiple-choice);
-  color: var(--on-primary);
-  gap: 1rem;
-  align-items: start;
-}
-header.activity-header .container {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-  align-items: center;
-}
-header.activity-header .container .pui-icon {
-  height: 1.8rem;
-  width: 1.8rem;
-  fill: var(--on-primary);
-}
-@media (max-width: 500px) {
-  header.activity-header .container .pui-icon {
-    height: 2.5rem;
-    width: 2.5rem;
-    fill: var(--on-primary);
-  }
-}
 .question__container {
   padding: 1rem 0;
   border-top: 1px solid var(--outline);
@@ -92,4 +68,4 @@ header.activity-header .container .pui-icon {
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGFzc2Vzc21lbnQuc2NzcyIsInNjc3NcXGhlYWRlci5zY3NzIiwic2Nzc1xccXVlc3Rpb25zLnNjc3MiLCJzY3NzXFxzdHlsZXMuc2NzcyIsInNjc3NcXHRpdGxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBOztBQ0hEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7RUFDQTs7QUFFRDtFQUNDO0lBQ0M7SUFDQTtJQUNBOzs7QUNwQko7RUFDQztFQUVBOztBQUVBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FDakJGO0VBQ0M7RUFDQTtFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTs7QUFFRDtFQUVDOzs7QUFHRjtFQUNDO0VBQ0E7O0FBRUE7RUFDQzs7QUM3QkY7QUFBQTtFQUVDOztBQUNBO0FBQUE7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFHQztBQUFBO0VBQ0MiLCJmaWxlIjoiIn0= */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGFzc2Vzc21lbnQuc2NzcyIsInNjc3NcXHF1ZXN0aW9ucy5zY3NzIiwic2Nzc1xcc3R5bGVzLnNjc3MiLCJzY3NzXFx0aXRsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDO0VBQ0E7RUFDQTs7QUNIRDtFQUNDO0VBRUE7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUNqQkY7RUFDQztFQUNBO0VBQ0E7OztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7RUFDQTtFQUNBOztBQUVEO0VBRUM7OztBQUdGO0VBQ0M7RUFDQTs7QUFFQTtFQUNDOztBQzdCRjtBQUFBO0VBRUM7O0FBQ0E7QUFBQTtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUdDO0FBQUE7RUFDQyIsImZpbGUiOiIifQ== */

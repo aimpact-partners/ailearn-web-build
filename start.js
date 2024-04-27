@@ -198,16 +198,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "layout": "coins-layout"
       }, {
         "name": "ailearn-character-talk",
-        "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/character-talk.widget"
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/character-talk.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/character-talk/${activityId}/chat/${chatId}",
+        "layout": "coins-layout"
       }, {
         "name": "ailearn-content-theory-page",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/content-theory.widget",
         "is": "page",
-        "route": "/assignments/${assignmentId}/activity/${activityId}/chat/${chatId}",
+        "route": "/assignments/${assignmentId}/content-theory/${activityId}/chat/${chatId}",
         "layout": "coins-layout"
       }, {
         "name": "ailearn-debate-activity-page",
-        "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/debate.widget"
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/debate.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/debate/${activityId}/chat/${chatId}",
+        "layout": "coins-layout"
       }, {
         "name": "ailearn-assignments-spoken",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/spoken.widget",
@@ -673,7 +679,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ****************************/
 
         ims.set('./extensions', {
-          hash: 1654010933,
+          hash: 1592816002,
           creator: function (require, exports) {
             "use strict";
 
@@ -684,15 +690,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             var _extensions = require("@aimpact/chat/extensions");
             function registerExtensions() {
               const register = _extensions.extensions.register.bind(_extensions.extensions);
-              register('chat-intro', async metadata => {
-                if (!metadata.activity && !metadata?.lesson && !metadata?.topic) return;
-                return {
-                  control: 'assignment-intro',
-                  metadata: {
-                    avoidChat: false
-                  }
-                };
-              });
+              // register('chat-intro', async metadata => {
+              // 	if (!metadata.activity && !metadata?.lesson && !metadata?.topic) return;
+              // 	return {
+              // 		control: 'assignment-intro',
+              // 		metadata: {
+              // 			avoidChat: false
+              // 		}
+              // 	};
+              // });
               register('app-menu-icon', () => {
                 return {
                   type: 'img',
@@ -749,11 +755,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ***********************/
 
         ims.set('./index', {
-          hash: 2120717246,
+          hash: 1018057204,
           creator: function (require, exports) {
             "use strict";
 
             var _startup = require("./startup");
+            globalThis.localStorage?.setItem('chat.app.user.default.profile', '/assets/rvd-profile-blue.png');
             _startup.Startup.setup();
           }
         });
