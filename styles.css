@@ -209,6 +209,7 @@
   --secondary-container: var(--secondary-90);
   --on-secondary: var(--secondary-100);
   --on-secondary-container: var(--secondary-10);
+  --pepito: "box";
   --tertiary: var(--tertiary-40);
   --tertiary-container: var(--tertiary-90);
   --on-tertiary: var(--tertiary-100);
@@ -256,6 +257,7 @@
   --secondary-container: var(--secondary-90);
   --on-secondary: var(--secondary-100);
   --on-secondary-container: var(--secondary-10);
+  --pepito: "box";
   --tertiary: var(--tertiary-40);
   --tertiary-container: var(--tertiary-90);
   --on-tertiary: var(--tertiary-100);
@@ -517,11 +519,8 @@
 html,
 body {
   min-height: 100%;
-  overflow-x: hidden;
   padding: 0;
   height: 100%;
-  margin: 0;
-  font-size: 1rem;
   color: var(--text-color);
   font-family: var(--font-family);
 }

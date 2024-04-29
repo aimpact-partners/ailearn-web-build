@@ -6,17 +6,16 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/ailearn-app',
-				version: 'dev-0.0.32-15',
+				version: 'dev-0.0.32-16',
 				languages: {
 					default: 'en',
-					supported: ['en', 'es', 'pr'],
+					supported: ['en', 'es', 'pr']
 				},
 				environment: 'development',
 				'global.css': true,
-				layout: 'ailearn-layout',
 				params: {
 					config: {
-						system: false,
+						system: false
 					},
 					container: 'file',
 					project: 'ailearn-estrada',
@@ -27,17 +26,17 @@ System.register([], function (_export, _context) {
 					CHAT_API_SERVER: 'https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload',
 					elevenlabs: {
 						key: 'ebe05ca0a4d9aafb4024d0666471a0c7',
-						id: 'pNInz6obpgDQGcFmaJgB',
+						id: 'pNInz6obpgDQGcFmaJgB'
 					},
 					baseUrl: 'https://dev.app.rvd.ai',
 					apis: {
 						ailearn: 'https://ailearn-http-v2-j2rcifstnq-uc.a.run.app',
-						chat: 'https://chat-api-http-v2-rb5caohzgq-uc.a.run.app',
-					},
+						chat: 'https://chat-api-http-v2-rb5caohzgq-uc.a.run.app'
+					}
 				},
 				ssr: {},
-				backend: {},
+				backend: {}
 			});
-		},
+		}
 	};
 });

@@ -1460,38 +1460,38 @@ template {
 h1,
 .h1 {
   margin: 0;
-  font-size: 2.25rem;
+  font-size: 1.37rem;
 }
 
 h2,
 .h2 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 h3,
 .h3 {
   margin: 0;
-  font-size: 1.62rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
 h4,
 .h4 {
   margin: 0;
-  font-size: 1.37rem;
+  font-size: 1rem;
 }
 
 h5,
 .h5 {
   margin: 0;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 h6,
 .h6 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -1517,6 +1517,13 @@ ul .pui-button,
 li .pui-chip,
 li .pui-button {
   line-height: normal;
+}
+
+ul,
+ol {
+  padding-inline-start: 1rem;
+  font-size: 1rem;
+  line-height: 28px;
 }
 
 p,
@@ -1547,59 +1554,6 @@ label.title {
 
 ul {
   margin: 0;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .h1 {
-    font-size: 2rem;
-  }
-  h2,
-  .h2 {
-    font-size: 1.8rem;
-  }
-  h4,
-  .h4 {
-    font-size: 1.25rem;
-  }
-  h5,
-  .h5 {
-    font-size: 1rem;
-  }
-  .p1 {
-    font-size: 1.1rem;
-    line-height: 24px;
-  }
-  .p2,
-  .button-link {
-    font-size: 0.9rem;
-    line-height: 20px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .h1 {
-    font-size: 1.8rem;
-  }
-  h2,
-  .h2 {
-    font-size: 1.3rem;
-  }
-  h4,
-  .h4 {
-    font-size: 0.9rem;
-  }
-  h5,
-  .h5 {
-    font-size: 0.8rem;
-  }
-  .p1 {
-    font-size: 1rem;
-    line-height: 20px;
-  }
-  .p2,
-  .button-link {
-    font-size: 0.85rem;
-    line-height: 18px;
-  }
 }
 .disabled-text {
   color: var(--disabled-text);
