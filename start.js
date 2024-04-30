@@ -323,7 +323,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.32/user/profile.widget",
         "is": "page",
         "route": "/users/me",
-        "layout": "general-layout"
+        "layout": "coins-layout"
       }, {
         "name": "ailearn-identify-page",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/identify.widget",
@@ -359,6 +359,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "layout": "general-layout"
       }, {
         "name": "app-missing",
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/missing.widget"
+      }, {
+        "name": "app-missing-page",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/missing.widget",
         "is": "page",
         "route": "/not-found",
@@ -629,7 +632,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *************************/
 
         ims.set('./routing', {
-          hash: 1781955712,
+          hash: 2830771548,
           creator: function (require, exports) {
             "use strict";
 
@@ -651,7 +654,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
               }
             };
             _routing.routing.missing = async function redirect() {
-              return 'app-missing';
+              return 'app-missing-page';
             };
           }
         });
