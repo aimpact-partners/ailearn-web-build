@@ -122,7 +122,7 @@
   --secondary-font-family: "Rubik", sans-serif;
   --font-family: "Rubik", sans-serif;
   --border-radius-sm: 10px;
-  --border-radius-base: 1rem;
+  --border-radius-base: 1.5rem;
   --border-radius-lg: 25px;
   --content-theory: var(--secondary);
   --conversation: rgb(240, 145, 36);
@@ -179,18 +179,17 @@
   --neutral-variant-100: #ffffff;
   --info-container: var(--info-80);
   --warning-container: var(--warning-80);
-  --success-container: #388e3c;
+  --success-container: #E0FDD6;
   --info-container: var(--info-50);
   --info-color: var(--text-color);
   --info-border-color: var(--info-50)
   --info-hover-bg: var(--info-40);
   --info-icon-color: var(--text-color);
-  --warning-container: var(--warning-50);
+  --warning-container: #FFF2CC;
   --warning-color: var(--text-color);
   --warning-border-color: var(--warning-50)
   --warning-hover-bg: var(--warning-40);
   --warning-icon-color: var(--text-color);
-  --success-container: var(--success-50);
   --success-color: var(--text-color);
   --success-border-color: var(--success-50)
   --success-hover-bg: var(--success-40);
@@ -210,19 +209,20 @@
   --secondary-container: var(--secondary-90);
   --on-secondary: var(--secondary-100);
   --on-secondary-container: var(--secondary-10);
+  --pepito: "box";
   --tertiary: var(--tertiary-40);
   --tertiary-container: var(--tertiary-90);
   --on-tertiary: var(--tertiary-100);
   --on-tertiary-container: var(--tertiary-10);
   --surface: var(--neutral-100);
-  --surface-dim: var(--neutral-80);
-  --surface-bright: var(--neutral-98);
+  --surface-dim: var(--neutral-94);
+  --surface-bright: var(--neutral-90);
   --surface-container-lowest: var(--neutral-100);
   --surface-container-low: var(--neutral-90);
   --surface-container: var(--neutral-94);
   --surface-container-high: var(--neutral-92);
   --surface-container-highest: var(--neutral-90);
-  --surface-overlay: rgba(255, 255, 255, 0.8);
+  --surface-overlay: rgba(255, 255, 255, 1);
   --surface-variant: var(--secondary-95);
   --on-surface: var(--neutral-10);
   --on-surface-variant: var(--neutral-variant-30);
@@ -242,11 +242,11 @@
   --app-text-highlight: rgba(172, 18, 18, 0.8);
   --primary-dark-container: var(--primary-30);
   --primary-light-container: var(--primary-60);
-  --secondary-container: var(--secondary);
   --secondary-dark-container: var(--secondary-50);
   --secondary-light-container: var(--secondary-80);
   --disabled-text: var(--neutral-70);
   --background-neutral: #f3f3f3;
+  --app-main-outline: #000;
 }
 :root[data-beyond-mode=light] {
   --text-color: #1a1a1a;
@@ -257,19 +257,20 @@
   --secondary-container: var(--secondary-90);
   --on-secondary: var(--secondary-100);
   --on-secondary-container: var(--secondary-10);
+  --pepito: "box";
   --tertiary: var(--tertiary-40);
   --tertiary-container: var(--tertiary-90);
   --on-tertiary: var(--tertiary-100);
   --on-tertiary-container: var(--tertiary-10);
   --surface: var(--neutral-100);
-  --surface-dim: var(--neutral-80);
-  --surface-bright: var(--neutral-98);
+  --surface-dim: var(--neutral-94);
+  --surface-bright: var(--neutral-90);
   --surface-container-lowest: var(--neutral-100);
   --surface-container-low: var(--neutral-90);
   --surface-container: var(--neutral-94);
   --surface-container-high: var(--neutral-92);
   --surface-container-highest: var(--neutral-90);
-  --surface-overlay: rgba(255, 255, 255, 0.8);
+  --surface-overlay: rgba(255, 255, 255, 1);
   --surface-variant: var(--secondary-95);
   --on-surface: var(--neutral-10);
   --on-surface-variant: var(--neutral-variant-30);
@@ -289,11 +290,11 @@
   --app-text-highlight: rgba(172, 18, 18, 0.8);
   --primary-dark-container: var(--primary-30);
   --primary-light-container: var(--primary-60);
-  --secondary-container: var(--secondary);
   --secondary-dark-container: var(--secondary-50);
   --secondary-light-container: var(--secondary-80);
   --disabled-text: var(--neutral-70);
   --background-neutral: #f3f3f3;
+  --app-main-outline: #000;
 }
 :root[data-beyond-mode=dark] {
   --text-color: #fff;
@@ -343,6 +344,7 @@
   --secondary-light-container: var(--secondary-40);
   --disabled-text: var(--neutral-70);
   --background-neutral: var(--neutral-10);
+  --app-main-outline: #fff;
 }
 :root[data-accessibility-mode=dyslexia] {
   --font-family: "OpenDyslexic";
@@ -517,11 +519,8 @@
 html,
 body {
   min-height: 100%;
-  overflow-x: hidden;
   padding: 0;
   height: 100%;
-  margin: 0;
-  font-size: 1rem;
   color: var(--text-color);
   font-family: var(--font-family);
 }

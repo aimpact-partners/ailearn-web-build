@@ -22,12 +22,6 @@ main {
   padding: 0rem;
   overflow-y: auto;
 }
-@media (max-width: 768px) {
-  main {
-    width: 100%;
-    padding: 1rem;
-  }
-}
 main beyond-layout-children {
   display: block;
   flex-grow: 1;
@@ -38,4 +32,4 @@ main beyond-layout-children {
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7OztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQVBEO0lBUUU7Ozs7QUFJRjtFQUNDO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7O0FBQ0E7RUFQRDtJQVFFO0lBQ0E7OztBQUdEO0VBQ0M7RUFFQTtFQUNBO0VBQ0E7RUFDQTtFQUNBIiwiZmlsZSI6IiJ9 */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7OztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQVBEO0lBUUU7Ozs7QUFJRjtFQUNDO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7O0FBRUE7RUFDQztFQUVBO0VBQ0E7RUFDQTtFQUNBO0VBQ0EiLCJmaWxlIjoiIn0= */

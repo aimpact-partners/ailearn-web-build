@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/http-suite", "1.0.5"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.11"], ["pragmate-ui", "0.0.6"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.1.1"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.5"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["@aimpact/ailearn-app", "0.0.31"], ["@aimpact/ailearn-app", "0.0.31"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/http-suite", "1.0.3"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/react-18-widgets", "1.1.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.5"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["@aimpact/ailearn-app", "0.0.32"], ["@aimpact/ailearn-app", "0.0.32"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.31/modules/draft",
+          "vspecifier": "@aimpact/ailearn-app@0.0.32/modules/draft",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2056335608,
+        hash: 829753367,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -59,6 +59,35 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "modules": "Modules",
               "management": "Draft"
             },
+            "coins": {
+              "alert": {
+                "title": "You need AI credits",
+                "description": "You need to get AI credits to enable all the features with artificial intelligence.",
+                "action": "Accept"
+              },
+              "modal": {
+                "title": "Request AI credits to continue with this feature",
+                "description": "You need to get AI credits to enable all the features with artificial intelligence.",
+                "actions": {
+                  "cancel": "No, not now, thanks",
+                  "confirm": "Request now"
+                },
+                "errors": {
+                  "noCredits": "The assignment could not be processed, please contact the institution's administrator"
+                }
+              },
+              "header": {
+                "actions": {
+                  "require": "REQUEST CREDITS",
+                  "available": "AVAILABLE CREDITS"
+                },
+                "messages": {
+                  "add": "You acquired credits to use the AI functions",
+                  "middle": "You consumed 50% of the available credits",
+                  "finishing": "You are running out of available AI credits"
+                }
+              }
+            },
             "grades": {
               "7": "Year 7",
               "8": "Year 8",
@@ -69,7 +98,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "languages": {
               "select": {
-                "label": "Lanaguage",
+                "label": "Language",
                 "placeholder": "Select Language"
               },
               "selectLabel": "Select Language",
@@ -80,10 +109,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "fr": "French",
               "de": "German",
               "it": "Italian"
-            },
-            "notifications": {
-              "saved": "You can now work your goal with Artificial Intelligence. Request AI credits to enable all AI functions.",
-              "credits": "You already have <strong>credits assigned</strong> to use AI functions that will be automatically discounted with use."
             },
             "changingObjective": ["Adapting the module to effectively highlight key concepts...", "Configuring interactive activities to facilitate active learning...", "Adding adaptable content to various themes and areas of study...", "Structuring the module to promote critical thinking skills...", "Incorporating innovative teaching techniques to improve knowledge retention...", "Ensuring that the module meets general educational standards...", "Fostering curiosity and self-directed learning through module objectives...", "Implementing updated pedagogical methodologies for a comprehensive approach...", "Optimizing the module structure for a staggered and progressive learning process...", "Finalizing the customization of the module for an enriching and complete educational experience..."],
             "generatingDraft": ["Identifying the best activities for the module's objective...", "Analyzing the audience to adapt educational activities...", "Estimating the optimal duration of each module activity...", "Selecting types of activities to promote dynamic learning...", "Creating individual objectives for each proposed activity...", "Integrating activities that promote interaction and debate...", "Designing tasks that reinforce theoretical and practical knowledge...", "Incorporating exercises for critical analysis of information...", "Establishing activities to develop research skills...", "Developing dynamics that stimulate reflection on current issues...", "Adjusting activities to cover different learning styles...", "Configuring formative assessments to measure progress...", "Including interactive resources to complement teaching...", "Finalizing the selection of activities to ensure the fulfillment of the objectives...", "Compiling the final draft of the module with all the designed activities..."],
