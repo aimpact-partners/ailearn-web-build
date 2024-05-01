@@ -38,7 +38,7 @@
   flex: 0 0 auto;
   display: inline-block;
 }
-.pui-breadcrumb__container .breadcrumb .breadcrumbs__item--checked {
+.pui-breadcrumb__container .breadcrumb .breadcrumb__item--current {
   color: var(--secondary);
 }
 
