@@ -308,7 +308,7 @@ Modal style
 .header-module__container .pui-button.btn-link {
   color: var(--text-color);
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .header-module__container .header-container {
     display: grid;
     grid-template-columns: 1fr;
