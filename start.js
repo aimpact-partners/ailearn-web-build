@@ -53,7 +53,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
       } = brequire('@beyond-js/widgets/render'));
       widgets.register([{
         "name": "aimpact-chat-control",
-        "attrs": ["id", "container"],
+        "attrs": ["id", "container", "disabled"],
         "vspecifier": "@aimpact/chat@1.0.1/chat-control.widget"
       }, {
         "name": "chat-wd-page",
