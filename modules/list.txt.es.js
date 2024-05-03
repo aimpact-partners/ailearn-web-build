@@ -29,11 +29,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2090148062,
+        hash: 2072952422,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
               "assign": "Asignar",
+              "use": "Usar",
+              "continue": "Continuar",
               "create": "Crear",
               "delete": "Borrar item"
             },
@@ -64,17 +66,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "assignment": "Asignaciones",
               "chat": "Chat"
             },
+            "errors": {
+              "failed": "No se ha podido realizar la operación. Por favor, inténtelo de nuevo.",
+              "ERROR_GETTING_URL": "Error obteniendo url"
+            },
             "title": "Mis módulos de aprendizaje",
             "tabs": {
               "drafts": "Borradores",
-              "published": "Publicados"
+              "published": "Publicados",
+              "community": "libreria"
             },
             "loading": {
               "title": "Cargando Datos",
               "description": "Estamos cargando sus datos. Por favor, espere un momento."
-            },
-            "errors": {
-              "ERROR_GETTING_URL": "Error obteniendo url"
             },
             "item": {
               "description": "El módulo no tiene una descripción aún"
@@ -91,6 +95,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "published": {
                 "title": "No hay Módulos Publicados",
                 "description": "No hay módulos publicados disponibles. Trabaja en cada módulo y publícalos para actualizar este listado de publicaciones. 🎓"
+              },
+              "community": {
+                "title": "No hay Módulos en la Comunidad",
+                "description": "No hay módulos disponibles en la comunidad. ¡Comparte tus módulos con la comunidad y descubre los módulos de otros autores! 🌍"
               }
             }
           };

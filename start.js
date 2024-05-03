@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/transversals", "@beyond-js/widgets@1.1.0/render", "@aimpact/chat-sdk@1.0.0/session", "@aimpact/ailearn-app@0.0.32/model/wrapper", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat@1.0.1/extensions", "react@18.2.0", "pragmate-ui@0.1.1/icons", "pragmate-ui@0.1.1/image", "@beyond-js/reactive@1.1.12/model", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core", "@aimpact/chat-sdk@1.0.0/initialize", "@aimpact/ailearn-app@0.0.32/model/gclassroom", "@aimpact/ailearn-sdk@1.0.0/core", "@aimpact/chat-sdk@1.0.0/settings"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/transversals", "@beyond-js/widgets@1.1.0/render", "@aimpact/ailearn-app@0.0.32/model/wrapper", "@aimpact/chat-sdk@1.0.0/session", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat@1.0.1/extensions", "react@18.2.0", "pragmate-ui@0.1.1/icons", "pragmate-ui@0.1.1/image", "@beyond-js/reactive@1.1.12/model", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core", "@aimpact/chat-sdk@1.0.0/initialize", "@aimpact/ailearn-app@0.0.32/model/gclassroom", "@aimpact/ailearn-sdk@1.0.0/core", "@aimpact/chat-sdk@1.0.0/settings"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, dependency_15, dependency_16, Transversal, __beyond_transversal, widgets, bundles;
@@ -9,10 +9,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
       dependency_1 = _beyondJsKernel019Transversals;
     }, function (_beyondJsWidgets110Render) {
       dependency_2 = _beyondJsWidgets110Render;
-    }, function (_aimpactChatSdk100Session) {
-      dependency_3 = _aimpactChatSdk100Session;
     }, function (_aimpactAilearnApp0032ModelWrapper) {
-      dependency_4 = _aimpactAilearnApp0032ModelWrapper;
+      dependency_3 = _aimpactAilearnApp0032ModelWrapper;
+    }, function (_aimpactChatSdk100Session) {
+      dependency_4 = _aimpactChatSdk100Session;
     }, function (_beyondJsKernel019Routing) {
       dependency_5 = _beyondJsKernel019Routing;
     }, function (_aimpactChat101Extensions) {
@@ -43,7 +43,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         Transversal
       } = brequire('@beyond-js/kernel/transversals'));
       _export("__beyond_transversal", __beyond_transversal = new Transversal('start', ''));
-      __beyond_transversal.dependencies.update([['@beyond-js/kernel/transversals', dependency_1], ['@beyond-js/widgets/render', dependency_2], ['@aimpact/chat-sdk/session', dependency_3], ['@aimpact/ailearn-app/model/wrapper', dependency_4], ['@beyond-js/kernel/routing', dependency_5], ['@aimpact/chat/extensions', dependency_6], ['react', dependency_7], ['pragmate-ui/icons', dependency_8], ['pragmate-ui/image', dependency_9], ['@beyond-js/reactive/model', dependency_10], ['@beyond-js/kernel/texts', dependency_11], ['@beyond-js/kernel/core', dependency_12], ['@aimpact/chat-sdk/initialize', dependency_13], ['@aimpact/ailearn-app/model/gclassroom', dependency_14], ['@aimpact/ailearn-sdk/core', dependency_15], ['@aimpact/chat-sdk/settings', dependency_16]]);
+      __beyond_transversal.dependencies.update([['@beyond-js/kernel/transversals', dependency_1], ['@beyond-js/widgets/render', dependency_2], ['@aimpact/ailearn-app/model/wrapper', dependency_3], ['@aimpact/chat-sdk/session', dependency_4], ['@beyond-js/kernel/routing', dependency_5], ['@aimpact/chat/extensions', dependency_6], ['react', dependency_7], ['pragmate-ui/icons', dependency_8], ['pragmate-ui/image', dependency_9], ['@beyond-js/reactive/model', dependency_10], ['@beyond-js/kernel/texts', dependency_11], ['@beyond-js/kernel/core', dependency_12], ['@aimpact/chat-sdk/initialize', dependency_13], ['@aimpact/ailearn-app/model/gclassroom', dependency_14], ['@aimpact/ailearn-sdk/core', dependency_15], ['@aimpact/chat-sdk/settings', dependency_16]]);
 
       /*************
       BUNDLE: WIDGET
@@ -347,11 +347,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "page",
         "route": "/user-validation"
       }, {
-        "name": "ailearn-access-code-apage",
-        "vspecifier": "@aimpact/ailearn-app@0.0.32/pages/early-access.widget",
-        "is": "page",
-        "route": "/early-access"
-      }, {
         "name": "student-home",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/home.widget",
         "is": "page",
@@ -398,43 +393,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
           const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/http-suite", "1.0.3"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/react-18-widgets", "1.1.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.5"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["@aimpact/ailearn-app", "0.0.32"], ["@aimpact/ailearn-app", "0.0.32"]]);
           return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
         };
-        /*********************************
-        INTERNAL MODULE: ./handlers/access
-        *********************************/
-
-        ims.set('./handlers/access', {
-          hash: 3204236982,
-          creator: function (require, exports) {
-            "use strict";
-
-            Object.defineProperty(exports, "__esModule", {
-              value: true
-            });
-            exports.checkAccess = checkAccess;
-            var _session = require("@aimpact/chat-sdk/session");
-            var _publicRoutes = require("../public-routes");
-            async function checkAccess({
-              pathname
-            }, router, next) {
-              await _session.sessionWrapper.isReady;
-              if (!_session.sessionWrapper.logged && _publicRoutes.PUBLIC_ROUTES.includes(pathname)) return next();
-              if (_session.sessionWrapper.logged && (await _session.sessionWrapper.user.hasAccess())) {
-                if (router.previous) {
-                  const uri = router.previous;
-                  router.previous = void 0;
-                  return {
-                    pathname: uri
-                  };
-                }
-                return next();
-              }
-              return {
-                pathname: '/early-access'
-              };
-            }
-          }
-        });
-
         /*******************************
         INTERNAL MODULE: ./handlers/home
         *******************************/
@@ -461,7 +419,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ***********************************/
 
         ims.set('./handlers/policies', {
-          hash: 231219580,
+          hash: 1651417623,
           creator: function (require, exports) {
             "use strict";
 
@@ -471,7 +429,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             exports.checkPolicies = checkPolicies;
             var _session = require("@aimpact/chat-sdk/session");
             const PUBLIC_ROUTES = ['/app/terms', '/app/privacy'];
-            async function checkPolicies(pathname, router, next) {
+            async function checkPolicies({
+              pathname
+            }, router, next) {
               await _session.sessionWrapper.isReady;
               const {
                 termsAccepted,
@@ -623,6 +583,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 // return uri.uri;
               }
             }
+
             exports.Router = Router;
           }
         });
@@ -632,7 +593,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *************************/
 
         ims.set('./routing', {
-          hash: 2830771548,
+          hash: 3916314422,
           creator: function (require, exports) {
             "use strict";
 
@@ -640,9 +601,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             var _router = require("./router");
             var _session = require("./handlers/session");
             var _home = require("./handlers/home");
-            var _access = require("./handlers/access");
             var _policies = require("./handlers/policies");
-            const handlers = [_session.checkSession, _access.checkAccess, _policies.checkPolicies, _home.checkHome];
+            const handlers = [_session.checkSession, _policies.checkPolicies, _home.checkHome];
             // const handlers = [checkSession];
             const router = new _router.Router(handlers);
             _routing.routing.redirect = async function redirect(uri) {
@@ -659,7 +619,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
           }
         });
         return {
-          dependencies: ['@aimpact/chat-sdk/session', '@aimpact/ailearn-app/model/wrapper', '@beyond-js/kernel/routing']
+          dependencies: ['@aimpact/ailearn-app/model/wrapper', '@aimpact/chat-sdk/session', '@beyond-js/kernel/routing']
         };
       }]);
 
