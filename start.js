@@ -419,7 +419,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ***********************************/
 
         ims.set('./handlers/policies', {
-          hash: 3898509671,
+          hash: 1651417623,
           creator: function (require, exports) {
             "use strict";
 
@@ -437,7 +437,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 termsAccepted,
                 age
               } = _session.sessionWrapper.user;
-              console.log(1, pathname, PUBLIC_ROUTES.includes(pathname));
               if (PUBLIC_ROUTES.includes(pathname)) return next();
               if (!termsAccepted && age > 17 || !age) {
                 return {
