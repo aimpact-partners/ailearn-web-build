@@ -623,6 +623,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 // return uri.uri;
               }
             }
+
             exports.Router = Router;
           }
         });

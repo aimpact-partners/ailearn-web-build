@@ -29,11 +29,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 702302231,
+        hash: 1501812763,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
               "assign": "Assign",
+              "use": "Use",
+              "continue": "Continue",
               "create": "Create",
               "delete": "Delete item"
             },
@@ -64,13 +66,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "assignment": "Assignment",
               "chat": "Chat"
             },
+            "errors": {
+              "failed": "Operation failed. Please try again.",
+              "ERROR_GETTING_URL": "Error getting url"
+            },
             "title": "My Learning Modules",
             "tabs": {
               "drafts": "Drafts",
-              "published": "Published"
-            },
-            "errors": {
-              "ERROR_GETTING_URL": "Error getting url"
+              "published": "Published",
+              "community": "Library"
             },
             "loading": {
               "title": "Loading Data",
@@ -91,6 +95,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "published": {
                 "title": "No Published Modules",
                 "description": "There are no published modules available. Work on each module and publish them to update this list of publications. 🎓"
+              },
+              "community": {
+                "title": "No Modules in the Community",
+                "description": "There are no modules available in the community. Share your modules with the community and discover modules from other authors! 🌍"
               }
             }
           };
