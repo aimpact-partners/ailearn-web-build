@@ -5,16 +5,18 @@ System.register([], function (_export, _context) {
     setters: [],
     execute: function () {
       _export("default", {
-        "package": "@aimpact/ailearn-sdk",
-        "version": "1.0.0",
+        "package": "pragmate-ui",
+        "version": "0.1.1",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]
         },
-        "environment": "local",
+        "environment": "development",
         "global.css": true,
         "params": {
-          "ailearnAPI": "http://localhost:5050"
+          "application": {
+            "token": "abcdefg123"
+          }
         },
         "ssr": {},
         "backend": {}

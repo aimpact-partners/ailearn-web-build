@@ -5,17 +5,15 @@ System.register([], function (_export, _context) {
     setters: [],
     execute: function () {
       _export("default", {
-        "package": "@aimpact/ailearn-sdk",
-        "version": "1.0.0",
+        "package": "@bgroup/http-suite",
+        "version": "1.0.3",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]
         },
-        "environment": "local",
+        "environment": "development",
         "global.css": true,
-        "params": {
-          "ailearnAPI": "http://localhost:5050"
-        },
+        "params": {},
         "ssr": {},
         "backend": {}
       });
