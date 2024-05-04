@@ -30,7 +30,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.12/d
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 3480114927,
+        hash: 2433822787,
         creator: function (require, exports) {
           "use strict";
 
@@ -41,25 +41,25 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.12/d
           var _database = require("@beyond-js/reactive/database");
           async function initialize() {
             try {
-              const db = await _database.DBManager.config('chat-api@25', {
+              const db = await _database.DBManager.config('chat-api@26', {
+                Activities: 'id',
+                Assignments: 'id, name',
                 Chat: 'id, name, userId, category, usage, system, knowledgeBoxId',
-                Conversations: 'id, name, userId, system',
-                User: 'id',
-                Messages: 'id,  chatId, userId, text, role, usage, timestamp',
-                KnowledgeBoxes: 'id, userId',
-                SharedKnowledgeBases: 'id, knowledgeBaseId, sharedWithUserId',
-                Documents: 'id, knowledgeBaseId',
-                Topics: 'id,  title',
-                Sessions: 'id,  classRoomId',
                 Classrooms: 'id, name',
+                Conversations: 'id, name, userId, system',
+                Documents: 'id, knowledgeBaseId',
+                KnowledgeBoxes: 'id, userId',
+                Messages: 'id,  chatId, userId, text, role, usage, timestamp',
+                Modules: 'id, type, timeCreated, timeUpdated',
+                Organizations: 'id',
                 Projects: 'id, project',
                 PromptCategories: 'id',
-                Assignments: 'id, name',
                 Prompts: 'id',
-                Activities: 'id',
+                SharedKnowledgeBases: 'id, knowledgeBaseId, sharedWithUserId',
+                Sessions: 'id,  classRoomId',
                 StudentsHome: 'id',
-                Modules: 'id, type',
-                Organizations: 'id'
+                Topics: 'id,  title',
+                User: 'id'
               });
               // For example, if you have user data to add you can use:
               // db.Chat.bulkAdd(chats);
@@ -93,4 +93,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.12/d
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGF0YWJhc2UiLCJyZXF1aXJlIiwiaW5pdGlhbGl6ZSIsImRiIiwiREJNYW5hZ2VyIiwiY29uZmlnIiwiQ2hhdCIsIkNvbnZlcnNhdGlvbnMiLCJVc2VyIiwiTWVzc2FnZXMiLCJLbm93bGVkZ2VCb3hlcyIsIlNoYXJlZEtub3dsZWRnZUJhc2VzIiwiRG9jdW1lbnRzIiwiVG9waWNzIiwiU2Vzc2lvbnMiLCJDbGFzc3Jvb21zIiwiUHJvamVjdHMiLCJQcm9tcHRDYXRlZ29yaWVzIiwiQXNzaWdubWVudHMiLCJQcm9tcHRzIiwiQWN0aXZpdGllcyIsIlN0dWRlbnRzSG9tZSIsIk1vZHVsZXMiLCJPcmdhbml6YXRpb25zIiwiZSIsImNvbnNvbGUiLCJ0cmFjZSIsImluaXREQiIsImV4cG9ydHMiXSwic291cmNlcyI6WyIvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxTQUFBLEdBQUFDLE9BQUE7VUFFQSxlQUFlQyxVQUFVQSxDQUFBO1lBQ3hCLElBQUk7Y0FDSCxNQUFNQyxFQUFFLEdBQUcsTUFBTUgsU0FBQSxDQUFBSSxTQUFTLENBQUNDLE1BQU0sQ0FBQyxhQUFhLEVBQUU7Z0JBQ2hEQyxJQUFJLEVBQUUsMkRBQTJEO2dCQUNqRUMsYUFBYSxFQUFFLDBCQUEwQjtnQkFDekNDLElBQUksRUFBRSxJQUFJO2dCQUNWQyxRQUFRLEVBQUUsbURBQW1EO2dCQUM3REMsY0FBYyxFQUFFLFlBQVk7Z0JBQzVCQyxvQkFBb0IsRUFBRSx1Q0FBdUM7Z0JBQzdEQyxTQUFTLEVBQUUscUJBQXFCO2dCQUNoQ0MsTUFBTSxFQUFFLFlBQVk7Z0JBQ3BCQyxRQUFRLEVBQUUsa0JBQWtCO2dCQUM1QkMsVUFBVSxFQUFFLFVBQVU7Z0JBQ3RCQyxRQUFRLEVBQUUsYUFBYTtnQkFDdkJDLGdCQUFnQixFQUFFLElBQUk7Z0JBQ3RCQyxXQUFXLEVBQUUsVUFBVTtnQkFDdkJDLE9BQU8sRUFBRSxJQUFJO2dCQUNiQyxVQUFVLEVBQUUsSUFBSTtnQkFDaEJDLFlBQVksRUFBRSxJQUFJO2dCQUNsQkMsT0FBTyxFQUFFLFVBQVU7Z0JBQ25CQyxhQUFhLEVBQUU7ZUFDZixDQUFDO2NBRUY7Y0FDQTthQUNBLENBQUMsT0FBT0MsQ0FBQyxFQUFFO2NBQ1hDLE9BQU8sQ0FBQ0MsS0FBSyxDQUFDLE9BQU8sRUFBRUYsQ0FBQyxDQUFDOztVQUUzQjtVQUVPO1VBQVksTUFBTUcsTUFBTSxHQUFBQyxPQUFBLENBQUFELE1BQUEsR0FBR3pCLFVBQVUiLCJpZ25vcmVMaXN0IjpbXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGF0YWJhc2UiLCJyZXF1aXJlIiwiaW5pdGlhbGl6ZSIsImRiIiwiREJNYW5hZ2VyIiwiY29uZmlnIiwiQWN0aXZpdGllcyIsIkFzc2lnbm1lbnRzIiwiQ2hhdCIsIkNsYXNzcm9vbXMiLCJDb252ZXJzYXRpb25zIiwiRG9jdW1lbnRzIiwiS25vd2xlZGdlQm94ZXMiLCJNZXNzYWdlcyIsIk1vZHVsZXMiLCJPcmdhbml6YXRpb25zIiwiUHJvamVjdHMiLCJQcm9tcHRDYXRlZ29yaWVzIiwiUHJvbXB0cyIsIlNoYXJlZEtub3dsZWRnZUJhc2VzIiwiU2Vzc2lvbnMiLCJTdHVkZW50c0hvbWUiLCJUb3BpY3MiLCJVc2VyIiwiZSIsImNvbnNvbGUiLCJ0cmFjZSIsImluaXREQiIsImV4cG9ydHMiXSwic291cmNlcyI6WyIvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxTQUFBLEdBQUFDLE9BQUE7VUFFQSxlQUFlQyxVQUFVQSxDQUFBO1lBQ3hCLElBQUk7Y0FDSCxNQUFNQyxFQUFFLEdBQUcsTUFBTUgsU0FBQSxDQUFBSSxTQUFTLENBQUNDLE1BQU0sQ0FBQyxhQUFhLEVBQUU7Z0JBQ2hEQyxVQUFVLEVBQUUsSUFBSTtnQkFDaEJDLFdBQVcsRUFBRSxVQUFVO2dCQUN2QkMsSUFBSSxFQUFFLDJEQUEyRDtnQkFDakVDLFVBQVUsRUFBRSxVQUFVO2dCQUN0QkMsYUFBYSxFQUFFLDBCQUEwQjtnQkFDekNDLFNBQVMsRUFBRSxxQkFBcUI7Z0JBQ2hDQyxjQUFjLEVBQUUsWUFBWTtnQkFDNUJDLFFBQVEsRUFBRSxtREFBbUQ7Z0JBQzdEQyxPQUFPLEVBQUUsb0NBQW9DO2dCQUM3Q0MsYUFBYSxFQUFFLElBQUk7Z0JBQ25CQyxRQUFRLEVBQUUsYUFBYTtnQkFDdkJDLGdCQUFnQixFQUFFLElBQUk7Z0JBQ3RCQyxPQUFPLEVBQUUsSUFBSTtnQkFDYkMsb0JBQW9CLEVBQUUsdUNBQXVDO2dCQUM3REMsUUFBUSxFQUFFLGtCQUFrQjtnQkFDNUJDLFlBQVksRUFBRSxJQUFJO2dCQUNsQkMsTUFBTSxFQUFFLFlBQVk7Z0JBQ3BCQyxJQUFJLEVBQUU7ZUFDTixDQUFDO2NBRUY7Y0FDQTthQUNBLENBQUMsT0FBT0MsQ0FBQyxFQUFFO2NBQ1hDLE9BQU8sQ0FBQ0MsS0FBSyxDQUFDLE9BQU8sRUFBRUYsQ0FBQyxDQUFDOztVQUUzQjtVQUVPO1VBQVksTUFBTUcsTUFBTSxHQUFBQyxPQUFBLENBQUFELE1BQUEsR0FBR3pCLFVBQVUifQ==
