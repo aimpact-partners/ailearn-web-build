@@ -270,7 +270,7 @@ footer {
 }
 .material__content textarea {
   border: none;
-  padding: 0;
+  padding: 0.5rem;
 }
 .material__content p + .material__content p,
 .material__content p + .material__content div,
