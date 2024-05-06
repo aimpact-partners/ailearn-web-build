@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4232171580,
+        hash: 1051095695,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -39,7 +39,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "chat": "Chat",
               "dashboard": "Panel de control"
             },
-            "header": "Titulo de encabezado",
+            "title": "Tablero de control",
+            "actions": {
+              "wall": "Muro"
+            },
             "interaction": "Interaccion",
             "preevaluation": "Pre-evaluación",
             "multiple": "Selección múltiple",

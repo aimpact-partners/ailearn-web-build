@@ -161,7 +161,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/dashboard.widget",
         "is": "page",
         "route": "/assignments/${id}/dashboard/classroom",
-        "layout": "general-layout"
+        "layout": "dashboard-layout"
       }, {
         "name": "assignment-dashboard-participant",
         "attrs": ["id", "participant-id"],
@@ -177,7 +177,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.32/dashboard-wall.widget",
         "is": "page",
         "route": "/assignments/${id}/wall",
-        "layout": "general-layout"
+        "layout": "dashboard-layout"
       }, {
         "name": "ailearn-sessions-access",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/sessions/access.widget",
@@ -334,6 +334,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.32/coins-layout.widget",
         "is": "layout"
       }, {
+        "name": "dashboard-layout",
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/dashboard-layout.widget",
+        "is": "layout"
+      }, {
         "name": "ailearn-empty-layout",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/layout/empty",
         "is": "layout"
@@ -378,6 +382,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "page",
         "route": "/ui/components",
         "layout": "chat-layout"
+      }, {
+        "name": "app-test-components",
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/test/blank",
+        "is": "page",
+        "route": "/tests/blank"
+      }, {
+        "name": "app-test-web-component",
+        "vspecifier": "@aimpact/ailearn-app@0.0.32/test/web-component"
       }]);
       bundles = [];
       /****************************************
