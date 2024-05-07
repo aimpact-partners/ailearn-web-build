@@ -29,9 +29,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 255057575,
+        hash: 1189714306,
         creator: function (require, exports) {
           exports.txt = {
+            "header": "Wall of ",
             "emptyTitle": "Oops! The list is empty.",
             "empty": "There are no items to display at this time. But don't worry, there will soon be plenty of history to explore!",
             "description": "Welcome to the Conversation History! This space is a window into the fascinating interactions among our students in each activity, enriched with an integrated chat. Explore the elegance of learning in this detailed timeline. 📚"

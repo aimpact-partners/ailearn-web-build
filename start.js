@@ -171,7 +171,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/dashboard/participant",
         "is": "page",
         "route": "/assignments/${assignmentId}/dashboard/participant/${participantId}",
-        "layout": "general-layout"
+        "layout": "dashboard-layout"
       }, {
         "name": "dashboard-wall",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/dashboard-wall.widget",

@@ -132,6 +132,10 @@
   --written-spoken: hsla(295, 53%, 54%, 0.932);
   --character-talk: hsla(61, 87%, 41%, 0.932);
   --debate: #4285f4;
+  --box-shadow-default: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  --font-size-p2: 0.875rem;
+  --font-size-p1: 1rem;
   /* neutral */
   --neutral-0: #000;
   --neutral-4: #0f0d13;
