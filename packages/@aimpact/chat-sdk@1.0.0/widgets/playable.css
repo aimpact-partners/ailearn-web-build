@@ -1,18 +1,1 @@
-.playable-container {
-  --hover-word-color: rgba(0, 0, 0, 0.5);
-}
-.playable-container .message-text__container {
-  cursor: pointer;
-}
-.playable-container .message-text__container span {
-  padding: 0.25rem 0.1rem;
-}
-.playable-container .message-text__container span:hover {
-  background: var(--hover-word-color);
-}
-.playable-container .message-text__container .highlight {
-  background: red !important;
-}
-
-
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7O0FBQ0E7RUFDQzs7QUFDQTtFQUNDOztBQUVEO0VBQ0M7O0FBRUQ7RUFDQyIsImZpbGUiOiIifQ== */
+.playable-container{--hover-word-color:rgba(0, 0, 0, 0.5)}.playable-container .message-text__container{cursor:pointer}.playable-container .message-text__container span{padding:.25rem .1rem}.playable-container .message-text__container span:hover{background:var(--hover-word-color)}.playable-container .message-text__container .highlight{background:red!important}
