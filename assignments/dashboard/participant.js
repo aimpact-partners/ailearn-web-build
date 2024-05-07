@@ -38,10 +38,10 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       ;
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-18-widgets/page', dependency_2], ['@aimpact/ailearn-app/dashboard-layout.widget', dependency_3], ['react', dependency_4], ['@aimpact/ailearn-app/components/navbar-header.code', dependency_5], ['pragmate-ui/image', dependency_6], ['pragmate-ui/icons', dependency_7]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
-        "name": "assignment-dashboard-participant-page",
+        "name": "old-assignment-dashboard-participant-page",
         "vspecifier": "@aimpact/ailearn-app@0.0.32/assignments/dashboard/participant",
         "is": "page",
-        "route": "/assignments/${assignmentId}/dashboard/participant/${participantId}",
+        "route": "/old-assignments/${assignmentId}/dashboard/participant/${participantId}",
         "layout": "dashboard-layout"
       }]);
       ims = new Map();
