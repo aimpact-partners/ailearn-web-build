@@ -1,1 +1,91 @@
-.elevation-1{box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)}.elevation-2{box-shadow:0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12)}.elevation-3{box-shadow:0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12)}.elevation-4{box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12)}.elevation-5{box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12)}.elevation-6{box-shadow:0 8px 10px -5px rgba(0,0,0,.2),0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12)}.elevation-1,.floating__button{box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)}.elevation-2{box-shadow:0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12)}.elevation-3{box-shadow:0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12)}.elevation-4{box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12)}.elevation-5{box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12)}.elevation-6{box-shadow:0 8px 10px -5px rgba(0,0,0,.2),0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12)}.floating__button{border-radius:50%;padding:.5rem;height:50px;width:50px;position:fixed;right:1.5rem;bottom:5rem;background:var(--primary);border:1px solid var(--primary);z-index:20}.floating__button .pui-icon{height:24px;width:24px;fill:var(--primary-container)}.entity-image-cover{width:100%;overflow:hidden;border-top-left-radius:var(--border-radius-base);border-top-right-radius:var(--border-radius-base)}@media (max-width:600px){.entity-image-cover{border-radius:var(--border-radius-base)}}.page-activity-container{min-height:100svh;--chat-control-offset:150px;padding-bottom:7rem}.page-activity-container .audio-player audio{width:100%}.page-activity-container aside{display:flex;flex-direction:column;gap:.5rem}
+.elevation-1 {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-2 {
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-3 {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-4 {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-5 {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-6 {
+  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+}
+.elevation-1, .floating__button {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-2 {
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-3 {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-4 {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-5 {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-6 {
+  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+}
+
+.floating__button {
+  border-radius: 50%;
+  padding: 0.5rem;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 1.5rem;
+  bottom: 5rem;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  z-index: 20;
+}
+.floating__button .pui-icon {
+  height: 24px;
+  width: 24px;
+  fill: var(--primary-container);
+}
+.entity-image-cover {
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: var(--border-radius-base);
+  border-top-right-radius: var(--border-radius-base);
+}
+@media (max-width: 600px) {
+  .entity-image-cover {
+    border-radius: var(--border-radius-base);
+  }
+}
+.page-activity-container {
+  min-height: 100svh;
+  --chat-control-offset: 150px;
+  padding-bottom: 7rem;
+}
+.page-activity-container .audio-player audio {
+  width: 100%;
+}
+.page-activity-container aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGVsZXZhdGlvbnMuc2NzcyIsInNjc3NcXGZsb2F0aW5nLWJ1dHRvbi5zY3NzIiwiZGF0YTo7Y2hhcnNldD11dGYtOCxAdXNlJTIwJy4vZWxldmF0aW9ucyc7JTBEJTBBLmZsb2F0aW5nX19idXR0b24lMjAlN0IlMEQlMEElMDlib3JkZXItcmFkaXVzOiUyMDUwJTI1OyUwRCUwQSUwOXBhZGRpbmc6JTIwMC41cmVtOyUwRCUwQSUwOWhlaWdodDolMjA1MHB4OyUwRCUwQSUwOXdpZHRoOiUyMDUwcHg7JTBEJTBBJTA5cG9zaXRpb246JTIwZml4ZWQ7JTBEJTBBJTA5cmlnaHQ6JTIwMS41cmVtOyUwRCUwQSUwOWJvdHRvbTolMjA1cmVtOyUwRCUwQSUwOWJhY2tncm91bmQ6JTIwdmFyKC0tcHJpbWFyeSk7JTBEJTBBJTA5Ym9yZGVyOiUyMDFweCUyMHNvbGlkJTIwdmFyKC0tcHJpbWFyeSk7JTBEJTBBJTA5QGV4dGVuZCUyMC5lbGV2YXRpb24tMTslMEQlMEElMDl6LWluZGV4OiUyMDIwOyUwRCUwQSUwOS5wdWktaWNvbiUyMCU3QiUwRCUwQSUwOSUwOWhlaWdodDolMjAyNHB4OyUwRCUwQSUwOSUwOXdpZHRoOiUyMDI0cHg7JTBEJTBBJTA5JTA5ZmlsbDolMjB2YXIoLS1wcmltYXJ5LWNvbnRhaW5lcik7JTBEJTBBJTA5JTdEJTBEJTBBJTdEJTBEJTBBIiwic2Nzc1xcaW1hZ2Uuc2NzcyIsInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7O0FDMUJEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQ3pCRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUVBOztBQUNBO0VBQ0M7RUFDQTtFQUNBOztBQ2hCRjtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBTkQ7SUFPRTs7O0FDUEY7RUFDQztFQUNBO0VBQ0E7O0FBR0M7RUFDQzs7QUFJRjtFQUNDO0VBQ0E7RUFDQSIsImZpbGUiOiIifQ== */
