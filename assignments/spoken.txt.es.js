@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1462005619,
+        hash: 914728433,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -53,6 +53,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "feedback": "Conocimientos",
               "competencies": "Competencias",
               "processMessages": ["Estamos procesando el audio", "Transcribiendo el texto", "Evaluando la comprensión lectora y del contenido", "Analizando la coherencia y cohesión", "Evaluando síntesis y parafrasis", "Evaluando uso de vocabulario", "Analizando el pensamiento crítico", "Revisando la base de contenido para validaciones cruzadas", "Estimando la relevancia del contexto", "Verificando patrones de entonación", "Comparando con modelos de referencia lingüística", "Identificando elementos clave del discurso", "Cruzando referencias con la base de datos de contenido", "Examinando la estructura narrativa", "Correlacionando con casos de estudio relevantes", "Comprobando la precisión de términos técnicos", "Evaluando la originalidad del contenido", "Verificando la autenticidad de las emociones expresadas"]
+            },
+            "permissions": {
+              "intro": "Permisos de acceso",
+              "title": "Activación de voz",
+              "description": "Activa el micrófono para potenciar tu experiencia interactuando por medio de comandos de voz.",
+              "concedded": {
+                "title": "¡Listo!",
+                "description": "Ahora puedes disfrutar de la activación por voz."
+              },
+              "error": {
+                "title": "No tenemos acceso al micrófono",
+                "description": "Para activar la voz, necesitamos acceso al micrófono. Por favor, habilita el acceso en la configuración de tu navegador."
+              }
             }
           };
         }

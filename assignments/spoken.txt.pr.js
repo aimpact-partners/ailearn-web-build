@@ -29,9 +29,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3814029164,
+        hash: 970268439,
         creator: function (require, exports) {
           exports.txt = {
+            "permissions": {
+              "intro": "Permissões de acesso",
+              "title": "Ativação por voz",
+              "description": "Ative o microfone para aprimorar sua experiência, interagindo por meio de comandos de voz."
+            },
             "assessments": {
               "quiz": "Avaliação",
               "oral": "Oral",

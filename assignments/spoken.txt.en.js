@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 490064762,
+        hash: 888364987,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -53,6 +53,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "feedback": "Knowledge",
               "competencies": "Competences",
               "processMessages": ["Processing the audio", "Transcribing the text", "Evaluating reading comprehension and content", "Analyzing coherence and cohesion", "Evaluating synthesis and paraphrasing", "Assessing vocabulary usage", "Analyzing critical thinking", "Reviewing the content base for cross-validation", "Estimating the relevance of context", "Verifying intonation patterns", "Comparing with linguistic reference models", "Identifying key elements of the discourse", "Cross-referencing with the content database", "Examining narrative structure", "Correlating with relevant case studies", "Checking the accuracy of technical terms", "Evaluating content originality", "Verifying the authenticity of expressed emotions"]
+            },
+            "permissions": {
+              "intro": "Access permissions",
+              "title": "Voice activation",
+              "description": "Activate the microphone to enhance your experience by interacting via voice commands.",
+              "concedded": {
+                "title": "Ready!",
+                "description": "Now you can enjoy voice activation."
+              },
+              "error": {
+                "title": "No tenemos acceso al micrófono",
+                "description": "Para activar la voz, necesitamos acceso al micrófono. Por favor, habilita el acceso en la configuración de tu navegador."
+              }
             }
           };
         }
