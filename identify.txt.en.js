@@ -29,12 +29,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 909398135,
+        hash: 3210530431,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
               "accept": "ACCEPT"
             },
+            "title": "You are about to start!",
+            "subtitle": "Make your next step by selecting your role",
             "institution": {
               "title": "Institution",
               "description": "I am an administrator of an institution (school, college, institute, etc.) and I want to incorporate RVD.AI.",

@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2020879980,
+        hash: 462440749,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -190,6 +190,47 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "generate": "Generar con IA",
                   "manual": "Diseño manual"
                 }
+              }
+            },
+            "refine": {
+              "module": {
+                "title": "Refina la calidad de tu módulo",
+                "subtitle": "Tus aportes nos ayudarán a mejorar el contenido.",
+                "confirm": {
+                  "title": "¿Deseas reemplazar el contenido actual?",
+                  "subtitle": "Si confirmas, el proceso de generación reemplazará el contenido actual con el nuevo. Si deseas conservar el contenido actual, haz clic en cancelar."
+                }
+              },
+              "textarea": {
+                "label": "Tus aportes",
+                "placeholder": "Comparte sugerencias específicas o áreas de mejora..."
+              },
+              "image": {
+                "title": "Refina la calidad de tu imagen",
+                "subtitle": "Tus aportes nos ayudarán a mejorar el contenido.",
+                "confirm": {
+                  "title": "¿Deseas reemplazar la imagen actual?",
+                  "subtitle": "Si confirmas, la imagen actual será reemplazada."
+                }
+              },
+              "activities": {
+                "title": "Refina las actividades",
+                "subtitle": "Define las observaciones que consideres importantes para generar las actividades que desees.",
+                "confirm": {
+                  "title": "¿Deseas reemplazar el contenido actual?",
+                  "subtitle": "Si confirmas, el proceso de generación reemplazará el contenido actual con el nuevo. Si deseas conservar el contenido actual, haz clic en cancelar."
+                },
+                "description": "Define las observaciones que consideres importantes para generar las actividades que desees."
+              },
+              "examples": {
+                "action": "Ver ejemplos",
+                "items": ["Crear actividades teoricas y de evaluaciones de seleccion unicamente", "Crea actividades teoricas, de debate y de evaluación oral donde se analice la forma de expresión y argumentación de los estudiantes", "Empieza con una evaluación básica de selección que permita al estudiante descubrir sus conocimientos, luego una evaluación teorica y finaliza con una evaluación oral donde se analice la forma de expresión y argumentación de los estudiantes"],
+                "actions": {
+                  "see": "Ver ejemplos",
+                  "select": "Usar",
+                  "back": "Volver"
+                },
+                "title": "Ejemplos de observaciones"
               }
             }
           };

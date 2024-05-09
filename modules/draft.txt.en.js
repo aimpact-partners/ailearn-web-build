@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 829753367,
+        hash: 2667472105,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -191,6 +191,47 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "generate": "Generate with AI",
                   "manual": "Manual design"
                 }
+              }
+            },
+            "refine": {
+              "module": {
+                "title": "Refine the quality of your module",
+                "subtitle": "Your insights will help us refine the content.",
+                "confirm": {
+                  "title": "Do you want to replace the current content?",
+                  "subtitle": "If you confirm, the genreration process will replace the current content with the new one. If you want to keep the current content, click cancel."
+                }
+              },
+              "textarea": {
+                "label": "Your Insights",
+                "placeholder": "Share specific suggestions or areas for improvement..."
+              },
+              "image": {
+                "title": "Refine the quality of your image",
+                "subtitle": "Your insights will help us refine the content.",
+                "confirm": {
+                  "title": "Do you want to replace the current image?",
+                  "subtitle": "If you confirm, the current image will be replaced."
+                }
+              },
+              "activities": {
+                "title": "Refine the activities",
+                "subtitle": "Your insights will help us refine the content.",
+                "confirm": {
+                  "title": "Do you want to replace the current content?",
+                  "subtitle": "If you confirm, the genreration process will replace the current content with the new one. If you want to keep the current content, click cancel."
+                },
+                "description": "Define the observations you consider important to generate the activities you want."
+              },
+              "examples": {
+                "action": "See examples",
+                "items": ["Create theoretical activities and selection evaluations only", "Create theoretical, debate and oral evaluation activities where the students' form of expression and argumentation is analyzed", "Start with a basic selection evaluation that allows the student to discover their knowledge, then a theoretical evaluation and finish with an oral evaluation where the students' form of expression and argumentation is analyzed"],
+                "actions": {
+                  "see": "See examples",
+                  "select": "Use",
+                  "back": "back"
+                },
+                "title": "Examples of observations"
               }
             }
           };
