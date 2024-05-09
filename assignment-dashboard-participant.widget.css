@@ -444,7 +444,7 @@
   padding: 1rem 1rem 1rem 0;
   border-radius: var(--border-radius-base);
   display: grid;
-  grid-template-columns: 10% 1fr;
+  grid-template-columns: auto 1fr;
 }
 .assessment-analysis__container .assessment__analysis-item h3,
 .assessment-analysis__container .assessment__analysis-item .p2 {
