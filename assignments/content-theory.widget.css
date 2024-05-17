@@ -1,50 +1,3 @@
-.elevation-1 {
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-}
-
-.elevation-2 {
-  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
-}
-
-.elevation-3 {
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-}
-
-.elevation-4 {
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-}
-
-.elevation-5 {
-  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-}
-
-.elevation-6 {
-  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
-}
-.elevation-1, .floating__button {
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-}
-
-.elevation-2 {
-  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
-}
-
-.elevation-3 {
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-}
-
-.elevation-4 {
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-}
-
-.elevation-5 {
-  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-}
-
-.elevation-6 {
-  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
-}
-
 .floating__button {
   border-radius: 50%;
   padding: 0.5rem;
@@ -55,7 +8,12 @@
   bottom: 5rem;
   background: var(--primary);
   border: 1px solid var(--primary);
+  box-shadow: var(--box-shadow-default);
   z-index: 20;
+  cursor: pointer;
+}
+.floating__button:hover {
+  box-shadow: var(--box-shadow-hover);
 }
 .floating__button .pui-icon {
   height: 24px;
@@ -88,4 +46,4 @@
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGVsZXZhdGlvbnMuc2NzcyIsInNjc3NcXGZsb2F0aW5nLWJ1dHRvbi5zY3NzIiwiZGF0YTo7Y2hhcnNldD11dGYtOCxAdXNlJTIwJy4vZWxldmF0aW9ucyc7JTBEJTBBLmZsb2F0aW5nX19idXR0b24lMjAlN0IlMEQlMEElMDlib3JkZXItcmFkaXVzOiUyMDUwJTI1OyUwRCUwQSUwOXBhZGRpbmc6JTIwMC41cmVtOyUwRCUwQSUwOWhlaWdodDolMjA1MHB4OyUwRCUwQSUwOXdpZHRoOiUyMDUwcHg7JTBEJTBBJTA5cG9zaXRpb246JTIwZml4ZWQ7JTBEJTBBJTA5cmlnaHQ6JTIwMS41cmVtOyUwRCUwQSUwOWJvdHRvbTolMjA1cmVtOyUwRCUwQSUwOWJhY2tncm91bmQ6JTIwdmFyKC0tcHJpbWFyeSk7JTBEJTBBJTA5Ym9yZGVyOiUyMDFweCUyMHNvbGlkJTIwdmFyKC0tcHJpbWFyeSk7JTBEJTBBJTA5QGV4dGVuZCUyMC5lbGV2YXRpb24tMTslMEQlMEElMDl6LWluZGV4OiUyMDIwOyUwRCUwQSUwOS5wdWktaWNvbiUyMCU3QiUwRCUwQSUwOSUwOWhlaWdodDolMjAyNHB4OyUwRCUwQSUwOSUwOXdpZHRoOiUyMDI0cHg7JTBEJTBBJTA5JTA5ZmlsbDolMjB2YXIoLS1wcmltYXJ5LWNvbnRhaW5lcik7JTBEJTBBJTA5JTdEJTBEJTBBJTdEJTBEJTBBIiwic2Nzc1xcaW1hZ2Uuc2NzcyIsInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7O0FDMUJEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQUlEO0VBQ0M7OztBQ3pCRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUVBOztBQUNBO0VBQ0M7RUFDQTtFQUNBOztBQ2hCRjtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBTkQ7SUFPRTs7O0FDUEY7RUFDQztFQUNBO0VBQ0E7O0FBR0M7RUFDQzs7QUFJRjtFQUNDO0VBQ0E7RUFDQSIsImZpbGUiOiIifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGZsb2F0aW5nLWJ1dHRvbi5zY3NzIiwic2Nzc1xcaW1hZ2Uuc2NzcyIsInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFJQTtFQUNBOztBQUpBO0VBQ0M7O0FBSUQ7RUFDQztFQUNBO0VBQ0E7O0FDbkJGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFORDtJQU9FOzs7QUNQRjtFQUNDO0VBQ0E7RUFDQTs7QUFHQztFQUNDOztBQUlGO0VBQ0M7RUFDQTtFQUNBIiwiZmlsZSI6IiJ9 */

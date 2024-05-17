@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/http-suite", "1.0.3"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/react-18-widgets", "1.1.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.5"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["@aimpact/ailearn-app", "0.0.32"], ["@aimpact/ailearn-app", "0.0.32"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/http-suite", "1.0.3"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/react-18-widgets", "1.1.2"], ["pragmate-ui", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["react-select", "5.8.0"], ["react-is", "16.13.1"], ["swiper", "8.4.7"], ["@firebase/auth", "1.6.2"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["@aimpact/ailearn-app", "0.0.32-beta.5"], ["@aimpact/ailearn-app", "0.0.32-beta.5"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.32/modules/draft",
+          "vspecifier": "@aimpact/ailearn-app@0.0.32-beta.5/modules/draft",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 462440749,
+        hash: 237331238,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -109,10 +109,25 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "de": "Alemán",
               "it": "Italiano"
             },
-            "changingObjective": ["Adaptando el módulo para resaltar los conceptos clave de manera efectiva...", "Configurando actividades interactivas para facilitar el aprendizaje activo...", "Añadiendo contenido adaptable a diversos temas y áreas de estudio...", "Estructurando el módulo para promover habilidades de pensamiento crítico...", "Incorporando técnicas de enseñanza innovadoras para mejorar la retención de conocimiento...", "Asegurando que el módulo cumpla con los estándares educativos generales...", "Fomentando la curiosidad y el aprendizaje autodirigido a través de los objetivos del módulo...", "Implementando metodologías pedagógicas actualizadas para un enfoque integral...", "Optimizando la estructura del módulo para un proceso de aprendizaje escalonado y progresivo...", "Finalizando la personalización del módulo para una experiencia educativa enriquecedora y completa..."],
-            "generatingDraft": ["Identificando las mejores actividades para el objetivo del módulo...", "Analizando la audiencia para adecuar las actividades educativas...", "Estimando la duración óptima de cada actividad del módulo...", "Seleccionando tipos de actividades para promover un aprendizaje dinámico...", "Creando objetivos individuales para cada actividad propuesta...", "Integrando actividades que fomenten la interacción y el debate...", "Diseñando tareas que refuercen el conocimiento teórico y práctico...", "Incorporando ejercicios para el análisis crítico de la información...", "Estableciendo actividades para desarrollar habilidades de investigación...", "Elaborando dinámicas que estimulen la reflexión sobre problemáticas actuales...", "Ajustando actividades para cubrir diferentes estilos de aprendizaje...", "Configurando evaluaciones formativas para medir el progreso...", "Incluyendo recursos interactivos para complementar la enseñanza...", "Finalizando la selección de actividades que aseguren el cumplimiento de los objetivos...", "Compilando el borrador final del módulo con todas las actividades diseñadas..."],
-            "objectiveSuggestions": ["Evaluando las directrices educativas actuales...", "Adaptando sugerencias a los estándares del ministerio de educación...", "Incorporando mejores prácticas pedagógicas...", "Personalizando contenido para un aprendizaje integral...", "Optimizando sugerencias para competencias del siglo XXI...", "Integrando habilidades críticas y análisis reflexivo...", "Alineando objetivos con expectativas educativas nacionales...", "Enriqueciendo el módulo con enfoques interdisciplinarios...", "Fortaleciendo la propuesta con valores y ética educativa...", "Finalizando ajustes para un aprendizaje significativo y actualizado..."],
-            "processMessages": ["Evaluando la demografía de la audiencia...", "Estimando la duración óptima de la clase...", "Seleccionando actividades de aprendizaje potenciales...", "Determinando el propósito de cada actividad...", "Secuenciando actividades para un máximo compromiso...", "Adaptando el contenido a los objetivos de aprendizaje...", "Ajustando los niveles de dificultad para la competencia de la audiencia...", "Finalizando elementos interactivos para el aprendizaje activo...", "Creando estrategias de evaluación para la retención de conocimientos...", "Optimizando el flujo de contenido para una experiencia de aprendizaje sin problemas...", "Preparando los toques finales en el diseño educativo...", "Generación de contenido de microaprendizaje personalizado completo."],
+            "refine": {
+              "activities": {
+                "title": "Refina las actividades",
+                "description": "Define las observaciones que consideres importantes para generar las actividades que desees."
+              },
+              "examples": {
+                "title": "Ejemplos de observaciones",
+                "actions": {
+                  "see": "Ver ejemplos",
+                  "select": "Usar",
+                  "back": "Volver"
+                },
+                "items": ["Crear actividades teoricas y de evaluaciones de seleccion unicamente", "Crea actividades teoricas, de debate y de evaluación oral donde se analice la forma de expresión y argumentación de los estudiantes", "Empieza con una evaluación básica de selección que permita al estudiante descubrir sus conocimientos, luego una evaluación teorica y finaliza con una evaluación oral donde se analice la forma de expresión y argumentación de los estudiantes"]
+              },
+              "textarea": {
+                "label": "Tus aportes",
+                "placeholder": "Comparte sugerencias específicas o áreas de mejora..."
+              }
+            },
             "suggestions": {
               "objective": {
                 "actions": {
@@ -190,47 +205,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "generate": "Generar con IA",
                   "manual": "Diseño manual"
                 }
-              }
-            },
-            "refine": {
-              "module": {
-                "title": "Refina la calidad de tu módulo",
-                "subtitle": "Tus aportes nos ayudarán a mejorar el contenido.",
-                "confirm": {
-                  "title": "¿Deseas reemplazar el contenido actual?",
-                  "subtitle": "Si confirmas, el proceso de generación reemplazará el contenido actual con el nuevo. Si deseas conservar el contenido actual, haz clic en cancelar."
-                }
-              },
-              "textarea": {
-                "label": "Tus aportes",
-                "placeholder": "Comparte sugerencias específicas o áreas de mejora..."
-              },
-              "image": {
-                "title": "Refina la calidad de tu imagen",
-                "subtitle": "Tus aportes nos ayudarán a mejorar el contenido.",
-                "confirm": {
-                  "title": "¿Deseas reemplazar la imagen actual?",
-                  "subtitle": "Si confirmas, la imagen actual será reemplazada."
-                }
-              },
-              "activities": {
-                "title": "Refina las actividades",
-                "subtitle": "Define las observaciones que consideres importantes para generar las actividades que desees.",
-                "confirm": {
-                  "title": "¿Deseas reemplazar el contenido actual?",
-                  "subtitle": "Si confirmas, el proceso de generación reemplazará el contenido actual con el nuevo. Si deseas conservar el contenido actual, haz clic en cancelar."
-                },
-                "description": "Define las observaciones que consideres importantes para generar las actividades que desees."
-              },
-              "examples": {
-                "action": "Ver ejemplos",
-                "items": ["Crear actividades teoricas y de evaluaciones de seleccion unicamente", "Crea actividades teoricas, de debate y de evaluación oral donde se analice la forma de expresión y argumentación de los estudiantes", "Empieza con una evaluación básica de selección que permita al estudiante descubrir sus conocimientos, luego una evaluación teorica y finaliza con una evaluación oral donde se analice la forma de expresión y argumentación de los estudiantes"],
-                "actions": {
-                  "see": "Ver ejemplos",
-                  "select": "Usar",
-                  "back": "Volver"
-                },
-                "title": "Ejemplos de observaciones"
               }
             }
           };

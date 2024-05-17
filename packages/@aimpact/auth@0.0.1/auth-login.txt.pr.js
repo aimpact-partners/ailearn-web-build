@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/chat-sdk", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/widgets", "1.1.0"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["socket.io-client", "4.7.3"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.46"], ["@types/react-dom", "18.2.18"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.0.32"]]);
+        const dependencies = new Map([["@aimpact/chat-sdk", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/widgets", "1.1.0"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["socket.io-client", "4.7.3"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.46"], ["@types/react-dom", "18.2.18"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.0.32-beta.5"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -29,9 +29,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3946293765,
+        hash: 3348985173,
         creator: function (require, exports) {
           exports.txt = {
+            "presentation": {
+              "title": "Transformando a educação com o poder da IA",
+              "description": "Nossa plataforma oferece um assistente de IA para professores e um tutor de IA para alunos. Nosso objetivo é oferecer suporte abrangente para educadores e alunos."
+            },
             "title": "Transformando a educação com o poder da IA",
             "description": "Nossa plataforma oferece um assistente de IA para professores e um tutor de IA para alunos. Nosso objetivo é oferecer suporte abrangente para educadores e alunos.",
             "logo": "AI•LEARN",

@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/http-suite", "1.0.3"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/react-18-widgets", "1.1.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.5"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["@aimpact/ailearn-app", "0.0.32"], ["@aimpact/ailearn-app", "0.0.32"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/http-suite", "1.0.3"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/react-18-widgets", "1.1.2"], ["pragmate-ui", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["react-select", "5.8.0"], ["react-is", "16.13.1"], ["swiper", "8.4.7"], ["@firebase/auth", "1.6.2"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["@aimpact/ailearn-app", "0.0.32-beta.5"], ["@aimpact/ailearn-app", "0.0.32-beta.5"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.32/modules/management/activity",
+          "vspecifier": "@aimpact/ailearn-app@0.0.32-beta.5/modules/management/activity",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3423514826,
+        hash: 4234491917,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -51,7 +51,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "cover": "Generate cover",
               "upload": "Upload Image",
               "inspiration": "Generate with AI",
-              "manual": "Manual Design"
+              "manual": "Manual Design",
+              "order": "Edit order"
             },
             "activities": {
               "minutes": "Min",
@@ -84,6 +85,23 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "description": "Are you sure you want to delete the content from this activity?"
               }
             },
+            "multipleChoice": {
+              "actions": {
+                "generateAnswers": "Generate answers",
+                "addAnswer": "Add answer",
+                "addQuestion": "Add question",
+                "delete": "Delete",
+                "markCorrect": "Mark as correct"
+              },
+              "answers": {
+                "placeholder": "Insert an answer option and mark it as correct or incorrect"
+              },
+              "related": {
+                "label": "Related activity",
+                "independent": "Independent"
+              },
+              "emptyOptions": "Answer options have not been defined"
+            },
             "conversation": {
               "description": "Specify everything you consider important for the conversation. This will help the bot to understand you better and to provide you with the best possible answers. You can also specify the topics you want to talk about.",
               "topics": "List all topics you want to talk about"
@@ -93,7 +111,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "languages": {
               "select": {
-                "label": "Lanaguage",
+                "label": "Language",
                 "placeholder": "Select Language"
               },
               "selectLabel": "Select Language",
@@ -154,17 +172,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "title": "Delete Content",
               "description": "Are you sure you want to delete the content of this activity?"
             },
-            "multipleChoice": {
-              "labels": {
-                "correct": "Correct answer",
-                "mark": "Mark as correct"
-              },
-              "related": {
-                "label": "Related activity",
-                "independent": "Independent"
-              },
-              "emptyOptions": "No options available"
-            },
             "picture": {
               "title": "Generate images for your activity",
               "description": "Describe the image you want to generate in detail so that the artificial intelligence can imagine and generate it.",
@@ -178,10 +185,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               }
             },
             "processMessages": ["Evaluating audience demographics...", "Estimating optimal class duration...", "Selecting potential learning activities...", "Determining the purpose of each activity...", "Sequencing activities for maximum engagement...", "Tailoring content to learning objectives...", "Adjusting difficulty levels for audience proficiency...", "Finalizing interactive elements for active learning...", "Crafting assessment strategies for knowledge retention...", "Optimizing content flow for seamless learning experience...", "Preparing final touches on educational design...", "Generation of personalized microlearning content complete."],
-            "refiningActivity": ["Analyzing the activity objective to ensure alignment with learning outcomes...", "Reviewing activity components to maximize student engagement...", "Optimizing activity structure to facilitate understanding and application of knowledge...", "Adjusting instructional materials for greater accessibility and diversity...", "Evaluating delivery methods for effective and adaptive interaction...", "Incorporating student feedback to enhance the learning experience...", "Calibrating difficulty level to satisfy a broad range of student abilities...", "Integrating educational technology to enrich the activity...", "Updating activity resources to maintain relevance and currency...", "Finalizing the refinement process for a comprehensive and engaging educational activity..."],
-            "refiningQuestions": ["Formulating clear questions about the topic...", "Selecting different perspectives of response...", "Designing specific questions to learn...", "Creating options to think critically...", "Elaborating questions to apply concepts...", "Integrating questions to better understand...", "Generating questions to remember...", "Building a logical questionnaire...", "Ensuring complete coverage of the activity...", "Reviewing questions to align with educational objectives..."],
-            "refiningAnswers": ["Compiling correct answers...", "Including challenging options...", "Reinforcing essential knowledge...", "Maintaining an appropriate challenge...", "Incorporating immediate feedback...", "Establishing a coherent sequence...", "Reviewing complete answers...", "Creating an answer bank for success..."],
-            "generatingImage": ["Starting image generation for the module activity...", "Integrating activity parameters to customize the image...", "Selecting iconography and colors based on the activity content...", "Developing visual schemes to facilitate the understanding of the topic...", "Adapting the visual complexity to the educational level of the module...", "Enriching the image with interactive elements for the activity...", "Harmonizing the image with the module's design scheme...", "Making fine adjustments to the image composition...", "Verifying the alignment of the image with the learning objectives...", "Activity image successfully generated and ready for use."],
             "specs": {
               "title": "Resources",
               "objective": {

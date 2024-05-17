@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@bgroup/http-suite", "1.0.3"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/react-18-widgets", "1.1.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.5"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["@aimpact/ailearn-app", "0.0.32"], ["@aimpact/ailearn-app", "0.0.32"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/http-suite", "1.0.3"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/react-18-widgets", "1.1.2"], ["pragmate-ui", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["apexcharts", "3.48.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["react-select", "5.8.0"], ["react-is", "16.13.1"], ["swiper", "8.4.7"], ["@firebase/auth", "1.6.2"], ["firebase", "10.9.0"], ["firebase-admin", "11.11.1"], ["@aimpact/ailearn-app", "0.0.32-beta.5"], ["@aimpact/ailearn-app", "0.0.32-beta.5"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.32/modules/draft",
+          "vspecifier": "@aimpact/ailearn-app@0.0.32-beta.5/modules/draft",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2667472105,
+        hash: 1125684747,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -110,10 +110,25 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "de": "German",
               "it": "Italian"
             },
-            "changingObjective": ["Adapting the module to effectively highlight key concepts...", "Configuring interactive activities to facilitate active learning...", "Adding adaptable content to various themes and areas of study...", "Structuring the module to promote critical thinking skills...", "Incorporating innovative teaching techniques to improve knowledge retention...", "Ensuring that the module meets general educational standards...", "Fostering curiosity and self-directed learning through module objectives...", "Implementing updated pedagogical methodologies for a comprehensive approach...", "Optimizing the module structure for a staggered and progressive learning process...", "Finalizing the customization of the module for an enriching and complete educational experience..."],
-            "generatingDraft": ["Identifying the best activities for the module's objective...", "Analyzing the audience to adapt educational activities...", "Estimating the optimal duration of each module activity...", "Selecting types of activities to promote dynamic learning...", "Creating individual objectives for each proposed activity...", "Integrating activities that promote interaction and debate...", "Designing tasks that reinforce theoretical and practical knowledge...", "Incorporating exercises for critical analysis of information...", "Establishing activities to develop research skills...", "Developing dynamics that stimulate reflection on current issues...", "Adjusting activities to cover different learning styles...", "Configuring formative assessments to measure progress...", "Including interactive resources to complement teaching...", "Finalizing the selection of activities to ensure the fulfillment of the objectives...", "Compiling the final draft of the module with all the designed activities..."],
-            "objectiveSuggestions": ["Evaluating current educational guidelines...", "Adapting suggestions to the ministry of education standards...", "Incorporating best pedagogical practices...", "Personalizing content for comprehensive learning...", "Optimizing suggestions for 21st century skills...", "Integrating critical skills and reflective analysis...", "Aligning objectives with national educational expectations...", "Enriching the module with interdisciplinary approaches...", "Strengthening the proposal with educational values and ethics...", "Finalizing adjustments for meaningful and updated learning..."],
-            "processMessages": ["Evaluating audience demographics...", "Estimating optimal class duration...", "Selecting potential learning activities...", "Determining the purpose of each activity...", "Sequencing activities for maximum engagement...", "Tailoring content to learning objectives...", "Adjusting difficulty levels for audience proficiency...", "Finalizing interactive elements for active learning...", "Crafting assessment strategies for knowledge retention...", "Optimizing content flow for seamless learning experience...", "Preparing final touches on educational design...", "Generation of personalized microlearning content complete."],
+            "refine": {
+              "activities": {
+                "title": "Refine the activities",
+                "description": "Define the observations you consider important to generate the activities you want."
+              },
+              "examples": {
+                "title": "Examples of observations",
+                "actions": {
+                  "see": "See examples",
+                  "select": "Use",
+                  "back": "back"
+                },
+                "items": ["Create theoretical activities and selection evaluations only", "Create theoretical, debate and oral evaluation activities where the students' form of expression and argumentation is analyzed", "Start with a basic selection evaluation that allows the student to discover their knowledge, then a theoretical evaluation and finish with an oral evaluation where the students' form of expression and argumentation is analyzed"]
+              },
+              "textarea": {
+                "label": "Your Insights",
+                "placeholder": "Share specific suggestions or areas for improvement..."
+              }
+            },
             "suggestions": {
               "objective": {
                 "actions": {
@@ -191,47 +206,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "generate": "Generate with AI",
                   "manual": "Manual design"
                 }
-              }
-            },
-            "refine": {
-              "module": {
-                "title": "Refine the quality of your module",
-                "subtitle": "Your insights will help us refine the content.",
-                "confirm": {
-                  "title": "Do you want to replace the current content?",
-                  "subtitle": "If you confirm, the genreration process will replace the current content with the new one. If you want to keep the current content, click cancel."
-                }
-              },
-              "textarea": {
-                "label": "Your Insights",
-                "placeholder": "Share specific suggestions or areas for improvement..."
-              },
-              "image": {
-                "title": "Refine the quality of your image",
-                "subtitle": "Your insights will help us refine the content.",
-                "confirm": {
-                  "title": "Do you want to replace the current image?",
-                  "subtitle": "If you confirm, the current image will be replaced."
-                }
-              },
-              "activities": {
-                "title": "Refine the activities",
-                "subtitle": "Your insights will help us refine the content.",
-                "confirm": {
-                  "title": "Do you want to replace the current content?",
-                  "subtitle": "If you confirm, the genreration process will replace the current content with the new one. If you want to keep the current content, click cancel."
-                },
-                "description": "Define the observations you consider important to generate the activities you want."
-              },
-              "examples": {
-                "action": "See examples",
-                "items": ["Create theoretical activities and selection evaluations only", "Create theoretical, debate and oral evaluation activities where the students' form of expression and argumentation is analyzed", "Start with a basic selection evaluation that allows the student to discover their knowledge, then a theoretical evaluation and finish with an oral evaluation where the students' form of expression and argumentation is analyzed"],
-                "actions": {
-                  "see": "See examples",
-                  "select": "Use",
-                  "back": "back"
-                },
-                "title": "Examples of observations"
               }
             }
           };
