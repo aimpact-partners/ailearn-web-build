@@ -1,41 +1,42 @@
-# Para publicar la Web AIlearn
+# Para publicar la Web AILearn
 
 ## URL de la aplicacion web
 
-[]
+development [https://dev.app.rvd.ai/]
 
-## Actualizar propiedades de urls cloud en la propiedad "params" del package.json
+testing [https://test.app.rvd.ai/]
 
-Hay 2 opciones
+## Pasos
 
--   Actualizarlas en el `package.json`, previo a la compilacion
+### 1. Clonar repositorio de compilacion
 
--   Actualizarlas en el archivo `config.js`, luego de la compilacion
+`GitHub`: [https://github.com/aimpact-partners/ailearn-web-build]
 
-```json
-{
-	"params": {
-		"url": "https://documents-rb5caohzgq-wl.a.run.app/upload",
-		"DOCUMENTS_SERVER": "https://documents-rb5caohzgq-wl.a.run.app",
-		"CHAT_API_SERVER": "ACTUALIZAR - URL DE CLOUD RUN/chat-api-uploader"
-	}
-}
+branchs: `development` || `testing`
+
+### 2. Compilar paquete
+
+-   Ubicarse en el directorio donde esta el `beyond.json` donde se incluyen todos los paquetes
+
+-   Ejecutar el comando
+
+```
+beyond build @aimpact/ailearn-app web-[environment] --logs
 ```
 
-## En el codigo ya compilado, agregar el backend al paquete chat-api para que apunte a la url del AppEngine
+### 3. Copiar el codigo fuente generado en
 
-Ruta del archivo desde la raiz de la compilacion: `/packages/@aimpact/chat-api@0.0.1/config.json`
+-   ailearn\app\\.beyond\builds\web-[environment]\code
 
-`NOTA: esta url corresponde a la url del app engine`
+### 4. Ubicarse en el branch correspondiente del repositorio de compilacion
 
-En este mismo archivo, validar que la url del agente apunte a la cloud function en la propiedad `AGENTS_SERVER` dentro
-de la propiedad `"params"`
+### 5. Eliminar el codigo previo de la raiz del repositorio de compilacion
 
-```json
-	"AGENTS_SERVER": "https://agent-api-rb5caohzgq-uc.a.run.app/agent"
+### 6. Pegar el codigo en la raiz del repositorio de compilacion
 
-	"backend": {
-		"host": "ACTUALIZAR - URL DE CLOUD RUN de CHAT-API"
-	}
-}
-```
+### 7. Subir el codigo al branch correspondiente
+
+Branchs:
+
+-   `development`
+-   `testing`
