@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1372032182,
+        hash: 497966974,
         creator: function (require, exports) {
           exports.txt = {
             "permissions": {
@@ -41,8 +41,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "description": "Now you can enjoy voice activation."
               },
               "error": {
-                "title": "No tenemos acceso al micrófono",
-                "description": "Para activar la voz, necesitamos acceso al micrófono. Por favor, habilita el acceso en la configuración de tu navegador."
+                "title": "We don't have access to the microphone",
+                "description": "To activate the voice function, we need access to your microphone. Please enable it in your browser settings and refresh the page."
               }
             },
             "systemActions": {
