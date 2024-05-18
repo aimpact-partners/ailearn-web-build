@@ -25,18 +25,18 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.32-beta.13/layout/empty"
+          "vspecifier": "@aimpact/ailearn-app@0.0.32-beta.13/layout/main"
         },
         "type": "widget"
       }, _context.meta.url).package();
       ;
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/base', dependency_3], ['react', dependency_4]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
-        "name": "ailearn-empty-layout",
-        "vspecifier": "@aimpact/ailearn-app@0.0.32-beta.13/layout/empty",
+        "name": "ailearn-layout",
+        "vspecifier": "@aimpact/ailearn-app@0.0.32-beta.13/layout/main",
         "is": "layout"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.32-beta.13/layout/empty');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.32-beta.13/layout/main');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller
@@ -67,7 +67,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       *****************************/
 
       ims.set('./views/index', {
-        hash: 1618723681,
+        hash: 503030043,
         creator: function (require, exports) {
           "use strict";
 
@@ -106,4 +106,4 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfYmFzZSIsInJlcXVpcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUmVhY3RXaWRnZXRDb250cm9sbGVyIiwiV2lkZ2V0IiwiTGF5b3V0IiwiZXhwb3J0cyIsIlJlYWN0IiwicmVmIiwidXNlUmVmIiwiY3JlYXRlRWxlbWVudCJdLCJzb3VyY2VzIjpbIi90cy9jb250cm9sbGVyLnRzIiwiL3RzL3ZpZXdzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsS0FBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsTUFBQSxHQUFBRCxPQUFBO1VBRU87VUFBVSxNQUNYRSxVQUFXLFNBQVFILEtBQUEsQ0FBQUkscUJBQXFCO1lBQzdDLElBQUlDLE1BQU1BLENBQUE7Y0FDVCxPQUFPSCxNQUFBLENBQUFJLE1BQU07WUFDZDs7VUFDQUMsT0FBQSxDQUFBSixVQUFBLEdBQUFBLFVBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDUkQsSUFBQUssS0FBQSxHQUFBUCxPQUFBO1VBU00sU0FBVUssTUFBTUEsQ0FBQTtZQUNyQixNQUFNRyxHQUFHLEdBQUdELEtBQUssQ0FBQ0UsTUFBTSxFQUFFO1lBRTFCLE9BQ0NGLEtBQUEsQ0FBQUcsYUFBQTtjQUFNRixHQUFHLEVBQUVBO1lBQUcsR0FDYkQsS0FBQSxDQUFBRyxhQUFBLGdDQUEwQixDQUNwQjtVQUVUIiwiaWdub3JlTGlzdCI6W119
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfYmFzZSIsInJlcXVpcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUmVhY3RXaWRnZXRDb250cm9sbGVyIiwiV2lkZ2V0IiwiTGF5b3V0IiwiZXhwb3J0cyIsIlJlYWN0IiwicmVmIiwidXNlUmVmIiwiY3JlYXRlRWxlbWVudCJdLCJzb3VyY2VzIjpbIi90cy9jb250cm9sbGVyLnRzIiwiL3RzL3ZpZXdzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsS0FBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsTUFBQSxHQUFBRCxPQUFBO1VBRU87VUFBVSxNQUNYRSxVQUFXLFNBQVFILEtBQUEsQ0FBQUkscUJBQXFCO1lBQzdDLElBQUlDLE1BQU1BLENBQUE7Y0FDVCxPQUFPSCxNQUFBLENBQUFJLE1BQU07WUFDZDs7VUFDQUMsT0FBQSxDQUFBSixVQUFBLEdBQUFBLFVBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDUkQsSUFBQUssS0FBQSxHQUFBUCxPQUFBO1VBVU0sU0FBVUssTUFBTUEsQ0FBQTtZQUNyQixNQUFNRyxHQUFHLEdBQUdELEtBQUssQ0FBQ0UsTUFBTSxFQUFFO1lBRTFCLE9BQ0NGLEtBQUEsQ0FBQUcsYUFBQTtjQUFNRixHQUFHLEVBQUVBO1lBQUcsR0FDYkQsS0FBQSxDQUFBRyxhQUFBLGdDQUEwQixDQUNwQjtVQUVUIiwiaWdub3JlTGlzdCI6W119

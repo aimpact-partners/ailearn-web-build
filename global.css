@@ -232,6 +232,16 @@ option {
     width: 90% !important;
   }
 }
+@media (max-width: 1024px) {
+  .pui-modal .modal-content {
+    max-width: 85%;
+  }
+}
+@media (max-width: 400px) {
+  .pui-modal .modal-content {
+    max-width: 90%;
+  }
+}
 .pui-modal .modal-content .pui-actions,
 .pui-modal .modal-content .actions {
   display: flex;
@@ -294,9 +304,18 @@ option {
   opacity: 0.5;
   transition: all ease-in-out 0.3s;
 }
-* {
+:root {
   font-family: var(--font-family);
   box-sizing: border-box;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
 }
 
 a {
@@ -440,15 +459,6 @@ body {
    */
 main {
   display: block;
-}
-
-/**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /* Grouping content
