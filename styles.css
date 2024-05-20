@@ -528,8 +528,17 @@ body {
   padding: 0;
   height: 100%;
   line-height: 1.6;
+  box-sizing: border-box;
   color: var(--text-color);
   font-family: var(--font-family);
+}
+html *,
+html *::before,
+html *::after,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
 }
 
 html {

@@ -254,23 +254,23 @@
 .wizard-numbers li:after {
   content: "";
 }
-.wizard__container {
+.objective__container {
   min-height: 300px;
   height: 100%;
 }
-.wizard__container .wizard-first-step-container {
+.objective__container .wizard-first-step-container {
   display: flex;
   gap: 1rem;
 }
-.wizard__container .wizard-first-step-container > div {
+.objective__container .wizard-first-step-container > div {
   flex: 1;
 }
 @media (max-width: 600px) {
-  .wizard__container .wizard-first-step-container {
+  .objective__container .wizard-first-step-container {
     flex-direction: column;
   }
 }
-.wizard__container input {
+.objective__container input {
   border: 1px solid var(--primary);
   width: 100%;
   background: Var(--surface-variant);
@@ -278,19 +278,19 @@
   font-size: 1.2rem;
   border-radius: 1rem;
 }
-.wizard__container .objective-field {
+.objective__container .objective-field {
   margin: 2rem 0;
 }
-.wizard__container .objective-field .pui-textarea textarea {
+.objective__container .objective-field .pui-textarea textarea {
   border: none;
   padding: 0.5;
   font-size: 1.37rem;
   min-height: 50px;
 }
-.wizard__container .objective-field .pui-textarea textarea::first-letter {
+.objective__container .objective-field .pui-textarea textarea::first-letter {
   text-transform: uppercase;
 }
-.wizard__container footer {
+.objective__container footer {
   display: grid;
   place-items: end;
   gap: 1rem;
@@ -305,7 +305,7 @@
 .form-create-draft__container .form-wizard__objective-section {
   margin: 2rem 0;
   padding: 0 1rem;
-  border-radius: var(--border-radius-base);
+  border-radius: var(--border-radius-sm);
   border: 1px solid var(--outline);
 }
 .form-create-draft__container .second-flex-container {

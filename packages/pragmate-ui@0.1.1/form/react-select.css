@@ -17,6 +17,9 @@
 .pui-select .pui-react-select__placeholder,
 .pui-select .pui-react-select__single-value {
   color: var(--text-color);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .pui-select .pui-react-select__control {
   background-color: var(--background);
@@ -41,4 +44,4 @@
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXG1vYmlsZS1zZWxlY3Quc2NzcyIsInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBOztBQUNBO0VBQ0M7RUFDQTtFQUNBOztBQ1BGO0VBQ0M7RUFDQTtFQUNBOzs7QUFHQTtBQUFBO0VBRUM7O0FBSUQ7RUFDQztFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBOztBQUtGO0VBQ0M7RUFDQTs7QUFLQTtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBIiwiZmlsZSI6IiJ9 */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXG1vYmlsZS1zZWxlY3Quc2NzcyIsInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBOztBQUNBO0VBQ0M7RUFDQTtFQUNBOztBQ1BGO0VBQ0M7RUFDQTtFQUNBOzs7QUFHQTtBQUFBO0VBRUM7RUFDQTtFQUNBO0VBQ0E7O0FBSUQ7RUFDQztFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBOztBQUtGO0VBQ0M7RUFDQTs7QUFLQTtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBIiwiZmlsZSI6IiJ9 */
