@@ -126,7 +126,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --secondary-font-family: "Rubik", sans-serif;
   --font-family: "Rubik", sans-serif;
   --border-radius-sm: 10px;
-  --border-radius-base: 1.5rem;
+  --border-radius-base: 10px;
   --border-radius-lg: 25px;
   --content-theory: #644a78;
   --debate: #d0493a;

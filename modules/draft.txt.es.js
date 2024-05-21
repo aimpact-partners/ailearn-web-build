@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 237331238,
+        hash: 1507242546,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -88,13 +88,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               }
             },
-            "grades": {
+            "audience": {
+              "4": "Año 4",
+              "5": "Año 5",
+              "6": "Año 6",
               "7": "Año 7",
               "8": "Año 8",
               "9": "Año 9",
               "10": "Año 10",
               "11": "Año 11",
-              "12": "Año 12"
+              "12": "Año 12",
+              "school": "Escuela",
+              "university": "Universidad",
+              "company": "Empresa"
             },
             "languages": {
               "select": {
@@ -145,11 +151,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "postTitle": "Selecciona los aspectos que debe tener el contenido a generar en el siguiente formulariona los aspectos que debe tener el contenido a generar en el siguiente formulario",
             "module": "Objetivo Módulo de aprendizaje",
             "empty": "Acá podrás visualizar el contenido personalizado, adaptado por nuestro asistente en función de tus entradas de formulario",
-            "audience": {
-              "school": "Escuela",
-              "university": "Universidad",
-              "company": "Empresa"
-            },
             "duration": {
               "brief": "Breve (3 actividades)",
               "standard": "Estándar (5 actividades)",

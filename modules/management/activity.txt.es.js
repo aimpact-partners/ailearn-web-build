@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3667075022,
+        hash: 1662127276,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -109,6 +109,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "independent": "Independiente"
               },
               "emptyOptions": "Las opciones de respuesta no han sido definidas"
+            },
+            "spoken": {
+              "criteria": {
+                "label": "Criterios de evaluación"
+              }
             },
             "conversation": {
               "description": "Especifique todo lo que considere importante para la conversación. Esto ayudará al bot a entenderlo mejor y a proporcionarle las mejores respuestas posibles. También puede especificar los temas sobre los que desea hablar.",

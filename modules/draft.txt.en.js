@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1125684747,
+        hash: 1813011135,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -88,13 +88,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               }
             },
-            "grades": {
+            "audience": {
+              "4": "Year 4",
+              "5": "Year 5",
+              "6": "Year 6",
               "7": "Year 7",
               "8": "Year 8",
               "9": "Year 9",
               "10": "Year 10",
               "11": "Year 11",
-              "12": "Year 12"
+              "12": "Year 12",
+              "school": "School",
+              "university": "University",
+              "company": "Company"
             },
             "languages": {
               "select": {
@@ -146,11 +152,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "postTitle": "Select the aspects that the content to be generated in the following form must have",
             "module": "Learning Module Objective",
             "empty": "View your custom-created content here, tailored by our assistant based on your form inputs",
-            "audience": {
-              "school": "School",
-              "university": "University",
-              "company": "Company"
-            },
             "duration": {
               "brief": "Brief (3 activities)",
               "standard": "Standard (5 activities)",
