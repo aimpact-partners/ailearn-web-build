@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1507242546,
+        hash: 178840966,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -89,18 +89,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               }
             },
             "audience": {
-              "4": "Año 4",
-              "5": "Año 5",
-              "6": "Año 6",
-              "7": "Año 7",
-              "8": "Año 8",
-              "9": "Año 9",
-              "10": "Año 10",
-              "11": "Año 11",
-              "12": "Año 12",
-              "school": "Escuela",
-              "university": "Universidad",
-              "company": "Empresa"
+              "input": {
+                "label": "Año escolar",
+                "error": "Por favor seleccione un nivel de grado",
+                "select": "Seleccionar año escolar"
+              },
+              "values": {
+                "4": "Año 4",
+                "5": "Año 5",
+                "6": "Año 6",
+                "7": "Año 7",
+                "8": "Año 8",
+                "9": "Año 9",
+                "10": "Año 10",
+                "11": "Año 11",
+                "12": "Año 12"
+              }
             },
             "languages": {
               "select": {
@@ -157,7 +161,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "extended": "Extendido (7 actividades)"
             },
             "form": {
-              "audience": "¿Para quién es este módulo?",
               "module": "¿Cuál es el objetivo de este módulo?",
               "target": "Edad media de los alumnos",
               "duration": "Duración del módulo",
@@ -178,11 +181,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "duration": {
                 "placeholder": "Seleccione",
                 "label": "Número de actividades"
-              },
-              "grades": {
-                "label": "Año escolar",
-                "error": "Por favor seleccione un nivel de grado",
-                "select": "Seleccionar año escolar"
               },
               "schools": {
                 "label": "Administrador",

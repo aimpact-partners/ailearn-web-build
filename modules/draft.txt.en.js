@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1813011135,
+        hash: 2679678766,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -89,18 +89,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               }
             },
             "audience": {
-              "4": "Year 4",
-              "5": "Year 5",
-              "6": "Year 6",
-              "7": "Year 7",
-              "8": "Year 8",
-              "9": "Year 9",
-              "10": "Year 10",
-              "11": "Year 11",
-              "12": "Year 12",
-              "school": "School",
-              "university": "University",
-              "company": "Company"
+              "input": {
+                "label": "Año escolar",
+                "error": "Por favor seleccione un nivel de grado",
+                "select": "Seleccionar año escolar"
+              },
+              "values": {
+                "4": "Year 4",
+                "5": "Year 5",
+                "6": "Year 6",
+                "7": "Year 7",
+                "8": "Year 8",
+                "9": "Year 9",
+                "10": "Year 10",
+                "11": "Year 11",
+                "12": "Year 12"
+              }
             },
             "languages": {
               "select": {
@@ -158,7 +162,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "extended": "Extended (7 activities)"
             },
             "form": {
-              "audience": "Who is this module for?",
               "module": "What's the goal of this module?",
               "target": "Average Age of Learners",
               "duration": "Module Length",
