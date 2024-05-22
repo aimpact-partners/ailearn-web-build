@@ -310,6 +310,12 @@ option {
   line-height: 1.6;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
