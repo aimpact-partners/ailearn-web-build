@@ -1,3 +1,6 @@
+/**
+Same as light variables to avoid dark theme while design does not provide it.
+*/
 :root {
   --primary: #164194;
   --primary-100: #ffffff;
@@ -119,19 +122,22 @@
 }
 
 :root {
+  color-scheme: only light;
   --secondary-font-family: "Rubik", sans-serif;
   --font-family: "Rubik", sans-serif;
   --border-radius-sm: 10px;
-  --border-radius-base: 1.5rem;
+  --border-radius-base: 10px;
   --border-radius-lg: 25px;
-  --content-theory: var(--secondary);
+  --content-theory: #644a78;
+  --debate: #d0493a;
   --conversation: rgb(240, 145, 36);
-  --multiple-choice: hsla(135, 53%, 44%, 0.932);
-  --written: hsla(49, 76%, 56%, 0.932);
-  --spoken: hsla(295, 53%, 54%, 0.932);
-  --written-spoken: hsla(295, 53%, 54%, 0.932);
-  --character-talk: hsla(61, 87%, 41%, 0.932);
-  --debate: #4285f4;
+  --character-talk: #cf8836;
+  --spoken: #9aae3b;
+  --multiple-choice: #009468ff;
+  --box-shadow-default: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  --font-size-p2: 0.875rem;
+  --font-size-p1: 1rem;
   /* neutral */
   --neutral-0: #000;
   --neutral-4: #0f0d13;
@@ -202,6 +208,7 @@
   --app-text-highlight: var(--primary);
   --pui-success-icon-color: red;
   --text-color: #1a1a1a;
+  --secondary-text-color: var(--neutral-50);
   --primary-container: var(--primary-90);
   --on-primary: var(--primary-100);
   --on-primary-container: var(--primary-10);
@@ -250,6 +257,7 @@
 }
 :root[data-beyond-mode=light] {
   --text-color: #1a1a1a;
+  --secondary-text-color: var(--neutral-50);
   --primary-container: var(--primary-90);
   --on-primary: var(--primary-100);
   --on-primary-container: var(--primary-10);
@@ -297,54 +305,52 @@
   --app-main-outline: #000;
 }
 :root[data-beyond-mode=dark] {
-  --text-color: #fff;
-  --primary: var(--primary-40);
-  --primary-container: var(--primary-30);
-  --on-primary: #fff;
-  --on-primary-container: var(--primary-90);
-  --inverse-primary: var(--primary-40);
-  --secondary-container: var(--secondary-30);
-  --on-secondary: #fff;
-  --on-secondary-container: var(--secondary-90);
-  --tertiary: var(--tertiary-80);
-  --tertiary-container: var(--tertiary-30);
-  --on-tertiary: var(--tertiary-20);
-  --on-tertiary-container: var(--tertiary-90);
-  --surface: var(--secondary-10);
-  --surface-variant: var(--secondary-20);
-  --surface-dim: var(--neutral-12);
-  --surface-bright: var(--neutral-25);
-  --surface-container-lowest: var(--neutral-4);
-  --surface-container-low: var(--neutral-10);
-  --surface-container: var(--neutral-12);
-  --surface-container-high: var(--neutral-20);
-  --surface-container-highest: var(--neutral-22);
-  --surface-overlay: rgba(0, 0, 0, 0.5);
-  --on-surface: var(--neutral-90);
-  --on-surface-variant: var(--neutral-variant-80);
-  --inverse-surface: var(--neutral-90);
-  --inverse-on-surface: var(--neutral-20);
-  --background: var(--neutral-4);
-  --on-background: var(--neutral-90);
-  --error: var(--error-80);
-  --error-container: var(--error-30);
-  --on-error: var(--error-20);
-  --on-error-container: var(--error-90);
-  --outline: var(--neutral-variant-60);
-  --outline-variant: var(--neutral-variant-30);
+  --text-color: #1a1a1a;
+  --primary-container: var(--primary-90);
+  --on-primary: var(--primary-100);
+  --on-primary-container: var(--primary-10);
+  --inverse-primary: var(--primary-80);
+  --secondary-container: var(--secondary-90);
+  --on-secondary: var(--secondary-100);
+  --on-secondary-container: var(--secondary-10);
+  --pepito: "box";
+  --tertiary: var(--tertiary-40);
+  --tertiary-container: var(--tertiary-90);
+  --on-tertiary: var(--tertiary-100);
+  --on-tertiary-container: var(--tertiary-10);
+  --surface: var(--neutral-100);
+  --surface-dim: var(--neutral-94);
+  --surface-bright: var(--neutral-90);
+  --surface-container-lowest: var(--neutral-100);
+  --surface-container-low: var(--neutral-90);
+  --surface-container: var(--neutral-94);
+  --surface-container-high: var(--neutral-92);
+  --surface-container-highest: var(--neutral-90);
+  --surface-overlay: rgba(255, 255, 255, 1);
+  --surface-variant: var(--secondary-95);
+  --on-surface: var(--neutral-10);
+  --on-surface-variant: var(--neutral-variant-30);
+  --inverse-surface: var(--neutral-20);
+  --inverse-on-surface: var(--neutral-95);
+  --background: #fff;
+  --on-background: var(--neutral-10);
+  --error: var(--error-40);
+  --error-container: var(--error-90);
+  --on-error: var(--error-100);
+  --on-error-container: var(--error-10);
+  --outline: var(--neutral-variant-70);
+  --outline-variant: var(--neutral-variant-80);
   --shadow: var(--neutral-0);
-  --surface-tint-color: var(--md.sys.color.primary);
+  --surface-tint-color: var(--primary);
   --scrim: var(--neutral-0);
-  --app-text-highlight: rgba(17, 159, 224, 1);
-  --primary-container: var(--primary);
+  --app-text-highlight: rgba(172, 18, 18, 0.8);
   --primary-dark-container: var(--primary-30);
-  --primary-light-container: var(--primary-50);
-  --secondary-container: var(--secondary);
-  --secondary-dark-container: var(--secondary-60);
-  --secondary-light-container: var(--secondary-40);
+  --primary-light-container: var(--primary-60);
+  --secondary-dark-container: var(--secondary-50);
+  --secondary-light-container: var(--secondary-80);
   --disabled-text: var(--neutral-70);
-  --background-neutral: var(--neutral-10);
-  --app-main-outline: #fff;
+  --background-neutral: #f3f3f3;
+  --app-main-outline: #000;
 }
 :root[data-accessibility-mode=dyslexia] {
   --font-family: "OpenDyslexic";
@@ -521,8 +527,18 @@ body {
   min-height: 100%;
   padding: 0;
   height: 100%;
+  line-height: 1.6;
+  box-sizing: border-box;
   color: var(--text-color);
   font-family: var(--font-family);
+}
+html *,
+html *::before,
+html *::after,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
 }
 
 html {

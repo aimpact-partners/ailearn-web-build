@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/ailearn-app',
-				version: 'test-0.0.32-04',
+				version: '0.0.33.testing-01',
 				languages: {
 					default: 'en',
 					supported: ['en', 'es', 'pr'],
@@ -20,7 +20,7 @@ System.register([], function (_export, _context) {
 					container: 'file',
 					project: 'ailearn-estrada',
 					APP_NAME: 'RVD.AI',
-					APP_LOGO: '/assets/RVD.AI.Branding.Negative.png',
+					APP_LOGO: '/assets/rvd/rvd.png',
 					url: 'https://documents-rb5caohzgq-wl.a.run.app/upload',
 					DOCUMENTS_SERVER: 'https://documents-rb5caohzgq-wl.a.run.app',
 					CHAT_API_SERVER: 'https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload',
