@@ -11,7 +11,7 @@ System.register([], function (_export, _context) {
           "default": "en",
           "supported": ["en", "es"]
         },
-        "environment": "quality",
+        "environment": "production",
         "global.css": true,
         "layout": "default-layout",
         "params": {
@@ -27,9 +27,9 @@ System.register([], function (_export, _context) {
             "key": "ebe05ca0a4d9aafb4024d0666471a0c7",
             "id": "pNInz6obpgDQGcFmaJgB"
           },
-          "baseUrl": "https://beta.app.rvd.ai",
+          "baseUrl": "https://app.rvd.ai",
           "apis": {
-            "chat": "https://chat-api-http-beta-pjv2z6fura-uc.a.run.app"
+            "chat": "https://chat-api-http-pjv2z6fura-uc.a.run.app"
           }
         },
         "ssr": {},

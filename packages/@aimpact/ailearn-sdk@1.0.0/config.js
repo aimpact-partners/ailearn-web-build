@@ -5,24 +5,16 @@ System.register([], function (_export, _context) {
     setters: [],
     execute: function () {
       _export("default", {
-        "package": "@aimpact/chat-sdk",
+        "package": "@aimpact/ailearn-sdk",
         "version": "1.0.0",
         "languages": {
           "default": "en",
-          "supported": ["en", "es", "pr"]
+          "supported": ["en", "es"]
         },
         "environment": "production",
         "global.css": true,
-        "layout": "main-layout",
         "params": {
-          "elevenlabs": {
-            "key": "ebe05ca0a4d9aafb4024d0666471a0c7",
-            "id": "pNInz6obpgDQGcFmaJgB"
-          },
-          "baseUrl": "https://app.rvd.ai",
-          "apis": {
-            "chat": "https://chat-api-http-pjv2z6fura-uc.a.run.app"
-          }
+          "ailearnAPI": "https://ailearn-http-d7gw5k2ica-uc.a.run.app"
         },
         "ssr": {},
         "backend": {}
