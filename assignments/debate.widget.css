@@ -1,2 +1,37 @@
-.ailearn-chat-container{overflow:hidden}.conversation__title{padding:0 0 1rem;border-bottom:1px solid var(--outline);margin-bottom:1rem}.character-card__container{min-width:30%;border:1px solid var(--neutral-variant-80);border-radius:1.3rem;overflow:hidden;background-color:#fff;margin-top:3rem;padding:3rem;text-align:center}.character-card__container .character-card__actions{align-items:center;justify-content:center}.character-card__container .character-card__button{border-radius:2rem;padding:.8rem 1.8rem .8rem 1.8rem}aimpact-chat-control{width:100%;min-height:calc(100svh - 210px);flex-grow:1}
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHdCQUNDLFNBQUEsT0FHRCxxQkFDQyxRQUFBLEVBQUEsRUFBQSxLQUNBLGNBQUEsSUFBQSxNQUFBLGVBQ0EsY0FBQSxLQUdELDJCQUNDLFVBQUEsSUFDQSxPQUFBLElBQUEsTUFBQSwwQkFDQSxjQUFBLE9BQ0EsU0FBQSxPQUNBLGlCQUFBLEtBQ0EsV0FBQSxLQUNBLFFBQUEsS0FDQSxXQUFBLE9BRUEsb0RBQ0MsWUFBQSxPQUNBLGdCQUFBLE9BR0QsbURBQ0MsY0FBQSxLQUNBLFFBQUEsTUFBQSxPQUFBLE1BQUEsT0FHRixxQkFFQyxNQUFBLEtBQ0EsV0FBQSxxQkFDQSxVQUFBIn0= */
+.ailearn-chat-container {
+  overflow: hidden;
+}
+
+.conversation__title {
+  padding: 0 0 1rem;
+  border-bottom: 1px solid var(--outline);
+  margin-bottom: 1rem;
+}
+
+.character-card__container {
+  min-width: 30%;
+  border: 1px solid var(--neutral-variant-80);
+  border-radius: 1.3rem;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 3rem;
+  padding: 3rem;
+  text-align: center;
+}
+.character-card__container .character-card__actions {
+  align-items: center;
+  justify-content: center;
+}
+.character-card__container .character-card__button {
+  border-radius: 2rem;
+  padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+}
+
+aimpact-chat-control {
+  width: 100%;
+  min-height: calc(100svh - 210px);
+  flex-grow: 1;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7OztBQUdEO0VBQ0M7RUFDQTtFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQTs7O0FBR0Y7RUFFQztFQUNBO0VBQ0EiLCJmaWxlIjoiIn0= */

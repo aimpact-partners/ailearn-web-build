@@ -1,2 +1,225 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle","dexie@3.2.7","@beyond-js/events@0.0.4/events","@beyond-js/kernel@0.1.9/core"],function(t,e){"use strict";var r,s,a,n,i,o;return t({DatabaseManager:void 0,DBManager:void 0}),{setters:[function(e){r=e},function(e){s=e},function(e){a=e},function(e){n=e}],execute:function(){o=r.Bundle,(i=new o({module:{vspecifier:"@beyond-js/reactive@1.1.12/database"},type:"ts"},e.meta.url).package()).dependencies.update([["dexie",s],["@beyond-js/events/events",a],["@beyond-js/kernel/core",n]]),(o=new Map).set("./database",{hash:1160722982,creator:function(e,r){Object.defineProperty(r,"__esModule",{value:!0}),r.Database=void 0;var s=e("dexie"),t=e("@beyond-js/events/events"),a=e("@beyond-js/kernel/core");class n extends t.Events{#version=1;#db;get db(){return this.#db}#promise;#currentVersion;static#instance;#ready;#name;get ready(){return this.#ready}constructor(e,r){super(),this.#name=e,this.#version=r,this.create(),this.#promise=new a.PendingPromise,globalThis.db=this.#db}async create(){this.#db=new s.default(this.#name),this.#currentVersion=this.#db.version(this.#version)}#onReady=()=>{this.#ready=!0,this.#promise.resolve(),this.#promise=void 0};#onError=e=>{throw this.#promise.resolve(),this.#promise=void 0,new Error(e)};#nextVersion(){return this.#version++,this.#version}register=async s=>{Object.keys(s).forEach(e=>{var r=s[e].split(","),r=new Set(r);r.add("offline"),r.add("instanceId"),r.add("isDeleted"),r.add("isNew"),s[e]=Array.from(r).join(",")}),this.#currentVersion.stores(s);try{return await this.#db.open(),this.#db}catch(e){console.error("error registering",e)}}}r.Database=n}}),o.set("./index",{hash:1682080146,creator:function(e,r){Object.defineProperty(r,"__esModule",{value:!0}),r.DatabaseManager=r.DBManager=void 0;var s=e("dexie"),t=e("@beyond-js/events/events"),a=e("@beyond-js/kernel/core"),n=e("./database");class i extends t.Events{#promise;#ready;get ready(){return this.#ready}#db;get db(){return this.#db}#databases=new Map;constructor(){super();var e=new s.default("ReactiveDatabase");(this.#db=e).version(1).stores({schemas:"name, table, fields"}),e.open().then(this.#onFinished).catch(this.#onError)}#onFinished=()=>{this.trigger("loaded.reactive.database"),this.#promise&&this.#promise.resolve()};#onError=e=>{this.trigger("error"),console.error(e)};load(){if(this.ready)return this.ready;if(this.#promise)return this.#promise;this.#promise=new a.PendingPromise;this.on("finished",()=>{this.#ready=!0,this.#promise.resolve(),this.#promise=void 0}),this.on("error",()=>{this.#promise.reject(),this.#promise=void 0})}async open(e){var r,s;if(e)return[r,s=1]=e.split("@"),this.#databases.has(r)?this.#databases.get(r):(s=new n.Database(r,s),this.#databases.set(r,s),s);throw new Error(`Identifier ${e} was not defined correctly`)}get=e=>this.open(e);async config(e,r){return(await this.open(e)).register(r)}}r.DatabaseManager=i;r.DBManager=new i}}),i.exports.descriptor=[{im:"./index",from:"DatabaseManager",name:"DatabaseManager"},{im:"./index",from:"DBManager",name:"DBManager"}],i.exports.process=function({require:e,prop:r,value:s}){!e&&"DatabaseManager"!==r||t("DatabaseManager",e?e("./index").DatabaseManager:s),!e&&"DBManager"!==r||t("DBManager",e?e("./index").DBManager:s)},t("__beyond_pkg",i),t("hmr",new function(){this.on=(e,r)=>i.hmr.on(e,r),this.off=(e,r)=>i.hmr.off(e,r)}),i.initialise(o)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9kYXRhYmFzZS50cyIsIi9pbmRleC50cyJdLCJuYW1lcyI6WyJfZGV4aWUiLCJyZXF1aXJlIiwiX2V2ZW50cyIsIl9jb3JlIiwiRGF0YWJhc2UiLCJFdmVudHMiLCIjdmVyc2lvbiIsIiNkYiIsImRiIiwidGhpcyIsIiNwcm9taXNlIiwiI2N1cnJlbnRWZXJzaW9uIiwiI2luc3RhbmNlIiwiI3JlYWR5IiwiI25hbWUiLCJyZWFkeSIsImNvbnN0cnVjdG9yIiwibmFtZSIsInZlcnNpb24iLCJzdXBlciIsImNyZWF0ZSIsIlBlbmRpbmdQcm9taXNlIiwiZ2xvYmFsVGhpcyIsImRlZmF1bHQiLCIjb25SZWFkeSIsInJlc29sdmUiLCJ1bmRlZmluZWQiLCIjb25FcnJvciIsImVycm9yIiwiRXJyb3IiLCIjbmV4dFZlcnNpb24iLCJyZWdpc3RlciIsImRhdGEiLCJPYmplY3QiLCJrZXlzIiwiZm9yRWFjaCIsInN0b3JlIiwiaXRlbXMiLCJzcGxpdCIsImZpbHRlciIsIlNldCIsImFkZCIsIkFycmF5IiwiZnJvbSIsImpvaW4iLCJzdG9yZXMiLCJhd2FpdCIsIm9wZW4iLCJlIiwiY29uc29sZSIsImV4cG9ydHMiLCJfZGF0YWJhc2UiLCJEYXRhYmFzZU1hbmFnZXIiLCIjZGF0YWJhc2VzIiwiTWFwIiwic2NoZW1hcyIsInRoZW4iLCIjb25GaW5pc2hlZCIsImNhdGNoIiwidHJpZ2dlciIsImVyciIsImxvYWQiLCJvbiIsIm9uRmluaXNoZWQiLCJyZWplY3QiLCJpZGVudGlmaWVyIiwic2NoZW1hIiwiaGFzIiwiZ2V0Iiwic2V0IiwiY29uZmlnIiwiREJNYW5hZ2VyIl0sIm1hcHBpbmdzIjoieXBCQUFBLElBQUFBLEVBQUFDLEVBQUEsT0FBQSxFQUNBQyxFQUFBRCxFQUFBLDBCQUFBLEVBQ0FFLEVBQUFGLEVBQUEsd0JBQUEsUUFFYUcsVUFBaUJGLEVBQUFHLE9BQzdCQyxTQUFXLEVBRVhDLElBQ0FDLFNBQ0MsT0FBT0MsS0FBS0YsR0FDYixDQUNBRyxTQUNBQyxn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
+System.register(["@beyond-js/kernel@0.1.9/bundle", "dexie@3.2.7", "@beyond-js/events@0.0.4/events", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, DatabaseManager, DBManager, __beyond_pkg, hmr;
+  _export({
+    DatabaseManager: void 0,
+    DBManager: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel019Bundle) {
+      dependency_0 = _beyondJsKernel019Bundle;
+    }, function (_dexie2) {
+      dependency_1 = _dexie2;
+    }, function (_beyondJsEvents004Events) {
+      dependency_2 = _beyondJsEvents004Events;
+    }, function (_beyondJsKernel019Core) {
+      dependency_3 = _beyondJsKernel019Core;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["dexie", "3.2.3"], ["uuid", "9.0.0"], ["@beyond-js/ssr", "0.1.2"], ["@types/dexie", "1.3.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.0"], ["@types/react-dom", "18.2.0"], ["sqlite", "4.1.2"], ["sqlite3", "5.1.6"], ["@beyond-js/reactive", "1.1.12"], ["@aimpact/ailearn-app", "0.0.36"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@beyond-js/reactive@1.1.12/database"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['dexie', dependency_1], ['@beyond-js/events/events', dependency_2], ['@beyond-js/kernel/core', dependency_3]]);
+      ims = new Map();
+      /**************************
+      INTERNAL MODULE: ./database
+      **************************/
+      ims.set('./database', {
+        hash: 1160722982,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Database = void 0;
+          var _dexie = require("dexie");
+          var _events = require("@beyond-js/events/events");
+          var _core = require("@beyond-js/kernel/core");
+          class Database extends _events.Events {
+            #version = 1;
+            #db;
+            get db() {
+              return this.#db;
+            }
+            #promise;
+            #currentVersion;
+            static #instance;
+            #ready;
+            #name;
+            get ready() {
+              return this.#ready;
+            }
+            constructor(name, version) {
+              super();
+              this.#name = name;
+              this.#version = version;
+              this.create();
+              this.#promise = new _core.PendingPromise();
+              globalThis.db = this.#db;
+            }
+            async create() {
+              this.#db = new _dexie.default(this.#name);
+              this.#currentVersion = this.#db.version(this.#version);
+            }
+            #onReady = () => {
+              this.#ready = true;
+              this.#promise.resolve();
+              this.#promise = undefined;
+            };
+            #onError = error => {
+              this.#promise.resolve();
+              this.#promise = undefined;
+              throw new Error(error);
+            };
+            #nextVersion() {
+              this.#version++;
+              return this.#version;
+            }
+            register = async data => {
+              Object.keys(data).forEach(store => {
+                const items = data[store].split(',');
+                const filter = new Set(items);
+                filter.add('offline');
+                filter.add('instanceId');
+                filter.add('isDeleted');
+                filter.add('isNew');
+                data[store] = Array.from(filter).join(',');
+              });
+              this.#currentVersion.stores(data);
+              try {
+                await this.#db.open();
+                return this.#db;
+              } catch (e) {
+                console.error('error registering', e);
+              }
+            };
+          }
+          exports.Database = Database;
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 1682080146,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DatabaseManager = exports.DBManager = void 0;
+          var _dexie = require("dexie");
+          var _events = require("@beyond-js/events/events");
+          var _core = require("@beyond-js/kernel/core");
+          var _database = require("./database");
+          /*bundle */
+          class DatabaseManager extends _events.Events {
+            #promise;
+            #ready;
+            get ready() {
+              return this.#ready;
+            }
+            #db;
+            get db() {
+              return this.#db;
+            }
+            #databases = new Map();
+            constructor() {
+              super();
+              const db = new _dexie.default('ReactiveDatabase');
+              this.#db = db;
+              db.version(1).stores({
+                schemas: 'name, table, fields'
+              });
+              db.open().then(this.#onFinished).catch(this.#onError);
+            }
+            #onFinished = () => {
+              this.trigger('loaded.reactive.database');
+              if (this.#promise) this.#promise.resolve();
+            };
+            #onError = err => {
+              this.trigger('error');
+              console.error(err);
+            };
+            load() {
+              if (this.ready) return this.ready;
+              if (this.#promise) return this.#promise;
+              this.#promise = new _core.PendingPromise();
+              const onFinished = () => {
+                this.#ready = true;
+                this.#promise.resolve();
+                this.#promise = undefined;
+              };
+              this.on('finished', onFinished);
+              this.on('error', () => {
+                this.#promise.reject();
+                this.#promise = undefined;
+              });
+            }
+            async open(identifier) {
+              if (!identifier) {
+                throw new Error(`Identifier ${identifier} was not defined correctly`);
+              }
+              let [name, version = 1] = identifier.split('@');
+              if (!this.#databases.has(name)) {
+                const schema = new _database.Database(name, version);
+                this.#databases.set(name, schema);
+                return schema;
+              }
+              return this.#databases.get(name);
+            }
+            get = name => this.open(name);
+            async config(name, stores) {
+              const schema = await this.open(name);
+              return schema.register(stores);
+            }
+          }
+          exports.DatabaseManager = DatabaseManager;
+          /* bundle */
+          const DBManager = exports.DBManager = new DatabaseManager();
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "DatabaseManager",
+        "name": "DatabaseManager"
+      }, {
+        "im": "./index",
+        "from": "DBManager",
+        "name": "DBManager"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'DatabaseManager') && _export("DatabaseManager", DatabaseManager = require ? require('./index').DatabaseManager : value);
+        (require || prop === 'DBManager') && _export("DBManager", DBManager = require ? require('./index').DBManager : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGV4aWUiLCJyZXF1aXJlIiwiX2V2ZW50cyIsIl9jb3JlIiwiRGF0YWJhc2UiLCJFdmVudHMiLCJ2ZXJzaW9uIiwiZGIiLCJwcm9taXNlIiwiY3VycmVudFZlcnNpb24iLCJpbnN0YW5jZSIsInJlYWR5IiwibmFtZSIsImNvbnN0cnVjdG9yIiwiY3JlYXRlIiwiUGVuZGluZ1Byb21pc2UiLCJnbG9iYWxUaGlzIiwiZGVmYXVsdCIsIm9uUmVhZHkiLCIjb25SZWFkeSIsInJlc29sdmUiLCJ1bmRlZmluZWQiLCJvbkVycm9yIiwiZXJyb3IiLCJFcnJvciIsIm5leHRWZXJzaW9uIiwiI25leHRWZXJzaW9uIiwicmVnaXN0ZXIiLCJkYXRhIiwiT2JqZWN0Iiwia2V5cyIsImZvckVhY2giLCJzdG9yZSIsIml0ZW1zIiwic3BsaXQiLCJmaWx0ZXIiLCJTZXQiLCJhZGQiLCJBcnJheSIsImZyb20iLCJqb2luIiwic3RvcmVzIiwib3BlbiIsImUiLCJjb25zb2xlIiwiZXhwb3J0cyIsIl9kYXRhYmFzZSIsIkRhdGFiYXNlTWFuYWdlciIsImRhdGFiYXNlcyIsIk1hcCIsInNjaGVtYXMiLCJ0aGVuIiwib25GaW5pc2hlZCIsImNhdGNoIiwiI29uRmluaXNoZWQiLCJ0cmlnZ2VyIiwiZXJyIiwibG9hZCIsIm9uIiwicmVqZWN0IiwiaWRlbnRpZmllciIsImhhcyIsInNjaGVtYSIsInNldCIsImdldCIsImNvbmZpZyIsIkRCTWFuYWdlciJdLCJzb3VyY2VzIjpbIi9kYXRhYmFzZS50cyIsIi9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLE1BQUEsR0FBQUMsT0FBQTtVQUNBLElBQUFDLE9BQUEsR0FBQUQsT0FBQTtVQUNBLElBQUFFLEtBQUEsR0FBQUYsT0FBQTtVQUVNLE1BQU9HLFFBQVMsU0FBUUYsT0FBQSxDQUFBRyxN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

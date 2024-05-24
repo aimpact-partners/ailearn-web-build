@@ -1,2 +1,18 @@
-.bg-box{min-height:40px;width:100%}.button-row{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}.template__container{padding-bottom:100px}
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLFFBQ0MsV0FBQSxLQUNBLE1BQUEsS0FFRCxZQUNDLFFBQUEsS0FDQSxVQUFBLEtBQ0EsSUFBQSxNQUNBLE9BQUEsS0FBQSxFQUdELHFCQUNDLGVBQUEifQ== */
+.bg-box {
+  min-height: 40px;
+  width: 100%;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.template__container {
+  padding-bottom: 100px;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTs7O0FBRUQ7RUFDQztFQUNBO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQyIsImZpbGUiOiIifQ== */

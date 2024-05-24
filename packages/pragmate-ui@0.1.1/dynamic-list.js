@@ -1,2 +1,432 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle","@beyond-js/kernel@0.1.9/styles","react@18.2.0","pragmate-ui@0.1.1/components","framer-motion@10.18.0","pragmate-ui@0.1.1/icons"],function(a,e){"use strict";var t,n,r,i,o,s,c,m;return a({AddDynamicItem:void 0,Header:void 0,DynamicItem:void 0,List:void 0,useDynamicListContext:void 0,Provider:void 0}),{setters:[function(e){t=e},function(e){n=e},function(e){r=e},function(e){i=e},function(e){o=e},function(e){s=e}],execute:function(){m=t.Bundle,(c=new m({module:{vspecifier:"pragmate-ui@0.1.1/dynamic-list"},type:"code"},e.meta.url).package()).dependencies.update([["@beyond-js/kernel/styles",n],["react",r],["pragmate-ui/components",i],["framer-motion",o],["pragmate-ui/icons",s]]),brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@0.1.1/dynamic-list"),(m=new Map).set("./components/add-item",{hash:2399851570,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.AddDynamicItem=function({}){var[,,]=n.default.useState(),e=(0,r.useDynamicListContext)()["addItem"];return n.default.createElement(a.Button,{variant:"primary",onClick:e},"Add")};var n=e("react"),a=e("pragmate-ui/components"),r=e("../context")}}),m.set("./components/dragabble-list",{hash:792233935,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.DraggableList=function({children:e,className:t=""}){const{values:n,setValues:a}=(0,o.useDynamicListContext)();return r.default.createElement(i.Reorder.Group,{className:t,values:n,onReorder:e=>{a(e)}},e)};var r=e("react"),i=e("framer-motion"),o=e("../context")}}),m.set("./components/header",{hash:2912242721,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Header=function({children:e}){var[,,]=n.default.useState(),t=(0,a.useDynamicListContext)()["addItem"];return n.default.createElement("header",{className:"pui-dynamic-list__header"},n.default.createElement(r.Button,{variant:"primary",onClick:t},"Add"),e)};var n=e("react"),a=e("../context"),r=e("pragmate-ui/components")}}),m.set("./components/item",{hash:3585517604,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.DynamicItem=function(e){const{children:t,index:n,identifier:a}=e,{removeItem:r,draggable:i,Item:o,registerRef:s}=(0,u.useDynamicListContext)(),c={className:"pui-dynamic-list__item",...i?{value:e.identifier}:{}},m=d.default.createElement(o,{...e},d.default.createElement("div",{className:"item__content"},t),d.default.createElement("section",{className:"item__actions"},d.default.createElement(l.IconButton,{icon:"delete",onClick:()=>r(a.id)})));return d.default.createElement("div",{...c,key:n,ref:e=>s(n,e)},m)};var d=e("react"),u=e("../context"),l=e("pragmate-ui/icons")}}),m.set("./components/list",{hash:4287536703,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.List=function({className:e}){const{name:t,values:r,setValues:i}=(0,s.useDynamicListContext)(),n={className:"pui-dynamic-list "+e},a=r.map((e,a)=>{return o.default.createElement(c.DynamicItem,{value:e,key:t+"."+a,index:a,identifier:e,setValue:e=>{return t=a,e=e,(n=[...r])[t]=e,void i(n);var t,n}},e)});return o.default.createElement("div",{...n},a)};var o=e("react"),s=e("../context"),c=e("./item")}}),m.set("./context",{hash:4099544747,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.useDynamicListContext=t.DynamicListContext=void 0;var n=e("react");const a=t.DynamicListContext=n.default.createContext({});t.useDynamicListContext=()=>n.default.useContext(a)}}),m.set("./provider",{hash:3335777309,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Provider=function({name:t,onChange:a,draggable:e,children:n,value:r,Item:i,className:o}){r&&!Array.isArray(r)&&console.warn("Warning: value prop must be an array or undefined.");const s=()=>"";r?.length||(r=[""]);const[c,m]=y.default.useState([...r]),[d,u]=y.default.useState(e),l=(0,y.useRef)([]),f=(y.default.useEffect(()=>{m(r)},[r.length]),{addItem:()=>{var e=[...c,""];console.log(2,e),m(e)},draggable:d,refs:l,toggleDraggable:()=>u(!d),removeItem:n=>{var e=c.filter((e,t)=>t!==n),e=(m(e),{name:t,value:e});a?.({target:e,currentTarget:e})},name:t,setItems:m,values:c,registerRef:(e,t)=>{l.current[e]=t},setValue:(e,t)=>{var n=[...c];n[e]=t,m(n)},setValues:e=>{m(e);e={name:t,value:e};a?.({target:e,currentTarget:e})},getDefaultValue:s,items:c,Item:i});return y.default.createElement(v.DynamicListContext.Provider,{value:f},y.default.createElement("div",{className:o},n))};var y=e("react"),v=e("./context")}}),m.set("./types",{hash:3983678313,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0})}}),c.exports.descriptor=[{im:"./components/add-item",from:"AddDynamicItem",name:"AddDynamicItem"},{im:"./components/header",from:"Header",name:"Header"},{im:"./components/item",from:"DynamicItem",name:"DynamicItem"},{im:"./components/list",from:"List",name:"List"},{im:"./context",from:"useDynamicListContext",name:"useDynamicListContext"},{im:"./provider",from:"Provider",name:"Provider"}],c.exports.process=function({require:e,prop:t,value:n}){!e&&"AddDynamicItem"!==t||a("AddDynamicItem",e?e("./components/add-item").AddDynamicItem:n),!e&&"Header"!==t||a("Header",e?e("./components/header").Header:n),!e&&"DynamicItem"!==t||a("DynamicItem",e?e("./components/item").DynamicItem:n),!e&&"List"!==t||a("List",e?e("./components/list").List:n),!e&&"useDynamicListContext"!==t||a("useDynamicListContext",e?e("./context").useDynamicListContext:n),!e&&"Provider"!==t||a("Provider",e?e("./provider").Provider:n)},a("__beyond_pkg",c),a("hmr",new function(){this.on=(e,t)=>c.hmr.on(e,t),this.off=(e,t)=>c.hmr.off(e,t)}),c.initialise(m)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi90cy9jb21wb25lbnRzL2FkZC1pdGVtLnRzeCIsIi90cy9jb21wb25lbnRzL2RyYWdhYmJsZS1saXN0LnRzeCIsIi90cy9jb21wb25lbnRzL2hlYWRlci50c3giLCIvdHMvY29tcG9uZW50cy9pdGVtLnRzeCIsIi90cy9jb21wb25lbnRzL2xpc3QudHN4IiwiL3RzL2NvbnRleHQudHN4IiwiL3RzL3Byb3ZpZGVyLnRzeCIsIi90eXBlcy50cyJdLCJuYW1lcyI6WyJfcmVhY3QiLCJkZWZhdWx0IiwidXNlU3RhdGUiLCJhZGRJdGVtIiwiX2NvbnRleHQiLCJ1c2VEeW5hbWljTGlzdENvbnRleHQiLCJjcmVhdGVFbGVtZW50IiwiX2NvbXBvbmVudHMiLCJCdXR0b24iLCJ2YXJpYW50Iiwib25DbGljayIsInJlcXVpcmUiLCJjaGlsZHJlbiIsImNsYXNzTmFtZSIsInZhbHVlcyIsInNldFZhbHVlcyIsIl9mcmFtZXJNb3Rpb24iLCJSZW9yZGVyIiwiR3JvdXAiLCJvblJlb3JkZXIiLCJwcm9wcyIsImluZGV4IiwiaWRlbnRpZmllciIsInJlbW92ZUl0ZW0iLCJkcmFnZ2FibGUiLCJJdGVtIiwicmVnaXN0ZXJSZWYiLCJhdHRycyIsInZhbHVlIiwiYm9keSIsIl9pY29ucyIsIkljb25CdXR0b24iLCJpY29uIiwib25SZW1vdmUiLCJpZCIsImtleSIsInJlZiIsImVsZW1lbnQiLCJuYW1lIiwib3V0cHV0IiwibWFwIiwiaXRlbSIsIl9pdGVtIiwiRHluYW1pY0l0ZW0iLCJzZXRWYWx1ZSIsImhhbmRsZUNoYW5nZSIsIm5ld1ZhbHVlIiwiRHluYW1pY0xpc3RDb250ZXh0IiwiZXhwb3J0cyIsImNyZWF0ZUNvbnRleHQiLCJ1c2VDb250ZXh0Iiwib25DaGFuZ2UiLCJBcnJheSIsImlzQXJyYXkiLCJjb25zb2xlIiwid2FybiIsImdldERlZmF1bHRWYWx1ZSIsImxlbmd0aCIsIml0ZW1zIiwic2V0SXRlbXMiLCJpc0RyYWdnYWJsZSIsInNldElzRHJhZ2dhYmxlIiwicmVmcyIsInVzZVJlZiIsInByb3ZpZGVyRGF0YSIsInVzZUVmZmVjdCIsImxvZyIsInRvZ2dsZURyYWdnYWJsZSIsIm5ld0l0ZW1zIiwiZmlsdGVyIiwiXyIsImkiLCJ0YXJnZXQiLCJjdXJyZW50VGFyZ2V0IiwiY3VycmVudCIsIlByb3ZpZGVyIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiXSwibWFwcGluZ3MiOiJvOEJBSWtCLFNBQXlCLElBQzFDLEdBQU0sQ0FBQSxDQUFBLEdBQW9CQSxFQUFBQyxRQUFNQyxTQUFRLEVBQ2hDQyxHQUFZLEVBQUFDLEVBQUFDLHVCQUFxQixFQUFqQ0YsV0FFUixPQUNDSCxFQUFBQyxRQUFBSyxjQUFDQyxFQUFBQyxPQUFNLENBQUNDLFFBQVEsVUFBVUMsUUFBU1AsQ0FBTyxFQUFBLEtBQUEsQ0FJNUMsRUFiQSxJQUFBSCxFQUFBVyxFQUFBLE9BQUEsRUFFQUosRUFBQUksRUFBQSx3QkFBQSxFQUNBUCxFQUFBTyxFQUFBLFlBQUEsQywrSUNDTSxTQUF3QixDQUFFQyxTQUFBQSxFQUFVQyxVQUFBQSxFQUFZLEVBQUUsR0FDdkQsS0FBTSxDQUFFQyxPQUFBQSxFQUFRQyxVQUFBQSxDQUFTLEdBQUssRUFBQVgsRUFBQUMsdUJBQXFCLEVBRW5ELE9BQ0NMLEVBQUFDLFFBQUFLLGNBQUNVLEVBQUFDLFFBQVFDLE1BQUssQ0FDYkwsVUFBV0EsRUFDWEMsT0FBUUEsRUFDUkssVUFBV0wsSUFDVkMsRUFBVUQsQ0FBTSxDQUNqQixDQUFDLEVBRUFGLENBQVEsQ0FHWixFQWxCQSxJQUFBWixFQUFBVyxFQUFBLE9BQUEsRUFDQUssRUFBQUwsRUFBQSxlQUFBLEVBQ0FQLEVBQUFPLEVBQUEsWUFBQSxDLGlJQ0NrQixTQUFpQixDQUFFQyxTQUFBQSxDQUFRLEdBQzVDLEdBQU0sQ0FBQSxDQUFBLEdBQW9CWixFQUFBQyxRQUFNQyxTQUFRLEVBQ2hDQyxHQUFZLEVBQUFDLEVBQUFDLHVCQUFxQixFQUFqQ0YsV0FFUixPQUNDSCxFQUFBQyxRQUFBSyxjQUFBLFNBQUEsQ0FBUU8sVUFB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
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "pragmate-ui@0.1.1/components", "framer-motion@10.18.0", "pragmate-ui@0.1.1/icons"], function (_export, _context2) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, AddDynamicItem, Header, DynamicItem, List, useDynamicListContext, Provider, __beyond_pkg, hmr;
+  _export({
+    AddDynamicItem: void 0,
+    Header: void 0,
+    DynamicItem: void 0,
+    List: void 0,
+    useDynamicListContext: void 0,
+    Provider: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel019Bundle) {
+      dependency_0 = _beyondJsKernel019Bundle;
+    }, function (_beyondJsKernel019Styles) {
+      dependency_1 = _beyondJsKernel019Styles;
+    }, function (_react2) {
+      dependency_2 = _react2;
+    }, function (_pragmateUi011Components) {
+      dependency_3 = _pragmateUi011Components;
+    }, function (_framerMotion2) {
+      dependency_4 = _framerMotion2;
+    }, function (_pragmateUi011Icons) {
+      dependency_5 = _pragmateUi011Icons;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/reactive", "1.1.4"], ["@beyond-js/widgets", "0.1.6"], ["framer-motion", "11.0.25"], ["is-mobile", "4.0.0"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-select", "5.8.0"], ["socket.io-client", "4.6.1"], ["swiper", "10.3.0"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.0.37"], ["@types/react-dom", "18.0.11"], ["pragmate-ui", "0.1.1"], ["@aimpact/ailearn-app", "0.0.36"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@0.1.1/dynamic-list"
+        },
+        "type": "code"
+      }, _context2.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2], ['pragmate-ui/components', dependency_3], ['framer-motion', dependency_4], ['pragmate-ui/icons', dependency_5]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@0.1.1/dynamic-list');
+      ims = new Map();
+      /*************************************
+      INTERNAL MODULE: ./components/add-item
+      *************************************/
+      ims.set('./components/add-item', {
+        hash: 2399851570,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.AddDynamicItem = AddDynamicItem;
+          var _react = require("react");
+          var _components = require("pragmate-ui/components");
+          var _context = require("../context");
+          /*bundle */
+          function AddDynamicItem({
+            children
+          }) {
+            const [value, setValue] = _react.default.useState();
+            const {
+              addItem
+            } = (0, _context.useDynamicListContext)();
+            const providerData = {};
+            return _react.default.createElement(_components.Button, {
+              variant: 'primary',
+              onClick: addItem
+            }, "Add");
+          }
+        }
+      });
+
+      /*******************************************
+      INTERNAL MODULE: ./components/dragabble-list
+      *******************************************/
+
+      ims.set('./components/dragabble-list', {
+        hash: 792233935,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DraggableList = DraggableList;
+          var _react = require("react");
+          var _framerMotion = require("framer-motion");
+          var _context = require("../context");
+          function DraggableList({
+            children,
+            className = ''
+          }) {
+            const {
+              values,
+              setValues
+            } = (0, _context.useDynamicListContext)();
+            return _react.default.createElement(_framerMotion.Reorder.Group, {
+              className: className,
+              values: values,
+              onReorder: values => {
+                setValues(values);
+              }
+            }, children);
+          }
+        }
+      });
+
+      /***********************************
+      INTERNAL MODULE: ./components/header
+      ***********************************/
+
+      ims.set('./components/header', {
+        hash: 2912242721,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Header = Header;
+          var _react = require("react");
+          var _context = require("../context");
+          var _components = require("pragmate-ui/components");
+          /*bundle */
+          function Header({
+            children
+          }) {
+            const [value, setValue] = _react.default.useState();
+            const {
+              addItem
+            } = (0, _context.useDynamicListContext)();
+            const providerData = {};
+            return _react.default.createElement("header", {
+              className: 'pui-dynamic-list__header'
+            }, _react.default.createElement(_components.Button, {
+              variant: 'primary',
+              onClick: addItem
+            }, "Add"), children);
+          }
+        }
+      });
+
+      /*********************************
+      INTERNAL MODULE: ./components/item
+      *********************************/
+
+      ims.set('./components/item', {
+        hash: 3585517604,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DynamicItem = DynamicItem;
+          var _react = require("react");
+          var _context = require("../context");
+          var _icons = require("pragmate-ui/icons");
+          /*bundle */
+          function DynamicItem(props) {
+            const {
+              children,
+              index,
+              identifier
+            } = props;
+            const {
+              removeItem,
+              draggable,
+              refs,
+              Item,
+              registerRef
+            } = (0, _context.useDynamicListContext)();
+            const onRemove = () => removeItem(identifier.id);
+            const attrs = {
+              className: 'pui-dynamic-list__item',
+              ...(draggable ? {
+                value: props.identifier
+              } : {})
+            };
+            const body = _react.default.createElement(Item, {
+              ...props
+            }, _react.default.createElement("div", {
+              className: 'item__content'
+            }, children), _react.default.createElement("section", {
+              className: 'item__actions'
+            }, _react.default.createElement(_icons.IconButton, {
+              icon: 'delete',
+              onClick: onRemove
+            })));
+            const register = element => registerRef(index, element);
+            return _react.default.createElement("div", {
+              ...attrs,
+              key: index,
+              ref: register
+            }, body);
+          }
+        }
+      });
+
+      /*********************************
+      INTERNAL MODULE: ./components/list
+      *********************************/
+
+      ims.set('./components/list', {
+        hash: 4287536703,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.List = List;
+          var _react = require("react");
+          var _context = require("../context");
+          var _item = require("./item");
+          /*bundle*/
+          function List({
+            className
+          }) {
+            const {
+              draggable,
+              name,
+              values,
+              setValues
+            } = (0, _context.useDynamicListContext)();
+            const attrs = {
+              className: `pui-dynamic-list ${className}`
+            };
+            const handleChange = (index, value) => {
+              const newValue = [...values];
+              newValue[index] = value;
+              setValues(newValue);
+            };
+            const output = values.map((item, index) => {
+              const setValue = value => handleChange(index, value);
+              return _react.default.createElement(_item.DynamicItem, {
+                value: item,
+                key: `${name}.${index}`,
+                index: index,
+                identifier: item,
+                setValue: setValue
+              }, item);
+            });
+            const Container = 'div';
+            return _react.default.createElement(Container, {
+              ...attrs
+            }, output);
+          }
+        }
+      });
+
+      /*************************
+      INTERNAL MODULE: ./context
+      *************************/
+
+      ims.set('./context', {
+        hash: 4099544747,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useDynamicListContext = exports.DynamicListContext = void 0;
+          var _react = require("react");
+          const DynamicListContext = exports.DynamicListContext = _react.default.createContext({});
+          /*bundle*/
+          const useDynamicListContext = () => _react.default.useContext(DynamicListContext);
+          exports.useDynamicListContext = useDynamicListContext;
+        }
+      });
+
+      /**************************
+      INTERNAL MODULE: ./provider
+      **************************/
+
+      ims.set('./provider', {
+        hash: 3335777309,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Provider = Provider;
+          var _react = require("react");
+          var _context = require("./context");
+          /*bundle */
+          function Provider({
+            name,
+            onChange,
+            draggable,
+            children,
+            value,
+            Item,
+            className,
+            defaultValue = ''
+          }) {
+            if (value && !Array.isArray(value)) {
+              console.warn('Warning: value prop must be an array or undefined.');
+            }
+            const getDefaultValue = () => '';
+            if (!value?.length) value = [getDefaultValue()];
+            const [items, setItems] = _react.default.useState([...value]);
+            const [isDraggable, setIsDraggable] = _react.default.useState(draggable);
+            const refs = (0, _react.useRef)([]);
+            _react.default.useEffect(() => {
+              setItems(value);
+            }, [value.length]);
+            const providerData = {
+              addItem: () => {
+                const newValue = [...items, getDefaultValue()];
+                console.log(2, newValue);
+                setItems(newValue);
+              },
+              draggable: isDraggable,
+              refs,
+              toggleDraggable: () => setIsDraggable(!isDraggable),
+              removeItem: index => {
+                const newItems = items.filter((_, i) => i !== index);
+                setItems(newItems);
+                const target = {
+                  name,
+                  value: newItems
+                };
+                onChange?.({
+                  target,
+                  currentTarget: target
+                });
+              },
+              name,
+              setItems,
+              values: items,
+              registerRef: (index, ref) => {
+                refs.current[index] = ref;
+              },
+              setValue: (index, value) => {
+                const newItems = [...items];
+                newItems[index] = value;
+                setItems(newItems);
+              },
+              setValues: value => {
+                setItems(value);
+                const target = {
+                  name,
+                  value
+                };
+                onChange?.({
+                  target,
+                  currentTarget: target
+                });
+              },
+              getDefaultValue,
+              items: items,
+              Item
+            };
+            // const Container = draggable ? DraggableList : React.Fragment;
+            return _react.default.createElement(_context.DynamicListContext.Provider, {
+              value: providerData
+            }, _react.default.createElement("div", {
+              className: className
+            }, children));
+          }
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./types
+      ***********************/
+
+      ims.set('./types', {
+        hash: 3983678313,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./components/add-item",
+        "from": "AddDynamicItem",
+        "name": "AddDynamicItem"
+      }, {
+        "im": "./components/header",
+        "from": "Header",
+        "name": "Header"
+      }, {
+        "im": "./components/item",
+        "from": "DynamicItem",
+        "name": "DynamicItem"
+      }, {
+        "im": "./components/list",
+        "from": "List",
+        "name": "List"
+      }, {
+        "im": "./context",
+        "from": "useDynamicListContext",
+        "name": "useDynamicListContext"
+      }, {
+        "im": "./provider",
+        "from": "Provider",
+        "name": "Provider"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'AddDynamicItem') && _export("AddDynamicItem", AddDynamicItem = require ? require('./components/add-item').AddDynamicItem : value);
+        (require || prop === 'Header') && _export("Header", Header = require ? require('./components/header').Header : value);
+        (require || prop === 'DynamicItem') && _export("DynamicItem", DynamicItem = require ? require('./components/item').DynamicItem : value);
+        (require || prop === 'List') && _export("List", List = require ? require('./components/list').List : value);
+        (require || prop === 'useDynamicListContext') && _export("useDynamicListContext", useDynamicListContext = require ? require('./context').useDynamicListContext : value);
+        (require || prop === 'Provider') && _export("Provider", Provider = require ? require('./provider').Provider : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX2NvbXBvbmVudHMiLCJfY29udGV4dCIsIkFkZER5bmFtaWNJdGVtIiwiY2hpbGRyZW4iLCJ2YWx1ZSIsInNldFZhbHVlIiwiZGVmYXVsdCIsInVzZVN0YXRlIiwiYWRkSXRlbSIsInVzZUR5bmFtaWNMaXN0Q29udGV4dCIsInByb3ZpZGVyRGF0YSIsImNyZWF0ZUVsZW1lbnQiLCJCdXR0b24iLCJ2YXJpYW50Iiwib25DbGljayIsIl9mcmFtZXJNb3Rpb24iLCJEcmFnZ2FibGVMaXN0IiwiY2xhc3NOYW1lIiwidmFsdWVzIiwic2V0VmFsdWVzIiwiUmVvcmRlciIsIkdyb3VwIiwib25SZW9yZGVyIiwiSGVhZGVyIiwiX2ljb25zIiwiRHluYW1pY0l0ZW0iLCJwcm9wcyIsImluZGV4IiwiaWRlbnRpZmllciIsInJlbW92ZUl0ZW0iLCJkcmFnZ2FibGUiLCJyZWZzIiwiSXRlbSIsInJlZ2lzdGVyUmVmIiwib25SZW1vdmUiLCJpZCIsImF0dHJzIiwiYm9keSIsIkljb25CdXR0b24iLCJpY29uIiwicmVnaXN0ZXIiLCJlbGVtZW50Iiwia2V5IiwicmVmIiwiX2l0ZW0iLCJMaXN0IiwibmFtZSIsImhhbmRsZUNoYW5nZSIsIm5ld1ZhbHVlIiwib3V0cHV0IiwibWFwIiwiaXRlbSIsIkNvbnRhaW5lciIsIkR5bmFtaWNMaXN0Q29udGV4dCIsImV4cG9ydHMiLCJjcmVhdGVDb250ZXh0IiwidXNlQ29udGV4dCIsIlByb3ZpZGVyIiwib25DaGFuZ2UiLCJkZWZhdWx0VmFsdWUiLCJBcnJheSIsImlzQXJyYXkiLCJjb25zb2xlIiwid2FybiIsImdldERlZmF1bHRWYWx1ZSIsImxlbmd0aCIsIml0ZW1zIiwic2V0SXRlbXMiLCJpc0RyYWdnYWJsZSIsInNldElzRHJhZ2dhYmxlIiwidXNlUmVmIiwidXNlRWZmZWN0IiwibG9nIiwidG9nZ2xlRHJhZ2dhYmxlIiwibmV3SXRlbXMiLCJmaWx0ZXIiLCJfIiwiaSIsInRhcmdldCIsImN1cnJlbnRUYXJnZXQiLCJjdXJyZW50IiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiXSwic291cmNlcyI6WyIvdHMvY29tcG9uZW50cy9hZGQtaXRlbS50c3giLCIvdHMvY29tcG9uZW50cy9kcmFnYWJibGUtbGlzdC50c3giLCIvdHMvY29tcG9uZW50cy9oZWFkZXIudHN4IiwiL3RzL2NvbXBvbmVudHMvaXRlbS50c3giLCIvdHMvY29tcG9uZW50cy9saXN0LnRzeCIsIi90cy9jb250ZXh0LnRzeCIsIi90cy9wcm92aWRlci50c3giLCIvdHlwZXMudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxNQUFBLEdBQUFDLE9BQUE7VUFFQSxJQUFBQyxXQUFBLEdBQUFELE9BQUE7VUFDQSxJQUFBRSxRQUFBLEdBQUFGLE9BQUE7VUFDTztVQUFXLFNBQVVHLGNBQWNBLENBQUM7WUFBRUM7VUFBUSxDQUFFO1lBQ3RELE1BQU0sQ0FBQ0MsS0FBSyxFQUFFQyxRQUFRLENBQUMsR0FBR1AsTUFBQSxDQUFBUSxPQUFLLENBQUNDLFFBQVEsRUFBRTtZQUMxQyxNQUFNO2NBQUVDO1lBQU8sQ0FBRSxHQUFHLElBQUFQLFFBQUEsQ0FBQVEscUJBQXFCLEdBQUU7WUFDM0MsTUFBTUMsWUFBWSxHQUFHLEVBQUU7WUFDdkIsT0FDQ1osTUFBQSxDQUFBUSxPQUFBLENBQUFLLGFBQUEsQ0FBQ1gsV0FBQSxDQUFBWSxNQUFNO2NBQUNDLE9BQU8sRUFBQyxTQUFTO2NBQUNDLE9BQU8sRUFBRU47WUFBTyxTQUVqQztVQUVYOzs7Ozs7Ozs7Ozs7Ozs7OztVQ2JBLElBQUFWLE1BQUEsR0FBQUMsT0FBQTtVQUNBLElBQUFnQixhQUFBLEdBQUFoQixPQUFBO1VBQ0EsSUFBQUUsUUFBQSxHQUFBRixPQUFBO1VBRU0sU0FBVWlCLGFBQWFB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
