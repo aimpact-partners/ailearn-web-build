@@ -216,7 +216,6 @@ Same as light variables to avoid dark theme while design does not provide it.
   --secondary-container: var(--secondary-90);
   --on-secondary: var(--secondary-100);
   --on-secondary-container: var(--secondary-10);
-  --pepito: "box";
   --tertiary: var(--tertiary-40);
   --tertiary-container: var(--tertiary-90);
   --on-tertiary: var(--tertiary-100);
@@ -252,8 +251,29 @@ Same as light variables to avoid dark theme while design does not provide it.
   --secondary-dark-container: var(--secondary-50);
   --secondary-light-container: var(--secondary-80);
   --disabled-text: var(--neutral-70);
+  --background-preload: var(--primary-80);
   --background-neutral: #f3f3f3;
   --app-main-outline: #000;
+  --primary-light: #5174c9;
+  --primary-dark: #001847;
+  --container-primary: #164194;
+  --on-container-primary: #ffffff;
+  --secondary-light: #8dd2f5;
+  --secondary-dark: #07bbf5;
+  --container-secondary: #3ba2f9;
+  --on-container-secondary: #ffffff;
+  --disable-n-90: #e2e2e2;
+  --disable-n-60: #919191;
+  --surface-s-98: #ffffff;
+  --default-primary: #164194;
+  --on-default-primary: #ffffff;
+  --surface-variant-s-95: #e4f3ff;
+  --tertiary-light: #c3e3f6;
+  --tertiary-dark: #93bacd;
+  --container-tertiary: #c3e3f6;
+  --on-container-tertiary: #141414;
+  --background: #ffffff;
+  --text-color: #141414;
 }
 :root[data-beyond-mode=light] {
   --text-color: #1a1a1a;
@@ -265,7 +285,6 @@ Same as light variables to avoid dark theme while design does not provide it.
   --secondary-container: var(--secondary-90);
   --on-secondary: var(--secondary-100);
   --on-secondary-container: var(--secondary-10);
-  --pepito: "box";
   --tertiary: var(--tertiary-40);
   --tertiary-container: var(--tertiary-90);
   --on-tertiary: var(--tertiary-100);
@@ -301,8 +320,29 @@ Same as light variables to avoid dark theme while design does not provide it.
   --secondary-dark-container: var(--secondary-50);
   --secondary-light-container: var(--secondary-80);
   --disabled-text: var(--neutral-70);
+  --background-preload: var(--primary-80);
   --background-neutral: #f3f3f3;
   --app-main-outline: #000;
+  --primary-light: #5174c9;
+  --primary-dark: #001847;
+  --container-primary: #164194;
+  --on-container-primary: #ffffff;
+  --secondary-light: #8dd2f5;
+  --secondary-dark: #07bbf5;
+  --container-secondary: #3ba2f9;
+  --on-container-secondary: #ffffff;
+  --disable-n-90: #e2e2e2;
+  --disable-n-60: #919191;
+  --surface-s-98: #ffffff;
+  --default-primary: #164194;
+  --on-default-primary: #ffffff;
+  --surface-variant-s-95: #e4f3ff;
+  --tertiary-light: #c3e3f6;
+  --tertiary-dark: #93bacd;
+  --container-tertiary: #c3e3f6;
+  --on-container-tertiary: #141414;
+  --background: #ffffff;
+  --text-color: #141414;
 }
 :root[data-beyond-mode=dark] {
   --text-color: #1a1a1a;
@@ -351,6 +391,26 @@ Same as light variables to avoid dark theme while design does not provide it.
   --disabled-text: var(--neutral-70);
   --background-neutral: #f3f3f3;
   --app-main-outline: #000;
+  --primary-light: #e8f0f9;
+  --primary-dark: #00164f;
+  --container-primary: #14519a;
+  --on-container-primary: #ffffff;
+  --secondary-light: #e8f0f5;
+  --secondary-dark: #007db5;
+  --container-secondary: #3ba2f9;
+  --on-container-secondary: #ffffff;
+  --disable-n-90: #e3e2e2;
+  --disable-n-60: #919191;
+  --surface-s-98: #ffffff;
+  --default-primary: #14519a;
+  --on-default-primary: #ffffff;
+  --surface-variant-s-95: #e4f3ff;
+  --tertiary-light: #e5f1f5;
+  --tertiary-dark: #003e5c;
+  --container-tertiary: #3c8e9f;
+  --on-container-tertiary: #ffffff;
+  --background: #ffffff;
+  --text-color: #141414;
 }
 :root[data-accessibility-mode=dyslexia] {
   --font-family: "OpenDyslexic";
