@@ -145,10 +145,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "page",
         "route": "/chat/sdk/playable"
       }, {
-        "name": "reactive-layout",
-        "vspecifier": "@beyond-js/reactive@1.1.12/reactive-layout",
-        "is": "layout"
-      }, {
         "name": "coming-soon",
         "vspecifier": "pragmate-ui@0.1.1/coming-soon",
         "is": "page",
@@ -605,7 +601,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 // return uri.uri;
               }
             }
-
             exports.Router = Router;
           }
         });

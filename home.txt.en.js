@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1809345290,
+        hash: 1960531506,
         creator: function (require, exports) {
           exports.txt = {
             "header": "Header title",
@@ -40,7 +40,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "moduleAccess": "Access",
             "blackList": {
               "title": "Oops, we haven't retrieved recent modules.",
-              "description": "Soon, you'll be able to view your most recent activities. Here, you'll find a list of the modules you accessed previously. We're looking forward to it! 🚀"
+              "description": "Soon, you'll be able to view your most recent activities. Here, you'll find a list of the modules you accessed previously. We're looking forward to it! "
             }
           };
         }
