@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1572286472,
+        hash: 1673138534,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -83,7 +83,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "empty": {
               "title": "Create your first organization",
-              "description": "Start your educational journey by bringing your first course to life. Unleash your creativity, shape engaging content, and enjoy the rewarding experience of teaching others. 🚀"
+              "description": "Start your educational journey by bringing your first course to life. Unleash your creativity, shape engaging content, and enjoy the rewarding experience of teaching others. "
             }
           };
         }

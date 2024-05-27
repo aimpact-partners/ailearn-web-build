@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 624765963,
+        hash: 3189156985,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -74,7 +74,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "title": "Create Your First Class",
               "titleImport": "Currently has no classes",
               "labelImport": "There are no items to show",
-              "description": "Embark on your teaching journey by bringing your first class to life. Unleash your creativity, shape engaging content, and enjoy the rewarding experience of educating others! 🚀"
+              "description": "Embark on your teaching journey by bringing your first class to life. Unleash your creativity, shape engaging content, and enjoy the rewarding experience of educating others! "
             }
           };
         }

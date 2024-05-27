@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2544095054,
+        hash: 2401020558,
         creator: function (require, exports) {
           exports.txt = {
             "welcome": {
@@ -49,7 +49,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "title": "Crie seu primeiro aula",
               "titleImport": "Atualmente não tem aulas",
               "labelImport": "Não há itens para mostrar",
-              "description": "Inicie sua jornada educacional dando vida ao seu primeiro aula. Liberte sua criatividade, molde um conteúdo envolvente e desfrute da gratificante experiência de educar outros! 🚀"
+              "description": "Inicie sua jornada educacional dando vida ao seu primeiro aula. Liberte sua criatividade, molde um conteúdo envolvente e desfrute da gratificante experiência de educar outros! "
             }
           };
         }
