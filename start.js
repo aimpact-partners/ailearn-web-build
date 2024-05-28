@@ -134,7 +134,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.45/beta.widget",
         "is": "page",
         "route": "/",
-        "layout": "general-layout"
+        "layout": "ailearn-layout"
+      }, {
+        "name": "ailearn-layout",
+        "vspecifier": "@aimpact/ailearn-app@0.0.45/layout/main",
+        "is": "layout"
       }]);
       bundles = [];
       /***********************************
@@ -155,7 +159,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *******************************/
 
         ims.set('./handlers/home', {
-          hash: 2897347336,
+          hash: 1401025958,
           creator: function (require, exports) {
             "use strict";
 
@@ -167,7 +171,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
               const {
                 pathname
               } = uri;
-              console.log(20, pathname, uri.uri);
               if (pathname !== '/') {
                 globalThis.localStorage.setItem('app.pathname', pathname);
                 return {
@@ -242,7 +245,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 // return uri.uri;
               }
             }
-
             exports.Router = Router;
           }
         });
