@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/ailearn-app',
-				version: '0.0.44',
+				version: '0.0.45-beta',
 				languages: {
 					default: 'en',
 					supported: ['en', 'es', 'pr'],
@@ -24,6 +24,7 @@ System.register([], function (_export, _context) {
 					url: 'https://documents-rb5caohzgq-wl.a.run.app/upload',
 					DOCUMENTS_SERVER: 'https://documents-rb5caohzgq-wl.a.run.app',
 					CHAT_API_SERVER: 'https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload',
+					beta: false,
 					elevenlabs: {
 						key: 'ebe05ca0a4d9aafb4024d0666471a0c7',
 						id: 'pNInz6obpgDQGcFmaJgB',

@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.45/components/cover-image",
+          "vspecifier": "@aimpact/ailearn-app@0.0.45/beta",
           "multibundle": true
         },
         "type": "txt"
@@ -29,28 +29,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1131418953,
+        hash: 4016284967,
         creator: function (require, exports) {
           exports.txt = {
-            "errors": {
-              "content_policy_violation": "The content of the image does not comply with the application's content policy. Please validate it and try again.",
-              "default": "An error occurred. Please try again."
-            },
-            "title": "Generate the best image for your module",
-            "description": "This tool will help you generate the best image for your module. You can upload an image and we will generate the best image for your module. You can also use the image editor to edit the image and generate the best image for your module.",
-            "notes": {
-              "label": "Notes",
-              "placeholder": "Share your suggestions to create the best image for your module"
-            },
-            "actions": {
-              "confirm": "Confirm",
-              "cancel": "Cancel",
-              "generate": "Generate with AI"
-            },
-            "confirm": {
-              "title": "Do you want to replace the current image?",
-              "subtitle": "If you confirm, the current image will be replaced."
-            }
+            "title": "Beta Version Not Available",
+            "description": "Currently, there is no beta version available.",
+            "detail": "To continue, click the button below and you will be redirected to the main site of our application.",
+            "action": "Continue"
           };
         }
       });
