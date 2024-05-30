@@ -209,7 +209,6 @@ Same as light variables to avoid dark theme while design does not provide it.
   --pui-success-icon-color: red;
   --text-color: #1a1a1a;
   --secondary-text-color: var(--neutral-50);
-  --primary-container: var(--primary-90);
   --on-primary: var(--primary-100);
   --on-primary-container: var(--primary-10);
   --inverse-primary: var(--primary-80);
@@ -256,12 +255,12 @@ Same as light variables to avoid dark theme while design does not provide it.
   --app-main-outline: #000;
   --primary-light: #5174c9;
   --primary-dark: #001847;
-  --container-primary: #164194;
-  --on-container-primary: #ffffff;
+  --primary-container: #164194;
+  --on-primary-container: #ffffff;
   --secondary-light: #8dd2f5;
   --secondary-dark: #07bbf5;
-  --container-secondary: #3ba2f9;
-  --on-container-secondary: #ffffff;
+  --secondary-container: #3ba2f9;
+  --on-secondary-container: #ffffff;
   --disable-n-90: #e2e2e2;
   --disable-n-60: #919191;
   --surface-s-98: #ffffff;
@@ -270,15 +269,15 @@ Same as light variables to avoid dark theme while design does not provide it.
   --surface-variant-s-95: #e4f3ff;
   --tertiary-light: #c3e3f6;
   --tertiary-dark: #93bacd;
-  --container-tertiary: #c3e3f6;
-  --on-container-tertiary: #141414;
+  --tertiary-container: #c3e3f6;
+  --on-tertiary-container: #141414;
   --background: #ffffff;
   --text-color: #141414;
+  --border-dark-color: #000;
 }
 :root[data-beyond-mode=light] {
   --text-color: #1a1a1a;
   --secondary-text-color: var(--neutral-50);
-  --primary-container: var(--primary-90);
   --on-primary: var(--primary-100);
   --on-primary-container: var(--primary-10);
   --inverse-primary: var(--primary-80);
@@ -325,12 +324,12 @@ Same as light variables to avoid dark theme while design does not provide it.
   --app-main-outline: #000;
   --primary-light: #5174c9;
   --primary-dark: #001847;
-  --container-primary: #164194;
-  --on-container-primary: #ffffff;
+  --primary-container: #164194;
+  --on-primary-container: #ffffff;
   --secondary-light: #8dd2f5;
   --secondary-dark: #07bbf5;
-  --container-secondary: #3ba2f9;
-  --on-container-secondary: #ffffff;
+  --secondary-container: #3ba2f9;
+  --on-secondary-container: #ffffff;
   --disable-n-90: #e2e2e2;
   --disable-n-60: #919191;
   --surface-s-98: #ffffff;
@@ -339,10 +338,11 @@ Same as light variables to avoid dark theme while design does not provide it.
   --surface-variant-s-95: #e4f3ff;
   --tertiary-light: #c3e3f6;
   --tertiary-dark: #93bacd;
-  --container-tertiary: #c3e3f6;
-  --on-container-tertiary: #141414;
+  --tertiary-container: #c3e3f6;
+  --on-tertiary-container: #141414;
   --background: #ffffff;
   --text-color: #141414;
+  --border-dark-color: #000;
 }
 :root[data-beyond-mode=dark] {
   --text-color: #1a1a1a;
@@ -411,6 +411,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --on-container-tertiary: #ffffff;
   --background: #ffffff;
   --text-color: #141414;
+  --border-dark-color: #000;
 }
 :root[data-accessibility-mode=dyslexia] {
   --font-family: "OpenDyslexic";

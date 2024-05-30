@@ -55,7 +55,8 @@
   box-shadow: var(--box-shadow-default);
 }
 .pui-button.outline:hover.btn-primary {
-  color: var(--primary) !important;
+  color: var(--on-primary) !important;
+  background: var(--primary-container) !important;
 }
 .pui-button.outline:hover.btn-secondary {
   color: var(--secondary) !important;
@@ -185,7 +186,6 @@ pre code.hljs {
 .grid-container {
   display: grid !important;
   grid-template-columns: 1fr;
-  margin-top: 1rem;
   grid-gap: 1rem;
 }
 .grid-container.g-2-columns {
