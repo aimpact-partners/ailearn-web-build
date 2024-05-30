@@ -29,11 +29,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2425112638,
+        hash: 2000567010,
         creator: function (require, exports) {
           exports.txt = {
             "title": "Versión Beta no Disponible",
-            "description": "Actualmente, no hay una versión beta disponible.",
+            "description": "Actualmente, no hay una versión beta disponible. Pedimos disculpas por cualquier inconveniente.",
             "detail": "Para continuar, haz clic en el botón a continuación y serás redirigido al sitio principal de nuestra aplicación.",
             "action": "Continar"
           };

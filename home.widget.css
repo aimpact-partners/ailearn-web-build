@@ -1,0 +1,53 @@
+.user-profile {
+  background: var(--background-neutral);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border-radius: var(--border-radius-base);
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+  padding-left: 5px;
+  position: relative;
+}
+.user-profile::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background: url("/asssets/rvd/bg/branding.png") no-repeat center center red;
+}
+.user-profile .pui-image.user-profile__img {
+  height: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 100px;
+  background: var(--primary-container);
+}
+.user-profile .user-profile__content {
+  padding: 1rem;
+  width: 100%;
+  align-items: center;
+}
+.user-profile .user-profile__content h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+  grid-gap: 1rem;
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+.grid-container h1 {
+  margin-top: 1rem;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7OztBQUtIO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFORDtJQU9FOzs7QUFHRDtFQUNDIiwiZmlsZSI6IiJ9 */
