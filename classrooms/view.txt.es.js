@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 261338165,
+        hash: 3651639338,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -62,7 +62,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "role": "Docente"
               },
               "members": {
-                "title": "Alum`nos",
+                "title": "Alumnos",
                 "role": "Alumno"
               },
               "pendings": {
@@ -81,7 +81,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "role": "Rol",
             "messages": {
               "copy": "Texto copiado con éxito",
-              "copyError": "Error al copiar al portapapeles"
+              "copyError": "Error al copiar al portapapeles",
+              "approval": {
+                "success": "Usuario aprobado con éxito",
+                "error": "Error al aprobar usuario"
+              }
             },
             "empty": {
               "title": "Aula no Encontrada",
