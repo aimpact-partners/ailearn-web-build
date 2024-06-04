@@ -209,6 +209,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --pui-success-icon-color: red;
   --text-color: #1a1a1a;
   --secondary-text-color: var(--neutral-50);
+  --primary-container: var(--primary-90);
   --on-primary: var(--primary-100);
   --on-primary-container: var(--primary-10);
   --inverse-primary: var(--primary-80);
@@ -255,7 +256,6 @@ Same as light variables to avoid dark theme while design does not provide it.
   --app-main-outline: #000;
   --primary-light: #5174c9;
   --primary-dark: #001847;
-  --primary-container: #164194;
   --on-primary-container: #ffffff;
   --secondary-light: #8dd2f5;
   --secondary-dark: #07bbf5;
@@ -278,6 +278,7 @@ Same as light variables to avoid dark theme while design does not provide it.
 :root[data-beyond-mode=light] {
   --text-color: #1a1a1a;
   --secondary-text-color: var(--neutral-50);
+  --primary-container: var(--primary-90);
   --on-primary: var(--primary-100);
   --on-primary-container: var(--primary-10);
   --inverse-primary: var(--primary-80);
@@ -324,7 +325,6 @@ Same as light variables to avoid dark theme while design does not provide it.
   --app-main-outline: #000;
   --primary-light: #5174c9;
   --primary-dark: #001847;
-  --primary-container: #164194;
   --on-primary-container: #ffffff;
   --secondary-light: #8dd2f5;
   --secondary-dark: #07bbf5;
@@ -588,7 +588,7 @@ body {
   min-height: 100%;
   padding: 0;
   height: 100%;
-  line-height: 1.6;
+  line-height: 1.37;
   box-sizing: border-box;
   color: var(--text-color);
   font-family: var(--font-family);

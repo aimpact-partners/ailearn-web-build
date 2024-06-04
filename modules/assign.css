@@ -4,7 +4,7 @@
   max-height: 70svh;
   overflow-y: auto;
   position: relative;
-  max-width: 600px;
+  max-width: 500px;
   display: grid;
   grid-template-rows: auto 1fr;
 }

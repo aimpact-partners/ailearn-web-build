@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 852182316,
+        hash: 3523058539,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -72,9 +72,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "ERR_GENERATING_ACTIVITIES": "Error generando classes",
             "orgCode": "Código de Institución",
-            "title": "Crea una Institución",
-            "postTitle": "Nos complace darle la bienvenida a este apasionante proceso de creación de su espacio educativo. Este formulario marca el primer paso hacia la excelencia en la gestión de su equipo educativo. Dispondrá de las herramientas necesarias para personalizar todos los aspectos de su institución y alcanzar sus objetivos académicos. Trabajando juntos, construiremos un entorno que refleje sus estándares de calidad y fomente un aprendizaje continuo y significativo. ¡Empecemos a construir juntos un futuro educativo brillante!",
-            "class": "Objetivo Institución de Aprendizaje",
+            "title": "Agrega un titulo",
+            "description": "Agrega una descripción",
             "messages": {
               "copy": "Texto copiado con éxito",
               "copyError": "Error al copiar al portapapeles"

@@ -17,11 +17,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.45/coins-layout",
+          "vspecifier": "@aimpact/ailearn-app@0.0.45/main-layout",
           "multibundle": true
         },
         "type": "txt"
-      }, _context.meta.url).package('es');
+      }, _context.meta.url).package('en');
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
@@ -29,45 +29,45 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3046724555,
+        hash: 86717759,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
-              "modules": "Módulos",
-              "management": "Borrador"
+              "modules": "Modules",
+              "management": "Draft"
             },
             "coins": {
               "alert": {
-                "title": "Necesitas créditos IA",
-                "description": "Necesitas obtener créditos IA para habilitar todas las funciones con inteligencia artificial.",
-                "action": "Aceptar"
+                "title": "You need AI credits",
+                "description": "You need to get AI credits to enable all the features with artificial intelligence.",
+                "action": "Accept"
               },
               "modal": {
-                "title": "Solicita créditos IA para continuar con esa función",
-                "description": "Necesitas obtener créditos IA para habilitar todas las funciones con inteligencia artificial.",
+                "title": "Request AI credits to continue with this feature",
+                "description": "You need to get AI credits to enable all the features with artificial intelligence.",
                 "actions": {
-                  "cancel": "No, por ahora, gracias",
-                  "confirm": "Solicitar ahora"
+                  "cancel": "No, not now, thanks",
+                  "confirm": "Request now"
                 },
                 "errors": {
-                  "noCredits": "No se ha podido procesar la asignacion, por favor contacte al administrador de la institución"
+                  "noCredits": "The assignment could not be processed, please contact the institution's administrator"
                 }
               },
               "header": {
                 "actions": {
-                  "require": "SOLICITAR CRÉDITOS",
-                  "available": "CRÉDITOS DISPONIBLES"
+                  "require": "REQUEST CREDITS",
+                  "available": "AVAILABLE CREDITS"
                 },
                 "messages": {
-                  "add": "Adquiriste  créditos para utilizar las funciones con IA",
-                  "middle": "Consumiste el 50% de los créditos disponibles",
-                  "finishing": "Te estás quedando sin créditos IA disponibles"
+                  "add": "You acquired credits to use the AI functions",
+                  "middle": "You consumed 50% of the available credits",
+                  "finishing": "You are running out of available AI credits"
                 }
               }
             },
             "notifications": {
-              "saved": "Solicita créditos IA para habilitar todas las funciones con inteligencia artificial.",
-              "credits": "Ya tienes <strong>créditos asignados</strong> para utilizar funciones con IA que se irán descontando automáticamente con el uso."
+              "saved": "Request AI credits to enable all AI functions.",
+              "credits": "You already have <strong>credits assigned</strong> to use AI functions that will be automatically discounted with use."
             }
           };
         }

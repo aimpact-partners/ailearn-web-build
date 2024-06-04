@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 939753596,
+        hash: 9707659,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -81,10 +81,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "copyError": "Error when copying to clipboard"
             },
             "ERR_GENERATING_ACTIVITIES": "Error generating classes",
+            "description": {
+              "placeholder": "Add a description"
+            },
+            "title": {
+              "placeholder": "Add a name"
+            },
             "orgCode": "Classroom Code",
-            "title": "Create a Classroom",
-            "postTitle": "We are pleased to welcome you to this exciting process in the creation of your educational space! This form marks the first step towards excellence in the management of your educational team. You will have the tools you need to customise every aspect of your organisation and achieve your academic goals. Working together, we will build an environment that reflects your quality standards and fosters continuous and meaningful learning. Let's start building a bright educational future together!",
-            "class": "Learning Classroom Objective",
             "role": "Role",
             "empty": {
               "title": "Classroom Not Found",

@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3166498413,
+        hash: 2868573717,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -59,6 +59,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "button": "Assign",
                   "label": "The module has not been assigned to this Classroom"
                 }
+              },
+              "errors": {
+                "default": "The module could not be assigned to this Classroom, please try again later or contact the administrator"
               }
             },
             "breadcrumb": {
@@ -68,7 +71,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "chat": "Chat"
             },
             "errors": {
-              "failed": "Operation failed. Please try again.",
+              "default": "Operation failed. Please try again.",
               "ERROR_GETTING_URL": "Error getting url"
             },
             "title": "My Learning Modules",

@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3924253366,
+        hash: 842516856,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -82,9 +82,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "ERR_GENERATING_ACTIVITIES": "Error generating classes",
             "orgCode": "Organization Code",
-            "title": "Create a Organization",
-            "postTitle": "We are pleased to welcome you to this exciting process in the creation of your educational space! This form marks the first step towards excellence in the management of your educational team. You will have the tools you need to customise every aspect of your organisation and achieve your academic goals. Working together, we will build an environment that reflects your quality standards and fosters continuous and meaningful learning. Let's start building a bright educational future together!",
-            "class": "Learning Organization Objective",
+            "title": "Add a name",
+            "description": "Add a description",
             "empty": {
               "title": "Organization Not Found",
               "pending": "Excellent, you no longer have any outstanding issues to resolve. All invitations have been resolved.",

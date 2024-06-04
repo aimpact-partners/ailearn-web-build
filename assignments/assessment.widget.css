@@ -58,7 +58,7 @@
 .question__form-container .question-title,
 .assessment__container .question-title {
   position: sticky;
-  top: 79px;
+  top: 65px;
   padding-block: 1rem;
   background: var(--surface);
   margin-bottom: 1rem;

@@ -67,22 +67,22 @@
   position: absolute;
   right: 1rem;
 }
-.coins-layout__container {
+.main-layout__container {
   --navbar-height: 79px;
 }
-.coins-layout__container main {
+.main-layout__container main {
   height: 100%;
   width: 100%;
   margin: 0 auto;
   padding: 0rem;
 }
 @media (max-width: 768px) {
-  .coins-layout__container main {
+  .main-layout__container main {
     width: 100%;
     padding: 0rem;
   }
 }
-.coins-layout__container main beyond-layout-children {
+.main-layout__container main beyond-layout-children {
   display: block;
   flex-grow: 1;
   min-width: 100%;

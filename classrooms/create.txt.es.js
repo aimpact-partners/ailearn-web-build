@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4116168538,
+        hash: 792125815,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -39,7 +39,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "create": {
               "title": "Agregar Aula",
               "success": "Aula publicada con éxito",
-              "error": "Error al publicar la institución",
+              "error": "Error al publicar la aula",
               "name": {
                 "label": "Nombre de la Aula",
                 "placeholder": "¿Cuál será el nombre de la Aula?"
@@ -51,6 +51,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "actions": {
                 "save": "Continuar"
               }
+            },
+            "errors": {
+              "default": "No se ha podido registrar el aula. Por favor, valide los datos y vuelva a intentarlo"
             },
             "schools": {
               "label": "Institución",

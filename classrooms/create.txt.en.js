@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1639628657,
+        hash: 1880906449,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -39,7 +39,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "create": {
               "title": "Add Classroom",
               "success": "Classroom published successfully",
-              "error": "Error while publishing organization",
+              "error": "Error while publishing classroom",
               "name": {
                 "label": "Classroom Name",
                 "placeholder": "What will be the name of the Classroom?"
@@ -51,6 +51,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "actions": {
                 "save": "Continue"
               }
+            },
+            "errors": {
+              "default": "The classroom could not be registered. Please validate the data and try again"
             },
             "schools": {
               "label": "School",
