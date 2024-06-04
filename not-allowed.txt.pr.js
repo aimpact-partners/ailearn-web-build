@@ -17,11 +17,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.45/missing",
+          "vspecifier": "@aimpact/ailearn-app@0.0.45/not-allowed",
           "multibundle": true
         },
         "type": "txt"
-      }, _context.meta.url).package('es');
+      }, _context.meta.url).package('pr');
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
@@ -29,13 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2623517053,
+        hash: 2745614147,
         creator: function (require, exports) {
-          exports.txt = {
-            "title": "¡Oops! Parece que has tropezado con un territorio desconocido.",
-            "description": "Parece que te aventuraste por un camino digital inexplorado. Nuestro mapa se extravío temporalmente, pero no te preocupes, nuestros ingenieros están trabajando para restablecer la señal. Mientras tanto, siéntete libre de regresar al punto de partida o explorar otras rutas digitales desde nuestra página de inicio. En la era de la información, cada clic es una oportunidad de descubrimiento.",
-            "conclusion": " ¡Buena suerte en tu travesía!"
-          };
+          exports.txt = {};
         }
       });
       __pkg.exports.descriptor = [{

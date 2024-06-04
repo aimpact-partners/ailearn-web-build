@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.45/missing",
+          "vspecifier": "@aimpact/ailearn-app@0.0.45/not-allowed",
           "multibundle": true
         },
         "type": "txt"
@@ -29,12 +29,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2623517053,
+        hash: 2053328680,
         creator: function (require, exports) {
           exports.txt = {
-            "title": "¡Oops! Parece que has tropezado con un territorio desconocido.",
-            "description": "Parece que te aventuraste por un camino digital inexplorado. Nuestro mapa se extravío temporalmente, pero no te preocupes, nuestros ingenieros están trabajando para restablecer la señal. Mientras tanto, siéntete libre de regresar al punto de partida o explorar otras rutas digitales desde nuestra página de inicio. En la era de la información, cada clic es una oportunidad de descubrimiento.",
-            "conclusion": " ¡Buena suerte en tu travesía!"
+            "title": "¡Ups! Acceso Denegado.",
+            "description": "Parece que has ingresado a un área restringida. Nuestro sistema ha detectado un intento de acceso no autorizado, pero no te preocupes, aún puedes explorar otras secciones de nuestro sitio web. Siéntete libre de regresar a la página de inicio o navegar a través de nuestras rutas digitales disponibles. En la era de la información, cada clic es una oportunidad para descubrir.",
+            "conclusion": "¡Buena suerte en tu viaje!"
           };
         }
       });

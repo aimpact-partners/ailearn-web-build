@@ -328,6 +328,21 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.45/layout/empty",
         "is": "layout"
       }, {
+        "name": "app-missing",
+        "vspecifier": "@aimpact/ailearn-app@0.0.45/missing.widget"
+      }, {
+        "name": "app-not-allowed",
+        "vspecifier": "@aimpact/ailearn-app@0.0.45/not-allowed.widget"
+      }, {
+        "name": "app-missing",
+        "vspecifier": "@aimpact/ailearn-app@0.0.45/missing.widget"
+      }, {
+        "name": "app-missing-page",
+        "vspecifier": "@aimpact/ailearn-app@0.0.45/missing.widget",
+        "is": "page",
+        "route": "/not-found",
+        "layout": "main-layout"
+      }, {
         "name": "app-policies-page",
         "vspecifier": "@aimpact/ailearn-app@0.0.45/pages/age.widget",
         "is": "page",
@@ -346,15 +361,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.45/home.widget",
         "is": "page",
         "route": "/",
-        "layout": "main-layout"
-      }, {
-        "name": "app-missing",
-        "vspecifier": "@aimpact/ailearn-app@0.0.45/missing.widget"
-      }, {
-        "name": "app-missing-page",
-        "vspecifier": "@aimpact/ailearn-app@0.0.45/missing.widget",
-        "is": "page",
-        "route": "/not-found",
         "layout": "main-layout"
       }, {
         "name": "ailearn-identify-page",

@@ -17,11 +17,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.45/missing",
+          "vspecifier": "@aimpact/ailearn-app@0.0.45/not-allowed",
           "multibundle": true
         },
         "type": "txt"
-      }, _context.meta.url).package('es');
+      }, _context.meta.url).package('en');
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
@@ -29,12 +29,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2623517053,
+        hash: 438723024,
         creator: function (require, exports) {
           exports.txt = {
-            "title": "¡Oops! Parece que has tropezado con un territorio desconocido.",
-            "description": "Parece que te aventuraste por un camino digital inexplorado. Nuestro mapa se extravío temporalmente, pero no te preocupes, nuestros ingenieros están trabajando para restablecer la señal. Mientras tanto, siéntete libre de regresar al punto de partida o explorar otras rutas digitales desde nuestra página de inicio. En la era de la información, cada clic es una oportunidad de descubrimiento.",
-            "conclusion": " ¡Buena suerte en tu travesía!"
+            "title": "Oops! Access Denied.",
+            "description": "It seems you've ventured into a restricted area. Our system has detected an unauthorized access attempt, but don't worry, you can still explore other sections of our website. Feel free to return to the homepage or navigate through our available digital routes. In the information age, every click is an opportunity for discovery.",
+            "conclusion": "Good luck on your journey!"
           };
         }
       });
