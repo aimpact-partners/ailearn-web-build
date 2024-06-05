@@ -236,7 +236,7 @@
 }
 .page__header-container .assigment-header {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 100px;
   align-items: center;
   padding: 1rem;
   background: var(--background-neutral);
@@ -275,7 +275,7 @@
 }
 @media (min-width: 768px) {
   .page__header-container .assigment-header {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 100px;
     grid-template-rows: auto auto 1fr;
     grid-template-areas: "image title" "image description";
   }
