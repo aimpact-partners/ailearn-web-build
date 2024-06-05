@@ -29,11 +29,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2623517053,
+        hash: 64993788,
         creator: function (require, exports) {
           exports.txt = {
-            "title": "¡Oops! Parece que has tropezado con un territorio desconocido.",
-            "description": "Parece que te aventuraste por un camino digital inexplorado. Nuestro mapa se extravío temporalmente, pero no te preocupes, nuestros ingenieros están trabajando para restablecer la señal. Mientras tanto, siéntete libre de regresar al punto de partida o explorar otras rutas digitales desde nuestra página de inicio. En la era de la información, cada clic es una oportunidad de descubrimiento.",
+            "title": "¡Oops! Parece que has llegado a una página que no existe.",
+            "description": "Te has aventurado por un rincón inesperado de nuestro sitio web. No te preocupes, puedes regresar a la página principal o explorar otras áreas. En la era de la información, cada clic es una oportunidad de descubrimiento.",
             "conclusion": " ¡Buena suerte en tu travesía!"
           };
         }

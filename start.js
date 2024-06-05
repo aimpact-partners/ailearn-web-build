@@ -328,13 +328,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-07/layout/empty",
         "is": "layout"
       }, {
-        "name": "app-missing",
+        "name": "app-not-allowed",
         "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-07/missing.widget"
       }, {
-        "name": "app-not-allowed",
+        "name": "app-not-allowed-page",
         "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-07/not-allowed.widget"
       }, {
-        "name": "app-missing",
+        "name": "app-missing-element",
         "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-07/missing.widget"
       }, {
         "name": "app-missing-page",
@@ -347,15 +347,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-07/pages/age.widget",
         "is": "page",
         "route": "/user-validation"
-      }, {
-        "name": "app-missing",
-        "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-07/missing.widget"
-      }, {
-        "name": "app-beta-page",
-        "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-07/beta.widget",
-        "is": "page",
-        "route": "/beta",
-        "layout": "main-layout"
       }, {
         "name": "student-home",
         "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-07/home.widget",
