@@ -1083,7 +1083,7 @@ app-missing {
 .page__container.form-page-container {
   width: 100%;
   max-width: 700px;
-  padding-top: 10%;
+  margin-top: 5vh;
 }
 .page__container.form-page-container .page__header {
   display: grid;
