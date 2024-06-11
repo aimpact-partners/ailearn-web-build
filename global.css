@@ -55,7 +55,7 @@
   box-shadow: var(--box-shadow-default);
 }
 .pui-button.outline:hover.btn-primary {
-  color: var(--on-primary) !important;
+  color: var(--primary) !important;
   background: var(--primary-container) !important;
 }
 .pui-button.outline:hover.btn-secondary {
