@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "@aimpact/ailearn-sdk@1.0.0/application", "@aimpact/chat-sdk@1.0.0/session", "@beyond-js/reactive@1.1.12/model", "react@18.2.0", "@aimpact/chat-sdk@1.0.0/widgets/markdown", "@beyond-js/react-18-widgets@1.1.2/hooks", "pragmate-ui@0.1.1/components", "react@18.2.0/jsx-runtime"], function (_export, _context2) {
+System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "@aimpact/ailearn-sdk@1.0.0/application", "@aimpact/chat-sdk@1.0.0/session", "@beyond-js/reactive@1.1.12/model", "react@18.2.0", "@aimpact/chat-sdk@1.0.0/widgets/markdown", "@beyond-js/react-18-widgets@1.1.2/hooks", "pragmate-ui@0.1.1/components", "react@18.2.0/jsx-runtime"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
@@ -45,14 +45,14 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
           "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-16/pages/terms"
         },
         "type": "widget"
-      }, _context2.meta.url).package();
+      }, _context.meta.url).package();
       ;
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@aimpact/ailearn-sdk/application', dependency_4], ['@aimpact/chat-sdk/session', dependency_5], ['@beyond-js/reactive/model', dependency_6], ['react', dependency_7], ['@aimpact/chat-sdk/widgets/markdown', dependency_8], ['@beyond-js/react-18-widgets/hooks', dependency_9], ['pragmate-ui/components', dependency_10], ['react/jsx-runtime', dependency_11]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "ailearn-terms-and-conditions-page",
         "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-16/pages/terms",
         "is": "page",
-        "route": "/app/${page}"
+        "route": "/terms-and-conditions"
       }]);
       brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.0.46.dev-16/pages/terms');
       ims = new Map();
@@ -160,7 +160,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       *****************************/
 
       ims.set('./views/index', {
-        hash: 2896304666,
+        hash: 1863404201,
         creator: function (require, exports) {
           "use strict";
 
@@ -169,162 +169,24 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
           });
           exports.View = View;
           var React = require("react");
-          var _context = require("./context");
-          var _hooks = require("@beyond-js/react-18-widgets/hooks");
-          var _components = require("pragmate-ui/components");
-          var _privacy = require("./privacy.mdx");
-          var _termsAndConditions = require("./terms-and-conditions.mdx");
+          var _terms = require("./terms.mdx");
           /*bundle*/
           function View({
             store
           }) {
-            const value = {
-              store
-            };
-            const [ready, setReady] = React.useState(store.ready);
-            const [view, setView] = React.useState(store.page);
-            (0, _hooks.useBinder)([store], () => setReady(store.page));
-            const VIEWS = {
-              privacy: _privacy.default,
-              terms: _termsAndConditions.default
-            };
-            if (!store.ready) return React.createElement(_components.Spinner, {
-              active: true
-            });
-            if (!VIEWS[view]) return 'error 404';
-            const Control = VIEWS[view];
-            return React.createElement(_context.ModuleContext.Provider, {
-              value: value
-            }, React.createElement("div", {
+            console.log(2);
+            return React.createElement("div", {
               className: "container-page-content"
-            }, React.createElement(Control, null)));
+            }, React.createElement(_terms.default, null));
           }
         }
       });
 
-      /***********************************
-      INTERNAL MODULE: ./views/privacy.mdx
-      ***********************************/
+      /*********************************
+      INTERNAL MODULE: ./views/terms.mdx
+      *********************************/
 
-      ims.set('./views/privacy.mdx', {
-        hash: 2568567038,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.default = void 0;
-          var _jsxRuntime = require("react/jsx-runtime");
-          /*@jsxRuntime automatic @jsxImportSource react*/
-
-          function _createMdxContent(props) {
-            const _components = Object.assign({
-              h1: "h1",
-              p: "p",
-              h2: "h2",
-              ul: "ul",
-              li: "li"
-            }, props.components);
-            return (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
-              children: [(0, _jsxRuntime.jsx)(_components.h1, {
-                children: "Política de Privacidad RVD.AI"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Fecha de última actualización: 4 de marzo de 2024"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Esta Política de Privacidad forma parte integrante de los Términos y Condiciones de Uso de RVD.AI (los “Términos y\r\nCondiciones de Uso”). Todos los términos empleados en el presente documento que no se encuentran definidos especialmente\r\nen éste, tendrán el significado atribuidos a los mismos en los Términos y Condiciones de Uso. Esta Política de\r\nPrivacidad describe cómo el Prestador (en adelante, “El Prestador”) recopila, utiliza y protege la información personal\r\nque el Usuario proporciona al utilizar el Servicio."
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Al aceptar los Términos y Condiciones de Uso, el Usuario presta su consentimiento libre, expreso e informado a todas las\r\nprevisiones de la presente Política de Privacidad."
-              }), "\n", (0, _jsxRuntime.jsx)(_components.h2, {
-                children: "1. Información que se Recopila:"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Cuando el Usuario utiliza los Servicios, podría recopilarse la siguiente Información:"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Información de Registro: Al registrarse el Usuario en nuestro servicio, podemos solicitar información como su nombre,\r\ndirección de correo electrónico, fecha de nacimiento y otra información necesaria para crear su cuenta."
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Interacción con la IA: Podemos recopilar información sobre la interacción del Usuario con la IA incluidas las consultas\r\nrealizadas y las respuestas proporcionadas."
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Información de Uso: Podemos recopilar información sobre cómo utiliza el Servicio, como los recursos a los que el Usuario\r\naccede y el tiempo que pasa en el Sitio web (y aplicaciones). También podrán ser recopiladas la dirección IP del\r\nUsuario, cookies, y datos que permitirán identificar el navegador o cuenta del Usuario."
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Todo ello, la “información”."
-              }), "\n", (0, _jsxRuntime.jsx)(_components.h2, {
-                children: "2. Uso de la Información:"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "El Prestador utiliza la Información recopilada para los siguientes propósitos:"
-              }), "\n", (0, _jsxRuntime.jsxs)(_components.ul, {
-                children: ["\n", (0, _jsxRuntime.jsx)(_components.li, {
-                  children: "Proporcionar y mantener el Servicio."
-                }), "\n", (0, _jsxRuntime.jsx)(_components.li, {
-                  children: "Mejorar y personalizar la experiencia del Usuario."
-                }), "\n", (0, _jsxRuntime.jsx)(_components.li, {
-                  children: "Comprender cómo se utiliza el Servicio y realizar análisis para mejorar productos y servicios."
-                }), "\n", (0, _jsxRuntime.jsx)(_components.li, {
-                  children: "Enviar comunicaciones promocionales y actualizaciones relacionadas con el Servicio, siempre que el Usuario no haya\r\nrechazado esta opción."
-                }), "\n"]
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "La Información objeto de Tratamiento no será utilizada para finalidades distintas o incompatibles con aquellas que\r\nmotivaron su obtención y será destruida cuando haya dejado de ser necesaria o pertinente a los fines para los cuales\r\nhubiese sido recolectada."
-              }), "\n", (0, _jsxRuntime.jsx)(_components.h2, {
-                children: "3. Como podría compartirse la Información del Usuario:"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "El Prestador no vende ni alquila su Información personal a terceros. Sin embargo, podemos compartir su Información en\r\nlas siguientes circunstancias:"
-              }), "\n", (0, _jsxRuntime.jsxs)(_components.ul, {
-                children: ["\n", (0, _jsxRuntime.jsxs)(_components.li, {
-                  children: ["\n", (0, _jsxRuntime.jsx)(_components.p, {
-                    children: "Con proveedores de servicios que ayudan al Prestador a operar el Servicio y brindar otros productos y servicios."
-                  }), "\n"]
-                }), "\n", (0, _jsxRuntime.jsxs)(_components.li, {
-                  children: ["\n", (0, _jsxRuntime.jsx)(_components.p, {
-                    children: "Cuando sea requerido por la ley o en respuesta a una solicitud legal válida, como una orden judicial."
-                  }), "\n"]
-                }), "\n", (0, _jsxRuntime.jsxs)(_components.li, {
-                  children: ["\n", (0, _jsxRuntime.jsx)(_components.p, {
-                    children: "Con el consentimiento del Usuario o de acuerdo con sus instrucciones."
-                  }), "\n"]
-                }), "\n"]
-              }), "\n", (0, _jsxRuntime.jsx)(_components.h2, {
-                children: "4. Seguridad de la Información:"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "El Usuario se compromete a proteger la seguridad de su Información personal y a utilizar medidas de seguridad razonables\r\npara protegerla contra el acceso no autorizado, la divulgación, la alteración o la destrucción. Se destaca que la\r\nInformación que se recopila puede ser transferida, almacenada y/o tratada en Estados Unidos u otros países fuera de\r\nArgentina, y al proporcionar su Información, el Usuario consiente dicha transferencia, almacenamiento y/o Tratamiento."
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Se entenderá por “Tratamiento” a todas las operaciones y procedimientos sistemáticos, electrónicos o no, que permitan la\r\nrecolección, conservación, ordenación, almacenamiento, modificación, relacionamiento, evaluación, bloqueo, destrucción,\r\ny en general el procesamiento de datos personales, así como también su cesión a terceros a través de comunicaciones,\r\nconsultas, interconexiones o transferencias."
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "La transferencia de Información se realizará en todo caso, exclusivamente a países cuyas legislaciones proporcionen\r\nniveles de protección adecuados y conformes con esta Política de Privacidad."
-              }), "\n", (0, _jsxRuntime.jsx)(_components.h2, {
-                children: "5. Cambios en la Política de Privacidad:"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "El Prestador se reserva el derecho de actualizar esta Política de Privacidad en cualquier momento para cumplir con las\r\nleyes y regulaciones aplicables. Le notificaremos cualquier cambio publicando la Política de Privacidad actualizada en\r\nnuestro sitio web y actualizando la fecha de “Última Actualización” al principio de la Política de Privacidad, todo ello\r\nde acuerdo a lo indicado en los Términos y Condiciones de Uso."
-              }), "\n", (0, _jsxRuntime.jsx)(_components.h2, {
-                children: "6. Sus Derechos y Opciones:"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "De acuerdo con la Ley de Protección de Datos Personales en Argentina (Ley 25.326), usted tiene derecho a acceder,\r\nrectificar y suprimir su Información, así como a oponerse al Tratamiento de los mismos. También tiene derecho a revocar\r\nsu consentimiento en cualquier momento. Para ejercer estos derechos o para hacer cualquier pregunta sobre la Política de\r\nPrivacidad deberá contactar al servicio de Soporte del Prestador mediante los siguientes medios:"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Email:"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Teléfono:"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "Ángel Estrada y Compañía S.A., con domicilio en la calle Maipú 116, Piso 8 (C1084ABD) de la Ciudad Autónoma de Buenos\r\nAires, Argentina, es titular y responsable del tratamiento y de la protección de datos (Información). Los Usuarios\r\npueden enviar solicitudes para ejercer sus derechos con respecto a su Información en el marco de la Ley 25.326."
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "La Agencia de Acceso a la Información Pública, como órgano regulador de la ley 25.326, es responsable de recibir los\r\nreclamos e informes presentados por interesados que consideren que sus datos se han visto afectados por una infracción\r\nde la Ley de Protección de Datos Personales."
-              })]
-            });
-          }
-          function MDXContent(props = {}) {
-            const {
-              wrapper: MDXLayout
-            } = props.components || {};
-            return MDXLayout ? (0, _jsxRuntime.jsx)(MDXLayout, Object.assign({}, props, {
-              children: (0, _jsxRuntime.jsx)(_createMdxContent, props)
-            })) : _createMdxContent(props);
-          }
-          var _default = exports.default = MDXContent;
-        }
-      });
-
-      /************************************************
-      INTERNAL MODULE: ./views/terms-and-conditions.mdx
-      ************************************************/
-
-      ims.set('./views/terms-and-conditions.mdx', {
+      ims.set('./views/terms.mdx', {
         hash: 3018462259,
         creator: function (require, exports) {
           "use strict";
@@ -576,4 +438,4 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfc3RvcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsInN0b3JlIiwiY3JlYXRlU3RvcmUiLCJTdG9yZU1hbmFnZXIiLCJXaWRnZXQiLCJWaWV3Iiwic2hvdyIsImxvYWQiLCJ1cmkiLCJ2YXJzIiwiZ2V0IiwiaGlkZSIsImV4cG9ydHMiLCJfYXBwbGljYXRpb24iLCJfbW9kZWwiLCJSZWFjdGl2ZU1vZGVsIiwiYXBwbGljYXRpb24iLCJjb250ZW50IiwiY29uc3RydWN0b3IiLCJyZWFjdGl2ZVByb3BzIiwiQXBwbGljYXRpb24iLCJnbG9iYWxUaGlzIiwicGFnZSIsInJlYWR5IiwiX3JlYWN0IiwiTW9kdWxlQ29udGV4dCIsImRlZmF1bHQiLCJjcmVhdGVDb250ZXh0IiwidXNlTW9kdWxlQ29udGV4dCIsInVzZUNvbnRleHQiLCJSZWFjdCIsIl9jb250ZXh0IiwiX2hvb2tzIiwiX2NvbXBvbmVudHMiLCJfcHJpdmFjeSIsIl90ZXJtc0FuZENvbmRpdGlvbnMiLCJ2YWx1ZSIsInNldFJlYWR5IiwidXNlU3RhdGUiLCJ2aWV3Iiwic2V0VmlldyIsInVzZUJpbmRlciIsIlZJRVdTIiwicHJpdmFjeSIsInRlcm1zIiwiY3JlYXRlRWxlbWVudCIsIlNwaW5uZXIiLCJhY3RpdmUiLCJDb250cm9sIiwiUHJvdmlkZXIiLCJjbGFzc05hbWUiLCJfanN4UnVudGltZSIsImpzeCIsImEiXSwic291cmNlcyI6WyIvdHMvY29udHJvbGxlci50cyIsIi90cy9zdG9yZS50cyIsIi90cy92aWV3cy9jb250ZXh0LnRzIiwiL3RzL3ZpZXdzL2luZGV4LnRzeCIsIi90cy92aWV3cy92aWV3c1xccHJpdmFjeS5tZHgiLCIvdHMvdmlld3Mvdmlld3NcXHRlcm1zLWFuZC1jb25kaXRpb25zLm1keCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3Mi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
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfc3RvcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsInN0b3JlIiwiY3JlYXRlU3RvcmUiLCJTdG9yZU1hbmFnZXIiLCJXaWRnZXQiLCJWaWV3Iiwic2hvdyIsImxvYWQiLCJ1cmkiLCJ2YXJzIiwiZ2V0IiwiaGlkZSIsImV4cG9ydHMiLCJfYXBwbGljYXRpb24iLCJfbW9kZWwiLCJSZWFjdGl2ZU1vZGVsIiwiYXBwbGljYXRpb24iLCJjb250ZW50IiwiY29uc3RydWN0b3IiLCJyZWFjdGl2ZVByb3BzIiwiQXBwbGljYXRpb24iLCJnbG9iYWxUaGlzIiwicGFnZSIsInJlYWR5IiwiX3JlYWN0IiwiTW9kdWxlQ29udGV4dCIsImRlZmF1bHQiLCJjcmVhdGVDb250ZXh0IiwidXNlTW9kdWxlQ29udGV4dCIsInVzZUNvbnRleHQiLCJSZWFjdCIsIl90ZXJtcyIsImNvbnNvbGUiLCJsb2ciLCJjcmVhdGVFbGVtZW50IiwiY2xhc3NOYW1lIiwiX2pzeFJ1bnRpbWUiLCJqc3giLCJfY29tcG9uZW50cyIsImEiXSwic291cmNlcyI6WyIvdHMvY29udHJvbGxlci50cyIsIi90cy9zdG9yZS50cyIsIi90cy92aWV3cy9jb250ZXh0LnRzIiwiL3RzL3ZpZXdzL2luZGV4LnRzeCIsIi90cy92aWV3cy92aWV3c1xcdGVybXMubWR4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxLQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxNQUFBLEdBQUFELE9BQUE7VUFDQSxJQUFBRSxNQUFBLEdBQUFGLE9BQUE7VUFFTztVQUFVLE1BQ1hHLFVBQVcsU0FBUUosS0FBQSxDQUFBSyx5QkFBeUI7WUFDakQs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QUFBQyxHQUFBLEVBQUFDLFdBQUEsQ0FBQUMsQ0FBQTs7NEJBQzVFO29CQUE2Rjs7MEJBSTVHOzswQkFPSTs7MEJBRUo7OzBCQU1JOzswQkFFSjs7MEJBU0k7OzBCQUVKOzswQkFTQTs7MEJBS0E7OzBCQUtBOzswQkFTSTs7MEJBRUo7OzBCQVFJOzswQkFFSjs7MEJBS0k7OzBCQUVKOzswQkFTSTs7MEJBRUo7OzBCQUlJOzswQkFFSjs7MEJBVUk7OzBCQUVKOzswQkFNSTs7MEJBRUo7OzBCQVNJOzswQkFFSjs7MEJBV0k7OzBCQUVKOzswQkFXSTs7MEJBRUo7OzBCQU1JOzswQkFFSjs7MEJBTUk7OzBCQUVKOzswQkFRSTs7MEJBRUo7OzBCQU1BOzswQkFFQTs7MEJBVUk7OzBCQUVKOzswQkFNSTs7MEJBRUo7OzBCQVFJOzswQkFFSjs7MEJBSUk7OzBCQUVKOzswQkFPSTs7MEJBRUo7OzBCQUtJOzswQkFFSjs7MEJBT0E7OzBCQUtBOzswQkF1Qkk7OzBCQUVKOzswQkFLSTs7MEJBRUo7OzBCQUdBIn0=

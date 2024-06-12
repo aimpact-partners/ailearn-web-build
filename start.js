@@ -316,16 +316,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/users/me",
         "layout": "main-layout"
       }, {
-        "name": "main-layout",
-        "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-16/main-layout.widget",
-        "is": "layout"
-      }, {
         "name": "dashboard-layout",
         "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-16/dashboard-layout.widget",
         "is": "layout"
       }, {
         "name": "ailearn-empty-layout",
         "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-16/layout/empty",
+        "is": "layout"
+      }, {
+        "name": "main-layout",
+        "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-16/main-layout.widget",
         "is": "layout"
       }, {
         "name": "app-not-allowed",
@@ -359,10 +359,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "page",
         "route": "/next-steps"
       }, {
+        "name": "privacy-page",
+        "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-16/pages/privacy",
+        "is": "page",
+        "route": "/privacy"
+      }, {
         "name": "ailearn-terms-and-conditions-page",
         "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-16/pages/terms",
         "is": "page",
-        "route": "/app/${page}"
+        "route": "/terms-and-conditions"
       }, {
         "name": "app-template-bottom-bar",
         "vspecifier": "@aimpact/ailearn-app@0.0.46.dev-16/template/bottom-bar",
@@ -454,7 +459,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ***********************************/
 
         ims.set('./handlers/policies', {
-          hash: 2991688190,
+          hash: 751582618,
           creator: function (require, exports) {
             "use strict";
 
@@ -463,7 +468,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             });
             exports.checkPolicies = checkPolicies;
             var _session = require("@aimpact/chat-sdk/session");
-            const PUBLIC_ROUTES = ['/app/terms', '/app/privacy'];
+            var _publicRoutes = require("../public-routes");
             async function checkPolicies({
               pathname
             }, router, next) {
@@ -473,7 +478,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 termsAccepted,
                 age
               } = _session.sessionWrapper.user;
-              if (PUBLIC_ROUTES.includes(pathname)) return pathname;
+              if (_publicRoutes.PUBLIC_ROUTES.includes(pathname)) return pathname;
               if (!termsAccepted && age > 17 || !age) {
                 return {
                   pathname: '/user-validation'
@@ -501,7 +506,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ********************************/
 
         ims.set('./handlers/roles', {
-          hash: 2643557167,
+          hash: 3416299116,
           creator: function (require, exports) {
             "use strict";
 
@@ -524,7 +529,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
               const regex = /^\/assignments\/.+$/;
               const isAssigment = regex.test(pathname);
               if (isAssigment) return next();
-              if (!_session.sessionWrapper.user.roles.length && !['/organizations/create', '/organizations/join'].includes(pathname)) {
+              const validRoutes = ['/users/me', '/organizations/create', '/organizations/join'];
+              if (!_session.sessionWrapper.user.roles.length && !validRoutes.includes(pathname)) {
                 return {
                   pathname: '/next-steps'
                 };
@@ -586,7 +592,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *******************************/
 
         ims.set('./public-routes', {
-          hash: 2390301440,
+          hash: 2866617319,
           creator: function (require, exports) {
             "use strict";
 
@@ -594,7 +600,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
               value: true
             });
             exports.PUBLIC_ROUTES = exports.AUTH_ROUTES = void 0;
-            const PUBLIC_ROUTES = exports.PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password', '/documents/access', '/app/privacy', '/app/terms', '/reactive/testing'];
+            const PUBLIC_ROUTES = exports.PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password', '/documents/access', '/privacy', '/terms-and-conditions', '/reactive/testing'];
             const AUTH_ROUTES = exports.AUTH_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password'];
           }
         });
