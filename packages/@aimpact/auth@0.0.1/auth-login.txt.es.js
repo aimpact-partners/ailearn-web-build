@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1989654982,
+        hash: 3910638733,
         creator: function (require, exports) {
           exports.txt = {
             "presentation": {
@@ -41,7 +41,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "loginTitle": "Iniciar sesión",
             "emailLabel": "Correo electrónico",
             "passwordLabel": "Contraseña",
-            "termsAndPrivacy": "Al crear una cuenta, aceptas nuestros Términos de servicio y Política de privacidad",
+            "termsAndPrivacy": "Al crear una cuenta, aceptas nuestros ",
+            "terms": "Términos de servicio",
+            "connector": "y",
+            "policy": "Política de privacidad",
             "signInButton": "Iniciar sesión",
             "socialLoginTitle": "O inicia sesión con una cuenta de redes sociales",
             "googleSignInButton": "Iniciar sesión con Google",
