@@ -6,10 +6,10 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "@aimpact/ailearn-app",
-        "version": "0.0.45",
+        "version": "0.0.46",
         "languages": {
           "default": "en",
-          "supported": ["en", "es", "pr"]
+          "supported": ["en", "es", "pt"]
         },
         "environment": "production",
         "global.css": true,
@@ -31,8 +31,7 @@ System.register([], function (_export, _context) {
           },
           "baseUrl": "https://app.rvd.ai",
           "apis": {
-            "ailearn": "https://ailearn-http-d7gw5k2ica-uc.a.run.app",
-            "chat": "https://chat-api-http-pjv2z6fura-uc.a.run.app"
+            "ailearn": "'https://ailearn.api.aimpact.partners"
           }
         },
         "ssr": {},
