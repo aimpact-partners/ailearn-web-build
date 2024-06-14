@@ -12,7 +12,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@types/node", "16.18.11"], ["@beyond-js/local", "0.1.2"], ["@beyond-js/events", "0.0.4"], ["@aimpact/ailearn-app", "0.0.46.dev-20"]]);
+        const dependencies = new Map([["@types/node", "16.18.11"], ["@beyond-js/local", "0.1.2"], ["@beyond-js/events", "0.0.4"], ["@aimpact/ailearn-app", "0.0.46.dev-22"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
