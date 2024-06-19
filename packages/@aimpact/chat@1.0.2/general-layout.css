@@ -1,0 +1,1 @@
+body{margin:0}.layout{display:flex;flex-direction:row;height:100vh;background-color:var(--background);overflow-y:hidden}@media (max-width:768px){.layout{flex-direction:column-reverse}}main{height:100%;width:100%;margin:0 auto;padding:0;overflow-y:auto}main beyond-layout-children{display:block;flex-grow:1;height:calc(100% - 80px);height:100%;width:100%;max-width:100%}
