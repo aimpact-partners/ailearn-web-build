@@ -1,23 +1,20 @@
-System.register([], function (_export, _context) {
+System.register([], function (a, e) {
 	'use strict';
-
 	return {
 		setters: [],
 		execute: function () {
-			_export('default', {
-				package: '@aimpact/chat-auth',
-				version: '1.0.0',
+			a('default', {
+				package: '@aimpact/auth',
+				version: '0.0.1',
 				languages: {
 					default: 'en',
 					supported: ['en', 'es'],
 				},
-				environment: 'production',
+				environment: 'development',
 				'global.css': true,
-				params: {
-					baseUrl: 'https://app.rvd.ai',
-				},
-				ssr: {},
-				backend: {},
+				local: 'web',
+				layout: 'main-layout',
+				params: {},
 			});
 		},
 	};
