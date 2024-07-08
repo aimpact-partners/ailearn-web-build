@@ -11,9 +11,14 @@ System.register([], function (_export, _context) {
           "default": "en",
           "supported": ["en", "es"]
         },
+        "environment": "production",
         "global.css": true,
         "params": {
-          "ailearnAPI": "https://ailearn-http-d7gw5k2ica-uc.a.run.app"
+          "baseUrl": "https://app.rvd.ai",
+          "apis": {
+            "ailearn": "https://ailearn-http-d7gw5k2ica-uc.a.run.app",
+            "chat": "https://chat-api-http-pjv2z6fura-uc.a.run.app"
+          }
         },
         "ssr": {},
         "backend": {}
