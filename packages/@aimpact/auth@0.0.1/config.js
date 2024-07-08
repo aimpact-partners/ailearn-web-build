@@ -5,7 +5,7 @@ System.register([], function (_export, _context) {
 		setters: [],
 		execute: function () {
 			_export('default', {
-				package: '@aimpact/ailearn-sdk',
+				package: '@aimpact/chat-auth',
 				version: '1.0.0',
 				languages: {
 					default: 'en',

@@ -1,1 +1,69 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle"],function(r,e){var t,o,i;return r("txt",void 0),{setters:[function(e){t=e}],execute:function(){i=t.Bundle,(o=new i({module:{vspecifier:"@aimpact/auth@0.0.1/auth-recovery",multibundle:!0},type:"txt"},e.meta.url).package("en")).dependencies.update([]),(i=new Map).set("./txt",{hash:3232058831,creator:function(e,t){t.txt={recoveryTitle:"Password recovery",recoverySubtitle:"We know it can be frustrating to forget your password, but don't worry, we'll help you recover it!",recoveryIntro:"To begin with, we need to verify your identity. Please provide us with your email address. We will send you an email with a link to reset your password. This link will last for 24 hours.",recoveryInstructions:"Please enter the email address",recoveryFinish:"If you have any questions, please do not hesitate to contact us.",recoveryBye:"Thank you for your patience!",checkYourEmail:"To complete the process, please check your email address. We have sent you an email with a link to reset your password. The link will last for 24 hours. If you can't find the email, please check your spam or junk mail folder. If you have not yet received the email, please do not hesitate to contact us. Thank you for your patience.",email:"Email",recoveryButton:"Submit Email",theme:"%them Mode"}}}),o.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}],o.exports.process=function({require:e,prop:t,value:o}){!e&&"txt"!==t||r("txt",e?e("./txt").txt:o)},r("__beyond_pkg",o),r("hmr",new function(){this.on=(e,t)=>o.hmr.on(e,t),this.off=(e,t)=>o.hmr.off(e,t)}),o.initialise(i)}}});
+System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel019Bundle) {
+      dependency_0 = _beyondJsKernel019Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/chat-sdk", "1.0.1"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/widgets", "1.1.0"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.3"], ["@types/react-dom", "18.3.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.0.51.dev-04"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/auth@0.0.1/auth-recovery",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('en');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 3232058831,
+        creator: function (require, exports) {
+          exports.txt = {
+            "recoveryTitle": "Password recovery",
+            "recoverySubtitle": "We know it can be frustrating to forget your password, but don't worry, we'll help you recover it!",
+            "recoveryIntro": "To begin with, we need to verify your identity. Please provide us with your email address. We will send you an email with a link to reset your password. This link will last for 24 hours.",
+            "recoveryInstructions": "Please enter the email address",
+            "recoveryFinish": "If you have any questions, please do not hesitate to contact us.",
+            "recoveryBye": "Thank you for your patience!",
+            "checkYourEmail": "To complete the process, please check your email address. We have sent you an email with a link to reset your password. The link will last for 24 hours. If you can't find the email, please check your spam or junk mail folder. If you have not yet received the email, please do not hesitate to contact us. Thank you for your patience.",
+            "email": "Email",
+            "recoveryButton": "Submit Email",
+            "theme": "%them Mode"
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
