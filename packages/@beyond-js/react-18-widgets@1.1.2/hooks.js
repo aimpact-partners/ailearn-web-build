@@ -16,7 +16,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "@beyond-js/k
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["react", "18.3.1"], ["react-dom", "18.3.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/kernel", "0.1.9"], ["@types/react", "18.3.1"], ["@types/react-dom", "18.3.0"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@aimpact/ailearn-app", "0.0.52"]]);
+        const dependencies = new Map([["react", "18.3.1"], ["react-dom", "18.3.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/kernel", "0.1.9"], ["@types/react", "18.3.1"], ["@types/react-dom", "18.3.0"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@aimpact/ailearn-app", "0.0.55"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
