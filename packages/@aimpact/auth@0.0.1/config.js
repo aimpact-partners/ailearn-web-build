@@ -6,13 +6,13 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/auth',
-				version: '1.0.1',
+				version: '1.0.0',
+				params: {},
 				languages: {
 					default: 'en',
 					supported: ['en', 'es'],
 				},
-				params: {},
-				environment: 'development',
+				environment: 'production',
 			});
 		},
 	};
