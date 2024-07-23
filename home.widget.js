@@ -434,8 +434,6 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
             }, _react.default.createElement(_ui.PageTitle, {
               title: texts.assignments.title,
               as: "h3"
-            }, isAdmin && _react.default.createElement("div", {
-              className: "header__actions"
             }, _react.default.createElement(_link.Link, {
               href: "/assignments"
             }, texts.actions.create))), _react.default.createElement(_list.List, {
