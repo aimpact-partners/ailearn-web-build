@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2489122070,
+        hash: 2993273348,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -107,6 +107,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "assignments": {
                 "title": "My Assignments",
                 "description": "Represent the assignments made in classrooms."
+              },
+              "classrooms": {
+                "title": "Classrooms",
+                "description": "In this space, you can create classrooms where you can group your students and assign them the learning modules you publish. Organize your classes effectively and personalize them. Start creating your classrooms and transform the educational experience!"
               }
             },
             "title": "Welcome!",
