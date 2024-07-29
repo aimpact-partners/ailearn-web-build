@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.2"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.0.1"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@aimpact/http-suite", "1.0.3"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.4"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["apexcharts", "3.48.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-icons", "5.2.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.3"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["firebase", "10.12.0"], ["firebase-admin", "12.1.0"], ["react-is", "16.13.1"], ["react-select", "5.8.0"], ["swiper", "8.4.7"], ["@aimpact/ailearn-app", "0.0.50"], ["@aimpact/ailearn-app", "0.0.50"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.2"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.0.1"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.1"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.4"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["apexcharts", "3.48.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-icons", "5.2.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.3"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["firebase", "10.12.0"], ["firebase-admin", "12.1.0"], ["react-is", "16.13.1"], ["react-select", "5.8.0"], ["swiper", "8.4.7"], ["@aimpact/ailearn-app", "0.1.0-dev.02"], ["@aimpact/ailearn-app", "0.1.0-dev.02"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.0.50/home",
+          "vspecifier": "@aimpact/ailearn-app@0.1.0-dev.02/home",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 706505859,
+        hash: 1129941904,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -79,26 +79,56 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "default": "No se ha podido asignar el módulo a esta Aula, por favor inténtelo de nuevo más tarde o contacte al administador"
               }
             },
+            "tour": {
+              "step0": {
+                "title": "Bienvenido a tu perfil",
+                "description": "Aquí puedes personalizar tu experiencia en RVD.AI Rivadavia. Podrás  actualizar tu información personal, indicar  tu idioma de preferencia, configurar opciones de accesibilidad y ajustar la velocidad del audio."
+              },
+              "drafts": {
+                "title": "Módulos en borrador",
+                "description": "Trabaja en tus módulos de aprendizaje en estado de borrador hasta que estén listos para ser publicados y asignados a un aula. Aquí quedarán guardados para que puedas editarlos según tus necesidades. ¡Comienza creando tu primer módulo!"
+              },
+              "library": {
+                "title": "Librería de Módulos",
+                "description": "Explora nuestra colección de módulos de aprendizaje creados por expertos. Encuentra una variedad de contenidos listos para usar en tus aulas. Puedes editar y personalizar estos módulos según tus criterios para adaptarlos a las necesidades de tus alumnos."
+              },
+              "step2": {
+                "title": "Aulas",
+                "description": "En este espacio puedes crear aulas donde podrás agrupar a tus alumnos y asignarles los módulos de aprendizaje que publiques. Organiza tu clases de manera efectiva y personalizada. ¡Empieza a crear tus aulas y transforma la experiencia educativa!"
+              },
+              "step3": {
+                "title": "¿Necesitas ayuda?",
+                "description": "Encuentra toda la información en nuestros tutoriales diseñados para ayudarte a sacar el máximo provecho de RVD.AI. Aprende a crear módulos de aprendizaje, gestionar tus aulas y utilizar todas las herramientas que ofrecemos. ¡Explora nuestros tutoriales y navega la plataforma!"
+              },
+              "step4": {
+                "title": "Mis módulos",
+                "description": "En esta sección se verán los módulos que el usuario ha creado."
+              },
+              "assignments": {
+                "title": "Mis asignaciones",
+                "description": "Representan las asignaciones hechas en aulas de clases."
+              }
+            },
             "title": "¡Bienvenido!",
             "profile": {
               "edit": "Ir a mi perfil"
             },
             "assignments": {
-              "title": "Asignaciones",
-              "activities": "Actividades"
+              "title": "Mis Asignaciones",
+              "activities": "Mis Actividades"
             },
             "modules": {
-              "title": "Módulos",
+              "title": "Mis Módulos",
               "empty": "No posees módulos de aprendizaje aún",
               "action": "Publicar un módulo",
-              "activities": "Actividades",
+              "activities": "Mis Actividades",
               "items": {
                 "description": "Este módulo no posee descripción u objetivo",
                 "title": "Este módulo no posee título"
               }
             },
             "drafts": {
-              "title": "Borradores",
+              "title": "Mis Borradores",
               "empty": "No posees borradores",
               "action": "Crear borrador",
               "items": {
@@ -107,7 +137,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               }
             },
             "classrooms": {
-              "title": "Aulas",
+              "title": "Mis Aulas",
               "empty": "No posees aulas",
               "action": "Crear aula",
               "items": {
@@ -115,10 +145,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               }
             },
             "students": {
-              "title": "Estudiantes"
+              "title": "Mis Estudiantes"
             },
             "members": {
-              "children": "Hijos"
+              "children": "Mis Hijos"
             }
           };
         }
