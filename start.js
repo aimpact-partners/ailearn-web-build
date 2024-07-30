@@ -596,7 +596,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ************************/
 
         ims.set('./router', {
-          hash: 2986355245,
+          hash: 1603646480,
           creator: function (require, exports) {
             "use strict";
 
@@ -664,7 +664,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *************************/
 
         ims.set('./routing', {
-          hash: 1965099403,
+          hash: 3459254977,
           creator: function (require, exports) {
             "use strict";
 
@@ -680,11 +680,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             _routing.routing.redirect = async function redirect(uri) {
               try {
                 const onLogout = () => {
+                  console.log('onLogout');
                   _routing.routing.replaceState({}, '', '/');
                   router.previous = undefined;
                 };
                 _session2.sessionWrapper.on('logout', onLogout);
                 const response = await router.validate(uri);
+                console.log('vamos a', response.pathname);
                 return response.pathname;
               } catch (e) {
                 console.error(e);

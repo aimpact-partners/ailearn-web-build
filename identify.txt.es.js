@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 526156854,
+        hash: 2589273630,
         creator: function (require, exports) {
           exports.txt = {
             "errors": {
@@ -79,9 +79,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "description": "Por favor, espera la aprobación del administrador para acceder al espacio educativo. <strong>Revisa tu correo electrónico</strong> donde te notificaremos una vez que tu solicitud haya sido aprobada."
               },
               "institution": {
-                "title": "¡Felicitaciones! Tu institución ya puedes iniciar su período de prueba",
+                "title": "¡Felicitaciones! Tu institución ya puede iniciar su período de prueba",
                 "description": "Te hemos asignado a tu período de prueba 20 créditos para crear 20 módulos con IA y 120 créditos para la interacción con IA de los alumnos.",
                 "start": "Comenzar"
+              },
+              "teacherApproved": {
+                "title": "¡Felicitaciones! Tu solicitud ha sido aprobada",
+                "description": "Ya eres parte de la institución {organization}, Comienza a utilizar RVD.AI."
               }
             },
             "cards": {

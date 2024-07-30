@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 434429520,
+        hash: 2873964845,
         creator: function (require, exports) {
           exports.txt = {
             "errors": {
@@ -82,6 +82,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Congratulations! Your institution can now start its trial period",
                 "description": "We have assigned you 20 credits for your trial period to create 20 modules with AI and 120 credits for AI interaction with students.",
                 "start": "Start"
+              },
+              "teacherApproved": {
+                "title": "Congratulations! Your request has been approved",
+                "description": "You are now part of the {organization} institution, Start using RVD.AI."
               }
             },
             "cards": {
