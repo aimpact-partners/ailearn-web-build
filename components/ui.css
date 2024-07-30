@@ -1167,7 +1167,7 @@ app-missing {
   width: 100svw;
 }
 .page-title__section {
-  padding: 0rem;
+  padding: 0.5rem 0rem;
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;

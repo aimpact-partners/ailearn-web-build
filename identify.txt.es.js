@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.2"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.0.1"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.1"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.4"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["apexcharts", "3.48.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-icons", "5.2.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.3"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["firebase", "10.12.0"], ["firebase-admin", "12.1.0"], ["react-is", "16.13.1"], ["react-select", "5.8.0"], ["swiper", "8.4.7"], ["@aimpact/ailearn-app", "0.1.0-dev.03"], ["@aimpact/ailearn-app", "0.1.0-dev.03"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.2"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.0.1"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.1"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.4"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["apexcharts", "3.48.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-icons", "5.2.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.3"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["firebase", "10.12.0"], ["firebase-admin", "12.1.0"], ["react-is", "16.13.1"], ["react-select", "5.8.0"], ["swiper", "8.4.7"], ["@aimpact/ailearn-app", "0.1.0-dev.06"], ["@aimpact/ailearn-app", "0.1.0-dev.06"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.0-dev.03/identify",
+          "vspecifier": "@aimpact/ailearn-app@0.1.0-dev.06/identify",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2235945331,
+        hash: 526156854,
         creator: function (require, exports) {
           exports.txt = {
             "errors": {
@@ -72,11 +72,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "requested": {
               "teacher": {
                 "title": "¡Felicitaciones! Ya puedes iniciar tu período de prueba",
-                "description": "Te hemos asignado 5 créditos para crear 5 módulos con IA y 30 créditos para la interacción con IA de tus alumnos."
+                "description": "Te hemos asignado <strong>5 créditos generativos</strong> para crear 5 módulos con IA y <strong>30 créditos interactivos</strong> para la interacción con IA de tus alumnos."
               },
               "teacherInstitution": {
                 "title": "Tu solicitud para unirte a la institución está en proceso de revisión.",
-                "description": "Por favor, espera la aprobación del administrador para acceder al espacio educativo. Revisa tu correo electrónico donde te notificaremos una vez que tu solicitud haya sido aprobada."
+                "description": "Por favor, espera la aprobación del administrador para acceder al espacio educativo. <strong>Revisa tu correo electrónico</strong> donde te notificaremos una vez que tu solicitud haya sido aprobada."
               },
               "institution": {
                 "title": "¡Felicitaciones! Tu institución ya puedes iniciar su período de prueba",
@@ -159,13 +159,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 },
                 "form": {
                   "title": "Comienza a transitar la transformación educativa",
-                  "description": "Estás a punto de unirte al espacio educativo de tu institución en RVD.AI Rivadavia. Ingresa el código de identificación que recibiste en tu correo electrónico.",
+                  "description": "Estás a punto de unirte al espacio educativo de tu institución. Para ingresar a <strong>RVD.AI Rivadavia</strong> debes ingresar  y validar el código de acceso provisto por el administrador de tu institución.",
                   "form": {
                     "legend": {
                       "title": "¿No tienes tu código?",
                       "description": " Chequea tu correo electrónico o contacta al administrador de tu institución si aún no has recibido la invitación."
                     },
-                    "action": "Ingresar código"
+                    "action": "Ingresar código",
+                    "error": {
+                      "title": "Código incorrecto.",
+                      "description": "Por favor, verifica el código y vuelve a intentarlo. Si el problema persiste, contacta al administrador de tu institución para obtener el código correcto."
+                    }
                   }
                 }
               },
