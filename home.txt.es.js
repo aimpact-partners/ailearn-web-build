@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 488112391,
+        hash: 722088003,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -42,6 +42,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "generate": "Generar",
               "imported": "Importado",
               "save": "Guardar",
+              "continue": "Continuar",
               "clean": "Limpiar",
               "activity": "Actividades",
               "update": "Subir Documento",
@@ -80,6 +81,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               }
             },
             "tour": {
+              "buttons": {
+                "nextBtnText": "Siguiente",
+                "prevBtnText": "Anterior",
+                "doneBtnText": "Listo"
+              },
               "step0": {
                 "title": "Bienvenido a tu perfil",
                 "description": "Aquí puedes personalizar tu experiencia en RVD.AI Rivadavia. Podrás  actualizar tu información personal, indicar  tu idioma de preferencia, configurar opciones de accesibilidad y ajustar la velocidad del audio."
@@ -92,7 +98,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Librería de Módulos",
                 "description": "Explora nuestra colección de módulos de aprendizaje creados por expertos. Encuentra una variedad de contenidos listos para usar en tus aulas. Puedes editar y personalizar estos módulos según tus criterios para adaptarlos a las necesidades de tus alumnos."
               },
-              "step2": {
+              "classrooms": {
                 "title": "Aulas",
                 "description": "En este espacio puedes crear aulas donde podrás agrupar a tus alumnos y asignarles los módulos de aprendizaje que publiques. Organiza tu clases de manera efectiva y personalizada. ¡Empieza a crear tus aulas y transforma la experiencia educativa!"
               },
@@ -100,18 +106,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "¿Necesitas ayuda?",
                 "description": "Encuentra toda la información en nuestros tutoriales diseñados para ayudarte a sacar el máximo provecho de RVD.AI. Aprende a crear módulos de aprendizaje, gestionar tus aulas y utilizar todas las herramientas que ofrecemos. ¡Explora nuestros tutoriales y navega la plataforma!"
               },
-              "step4": {
+              "modules": {
                 "title": "Mis módulos",
                 "description": "En esta sección se verán los módulos que el usuario ha creado."
               },
               "assignments": {
                 "title": "Mis asignaciones",
                 "description": "Representan las asignaciones hechas en aulas de clases."
-              },
-              "classrooms": {
-                "title": "Aulas",
-                "description": "En este espacio puedes crear aulas donde podrás agrupar a tus alumnos y asignarles los módulos de aprendizaje que publiques. Organiza tu clases de manera efectiva y personalizada. ¡Empieza a crear tus aulas y transforma la experiencia educativa!"
               }
+            },
+            "errors": {
+              "default": "No se ha podido realizar la operación. Por favor, inténtelo de nuevo."
             },
             "title": "¡Bienvenido!",
             "profile": {
@@ -138,6 +143,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "items": {
                 "description": "Este módulo no posee descripción u objetivo",
                 "title": "Este borrador no posee título"
+              }
+            },
+            "library": {
+              "title": "Libraria de modulos",
+              "actions": {
+                "link": "Ver todo",
+                "use": "Utilizar"
               }
             },
             "classrooms": {

@@ -29,12 +29,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 79518637,
+        hash: 3417889858,
         creator: function (require, exports) {
           exports.txt = {
             "presentation": {
-              "title": "Transforming education with the power of AI",
-              "description": "An innovative solution that securely and effectively integrates AI into the educational environment for more efficient teaching and learning."
+              "title": "We empower teaching and learning processes with Artificial Intelligence",
+              "contents": "<strong>Create dynamic curricular contents</strong> and monitor students' learning process.",
+              "experience": "<strong>Personalize the educational experience</strong>, adapting to students' learning pace and style.",
+              "tutorials": {
+                "students": "Tutorial for students",
+                "teachers": "Tutorial for teachers"
+              },
+              "socialMedia": "Follow us on our social media"
             },
             "title": "Transforming education with the power of AI",
             "description": "Our platform offers both an assistant AI for teachers and an AI tutor for students. We aim to provide comprehensive support for both educators and learners alike.",
@@ -53,7 +59,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "facebookSignInButton": "Facebook Sign In",
             "forgotPasswordLink": "Forgot your password?",
             "createAccountLink": "Create a new account?",
-            "theme": "%them Mode",
+            "theme": "theme Mode",
             "passwordConditions": {
               "title": "Password must contain",
               "minimumCharacters": "At least 8 characters",

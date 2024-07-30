@@ -29,23 +29,29 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3910638733,
+        hash: 365194606,
         creator: function (require, exports) {
           exports.txt = {
             "presentation": {
-              "title": "Transformar la educación con el poder de la IA",
-              "description": "Una solución innovadora que integra la IA de forma segura y efectiva en el entorno educativo para una enseñanza y aprendizaje más eficiente."
+              "title": "Potenciamos la enseñanza y el proceso de aprendizaje con Inteligencia Artificial",
+              "contents": "<strong>Crea contenidos curriculares</strong> dinámicos y monitorea el proceso de aprendizaje de los alumnos.",
+              "experience": "<strong>Personaliza la experiencia educativa</strong>, adaptándose al ritmo y estilo de aprendizaje de los alumnos.",
+              "tutorials": {
+                "students": "Tutorial para alumnos",
+                "teachers": "Tutorial para docentes"
+              },
+              "socialMedia": "Seguinos en nuestras reder"
             },
             "title": "Transformar la educación con el poder de la IA",
             "description": "Nuestra plataforma ofrece tanto un asistente de IA para profesores como un tutor de IA para alumnos. Nuestro objetivo es ofrecer un apoyo integral tanto a los educadores como a los alumnos.",
-            "loginTitle": "Iniciar sesión",
+            "loginTitle": "Inicie sesión",
             "emailLabel": "Correo electrónico",
             "passwordLabel": "Contraseña",
             "termsAndPrivacy": "Al crear una cuenta, aceptas nuestros ",
             "terms": "Términos de servicio",
             "connector": "y",
             "policy": "Política de privacidad",
-            "signInButton": "Iniciar sesión",
+            "signInButton": "Inicie sesión",
             "socialLoginTitle": "O inicia sesión con una cuenta de redes sociales",
             "googleSignInButton": "Iniciar sesión con Google",
             "emailSignInButton": "Continuar con tu correo",

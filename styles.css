@@ -332,6 +332,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --box-shadow-hover: 0px 0px 15px rgba(0, 0, 0, 0.2);
   --font-size-p2: 0.875rem;
   --font-size-p1: 1rem;
+  --text-muted: var(--neutral-50);
   /* neutral */
   --neutral-0: #000;
   --neutral-4: #0f0d13;

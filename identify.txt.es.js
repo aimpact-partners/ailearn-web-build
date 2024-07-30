@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2673735205,
+        hash: 2235945331,
         creator: function (require, exports) {
           exports.txt = {
             "errors": {
@@ -72,7 +72,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "requested": {
               "teacher": {
                 "title": "¡Felicitaciones! Ya puedes iniciar tu período de prueba",
-                "description": "Recuerda revisar tu correo {email}, donde te informaremos sobre la aprobación de tu solicitud y la asignación de créditos para que puedas experimentar la asistencia de la Inteligencia Artificial en tu labor docente."
+                "description": "Te hemos asignado 5 créditos para crear 5 módulos con IA y 30 créditos para la interacción con IA de tus alumnos."
               },
               "teacherInstitution": {
                 "title": "Tu solicitud para unirte a la institución está en proceso de revisión.",

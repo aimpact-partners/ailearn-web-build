@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2993273348,
+        hash: 15457992,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -49,6 +49,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "update": "Upload Document",
               "next": "Next",
               "back": "Back",
+              "continue": "Continue",
               "cancel": "Cancel",
               "link": "Link",
               "gTooltip": "Classroom imported from Google",
@@ -80,6 +81,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               }
             },
             "tour": {
+              "buttons": {
+                "nextBtnText": "Next",
+                "prevBtnText": "Previous",
+                "doneBtnText": "Done"
+              },
               "step0": {
                 "title": "Welcome to your profile",
                 "description": "Here you can customize your experience in RVD.AI Rivadavia. You can update your personal information, indicate your preferred language, configure accessibility options, and adjust the audio speed."
@@ -92,7 +98,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Draft Modules",
                 "description": "Work on your draft learning modules until they are ready to be published and assigned to a classroom. They will be saved here so you can edit them as needed. Start creating your first module!"
               },
-              "step2": {
+              "classrooms": {
                 "title": "Classrooms",
                 "description": "In this space, you can create classrooms where you can group your students and assign them the learning modules you publish. Organize your classes effectively and personalize them. Start creating your classrooms and transform the educational experience!"
               },
@@ -107,11 +113,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "assignments": {
                 "title": "My Assignments",
                 "description": "Represent the assignments made in classrooms."
-              },
-              "classrooms": {
-                "title": "Classrooms",
-                "description": "In this space, you can create classrooms where you can group your students and assign them the learning modules you publish. Organize your classes effectively and personalize them. Start creating your classrooms and transform the educational experience!"
               }
+            },
+            "errors": {
+              "default": "Operation failed. Please try again."
             },
             "title": "Welcome!",
             "profile": {
@@ -138,6 +143,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "items": {
                 "description": "This module has no description or objective",
                 "title": "This draft has no title"
+              }
+            },
+            "library": {
+              "title": "Module Library",
+              "actions": {
+                "link": "See all",
+                "use": "Use"
               }
             },
             "classrooms": {
