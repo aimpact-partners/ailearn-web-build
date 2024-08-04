@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/chat-sdk", "1.0.1"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/widgets", "1.1.0"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.3"], ["@types/react-dom", "18.3.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.0.57"]]);
+        const dependencies = new Map([["@aimpact/chat-sdk", "1.0.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.1"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/widgets", "1.1.0"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["socket.io-client", "4.7.3"], ["wavesurfer.js", "7.8.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.46"], ["@types/react-dom", "18.2.18"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.1.0-test.11"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -29,19 +29,47 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1028849158,
+        hash: 1800384783,
         creator: function (require, exports) {
           exports.txt = {
+            "footer": {
+              "intro": "By creating an account you are agreeing to the ",
+              "terms": "terms and conditions",
+              "connector": "of service and the",
+              "privacy": "privacy policy"
+            },
+            "tutorials": {
+              "webinar": {
+                "title": "Online webinar",
+                "description": "Every Thursday 5.30 PM"
+              },
+              "teachers": "Tutorial for teachers",
+              "students": "Tutorial for students"
+            },
             "presentation": {
-              "title": "Transforming education with the power of AI",
-              "description": "An innovative solution that securely and effectively integrates AI into the educational environment for more efficient teaching and learning."
+              "title": "We empower teaching and learning processes with Artificial Intelligence",
+              "contents": "<strong>Create dynamic curricular contents</strong> and monitor students' learning process.",
+              "experience": "<strong>Personalize the educational experience</strong>, adapting to students' learning pace and style.",
+              "tutorials": {
+                "webinar": {
+                  "title": "Online webinar",
+                  "description": "Every Thursday 5.30 PM"
+                },
+                "teachers": "Tutorial for teachers",
+                "students": "Tutorial for students"
+              },
+              "socialMedia": "Follow us on our social media"
             },
             "title": "Transforming education with the power of AI",
             "description": "Our platform offers both an assistant AI for teachers and an AI tutor for students. We aim to provide comprehensive support for both educators and learners alike.",
             "loginTitle": "Login",
+            "subtitle": "Start your trial period",
             "emailLabel": "Email",
             "passwordLabel": "Password",
-            "termsAndPrivacy": "By creating an account you agree to our Terms of Service and Privacy Policy",
+            "termsAndPrivacy": "By creating an account you agree to",
+            "terms": "Terms of Service",
+            "connector": "and",
+            "policy": "Privacy Policy",
             "signInButton": "Sign in",
             "closeButton": "Close",
             "socialLoginTitle": "Or sign in with social login",
@@ -50,7 +78,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "facebookSignInButton": "Facebook Sign In",
             "forgotPasswordLink": "Forgot your password?",
             "createAccountLink": "Create a new account?",
-            "theme": "%them Mode",
+            "theme": "theme Mode",
             "passwordConditions": {
               "title": "Password must contain",
               "minimumCharacters": "At least 8 characters",

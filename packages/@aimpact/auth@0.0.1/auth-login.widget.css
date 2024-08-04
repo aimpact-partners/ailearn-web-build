@@ -7,19 +7,6 @@
     flex-direction: row !important;
   }
 }
-.login-page-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  flex-direction: column;
-}
-@media screen and (max-width: 768px) {
-  .login-page-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
-    height: 100svh;
-  }
-}
-
 .login-container {
   width: 100%;
   height: 100vh;
@@ -28,6 +15,39 @@
   align-items: flex-end;
   margin: auto;
   align-items: center;
+}
+.login-container .login__header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  padding-right: 3rem;
+  border-radius: var(--border-radius-lg);
+}
+.login-container .login__content {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.login-container .login-form__container {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 1rem;
+  padding: 0rem;
+  border-radius: 0;
+  margin-top: 0;
+}
+.login-container .login-logo {
+  max-height: 50px;
+}
+.login-container .login-form-general__container {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
 }
 .login-container .form-button-by-email {
   display: flex;
@@ -57,10 +77,36 @@
   height: auto;
   overflow: visible;
 }
-
-.buttons__container {
-  display: grid;
+.login-container .login-form-content__container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
+}
+@media (max-width: 768px) {
+  .login-container {
+    height: auto;
+  }
+  .login-container .login__header {
+    padding: 0.5rem;
+  }
+  .login-container .form__title {
+    font-size: 1.62rem;
+    font-weight: 500;
+    padding-bottom: 0;
+    padding-top: 0.5rem;
+  }
+  .login-container .login-form-content__container {
+    margin: 0px;
+  }
+  .login-container .login-container {
+    height: auto;
+    margin: auto;
+    justify-content: center;
+  }
+  .login-container .login__content {
+    height: 100%;
+  }
 }
 .language-selection {
   list-style: none;
@@ -95,57 +141,33 @@
     justify-content: center;
   }
 }
-.login__header {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 1.5rem;
-  padding-right: 3rem;
-  border-radius: var(--border-radius-lg);
+.login-logo {
+  width: auto;
+}
+.login-logo img {
+  object-fit: contain;
+}
+.login-page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .login-page-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    height: 100svh;
+  }
 }
 
-.login__content {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.login-form__container {
-  text-align: center;
-  width: 100%;
-  height: 100%;
+.buttons__container {
   display: grid;
   gap: 1rem;
-  padding: 0rem;
-  border-radius: 0;
-  margin-top: 0;
-}
-
-.login-form-general__container {
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: auto;
 }
 
 .conditions-pass__container {
   text-align: left;
   margin-top: 11px;
-}
-
-.term-login__container {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  transition: opacity 0.3s ease, height 0.22s, linear 0.3s;
-  display: flex;
-  flex-direction: column;
-}
-.term-login__container.show {
-  opacity: 1;
-  height: auto;
-  overflow: visible;
 }
 
 .form__actions {
@@ -158,39 +180,24 @@
 .term-general__container .term-and-privacy__description {
   line-height: 22px;
 }
-
-.term__container {
-  gap: 1rem;
+.term-general__container .term-and-privacy__description a {
+  color: var(--primary);
+  text-decoration: underline;
 }
 
-input {
-  min-width: 270px;
-  height: 2.75rem;
-}
-
-button {
-  height: 2.75rem;
-}
-
-.login-form-content__container {
+.terms__footer {
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+  color: var(--text-color);
+  text-align: center;
+  position: sticky;
+  font-size: 0.85rem;
+  max-width: 70%;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
-
-.forgot-password__text {
-  margin-bottom: 0.5rem;
-}
-
-.divider-section {
-  width: 76%;
-  padding: 0.1rem;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  border-bottom: 1px solid var(--neutral-70);
+.terms__footer a {
+  color: var(--primary);
 }
 
 @media (max-width: 768px) {
@@ -201,30 +208,6 @@ button {
     flex: 0 0 65%;
     padding: 2rem;
     overflow-y: auto;
-  }
-  .login__header {
-    padding: 0.5rem;
-  }
-  .form__title {
-    font-size: 1.62rem;
-    font-weight: 500;
-    padding-bottom: 0;
-    padding-top: 0.5rem;
-  }
-  .login-form-content__container {
-    margin: 0px;
-  }
-  .form-button-by-email {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .login-container {
-    height: auto;
-    margin: auto;
-    justify-content: center;
-  }
-  .login__content {
-    height: 100%;
   }
   .conditions-pass__container {
     text-align: center;
@@ -244,94 +227,192 @@ button {
   position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: grid;
   flex-direction: column;
-  background: var(--primary);
-}
-.presentation-container .logo__container {
-  margin-top: 4.5rem;
-  margin-left: 4.5rem;
-  width: 60%;
-  max-height: 100px;
-  display: flex;
-  justify-content: start;
+  grid-template-rows: 40% 25% 25% auto;
+  justify-content: left;
+  padding: 3rem;
+  background: url("/assets/images/login/background.webp") no-repeat var(--primary);
+  background-position: 100%;
+  background-size: cover;
+  margin: auto;
+  color: var(--on-primary);
+  padding-bottom: 1.5rem;
 }
 .presentation-container .presentation-header__container {
   display: flex;
   align-self: flex-start;
   align-items: center;
-  padding: 4.5rem;
 }
 .presentation-container .presentation-header__container .logo__container {
   max-width: 150px;
 }
-.presentation-container .app-watermark {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 30%;
-  opacity: 0.1;
-  background: url("/assets/rvd/bg/branding.png") no-repeat;
-  background-size: cover;
+.presentation-container header {
+  align-items: end;
+  align-content: end;
 }
-.presentation-container .presentation-content__container {
-  justify-content: left;
-  padding: 3rem;
-  width: 85%;
-  margin: auto;
-  margin-left: 0;
-  padding-left: 4.5rem;
-  color: var(--on-primary);
-  padding-bottom: 1.5rem;
-}
-.presentation-container .presentation-content__container * {
-  line-height: 2rem;
-}
-.presentation-container .presentation-content__container h1 {
+.presentation-container header h3 {
   font-size: 2rem;
+  line-height: 3rem;
 }
-.presentation-container .presentation-content__container .content__title {
+.presentation-container .content__title {
   margin-bottom: 1.5rem;
+}
+.presentation-container .under__panel {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-end;
+  width: 100%;
+  padding-block: 2rem;
+}
+.presentation-container .under__panel p {
+  padding: 0;
+  margin: 0;
+}
+.presentation-container .under__panel .app-feature .pui-image,
+.presentation-container .under__panel .app-feature .pui-image img {
+  width: 40px;
+  height: 40px;
+}
+.presentation-container .social-media__container {
+  display: flex;
+  font-size: 0.75rem;
+  color: var(--on-primary);
+  padding: 1rem 3rem;
+  align-content: center;
+}
+.presentation-container .social-media__container h6 {
+  width: 100%;
+  font-size: 0.75rem;
+  font-weight: lighter;
+  align-content: center;
+}
+.presentation-container .social-media__container .social-media-list {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-items: end;
+  width: 100%;
+  justify-content: end;
+  gap: 0.5rem;
+  padding-inline: 2rem;
+}
+.presentation-container .social-media__container .social-media-list .pui-image,
+.presentation-container .social-media__container .social-media-list .pui-image img {
+  width: 28px;
+  height: 28px;
 }
 @media screen and (max-width: 768px) {
   .presentation-container {
     height: 100%;
     display: grid;
+    grid-template-rows: 1fr 1fr;
     place-items: center;
-  }
-  .presentation-container .logo__container {
-    width: 100%;
-    display: grid;
-    margin: 0;
-    place-items: center;
-    align-self: end;
-    justify-content: center;
-  }
-  .presentation-container .logo__container .pui-image {
-    max-width: 150px;
-  }
-  .presentation-container .presentation-content__container {
+    background: url("/assets/images/login/mobile-background.webp") no-repeat var(--primary);
+    background-size: 100%;
     width: 100%;
     padding: 1rem 2rem;
     margin: 0;
   }
-  .presentation-container .presentation-content__container h1 {
+  .presentation-container header {
+    align-self: end;
+  }
+  .presentation-container header h3 {
     font-size: 1.1rem;
     line-height: 1.4rem;
-    text-align: center;
   }
-  .presentation-container .presentation-content__container p {
+  .presentation-container p {
     font-size: 0.785rem;
     line-height: 1.4rem;
-    text-align: center;
   }
-  .presentation-container .app-watermark {
-    width: 130%;
-    height: 40%;
-    left: -15%;
+  .presentation-container .under__panel,
+  .presentation-container .social-media__container {
+    display: none;
+  }
+  .presentation-container .tutorials-container {
+    align-self: end;
+    justify-content: end;
+    align-content: end;
+  }
+}
+.presentation-container .webinar-container {
+  border-radius: var(--border-radius-base);
+  background: var(--secondary);
+  display: flex;
+  padding: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: var(--on-secondary);
+}
+.presentation-container .webinar-container .pui-image,
+.presentation-container .webinar-container .pui-image img {
+  width: 40px;
+  height: 40px;
+}
+.presentation-container .webinar-container section {
+  display: grid;
+}
+.presentation-container .webinar-container section h6 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.presentation-container .tutorials-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+}
+.presentation-container .tutorials-container .tutorial {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  background: var(--primary-dark);
+  color: var(--on-primary);
+  padding: 1rem;
+  border-radius: var(--border-radius-base);
+  overflow: visible;
+  height: 4rem;
+}
+.presentation-container .tutorials-container .tutorial .pui-image {
+  position: absolute;
+  height: 120%;
+  width: auto;
+}
+.presentation-container .tutorials-container .tutorial.tutorial--left-image {
+  padding-left: 110px;
+}
+.presentation-container .tutorials-container .tutorial.tutorial--left-image .pui-image {
+  left: 0;
+  bottom: 0;
+}
+.presentation-container .tutorials-container .tutorial.tutorial--right-image {
+  padding-right: 110px;
+}
+.presentation-container .tutorials-container .tutorial.tutorial--right-image .pui-image {
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  .presentation-container .tutorials-container {
+    align-items: flex-end;
+  }
+  .presentation-container .tutorials-container .tutorial .pui-image {
+    display: none;
+  }
+  .presentation-container .tutorials-container .tutorial.tutorial--left-image, .presentation-container .tutorials-container .tutorial.tutorial--right-image {
+    padding: 1rem;
+    text-align: center;
+    height: auto;
   }
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGF1dGgtY29udGFpbmVyLnNjc3MiLCJzY3NzXFxjb250YWluZXIuc2NzcyIsInNjc3NcXGxhbmd1YWdlLnNjc3MiLCJzY3NzXFxwYW5lbHMuc2NzcyIsInNjc3NcXHByZXNlbnRhdGlvblxcaW5kZXguc2NzcyIsInNjc3NcXHByZXNlbnRhdGlvblxcbW9iaWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztFQUNBOztBQUNBO0VBSEQ7SUFJRTs7O0FDSkY7RUFDQztFQUNBO0VBQ0E7O0FBQ0E7RUFKRDtJQUtFO0lBQ0E7SUFDQTs7OztBQUlGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBR0Q7RUFDQztFQUNBOztBQUlGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7OztBQUtIO0VBQ0M7RUFDQTs7QUN4REQ7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDQzs7QUFHRjtFQUNDOztBQUdEO0VBekJEO0lBMEJFO0lBQ0E7SUFDQTtJQUNBO0lBRUE7OztBQy9CRjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7OztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7OztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7RUFDQTtFQUNBOzs7QUFJRjtFQUNDO0VBQ0E7RUFDQTtFQUNBOzs7QUFJQTtFQUNDOzs7QUFJRjtFQUNDOzs7QUFHRDtFQUNDO0VBQ0E7OztBQUdEO0VBQ0M7OztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7OztBQUdEO0VBQ0M7OztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdEO0VBQ0M7SUFDQzs7RUFHRDtJQUNDO0lBQ0E7SUFDQTs7RUFHRDtJQUNDOztFQUdEO0lBQ0M7SUFDQTtJQUNBO0lBQ0E7O0VBR0Q7SUFDQzs7RUFFRDtJQUNDO0lBQ0E7O0VBR0Q7SUFDQztJQUNBO0lBQ0E7O0VBR0Q7SUFDQzs7RUFHRDtJQUNDO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7O0VBRUE7SUFDQzs7RUFDQTtJQUNDOzs7QUN2Sko7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDOztBQUlGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQU9BO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBVkE7RUFDQzs7QUFFRDtFQUNDOztBQU9EO0VBQ0M7O0FDdERGO0VBREQ7SUFFRTtJQUNBO0lBQ0E7O0VBRUE7SUFDQztJQUNBO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7O0VBQ0E7SUFDQzs7RUFJRjtJQUNDO0lBQ0E7SUFDQTs7RUFDQTtJQUNDO0lBQ0E7SUFDQTs7RUFFRDtJQUNDO0lBQ0E7SUFDQTs7RUFHRjtJQUNDO0lBQ0E7SUFDQSIsImZpbGUiOiIifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGF1dGgtY29udGFpbmVyLnNjc3MiLCJzY3NzXFxmb3JtLXBhbmVsLnNjc3MiLCJzY3NzXFxsYW5ndWFnZS5zY3NzIiwic2Nzc1xcbG9nby5zY3NzIiwic2Nzc1xccGFnZS5zY3NzIiwic2Nzc1xccHJlc2VudGF0aW9uXFxpbmRleC5zY3NzIiwic2Nzc1xccHJlc2VudGF0aW9uXFxtb2JpbGUuc2NzcyIsInNjc3NcXHByZXNlbnRhdGlvblxcdHV0b3JpYWxzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztFQUNBOztBQUNBO0VBSEQ7SUFJRTs7O0FDSkY7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBR0Q7RUFDQztFQUNBOztBQUlGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBSUY7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQXZGRDtJQXdGRTs7RUFDQTtJQUNDOztFQUdEO0lBQ0M7SUFDQTtJQUNBO0lBQ0E7O0VBR0Q7SUFDQzs7RUFHRDtJQUNDO0lBQ0E7SUFDQTs7RUFHRDtJQUNDOzs7QUMvR0g7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDQzs7QUFHRjtFQUNDOztBQUdEO0VBekJEO0lBMEJFO0lBQ0E7SUFDQTtJQUNBO0lBRUE7OztBQy9CRjtFQUNDOztBQUNBO0VBQ0M7O0FDSEY7RUFDQztFQUNBO0VBQ0E7O0FBQ0E7RUFKRDtJQUtFO0lBQ0E7SUFDQTs7OztBQUlGO0VBQ0M7RUFDQTs7O0FBR0Q7RUFDQztFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBOzs7QUFJQTtFQUNDOztBQUNBO0VBQ0M7RUFDQTs7O0FBS0g7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDQzs7O0FBSUY7RUFDQztJQUNDOztFQUdEO0lBQ0M7SUFDQTtJQUNBOztFQUdEO0lBQ0M7SUFDQTtJQUNBO0lBQ0E7SUFDQTs7RUFFQTtJQUNDOztFQUNBO0lBQ0M7OztBQzFFSjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFxQkE7RUFFQTtFQUNBOztBQXRCQTtFQUNDO0VBQ0E7RUFDQTs7QUFFQTtFQUNDOztBQUlGO0VBQ0M7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7O0FBUUY7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7O0FBQ0E7RUFDQztFQUNBOztBQUtDO0FBQUE7RUFFQztFQUNBOztBQUtKO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUVEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBRUE7RUFDQTtFQUNBOztBQUdDO0FBQUE7RUFFQztFQUNBOztBQ3pGSjtFQUREO0lBRUU7SUFDQTtJQUNBO0lBQ0E7SUFDQTtJQUNBO0lBRUE7SUFDQTtJQUNBOztFQUNBO0lBQ0M7O0VBQ0E7SUFDQztJQUNBOztFQUlGO0lBQ0M7SUFDQTs7RUFHRDtBQUFBO0lBRUM7O0VBR0Q7SUFDQztJQUVBO0lBQ0E7OztBQ2pDRjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHQztBQUFBO0VBRUM7RUFDQTs7QUFJRjtFQU1DOztBQUxBO0VBQ0M7RUFDQTtFQUNBOztBQU1IO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTs7QUFFRDtFQUNDOztBQUNBO0VBQ0M7RUFDQTs7QUFHRjtFQUNDOztBQUNBO0VBQ0M7RUFDQTs7QUFNSjtFQUNDO0lBQ0M7O0VBRUM7SUFDQzs7RUFFRDtJQUVDO0lBQ0E7SUFDQSIsImZpbGUiOiIifQ== */

@@ -10,10 +10,10 @@ System.register([], function (_export, _context) {
 				params: {},
 				languages: {
 					default: 'en',
-					supported: ['en', 'es'],
+					supported: ['en', 'es']
 				},
-				environment: 'production',
+				environment: 'development'
 			});
-		},
+		}
 	};
 });

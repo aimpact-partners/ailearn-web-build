@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/chat-sdk", "1.0.1"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "0.1.1"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/widgets", "1.1.0"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.3"], ["@types/react-dom", "18.3.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.0.57"]]);
+        const dependencies = new Map([["@aimpact/chat-sdk", "1.0.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.1"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/widgets", "1.1.0"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["socket.io-client", "4.7.3"], ["wavesurfer.js", "7.8.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.46"], ["@types/react-dom", "18.2.18"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.1.0-test.11"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -29,20 +29,48 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1989654982,
+        hash: 363677786,
         creator: function (require, exports) {
           exports.txt = {
+            "footer": {
+              "intro": "Al crear una cuenta estás aceptando los ",
+              "terms": "términos y condiciones",
+              "connector": "del servicio y la",
+              "privacy": "política de privacidad"
+            },
+            "tutorials": {
+              "webinar": {
+                "title": "Webinar online",
+                "description": "Todos los jueves 17.30 HS"
+              },
+              "teachers": "Tutorial para docentes",
+              "students": "Tutorial para alumnos"
+            },
             "presentation": {
-              "title": "Transformar la educación con el poder de la IA",
-              "description": "Una solución innovadora que integra la IA de forma segura y efectiva en el entorno educativo para una enseñanza y aprendizaje más eficiente."
+              "title": "Potenciamos la enseñanza y el proceso de aprendizaje con Inteligencia Artificial",
+              "contents": "<strong>Crea contenidos curriculares</strong> dinámicos y monitorea el proceso de aprendizaje de los alumnos.",
+              "experience": "<strong>Personaliza la experiencia educativa</strong>, adaptándose al ritmo y estilo de aprendizaje de los alumnos.",
+              "tutorials": {
+                "webinar": {
+                  "title": "Webinar online",
+                  "description": "Todos los jueves 17.30 HS"
+                },
+                "teachers": "Tutorial para docentes",
+                "students": "Tutorial para alumnos"
+              },
+              "socialMedia": "Seguinos en nuestras reder"
             },
             "title": "Transformar la educación con el poder de la IA",
             "description": "Nuestra plataforma ofrece tanto un asistente de IA para profesores como un tutor de IA para alumnos. Nuestro objetivo es ofrecer un apoyo integral tanto a los educadores como a los alumnos.",
-            "loginTitle": "Iniciar sesión",
+            "loginTitle": "Inicie sesión",
+            "subtitle": "Comience su periodo de prueba",
             "emailLabel": "Correo electrónico",
             "passwordLabel": "Contraseña",
-            "termsAndPrivacy": "Al crear una cuenta, aceptas nuestros Términos de servicio y Política de privacidad",
-            "signInButton": "Iniciar sesión",
+            "termsAndPrivacy": "Al crear una cuenta, aceptas nuestros ",
+            "tterms": "Términos de servicio",
+            "connector": "y",
+            "policy": "Política de privacidad",
+            "signInButton": "Inicie sesión",
             "socialLoginTitle": "O inicia sesión con una cuenta de redes sociales",
             "googleSignInButton": "Iniciar sesión con Google",
             "emailSignInButton": "Continuar con tu correo",
