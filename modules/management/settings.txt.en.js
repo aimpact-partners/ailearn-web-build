@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 297744056,
+        hash: 1562710811,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -177,6 +177,32 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "toast": {
               "modulePublished": "'Module published successfully",
               "errorPublishingModule": "Error while publishing module"
+            },
+            "moduleTour": {
+              "moduleName": {
+                "title": "Add Module Name",
+                "description": "Enter the name of the learning module in this field."
+              },
+              "description": {
+                "title": "Description",
+                "description": "Add a description of the module here."
+              },
+              "image": {
+                "title": "Generate Image",
+                "description": "Click this icon to generate an image of the module using AI."
+              },
+              "activities": {
+                "title": "Activities",
+                "description": "Here you can view the activities added in the module."
+              },
+              "addActivity": {
+                "title": "Add Activity",
+                "description": "Click this button to add a new activity to the module."
+              },
+              "publish": {
+                "title": "Publish",
+                "description": "Click this button to publish the module once completed."
+              }
             }
           };
         }

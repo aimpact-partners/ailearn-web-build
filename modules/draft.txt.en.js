@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3849308804,
+        hash: 386302730,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -185,6 +185,45 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "labels": {
               "title": "Title",
               "description": "Description"
+            },
+            "objectiveTour": {
+              "buttons": {
+                "nextBtnText": "Next",
+                "prevBtnText": "Previous",
+                "doneBtnText": "Done"
+              },
+              "language": {
+                "title": "Select Language",
+                "description": "Select the language in which the learning module will be developed."
+              },
+              "ownership": {
+                "title": "Select Administrator",
+                "description": "Choose the administrator responsible for the learning module."
+              },
+              "audience": {
+                "title": "Select School Year",
+                "description": "Indicate the school year for which the module is intended."
+              },
+              "duration": {
+                "title": "Number of Activities",
+                "description": "Define the number of activities that the learning module will include. You can adjust this amount according to your needs."
+              },
+              "objective": {
+                "title": "Module Objective",
+                "description": "Write the main objective of the learning module. This objective will help guide the content and activities of the module."
+              },
+              "saveButton": {
+                "title": "Save Module",
+                "description": "Save the details of the learning module. Once saved, you can request credits to get AI recommendations."
+              },
+              "requestCredits": {
+                "title": "Request Credits",
+                "description": "Request credits to be able to access all AI functionalities."
+              },
+              "suggestions": {
+                "title": "Suggest Improvements",
+                "description": "Get improvement suggestions for the title and options defined by the ministry of education to be implemented in the objective."
+              }
             },
             "wizard": {
               "messages": {

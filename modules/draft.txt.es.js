@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3453359013,
+        hash: 2382357319,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -184,6 +184,45 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "labels": {
               "title": "Título",
               "description": "Descripción"
+            },
+            "objectiveTour": {
+              "buttons": {
+                "nextBtnText": "Siguiente",
+                "prevBtnText": "Anterior",
+                "doneBtnText": "Listo"
+              },
+              "language": {
+                "title": "Seleccionar Idioma",
+                "description": "Selecciona el idioma en el que se desarrollará el módulo de aprendizaje."
+              },
+              "ownership": {
+                "title": "Seleccionar Administrador",
+                "description": "Elige el administrador responsable del módulo de aprendizaje."
+              },
+              "audience": {
+                "title": "Seleccionar Año Escolar",
+                "description": "Indica el año escolar para el cual está destinado el módulo."
+              },
+              "duration": {
+                "title": "Número de Actividades",
+                "description": "Define el número de actividades que incluirá el módulo de aprendizaje. Puedes ajustar esta cantidad según tus necesidades."
+              },
+              "objective": {
+                "title": "Objetivo del Módulo",
+                "description": "Escribe el objetivo principal del módulo de aprendizaje. Este objetivo ayudará a guiar el contenido y las actividades del módulo."
+              },
+              "saveButton": {
+                "title": "Guardar Módulo",
+                "description": "Guarda los detalles del módulo de aprendizaje. Una vez guardado, podrás solicitar créditos para obtener recomendaciones con IA."
+              },
+              "requestCredits": {
+                "title": "Solicitar Créditos",
+                "description": "Solicita créditos para poder tener acceso a todas las funcionalidades de IA."
+              },
+              "suggestions": {
+                "title": "Sugerir Mejoras",
+                "description": "Obtén sugerencias de mejora para el título y opciones definidas por el ministerio de educación para ser implementadas en el objetivo."
+              }
             },
             "wizard": {
               "messages": {
