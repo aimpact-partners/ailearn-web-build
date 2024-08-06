@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/kernel@0.1.9/routing", "pragmate-ui@1.0.0-beta.1/icons", "react@18.2.0", "@beyond-js/react-18-widgets@1.1.2/hooks", "pragmate-ui@1.0.0-beta.1/image", "pragmate-ui@1.0.0-beta.1/breadcrumb", "@aimpact/ailearn-app@0.1.1/components/ui", "@aimpact/chat-sdk@1.0.1/session", "pragmate-ui@1.0.0-beta.1/components", "@aimpact/ailearn-app@0.1.1/components/icons", "pragmate-ui@1.0.0-beta.1/dropdown", "@beyond-js/widgets@1.1.0/render"], function (_export, _context3) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/kernel@0.1.9/routing", "pragmate-ui@1.0.0-beta.1/icons", "react@18.2.0", "@beyond-js/react-18-widgets@1.1.2/hooks", "pragmate-ui@1.0.0-beta.1/image", "pragmate-ui@1.0.0-beta.1/breadcrumb", "@aimpact/ailearn-app@0.1.3/components/ui", "@aimpact/chat-sdk@1.0.1/session", "pragmate-ui@1.0.0-beta.1/components", "@aimpact/ailearn-app@0.1.3/components/icons", "pragmate-ui@1.0.0-beta.1/dropdown", "@beyond-js/widgets@1.1.0/render"], function (_export, _context3) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, bimport, __Bundle, __pkg, ims, NavbarHeader, ProfileIcon, ThemeSwitcher, __beyond_pkg, hmr;
@@ -24,14 +24,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_6 = _pragmateUi100Beta1Image;
     }, function (_pragmateUi100Beta1Breadcrumb) {
       dependency_7 = _pragmateUi100Beta1Breadcrumb;
-    }, function (_aimpactAilearnApp011ComponentsUi) {
-      dependency_8 = _aimpactAilearnApp011ComponentsUi;
+    }, function (_aimpactAilearnApp013ComponentsUi) {
+      dependency_8 = _aimpactAilearnApp013ComponentsUi;
     }, function (_aimpactChatSdk101Session) {
       dependency_9 = _aimpactChatSdk101Session;
     }, function (_pragmateUi100Beta1Components) {
       dependency_10 = _pragmateUi100Beta1Components;
-    }, function (_aimpactAilearnApp011ComponentsIcons) {
-      dependency_11 = _aimpactAilearnApp011ComponentsIcons;
+    }, function (_aimpactAilearnApp013ComponentsIcons) {
+      dependency_11 = _aimpactAilearnApp013ComponentsIcons;
     }, function (_pragmateUi100Beta1Dropdown) {
       dependency_12 = _pragmateUi100Beta1Dropdown;
     }, function (_beyondJsWidgets110Render) {
@@ -39,7 +39,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.2"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.0.1"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.1"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.4"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["apexcharts", "3.48.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-icons", "5.2.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.3"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["firebase", "10.12.0"], ["firebase-admin", "12.1.0"], ["react-is", "16.13.1"], ["react-select", "5.8.0"], ["swiper", "8.4.7"], ["@aimpact/ailearn-app", "0.1.1"], ["@aimpact/ailearn-app", "0.1.1"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.2"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.0.1"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.1"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.4"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["apexcharts", "3.48.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-icons", "5.2.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.3"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["firebase", "10.12.0"], ["firebase-admin", "12.1.0"], ["react-is", "16.13.1"], ["react-select", "5.8.0"], ["swiper", "8.4.7"], ["@aimpact/ailearn-app", "0.1.3"], ["@aimpact/ailearn-app", "0.1.3"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -47,14 +47,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.1/components/navbar-header",
+          "vspecifier": "@aimpact/ailearn-app@0.1.3/components/navbar-header",
           "multibundle": true
         },
         "type": "code"
       }, _context3.meta.url).package();
       ;
       __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['@beyond-js/kernel/routing', dependency_2], ['pragmate-ui/icons', dependency_3], ['react', dependency_4], ['@beyond-js/react-18-widgets/hooks', dependency_5], ['pragmate-ui/image', dependency_6], ['pragmate-ui/breadcrumb', dependency_7], ['@aimpact/ailearn-app/components/ui', dependency_8], ['@aimpact/chat-sdk/session', dependency_9], ['pragmate-ui/components', dependency_10], ['@aimpact/ailearn-app/components/icons', dependency_11], ['pragmate-ui/dropdown', dependency_12], ['@beyond-js/widgets/render', dependency_13]]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.1.1/components/navbar-header.code');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.1.3/components/navbar-header.code');
       ims = new Map();
       /**************************
       INTERNAL MODULE: ./closable
