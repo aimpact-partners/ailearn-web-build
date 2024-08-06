@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 363677786,
+        hash: 2523503085,
         creator: function (require, exports) {
           exports.txt = {
             "footer": {
@@ -53,7 +53,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "tutorials": {
                 "webinar": {
                   "title": "Webinar online",
-                  "description": "Todos los jueves 17.30 HS"
+                  "description": "Visitá nuestro canal de YouTube"
                 },
                 "teachers": "Tutorial para docentes",
                 "students": "Tutorial para alumnos"
