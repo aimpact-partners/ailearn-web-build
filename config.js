@@ -1,11 +1,10 @@
 System.register([], function (a, e) {
-	'use strict';
 	return {
 		setters: [],
 		execute: function () {
 			a('default', {
 				package: '@aimpact/ailearn-app',
-				version: '0.1.1-test.module.tour.01',
+				version: '0.1.3-test.01',
 				languages: { default: 'en', supported: ['en', 'es', 'pt'] },
 				environment: 'testing',
 				'global.css': !0,
