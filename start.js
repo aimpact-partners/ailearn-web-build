@@ -664,7 +664,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 return this.process(0, uri);
                 // return uri.uri;
               }
-
               static getPreviousUrl() {
                 return previousURL;
               }
@@ -852,7 +851,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 this.#start();
                 // SDKSettings.userModel = User;
               }
-
               #initSDK = async () => {
                 //@ts-ignore
                 const {
@@ -870,7 +868,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 this.checkMode();
                 // registerExtensions();
               };
-
               checkMode() {
                 const dyslexiaMode = localStorage.getItem('aimpact.accessibility.mode') ? localStorage.getItem('aimpact.accessibility.mode') : 'normal';
                 const container = document.querySelector('html');

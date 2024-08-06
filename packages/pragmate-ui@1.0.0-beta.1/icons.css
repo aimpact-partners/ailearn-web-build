@@ -15,7 +15,7 @@
   opacity: 0.6;
 }
 .pui-icon-button .pui-icon {
-  z-index: -1 !important;
+  z-index: 0;
 }
 .pui-icon-button .pui-icon-button-mask {
   content: " ";

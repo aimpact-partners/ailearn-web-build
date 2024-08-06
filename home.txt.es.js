@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1171720447,
+        hash: 1065907585,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -78,6 +78,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "errors": {
                 "default": "No se ha podido asignar el módulo a esta Aula, por favor inténtelo de nuevo más tarde o contacte al administador"
+              },
+              "empty": {
+                "title": "Atención",
+                "description": "Aún no posees aulas creadas, debes crear una para poder asignar esta actividad.",
+                "action": "Crear aula"
               }
             },
             "tour": {

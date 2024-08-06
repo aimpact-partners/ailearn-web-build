@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2382357319,
+        hash: 2745395946,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -95,16 +95,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "select": "Seleccionar año escolar"
               },
               "argentine": {
-                "4": "4to grado",
-                "5": "5to grado",
-                "6": "6to grado",
-                "7": "7mo grado",
-                "8": "1er año",
-                "9": "2do año",
-                "10": "3er año",
-                "11": "4to año",
-                "12": "5to año",
-                "13": "6to año"
+                "4to grado": "4to grado",
+                "5to grado": "5to grado",
+                "6to grado": "6to grado",
+                "7mo grado": "7mo grado",
+                "1er año": "1er año",
+                "2do año": "2do año",
+                "3er año": "3er año",
+                "4to año": "4to año",
+                "5to año": "5to año",
+                "6to añ": "6to año"
               },
               "k12": {
                 "4": "Year 4",
