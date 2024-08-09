@@ -10,7 +10,7 @@ Modal style
   border-bottom: 1px solid var(--outline);
 }
 .module-activity-list .activity__state.state--processing {
-  color: orangered;
+  color: var(--disabled-text);
 }
 .module-activity-list .activity__state.state--empty {
   color: var(--outline);
