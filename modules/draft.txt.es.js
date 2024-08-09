@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.2"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.0.1"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.1"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.4"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["apexcharts", "3.48.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-icons", "5.2.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.3"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["firebase", "10.12.0"], ["firebase-admin", "12.1.0"], ["react-is", "16.13.1"], ["react-select", "5.8.0"], ["swiper", "8.4.7"], ["@aimpact/ailearn-app", "0.1.1"], ["@aimpact/ailearn-app", "0.1.1"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.2"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.0.1"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.1"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.4"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["apexcharts", "3.48.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-icons", "5.2.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.3"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["firebase", "10.12.0"], ["firebase-admin", "12.1.0"], ["react-is", "16.13.1"], ["react-select", "5.8.0"], ["swiper", "8.4.7"], ["@aimpact/ailearn-app", "0.1.3-dev.12"], ["@aimpact/ailearn-app", "0.1.3-dev.12"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.1/modules/draft",
+          "vspecifier": "@aimpact/ailearn-app@0.1.3-dev.12/modules/draft",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3453359013,
+        hash: 974617600,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -95,16 +95,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "select": "Seleccionar año escolar"
               },
               "argentine": {
-                "4": "4to grado",
-                "5": "5to grado",
-                "6": "6to grado",
-                "7": "7mo grado",
-                "8": "1er año",
-                "9": "2do año",
-                "10": "3er año",
-                "11": "4to año",
-                "12": "5to año",
-                "13": "6to año"
+                "4to grado": "4to grado",
+                "5to grado": "5to grado",
+                "6to grado": "6to grado",
+                "7mo grado": "7mo grado",
+                "1er año": "1er año",
+                "2do año": "2do año",
+                "3er año": "3er año",
+                "4to año": "4to año",
+                "5to año": "5to año",
+                "6to añ": "6to año"
               },
               "k12": {
                 "4": "Year 4",
@@ -133,8 +133,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "refine": {
               "activities": {
-                "title": "Refina las actividades",
-                "description": "Define las observaciones que consideres importantes para generar las actividades que desees."
+                "title": "Define las instrucciones para la IA",
+                "description": "Guía a la Inteligencia Artificial para generar contenido basados en tus principios pedagógicos indicando, por ejemplo, los tipos de actividades y el tono de las mismas (informal, inspirador, etc.)."
               },
               "examples": {
                 "title": "Ejemplos de observaciones",
@@ -151,6 +151,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "errors": {
                 "default": "Ha ocurrido un error, por favor intenta nuevamente."
+              },
+              "confirm": {
+                "title": "Estas por confirmar el objetivo de tu modulo",
+                "description": " No has seleccionado ninguna de las sugerencias generadas ¿Deseas avanzar sin implementarlas?"
               }
             },
             "suggestions": {
@@ -184,6 +188,29 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "labels": {
               "title": "Título",
               "description": "Descripción"
+            },
+            "objectiveTour": {
+              "buttons": {
+                "nextBtnText": "Siguiente",
+                "prevBtnText": "Anterior",
+                "doneBtnText": "Listo"
+              },
+              "administrator": {
+                "title": "Selecciona un Administrador",
+                "description": "Elige el administrador responsable del módulo de aprendizaje. Debe tener créditos asignados para la creación de módulos con asistencia de IA."
+              },
+              "parameters": {
+                "title": "Selecciona los parámetros del módulo de aprendizaje",
+                "description": "Selecciona el idioma del módulo de aprendizaje, el año escolar de tus alumnos y el número de actividades. Podrás encontrar más información en nuestro canal de YouTube @RVDAIRIVADAVIA24."
+              },
+              "objective": {
+                "title": "Redacta el objetivo principal del módulo de aprendizaje",
+                "description": "Este objetivo será central para guiar el resto del contenido y las actividades del módulo."
+              },
+              "save": {
+                "title": "Guarda el objetivo del módulo de aprendizaje",
+                "description": "Una vez guardado, podrás solicitar créditos para mejorar el objetivo y comenzar a trabajar con IA."
+              }
             },
             "wizard": {
               "messages": {

@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.2"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.0.1"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.1"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.4"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["apexcharts", "3.48.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-icons", "5.2.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.3"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["firebase", "10.12.0"], ["firebase-admin", "12.1.0"], ["react-is", "16.13.1"], ["react-select", "5.8.0"], ["swiper", "8.4.7"], ["@aimpact/ailearn-app", "0.1.1"], ["@aimpact/ailearn-app", "0.1.1"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.2"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.0.1"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.1"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.4"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["apexcharts", "3.48.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-icons", "5.2.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.3"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["firebase", "10.12.0"], ["firebase-admin", "12.1.0"], ["react-is", "16.13.1"], ["react-select", "5.8.0"], ["swiper", "8.4.7"], ["@aimpact/ailearn-app", "0.1.3-dev.12"], ["@aimpact/ailearn-app", "0.1.3-dev.12"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.1/modules/draft",
+          "vspecifier": "@aimpact/ailearn-app@0.1.3-dev.12/modules/draft",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3849308804,
+        hash: 422325035,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -95,16 +95,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "select": "Select grade level"
               },
               "argentine": {
-                "4": "4th grade",
-                "5": "5th grade",
-                "6": "6th grade",
-                "7": "7th grade",
-                "8": "1st year",
-                "9": "2nd year",
-                "10": "3rd year",
-                "11": "4th year",
-                "12": "5th year",
-                "13": "6th year"
+                "4th grade": "4th grade",
+                "5th grade": "5th grade",
+                "6th grade": "6th grade",
+                "7th grade": "7th grade",
+                "1st year": "1st year",
+                "2nd year": "2nd year",
+                "3rd year": "3rd year",
+                "4th year": "4th year",
+                "5th year": "5th year",
+                "6th year": "6th year"
               },
               "k12": {
                 "4": "Year 4",
@@ -134,8 +134,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "refine": {
               "activities": {
-                "title": "Refine the activities",
-                "description": "Define the observations you consider important to generate the activities you want."
+                "title": "Define the instructions for the AI",
+                "description": "Guide the Artificial Intelligence to generate content based on your pedagogical principles by indicating, for example, the types of activities and their tone (informal, inspiring, etc.)."
               },
               "examples": {
                 "title": "Examples of observations",
@@ -152,6 +152,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "errors": {
                 "default": "An error occurred, please try again."
+              },
+              "confirm": {
+                "title": "You are about to confirm the objective of your module",
+                "description": "You have not selected any of the generated suggestions. Do you want to proceed without implementing them?"
               }
             },
             "suggestions": {
@@ -168,23 +172,50 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "irrelevant": "The objective of the provided module seems not to be suitable for the defined audience. Please, check this and try again."
             },
             "title": "Create a Learning Module",
-            "postTitle": "Select the aspects that the content to be generated in the following form must have",
+            "postTitle": "Select the aspects that the content to be generated in the following form should have",
             "module": "Learning Module Objective",
-            "empty": "View your custom-created content here, tailored by our assistant based on your form inputs",
+            "empty": "Here you can view the personalized content, adapted by our assistant based on your form inputs",
             "duration": {
               "brief": "Brief (3 activities)",
               "standard": "Standard (5 activities)",
               "extended": "Extended (7 activities)"
             },
             "form": {
-              "module": "What's the goal of this module?",
-              "target": "Average Age of Learners",
-              "duration": "Module Length",
+              "module": "What is the objective of this module?",
+              "target": "Average age of students",
+              "duration": "Module duration",
               "languages": "Languages"
             },
             "labels": {
               "title": "Title",
               "description": "Description"
+            },
+            "confirm": {
+              "title": "You are about to confirm the objective of your module",
+              "messages": "You have not selected any of the generated suggestions. Do you want to continue without implementing them?"
+            },
+            "objectiveTour": {
+              "buttons": {
+                "nextBtnText": "Next",
+                "prevBtnText": "Previous",
+                "doneBtnText": "Done"
+              },
+              "administrator": {
+                "title": "Select an Administrator",
+                "description": "Choose the administrator responsible for the learning module. They must have credits assigned to create modules with AI assistance."
+              },
+              "parameters": {
+                "title": "Select the parameters of the learning module",
+                "description": "Select the language of the learning module, the school year of your students, and the number of activities. You can find more information on our YouTube channel @RVDAIRIVADAVIA24."
+              },
+              "objective": {
+                "title": "Write the main objective of the learning module",
+                "description": "This objective will be central to guide the rest of the content and activities of the module."
+              },
+              "save": {
+                "title": "Save the objective of the learning module",
+                "description": "Once saved, you can request credits to improve the objective and start working with AI."
+              }
             },
             "wizard": {
               "messages": {

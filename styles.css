@@ -333,6 +333,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --font-size-p2: 0.875rem;
   --font-size-p1: 1rem;
   --text-muted: var(--neutral-50);
+  --separator: var(--neutral-variant-95);
   /* neutral */
   --neutral-0: #000;
   --neutral-4: #0f0d13;
