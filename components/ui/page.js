@@ -1,7 +1,7 @@
-System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/react-18-widgets@1.1.2/page", "react@18.2.0"], function (_export, _context) {
+System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/react-18-widgets@1.1.2/page", "react@18.2.0", "@aimpact/ailearn-app@0.1.6/components/ui"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
   _export({
     Controller: void 0,
     View: void 0
@@ -15,6 +15,8 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_2 = _beyondJsReact18Widgets112Page;
     }, function (_react) {
       dependency_3 = _react;
+    }, function (_aimpactAilearnApp016ComponentsUi) {
+      dependency_4 = _aimpactAilearnApp016ComponentsUi;
     }],
     execute: function () {
       bimport = specifier => {
@@ -26,24 +28,24 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.6/test/blank"
+          "vspecifier": "@aimpact/ailearn-app@0.1.6/components/ui/page"
         },
         "type": "widget"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-18-widgets/page', dependency_2], ['react', dependency_3]]);
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-18-widgets/page', dependency_2], ['react', dependency_3], ['@aimpact/ailearn-app/components/ui', dependency_4]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
-        "name": "app-test-components",
-        "vspecifier": "@aimpact/ailearn-app@0.1.6/test/blank",
+        "name": "app-ailearn-components-page",
+        "vspecifier": "@aimpact/ailearn-app@0.1.6/components/ui/page",
         "is": "page",
-        "route": "/tests/blank"
+        "route": "/ui/components/test"
       }]);
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller
       ****************************/
       ims.set('./controller', {
-        hash: 2758008120,
+        hash: 1927493790,
         creator: function (require, exports) {
           "use strict";
 
@@ -53,7 +55,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
           exports.Controller = void 0;
           var _page = require("@beyond-js/react-18-widgets/page");
           var _store = require("./store");
-          var _view = require("./view");
+          var _views = require("./views");
           /*bundle*/
           class Controller extends _page.PageReactWidgetController {
             #store;
@@ -62,7 +64,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
               return this.#store;
             }
             get Widget() {
-              return _view.View;
+              return _views.View;
             }
             /**
              * this method is executed when the widget is showd
@@ -95,12 +97,12 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
         }
       });
 
-      /****************************
-      INTERNAL MODULE: ./view/index
-      ****************************/
+      /*****************************
+      INTERNAL MODULE: ./views/index
+      *****************************/
 
-      ims.set('./view/index', {
-        hash: 3132331412,
+      ims.set('./views/index', {
+        hash: 1065151003,
         creator: function (require, exports) {
           "use strict";
 
@@ -109,15 +111,20 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
           });
           exports.View = View;
           var React = require("react");
+          var _ui = require("@aimpact/ailearn-app/components/ui");
           /*bundle*/
           function View() {
-            const [active, setActive] = React.useState(true);
-            const onClick = () => {
-              setActive(!active);
+            const [title, setTitle] = React.useState('');
+            const onSave = event => {
+              setTitle(event.target.value);
             };
-            return React.createElement(React.Fragment, null, active && React.createElement("app-test-web-component", null), React.createElement("button", {
-              onClick: onClick
-            }, "Click me!"));
+            return React.createElement(_ui.PageContainer, null, React.createElement(_ui.PageTitle, null, React.createElement("h2", null, "Testing components page")), React.createElement(_ui.ContentEditable, {
+              name: "title",
+              as: "p",
+              onSave: onSave,
+              content: title,
+              placeholder: "placeholder"
+            }));
           }
         }
       });
@@ -126,7 +133,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
         "from": "Controller",
         "name": "Controller"
       }, {
-        "im": "./view/index",
+        "im": "./views/index",
         "from": "View",
         "name": "View"
       }];
@@ -137,7 +144,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
         value
       }) {
         (require || prop === 'Controller') && _export("Controller", Controller = require ? require('./controller').Controller : value);
-        (require || prop === 'View') && _export("View", View = require ? require('./view/index').View : value);
+        (require || prop === 'View') && _export("View", View = require ? require('./views/index').View : value);
       };
       _export("__beyond_pkg", __beyond_pkg = __pkg);
       _export("hmr", hmr = new function () {
@@ -148,4 +155,4 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfc3RvcmUiLCJfdmlldyIsIkNvbnRyb2xsZXIiLCJQYWdlUmVhY3RXaWRnZXRDb250cm9sbGVyIiwic3RvcmUiLCJjcmVhdGVTdG9yZSIsIlN0b3JlTWFuYWdlciIsIldpZGdldCIsIlZpZXciLCJzaG93IiwiaGlkZSIsImV4cG9ydHMiLCJSZWFjdCIsImFjdGl2ZSIsInNldEFjdGl2ZSIsInVzZVN0YXRlIiwib25DbGljayIsImNyZWF0ZUVsZW1lbnQiLCJGcmFnbWVudCJdLCJzb3VyY2VzIjpbIi90cy9jb250cm9sbGVyLnRzIiwiL3RzL3N0b3JlLnRzIiwiL3RzL3ZpZXcvaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsLG51bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxLQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxNQUFBLEdBQUFELE9BQUE7VUFDQSxJQUFBRSxLQUFBLEdBQUFGLE9BQUE7VUFFTztVQUFVLE1BQ1hHLFVBQVcsU0FBUUosS0FBQSxDQUFBSyx5QkFBeUI7WUFDakQsQ0FBQUMsS0FBTTtZQUNOQyxXQUFXQSxDQUFBO2NBQ1YsSUFBSSxDQUFDLENBQUFELEtBQU0sR0FBRyxJQUFJSixNQUFBLENBQUFNLFlBQVksRUFBRTtjQUNoQyxPQUFPLElBQUksQ0FBQyxDQUFBRixLQUFNO1lBQ25CO1lBQ0EsSUFBSUcsTUFBTUEsQ0FBQTtjQUNULE9BQU9OLEtBQUEsQ0FBQU8sSUFBSTtZQUNaO1lBRUE7OztZQUdBQyxJQUFJQSxDQUFBLEdBQUk7WUFFUjs7O1lBR0FDLElBQUlBLENBQUEsR0FBSTs7VUFDUkMsT0FBQSxDQUFBVCxVQUFBLEdBQUFBLFVBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDdkJLLE1BQU9JLFlBQVk7VUFBMkJLLE9BQUEsQ0FBQUwsWUFBQSxHQUFBQSxZQUFBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ0RwRCxJQUFBTSxLQUFBLEdBQUFiLE9BQUE7VUFTTztVQUFVLFNBQ1JTLElBQUlBLENBQUE7WUFDWixNQUFNLENBQUNLLE1BQU0sRUFBRUMsU0FBUyxDQUFDLEdBQUdGLEtBQUssQ0FBQ0csUUFBUSxDQUFDLElBQUksQ0FBQztZQUNoRCxNQUFNQyxPQUFPLEdBQUdBLENBQUEsS0FBSztjQUNwQkYsU0FBUyxDQUFDLENBQUNELE1BQU0sQ0FBQztZQUNuQixDQUFDO1lBQ0QsT0FDQ0QsS0FBQSxDQUFBSyxhQUFBLENBQUFMLEtBQUEsQ0FBQU0sUUFBQSxRQUVFTCxNQUFNLElBQUlELEtBQUEsQ0FBQUssYUFBQSxnQ0FBMEIsRUFDckNMLEtBQUEsQ0FBQUssYUFBQTtjQUFRRCxPQUFPLEVBQUVBO1lBQU8sZUFBb0IsQ0FDMUM7VUFFTCIsImlnbm9yZUxpc3QiOltdfQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfc3RvcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsInN0b3JlIiwiY3JlYXRlU3RvcmUiLCJTdG9yZU1hbmFnZXIiLCJXaWRnZXQiLCJWaWV3Iiwic2hvdyIsImhpZGUiLCJleHBvcnRzIiwiUmVhY3QiLCJfdWkiLCJ0aXRsZSIsInNldFRpdGxlIiwidXNlU3RhdGUiLCJvblNhdmUiLCJldmVudCIsInRhcmdldCIsInZhbHVlIiwiY3JlYXRlRWxlbWVudCIsIlBhZ2VDb250YWluZXIiLCJQYWdlVGl0bGUiLCJDb250ZW50RWRpdGFibGUiLCJuYW1lIiwiYXMiLCJjb250ZW50IiwicGxhY2Vob2xkZXIiXSwic291cmNlcyI6WyIvdHMvY29udHJvbGxlci50cyIsIi90cy9zdG9yZS50cyIsIi90cy92aWV3cy9pbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsS0FBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsTUFBQSxHQUFBRCxPQUFBO1VBQ0EsSUFBQUUsTUFBQSxHQUFBRixPQUFBO1VBRU87VUFBVSxNQUNYRyxVQUFXLFNBQVFKLEtBQUEsQ0FBQUsseUJBQXlCO1lBQ2pELENBQUFDLEtBQU07WUFDTkMsV0FBV0EsQ0FBQTtjQUNWLElBQUksQ0FBQyxDQUFBRCxLQUFNLEdBQUcsSUFBSUosTUFBQSxDQUFBTSxZQUFZLEVBQUU7Y0FDaEMsT0FBTyxJQUFJLENBQUMsQ0FBQUYsS0FBTTtZQUNuQjtZQUNBLElBQUlHLE1BQU1BLENBQUE7Y0FDVCxPQUFPTixNQUFBLENBQUFPLElBQUk7WUFDWjtZQUVBOzs7WUFHQUMsSUFBSUEsQ0FBQSxHQUFJO1lBRVI7OztZQUdBQyxJQUFJQSxDQUFBLEdBQUk7O1VBQ1JDLE9BQUEsQ0FBQVQsVUFBQSxHQUFBQSxVQUFBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ3ZCSyxNQUFPSSxZQUFZO1VBQTJCSyxPQUFBLENBQUFMLFlBQUEsR0FBQUEsWUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNEcEQsSUFBQU0sS0FBQSxHQUFBYixPQUFBO1VBQ0EsSUFBQWMsR0FBQSxHQUFBZCxPQUFBO1VBQ087VUFBVSxTQUNSUyxJQUFJQSxDQUFBO1lBQ1osTUFBTSxDQUFDTSxLQUFLLEVBQUVDLFFBQVEsQ0FBQyxHQUFHSCxLQUFLLENBQUNJLFFBQVEsQ0FBQyxFQUFFLENBQUM7WUFDNUMsTUFBTUMsTUFBTSxHQUFHQyxLQUFLLElBQUc7Y0FDdEJILFFBQVEsQ0FBQ0csS0FBSyxDQUFDQyxNQUFNLENBQUNDLEtBQUssQ0FBQztZQUM3QixDQUFDO1lBQ0QsT0FDQ1IsS0FBQSxDQUFBUyxhQUFBLENBQUNSLEdBQUEsQ0FBQVMsYUFBYSxRQUNiVixLQUFBLENBQUFTLGFBQUEsQ0FBQ1IsR0FBQSxDQUFBVSxTQUFTLFFBQ1RYLEtBQUEsQ0FBQVMsYUFBQSx1Q0FBZ0MsQ0FDckIsRUFDWlQsS0FBQSxDQUFBUyxhQUFBLENBQUNSLEdBQUEsQ0FBQVcsZUFBZTtjQUFDQyxJQUFJLEVBQUMsT0FBTztjQUFDQyxFQUFFLEVBQUMsR0FBRztjQUFDVCxNQUFNLEVBQUVBLE1BQU07Y0FBRVUsT0FBTyxFQUFFYixLQUFLO2NBQUVjLFdBQVcsRUFBQztZQUFhLEVBQUcsQ0FDbEY7VUFFbEIiLCJpZ25vcmVMaXN0IjpbXX0=
