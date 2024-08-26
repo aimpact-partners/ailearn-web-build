@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 422325035,
+        hash: 741168664,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -55,9 +55,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "update": "Upload Document",
               "upload": "Upload Image"
             },
-            "breadcrumb": {
-              "modules": "Modules",
-              "management": "Draft"
+            "alerts": {
+              "coins": {
+                "user": {
+                  "available": "Great news! You have credits ready to use.",
+                  "unavailable": "You currently don't have any credits available."
+                },
+                "organization": {
+                  "available": "Your organization has credits available to spend!",
+                  "unavailable": "Your organization doesn't have any credits at the moment."
+                }
+              }
             },
             "coins": {
               "alert": {
@@ -137,15 +145,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Define the instructions for the AI",
                 "description": "Guide the Artificial Intelligence to generate content based on your pedagogical principles by indicating, for example, the types of activities and their tone (informal, inspiring, etc.)."
               },
-              "examples": {
-                "title": "Examples of observations",
-                "actions": {
-                  "see": "See examples",
-                  "select": "Use",
-                  "back": "back"
-                },
-                "items": ["Create theoretical activities and selection evaluations only", "Create theoretical, debate and oral evaluation activities where the students' form of expression and argumentation is analyzed", "Start with a basic selection evaluation that allows the student to discover their knowledge, then a theoretical evaluation and finish with an oral evaluation where the students' form of expression and argumentation is analyzed"]
-              },
               "textarea": {
                 "label": "Your Insights",
                 "placeholder": "Share specific suggestions or areas for improvement..."
@@ -156,6 +155,56 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "confirm": {
                 "title": "You are about to confirm the objective of your module",
                 "description": "You have not selected any of the generated suggestions. Do you want to proceed without implementing them?"
+              }
+            },
+            "requestCredits": {
+              "title": "Request Credits",
+              "subtitle": "You must request AI credits from the module owner to use this feature.",
+              "ownerDescription": "Module owner",
+              "action": "Do you want to request credits from the module owner?",
+              "detail": "AI credits enable all advanced Artificial Intelligence features in the creation of learning modules."
+            },
+            "pathway": {
+              "manual": {
+                "title": {
+                  "label": "Module Title",
+                  "placeholder": "Enter the module title"
+                },
+                "description": {
+                  "label": "Module Description",
+                  "placeholder": "Enter the module description"
+                }
+              }
+            },
+            "setup": {
+              "actions": {
+                "cancel": "Cancel",
+                "continue": "Continue"
+              },
+              "generation": {
+                "title": "Let's shape the module",
+                "subtitle": "Indicate how you want to continue",
+                "options": {
+                  "ai": "I want to generate the activities with the help of AI",
+                  "manually": "I want to generate the activities manually"
+                }
+              },
+              "form": {
+                "title": {
+                  "label": "Module title"
+                },
+                "description": {
+                  "label": "Module description"
+                },
+                "activities": {
+                  "label": "Number of module activities"
+                },
+                "notes": {
+                  "placeholder": "Enter the instructions to guide the AI in creating your activities"
+                }
+              },
+              "sugestions": {
+                "title": "Instruction suggestions"
               }
             },
             "suggestions": {
@@ -245,18 +294,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "textArea": "Module objective",
                 "description": "Define the main learning outcome of your module."
               },
-              "suggestions": "If you wish, select one of the following improvement options and a refinement of the defined objective will be carried out.",
-              "forWhom": "Identify who the module is designed for to adapt the content accordingly. Options: School, University, Company.",
-              "howLong": "Select the approximate duration of the module. Options: Brief (a quick overview), Standard (in-depth exploration), Extended (full coverage).",
-              "generatingModule": ["Starting AI-assisted design for the learning module...", "Analyzing the specified grade level and module duration...", "Gathering educational standards for the selected grade level...", "Consulting curricular databases for age-appropriate activities...", "Applying AI creativity for the initial draft of learning activities...", "Refining activities based on best pedagogical practices...", "Integrating interactive elements tailored to the module duration...", "Optimizing the flow of the learning module for student engagement...", "Performing final reviews on the coherence and consistency of the module...", "Learning module and activities successfully generated by AI assistance."],
-              "modalSuggestions": {
-                "title": "Let's move on",
-                "description": "Let's design the module activities.",
-                "buttons": {
-                  "generate": "Generate with AI",
-                  "manual": "Manual design"
-                }
-              }
+              "suggestions": "If you wish, select one of the following improvement options and a refinement of the defined objective will be carried out."
             }
           };
         }

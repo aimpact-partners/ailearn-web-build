@@ -17,11 +17,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.6-dev.04/main-layout",
+          "vspecifier": "@aimpact/ailearn-app@0.1.6-dev.04/i18n",
           "multibundle": true
         },
         "type": "txt"
-      }, _context.meta.url).package('en');
+      }, _context.meta.url).package('es');
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
@@ -29,52 +29,38 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2814162769,
+        hash: 485065396,
         creator: function (require, exports) {
           exports.txt = {
-            "breadcrumb": {
-              "modules": "Modules",
-              "management": "Draft"
-            },
-            "coins": {
-              "alert": {
-                "title": "You need AI credits",
-                "description": "You need to get AI credits to enable all the features with artificial intelligence.",
-                "action": "Accept"
-              },
-              "modal": {
-                "title": "Request AI credits to continue with this feature",
-                "description": "You need to get AI credits to enable all the features with artificial intelligence.",
-                "actions": {
-                  "cancel": "No, not now, thanks",
-                  "confirm": "Request now"
-                },
-                "errors": {
-                  "noCredits": "The assignment could not be processed, please contact the institution's administrator"
-                }
-              },
-              "header": {
-                "actions": {
-                  "require": "REQUEST CREDITS",
-                  "available": "CREDITS"
-                },
-                "messages": {
-                  "add": "You acquired credits to use the AI functions",
-                  "middle": "You consumed 50% of the available credits",
-                  "finishing": "You are running out of available AI credits"
-                }
-              }
-            },
-            "notifications": {
-              "saved": "Request AI credits to enable all AI functions.",
-              "credits": "You already have <strong>credits assigned</strong> to use AI functions that will be automatically discounted with use."
+            "actions": {
+              "analyse": "Sugerir mejoras",
+              "activities": "Generar actividades",
+              "activity": "Actividades",
+              "applySuggestions": "Aplicar sugerencias",
+              "back": "Atrás",
+              "cancel": "Cancelar",
+              "cover": "Generar portada",
+              "clean": "Limpiar",
+              "continue": "Continuar",
+              "create": "Crear",
+              "confirm": "Confirmar",
+              "delete": "Eliminar",
+              "edit": "Editar",
+              "generate": "Generar con IA",
+              "next": "Siguiente",
+              "publish": "Publicar",
+              "removeSuggestions": "Remover sugerencias",
+              "refine": "Refinar",
+              "save": "Guardar",
+              "update": "Subir documento",
+              "upload": "Subir imagen"
             },
             "requestCredits": {
-              "title": "Request Credits",
-              "subtitle": "You must request AI credits from the module owner to use this feature.",
-              "ownerDescription": "Module owner",
-              "action": "Do you want to request credits from the module owner?",
-              "detail": "AI credits enable all advanced Artificial Intelligence features in the creation of learning modules.",
+              "title": "Solicitud de Créditos",
+              "subtitle": "Debes solicitar créditos IA al propietario del módulo para utilizar esta función.",
+              "ownerDescription": "Propietario del módulo de aprendizaje",
+              "action": "¿Deseas solicitar créditos al propietario del módulo?",
+              "detail": "Los créditos de IA habilitan todas las funciones avanzadas de Inteligencia Artificial en la creación de módulos de aprendizaje.",
               "alerts": {
                 "noCredits": "The assignment could not be processed, please contact the institution's administrator"
               }

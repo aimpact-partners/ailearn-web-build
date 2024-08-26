@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2404182753,
+        hash: 1210044123,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -68,6 +68,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "notifications": {
               "saved": "Solicita créditos IA para habilitar todas las funciones con inteligencia artificial.",
               "credits": "Ya tienes <strong>créditos asignados</strong> para utilizar funciones con IA que se irán descontando automáticamente con el uso."
+            },
+            "requestCredits": {
+              "title": "Solicitud de Créditos",
+              "subtitle": "Debes solicitar créditos IA al propietario del módulo para utilizar esta función.",
+              "ownerDescription": "Propietario del módulo de aprendizaje",
+              "action": "¿Deseas solicitar créditos al propietario del módulo?",
+              "detail": "Los créditos de IA habilitan todas las funciones avanzadas de Inteligencia Artificial en la creación de módulos de aprendizaje.",
+              "alerts": {
+                "noCredits": "The assignment could not be processed, please contact the institution's administrator"
+              }
             }
           };
         }

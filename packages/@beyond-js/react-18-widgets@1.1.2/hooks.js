@@ -35,7 +35,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "@beyond-js/k
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 3645403760,
+        hash: 3517680304,
         creator: function (require, exports) {
           "use strict";
 

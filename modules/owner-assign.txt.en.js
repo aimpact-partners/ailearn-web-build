@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.6-dev.04/main-layout",
+          "vspecifier": "@aimpact/ailearn-app@0.1.6-dev.04/modules/owner-assign",
           "multibundle": true
         },
         "type": "txt"
@@ -29,55 +29,47 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2814162769,
+        hash: 827924516,
         creator: function (require, exports) {
           exports.txt = {
-            "breadcrumb": {
-              "modules": "Modules",
-              "management": "Draft"
+            "actions": {
+              "analyse": "Suggest Improvements",
+              "activities": "Generate activities",
+              "activity": "Activities",
+              "applySuggestions": "Apply Suggestions",
+              "back": "Back",
+              "cancel": "Cancel",
+              "continue": "Continue",
+              "cover": "Generate cover",
+              "clean": "Clean",
+              "create": "Create",
+              "confirm": "Confirm",
+              "delete": "Delete",
+              "edit": "Edit",
+              "generate": "Generate with AI",
+              "next": "Next",
+              "publish": "Publish",
+              "removeSuggestions": "Remove suggestions",
+              "refine": "Refine",
+              "save": "Save",
+              "update": "Upload Document",
+              "upload": "Upload Image"
             },
-            "coins": {
-              "alert": {
-                "title": "You need AI credits",
-                "description": "You need to get AI credits to enable all the features with artificial intelligence.",
-                "action": "Accept"
-              },
-              "modal": {
-                "title": "Request AI credits to continue with this feature",
-                "description": "You need to get AI credits to enable all the features with artificial intelligence.",
-                "actions": {
-                  "cancel": "No, not now, thanks",
-                  "confirm": "Request now"
-                },
-                "errors": {
-                  "noCredits": "The assignment could not be processed, please contact the institution's administrator"
-                }
-              },
-              "header": {
-                "actions": {
-                  "require": "REQUEST CREDITS",
-                  "available": "CREDITS"
-                },
-                "messages": {
-                  "add": "You acquired credits to use the AI functions",
-                  "middle": "You consumed 50% of the available credits",
-                  "finishing": "You are running out of available AI credits"
-                }
-              }
+            "errors": {
+              "default": "Operation failed. Please try again."
             },
-            "notifications": {
-              "saved": "Request AI credits to enable all AI functions.",
-              "credits": "You already have <strong>credits assigned</strong> to use AI functions that will be automatically discounted with use."
+            "title": "Indicate an owner",
+            "description": "The owner of the learning module will be the provider of the AI credits needed for its editing and student interaction.",
+            "me": {
+              "label": "I will be the owner",
+              "description": "I will be the administrator and AI credits provider of the module"
             },
-            "requestCredits": {
-              "title": "Request Credits",
-              "subtitle": "You must request AI credits from the module owner to use this feature.",
-              "ownerDescription": "Module owner",
-              "action": "Do you want to request credits from the module owner?",
-              "detail": "AI credits enable all advanced Artificial Intelligence features in the creation of learning modules.",
-              "alerts": {
-                "noCredits": "The assignment could not be processed, please contact the institution's administrator"
-              }
+            "organization": {
+              "label": "Assign to an Educational Institution",
+              "description": "The selected Institution will be the administrator and AI credits provider of the module"
+            },
+            "institution": {
+              "label": "Educational Institution"
             }
           };
         }

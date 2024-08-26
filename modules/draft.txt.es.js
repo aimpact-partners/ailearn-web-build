@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 974617600,
+        hash: 1802583620,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -55,9 +55,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "update": "Subir documento",
               "upload": "Subir imagen"
             },
-            "breadcrumb": {
-              "modules": "Módulos",
-              "management": "Borrador"
+            "alerts": {
+              "coins": {
+                "user": {
+                  "available": "¡Buenas noticias! Tienes creditos listos para usar.",
+                  "unavailable": "Actualmente no posees creditos disponibles."
+                },
+                "organization": {
+                  "available": "¡Tu organización tiene creditos disponibles para usar!",
+                  "unavailable": "Tu organización no posee creditos en este momento."
+                }
+              }
             },
             "coins": {
               "alert": {
@@ -136,15 +144,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Define las instrucciones para la IA",
                 "description": "Guía a la Inteligencia Artificial para generar contenido basados en tus principios pedagógicos indicando, por ejemplo, los tipos de actividades y el tono de las mismas (informal, inspirador, etc.)."
               },
-              "examples": {
-                "title": "Ejemplos de observaciones",
-                "actions": {
-                  "see": "Ver ejemplos",
-                  "select": "Usar",
-                  "back": "Volver"
-                },
-                "items": ["Crear actividades teoricas y de evaluaciones de seleccion unicamente", "Crea actividades teoricas, de debate y de evaluación oral donde se analice la forma de expresión y argumentación de los alumnos", "Empieza con una evaluación básica de selección que permita al alumno descubrir sus conocimientos, luego una evaluación teorica y finaliza con una evaluación oral donde se analice la forma de expresión y argumentación de los alumnos"]
-              },
               "textarea": {
                 "label": "Tus aportes",
                 "placeholder": "Comparte sugerencias específicas o áreas de mejora..."
@@ -155,6 +154,75 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "confirm": {
                 "title": "Estas por confirmar el objetivo de tu modulo",
                 "description": " No has seleccionado ninguna de las sugerencias generadas ¿Deseas avanzar sin implementarlas?"
+              }
+            },
+            "requestCredits": {
+              "title": "Solicitud de Créditos",
+              "subtitle": "Debes solicitar créditos IA al propietario del módulo para utilizar esta función.",
+              "ownerDescription": "Propietario del módulo de aprendizaje",
+              "action": "¿Deseas solicitar créditos al propietario del módulo?",
+              "detail": "Los créditos de IA habilitan todas las funciones avanzadas de Inteligencia Artificial en la creación de módulos de aprendizaje."
+            },
+            "pathway": {
+              "manual": {
+                "title": "Continuemos de forma manual",
+                "form": {
+                  "title": {
+                    "label": "Titulo del módulo",
+                    "placeholder": "Ingresa el título del módulo"
+                  },
+                  "description": {
+                    "label": "Descripción del módulo",
+                    "placeholder": "Ingresa la descripción del módulo"
+                  }
+                }
+              },
+              "ai": {
+                "title": "Continuemos de forma asistida",
+                "form": {
+                  "size": {
+                    "placeholder": "Cantidad de actividades del módulo",
+                    "items": {
+                      "brief": "Breve (3 actividades)",
+                      "standard": "Estándar (5 actividades)",
+                      "extended": "Extendido (7 actividades)"
+                    }
+                  },
+                  "notes": {
+                    "placeholder": "Ingrese las instrucciones para guiar a la IA en la creación de tus actividades"
+                  }
+                }
+              }
+            },
+            "setup": {
+              "actions": {
+                "cancel": "Cancelar",
+                "continue": "Continuar"
+              },
+              "generation": {
+                "title": "Comencemos a dar forma al módulo",
+                "subtitle": "Indica de qué manera deseas continuar",
+                "options": {
+                  "ai": "Quiero generar las actividades con ayuda de la IA",
+                  "manually": "Quiero generar las actividades de forma manual"
+                }
+              },
+              "form": {
+                "title": {
+                  "label": "Titulo del módulo"
+                },
+                "description": {
+                  "label": "Descripción del módulo"
+                },
+                "activities": {
+                  "label": "Cantidad de actividades del módulo"
+                },
+                "notes": {
+                  "placeholder": "Ingrese las instrucciones para guiar a la IA en la creación de tus actividades"
+                }
+              },
+              "sugestions": {
+                "title": "Sugerencias de instrucción"
               }
             },
             "suggestions": {
@@ -235,18 +303,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "textArea": "Objetivo del módulo",
                 "description": "Define el principal resultado de aprendizaje de tu módulo."
               },
-              "suggestions": "Si lo deseas, selecciona una de las siguientes opciones de mejora y se llevará a cabo una refinación del objetivo definido.",
-              "forWhom": "Identifica para quién está diseñado el módulo para adaptar el contenido adecuadamente. Opciones: Escuela, Universidad, Empresa.",
-              "howLong": "Selecciona la duración aproximada del módulo. Opciones: Breve (una visión general rápida), Estándar (exploración en profundidad), Extendido (cobertura completa).",
-              "generatingModule": ["Iniciando diseño asistido por IA para el módulo de aprendizaje...", "Analizando el año escolar especificado y la duración del módulo...", "Recopilando estándares educativos para el año escolar seleccionado...", "Consultando bases de datos curriculares para actividades apropiadas para la edad...", "Aplicando creatividad IA para el borrador inicial de actividades de aprendizaje...", "Refinando actividades basadas en las mejores prácticas pedagógicas...", "Integrando elementos interactivos adaptados a la duración del módulo...", "Optimizando el flujo del módulo de aprendizaje para el compromiso del alumno...", "Realizando revisiones finales en la coherencia y consistencia del módulo...", "Módulo de aprendizaje y actividades generadas con éxito por asistencia de IA."],
-              "modalSuggestions": {
-                "title": "Avancemos",
-                "description": "Diseñemos las actividades del módulo.",
-                "buttons": {
-                  "generate": "Generar con IA",
-                  "manual": "Diseño manual"
-                }
-              }
+              "suggestions": "Si lo deseas, selecciona una de las siguientes opciones de mejora y se llevará a cabo una refinación del objetivo definido."
             }
           };
         }

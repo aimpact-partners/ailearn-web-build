@@ -17,11 +17,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.6-dev.04/main-layout",
+          "vspecifier": "@aimpact/ailearn-app@0.1.6-dev.04/modules/owner-assign",
           "multibundle": true
         },
         "type": "txt"
-      }, _context.meta.url).package('en');
+      }, _context.meta.url).package('pt');
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
@@ -29,55 +29,31 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2814162769,
+        hash: 4058583920,
         creator: function (require, exports) {
           exports.txt = {
-            "breadcrumb": {
-              "modules": "Modules",
-              "management": "Draft"
-            },
-            "coins": {
-              "alert": {
-                "title": "You need AI credits",
-                "description": "You need to get AI credits to enable all the features with artificial intelligence.",
-                "action": "Accept"
-              },
-              "modal": {
-                "title": "Request AI credits to continue with this feature",
-                "description": "You need to get AI credits to enable all the features with artificial intelligence.",
-                "actions": {
-                  "cancel": "No, not now, thanks",
-                  "confirm": "Request now"
-                },
-                "errors": {
-                  "noCredits": "The assignment could not be processed, please contact the institution's administrator"
-                }
-              },
-              "header": {
-                "actions": {
-                  "require": "REQUEST CREDITS",
-                  "available": "CREDITS"
-                },
-                "messages": {
-                  "add": "You acquired credits to use the AI functions",
-                  "middle": "You consumed 50% of the available credits",
-                  "finishing": "You are running out of available AI credits"
-                }
-              }
-            },
-            "notifications": {
-              "saved": "Request AI credits to enable all AI functions.",
-              "credits": "You already have <strong>credits assigned</strong> to use AI functions that will be automatically discounted with use."
-            },
-            "requestCredits": {
-              "title": "Request Credits",
-              "subtitle": "You must request AI credits from the module owner to use this feature.",
-              "ownerDescription": "Module owner",
-              "action": "Do you want to request credits from the module owner?",
-              "detail": "AI credits enable all advanced Artificial Intelligence features in the creation of learning modules.",
-              "alerts": {
-                "noCredits": "The assignment could not be processed, please contact the institution's administrator"
-              }
+            "actions": {
+              "analyse": "Sugerir melhorias",
+              "activities": "Gerar atividades",
+              "activity": "Atividades",
+              "applySuggestions": "Aplicar sugestões",
+              "back": "Voltar",
+              "cancel": "Cancelar",
+              "continue": "Continuar",
+              "cover": "Gerar capa",
+              "clean": "Limpar",
+              "create": "Criar",
+              "confirm": "Confirmar",
+              "delete": "Eliminar",
+              "edit": "Editar",
+              "generate": "Gerar",
+              "next": "Seguinte",
+              "publish": "Publicar",
+              "removeSuggestions": "Cancelar sugestões",
+              "refine": "Refinar",
+              "save": "Guardar",
+              "update": "Subir documento",
+              "upload": "Subir imagem"
             }
           };
         }

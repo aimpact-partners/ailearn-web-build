@@ -114,7 +114,7 @@
   --warning-80: #ffda00;
   --warning-90: #fff500;
   --warning-95: #ffff00;
-  --warning-98: #ffff00;
+  --warning-98: rgb(255, 255, 0);
   --warning-100: #ffffff;
 }
 .elevation-1 {
@@ -311,7 +311,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --warning-80: #ffda00;
   --warning-90: #fff500;
   --warning-95: #ffff00;
-  --warning-98: #ffff00;
+  --warning-98: rgb(255, 255, 0);
   --warning-100: #ffffff;
 }
 
