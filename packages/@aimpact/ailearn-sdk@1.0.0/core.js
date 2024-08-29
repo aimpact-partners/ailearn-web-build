@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.2.0/model", "@beyond-js/reactive@1.2.0/entities", "@aimpact/chat-sdk@1.0.1/core", "@aimpact/http-suite@0.0.1/api", "@aimpact/ailearn-sdk@1.0.0/config", "@aimpact/chat-sdk@1.0.1/session", "@aimpact/media-manager@0.0.1-beta.1/uploader", "@beyond-js/kernel@0.1.9/core", "@aimpact/ailearn-sdk@1.0.0/learning-modules", "@aimpact/chat-sdk@1.0.1/users"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.2.0/model", "@beyond-js/reactive@1.2.0/entities", "@aimpact/chat-sdk@1.1.0/core", "@aimpact/http-suite@0.0.1/api", "@aimpact/ailearn-sdk@1.0.0/config", "@aimpact/chat-sdk@1.1.0/session", "@aimpact/media-manager@0.0.1-beta.1/uploader", "@beyond-js/kernel@0.1.9/core", "@aimpact/ailearn-sdk@1.0.0/learning-modules", "@aimpact/chat-sdk@1.1.0/users"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, bimport, __Bundle, __pkg, ims, AssignmentActivity, Assessment, DashboardWall, Assignment, Classrooms, Classroom, GClass, Organizations, Organization, ICoinsCreditData, ICoinModuleConsumptionData, ICoinAssignmentConsumptionData, ICreditsConsumptionsData, RoleType, IPeopleData, IInviteData, IAILearnUserData, Metadata, CreditsData, Credits, StudentsHome, User, __beyond_pkg, hmr;
@@ -33,26 +33,26 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.2.0/mo
       dependency_1 = _beyondJsReactive120Model;
     }, function (_beyondJsReactive120Entities) {
       dependency_2 = _beyondJsReactive120Entities;
-    }, function (_aimpactChatSdk101Core) {
-      dependency_3 = _aimpactChatSdk101Core;
+    }, function (_aimpactChatSdk110Core) {
+      dependency_3 = _aimpactChatSdk110Core;
     }, function (_aimpactHttpSuite001Api) {
       dependency_4 = _aimpactHttpSuite001Api;
     }, function (_aimpactAilearnSdk100Config) {
       dependency_5 = _aimpactAilearnSdk100Config;
-    }, function (_aimpactChatSdk101Session) {
-      dependency_6 = _aimpactChatSdk101Session;
+    }, function (_aimpactChatSdk110Session) {
+      dependency_6 = _aimpactChatSdk110Session;
     }, function (_aimpactMediaManager001Beta1Uploader) {
       dependency_7 = _aimpactMediaManager001Beta1Uploader;
     }, function (_beyondJsKernel019Core) {
       dependency_8 = _beyondJsKernel019Core;
     }, function (_aimpactAilearnSdk100LearningModules) {
       dependency_9 = _aimpactAilearnSdk100LearningModules;
-    }, function (_aimpactChatSdk101Users) {
-      dependency_10 = _aimpactChatSdk101Users;
+    }, function (_aimpactChatSdk110Users) {
+      dependency_10 = _aimpactChatSdk110Users;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/media-manager", "0.0.1-beta.1"], ["@aimpact/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.0.1"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "1.1.11"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["pragmate-ui", "0.0.6"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.4"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-app", "0.1.6-dev.04"]]);
+        const dependencies = new Map([["@aimpact/media-manager", "0.0.1-beta.1"], ["@aimpact/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.1.0"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "1.1.11"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["pragmate-ui", "0.0.6"], ["react-select", "5.8.0"], ["socket.io-client", "4.7.4"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-app", "0.1.6-dev.07"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

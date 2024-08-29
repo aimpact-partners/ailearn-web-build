@@ -1,13 +1,12 @@
-System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "@beyond-js/reactive@1.2.0/model", "@beyond-js/kernel@0.1.9/texts", "@aimpact/ailearn-app@0.1.6-dev.04/main-layout.widget", "@aimpact/ailearn-sdk@1.0.0/tracking", "react@18.2.0", "pragmate-ui@1.0.0-beta.2/components", "@beyond-js/react-18-widgets@1.1.2/hooks", "@aimpact/ailearn-app@0.1.6-dev.04/components/ui", "@aimpact/chat@1.0.2/shared/components", "@aimpact/ailearn-app@0.1.6-dev.04/components/hooks"], function (_export, _context2) {
+System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "@aimpact/ailearn-app@0.1.6-dev.07/entities/assignments/activities/base", "react@18.2.0", "@aimpact/ailearn-app@0.1.6-dev.07/components/ui", "@aimpact/chat-sdk@1.1.0/chat-component.code", "@aimpact/chat-sdk@1.1.0/wrapper", "@aimpact/chat-sdk@1.1.0/widgets/markdown", "simplebar-react@3.2.6", "pragmate-ui@1.0.0-beta.2/collapsible", "pragmate-ui@1.0.0-beta.2/tabs", "pragmate-ui@1.0.0-beta.2/empty", "@beyond-js/react-18-widgets@1.1.2/hooks", "@aimpact/ailearn-app@0.1.6-dev.07/components/hooks"], function (_export, _context2) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, bimport, __Bundle, __pkg, ims, Controller, CharacterCard, DesktopView, View, MobileView, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, dependency_15, bimport, __Bundle, __pkg, ims, Controller, ActivityContent, Aside, View, __beyond_pkg, hmr;
   _export({
     Controller: void 0,
-    CharacterCard: void 0,
-    DesktopView: void 0,
-    View: void 0,
-    MobileView: void 0
+    ActivityContent: void 0,
+    Aside: void 0,
+    View: void 0
   });
   return {
     setters: [function (_beyondJsWidgets110Render) {
@@ -18,30 +17,34 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_2 = _beyondJsKernel019Styles;
     }, function (_beyondJsReact18Widgets112Page) {
       dependency_3 = _beyondJsReact18Widgets112Page;
-    }, function (_beyondJsReactive120Model) {
-      dependency_4 = _beyondJsReactive120Model;
-    }, function (_beyondJsKernel019Texts) {
-      dependency_5 = _beyondJsKernel019Texts;
-    }, function (_aimpactAilearnApp016Dev04MainLayoutWidget) {
-      dependency_6 = _aimpactAilearnApp016Dev04MainLayoutWidget;
-    }, function (_aimpactAilearnSdk100Tracking) {
-      dependency_7 = _aimpactAilearnSdk100Tracking;
+    }, function (_aimpactAilearnApp016Dev07EntitiesAssignmentsActivitiesBase) {
+      dependency_4 = _aimpactAilearnApp016Dev07EntitiesAssignmentsActivitiesBase;
     }, function (_react2) {
-      dependency_8 = _react2;
-    }, function (_pragmateUi100Beta2Components) {
-      dependency_9 = _pragmateUi100Beta2Components;
+      dependency_5 = _react2;
+    }, function (_aimpactAilearnApp016Dev07ComponentsUi) {
+      dependency_6 = _aimpactAilearnApp016Dev07ComponentsUi;
+    }, function (_aimpactChatSdk110ChatComponentCode) {
+      dependency_7 = _aimpactChatSdk110ChatComponentCode;
+    }, function (_aimpactChatSdk110Wrapper) {
+      dependency_8 = _aimpactChatSdk110Wrapper;
+    }, function (_aimpactChatSdk110WidgetsMarkdown) {
+      dependency_9 = _aimpactChatSdk110WidgetsMarkdown;
+    }, function (_simplebarReact2) {
+      dependency_10 = _simplebarReact2;
+    }, function (_pragmateUi100Beta2Collapsible) {
+      dependency_11 = _pragmateUi100Beta2Collapsible;
+    }, function (_pragmateUi100Beta2Tabs) {
+      dependency_12 = _pragmateUi100Beta2Tabs;
+    }, function (_pragmateUi100Beta2Empty) {
+      dependency_13 = _pragmateUi100Beta2Empty;
     }, function (_beyondJsReact18Widgets112Hooks) {
-      dependency_10 = _beyondJsReact18Widgets112Hooks;
-    }, function (_aimpactAilearnApp016Dev04ComponentsUi) {
-      dependency_11 = _aimpactAilearnApp016Dev04ComponentsUi;
-    }, function (_aimpactChat102SharedComponents) {
-      dependency_12 = _aimpactChat102SharedComponents;
-    }, function (_aimpactAilearnApp016Dev04ComponentsHooks) {
-      dependency_13 = _aimpactAilearnApp016Dev04ComponentsHooks;
+      dependency_14 = _beyondJsReact18Widgets112Hooks;
+    }, function (_aimpactAilearnApp016Dev07ComponentsHooks) {
+      dependency_15 = _aimpactAilearnApp016Dev07ComponentsHooks;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", "1.0.2"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.0.1"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.2"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.4"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["apexcharts", "3.48.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.0.11"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.9.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["react-icons", "5.2.1"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.3"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["firebase", "10.12.0"], ["firebase-admin", "12.1.0"], ["react-is", "16.13.1"], ["react-select", "5.8.0"], ["swiper", "8.4.7"], ["@aimpact/ailearn-app", "0.1.6-dev.04"], ["@aimpact/ailearn-app", "0.1.6-dev.04"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/chat", null], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.1.0"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.2"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["apexcharts", "3.48.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.10"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["markdown-it", "14.1.0"], ["markdown-it-katex", "2.0.3"], ["markdown-it-math", "4.1.1"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.1.3"], ["marked-highlight", "2.1.1"], ["marked-mangle", "1.1.7"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prism-themes", "1.9.0"], ["prismjs", "1.29.0"], ["react-icons", "5.2.1"], ["react-katex", "3.0.1"], ["react-syntax-highlighter", "15.5.0"], ["simplebar-react", "3.2.6"], ["socket.io-client", "4.7.5"], ["tippy.js", "6.3.7"], ["wavesurfer.js", "7.8.4"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.3"], ["@types/react", "18.2.69"], ["@types/react-dom", "18.2.22"], ["firebase", "10.12.0"], ["firebase-admin", "12.1.0"], ["react-is", "16.13.1"], ["react-select", "5.8.0"], ["swiper", "8.4.7"], ["@aimpact/ailearn-app", "0.1.6-dev.07"], ["@aimpact/ailearn-app", "0.1.6-dev.07"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -49,27 +52,27 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.6-dev.04/assignments/character-talk",
+          "vspecifier": "@aimpact/ailearn-app@0.1.6-dev.07/assignments/character-talk",
           "multibundle": true
         },
         "type": "widget"
       }, _context2.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@beyond-js/reactive/model', dependency_4], ['@beyond-js/kernel/texts', dependency_5], ['@aimpact/ailearn-app/main-layout.widget', dependency_6], ['@aimpact/ailearn-sdk/tracking', dependency_7], ['react', dependency_8], ['pragmate-ui/components', dependency_9], ['@beyond-js/react-18-widgets/hooks', dependency_10], ['@aimpact/ailearn-app/components/ui', dependency_11], ['@aimpact/chat/shared/components', dependency_12], ['@aimpact/ailearn-app/components/hooks', dependency_13]]);
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@aimpact/ailearn-app/entities/assignments/activities/base', dependency_4], ['react', dependency_5], ['@aimpact/ailearn-app/components/ui', dependency_6], ['@aimpact/chat-sdk/chat-component.code', dependency_7], ['@aimpact/chat-sdk/wrapper', dependency_8], ['@aimpact/chat-sdk/widgets/markdown', dependency_9], ['simplebar-react', dependency_10], ['pragmate-ui/collapsible', dependency_11], ['pragmate-ui/tabs', dependency_12], ['pragmate-ui/empty', dependency_13], ['@beyond-js/react-18-widgets/hooks', dependency_14], ['@aimpact/ailearn-app/components/hooks', dependency_15]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "ailearn-character-talk",
-        "vspecifier": "@aimpact/ailearn-app@0.1.6-dev.04/assignments/character-talk.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.1.6-dev.07/assignments/character-talk.widget",
         "is": "page",
         "route": "/assignments/${assignmentId}/character-talk/${activityId}/chat/${chatId}",
         "layout": "main-layout"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.1.6-dev.04/assignments/character-talk.widget');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.1.6-dev.07/assignments/character-talk.widget');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller
       ****************************/
       ims.set('./controller', {
-        hash: 1310206847,
+        hash: 2337850378,
         creator: function (require, exports) {
           "use strict";
 
@@ -95,7 +98,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
              */
             show() {
               // todo: @carlos ADd validation error if the vars are not present
-              this.#store.load(this.uri.vars.get('assignmentId'), this.uri.vars.get('activityId'), this.uri.vars.get('id'));
+              this.#store.load(this.uri.vars.get('assignmentId'), this.uri.vars.get('activityId'), this.uri.vars.get('chatId'));
             }
           }
           exports.Controller = Controller;
@@ -107,7 +110,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       ***********************/
 
       ims.set('./store', {
-        hash: 3675774796,
+        hash: 2331614413,
         creator: function (require, exports) {
           "use strict";
 
@@ -115,221 +118,277 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
             value: true
           });
           exports.StoreManager = void 0;
-          var _model = require("@beyond-js/reactive/model");
-          var _texts = require("@beyond-js/kernel/texts");
           var _beyond_context = require("beyond_context");
-          var _mainLayout = require("@aimpact/ailearn-app/main-layout.widget");
-          var _tracking = require("@aimpact/ailearn-sdk/tracking");
-          class StoreManager extends _model.ReactiveModel {
-            #model;
-            #assignmentId;
-            #activityId;
-            #tracking;
-            get tracking() {
-              return this.#tracking;
-            }
-            get model() {
-              return this.#model;
-            }
-            #items;
-            get items() {
-              return this.#items;
-            }
-            #paramsUri;
-            get paramsUri() {
-              return this.#paramsUri;
-            }
-            #texts = new _texts.CurrentTexts(_beyond_context.module.specifier);
-            get texts() {
-              return this.#texts?.value;
-            }
-            #chatId;
-            get chatId() {
-              return this.#chatId;
-            }
-            get ready() {
-              return super.ready && this.#texts.ready;
-            }
-            #found;
-            get found() {
-              return this.#found;
-            }
-            get canConsumeCredits() {
-              return this.#found;
-            }
-            get hasCredits() {
-              return this.#tracking?.credits?.total > 0;
-            }
-            get AIAvailable() {
-              return this.#tracking?.credits?.total > 0;
-            }
+          var _base = require("@aimpact/ailearn-app/entities/assignments/activities/base");
+          class StoreManager extends _base.BaseStoreManager {
             constructor() {
-              super();
-              this.#texts.on('change', this.triggerEvent);
+              super(_beyond_context.module.specifier);
             }
-            async load(assignmentId, activityId, chatId) {
-              try {
-                this.#chatId = chatId;
-                _mainLayout.LayoutBroker.overlay = true;
-                _mainLayout.LayoutBroker.canConsumeCredits = true;
-                if (assignmentId === this.#assignmentId && this.#activityId === activityId) {
-                  _mainLayout.LayoutBroker.addModel(this.#tracking);
-                  return;
-                }
-                this.#assignmentId = assignmentId;
-                this.#activityId = activityId;
-                const tracking = _tracking.Tracking.get({
-                  assignmentId
-                });
-                this.#tracking = tracking;
-                const activity = await tracking.activities.load({
-                  id: activityId
-                });
-                this.#model = activity;
-                _mainLayout.LayoutBroker.addModel(this.#tracking);
-                super.ready = true;
-                this.#found = true;
-                this.triggerEvent();
-                this.triggerEvent();
-              } catch (e) {
-                console.error(e);
-                super.ready = true;
-                this.#found = false;
-                _mainLayout.LayoutBroker.canConsumeCredits = false;
-                this.triggerEvent();
-              }
-            }
-            updateTracking = async () => {
-              const tracking = _tracking.Tracking.get({
-                assignmentId: this.#assignmentId
-              });
-              this.#tracking = tracking;
-              const activity = await tracking.activities.load({
-                id: this.#activityId
-              });
-            };
           }
           exports.StoreManager = StoreManager;
         }
       });
 
-      /***************************************
-      INTERNAL MODULE: ./views/characters-card
-      ***************************************/
-
-      ims.set('./views/characters-card', {
-        hash: 574123641,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.CharacterCard = CharacterCard;
-          var _react = require("react");
-          var _context = require("./context");
-          var _components = require("pragmate-ui/components");
-          /* bundle */ // import { Image } from 'pragmate-ui/image';
-          function CharacterCard() {
-            const {
-              texts
-            } = (0, _context.useConversationContext)();
-            const onActionClick = event => {
-              console.log('clickAvatar');
-            };
-            return _react.default.createElement("section", {
-              className: "character-card__container"
-            }, _react.default.createElement("span", {
-              className: "character-card__title"
-            }, texts.selectTitle), _react.default.createElement("div", {
-              className: "character-card__actions"
-            }), _react.default.createElement(_components.Button, {
-              variant: "primary",
-              className: "character-card__button mt-15",
-              onClick: onActionClick,
-              label: texts.buttonText
-            }));
-          }
-        }
-      });
-
       /************************************
-      INTERNAL MODULE: ./views/chat-control
+      INTERNAL MODULE: ./views/chat/desktop
       ************************************/
 
-      ims.set('./views/chat-control', {
-        hash: 2680380819,
+      ims.set('./views/chat/desktop', {
+        hash: 2855600248,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.ChatControlComponent = ChatControlComponent;
+          exports.DesktopChat = DesktopChat;
           var _react = require("react");
-          var _context = require("./context");
-          var _hooks = require("@beyond-js/react-18-widgets/hooks");
-          function ChatControlComponent() {
+          var _ui = require("@aimpact/ailearn-app/components/ui");
+          var _chatComponent = require("@aimpact/chat-sdk/chat-component.code");
+          var _empty = require("../empty");
+          var _context = require("../context");
+          function DesktopChat() {
             const {
-              chatId,
-              assignmentId,
-              store
-            } = (0, _context.useConversationContext)();
-            const [playable, setPlayable] = _react.default.useState(store.playable);
-            const ref = _react.default.useRef(null);
-            (0, _hooks.useBinder)([store], () => setPlayable(store.playable));
-            _react.default.useEffect(() => {
-              ref.current.addEventListener('onMessageSent', store.updateTracking);
-            }, []);
-            return _react.default.createElement("aimpact-chat-control", {
-              ref: ref,
+              store,
+              setShowCoinsModal
+            } = (0, _context.useModuleContext)();
+            const chatId = store.chatId;
+            const chatSpecs = {};
+            if (!store.hasCredits) {
+              chatSpecs.onClick = () => {
+                setShowCoinsModal(true);
+              };
+              chatSpecs.disabled = true;
+            }
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_ui.ActivityHeader, {
+              title: store.model.title,
+              icon: store.model.type,
+              type: store.model.type
+            }), _react.default.createElement(_chatComponent.AgentsChatContainer, {
               id: chatId,
-              "assignment-id": assignmentId,
-              container: "centered",
-              playable: playable
-            });
+              empty: _empty.EmptyChat,
+              icon: "/assets/rvd/profile-blue.png"
+            }, _react.default.createElement("div", {
+              className: "chat__container"
+            }, _react.default.createElement(_chatComponent.AgentsChatPanel, null)), _react.default.createElement("div", {
+              className: "center-container chat-input__layout-container"
+            }, _react.default.createElement(_chatComponent.AgentsChatInput, {
+              ...chatSpecs
+            }))));
           }
         }
       });
 
-      /****************************
-      INTERNAL MODULE: ./views/chat
-      ****************************/
+      /***********************************
+      INTERNAL MODULE: ./views/chat/mobile
+      ***********************************/
 
-      ims.set('./views/chat', {
-        hash: 3908574170,
+      ims.set('./views/chat/mobile', {
+        hash: 1909768582,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.ChatControl = ChatControl;
+          exports.MobileChat = MobileChat;
           var _react = require("react");
-          var _context = require("./context");
           var _ui = require("@aimpact/ailearn-app/components/ui");
-          var _mainLayout = require("@aimpact/ailearn-app/main-layout.widget");
-          var _hooks = require("@beyond-js/react-18-widgets/hooks");
-          var _chatControl = require("./chat-control");
-          function ChatControl() {
+          var _chatComponent = require("@aimpact/chat-sdk/chat-component.code");
+          var _empty = require("../empty");
+          var _context = require("../context");
+          function MobileChat() {
             const {
               store,
-              chatId,
-              assignmentId,
-              texts
-            } = (0, _context.useConversationContext)();
-            const onClick = () => _mainLayout.LayoutBroker.ensureCredits(() => {});
-            const [hasCredits, setHasCredits] = _react.default.useState(store.hasCredits);
-            (0, _hooks.useBinder)([store.model.tracking], () => {
-              setHasCredits(store.hasCredits);
-            }, 'credits.change');
-            if (!hasCredits) {
-              return _react.default.createElement(_ui.ChatPreload, {
-                text: texts.noCredits,
-                onClick: onClick
-              });
+              setShowCoinsModal
+            } = (0, _context.useModuleContext)();
+            const chatId = store.chatId;
+            const chatSpecs = {};
+            if (!store.hasCredits) {
+              chatSpecs.onClick = () => {
+                setShowCoinsModal(true);
+              };
+              chatSpecs.disabled = true;
             }
-            return _react.default.createElement(_chatControl.ChatControlComponent, null);
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_chatComponent.AgentsChatContainer, {
+              id: chatId,
+              empty: _empty.EmptyChat,
+              icon: "/assets/rvd/profile-blue.png"
+            }, _react.default.createElement("div", {
+              className: "chat__container"
+            }, _react.default.createElement(_ui.ActivityHeader, {
+              title: store.model.title,
+              icon: store.model.type,
+              type: store.model.type
+            }), _react.default.createElement(_chatComponent.AgentsChatPanel, null)), _react.default.createElement("div", {
+              className: "center-container chat-input__layout-container"
+            }, _react.default.createElement(_chatComponent.AgentsChatInput, {
+              ...chatSpecs
+            }))));
+          }
+        }
+      });
+
+      /***************************************
+      INTERNAL MODULE: ./views/content/content
+      ***************************************/
+
+      ims.set('./views/content/content', {
+        hash: 4194320514,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ActivityContent = ActivityContent;
+          var _react = require("react");
+          var _context = require("../context");
+          var _ui = require("@aimpact/ailearn-app/components/ui");
+          var _wrapper = require("@aimpact/chat-sdk/wrapper");
+          var _markdown = require("@aimpact/chat-sdk/widgets/markdown");
+          var _simplebarReact = require("simplebar-react");
+          var _collapsible = require("pragmate-ui/collapsible");
+          /*bundle*/
+          function ActivityContent() {
+            const {
+              texts,
+              store
+            } = (0, _context.useModuleContext)();
+            const {
+              article,
+              dyslexia,
+              audios,
+              synthesis
+            } = store.model.materials;
+            const [mode, setMode] = _react.default.useState(_wrapper.AppWrapper.accessibility ?? 'normal');
+            const content = mode === 'normal' ? article : dyslexia ?? dyslexia;
+            const keys = (audios && Object.keys(audios)) ?? [];
+            const ref = _react.default.useRef(null);
+            let totalAudios = keys.length;
+            const audioSrc = mode != 'normal' && audios?.dyslexia?.url ? audios.dyslexia?.url : audios?.article?.url;
+            return _react.default.createElement("div", {
+              className: "activity-content"
+            }, _react.default.createElement(_ui.EntityImage, {
+              className: "entity-image-cover",
+              src: store.model.picture,
+              type: store.model.type,
+              entity: "activity"
+            }), _react.default.createElement("section", {
+              className: "main__content"
+            }, !!totalAudios && _react.default.createElement(_ui.ActivityAudio, {
+              src: audioSrc
+            }), _react.default.createElement(_collapsible.Accordion.Container, null, !!synthesis && _react.default.createElement(_collapsible.Accordion.Item, {
+              title: texts.synthesis
+            }, _react.default.createElement(_simplebarReact.default, {
+              className: "scroll-container",
+              style: {
+                maxHeight: 400
+              }
+            }, _react.default.createElement(_markdown.Markdown, null, synthesis))), content && _react.default.createElement(_collapsible.Accordion.Item, {
+              title: texts.article
+            }, _react.default.createElement(_simplebarReact.default, {
+              className: "scroll-container",
+              style: {
+                maxHeight: 400
+              }
+            }, _react.default.createElement(_markdown.Markdown, null, content))))));
+          }
+        }
+      });
+
+      /*********************************************
+      INTERNAL MODULE: ./views/content/desktop/aside
+      *********************************************/
+
+      ims.set('./views/content/desktop/aside', {
+        hash: 3103456928,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Aside = Aside;
+          var _react = require("react");
+          var _content = require("../content");
+          /*bundle*/
+          function Aside() {
+            return _react.default.createElement("aside", {
+              className: "activity-chat__aside"
+            }, _react.default.createElement(_content.ActivityContent, null));
+          }
+        }
+      });
+
+      /*********************************************
+      INTERNAL MODULE: ./views/content/desktop/index
+      *********************************************/
+
+      ims.set('./views/content/desktop/index', {
+        hash: 625630559,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DesktopContent = DesktopContent;
+          var _react = require("react");
+          var _ui = require("@aimpact/ailearn-app/components/ui");
+          var _aside = require("./aside");
+          var _context = require("../../context");
+          var _desktop = require("../../chat/desktop");
+          function DesktopContent() {
+            const {
+              store,
+              setShowCoinsModal
+            } = (0, _context.useModuleContext)();
+            const chatSpecs = {};
+            if (!store.hasCredits) {
+              chatSpecs.onClick = () => {
+                setShowCoinsModal(true);
+              };
+              chatSpecs.disabled = true;
+            }
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_ui.PageContainer, {
+              className: "content-activity--desktop-container"
+            }, _react.default.createElement("main", null, _react.default.createElement(_desktop.DesktopChat, null)), _react.default.createElement(_aside.Aside, null)));
+          }
+        }
+      });
+
+      /**************************************
+      INTERNAL MODULE: ./views/content/mobile
+      **************************************/
+
+      ims.set('./views/content/mobile', {
+        hash: 3643823948,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.MobileContent = MobileContent;
+          var _react = require("react");
+          var _tabs = require("pragmate-ui/tabs");
+          var _mobile = require("../chat/mobile");
+          var _context = require("../context");
+          var _content = require("./content");
+          function MobileContent() {
+            const onChange = () => {
+              console.log(1, 'change');
+            };
+            const {
+              texts
+            } = (0, _context.useModuleContext)();
+            return _react.default.createElement("main", {
+              className: "mobile-view"
+            }, _react.default.createElement(_tabs.TabsContainer, {
+              onChange: onChange,
+              active: 0
+            }, _react.default.createElement(_tabs.Panes, null, _react.default.createElement(_mobile.MobileChat, null), _react.default.createElement(_content.ActivityContent, null)), _react.default.createElement(_tabs.Tabs, null, _react.default.createElement(_tabs.Tab, null, texts.tabs.chat), _react.default.createElement(_tabs.Tab, null, texts.tabs.content))));
           }
         }
       });
@@ -339,61 +398,73 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       *******************************/
 
       ims.set('./views/context', {
-        hash: 563708756,
+        hash: 4293477980,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.useConversationContext = exports.ConversationContext = void 0;
+          exports.useModuleContext = exports.ModuleContext = void 0;
           var _react = require("react");
-          const ConversationContext = exports.ConversationContext = _react.default.createContext({});
-          const useConversationContext = () => _react.default.useContext(ConversationContext);
-          exports.useConversationContext = useConversationContext;
+          const ModuleContext = exports.ModuleContext = _react.default.createContext({});
+          const useModuleContext = () => _react.default.useContext(ModuleContext);
+          exports.useModuleContext = useModuleContext;
         }
       });
 
-      /*******************************
-      INTERNAL MODULE: ./views/desktop
-      *******************************/
+      /*****************************
+      INTERNAL MODULE: ./views/empty
+      *****************************/
 
-      ims.set('./views/desktop', {
-        hash: 362503832,
+      ims.set('./views/empty', {
+        hash: 569302211,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.DesktopView = DesktopView;
+          exports.EmptyChat = EmptyChat;
+          var _empty = require("pragmate-ui/empty");
           var _react = require("react");
           var _context = require("./context");
-          var _ui = require("@aimpact/ailearn-app/components/ui");
-          var _chat = require("./chat");
-          /*bundle*/
-          function DesktopView() {
+          function EmptyChat() {
             const {
-              store,
-              texts
-            } = (0, _context.useConversationContext)();
+              texts: {
+                chat: {
+                  empty: texts
+                }
+              },
+              store
+            } = (0, _context.useModuleContext)();
+            if (!store?.model) return null;
+            const {
+              title,
+              description
+            } = store.model.hasCredits ? texts.credits : texts.noCredits;
             return _react.default.createElement("div", {
-              className: "page-activity-container"
-            }, _react.default.createElement(_ui.ActivityHeader, {
-              icon: store.model.type,
-              title: store.model.title,
-              type: store.model.type
-            }), _react.default.createElement(_ui.PageContainer, {
-              className: "content-activity--desktop-container"
-            }, _react.default.createElement(_chat.ChatControl, null), _react.default.createElement("aside", {
-              className: "content-activity__aside"
-            }, _react.default.createElement("div", null, _react.default.createElement(_ui.EntityImage, {
-              className: "entity-image-cover",
-              src: store.model.picture,
-              type: store.model.type,
-              entity: "activity"
-            }), _react.default.createElement("h4", null, texts.description), _react.default.createElement("p", null, store.model.description)))));
+              className: " empty-chat"
+            }, _react.default.createElement(_empty.Empty, {
+              icon: "info",
+              className: ""
+            }, _react.default.createElement("h3", null, title), _react.default.createElement("span", null, description)));
           }
+        }
+      });
+
+      /******************************
+      INTERNAL MODULE: ./views/global
+      ******************************/
+
+      ims.set('./views/global', {
+        hash: 1370001867,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
         }
       });
 
@@ -402,7 +473,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       *****************************/
 
       ims.set('./views/index', {
-        hash: 1786098072,
+        hash: 2854663106,
         creator: function (require, exports) {
           "use strict";
 
@@ -411,12 +482,12 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
           });
           exports.View = View;
           var _react = require("react");
-          var _components = require("@aimpact/chat/shared/components");
+          var _ui = require("@aimpact/ailearn-app/components/ui");
           var _hooks = require("@beyond-js/react-18-widgets/hooks");
           var _context = require("./context");
-          var _mobile = require("./mobile");
-          var _desktop = require("./desktop");
           var _hooks2 = require("@aimpact/ailearn-app/components/hooks");
+          var _desktop = require("./content/desktop");
+          var _mobile = require("./content/mobile");
           /*bundle*/
           function View({
             store,
@@ -429,7 +500,9 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
             const size = (0, _hooks2.useMediaQuery)();
             (0, _hooks.useBinder)([store], () => setReady(store.ready));
             if (ready && !store.found) return _react.default.createElement("app-missing", null);
-            if (!ready) return _react.default.createElement(_components.PreloadScreen, null);
+            if (!ready) return _react.default.createElement(_ui.PageLoader, {
+              fetching: true
+            });
             const contextValue = {
               texts: store.texts,
               fetching: store.fetching,
@@ -438,52 +511,10 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
               store,
               items
             };
-            const Control = size === 'md' || size === 'lg' ? _desktop.DesktopView : _mobile.MobileView;
-            return _react.default.createElement(_context.ConversationContext.Provider, {
+            const Control = size === 'md' || size === 'lg' ? _desktop.DesktopContent : _mobile.MobileContent;
+            return _react.default.createElement(_context.ModuleContext.Provider, {
               value: contextValue
             }, _react.default.createElement(Control, null));
-          }
-        }
-      });
-
-      /******************************
-      INTERNAL MODULE: ./views/mobile
-      ******************************/
-
-      ims.set('./views/mobile', {
-        hash: 2362117843,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.MobileView = MobileView;
-          var _react = require("react");
-          var _context = require("./context");
-          var _ui = require("@aimpact/ailearn-app/components/ui");
-          var _chat = require("./chat");
-          /*bundle*/
-          function MobileView() {
-            const {
-              store,
-              chatId,
-              assignmentId
-            } = (0, _context.useConversationContext)();
-            return _react.default.createElement("div", {
-              className: "page-activity-container"
-            }, _react.default.createElement(_ui.ActivityHeader, {
-              title: store.model.title,
-              icon: store.model.type,
-              type: store.model.type
-            }), _react.default.createElement(_ui.PageContainer, {
-              className: "content-activity--container"
-            }, _react.default.createElement(_ui.EntityImage, {
-              className: "entity-image-cover",
-              type: store.model.type,
-              src: store.model.picture,
-              entity: "activity"
-            }), _react.default.createElement(_chat.ChatControl, null)));
           }
         }
       });
@@ -492,21 +523,17 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
         "from": "Controller",
         "name": "Controller"
       }, {
-        "im": "./views/characters-card",
-        "from": "CharacterCard",
-        "name": "CharacterCard"
+        "im": "./views/content/content",
+        "from": "ActivityContent",
+        "name": "ActivityContent"
       }, {
-        "im": "./views/desktop",
-        "from": "DesktopView",
-        "name": "DesktopView"
+        "im": "./views/content/desktop/aside",
+        "from": "Aside",
+        "name": "Aside"
       }, {
         "im": "./views/index",
         "from": "View",
         "name": "View"
-      }, {
-        "im": "./views/mobile",
-        "from": "MobileView",
-        "name": "MobileView"
       }];
       // Module exports
       __pkg.exports.process = function ({
@@ -515,10 +542,9 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
         value
       }) {
         (require || prop === 'Controller') && _export("Controller", Controller = require ? require('./controller').Controller : value);
-        (require || prop === 'CharacterCard') && _export("CharacterCard", CharacterCard = require ? require('./views/characters-card').CharacterCard : value);
-        (require || prop === 'DesktopView') && _export("DesktopView", DesktopView = require ? require('./views/desktop').DesktopView : value);
+        (require || prop === 'ActivityContent') && _export("ActivityContent", ActivityContent = require ? require('./views/content/content').ActivityContent : value);
+        (require || prop === 'Aside') && _export("Aside", Aside = require ? require('./views/content/desktop/aside').Aside : value);
         (require || prop === 'View') && _export("View", View = require ? require('./views/index').View : value);
-        (require || prop === 'MobileView') && _export("MobileView", MobileView = require ? require('./views/mobile').MobileView : value);
       };
       _export("__beyond_pkg", __beyond_pkg = __pkg);
       _export("hmr", hmr = new function () {
@@ -529,4 +555,4 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfc3RvcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsInN0b3JlIiwiY3JlYXRlU3RvcmUiLCJTdG9yZU1hbmFnZXIiLCJXaWRnZXQiLCJWaWV3Iiwic2hvdyIsImxvYWQiLCJ1cmkiLCJ2YXJzIiwiZ2V0IiwiZXhwb3J0cyIsIl9tb2RlbCIsIl90ZXh0cyIsIl9iZXlvbmRfY29udGV4dCIsIl9tYWluTGF5b3V0IiwiX3RyYWNraW5nIiwiUmVhY3RpdmVNb2RlbCIsIm1vZGVsIiwiYXNzaWdubWVudElkIiwiYWN0aXZpdHlJZCIsInRyYWNraW5nIiwiaXRlbXMiLCJwYXJhbXNVcmkiLCJ0ZXh0cyIsIkN1cnJlbnRUZXh0cyIsIm1vZHVsZSIsInNwZWNpZmllciIsInZhbHVlIiwiY2hhdElkIiwicmVhZHkiLCJmb3VuZCIsImNhbkNvbnN1bWVDcmVkaXRzIiwiaGFzQ3JlZGl0cyIsImNyZWRpdHMiLCJ0b3RhbCIsIkFJQXZhaWxhYmxlIiwiY29uc3RydWN0b3IiLCJvbiIsInRyaWdnZXJFdmVudCIsIkxheW91dEJyb2tlciIsIm92ZXJsYXkiLCJhZGRNb2RlbCIsIlRyYWNraW5nIiwiYWN0aXZpdHkiLCJhY3Rpdml0aWVzIiwiaWQiLCJlIiwiY29uc29sZSIsImVycm9yIiwidXBkYXRlVHJhY2tpbmciLCJfcmVhY3QiLCJfY29udGV4dCIsIl9jb21wb25lbnRzIiwiQ2hhcmFjdGVyQ2FyZCIsInVzZUNvbnZlcnNhdGlvbkNvbnRleHQiLCJvbkFjdGlvbkNsaWNrIiwiZXZlbnQiLCJsb2ciLCJkZWZhdWx0IiwiY3JlYXRlRWxlbWVudCIsImNsYXNzTmFtZSIsInNlbGVjdFRpdGxlIiwiQnV0dG9uIiwidmFyaWFudCIsIm9uQ2xpY2siLCJsYWJlbCIsImJ1dHRvblRleHQiLCJfaG9va3MiLCJDaGF0Q29udHJvbENvbXBvbmVudCIsInBsYXlhYmxlIiwic2V0UGxheWFibGUiLCJ1c2VTdGF0ZSIsInJlZiIsInVzZVJlZiIsInVzZUJpbmRlciIsInVzZUVmZmVjdCIsImN1cnJlbnQiLCJhZGRFdmVudExpc3RlbmVyIiwiY29udGFpbmVyIiwiX3VpIiwiX2NoYXRDb250cm9sIiwiQ2hhdENvbnRyb2wiLCJlbnN1cmVDcmVkaXRzIiwic2V0SGFzQ3JlZGl0cyIsIkNoYXRQcmVsb2FkIiwidGV4dCIsIm5vQ3JlZGl0cyIsIkNvbnZlcnNhdGlvbkNvbnRleHQiLCJjcmVhdGVDb250ZXh0IiwidXNlQ29udGV4dCIsIl9jaGF0IiwiRGVza3RvcFZpZXciLCJBY3Rpdml0eUhlYWRlciIsImljb24iLCJ0eXBlIiwidGl0bGUiLCJQYWdlQ29udGFpbmVyIiwiRW50aXR5SW1hZ2UiLCJzcmMiLCJwaWN0dXJlIiwiZW50aXR5IiwiZGVzY3JpcHRpb24iLCJfbW9iaWxlIiwiX2Rlc2t0b3AiLCJfaG9va3MyIiwic2V0UmVhZHkiLCJzZXRJdGVtcyIsInNpemUiLCJ1c2VNZWRpYVF1ZXJ5IiwiUHJlbG9hZFNjcmVlbiIsImNvbnRleHRWYWx1ZSIsImZldGNoaW5nIiwiQ29udHJvbCIsIk1vYmlsZVZpZXciLCJQcm92aWRlciJdLCJzb3VyY2VzIjpbIi90cy9jb250cm9sbGVyLnRzIiwiL3RzL3N0b3JlLnRzIiwiL3RzL3ZpZXdzL2NoYXJhY3RlcnMtY2FyZC50c3giLCIvdHMvdmlld3MvY2hhdC1jb250cm9sLnRzeCIsIi90cy92aWV3cy9jaGF0LnRzeCIsIi90cy92aWV3cy9jb250ZXh0LnRzIiwiL3RzL3ZpZXdzL2Rlc2t0b3AudHN4IiwiL3RzL3ZpZXdzL2luZGV4LnRzeCIsIi90cy92aWV3cy9tb2JpbGUudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFB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
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfc3RvcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsInN0b3JlIiwiY3JlYXRlU3RvcmUiLCJTdG9yZU1hbmFnZXIiLCJXaWRnZXQiLCJWaWV3Iiwic2hvdyIsImxvYWQiLCJ1cmkiLCJ2YXJzIiwiZ2V0IiwiZXhwb3J0cyIsIl9iZXlvbmRfY29udGV4dCIsIl9iYXNlIiwiQmFzZVN0b3JlTWFuYWdlciIsImNvbnN0cnVjdG9yIiwibW9kdWxlIiwic3BlY2lmaWVyIiwiX3JlYWN0IiwiX3VpIiwiX2NoYXRDb21wb25lbnQiLCJfZW1wdHkiLCJfY29udGV4dCIsIkRlc2t0b3BDaGF0Iiwic2V0U2hvd0NvaW5zTW9kYWwiLCJ1c2VNb2R1bGVDb250ZXh0IiwiY2hhdElkIiwiY2hhdFNwZWNzIiwiaGFzQ3JlZGl0cyIsIm9uQ2xpY2siLCJkaXNhYmxlZCIsImRlZmF1bHQiLCJjcmVhdGVFbGVtZW50IiwiRnJhZ21lbnQiLCJBY3Rpdml0eUhlYWRlciIsInRpdGxlIiwibW9kZWwiLCJpY29uIiwidHlwZSIsIkFnZW50c0NoYXRDb250YWluZXIiLCJpZCIsImVtcHR5IiwiRW1wdHlDaGF0IiwiY2xhc3NOYW1lIiwiQWdlbnRzQ2hhdFBhbmVsIiwiQWdlbnRzQ2hhdElucHV0IiwiTW9iaWxlQ2hhdCIsIl93cmFwcGVyIiwiX21hcmtkb3duIiwiX3NpbXBsZWJhclJlYWN0IiwiX2NvbGxhcHNpYmxlIiwiQWN0aXZpdHlDb250ZW50IiwidGV4dHMiLCJhcnRpY2xlIiwiZHlzbGV4aWEiLCJhdWRpb3MiLCJzeW50aGVzaXMiLCJtYXRlcmlhbHMiLCJtb2RlIiwic2V0TW9kZSIsInVzZVN0YXRlIiwiQXBwV3JhcHBlciIsImFjY2Vzc2liaWxpdHkiLCJjb250ZW50Iiwia2V5cyIsIk9iamVjdCIsInJlZiIsInVzZVJlZiIsInRvdGFsQXVkaW9zIiwibGVuZ3RoIiwiYXVkaW9TcmMiLCJ1cmwiLCJFbnRpdHlJbWFnZSIsInNyYyIsInBpY3R1cmUiLCJlbnRpdHkiLCJBY3Rpdml0eUF1ZGlvIiwiQWNjb3JkaW9uIiwiQ29udGFpbmVyIiwiSXRlbSIsInN0eWxlIiwibWF4SGVpZ2h0IiwiTWFya2Rvd24iLCJfY29udGVudCIsIkFzaWRlIiwiX2FzaWRlIiwiX2Rlc2t0b3AiLCJEZXNrdG9wQ29udGVudCIsIlBhZ2VDb250YWluZXIiLCJfdGFicyIsIl9tb2JpbGUiLCJNb2JpbGVDb250ZW50Iiwib25DaGFuZ2UiLCJjb25zb2xlIiwibG9nIiwiVGFic0NvbnRhaW5lciIsImFjdGl2ZSIsIlBhbmVzIiwiVGFicyIsIlRhYiIsInRhYnMiLCJjaGF0IiwiTW9kdWxlQ29udGV4dCIsImNyZWF0ZUNvbnRleHQiLCJ1c2VDb250ZXh0IiwiZGVzY3JpcHRpb24iLCJjcmVkaXRzIiwibm9DcmVkaXRzIiwiRW1wdHkiLCJkZWZpbmVQcm9wZXJ0eSIsInZhbHVlIiwiX2hvb2tzIiwiX2hvb2tzMiIsInJlYWR5Iiwic2V0UmVhZHkiLCJpdGVtcyIsInNldEl0ZW1zIiwiYXNzaWdubWVudElkIiwic2l6ZSIsInVzZU1lZGlhUXVlcnkiLCJ1c2VCaW5kZXIiLCJmb3VuZCIsIlBhZ2VMb2FkZXIiLCJmZXRjaGluZyIsImNvbnRleHRWYWx1ZSIsIkNvbnRyb2wiLCJQcm92aWRlciJdLCJzb3VyY2VzIjpbIi90cy9jb250cm9sbGVyLnRzIiwiL3RzL3N0b3JlLnRzIiwiL3RzL3ZpZXdzL2NoYXQvZGVza3RvcC50c3giLCIvdHMvdmlld3MvY2hhdC9tb2JpbGUudHN4IiwiL3RzL3ZpZXdzL2NvbnRlbnQvY29udGVudC50c3giLCIvdHMvdmlld3MvY29udGVudC9kZXNrdG9wL2FzaWRlLnRzeCIsIi90cy92aWV3cy9jb250ZW50L2Rlc2t0b3AvaW5kZXgudHN4IiwiL3RzL3ZpZXdzL2NvbnRlbnQvbW9iaWxlLnRzeCIsIi90cy92aWV3cy9jb250ZXh0LnRzIiwiL3RzL3ZpZXdzL2VtcHR5LnRzeCIsIi9nbG9iYWwudHN4IiwiL3RzL3ZpZXdzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxLQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxNQUFBLEdBQUFELE9BQUE7VUFDQSxJQUFBRSxNQUFBLEdBQUFGLE9BQUE7VUFFTztVQUFVLE1BQ1hHLFVBQVcsU0FBUUosS0FBQSxDQUFBSyx5QkFBeUI7WUFDakQsQ0FBQUMsS0FBTTtZQUNOQyxXQUFXQSxDQUFBO2NBQ1YsSUFBSSxDQUFDLENBQUFELEtBQU0sR0FBRyxJQUFJSixNQUFBLENBQUFNLFlBQVksRUFBRTtjQUNoQyxPQUFPLElBQUksQ0FBQyxDQUFBRixLQUFNO1lBQ25CO1lBQ0EsSUFBSUcsTUFBTUEsQ0FBQTtjQUNULE9BQU9OLE1BQUEsQ0FBQU8sSUFBSTtZQUNaO1lBRUE7OztZQUdBQyxJQUFJQSxDQUFBO2NBQ0g7Y0FDQSxJQUFJLENBQUMsQ0FBQUwsS0FBTSxDQUFDTSxJQUFJLENBQ2YsSUFBSSxDQUFDQyxHQUFHLENBQUNDLElBQUksQ0FBQ0MsR0FBRyxDQUFDLGNBQWMsQ0FBQyxFQUNqQyxJQUFJLENBQUNGLEdBQUcsQ0FBQ0MsSUFBSSxDQUFDQyxHQUFHLENBQUMsWUFBWSxDQUFDLEVBQy9CLElBQUksQ0FBQ0YsR0FBRyxDQUFDQyxJQUFJLENBQUNDLEdBQUcsQ0FBQyxRQUFRLENBQUMsQ0FDM0I7WUFDRjs7VUFDQUMsT0FBQSxDQUFBWixVQUFBLEdBQUFBLFVBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDMUJELElBQUFhLGVBQUEsR0FBQWhCLE9BQUE7VUFDQSxJQUFBaUIsS0FBQSxHQUFBakIsT0FBQTtVQUVNLE1BQU9PLFlBQWEsU0FBUVUsS0FBQSxDQUFB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

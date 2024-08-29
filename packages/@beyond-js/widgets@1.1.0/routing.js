@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core", "@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/routing", "@beyond-js/events@0.0.4/events"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core", "@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/routing", "@beyond-js/events@0.0.7/events"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, LayoutInstance, manager, PageInstance, Route, PageURI, __beyond_pkg, hmr;
@@ -18,12 +18,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
       dependency_2 = _beyondJsWidgets110Render;
     }, function (_beyondJsKernel019Routing) {
       dependency_3 = _beyondJsKernel019Routing;
-    }, function (_beyondJsEvents004Events) {
-      dependency_4 = _beyondJsEvents004Events;
+    }, function (_beyondJsEvents007Events) {
+      dependency_4 = _beyondJsEvents007Events;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/kernel", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/widgets", "1.1.0"], ["@aimpact/ailearn-app", "0.1.6-dev.04"]]);
+        const dependencies = new Map([["@beyond-js/kernel", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/widgets", "1.1.0"], ["@aimpact/ailearn-app", "0.1.6-dev.07"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
