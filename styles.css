@@ -329,6 +329,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --character-talk: #cf8836;
   --spoken: #9aae3b;
   --multiple-choice: #009468ff;
+  --chat-input-border-color: var(--neutral-80);
   --box-shadow-default: 0px 0px 15px rgba(0, 0, 0, 0.1);
   --box-shadow-hover: 0px 0px 15px rgba(0, 0, 0, 0.2);
   --font-size-p2: 0.875rem;
