@@ -689,6 +689,38 @@ this style must be a unique bundle
 .tertiary-bg {
   background-color: var(--tertiary-container);
 }
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-tertiary {
+  color: var(--tertiary-color);
+}
+
+.text-success {
+  color: var(--success-color);
+}
+
+.text-info {
+  color: var(--info-color);
+}
+
+.text-error {
+  color: var(--error-color);
+}
+
+.text-warning {
+  color: var(--warning-color);
+}
+
+.text-default {
+  color: var(--default-color);
+}
 .flex-container {
   display: flex;
 }
