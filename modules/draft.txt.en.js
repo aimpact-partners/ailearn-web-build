@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 407800272,
+        hash: 480992996,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -213,6 +213,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "sugestions": {
                 "title": "Instruction suggestions"
+              },
+              "confirmation": {
+                "title": "Attention",
+                "subtitle": "You are about to create a learning module for:",
+                "label": "Owner of the learning module",
+                "description": "The AI credits you request within the creation of this learning module will be requested and provided by the module owner",
+                "ownerDescription": "Owner of the learning module"
               }
             },
             "suggestions": {

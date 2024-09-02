@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 799630302,
+        hash: 2068022333,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -58,7 +58,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "textarea": {
               "label": "Tus aportes",
               "placeholder": "Comparte sugerencias específicas o áreas de mejora..."
-            }
+            },
+            "error": "Por favor, añade notas detalladas para la generación"
           };
         }
       });
