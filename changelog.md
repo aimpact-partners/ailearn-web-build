@@ -1,4 +1,4 @@
-0.1.7
+0.1.6
 
 -   Agregado nuevo component breadcrumb el cual maneja las rutas de forma más óptima.
 -   Agregado descuento de creditos generativos
