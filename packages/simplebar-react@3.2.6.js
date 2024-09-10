@@ -1,7 +1,7 @@
-System.register(["react@18.3.1","lodash-es@4.17.21","simplebar-core@1.2.6"], (_exports, _context) => {
+System.register(["react@18.2.0","lodash-es@4.17.21","simplebar-core@1.2.6"], (_exports, _context) => {
 
 const bimport = specifier => {
-	const dependencies = new Map([["react","18.3.1"],["lodash-es","4.17.21"],["simplebar-core","1.2.6"],["simplebar-react","3.2.6"]]);
+	const dependencies = new Map([["react","18.2.0"],["lodash-es","4.17.21"],["simplebar-core","1.2.6"],["simplebar-react","3.2.6"]]);
 	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
 };
 
@@ -9,7 +9,7 @@ const bimport = specifier => {
 var dependencies = new Map();
 var require = dependency => dependencies.get(dependency);
 return {
-setters: [dep => dependencies.set('react@18.3.1', dep), dep => dependencies.set('lodash-es@4.17.21', dep), dep => dependencies.set('simplebar-core@1.2.6', dep)],
+setters: [dep => dependencies.set('react@18.2.0', dep), dep => dependencies.set('lodash-es@4.17.21', dep), dep => dependencies.set('simplebar-core@1.2.6', dep)],
 execute: function() {
 // Prevent esbuild from considering the context to be amd
 const define = void 0;
@@ -53,7 +53,7 @@ __export(simplebar_react_3_2_6_exports, {
 module.exports = __toCommonJS(simplebar_react_3_2_6_exports);
 
 // node_modules/simplebar-react/dist/index.mjs
-var React = __toESM(require("react@18.3.1"), 0);
+var React = __toESM(require("react@18.2.0"), 0);
 var import_simplebar_core = __toESM(require("simplebar-core@1.2.6"), 0);
 var __assign = function () {
   __assign = Object.assign || function __assign2(t) {
