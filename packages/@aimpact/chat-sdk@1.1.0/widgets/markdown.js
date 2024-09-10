@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.3.1", "marked-mangle@1.1.9", "marked@5.1.2", "marked-gfm-heading-id@3.2.0", "katex@0.16.11", "highlight.js@11.10.0", "marked-highlight@2.1.4"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "marked-mangle@1.1.9", "marked@5.1.2", "marked-gfm-heading-id@3.2.0", "katex@0.16.11", "highlight.js@11.10.0", "marked-highlight@2.1.4"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, bimport, __Bundle, __pkg, ims, Markdown, __beyond_pkg, hmr;

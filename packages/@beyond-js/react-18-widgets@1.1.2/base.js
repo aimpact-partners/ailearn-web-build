@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/widgets@1.1.0/controller", "react@18.3.1", "react-dom@18.3.1/client", "@beyond-js/widgets@1.1.0/routing"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/widgets@1.1.0/controller", "react@18.2.0", "react-dom@18.2.0/client", "@beyond-js/widgets@1.1.0/routing"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, IWidgetProps, IPageWidgetProps, ReactWidgetController, __beyond_pkg, hmr;
@@ -14,8 +14,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/widgets@1.1.0/con
       dependency_1 = _beyondJsWidgets110Controller;
     }, function (_react) {
       dependency_2 = _react;
-    }, function (_reactDom1831Client) {
-      dependency_3 = _reactDom1831Client;
+    }, function (_reactDom1820Client) {
+      dependency_3 = _reactDom1820Client;
     }, function (_beyondJsWidgets110Routing) {
       dependency_4 = _beyondJsWidgets110Routing;
     }],

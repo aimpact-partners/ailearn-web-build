@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.3.1", "tippy.js@6.3.7", "@beyond-js/kernel@0.1.9/routing", "pragmate-ui@1.0.0-beta.6/ripple", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "tippy.js@6.3.7", "@beyond-js/kernel@0.1.9/routing", "pragmate-ui@1.0.0-beta.6/ripple", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, IconButton, Icon, PRAGMATE_ICONS, register, __beyond_pkg, hmr;
