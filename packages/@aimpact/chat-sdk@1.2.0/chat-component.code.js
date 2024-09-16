@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/reactive@1.2.0/model", "@aimpact/chat-sdk@1.1.0/voice", "@aimpact/chat-sdk@1.1.0/wrapper", "@aimpact/chat-sdk@1.1.0/core", "@aimpact/chat-sdk@1.1.0/session", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core", "react@18.2.0", "pragmate-ui@1.0.0-beta.6/icons", "@beyond-js/react-18-widgets@1.1.2/hooks", "@aimpact/chat-sdk@1.1.0/messages", "pragmate-ui@1.0.0-beta.6/components", "@aimpact/chat-sdk@1.1.0/components/icons", "pragmate-ui@1.0.0-beta.6/form", "pragmate-ui@1.0.0-beta.6/modal"], function (_export, _context3) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/reactive@1.2.0/model", "@aimpact/chat-sdk@1.2.0/voice", "@aimpact/chat-sdk@1.2.0/wrapper", "@aimpact/chat-sdk@1.2.0/core", "@aimpact/chat-sdk@1.2.0/session", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core", "react@18.2.0", "pragmate-ui@1.0.0-beta.6/icons", "@beyond-js/react-18-widgets@1.1.2/hooks", "@aimpact/chat-sdk@1.2.0/messages", "pragmate-ui@1.0.0-beta.6/components", "@aimpact/chat-sdk@1.2.0/components/icons", "pragmate-ui@1.0.0-beta.6/form", "pragmate-ui@1.0.0-beta.6/modal"], function (_export, _context3) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, dependency_15, dependency_16, bimport, __Bundle, __pkg, ims, AudioManager, Recorder, Chat, AgentsChatContainer, ChatContext, useChatContext, AgentsChatPanel, AgentsChatInput, PermissionsErrorModal, RecordingButton, PermissionsModal, __beyond_pkg, hmr;
@@ -22,14 +22,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_1 = _beyondJsKernel019Styles;
     }, function (_beyondJsReactive120Model) {
       dependency_2 = _beyondJsReactive120Model;
-    }, function (_aimpactChatSdk110Voice) {
-      dependency_3 = _aimpactChatSdk110Voice;
-    }, function (_aimpactChatSdk110Wrapper) {
-      dependency_4 = _aimpactChatSdk110Wrapper;
-    }, function (_aimpactChatSdk110Core) {
-      dependency_5 = _aimpactChatSdk110Core;
-    }, function (_aimpactChatSdk110Session) {
-      dependency_6 = _aimpactChatSdk110Session;
+    }, function (_aimpactChatSdk120Voice) {
+      dependency_3 = _aimpactChatSdk120Voice;
+    }, function (_aimpactChatSdk120Wrapper) {
+      dependency_4 = _aimpactChatSdk120Wrapper;
+    }, function (_aimpactChatSdk120Core) {
+      dependency_5 = _aimpactChatSdk120Core;
+    }, function (_aimpactChatSdk120Session) {
+      dependency_6 = _aimpactChatSdk120Session;
     }, function (_beyondJsKernel019Texts) {
       dependency_7 = _beyondJsKernel019Texts;
     }, function (_beyondJsKernel019Core) {
@@ -40,12 +40,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_10 = _pragmateUi100Beta6Icons;
     }, function (_beyondJsReact18Widgets112Hooks) {
       dependency_11 = _beyondJsReact18Widgets112Hooks;
-    }, function (_aimpactChatSdk110Messages) {
-      dependency_12 = _aimpactChatSdk110Messages;
+    }, function (_aimpactChatSdk120Messages) {
+      dependency_12 = _aimpactChatSdk120Messages;
     }, function (_pragmateUi100Beta6Components) {
       dependency_13 = _pragmateUi100Beta6Components;
-    }, function (_aimpactChatSdk110ComponentsIcons) {
-      dependency_14 = _aimpactChatSdk110ComponentsIcons;
+    }, function (_aimpactChatSdk120ComponentsIcons) {
+      dependency_14 = _aimpactChatSdk120ComponentsIcons;
     }, function (_pragmateUi100Beta6Form) {
       dependency_15 = _pragmateUi100Beta6Form;
     }, function (_pragmateUi100Beta6Modal) {
@@ -53,7 +53,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/reactive", "1.2.0"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/widgets", "1.1.0"], ["dompurify", "3.1.6"], ["firebase", "10.13.1"], ["highlight.js", "11.10.0"], ["katex", "0.16.11"], ["marked", "14.1.1"], ["marked-gfm-heading-id", "4.1.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["pragmate-ui", "1.0.0-beta.2"], ["prism-themes", "1.9.0"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.5"], ["wavesurfer.js", "7.8.4"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["typescript", "5.5.4"], ["@aimpact/chat-sdk", "1.1.0"], ["@aimpact/ailearn-app", "0.1.6-dev.29"]]);
+        const dependencies = new Map([["@beyond-js/reactive", "1.2.0"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/widgets", "1.1.0"], ["dompurify", "3.1.6"], ["firebase", "10.13.1"], ["highlight.js", "11.10.0"], ["katex", "0.16.11"], ["marked", "14.1.1"], ["marked-gfm-heading-id", "4.1.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["pragmate-ui", "1.0.0-beta.2"], ["prism-themes", "1.9.0"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.5"], ["wavesurfer.js", "7.8.4"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["typescript", "5.5.4"], ["@aimpact/chat-sdk", "1.2.0"], ["@aimpact/ailearn-app", "0.1.6-dev.31"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -61,14 +61,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/chat-sdk@1.1.0/chat-component",
+          "vspecifier": "@aimpact/chat-sdk@1.2.0/chat-component",
           "multibundle": true
         },
         "type": "code"
       }, _context3.meta.url).package();
       ;
       __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['@beyond-js/reactive/model', dependency_2], ['@aimpact/chat-sdk/voice', dependency_3], ['@aimpact/chat-sdk/wrapper', dependency_4], ['@aimpact/chat-sdk/core', dependency_5], ['@aimpact/chat-sdk/session', dependency_6], ['@beyond-js/kernel/texts', dependency_7], ['@beyond-js/kernel/core', dependency_8], ['react', dependency_9], ['pragmate-ui/icons', dependency_10], ['@beyond-js/react-18-widgets/hooks', dependency_11], ['@aimpact/chat-sdk/messages', dependency_12], ['pragmate-ui/components', dependency_13], ['@aimpact/chat-sdk/components/icons', dependency_14], ['pragmate-ui/form', dependency_15], ['pragmate-ui/modal', dependency_16]]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/chat-sdk@1.1.0/chat-component.code');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/chat-sdk@1.2.0/chat-component.code');
       ims = new Map();
       /*************************************
       INTERNAL MODULE: ./interfaces/messages
