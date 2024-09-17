@@ -14,7 +14,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["socket.io-client", "4.7.5"], ["@beyond-js/routing", "0.0.1"], ["@aimpact/ailearn-app", "0.1.6-dev.31"]]);
+        const dependencies = new Map([["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["socket.io-client", "4.7.5"], ["@beyond-js/routing", "0.0.1"], ["@aimpact/ailearn-app", "0.1.6-dev.33"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
