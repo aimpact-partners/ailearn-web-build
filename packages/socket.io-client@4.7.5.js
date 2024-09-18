@@ -1,7 +1,7 @@
-System.register(["engine.io-parser@5.2.2","@socket.io/component-emitter@3.1.0","engine.io-client@6.5.3","socket.io-parser@4.2.4"], (_exports, _context) => {
+System.register(["engine.io-parser@5.2.3","@socket.io/component-emitter@3.1.2","engine.io-client@6.5.4","socket.io-parser@4.2.4"], (_exports, _context) => {
 
 const bimport = specifier => {
-	const dependencies = new Map([["engine.io-parser","5.2.2"],["@socket.io/component-emitter","3.1.0"],["engine.io-client","6.5.3"],["socket.io-client","4.7.5"],["socket.io-parser","4.2.4"]]);
+	const dependencies = new Map([["engine.io-parser","5.2.3"],["@socket.io/component-emitter","3.1.2"],["engine.io-client","6.5.4"],["socket.io-client","4.7.5"],["socket.io-parser","4.2.4"]]);
 	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
 };
 
@@ -9,7 +9,7 @@ const bimport = specifier => {
 var dependencies = new Map();
 var require = dependency => dependencies.get(dependency);
 return {
-setters: [dep => dependencies.set('engine.io-parser@5.2.2', dep), dep => dependencies.set('@socket.io/component-emitter@3.1.0', dep), dep => dependencies.set('engine.io-client@6.5.3', dep), dep => dependencies.set('socket.io-parser@4.2.4', dep)],
+setters: [dep => dependencies.set('engine.io-parser@5.2.3', dep), dep => dependencies.set('@socket.io/component-emitter@3.1.2', dep), dep => dependencies.set('engine.io-client@6.5.4', dep), dep => dependencies.set('socket.io-parser@4.2.4', dep)],
 execute: function() {
 // Prevent esbuild from considering the context to be amd
 const define = void 0;
@@ -58,7 +58,7 @@ __export(socket_io_client_4_7_5_exports, {
 module.exports = __toCommonJS(socket_io_client_4_7_5_exports);
 
 // node_modules/socket.io-client/build/esm/url.js
-var import_engine = require("engine.io-client@6.5.3");
+var import_engine = require("engine.io-client@6.5.4");
 function url(uri, path = "", loc) {
   let obj = uri;
   loc = loc || typeof location !== "undefined" && location;
@@ -105,7 +105,7 @@ function on(obj, ev, fn) {
 
 // node_modules/socket.io-client/build/esm/socket.js
 var import_socket = require("socket.io-parser@4.2.4");
-var import_component_emitter = require("@socket.io/component-emitter@3.1.0");
+var import_component_emitter = require("@socket.io/component-emitter@3.1.2");
 var RESERVED_EVENTS = Object.freeze({
   connect: 1,
   connect_error: 1,
@@ -556,9 +556,9 @@ Backoff.prototype.setJitter = function (jitter) {
 };
 
 // node_modules/socket.io-client/build/esm/manager.js
-var import_engine2 = require("engine.io-client@6.5.3");
+var import_engine2 = require("engine.io-client@6.5.4");
 var parser = __toESM(require("socket.io-parser@4.2.4"), 0);
-var import_component_emitter2 = require("@socket.io/component-emitter@3.1.0");
+var import_component_emitter2 = require("@socket.io/component-emitter@3.1.2");
 var Manager = class extends import_component_emitter2.Emitter {
   constructor(uri, opts) {
     var _a;

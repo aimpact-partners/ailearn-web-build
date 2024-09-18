@@ -1,7 +1,7 @@
-System.register(["@socket.io/component-emitter@3.1.0"], (_exports, _context) => {
+System.register(["@socket.io/component-emitter@3.1.2"], (_exports, _context) => {
 
 const bimport = specifier => {
-	const dependencies = new Map([["@socket.io/component-emitter","3.1.0"],["socket.io-parser","4.2.4"]]);
+	const dependencies = new Map([["@socket.io/component-emitter","3.1.2"],["socket.io-parser","4.2.4"]]);
 	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
 };
 
@@ -9,7 +9,7 @@ const bimport = specifier => {
 var dependencies = new Map();
 var require = dependency => dependencies.get(dependency);
 return {
-setters: [dep => dependencies.set('@socket.io/component-emitter@3.1.0', dep)],
+setters: [dep => dependencies.set('@socket.io/component-emitter@3.1.2', dep)],
 execute: function() {
 // Prevent esbuild from considering the context to be amd
 const define = void 0;
@@ -153,7 +153,7 @@ function _reconstructPacket(data, buffers) {
 }
 
 // node_modules/socket.io-parser/build/esm/index.js
-var import_component_emitter = require("@socket.io/component-emitter@3.1.0");
+var import_component_emitter = require("@socket.io/component-emitter@3.1.2");
 var RESERVED_EVENTS = ["connect", "connect_error", "disconnect", "disconnecting", "newListener", "removeListener"];
 var protocol = 5;
 var PacketType;

@@ -1,7 +1,7 @@
-System.register(["react@18.2.0","scheduler@0.23.0","react-dom@18.2.0"], (_exports, _context) => {
+System.register(["react@18.2.0","scheduler@0.23.2","react-dom@18.2.0"], (_exports, _context) => {
 
 const bimport = specifier => {
-	const dependencies = new Map([["react","18.2.0"],["scheduler","0.23.0"],["react-dom","18.2.0"]]);
+	const dependencies = new Map([["react","18.2.0"],["scheduler","0.23.2"],["react-dom","18.2.0"]]);
 	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
 };
 
@@ -9,7 +9,7 @@ const bimport = specifier => {
 var dependencies = new Map();
 var require = dependency => dependencies.get(dependency);
 return {
-setters: [dep => dependencies.set('react@18.2.0', dep), dep => dependencies.set('scheduler@0.23.0', dep), dep => dependencies.set('react-dom@18.2.0', dep)],
+setters: [dep => dependencies.set('react@18.2.0', dep), dep => dependencies.set('scheduler@0.23.2', dep), dep => dependencies.set('react-dom@18.2.0', dep)],
 execute: function() {
 // Prevent esbuild from considering the context to be amd
 const define = void 0;
