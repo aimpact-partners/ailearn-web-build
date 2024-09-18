@@ -1,1 +1,1 @@
-.card__header-container{padding:.5rem 1rem;border-bottom:1px solid var(--separator);display:flex;justify-content:space-between;align-items:cente;height:41px}.card__header-container ul{padding:0;margin:0}
+.card__header-container{padding:.5rem 1rem;border-bottom:1px solid var(--separator);display:flex;justify-content:space-between;align-items:cente;height:41px}.card__header-container ul{padding:0;margin:0}.entity__item.entity__item--disabled{opacity:.5;cursor:not-allowed}
