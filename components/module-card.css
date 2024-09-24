@@ -1,3 +1,6 @@
+.actions-container {
+  display: flex;
+}
 .card__header-container {
   padding: 0.5rem 1rem;
   border-bottom: 1px solid var(--separator);
@@ -10,6 +13,10 @@
   padding: 0;
   margin: 0;
 }
+.entity__item.entity__item--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGFjdGl2aXR5LXR5cGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDQztFQUNBIiwiZmlsZSI6IiJ9 */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGFjdGlvbnMtY29udGFpbmVyLnNjc3MiLCJzY3NzXFxhY3Rpdml0eS10eXBlcy5zY3NzIiwic2Nzc1xcZGlzYWJsZWQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDOztBQ0REO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0M7RUFDQTs7QUNSRDtFQUNDO0VBQ0EiLCJmaWxlIjoiIn0= */

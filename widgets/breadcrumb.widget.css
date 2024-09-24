@@ -1,0 +1,8 @@
+@media (max-width: 600px) {
+  .pui-breadcrumb__container.desktop-breadcrumb {
+    display: none !important;
+  }
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7SUFDQyIsImZpbGUiOiIifQ== */

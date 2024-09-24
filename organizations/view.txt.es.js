@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.2.0"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.6"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["wavesurfer.js", "7.8.5"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.8"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["firebase", "10.13.1"], ["firebase-admin", "12.4.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.1.6-dev.34"], ["@aimpact/ailearn-app", "0.1.6-dev.34"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.6"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.8"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["firebase", "10.13.1"], ["firebase-admin", "12.4.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.1.9"], ["@aimpact/ailearn-app", "0.1.9"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.6-dev.34/organizations/view",
+          "vspecifier": "@aimpact/ailearn-app@0.1.9/organizations/view",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 22317733,
+        hash: 1371746149,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -50,16 +50,80 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "delete": "Eliminar",
               "cancel": "Cancelar",
               "next": "Siguiente",
-              "back": "Atrás"
-            },
-            "breadcrumb": {
-              "organizations": "Instituciones",
-              "management": "Crear"
+              "back": "Atrás",
+              "confirm": "Confirmar"
             },
             "coins": {
               "label": "Fichas disponibles",
               "assignments": "Asignaciones",
               "modules": "Módulos"
+            },
+            "errors": {
+              "10003": "No se ha podido aprobar el usuario, vuelva a intentarlo más tarde y si el problema persiste contacte con el soporte."
+            },
+            "form": {
+              "title": "Invitar usuario",
+              "role": {
+                "label": "Rol",
+                "placeholder": "Selecciona el rol"
+              },
+              "name": {
+                "label": "Nombre",
+                "placeholder": "Ingresa el nombre"
+              },
+              "email": {
+                "label": "Correo electrónico",
+                "placeholder": "Ingresa el correo electrónico"
+              },
+              "button": "Invitar"
+            },
+            "forms": {
+              "approve": {
+                "title": "¿Deseas aprobar la solicitud del usuario?",
+                "description": "Selecciona el rol que deseas asignar al usuario."
+              },
+              "delete": {
+                "title": "¿Deseas eliminar el usuario?",
+                "description": "Recuerda que eliminar un usuario también elimina su acceso y acciones dentro de la institución."
+              },
+              "cancel": {
+                "title": "¿Deseas cancelar la invitación del usuario?",
+                "description": "Recuerda que cancelar la invitación del usuario también cancela su acceso y acciones dentro de la institución."
+              },
+              "reject": {
+                "title": "¿Deseas rechazar la solicitud del usuario?",
+                "description": "Recuerda que rechazar la solicitud del usuario también cancela su acceso y acciones dentro de la institución."
+              },
+              "edit": {
+                "title": "¿Deseas cambiar el rol del usuario?",
+                "info": "Recuerda que cambiar el rol también modifica el acceso y las acciones del usuario dentro de la institución."
+              }
+            },
+            "editForm": {
+              "title": "¿Deseas cambiar el rol del usuario?",
+              "info": "Recuerda que cambiar el rol también modifica el acceso y las acciones del usuario dentro de la institución."
+            },
+            "roles": {
+              "all": {
+                "identifier": "all",
+                "title": "Todos",
+                "entity": "Todos"
+              },
+              "manager": {
+                "identifier": "managers",
+                "title": "Administrador",
+                "entity": "Administradores"
+              },
+              "member": {
+                "identifier": "members",
+                "title": "Docente",
+                "entity": "Docentes"
+              },
+              "pending": {
+                "identifier": "pendings",
+                "title": "Pendiente",
+                "entity": "Pendientes"
+              }
             },
             "list": {
               "managers": {
@@ -88,18 +152,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "title": "Agrega un titulo",
             "description": "Agrega una descripción",
             "empty": {
-              "title": "Institución no Encontrada",
-              "pending": "Excelente, ya no tiene asuntos pendientes que resolver. Todas las invitaciones se han resuelto.",
-              "description": "¡Ups! No se encontró el Institución. Existe la posibilidad de que estés utilizando un enlace antiguo o buscando un Institución inexistente. Te invitamos a crear una nueva y continuar explorando este increíble mundo de enseñanza y aprendizaje. ¡Embárcate en una nueva travesía educativa con nosotros! 🌟",
-              "labelList": "Suma usuarios en esta lista dándole click al botón de %action"
-            },
-            "modal": {
-              "edit": {
-                "title": "¿Deseas cambiar el rol del usuario?",
-                "info": "Recuerda que cambiar el rol también modifica el acceso y las acciones del usuario dentro de la institución."
+              "rol": {
+                "title": "No hay integrantes registrados con este perfil"
               },
-              "invite": {
-                "title": "Invitar un usuario como %role"
+              "pending": {
+                "title": "No hay integrantes pendientes de revisión"
               }
             },
             "system": {

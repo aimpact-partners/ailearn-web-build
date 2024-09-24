@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.2.0"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.6"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["wavesurfer.js", "7.8.5"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.8"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["firebase", "10.13.1"], ["firebase-admin", "12.4.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.1.6-dev.34"], ["@aimpact/ailearn-app", "0.1.6-dev.34"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.6"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.8"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["firebase", "10.13.1"], ["firebase-admin", "12.4.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.1.9"], ["@aimpact/ailearn-app", "0.1.9"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.6-dev.34/classrooms/list",
+          "vspecifier": "@aimpact/ailearn-app@0.1.9/classrooms/list",
           "multibundle": true
         },
         "type": "txt"
@@ -29,12 +29,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2547415258,
+        hash: 681001989,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
               "join": "Unirse",
               "create": "Crear",
+              "register": "Registrar",
               "activities": "Generar actividades",
               "refine": "Refinar",
               "generate": "Generar",
@@ -50,31 +51,45 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "back": "Atrás",
               "link": "Vincular",
               "gTooltip": "Aula importada desde Google",
-              "import": "Importar"
+              "import": "Importar",
+              "confirm": "Confirmar"
             },
-            "breadcrumb": {
-              "classrooms": "Aula",
-              "management": "Gestión",
-              "join": "Unirse"
+            "create": {
+              "title": "Agregar Institución",
+              "success": "Institución publicada con éxito",
+              "error": "Error al publicar la institución",
+              "name": {
+                "label": "Nombre de la Institución",
+                "placeholder": "¿Cuál será el nombre de la Institución?"
+              },
+              "description": {
+                "label": "Descripción de la Institución",
+                "placeholder": "¿Cuál es la misión de esta Institución?"
+              },
+              "actions": {
+                "save": "Continuar"
+              }
             },
-            "welcome": {
-              "message": "Bienvenido %name a tu lista de aulas",
-              "actionInfo": "Aquí podrás ver y gestionar todas las aulas que tienes actualmente. Tendrás acceso a diversas acciones, incluyendo la creación, eliminación y edición de aulas. Aprovecha estas herramientas para personalizar cada clase de acuerdo a tus requerimientos."
-            },
-            "title": "Mis Aulas",
-            "subtitle": "Explora, ajusta y gestiona tus aulas según tus necesidades",
-            "extraInfo": "¿Listo para compartir tus aulas? Vincula tu cuenta de Google Classroom para habilitar esta función y agregarla a tus opciones. 📚",
-            "import": {
-              "title": "Importar classes desde Google"
-            },
-            "errors": {
-              "ERROR_GETTING_URL": "Error obteniendo url"
+            "delete": {
+              "title": "Eliminar aula",
+              "description": "¿Estás seguro de que deseas eliminar esta aula? Esta acción no se puede deshacer.",
+              "errors": {
+                "59": "El aula no puede ser eliminada porque ya posee datos asociados.",
+                "default": "Ocurrió un error al eliminar la aula."
+              }
             },
             "empty": {
-              "title": "Crea tu primera aula",
-              "titleImport": "Actualmente no tiene aulas",
-              "labelImport": "No hay elementos que mostrar",
-              "description": "Crea tu aula digital para publicar módulos de aprendizaje y permitir que los alumnos accedan a sus actividades."
+              "title": "Registre una institución educativa en RVD.AI",
+              "description": "Comience registrando su institución. "
+            },
+            "welcome": {
+              "message": "Bienvenido %name a tu lista de organizaciones",
+              "actionInfo": "Aquí podrás ver y gestionar todas las organizaciones que tienes actualmente. Tendrás acceso a diversas acciones, incluyendo la creación, eliminación y edición de organizaciones. Aprovecha estas herramientas para personalizar cada institución de acuerdo a tus requerimientos."
+            },
+            "title": "Aulas",
+            "subtitle": "Explora, ajusta y gestiona tus organizaciones según tus necesidades",
+            "errors": {
+              "ERROR_GETTING_URL": "Error obteniendo URL"
             }
           };
         }

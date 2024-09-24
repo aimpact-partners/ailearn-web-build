@@ -17,7 +17,7 @@ System.register([], function (_export, _context) {
           "baseUrl": "http://localhost:4530",
           "apis": {
             "ailearn": "https://ailearn-http-v2-j2rcifstnq-uc.a.run.app",
-            "chat": "https://chat-api-http-v2-rb5caohzgq-uc.a.run.app"
+            "chat": "https://dev.agents.api.aimpact.partners"
           }
         },
         "ssr": {},
