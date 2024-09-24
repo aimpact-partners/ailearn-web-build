@@ -16,7 +16,7 @@ System.register([], function (_export, _context) {
         "params": {
           "baseUrl": "https://test.app.rvd.ai",
           "apis": {
-            "ailearn": "https://dev.ailearn.api.aimpact.partners",
+            "ailearn": "https://test.ailearn.api.aimpact.partners",
             "chat": "https://test.agents.api.aimpact.partners"
           }
         },
