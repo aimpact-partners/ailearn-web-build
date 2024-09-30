@@ -29,16 +29,65 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 668818384,
+        hash: 1283858445,
         creator: function (require, exports) {
           exports.txt = {
-            "breadcrumb": {
-              "modules": "Modules",
-              "management": "Management",
-              "assignment": "Assignment",
-              "chat": "Chat",
-              "dashboard": "Dashboard"
+            "activities": {
+              "type": "Activity type",
+              "subtype": "Subtype",
+              "description": "Description",
+              "empty": "The student has not yet completed this activity",
+              "types": {
+                "content-theory": "Content/Theory",
+                "debate": "Debate",
+                "multiple-choice": "Multiple Choice",
+                "character-talk": "Conversation with a Character",
+                "spoken": "Oral Presentation"
+              }
             },
+            "assessments": {
+              "quiz": "Assessment",
+              "oral": "Oral",
+              "title": "Activity",
+              "oralText": "Record an audio where you summarize and comment on the content studied. Highlight the key concepts, use appropriate language and offer your personal opinion. Keep a logical order and fidelity to the facts of the original text.",
+              "record": "Record",
+              "recordAgain": "Record again",
+              "stop": "Stop",
+              "send": "Send audio",
+              "redo": "Do it again!",
+              "analysisTitle": "Analysis report",
+              "analysis": "Report",
+              "feedback": "Knowledge",
+              "competencies": "Competences"
+            },
+            "chat": {
+              "title": "User conversation",
+              "empty": {
+                "title": "There are no messages in this conversation",
+                "description": "The student has not sent messages through the chat yet."
+              },
+              "synthesis": "Conversation synthesis",
+              "systemActions": {
+                "kb-response": "Data obtained from the knowledge base: ",
+                "fetching-tool-data": "I will query the documents of the class",
+                "kb-processed-response": "Analysis on content finished",
+                "transcription": "Getting transcription",
+                "functions": {
+                  "kb": "Querying the knowledge base about: "
+                }
+              }
+            },
+            "list": {
+              "students": "Students",
+              "participants": "participants",
+              "search": "search",
+              "generalPanel": "General panel"
+            },
+            "finish": "Finish",
+            "results": "Results",
+            "total": "Total questions",
+            "correct": "Correct answers",
+            "wrong": "Wrong answers",
             "title": "Classroom Status",
             "owner": "Administrator",
             "creator": "Creator",

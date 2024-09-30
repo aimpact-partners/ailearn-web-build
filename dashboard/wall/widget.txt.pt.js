@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.13/assignments/dashboard",
+          "vspecifier": "@aimpact/ailearn-app@0.1.13/dashboard/wall/widget",
           "multibundle": true
         },
         "type": "txt"
@@ -29,23 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4150060229,
+        hash: 2745614147,
         creator: function (require, exports) {
-          exports.txt = {
-            "activities": {
-              "type": "Tipo de atividade",
-              "subtype": "Subtipo",
-              "description": "Descrição",
-              "empty": "O estudante ainda não realizou esta atividade",
-              "types": {
-                "content-theory": "Conteúdo/Teoria",
-                "debate": "Debate",
-                "multiple-choice": "Múltipla Escolha",
-                "character-talk": "Conversa com um Personagem",
-                "spoken": "Apresentação Oral"
-              }
-            }
-          };
+          exports.txt = {};
         }
       });
       __pkg.exports.descriptor = [{

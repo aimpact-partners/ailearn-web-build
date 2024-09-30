@@ -108,6 +108,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/assignments/${id}/dashboard/classroom",
         "layout": "dashboard-layout"
       }, {
+        "name": "app-assignment-dashboard-participant",
+        "attrs": ["id", "participant-id"],
+        "vspecifier": "@aimpact/ailearn-app@0.1.13/assignment-dashboard-participant.widget"
+      }, {
         "name": "old-assignment-dashboard-participant",
         "attrs": ["id", "participant-id"],
         "vspecifier": "@aimpact/ailearn-app@0.1.13/assignment-dashboard-participant.widget",
@@ -120,6 +124,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "page",
         "route": "/assignments/${id}/wall",
         "layout": "dashboard-layout"
+      }, {
+        "name": "app-dashboard-wall",
+        "attrs": ["id"],
+        "vspecifier": "@aimpact/ailearn-app@0.1.13/dashboard/wall/widget.widget"
       }, {
         "name": "ailearn-sessions-access",
         "vspecifier": "@aimpact/ailearn-app@0.1.13/sessions/access.widget",
@@ -217,10 +225,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/modules/list",
         "layout": "main-layout"
       }, {
-        "name": "app-modules-management",
-        "attrs": ["id", "activityId"],
-        "vspecifier": "@aimpact/ailearn-app@0.1.13/modules/management/settings.widget"
-      }, {
         "name": "app-module-objective-management",
         "vspecifier": "@aimpact/ailearn-app@0.1.13/modules/draft.widget",
         "is": "page",
@@ -259,10 +263,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
       }, {
         "name": "dashboard-layout",
         "vspecifier": "@aimpact/ailearn-app@0.1.13/dashboard-layout.widget",
-        "is": "layout"
-      }, {
-        "name": "ailearn-empty-layout",
-        "vspecifier": "@aimpact/ailearn-app@0.1.13/layout/empty",
         "is": "layout"
       }, {
         "name": "main-layout",

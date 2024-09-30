@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.13/modules/management/settings",
+          "vspecifier": "@aimpact/ailearn-app@0.1.13/modules/management/overview",
           "multibundle": true
         },
         "type": "txt"
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2370088319,
+        hash: 1916281603,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -97,10 +97,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "completed": "Completed",
                 "processing": "In edition"
               }
-            },
-            "breadcrumb": {
-              "modules": "Modules",
-              "management": "Draft"
             },
             "module": {
               "title": "Add the Learning Module name here",

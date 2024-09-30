@@ -29,16 +29,65 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2319698656,
+        hash: 1957410318,
         creator: function (require, exports) {
           exports.txt = {
-            "breadcrumb": {
-              "modules": "Módulos",
-              "management": "Gestión",
-              "assignment": "Asignaciones",
-              "chat": "Chat",
-              "dashboard": "Panel de control"
+            "activities": {
+              "type": "Tipo de actividad",
+              "subtype": "Subtipo",
+              "description": "Descripción",
+              "empty": "El alumno aún no ha realizado esta actividad",
+              "types": {
+                "content-theory": "Contenido/Teoría",
+                "multiple-choice": "Selección Múltiple",
+                "character-talk": "Conversación con un Personaje",
+                "debate": "Debate",
+                "spoken": "Exposición Oral"
+              }
             },
+            "assessments": {
+              "quiz": "Evaluación",
+              "oral": "Oral",
+              "title": "Actividad",
+              "oralText": "Graba un audio donde resumas y comentes el contenido estudiado. Destaca los conceptos clave, usa un lenguaje adecuado y ofrece tu opinión personal. Mantén un orden lógico y fidelidad a los hechos del texto original.",
+              "record": "Grabar",
+              "recordAgain": "Volver a grabar",
+              "stop": "Detener",
+              "send": "Enviar audio",
+              "redo": "¡Volver a intentar!",
+              "analysisTitle": "Resultado del análisis",
+              "analysis": "Reporte",
+              "feedback": "Conocimientos",
+              "competencies": "Competencias"
+            },
+            "chat": {
+              "title": "Conversación del usuario",
+              "empty": {
+                "title": "No hay mensajes en esta conversación",
+                "description": "El alumno aún no ha enviado mensajes a través del chat."
+              },
+              "synthesis": "Síntesis de la conversación",
+              "systemActions": {
+                "kb-response": "Datos obtenidos de la base de conocimientos: ",
+                "fetching-tool-data": "Voy a cosultar los documentos de la clase",
+                "kb-processed-response": "Análisis sobre contenido finalizado",
+                "transcription": "Obteniendo transcripción",
+                "functions": {
+                  "kb": "Consultando la base de conocimiento acerca de: "
+                }
+              }
+            },
+            "list": {
+              "students": "Alumnos",
+              "participants": "participantes",
+              "search": "buscar",
+              "generalPanel": "Panel general"
+            },
+            "finish": "Finalizar",
+            "results": "Resultados",
+            "total": "Cantidad de preguntas",
+            "correct": "Respuestas correctas",
+            "wrong": "Respuestas incorrectas",
             "title": "Estado del Aula",
             "owner": "Administrador",
             "creator": "Creador",

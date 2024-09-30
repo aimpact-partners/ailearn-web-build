@@ -16,7 +16,7 @@ System.register([], function (_export, _context) {
         "params": {
           "baseUrl": "http://localhost:4530",
           "apis": {
-            "ailearn": "https://ailearn-http-v2-j2rcifstnq-uc.a.run.app",
+            "ailearn": "https://dev.ailearn.api.aimpact.partners",
             "chat": "https://dev.agents.api.aimpact.partners"
           }
         },

@@ -17,11 +17,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.1.13/assignments/dashboard",
+          "vspecifier": "@aimpact/ailearn-app@0.1.13/dashboard/wall/widget",
           "multibundle": true
         },
         "type": "txt"
-      }, _context.meta.url).package('pt');
+      }, _context.meta.url).package('en');
       ;
       __pkg.dependencies.update([]);
       ims = new Map();
@@ -29,22 +29,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4150060229,
+        hash: 1189714306,
         creator: function (require, exports) {
           exports.txt = {
-            "activities": {
-              "type": "Tipo de atividade",
-              "subtype": "Subtipo",
-              "description": "Descrição",
-              "empty": "O estudante ainda não realizou esta atividade",
-              "types": {
-                "content-theory": "Conteúdo/Teoria",
-                "debate": "Debate",
-                "multiple-choice": "Múltipla Escolha",
-                "character-talk": "Conversa com um Personagem",
-                "spoken": "Apresentação Oral"
-              }
-            }
+            "header": "Wall of ",
+            "emptyTitle": "Oops! The list is empty.",
+            "empty": "There are no items to display at this time. But don't worry, there will soon be plenty of history to explore!",
+            "description": "Welcome to the Conversation History! This space is a window into the fascinating interactions among our students in each activity, enriched with an integrated chat. Explore the elegance of learning in this detailed timeline. 📚"
           };
         }
       });
