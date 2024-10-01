@@ -335,13 +335,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "is": "page",
         "route": "/updating"
       }, {
-        "name": "app-test-components",
-        "vspecifier": "@aimpact/ailearn-app@0.1.13/test/blank",
+        "name": "ailearn-test-page",
+        "vspecifier": "@aimpact/ailearn-app@0.1.13/test",
         "is": "page",
-        "route": "/tests/blank"
-      }, {
-        "name": "app-test-web-component",
-        "vspecifier": "@aimpact/ailearn-app@0.1.13/test/web-component"
+        "route": "/dev/test"
       }, {
         "name": "app-breadcrumb",
         "vspecifier": "@aimpact/ailearn-app@0.1.13/widgets/breadcrumb.widget"
