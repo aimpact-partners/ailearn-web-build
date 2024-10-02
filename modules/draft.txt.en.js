@@ -29,32 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4277440786,
+        hash: 2397178582,
         creator: function (require, exports) {
           exports.txt = {
-            "actions": {
-              "analyse": "Suggest Improvements",
-              "activities": "Generate activities",
-              "activity": "Activities",
-              "applySuggestions": "Apply Suggestions",
-              "back": "Back",
-              "cancel": "Cancel",
-              "continue": "Continue",
-              "cover": "Generate cover",
-              "clean": "Clean",
-              "create": "Create",
-              "confirm": "Confirm",
-              "delete": "Delete",
-              "edit": "Edit",
-              "generate": "Generate with AI",
-              "next": "Next",
-              "publish": "Publish",
-              "removeSuggestions": "Remove suggestions",
-              "refine": "Refine",
-              "save": "Save",
-              "update": "Upload Document",
-              "upload": "Upload Image"
-            },
             "alerts": {
               "coins": {
                 "available": "Owner has AI credits available",

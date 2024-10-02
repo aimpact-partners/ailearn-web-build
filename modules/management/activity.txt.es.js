@@ -29,31 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 756774487,
+        hash: 1231419555,
         creator: function (require, exports) {
           exports.txt = {
-            "actions": {
-              "add": "Agregar",
-              "confirm": "Confirmar",
-              "analyse": "Sugerir mejoras",
-              "activities": "Generar actividades",
-              "refine": "Refinar",
-              "generate": "Generar con IA",
-              "save": "Guardar",
-              "clean": "Limpiar",
-              "activity": "Actividades",
-              "update": "Subir Documento",
-              "edit": "Editar",
-              "delete": "Eliminar",
-              "cancel": "Cancelar",
-              "next": "Siguiente",
-              "back": "Atrás",
-              "cover": "Generar portada",
-              "upload": "Subir Imagen",
-              "inspiration": "Generar con IA",
-              "manual": "Diseño manual",
-              "order": "Editar orden"
-            },
             "activities": {
               "minutes": "Mins",
               "description": {
@@ -215,6 +193,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "processMessages": ["Evaluando la demografía de la audiencia...", "Estimando la duración óptima de la clase...", "Seleccionando actividades de aprendizaje potenciales...", "Determinando el propósito de cada actividad...", "Secuenciando actividades para un máximo compromiso...", "Adaptando el contenido a los objetivos de aprendizaje...", "Ajustando los niveles de dificultad para la competencia de la audiencia...", "Finalizando elementos interactivos para el aprendizaje activo...", "Creando estrategias de evaluación para la retención de conocimientos...", "Optimizando el flujo de contenido para una experiencia de aprendizaje sin problemas...", "Preparando los toques finales en el diseño educativo...", "Generación de contenido de microaprendizaje personalizado completo."],
             "specs": {
               "title": "Recursos",
+              "objectives": {
+                "name": {
+                  "label": "Nombre",
+                  "placeholder": "Agrega el nombre del objetivo"
+                },
+                "objective": {
+                  "label": "Objetivo",
+                  "placeholder": "Agrega el objetivo de la actividad"
+                }
+              },
               "objective": {
                 "label": "Objetivo",
                 "placeholder": "Agrega el objetivo de la actividad"

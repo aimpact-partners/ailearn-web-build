@@ -29,31 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3544100845,
+        hash: 1034955508,
         creator: function (require, exports) {
           exports.txt = {
-            "actions": {
-              "add": "Add",
-              "confirm": "Confirm",
-              "analyse": "Suggest Improvements",
-              "activities": "Generate activities",
-              "refine": "Refine",
-              "generate": "Generate with AI",
-              "save": "Save",
-              "edit": "Edit",
-              "delete": "Delete",
-              "clean": "Clean",
-              "activity": "Activities",
-              "update": "Upload Document",
-              "next": "Next",
-              "back": "Back to",
-              "cancel": "Cancel",
-              "cover": "Generate cover",
-              "upload": "Upload Image",
-              "inspiration": "Generate with AI",
-              "manual": "Manual Design",
-              "order": "Edit order"
-            },
             "activities": {
               "minutes": "Min",
               "description": {
@@ -217,6 +195,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "processMessages": ["Evaluating audience demographics...", "Estimating optimal class duration...", "Selecting potential learning activities...", "Determining the purpose of each activity...", "Sequencing activities for maximum engagement...", "Tailoring content to learning objectives...", "Adjusting difficulty levels for audience proficiency...", "Finalizing interactive elements for active learning...", "Crafting assessment strategies for knowledge retention...", "Optimizing content flow for seamless learning experience...", "Preparing final touches on educational design...", "Generation of personalized microlearning content complete."],
             "specs": {
               "title": "Resources",
+              "objectives": {
+                "label": "Objectives *",
+                "name": {
+                  "label": "Name",
+                  "placeholder": "Add the name of the objective"
+                },
+                "objective": {
+                  "label": "Objective",
+                  "placeholder": "Add the objective of the activity"
+                }
+              },
               "objective": {
                 "label": "Objective",
                 "placeholder": "Add the objective of the activity"
@@ -230,7 +219,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Add the instructions of the activity"
               },
               "task": {
-                "label": "Task requested to the student",
+                "label": "Task requested to the student *",
                 "placeholder": "Add the task of the activity"
               },
               "criteria": {

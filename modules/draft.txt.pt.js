@@ -29,32 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1516792519,
+        hash: 3620997781,
         creator: function (require, exports) {
           exports.txt = {
-            "actions": {
-              "analyse": "Sugerir melhorias",
-              "activities": "Gerar atividades",
-              "activity": "Atividades",
-              "applySuggestions": "Aplicar sugestões",
-              "back": "Voltar",
-              "cancel": "Cancelar",
-              "continue": "Continuar",
-              "cover": "Gerar capa",
-              "clean": "Limpar",
-              "create": "Criar",
-              "confirm": "Confirmar",
-              "delete": "Eliminar",
-              "edit": "Editar",
-              "generate": "Gerar",
-              "next": "Seguinte",
-              "publish": "Publicar",
-              "removeSuggestions": "Cancelar sugestões",
-              "refine": "Refinar",
-              "save": "Guardar",
-              "update": "Subir documento",
-              "upload": "Subir imagem"
-            },
             "languages": {
               "select": {
                 "label": "Idioma",

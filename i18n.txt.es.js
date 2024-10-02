@@ -29,19 +29,23 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3837229825,
+        hash: 3916172705,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
+              "add": "Agregar",
+              "inspiration": "Generar con IA",
+              "manual": "Diseño manual",
+              "order": "Editar orden",
               "analyse": "Sugerir mejoras",
               "activities": "Generar actividades",
               "activity": "Actividades",
               "applySuggestions": "Aplicar sugerencias",
               "back": "Atrás",
               "cancel": "Cancelar",
+              "continue": "Continuar",
               "cover": "Generar portada",
               "clean": "Limpiar",
-              "continue": "Continuar",
               "create": "Crear",
               "confirm": "Confirmar",
               "delete": "Eliminar",

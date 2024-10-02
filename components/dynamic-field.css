@@ -1,0 +1,26 @@
+.dynamic-form__container {
+  display: grid;
+  gap: 1rem;
+}
+.dynamic-form__container .dynamic-form__field {
+  padding: 1rem;
+  background: var(--background-neutral);
+  border-radius: var(--border-radius-sm);
+  display: grid;
+  gap: 0.5rem;
+}
+.dynamic-form__container .dynamic-form__field .pui-input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--outline);
+}
+.dynamic-form__container .dynamic-form__field .pui-input input {
+  border: none;
+  border-radius: 0;
+}
+.dynamic-form__container .dynamic-form__field .pui-textarea textarea {
+  background: var(--background);
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBQ0E7RUFDQztFQUNBOztBQUlEO0VBQ0MiLCJmaWxlIjoiIn0= */
