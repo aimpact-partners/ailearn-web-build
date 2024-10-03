@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1258604631,
+        hash: 2323396122,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -77,23 +77,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "default": "An error occurred while deleting the module."
               }
             },
-            "errors": {
-              "default": "Operation failed. Please try again.",
-              "ERROR_GETTING_URL": "Error getting url"
-            },
-            "title": "My Learning Modules",
-            "tabs": {
-              "drafts": "Drafts",
-              "published": "Published",
-              "community": "Comunidad"
-            },
-            "loading": {
-              "title": "Loading Data",
-              "description": "We are loading your data. Please wait for a moment."
-            },
-            "item": {
-              "description": "The module does not have a description yet"
-            },
             "empty": {
               "general": {
                 "title": "Create Your First Module",
@@ -111,6 +94,23 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "No Modules in the Community",
                 "description": "There are no modules available in the community. Share your modules with the community and discover modules from other authors! "
               }
+            },
+            "errors": {
+              "default": "Operation failed. Please try again.",
+              "ERROR_GETTING_URL": "Error getting url"
+            },
+            "title": "My Learning Modules",
+            "tabs": {
+              "drafts": "Drafts",
+              "published": "Published",
+              "community": "Comunidad"
+            },
+            "loading": {
+              "title": "Loading Data",
+              "description": "We are loading your data. Please wait for a moment."
+            },
+            "item": {
+              "description": "The module does not have a description yet"
             }
           };
         }

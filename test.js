@@ -87,7 +87,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       ***********************/
 
       ims.set('./store', {
-        hash: 2226858274,
+        hash: 943448816,
         creator: function (require, exports) {
           "use strict";
 
@@ -99,7 +99,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
           class StoreManager {
             constructor() {
               const draft = new _learningModules.Draft({
-                id: 'bca05159-2411-4913-acc3-9bf96d39c6bc'
+                id: '19d154ad-a199-44c1-89d0-31663a0470e5'
               });
               globalThis.draft = draft;
               draft.load();

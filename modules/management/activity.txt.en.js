@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1034955508,
+        hash: 2133459193,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -206,6 +206,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "placeholder": "Add the objective of the activity"
                 }
               },
+              "criteria": {
+                "title": "Evaluation criteria",
+                "name": {
+                  "label": "Name",
+                  "placeholder": "Add the name of the objective"
+                },
+                "subject": {
+                  "label": "Subject",
+                  "placeholder": "Add the subject"
+                }
+              },
               "objective": {
                 "label": "Objective",
                 "placeholder": "Add the objective of the activity"
@@ -221,15 +232,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "task": {
                 "label": "Task requested to the student *",
                 "placeholder": "Add the task of the activity"
-              },
-              "criteria": {
-                "title": "Evaluation criteria",
-                "label": "Criteria",
-                "placeholder": "Add the criteria of the activity"
-              },
-              "subject": {
-                "label": "Subject",
-                "placeholder": "Add the subject"
               },
               "subjectDebate": {
                 "label": "Subject",

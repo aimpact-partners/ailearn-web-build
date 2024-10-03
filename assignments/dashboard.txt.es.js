@@ -29,10 +29,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1957410318,
+        hash: 2897445087,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
+              "summary": "Resumen de la conversación",
+              "progres": "Progreso de los objetivos de la conversación",
               "type": "Tipo de actividad",
               "subtype": "Subtipo",
               "description": "Descripción",

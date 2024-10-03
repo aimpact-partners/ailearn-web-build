@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3419729462,
+        hash: 1527454108,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -77,23 +77,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "default": "Ocurrió un error al eliminar el módulo."
               }
             },
-            "errors": {
-              "default": "No se ha podido realizar la operación. Por favor, inténtelo de nuevo.",
-              "ERROR_GETTING_URL": "Error obteniendo url"
-            },
-            "title": "Mis módulos de aprendizaje",
-            "tabs": {
-              "drafts": "Borradores",
-              "published": "Publicados",
-              "community": "Comunidad"
-            },
-            "loading": {
-              "title": "Cargando Datos",
-              "description": "Estamos cargando sus datos. Por favor, espere un momento."
-            },
-            "item": {
-              "description": "El módulo no tiene una descripción aún"
-            },
             "empty": {
               "general": {
                 "title": "Crea tu Primer Módulo",
@@ -111,6 +94,23 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "No hay Módulos en la Comunidad",
                 "description": "No hay módulos disponibles en la comunidad. ¡Comparte tus módulos con la comunidad y descubre los módulos de otros autores! "
               }
+            },
+            "errors": {
+              "default": "No se ha podido realizar la operación. Por favor, inténtelo de nuevo.",
+              "ERROR_GETTING_URL": "Error obteniendo url"
+            },
+            "title": "Mis módulos de aprendizaje",
+            "tabs": {
+              "drafts": "Borradores",
+              "published": "Publicados",
+              "community": "Comunidad"
+            },
+            "loading": {
+              "title": "Cargando Datos",
+              "description": "Estamos cargando sus datos. Por favor, espere un momento."
+            },
+            "item": {
+              "description": "El módulo no tiene una descripción aún"
             }
           };
         }
