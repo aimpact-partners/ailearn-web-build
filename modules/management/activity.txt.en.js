@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2133459193,
+        hash: 2215991633,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -264,6 +264,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "character-talk": "Conversation with a Character",
               "spoken": "Oral Presentation",
               "written": "Written"
+            },
+            "contentTheory": {
+              "materials": {
+                "title": "Educational content articles"
+              },
+              "empty": {
+                "title": "This activity has no educational content associated",
+                "description": "Add educational content to your module to start.",
+                "actions": {
+                  "add": "Add article",
+                  "upload": "Upload document"
+                }
+              }
             }
           };
         }

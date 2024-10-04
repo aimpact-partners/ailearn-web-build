@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2897445087,
+        hash: 1603263169,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -63,7 +63,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "competencies": "Competencias"
             },
             "chat": {
-              "title": "Conversación del usuario",
+              "title": "Conversación del estudiante",
               "empty": {
                 "title": "No hay mensajes en esta conversación",
                 "description": "El alumno aún no ha enviado mensajes a través del chat."
@@ -106,7 +106,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "total": "Participación total",
               "pending": "Alumnos sin participar"
             },
-            "messageCounter": "Mensajes "
+            "messageCounter": "Mensajes ",
+            "alerts": "Alertas",
+            "type": "Tipo de actividad",
+            "subtype": "Subtipo de actividad"
           };
         }
       });
