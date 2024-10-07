@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1372254545,
+        hash: 2604641193,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -81,6 +81,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "dyslexia": "Adaptaciones",
                   "audios": "Audios"
                 },
+                "article": "Articulo",
+                "dyslexia": "Adaptaciones",
                 "refinement": {
                   "title": "Crea el contenido de tu actividad con IA",
                   "description": "Tus aportes nos ayudarán a mejorar el contenido."
@@ -94,9 +96,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "article": {
                     "placeholder": "Comience a crear su contenido aquí…."
                   }
-                },
-                "article": "Articulo",
-                "dyslexia": "Adaptaciones"
+                }
               },
               "empty": {
                 "title": "Esta actividad no tiene contenido educativo asociado",
@@ -179,6 +179,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Preguntas"
               },
               "objectives": {
+                "label": "Objectivos de la actividad *",
                 "name": {
                   "label": "Nombre",
                   "placeholder": "Agrega el nombre del objetivo"
@@ -186,8 +187,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "objective": {
                   "label": "Objetivo",
                   "placeholder": "Agrega el objetivo de la actividad"
-                },
-                "label": "Objectivos de la actividad *"
+                }
               },
               "criteria": {
                 "title": "Criterios de evaluación",
