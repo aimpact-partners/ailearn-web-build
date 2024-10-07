@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.6"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.8"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["firebase", "10.13.1"], ["firebase-admin", "12.4.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.1.13"], ["@aimpact/ailearn-app", "0.1.13"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "0.0.1-beta.1"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.6"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@firebase/auth", "1.7.8"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["firebase", "10.13.1"], ["firebase-admin", "12.4.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.1.13"], ["@aimpact/ailearn-app", "0.1.13"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3574713753,
+        hash: 1142287341,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -65,11 +65,44 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "empty": {
                 "title": "Crea Este Elemento",
-                "description": "Utiliza la IA para dar forma a este elemento específico. Haz clic en 'Generar' para crear contenido atractivo sin esfuerzo. Eleva tu experiencia de enseñanza con una creación innovadora. "
+                "description": "Utiliza la IA para dar forma a este elemento específico. Haz clic en 'Generar con IA' para crear contenido atractivo sin esfuerzo. Eleva tu experiencia de enseñanza con una creación innovadora. "
               },
               "deleteModal": {
                 "title": "Eliminar Contenido",
                 "description": "¿Estás seguro de que quieres eliminar el contenido de esta actividad?"
+              }
+            },
+            "contentTheory": {
+              "materials": {
+                "title": "Adjuntos",
+                "types": {
+                  "article": "Contenido",
+                  "synthesis": "Resumen",
+                  "dyslexia": "Adaptaciones",
+                  "audios": "Audios"
+                },
+                "refinement": {
+                  "title": "Crea el contenido de tu actividad con IA",
+                  "description": "Tus aportes nos ayudarán a mejorar el contenido."
+                },
+                "form": {
+                  "title": "Creación de contenido educativo",
+                  "content": {
+                    "title": "Redacción del  contenido",
+                    "placeholder": "Comience a crear su contenido aquí…."
+                  },
+                  "article": {
+                    "placeholder": "Comience a crear su contenido aquí…."
+                  }
+                }
+              },
+              "empty": {
+                "title": "Esta actividad no tiene contenido educativo asociado",
+                "description": "Agrega un contenido educativo a tu módulo para comenzar.",
+                "actions": {
+                  "add": "Agregar articulo",
+                  "upload": "Cargar documento"
+                }
               }
             },
             "multipleChoice": {
@@ -98,10 +131,87 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "emptyOptions": "Las opciones de respuesta no han sido definidas"
             },
+            "specs": {
+              "title": "Especificaciones de la actividad",
+              "topic": {
+                "label": "Tema de estudio *",
+                "placeholder": "Agrega el tema de la actividad"
+              },
+              "task": {
+                "label": "Tarea solicitada al alumno *",
+                "placeholder": "Agrega la tarea de la actividad"
+              },
+              "assessment": {
+                "label": "Evaluación",
+                "placeholder": "Agrega la evaluación de la actividad"
+              },
+              "objective": {
+                "label": "Objetivo",
+                "placeholder": "Agrega el objetivo de la actividad"
+              },
+              "related": {
+                "label": "Actividad relacionada",
+                "placeholder": "Selecciona la actividad relacionada"
+              },
+              "instructions": {
+                "label": "Instrucciones adicionales",
+                "placeholder": "Agrega instrucciones adicionales si es necesario"
+              },
+              "subjectDebate": {
+                "label": "Moción del debate",
+                "placeholder": "Add the subject"
+              },
+              "subject": {
+                "label": "Tema",
+                "placeholder": "Agrega el tema de los criterios"
+              },
+              "character": {
+                "label": "Personaje",
+                "placeholder": "Agrega el personaje de la actividad"
+              },
+              "role": {
+                "label": "Rol",
+                "placeholder": "Agrega el rol del personaje"
+              },
+              "questions": {
+                "title": "Preguntas"
+              },
+              "objectives": {
+                "name": {
+                  "label": "Nombre",
+                  "placeholder": "Agrega el nombre del objetivo"
+                },
+                "objective": {
+                  "label": "Objetivo",
+                  "placeholder": "Agrega el objetivo de la actividad"
+                }
+              },
+              "criteria": {
+                "title": "Criterios de evaluación",
+                "label": "Criterio",
+                "placeholder": "Agrega los criterios de la actividad",
+                "name": {
+                  "label": "Nombre",
+                  "placeholder": "Agrega el nombre del criterio"
+                },
+                "subject": {
+                  "label": "Criterio",
+                  "placeholder": "Agrega los criterios de la actividad"
+                }
+              }
+            },
             "spoken": {
               "criteria": {
                 "label": "Criterios de evaluación"
               }
+            },
+            "types": {
+              "content-theory": "Contenido/Teoría",
+              "multiple-choice": "Selección Múltiple",
+              "character-talk": "Conversación con un Personaje",
+              "debate": "Debate",
+              "spoken": "Exposición Oral",
+              "written": "Escrito"
             },
             "conversation": {
               "description": "Especifique todo lo que considere importante para la conversación. Esto ayudará al bot a entenderlo mejor y a proporcionarle las mejores respuestas posibles. También puede especificar los temas sobre los que desea hablar.",
@@ -119,7 +229,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "languages": {
               "select": {
                 "label": "Idioma",
-                "placeholder": "Seleccionar Idioma"
+                "placeholder": "Seleccionar Idioma",
+                "tooltip": "El idioma de la actividad es "
               },
               "label": "Idiomas",
               "en": "Inglés",
@@ -143,14 +254,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "dyslexia": {
                 "textarea": "Añade tu contenido aquí"
               }
-            },
-            "materials": {
-              "article": "Artículo",
-              "content": "Contenido",
-              "synthesis": "Síntesis",
-              "dyslexia": "Adecuaciones",
-              "audios": "Audios",
-              "introduction": "introducción"
             },
             "refine": {
               "title": "Mejorar la calidad del contenido",
@@ -188,96 +291,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "confirm": {
                 "title": "¿Quieres reemplazar la imagen actual?",
                 "subtitle": "Si confirmas, la imagen actual será reemplazada."
-              }
-            },
-            "processMessages": ["Evaluando la demografía de la audiencia...", "Estimando la duración óptima de la clase...", "Seleccionando actividades de aprendizaje potenciales...", "Determinando el propósito de cada actividad...", "Secuenciando actividades para un máximo compromiso...", "Adaptando el contenido a los objetivos de aprendizaje...", "Ajustando los niveles de dificultad para la competencia de la audiencia...", "Finalizando elementos interactivos para el aprendizaje activo...", "Creando estrategias de evaluación para la retención de conocimientos...", "Optimizando el flujo de contenido para una experiencia de aprendizaje sin problemas...", "Preparando los toques finales en el diseño educativo...", "Generación de contenido de microaprendizaje personalizado completo."],
-            "specs": {
-              "title": "Recursos",
-              "objectives": {
-                "name": {
-                  "label": "Nombre",
-                  "placeholder": "Agrega el nombre del objetivo"
-                },
-                "objective": {
-                  "label": "Objetivo",
-                  "placeholder": "Agrega el objetivo de la actividad"
-                }
-              },
-              "objective": {
-                "label": "Objetivo",
-                "placeholder": "Agrega el objetivo de la actividad"
-              },
-              "related": {
-                "label": "Actividad relacionada",
-                "placeholder": "Selecciona la actividad relacionada"
-              },
-              "assessment": {
-                "label": "Forma de evaluación",
-                "placeholder": "Agrega las instrucciones de la actividad"
-              },
-              "task": {
-                "label": "Tarea solicitada al alumno",
-                "placeholder": "Agrega la tarea de la actividad"
-              },
-              "criteria": {
-                "title": "Criterios de evaluación",
-                "label": "Criterio",
-                "placeholder": "Agrega los criterios de la actividad"
-              },
-              "subjectDebate": {
-                "label": "Moción del debate",
-                "placeholder": "Add the subject"
-              },
-              "subject": {
-                "label": "Tema",
-                "placeholder": "Agrega el tema de los criterios"
-              },
-              "character": {
-                "label": "Personaje",
-                "placeholder": "Agrega el personaje de la actividad"
-              },
-              "role": {
-                "label": "Rol",
-                "placeholder": "Agrega el rol del personaje"
-              },
-              "questions": {
-                "title": "Preguntas"
-              }
-            },
-            "bulletPoint": {
-              "add": "Nuevo elemento",
-              "refine": "Refinar"
-            },
-            "labels": {
-              "title": "Título",
-              "description": "Descripción"
-            },
-            "types": {
-              "content-theory": "Contenido/Teoría",
-              "multiple-choice": "Selección Múltiple",
-              "character-talk": "Conversación con un Personaje",
-              "debate": "Debate",
-              "spoken": "Exposición Oral",
-              "written": "Escrito"
-            },
-            "contentTheory": {
-              "empty": {
-                "title": "Esta actividad no tiene contenido educativo asociado",
-                "description": "Agrega un contenido educativo a tu módulo para comenzar.",
-                "actions": {
-                  "add": "Agregar articulo",
-                  "upload": "Cargar documento"
-                }
-              },
-              "materials": {
-                "title": "Articulos de contenido educativo ",
-                "form": {
-                  "title": "Creación de contenido educativo",
-                  "content": {
-                    "title": "Redacción del  contenido",
-                    "placeholder": "Comience a crear su contenido aquí…."
-                  }
-                }
               }
             }
           };

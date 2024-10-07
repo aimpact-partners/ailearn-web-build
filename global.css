@@ -139,12 +139,15 @@ option {
   }
 }
 
-.pui-modal.pui-confirm-dialog .pui-actions {
+.pui-modal.pui-confirm-dialog .pui-actions,
+.pui-modal.pui-confirm-dialog .actions {
   display: flex !important;
   justify-content: center !important;
   flex-direction: row;
+  gap: 0.5rem;
 }
-.pui-modal.pui-confirm-dialog .pui-actions .pui-button {
+.pui-modal.pui-confirm-dialog .pui-actions .pui-button,
+.pui-modal.pui-confirm-dialog .actions .pui-button {
   width: auto !important;
 }
 :host-context(html[data-beyond-mode=dark]) {
