@@ -96,23 +96,23 @@
   width: 1rem;
   height: 1rem;
 }
-.app-organization-creation-page .people-list__container {
+.app-classroom-creation-page .people-list__container {
   padding: 0;
 }
-.app-organization-creation-page .people-list__container .person-item__container {
+.app-classroom-creation-page .people-list__container .person-item__container {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   border-bottom: 2px solid var(--outline);
   align-items: center;
 }
-.app-organization-creation-page .people-list__container .person-item__container .user-personal-info {
+.app-classroom-creation-page .people-list__container .person-item__container .user-personal-info {
   display: flex;
   gap: 1rem;
   flex-grow: 1;
   align-items: center;
 }
-.app-organization-creation-page .people-list__container .person-item__container .user-personal-info .pui-image {
+.app-classroom-creation-page .people-list__container .person-item__container .user-personal-info .pui-image {
   overflow: hidden;
   position: relative;
   aspect-ratio: 1/1;
@@ -121,18 +121,18 @@
   border-radius: 50%;
   background: var(--secondary-light);
 }
-.app-organization-creation-page .people-list__container .person-item__container .user-personal-info .pui-image img {
+.app-classroom-creation-page .people-list__container .person-item__container .user-personal-info .pui-image img {
   width: 100%;
   height: 100%;
 }
-.app-organization-creation-page .people-list__container .person-item__container .item-name {
+.app-classroom-creation-page .people-list__container .person-item__container .item-name {
   display: block;
 }
-.app-organization-creation-page .people-list__container .person-item__container .item-email {
+.app-classroom-creation-page .people-list__container .person-item__container .item-email {
   font-size: 0.875rem;
   color: var(--outline);
 }
-.app-organization-creation-page .people-list__container .person-item__container .item-actions {
+.app-classroom-creation-page .people-list__container .person-item__container .item-actions {
   display: flex;
   justify-items: flex-end;
   align-items: flex-end;
@@ -140,33 +140,33 @@
   gap: 0.5rem;
   flex-grow: 1;
 }
-.app-organization-creation-page .people-list__container .person-item__container .item-actions .pui-icon-button {
+.app-classroom-creation-page .people-list__container .person-item__container .item-actions .pui-icon-button {
   width: 2rem;
   height: 2rem;
 }
-.app-organization-creation-page .people-list__container .person-item__container .item-actions .pui-icon-button.btn-default {
+.app-classroom-creation-page .people-list__container .person-item__container .item-actions .pui-icon-button.btn-default {
   background: var(--neutral-90);
 }
-.app-organization-creation-page .people-list__container .person-item__container .item-actions .pui-icon-button svg {
+.app-classroom-creation-page .people-list__container .person-item__container .item-actions .pui-icon-button svg {
   width: 0.785rem;
   height: 0.785rem;
 }
-.app-organization-creation-page .people-list__container .person-item__container .item-actions .select-option {
+.app-classroom-creation-page .people-list__container .person-item__container .item-actions .select-option {
   width: 100%;
   min-width: 200px;
 }
-.app-organization-creation-page .people-list__container .person-item__container .item-actions .div-select__button label {
+.app-classroom-creation-page .people-list__container .person-item__container .item-actions .div-select__button label {
   display: none;
 }
-.app-organization-creation-page .people-list__container {
+.app-classroom-creation-page .people-list__container {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 }
-.app-organization-creation-page .people-list__container ul {
+.app-classroom-creation-page .people-list__container ul {
   padding: 0;
 }
-.app-organization-creation-page .people-list__container .subtitle-list_container {
+.app-classroom-creation-page .people-list__container .subtitle-list_container {
   display: flex;
   justify-content: space-between;
 }
@@ -233,12 +233,12 @@
   max-width: 270px;
   border: 1px solid var(--outline);
 }
-.app-organization-creation-page {
+.app-classroom-creation-page {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
-.app-organization-creation-page .actions-submit__container {
+.app-classroom-creation-page .actions-submit__container {
   text-align: end;
 }
 

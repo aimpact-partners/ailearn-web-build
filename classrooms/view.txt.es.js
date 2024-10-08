@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1371746149,
+        hash: 468975823,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -84,24 +84,24 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "delete": {
                 "title": "¿Deseas eliminar el usuario?",
-                "description": "Recuerda que eliminar un usuario también elimina su acceso y acciones dentro de la institución."
+                "description": "Recuerda que eliminar un usuario también elimina su acceso y acciones dentro de la aula."
               },
               "cancel": {
                 "title": "¿Deseas cancelar la invitación del usuario?",
-                "description": "Recuerda que cancelar la invitación del usuario también cancela su acceso y acciones dentro de la institución."
+                "description": "Recuerda que cancelar la invitación del usuario también cancela su acceso y acciones dentro de la aula."
               },
               "reject": {
                 "title": "¿Deseas rechazar la solicitud del usuario?",
-                "description": "Recuerda que rechazar la solicitud del usuario también cancela su acceso y acciones dentro de la institución."
+                "description": "Recuerda que rechazar la solicitud del usuario también cancela su acceso y acciones dentro de la aula."
               },
               "edit": {
                 "title": "¿Deseas cambiar el rol del usuario?",
-                "info": "Recuerda que cambiar el rol también modifica el acceso y las acciones del usuario dentro de la institución."
+                "info": "Recuerda que cambiar el rol también modifica el acceso y las acciones del usuario dentro de la aula."
               }
             },
             "editForm": {
               "title": "¿Deseas cambiar el rol del usuario?",
-              "info": "Recuerda que cambiar el rol también modifica el acceso y las acciones del usuario dentro de la institución."
+              "info": "Recuerda que cambiar el rol también modifica el acceso y las acciones del usuario dentro de la aula."
             },
             "roles": {
               "all": {
@@ -110,14 +110,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "entity": "Todos"
               },
               "manager": {
-                "identifier": "managers",
-                "title": "Administrador",
-                "entity": "Administradores"
+                "title": "Profesor",
+                "role": "Profesor",
+                "single": "Profesor"
               },
               "member": {
-                "identifier": "members",
-                "title": "Docente",
-                "entity": "Docentes"
+                "identifier": "students",
+                "title": "Estudiante",
+                "entity": "Estudiantes"
               },
               "pending": {
                 "identifier": "pendings",
@@ -148,7 +148,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "copy": "Texto copiado con éxito",
               "copyError": "Error al copiar al portapapeles"
             },
-            "orgCode": "Código de Institución",
+            "orgCode": "Código del aula",
             "title": "Agrega un titulo",
             "description": "Agrega una descripción",
             "empty": {

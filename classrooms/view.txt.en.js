@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2252430018,
+        hash: 3850559242,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -80,28 +80,28 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "forms": {
               "approve": {
                 "title": "Do you want to approve the user request?",
-                "description": "Remember that approving the user's request also modifies their role and access within the organization."
+                "description": "Remember that approving the user's request also modifies their role and access within the classroom."
               },
               "delete": {
                 "title": "Do you want to delete the user?",
-                "description": "Remember that deleting a user also deletes their access and actions within the organization."
+                "description": "Remember that deleting a user also deletes their access and actions within the classroom."
               },
               "cancel": {
                 "title": "Do you want to cancel the user invitation?",
-                "description": "Remember that canceling the user's invitation also cancels their access and actions within the organization."
+                "description": "Remember that canceling the user's invitation also cancels their access and actions within the classroom."
               },
               "reject": {
                 "title": "Do you want to reject the user request?",
-                "description": "Remember that rejecting the user's request also cancels their access and actions within the organization."
+                "description": "Remember that rejecting the user's request also cancels their access and actions within the classroom."
               },
               "edit": {
                 "title": "Do you want to change the user role?",
-                "info": "Remember that changing the role also modifies the user's access and actions inside the organization."
+                "info": "Remember that changing the role also modifies the user's access and actions inside the classroom."
               }
             },
             "editForm": {
               "title": "Do you want to change the user role?",
-              "info": "Remember that changing the role also modifies the user's access and actions inside the organization."
+              "info": "Remember that changing the role also modifies the user's access and actions inside the classroom."
             },
             "roles": {
               "all": {
@@ -110,14 +110,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "entity": "All"
               },
               "manager": {
-                "identifier": "managers",
-                "title": "Administrator",
-                "entity": "Administrators"
+                "title": "Teachers",
+                "role": "Teacher",
+                "single": "Teacher"
               },
               "member": {
-                "title": "Teacher",
+                "title": "Student",
                 "identifier": "members",
-                "entity": "Teachers"
+                "entity": "Students"
               },
               "pending": {
                 "identifier": "pendings",
@@ -127,9 +127,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "list": {
               "managers": {
-                "title": "Administrators",
-                "role": "Admin",
-                "single": "Manager"
+                "title": "Teachers",
+                "role": "Teacher",
+                "single": "Teacher"
               },
               "members": {
                 "title": "Teachers",
@@ -150,7 +150,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "copyError": "Error when copying to clipboard"
             },
             "ERR_GENERATING_ACTIVITIES": "Error generating classes",
-            "orgCode": "Organization Code",
+            "orgCode": "Classroom Code",
             "title": "Add a name",
             "description": "Add a description",
             "empty": {
