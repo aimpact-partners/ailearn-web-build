@@ -108,17 +108,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/assignments/${id}/dashboard/classroom",
         "layout": "dashboard-layout"
       }, {
-        "name": "app-assignment-dashboard-participant",
-        "attrs": ["id", "participant-id"],
-        "vspecifier": "@aimpact/ailearn-app@0.1.13/assignment-dashboard-participant.widget"
-      }, {
-        "name": "old-assignment-dashboard-participant",
-        "attrs": ["id", "participant-id"],
-        "vspecifier": "@aimpact/ailearn-app@0.1.13/assignment-dashboard-participant.widget",
-        "is": "page",
-        "route": "/assignments/${assignmentId}/dashboard/participant/${participantId}",
-        "layout": "dashboard-layout"
-      }, {
         "name": "dashboard-wall",
         "vspecifier": "@aimpact/ailearn-app@0.1.13/dashboard-wall.widget",
         "is": "page",
