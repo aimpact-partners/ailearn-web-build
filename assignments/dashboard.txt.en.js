@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4174294105,
+        hash: 3514068150,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -39,6 +39,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "subtype": "Subtype",
               "description": "Description",
               "empty": "The student has not yet completed this activity",
+              "objectiveStatuses": {
+                "in-progress": "In progress",
+                "completed": "Completed",
+                "pending": "Pending"
+              },
+              "multipleChoice": {
+                "participation": {
+                  "title": "Participation",
+                  "detail": "The student has answered <span class='number-data'>{correct}</span> corrects of <span class='number-data'>{total}</span> questions."
+                },
+                "correct": "Correct Answers",
+                "wrong": "Incorrect Answers"
+              },
               "types": {
                 "content-theory": "Content/Theory",
                 "debate": "Debate",
@@ -65,7 +78,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "assignment": {
               "empty": {
                 "title": "The student has not participated in this assignment"
-              }
+              },
+              "messages": "messages"
             },
             "chat": {
               "title": "Student conversation",
