@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2252430018,
+        hash: 310288074,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -123,22 +123,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "identifier": "pendings",
                 "title": "Pending",
                 "entity": "Pending"
-              }
-            },
-            "list": {
-              "managers": {
-                "title": "Administrators",
-                "role": "Admin",
-                "single": "Manager"
-              },
-              "members": {
-                "title": "Teachers",
-                "role": "Teacher",
-                "single": "Teacher"
-              },
-              "pendings": {
-                "title": "Pending",
-                "invited": "Invited"
               }
             },
             "messages": {

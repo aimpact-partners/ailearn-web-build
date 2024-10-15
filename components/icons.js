@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@1.0.0-beta.6/icons", "pragmate-ui@1.0.0-beta.6/components"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "pragmate-ui@1.0.0-beta.6/icons", "react@18.2.0", "pragmate-ui@1.0.0-beta.6/components"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, ICONS, AppIcon, AppIconButton, AppButton, __beyond_pkg, hmr;
@@ -11,10 +11,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
-    }, function (_react2) {
-      dependency_1 = _react2;
     }, function (_pragmateUi100Beta6Icons) {
-      dependency_2 = _pragmateUi100Beta6Icons;
+      dependency_1 = _pragmateUi100Beta6Icons;
+    }, function (_react2) {
+      dependency_2 = _react2;
     }, function (_pragmateUi100Beta6Components) {
       dependency_3 = _pragmateUi100Beta6Components;
     }],
@@ -33,7 +33,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['react', dependency_1], ['pragmate-ui/icons', dependency_2], ['pragmate-ui/components', dependency_3]]);
+      __pkg.dependencies.update([['pragmate-ui/icons', dependency_1], ['react', dependency_2], ['pragmate-ui/components', dependency_3]]);
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./activities

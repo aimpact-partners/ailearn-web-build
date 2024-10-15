@@ -1,26 +1,26 @@
-.pui-breadcrumb__container .breadcrumb {
+.pui-breadcrumb__container .pui-breadcrumb {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.15rem;
 }
-.pui-breadcrumb__container .breadcrumb a {
+.pui-breadcrumb__container .pui-breadcrumb a {
   text-decoration: none;
   position: relative;
   align-items: center;
   height: 100%;
   margin: 0 1px;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.15rem;
   transition: all 0.2s;
   cursor: pointer;
 }
-.pui-breadcrumb__container .breadcrumb a:hover, .pui-breadcrumb__container .breadcrumb a:hover:after, .pui-breadcrumb__container .breadcrumb a:hover:before {
+.pui-breadcrumb__container .pui-breadcrumb a:hover, .pui-breadcrumb__container .pui-breadcrumb a:hover:after, .pui-breadcrumb__container .pui-breadcrumb a:hover:before {
   height: 100%;
   color: var(--on-surface);
 }
-.pui-breadcrumb__container .breadcrumb a:hover .pui-breadcrumb__separator, .pui-breadcrumb__container .breadcrumb a:hover:after .pui-breadcrumb__separator, .pui-breadcrumb__container .breadcrumb a:hover:before .pui-breadcrumb__separator {
+.pui-breadcrumb__container .pui-breadcrumb a:hover .pui-breadcrumb__separator, .pui-breadcrumb__container .pui-breadcrumb a:hover:after .pui-breadcrumb__separator, .pui-breadcrumb__container .pui-breadcrumb a:hover:before .pui-breadcrumb__separator {
   color: var(--on-surface);
 }
-.pui-breadcrumb__container .breadcrumb a:hover {
+.pui-breadcrumb__container .pui-breadcrumb a:hover {
   transition: all 0.2s;
 }
 .pui-breadcrumb__container {
@@ -28,19 +28,12 @@
   align-items: center;
   display: flex;
   padding: 0;
+  cursor: pointer;
 }
-.pui-breadcrumb__container .breadcrumb {
-  display: flex;
-  padding: 0;
-}
-.pui-breadcrumb__container .breadcrumb li {
-  margin: 0;
-  flex: 0 0 auto;
-  display: inline-block;
-}
-.pui-breadcrumb__container .breadcrumb .breadcrumb__item--current {
+.pui-breadcrumb__container .pui-breadcrumb .breadcrumb__item--current {
+  cursor: default;
   color: var(--secondary);
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHBzZXVkby1lbGVtZW50LnNjc3MiLCJzY3NzXFxzdHlsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNDO0VBQ0M7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUdDO0VBQ0E7O0FBRUE7RUFDQzs7QUFJRjtFQUNDOztBQzNCSjtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7RUFDQTs7QUFHRDtFQUNDIiwiZmlsZSI6IiJ9 */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHBzZXVkby1lbGVtZW50LnNjc3MiLCJzY3NzXFxzdHlsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNDO0VBQ0M7RUFDQTs7QUFDQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUdDO0VBQ0E7O0FBRUE7RUFDQzs7QUFJRjtFQUNDOztBQzNCSjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0M7RUFDQztFQUNBIiwiZmlsZSI6IiJ9 */

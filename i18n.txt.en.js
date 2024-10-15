@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3032861847,
+        hash: 1021697757,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -63,6 +63,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "errors": {
               "46": "You don't have enough credits to perform this action with AI",
               "NO_CREDITS": "You don't have enough credits to perform this action"
+            },
+            "deleteModal": {
+              "title": "Are you sure you want to delete this item?",
+              "description": "You won't be able to revert this!"
             },
             "requestCredits": {
               "title": "Request Credits",

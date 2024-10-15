@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 468975823,
+        hash: 1379647892,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -107,36 +107,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "all": {
                 "identifier": "all",
                 "title": "Todos",
-                "entity": "Todos"
+                "entity": "all"
               },
               "manager": {
                 "title": "Profesor",
-                "role": "Profesor",
-                "single": "Profesor"
+                "identifier": "managers",
+                "entity": "Profesor"
               },
               "member": {
                 "identifier": "students",
                 "title": "Estudiante",
-                "entity": "Estudiantes"
+                "entity": "members"
               },
               "pending": {
                 "identifier": "pendings",
                 "title": "Pendiente",
-                "entity": "Pendientes"
-              }
-            },
-            "list": {
-              "managers": {
-                "title": "Administradores",
-                "role": "Administrador"
-              },
-              "members": {
-                "title": "Docentes",
-                "role": "Docente"
-              },
-              "pendings": {
-                "title": "Pendientes",
-                "invited": "Invitado"
+                "entity": "pendings"
               }
             },
             "ERR_GENERATING_ACTIVITIES": "Error generando classes",
