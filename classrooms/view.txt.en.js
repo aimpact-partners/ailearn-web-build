@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 260136528,
+        hash: 1885003474,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -107,22 +107,26 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "all": {
                 "identifier": "all",
                 "title": "All",
-                "entity": "All"
+                "entity": "All",
+                "role": "all"
               },
               "manager": {
                 "title": "Teachers",
                 "identifier": "managers",
-                "entity": "Teachers"
+                "entity": "Teachers",
+                "role": "manager"
               },
               "member": {
                 "title": "Student",
                 "identifier": "members",
-                "entity": "member"
+                "entity": "member",
+                "role": "member"
               },
               "pending": {
                 "identifier": "pendings",
                 "title": "Pending",
-                "entity": "pending"
+                "entity": "pending",
+                "role": "pending"
               }
             },
             "messages": {
@@ -148,6 +152,23 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "system": {
               "invite": {
                 "success": "Invitation sent"
+              }
+            },
+            "list": {
+              "managers": {
+                "title": "Teachers",
+                "identifier": "Teacher",
+                "entity": "Teacher"
+              },
+              "members": {
+                "title": "Teachers",
+                "identifier": "Teacher",
+                "entity": "Teacher"
+              },
+              "pendings": {
+                "title": "Pending",
+                "identifier": "Invited",
+                "entity": "pending"
               }
             }
           };

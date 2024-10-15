@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1379647892,
+        hash: 3934367817,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -107,22 +107,24 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "all": {
                 "identifier": "all",
                 "title": "Todos",
-                "entity": "all"
+                "entity": "all",
+                "role": "all"
               },
               "manager": {
                 "title": "Profesor",
                 "identifier": "managers",
-                "entity": "Profesor"
+                "entity": "Profesor",
+                "role": "manager"
               },
               "member": {
-                "identifier": "students",
+                "identifier": "members",
                 "title": "Estudiante",
-                "entity": "members"
+                "entity": "Estudiantes"
               },
               "pending": {
                 "identifier": "pendings",
                 "title": "Pendiente",
-                "entity": "pendings"
+                "entity": "Pendientes"
               }
             },
             "ERR_GENERATING_ACTIVITIES": "Error generando classes",
@@ -148,6 +150,20 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "system": {
               "invite": {
                 "success": "Invitación enviada"
+              }
+            },
+            "list": {
+              "managers": {
+                "title": "Administradores",
+                "role": "Administrador"
+              },
+              "members": {
+                "title": "Docentes",
+                "role": "Docente"
+              },
+              "pendings": {
+                "title": "Pendientes",
+                "invited": "Invitado"
               }
             }
           };
