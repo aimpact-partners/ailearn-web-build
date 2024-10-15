@@ -21,7 +21,7 @@ System.register([], function (_export, _context) {
           },
           "baseUrl": "https://test.app.rvd.ai",
           "apis": {
-            "chat": "https://test.agents.api.aimpact.partners"
+            "chat": "https://chat-api-http-skvkre4apq-uc.a.run.app"
           }
         },
         "ssr": {},
