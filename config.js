@@ -4,7 +4,7 @@ System.register([], function (a, e) {
 		execute: function () {
 			a('default', {
 				package: '@aimpact/ailearn-app',
-				version: '0.1.12-fix.01',
+				version: '0.1.12-fix.02',
 				languages: { default: 'en', supported: ['en', 'es', 'pt'] },
 				environment: 'production',
 				'global.css': !0,
@@ -20,11 +20,11 @@ System.register([], function (a, e) {
 					beta: !1,
 					elevenlabs: { key: 'ebe05ca0a4d9aafb4024d0666471a0c7', id: 'pNInz6obpgDQGcFmaJgB' },
 					baseUrl: 'https://app.rvd.ai',
-					apis: { ailearn: 'https://ailearn.api.aimpact.partners' }
+					apis: { ailearn: 'https://ailearn.api.aimpact.partners' },
 				},
 				ssr: {},
-				backend: {}
+				backend: {},
 			});
-		}
+		},
 	};
 });
