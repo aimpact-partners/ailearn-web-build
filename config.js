@@ -1,11 +1,10 @@
 System.register([], function (a, e) {
-	'use strict';
 	return {
 		setters: [],
 		execute: function () {
 			a('default', {
 				package: '@aimpact/ailearn-app',
-				version: '0.1.12',
+				version: '0.1.12-fix.01',
 				languages: { default: 'en', supported: ['en', 'es', 'pt'] },
 				environment: 'production',
 				'global.css': !0,
