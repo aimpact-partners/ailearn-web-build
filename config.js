@@ -6,16 +6,16 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/ailearn-app',
-				version: '0.1.12-fix.04',
+				version: '0.1.13',
 				languages: {
 					default: 'en',
-					supported: ['en', 'es', 'pt']
+					supported: ['en', 'es', 'pt'],
 				},
 				environment: 'production',
 				'global.css': true,
 				params: {
 					config: {
-						system: false
+						system: false,
 					},
 					container: 'file',
 					project: 'ailearn-estrada',
@@ -27,16 +27,16 @@ System.register([], function (_export, _context) {
 					beta: false,
 					elevenlabs: {
 						key: 'ebe05ca0a4d9aafb4024d0666471a0c7',
-						id: 'pNInz6obpgDQGcFmaJgB'
+						id: 'pNInz6obpgDQGcFmaJgB',
 					},
 					baseUrl: 'https://app.rvd.ai',
 					apis: {
-						ailearn: 'https://ailearn.api.aimpact.partners'
-					}
+						ailearn: 'https://ailearn.api.aimpact.partners',
+					},
 				},
 				ssr: {},
-				backend: {}
+				backend: {},
 			});
-		}
+		},
 	};
 });
