@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "@aimpact/media-manager",
-        "version": "0.0.1-beta.1",
+        "version": "1.0.0",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]

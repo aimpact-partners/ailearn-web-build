@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "@beyond-js/reactive",
-        "version": "1.2.0",
+        "version": "1.1.12",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]
