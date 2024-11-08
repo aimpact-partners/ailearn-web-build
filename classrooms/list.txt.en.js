@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1128969137,
+        hash: 2416697914,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -79,15 +79,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               }
             },
             "empty": {
-              "title": "Register an educational institution on RVD.AI",
-              "description": "Start by registering your institution. "
+              "title": "Register an educational classroom on RVD.AI",
+              "description": "Start by registering your classroom. "
             },
             "welcome": {
-              "message": "Welcome %name to your list of organizations",
-              "actionInfo": "Here you can view and manage all the organizations you currently have. You'll have access to various actions, including creating, deleting, and editing organizations. Take advantage of these tools to customize each organization according to your requirements."
+              "message": "Welcome %name to your list of classrooms",
+              "actionInfo": "Here you can view and manage all the classrooms you currently have. You'll have access to various actions, including creating, deleting, and editing classrooms. Take advantage of these tools to customize each organization according to your requirements."
             },
             "title": "Classrooms",
-            "subtitle": "Explore, adjust, and manage your organizations according to your needs",
+            "subtitle": "Explore, adjust, and manage your classrooms according to your needs",
             "errors": {
               "ERROR_GETTING_URL": "Error getting URL"
             }

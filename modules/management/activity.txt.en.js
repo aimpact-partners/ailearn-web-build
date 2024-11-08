@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 516414120,
+        hash: 2628115794,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -135,7 +135,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "label": "Related activity",
                 "independent": "Independent"
               },
-              "emptyOptions": "Answer options have not been defined"
+              "emptyOptions": "Answer options have not been defined",
+              "placeholders": {
+                "question": "Insert a question",
+                "answer": "Insert an answer option"
+              },
+              "questions": {
+                "placeholder": "Insert a question"
+              }
             },
             "specs": {
               "title": "Activity specifications",

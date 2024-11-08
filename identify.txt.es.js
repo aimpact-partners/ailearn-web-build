@@ -29,17 +29,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 265371847,
+        hash: 3826177978,
         creator: function (require, exports) {
           exports.txt = {
             "errors": {
               "ERROR_PUBLISHING": "No se ha podido hacer la solicitud, vuelva a intentarlo más tarde",
-              "INVALID_CODE": {
-                "title": "Código incorrecto",
-                "description": "Por favor, verifica el código y vuelve a intentarlo.Si el problema persiste, contacta al administrador de tu institución para obtener el código correcto."
-              },
+              "INVALID_CODE": "Código incorrecto",
               "ALREADY_WAITING": "Ya realizaste la solicitud para unirte a la institución, espera a que el administrador te acepte o ponte en contacto con él",
-              "ALREADY_MEMBER": "Ya eres miembro de la institución"
+              "ALREADY_MEMBER": "Ya eres miembro de la institución",
+              "ALREADY_WAITING_CLASSROOM": "Tu solicitud de acceso sigue estando pendiente, contacta al profesor del aula"
             },
             "institution": {
               "form": {
@@ -89,6 +87,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "¡Felicitaciones! Tu institución ya puede iniciar su período de prueba",
                 "description": "Te hemos asignado a tu período de prueba {totalGenerative} créditos para crear {totalGenerative} módulos con IA y {totalInteraction} créditos para la interacción con IA de los alumnos.",
                 "start": "Comenzar"
+              },
+              "student": {
+                "title": "Tu solicitud para unirte al aula está en proceso de revisión.",
+                "description": "Por favor, espera la aprobación del profesor para acceder al aula. <strong>Revisa tu correo electrónico</strong> donde te notificaremos una vez que tu solicitud haya sido aprobada para poder acceder a <strong>RVD.AI Rivadavia</strong>."
+              },
+              "studentApproved": {
+                "title": "¡Felicitaciones! Tu solicitud ha sido aprobada",
+                "description": "Ya eres parte del aula, Comienza a utilizar RVD.AI."
               }
             },
             "cards": {
@@ -111,7 +117,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "student": {
               "selection": {
                 "title": "Estás a punto de comenzar el camino hacia la transformación educativa",
-                "description": "Para iniciar tu experiencia de aprendizaje con RVD.AI Rivadavia, necesitarás un enlace de acceso proporcionado por tu docente. Una vez que recibas el enlace o link de acceso, podrás ingresar al módulo de aprendizaje y comenzar a explorar los contenidos diseñados especialmente para ti."
+                "description": "Para comenzar tu experiencia de aprendizaje con RVD.AI Rivadavia, puedes solicitar al profesor el código de acceso al aula e insertarlo para continuar, o bien pedir el enlace de acceso a una actividad. Una vez que tengas esta información, podrás ingresar al módulo de aprendizaje y comenzar a explorar el contenido diseñado especialmente para ti."
+              },
+              "form": {
+                "title": "Comienza a transitar la transformación educativa",
+                "description": "Estás a punto de unirte al espacio educativo de tu institución. Para ingresar a RVD.AI Rivadavia debes validar el código de acceso provisto por el administrador de tu institución.",
+                "form": {
+                  "legend": {
+                    "title": "¿No tienes tu código?",
+                    "description": "Pidele el código o el enlace de acceso a tu profesor."
+                  },
+                  "action": "Ingresar código",
+                  "error": {
+                    "title": "Código incorrecto.",
+                    "description": "Por favor, verifica el código y vuelve a intentarlo. Si el problema persiste, contacta al administrador de tu institución para obtener el código correcto."
+                  }
+                }
               }
             },
             "teacher": {

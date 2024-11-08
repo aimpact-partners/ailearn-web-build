@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2614250378,
+        hash: 874807691,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -67,7 +67,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "ready": {
               "title": "Solicitud enviada",
-              "description": "Ahora debes esperar a que el administrador la apruebe y luego podrás tener acceso"
+              "description": "Ahora debes esperar a que el docente apruebe tu solicitud de acceso al aula. Recibirás un correo electrónico cuando se haya aprobado."
             }
           };
         }

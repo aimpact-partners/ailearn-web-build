@@ -340,7 +340,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       ******************************/
 
       ims.set('./menu/student', {
-        hash: 2338361162,
+        hash: 3943653979,
         creator: function (require, exports) {
           "use strict";
 
@@ -362,7 +362,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
               href: "/"
             }, texts.home), _react.default.createElement(_item.MenuItem, {
               icon: "entities/classroom",
-              href: "/classrooms/join"
+              href: "/classrooms/list"
             }, texts.classrooms));
           }
         }

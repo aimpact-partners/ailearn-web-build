@@ -29,17 +29,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2916132363,
+        hash: 3595562589,
         creator: function (require, exports) {
           exports.txt = {
             "errors": {
               "ERROR_PUBLISHING": "The request could not be made, please try again later",
-              "INVALID_CODE": {
-                "title": "Incorrect code",
-                "description": "Please verify the code and try again. If the problem persists, contact the administrator of your institution to obtain the correct code."
-              },
+              "INVALID_CODE": "Incorrect code",
               "ALREADY_WAITING": "You have already made the request to join the organization, wait for the administrator to accept you or contact him",
-              "ALREADY_MEMBER": "You are already a member of the organization"
+              "ALREADY_MEMBER": "You are already a member of the organization",
+              "ALREADY_WAITING_CLASSROOM": "Your access request is still pending, contact the classroom teacher"
             },
             "institution": {
               "form": {
@@ -89,6 +87,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Congratulations! Your institution can now start its trial period",
                 "description": "We have assigned you {totalGenerative} credits for your trial period to create {totalGenerative} modules with AI and {totalInteraction} credits for AI interaction with students.",
                 "start": "Start"
+              },
+              "student": {
+                "title": "Your request to join the classroom is under review.",
+                "description": "Please wait for the teacher's approval to access the classroom. Check your email where we will notify you once your request has been approved."
+              },
+              "studentApproved": {
+                "title": "Congratulations! Your request has been approved",
+                "description": "You are now part of the classroom, Start using RVD.AI."
               }
             },
             "cards": {
@@ -111,7 +117,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "student": {
               "selection": {
                 "title": "You are about to start the path to educational transformation",
-                "description": "To start your learning experience with RVD.AI Rivadavia, you will need an access link provided by your teacher. Once you receive the access link, you will be able to enter the learning module and start exploring the content designed especially for you."
+                "description": "To start your learning experience with RVD.AI Rivadavia, you can ask the teacher for the access code to the classroom and enter it to continue, or request the access link to an activity. Once you have this information, you can enter the learning module and start exploring the content designed especially for you."
+              },
+              "form": {
+                "title": "Start your educational transformation",
+                "description": "You are about to join your institution's educational space. To enter RVD.AI Rivadavia you must validate the access code provided by your institution's administrator.",
+                "form": {
+                  "legend": {
+                    "title": "Don't have your code?",
+                    "description": "Ask your teacher for the access code or link."
+                  },
+                  "action": "Enter code",
+                  "error": {
+                    "title": "Incorrect code.",
+                    "description": "Please check the code and try again. If the problem persists, contact your institution's administrator to get the correct code."
+                  }
+                }
               }
             },
             "teacher": {
