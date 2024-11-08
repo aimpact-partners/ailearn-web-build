@@ -11,9 +11,14 @@ System.register([], function (_export, _context) {
           "default": "en",
           "supported": ["en", "es"]
         },
+        "environment": "local",
         "global.css": true,
         "params": {
-          "ailearnAPI": "http://localhost:5050"
+          "baseUrl": "http://localhost:4530",
+          "apis": {
+            "ailearn": "https://dev.ailearn.api.aimpact.partners",
+            "chat": "https://dev.agents.api.aimpact.partners"
+          }
         },
         "ssr": {},
         "backend": {}

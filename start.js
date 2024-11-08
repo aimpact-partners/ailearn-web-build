@@ -1,37 +1,43 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/transversals", "@beyond-js/widgets@0.1.5/render", "@aimpact/ailearn-app@1.0.0/model/gclassroom", "@aimpact/chat-sdk@1.0.0/session", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat-sdk@1.0.0/initialize", "@aimpact/chat@1.0.1/extensions", "@aimpact/chat@1.0.1/sidebar/manager", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/transversals", "@beyond-js/widgets@1.1.0/render", "@aimpact/ailearn-app@0.2.1/model/wrapper", "@aimpact/chat-sdk@1.3.0/session", "@beyond-js/kernel@0.1.9/routing", "react@18.2.0", "pragmate-ui@1.0.0-beta.6/icons", "pragmate-ui@1.0.0-beta.6/image", "@beyond-js/reactive@1.1.12/model", "@aimpact/ailearn-app@0.2.1/model/gclassroom", "@aimpact/ailearn-sdk@1.0.0/core", "@aimpact/ailearn-app@0.2.1/config", "@aimpact/chat-sdk@1.3.0/startup"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, Transversal, __beyond_transversal, widgets, bundles;
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, Transversal, __beyond_transversal, widgets, bundles;
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_beyondJsKernel019Transversals) {
       dependency_1 = _beyondJsKernel019Transversals;
-    }, function (_beyondJsWidgets015Render) {
-      dependency_2 = _beyondJsWidgets015Render;
-    }, function (_aimpactAilearnApp100ModelGclassroom) {
-      dependency_3 = _aimpactAilearnApp100ModelGclassroom;
-    }, function (_aimpactChatSdk100Session) {
-      dependency_4 = _aimpactChatSdk100Session;
+    }, function (_beyondJsWidgets110Render) {
+      dependency_2 = _beyondJsWidgets110Render;
+    }, function (_aimpactAilearnApp021ModelWrapper) {
+      dependency_3 = _aimpactAilearnApp021ModelWrapper;
+    }, function (_aimpactChatSdk130Session) {
+      dependency_4 = _aimpactChatSdk130Session;
     }, function (_beyondJsKernel019Routing) {
       dependency_5 = _beyondJsKernel019Routing;
-    }, function (_aimpactChatSdk100Initialize) {
-      dependency_6 = _aimpactChatSdk100Initialize;
-    }, function (_aimpactChat101Extensions) {
-      dependency_7 = _aimpactChat101Extensions;
-    }, function (_aimpactChat101SidebarManager) {
-      dependency_8 = _aimpactChat101SidebarManager;
-    }, function (_beyondJsKernel019Texts) {
-      dependency_9 = _beyondJsKernel019Texts;
-    }, function (_beyondJsKernel019Core) {
-      dependency_10 = _beyondJsKernel019Core;
+    }, function (_react2) {
+      dependency_6 = _react2;
+    }, function (_pragmateUi100Beta6Icons) {
+      dependency_7 = _pragmateUi100Beta6Icons;
+    }, function (_pragmateUi100Beta6Image) {
+      dependency_8 = _pragmateUi100Beta6Image;
+    }, function (_beyondJsReactive1112Model) {
+      dependency_9 = _beyondJsReactive1112Model;
+    }, function (_aimpactAilearnApp021ModelGclassroom) {
+      dependency_10 = _aimpactAilearnApp021ModelGclassroom;
+    }, function (_aimpactAilearnSdk100Core) {
+      dependency_11 = _aimpactAilearnSdk100Core;
+    }, function (_aimpactAilearnApp021Config) {
+      dependency_12 = _aimpactAilearnApp021Config;
+    }, function (_aimpactChatSdk130Startup) {
+      dependency_13 = _aimpactChatSdk130Startup;
     }],
     execute: function () {
       ({
         Transversal
       } = brequire('@beyond-js/kernel/transversals'));
       _export("__beyond_transversal", __beyond_transversal = new Transversal('start', ''));
-      __beyond_transversal.dependencies.update([['@beyond-js/kernel/transversals', dependency_1], ['@beyond-js/widgets/render', dependency_2], ['@aimpact/ailearn-app/model/gclassroom', dependency_3], ['@aimpact/chat-sdk/session', dependency_4], ['@beyond-js/kernel/routing', dependency_5], ['@aimpact/chat-sdk/initialize', dependency_6], ['@aimpact/chat/extensions', dependency_7], ['@aimpact/chat/sidebar/manager', dependency_8], ['@beyond-js/kernel/texts', dependency_9], ['@beyond-js/kernel/core', dependency_10]]);
+      __beyond_transversal.dependencies.update([['@beyond-js/kernel/transversals', dependency_1], ['@beyond-js/widgets/render', dependency_2], ['@aimpact/ailearn-app/model/wrapper', dependency_3], ['@aimpact/chat-sdk/session', dependency_4], ['@beyond-js/kernel/routing', dependency_5], ['react', dependency_6], ['pragmate-ui/icons', dependency_7], ['pragmate-ui/image', dependency_8], ['@beyond-js/reactive/model', dependency_9], ['@aimpact/ailearn-app/model/gclassroom', dependency_10], ['@aimpact/ailearn-sdk/core', dependency_11], ['@aimpact/ailearn-app/config', dependency_12], ['@aimpact/chat-sdk/startup', dependency_13]]);
 
       /*************
       BUNDLE: WIDGET
@@ -40,160 +46,291 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         widgets
       } = brequire('@beyond-js/widgets/render'));
       widgets.register([{
-        "name": "chat-api-test",
-        "vspecifier": "@aimpact/chat-api@1.0.1//tests/page",
-        "is": "page",
-        "route": "/chat-api/tests"
+        "name": "auth-layout",
+        "vspecifier": "@aimpact/auth@0.0.1/auth-layout",
+        "is": "layout"
       }, {
         "name": "auth-login-page",
-        "vspecifier": "@aimpact/chat@1.0.1/auth-login.widget",
+        "vspecifier": "@aimpact/auth@0.0.1/auth-login.widget",
         "is": "page",
         "route": "/auth/login",
         "layout": "auth-layout"
       }, {
+        "name": "aimpact-login-presentation",
+        "attrs": ["dynamic-children"],
+        "vspecifier": "@aimpact/auth@0.0.1/auth/login/presentation.widget"
+      }, {
+        "name": "auth-recover-password-page",
+        "vspecifier": "@aimpact/auth@0.0.1/auth-recover-password.widget",
+        "is": "page",
+        "route": "/auth/recover-password",
+        "layout": "auth-layout"
+      }, {
+        "name": "auth-recovery-page",
+        "vspecifier": "@aimpact/auth@0.0.1/auth-recovery.widget",
+        "is": "page",
+        "route": "/auth/recovery",
+        "layout": "auth-layout"
+      }, {
         "name": "auth-register-page",
-        "vspecifier": "@aimpact/chat@1.0.1/auth-register.widget",
+        "vspecifier": "@aimpact/auth@0.0.1/auth-register.widget",
         "is": "page",
         "route": "/auth/register",
         "layout": "auth-layout"
       }, {
-        "name": "chat-wd-page",
-        "vspecifier": "@aimpact/chat@1.0.1/chat.widget",
+        "name": "chat-sdk-markdown-page",
+        "vspecifier": "@aimpact/chat-sdk@1.3.0/tests/markdown",
         "is": "page",
-        "route": "/chat/${id}",
-        "layout": "chat-layout"
+        "route": "/chat/sdk/markdown",
+        "layout": "general-layout"
       }, {
-        "name": "chat-explorer-view",
-        "vspecifier": "@aimpact/chat@1.0.1/conversations/explorer.widget"
-      }, {
-        "name": "chat-documents-access",
-        "vspecifier": "@aimpact/chat@1.0.1/documents/access.widget",
+        "name": "chat-sdk-playable",
+        "vspecifier": "@aimpact/chat-sdk@1.3.0/tests/playable",
         "is": "page",
-        "route": "/documents/access",
-        "layout": "auth-layout"
-      }, {
-        "name": "app-documents-page",
-        "vspecifier": "@aimpact/chat@1.0.1/documents.widget",
-        "is": "page",
-        "route": "/documents",
-        "layout": "chat-layout"
-      }, {
-        "name": "ailearn-home-page",
-        "vspecifier": "@aimpact/chat@1.0.1/home.widget",
-        "is": "page",
-        "route": "/",
-        "layout": "chat-layout"
-      }, {
-        "name": "auth-layout",
-        "vspecifier": "@aimpact/chat@1.0.1/auth-layout",
-        "is": "layout"
-      }, {
-        "name": "chat-layout",
-        "vspecifier": "@aimpact/chat@1.0.1/chat-layout",
-        "is": "layout"
-      }, {
-        "name": "default-layout",
-        "vspecifier": "@aimpact/chat@1.0.1/default-layout",
-        "is": "layout"
-      }, {
-        "name": "aimpact-chat-user-profile",
-        "vspecifier": "@aimpact/chat@1.0.1/user/profile.widget"
-      }, {
-        "name": "api-test",
-        "vspecifier": "@aimpact/ailearn-api@1.0.0/test",
-        "is": "page",
-        "route": "/ailearn/test"
-      }, {
-        "name": "reactive-layout",
-        "vspecifier": "@beyond-js/reactive@1.1.6/reactive-layout",
-        "is": "layout"
+        "route": "/chat/sdk/playable"
       }, {
         "name": "coming-soon",
-        "vspecifier": "pragmate-ui@0.0.37/coming-soon",
+        "vspecifier": "pragmate-ui@1.0.0-beta.6/coming-soon",
         "is": "page",
         "route": "/components/coming-soon"
       }, {
         "name": "pui-template-view-widget",
-        "vspecifier": "pragmate-ui@0.0.37/pui/template/palette"
+        "vspecifier": "pragmate-ui@1.0.0-beta.6/pui/template/palette"
+      }, {
+        "name": "app-ailearn-components-page",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/components/ui/page",
+        "is": "page",
+        "route": "/ui/components/test"
+      }, {
+        "name": "ailearn-session-dashboard",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/assignments/dashboard.widget",
+        "is": "page",
+        "route": "/assignments/${id}/dashboard/classroom",
+        "layout": "dashboard-layout"
+      }, {
+        "name": "dashboard-wall",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/dashboard-wall.widget",
+        "is": "page",
+        "route": "/assignments/${id}/wall",
+        "layout": "dashboard-layout"
+      }, {
+        "name": "app-dashboard-wall",
+        "attrs": ["id"],
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/dashboard/wall/widget.widget"
+      }, {
+        "name": "ailearn-sessions-access",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/sessions/access.widget",
+        "is": "page",
+        "route": "/sessions/access/${id}",
+        "layout": "chat-layout"
+      }, {
+        "name": "ailearn-assignments-all-in-one",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/assignments/all-in-one.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/all-in-one/${id}",
+        "layout": "chat-layout"
+      }, {
+        "name": "ailearn-assignments-assessment",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/assignments/assessment.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/assessment/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-character-talk",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/assignments/character-talk.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/character-talk/${activityId}/chat/${chatId}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-content-theory-page",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/assignments/content-theory.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/content-theory/${activityId}/chat/${chatId}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-debate-activity-page",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/assignments/debate.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/debate/${activityId}/chat/${chatId}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-assignments-spoken",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/assignments/spoken.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/spoken/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-gclassroom-permissions",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/gclassroom-permissions.widget"
+      }, {
+        "name": "ailearn-assignment-view",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/assignment/view.widget",
+        "is": "page",
+        "route": "/assignments/${id}",
+        "layout": "main-layout"
       }, {
         "name": "ailearn-gclassrooms-access",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/gclassrooms/access.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/gclassroom/access.widget",
         "is": "page",
         "route": "/gclassroom/access",
         "layout": "chat-layout"
       }, {
         "name": "ailearn-gclassroom-explorer",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/gclassroom-explorer.widget"
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/gclassroom-explorer.widget"
       }, {
-        "name": "ailearn-gclassroom-permissions",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/gclassroom/permissions.widget",
+        "name": "ailearn-classroom-join",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/classrooms/join.widget",
         "is": "page",
-        "route": "/gclassroom/permissions"
+        "route": "/classrooms/join",
+        "layout": "main-layout"
       }, {
-        "name": "ailearn-layout",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/layout/main",
+        "name": "ailearn-classrooms-list",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/classrooms/list.widget",
+        "is": "page",
+        "route": "/classrooms/list",
+        "layout": "main-layout"
+      }, {
+        "name": "app-classrooms-management",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/classrooms/management.widget",
+        "is": "page",
+        "route": "/classrooms/management",
+        "layout": "main-layout"
+      }, {
+        "name": "app-classrooms-view",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/classrooms/view.widget",
+        "is": "page",
+        "route": "/classrooms/view/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-community-modules",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/community.widget",
+        "is": "page",
+        "route": "/community",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-modules-list",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/modules/list.widget",
+        "is": "page",
+        "route": "/modules/list",
+        "layout": "main-layout"
+      }, {
+        "name": "app-module-objective-management",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/modules/draft.widget",
+        "is": "page",
+        "route": "/modules/management",
+        "layout": "main-layout"
+      }, {
+        "name": "app-organizations-management",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/organizations/management.widget",
+        "is": "page",
+        "route": "/organizations/management",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-organization-join",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/organizations/join.widget",
+        "is": "page",
+        "route": "/organizations/join",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-organizations-list",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/organizations/list.widget",
+        "is": "page",
+        "route": "/organizations/list",
+        "layout": "main-layout"
+      }, {
+        "name": "app-organizations-view",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/organizations/view.widget",
+        "is": "page",
+        "route": "/organizations/view/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-user-profile",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/user/profile.widget",
+        "is": "page",
+        "route": "/users/me",
+        "layout": "main-layout"
+      }, {
+        "name": "dashboard-layout",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/dashboard-layout.widget",
         "is": "layout"
       }, {
-        "name": "ailearn-lessons-create",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/lessons/create.widget",
+        "name": "main-layout",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/main-layout.widget",
+        "is": "layout"
+      }, {
+        "name": "app-policies-page",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/pages/age.widget",
         "is": "page",
-        "route": "/lessons/create",
-        "layout": "chat-layout"
+        "route": "/user-validation"
       }, {
-        "name": "ailearn-classes-list",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/lessons/list.widget",
+        "name": "app-not-allowed",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/not-allowed-control.widget"
+      }, {
+        "name": "app-not-allowed-page",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/not-allowed-page.widget"
+      }, {
+        "name": "app-missing-control",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/missing.widget"
+      }, {
+        "name": "app-missing-page",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/missing-page.widget",
         "is": "page",
-        "route": "/lessons/list",
-        "layout": "chat-layout"
+        "route": "/error-404",
+        "layout": "main-layout"
       }, {
-        "name": "class-management",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/lessons/management.widget",
+        "name": "app-system-error-control",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/system-error-widget.widget"
+      }, {
+        "name": "app-system-error-page",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/system-error.widget",
         "is": "page",
-        "route": "/lessons/management/${id}",
-        "layout": "chat-layout"
+        "route": "/error-500",
+        "layout": "main-layout"
       }, {
-        "name": "ailearn-sessions-access",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/sessions/access.widget",
+        "name": "student-home",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/home.widget",
         "is": "page",
-        "route": "/sessions/access/${id}",
-        "layout": "chat-layout"
+        "route": "/",
+        "layout": "main-layout"
       }, {
-        "name": "ailearn-assessment-oral",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/assessments/oral-test.widget"
-      }, {
-        "name": "ailearn-session-dashboard",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/sessions/dashboard.widget",
+        "name": "ailearn-identify-page",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/identify.widget",
         "is": "page",
-        "route": "/sessions/dashboard/${id}/lesson",
-        "layout": "chat-layout"
+        "route": "/next-steps"
       }, {
-        "name": "ailearn-session-dashboard",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/sessions/dashboard/student-detail.widget",
+        "name": "privacy-page",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/pages/privacy",
         "is": "page",
-        "route": "/sessions/dashboard/student-detail/${id}",
-        "layout": "chat-layout"
+        "route": "/privacy"
       }, {
-        "name": "ailearn-session-dashboard",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/sessions/dashboard/students.widget",
+        "name": "ailearn-terms-and-conditions-page",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/pages/terms",
         "is": "page",
-        "route": "/sessions/dashboard/students/${id}",
-        "layout": "chat-layout"
+        "route": "/terms-and-conditions"
       }, {
-        "name": "session-intro",
-        "attrs": ["metadata"],
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/session-intro.widget"
-      }, {
-        "name": "ailearn-sessions-list",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/sessions/list.widget",
+        "name": "app-template-bottom-bar",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/template/bottom-bar",
         "is": "page",
-        "route": "/sessions/list/${id}",
-        "layout": "chat-layout"
+        "route": "/template/bottom-bar"
       }, {
         "name": "ailearn-ui-components",
-        "vspecifier": "@aimpact/ailearn-app@1.0.0/ui/components",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/ui/components",
         "is": "page",
         "route": "/ui/components",
-        "layout": "chat-layout"
+        "layout": "main-layout"
+      }, {
+        "name": "app-updating-page",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/pages/updating.widget",
+        "is": "page",
+        "route": "/updating"
+      }, {
+        "name": "ailearn-test-page",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/test",
+        "is": "page",
+        "route": "/dev/test"
+      }, {
+        "name": "app-breadcrumb",
+        "vspecifier": "@aimpact/ailearn-app@0.2.1/widgets/breadcrumb.widget"
       }]);
       bundles = [];
       /***********************************
@@ -201,35 +338,118 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
       ***********************************/
       bundles.push([{
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@1.0.0/routing"
+          "vspecifier": "@aimpact/ailearn-app@0.2.1/routing"
         },
         "type": "start"
       }, function (ims, exports) {
         const bimport = specifier => {
-          const dependencies = new Map([["@aimpact/chat-api", "1.0.1"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", "1.0.0"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.6"], ["pragmate-ui", "0.0.37"], ["@beyond-js/backend", "0.1.8"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.1"], ["chart.js", "4.4.0"], ["dayjs", "1.11.9"], ["dexie", "3.2.4"], ["dompurify", "3.0.5"], ["firebase", "10.1.0"], ["firebase-admin", "11.10.1"], ["highlight.js", "11.8.0"], ["marked", "5.1.2"], ["marked-highlight", "2.0.1"], ["marked-mangle", "1.1.0"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.2"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.18"], ["@types/react-dom", "18.2.7"], ["@aimpact/ailearn-app", "1.0.0"], ["@aimpact/ailearn-app", "1.0.0"]]);
+          const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.6"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.2.1"], ["@aimpact/ailearn-app", "0.2.1"]]);
           return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
         };
-        /*************************************
-        INTERNAL MODULE: ./handlers/gclassroom
-        *************************************/
+        /*******************************
+        INTERNAL MODULE: ./handlers/home
+        *******************************/
 
-        ims.set('./handlers/gclassroom', {
-          hash: 186397415,
+        ims.set('./handlers/home', {
+          hash: 3464692361,
           creator: function (require, exports) {
             "use strict";
 
             Object.defineProperty(exports, "__esModule", {
               value: true
             });
-            exports.isGclassroomAuthorized = isGclassroomAuthorized;
-            var _gclassroom = require("@aimpact/ailearn-app/model/gclassroom");
-            async function isGclassroomAuthorized(pathname) {
-              await _gclassroom.gclassroom.isReady;
-              if (pathname === '/gclassroom/access' && !_gclassroom.gclassroom.authorized) return true;
-              if (!_gclassroom.gclassroom.authorized) return {
-                pathname: '/gclassroom/permissions'
+            exports.checkHome = checkHome;
+            async function checkHome({
+              pathname
+            }, router, next) {
+              return next();
+            }
+          }
+        });
+
+        /***********************************
+        INTERNAL MODULE: ./handlers/policies
+        ***********************************/
+
+        ims.set('./handlers/policies', {
+          hash: 779423052,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.checkPolicies = checkPolicies;
+            var _session = require("@aimpact/chat-sdk/session");
+            var _publicRoutes = require("../public-routes");
+            async function checkPolicies(uriObject, router, next) {
+              await _session.sessionWrapper.isReady;
+              await _session.sessionWrapper?.user?.isReady;
+              const {
+                pathname,
+                uri
+              } = uriObject;
+              const {
+                termsAccepted,
+                age
+              } = _session.sessionWrapper.user;
+              if (_publicRoutes.PUBLIC_ROUTES.includes(pathname)) return uri;
+              if (!termsAccepted && age > 17 || !age) {
+                if (pathname && pathname !== '/user-validation') router.previous = uriObject;
+                return {
+                  pathname: '/user-validation'
+                };
+              }
+              if (pathname === '/user-validation' && termsAccepted && age > 17) {
+                return {
+                  pathname: '/'
+                };
+              }
+              return next();
+            }
+          }
+        });
+
+        /********************************
+        INTERNAL MODULE: ./handlers/roles
+        ********************************/
+
+        ims.set('./handlers/roles', {
+          hash: 2541798624,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.checkRoles = checkRoles;
+            var _session = require("@aimpact/chat-sdk/session");
+            async function checkRoles(uri, router, next) {
+              const {
+                pathname
+              } = uri;
+              await _session.sessionWrapper.isReady;
+              const regex = /^\/assignments\/.+$/;
+              const isAssigment = regex.test(pathname);
+              if (isAssigment) return next();
+              const validRoutes = ['/users/me', '/organizations/create', '/organizations/join', 'classrooms/join'];
+              function containsPath(paths, url) {
+                for (const path of paths) {
+                  if (url.includes(path)) {
+                    return true;
+                  }
+                }
+                return false;
+              }
+              if (pathname === '/next-steps' && _session.sessionWrapper.user?.roles.length) return {
+                pathname: '/'
               };
-              return true;
+              if (!_session.sessionWrapper.user.roles.length && !containsPath(validRoutes, uri.uri)) {
+                return {
+                  pathname: '/next-steps'
+                };
+              }
+              return next();
             }
           }
         });
@@ -239,7 +459,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         **********************************/
 
         ims.set('./handlers/session', {
-          hash: 1596357318,
+          hash: 3658689721,
           creator: function (require, exports) {
             "use strict";
 
@@ -248,18 +468,63 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
             });
             exports.checkSession = checkSession;
             var _session = require("@aimpact/chat-sdk/session");
-            const PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/documents/access', '/reactive/testing'];
+            var _routing = require("@beyond-js/kernel/routing");
+            var _publicRoutes = require("../public-routes");
+            var _router = require("../router");
             const DEFAULT_ROUTE = '/auth/login';
-            async function checkSession(pathname) {
-              await _session.sessionWrapper.isReady;
-              if (!_session.sessionWrapper.logged && PUBLIC_ROUTES.includes(pathname)) return {
+            const onLogout = () => {
+              _routing.routing.replaceState({}, '', '/');
+            };
+            _session.sessionWrapper.on('logout', onLogout);
+            async function checkSession(uri, router, next) {
+              const {
                 pathname
-              };
-              if (PUBLIC_ROUTES.includes(pathname) || _session.sessionWrapper.logged) return true;
+              } = uri;
+              await _session.sessionWrapper.isReady;
+              if (!_session.sessionWrapper.logged && _publicRoutes.PUBLIC_ROUTES.includes(pathname)) {
+                return {
+                  pathname
+                };
+              }
+              if (_session.sessionWrapper.logged && _session.sessionWrapper.user?.outdated) {
+                return {
+                  pathname: '/updating'
+                };
+              }
+              if (_session.sessionWrapper.logged && _publicRoutes.AUTH_ROUTES.includes(pathname)) {
+                return {
+                  pathname: '/'
+                };
+              }
+              if (!_publicRoutes.AUTH_ROUTES.includes(pathname) && _publicRoutes.PUBLIC_ROUTES.includes(pathname) || _session.sessionWrapper.logged) {
+                const route = _router.Router.getPreviousUrl();
+                return next(route);
+              }
+              if (pathname !== '/') {
+                router.previous = uri;
+              }
               return {
                 pathname: DEFAULT_ROUTE
               };
             }
+          }
+        });
+
+        /*******************************
+        INTERNAL MODULE: ./public-routes
+        *******************************/
+
+        ims.set('./public-routes', {
+          hash: 2866617319,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.PUBLIC_ROUTES = exports.AUTH_ROUTES = void 0;
+            const PUBLIC_ROUTES = exports.PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password', '/documents/access', '/privacy', '/terms-and-conditions', '/reactive/testing'];
+            const AUTH_ROUTES = exports.AUTH_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password'];
           }
         });
 
@@ -268,7 +533,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ************************/
 
         ims.set('./router', {
-          hash: 1377662046,
+          hash: 2197094561,
           creator: function (require, exports) {
             "use strict";
 
@@ -276,6 +541,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
               value: true
             });
             exports.Router = void 0;
+            let previousURL;
+            /*bundle*/
             class Router {
               #isDefault;
               get isDefault() {
@@ -289,6 +556,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
               get data() {
                 return this.#data;
               }
+              #previous;
+              get previous() {
+                return previousURL;
+              }
+              set previous(uri) {
+                if (uri?.pathname === '/') return;
+                if (uri?.uri === this.#previous?.uri) return;
+                this.#previous = uri;
+                previousURL = uri;
+              }
+              #index;
               #handlers;
               constructor(handlers) {
                 if (!Array.isArray(handlers)) {
@@ -299,21 +577,39 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 });
                 this.#handlers = handlers;
               }
-              async validate(path) {
-                for (let handler of this.#handlers) {
-                  if (handler === undefined) continue;
-                  let response = await handler(path);
-                  if (response !== true) {
-                    return response;
-                    break;
+              async process(index, uri) {
+                const next = async newUri => {
+                  newUri = newUri || uri;
+                  if (index < this.#handlers.length - 1) {
+                    return await this.process(index + 1, newUri);
                   }
-                }
-                return {
-                  pathname: path
+                  // If there are no more handlers, just return the current URI.
+                  return newUri;
                 };
+                if (!this.#handlers.length) return uri.uri;
+                const response = await this.#handlers[index](uri, this, next);
+                // if (this.previous) return { pathname: this.previous };
+                return response;
+              }
+              async validate(uri) {
+                if (!this.#handlers.length) return uri;
+                return this.process(0, uri);
+                // return uri.uri;
+              }
+              static getPreviousUrl() {
+                return previousURL;
+              }
+              static getAndCleanPreviousUrl() {
+                const url = previousURL;
+                previousURL = undefined;
+                return url;
+              }
+              static cleanPreviousUrl() {
+                previousURL = undefined;
               }
             }
             exports.Router = Router;
+            globalThis.Router = Router;
           }
         });
 
@@ -322,23 +618,51 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         *************************/
 
         ims.set('./routing', {
-          hash: 1950431254,
+          hash: 228018459,
           creator: function (require, exports) {
             "use strict";
 
             var _routing = require("@beyond-js/kernel/routing");
-            var _router = require("./router");
+            var _policies = require("./handlers/policies");
+            var _roles = require("./handlers/roles");
             var _session = require("./handlers/session");
-            var _gclassroom = require("./handlers/gclassroom");
-            const router = new _router.Router([_session.checkSession, _gclassroom.isGclassroomAuthorized]);
+            var _router = require("./router");
+            var _session2 = require("@aimpact/chat-sdk/session");
+            const handlers = [_session.checkSession, _policies.checkPolicies, _roles.checkRoles];
+            // const handlers = [checkSession];
+            const /*bundle*/router = new _router.Router(handlers);
+            globalThis.router = router;
+            /**
+             * The redirect function must returns
+             * @param uri
+             * @returns
+             */
             _routing.routing.redirect = async function redirect(uri) {
-              const response = await router.validate(uri.pathname);
-              return response.pathname;
+              try {
+                const onLogout = () => {
+                  _routing.routing.replaceState({}, '', '/');
+                  router.previous = undefined;
+                };
+                _session2.sessionWrapper.on('logout', onLogout);
+                const response = await router.validate(uri);
+                return response.pathname;
+              } catch (e) {
+                console.error(e);
+                return '/error-500';
+              }
+            };
+            _routing.routing.missing = async function redirect() {
+              return 'app-missing-page';
             };
           }
         });
+        exports.descriptor = [{
+          "im": "./router",
+          "from": "Router",
+          "name": "Router"
+        }];
         return {
-          dependencies: ['@aimpact/ailearn-app/model/gclassroom', '@aimpact/chat-sdk/session', '@beyond-js/kernel/routing']
+          dependencies: ['@aimpact/ailearn-app/model/wrapper', '@aimpact/chat-sdk/session', '@beyond-js/kernel/routing']
         };
       }]);
 
@@ -348,47 +672,82 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
 
       bundles.push([{
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@1.0.0/initialize-app",
-          "multibundle": true
+          "vspecifier": "@aimpact/ailearn-app@0.2.1/initialize-app"
         },
         "type": "start"
       }, function (ims, exports) {
         const bimport = specifier => {
-          const dependencies = new Map([["@aimpact/chat-api", "1.0.1"], ["@aimpact/chat", "1.0.1"], ["@aimpact/chat-sdk", "1.0.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", "1.0.0"], ["@bgroup/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.6"], ["pragmate-ui", "0.0.37"], ["@beyond-js/backend", "0.1.8"], ["@beyond-js/events", "0.0.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.0.1"], ["chart.js", "4.4.0"], ["dayjs", "1.11.9"], ["dexie", "3.2.4"], ["dompurify", "3.0.5"], ["firebase", "10.1.0"], ["firebase-admin", "11.10.1"], ["highlight.js", "11.8.0"], ["marked", "5.1.2"], ["marked-highlight", "2.0.1"], ["marked-mangle", "1.1.0"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["socket.io-client", "4.7.2"], ["swiper", "8.4.7"], ["tippy.js", "6.3.7"], ["@types/react", "18.2.18"], ["@types/react-dom", "18.2.7"], ["@aimpact/ailearn-app", "1.0.0"], ["@aimpact/ailearn-app", "1.0.0"]]);
+          const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.6"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.2.1"], ["@aimpact/ailearn-app", "0.2.1"]]);
           return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
         };
-        /***********************
-        INTERNAL MODULE: ./icons
-        ***********************/
+        /****************************
+        INTERNAL MODULE: ./extensions
+        ****************************/
 
-        ims.set('./icons', {
-          hash: 2477701644,
+        ims.set('./extensions', {
+          hash: 2049006555,
+          creator: function (require, exports) {
+            // import { extensions } from '@aimpact/chat/extensions';
+            // export function registerExtensions() {
+            // 	const register = extensions.register.bind(extensions);
+            // 	// register('chat-intro', async metadata => {
+            // 	// 	if (!metadata.activity && !metadata?.lesson && !metadata?.topic) return;
+            // 	// 	return {
+            // 	// 		control: 'assignment-intro',
+            // 	// 		metadata: {
+            // 	// 			avoidChat: false
+            // 	// 		}
+            // 	// 	};
+            // 	// });
+            // 	register('app-menu-icon', () => {
+            // 		return {
+            // 			type: 'img',
+            // 			src: '/assets/favicon.png'
+            // 		};
+            // 	});
+            // }
+            "use strict";
+          }
+        });
+
+        /*******************************
+        INTERNAL MODULE: ./icons/profile
+        *******************************/
+
+        ims.set('./icons/profile', {
+          hash: 2038903291,
           creator: function (require, exports) {
             "use strict";
 
             Object.defineProperty(exports, "__esModule", {
               value: true
             });
-            exports.GoogleClassRoom = void 0;
-            const GoogleClassRoom = {
-              icon: `<path style="fill:#FFC107;" d="M41,42H7c-2.206,0-4-1.794-4-4V10c0-2.206,1.794-4,4-4h34c2.206,0,4,1.794,4,4v28
-	C45,40.206,43.206,42,41,42z"/>
-<rect x="7" y="10" style="fill:#388E3C;" width="34" height="28"/>
-<rect x="28" y="36" style="fill:#FFFFFF;" width="8" height="2"/>
-<circle style="fill:#FFFFFF;" cx="24" cy="20" r="3"/>
-<circle style="fill:#A5D6A7;" cx="16" cy="23" r="2"/>
-<rect x="7" y="10" style="fill:#2E7D32;" width="34" height="2"/>
-<polygon style="fill:#FFAB00;" points="36,38 28,38 32,42 40,42 "/>
-<circle style="fill:#A5D6A7;" cx="32" cy="23" r="2"/>
-<path style="fill:#A5D6A7;" d="M37,28.688c0-0.445-0.163-0.874-0.468-1.199C35.839,26.75,34.363,26,32,26s-3.839,0.75-4.532,1.489
-	C27.163,27.814,27,28.242,27,28.688V30h10V28.688z"/>
-<path style="fill:#A5D6A7;" d="M21,28.688c0-0.445-0.163-0.874-0.468-1.199C19.839,26.75,18.363,26,16,26s-3.839,0.75-4.532,1.489
-	C11.163,27.814,11,28.242,11,28.688V30h10V28.688z"/>
-<path style="fill:#FFFFFF;" d="M30,27.742c0-0.534-0.196-1.048-0.562-1.438C28.607,25.417,26.835,24,24,24s-4.607,1.417-5.438,2.303
-	C18.196,26.693,18,27.207,18,27.742V30h12V27.742z"/>`,
-              viewBox: '0 0 48 48'
+            exports.ProfileIcon = void 0;
+            var _react = require("react");
+            var _icons = require("pragmate-ui/icons");
+            var _session = require("@aimpact/chat-sdk/session");
+            var _image = require("pragmate-ui/image");
+            /* bundle */
+            const ProfileIcon = ({
+              onClick
+            }) => {
+              const [loadError, setLoadError] = _react.default.useState(false);
+              if (!_session.sessionWrapper.user) return;
+              const userProps = _session.sessionWrapper.user.getProperties();
+              const handleLoadError = () => setLoadError(true);
+              return _react.default.createElement("div", {
+                className: "aside-item",
+                onClick: onClick
+              }, !loadError ? _react.default.createElement(_image.Image, {
+                alt: "user image profile",
+                src: userProps.photoURL,
+                onError: handleLoadError
+              }) : _react.default.createElement(_icons.Icon, {
+                className: "lg",
+                icon: 'user'
+              }));
             };
-            exports.GoogleClassRoom = GoogleClassRoom;
+            exports.ProfileIcon = ProfileIcon;
           }
         });
 
@@ -397,85 +756,81 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ***********************/
 
         ims.set('./index', {
-          hash: 150951134,
+          hash: 1018057204,
           creator: function (require, exports) {
             "use strict";
 
-            var _initialize = require("@aimpact/chat-sdk/initialize");
-            var _extensions = require("@aimpact/chat/extensions");
-            var _gclassroom = require("@aimpact/ailearn-app/model/gclassroom");
-            var _manager = require("@aimpact/chat/sidebar/manager");
-            var _render = require("@beyond-js/widgets/render");
-            var _icons = require("./icons");
-            var _texts = require("@beyond-js/kernel/texts");
-            var _beyond_context = require("beyond_context");
-            var _core = require("@beyond-js/kernel/core");
-            const promise = new _core.PendingPromise();
-            const textsModel = new _texts.CurrentTexts(_beyond_context.module.specifier);
-            //set dyslexia mode
-            const dyslexiaMode = localStorage.getItem('aimpact.accessibility.mode') ? localStorage.getItem('aimpact.accessibility.mode') : 'normal';
-            const container = document.querySelector('html');
-            container.setAttribute('data-accessibility-mode', dyslexiaMode);
-            _render.widgets.attributes.add('data-accessibility-mode', dyslexiaMode);
-            //---------------------------
-            const listener = () => {
-              if (!textsModel.ready) return;
-              promise.resolve();
-            };
-            textsModel.on('change', listener);
-            listener();
-            (async () => {
-              registerExtensions();
-              await (0, _initialize.initDB)();
-              await _gclassroom.gclassroom.isReady;
-              await promise;
-              const texts = textsModel.value;
-              const appModules = [{
-                id: 'chat',
-                name: texts.chat,
-                href: 'chat',
-                icon: 'chat',
-                Explorer: 'chat-explorer-view'
-              }, {
-                name: texts.documents,
-                href: 'documents',
-                idhref: 'documents',
-                icon: 'doc'
-              }, {
-                id: 'lessons',
-                name: texts.lessons,
-                href: 'lessons/list',
-                icon: 'class'
-              }, {
-                id: 'courses',
-                icon: _icons.GoogleClassRoom,
-                name: texts.google,
-                Explorer: 'ailearn-gclassroom-explorer'
-              }];
-              _manager.SidebarManager.register(appModules);
-            })();
-            function registerExtensions() {
-              const register = _extensions.extensions.register.bind(_extensions.extensions);
-              register('chat-intro', async metadata => {
-                if (!metadata?.lesson && !metadata?.topic) return;
-                return {
-                  control: 'session-intro',
-                  metadata: {
-                    avoidChat: metadata.lesson && !metadata?.topic
-                  }
-                };
-              });
-              register('app-menu-icon', () => {
-                return {
-                  type: 'img',
-                  src: '/assets/favicon.png'
-                };
-              });
-            }
+            var _startup = require("./startup");
+            globalThis.localStorage?.setItem('chat.app.user.default.profile', '/assets/rvd-profile-blue.png');
+            _startup.Startup.setup();
           }
         });
+
+        /*************************
+        INTERNAL MODULE: ./startup
+        *************************/
+
+        ims.set('./startup', {
+          hash: 2790733772,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.Startup = void 0;
+            var _model = require("@beyond-js/reactive/model");
+            var _render = require("@beyond-js/widgets/render");
+            var _gclassroom = require("@aimpact/ailearn-app/model/gclassroom");
+            var _session = require("@aimpact/chat-sdk/session");
+            var _core = require("@aimpact/ailearn-sdk/core");
+            var _config = require("@aimpact/ailearn-app/config");
+            var _startup = require("@aimpact/chat-sdk/startup");
+            class Startup extends _model.ReactiveModel {
+              constructor() {
+                super();
+                this.#start();
+                // SDKSettings.userModel = User;
+              }
+              #initSDK = async () => {
+                //@ts-ignore
+                const {
+                  environment
+                } = _config.default;
+                await _startup.sdkConfig.initialize({
+                  environment,
+                  userModel: _core.User
+                });
+              };
+              #start = async () => {
+                await this.#initSDK();
+                const promises = [_gclassroom.gclassroom.isReady, _session.sessionWrapper.isReady];
+                await Promise.all(promises);
+                this.checkMode();
+                // registerExtensions();
+              };
+              checkMode() {
+                const dyslexiaMode = localStorage.getItem('aimpact.accessibility.mode') ? localStorage.getItem('aimpact.accessibility.mode') : 'normal';
+                const container = document.querySelector('html');
+                if (container) {
+                  container.setAttribute('data-accessibility-mode', dyslexiaMode);
+                  _render.widgets.attributes.add('data-accessibility-mode', dyslexiaMode);
+                }
+              }
+              static setup() {
+                const instance = new Startup();
+              }
+            }
+            exports.Startup = Startup;
+          }
+        });
+        exports.descriptor = [{
+          "im": "./icons/profile",
+          "from": "ProfileIcon",
+          "name": "ProfileIcon"
+        }];
         return {
-          dependencies: ['@aimpact/chat-sdk/initialize', '@aimpact/chat/extensions', '@aimpact/ailearn-app/model/gclassroom', '@aimpact/chat/sidebar/manager', '@beyond-js/widgets/render', '@beyond-js/kernel/texts', '@beyond-js/kernel/core']
+          dependencies: ['react', 'pragmate-ui/icons', '@aimpact/chat-sdk/session', 'pragmate-ui/image', '@beyond-js/reactive/model', '@beyond-js/widgets/render', '@aimpact/ailearn-app/model/gclassroom', '@aimpact/ailearn-sdk/core', '@aimpact/ailearn-app/config', '@aimpact/chat-sdk/startup']
         };
       }]);
       __beyond_transversal.initialise(bundles);
