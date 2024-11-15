@@ -11,13 +11,13 @@ System.register([], function (_export, _context) {
           "default": "en",
           "supported": ["en", "es"]
         },
-        "environment": "production",
+        "environment": "testing",
         "global.css": true,
         "params": {
-          "baseUrl": "https://app.rvd.ai",
+          "baseUrl": "https://test.app.rvd.ai",
           "apis": {
-            "ailearn": "https://ailearn.api.aimpact.partners",
-            "chat": "https://agents.api.aimpact.partners"
+            "ailearn": "https://test.ailearn.api.aimpact.partners",
+            "chat": "https://test.agents.api.aimpact.partners"
           }
         },
         "ssr": {},
