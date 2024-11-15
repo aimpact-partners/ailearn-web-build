@@ -4,9 +4,9 @@ System.register([], function (a, e) {
 		execute: function () {
 			a('default', {
 				package: '@aimpact/ailearn-app',
-				version: '0.2.1-test.11',
+				version: '0.2.1',
 				languages: { default: 'en', supported: ['en', 'es', 'pt'] },
-				environment: 'testing',
+				environment: 'production',
 				'global.css': !0,
 				params: {
 					config: { system: !1 },
@@ -19,8 +19,8 @@ System.register([], function (a, e) {
 					CHAT_API_SERVER: 'https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload',
 					beta: !1,
 					elevenlabs: { key: 'ebe05ca0a4d9aafb4024d0666471a0c7', id: 'pNInz6obpgDQGcFmaJgB' },
-					baseUrl: 'https://test.app.rvd.ai',
-					apis: { ailearn: 'https://test.ailearn.api.aimpact.partners' }
+					baseUrl: 'https://app.rvd.ai',
+					apis: { ailearn: 'https://ailearn.api.aimpact.partners' }
 				},
 				ssr: {},
 				backend: {}
