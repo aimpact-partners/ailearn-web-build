@@ -29,12 +29,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4151275766,
+        hash: 1873526111,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
               "summary": "Summary",
-              "objectives": "Progreso",
+              "objectives": "Progress",
               "noSummary": "This activity has no summary or objectives",
               "progress": "Progress",
               "type": "Activity type",
@@ -61,7 +61,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "multipleChoice": {
                 "participation": {
                   "title": "Participation",
-                  "detail": "The student has answered <span class='number-data'>{correct}</span> corrects of <span class='number-data'>{total}</span> questions."
+                  "detail": "Correct answers"
                 },
                 "correct": "Correct Answers",
                 "wrong": "Incorrect Answers"
@@ -114,6 +114,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "subtype": "Activity subtype",
             "owner": "Administrator",
             "creator": "Creator",
+            "addCredits": {
+              "action": "Request credits",
+              "title": "Do you want to request credits to the student?",
+              "subtitle": "Credits allow the student to interact with the activity's AI"
+            },
             "actions": {
               "wall": "Wall"
             },

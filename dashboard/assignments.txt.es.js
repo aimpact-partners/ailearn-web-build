@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1064435034,
+        hash: 1639875547,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -61,7 +61,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "multipleChoice": {
                 "participation": {
                   "title": "Participación",
-                  "detail": "El estudiante ha contestado <span class='number-data'>{correct}</span> correctas de <span class='number-data'>{total}</span> preguntas."
+                  "detail": "Respuestas correctas"
                 },
                 "correct": "Respuestas Correctas",
                 "wrong": "Respuestas Incorrectas"
@@ -114,6 +114,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "alerts": "Alertas",
             "type": "Tipo de actividad",
             "subtype": "Subtipo de actividad",
+            "addCredits": {
+              "action": "Solicitar créditos",
+              "title": "¿Deseas solicitar creditos al alumno?",
+              "subtitle": "Los creditos permiten que el alumno interactúe con la IA de la actividad"
+            },
             "actions": {
               "wall": "Muro"
             },

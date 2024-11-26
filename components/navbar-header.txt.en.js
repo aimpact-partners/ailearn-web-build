@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2748524736,
+        hash: 3008738102,
         creator: function (require, exports) {
           exports.txt = {
             "menu": {
@@ -50,7 +50,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "light": "Change to light theme"
               }
             },
-            "newVersion": "Discover the new features of RVD.ai"
+            "newVersion": {
+              "xs": "Meet the new features of RVD.ai",
+              "desktop": {
+                "label": "Know all the improvements we made within our platform by following ",
+                "link": "this link",
+                "title": "You are browsing a new version of RVD.AI Rivadavia."
+              }
+            }
           };
         }
       });
