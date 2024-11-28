@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/kernel@0.1.9/core", "wavesurfer.js@7.8.5", "pragmate-ui@1.0.0-beta.6/icons"], function (_export, _context2) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/kernel@0.1.9/core", "wavesurfer.js@7.8.5", "pragmate-ui@1.0.0-beta.7/icons"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, AudioPlayer, __beyond_pkg, hmr;
@@ -14,8 +14,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_3 = _beyondJsKernel019Core;
     }, function (_wavesurferJs) {
       dependency_4 = _wavesurferJs;
-    }, function (_pragmateUi100Beta6Icons) {
-      dependency_5 = _pragmateUi100Beta6Icons;
+    }, function (_pragmateUi100Beta7Icons) {
+      dependency_5 = _pragmateUi100Beta7Icons;
     }],
     execute: function () {
       bimport = specifier => {
