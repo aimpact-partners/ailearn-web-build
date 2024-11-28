@@ -477,7 +477,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         **********************************/
 
         ims.set('./handlers/session', {
-          hash: 3658689721,
+          hash: 40446181,
           creator: function (require, exports) {
             "use strict";
 
@@ -499,6 +499,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 pathname
               } = uri;
               await _session.sessionWrapper.isReady;
+              console.log(200, _session.sessionWrapper.isReactive, _session.sessionWrapper.logged);
               if (!_session.sessionWrapper.logged && _publicRoutes.PUBLIC_ROUTES.includes(pathname)) {
                 return {
                   pathname
