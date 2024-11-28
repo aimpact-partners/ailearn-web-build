@@ -90,12 +90,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         "route": "/chat/sdk/playable"
       }, {
         "name": "coming-soon",
-        "vspecifier": "pragmate-ui@1.0.0-beta.6/coming-soon",
+        "vspecifier": "pragmate-ui@1.0.0-beta.7/coming-soon",
         "is": "page",
         "route": "/components/coming-soon"
       }, {
         "name": "pui-template-view-widget",
-        "vspecifier": "pragmate-ui@1.0.0-beta.6/pui/template/palette"
+        "vspecifier": "pragmate-ui@1.0.0-beta.7/pui/template/palette"
       }, {
         "name": "app-ailearn-components-page",
         "vspecifier": "@aimpact/ailearn-app@0.2.10/components/ui/page",
