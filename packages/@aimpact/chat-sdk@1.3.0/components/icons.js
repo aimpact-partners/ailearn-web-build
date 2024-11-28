@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@1.0.0-beta.6/icons", "pragmate-ui@1.0.0-beta.6/components"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@1.0.0-beta.7/icons", "pragmate-ui@1.0.0-beta.7/components"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, ICONS, AppIcon, AppIconButton, AppButton, __beyond_pkg, hmr;
@@ -13,10 +13,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_react2) {
       dependency_1 = _react2;
-    }, function (_pragmateUi100Beta6Icons) {
-      dependency_2 = _pragmateUi100Beta6Icons;
-    }, function (_pragmateUi100Beta6Components) {
-      dependency_3 = _pragmateUi100Beta6Components;
+    }, function (_pragmateUi100Beta7Icons) {
+      dependency_2 = _pragmateUi100Beta7Icons;
+    }, function (_pragmateUi100Beta7Components) {
+      dependency_3 = _pragmateUi100Beta7Components;
     }],
     execute: function () {
       bimport = specifier => {

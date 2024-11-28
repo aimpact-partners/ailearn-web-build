@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "pragmate-ui",
-        "version": "1.0.0-beta.6",
+        "version": "1.0.0-beta.7",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]

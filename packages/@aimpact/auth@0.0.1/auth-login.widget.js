@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "react@18.2.0", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat-sdk@1.3.0/session", "pragmate-ui@1.0.0-beta.6/alert", "pragmate-ui@1.0.0-beta.6/components", "pragmate-ui@1.0.0-beta.6/image", "@beyond-js/react-18-widgets@1.1.2/hooks", "framer-motion@10.18.0", "@aimpact/auth@0.0.1/components", "@beyond-js/kernel@0.1.9/core", "pragmate-ui@1.0.0-beta.6/form"], function (_export, _context) {
+System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "react@18.2.0", "@beyond-js/kernel@0.1.9/routing", "@aimpact/chat-sdk@1.3.0/session", "pragmate-ui@1.0.0-beta.7/alert", "pragmate-ui@1.0.0-beta.7/components", "pragmate-ui@1.0.0-beta.7/image", "@beyond-js/react-18-widgets@1.1.2/hooks", "framer-motion@10.18.0", "@aimpact/auth@0.0.1/components", "@beyond-js/kernel@0.1.9/core", "pragmate-ui@1.0.0-beta.7/form"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, bimport, __Bundle, __pkg, ims, Controller, View, Languages, __beyond_pkg, hmr;
@@ -22,12 +22,12 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_5 = _beyondJsKernel019Routing;
     }, function (_aimpactChatSdk130Session) {
       dependency_6 = _aimpactChatSdk130Session;
-    }, function (_pragmateUi100Beta6Alert) {
-      dependency_7 = _pragmateUi100Beta6Alert;
-    }, function (_pragmateUi100Beta6Components) {
-      dependency_8 = _pragmateUi100Beta6Components;
-    }, function (_pragmateUi100Beta6Image) {
-      dependency_9 = _pragmateUi100Beta6Image;
+    }, function (_pragmateUi100Beta7Alert) {
+      dependency_7 = _pragmateUi100Beta7Alert;
+    }, function (_pragmateUi100Beta7Components) {
+      dependency_8 = _pragmateUi100Beta7Components;
+    }, function (_pragmateUi100Beta7Image) {
+      dependency_9 = _pragmateUi100Beta7Image;
     }, function (_beyondJsReact18Widgets112Hooks) {
       dependency_10 = _beyondJsReact18Widgets112Hooks;
     }, function (_framerMotion2) {
@@ -36,12 +36,12 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_12 = _aimpactAuth001Components;
     }, function (_beyondJsKernel019Core) {
       dependency_13 = _beyondJsKernel019Core;
-    }, function (_pragmateUi100Beta6Form) {
-      dependency_14 = _pragmateUi100Beta6Form;
+    }, function (_pragmateUi100Beta7Form) {
+      dependency_14 = _pragmateUi100Beta7Form;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/chat-sdk", "1.3.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.6"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/widgets", "1.1.0"], ["framer-motion", "11.3.21"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["socket.io-client", "4.7.3"], ["wavesurfer.js", "7.8.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.46"], ["@types/react-dom", "18.2.18"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.2.10"]]);
+        const dependencies = new Map([["@aimpact/chat-sdk", "1.3.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/widgets", "1.1.0"], ["framer-motion", "11.3.21"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["socket.io-client", "4.7.3"], ["wavesurfer.js", "7.8.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.46"], ["@types/react-dom", "18.2.18"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.2.10"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

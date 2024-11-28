@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/kernel@0.1.9/core", "pragmate-ui@1.0.0-beta.6/icons"], function (_export, _context2) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@beyond-js/kernel@0.1.9/core", "pragmate-ui@1.0.0-beta.7/icons"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, AudioPlayer, __beyond_pkg, hmr;
@@ -12,12 +12,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_2 = _react2;
     }, function (_beyondJsKernel019Core) {
       dependency_3 = _beyondJsKernel019Core;
-    }, function (_pragmateUi100Beta6Icons) {
-      dependency_4 = _pragmateUi100Beta6Icons;
+    }, function (_pragmateUi100Beta7Icons) {
+      dependency_4 = _pragmateUi100Beta7Icons;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["pragmate-ui", "1.0.0-beta.6"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/reactive", "1.1.13"], ["socket.io-client", "4.8.1"], ["@aimpact/media-manager", "1.0.0"], ["@aimpact/ailearn-app", "0.2.10"]]);
+        const dependencies = new Map([["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/reactive", "1.1.13"], ["socket.io-client", "4.8.1"], ["@aimpact/media-manager", "1.0.0"], ["@aimpact/ailearn-app", "0.2.10"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

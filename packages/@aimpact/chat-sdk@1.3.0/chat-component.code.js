@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/reactive@1.1.12/model", "@aimpact/chat-sdk@1.3.0/voice", "@aimpact/chat-sdk@1.3.0/wrapper", "@aimpact/chat-sdk@1.3.0/core", "@aimpact/chat-sdk@1.3.0/session", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core", "react@18.2.0", "pragmate-ui@1.0.0-beta.6/icons", "@beyond-js/react-18-widgets@1.1.2/hooks", "@aimpact/chat-sdk@1.3.0/messages", "pragmate-ui@1.0.0-beta.6/components", "@aimpact/chat-sdk@1.3.0/components/icons", "pragmate-ui@1.0.0-beta.6/form", "pragmate-ui@1.0.0-beta.6/modal"], function (_export, _context3) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/reactive@1.1.12/model", "@aimpact/chat-sdk@1.3.0/voice", "@aimpact/chat-sdk@1.3.0/wrapper", "@aimpact/chat-sdk@1.3.0/core", "@aimpact/chat-sdk@1.3.0/session", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core", "react@18.2.0", "pragmate-ui@1.0.0-beta.7/icons", "@beyond-js/react-18-widgets@1.1.2/hooks", "@aimpact/chat-sdk@1.3.0/messages", "pragmate-ui@1.0.0-beta.7/components", "@aimpact/chat-sdk@1.3.0/components/icons", "pragmate-ui@1.0.0-beta.7/form", "pragmate-ui@1.0.0-beta.7/modal"], function (_export, _context3) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, dependency_15, dependency_16, bimport, __Bundle, __pkg, ims, AudioManager, Recorder, Chat, AgentsChatContainer, ChatContext, useChatContext, AgentsChatPanel, AgentsChatInput, PermissionsErrorModal, RecordingButton, PermissionsModal, __beyond_pkg, hmr;
@@ -36,20 +36,20 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_8 = _beyondJsKernel019Core;
     }, function (_react2) {
       dependency_9 = _react2;
-    }, function (_pragmateUi100Beta6Icons) {
-      dependency_10 = _pragmateUi100Beta6Icons;
+    }, function (_pragmateUi100Beta7Icons) {
+      dependency_10 = _pragmateUi100Beta7Icons;
     }, function (_beyondJsReact18Widgets112Hooks) {
       dependency_11 = _beyondJsReact18Widgets112Hooks;
     }, function (_aimpactChatSdk130Messages) {
       dependency_12 = _aimpactChatSdk130Messages;
-    }, function (_pragmateUi100Beta6Components) {
-      dependency_13 = _pragmateUi100Beta6Components;
+    }, function (_pragmateUi100Beta7Components) {
+      dependency_13 = _pragmateUi100Beta7Components;
     }, function (_aimpactChatSdk130ComponentsIcons) {
       dependency_14 = _aimpactChatSdk130ComponentsIcons;
-    }, function (_pragmateUi100Beta6Form) {
-      dependency_15 = _pragmateUi100Beta6Form;
-    }, function (_pragmateUi100Beta6Modal) {
-      dependency_16 = _pragmateUi100Beta6Modal;
+    }, function (_pragmateUi100Beta7Form) {
+      dependency_15 = _pragmateUi100Beta7Form;
+    }, function (_pragmateUi100Beta7Modal) {
+      dependency_16 = _pragmateUi100Beta7Modal;
     }],
     execute: function () {
       bimport = specifier => {
