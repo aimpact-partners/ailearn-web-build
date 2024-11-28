@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3157370452,
+        hash: 2906842304,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -53,8 +53,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               }
             },
             "tabs": {
-              "analysis": "Analysis",
-              "activity": "Activity"
+              "analysis": "Activity",
+              "activity": "Content"
             },
             "assessments": {
               "quiz": "Assessment",
@@ -73,6 +73,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "audioError": "There was an error sending the audio, please try again",
               "existingAudio": "You have an audio saved, you can send it or record a new one",
               "review": "Review your presentation before sending it"
+            },
+            "analysis": {
+              "audio": "Audio",
+              "transcript": "Transcription",
+              "report": "Report"
             }
           };
         }
