@@ -633,7 +633,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       *****************************************/
 
       ims.set('./views/confirmed-request', {
-        hash: 2732617422,
+        hash: 1709254149,
         creator: function (require, exports) {
           "use strict";
 
@@ -681,7 +681,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
                 await _session.sessionWrapper.user.load();
                 _routing.routing.pushState(`/classrooms/view/${classroom.code}`);
               } catch (e) {
-                if (e.code === 250) {
+                if (e.code === 105) {
                   setError(errors['ALREADY_WAITING_CLASSROOM']);
                   return;
                 }

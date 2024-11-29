@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3740695603,
+        hash: 3001895848,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -52,9 +52,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "description": "Para activar la voz, necesitamos acceso al micrófono. Por favor, habilita el acceso en la configuración de tu navegador."
               }
             },
+            "criteria": "Assessment criteria",
+            "activity": "Activity",
             "tabs": {
               "analysis": "Activity",
               "activity": "TASK"
+            },
+            "analysis": {
+              "audio": "Audio",
+              "transcript": "Transcription",
+              "report": "Report"
             },
             "assessments": {
               "quiz": "Assessment",
@@ -65,7 +72,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "stop": "Stop",
               "send": "Send audio",
               "redo": "Do it again!",
-              "analysisTitle": "Analysis report",
               "analysis": "Report",
               "feedback": "Knowledge",
               "competencies": "Competences",
@@ -73,14 +79,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "audioError": "There was an error sending the audio, please try again",
               "existingAudio": "You have an audio saved, you can send it or record a new one",
               "review": "Review your presentation before sending it"
-            },
-            "analysis": {
-              "audio": "Audio",
-              "transcript": "Transcription",
-              "report": "Report"
-            },
-            "criteria": "Assessment criteria",
-            "activity": "Activity"
+            }
           };
         }
       });
