@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1639875547,
+        hash: 349841019,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -55,8 +55,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "pending": "Pendiente"
               },
               "spoken": {
-                "audio": "Evaluación oral grabada",
-                "feedback": "Evaluación y retroalimentación"
+                "audio": "Audio del estudiante",
+                "feedback": "Evaluación y retroalimentación",
+                "transcription": "Transcripción"
               },
               "multipleChoice": {
                 "participation": {

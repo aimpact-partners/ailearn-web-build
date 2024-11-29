@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2306953389,
+        hash: 2471372402,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -52,9 +52,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "description": "Para activar la voz, necesitamos acceso al micrófono. Por favor, habilita el acceso en la configuración de tu navegador."
               }
             },
+            "criteria": "Criterios de evaluación",
+            "activity": "Actividad",
             "tabs": {
-              "analysis": "Análisis",
-              "activity": "Actividad"
+              "analysis": "Actividad",
+              "activity": "Tarea"
+            },
+            "analysis": {
+              "audio": "Audio",
+              "transcript": "Transcripción",
+              "report": "Reporte"
             },
             "assessments": {
               "quiz": "Evaluación",
@@ -65,7 +72,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "stop": "Detener",
               "send": "Enviar audio",
               "redo": "¡Volver a intentar!",
-              "analysisTitle": "Resultado del análisis",
               "analysis": "Reporte",
               "feedback": "Conocimientos",
               "competencies": "Competencias",
