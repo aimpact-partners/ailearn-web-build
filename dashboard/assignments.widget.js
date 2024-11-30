@@ -1,1 +1,4055 @@
-System.register(["@beyond-js/widgets@1.1.0/render","@beyond-js/kernel@0.1.9/bundle","@beyond-js/kernel@0.1.9/styles","@beyond-js/react-18-widgets@1.1.2/page","@aimpact/ailearn-app@0.2.7/dashboard-layout.widget","@aimpact/ailearn-sdk@1.0.0/reactive/entities/item","@aimpact/ailearn-sdk@1.0.0/reactive/model","@aimpact/http-suite@0.0.1/api","@aimpact/ailearn-sdk@1.0.0/config","@aimpact/chat-sdk@1.3.0/session","@aimpact/ailearn-sdk@1.0.0/tracking","@beyond-js/reactive@1.1.12/entities","@aimpact/ailearn-sdk@1.0.0/core","@beyond-js/kernel@0.1.9/texts","@beyond-js/kernel@0.1.9/core","react@18.2.0","@aimpact/ailearn-app@0.2.7/components/ui","@aimpact/ailearn-app@0.2.7/components/navbar-header.code","pragmate-ui@1.0.0-beta.6/icons","@aimpact/ailearn-app@0.2.7/config","pragmate-ui@1.0.0-beta.6/empty","pragmate-ui@1.0.0-beta.6/list","@beyond-js/react-18-widgets@1.1.2/hooks","pragmate-ui@1.0.0-beta.6/components","pragmate-ui@1.0.0-beta.6/image","pragmate-ui@1.0.0-beta.6/tooltip","@aimpact/ailearn-app@0.2.7/components/icons","pragmate-ui@1.0.0-beta.6/collapsible","pragmate-ui@1.0.0-beta.6/tabs","@aimpact/chat-sdk@1.3.0/chat-component.code","pragmate-ui@1.0.0-beta.6/drawer","pragmate-ui@1.0.0-beta.6/perfect-scrollbar","pragmate-ui@1.0.0-beta.6/form"],function(i,B){var t,a,n,r,s,c,o,l,d,u,m,p,v,h,y,f,g,b,w,E,_,k,x,A,C,P,j,N,M,S,I,D,O,T,e;return i({Controller:void 0,ParticipantProvider:void 0,ActivityView:void 0,ChatActivityParticipant:void 0,MultipleChoiceActivityParticipant:void 0,SpokenActivityParticipant:void 0,EmptyCard:void 0,GeneralView:void 0,ActivityIcon:void 0,DrawerAlert:void 0,DrawerAlertItem:void 0,IconBox:void 0,View:void 0}),{setters:[function(e){t=e},function(e){a=e},function(e){n=e},function(e){r=e},function(e){s=e},function(e){c=e},function(e){o=e},function(e){l=e},function(e){d=e},function(e){u=e},function(e){m=e},function(e){p=e},function(e){v=e},function(e){h=e},function(e){y=e},function(e){f=e},function(e){g=e},function(e){b=e},function(e){w=e},function(e){E=e},function(e){_=e},function(e){k=e},function(e){x=e},function(e){A=e},function(e){C=e},function(e){P=e},function(e){j=e},function(e){N=e},function(e){M=e},function(e){S=e},function(e){I=e},function(e){D=e},function(e){O=e}],execute:function(){e=a.Bundle,(T=new e({module:{vspecifier:"@aimpact/ailearn-app@0.2.7/dashboard/assignments",multibundle:!0},type:"widget"},B.meta.url).package()).dependencies.update([["@beyond-js/widgets/render",t],["@beyond-js/kernel/styles",n],["@beyond-js/react-18-widgets/page",r],["@aimpact/ailearn-app/dashboard-layout.widget",s],["@aimpact/ailearn-sdk/reactive/entities/item",c],["@aimpact/ailearn-sdk/reactive/model",o],["@aimpact/http-suite/api",l],["@aimpact/ailearn-sdk/config",d],["@aimpact/chat-sdk/session",u],["@aimpact/ailearn-sdk/tracking",m],["@beyond-js/reactive/entities",p],["@aimpact/ailearn-sdk/core",v],["@beyond-js/kernel/texts",h],["@beyond-js/kernel/core",y],["react",f],["@aimpact/ailearn-app/components/ui",g],["@aimpact/ailearn-app/components/navbar-header.code",b],["pragmate-ui/icons",w],["@aimpact/ailearn-app/config",E],["pragmate-ui/empty",_],["pragmate-ui/list",k],["@beyond-js/react-18-widgets/hooks",x],["pragmate-ui/components",A],["pragmate-ui/image",C],["pragmate-ui/tooltip",P],["@aimpact/ailearn-app/components/icons",j],["pragmate-ui/collapsible",N],["pragmate-ui/tabs",M],["@aimpact/chat-sdk/chat-component.code",S],["pragmate-ui/drawer",I],["pragmate-ui/perfect-scrollbar",D],["pragmate-ui/form",O]]),brequire("@beyond-js/widgets/render").widgets.register([{name:"ailearn-dashboard-assignments",vspecifier:"@aimpact/ailearn-app@0.2.7/dashboard/assignments.widget",is:"page",route:"/dashboard/${id}",layout:"dashboard-layout"}]),brequire("@beyond-js/kernel/styles").styles.register("@aimpact/ailearn-app@0.2.7/dashboard/assignments.widget"),(e=new Map).set("./controller",{hash:3950531445,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Controller=void 0;var a=e("@beyond-js/react-18-widgets/page"),i=e("./store"),n=e("./views"),r=e("@aimpact/ailearn-app/dashboard-layout.widget");class s extends a.PageReactWidgetController{#store;createStore(){return this.#store=new i.StoreManager,this.#store}get Widget(){return n.View}show(){r.LayoutBroker.removeOverlay(),this.uri.vars.get("id")&&this.#store.load(this.uri.vars.get("id"))}hide(){this.#store.clear()}}t.Controller=s}}),e.set("./model/DATA",{hash:1777830926,creator:function(e,t){}}),e.set("./model/activities/activities",{hash:1459040242,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.AssignmentActivities=void 0;var i=e("./activity");t.AssignmentActivities=class{#items=[];#map=new Map;get items(){return this.#items}#dashboard;get dashboard(){return this.#dashboard}constructor(e,a){this.#dashboard=e,a.order.forEach(e=>{var t=new i.AssignmentActivity(a.items[e]);this.#map.set(e,t),this.#items.push(t)})}has(e){return this.#map.has(e)}get(e){return this.#map.get(e)}}}}),e.set("./model/activities/activity",{hash:3916055062,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.AssignmentActivity=void 0,e=e("@aimpact/ailearn-sdk/reactive/entities/item");class a extends e.Item{#participantsMap=new Map;#participants=[];get participants(){return this.#participants}constructor(e){super({entity:"assignment-activity",...e,properties:["duration","module","description","resources","language","id","type","title","picture","objective"]})}addParticipant(e){this.#participants.push(e),this.#participantsMap.set(e.id,e)}getParticipant(e){return this.#participantsMap.get(e)}hasParticipant(e){return this.#participantsMap.has(e)}}t.AssignmentActivity=a}}),e.set("./model/index",{hash:1916910585,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Dashboard=void 0;var a=e("@aimpact/ailearn-sdk/reactive/model"),i=e("@aimpact/http-suite/api"),n=e("@aimpact/ailearn-sdk/config"),r=e("@aimpact/chat-sdk/session"),s=e("./participants/participants"),c=e("./activities/activities");class o extends a.ReactiveModel{#api;#participants;get participants(){return this.#participants}#module;get module(){return this.#module}#classroom;get classroom(){return this.#classroom}#activities;get activities(){return this.#activities}#error=null;get error(){return this.#error}get totalParticipants(){return Object.keys(this.participants.items).length}get totalMultiple(){return this.participants.items.reduce((e,t)=>e,0)}get totalSpoken(){return this.participants.items.reduce((e,t)=>e,0)}constructor(){super(),this.#api=new i.Api(n.default.params.apis.ailearn),this.#participants=new s.Participants(this),this.reactiveProps(["id","selection","spoken","found","assessment"]),globalThis.model=this}async load(e){var t,a,i,n;if(this.#api.bearer(r.sessionWrapper.user.token),!(e=await this.#api.get(`/assignments/${e}/dashboard`)).status)throw"object"==typeof e.error&&(this.#error=e.error),new Error(e.error?.text);0===Object.keys(e.data).length?this.found=!1:({module:e,participants:t,activities:a,classroom:i,id:n}=e.data,this.#activities=new c.AssignmentActivities(this,a),this.#participants.load(t,this.#activities),(globalThis.model=this).#module=e,this.#classroom=i,this.id=n,this.found=!0),this.ready=!0}}t.Dashboard=o}}),e.set("./model/participants/activities/activity",{hash:3209396798,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ParticipantActivity=void 0,e=e("@aimpact/ailearn-sdk/reactive/entities/item");class a extends e.Item{constructor({properties:e=[],...t}){super({...t,entity:"participant-activity",properties:["alerts","messages","progress","activity","synthesis","data","counters","responses",...e]})}}t.ParticipantActivity=a}}),e.set("./model/participants/activities/collection",{hash:3893251696,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ParticipantActivities=void 0;var n=e("./activity"),r=e("./multiple-choice"),s=e("./spoken");t.ParticipantActivities=class{#items=[];#map=new Map;#parent;get parent(){return this.#parent}get items(){return[...this.#map.values()]}constructor(i,n){this.#items=n,Object.keys(n).map(e=>{var t=i.dashboard.activities.get(e),a=this.getActivityInstance(t,n[e]?.data);return t.addParticipant(i),this.#parent=i,this.#map.set(e,a),a}),this.update=this.update.bind(this)}has(e){return this.#map.has(e)}get(e){return this.#map.get(e)}getActivityInstance(e,t={}){var a,i={spoken:s.ParticipantSpokenActivity,detault:n.ParticipantActivity,"multiple-choice":r.ParticipantMultipleChoiceActivity};return this.has(e.id)?this.get(e.id):(a={},"spoken"===e.type&&(a.properties=Object.keys(t)),new(i[e.type]||i.detault)({activity:e,...a,...t}))}update(a){Object.keys(a).forEach(e=>{var t=a[e];t.data&&(this.has(t.id),e=this.parent.dashboard.activities.get(e),(e=this.getActivityInstance(e,t.data)).set(t.data),this.#map.set(t.id,e))})}}}}),e.set("./model/participants/activities/multiple-choice",{hash:1407264248,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ParticipantMultipleChoiceActivity=void 0,e=e("@aimpact/ailearn-sdk/reactive/entities/item");class a extends e.Item{#objectives=[];get objectives(){return this.#objectives}constructor({properties:e=[],...t}){super({...t,entity:"participant-activity",properties:["alerts","activity","counters","responses",...e]}),this.#objectives=e}}t.ParticipantMultipleChoiceActivity=a}}),e.set("./model/participants/activities/spoken",{hash:2460120244,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ParticipantSpokenActivity=void 0,e=e("@aimpact/ailearn-sdk/reactive/entities/item");class a extends e.Item{#objectives=[];get objectives(){return this.#objectives}get icons(){return this.#objectives.map(e=>this[e].icon)}get totalPoints(){return this.#objectives.reduce((e,t)=>e+this[t].points,0)}constructor({properties:e=[],...t}){super({...t,entity:"participant-activity",properties:["alerts","activity",...e]}),this.#objectives=e}}t.ParticipantSpokenActivity=a}}),e.set("./model/participants/participant",{hash:3964490113,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Participant=void 0;var a=e("@aimpact/ailearn-sdk/reactive/entities/item"),i=e("./activities/collection"),n=e("@aimpact/ailearn-sdk/tracking"),r=e("./provider");class s extends a.Item{#activities;get activities(){return this.#activities}#tracking;get tracking(){return this.#tracking}#dashboard;get dashboard(){return this.#dashboard}get assignmentId(){return this.#dashboard.id}constructor(e,t){super({entity:"participant",provider:r.ParticipantProvider,...t,properties:["user","id"]}),this.#dashboard=e,this.#activities=new i.ParticipantActivities(this,t.activities),this.#tracking=n.Tracking.get({assignmentId:e.id,userId:this.user.id,chat:!0})}async load(){var{status:e,data:t}=await super.load({userId:this.user.id});if(!e)throw new Error("Error loading participant");this.activities.update(t.activities?.items)}}t.Participant=s}}),e.set("./model/participants/participants",{hash:439197960,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Participants=void 0;var i=e("./participant");t.Participants=class{#map=new Map;#items=[];get items(){return this.#items}#dashboard;get dashboard(){return this.#dashboard}constructor(e){this.#dashboard=e}load(a,e){var t=Object.keys(a).map(e=>{var t=new i.Participant(this.dashboard,{id:e,...a[e]});return this.#items.push(t),this.#map.set(e,t),t});this.#items=t.sort((e,t)=>e.user.name.localeCompare(t.user.name))}has(e){return this.#map.has(e)}get(e){return this.#map.get(e)}}}}),e.set("./model/participants/provider",{hash:605781678,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ParticipantProvider=void 0;var a=e("@aimpact/ailearn-sdk/config"),i=e("@aimpact/http-suite/api"),n=e("@aimpact/chat-sdk/session");class r{#api;#parent;constructor(e){this.#api=new i.Api(a.default.params.apis.ailearn),this.#parent=e}load=async e=>{this.#api.bearer(n.sessionWrapper.user.token);var{status:t,data:a,error:i}=await this.#api.get(`/assignments/${this.#parent.assignmentId}/tracking`,e);if(t)return e?.progress&&await this.#parent.processLoad(a),{status:t,data:a,error:i};throw new Error("error loading class")}}t.ParticipantProvider=r}}),e.set("./model/provider",{hash:113886854,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Provider=void 0;var a=e("@aimpact/http-suite/api"),i=e("@aimpact/ailearn-sdk/config"),n=e("@aimpact/chat-sdk/session");t.Provider=class{#api;#parent;constructor(e){this.#api=new a.Api(i.default.params.apis.ailearn),this.#parent=e}async load(e){return this.#api.bearer(n.sessionWrapper.user.token),this.#api.get(`/assignments/${e}/dashboard`)}}}}),e.set("./model/types",{hash:1709577995,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0})}}),e.set("./store",{hash:2293543973,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.StoreManager=void 0;var a=e("@aimpact/ailearn-app/dashboard-layout.widget"),i=e("./model"),n=e("@aimpact/ailearn-sdk/reactive/model"),r=e("@beyond-js/kernel/texts"),s=e("beyond_context"),c=e("@aimpact/ailearn-sdk/tracking"),o=e("@beyond-js/kernel/core");class l extends n.ReactiveModel{isStore;#tracking;#activitySelected;get activitySelected(){return this.#activitySelected}get currentTracking(){return this.#tracking}#session;get session(){return this.#session}#view;get view(){return this.#view}set view(e){this.#view=e}#assignmentId;get assignmentId(){return this.#assignmentId}get assignment(){return this.#session}#model;get model(){return this.#model}#texts=new r.CurrentTexts(s.module.specifier);get texts(){return this.#texts?.value}#filter;get participants(){return this.#filter?this.#model.participants.items.filter(e=>e.user.name.toLowerCase().includes(this.#filter.toLowerCase())):this.#model.participants.items}get ready(){return super.ready&&this.#texts.ready}#users=new Map;#currentTracking;#trackings=new Map;get users(){return this.#users}filter(e){this.#filter=e,this.triggerEvent("change")}constructor(){super(),this.#texts.on("change",this.triggerEvent),a.LayoutBroker.setModel(this),this.#model=new i.Dashboard,globalThis.store=this}async load(e){try{this.fetching=!0,this.#assignmentId=e,await this.#model.load(e),globalThis.m=this.#model}catch(e){console.log(e)}finally{super.ready=!0,this.fetching=!1}}loadUserTracking(e){try{return this.#trackings.has(e)?this.#trackings.get(e):(this.#currentTracking=c.Tracking.get({assignmentId:this.#assignmentId,userId:e,chat:!0}),this.#trackings.set(e,this.#currentTracking),this.#currentTracking.load({id:this.#assignmentId,userId:e}),this.triggerEvent(),this.#currentTracking)}catch(e){console.error(e)}}refresh=async()=>{try{this.fetching=!0,await this.model.load(this.#assignmentId),this.trigger("data.updated")}catch(e){console.error(e)}finally{this.fetching=!1}};refreshDrawer=async({userId:t,activity:a}={})=>{try{let e=new o.PendingPromise;return this.fetching=!0,this.trigger("fetching.drawer"),await this.model.load(this.#assignmentId),t&&await(await this.loadUserTracking(t)).load({id:this.#assignmentId,userId:t}),a&&a.chatModel&&a.chatModel.loadAll({id:a.chatModel.id}),globalThis.setTimeout(()=>{e.resolve()},1e3),e}catch(e){console.error(e)}finally{this.fetching=!1,this.trigger("fetching.drawer")}};refreshTracking=async e=>{this.#trackings.get(e).load({id:this.#assignmentId,userId:e})};clear(){a.LayoutBroker.clear()}selectActivity(e){this.#activitySelected=e,this.view="activity",this.trigger("change")}}t.StoreManager=l}}),e.set("./views/404",{hash:2398831463,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.NotFound=function({store:e}){return 403!==e.model.error?.code?a.default.createElement(a.default.Fragment,null,a.default.createElement("app-missing",null)):a.default.createElement("app-not-allowed",null)};var a=e("react")}}),e.set("./views/activities/view/empty",{hash:1827167088,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.EmptyMaterial=function({message:e}){var t=(0,n.useDashboardContext)().texts;return e=e??t.activities.empty,i.default.createElement(a.EmptyCard,{icon:"info",text:e,className:"empty-section__container"})};var a=e("@aimpact/ailearn-app/components/ui"),i=e("react"),n=e("../../context")}}),e.set("./views/activities/view/index",{hash:2153615600,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ActivityView=function({}){let e=(0,n.useDashboardContext)().store,t=e.activitySelected,[,a]=i.default.useState({});return(0,l.useBinder)([e],()=>a(e.activitySelected),"data.updated"),i.default.createElement(i.default.Fragment,null,i.default.createElement("section",{className:"activity-header bottom-rounded bg-activity--"+t.type},i.default.createElement("div",null,i.default.createElement("h4",null,t.title," ")),i.default.createElement("div",{className:"close-icon"},i.default.createElement(r.IconButton,{icon:"close",title:"Close",onClick:()=>e.selectActivity(void 0),className:"circle"}))),i.default.createElement(d.ConditionalContainer,{condition:0<t.participants.length,ternary:!0,options:{true:i.default.createElement(s.List,{className:"activity-users__list",items:t.participants,control:c.ActivityParticipant,specs:{activity:t}}),false:i.default.createElement(o.Empty,{text:"No participants found"})}}))};var i=e("react"),n=e("../../context"),r=e("pragmate-ui/icons"),s=e("pragmate-ui/list"),c=e("./participant"),o=e("pragmate-ui/empty"),l=e("@beyond-js/react-18-widgets/hooks"),d=e("pragmate-ui/components")}}),e.set("./views/activities/view/participant/chat",{hash:2901626751,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ChatActivityParticipant=function({item:t}){let{store:a,setShowDrawer:i,texts:e}=(0,l.useDashboardContext)(),n=a.activitySelected,r=t.activities.get(n.id),[s,c]=o.default.useState(!1),{}=t;return r?o.default.createElement("div",{className:"activity-participant"},o.default.createElement(p.CollapsibleContainer,{toggleable:!!r?.progress?.objectives,onToggle:()=>{c(!s)},open:s},o.default.createElement(p.CollapsibleHeader,{className:"activity-participant__header header--collapsible"},o.default.createElement("div",{className:"activity-participant__header-content"},o.default.createElement("header",null,o.default.createElement(d.Image,{className:"user-data__img",src:t.user.photoUrl})),o.default.createElement("div",null,o.default.createElement(u.Link,{href:`/dashboard/${a.assignmentId}?studentId=`+t.user.id,onClick:e=>(e.stopPropagation(),e.preventDefault(),e=a.loadUserTracking(t.id),i({show:!0,view:"student-activity",data:{tracking:e,activity:n,participant:t}}),!1)},o.default.createElement("h6",null,t.user.name)),o.default.createElement("span",{className:"activity-participant__synthesis"},o.default.createElement(u.ConditionalContainer,{condition:!!r?.progress?.summary,ternary:!0,options:{true:o.default.createElement(o.default.Fragment,null,r?.progress?.summary),false:o.default.createElement(o.default.Fragment,null,e.activities.noSummary)}})))),o.default.createElement(m.List,{className:"unstyled-list objectives-header__states",items:r?.progress?.objectives,control:h.ActivityObjectiveStatusIcon})),o.default.createElement(p.CollapsibleContent,{className:"activity-participant__collapsible-content"},o.default.createElement(m.List,{items:r?.progress?.objectives,control:v.StudentAssignmentActivityObjective})))):(console.warn(`the user ${t.user.name} has not participate on activity`,t),null)};var o=e("react"),l=e("../../../context"),d=e("pragmate-ui/image"),u=e("pragmate-ui/components"),m=e("pragmate-ui/list"),p=e("pragmate-ui/collapsible"),v=e("./objective"),h=e("../../../components/objective-icon")}}),e.set("./views/activities/view/participant/index",{hash:3716156993,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ActivityParticipant=function({item:e,activity:t}){return t=["content-theory","debate","character-talk"].includes(t.type)?"chat":t.type,a.default.createElement(i.ConditionalContainer,{condition:t,options:{chat:a.default.createElement(n.ChatActivityParticipant,{item:e}),spoken:a.default.createElement(s.SpokenActivityParticipant,{item:e}),"multiple-choice":a.default.createElement(r.MultipleChoiceActivityParticipant,{item:e})}})};var a=e("react"),i=e("pragmate-ui/components"),n=e("./chat"),r=e("./multiple-choice"),s=e("./spoken")}}),e.set("./views/activities/view/participant/multiple-choice",{hash:3518023977,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.MultipleChoiceActivityParticipant=function({item:t}){let{store:a,setShowDrawer:i,texts:{activities:{multipleChoice:e}}}=(0,o.useDashboardContext)(),n=a.activitySelected,r=t.activities.get(n.id),[,,]=c.default.useState(!1),s;return r?(s=t.activities.get(n.id),c.default.createElement("div",{className:"activity-participant"},c.default.createElement("div",{className:"activity-participant__header"},c.default.createElement(d.Link,{href:`/dashboard/${a.assignmentId}?studentId=`+t.user.id,onClick:e=>(e.stopPropagation(),e.preventDefault(),e=a.loadUserTracking(t.id),i({show:!0,view:"student-activity",data:{tracking:e,activityId:n.id,participant:t}}),!1)},c.default.createElement("div",{className:"user-data__section"},c.default.createElement(l.Image,{className:"user-data__img",src:t.user.photoUrl}),c.default.createElement("h6",null,t.user.name))),c.default.createElement("div",null,c.default.createElement("span",{className:"dashboard-chip success-label"},e.correct,": ",s.counters.correct),c.default.createElement("span",{className:"dashboard-chip  error-label"},e.wrong,": ",s.counters.wrong))))):(console.warn(`the user ${t.user.name} has not participate on activity`,t),null)};var c=e("react"),o=e("../../../context"),l=e("pragmate-ui/image"),d=e("pragmate-ui/components");e("pragmate-ui/tooltip")}}),e.set("./views/activities/view/participant/objective",{hash:852723765,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.StudentAssignmentActivityObjective=function({item:e}){var t,a,i,n;return e?({name:t,analysis:a,status:i}=e,n=(0,s.useDashboardContext)().texts,r.createElement("div",{className:"assigment-activity-objective__container"},r.createElement("div",{className:"objective-title__container"},r.createElement("div",null,r.createElement("h6",null,t)),r.createElement("div",{className:"status__container status__container--"+e.status.text},r.createElement("span",null,n.activities.objectivesStatus[i.text]),r.createElement(c.AppIcon,{icon:{"in-progress":"activityInProgress",pending:"activityPending",completed:"activityCompleted",outstanding:"activityOutstanding"}[e.status.text],className:"activity-status__icon icon-"+e.status.text}))),r.createElement("p",null,a||n.activities.noAnalysis))):null};var r=e("react"),s=e("../../../context"),c=e("@aimpact/ailearn-app/components/icons")}}),e.set("./views/activities/view/participant/spoken",{hash:2202771998,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.SpokenActivityParticipant=function({item:t}){let{store:a,setShowDrawer:i}=(0,c.useDashboardContext)(),n=a.activitySelected,e=t.activities.get(n.id),[,,]=s.default.useState(!1);if(!e)return console.warn(`the user ${t.user.name} has not participate on activity`,t),null;let r=t.activities.get(n.id);return s.default.createElement("div",{className:"activity-participant"},s.default.createElement("div",{className:"activity-participant__header flex-container flex-vertical-center"},s.default.createElement(l.Link,{href:`/dashboard/${a.assignmentId}?studentId=`+t.user.id,onClick:e=>(e.stopPropagation(),e.preventDefault(),e=a.loadUserTracking(t.id),i({show:!0,view:"student-activity",data:{tracking:e,activityId:n.id,participant:t}}),!1)},s.default.createElement("div",{className:"user-data__section"},s.default.createElement(o.Image,{className:"user-data__img",src:t.user.photoUrl}),s.default.createElement("h6",null,t.user.name))),s.default.createElement("div",null,s.default.createElement(u.List,{className:"unstyled-list",items:r.objectives,control:({item:e})=>s.default.createElement(d.Tooltip,{content:e},r[e].icon)}))))};var s=e("react"),c=e("../../../context"),o=e("pragmate-ui/image"),l=e("pragmate-ui/components"),d=e("pragmate-ui/tooltip"),u=e("pragmate-ui/list")}}),e.set("./views/assignment/drawer/activity/chat/chat-tab",{hash:1427626813,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.StudentAssignmentActivityChatTab=function({item:e,tracking:t}){var{}=(0,i.useDashboardContext)(),t=(t=t.activities.get(e.activity.id))?.chatModel.id;return a.createElement("div",{className:"chat-tab"},a.createElement(n.AgentsChatContainer,{chat:e.chatModel,id:t,empty:r.EmptyChat,icon:"/assets/rvd/profile-blue.png"},a.createElement(n.AgentsChatPanel,null)))};var a=e("react"),i=e("../../../../context"),n=e("@aimpact/chat-sdk/chat-component.code"),r=e("./empty")}}),e.set("./views/assignment/drawer/activity/chat/empty",{hash:247572159,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.EmptyChat=function(){var{texts:{chat:{empty:e}},store:t}=(0,n.useDashboardContext)();return t?.model?({title:t,description:e}=e,i.default.createElement("div",{className:"empty-chat"},i.default.createElement(a.Empty,{icon:"info",className:""},i.default.createElement("h3",null,t),i.default.createElement("span",null,e)))):null};var a=e("pragmate-ui/empty"),i=e("react"),n=e("../../../../context")}}),e.set("./views/assignment/drawer/activity/chat/index",{hash:3184220001,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.StudentAssignmentActivityChatBody=function({item:e,user:t,tracking:a}){var i=(0,o.useDashboardContext)().texts,n=((n=a.activities.get(e.activity.id))?.chatModel.id,[]);return e.progress?.objectives&&n.push(s.createElement(r.Tab,{key:"objectives"},i.activities.objectives)),n.push(s.createElement(r.Tab,{key:"summary"},i.activities.summary)),n.push(s.createElement(r.Tab,{key:"chat"},i.activities.chat," ",e.messages?.count?s.createElement("span",{className:"drawer__badge"},e.messages.count):null)),e?.alerts?.length&&n.push(s.createElement(r.Tab,{key:"alerts",className:"alerts-tab"},i.alerts)),s.createElement(r.TabsContainer,{active:0},s.createElement(r.Tabs,{className:"drawer__tabs"},n),s.createElement(r.Panes,null,e.progress?.objectives&&s.createElement(d.StudentAssignmentActivityObjectives,{item:e,tracking:a}),s.createElement("div",null,s.createElement("section",{className:"mt-15 activity-data-section"},s.createElement("p",null,e.synthesis))),s.createElement(l.StudentAssignmentActivityChatTab,{item:e,tracking:a}),s.createElement(c.DrawerAlert,{alerts:e?.alerts,user:t})))};var r=e("pragmate-ui/tabs"),s=e("react"),c=e("../../../../components/drawer-alerts"),o=e("../../../../context"),l=e("./chat-tab"),d=e("./objectives")}}),e.set("./views/assignment/drawer/activity/chat/objective",{hash:530867765,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.StudentAssignmentActivityObjective=function({item:e}){var{name:t,analysis:a,status:i}=e,n=(0,s.useDashboardContext)().texts;return r.createElement("div",{className:"assigment-activity-objective__container"},r.createElement("div",{className:"objective-title__container"},r.createElement("h6",null,t),r.createElement("div",null,r.createElement("div",{className:"status__container status__container--"+e.status.text},r.createElement("span",null,n.activities.objectivesStatus[i.text]),r.createElement(c.AppIcon,{icon:{"in-progress":"activityInProgress",pending:"activityPending",completed:"activityCompleted",outstanding:"activityOutstanding"}[e.status.text],className:"activity-status__icon icon-"+e.status.text})))),r.createElement("p",null,a||n.activities.noAnalysis))};var r=e("react"),s=e("../../../../context"),c=e("@aimpact/ailearn-app/components/icons")}}),e.set("./views/assignment/drawer/activity/chat/objectives",{hash:1366773697,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.StudentAssignmentActivityObjectives=function({item:e,tracking:t}){var a=(0,r.useDashboardContext)().texts;return(t=t.activities.get(e.activity.id))?.chatModel.id,n.createElement("div",null,n.createElement("div",{className:"objectives__summary"},n.createElement("p",null,e.progress?.summary)),e.progress?.objectives&&n.createElement("div",null,n.createElement("h4",{className:"mt-15"},a.activities.progres),n.createElement(i.List,{className:"unstyled-list",items:e.progress?.objectives,control:s.StudentAssignmentActivityObjective})))};var i=e("pragmate-ui/list"),n=e("react"),r=e("../../../../context"),s=e("./objective")}}),e.set("./views/assignment/drawer/activity/index",{hash:1654925832,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.StudentAssignmentActivity=function({item:e,user:t,index:a,tracking:i}){let n=(0,u.useDashboardContext)().texts,[r,s]=d.useState(0===a);return d.createElement("article",{className:"ds-drawer__activity-item"},d.createElement(o.CollapsibleContainer,{data:e,onToggle:()=>{s(!r)},open:r},d.createElement(o.CollapsibleHeader,null,d.createElement("header",{className:"activity__header"},d.createElement("section",{className:"activity-header__container"},d.createElement("picture",{className:"activity-type__icon activity--"+e.activity?.type},d.createElement(c.AppIcon,{icon:c.ICONS[e.activity.type]})),d.createElement("div",null,d.createElement("h5",null,e.activity.title),d.createElement("span",null,n.activities.types[e.activity.type]))))),d.createElement(o.CollapsibleContent,null,d.createElement(l.ConditionalContainer,{condition:e.activity.type,options:{"content-theory":d.createElement(m.StudentAssignmentActivityChatBody,{tracking:i,item:e,user:t}),"character-talk":d.createElement(m.StudentAssignmentActivityChatBody,{tracking:i,item:e,user:t}),debate:d.createElement(m.StudentAssignmentActivityChatBody,{tracking:i,item:e,user:t}),"multiple-choice":d.createElement(p.StudentAssignmentActivityMultipleChoiceBody,{item:e,user:t}),spoken:d.createElement(v.StudentAssignmentActivitySpokenBody,{item:e,user:t})}}))))};var c=e("@aimpact/ailearn-app/components/icons"),o=e("pragmate-ui/collapsible"),l=e("pragmate-ui/components"),d=e("react"),u=e("../../../context"),m=e("./chat"),p=e("./multiple-choice"),v=e("./spoken")}}),e.set("./views/assignment/drawer/activity/multiple-choice",{hash:199169181,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.StudentAssignmentActivityMultipleChoiceBody=function({item:e}){var t=(0,i.useDashboardContext)().texts;return a.createElement("div",{className:"activity-data-section mt-15"},a.createElement("p",null,e.activity.description),a.createElement("h6",null,t.activities.multipleChoice.participation.title),a.createElement(n.HtmlWrapper,{params:{...e.counters}},t.activities.multipleChoice.participation.detail))};var a=e("react"),i=e("../../../context"),n=e("pragmate-ui/components")}}),e.set("./views/assignment/drawer/activity/spoken",{hash:2408806944,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.StudentAssignmentActivitySpokenBody=function({item:t}){var{}=(0,i.useDashboardContext)(),e=t.objectives.map(e=>a.createElement("div",{className:"activity-data-section",key:t.id+"-"+e},a.createElement("div",null,a.createElement("h6",null,t[e].icon," ",t[e].name)),a.createElement("div",null,a.createElement("span",null,t[e].feedback))));return a.createElement("div",{className:"activity-data-section-list"},e)};var a=e("react"),i=e("../../../context")}}),e.set("./views/assignment/drawer/empty",{hash:3745556353,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.EmptyCard=function({text:e,className:t}){return a.default.createElement(i.Empty,{className:t="empty-section__container"+(t?" "+t:"")},a.default.createElement("p",null,e))};var a=e("react"),i=e("pragmate-ui/empty")}}),e.set("./views/assignment/drawer/index",{hash:3085730029,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.StudentAssignmentSummary=function({item:e}){let{participant:t,tracking:a}=e,i=(0,y.useDashboardContext)().texts,n=t.user,[r,s]=h.useState(t.activities.items),[c,o]=h.useState(!1),[l,d]=h.useState(a.ready),u="ds-drawer-container"+(c?" is-fetching":"");return(0,b.useBinder)([a],()=>{d(a.ready),s([...t.activities.items])}),l?h.createElement("div",{className:u},h.createElement("header",{className:"dashboard-drawer__header"},h.createElement("section",{className:"user__title flex-container flex-space-between"},h.createElement("div",null,h.createElement("h2",null,n.name),h.createElement("div",{className:"user__credits"},i.interactions,": ",a.credits.consumed," ",i.of," ",a.credits.total)),h.createElement("div",null,h.createElement(p.IconButton,{icon:"refresh",className:"circle",onClick:async()=>{o(!0),await e.participant.load(),setTimeout(()=>{s([...t.activities.items]),o(!1)},1e3)}}),h.createElement(m.CloseButton,null)))),h.createElement("section",{className:"ds-drawer__content"},r.length?h.createElement(v.List,{className:"assignment-activity-list",items:r,specs:{user:n,tracking:a},control:f.StudentAssignmentActivity}):h.createElement(g.EmptyCard,{text:i.assignment.empty.title}))):null};var m=e("pragmate-ui/drawer"),p=e("pragmate-ui/icons"),v=e("pragmate-ui/list"),h=e("react"),y=e("../../context"),f=e("./activity"),g=e("./empty"),b=e("@beyond-js/react-18-widgets/hooks")}}),e.set("./views/assignment/general",{hash:30264229,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.GeneralView=function(){var e=(0,n.useDashboardContext)().store;return i.default.createElement(i.default.Fragment,null,i.default.createElement("div",{className:"dashboard__list"},i.default.createElement(a.List,{className:"list-unstyled users__list",items:e.participants,control:r.Item})))};var a=e("pragmate-ui/list"),i=e("react"),n=e("../context"),r=e("./item")}}),e.set("./views/assignment/item/activity/chat",{hash:1762882595,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ModuleActivityChat=function({activity:t,participant:a}){let i=a.user,{setShowDrawer:n,store:r}=(0,c.useDashboardContext)(),e=a.activities[t.id]?.data;"assessment"===t.type&&"multiple-choice"===t.subtype&&e.data&&[].push(s.default.createElement("span",null,t.data.counters.correct," /",t.data.counters.total));return s.default.createElement("li",{onClick:async e=>{e.stopPropagation(),e.preventDefault(),e=await r.loadUserTracking(i.id),n({show:!0,view:"student-activity",data:{tracking:e,participant:a,activity:t}})},key:i.id+"."+t.id,className:"card-student-item"},s.default.createElement("div",null,s.default.createElement(l.ActivityIcon,{type:t.type})),s.default.createElement("div",{className:"activity-title__container-content"},s.default.createElement("span",{className:"activity-title"},t.title),s.default.createElement("div",{className:"user-activity__information"},s.default.createElement(o.ModuleActivityMessages,{item:t,participant:a}),s.default.createElement(d.ModuleActivityStatus,{item:t,participant:a}))))};var s=e("react"),c=e("../../../context"),o=e("./label"),l=e("../../../components/activity-icon"),d=e("./status")}}),e.set("./views/assignment/item/activity/details",{hash:3912473552,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ModuleActivityDetails=function({item:e}){var{activity:t,participant:a}=e,i=a.activities.get(t.id);return"assessment"===t.type&&"multiple-choice"===t.subtype&&data.data&&[].push(n.default.createElement("span",null,e.data.counters.correct," /",e.data.counters.total)),n.default.createElement("div",{className:"user-activity__information"},n.default.createElement("div",{className:"flex-container flex-vertical-center gap-05"},i?.alerts?.length?n.default.createElement(r.Icon,{icon:"error",className:"error-icon"}):null),n.default.createElement(s.ModuleActivityStatus,{item:e,participant:a}))};var n=e("react"),r=e("pragmate-ui/icons"),s=e("./status")}}),e.set("./views/assignment/item/activity/index",{hash:3795714024,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ModuleActivity=function({item:e,participant:t}){var a=["content-theory","debate","character-talk"].includes(e.type)?"chat":e.type;return i.default.createElement(n.ConditionalContainer,{condition:a,options:{chat:i.default.createElement(r.ModuleActivityChat,{activity:e,participant:t}),spoken:i.default.createElement(s.ModuleActivitySpoken,{activity:e,participant:t}),"multiple-choice":i.default.createElement(c.ModuleActivityMultipleChoice,{activity:e,participant:t})}})};var i=e("react"),n=e("pragmate-ui/components"),r=e("./chat"),s=e("./spoken"),c=e("./multiple-choice")}}),e.set("./views/assignment/item/activity/label",{hash:1265986715,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ModuleActivityMessages=function({item:e,participant:t}){let a=e,i=(0,l.useDashboardContext)().texts,n=t.activities.has(a.id),r=t.activities.get(a.id),s="warning",c="Pending";return n&&(s="success",c="Done"),["content-theory","debate","character-talk"].includes(a.type)&&(c=r?.interactions?r?.interactions+" "+i.activities.interactions:(r?.messages?.count??0)+" "+i.activities.interactions),"spoken"===a.type&&e.data&&(t=Object.values(e.data).map(e=>e.icon).join(""),c=t,s="default"),"assessment"===a.type&&"multiple-choice"===a.subtype&&e.data&&({correct:t,total:e}=e.data.counters,t<e/2&&(s="error"),c=t+" / "+e),n&&r?.messages&&(c=i.messageCounter+" "+r?.messages.count),t=r?.alerts?.length,o.default.createElement("div",{className:e="activity-status"+(t?" has-alerts":"")},o.default.createElement("span",null,c),t?o.default.createElement(d.Icon,{icon:"error",className:"error-icon"}):null)};var o=e("react"),l=e("../../../context"),d=e("pragmate-ui/icons")}}),e.set("./views/assignment/item/activity/multiple-choice",{hash:2942058880,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ModuleActivityMultipleChoice=function({activity:t,participant:a}){let i=a.user,{setShowDrawer:n,store:r}=(0,c.useDashboardContext)(),e=a.activities.get(t.id);return s.default.createElement("li",{onClick:e=>{e.stopPropagation(),e.preventDefault(),e=r.loadUserTracking(i.id),n({show:!0,view:"student-activity",data:{tracking:e,participant:a,activity:t}})},key:i.id+"."+t.id,className:"card-student-item"},s.default.createElement("div",null,s.default.createElement(l.ActivityIcon,{type:t.type})),s.default.createElement("div",{className:"activity-title__container-content"},s.default.createElement("span",{className:"activity-title"},t.title),s.default.createElement("div",{className:"user-activity__information"},s.default.createElement("div",null,s.default.createElement(o.ModuleActivityMessages,{item:t,participant:a})),s.default.createElement("div",null,e?.counters?s.default.createElement("div",{className:"user-activity__information user-activity__information-multiple-choice"},s.default.createElement("span",{className:"activity-item-counter"},e.counters.total),s.default.createElement("span",{className:"activity-item-divider"},"/"),s.default.createElement("span",{className:"activity-item-counter"},e.counters.correct)):null))))};var s=e("react"),c=e("../../../context"),o=e("./label"),l=e("../../../components/activity-icon")}}),e.set("./views/assignment/item/activity/spoken",{hash:1692153914,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ModuleActivitySpoken=function({activity:t,participant:a}){let i=a.user,{setShowDrawer:n,store:r}=(0,c.useDashboardContext)(),e=a.activities.get(t.id);return s.default.createElement("li",{onClick:e=>{e.stopPropagation(),e.preventDefault(),e=r.loadUserTracking(i.id),n({show:!0,view:"student-activity",data:{tracking:e,participant:a,activity:t}})},key:i.id+"."+t.id,className:"card-student-item"},s.default.createElement("div",null,s.default.createElement(l.ActivityIcon,{type:t.type})),s.default.createElement("div",{className:"activity-title__container-content"},s.default.createElement("span",{className:"activity-title"},t.title),s.default.createElement("div",{className:"user-activity__information"},s.default.createElement(o.ModuleActivityMessages,{item:t,participant:a}),s.default.createElement("div",{className:"spoken-icons"},e?.icons))))};var s=e("react"),c=e("../../../context"),o=e("./label"),l=e("../../../components/activity-icon")}}),e.set("./views/assignment/item/activity/status",{hash:2552220279,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ModuleActivityStatus=function({item:e,participant:t}){var{}=(0,n.useDashboardContext)();return(t=t.activities.get(e.id))?.progress?.objectives?(e=t?.progress?.objectives?.map((e,t)=>a.default.createElement(i.ActivityObjectiveStatusIcon,{key:e?.text+`-${t}-icon`,item:e})),a.default.createElement("div",{className:"activity-status__container"},e)):null};var a=e("react"),i=e("../../../components/objective-icon"),n=e("../../../context")}}),e.set("./views/assignment/item/index",{hash:4010916897,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Item=function({item:t}){let{model:e,store:a,setShowDrawer:i}=(0,d.useDashboardContext)(),n=t.user,r=`/assignments/${a.assignmentId}/dashboard/participant/`+t.user.id;return l.default.createElement("li",{className:"dashboard-card card__user"},l.default.createElement("header",null,l.default.createElement(c.Image,{src:n?.photoUrl,alt:n.name+"-avatar",className:"avatar__image"}),l.default.createElement(s.Link,{href:r,onClick:e=>(e.preventDefault(),e=a.loadUserTracking(n.id),i({show:!0,view:"student",tracking:e,data:{tracking:e,participant:t}}),localStorage.setItem("student.details",JSON.stringify(t.user)),!1)},l.default.createElement("h5",null,n.name))),l.default.createElement("div",{className:"detail__info"},l.default.createElement(o.List,{className:"list-unstyled user-activity__data",specs:{participant:t},items:e.activities.items,control:u.ModuleActivity})))};var s=e("pragmate-ui/components"),c=e("pragmate-ui/image"),o=e("pragmate-ui/list"),l=e("react"),d=e("../../context"),u=e("./activity")}}),e.set("./views/components/activity-icon",{hash:1185574957,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ActivityIcon=function({type:e,className:t}){return a.createElement("div",{className:t=`icon-box-container activity--${e} pui-box-icon`+(t?" "+t:"")},a.createElement(i.IconBox,{name:e}))};var a=e("react"),i=e("./icon-box")}}),e.set("./views/components/drawer-alerts/index",{hash:3059207640,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.DrawerAlert=function({alerts:e,user:t}){var{}=(0,r.useDashboardContext)();return e?.length?a.createElement(a.Fragment,null,a.createElement(i.List,{as:"div",className:"mt-15 ds-drawer__list",items:e,control:n.DrawerAlertItem,specs:{user:t}})):null};var a=e("react"),i=e("pragmate-ui/list"),n=e("./item"),r=e("../../context")}}),e.set("./views/components/drawer-alerts/item",{hash:2093131627,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.DrawerAlertItem=function({item:e,user:t}){return a.createElement("article",{className:"ds-drawer__activity-item"},a.createElement(i.CollapsibleContainer,null,a.createElement(i.CollapsibleHeader,null,a.createElement("span",null,e.text)),a.createElement(i.CollapsibleContent,null,a.createElement("div",{className:"alert-item"},a.createElement("h6",null,"RVD AI"),a.createElement("div",null,e.iteration.assistant),a.createElement("h6",null,t.name),a.createElement("div",null,e.iteration.student)))))};var a=e("react"),i=e("pragmate-ui/collapsible")}}),e.set("./views/components/empty",{hash:1805669159,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Empty=function({store:e,texts:t}){return n.default.createElement(n.default.Fragment,null,n.default.createElement(i.PageContainer,null,n.default.createElement(r.Empty,{className:"empty-section__container",icon:a.ICONS.classworks},n.default.createElement("h3",{className:"title"},e.model.module.title),n.default.createElement("p",null,t.empty))))};var a=e("@aimpact/ailearn-app/components/icons"),i=e("@aimpact/ailearn-app/components/ui"),t=e("@aimpact/ailearn-app/config"),n=e("react"),r=e("pragmate-ui/empty");t.default?.params?.APP_NAME}}),e.set("./views/components/icon-box",{hash:2839980169,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.IconBox=function({name:e,className:t}){return a.createElement(i.AppIcon,{icon:e,className:t="pui-box-icon"+(t?" "+t:"")})};var a=e("react"),i=e("@aimpact/ailearn-app/components/icons")}}),e.set("./views/components/objective-icon",{hash:3530902262,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ActivityObjectiveStatusIcon=function({item:e}){var t=(0,r.useDashboardContext)().texts;return a.default.createElement(i.Tooltip,{content:e.name+": "+t.activities.objectivesStatus[e.status.text],key:e.name+"."+e.status.text},a.default.createElement(n.AppIcon,{icon:{"in-progress":"activityInProgress",pending:"activityPending",completed:"activityCompleted",outstanding:"activityOutstanding"}[e.status.text],className:"activity-status__icon icon-"+e.status.text}))};var a=e("react"),i=e("pragmate-ui/tooltip"),n=e("@aimpact/ailearn-app/components/icons"),r=e("../context")}}),e.set("./views/context",{hash:1937686495,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.useDashboardContext=t.DashboardContext=void 0;var a=e("react");let i=t.DashboardContext=a.default.createContext({});t.useDashboardContext=()=>a.default.useContext(i)}}),e.set("./views/drawer/aside-drawer",{hash:2288856915,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.AsideDrawer=function(){let{showDrawer:e,setShowDrawer:t}=(0,c.useDashboardContext)();if(!1!==e.show)return a.default.createElement(n.Drawer,{className:"ds-drawer",position:"right",open:e.show,onClose:()=>t({show:!1})},a.default.createElement(r.ScrollContainer,{className:"ds-drawer-scroll-container","data-perfect-scrollbar":"","data-suppress-scroll-x":"true"},a.default.createElement(i.ConditionalContainer,{condition:e.view,options:{wall:a.default.createElement(o.Wall,{item:e.data}),"student-activity":a.default.createElement(s.StudentAssignmentSummary,{item:e.data}),student:a.default.createElement(s.StudentAssignmentSummary,{item:e.data})}})))};var a=e("react"),i=e("pragmate-ui/components"),n=e("pragmate-ui/drawer"),r=e("pragmate-ui/perfect-scrollbar"),s=e("../assignment/drawer"),c=e("../context"),o=e("./wall")}}),e.set("./views/drawer/content",{hash:4248281599,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Wall=function({item:e}){var e=e.user,[t,,]=a.useState(!1);return a.createElement("div",{className:"ds-drawer-container"+(t?" is-fetching":"")},a.createElement("header",{className:"dashboard-drawer__header"},a.createElement("section",{className:"user__title flex-container flex-space-between"},a.createElement("h2",null,e.name),a.createElement("div",null,a.createElement(i.CloseButton,null)))))};var a=e("react"),i=e("pragmate-ui/drawer")}}),e.set("./views/drawer/wall",{hash:2628510498,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Wall=function({}){var e=(0,n.useDashboardContext)().store,[t,,]=a.useState(!1);return a.createElement("div",{className:"ds-drawer-container"+(t?" is-fetching":"")},a.createElement("header",{className:"dashboard-drawer__header"},a.createElement("section",{className:"user__title flex-container flex-space-between"},a.createElement("h2",null,"Wall"),a.createElement("div",null,a.createElement(i.CloseButton,null)))),a.createElement("section",{className:"ds-drawer__content"},a.createElement("app-dashboard-wall",{id:e.assignmentId})))};var a=e("react"),i=e("pragmate-ui/drawer"),n=e("../context")}}),e.set("./views/global",{hash:185675526,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0})}}),e.set("./views/header/activity-filter",{hash:4263261696,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.ActivityFilter=function({item:t}){let a=(0,r.useDashboardContext)().store,e=c.ICONS[t.type],i="activity-type__icon activity--"+t.type;a.activitySelected?.type===t.type&&(i+=" active");return n.default.createElement(o.Tooltip,{content:t.title},n.default.createElement("section",{className:i,onClick:e=>a.selectActivity(t)},n.default.createElement(s.Icon,{icon:e})))};var n=e("react"),r=e("../context"),s=e("pragmate-ui/icons"),c=e("@aimpact/ailearn-app/components/icons"),o=e("pragmate-ui/tooltip")}}),e.set("./views/header/index",{hash:2261676627,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Header=function(){let{model:e,texts:t,setShowDrawer:a}=(0,u.useDashboardContext)(),{title:i,description:n,picture:r,owner:s,creator:c}=e.module;return d.default.createElement(p.CollapsibleContainer,{className:"page__header-container"},d.default.createElement(p.CollapsibleHeader,null,d.default.createElement("header",{className:"dashboard-header"},d.default.createElement(o.EntityImage,{entity:"module",src:r,alt:i}),d.default.createElement("div",null,d.default.createElement("h1",null,i),c&&d.default.createElement(m.UserData,{data:c})))),d.default.createElement(p.CollapsibleContent,null,d.default.createElement("div",{className:"dashboard-content"},d.default.createElement("section",{className:"main-content"},d.default.createElement("p",{className:"p1 hidden-xs"},n),d.default.createElement("div",{className:"module__managers-section"},d.default.createElement("div",{className:"module__managers-section"},s&&d.default.createElement(m.UserData,{label:t.owner,data:s})))),d.default.createElement("div",{className:"actions"},d.default.createElement(l.Button,{bordered:!0,icon:"shared-folder",className:"btn btn-primary outline pui-button has-icon ",onClick:()=>{a({show:!0,view:"wall"})}},t.actions.wall)))))};var o=e("@aimpact/ailearn-app/components/ui"),l=e("pragmate-ui/components"),d=e("react"),u=e("../context"),m=e("./user-data"),p=e("pragmate-ui/collapsible")}}),e.set("./views/header/student-header",{hash:2788127070,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.StudentsHeader=function(){let{model:e,texts:t,store:a}=(0,c.useDashboardContext)(),i="activity-types__list"+(a.activitySelected?" activity-selected":""),[n,r]=s.default.useState(!1);return s.default.createElement("header",{className:"dashboard-students__header"},s.default.createElement("div",{className:"ds-students-header__col"},s.default.createElement("section",{className:"header__title"},s.default.createElement("h6",null,t.list.students),s.default.createElement("span",null,"(",e.participants.items?.length," ",t.list.participants,")")),s.default.createElement("section",null,s.default.createElement(o.Input,{onChange:e=>{a.filter(e.currentTarget.value)},type:"text",className:"header__search",placeholder:t.list.search,icon:"search"}))),s.default.createElement("div",{className:"ds-students-header__col"},s.default.createElement(l.List,{className:i,items:e.activities.items,control:d.ActivityFilter}),s.default.createElement(u.IconButton,{disabled:n,onClick:e=>{e.stopPropagation(),r(!0),a.refresh(),setTimeout(()=>{r(!1)},1e3)},icon:"refresh",variant:"primary",className:"circle"})))};var s=e("react"),c=e("../context"),o=e("pragmate-ui/form"),l=e("pragmate-ui/list"),d=e("./activity-filter"),u=e("pragmate-ui/icons")}}),e.set("./views/header/user-data",{hash:2423261707,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.UserData=function({label:e,data:{photoUrl:t,name:a}}){return i.createElement("div",{className:"user-data__section"},i.createElement("h6",{className:"user-data__label"},e),i.createElement("section",{className:"user-data__detail"},i.createElement(n.Image,{className:"user-data__img",src:t}),i.createElement("span",{className:"user-data__name"},a)))};var i=e("react"),n=e("pragmate-ui/image")}}),e.set("./views/index",{hash:1989588463,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.View=function({store:e}){let[t,a]=(0,y.useState)(e.ready),[i,n]=(0,y.useState)({show:!1,data:null}),[r,s]=(0,y.useState)("general"),[,c]=(0,y.useState)(e.model?.participants?.items?.length??0),[,o]=(0,y.useState)(e.getProperties()),[l,d]=(0,y.useState)(e.fetching),u=e.texts,m=y.default.useRef(null),p;return y.default.useEffect(()=>{var e;m?.current&&(e=m.current.querySelector(".page__container"),!1===i.show?e.classList.remove("overflow-hidden"):e.classList.add("overflow-hidden"))},[m?.current,i?.show]),(0,h.useBinder)([e],()=>a(e.ready)),(0,h.useBinder)([e],()=>c(e.participants.length??0),"data.updated"),(0,h.useBinder)([e],()=>o(e.getProperties()),"change"),(0,h.useBinder)([e],()=>d(e.fetching),"fetching.changed"),t?e.model.found?0===e.model.totalParticipants?y.default.createElement(w.Empty,{store:e,texts:u}):(p={texts:u,model:e.model,store:e,showDrawer:i,setShowDrawer:n,view:r,setView:s},y.default.createElement("div",{ref:m},y.default.createElement(v.PageContainer,{className:"dashboard-container"+(l?" is-fetching":"")},y.default.createElement(g.DashboardContext.Provider,{value:p},y.default.createElement(E.Header,null),y.default.createElement(x.StudentsHeader,null),y.default.createElement(_.ConditionalContainer,{condition:!!e.activitySelected,ternary:!0,options:{false:y.default.createElement(k.GeneralView,null),true:y.default.createElement(A.ActivityView,null)}}),y.default.createElement(b.AsideDrawer,null))))):y.default.createElement(f.NotFound,{store:e,texts:u}):y.default.createElement(v.PageLoader,{fetching:!0})};var v=e("@aimpact/ailearn-app/components/ui"),h=e("@beyond-js/react-18-widgets/hooks"),y=e("react"),f=e("./404"),g=e("./context"),b=e("./drawer/aside-drawer"),w=e("./components/empty"),E=e("./header"),_=e("pragmate-ui/components"),k=e("./assignment/general"),x=e("./header/student-header"),A=e("./activities/view")}}),T.exports.descriptor=[{im:"./controller",from:"Controller",name:"Controller"},{im:"./model/participants/provider",from:"ParticipantProvider",name:"ParticipantProvider"},{im:"./views/activities/view/index",from:"ActivityView",name:"ActivityView"},{im:"./views/activities/view/participant/chat",from:"ChatActivityParticipant",name:"ChatActivityParticipant"},{im:"./views/activities/view/participant/multiple-choice",from:"MultipleChoiceActivityParticipant",name:"MultipleChoiceActivityParticipant"},{im:"./views/activities/view/participant/spoken",from:"SpokenActivityParticipant",name:"SpokenActivityParticipant"},{im:"./views/assignment/drawer/empty",from:"EmptyCard",name:"EmptyCard"},{im:"./views/assignment/general",from:"GeneralView",name:"GeneralView"},{im:"./views/components/activity-icon",from:"ActivityIcon",name:"ActivityIcon"},{im:"./views/components/drawer-alerts/index",from:"DrawerAlert",name:"DrawerAlert"},{im:"./views/components/drawer-alerts/item",from:"DrawerAlertItem",name:"DrawerAlertItem"},{im:"./views/components/icon-box",from:"IconBox",name:"IconBox"},{im:"./views/index",from:"View",name:"View"}],T.exports.process=function({require:e,prop:t,value:a}){!e&&"Controller"!==t||i("Controller",e?e("./controller").Controller:a),!e&&"ParticipantProvider"!==t||i("ParticipantProvider",e?e("./model/participants/provider").ParticipantProvider:a),!e&&"ActivityView"!==t||i("ActivityView",e?e("./views/activities/view/index").ActivityView:a),!e&&"ChatActivityParticipant"!==t||i("ChatActivityParticipant",e?e("./views/activities/view/participant/chat").ChatActivityParticipant:a),!e&&"MultipleChoiceActivityParticipant"!==t||i("MultipleChoiceActivityParticipant",e?e("./views/activities/view/participant/multiple-choice").MultipleChoiceActivityParticipant:a),!e&&"SpokenActivityParticipant"!==t||i("SpokenActivityParticipant",e?e("./views/activities/view/participant/spoken").SpokenActivityParticipant:a),!e&&"EmptyCard"!==t||i("EmptyCard",e?e("./views/assignment/drawer/empty").EmptyCard:a),!e&&"GeneralView"!==t||i("GeneralView",e?e("./views/assignment/general").GeneralView:a),!e&&"ActivityIcon"!==t||i("ActivityIcon",e?e("./views/components/activity-icon").ActivityIcon:a),!e&&"DrawerAlert"!==t||i("DrawerAlert",e?e("./views/components/drawer-alerts/index").DrawerAlert:a),!e&&"DrawerAlertItem"!==t||i("DrawerAlertItem",e?e("./views/components/drawer-alerts/item").DrawerAlertItem:a),!e&&"IconBox"!==t||i("IconBox",e?e("./views/components/icon-box").IconBox:a),!e&&"View"!==t||i("View",e?e("./views/index").View:a)},i("__beyond_pkg",T),i("hmr",new function(){this.on=(e,t)=>T.hmr.on(e,t),this.off=(e,t)=>T.hmr.off(e,t)}),T.initialise(e)}}});
+System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "@aimpact/ailearn-app@0.2.11/dashboard-layout.widget", "@aimpact/ailearn-sdk@1.0.0/reactive/entities/item", "@aimpact/ailearn-sdk@1.0.0/reactive/model", "@aimpact/http-suite@0.0.1/api", "@aimpact/ailearn-sdk@1.0.0/config", "@aimpact/chat-sdk@1.3.0/session", "@aimpact/ailearn-sdk@1.0.0/tracking", "@beyond-js/reactive@1.1.12/entities", "@aimpact/ailearn-sdk@1.0.0/core", "@beyond-js/kernel@0.1.9/texts", "@beyond-js/kernel@0.1.9/core", "react@18.2.0", "@aimpact/ailearn-app@0.2.11/components/ui", "@aimpact/ailearn-app@0.2.11/components/navbar-header.code", "pragmate-ui@1.0.0-beta.7/icons", "@aimpact/ailearn-app@0.2.11/config", "pragmate-ui@1.0.0-beta.7/empty", "pragmate-ui@1.0.0-beta.7/list", "@beyond-js/react-18-widgets@1.1.2/hooks", "pragmate-ui@1.0.0-beta.7/components", "pragmate-ui@1.0.0-beta.7/image", "pragmate-ui@1.0.0-beta.7/collapsible", "pragmate-ui@1.0.0-beta.7/tooltip", "@aimpact/ailearn-app@0.2.11/components/icons", "@aimpact/chat-sdk@1.3.0/chat-component.code", "@aimpact/chat-sdk@1.3.0/widgets/markdown", "pragmate-ui@1.0.0-beta.7/tabs", "pragmate-ui@1.0.0-beta.7/modal", "pragmate-ui@1.0.0-beta.7/drawer", "@beyond-js/kernel@0.1.9/routing", "pragmate-ui@1.0.0-beta.7/form"], function (_export, _context2) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, dependency_15, dependency_16, dependency_17, dependency_18, dependency_19, dependency_20, dependency_21, dependency_22, dependency_23, dependency_24, dependency_25, dependency_26, dependency_27, dependency_28, dependency_29, dependency_30, dependency_31, dependency_32, dependency_33, dependency_34, bimport, __Bundle, __pkg, ims, Controller, ParticipantProvider, ActivityView, ChatActivityParticipant, MultipleChoiceActivityParticipant, SpokenActivityParticipant, EmptyCard, GeneralView, ActivityIcon, DrawerAlert, DrawerAlertItem, IconBox, View, __beyond_pkg, hmr;
+  _export({
+    Controller: void 0,
+    ParticipantProvider: void 0,
+    ActivityView: void 0,
+    ChatActivityParticipant: void 0,
+    MultipleChoiceActivityParticipant: void 0,
+    SpokenActivityParticipant: void 0,
+    EmptyCard: void 0,
+    GeneralView: void 0,
+    ActivityIcon: void 0,
+    DrawerAlert: void 0,
+    DrawerAlertItem: void 0,
+    IconBox: void 0,
+    View: void 0
+  });
+  return {
+    setters: [function (_beyondJsWidgets110Render) {
+      dependency_0 = _beyondJsWidgets110Render;
+    }, function (_beyondJsKernel019Bundle) {
+      dependency_1 = _beyondJsKernel019Bundle;
+    }, function (_beyondJsKernel019Styles) {
+      dependency_2 = _beyondJsKernel019Styles;
+    }, function (_beyondJsReact18Widgets112Page) {
+      dependency_3 = _beyondJsReact18Widgets112Page;
+    }, function (_aimpactAilearnApp0211DashboardLayoutWidget) {
+      dependency_4 = _aimpactAilearnApp0211DashboardLayoutWidget;
+    }, function (_aimpactAilearnSdk100ReactiveEntitiesItem) {
+      dependency_5 = _aimpactAilearnSdk100ReactiveEntitiesItem;
+    }, function (_aimpactAilearnSdk100ReactiveModel) {
+      dependency_6 = _aimpactAilearnSdk100ReactiveModel;
+    }, function (_aimpactHttpSuite001Api) {
+      dependency_7 = _aimpactHttpSuite001Api;
+    }, function (_aimpactAilearnSdk100Config) {
+      dependency_8 = _aimpactAilearnSdk100Config;
+    }, function (_aimpactChatSdk130Session) {
+      dependency_9 = _aimpactChatSdk130Session;
+    }, function (_aimpactAilearnSdk100Tracking) {
+      dependency_10 = _aimpactAilearnSdk100Tracking;
+    }, function (_beyondJsReactive1112Entities) {
+      dependency_11 = _beyondJsReactive1112Entities;
+    }, function (_aimpactAilearnSdk100Core) {
+      dependency_12 = _aimpactAilearnSdk100Core;
+    }, function (_beyondJsKernel019Texts) {
+      dependency_13 = _beyondJsKernel019Texts;
+    }, function (_beyondJsKernel019Core) {
+      dependency_14 = _beyondJsKernel019Core;
+    }, function (_react2) {
+      dependency_15 = _react2;
+    }, function (_aimpactAilearnApp0211ComponentsUi) {
+      dependency_16 = _aimpactAilearnApp0211ComponentsUi;
+    }, function (_aimpactAilearnApp0211ComponentsNavbarHeaderCode) {
+      dependency_17 = _aimpactAilearnApp0211ComponentsNavbarHeaderCode;
+    }, function (_pragmateUi100Beta7Icons) {
+      dependency_18 = _pragmateUi100Beta7Icons;
+    }, function (_aimpactAilearnApp0211Config) {
+      dependency_19 = _aimpactAilearnApp0211Config;
+    }, function (_pragmateUi100Beta7Empty) {
+      dependency_20 = _pragmateUi100Beta7Empty;
+    }, function (_pragmateUi100Beta7List) {
+      dependency_21 = _pragmateUi100Beta7List;
+    }, function (_beyondJsReact18Widgets112Hooks) {
+      dependency_22 = _beyondJsReact18Widgets112Hooks;
+    }, function (_pragmateUi100Beta7Components) {
+      dependency_23 = _pragmateUi100Beta7Components;
+    }, function (_pragmateUi100Beta7Image) {
+      dependency_24 = _pragmateUi100Beta7Image;
+    }, function (_pragmateUi100Beta7Collapsible) {
+      dependency_25 = _pragmateUi100Beta7Collapsible;
+    }, function (_pragmateUi100Beta7Tooltip) {
+      dependency_26 = _pragmateUi100Beta7Tooltip;
+    }, function (_aimpactAilearnApp0211ComponentsIcons) {
+      dependency_27 = _aimpactAilearnApp0211ComponentsIcons;
+    }, function (_aimpactChatSdk130ChatComponentCode) {
+      dependency_28 = _aimpactChatSdk130ChatComponentCode;
+    }, function (_aimpactChatSdk130WidgetsMarkdown) {
+      dependency_29 = _aimpactChatSdk130WidgetsMarkdown;
+    }, function (_pragmateUi100Beta7Tabs) {
+      dependency_30 = _pragmateUi100Beta7Tabs;
+    }, function (_pragmateUi100Beta7Modal) {
+      dependency_31 = _pragmateUi100Beta7Modal;
+    }, function (_pragmateUi100Beta7Drawer) {
+      dependency_32 = _pragmateUi100Beta7Drawer;
+    }, function (_beyondJsKernel019Routing) {
+      dependency_33 = _beyondJsKernel019Routing;
+    }, function (_pragmateUi100Beta7Form) {
+      dependency_34 = _pragmateUi100Beta7Form;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.2.11"], ["@aimpact/ailearn-app", "0.2.11"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_1);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.2.11/dashboard/assignments",
+          "multibundle": true
+        },
+        "type": "widget"
+      }, _context2.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@aimpact/ailearn-app/dashboard-layout.widget', dependency_4], ['@aimpact/ailearn-sdk/reactive/entities/item', dependency_5], ['@aimpact/ailearn-sdk/reactive/model', dependency_6], ['@aimpact/http-suite/api', dependency_7], ['@aimpact/ailearn-sdk/config', dependency_8], ['@aimpact/chat-sdk/session', dependency_9], ['@aimpact/ailearn-sdk/tracking', dependency_10], ['@beyond-js/reactive/entities', dependency_11], ['@aimpact/ailearn-sdk/core', dependency_12], ['@beyond-js/kernel/texts', dependency_13], ['@beyond-js/kernel/core', dependency_14], ['react', dependency_15], ['@aimpact/ailearn-app/components/ui', dependency_16], ['@aimpact/ailearn-app/components/navbar-header.code', dependency_17], ['pragmate-ui/icons', dependency_18], ['@aimpact/ailearn-app/config', dependency_19], ['pragmate-ui/empty', dependency_20], ['pragmate-ui/list', dependency_21], ['@beyond-js/react-18-widgets/hooks', dependency_22], ['pragmate-ui/components', dependency_23], ['pragmate-ui/image', dependency_24], ['pragmate-ui/collapsible', dependency_25], ['pragmate-ui/tooltip', dependency_26], ['@aimpact/ailearn-app/components/icons', dependency_27], ['@aimpact/chat-sdk/chat-component.code', dependency_28], ['@aimpact/chat-sdk/widgets/markdown', dependency_29], ['pragmate-ui/tabs', dependency_30], ['pragmate-ui/modal', dependency_31], ['pragmate-ui/drawer', dependency_32], ['@beyond-js/kernel/routing', dependency_33], ['pragmate-ui/form', dependency_34]]);
+      brequire('@beyond-js/widgets/render').widgets.register([{
+        "name": "ailearn-dashboard-assignments",
+        "vspecifier": "@aimpact/ailearn-app@0.2.11/dashboard/assignments.widget",
+        "is": "page",
+        "route": "/dashboard/${id}",
+        "layout": "dashboard-layout"
+      }]);
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.2.11/dashboard/assignments.widget');
+      ims = new Map();
+      /****************************
+      INTERNAL MODULE: ./controller
+      ****************************/
+      ims.set('./controller', {
+        hash: 3950531445,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Controller = void 0;
+          var _page = require("@beyond-js/react-18-widgets/page");
+          var _store = require("./store");
+          var _views = require("./views");
+          var _dashboardLayout = require("@aimpact/ailearn-app/dashboard-layout.widget");
+          /*bundle*/
+          class Controller extends _page.PageReactWidgetController {
+            #store;
+            createStore() {
+              this.#store = new _store.StoreManager();
+              return this.#store;
+            }
+            get Widget() {
+              return _views.View;
+            }
+            show() {
+              _dashboardLayout.LayoutBroker.removeOverlay();
+              if (this.uri.vars.get('id')) {
+                this.#store.load(this.uri.vars.get('id'));
+              }
+            }
+            /**
+             * this method is executed when the widget is hidden
+             */
+            hide() {
+              this.#store.clear();
+            }
+          }
+          exports.Controller = Controller;
+        }
+      });
+
+      /****************************
+      INTERNAL MODULE: ./model/DATA
+      ****************************/
+
+      ims.set('./model/DATA', {
+        hash: 1777830926,
+        creator: function (require, exports) {
+          "use strict";
+
+          const data = {
+            status: true,
+            data: {
+              activities: {
+                items: {
+                  '37b28bb0-74a8-44b5-ae71-4ff910ce055b': {
+                    duration: 0,
+                    module: {
+                      creator: {
+                        photoUrl: 'https://lh3.googleusercontent.com/a/AAcHTtewZAeH-29p3QJ-rwEuUuMTAjjS4FgkOsfC0v1m=s96-c',
+                        name: 'Félix Tovar',
+                        id: '8cGf2jOlDLZRCY6rQWWsLnhjMB62'
+                      },
+                      audience: '6to año',
+                      ai: true,
+                      description: 'Este módulo tiene como objetivo que los alumnos comprendan el proceso de la fotosíntesis y su importancia en los ecosistemas, abordando sus componentes, etapas y el impacto que tiene en la vida en la Tierra.',
+                      language: 'es',
+                      title: 'Comprendiendo la Fotosíntesis',
+                      type: 'module',
+                      picture: '',
+                      objective: 'Comprender el proceso de la fotosíntesis y su importancia en los ecosistemas.',
+                      duration: '15',
+                      public: true,
+                      timeUpdated: 1727278311113,
+                      timeCreated: 1727278311113,
+                      id: 'f770cbc2-65e4-4c5d-bc0e-ae3b160e080e',
+                      status: 'active'
+                    },
+                    description: 'Los estudiantes tendrán una conversación interactiva con el Dr. Green, un personaje ficticio que es un experto en fotosíntesis. Durante la charla, explorarán cómo las plantas convierten la luz solar en energía y la importancia de este proceso en los ecosistemas. Los estudiantes podrán hacer preguntas y recibir respuestas detalladas sobre las reacciones químicas involucradas y el impacto del ciclo de la fotosíntesis en la vida cotidiana.',
+                    resources: {
+                      specs: {
+                        instructions: 'Inicia la conversación presentándote como un experto en biología. Invita al estudiante a hacer preguntas sobre la fotosíntesis y explica de manera interactiva los conceptos relacionados, promoviendo un diálogo activo.',
+                        role: 'Tú eres un experto en biología y fotosíntesis.',
+                        objectives: [{
+                          name: 'comprension-fotosintesis',
+                          objective: 'Comprender los procesos de la fotosíntesis y su importancia en los ecosistemas.'
+                        }, {
+                          name: 'curiosidad-cientifica',
+                          objective: 'Fomentar la curiosidad científica a través de preguntas y exploración de conceptos.'
+                        }, {
+                          name: 'habilidades-comunicativas',
+                          objective: 'Desarrollar habilidades comunicativas al formular preguntas y expresar ideas.'
+                        }]
+                      },
+                      materials: {}
+                    },
+                    language: 'es',
+                    id: '37b28bb0-74a8-44b5-ae71-4ff910ce055b',
+                    type: 'character-talk',
+                    title: 'Diálogo con el Dr. Green, el experto en fotosíntesis',
+                    picture: '',
+                    objective: 'Comprender los procesos de la fotosíntesis y su relevancia en los ecosistemas, así como fomentar la curiosidad científica en los estudiantes.'
+                  },
+                  'bc6ecedf-4cc7-4a57-be94-a8afbc160af1': {
+                    duration: 0,
+                    module: {
+                      creator: {
+                        photoUrl: 'https://lh3.googleusercontent.com/a/AAcHTtewZAeH-29p3QJ-rwEuUuMTAjjS4FgkOsfC0v1m=s96-c',
+                        name: 'Félix Tovar',
+                        id: '8cGf2jOlDLZRCY6rQWWsLnhjMB62'
+                      },
+                      audience: '6to año',
+                      ai: true,
+                      description: 'Este módulo tiene como objetivo que los alumnos comprendan el proceso de la fotosíntesis y su importancia en los ecosistemas, abordando sus componentes, etapas y el impacto que tiene en la vida en la Tierra.',
+                      language: 'es',
+                      title: 'Comprendiendo la Fotosíntesis',
+                      type: 'module',
+                      picture: '',
+                      objective: 'Comprender el proceso de la fotosíntesis y su importancia en los ecosistemas.',
+                      duration: '15',
+                      public: true,
+                      timeUpdated: 1727278311113,
+                      timeCreated: 1727278311113,
+                      id: 'f770cbc2-65e4-4c5d-bc0e-ae3b160e080e',
+                      status: 'active'
+                    },
+                    description: 'Los estudiantes aprenderán sobre el proceso de la fotosíntesis, sus etapas y la importancia de este proceso para los ecosistemas. A través de una presentación interactiva y el uso de gráficos y diagramas, los alumnos explorarán cómo las plantas convierten la luz solar en energía, y cómo este proceso beneficia tanto a los organismos autotróficos como a los heterótrofos en el ecosistema.',
+                    resources: {
+                      specs: {
+                        instructions: 'Inicia la conversación haciendo preguntas sobre el concepto de fotosíntesis. Responde a las inquietudes del alumno, facilita información adicional y guía a través del proceso de descubrimiento sobre las etapas y componentes de la fotosíntesis.',
+                        role: 'Docente',
+                        objectives: [{
+                          name: 'comprender-etapas-fotosintesis',
+                          objective: 'Explicar las etapas de la fotosíntesis y su rol en el mantenimiento de los ecosistemas.'
+                        }, {
+                          name: 'identificar-componentes-fotosintesis',
+                          objective: 'Identificar los componentes necesarios para el proceso de fotosíntesis.'
+                        }]
+                      },
+                      materials: {
+                        synthesis: '- **Fotosíntesis**\n  - _Definición_: Proceso de conversión de **luz solar** en **energía química**\n  - _Organismos involucrados_: \n    - **Plantas**\n    - **Algas**\n    - **Bacterias**\n  \n- **Componentes necesarios**\n  - **Dióxido de carbono**\n  - **Agua**\n  - **Luz del sol**\n\n- **Productos generados**\n  - **Glucosa**\n  - **Oxígeno**\n\n- **Importancia**\n  - **Ecosistemas**: Proporciona **alimento**\n  - **Aire limpio**',
+                        article: 'La fotosíntesis es el proceso mediante el cual las plantas, algas y algunas bacterias convierten la luz solar en energía química. Utilizan dióxido de carbono, agua y la luz del sol para producir glucosa y oxígeno. Este proceso es esencial para los ecosistemas, ya que proporciona alimento y aire limpio.',
+                        dyslexia: 'La fotosíntesis es un proceso importante. Las plantas, algunas algas y ciertas bacterias hacen fotosíntesis. Con este proceso, convierten la luz del sol en energía. \n\nPara hacer fotosíntesis, las plantas utilizan tres cosas: dióxido de carbono, agua y luz solar. \n\nPrimero, las plantas toman dióxido de carbono del aire. Luego, absorben agua del suelo. Finalmente, usan la luz del sol. Con estos tres ingredientes, producen glucosa y oxígeno. \n\nLa glucosa es una forma de azúcar. Es alimento para las plantas. También es energía para crecer y vivir. El oxígeno es gas que nosotros respiramos. Es muy importante para todos los seres vivos.\n\nLa fotosíntesis es esencial porque ayuda a crear alimento y aire limpio. Sin este proceso, los ecosistemas no podrían funcionar. \n\nPiensa en la fotosíntesis como una cocina. La planta es el chef que utiliza ingredientes para hacer una comida. Esos ingredientes son el dióxido de carbono, el agua y la luz solar. Al final, la planta produce glucosa como alimento y aire limpio como un regalo para todos.\n\nRecuerda: la fotosíntesis ayuda a las plantas a vivir y a los seres vivos a respirar. ¿Por qué crees que este proceso es tan importante? Reflexiona sobre esto.'
+                      }
+                    },
+                    language: 'es',
+                    id: 'bc6ecedf-4cc7-4a57-be94-a8afbc160af1',
+                    type: 'content-theory',
+                    title: 'Comprendiendo la Fotosíntesis',
+                    picture: '',
+                    objective: 'Los alumnos podrán explicar las etapas de la fotosíntesis y su rol fundamental en el mantenimiento de los ecosistemas, identificando los componentes necesarios para el proceso.'
+                  },
+                  '024f6b72-e64a-45e2-af96-26b56389d711': {
+                    duration: 0,
+                    module: {
+                      creator: {
+                        photoUrl: 'https://lh3.googleusercontent.com/a/AAcHTtewZAeH-29p3QJ-rwEuUuMTAjjS4FgkOsfC0v1m=s96-c',
+                        name: 'Félix Tovar',
+                        id: '8cGf2jOlDLZRCY6rQWWsLnhjMB62'
+                      },
+                      audience: '6to año',
+                      ai: true,
+                      description: 'Este módulo tiene como objetivo que los alumnos comprendan el proceso de la fotosíntesis y su importancia en los ecosistemas, abordando sus componentes, etapas y el impacto que tiene en la vida en la Tierra.',
+                      language: 'es',
+                      title: 'Comprendiendo la Fotosíntesis',
+                      type: 'module',
+                      picture: '',
+                      objective: 'Comprender el proceso de la fotosíntesis y su importancia en los ecosistemas.',
+                      duration: '15',
+                      public: true,
+                      timeUpdated: 1727278311113,
+                      timeCreated: 1727278311113,
+                      id: 'f770cbc2-65e4-4c5d-bc0e-ae3b160e080e',
+                      status: 'active'
+                    },
+                    description: 'Actividad de debate individual donde los estudiantes discutirán sobre la importancia de la fotosíntesis en el contexto del cambio climático, abordando sus efectos y beneficios para los ecosistemas.',
+                    resources: {
+                      specs: {
+                        instructions: 'Inicia el debate presentando el tema y alentando al alumno a formular su argumento. Proporciona retroalimentación continua y plantea preguntas que estimulen la reflexión y el análisis crítico. Evita guiar demasiado al alumno, permitiendo que desarrolle sus ideas con independencia.',
+                        role: 'Docente',
+                        subject: 'Debate sobre el impacto de la fotosíntesis en el medio ambiente y su papel en la mitigación del cambio climático',
+                        objectives: [{
+                          name: 'comprension-ecologica',
+                          objective: 'Analizar cómo la fotosíntesis contribuye a la sostenibilidad de los ecosistemas.'
+                        }, {
+                          name: 'argumentacion-critica',
+                          objective: 'Desarrollar habilidades de argumentación crítica mediante el uso de evidencias científicas.'
+                        }, {
+                          name: 'conciencia-ambiental',
+                          objective: 'Reflexionar sobre la importancia de la fotosíntesis en la mitigación del cambio climático.'
+                        }, {
+                          name: 'trabajo-colaborativo',
+                          objective: 'Fomentar el trabajo colaborativo a través del intercambio de ideas.'
+                        }]
+                      },
+                      materials: {}
+                    },
+                    language: 'es',
+                    id: '024f6b72-e64a-45e2-af96-26b56389d711',
+                    type: 'debate',
+                    title: 'La Fotosíntesis y su Rol en el Cambio Climático',
+                    picture: '',
+                    objective: 'Los alumnos lograrán argumentar y analizar el impacto de la fotosíntesis en el medio ambiente, especialmente en relación con la mitigación del cambio climático y la sostenibilidad de los ecosistemas.'
+                  }
+                },
+                order: ['024f6b72-e64a-45e2-af96-26b56389d711', '37b28bb0-74a8-44b5-ae71-4ff910ce055b', 'bc6ecedf-4cc7-4a57-be94-a8afbc160af1']
+              },
+              module: {
+                duration: '15',
+                creator: {
+                  photoUrl: 'https://lh3.googleusercontent.com/a/AAcHTtewZAeH-29p3QJ-rwEuUuMTAjjS4FgkOsfC0v1m=s96-c',
+                  name: 'Félix Tovar',
+                  id: '8cGf2jOlDLZRCY6rQWWsLnhjMB62'
+                },
+                audience: '6to año',
+                description: 'Este módulo tiene como objetivo que los alumnos comprendan el proceso de la fotosíntesis y su importancia en los ecosistemas, abordando sus componentes, etapas y el impacto que tiene en la vida en la Tierra.',
+                language: 'es',
+                id: 'f770cbc2-65e4-4c5d-bc0e-ae3b160e080e',
+                title: 'Comprendiendo la Fotosíntesis',
+                picture: '',
+                objective: 'Comprender el proceso de la fotosíntesis y su importancia en los ecosistemas.'
+              },
+              classroom: {
+                name: 'playground ftovar',
+                id: '2c1da49f-580a-4b4c-a0e6-81f0a265f284',
+                picture: ''
+              },
+              id: '4c0fe2c3-b0f1-4642-ae55-5494355e693f',
+              participants: {
+                '8cGf2jOlDLZRCY6rQWWsLnhjMB62': {
+                  user: {
+                    photoUrl: 'https://lh3.googleusercontent.com/a/AAcHTtewZAeH-29p3QJ-rwEuUuMTAjjS4FgkOsfC0v1m=s96-c',
+                    name: 'Félix Tovar',
+                    id: '8cGf2jOlDLZRCY6rQWWsLnhjMB62'
+                  },
+                  activities: {
+                    '024f6b72-e64a-45e2-af96-26b56389d711': {
+                      data: {
+                        messages: {
+                          count: 8
+                        },
+                        progress: {
+                          summary: 'Félix ha completado la comprensión ecológica y ha mostrado conciencia ambiental, mientras trabaja en su argumentación crítica y en el fomento del trabajo colaborativo.',
+                          objectives: [{
+                            name: 'comprension-ecologica',
+                            objective: 'Félix identifica la relación entre la concentración de árboles y la calidad del aire, demostrando comprensión sobre el papel de la fotosíntesis en los ecosistemas.',
+                            status: {
+                              name: 'completed',
+                              icon: '✔️'
+                            }
+                          }, {
+                            name: 'argumentacion-critica',
+                            objective: 'Félix aún no ha presentado evidencia científica, pero la sugerencia del asistente de IA impulsa el desarrollo de su argumentación.',
+                            status: {
+                              name: 'in progress',
+                              icon: '🔧'
+                            }
+                          }, {
+                            name: 'conciencia-ambiental',
+                            objective: 'A través de su observación, Félix muestra una creciente conciencia sobre la importancia de la fotosíntesis en la mitigación del cambio climático.',
+                            status: {
+                              name: 'completed',
+                              icon: '✔️'
+                            }
+                          }, {
+                            name: 'trabajo-colaborativo',
+                            objective: 'La interacción entre Félix y el asistente de IA fomenta el intercambio de ideas, pero no se ha evidenciado un trabajo colaborativo específico.',
+                            status: {
+                              name: 'in progress',
+                              icon: '🔧'
+                            }
+                          }]
+                        }
+                      }
+                    }
+                  }
+                },
+                uJVxRdIjrGMgOYnTFsEKg9UFx0Z2: {
+                  user: {
+                    photoUrl: 'https://lh3.googleusercontent.com/a/AAcHTtd3D8FSUERmB7p29gdqDchlBYqO-wuX0XCEiFV_T-Zt=s96-c',
+                    name: 'Felix Tovar',
+                    id: 'uJVxRdIjrGMgOYnTFsEKg9UFx0Z2'
+                  },
+                  activities: {
+                    '024f6b72-e64a-45e2-af96-26b56389d711': {
+                      data: {
+                        messages: {
+                          count: 2
+                        },
+                        progress: {
+                          summary: 'Felix avanza al analizar la fotosíntesis en relación al cambio climático y la sostenibilidad, mientras desarrolla conciencia ambiental. Sin embargo, los objetivos de argumentación crítica y trabajo colaborativo aún están en progreso.',
+                          objectives: [{
+                            name: 'comprension-ecologica',
+                            objective: 'Felix ha comenzado a conectar la fotosíntesis con la sostenibilidad de los ecosistemas al mencionar la regulación de temperaturas y la purificación del aire.',
+                            status: {
+                              name: 'in progress',
+                              icon: '🔧'
+                            }
+                          }, {
+                            name: 'argumentacion-critica',
+                            objective: 'En progreso',
+                            status: {
+                              name: 'in progress',
+                              icon: '🔧'
+                            }
+                          }, {
+                            name: 'conciencia-ambiental',
+                            objective: 'Felix mostró preocupación por el cambio climático y la necesidad de cuidar los árboles, lo que refleja una creciente conciencia ambiental.',
+                            status: {
+                              name: 'completed',
+                              icon: '✔️'
+                            }
+                          }, {
+                            name: 'trabajo-colaborativo',
+                            objective: 'En progreso',
+                            status: {
+                              name: 'in progress',
+                              icon: '🔧'
+                            }
+                          }]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          };
+        }
+      });
+
+      /*********************************************
+      INTERNAL MODULE: ./model/activities/activities
+      *********************************************/
+
+      ims.set('./model/activities/activities', {
+        hash: 1459040242,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.AssignmentActivities = void 0;
+          var _activity = require("./activity");
+          class AssignmentActivities {
+            #items = [];
+            #map = new Map();
+            get items() {
+              return this.#items;
+            }
+            #dashboard;
+            get dashboard() {
+              return this.#dashboard;
+            }
+            constructor(dashboard, data) {
+              this.#dashboard = dashboard;
+              data.order.forEach(id => {
+                const instance = new _activity.AssignmentActivity(data.items[id]);
+                this.#map.set(id, instance);
+                this.#items.push(instance);
+              });
+            }
+            has(id) {
+              return this.#map.has(id);
+            }
+            get(id) {
+              return this.#map.get(id);
+            }
+          }
+          exports.AssignmentActivities = AssignmentActivities;
+        }
+      });
+
+      /*******************************************
+      INTERNAL MODULE: ./model/activities/activity
+      *******************************************/
+
+      ims.set('./model/activities/activity', {
+        hash: 3916055062,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.AssignmentActivity = void 0;
+          var _item = require("@aimpact/ailearn-sdk/reactive/entities/item");
+          class AssignmentActivity extends _item.Item {
+            #participantsMap = new Map();
+            #participants = [];
+            get participants() {
+              return this.#participants;
+            }
+            constructor(data) {
+              super({
+                entity: 'assignment-activity',
+                ...data,
+                properties: ['duration', 'module', 'description', 'resources', 'language', 'id', 'type', 'title', 'picture', 'objective']
+              });
+              // console.log('en ', this.id, ' participan', this.#participants);
+            }
+            addParticipant(participant) {
+              this.#participants.push(participant);
+              this.#participantsMap.set(participant.id, participant);
+            }
+            getParticipant(id) {
+              return this.#participantsMap.get(id);
+            }
+            hasParticipant(id) {
+              return this.#participantsMap.has(id);
+            }
+          }
+          exports.AssignmentActivity = AssignmentActivity;
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./model/index
+      *****************************/
+
+      ims.set('./model/index', {
+        hash: 2558975185,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Dashboard = void 0;
+          var _model = require("@aimpact/ailearn-sdk/reactive/model");
+          var _api = require("@aimpact/http-suite/api");
+          var _config = require("@aimpact/ailearn-sdk/config");
+          var _session = require("@aimpact/chat-sdk/session");
+          var _participants = require("./participants/participants");
+          var _activities = require("./activities/activities");
+          class Dashboard extends _model.ReactiveModel {
+            #api;
+            #participants;
+            get participants() {
+              return this.#participants;
+            }
+            #module;
+            get module() {
+              return this.#module;
+            }
+            #classroom;
+            get classroom() {
+              return this.#classroom;
+            }
+            #activities;
+            get activities() {
+              return this.#activities;
+            }
+            #error = null;
+            get error() {
+              return this.#error;
+            }
+            get totalParticipants() {
+              return Object.keys(this.participants.items).length;
+            }
+            get totalMultiple() {
+              return this.participants.items.reduce((acc, curr) => {
+                // if (curr.selection) return acc + 1;
+                return acc;
+                1;
+              }, 0);
+            }
+            get totalSpoken() {
+              return this.participants.items.reduce((acc, curr) => {
+                // if (curr.selection) return acc + 1;
+                return acc;
+              }, 0);
+            }
+            constructor() {
+              super();
+              this.#api = new _api.Api(_config.default.params.apis.ailearn);
+              this.#participants = new _participants.Participants(this);
+              this.reactiveProps(['id', 'selection', 'spoken', 'found', 'assessment']);
+              globalThis.model = this;
+            }
+            async load(id) {
+              this.#api.bearer(_session.sessionWrapper.user.token);
+              const response = await this.#api.get(`/assignments/${id}/dashboard`);
+              if (!response.status) {
+                if (typeof response.error === 'object') {
+                  this.#error = response.error;
+                }
+                throw new Error(response.error?.text);
+              }
+              if (Object.keys(response.data).length === 0) {
+                this.found = false;
+                this.ready = true;
+                return;
+              }
+              const {
+                module,
+                participants,
+                activities,
+                classroom,
+                id: dashboardId
+              } = response.data;
+              this.#activities = new _activities.AssignmentActivities(this, activities);
+              this.#participants.load(participants, this.#activities);
+              globalThis.model = this;
+              this.#module = module;
+              this.#classroom = classroom;
+              this.id = dashboardId;
+              this.found = true;
+              this.ready = true;
+            }
+            async addCredits(tracking) {
+              this.#api.bearer(_session.sessionWrapper.user.token);
+              ///assignments/{id}/tracking/{trackingId}/coins/consume
+              const response = await this.#api.post(`/assignments/${this.id}/tracking/${tracking.id}/coins/consume`, {});
+              tracking.set({
+                credits: response.data.credits
+              });
+              return response;
+            }
+          }
+          exports.Dashboard = Dashboard;
+        }
+      });
+
+      /********************************************************
+      INTERNAL MODULE: ./model/participants/activities/activity
+      ********************************************************/
+
+      ims.set('./model/participants/activities/activity', {
+        hash: 719236738,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ParticipantActivity = void 0;
+          var _item = require("@aimpact/ailearn-sdk/reactive/entities/item");
+          class ParticipantActivity extends _item.Item {
+            constructor({
+              properties = [],
+              ...data
+            }) {
+              super({
+                ...data,
+                entity: 'participant-activity',
+                properties: ['alerts', 'messages', 'interactions', 'progress', 'activity', 'synthesis', 'data', 'counters', 'responses', ...properties]
+              });
+            }
+          }
+          exports.ParticipantActivity = ParticipantActivity;
+        }
+      });
+
+      /**********************************************************
+      INTERNAL MODULE: ./model/participants/activities/collection
+      **********************************************************/
+
+      ims.set('./model/participants/activities/collection', {
+        hash: 3300496935,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ParticipantActivities = void 0;
+          var _activity = require("./activity");
+          var _multipleChoice = require("./multiple-choice");
+          var _spoken = require("./spoken");
+          class ParticipantActivities {
+            #items = [];
+            #map = new Map();
+            #parent;
+            get parent() {
+              return this.#parent;
+            }
+            get items() {
+              return [...this.#map.values()];
+            }
+            constructor(parent, items) {
+              this.#items = items;
+              const keys = Object.keys(items);
+              keys.map(id => {
+                const activity = parent.dashboard.activities.get(id);
+                const instance = this.getActivityInstance(activity, items[id]?.data);
+                activity.addParticipant(parent);
+                this.#parent = parent;
+                this.#map.set(id, instance);
+                return instance;
+              });
+              this.update = this.update.bind(this);
+            }
+            has(id) {
+              return this.#map.has(id);
+            }
+            get(id) {
+              return this.#map.get(id);
+            }
+            getActivityInstance(activity, data = {}) {
+              const Objects = {
+                spoken: _spoken.ParticipantSpokenActivity,
+                detault: _activity.ParticipantActivity,
+                'multiple-choice': _multipleChoice.ParticipantMultipleChoiceActivity
+              };
+              if (this.has(activity.id)) {
+                return this.get(activity.id);
+              }
+              const Activity = Objects[activity.type] || Objects.detault;
+              const instance = new Activity({
+                activity,
+                ...data
+              });
+              return instance;
+            }
+            update(items) {
+              const keys = Object.keys(items);
+              keys.forEach(id => {
+                const item = items[id];
+                if (!item.data) {
+                  return;
+                }
+                const activity = this.parent.dashboard.activities.get(id);
+                const instance = this.getActivityInstance(activity, item.data);
+                instance.set(item.data);
+                this.#map.set(item.id, instance);
+              });
+            }
+          }
+          exports.ParticipantActivities = ParticipantActivities;
+        }
+      });
+
+      /***************************************************************
+      INTERNAL MODULE: ./model/participants/activities/multiple-choice
+      ***************************************************************/
+
+      ims.set('./model/participants/activities/multiple-choice', {
+        hash: 2279477346,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ParticipantMultipleChoiceActivity = void 0;
+          var _item = require("@aimpact/ailearn-sdk/reactive/entities/item");
+          class ParticipantMultipleChoiceActivity extends _item.Item {
+            #objectives = [];
+            get objectives() {
+              return this.#objectives;
+            }
+            get questions() {
+              try {
+                return JSON.parse(this?.activity.resources.materials.assessment).questions;
+              } catch (e) {
+                console.warn(e);
+              }
+            }
+            get participationData() {
+              return this.questions?.map((question, index) => {
+                return {
+                  ...question,
+                  answer: this.responses?.[index].answer,
+                  accuracy: this.responses?.[index].accuracy
+                };
+              });
+            }
+            constructor({
+              properties = [],
+              ...data
+            }) {
+              super({
+                ...data,
+                entity: 'participant-activity',
+                properties: ['alerts', 'activity', 'counters', 'responses', ...properties]
+              });
+              this.#objectives = properties;
+            }
+          }
+          exports.ParticipantMultipleChoiceActivity = ParticipantMultipleChoiceActivity;
+        }
+      });
+
+      /******************************************************
+      INTERNAL MODULE: ./model/participants/activities/spoken
+      ******************************************************/
+
+      ims.set('./model/participants/activities/spoken', {
+        hash: 985943430,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ParticipantSpokenActivity = void 0;
+          var _item = require("@aimpact/ailearn-sdk/reactive/entities/item");
+          class ParticipantSpokenActivity extends _item.Item {
+            get icons() {
+              if (this.assessment) {
+                return Object.keys(this.assessment).map(key => this.assessment[key]);
+              }
+              return [];
+            }
+            get totalPoints() {
+              return this.assessment?.reduce((acc, objective) => acc + this.assessment[objective].points, 0);
+            }
+            get assessment() {
+              return this.attempts?.[0]?.assessment;
+            }
+            get transcription() {
+              console.log(99, this.attempts, this.attempts?.[0], this.attempts?.[0]?.transcription);
+              return this.attempts?.[0]?.transcription;
+            }
+            get objectives() {
+              if (!this.assessment) return [];
+              const objectivesKeys = Object.keys(this.assessment);
+              return objectivesKeys.map(key => {
+                return {
+                  objective: key,
+                  ...this.assessment[key]
+                };
+              });
+            }
+            constructor({
+              properties = [],
+              ...data
+            }) {
+              super({
+                ...data,
+                entity: 'participant-activity',
+                properties: ['activity', 'attempts']
+              });
+            }
+          }
+          exports.ParticipantSpokenActivity = ParticipantSpokenActivity;
+        }
+      });
+
+      /************************************************
+      INTERNAL MODULE: ./model/participants/participant
+      ************************************************/
+
+      ims.set('./model/participants/participant', {
+        hash: 3964490113,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Participant = void 0;
+          var _item = require("@aimpact/ailearn-sdk/reactive/entities/item");
+          var _collection = require("./activities/collection");
+          var _tracking = require("@aimpact/ailearn-sdk/tracking");
+          var _provider = require("./provider");
+          class Participant extends _item.Item {
+            #activities;
+            get activities() {
+              return this.#activities;
+            }
+            #tracking;
+            get tracking() {
+              return this.#tracking;
+            }
+            #dashboard;
+            get dashboard() {
+              return this.#dashboard;
+            }
+            get assignmentId() {
+              return this.#dashboard.id;
+            }
+            constructor(dashboard, item) {
+              super({
+                entity: 'participant',
+                provider: _provider.ParticipantProvider,
+                ...item,
+                properties: ['user', 'id'] // we need to update activities structure
+              });
+              this.#dashboard = dashboard;
+              this.#activities = new _collection.ParticipantActivities(this, item.activities);
+              this.#tracking = _tracking.Tracking.get({
+                assignmentId: dashboard.id,
+                userId: this.user.id,
+                chat: true
+              });
+            }
+            async load() {
+              const {
+                status,
+                data
+              } = await super.load({
+                userId: this.user.id
+              });
+              if (!status) {
+                throw new Error('Error loading participant');
+              }
+              this.activities.update(data.activities?.items);
+            }
+          }
+          exports.Participant = Participant;
+        }
+      });
+
+      /*************************************************
+      INTERNAL MODULE: ./model/participants/participants
+      *************************************************/
+
+      ims.set('./model/participants/participants', {
+        hash: 439197960,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Participants = void 0;
+          var _participant = require("./participant");
+          class Participants {
+            #map = new Map();
+            #items = [];
+            get items() {
+              return this.#items;
+            }
+            #dashboard;
+            get dashboard() {
+              return this.#dashboard;
+            }
+            constructor(dashboard) {
+              this.#dashboard = dashboard;
+            }
+            /**
+             * Loads the participants and activities
+             * @param items - The participants data
+             * @param activities - The activities data
+             */
+            load(items, activities) {
+              const arrayItems = Object.keys(items).map(id => {
+                const participant = new _participant.Participant(this.dashboard, {
+                  id,
+                  ...items[id]
+                });
+                this.#items.push(participant);
+                this.#map.set(id, participant);
+                return participant;
+              });
+              this.#items = arrayItems.sort((a, b) => a.user.name.localeCompare(b.user.name));
+            }
+            has(id) {
+              return this.#map.has(id);
+            }
+            get(id) {
+              return this.#map.get(id);
+            }
+          }
+          exports.Participants = Participants;
+        }
+      });
+
+      /*********************************************
+      INTERNAL MODULE: ./model/participants/provider
+      *********************************************/
+
+      ims.set('./model/participants/provider', {
+        hash: 605781678,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ParticipantProvider = void 0;
+          var _config = require("@aimpact/ailearn-sdk/config");
+          var _api = require("@aimpact/http-suite/api");
+          var _session = require("@aimpact/chat-sdk/session");
+          /*bundle*/ /**
+                      * Represents the Tracking of an assignment.
+                      *
+                      *
+                      */
+          class ParticipantProvider {
+            #api;
+            #parent;
+            constructor(parent) {
+              this.#api = new _api.Api(_config.default.params.apis.ailearn);
+              this.#parent = parent;
+            }
+            load = async specs => {
+              this.#api.bearer(_session.sessionWrapper.user.token);
+              const response = await this.#api.get(`/assignments/${this.#parent.assignmentId}/tracking`, specs);
+              const {
+                status,
+                data,
+                error
+              } = response;
+              if (!status) {
+                throw new Error('error loading class');
+              }
+              if (specs?.progress) await this.#parent.processLoad(data);
+              return {
+                status,
+                data,
+                error
+              };
+            };
+          }
+          exports.ParticipantProvider = ParticipantProvider;
+        }
+      });
+
+      /********************************
+      INTERNAL MODULE: ./model/provider
+      ********************************/
+
+      ims.set('./model/provider', {
+        hash: 1624189798,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Provider = void 0;
+          var _api = require("@aimpact/http-suite/api");
+          var _config = require("@aimpact/ailearn-sdk/config");
+          var _session = require("@aimpact/chat-sdk/session");
+          class Provider {
+            #api;
+            #parent;
+            constructor(parent) {
+              this.#api = new _api.Api(_config.default.params.apis.ailearn);
+              this.#parent = parent;
+            }
+            async load(id) {
+              this.#api.bearer(_session.sessionWrapper.user.token);
+              const response = await this.#api.get(`/assignments/${id}/dashboard`);
+              return response;
+            }
+            async addCredits(assignmentId, trackingId) {
+              this.#api.bearer(_session.sessionWrapper.user.token);
+              ///assignments/{id}/tracking/{trackingId}/coins/consume
+              const response = await this.#api.post(`/assignments/${assignmentId}/tracking/${trackingId}/coins/consume`, {});
+              return response;
+            }
+          }
+          exports.Provider = Provider;
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./model/types
+      *****************************/
+
+      ims.set('./model/types', {
+        hash: 1709577995,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./store
+      ***********************/
+
+      ims.set('./store', {
+        hash: 2293543973,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StoreManager = void 0;
+          var _dashboardLayout = require("@aimpact/ailearn-app/dashboard-layout.widget");
+          var _model = require("./model");
+          var _model2 = require("@aimpact/ailearn-sdk/reactive/model");
+          var _texts = require("@beyond-js/kernel/texts");
+          var _beyond_context = require("beyond_context");
+          var _tracking = require("@aimpact/ailearn-sdk/tracking");
+          var _core = require("@beyond-js/kernel/core");
+          //@ts-ignore
+
+          class StoreManager extends _model2.ReactiveModel {
+            isStore;
+            #tracking;
+            #activitySelected;
+            get activitySelected() {
+              return this.#activitySelected;
+            }
+            get currentTracking() {
+              return this.#tracking;
+            }
+            #session;
+            get session() {
+              return this.#session;
+            }
+            #view;
+            get view() {
+              return this.#view;
+            }
+            set view(view) {
+              this.#view = view;
+            }
+            #assignmentId;
+            get assignmentId() {
+              return this.#assignmentId;
+            }
+            get assignment() {
+              return this.#session;
+            }
+            #model;
+            /**
+             * Dashboard model
+             */
+            get model() {
+              return this.#model;
+            }
+            #texts = new _texts.CurrentTexts(_beyond_context.module.specifier);
+            get texts() {
+              return this.#texts?.value;
+            }
+            #filter;
+            get participants() {
+              if (!this.#filter) return this.#model.participants.items;
+              const response = this.#model.participants.items.filter(item => item.user.name.toLowerCase().includes(this.#filter.toLowerCase()));
+              return response;
+            }
+            get ready() {
+              return super.ready && this.#texts.ready;
+            }
+            #users = new Map();
+            #currentTracking;
+            #trackings = new Map();
+            get users() {
+              return this.#users;
+            }
+            filter(filter) {
+              this.#filter = filter;
+              this.triggerEvent('change');
+            }
+            constructor() {
+              super();
+              this.#texts.on('change', this.triggerEvent);
+              _dashboardLayout.LayoutBroker.setModel(this);
+              this.#model = new _model.Dashboard();
+              globalThis.store = this;
+            }
+            async load(id) {
+              try {
+                this.fetching = true;
+                this.#assignmentId = id;
+                await this.#model.load(id);
+                globalThis.m = this.#model;
+              } catch (e) {
+                console.log(e);
+              } finally {
+                super.ready = true;
+                this.fetching = false;
+              }
+            }
+            loadUserTracking(userId) {
+              try {
+                if (this.#trackings.has(userId)) return this.#trackings.get(userId);
+                this.#currentTracking = _tracking.Tracking.get({
+                  assignmentId: this.#assignmentId,
+                  userId,
+                  chat: true
+                });
+                this.#trackings.set(userId, this.#currentTracking);
+                this.#currentTracking.load({
+                  id: this.#assignmentId,
+                  userId
+                });
+                this.triggerEvent();
+                return this.#currentTracking;
+              } catch (e) {
+                console.error(e);
+              }
+            }
+            refresh = async () => {
+              try {
+                this.fetching = true;
+                await this.model.load(this.#assignmentId);
+                this.trigger('data.updated');
+              } catch (e) {
+                console.error(e);
+              } finally {
+                this.fetching = false;
+              }
+            };
+            refreshDrawer = async ({
+              userId,
+              activity
+            } = {}) => {
+              try {
+                const promise = new _core.PendingPromise();
+                this.fetching = true;
+                this.trigger('fetching.drawer');
+                await this.model.load(this.#assignmentId);
+                if (userId) {
+                  const tracking = await this.loadUserTracking(userId);
+                  await tracking.load({
+                    id: this.#assignmentId,
+                    userId
+                  });
+                }
+                if (activity && activity.chatModel) {
+                  activity.chatModel.loadAll({
+                    id: activity.chatModel.id
+                  });
+                }
+                globalThis.setTimeout(() => {
+                  promise.resolve();
+                }, 1000);
+                return promise;
+              } catch (e) {
+                console.error(e);
+              } finally {
+                this.fetching = false;
+                this.trigger('fetching.drawer');
+              }
+            };
+            refreshTracking = async userId => {
+              const tracking = this.#trackings.get(userId);
+              tracking.load({
+                id: this.#assignmentId,
+                userId
+              });
+            };
+            clear() {
+              _dashboardLayout.LayoutBroker.clear();
+            }
+            selectActivity(id) {
+              this.#activitySelected = id;
+              this.view = 'activity';
+              this.trigger('change');
+            }
+          }
+          exports.StoreManager = StoreManager;
+        }
+      });
+
+      /***************************
+      INTERNAL MODULE: ./views/404
+      ***************************/
+
+      ims.set('./views/404', {
+        hash: 2398831463,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.NotFound = NotFound;
+          var _react = require("react");
+          function NotFound({
+            store,
+            texts
+          }) {
+            if (store.model.error?.code === 403) {
+              return _react.default.createElement("app-not-allowed", null);
+            }
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("app-missing", null));
+          }
+        }
+      });
+
+      /*********************************************
+      INTERNAL MODULE: ./views/activities/view/empty
+      *********************************************/
+
+      ims.set('./views/activities/view/empty', {
+        hash: 1827167088,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.EmptyMaterial = EmptyMaterial;
+          var _ui = require("@aimpact/ailearn-app/components/ui");
+          var _react = require("react");
+          var _context = require("../../context");
+          function EmptyMaterial({
+            message
+          }) {
+            const {
+              texts
+            } = (0, _context.useDashboardContext)();
+            message = message ?? texts.activities.empty;
+            return _react.default.createElement(_ui.EmptyCard, {
+              icon: "info",
+              text: message,
+              className: "empty-section__container"
+            });
+          }
+        }
+      });
+
+      /*********************************************
+      INTERNAL MODULE: ./views/activities/view/index
+      *********************************************/
+
+      ims.set('./views/activities/view/index', {
+        hash: 2153615600,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ActivityView = ActivityView;
+          var _react = require("react");
+          var _context = require("../../context");
+          var _icons = require("pragmate-ui/icons");
+          var _list = require("pragmate-ui/list");
+          var _participant = require("./participant");
+          var _empty = require("pragmate-ui/empty");
+          var _hooks = require("@beyond-js/react-18-widgets/hooks");
+          var _components = require("pragmate-ui/components");
+          /*bundle*/
+          function ActivityView({}) {
+            const {
+              store,
+              setView
+            } = (0, _context.useDashboardContext)();
+            const {
+              activitySelected: activity
+            } = store;
+            const [updated, setUpdated] = _react.default.useState({});
+            const onClose = () => store.selectActivity(undefined);
+            (0, _hooks.useBinder)([store], () => setUpdated(store.activitySelected), 'data.updated');
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("section", {
+              className: `activity-header bottom-rounded bg-activity--${activity.type}`
+            }, _react.default.createElement("div", null, _react.default.createElement("h4", null, activity.title, " ")), _react.default.createElement("div", {
+              className: "close-icon"
+            }, _react.default.createElement(_icons.IconButton, {
+              icon: "close",
+              title: "Close",
+              onClick: onClose,
+              className: "circle"
+            }))), _react.default.createElement(_components.ConditionalContainer, {
+              condition: activity.participants.length > 0,
+              ternary: true,
+              options: {
+                true: _react.default.createElement(_list.List, {
+                  className: "activity-users__list",
+                  items: activity.participants,
+                  control: _participant.ActivityParticipant,
+                  specs: {
+                    activity
+                  }
+                }),
+                false: _react.default.createElement(_empty.Empty, {
+                  text: 'No participants found'
+                })
+              }
+            }));
+          }
+        }
+      });
+
+      /********************************************************
+      INTERNAL MODULE: ./views/activities/view/participant/chat
+      ********************************************************/
+
+      ims.set('./views/activities/view/participant/chat', {
+        hash: 513719031,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ChatActivityParticipant = ChatActivityParticipant;
+          var _components = require("pragmate-ui/components");
+          var _image = require("pragmate-ui/image");
+          var _list = require("pragmate-ui/list");
+          var _react = require("react");
+          var _context = require("../../../context");
+          var _collapsible = require("pragmate-ui/collapsible");
+          var _objectiveIcon = require("../../../components/objective-icon");
+          var _objective = require("./objective");
+          /*bundle*/
+          function ChatActivityParticipant({
+            item
+          }) {
+            const {
+              store,
+              setShowDrawer,
+              texts
+            } = (0, _context.useDashboardContext)();
+            const {
+              activitySelected: activity
+            } = store;
+            const data = item.activities.get(activity.id);
+            const [isDragging, setIsDragging] = _react.default.useState(false);
+            const {
+              analysis
+            } = item;
+            const onToggle = () => {
+              setIsDragging(!isDragging);
+            };
+            if (!data) {
+              console.warn(`the user ${item.user.name} has not participate on activity`, item);
+              return null;
+            }
+            const onClick = event => {
+              event.stopPropagation();
+              event.preventDefault();
+              const tracking = store.loadUserTracking(item.id);
+              setShowDrawer({
+                show: true,
+                view: 'student',
+                data: {
+                  tracking,
+                  activity,
+                  participant: item
+                }
+              });
+              return false;
+            };
+            return _react.default.createElement("div", {
+              className: "activity-participant"
+            }, _react.default.createElement(_collapsible.CollapsibleContainer, {
+              toggleable: !!data?.progress?.objectives,
+              onToggle: onToggle,
+              open: isDragging
+            }, _react.default.createElement(_collapsible.CollapsibleHeader, {
+              className: "activity-participant__header header--collapsible"
+            }, _react.default.createElement("div", {
+              className: "activity-participant__header-content"
+            }, _react.default.createElement("header", null, _react.default.createElement(_image.Image, {
+              className: "user-data__img",
+              src: item.user.photoUrl
+            }), _react.default.createElement(_components.Link, {
+              className: "hidden-md",
+              href: `/dashboard/${store.assignmentId}?studentId=${item.user.id}`,
+              onClick: onClick
+            }, _react.default.createElement("h6", null, item.user.name))), _react.default.createElement("div", null, _react.default.createElement(_components.Link, {
+              className: "hidden-xs",
+              href: `/dashboard/${store.assignmentId}?studentId=${item.user.id}`,
+              onClick: onClick
+            }, _react.default.createElement("h6", null, item.user.name)), _react.default.createElement("span", {
+              className: "activity-participant__synthesis"
+            }, _react.default.createElement(_components.ConditionalContainer, {
+              condition: !!data?.progress?.summary,
+              ternary: true,
+              options: {
+                true: _react.default.createElement(_react.default.Fragment, null, data?.progress?.summary),
+                false: _react.default.createElement(_react.default.Fragment, null, texts.activities.noSummary)
+              }
+            })))), _react.default.createElement(_list.List, {
+              className: "unstyled-list objectives-header__states",
+              items: data?.progress?.objectives,
+              control: _objectiveIcon.ActivityObjectiveStatusIcon
+            })), _react.default.createElement(_collapsible.CollapsibleContent, {
+              className: "activity-participant__collapsible-content"
+            }, _react.default.createElement(_list.List, {
+              items: data?.progress?.objectives,
+              control: _objective.StudentAssignmentActivityObjective
+            }))));
+          }
+        }
+      });
+
+      /*********************************************************
+      INTERNAL MODULE: ./views/activities/view/participant/index
+      *********************************************************/
+
+      ims.set('./views/activities/view/participant/index', {
+        hash: 3716156993,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ActivityParticipant = ActivityParticipant;
+          var _react = require("react");
+          var _components = require("pragmate-ui/components");
+          var _chat = require("./chat");
+          var _multipleChoice = require("./multiple-choice");
+          var _spoken = require("./spoken");
+          function ActivityParticipant({
+            item,
+            activity,
+            ...specs
+          }) {
+            const type = ['content-theory', 'debate', 'character-talk'].includes(activity.type) ? 'chat' : activity.type;
+            return _react.default.createElement(_components.ConditionalContainer, {
+              condition: type,
+              options: {
+                chat: _react.default.createElement(_chat.ChatActivityParticipant, {
+                  item: item
+                }),
+                spoken: _react.default.createElement(_spoken.SpokenActivityParticipant, {
+                  item: item
+                }),
+                'multiple-choice': _react.default.createElement(_multipleChoice.MultipleChoiceActivityParticipant, {
+                  item: item
+                })
+              }
+            });
+          }
+        }
+      });
+
+      /*******************************************************************
+      INTERNAL MODULE: ./views/activities/view/participant/multiple-choice
+      *******************************************************************/
+
+      ims.set('./views/activities/view/participant/multiple-choice', {
+        hash: 753080327,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.MultipleChoiceActivityParticipant = MultipleChoiceActivityParticipant;
+          var _react = require("react");
+          var _context = require("../../../context");
+          var _image = require("pragmate-ui/image");
+          var _components = require("pragmate-ui/components");
+          var _tooltip = require("pragmate-ui/tooltip");
+          /*bundle*/
+          function MultipleChoiceActivityParticipant({
+            item
+          }) {
+            const {
+              store,
+              setShowDrawer,
+              texts: {
+                activities: {
+                  multipleChoice: texts
+                }
+              }
+            } = (0, _context.useDashboardContext)();
+            const {
+              activitySelected: activity
+            } = store;
+            const data = item.activities.get(activity.id);
+            const [isDragging, setIsDragging] = _react.default.useState(false);
+            const onToggle = () => {
+              setIsDragging(!isDragging);
+            };
+            if (!data) {
+              console.warn(`the user ${item.user.name} has not participate on activity`, item);
+              return null;
+            }
+            const onClick = event => {
+              event.stopPropagation();
+              event.preventDefault();
+              const tracking = store.loadUserTracking(item.id);
+              setShowDrawer({
+                show: true,
+                view: 'student-chat',
+                data: {
+                  tracking,
+                  activityId: activity.id,
+                  participant: item
+                }
+              });
+              return false;
+            };
+            const participantActivity = item.activities.get(activity.id);
+            const IconState = ({
+              item
+            }) => _react.default.createElement(_tooltip.Tooltip, {
+              content: item.status.text
+            }, item.status.icon);
+            console.log(99, participantActivity.counters);
+            const {
+              correct,
+              total,
+              wrong
+            } = participantActivity.counters;
+            const cls = `dashboard-chip ${correct > total / 2 ? ' success-label' : ' error-label'} `;
+            return _react.default.createElement("div", {
+              className: "activity-participant"
+            }, _react.default.createElement("div", {
+              className: "activity-participant__header"
+            }, _react.default.createElement(_components.Link, {
+              href: `/dashboard/${store.assignmentId}?studentId=${item.user.id}`,
+              onClick: onClick
+            }, _react.default.createElement("div", {
+              className: "user-data__section"
+            }, _react.default.createElement(_image.Image, {
+              className: "user-data__img",
+              src: item.user.photoUrl
+            }), _react.default.createElement("h6", null, item.user.name))), _react.default.createElement("div", {
+              className: "activity-participant__header-content"
+            }, _react.default.createElement("span", {
+              className: cls
+            }, participantActivity.counters.correct, " / ", participantActivity.counters.total))));
+          }
+        }
+      });
+
+      /*************************************************************
+      INTERNAL MODULE: ./views/activities/view/participant/objective
+      *************************************************************/
+
+      ims.set('./views/activities/view/participant/objective', {
+        hash: 852723765,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentAssignmentActivityObjective = StudentAssignmentActivityObjective;
+          var React = require("react");
+          var _context = require("../../../context");
+          var _icons = require("@aimpact/ailearn-app/components/icons");
+          function StudentAssignmentActivityObjective({
+            item
+          }) {
+            if (!item) {
+              return null;
+            }
+            const {
+              name,
+              analysis,
+              status
+            } = item;
+            const {
+              texts
+            } = (0, _context.useDashboardContext)();
+            const iconNames = {
+              'in-progress': 'activityInProgress',
+              pending: 'activityPending',
+              completed: 'activityCompleted',
+              outstanding: 'activityOutstanding'
+            };
+            return React.createElement("div", {
+              className: "assigment-activity-objective__container"
+            }, React.createElement("div", {
+              className: "objective-title__container"
+            }, React.createElement("div", null, React.createElement("h6", null, name)), React.createElement("div", {
+              className: `status__container status__container--${item.status.text}`
+            }, React.createElement("span", null, texts.activities.objectivesStatus[status.text]), React.createElement(_icons.AppIcon, {
+              icon: iconNames[item.status.text],
+              className: `activity-status__icon icon-${item.status.text}`
+            }))), React.createElement("p", null, analysis ? analysis : texts.activities.noAnalysis));
+          }
+        }
+      });
+
+      /**********************************************************
+      INTERNAL MODULE: ./views/activities/view/participant/spoken
+      **********************************************************/
+
+      ims.set('./views/activities/view/participant/spoken', {
+        hash: 2890665196,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.SpokenActivityParticipant = SpokenActivityParticipant;
+          var _react = require("react");
+          var _context = require("../../../context");
+          var _image = require("pragmate-ui/image");
+          var _components = require("pragmate-ui/components");
+          var _tooltip = require("pragmate-ui/tooltip");
+          var _icons = require("@aimpact/ailearn-app/components/icons");
+          var _list = require("pragmate-ui/list");
+          /*bundle*/
+          function SpokenActivityParticipant({
+            item
+          }) {
+            const {
+              store,
+              setShowDrawer
+            } = (0, _context.useDashboardContext)();
+            const {
+              activitySelected: activity
+            } = store;
+            const data = item.activities.get(activity.id);
+            const [isDragging, setIsDragging] = _react.default.useState(false);
+            const onToggle = () => {
+              setIsDragging(!isDragging);
+            };
+            if (!data) {
+              console.warn(`the user ${item.user.name} has not participate on activity`, item);
+              return null;
+            }
+            const onClick = event => {
+              event.stopPropagation();
+              event.preventDefault();
+              const tracking = store.loadUserTracking(item.id);
+              setShowDrawer({
+                show: true,
+                view: 'student-chat',
+                data: {
+                  tracking,
+                  activityId: activity.id,
+                  participant: item
+                }
+              });
+              return false;
+            };
+            const participantActivity = item.activities.get(activity.id);
+            const IconState = ({
+              item: objective
+            }) => {
+              return _react.default.createElement(_tooltip.Tooltip, {
+                content: objective.objective
+              }, _react.default.createElement(_icons.AppIcon, {
+                icon: `points${objective.points}`
+              }));
+            };
+            return _react.default.createElement("div", {
+              className: "activity-participant"
+            }, _react.default.createElement("div", {
+              className: "activity-participant__header flex-container flex-vertical-center"
+            }, _react.default.createElement(_components.Link, {
+              href: `/dashboard/${store.assignmentId}?studentId=${item.user.id}`,
+              onClick: onClick
+            }, _react.default.createElement("div", {
+              className: "user-data__section"
+            }, _react.default.createElement(_image.Image, {
+              className: "user-data__img",
+              src: item.user.photoUrl
+            }), _react.default.createElement("h6", null, item.user.name))), _react.default.createElement("div", null, _react.default.createElement(_list.List, {
+              className: "unstyled-list",
+              items: participantActivity.objectives,
+              control: IconState
+            }))));
+          }
+        }
+      });
+
+      /****************************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/activity/chat/chat-tab
+      ****************************************************************/
+
+      ims.set('./views/assignment/drawer/activity/chat/chat-tab', {
+        hash: 266449972,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentAssignmentActivityChatTab = StudentAssignmentActivityChatTab;
+          var React = require("react");
+          var _context = require("../../../../context");
+          var _chatComponent = require("@aimpact/chat-sdk/chat-component.code");
+          var _empty = require("./empty");
+          //@ts-ignore
+
+          function StudentAssignmentActivityChatTab({
+            item,
+            tracking
+          }) {
+            const {
+              texts
+            } = (0, _context.useDrawerContext)();
+            const ref = React.useRef();
+            const tActivity = tracking.activities.get(item.activity.id);
+            const chatId = tActivity?.chatModel?.id;
+            if (!tActivity.chatModel.messages.items.length) {
+              return React.createElement("div", {
+                className: "chat-tab",
+                ref: ref
+              }, React.createElement(_empty.EmptyChat, null));
+            }
+            return React.createElement("div", {
+              className: "chat-tab",
+              ref: ref
+            }, tActivity.chatModel.messages.items.slice(-2).map(item => {
+              React.createElement("div", null, item.text);
+            }));
+            return React.createElement("div", {
+              className: "chat-tab",
+              ref: ref
+            }, React.createElement(_chatComponent.AgentsChatContainer, {
+              chat: tActivity?.chatModel?.id,
+              id: chatId,
+              empty: _empty.EmptyChat,
+              icon: "/assets/rvd/profile-blue.png"
+            }, React.createElement(_chatComponent.AgentsChatPanel, null)));
+          }
+        }
+      });
+
+      /*************************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/activity/chat/empty
+      *************************************************************/
+
+      ims.set('./views/assignment/drawer/activity/chat/empty', {
+        hash: 2871249374,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.EmptyChat = EmptyChat;
+          var _empty = require("pragmate-ui/empty");
+          var _react = require("react");
+          var _context = require("../../../../context");
+          function EmptyChat() {
+            const {
+              texts: {
+                chat: {
+                  empty: texts
+                }
+              },
+              store
+            } = (0, _context.useDrawerContext)();
+            if (!store?.model) return null;
+            const {
+              title,
+              description
+            } = texts;
+            return _react.default.createElement("div", {
+              className: "empty-chat"
+            }, _react.default.createElement(_empty.Empty, {
+              icon: "info"
+            }, _react.default.createElement("h3", null, title), _react.default.createElement("span", null, description)));
+          }
+        }
+      });
+
+      /*************************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/activity/chat/index
+      *************************************************************/
+
+      ims.set('./views/assignment/drawer/activity/chat/index', {
+        hash: 2691753889,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentAssignmentActivityChatBody = StudentAssignmentActivityChatBody;
+          var _tabs = require("pragmate-ui/tabs");
+          var React = require("react");
+          var _drawerAlerts = require("../../../../components/drawer-alerts");
+          var _context = require("../../../../context");
+          var _components = require("pragmate-ui/components");
+          var _objectives = require("./objectives");
+          //@ts-ignore
+
+          /**
+           *
+           * @param paramm item: ParticipantActivity
+           * @returns
+           */
+          function StudentAssignmentActivityChatBody({
+            item,
+            user,
+            tracking,
+            activityId,
+            participant
+          }) {
+            const {
+              texts,
+              setShowDrawer
+            } = (0, _context.useDrawerContext)();
+            const tActivity = tracking.activities.get(activityId);
+            const chatId = tActivity?.chatModel?.id;
+            const [messages, setMessages] = React.useState(tActivity?.chatModel?.messages.items ?? []);
+            React.useEffect(() => {
+              if (!chatId) return;
+              const triggerChange = () => {
+                setMessages([...tActivity.chatModel.messages.items]);
+              };
+              tActivity.chatModel.on('change', triggerChange);
+              return () => {
+                tActivity.chatModel.off('change', triggerChange);
+              };
+            }, [chatId]);
+            const tabs = [];
+            if (item.progress?.objectives) tabs.push(React.createElement(_tabs.Tab, {
+              key: "objectives"
+            }, texts.activities.objectives));
+            const interactions = item.interactions ? item.interactions : item.messages?.count;
+            tabs.push(React.createElement(_tabs.Tab, {
+              key: "summary"
+            }, React.createElement("div", {
+              className: "tab__label"
+            }, texts.activities.chat, item.messages?.count ? React.createElement("i", {
+              className: "drawer__badge"
+            }, interactions) : null)));
+            if (item?.alerts?.length) tabs.push(React.createElement(_tabs.Tab, {
+              key: "alerts",
+              className: "alerts-tab"
+            }, React.createElement("div", {
+              className: "tab__label"
+            }, texts.alerts, React.createElement("span", {
+              className: "drawer__badge drawer__badge--danger"
+            }, item.alerts.length))));
+            const openChat = event => {
+              setShowDrawer({
+                show: true,
+                view: 'student-chat',
+                data: {
+                  tracking,
+                  participant,
+                  participantActivity: item,
+                  chat: tActivity.chatModel
+                }
+              });
+            };
+            return React.createElement(_tabs.TabsContainer, {
+              active: 0
+            }, React.createElement(_tabs.Tabs, {
+              className: "drawer__tabs"
+            }, tabs), React.createElement(_tabs.Panes, null, item.progress?.objectives && React.createElement(_objectives.StudentAssignmentActivityObjectives, {
+              item: item,
+              tracking: tracking
+            }), React.createElement("div", null, React.createElement("section", {
+              className: "mt-15 activity-data-section"
+            }, React.createElement("h6", null, texts.activities.summary), React.createElement("p", null, item.synthesis), React.createElement(_components.ConditionalContainer, {
+              condition: !!interactions,
+              ternary: true,
+              options: {
+                true: React.createElement("footer", {
+                  className: "mt-15 flex-container flex-end"
+                }, React.createElement(_components.Button, {
+                  onClick: openChat,
+                  className: "chat__btn",
+                  variant: "primary",
+                  bordered: true
+                }, texts.activities.chat)),
+                false: null
+              }
+            }))), React.createElement(_drawerAlerts.DrawerAlert, {
+              alerts: item?.alerts,
+              user: user
+            })));
+          }
+        }
+      });
+
+      /*****************************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/activity/chat/objective
+      *****************************************************************/
+
+      ims.set('./views/assignment/drawer/activity/chat/objective', {
+        hash: 1844398951,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentAssignmentActivityObjective = StudentAssignmentActivityObjective;
+          var React = require("react");
+          var _context = require("../../../../context");
+          var _icons = require("@aimpact/ailearn-app/components/icons");
+          function StudentAssignmentActivityObjective({
+            item
+          }) {
+            const {
+              name,
+              analysis,
+              status
+            } = item;
+            const {
+              texts
+            } = (0, _context.useDrawerContext)();
+            const iconNames = {
+              'in-progress': 'activityInProgress',
+              pending: 'activityPending',
+              completed: 'activityCompleted',
+              outstanding: 'activityOutstanding'
+            };
+            return React.createElement("div", {
+              className: "assigment-activity-objective__container"
+            }, React.createElement("div", {
+              className: "objective-title__container"
+            }, React.createElement("div", null, React.createElement("h6", null, name), React.createElement("p", null, analysis ? analysis : texts.activities.noAnalysis)), React.createElement("div", null, React.createElement("div", {
+              className: `status__container status__container--${item.status.text}`
+            }, React.createElement("span", null, texts.activities.objectivesStatus[status.text]), React.createElement(_icons.AppIcon, {
+              icon: iconNames[item.status.text],
+              className: `activity-status__icon icon-${item.status.text}`
+            })))));
+          }
+        }
+      });
+
+      /******************************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/activity/chat/objectives
+      ******************************************************************/
+
+      ims.set('./views/assignment/drawer/activity/chat/objectives', {
+        hash: 172573551,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentAssignmentActivityObjectives = StudentAssignmentActivityObjectives;
+          var _list = require("pragmate-ui/list");
+          var React = require("react");
+          var _context = require("../../../../context");
+          var _objective = require("./objective");
+          //@ts-ignore
+          function StudentAssignmentActivityObjectives({
+            item,
+            tracking
+          }) {
+            const {
+              texts
+            } = (0, _context.useDrawerContext)();
+            const tActivity = tracking.activities.get(item.activity.id);
+            const chatId = tActivity?.chatModel.id;
+            return React.createElement("div", null, React.createElement("div", {
+              className: "objectives__summary"
+            }, React.createElement("p", null, item.progress?.summary)), item.progress?.objectives && React.createElement("div", null, React.createElement("h4", {
+              className: "mt-15"
+            }, texts.activities.progres), React.createElement(_list.List, {
+              className: "unstyled-list",
+              items: item.progress?.objectives,
+              control: _objective.StudentAssignmentActivityObjective
+            })));
+          }
+        }
+      });
+
+      /********************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/activity/index
+      ********************************************************/
+
+      ims.set('./views/assignment/drawer/activity/index', {
+        hash: 5524567,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentAssignmentActivity = StudentAssignmentActivity;
+          var _icons = require("@aimpact/ailearn-app/components/icons");
+          var _collapsible = require("pragmate-ui/collapsible");
+          var _components = require("pragmate-ui/components");
+          var React = require("react");
+          var _context = require("../../../context");
+          var _chat = require("./chat");
+          var _multipleChoice = require("./multiple-choice");
+          var _spoken = require("./spoken");
+          /**
+           *
+           * @param param0 activityId is passed when the user clicks on an activity
+           * @returns
+           */
+          function StudentAssignmentActivity({
+            item: activity,
+            user,
+            index,
+            tracking,
+            activityId,
+            participant
+          }) {
+            const {
+              texts,
+              store,
+              setShowDrawer
+            } = (0, _context.useDrawerContext)();
+            const hasParticipated = participant.activities.has(activity.id);
+            const item = participant.activities.get(activity.id);
+            const open = !activityId && index === 0 || activityId === activity.id;
+            const [isDragging, setIsDragging] = React.useState(open);
+            const ref = React.useRef(null);
+            const onToggle = () => {
+              setIsDragging(!isDragging);
+            };
+            const clsDrawer = `ds-drawer__activity-item ${isDragging ? 'is-open' : ''} ${open ? 'is-open' : ''}}`;
+            if (!activityId) activityId = activity.id;
+            React.useEffect(() => {
+              if (!open) return;
+              ref.current?.classList.toggle('activity-item--opened');
+              setTimeout(() => {
+                ref.current?.classList.toggle('activity-item--opened');
+              }, 1000);
+            }, [open]);
+            if (!hasParticipated) {
+              return React.createElement("article", {
+                className: "ds-drawer__activity-item is-disabled",
+                ref: ref
+              }, React.createElement(_collapsible.CollapsibleContainer, null, React.createElement(_collapsible.CollapsibleHeader, null, React.createElement("header", {
+                className: "activity__header"
+              }, React.createElement("section", {
+                className: "activity-header__container"
+              }, React.createElement("picture", {
+                className: `activity-type__icon activity--${activity?.type}`
+              }, React.createElement(_icons.AppIcon, {
+                icon: _icons.ICONS[activity.type]
+              })), React.createElement("div", null, React.createElement("h5", null, activity.title), React.createElement("div", null, React.createElement("span", null, texts.activities.types[activity.type]), React.createElement("div", {
+                className: "activity-status"
+              }, texts.activities.status.pending))))))));
+            }
+            return React.createElement("article", {
+              className: clsDrawer,
+              ref: ref
+            }, React.createElement(_collapsible.CollapsibleContainer, {
+              data: item,
+              onToggle: onToggle,
+              open: isDragging
+            }, React.createElement(_collapsible.CollapsibleHeader, null, React.createElement("header", {
+              className: "activity__header"
+            }, React.createElement("section", {
+              className: "activity-header__container"
+            }, React.createElement("picture", {
+              className: `activity-type__icon activity--${activity?.type}`
+            }, React.createElement(_icons.AppIcon, {
+              icon: _icons.ICONS[activity.type]
+            })), React.createElement("div", null, React.createElement("h5", null, activity.title), React.createElement("span", null, texts.activities.types[activity.type]))))), React.createElement(_collapsible.CollapsibleContent, {
+              className: "ds-drawer__activity-item__collapsible-content"
+            }, React.createElement(_components.ConditionalContainer, {
+              condition: activity.type,
+              options: {
+                'content-theory': React.createElement(_chat.StudentAssignmentActivityChatBody, {
+                  tracking: tracking,
+                  item: item,
+                  user: user,
+                  participant: participant,
+                  activityId: activityId
+                }),
+                'character-talk': React.createElement(_chat.StudentAssignmentActivityChatBody, {
+                  tracking: tracking,
+                  item: item,
+                  user: user,
+                  participant: participant,
+                  activityId: activityId
+                }),
+                debate: React.createElement(_chat.StudentAssignmentActivityChatBody, {
+                  tracking: tracking,
+                  item: item,
+                  user: user,
+                  participant: participant,
+                  activityId: activityId
+                }),
+                'multiple-choice': React.createElement(_multipleChoice.StudentAssignmentActivityMultipleChoiceBody, {
+                  item: item,
+                  user: user,
+                  activityId: activityId
+                }),
+                spoken: React.createElement(_spoken.StudentAssignmentActivitySpokenBody, {
+                  item: item,
+                  user: user,
+                  tracking: tracking,
+                  activityId: activityId
+                })
+              }
+            }))));
+          }
+        }
+      });
+
+      /*************************************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/activity/multiple-choice/answer
+      *************************************************************************/
+
+      ims.set('./views/assignment/drawer/activity/multiple-choice/answer', {
+        hash: 1375693988,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentAssignmentActivityMultipleChoiceQuestionOptions = StudentAssignmentActivityMultipleChoiceQuestionOptions;
+          var React = require("react");
+          var _context = require("../../../../context");
+          function StudentAssignmentActivityMultipleChoiceQuestionOptions({
+            item,
+            answer,
+            correctAnswer,
+            index
+          }) {
+            const {
+              texts
+            } = (0, _context.useDrawerContext)();
+            const selected = index === answer;
+            let cls = `option-item `;
+            if (index === correctAnswer) cls += `option--correct`;
+            if (selected) {
+              cls += `${selected && index === correctAnswer ? ` option--corrected` : `option--wrong `}`;
+            }
+            if (index === answer) cls += ` option--selected`;
+            // if (index === correctAnswer) cls += ` option--correct`;
+            return React.createElement("div", {
+              className: cls
+            }, item);
+          }
+        }
+      });
+
+      /************************************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/activity/multiple-choice/index
+      ************************************************************************/
+
+      ims.set('./views/assignment/drawer/activity/multiple-choice/index', {
+        hash: 672735612,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentAssignmentActivityMultipleChoiceBody = StudentAssignmentActivityMultipleChoiceBody;
+          var React = require("react");
+          var _context = require("../../../../context");
+          var _list = require("pragmate-ui/list");
+          var _questions = require("./questions");
+          function StudentAssignmentActivityMultipleChoiceBody({
+            item,
+            user,
+            activityId
+          }) {
+            const {
+              texts
+            } = (0, _context.useDrawerContext)();
+            return React.createElement("div", {
+              className: "activity-data-section mt-15"
+            }, React.createElement("p", null, item.activity.description), React.createElement("h6", null, texts.activities.multipleChoice.participation.title), React.createElement("div", {
+              className: "multiple-choice__container"
+            }, React.createElement("h6", null, texts.activities.multipleChoice.participation.detail, ": ", item.counters.correct, "/", item.counters.total), React.createElement(_list.List, {
+              className: "multiple-choice__list questions-list",
+              items: item.participationData,
+              control: _questions.StudentAssignmentActivityMultipleChoiceQuestions
+            })));
+          }
+        }
+      });
+
+      /****************************************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/activity/multiple-choice/questions
+      ****************************************************************************/
+
+      ims.set('./views/assignment/drawer/activity/multiple-choice/questions', {
+        hash: 1633830241,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentAssignmentActivityMultipleChoiceQuestions = StudentAssignmentActivityMultipleChoiceQuestions;
+          var React = require("react");
+          var _context = require("../../../../context");
+          var _list = require("pragmate-ui/list");
+          var _answer = require("./answer");
+          function StudentAssignmentActivityMultipleChoiceQuestions({
+            item,
+            user,
+            activityId
+          }) {
+            const {
+              texts
+            } = (0, _context.useDrawerContext)();
+            const specs = {
+              answer: item.answer,
+              correctAnswer: item.correctAnswer
+            };
+            return React.createElement("li", {
+              className: "multiple-choice__item"
+            }, React.createElement("h6", null, item.question), React.createElement(_list.List, {
+              className: "multiple-choice__list options-list",
+              items: item.options,
+              specs: specs,
+              control: _answer.StudentAssignmentActivityMultipleChoiceQuestionOptions
+            }));
+          }
+        }
+      });
+
+      /*********************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/activity/spoken
+      *********************************************************/
+
+      ims.set('./views/assignment/drawer/activity/spoken', {
+        hash: 2242268867,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentAssignmentActivitySpokenBody = StudentAssignmentActivitySpokenBody;
+          var React = require("react");
+          var _context = require("../../../context");
+          var _ui = require("@aimpact/ailearn-app/components/ui");
+          var _config = require("@aimpact/ailearn-app/config");
+          var _icons = require("@aimpact/ailearn-app/components/icons");
+          var _tabs = require("pragmate-ui/tabs");
+          function StudentAssignmentActivitySpokenBody({
+            item,
+            user,
+            tracking,
+            activityId
+          }) {
+            const {
+              texts,
+              store
+            } = (0, _context.useDrawerContext)();
+            const audioUrl = `${_config.default.params.apis.ailearn}/assignments/${store.model.id}/activities/${item.activity.id}/tracking/${user.id}/audio`;
+            const output = item.objectives.map(objective => {
+              return React.createElement("div", {
+                className: "tab-feedback-section",
+                key: `${item.id}-${objective.objective}`
+              }, React.createElement("div", null, React.createElement("h6", {
+                className: "flex-container flex-vertical-center gap-05"
+              }, React.createElement(_icons.AppIcon, {
+                icon: `points${objective.points}`
+              }), objective.name)), React.createElement("div", null, React.createElement("span", null, objective.feedback)));
+            });
+            const tabs = [React.createElement(_tabs.Tab, {
+              key: "feedback"
+            }, texts.activities.spoken.feedback)];
+            if (item.transcription) tabs.push(React.createElement(_tabs.Tab, {
+              key: "transcription"
+            }, texts.activities.spoken.transcription));
+            return React.createElement("div", null, React.createElement("div", {
+              className: "activity-data-section"
+            }, React.createElement("h5", null, texts.activities.spoken.audio), React.createElement(_ui.AudioPlayer, {
+              url: audioUrl
+            })), React.createElement(_tabs.TabsContainer, {
+              active: 0,
+              className: "drawer-activity__tabs-container"
+            }, React.createElement(_tabs.Tabs, {
+              className: "drawer__tabs"
+            }, tabs), React.createElement(_tabs.Panes, null, React.createElement("div", {
+              className: "activity-data-section-list"
+            }, output), React.createElement("div", {
+              className: "activity-data__content"
+            }, React.createElement("p", null, item.transcription)))));
+          }
+        }
+      });
+
+      /**************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/chat-tab
+      **************************************************/
+
+      ims.set('./views/assignment/drawer/chat-tab', {
+        hash: 2817534432,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentAssignmentActivityChatTab = StudentAssignmentActivityChatTab;
+          var React = require("react");
+          var _context = require("../../context");
+          var _chatComponent = require("@aimpact/chat-sdk/chat-component.code");
+          var _empty = require("./activity/chat/empty");
+          //@ts-ignore
+
+          function StudentAssignmentActivityChatTab({
+            item: {
+              chat,
+              participantActivity
+            },
+            tracking
+          }) {
+            const {
+              texts
+            } = (0, _context.useDrawerContext)();
+            const ref = React.useRef(null);
+            const tActivity = tracking.activities.get(participantActivity.id);
+            const chatId = tActivity?.chatModel?.id;
+            React.useEffect(() => {
+              if (!ref.current) return;
+              ref.current.addEventListener('scroll', event => {
+                event.stopPropagation();
+                event.preventDefault();
+                console.log('scroll');
+              });
+            }, [ref.current]);
+            if (!chat?.messages.items.length) {
+              return React.createElement("div", {
+                className: "chat-tab",
+                ref: ref
+              }, React.createElement(_empty.EmptyChat, null));
+            }
+            return React.createElement("div", {
+              className: "chat-tab",
+              ref: ref
+            }, React.createElement(_chatComponent.AgentsChatContainer, {
+              chat: chat,
+              id: chat?.id,
+              empty: _empty.EmptyChat,
+              icon: "/assets/rvd/profile-blue.png"
+            }, React.createElement(_chatComponent.AgentsChatPanel, null)));
+          }
+        }
+      });
+
+      /********************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/confirm-action
+      ********************************************************/
+
+      ims.set('./views/assignment/drawer/confirm-action', {
+        hash: 2473476240,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ConfirmAction = ConfirmAction;
+          var _react = require("react");
+          var _modal = require("pragmate-ui/modal");
+          var _components = require("pragmate-ui/components");
+          var _context = require("../../context");
+          function ConfirmAction({
+            callback
+          }) {
+            const [open, setOpen] = _react.default.useState(false);
+            const {
+              texts
+            } = (0, _context.useDrawerContext)();
+            const toggleOpen = () => setOpen(!open);
+            const onClickButton = event => {
+              event.stopPropagation();
+              toggleOpen();
+            };
+            const onConfirm = async () => {
+              await callback();
+              toggleOpen();
+            };
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_components.Button, {
+              className: "btn-credits",
+              variant: "primary",
+              onClick: onClickButton
+            }, texts.addCredits.action), open && _react.default.createElement(_modal.ConfirmModal, {
+              show: true,
+              onConfirm: onConfirm,
+              onCancel: toggleOpen
+            }, _react.default.createElement("div", {
+              className: "modal-overlay",
+              onClick: toggleOpen
+            }), _react.default.createElement("div", {
+              className: "modal-content"
+            }, _react.default.createElement("h3", null, texts.addCredits.title), _react.default.createElement("p", null, texts.addCredits.description))));
+          }
+        }
+      });
+
+      /*****************************************************
+      INTERNAL MODULE: ./views/assignment/drawer/drawer-chat
+      *****************************************************/
+
+      ims.set('./views/assignment/drawer/drawer-chat', {
+        hash: 53564705,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentDrawerChat = StudentDrawerChat;
+          var _hooks = require("@beyond-js/react-18-widgets/hooks");
+          var _icons = require("pragmate-ui/icons");
+          var React = require("react");
+          var _context = require("../../context");
+          var _icons2 = require("@aimpact/ailearn-app/components/icons");
+          var _chatTab = require("./chat-tab");
+          var _routing = require("@beyond-js/kernel/routing");
+          function StudentDrawerChat({
+            item,
+            toggleOpen
+          }) {
+            const {
+              participant,
+              tracking,
+              activity,
+              participantActivity
+            } = item;
+            const {
+              texts,
+              store,
+              setShowDrawer
+            } = (0, _context.useDrawerContext)();
+            const {
+              user: student
+            } = participant;
+            const [items, setItems] = React.useState(participant.activities.items);
+            const [fetching, setFetching] = React.useState(false);
+            const [ready, setReady] = React.useState(tracking.ready);
+            const cls = `ds-drawer-container${fetching ? ' is-fetching' : ''}`;
+            const activityId = activity?.id;
+            const onRefresh = async () => {
+              setFetching(true);
+              await item.participant.load();
+              setTimeout(() => {
+                setItems([...participant.activities.items]);
+                setFetching(false);
+              }, 1000);
+            };
+            (0, _hooks.useBinder)([tracking], () => {
+              setReady(tracking.ready);
+              setItems([...participant.activities.items]);
+            });
+            if (!ready) return null;
+            const onBack = () => {
+              _routing.routing.replaceState({}, null, `?drawer=student`);
+              setShowDrawer({
+                show: true,
+                view: 'student',
+                data: {
+                  tracking,
+                  participant,
+                  participantActivity: item,
+                  activity
+                }
+              });
+            };
+            return React.createElement("div", {
+              className: cls
+            }, React.createElement("header", {
+              className: "dashboard-drawer__header"
+            }, React.createElement(_icons2.AppIconButton, {
+              onClick: onBack,
+              icon: "backArrow",
+              className: "circle"
+            }), React.createElement("section", {
+              className: "user__title flex-container flex-space-between"
+            }, React.createElement("div", null, React.createElement("h2", null, student.name), React.createElement("div", {
+              className: "user__credits"
+            }, texts.interactions, ": ", tracking.credits.consumed, " ", texts.of, " ", tracking.credits.total)), React.createElement("div", null, React.createElement(_icons.IconButton, {
+              icon: "refresh",
+              className: "circle",
+              onClick: onRefresh
+            })))), React.createElement(_chatTab.StudentAssignmentActivityChatTab, {
+              item: item,
+              tracking: tracking
+            }));
+          }
+        }
+      });
+
+      /***********************************************
+      INTERNAL MODULE: ./views/assignment/drawer/empty
+      ***********************************************/
+
+      ims.set('./views/assignment/drawer/empty', {
+        hash: 3745556353,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.EmptyCard = EmptyCard;
+          var _react = require("react");
+          var _empty = require("pragmate-ui/empty");
+          /*bundle */
+          function EmptyCard({
+            text,
+            className
+          }) {
+            const cls = `empty-section__container${className ? ` ${className}` : ''}`;
+            return _react.default.createElement(_empty.Empty, {
+              className: cls
+            }, _react.default.createElement("p", null, text));
+          }
+        }
+      });
+
+      /***********************************************
+      INTERNAL MODULE: ./views/assignment/drawer/index
+      ***********************************************/
+
+      ims.set('./views/assignment/drawer/index', {
+        hash: 298150186,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentAssignmentSummary = StudentAssignmentSummary;
+          var Drawer = require("pragmate-ui/drawer");
+          var _icons = require("pragmate-ui/icons");
+          var _list = require("pragmate-ui/list");
+          var React = require("react");
+          var _context = require("../../context");
+          var _activity = require("./activity");
+          var _empty = require("./empty");
+          var _hooks = require("@beyond-js/react-18-widgets/hooks");
+          function StudentAssignmentSummary({
+            item,
+            toggleOpen
+          }) {
+            const {
+              participant,
+              tracking,
+              activity
+            } = item;
+            const {
+              texts,
+              store
+            } = (0, _context.useDrawerContext)();
+            const {
+              user: student
+            } = participant;
+            const [items, setItems] = React.useState(participant.activities.items);
+            const [fetching, setFetching] = React.useState(false);
+            const [ready, setReady] = React.useState(tracking.ready);
+            const cls = `ds-drawer-container${fetching ? ' is-fetching' : ''}`;
+            const activityId = activity?.id;
+            const credits = store.model;
+            const total = credits ? credits.total - credits.consumed : 0;
+            const percentageAvailable = total / credits.total * 100;
+            const onRefresh = async () => {
+              setFetching(true);
+              await item.participant.load();
+              setTimeout(() => {
+                setItems([...participant.activities.items]);
+                setFetching(false);
+              }, 1000);
+            };
+            (0, _hooks.useBinder)([tracking], () => {
+              setReady(tracking.ready);
+              setItems([...participant.activities.items]);
+            });
+            const onClickButton = event => {
+              event.stopPropagation();
+              toggleOpen();
+            };
+            if (!ready) return null;
+            return React.createElement(React.Fragment, null, React.createElement("div", {
+              className: cls
+            }, React.createElement("header", {
+              className: "dashboard-drawer__header"
+            }, React.createElement("section", {
+              className: "user__title flex-container flex-space-between"
+            }, React.createElement("div", null, React.createElement("h2", null, student.name), React.createElement("div", {
+              className: "user__credits"
+            }, texts.interactions, ": ", tracking.credits.consumed, " ", texts.of, " ", tracking.credits.total)), React.createElement("div", {
+              className: "drawer__header-actions"
+            }, React.createElement(_icons.IconButton, {
+              icon: "refresh",
+              className: "circle refresh-icon",
+              onClick: onRefresh
+            }), React.createElement(Drawer.CloseButton, null)))), React.createElement("section", {
+              className: "ds-drawer__content"
+            }, items.length ? React.createElement(_list.List, {
+              className: "assignment-activity-list",
+              items: store.model.activities.items,
+              specs: {
+                user: student,
+                tracking,
+                activityId,
+                participant
+              },
+              control: _activity.StudentAssignmentActivity
+            }) : React.createElement(_empty.EmptyCard, {
+              text: texts.assignment.empty.title
+            }))));
+          }
+        }
+      });
+
+      /******************************************
+      INTERNAL MODULE: ./views/assignment/general
+      ******************************************/
+
+      ims.set('./views/assignment/general', {
+        hash: 30264229,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.GeneralView = GeneralView;
+          var _list = require("pragmate-ui/list");
+          var _react = require("react");
+          var _context = require("../context");
+          var _item = require("./item");
+          /*bundle*/
+          function GeneralView() {
+            const {
+              store
+            } = (0, _context.useDashboardContext)();
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("div", {
+              className: "dashboard__list"
+            }, _react.default.createElement(_list.List, {
+              className: "list-unstyled users__list",
+              items: store.participants,
+              control: _item.Item
+            })));
+          }
+        }
+      });
+
+      /*****************************************************
+      INTERNAL MODULE: ./views/assignment/item/activity/chat
+      *****************************************************/
+
+      ims.set('./views/assignment/item/activity/chat', {
+        hash: 234936428,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ModuleActivityChat = ModuleActivityChat;
+          var _react = require("react");
+          var _context = require("../../../context");
+          var _label = require("./label");
+          var _activityIcon = require("../../../components/activity-icon");
+          var _status = require("./status");
+          function ModuleActivityChat({
+            activity,
+            participant
+          }) {
+            const {
+              user
+            } = participant;
+            const {
+              setShowDrawer,
+              store
+            } = (0, _context.useDashboardContext)();
+            const data = participant.activities[activity.id]?.data;
+            const output = [];
+            if (activity.type === 'assessment' && activity.subtype === 'multiple-choice' && data.data) {
+              output.push(_react.default.createElement("span", null, activity.data.counters.correct, " /", activity.data.counters.total));
+            }
+            const onClick = async event => {
+              event.stopPropagation();
+              event.preventDefault();
+              const tracking = await store.loadUserTracking(user.id);
+              setShowDrawer({
+                show: true,
+                view: 'student',
+                data: {
+                  tracking,
+                  participant,
+                  activity
+                }
+              });
+            };
+            return _react.default.createElement("li", {
+              onClick: onClick,
+              key: `${user.id}.${activity.id}`,
+              className: "card-student-item"
+            }, _react.default.createElement("div", null, _react.default.createElement(_activityIcon.ActivityIcon, {
+              type: activity.type
+            })), _react.default.createElement("div", {
+              className: "activity-title__container-content"
+            }, _react.default.createElement("span", {
+              className: "activity-title"
+            }, activity.title), _react.default.createElement("div", {
+              className: "user-activity__information"
+            }, _react.default.createElement(_label.ModuleActivityMessages, {
+              item: activity,
+              participant: participant
+            }), _react.default.createElement(_status.ModuleActivityStatus, {
+              item: activity,
+              participant: participant
+            }))));
+          }
+        }
+      });
+
+      /********************************************************
+      INTERNAL MODULE: ./views/assignment/item/activity/details
+      ********************************************************/
+
+      ims.set('./views/assignment/item/activity/details', {
+        hash: 3912473552,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ModuleActivityDetails = ModuleActivityDetails;
+          var _react = require("react");
+          var _icons = require("pragmate-ui/icons");
+          var _status = require("./status");
+          function ModuleActivityDetails({
+            item
+          }) {
+            const {
+              activity,
+              participant
+            } = item;
+            const participantActivity = participant.activities.get(activity.id);
+            const output = [];
+            if (activity.type === 'assessment' && activity.subtype === 'multiple-choice' && data.data) {
+              output.push(_react.default.createElement("span", null, item.data.counters.correct, " /", item.data.counters.total));
+            }
+            return _react.default.createElement("div", {
+              className: "user-activity__information"
+            }, _react.default.createElement("div", {
+              className: "flex-container flex-vertical-center gap-05"
+            }, participantActivity?.alerts?.length ? _react.default.createElement(_icons.Icon, {
+              icon: "error",
+              className: "error-icon"
+            }) : null), _react.default.createElement(_status.ModuleActivityStatus, {
+              item: item,
+              participant: participant
+            }));
+          }
+        }
+      });
+
+      /******************************************************
+      INTERNAL MODULE: ./views/assignment/item/activity/index
+      ******************************************************/
+
+      ims.set('./views/assignment/item/activity/index', {
+        hash: 3795714024,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ModuleActivity = ModuleActivity;
+          var _react = require("react");
+          var _components = require("pragmate-ui/components");
+          var _chat = require("./chat");
+          var _spoken = require("./spoken");
+          var _multipleChoice = require("./multiple-choice");
+          function ModuleActivity({
+            item: activity,
+            participant
+          }) {
+            const type = ['content-theory', 'debate', 'character-talk'].includes(activity.type) ? 'chat' : activity.type;
+            return _react.default.createElement(_components.ConditionalContainer, {
+              condition: type,
+              options: {
+                chat: _react.default.createElement(_chat.ModuleActivityChat, {
+                  activity: activity,
+                  participant: participant
+                }),
+                spoken: _react.default.createElement(_spoken.ModuleActivitySpoken, {
+                  activity: activity,
+                  participant: participant
+                }),
+                'multiple-choice': _react.default.createElement(_multipleChoice.ModuleActivityMultipleChoice, {
+                  activity: activity,
+                  participant: participant
+                })
+              }
+            });
+          }
+        }
+      });
+
+      /******************************************************
+      INTERNAL MODULE: ./views/assignment/item/activity/label
+      ******************************************************/
+
+      ims.set('./views/assignment/item/activity/label', {
+        hash: 886380988,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ModuleActivityMessages = ModuleActivityMessages;
+          var _react = require("react");
+          var _context = require("../../../context");
+          var _icons = require("pragmate-ui/icons");
+          function ModuleActivityMessages({
+            item,
+            participant
+          }) {
+            const activity = item;
+            const {
+              texts
+            } = (0, _context.useDashboardContext)();
+            const hasParticipated = participant.activities.has(activity.id);
+            const participantActivity = participant.activities.get(activity.id);
+            let type = 'warning';
+            let label = texts.activities.status.pending;
+            if (hasParticipated) {
+              type = 'success';
+              label = texts.activities.status.done;
+            }
+            console.log(0.1, participant, participantActivity);
+            if (['content-theory', 'debate', 'character-talk'].includes(activity.type)) {
+              if (participantActivity?.interactions) {
+                label = `${participantActivity?.interactions.count} ${texts.activities.interactions}`;
+              } else {
+                const totalMessages = participantActivity?.messages?.count ?? 0;
+                label = `${totalMessages} ${texts.activities.interactions}`;
+              }
+            }
+            if (activity.type === 'spoken' && item.data) {
+              const icons = Object.values(item.data).map(data => data.icon).join('');
+              label = icons;
+              type = 'default';
+            }
+            if (activity.type === 'assessment' && activity.subtype === 'multiple-choice' && item.data) {
+              const {
+                correct,
+                total
+              } = item.data.counters;
+              if (correct < total / 2) type = 'error';
+              label = `${correct} / ${total}`;
+            }
+            if (hasParticipated && participantActivity?.messages) {
+              label = `${texts.messageCounter} ${participantActivity?.messages.count}`;
+            }
+            const hasAlerts = participantActivity?.alerts?.length;
+            const cls = `activity-status${hasAlerts ? ' has-alerts' : ''}`;
+            return _react.default.createElement("div", {
+              className: cls
+            }, _react.default.createElement("span", null, label), hasAlerts ? _react.default.createElement(_icons.Icon, {
+              icon: "error",
+              className: "error-icon"
+            }) : null);
+          }
+        }
+      });
+
+      /****************************************************************
+      INTERNAL MODULE: ./views/assignment/item/activity/multiple-choice
+      ****************************************************************/
+
+      ims.set('./views/assignment/item/activity/multiple-choice', {
+        hash: 810429526,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ModuleActivityMultipleChoice = ModuleActivityMultipleChoice;
+          var _react = require("react");
+          var _context = require("../../../context");
+          var _label = require("./label");
+          var _activityIcon = require("../../../components/activity-icon");
+          function ModuleActivityMultipleChoice({
+            activity,
+            participant
+          }) {
+            const {
+              user
+            } = participant;
+            const {
+              setShowDrawer,
+              store
+            } = (0, _context.useDashboardContext)();
+            const participantActivity = participant.activities.get(activity.id);
+            const onClick = event => {
+              event.stopPropagation();
+              event.preventDefault();
+              const tracking = store.loadUserTracking(user.id);
+              setShowDrawer({
+                show: true,
+                view: 'student',
+                data: {
+                  tracking,
+                  participant,
+                  activity
+                }
+              });
+            };
+            return _react.default.createElement("li", {
+              onClick: onClick,
+              key: `${user.id}.${activity.id}`,
+              className: "card-student-item"
+            }, _react.default.createElement("div", null, _react.default.createElement(_activityIcon.ActivityIcon, {
+              type: activity.type
+            })), _react.default.createElement("div", {
+              className: "activity-title__container-content"
+            }, _react.default.createElement("span", {
+              className: "activity-title"
+            }, activity.title), _react.default.createElement("div", {
+              className: "user-activity__information"
+            }, _react.default.createElement("div", null, _react.default.createElement(_label.ModuleActivityMessages, {
+              item: activity,
+              participant: participant
+            })), _react.default.createElement("div", null, participantActivity?.counters ? _react.default.createElement("div", {
+              className: "user-activity__information user-activity__information-multiple-choice"
+            }, _react.default.createElement("span", {
+              className: "activity-item-counter"
+            }, participantActivity.counters.correct), _react.default.createElement("span", {
+              className: "activity-item-divider"
+            }, "/"), _react.default.createElement("span", {
+              className: "activity-item-counter"
+            }, participantActivity.counters.total)) : null))));
+          }
+        }
+      });
+
+      /*******************************************************
+      INTERNAL MODULE: ./views/assignment/item/activity/spoken
+      *******************************************************/
+
+      ims.set('./views/assignment/item/activity/spoken', {
+        hash: 3187413673,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ModuleActivitySpoken = ModuleActivitySpoken;
+          var _react = require("react");
+          var _context = require("../../../context");
+          var _label = require("./label");
+          var _activityIcon = require("../../../components/activity-icon");
+          var _icons = require("@aimpact/ailearn-app/components/icons");
+          var _list = require("pragmate-ui/list");
+          function ModuleActivitySpoken({
+            activity,
+            participant
+          }) {
+            const {
+              user
+            } = participant;
+            const {
+              setShowDrawer,
+              store
+            } = (0, _context.useDashboardContext)();
+            const participantActivity = participant.activities.get(activity.id);
+            const onClick = event => {
+              event.stopPropagation();
+              event.preventDefault();
+              const tracking = store.loadUserTracking(user.id);
+              setShowDrawer({
+                show: true,
+                view: 'student',
+                data: {
+                  tracking,
+                  participant,
+                  activity
+                }
+              });
+            };
+            const IconItem = ({
+              item: icon
+            }) => _react.default.createElement(_icons.AppIcon, {
+              icon: `points${icon.points}`
+            });
+            return _react.default.createElement("li", {
+              onClick: onClick,
+              key: `${user.id}.${activity.id}`,
+              className: "card-student-item"
+            }, _react.default.createElement("div", null, _react.default.createElement(_activityIcon.ActivityIcon, {
+              type: activity.type
+            })), _react.default.createElement("div", {
+              className: "activity-title__container-content"
+            }, _react.default.createElement("span", {
+              className: "activity-title"
+            }, activity.title), _react.default.createElement("div", {
+              className: "user-activity__information"
+            }, _react.default.createElement(_label.ModuleActivityMessages, {
+              item: activity,
+              participant: participant
+            }), _react.default.createElement("div", {
+              className: "spoken-icons"
+            }, _react.default.createElement(_list.List, {
+              items: participantActivity?.objectives,
+              control: IconItem
+            })))));
+          }
+        }
+      });
+
+      /*******************************************************
+      INTERNAL MODULE: ./views/assignment/item/activity/status
+      *******************************************************/
+
+      ims.set('./views/assignment/item/activity/status', {
+        hash: 2552220279,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ModuleActivityStatus = ModuleActivityStatus;
+          var _react = require("react");
+          var _objectiveIcon = require("../../../components/objective-icon");
+          var _context = require("../../../context");
+          function ModuleActivityStatus({
+            item,
+            participant
+          }) {
+            const activity = item;
+            const {
+              texts
+            } = (0, _context.useDashboardContext)();
+            const participantActivity = participant.activities.get(activity.id);
+            if (!participantActivity?.progress?.objectives) return null;
+            const icons = participantActivity?.progress?.objectives?.map((item, index) => _react.default.createElement(_objectiveIcon.ActivityObjectiveStatusIcon, {
+              key: `${item?.text}-${index}-icon`,
+              item: item
+            }));
+            return _react.default.createElement("div", {
+              className: "activity-status__container"
+            }, icons);
+          }
+        }
+      });
+
+      /*********************************************
+      INTERNAL MODULE: ./views/assignment/item/index
+      *********************************************/
+
+      ims.set('./views/assignment/item/index', {
+        hash: 1818800279,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Item = Item;
+          var _components = require("pragmate-ui/components");
+          var _image = require("pragmate-ui/image");
+          var _list = require("pragmate-ui/list");
+          var _react = require("react");
+          var _context = require("../../context");
+          var _activity = require("./activity");
+          function Item({
+            item
+          }) {
+            const {
+              texts,
+              model,
+              store,
+              setShowDrawer
+            } = (0, _context.useDashboardContext)();
+            const {
+              user
+            } = item;
+            const participantUri = `/assignments/${store.assignmentId}/dashboard/participant/${item.user.id}`;
+            const openDrawer = event => {
+              event.preventDefault();
+              const tracking = store.loadUserTracking(user.id);
+              setShowDrawer({
+                show: true,
+                view: 'student',
+                tracking,
+                data: {
+                  tracking,
+                  participant: item
+                }
+              });
+              localStorage.setItem('student.details', JSON.stringify(item.user));
+              return false;
+            };
+            return _react.default.createElement("li", {
+              className: "dashboard-card card__user"
+            }, _react.default.createElement("header", null, _react.default.createElement(_image.Image, {
+              src: user?.photoUrl,
+              alt: `${user.name}-avatar`,
+              className: "avatar__image"
+            }), _react.default.createElement(_components.Link, {
+              href: participantUri,
+              onClick: openDrawer
+            }, _react.default.createElement("h5", null, user.name))), _react.default.createElement("div", {
+              className: "detail__info"
+            }, _react.default.createElement(_list.List, {
+              className: "user-activity__data",
+              specs: {
+                participant: item
+              },
+              items: model.activities.items,
+              control: _activity.ModuleActivity
+            })));
+          }
+        }
+      });
+
+      /************************************************
+      INTERNAL MODULE: ./views/components/activity-icon
+      ************************************************/
+
+      ims.set('./views/components/activity-icon', {
+        hash: 1185574957,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ActivityIcon = ActivityIcon;
+          var React = require("react");
+          var _iconBox = require("./icon-box");
+          /*bundle*/
+          function ActivityIcon({
+            type,
+            className
+          }) {
+            const cls = `icon-box-container activity--${type} pui-box-icon${className ? ` ${className}` : ''}`;
+            return React.createElement("div", {
+              className: cls
+            }, React.createElement(_iconBox.IconBox, {
+              name: type
+            }));
+          }
+        }
+      });
+
+      /******************************************************
+      INTERNAL MODULE: ./views/components/drawer-alerts/index
+      ******************************************************/
+
+      ims.set('./views/components/drawer-alerts/index', {
+        hash: 3059207640,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DrawerAlert = DrawerAlert;
+          var React = require("react");
+          var _list = require("pragmate-ui/list");
+          var _item = require("./item");
+          var _context = require("../../context");
+          /*bundle*/
+          function DrawerAlert({
+            alerts,
+            user
+          }) {
+            const {
+              texts
+            } = (0, _context.useDashboardContext)();
+            if (!alerts?.length) return null;
+            return React.createElement(React.Fragment, null, React.createElement(_list.List, {
+              as: "div",
+              className: "mt-15 ds-drawer__list",
+              items: alerts,
+              control: _item.DrawerAlertItem,
+              specs: {
+                user
+              }
+            }));
+          }
+        }
+      });
+
+      /*****************************************************
+      INTERNAL MODULE: ./views/components/drawer-alerts/item
+      *****************************************************/
+
+      ims.set('./views/components/drawer-alerts/item', {
+        hash: 105732952,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DrawerAlertItem = DrawerAlertItem;
+          var React = require("react");
+          var _collapsible = require("pragmate-ui/collapsible");
+          /*bundle*/
+          function DrawerAlertItem({
+            item,
+            user
+          }) {
+            const ref = React.useRef(null);
+            const [open, setOpen] = React.useState(false);
+            const cls = `ds-drawer__activity-item ${open ? 'is-open' : ''}`;
+            const onToggle = () => {
+              setOpen(!open);
+              return true;
+            };
+            return React.createElement("article", {
+              className: cls,
+              ref: ref
+            }, React.createElement(_collapsible.CollapsibleContainer, {
+              onToggle: onToggle
+            }, React.createElement(_collapsible.CollapsibleHeader, null, React.createElement("span", null, item.text)), React.createElement(_collapsible.CollapsibleContent, null, React.createElement("div", {
+              className: "alert-item"
+            }, React.createElement("h6", null, "RVD AI"), React.createElement("div", null, item.iteration.assistant), React.createElement("h6", null, user.name), React.createElement("div", null, item.iteration.student)))));
+          }
+        }
+      });
+
+      /****************************************
+      INTERNAL MODULE: ./views/components/empty
+      ****************************************/
+
+      ims.set('./views/components/empty', {
+        hash: 1805669159,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Empty = Empty;
+          var _icons = require("@aimpact/ailearn-app/components/icons");
+          var _ui = require("@aimpact/ailearn-app/components/ui");
+          var _config = require("@aimpact/ailearn-app/config");
+          var _react = require("react");
+          var _empty = require("pragmate-ui/empty");
+          const APP = _config.default?.params?.APP_NAME ?? 'RVD AI';
+          function Empty({
+            store,
+            texts
+          }) {
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_ui.PageContainer, null, _react.default.createElement(_empty.Empty, {
+              className: "empty-section__container",
+              icon: _icons.ICONS.classworks
+            }, _react.default.createElement("h3", {
+              className: "title"
+            }, store.model.module.title), _react.default.createElement("p", null, texts.empty))));
+          }
+        }
+      });
+
+      /*******************************************
+      INTERNAL MODULE: ./views/components/icon-box
+      *******************************************/
+
+      ims.set('./views/components/icon-box', {
+        hash: 2839980169,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.IconBox = IconBox;
+          var React = require("react");
+          var _icons = require("@aimpact/ailearn-app/components/icons");
+          /*bundle*/
+          function IconBox({
+            name,
+            className
+          }) {
+            const cls = `pui-box-icon${className ? ` ${className}` : ''}`;
+            return React.createElement(_icons.AppIcon, {
+              icon: name,
+              className: cls
+            });
+          }
+        }
+      });
+
+      /*************************************************
+      INTERNAL MODULE: ./views/components/objective-icon
+      *************************************************/
+
+      ims.set('./views/components/objective-icon', {
+        hash: 3530902262,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ActivityObjectiveStatusIcon = ActivityObjectiveStatusIcon;
+          var _react = require("react");
+          var _tooltip = require("pragmate-ui/tooltip");
+          var _icons = require("@aimpact/ailearn-app/components/icons");
+          var _context = require("../context");
+          function ActivityObjectiveStatusIcon({
+            item
+          }) {
+            const {
+              texts
+            } = (0, _context.useDashboardContext)();
+            const iconNames = {
+              'in-progress': 'activityInProgress',
+              pending: 'activityPending',
+              completed: 'activityCompleted',
+              outstanding: 'activityOutstanding'
+            };
+            return _react.default.createElement(_tooltip.Tooltip, {
+              content: `${item.name}: ${texts.activities.objectivesStatus[item.status.text]}`,
+              key: `${item.name}.${item.status.text}`
+            }, _react.default.createElement(_icons.AppIcon, {
+              icon: iconNames[item.status.text],
+              className: `activity-status__icon icon-${item.status.text}`
+            }));
+          }
+        }
+      });
+
+      /*******************************
+      INTERNAL MODULE: ./views/context
+      *******************************/
+
+      ims.set('./views/context', {
+        hash: 3275824565,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useDrawerContext = exports.useDashboardContext = exports.DrawerContext = exports.DashboardContext = void 0;
+          var _react = require("react");
+          const DashboardContext = exports.DashboardContext = _react.default.createContext({});
+          const useDashboardContext = () => _react.default.useContext(DashboardContext);
+          exports.useDashboardContext = useDashboardContext;
+          const DrawerContext = exports.DrawerContext = _react.default.createContext({});
+          const useDrawerContext = () => _react.default.useContext(DrawerContext);
+          exports.useDrawerContext = useDrawerContext;
+        }
+      });
+
+      /*******************************************
+      INTERNAL MODULE: ./views/drawer/aside-drawer
+      *******************************************/
+
+      ims.set('./views/drawer/aside-drawer', {
+        hash: 778281546,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.AsideDrawer = AsideDrawer;
+          var _react = require("react");
+          var _routing = require("@beyond-js/kernel/routing");
+          var _components = require("pragmate-ui/components");
+          var _drawer = require("pragmate-ui/drawer");
+          var _modal = require("pragmate-ui/modal");
+          var _drawer2 = require("../assignment/drawer");
+          var _drawerChat = require("../assignment/drawer/drawer-chat");
+          var _context = require("../context");
+          var _wall = require("./wall");
+          function AsideDrawer() {
+            const {
+              texts,
+              showDrawer,
+              store,
+              setShowDrawer
+            } = (0, _context.useDrawerContext)();
+            const [open, setOpen] = _react.default.useState(false);
+            const [fetching, setFetching] = _react.default.useState(false);
+            _react.default.useEffect(() => {
+              if (!showDrawer?.view) {
+                _routing.routing.replaceState({}, null, `?`);
+                return;
+              }
+              _routing.routing.pushState(`?drawer=${showDrawer.view}`);
+            }, [showDrawer.view]);
+            if (showDrawer.show === false) return;
+            const toggleOpen = () => setOpen(!open);
+            const addCredits = async () => {
+              try {
+                // setFetching(true);
+                await store.model.addCredits(showDrawer.data.tracking);
+                setFetching(false);
+              } catch (e) {
+                console.error(e);
+              } finally {
+                // setFetching(false);
+              }
+            };
+            const onConfirm = async () => {
+              await addCredits();
+              toggleOpen();
+            };
+            const cls = `ds-drawer ${fetching ? ' is-fetching' : ''}`;
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_drawer.Drawer, {
+              className: cls,
+              position: "right",
+              open: showDrawer.show,
+              onClose: () => setShowDrawer({
+                show: false
+              })
+            }, _react.default.createElement(_components.ConditionalContainer, {
+              condition: showDrawer.view,
+              options: {
+                wall: _react.default.createElement(_wall.Wall, {
+                  item: showDrawer.data
+                }),
+                'student-activity': _react.default.createElement(_drawer2.StudentAssignmentSummary, {
+                  toggleOpen: toggleOpen,
+                  item: showDrawer.data
+                }),
+                'student-chat': _react.default.createElement(_drawerChat.StudentDrawerChat, {
+                  item: showDrawer.data,
+                  toggleOpen: toggleOpen
+                }),
+                student: _react.default.createElement(_drawer2.StudentAssignmentSummary, {
+                  item: showDrawer.data,
+                  toggleOpen: toggleOpen
+                })
+              }
+            })), open && _react.default.createElement(_modal.ConfirmModal, {
+              show: true,
+              onConfirm: onConfirm,
+              onCancel: toggleOpen
+            }, _react.default.createElement("div", {
+              className: "modal-overlay",
+              onClick: toggleOpen
+            }), _react.default.createElement("div", {
+              className: "modal-content"
+            }, _react.default.createElement("h3", null, texts.addCredits.title), _react.default.createElement("p", null, texts.addCredits.description))));
+          }
+        }
+      });
+
+      /**************************************
+      INTERNAL MODULE: ./views/drawer/content
+      **************************************/
+
+      ims.set('./views/drawer/content', {
+        hash: 4248281599,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Wall = Wall;
+          var React = require("react");
+          var Drawer = require("pragmate-ui/drawer");
+          function Wall({
+            item
+          }) {
+            const {
+              user: student
+            } = item;
+            const [fetching, setFetching] = React.useState(false);
+            const cls = `ds-drawer-container${fetching ? ' is-fetching' : ''}`;
+            return React.createElement("div", {
+              className: cls
+            }, React.createElement("header", {
+              className: "dashboard-drawer__header"
+            }, React.createElement("section", {
+              className: "user__title flex-container flex-space-between"
+            }, React.createElement("h2", null, student.name), React.createElement("div", null, React.createElement(Drawer.CloseButton, null)))));
+          }
+        }
+      });
+
+      /***********************************
+      INTERNAL MODULE: ./views/drawer/wall
+      ***********************************/
+
+      ims.set('./views/drawer/wall', {
+        hash: 3833546780,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Wall = Wall;
+          var React = require("react");
+          var Drawer = require("pragmate-ui/drawer");
+          var _context = require("../context");
+          function Wall({
+            item
+          }) {
+            const {
+              store
+            } = (0, _context.useDrawerContext)();
+            const [fetching, setFetching] = React.useState(false);
+            const cls = `ds-drawer-container${fetching ? ' is-fetching' : ''}`;
+            return React.createElement("div", {
+              className: cls
+            }, React.createElement("header", {
+              className: "dashboard-drawer__header"
+            }, React.createElement("section", {
+              className: "user__title flex-container flex-space-between"
+            }, React.createElement("h2", null, "Wall"), React.createElement("div", null, React.createElement(Drawer.CloseButton, null)))), React.createElement("section", {
+              className: "ds-drawer__content"
+            }, React.createElement("app-dashboard-wall", {
+              id: store.assignmentId
+            })));
+          }
+        }
+      });
+
+      /******************************
+      INTERNAL MODULE: ./views/global
+      ******************************/
+
+      ims.set('./views/global', {
+        hash: 185675526,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+
+      /**********************************************
+      INTERNAL MODULE: ./views/header/activity-filter
+      **********************************************/
+
+      ims.set('./views/header/activity-filter', {
+        hash: 4263261696,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ActivityFilter = ActivityFilter;
+          var _react = require("react");
+          var _context = require("../context");
+          var _icons = require("pragmate-ui/icons");
+          var _icons2 = require("@aimpact/ailearn-app/components/icons");
+          var _tooltip = require("pragmate-ui/tooltip");
+          function ActivityFilter({
+            item
+          }) {
+            const {
+              store
+            } = (0, _context.useDashboardContext)();
+            const icon = _icons2.ICONS[item.type];
+            let cls = `activity-type__icon activity--${item.type}`;
+            if (store.activitySelected?.type === item.type) cls += ' active';
+            const title = item.title;
+            const handleClick = event => store.selectActivity(item);
+            return _react.default.createElement(_tooltip.Tooltip, {
+              content: title
+            }, _react.default.createElement("section", {
+              className: cls,
+              onClick: handleClick
+            }, _react.default.createElement(_icons.Icon, {
+              icon: icon
+            })));
+          }
+        }
+      });
+
+      /************************************
+      INTERNAL MODULE: ./views/header/index
+      ************************************/
+
+      ims.set('./views/header/index', {
+        hash: 742414063,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Header = Header;
+          var _ui = require("@aimpact/ailearn-app/components/ui");
+          var _components = require("pragmate-ui/components");
+          var _react = require("react");
+          var _context = require("../context");
+          var _userData = require("./user-data");
+          var _collapsible = require("pragmate-ui/collapsible");
+          var _icons = require("@aimpact/ailearn-app/components/icons");
+          var _routing = require("@beyond-js/kernel/routing");
+          function Header() {
+            const {
+              model,
+              texts,
+              setShowDrawer
+            } = (0, _context.useDashboardContext)();
+            const {
+              title,
+              description,
+              picture,
+              owner,
+              creator
+            } = model.module;
+            const onClick = () => {
+              setShowDrawer({
+                show: true,
+                view: 'wall'
+              });
+            };
+            const onClassroomClick = event => {
+              event.stopPropagation();
+              event.preventDefault();
+              _routing.routing.pushState(`/classrooms/view/${model.classroom.id}`);
+            };
+            return _react.default.createElement(_collapsible.CollapsibleContainer, {
+              className: "page__header-container"
+            }, _react.default.createElement(_collapsible.CollapsibleHeader, null, _react.default.createElement("header", {
+              className: "dashboard-header"
+            }, _react.default.createElement(_ui.EntityImage, {
+              entity: "module",
+              src: picture,
+              alt: title
+            }), _react.default.createElement("div", null, _react.default.createElement(_components.Link, {
+              href: `/assignments/${model.id}`
+            }, _react.default.createElement("h1", null, title)), _react.default.createElement("div", {
+              className: "dashboard-header__data"
+            }, _react.default.createElement("div", null, _react.default.createElement("div", {
+              className: "dashboard-header__classroom",
+              onClick: onClassroomClick
+            }, _react.default.createElement(_icons.AppIcon, {
+              icon: "classroom"
+            }), _react.default.createElement("span", {
+              className: "assignment-classroom"
+            }, model.classroom.name)), creator && _react.default.createElement(_userData.UserData, {
+              data: creator
+            })), _react.default.createElement(_components.Button, {
+              bordered: true,
+              icon: "shared-folder",
+              className: "btn btn-primary outline pui-button has-icon ",
+              onClick: onClick
+            }, texts.actions.wall))))), _react.default.createElement(_collapsible.CollapsibleContent, null, _react.default.createElement("div", {
+              className: "dashboard-content"
+            }, _react.default.createElement("section", {
+              className: "main-content"
+            }, _react.default.createElement("p", {
+              className: "p1 hidden-xs"
+            }, description), _react.default.createElement("div", {
+              className: "module__managers-section"
+            }, _react.default.createElement("div", {
+              className: "module__managers-section"
+            }, creator && _react.default.createElement(_userData.UserData, {
+              data: creator
+            }), owner && _react.default.createElement(_userData.UserData, {
+              label: texts.owner,
+              data: owner
+            })))), _react.default.createElement("div", {
+              className: "actions"
+            }))));
+          }
+        }
+      });
+
+      /*********************************************
+      INTERNAL MODULE: ./views/header/student-header
+      *********************************************/
+
+      ims.set('./views/header/student-header', {
+        hash: 3483649314,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StudentsHeader = StudentsHeader;
+          var _react = require("react");
+          var _context = require("../context");
+          var _form = require("pragmate-ui/form");
+          var _list = require("pragmate-ui/list");
+          var _activityFilter = require("./activity-filter");
+          var _icons = require("pragmate-ui/icons");
+          function StudentsHeader() {
+            const {
+              model,
+              texts,
+              store
+            } = (0, _context.useDashboardContext)();
+            const listCls = `activity-types__list${store.activitySelected ? ' activity-selected' : ''}`;
+            const [refreshing, setRefreshing] = _react.default.useState(false);
+            const onRefresh = event => {
+              event.stopPropagation();
+              setRefreshing(true);
+              store.refresh();
+              setTimeout(() => {
+                setRefreshing(false);
+              }, 1000);
+            };
+            const onFilter = event => {
+              store.filter(event.currentTarget.value);
+            };
+            return _react.default.createElement("header", {
+              className: "dashboard-students__header"
+            }, _react.default.createElement("div", {
+              className: "ds-students-header__col"
+            }, _react.default.createElement("section", {
+              className: "header__title"
+            }, _react.default.createElement("span", {
+              className: "p3"
+            }, texts.list.students), _react.default.createElement("span", null, "(", model.participants.items?.length, " ", texts.list.participants, ")")), _react.default.createElement("section", null, _react.default.createElement(_form.Input, {
+              onChange: onFilter,
+              type: "text",
+              className: "header__search",
+              placeholder: texts.list.search,
+              icon: "search"
+            }))), _react.default.createElement("div", {
+              className: "ds-students-header__col"
+            }, _react.default.createElement("h6", null, texts.studentHeader.filter), _react.default.createElement(_list.List, {
+              className: listCls,
+              items: model.activities.items,
+              control: _activityFilter.ActivityFilter
+            }), _react.default.createElement(_icons.IconButton, {
+              disabled: refreshing,
+              onClick: onRefresh,
+              icon: "refresh",
+              variant: "primary",
+              className: "circle"
+            })));
+          }
+        }
+      });
+
+      /****************************************
+      INTERNAL MODULE: ./views/header/user-data
+      ****************************************/
+
+      ims.set('./views/header/user-data', {
+        hash: 1427243274,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.UserData = UserData;
+          var React = require("react");
+          var _image = require("pragmate-ui/image");
+          function UserData({
+            label,
+            data: {
+              photoUrl,
+              name
+            }
+          }) {
+            return React.createElement("div", {
+              className: "user-data__section"
+            }, React.createElement("h6", {
+              className: "user-data__label"
+            }, label), React.createElement("section", {
+              className: "user-data__detail"
+            }, React.createElement(_image.Image, {
+              className: "user-data__img",
+              src: `1111${photoUrl}1`
+            }), React.createElement("span", {
+              className: "user-data__name"
+            }, name)));
+          }
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./views/index
+      *****************************/
+
+      ims.set('./views/index', {
+        hash: 1185128409,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.View = View;
+          var _ui = require("@aimpact/ailearn-app/components/ui");
+          var _hooks = require("@beyond-js/react-18-widgets/hooks");
+          var _react = require("react");
+          var _ = require("./404");
+          var _context = require("./context");
+          var _asideDrawer = require("./drawer/aside-drawer");
+          var _empty = require("./components/empty");
+          var _header = require("./header");
+          var _components = require("pragmate-ui/components");
+          var _general = require("./assignment/general");
+          var _studentHeader = require("./header/student-header");
+          var _view = require("./activities/view");
+          /*bundle*/
+          function View({
+            store
+          }) {
+            const [ready, setReady] = (0, _react.useState)(store.ready);
+            const [showDrawer, setShowDrawer] = (0, _react.useState)({
+              show: false,
+              data: null
+            });
+            const [view, setView] = (0, _react.useState)('general');
+            const [, setTotalParticipants] = (0, _react.useState)(store.model?.participants?.items?.length ?? 0);
+            const [state, setState] = (0, _react.useState)(store.getProperties());
+            const [fetching, setFetching] = (0, _react.useState)(store.fetching);
+            const {
+              texts
+            } = store;
+            const ref = _react.default.useRef(null);
+            _react.default.useEffect(() => {
+              if (!ref?.current) return;
+              const container = ref.current.querySelector('.page__container');
+              // if (showDrawer.show) {
+              // 	// Save the current scroll position
+              // 	const scrollY = window.scrollY;
+              // 	container.style.position = 'fixed';
+              // 	container.style.top = `-${scrollY - 79}px`;
+              // } else {
+              // 	// Restore scroll position and reset styles
+              // 	const scrollY = Math.abs(parseInt(container.style.top || '0', 10));
+              // 	container.style.position = '';
+              // 	container.style.top = '';
+              // 	window.scrollTo(0, scrollY);
+              // }
+            }, [ref?.current, showDrawer.show]);
+            (0, _hooks.useBinder)([store], () => setReady(store.ready));
+            (0, _hooks.useBinder)([store], () => setTotalParticipants(store.participants.length ?? 0), 'data.updated');
+            (0, _hooks.useBinder)([store], () => setState(store.getProperties()), 'change');
+            (0, _hooks.useBinder)([store], () => setFetching(store.fetching), 'fetching.changed');
+            if (!ready) return _react.default.createElement(_ui.PageLoader, {
+              fetching: true
+            });
+            if (!store.model.found) return _react.default.createElement(_.NotFound, {
+              store: store,
+              texts: texts
+            });
+            if (store.model.totalParticipants === 0) return _react.default.createElement(_empty.Empty, {
+              store: store,
+              texts: texts
+            });
+            const value = {
+              texts,
+              model: store.model,
+              store,
+              setShowDrawer,
+              view,
+              setView
+            };
+            const drawerValue = {
+              texts,
+              model: store.model,
+              showDrawer,
+              store,
+              setShowDrawer
+            };
+            const cls = `dashboard-container${fetching ? ' is-fetching' : ''}`;
+            return _react.default.createElement("div", {
+              ref: ref
+            }, _react.default.createElement(_ui.PageContainer, {
+              className: cls
+            }, _react.default.createElement(_context.DashboardContext.Provider, {
+              value: value
+            }, _react.default.createElement(_header.Header, null), _react.default.createElement(_studentHeader.StudentsHeader, null), _react.default.createElement(_components.ConditionalContainer, {
+              condition: !!store.activitySelected,
+              ternary: true,
+              options: {
+                false: _react.default.createElement(_general.GeneralView, null),
+                true: _react.default.createElement(_view.ActivityView, null)
+              }
+            })), _react.default.createElement(_context.DrawerContext.Provider, {
+              value: drawerValue
+            }, _react.default.createElement(_asideDrawer.AsideDrawer, null))));
+          }
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./controller",
+        "from": "Controller",
+        "name": "Controller"
+      }, {
+        "im": "./model/participants/provider",
+        "from": "ParticipantProvider",
+        "name": "ParticipantProvider"
+      }, {
+        "im": "./views/activities/view/index",
+        "from": "ActivityView",
+        "name": "ActivityView"
+      }, {
+        "im": "./views/activities/view/participant/chat",
+        "from": "ChatActivityParticipant",
+        "name": "ChatActivityParticipant"
+      }, {
+        "im": "./views/activities/view/participant/multiple-choice",
+        "from": "MultipleChoiceActivityParticipant",
+        "name": "MultipleChoiceActivityParticipant"
+      }, {
+        "im": "./views/activities/view/participant/spoken",
+        "from": "SpokenActivityParticipant",
+        "name": "SpokenActivityParticipant"
+      }, {
+        "im": "./views/assignment/drawer/empty",
+        "from": "EmptyCard",
+        "name": "EmptyCard"
+      }, {
+        "im": "./views/assignment/general",
+        "from": "GeneralView",
+        "name": "GeneralView"
+      }, {
+        "im": "./views/components/activity-icon",
+        "from": "ActivityIcon",
+        "name": "ActivityIcon"
+      }, {
+        "im": "./views/components/drawer-alerts/index",
+        "from": "DrawerAlert",
+        "name": "DrawerAlert"
+      }, {
+        "im": "./views/components/drawer-alerts/item",
+        "from": "DrawerAlertItem",
+        "name": "DrawerAlertItem"
+      }, {
+        "im": "./views/components/icon-box",
+        "from": "IconBox",
+        "name": "IconBox"
+      }, {
+        "im": "./views/index",
+        "from": "View",
+        "name": "View"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Controller') && _export("Controller", Controller = require ? require('./controller').Controller : value);
+        (require || prop === 'ParticipantProvider') && _export("ParticipantProvider", ParticipantProvider = require ? require('./model/participants/provider').ParticipantProvider : value);
+        (require || prop === 'ActivityView') && _export("ActivityView", ActivityView = require ? require('./views/activities/view/index').ActivityView : value);
+        (require || prop === 'ChatActivityParticipant') && _export("ChatActivityParticipant", ChatActivityParticipant = require ? require('./views/activities/view/participant/chat').ChatActivityParticipant : value);
+        (require || prop === 'MultipleChoiceActivityParticipant') && _export("MultipleChoiceActivityParticipant", MultipleChoiceActivityParticipant = require ? require('./views/activities/view/participant/multiple-choice').MultipleChoiceActivityParticipant : value);
+        (require || prop === 'SpokenActivityParticipant') && _export("SpokenActivityParticipant", SpokenActivityParticipant = require ? require('./views/activities/view/participant/spoken').SpokenActivityParticipant : value);
+        (require || prop === 'EmptyCard') && _export("EmptyCard", EmptyCard = require ? require('./views/assignment/drawer/empty').EmptyCard : value);
+        (require || prop === 'GeneralView') && _export("GeneralView", GeneralView = require ? require('./views/assignment/general').GeneralView : value);
+        (require || prop === 'ActivityIcon') && _export("ActivityIcon", ActivityIcon = require ? require('./views/components/activity-icon').ActivityIcon : value);
+        (require || prop === 'DrawerAlert') && _export("DrawerAlert", DrawerAlert = require ? require('./views/components/drawer-alerts/index').DrawerAlert : value);
+        (require || prop === 'DrawerAlertItem') && _export("DrawerAlertItem", DrawerAlertItem = require ? require('./views/components/drawer-alerts/item').DrawerAlertItem : value);
+        (require || prop === 'IconBox') && _export("IconBox", IconBox = require ? require('./views/components/icon-box').IconBox : value);
+        (require || prop === 'View') && _export("View", View = require ? require('./views/index').View : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfc3RvcmUiLCJfdmlld3MiLCJfZGFzaGJvYXJkTGF5b3V0IiwiQ29udHJvbGxlciIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJzdG9yZSIsImNyZWF0ZVN0b3JlIiwiU3RvcmVNYW5hZ2VyIiwiV2lkZ2V0IiwiVmlldyIsInNob3ciLCJMYXlvdXRCcm9rZXIiLCJyZW1vdmVPdmVybGF5IiwidXJpIiwidmFycyIsImdldCIsImxvYWQiLCJoaWRlIiwiY2xlYXIiLCJleHBvcnRzIiwiZGF0YSIsInN0YXR1cyIsImFjdGl2aXRpZXMiLCJpdGVtcyIsImR1cmF0aW9uIiwibW9kdWxlIiwiY3JlYXRvciIsInBob3RvVXJsIiwibmFtZSIsImlkIiwiYXVkaWVuY2UiLCJhaSIsImRlc2NyaXB0aW9uIiwibGFuZ3VhZ2UiLCJ0aXRsZSIsInR5cGUiLCJwaWN0dXJlIiwib2JqZWN0aXZlIiwicHVibGljIiwidGltZVVwZGF0ZWQiLCJ0aW1lQ3JlYXRlZCIsInJlc291cmNlcyIsInNwZWNzIiwiaW5zdHJ1Y3Rpb25zIiwicm9sZSIsIm9iamVjdGl2ZXMiLCJtYXRlcmlhbHMiLCJzeW50aGVzaXMiLCJhcnRpY2xlIiwiZHlzbGV4aWEiLCJzdWJqZWN0Iiwib3JkZXIiLCJjbGFzc3Jvb20iLCJwYXJ0aWNpcGFudHMiLCJ1c2VyIiwibWVzc2FnZXMiLCJjb3VudCIsInByb2dyZXNzIiwic3VtbWFyeSIsImljb24iLCJ1SlZ4UmRJanJHTWdPWW5URnNFS2c5VUZ4MFoyIiwiX2FjdGl2aXR5IiwiQXNzaWdubWVudEFjdGl2aXRpZXMiLCJtYXAiLCJNYXAiLCJkYXNoYm9hcmQiLCJjb25zdHJ1Y3RvciIsImZvckVhY2giLCJpbnN0YW5jZSIsIkFzc2lnbm1lbnRBY3Rpdml0eSIsInNldCIsInB1c2giLCJoYXMiLCJfaXRlbSIsIkl0ZW0iLCJwYXJ0aWNpcGFudHNNYXAiLCJlbnRpdHkiLCJwcm9wZXJ0aWVzIiwiYWRkUGFydGljaXBhbnQiLCJwYXJ0aWNpcGFudCIsImdldFBhcnRpY2lwYW50IiwiaGFzUGFydGljaXBhbnQiLCJfbW9kZWwiLCJfYXBpIiwiX2NvbmZpZyIsIl9zZXNzaW9uIiwiX3BhcnRpY2lwYW50cyIsIl9hY3Rpdml0aWVzIiwiRGFzaGJvYXJkIiwiUmVhY3RpdmVNb2RlbCIsImFwaSIsImVycm9yIiwidG90YWxQYXJ0aWNpcGFudHMiLCJPYmplY3QiLCJrZXlzIiwibGVuZ3RoIiwidG90YWxNdWx0aXBsZSIsInJlZHVjZSIsImFjYyIsImN1cnIiLCJ0b3RhbFNwb2tlbiIsIkFwaSIsImRlZmF1bHQiLCJwYXJhbXMiLCJhcGlzIiwiYWlsZWFybiIsIlBhcnRpY2lwYW50cyIsInJlYWN0aXZlUHJvcHMiLCJnbG9iYWxUaGlzIiwibW9kZWwiLCJiZWFyZXIiLCJzZXNzaW9uV3JhcHBlciIsInRva2VuIiwicmVzcG9uc2UiLCJFcnJvciIsInRleHQiLCJmb3VuZCIsInJlYWR5IiwiZGFzaGJvYXJkSWQiLCJhZGRDcmVkaXRzIiwidHJhY2tpbmciLCJwb3N0IiwiY3JlZGl0cyIsIlBhcnRpY2lwYW50QWN0aXZpdHkiLCJfbXVsdGlwbGVDaG9pY2UiLCJfc3Bva2VuIiwiUGFydGljaXBhbnRBY3Rpdml0aWVzIiwicGFyZW50IiwidmFsdWVzIiwiYWN0aXZpdHkiLCJnZXRBY3Rpdml0eUluc3RhbmNlIiwidXBkYXRlIiwiYmluZCIsIk9iamVjdHMiLCJzcG9rZW4iLCJQYXJ0aWNpcGFudFNwb2tlbkFjdGl2aXR5IiwiZGV0YXVsdCIsIlBhcnRpY2lwYW50TXVsdGlwbGVDaG9pY2VBY3Rpdml0eSIsIkFjdGl2aXR5IiwiaXRlbSIsInF1ZXN0aW9ucyIsIkpTT04iLCJwYXJzZSIsImFzc2Vzc21lbnQiLCJlIiwiY29uc29sZSIsIndhcm4iLCJwYXJ0aWNpcGF0aW9uRGF0YSIsInF1ZXN0aW9uIiwiaW5kZXgiLCJhbnN3ZXIiLCJyZXNwb25zZXMiLCJhY2N1cmFjeSIsImljb25zIiwia2V5IiwidG90YWxQb2ludHMiLCJwb2ludHMiLCJhdHRlbXB0cyIsInRyYW5zY3JpcHRpb24iLCJsb2ciLCJvYmplY3RpdmVzS2V5cyIsIl9jb2xsZWN0aW9uIiwiX3RyYWNraW5nIiwiX3Byb3ZpZGVyIiwiUGFydGljaXBhbnQiLCJhc3NpZ25tZW50SWQiLCJwcm92aWRlciIsIlBhcnRpY2lwYW50UHJvdmlkZXIiLCJUcmFja2luZyIsInVzZXJJZCIsImNoYXQiLCJfcGFydGljaXBhbnQiLCJhcnJheUl0ZW1zIiwic29ydCIsImEiLCJiIiwibG9jYWxlQ29tcGFyZSIsInByb2Nlc3NMb2FkIiwiUHJvdmlkZXIiLCJ0cmFja2luZ0lkIiwiZGVmaW5lUHJvcGVydHkiLCJ2YWx1ZSIsIl9tb2RlbDIiLCJfdGV4dHMiLCJfYmV5b25kX2NvbnRleHQiLCJfY29yZSIsImlzU3RvcmUiLCJhY3Rpdml0eVNlbGVjdGVkIiwiY3VycmVudFRyYWNraW5nIiwic2Vzc2lvbiIsInZpZXciLCJhc3NpZ25tZW50IiwidGV4dHMiLCJDdXJyZW50VGV4dHMiLCJzcGVjaWZpZXIiLCJmaWx0ZXIiLCJ0b0xvd2VyQ2FzZSIsImluY2x1ZGVzIiwidXNlcnMiLCJ0cmFja2luZ3MiLCJ0cmlnZ2VyRXZlbnQiLCJvbiIsInNldE1vZGVsIiwiZmV0Y2hpbmciLCJtIiwibG9hZFVzZXJUcmFja2luZyIsInJlZnJlc2giLCJ0cmlnZ2VyIiwicmVmcmVzaERyYXdlciIsInByb21pc2UiLCJQZW5kaW5nUHJvbWlzZSIsImNoYXRNb2RlbCIsImxvYWRBbGwiLCJzZXRUaW1lb3V0IiwicmVzb2x2ZSIsInJlZnJlc2hUcmFja2luZyIsInNlbGVjdEFjdGl2aXR5IiwiX3JlYWN0IiwiTm90Rm91bmQiLCJjb2RlIiwiY3JlYXRlRWxlbWVudCIsIkZyYWdtZW50IiwiX3VpIiwiX2NvbnRleHQiLCJFbXB0eU1hdGVyaWFsIiwibWVzc2FnZSIsInVzZURhc2hib2FyZENvbnRleHQiLCJlbXB0eSIsIkVtcHR5Q2FyZCIsImNsYXNzTmFtZSIsIl9pY29ucyIsIl9saXN0IiwiX2VtcHR5IiwiX2hvb2tzIiwiX2NvbXBvbmVudHMiLCJBY3Rpdml0eVZpZXciLCJzZXRWaWV3IiwidXBkYXRlZCIsInNldFVwZGF0ZWQiLCJ1c2VTdGF0ZSIsIm9uQ2xvc2UiLCJ1bmRlZmluZWQiLCJ1c2VCaW5kZXIiLCJJY29uQnV0dG9uIiwib25DbGljayIsIkNvbmRpdGlvbmFsQ29udGFpbmVyIiwiY29uZGl0aW9uIiwidGVybmFyeSIsIm9wdGlvbnMiLCJ0cnVlIiwiTGlzdCIsImNvbnRyb2wiLCJBY3Rpdml0eVBhcnRpY2lwYW50IiwiZmFsc2UiLCJFbXB0eSIsIl9pbWFnZSIsIl9jb2xsYXBzaWJsZSIsIl9vYmplY3RpdmVJY29uIiwiX29iamVjdGl2ZSIsIkNoYXRBY3Rpdml0eVBhcnRpY2lwYW50Iiwic2V0U2hvd0RyYXdlciIsImlzRHJhZ2dpbmciLCJzZXRJc0RyYWdnaW5nIiwiYW5hbHlzaXMiLCJvblRvZ2dsZSIsImV2ZW50Iiwic3RvcFByb3BhZ2F0aW9uIiwicHJldmVudERlZmF1bHQiLCJDb2xsYXBzaWJsZUNvbnRhaW5lciIsInRvZ2dsZWFibGUiLCJvcGVuIiwiQ29sbGFwc2libGVIZWFkZXIiLCJJbWFnZSIsInNyYyIsIkxpbmsiLCJocmVmIiwibm9TdW1tYXJ5IiwiQWN0aXZpdHlPYmplY3RpdmVTdGF0dXNJY29uIiwiQ29sbGFwc2libGVDb250ZW50IiwiU3R1ZGVudEFzc2lnbm1lbnRBY3Rpdml0eU9iamVjdGl2ZSIsIl9jaGF0IiwiU3Bva2VuQWN0aXZpdHlQYXJ0aWNpcGFudCIsIk11bHRpcGxlQ2hvaWNlQWN0aXZpdHlQYXJ0aWNpcGFudCIsIl90b29sdGlwIiwibXVsdGlwbGVDaG9pY2UiLCJhY3Rpdml0eUlkIiwicGFydGljaXBhbnRBY3Rpdml0eSIsIkljb25TdGF0ZSIsIlRvb2x0aXAiLCJjb250ZW50IiwiY291bnRlcnMiLCJjb3JyZWN0IiwidG90YWwiLCJ3cm9uZyIsImNscyIsIlJlYWN0IiwiaWNvbk5hbWVzIiwicGVuZGluZyIsImNvbXBsZXRlZCIsIm91dHN0YW5kaW5nIiwib2JqZWN0aXZlc1N0YXR1cyIsIkFwcEljb24iLCJub0FuYWx5c2lzIiwiX2NoYXRDb21wb25lbnQiLCJTdHVkZW50QXNzaWdubWVudEFjdGl2aXR5Q2hhdFRhYiIsInVzZURyYXdlckNvbnRleHQiLCJyZWYiLCJ1c2VSZWYiLCJ0QWN0aXZpdHkiLCJjaGF0SWQiLCJFbXB0eUNoYXQiLCJzbGljZSIsIkFnZW50c0NoYXRDb250YWluZXIiLCJBZ2VudHNDaGF0UGFuZWwiLCJfdGFicyIsIl9kcmF3ZXJBbGVydHMiLCJfb2JqZWN0aXZlcyIsIlN0dWRlbnRBc3NpZ25tZW50QWN0aXZpdHlDaGF0Qm9keSIsInNldE1lc3NhZ2VzIiwidXNlRWZmZWN0IiwidHJpZ2dlckNoYW5nZSIsIm9mZiIsInRhYnMiLCJUYWIiLCJpbnRlcmFjdGlvbnMiLCJhbGVydHMiLCJvcGVuQ2hhdCIsIlRhYnNDb250YWluZXIiLCJhY3RpdmUiLCJUYWJzIiwiUGFuZXMiLCJTdHVkZW50QXNzaWdubWVudEFjdGl2aXR5T2JqZWN0aXZlcyIsIkJ1dHRvbiIsInZhcmlhbnQiLCJib3JkZXJlZCIsIkRyYXdlckFsZXJ0IiwicHJvZ3JlcyIsIlN0dWRlbnRBc3NpZ25tZW50QWN0aXZpdHkiLCJoYXNQYXJ0aWNpcGF0ZWQiLCJjbHNEcmF3ZXIiLCJjdXJyZW50IiwiY2xhc3NMaXN0IiwidG9nZ2xlIiwiSUNPTlMiLCJ0eXBlcyIsImRlYmF0ZSIsIlN0dWRlbnRBc3NpZ25tZW50QWN0aXZpdHlNdWx0aXBsZUNob2ljZUJvZHkiLCJTdHVkZW50QXNzaWdubWVudEFjdGl2aXR5U3Bva2VuQm9keSIsIlN0dWRlbnRBc3NpZ25tZW50QWN0aXZpdHlNdWx0aXBsZUNob2ljZVF1ZXN0aW9uT3B0aW9ucyIsImNvcnJlY3RBbnN3ZXIiLCJzZWxlY3RlZCIsIl9xdWVzdGlvbnMiLCJwYXJ0aWNpcGF0aW9uIiwiZGV0YWlsIiwiU3R1ZGVudEFzc2lnbm1lbnRBY3Rpdml0eU11bHRpcGxlQ2hvaWNlUXVlc3Rpb25zIiwiX2Fuc3dlciIsImF1ZGlvVXJsIiwib3V0cHV0IiwiZmVlZGJhY2siLCJhdWRpbyIsIkF1ZGlvUGxheWVyIiwidXJsIiwiYWRkRXZlbnRMaXN0ZW5lciIsIl9tb2RhbCIsIkNvbmZpcm1BY3Rpb24iLCJjYWxsYmFjayIsInNldE9wZW4iLCJ0b2dnbGVPcGVuIiwib25DbGlja0J1dHRvbiIsIm9uQ29uZmlybSIsImFjdGlvbiIsIkNvbmZpcm1Nb2RhbCIsIm9uQ2FuY2VsIiwiX2ljb25zMiIsIl9jaGF0VGFiIiwiX3JvdXRpbmciLCJTdHVkZW50RHJhd2VyQ2hhdCIsInN0dWRlbnQiLCJzZXRJdGVtcyIsInNldEZldGNoaW5nIiwic2V0UmVhZHkiLCJvblJlZnJlc2giLCJvbkJhY2siLCJyb3V0aW5nIiwicmVwbGFjZVN0YXRlIiwiQXBwSWNvbkJ1dHRvbiIsImNvbnN1bWVkIiwib2YiLCJEcmF3ZXIiLCJTdHVkZW50QXNzaWdubWVudFN1bW1hcnkiLCJwZXJjZW50YWdlQXZhaWxhYmxlIiwiQ2xvc2VCdXR0b24iLCJHZW5lcmFsVmlldyIsIl9sYWJlbCIsIl9hY3Rpdml0eUljb24iLCJfc3RhdHVzIiwiTW9kdWxlQWN0aXZpdHlDaGF0Iiwic3VidHlwZSIsIkFjdGl2aXR5SWNvbiIsIk1vZHVsZUFjdGl2aXR5TWVzc2FnZXMiLCJNb2R1bGVBY3Rpdml0eVN0YXR1cyIsIk1vZHVsZUFjdGl2aXR5RGV0YWlscyIsIkljb24iLCJNb2R1bGVBY3Rpdml0eSIsIk1vZHVsZUFjdGl2aXR5U3Bva2VuIiwiTW9kdWxlQWN0aXZpdHlNdWx0aXBsZUNob2ljZSIsImxhYmVsIiwiZG9uZSIsInRvdGFsTWVzc2FnZXMiLCJqb2luIiwibWVzc2FnZUNvdW50ZXIiLCJoYXNBbGVydHMiLCJJY29uSXRlbSIsInBhcnRpY2lwYW50VXJpIiwib3BlbkRyYXdlciIsImxvY2FsU3RvcmFnZSIsInNldEl0ZW0iLCJzdHJpbmdpZnkiLCJhbHQiLCJfaWNvbkJveCIsIkljb25Cb3giLCJhcyIsIkRyYXdlckFsZXJ0SXRlbSIsIml0ZXJhdGlvbiIsImFzc2lzdGFudCIsIkFQUCIsIkFQUF9OQU1FIiwiUGFnZUNvbnRhaW5lciIsImNsYXNzd29ya3MiLCJEYXNoYm9hcmRDb250ZXh0IiwiY3JlYXRlQ29udGV4dCIsInVzZUNvbnRleHQiLCJEcmF3ZXJDb250ZXh0IiwiX2RyYXdlciIsIl9kcmF3ZXIyIiwiX2RyYXdlckNoYXQiLCJfd2FsbCIsIkFzaWRlRHJhd2VyIiwic2hvd0RyYXdlciIsInB1c2hTdGF0ZSIsInBvc2l0aW9uIiwid2FsbCIsIldhbGwiLCJBY3Rpdml0eUZpbHRlciIsImhhbmRsZUNsaWNrIiwiX3VzZXJEYXRhIiwiSGVhZGVyIiwib3duZXIiLCJvbkNsYXNzcm9vbUNsaWNrIiwiRW50aXR5SW1hZ2UiLCJVc2VyRGF0YSIsImFjdGlvbnMiLCJfZm9ybSIsIl9hY3Rpdml0eUZpbHRlciIsIlN0dWRlbnRzSGVhZGVyIiwibGlzdENscyIsInJlZnJlc2hpbmciLCJzZXRSZWZyZXNoaW5nIiwib25GaWx0ZXIiLCJjdXJyZW50VGFyZ2V0IiwibGlzdCIsInN0dWRlbnRzIiwiSW5wdXQiLCJvbkNoYW5nZSIsInBsYWNlaG9sZGVyIiwic2VhcmNoIiwic3R1ZGVudEhlYWRlciIsImRpc2FibGVkIiwiXyIsIl9hc2lkZURyYXdlciIsIl9oZWFkZXIiLCJfZ2VuZXJhbCIsIl9zdHVkZW50SGVhZGVyIiwiX3ZpZXciLCJzZXRUb3RhbFBhcnRpY2lwYW50cyIsInN0YXRlIiwic2V0U3RhdGUiLCJnZXRQcm9wZXJ0aWVzIiwiY29udGFpbmVyIiwicXVlcnlTZWxlY3RvciIsIlBhZ2VMb2FkZXIiLCJkcmF3ZXJWYWx1ZSJdLCJzb3VyY2VzIjpbIi90cy9jb250cm9sbGVyLnRzIiwiL3RzL21vZGVsL0RBVEEudHMiLCIvdHMvbW9kZWwvYWN0aXZpdGllcy9hY3Rpdml0aWVzLnRzIiwiL3RzL21vZGVsL2FjdGl2aXRpZXMvYWN0aXZpdHkudHMiLCIvdHMvbW9kZWwvaW5kZXgudHMiLCIvdHMvbW9kZWwvcGFydGljaXBhbnRzL2FjdGl2aXRpZXMvYWN0aXZpdHkudHMiLCIvdHMvbW9kZWwvcGFydGljaXBhbnRzL2FjdGl2aXRpZXMvY29sbGVjdGlvbi50cyIsIi90cy9tb2RlbC9wYXJ0aWNpcGFudHMvYWN0aXZpdGllcy9tdWx0aXBsZS1jaG9pY2UudHMiLCIvdHMvbW9kZWwvcGFydGljaXBhbnRzL2FjdGl2aXRpZXMvc3Bva2VuLnRzIiwiL3RzL21vZGVsL3BhcnRpY2lwYW50cy9wYXJ0aWNpcGFudC50cyIsIi90cy9tb2RlbC9wYXJ0aWNpcGFudHMvcGFydGljaXBhbnRzLnRzIiwiL3RzL21vZGVsL3BhcnRpY2lwYW50cy9wcm92aWRlci50cyIsIi90cy9tb2RlbC9wcm92aWRlci50cyIsIi90eXBlcy50cyIsIi90cy9zdG9yZS50cyIsIi90cy92aWV3cy80MDQudHN4IiwiL3RzL3ZpZXdzL2FjdGl2aXRpZXMvdmlldy9lbXB0eS50c3giLCIvdHMvdmlld3MvYWN0aXZpdGllcy92aWV3L2luZGV4LnRzeCIsIi90cy92aWV3cy9hY3Rpdml0aWVzL3ZpZXcvcGFydGljaXBhbnQvY2hhdC50c3giLCIvdHMvdmlld3MvYWN0aXZpdGllcy92aWV3L3BhcnRpY2lwYW50L2luZGV4LnRzeCIsIi90cy92aWV3cy9hY3Rpdml0aWVzL3ZpZXcvcGFydGljaXBhbnQvbXVsdGlwbGUtY2hvaWNlLnRzeCIsIi90cy92aWV3cy9hY3Rpdml0aWVzL3ZpZXcvcGFydGljaXBhbnQvb2JqZWN0aXZlLnRzeCIsIi90cy92aWV3cy9hY3Rpdml0aWVzL3ZpZXcvcGFydGljaXBhbnQvc3Bva2VuLnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2RyYXdlci9hY3Rpdml0eS9jaGF0L2NoYXQtdGFiLnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2RyYXdlci9hY3Rpdml0eS9jaGF0L2VtcHR5LnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2RyYXdlci9hY3Rpdml0eS9jaGF0L2luZGV4LnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2RyYXdlci9hY3Rpdml0eS9jaGF0L29iamVjdGl2ZS50c3giLCIvdHMvdmlld3MvYXNzaWdubWVudC9kcmF3ZXIvYWN0aXZpdHkvY2hhdC9vYmplY3RpdmVzLnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2RyYXdlci9hY3Rpdml0eS9pbmRleC50c3giLCIvdHMvdmlld3MvYXNzaWdubWVudC9kcmF3ZXIvYWN0aXZpdHkvbXVsdGlwbGUtY2hvaWNlL2Fuc3dlci50c3giLCIvdHMvdmlld3MvYXNzaWdubWVudC9kcmF3ZXIvYWN0aXZpdHkvbXVsdGlwbGUtY2hvaWNlL2luZGV4LnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2RyYXdlci9hY3Rpdml0eS9tdWx0aXBsZS1jaG9pY2UvcXVlc3Rpb25zLnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2RyYXdlci9hY3Rpdml0eS9zcG9rZW4udHN4IiwiL3RzL3ZpZXdzL2Fzc2lnbm1lbnQvZHJhd2VyL2NoYXQtdGFiLnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2RyYXdlci9jb25maXJtLWFjdGlvbi50c3giLCIvdHMvdmlld3MvYXNzaWdubWVudC9kcmF3ZXIvZHJhd2VyLWNoYXQudHN4IiwiL3RzL3ZpZXdzL2Fzc2lnbm1lbnQvZHJhd2VyL2VtcHR5LnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2RyYXdlci9pbmRleC50c3giLCIvdHMvdmlld3MvYXNzaWdubWVudC9nZW5lcmFsLnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2l0ZW0vYWN0aXZpdHkvY2hhdC50c3giLCIvdHMvdmlld3MvYXNzaWdubWVudC9pdGVtL2FjdGl2aXR5L2RldGFpbHMudHN4IiwiL3RzL3ZpZXdzL2Fzc2lnbm1lbnQvaXRlbS9hY3Rpdml0eS9pbmRleC50c3giLCIvdHMvdmlld3MvYXNzaWdubWVudC9pdGVtL2FjdGl2aXR5L2xhYmVsLnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2l0ZW0vYWN0aXZpdHkvbXVsdGlwbGUtY2hvaWNlLnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2l0ZW0vYWN0aXZpdHkvc3Bva2VuLnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2l0ZW0vYWN0aXZpdHkvc3RhdHVzLnRzeCIsIi90cy92aWV3cy9hc3NpZ25tZW50L2l0ZW0vaW5kZXgudHN4IiwiL3RzL3ZpZXdzL2NvbXBvbmVudHMvYWN0aXZpdHktaWNvbi50c3giLCIvdHMvdmlld3MvY29tcG9uZW50cy9kcmF3ZXItYWxlcnRzL2luZGV4LnRzeCIsIi90cy92aWV3cy9jb21wb25lbnRzL2RyYXdlci1hbGVydHMvaXRlbS50c3giLCIvdHMvdmlld3MvY29tcG9uZW50cy9lbXB0eS50c3giLCIvdHMvdmlld3MvY29tcG9uZW50cy9pY29uLWJveC50c3giLCIvdHMvdmlld3MvY29tcG9uZW50cy9vYmplY3RpdmUtaWNvbi50c3giLCIvdHMvdmlld3MvY29udGV4dC50cyIsIi90cy92aWV3cy9kcmF3ZXIvYXNpZGUtZHJhd2VyLnRzeCIsIi90cy92aWV3cy9kcmF3ZXIvY29udGVudC50c3giLCIvdHMvdmlld3MvZHJhd2VyL3dhbGwudHN4IiwiL2dsb2JhbC50c3giLCIvdHMvdmlld3MvaGVhZGVyL2FjdGl2aXR5LWZpbHRlci50c3giLCIvdHMvdmlld3MvaGVhZGVyL2luZGV4LnRzeCIsIi90cy92aWV3cy9oZWFkZXIvc3R1ZGVudC1oZWFkZXIudHN4IiwiL3RzL3ZpZXdzL2hlYWRlci91c2VyLWRhdGEudHN4IiwiL3RzL3ZpZXdzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLEtBQUEsR0FBQUMsT0FBQTtVQUNBLElBQUFDLE1BQUEsR0FBQUQsT0FBQTtVQUNBLElBQUFFLE1BQUEsR0FBQUYsT0FBQTtVQUNBLElBQUFHLGdCQUFBLEdBQUFILE9BQUE7VUFDTztVQUFVLE1BQ1hJLFVBQVcsU0FBUUwsS0FBQSxDQUFBTSx5QkFBeUI7WUFDakQsQ0FBQUMsS0FBTTtZQUNOQyxXQUFXQSxDQUFBO2NBQ1YsSUFBSSxDQUFDLENBQUFELEtBQU0sR0FBRyxJQUFJTCxNQUFBLENBQUFPLFlBQVksRUFBRTtjQUNoQyxPQUFPLElBQUksQ0FBQyxDQUFBRixLQUFNO1lBQ25CO1lBQ0EsSUFBSUcsTUFBTUEsQ0FBQTtjQUNULE9BQU9QLE1BQUEsQ0FBQVEsSUFBSTtZQUNaO1lBRUFDLElBQUlBLENBQUE7Y0FDSFIsZ0JBQUEsQ0FBQVMsWUFBWSxDQUFDQyxhQUFhLEVBQUU7Y0FFNUIsSUFBSSxJQUFJLENBQUNDLEdBQUcsQ0FBQ0MsSUFBSSxDQUFDQyxHQUFHLENBQUMsSUFBSSxDQUFDLEVBQUU7Z0JBQzVCLElBQUksQ0FBQyxDQUFBVixLQUFNLENBQUNXLElBQUksQ0FBQyxJQUFJLENBQUNILEdBQUcsQ0FBQ0MsSUFBSSxDQUFDQyxHQUFHLENBQUMsSUFBSSxDQUFDLENBQUM7O1lBRTNDO1lBRUE7OztZQUdBRSxJQUFJQSxDQUFBO2NBQ0gsSUFBSSxDQUFDLENBQUFaLEtBQU0sQ0FBQ2EsS0FBSyxFQUFFO1lBQ3BCOztVQUNBQyxPQUFBLENBQUFoQixVQUFBLEdBQUFBLFVBQUE7Ozs7Ozs7Ozs7Ozs7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

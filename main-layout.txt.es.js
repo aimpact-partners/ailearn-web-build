@@ -1,1 +1,106 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle"],function(a,i){var e,t,o;return a("txt",void 0),{setters:[function(i){e=i}],execute:function(){o=e.Bundle,(t=new o({module:{vspecifier:"@aimpact/ailearn-app@0.2.7/main-layout",multibundle:!0},type:"txt"},i.meta.url).package("es")).dependencies.update([]),(o=new Map).set("./txt",{hash:1623805873,creator:function(i,e){e.txt={breadcrumb:{modules:"Módulos",management:"Borrador"},coins:{alert:{title:"Necesitas créditos IA",description:"Necesitas obtener créditos IA para habilitar todas las funciones con inteligencia artificial.",action:"Aceptar"},modal:{title:"Solicita créditos IA para continuar con esa función",description:"Necesitas obtener créditos IA para habilitar todas las funciones con inteligencia artificial.",actions:{cancel:"No, por ahora, gracias",confirm:"Solicitar ahora"},errors:{noCredits:"No se ha podido procesar la asignacion, por favor contacte al administrador de la institución"}},header:{actions:{require:"SOLICITAR CRÉDITOS",available:"INTERACCIONES"},messages:{add:"Adquiriste créditos para utilizar las funciones con IA",middle:"Consumiste el 50% de los créditos disponibles",finishing:"Te estás quedando sin créditos IA disponibles"}}},notifications:{saved:"Solicita créditos IA para habilitar todas las funciones con inteligencia artificial.",credits:"Ya tienes <strong>créditos asignados</strong> para utilizar funciones con IA que se irán descontando automáticamente con el uso."},requestCredits:{title:"Solicitud de Créditos",subtitle:"Debes solicitar créditos IA al propietario del módulo para utilizar esta función.",ownerDescription:"Propietario del módulo de aprendizaje",action:"¿Deseas solicitar créditos al propietario del módulo?",detail:"Los créditos de IA habilitan todas las funciones avanzadas de Inteligencia Artificial en la creación de módulos de aprendizaje.",alerts:{noCredits:"The assignment could not be processed, please contact the institution's administrator"}}}}}),t.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}],t.exports.process=function({require:i,prop:e,value:t}){!i&&"txt"!==e||a("txt",i?i("./txt").txt:t)},a("__beyond_pkg",t),a("hmr",new function(){this.on=(i,e)=>t.hmr.on(i,e),this.off=(i,e)=>t.hmr.off(i,e)}),t.initialise(o)}}});
+System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel019Bundle) {
+      dependency_0 = _beyondJsKernel019Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.2.11"], ["@aimpact/ailearn-app", "0.2.11"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.2.11/main-layout",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('es');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 1623805873,
+        creator: function (require, exports) {
+          exports.txt = {
+            "breadcrumb": {
+              "modules": "Módulos",
+              "management": "Borrador"
+            },
+            "coins": {
+              "alert": {
+                "title": "Necesitas créditos IA",
+                "description": "Necesitas obtener créditos IA para habilitar todas las funciones con inteligencia artificial.",
+                "action": "Aceptar"
+              },
+              "modal": {
+                "title": "Solicita créditos IA para continuar con esa función",
+                "description": "Necesitas obtener créditos IA para habilitar todas las funciones con inteligencia artificial.",
+                "actions": {
+                  "cancel": "No, por ahora, gracias",
+                  "confirm": "Solicitar ahora"
+                },
+                "errors": {
+                  "noCredits": "No se ha podido procesar la asignacion, por favor contacte al administrador de la institución"
+                }
+              },
+              "header": {
+                "actions": {
+                  "require": "SOLICITAR CRÉDITOS",
+                  "available": "INTERACCIONES"
+                },
+                "messages": {
+                  "add": "Adquiriste créditos para utilizar las funciones con IA",
+                  "middle": "Consumiste el 50% de los créditos disponibles",
+                  "finishing": "Te estás quedando sin créditos IA disponibles"
+                }
+              }
+            },
+            "notifications": {
+              "saved": "Solicita créditos IA para habilitar todas las funciones con inteligencia artificial.",
+              "credits": "Ya tienes <strong>créditos asignados</strong> para utilizar funciones con IA que se irán descontando automáticamente con el uso."
+            },
+            "requestCredits": {
+              "title": "Solicitud de Créditos",
+              "subtitle": "Debes solicitar créditos IA al propietario del módulo para utilizar esta función.",
+              "ownerDescription": "Propietario del módulo de aprendizaje",
+              "action": "¿Deseas solicitar créditos al propietario del módulo?",
+              "detail": "Los créditos de IA habilitan todas las funciones avanzadas de Inteligencia Artificial en la creación de módulos de aprendizaje.",
+              "alerts": {
+                "noCredits": "The assignment could not be processed, please contact the institution's administrator"
+              }
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

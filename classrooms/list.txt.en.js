@@ -1,1 +1,118 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle"],function(i,e){var t,o,a;return i("txt",void 0),{setters:[function(e){t=e}],execute:function(){a=t.Bundle,(o=new a({module:{vspecifier:"@aimpact/ailearn-app@0.2.7/classrooms/list",multibundle:!0},type:"txt"},e.meta.url).package("en")).dependencies.update([]),(a=new Map).set("./txt",{hash:2137387778,creator:function(e,t){t.txt={actions:{join:"Join",create:"Create",register:"Register",activities:"Generate activities",refine:"Refine",generate:"Generate",save:"Save",imported:"Imported",edit:"Edit",delete:"Delete",clean:"Clean",activity:"Activities",update:"Upload Document",next:"Next",back:"Back",cancel:"Cancel",link:"Link",gTooltip:"Classroom imported from Google",import:"Import",confirm:"Confirm"},create:{title:"Add Organization",success:"Organization published successfully",error:"Error while publishing organization",name:{label:"Organization Name",placeholder:"What will be the name of the Organization?"},description:{label:"Organization Description",placeholder:"What's the mission of this Organization?"},actions:{save:"Continue"}},delete:{title:"Delete classroom",description:"Are you sure you want to delete this classroom? This action cannot be undone.",errors:{59:"It cannot be deleted because it has associated data, such as linked assignments. Unlink or delete those data to proceed.",default:"An error occurred while deleting the classroom."}},empty:{title:"Register an educational classroom on RVD.AI",description:"Start by registering your classroom. "},welcome:{message:"Welcome %name to your list of classrooms",actionInfo:"Here you can view and manage all the classrooms you currently have. You'll have access to various actions, including creating, deleting, and editing classrooms. Take advantage of these tools to customize each organization according to your requirements."},title:"Classrooms",subtitle:"Explore, adjust, and manage your classrooms according to your needs",errors:{ERROR_GETTING_URL:"Error getting URL"}}}}),o.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}],o.exports.process=function({require:e,prop:t,value:o}){!e&&"txt"!==t||i("txt",e?e("./txt").txt:o)},i("__beyond_pkg",o),i("hmr",new function(){this.on=(e,t)=>o.hmr.on(e,t),this.off=(e,t)=>o.hmr.off(e,t)}),o.initialise(a)}}});
+System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel019Bundle) {
+      dependency_0 = _beyondJsKernel019Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.2.11"], ["@aimpact/ailearn-app", "0.2.11"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.2.11/classrooms/list",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('en');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 2137387778,
+        creator: function (require, exports) {
+          exports.txt = {
+            "actions": {
+              "join": "Join",
+              "create": "Create",
+              "register": "Register",
+              "activities": "Generate activities",
+              "refine": "Refine",
+              "generate": "Generate",
+              "save": "Save",
+              "imported": "Imported",
+              "edit": "Edit",
+              "delete": "Delete",
+              "clean": "Clean",
+              "activity": "Activities",
+              "update": "Upload Document",
+              "next": "Next",
+              "back": "Back",
+              "cancel": "Cancel",
+              "link": "Link",
+              "gTooltip": "Classroom imported from Google",
+              "import": "Import",
+              "confirm": "Confirm"
+            },
+            "create": {
+              "title": "Add Organization",
+              "success": "Organization published successfully",
+              "error": "Error while publishing organization",
+              "name": {
+                "label": "Organization Name",
+                "placeholder": "What will be the name of the Organization?"
+              },
+              "description": {
+                "label": "Organization Description",
+                "placeholder": "What's the mission of this Organization?"
+              },
+              "actions": {
+                "save": "Continue"
+              }
+            },
+            "delete": {
+              "title": "Delete classroom",
+              "description": "Are you sure you want to delete this classroom? This action cannot be undone.",
+              "errors": {
+                "59": "It cannot be deleted because it has associated data, such as linked assignments. Unlink or delete those data to proceed.",
+                "default": "An error occurred while deleting the classroom."
+              }
+            },
+            "empty": {
+              "title": "Register an educational classroom on RVD.AI",
+              "description": "Start by registering your classroom. "
+            },
+            "welcome": {
+              "message": "Welcome %name to your list of classrooms",
+              "actionInfo": "Here you can view and manage all the classrooms you currently have. You'll have access to various actions, including creating, deleting, and editing classrooms. Take advantage of these tools to customize each organization according to your requirements."
+            },
+            "title": "Classrooms",
+            "subtitle": "Explore, adjust, and manage your classrooms according to your needs",
+            "errors": {
+              "ERROR_GETTING_URL": "Error getting URL"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
