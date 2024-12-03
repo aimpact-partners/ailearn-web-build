@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/widgets@1.1.0/routing", "@beyond-js/react-18-widgets@1.1.2/base"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/widgets@1.1.1/routing", "@beyond-js/react-18-widgets@1.1.2/base"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, PageReactWidgetController, __beyond_pkg, hmr;
@@ -6,14 +6,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/widgets@1.1.0/rou
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
-    }, function (_beyondJsWidgets110Routing) {
-      dependency_1 = _beyondJsWidgets110Routing;
+    }, function (_beyondJsWidgets111Routing) {
+      dependency_1 = _beyondJsWidgets111Routing;
     }, function (_beyondJsReact18Widgets112Base) {
       dependency_2 = _beyondJsReact18Widgets112Base;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["react", "18.2.0"], ["react-dom", "18.2.0"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/kernel", "0.1.9"], ["@types/react", "18.0.26"], ["@types/react-dom", "18.0.10"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@aimpact/ailearn-app", "0.2.14"]]);
+        const dependencies = new Map([["react", "18.2.0"], ["react-dom", "18.2.0"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/kernel", "0.1.9"], ["@types/react", "18.0.26"], ["@types/react-dom", "18.0.10"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@aimpact/ailearn-app", "0.2.15"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

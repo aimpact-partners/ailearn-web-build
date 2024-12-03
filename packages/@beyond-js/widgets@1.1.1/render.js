@@ -22,7 +22,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/kernel", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/widgets", "1.1.0"], ["@aimpact/ailearn-app", "0.2.14"]]);
+        const dependencies = new Map([["@beyond-js/kernel", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/widgets", "1.1.1"], ["@aimpact/ailearn-app", "0.2.15"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -30,7 +30,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@beyond-js/widgets@1.1.0/render"
+          "vspecifier": "@beyond-js/widgets@1.1.1/render"
         },
         "type": "ts"
       }, _context.meta.url).package();
