@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "@beyond-js/widgets",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "languages": {
           "supported": [],
           "default": "en"
