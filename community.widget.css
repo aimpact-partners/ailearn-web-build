@@ -84,17 +84,17 @@
   justify-content: start;
   overflow: visible;
 }
-.pui-tabs-container .pui-tabs-menu.tabs .tab {
+.pui-tabs-container .pui-tabs-menu.tabs > .tab {
   padding: 1rem 0.5rem;
   opacity: 0.5;
   width: auto;
   position: relative;
   z-index: 2;
 }
-.pui-tabs-container .pui-tabs-menu.tabs .tab.active {
+.pui-tabs-container .pui-tabs-menu.tabs > .tab.active {
   opacity: 1;
 }
-.pui-tabs-container .pui-tabs-menu.tabs .tab.active::after {
+.pui-tabs-container .pui-tabs-menu.tabs > .tab.active::after {
   content: "";
   position: absolute;
   bottom: -1px;

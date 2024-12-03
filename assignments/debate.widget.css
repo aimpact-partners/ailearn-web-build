@@ -24,7 +24,7 @@
   justify-content: center;
   grid-template-columns: 1fr 1fr;
 }
-.mobile-view .pui-tabs-container .pui-tabs-menu.tabs .tab {
+.mobile-view .pui-tabs-container .pui-tabs-menu.tabs > .tab {
   justify-content: center;
   display: grid;
   height: 100%;
@@ -34,12 +34,12 @@
   font-size: 0.85rem;
   border: 2px solid transparent;
 }
-.mobile-view .pui-tabs-container .pui-tabs-menu.tabs .tab.active {
+.mobile-view .pui-tabs-container .pui-tabs-menu.tabs > .tab.active {
   border-color: transparent;
   color: var(--primary);
   border-top: 2px solid var(--primary);
 }
-.mobile-view .pui-tabs-container .pui-tabs-menu.tabs .tab:before {
+.mobile-view .pui-tabs-container .pui-tabs-menu.tabs > .tab:before {
   background: transparent;
 }
 .ailearn-chat-container {

@@ -90,14 +90,14 @@
     display: none;
   }
 }
-.page__container.activity-container--content-theory .content-theory__tabs .pui-tabs-menu.tabs .tab {
+.page__container.activity-container--content-theory .content-theory__tabs .pui-tabs-menu.tabs > .tab {
   border-bottom: 1px solid transparent;
   display: inline-block;
   padding: 1rem;
   cursor: pointer;
   transition: 300ms background ease-in;
 }
-.page__container.activity-container--content-theory .content-theory__tabs .pui-tabs-menu.tabs .tab:hover, .page__container.activity-container--content-theory .content-theory__tabs .pui-tabs-menu.tabs .tab.active {
+.page__container.activity-container--content-theory .content-theory__tabs .pui-tabs-menu.tabs > .tab:hover, .page__container.activity-container--content-theory .content-theory__tabs .pui-tabs-menu.tabs > .tab.active {
   background: var(--primary-90);
 }
 .answer-questions-form__container {

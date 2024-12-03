@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@1.0.0-beta.6/icons", "@aimpact/chat-sdk@1.3.0/components/icons", "pragmate-ui@1.0.0-beta.6/empty", "@beyond-js/react-18-widgets@1.1.2/hooks", "pragmate-ui@1.0.0-beta.6/toast", "@aimpact/chat-sdk@1.3.0/audio-player", "wavesurfer.js@7.8.5", "pragmate-ui@1.0.0-beta.6/image", "@aimpact/chat-sdk@1.3.0/widgets/playable", "@aimpact/chat-sdk@1.3.0/chat/messages/item", "@aimpact/chat-sdk@1.3.0/widgets/markdown", "pragmate-ui@1.0.0-beta.6/collapsible", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@1.0.0-beta.7/icons", "@aimpact/chat-sdk@1.3.0/components/icons", "pragmate-ui@1.0.0-beta.7/empty", "@beyond-js/react-18-widgets@1.1.2/hooks", "pragmate-ui@1.0.0-beta.7/toast", "@aimpact/chat-sdk@1.3.0/audio-player", "wavesurfer.js@7.8.5", "pragmate-ui@1.0.0-beta.7/image", "@aimpact/chat-sdk@1.3.0/widgets/playable", "@aimpact/chat-sdk@1.3.0/chat/messages/item", "@aimpact/chat-sdk@1.3.0/widgets/markdown", "pragmate-ui@1.0.0-beta.7/collapsible", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, bimport, __Bundle, __pkg, ims, Messages, __beyond_pkg, hmr;
@@ -8,36 +8,36 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_react2) {
       dependency_1 = _react2;
-    }, function (_pragmateUi100Beta6Icons) {
-      dependency_2 = _pragmateUi100Beta6Icons;
+    }, function (_pragmateUi100Beta7Icons) {
+      dependency_2 = _pragmateUi100Beta7Icons;
     }, function (_aimpactChatSdk130ComponentsIcons) {
       dependency_3 = _aimpactChatSdk130ComponentsIcons;
-    }, function (_pragmateUi100Beta6Empty) {
-      dependency_4 = _pragmateUi100Beta6Empty;
+    }, function (_pragmateUi100Beta7Empty) {
+      dependency_4 = _pragmateUi100Beta7Empty;
     }, function (_beyondJsReact18Widgets112Hooks) {
       dependency_5 = _beyondJsReact18Widgets112Hooks;
-    }, function (_pragmateUi100Beta6Toast) {
-      dependency_6 = _pragmateUi100Beta6Toast;
+    }, function (_pragmateUi100Beta7Toast) {
+      dependency_6 = _pragmateUi100Beta7Toast;
     }, function (_aimpactChatSdk130AudioPlayer) {
       dependency_7 = _aimpactChatSdk130AudioPlayer;
     }, function (_wavesurferJs) {
       dependency_8 = _wavesurferJs;
-    }, function (_pragmateUi100Beta6Image) {
-      dependency_9 = _pragmateUi100Beta6Image;
+    }, function (_pragmateUi100Beta7Image) {
+      dependency_9 = _pragmateUi100Beta7Image;
     }, function (_aimpactChatSdk130WidgetsPlayable) {
       dependency_10 = _aimpactChatSdk130WidgetsPlayable;
     }, function (_aimpactChatSdk130ChatMessagesItem) {
       dependency_11 = _aimpactChatSdk130ChatMessagesItem;
     }, function (_aimpactChatSdk130WidgetsMarkdown) {
       dependency_12 = _aimpactChatSdk130WidgetsMarkdown;
-    }, function (_pragmateUi100Beta6Collapsible) {
-      dependency_13 = _pragmateUi100Beta6Collapsible;
+    }, function (_pragmateUi100Beta7Collapsible) {
+      dependency_13 = _pragmateUi100Beta7Collapsible;
     }, function (_beyondJsKernel019Styles) {
       dependency_14 = _beyondJsKernel019Styles;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/reactive", "1.1.12"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/widgets", "1.1.0"], ["dompurify", "3.1.7"], ["firebase", "10.14.1"], ["highlight.js", "11.10.0"], ["katex", "0.16.11"], ["marked", "14.1.3"], ["marked-gfm-heading-id", "4.1.0"], ["marked-highlight", "2.2.0"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["pragmate-ui", "1.0.0-beta.6"], ["prism-themes", "1.9.0"], ["prismjs", "1.29.0"], ["socket.io-client", "4.8.1"], ["wavesurfer.js", "7.8.8"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["typescript", "5.6.3"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/ailearn-app", "0.2.1"]]);
+        const dependencies = new Map([["@beyond-js/reactive", "1.1.12"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/widgets", "1.1.0"], ["dompurify", "3.1.7"], ["firebase", "10.14.1"], ["highlight.js", "11.10.0"], ["katex", "0.16.11"], ["marked", "14.1.3"], ["marked-gfm-heading-id", "4.1.0"], ["marked-highlight", "2.2.0"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["pragmate-ui", "1.0.0-beta.6"], ["prism-themes", "1.9.0"], ["prismjs", "1.29.0"], ["socket.io-client", "4.8.1"], ["wavesurfer.js", "7.8.8"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["typescript", "5.6.3"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/ailearn-app", "0.2.15"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

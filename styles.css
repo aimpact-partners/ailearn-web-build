@@ -112,7 +112,7 @@
   --warning-60: #ff8800;
   --warning-70: #ffbe00;
   --warning-80: #ffda00;
-  --warning-90: #fff500;
+  --warning-90: #f5ffc2;
   --warning-95: #ffedea;
   --warning-98: rgb(255, 255, 0);
   --warning-100: #ffffff;
@@ -310,7 +310,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --warning-60: #ff8800;
   --warning-70: #ffbe00;
   --warning-80: #ffda00;
-  --warning-90: #fff500;
+  --warning-90: #f5ffc2;
   --warning-95: #ffedea;
   --warning-98: rgb(255, 255, 0);
   --warning-100: #ffffff;

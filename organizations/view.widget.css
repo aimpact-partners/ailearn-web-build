@@ -27,7 +27,7 @@
   border-radius: var(--border-radius-base);
   display: grid;
   grid-template-columns: 1fr auto;
-  color: var(--on-primary-container);
+  color: var(--primary);
 }
 .page-container__header .group-code__container .code__label {
   font-size: 0.75rem;

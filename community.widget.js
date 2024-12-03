@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "@aimpact/ailearn-app@0.2.1/main-layout.widget", "@beyond-js/reactive@1.1.12/model", "@aimpact/ailearn-sdk@1.0.0/learning-modules", "@beyond-js/kernel@0.1.9/texts", "react@18.2.0", "pragmate-ui@1.0.0-beta.6/components", "@aimpact/ailearn-app@0.2.1/components/ui", "@beyond-js/react-18-widgets@1.1.2/hooks", "@aimpact/ailearn-app@0.2.1/components/icons", "@aimpact/ailearn-app@0.2.1/components/module-card", "@aimpact/ailearn-app@0.2.1/modules/owner-assign.code", "pragmate-ui@1.0.0-beta.6/list", "pragmate-ui@1.0.0-beta.6/empty"], function (_export, _context2) {
+System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "@aimpact/ailearn-app@0.2.15/main-layout.widget", "@beyond-js/reactive@1.1.12/model", "@aimpact/ailearn-sdk@1.0.0/learning-modules", "@beyond-js/kernel@0.1.9/texts", "react@18.2.0", "pragmate-ui@1.0.0-beta.7/components", "@aimpact/ailearn-app@0.2.15/components/ui", "@beyond-js/react-18-widgets@1.1.2/hooks", "@aimpact/ailearn-app@0.2.15/components/icons", "@aimpact/ailearn-app@0.2.15/components/module-card", "@aimpact/ailearn-app@0.2.15/modules/owner-assign.code", "pragmate-ui@1.0.0-beta.7/list", "pragmate-ui@1.0.0-beta.7/empty"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, dependency_15, dependency_16, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
@@ -7,16 +7,16 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
     View: void 0
   });
   return {
-    setters: [function (_beyondJsWidgets110Render) {
-      dependency_0 = _beyondJsWidgets110Render;
+    setters: [function (_beyondJsWidgets111Render) {
+      dependency_0 = _beyondJsWidgets111Render;
     }, function (_beyondJsKernel019Bundle) {
       dependency_1 = _beyondJsKernel019Bundle;
     }, function (_beyondJsKernel019Styles) {
       dependency_2 = _beyondJsKernel019Styles;
     }, function (_beyondJsReact18Widgets112Page) {
       dependency_3 = _beyondJsReact18Widgets112Page;
-    }, function (_aimpactAilearnApp021MainLayoutWidget) {
-      dependency_4 = _aimpactAilearnApp021MainLayoutWidget;
+    }, function (_aimpactAilearnApp0215MainLayoutWidget) {
+      dependency_4 = _aimpactAilearnApp0215MainLayoutWidget;
     }, function (_beyondJsReactive1112Model) {
       dependency_5 = _beyondJsReactive1112Model;
     }, function (_aimpactAilearnSdk100LearningModules) {
@@ -25,26 +25,26 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       dependency_7 = _beyondJsKernel019Texts;
     }, function (_react2) {
       dependency_8 = _react2;
-    }, function (_pragmateUi100Beta6Components) {
-      dependency_9 = _pragmateUi100Beta6Components;
-    }, function (_aimpactAilearnApp021ComponentsUi) {
-      dependency_10 = _aimpactAilearnApp021ComponentsUi;
+    }, function (_pragmateUi100Beta7Components) {
+      dependency_9 = _pragmateUi100Beta7Components;
+    }, function (_aimpactAilearnApp0215ComponentsUi) {
+      dependency_10 = _aimpactAilearnApp0215ComponentsUi;
     }, function (_beyondJsReact18Widgets112Hooks) {
       dependency_11 = _beyondJsReact18Widgets112Hooks;
-    }, function (_aimpactAilearnApp021ComponentsIcons) {
-      dependency_12 = _aimpactAilearnApp021ComponentsIcons;
-    }, function (_aimpactAilearnApp021ComponentsModuleCard) {
-      dependency_13 = _aimpactAilearnApp021ComponentsModuleCard;
-    }, function (_aimpactAilearnApp021ModulesOwnerAssignCode) {
-      dependency_14 = _aimpactAilearnApp021ModulesOwnerAssignCode;
-    }, function (_pragmateUi100Beta6List) {
-      dependency_15 = _pragmateUi100Beta6List;
-    }, function (_pragmateUi100Beta6Empty) {
-      dependency_16 = _pragmateUi100Beta6Empty;
+    }, function (_aimpactAilearnApp0215ComponentsIcons) {
+      dependency_12 = _aimpactAilearnApp0215ComponentsIcons;
+    }, function (_aimpactAilearnApp0215ComponentsModuleCard) {
+      dependency_13 = _aimpactAilearnApp0215ComponentsModuleCard;
+    }, function (_aimpactAilearnApp0215ModulesOwnerAssignCode) {
+      dependency_14 = _aimpactAilearnApp0215ModulesOwnerAssignCode;
+    }, function (_pragmateUi100Beta7List) {
+      dependency_15 = _pragmateUi100Beta7List;
+    }, function (_pragmateUi100Beta7Empty) {
+      dependency_16 = _pragmateUi100Beta7Empty;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.6"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.2.1"], ["@aimpact/ailearn-app", "0.2.1"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.1"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.2.15"], ["@aimpact/ailearn-app", "0.2.15"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -52,7 +52,7 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.2.1/community",
+          "vspecifier": "@aimpact/ailearn-app@0.2.15/community",
           "multibundle": true
         },
         "type": "widget"
@@ -61,12 +61,12 @@ System.register(["@beyond-js/widgets@1.1.0/render", "@beyond-js/kernel@0.1.9/bun
       __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@aimpact/ailearn-app/main-layout.widget', dependency_4], ['@beyond-js/reactive/model', dependency_5], ['@aimpact/ailearn-sdk/learning-modules', dependency_6], ['@beyond-js/kernel/texts', dependency_7], ['react', dependency_8], ['pragmate-ui/components', dependency_9], ['@aimpact/ailearn-app/components/ui', dependency_10], ['@beyond-js/react-18-widgets/hooks', dependency_11], ['@aimpact/ailearn-app/components/icons', dependency_12], ['@aimpact/ailearn-app/components/module-card', dependency_13], ['@aimpact/ailearn-app/modules/owner-assign.code', dependency_14], ['pragmate-ui/list', dependency_15], ['pragmate-ui/empty', dependency_16]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "ailearn-community-modules",
-        "vspecifier": "@aimpact/ailearn-app@0.2.1/community.widget",
+        "vspecifier": "@aimpact/ailearn-app@0.2.15/community.widget",
         "is": "page",
         "route": "/community",
         "layout": "main-layout"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.2.1/community.widget');
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.2.15/community.widget');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller
