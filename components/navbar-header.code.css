@@ -172,10 +172,10 @@
   padding: 1px;
 }
 .notification__bar--container .notification__bar--content a {
-  color: var(--on-primary);
+  color: var(--secondary-light);
 }
 .notification__bar--container .notification__bar--content a:hover {
-  color: var(--on-primary);
+  color: var(--secondary-light);
 }
 .notification__bar--container .notification__bar--content .pui-icon-button {
   fill: var(--on-primary);
@@ -201,7 +201,7 @@
   z-index: 9;
   height: 110%;
   z-index: -1;
-  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background-image: linear-gradient(to bottom right, var(--primary), var(--primary-dark));
 }
 .off-canvas-menu-container.opened {
   position: fixed;
