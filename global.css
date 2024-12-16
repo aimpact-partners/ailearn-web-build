@@ -37,14 +37,15 @@
   background: var(--neutral-4);
 }
 .pui-button {
-  text-transform: uppercase !important;
-  font-size: 0.75rem !important;
+  font-size: 0.85rem !important;
 }
 .pui-button .button-label {
-  font-size: 0.75rem !important;
+  font-size: 0.85rem !important;
 }
+
 .pui-button.btn-link {
-  color: var(--text-color) !important;
+  color: var(--secondary) !important;
+  text-transform: capitalize;
 }
 
 .pui-button {

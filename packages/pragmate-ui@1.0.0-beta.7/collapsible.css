@@ -52,11 +52,11 @@
   cursor: pointer;
 }
 .collapsible__container .collapsible__header .collapsible__button {
-  transform: rotate(-180deg);
+  transform: rotate(-90deg);
   transition: transform 0.2s ease;
 }
 .collapsible__container .collapsible__header .collapsible__button.collapsible__button--opened {
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
 
 

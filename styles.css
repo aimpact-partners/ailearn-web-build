@@ -20,7 +20,7 @@
   --secondary-100: #ffffff;
   --secondary-99: #fdfcff;
   --secondary-98: #f8f9ff;
-  --secondary-95: #e9f1ff;
+  --secondary-95: #e4f3ff;
   --secondary-90: #d0e4ff;
   --secondary-80: #9ccaff;
   --secondary-70: #5db0ff;
@@ -218,7 +218,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --secondary-100: #ffffff;
   --secondary-99: #fdfcff;
   --secondary-98: #f8f9ff;
-  --secondary-95: #e9f1ff;
+  --secondary-95: #e4f3ff;
   --secondary-90: #d0e4ff;
   --secondary-80: #9ccaff;
   --secondary-70: #5db0ff;
@@ -337,6 +337,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --font-size-p1: 1rem;
   --text-muted: var(--neutral-50);
   --separator: var(--neutral-variant-95);
+  --default-background: var(--neutral-95);
   /* neutral */
   --neutral-0: #000;
   --neutral-4: #0f0d13;
@@ -456,6 +457,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --disabled-text: var(--neutral-70);
   --background-preload: var(--primary-80);
   --background-neutral: #f3f3f3;
+  --secondary-background: var(--neutral-95);
   --app-main-outline: #000;
   --primary-light: #5174c9;
   --primary-light-rbg: 81, 116, 201;
@@ -479,6 +481,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --background: #ffffff;
   --text-color: #141414;
   --border-dark-color: #000;
+  --on-hover-background: var(--secondary-color-95);
 }
 :root[data-beyond-mode=light] {
   --text-color: #1a1a1a;
@@ -527,6 +530,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --disabled-text: var(--neutral-70);
   --background-preload: var(--primary-80);
   --background-neutral: #f3f3f3;
+  --secondary-background: var(--neutral-95);
   --app-main-outline: #000;
   --primary-light: #5174c9;
   --primary-light-rbg: 81, 116, 201;
@@ -550,6 +554,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --background: #ffffff;
   --text-color: #141414;
   --border-dark-color: #000;
+  --on-hover-background: var(--secondary-color-95);
 }
 :root[data-beyond-mode=dark] {
   --text-color: #1a1a1a;
@@ -619,6 +624,7 @@ Same as light variables to avoid dark theme while design does not provide it.
   --background: #ffffff;
   --text-color: #141414;
   --border-dark-color: #000;
+  --on-hover-background: var(--secondary-color-95);
 }
 :root[data-accessibility-mode=dyslexia] {
   --font-family: "OpenDyslexic";

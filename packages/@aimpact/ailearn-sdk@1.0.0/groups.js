@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-sdk@1.0.0/reactive/entities/collection", "@aimpact/ailearn-sdk@1.0.0/reactive/model", "@aimpact/chat-sdk@1.3.0/session", "@aimpact/http-suite@0.0.1/api", "@aimpact/ailearn-sdk@1.0.0/config", "@aimpact/ailearn-sdk@1.0.0/reactive/entities/item"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/reactive@0.0.1/entities/collection", "@aimpact/reactive@0.0.1/model", "@aimpact/chat-sdk@1.4.1/session", "@aimpact/http-suite@0.0.1/api", "@aimpact/ailearn-sdk@1.0.0/config", "@aimpact/reactive@0.0.1/entities/item"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, Groups, DataProvider, GroupItem, __beyond_pkg, hmr;
@@ -10,22 +10,22 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-sdk@1.0.0/r
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
-    }, function (_aimpactAilearnSdk100ReactiveEntitiesCollection) {
-      dependency_1 = _aimpactAilearnSdk100ReactiveEntitiesCollection;
-    }, function (_aimpactAilearnSdk100ReactiveModel) {
-      dependency_2 = _aimpactAilearnSdk100ReactiveModel;
-    }, function (_aimpactChatSdk130Session) {
-      dependency_3 = _aimpactChatSdk130Session;
+    }, function (_aimpactReactive001EntitiesCollection) {
+      dependency_1 = _aimpactReactive001EntitiesCollection;
+    }, function (_aimpactReactive001Model) {
+      dependency_2 = _aimpactReactive001Model;
+    }, function (_aimpactChatSdk141Session) {
+      dependency_3 = _aimpactChatSdk141Session;
     }, function (_aimpactHttpSuite001Api) {
       dependency_4 = _aimpactHttpSuite001Api;
     }, function (_aimpactAilearnSdk100Config) {
       dependency_5 = _aimpactAilearnSdk100Config;
-    }, function (_aimpactAilearnSdk100ReactiveEntitiesItem) {
-      dependency_6 = _aimpactAilearnSdk100ReactiveEntitiesItem;
+    }, function (_aimpactReactive001EntitiesItem) {
+      dependency_6 = _aimpactReactive001EntitiesItem;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@aimpact/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "1.2.0"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@types/node", "22.5.5"], ["dexie", "4.0.8"], ["firebase", "10.13.2"], ["pragmate-ui", "0.0.6"], ["react-select", "5.8.1"], ["socket.io-client", "4.7.5"], ["zod", "3.23.8"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-app", "0.2.17"]]);
+        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@aimpact/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.4.1"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "1.2.0"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@types/node", "22.5.5"], ["dexie", "4.0.8"], ["firebase", "10.13.2"], ["pragmate-ui", "0.0.6"], ["react-select", "5.8.1"], ["socket.io-client", "4.7.5"], ["zod", "3.23.8"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-app", "0.2.17"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -38,13 +38,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-sdk@1.0.0/r
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@aimpact/ailearn-sdk/reactive/entities/collection', dependency_1], ['@aimpact/ailearn-sdk/reactive/model', dependency_2], ['@aimpact/chat-sdk/session', dependency_3], ['@aimpact/http-suite/api', dependency_4], ['@aimpact/ailearn-sdk/config', dependency_5], ['@aimpact/ailearn-sdk/reactive/entities/item', dependency_6]]);
+      __pkg.dependencies.update([['@aimpact/reactive/entities/collection', dependency_1], ['@aimpact/reactive/model', dependency_2], ['@aimpact/chat-sdk/session', dependency_3], ['@aimpact/http-suite/api', dependency_4], ['@aimpact/ailearn-sdk/config', dependency_5], ['@aimpact/reactive/entities/item', dependency_6]]);
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./collection
       ****************************/
       ims.set('./collection', {
-        hash: 4072739347,
+        hash: 883863687,
         creator: function (require, exports) {
           "use strict";
 
@@ -52,7 +52,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-sdk@1.0.0/r
             value: true
           });
           exports.Groups = void 0;
-          var _collection = require("@aimpact/ailearn-sdk/reactive/entities/collection");
+          var _collection = require("@aimpact/reactive/entities/collection");
           var _dataProvider = require("./data-provider");
           /*bundle*/
           class Groups extends _collection.Collection {
@@ -73,7 +73,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-sdk@1.0.0/r
       *******************************/
 
       ims.set('./data-provider', {
-        hash: 3966877392,
+        hash: 2187241952,
         creator: function (require, exports) {
           "use strict";
 
@@ -245,7 +245,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-sdk@1.0.0/r
       **********************/
 
       ims.set('./item', {
-        hash: 566019225,
+        hash: 1710603618,
         creator: function (require, exports) {
           "use strict";
 
@@ -253,7 +253,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-sdk@1.0.0/r
             value: true
           });
           exports.GroupItem = void 0;
-          var _item = require("@aimpact/ailearn-sdk/reactive/entities/item");
+          var _item = require("@aimpact/reactive/entities/item");
           var _dataProvider = require("./data-provider");
           var _session = require("@aimpact/chat-sdk/session");
           /*bundle*/
