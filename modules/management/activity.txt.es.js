@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2988623686,
+        hash: 4173668620,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -97,8 +97,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "noAudio": "Este elemento no posee audio creado",
                   "maxLength": "No se puede crear el audio del elemento pues supera el límite de caracteres permitidos (4000)."
                 },
-                "article": "Articulo",
-                "dyslexia": "Adaptaciones",
+                "article": {
+                  "textarea": "Artículo"
+                },
+                "dyslexia": {
+                  "textarea": "Adaptaciones"
+                },
                 "refinement": {
                   "title": "Crea el contenido de tu actividad con IA",
                   "description": "Tus aportes nos ayudarán a mejorar el contenido."
@@ -295,6 +299,21 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "confirm": {
                 "title": "¿Quieres reemplazar la imagen actual?",
                 "subtitle": "Si confirmas, la imagen actual será reemplazada."
+              }
+            },
+            "manual": {
+              "cancel": "¿Estás seguro de que quieres cancelar?",
+              "article": {
+                "textarea": "Añade el contenido de la actividad"
+              },
+              "content": {
+                "textarea": "Añade el contenido de la actividad"
+              },
+              "synthesis": {
+                "textarea": "Añade tu síntesis aquí"
+              },
+              "dyslexia": {
+                "textarea": "Añade tu contenido aquí"
               }
             }
           };

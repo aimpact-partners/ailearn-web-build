@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4033669772,
+        hash: 2775091697,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -111,6 +111,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "article": {
                     "placeholder": "Comience a crear su contenido aquí…."
                   }
+                },
+                "article": {
+                  "textarea": "Article"
+                },
+                "dyslexia": {
+                  "textarea": "Adaptations"
                 }
               },
               "empty": {
@@ -294,6 +300,21 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "confirm": {
                 "title": "Do you want to replace the current image?",
                 "subtitle": "If you confirm, the current image will be replaced."
+              }
+            },
+            "manual": {
+              "cancel": "Are you sure you want to cancel?",
+              "article": {
+                "textarea": "Add the content of the activity"
+              },
+              "content": {
+                "textarea": "Add the content of the activity"
+              },
+              "synthesis": {
+                "textarea": "Add your summary here"
+              },
+              "dyslexia": {
+                "textarea": "Add your content here"
               }
             }
           };

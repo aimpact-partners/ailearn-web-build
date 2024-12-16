@@ -361,11 +361,11 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.page-activity-container label {
+.activity-container label {
   font-size: 1rem;
   font-weight: bolder;
 }
-.page-activity-container .activity__audio {
+.activity-container .activity__audio {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -373,19 +373,19 @@
   gap: 0.5rem;
   padding: 1rem 0;
 }
-.page-activity-container .activity__audio:not(:first-child) {
+.activity-container .activity__audio:not(:first-child) {
   border-top: 1px solid var(--outline);
 }
-.page-activity-container .activity__audio .audio-label {
+.activity-container .activity__audio .audio-label {
   font-size: 0.785rem;
   max-width: 600px;
 }
-.page-activity-container .activity__audio .audio-player audio {
+.activity-container .activity__audio .audio-player audio {
   min-width: 300px;
   width: 100%;
 }
 @media (max-width: 600px) {
-  .page-activity-container .activity__audio {
+  .activity-container .activity__audio {
     flex-direction: column;
   }
 }
