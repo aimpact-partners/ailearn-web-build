@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 86717759,
+        hash: 2934272879,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -55,8 +55,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "header": {
                 "actions": {
-                  "require": "REQUEST CREDITS",
-                  "available": "AVAILABLE CREDITS"
+                  "require": "Request credits",
+                  "available": "Available credits"
                 },
                 "messages": {
                   "add": "You acquired credits to use the AI functions",
