@@ -1,0 +1,254 @@
+System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel019Bundle) {
+      dependency_0 = _beyondJsKernel019Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", null], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.4.1"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.1"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.24.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.3.1"], ["@aimpact/ailearn-app", "0.3.1"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.3.1/modules/draft/store",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('es');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 701775476,
+        creator: function (require, exports) {
+          exports.txt = {
+            "activities": {
+              "item": {
+                "empty": "Esta actividad aún no posee contenido o titulo definido"
+              },
+              "types": {
+                "content-theory": "Contenido/Teoría",
+                "multiple-choice": "Selección Múltiple",
+                "character-talk": "Conversación con un Personaje",
+                "debate": "Debate",
+                "spoken": "Exposición Oral"
+              },
+              "minutes": "Min",
+              "description": "Descripción",
+              "objective": "Objetivo",
+              "activity": {
+                "empty": "Esta actividad no tiene contenido"
+              },
+              "type": "Tipo",
+              "questions": "Preguntas",
+              "topics": "Temas",
+              "title": "Actividades",
+              "empty": {
+                "title": "Aún no posees actividades",
+                "text": "Agrega una actividad a tu módulo"
+              },
+              "createModal": {
+                "title": "Selecciona el tipo de actividad",
+                "validation": "Debes completar el titulo y la descripción del módulo para poder agregar una actividad.",
+                "validationTitle": "Módulo incompleto"
+              },
+              "delete": {
+                "title": "¿Realmente desea eliminar esta actividad?",
+                "subtitle": "Al eliminar esta actividad, no podrá recuperarla."
+              },
+              "descriptionTypes": {
+                "content-theory": "Artículo, adaptaciones y audios sobre un tema específico para construir una base teórica.",
+                "multiple-choice": "Preguntas de selección múltiple para evaluar comprensión",
+                "character-talk": "Aprender a través de una conversación con un personaje de ficción",
+                "debate": " Conversación uno-a-uno con un asistente virtual para explorar y profundizar temas",
+                "spoken": "Presentación oral sobre un tema asignado para evaluar conocimientos u otros usos como creatividad, presentaciones originales, etc"
+              },
+              "states": {
+                "empty": "Actividad vacia",
+                "completed": "Completada",
+                "processing": "En edición"
+              }
+            },
+            "languages": {
+              "select": {
+                "label": "Idioma",
+                "placeholder": "Seleccionar Idioma"
+              },
+              "label": "Idiomas",
+              "en": "Inglés",
+              "es": "Español",
+              "pt": "Portugués",
+              "fr": "Francés",
+              "de": "Alemán",
+              "it": "Italiano"
+            },
+            "alerts": {
+              "coins": {
+                "available": "El propietario dispone de créditos IA",
+                "unavailable": "El propietario no dispone de créditos IA"
+              }
+            },
+            "audience": {
+              "label": "Audiencia",
+              "error": "Por favor seleccione la audiencia",
+              "select": "Seleccione la audiencia"
+            },
+            "level": {
+              "label": "Grado o Nivel",
+              "error": "Por favor seleccione un nivel de grado",
+              "select": "Seleccione el Grado"
+            },
+            "objectiveTour": {
+              "buttons": {
+                "nextBtnText": "Siguiente",
+                "prevBtnText": "Anterior",
+                "doneBtnText": "Listo"
+              },
+              "administrator": {
+                "title": "Selecciona el propietario",
+                "description": "Elige el propietario responsable del módulo de aprendizaje. Debe tener créditos asignados para la creación de módulos con asistencia de IA."
+              },
+              "parameters": {
+                "title": "Selecciona los parámetros del módulo de aprendizaje",
+                "description": "Selecciona el idioma del módulo de aprendizaje, el año escolar de tus alumnos y el número de actividades. Podrás encontrar más información en nuestro canal de YouTube @RVDAIRIVADAVIA24."
+              },
+              "objective": {
+                "title": "Redacta el objetivo principal del módulo de aprendizaje",
+                "description": "Este objetivo será central para guiar el resto del contenido y las actividades del módulo."
+              },
+              "save": {
+                "title": "Guarda el objetivo del módulo de aprendizaje",
+                "description": "Una vez guardado, podrás solicitar créditos para mejorar el objetivo y comenzar a trabajar con IA."
+              }
+            },
+            "pathway": {
+              "manual": {
+                "title": {
+                  "label": "Titulo del módulo",
+                  "placeholder": "Ingresa el título del módulo"
+                },
+                "description": {
+                  "label": "Descripción del módulo",
+                  "placeholder": "Ingresa la descripción del módulo"
+                }
+              },
+              "ai": {
+                "title": "Continuemos de forma asistida",
+                "form": {
+                  "size": {
+                    "placeholder": "Cantidad de actividades del módulo",
+                    "items": {
+                      "brief": "Breve (3 actividades)",
+                      "standard": "Estándar (5 actividades)",
+                      "extended": "Extendido (7 actividades)"
+                    }
+                  },
+                  "notes": {
+                    "placeholder": "Ingrese las instrucciones para guiar a la IA en la creación de tus actividades"
+                  }
+                }
+              }
+            },
+            "refine": {
+              "activities": {
+                "title": "Define las instrucciones para la IA",
+                "description": "Guía a la Inteligencia Artificial para generar contenido basados en tus principios pedagógicos indicando, por ejemplo, los tipos de actividades y el tono de las mismas (informal, inspirador, etc.)."
+              },
+              "textarea": {
+                "label": "Tus aportes",
+                "placeholder": "Comparte sugerencias específicas o áreas de mejora..."
+              },
+              "errors": {
+                "default": "Ha ocurrido un error, por favor intenta nuevamente."
+              },
+              "confirm": {
+                "title": "Estas por confirmar el objetivo de tu modulo",
+                "description": " No has seleccionado ninguna de las sugerencias generadas ¿Deseas avanzar sin implementarlas?"
+              }
+            },
+            "setup": {
+              "actions": {
+                "cancel": "Cancelar",
+                "continue": "Continuar"
+              },
+              "messages": {
+                "save": "Objetivo guardado con éxito"
+              },
+              "title": "Crea un Nuevo Módulo de Aprendizaje",
+              "subtitle": "Configura las características de tu módulo para comenzar.",
+              "generation": {
+                "title": "Comencemos a dar forma al módulo",
+                "subtitle": "Indica de qué manera deseas continuar",
+                "options": {
+                  "ai": "Quiero generar las actividades con ayuda de la IA",
+                  "manually": "Quiero generar las actividades de forma manual"
+                }
+              },
+              "form": {
+                "administrator": {
+                  "label": "Propietario",
+                  "select": "Seleccionar propietario",
+                  "account": "Cuenta actual",
+                  "error": "Necesita especificar el propietario del módulo de aprendizaje"
+                },
+                "title": {
+                  "label": "Titulo del módulo"
+                },
+                "description": {
+                  "label": "Descripción del módulo"
+                },
+                "activities": {
+                  "label": "Cantidad de actividades del módulo"
+                },
+                "notes": {
+                  "placeholder": "Ingrese las instrucciones para guiar a la IA en la creación de tus actividades"
+                },
+                "objective": {
+                  "textArea": "Ingresa el objetivo del módulo"
+                }
+              },
+              "sugestions": {
+                "title": "Sugerencias de instrucción"
+              },
+              "confirmation": {
+                "title": "Atención",
+                "subtitle": "Estás a punto de crear un módulo de aprendizaje para:",
+                "label": "Propietario del módulo de aprendizaje",
+                "description": "Los créditos IA que solicites dentro de la creación de este módulo de aprendizaje serán solicitados y provistos por el propietario del módulo"
+              }
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "@beyond-js/reactive@1.1.12/model", "react@18.2.0", "pragmate-ui@1.0.0-beta.7/components", "@aimpact/auth@0.0.1/components", "pragmate-ui@1.0.0-beta.7/image", "pragmate-ui@1.0.0-beta.7/form", "@beyond-js/react-18-widgets@1.1.2/hooks"], function (_export, _context) {
+System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "@aimpact/reactive@0.0.1/model", "react@18.2.0", "pragmate-ui@1.0.0-beta.7/components", "@aimpact/auth@0.0.1/components", "pragmate-ui@1.0.0-beta.7/image", "pragmate-ui@1.0.0-beta.7/form", "@beyond-js/react-18-widgets@1.1.2/hooks"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
@@ -15,8 +15,8 @@ System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bun
       dependency_2 = _beyondJsKernel019Styles;
     }, function (_beyondJsReact18Widgets112Page) {
       dependency_3 = _beyondJsReact18Widgets112Page;
-    }, function (_beyondJsReactive1112Model) {
-      dependency_4 = _beyondJsReactive1112Model;
+    }, function (_aimpactReactive001Model) {
+      dependency_4 = _aimpactReactive001Model;
     }, function (_react2) {
       dependency_5 = _react2;
     }, function (_pragmateUi100Beta7Components) {
@@ -32,7 +32,7 @@ System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bun
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/chat-sdk", "1.4.1"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/widgets", "1.1.0"], ["framer-motion", "11.3.21"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["socket.io-client", "4.7.3"], ["wavesurfer.js", "7.8.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.46"], ["@types/react-dom", "18.2.18"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.3.1"]]);
+        const dependencies = new Map([["@aimpact/chat-sdk", "1.4.1"], ["@aimpact/reactive", "0.0.1"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.0.4"], ["@beyond-js/widgets", "1.1.0"], ["framer-motion", "11.3.21"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["socket.io-client", "4.7.3"], ["wavesurfer.js", "7.8.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.2.46"], ["@types/react-dom", "18.2.18"], ["@aimpact/auth", "0.0.1"], ["@aimpact/ailearn-app", "0.3.1"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -46,7 +46,7 @@ System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bun
         "type": "widget"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@beyond-js/reactive/model', dependency_4], ['react', dependency_5], ['pragmate-ui/components', dependency_6], ['@aimpact/auth/components', dependency_7], ['pragmate-ui/image', dependency_8], ['pragmate-ui/form', dependency_9], ['@beyond-js/react-18-widgets/hooks', dependency_10]]);
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@aimpact/reactive/model', dependency_4], ['react', dependency_5], ['pragmate-ui/components', dependency_6], ['@aimpact/auth/components', dependency_7], ['pragmate-ui/image', dependency_8], ['pragmate-ui/form', dependency_9], ['@beyond-js/react-18-widgets/hooks', dependency_10]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "auth-recover-password-page",
         "vspecifier": "@aimpact/auth@0.0.1/auth-recover-password.widget",
@@ -94,7 +94,7 @@ System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bun
       ***********************/
 
       ims.set('./store', {
-        hash: 69408933,
+        hash: 3773400871,
         creator: function (require, exports) {
           "use strict";
 
@@ -102,7 +102,7 @@ System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bun
             value: true
           });
           exports.StoreManager = void 0;
-          var _model = require("@beyond-js/reactive/model");
+          var _model = require("@aimpact/reactive/model");
           var _functions = require("./temp-hardcoded/functions");
           class StoreManager extends _model.ReactiveModel {
             token;

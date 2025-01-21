@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core", "@beyond-js/reactive@1.1.12/model"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core", "@aimpact/reactive@0.0.1/model"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, Api, JCall, __beyond_pkg, hmr;
@@ -11,8 +11,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_beyondJsKernel019Core) {
       dependency_1 = _beyondJsKernel019Core;
-    }, function (_beyondJsReactive1112Model) {
-      dependency_2 = _beyondJsReactive1112Model;
+    }, function (_aimpactReactive001Model) {
+      dependency_2 = _aimpactReactive001Model;
     }],
     execute: function () {
       bimport = specifier => {
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/kernel/core', dependency_1], ['@beyond-js/reactive/model', dependency_2]]);
+      __pkg.dependencies.update([['@beyond-js/kernel/core', dependency_1], ['@aimpact/reactive/model', dependency_2]]);
       ims = new Map();
       /*********************
       INTERNAL MODULE: ./api
@@ -109,7 +109,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
       ***********************/
 
       ims.set('./jcall', {
-        hash: 1881027662,
+        hash: 385087204,
         creator: function (require, exports) {
           "use strict";
 
@@ -117,7 +117,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
             value: true
           });
           exports.JCall = void 0;
-          var _model = require("@beyond-js/reactive/model");
+          var _model = require("@aimpact/reactive/model");
           var _stream = require("./stream");
           /*bundle*/
           class JCall extends _model.ReactiveModel {

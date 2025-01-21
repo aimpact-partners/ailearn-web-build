@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.4.1"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.1"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.3.1"], ["@aimpact/ailearn-app", "0.3.1"]]);
+        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", null], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.4.1"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.1"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.24.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.3.1"], ["@aimpact/ailearn-app", "0.3.1"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1858122787,
+        hash: 3268513530,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -76,29 +76,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               }
             },
-            "audience": {
-              "label": "Audiencia",
-              "error": "Por favor seleccione la audiencia",
-              "select": "Seleccione la audiencia"
-            },
-            "level": {
-              "label": "Grado o Nivel",
-              "error": "Por favor seleccione un nivel de grado",
-              "select": "Seleccione el Grado"
-            },
-            "languages": {
-              "select": {
-                "label": "Idioma",
-                "placeholder": "Seleccionar Idioma"
-              },
-              "label": "Idiomas",
-              "en": "Inglés",
-              "es": "Español",
-              "pt": "Portugués",
-              "fr": "Francés",
-              "de": "Alemán",
-              "it": "Italiano"
-            },
             "refine": {
               "activities": {
                 "title": "Define las instrucciones para la IA",
@@ -122,85 +99,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "ownerDescription": "Propietario del módulo de aprendizaje",
               "action": "¿Deseas solicitar créditos al propietario del módulo?",
               "detail": "Los créditos de IA habilitan todas las funciones avanzadas de Inteligencia Artificial en la creación de módulos de aprendizaje."
-            },
-            "pathway": {
-              "manual": {
-                "title": {
-                  "label": "Titulo del módulo",
-                  "placeholder": "Ingresa el título del módulo"
-                },
-                "description": {
-                  "label": "Descripción del módulo",
-                  "placeholder": "Ingresa la descripción del módulo"
-                }
-              },
-              "ai": {
-                "title": "Continuemos de forma asistida",
-                "form": {
-                  "size": {
-                    "placeholder": "Cantidad de actividades del módulo",
-                    "items": {
-                      "brief": "Breve (3 actividades)",
-                      "standard": "Estándar (5 actividades)",
-                      "extended": "Extendido (7 actividades)"
-                    }
-                  },
-                  "notes": {
-                    "placeholder": "Ingrese las instrucciones para guiar a la IA en la creación de tus actividades"
-                  }
-                }
-              }
-            },
-            "setup": {
-              "actions": {
-                "cancel": "Cancelar",
-                "continue": "Continuar"
-              },
-              "messages": {
-                "save": "Objetivo guardado con éxito"
-              },
-              "title": "Crea un Nuevo Módulo de Aprendizaje",
-              "subtitle": "Configura las características de tu módulo para comenzar.",
-              "generation": {
-                "title": "Comencemos a dar forma al módulo",
-                "subtitle": "Indica de qué manera deseas continuar",
-                "options": {
-                  "ai": "Quiero generar las actividades con ayuda de la IA",
-                  "manually": "Quiero generar las actividades de forma manual"
-                }
-              },
-              "form": {
-                "administrator": {
-                  "label": "Propietario",
-                  "select": "Seleccionar propietario",
-                  "account": "Cuenta actual",
-                  "error": "Necesita especificar el propietario del módulo de aprendizaje"
-                },
-                "title": {
-                  "label": "Titulo del módulo"
-                },
-                "description": {
-                  "label": "Descripción del módulo"
-                },
-                "activities": {
-                  "label": "Cantidad de actividades del módulo"
-                },
-                "notes": {
-                  "placeholder": "Ingrese las instrucciones para guiar a la IA en la creación de tus actividades"
-                },
-                "objective": {
-                  "textArea": "Ingresa el objetivo del módulo"
-                }
-              },
-              "sugestions": {
-                "title": "Sugerencias de instrucción"
-              },
-              "confirmation": {
-                "title": "Atención",
-                "subtitle": "Estás a punto de crear un módulo de aprendizaje para:",
-                "label": "Propietario del módulo de aprendizaje",
-                "description": "Los créditos IA que solicites dentro de la creación de este módulo de aprendizaje serán solicitados y provistos por el propietario del módulo"
-              }
             },
             "suggestions": {
               "objective": {
@@ -233,29 +131,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "labels": {
               "title": "Título",
               "description": "Descripción"
-            },
-            "objectiveTour": {
-              "buttons": {
-                "nextBtnText": "Siguiente",
-                "prevBtnText": "Anterior",
-                "doneBtnText": "Listo"
-              },
-              "administrator": {
-                "title": "Selecciona el propietario",
-                "description": "Elige el propietario responsable del módulo de aprendizaje. Debe tener créditos asignados para la creación de módulos con asistencia de IA."
-              },
-              "parameters": {
-                "title": "Selecciona los parámetros del módulo de aprendizaje",
-                "description": "Selecciona el idioma del módulo de aprendizaje, el año escolar de tus alumnos y el número de actividades. Podrás encontrar más información en nuestro canal de YouTube @RVDAIRIVADAVIA24."
-              },
-              "objective": {
-                "title": "Redacta el objetivo principal del módulo de aprendizaje",
-                "description": "Este objetivo será central para guiar el resto del contenido y las actividades del módulo."
-              },
-              "save": {
-                "title": "Guarda el objetivo del módulo de aprendizaje",
-                "description": "Una vez guardado, podrás solicitar créditos para mejorar el objetivo y comenzar a trabajar con IA."
-              }
             }
           };
         }

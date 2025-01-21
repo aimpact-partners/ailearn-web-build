@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/users", "@beyond-js/reactive@1.1.12/model"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/users", "@aimpact/reactive@0.0.1/model"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, SDKSettings, __beyond_pkg, hmr;
@@ -8,8 +8,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/user
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_aimpactChatSdk141Users) {
       dependency_1 = _aimpactChatSdk141Users;
-    }, function (_beyondJsReactive1112Model) {
-      dependency_2 = _beyondJsReactive1112Model;
+    }, function (_aimpactReactive001Model) {
+      dependency_2 = _aimpactReactive001Model;
     }],
     execute: function () {
       bimport = specifier => {
@@ -26,13 +26,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/user
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@aimpact/chat-sdk/users', dependency_1], ['@beyond-js/reactive/model', dependency_2]]);
+      __pkg.dependencies.update([['@aimpact/chat-sdk/users', dependency_1], ['@aimpact/reactive/model', dependency_2]]);
       ims = new Map();
       /***********************
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 1573229943,
+        hash: 2361782938,
         creator: function (require, exports) {
           "use strict";
 
@@ -41,7 +41,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/user
           });
           exports.SDKSettings = void 0;
           var _users = require("@aimpact/chat-sdk/users");
-          var _model = require("@beyond-js/reactive/model");
+          var _model = require("@aimpact/reactive/model");
           class ChatSDKSettings extends _model.ReactiveModel {
             #userModel = _users.User;
             get userModel() {

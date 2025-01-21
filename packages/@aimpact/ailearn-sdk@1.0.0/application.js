@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.12/model", "@aimpact/http-suite@0.0.1/api", "@aimpact/ailearn-sdk@1.0.0/config", "@aimpact/chat-sdk@1.4.1/session"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/reactive@0.0.1/model", "@aimpact/http-suite@0.0.1/api", "@aimpact/ailearn-sdk@1.0.0/config", "@aimpact/chat-sdk@1.4.1/session"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Application, __beyond_pkg, hmr;
@@ -6,8 +6,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.12/m
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
-    }, function (_beyondJsReactive1112Model) {
-      dependency_1 = _beyondJsReactive1112Model;
+    }, function (_aimpactReactive001Model) {
+      dependency_1 = _aimpactReactive001Model;
     }, function (_aimpactHttpSuite001Api) {
       dependency_2 = _aimpactHttpSuite001Api;
     }, function (_aimpactAilearnSdk100Config) {
@@ -30,13 +30,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.12/m
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/reactive/model', dependency_1], ['@aimpact/http-suite/api', dependency_2], ['@aimpact/ailearn-sdk/config', dependency_3], ['@aimpact/chat-sdk/session', dependency_4]]);
+      __pkg.dependencies.update([['@aimpact/reactive/model', dependency_1], ['@aimpact/http-suite/api', dependency_2], ['@aimpact/ailearn-sdk/config', dependency_3], ['@aimpact/chat-sdk/session', dependency_4]]);
       ims = new Map();
       /***********************
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 1514255918,
+        hash: 3584158574,
         creator: function (require, exports) {
           "use strict";
 
@@ -44,7 +44,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/reactive@1.1.12/m
             value: true
           });
           exports.Application = void 0;
-          var _model = require("@beyond-js/reactive/model");
+          var _model = require("@aimpact/reactive/model");
           var _api = require("@aimpact/http-suite/api");
           var _config = require("@aimpact/ailearn-sdk/config");
           var _session = require("@aimpact/chat-sdk/session");

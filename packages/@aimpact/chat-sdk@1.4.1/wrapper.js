@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/core", "@aimpact/chat-sdk@1.4.1/session", "@beyond-js/reactive@1.1.12/model", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/core", "@aimpact/chat-sdk@1.4.1/session", "@aimpact/reactive@0.0.1/model", "@beyond-js/kernel@0.1.9/core"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Wrapper, AppWrapper, __beyond_pkg, hmr;
@@ -13,8 +13,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/core
       dependency_1 = _aimpactChatSdk141Core;
     }, function (_aimpactChatSdk141Session) {
       dependency_2 = _aimpactChatSdk141Session;
-    }, function (_beyondJsReactive1112Model) {
-      dependency_3 = _beyondJsReactive1112Model;
+    }, function (_aimpactReactive001Model) {
+      dependency_3 = _aimpactReactive001Model;
     }, function (_beyondJsKernel019Core) {
       dependency_4 = _beyondJsKernel019Core;
     }],
@@ -33,13 +33,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/core
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@aimpact/chat-sdk/core', dependency_1], ['@aimpact/chat-sdk/session', dependency_2], ['@beyond-js/reactive/model', dependency_3], ['@beyond-js/kernel/core', dependency_4]]);
+      __pkg.dependencies.update([['@aimpact/chat-sdk/core', dependency_1], ['@aimpact/chat-sdk/session', dependency_2], ['@aimpact/reactive/model', dependency_3], ['@beyond-js/kernel/core', dependency_4]]);
       ims = new Map();
       /***********************
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 2289235394,
+        hash: 3269840825,
         creator: function (require, exports) {
           "use strict";
 
@@ -49,7 +49,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/core
           exports.Wrapper = exports.AppWrapper = void 0;
           var _core = require("@aimpact/chat-sdk/core");
           var _session = require("@aimpact/chat-sdk/session");
-          var _model = require("@beyond-js/reactive/model");
+          var _model = require("@aimpact/reactive/model");
           var _core2 = require("@beyond-js/kernel/core");
           /*bundle*/
           class Wrapper extends _model.ReactiveModel {
