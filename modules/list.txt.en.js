@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2141781142,
+        hash: 3969105575,
         creator: function (require, exports) {
           exports.txt = {
             "assign": {
@@ -79,6 +79,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "No Drafts Yet",
                 "description": "You don't have any drafts at the moment. Start creating and perfecting your content before publishing. "
               },
+              "trash": {
+                "title": "No Modules in the Trash",
+                "description": "You don't have any modules in the trash. Deleted modules will be moved here. "
+              },
               "published": {
                 "title": "No Published Modules",
                 "description": "There are no published modules available. Work on each module and publish them to update this list of publications. "
@@ -96,7 +100,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "tabs": {
               "drafts": "Drafts",
               "published": "Published",
-              "community": "Comunidad"
+              "community": "Comunidad",
+              "trash": "Trash"
             },
             "actions": {
               "create": "Create",

@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 349841019,
+        hash: 2880204634,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -113,6 +113,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "owner": "Administrador",
             "creator": "Creador",
             "alerts": "Alertas",
+            "archived": "Esta asignación se encuentra archivada",
             "type": "Tipo de actividad",
             "subtype": "Subtipo de actividad",
             "addCredits": {
@@ -121,7 +122,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "subtitle": "Los creditos permiten que el alumno interactúe con la IA de la actividad"
             },
             "actions": {
-              "wall": "Muro"
+              "wall": "Muro",
+              "archive": "Archivar",
+              "unarchive": "Desarchivar"
             },
             "studentHeader": {
               "filter": "Filtrar por actividad"

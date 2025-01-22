@@ -29,10 +29,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 421328268,
+        hash: 3968963607,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
+              "test": {
+                "warning": "You must fill in all required fields to be able to test the activity"
+              },
               "minutes": "Min",
               "sections": {
                 "general": "",
