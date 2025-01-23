@@ -472,6 +472,7 @@
   --text-color: #141414;
   --border-dark-color: #000;
   --default-border: var(--neutral-90);
+  --border-variant: var(--secondary);
   --outline: var(--neutral-90);
   --success-color: var(--success-70);
   --on-hover-background: var(--secondary-color-95);
@@ -549,6 +550,7 @@
   --text-color: #141414;
   --border-dark-color: #000;
   --default-border: var(--neutral-90);
+  --border-variant: var(--secondary);
   --outline: var(--neutral-90);
   --success-color: var(--success-70);
   --on-hover-background: var(--secondary-color-95);

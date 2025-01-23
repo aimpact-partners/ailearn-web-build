@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 691079251,
+        hash: 3170655605,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -73,6 +73,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "save": "Continue"
               }
             },
+            "title": "Institutions",
+            "subtitle": "Explore, adjust, and manage your organizations according to your needs",
+            "code": "Institution code",
+            "messages": {
+              "copied": "Code copied to clipboard"
+            },
             "empty": {
               "title": "Register an educational institution on RVD.AI",
               "description": "Start by registering your institution. "
@@ -81,8 +87,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "message": "Welcome %name to your list of organizations",
               "actionInfo": "Here you can view and manage all the organizations you currently have. You'll have access to various actions, including creating, deleting, and editing organizations. Take advantage of these tools to customize each organization according to your requirements."
             },
-            "title": "Institutions",
-            "subtitle": "Explore, adjust, and manage your organizations according to your needs",
             "errors": {
               "ERROR_GETTING_URL": "Error getting URL"
             }
