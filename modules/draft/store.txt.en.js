@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 802713152,
+        hash: 1572036077,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -227,6 +227,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "ownerDescription": "Owner of the learning module",
                 "description": "The AI credits you request within the creation of this learning module will be requested and provided by the module owner"
               }
+            },
+            "suggestions": {
+              "objective": {
+                "actions": {
+                  "label": "Would you like to use this enhanced version of your objective?",
+                  "cancel": "No, thanks",
+                  "confirm": "Yes, update my objective"
+                }
+              },
+              "total": "Selected suggestions",
+              "origin": "Ministry",
+              "label": "Suggestion",
+              "irrelevant": "The objective of the provided module seems not to be suitable for the defined audience. Please, check this and try again."
             }
           };
         }
