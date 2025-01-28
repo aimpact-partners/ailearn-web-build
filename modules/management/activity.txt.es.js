@@ -29,10 +29,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 189463963,
+        hash: 1924748625,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
+              "progress": {
+                "title": "Titulo",
+                "description": "Descripción",
+                "picture": "Imagen",
+                "general": "General",
+                "agent": "Agente IA",
+                "advanced": "Avanzado"
+              },
               "test": {
                 "warning": "Debes llenar todos los campos requeridos para poder probar la actividad"
               },
@@ -40,7 +48,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "sections": {
                 "general": "",
                 "advanced": {
-                  "title": "Configuración Avanzada"
+                  "title": "Configuración Avanzada",
+                  "subtitle": "Instrucciones adicionales para el agente y la actividad"
                 },
                 "agent": {
                   "title": "Instrucciones para el agente IA",
@@ -83,6 +92,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "deleteModal": {
                 "title": "Eliminar Contenido",
                 "description": "¿Estás seguro de que quieres eliminar el contenido de esta actividad?"
+              },
+              "settings": {
+                "layout": {
+                  "label": "Layout",
+                  "title": "Vista de la actividad",
+                  "description": "Selecciona el tipo de visualización que quieres dar a la actividad",
+                  "options": {
+                    "fullContentLayout": "Diseño de contenido completo",
+                    "mainContentLayout": "Diseño de contenido principal",
+                    "mainChatLayout": "Diseño de chat principal"
+                  }
+                }
               }
             },
             "contentTheory": {
@@ -184,7 +205,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "objective": {
                 "label": "Objetivo",
-                "placeholder": "Agrega el objetivo de la actividad"
+                "placeholder": "Agrega el objetivo de la actividad",
+                "empty": "Esta actividad no tiene objetivos asociados. Agregue un objetivo para poder guiar a la IA"
               },
               "related": {
                 "label": "Actividad relacionada",
@@ -215,7 +237,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "objectives": {
                 "title": "Objetivos de la actividad *",
-                "label": "Objetivo",
+                "label": "Objetivos",
                 "name": {
                   "label": "Nombre",
                   "placeholder": "Agrega el nombre del objetivo"
@@ -331,6 +353,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "progress": {
               "label": "Estado de la edición",
               "states": {
+                "optional": "Opcional",
                 "completed": "Completada",
                 "inprogress": "En progreso",
                 "pending": "Pendiente"

@@ -104,7 +104,7 @@ System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bun
       *****************************/
 
       ims.set('./views/index', {
-        hash: 2388702497,
+        hash: 1265480085,
         creator: function (require, exports) {
           "use strict";
 
@@ -116,9 +116,9 @@ System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bun
           var _playable = require("@aimpact/chat-sdk/widgets/playable");
           var _voice = require("@aimpact/chat-sdk/voice");
           const text = `
-# Hola como te va ? 
+# Hola como te va ?
 
-## pensamientos 
+## pensamientos
 
 yo pensaba que esto era una prueba pero no lo es`;
           const text2 = 'hola como te a ti? que me cuentas?';
@@ -141,7 +141,7 @@ yo pensaba que esto era una prueba pero no lo es`;
             };
             return React.createElement("div", null, React.createElement("h1", null, "Playable component"), React.createElement("h2", null, "Content with markdown"), React.createElement(_playable.Playable, {
               content: markdowntext,
-              id: 'id2',
+              id: "id2",
               player: voice,
               playable: playable,
               onClickWord: onClickWord

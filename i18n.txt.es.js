@@ -29,10 +29,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2715089638,
+        hash: 2565276299,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
+              "talktoAI": "Conversar con la IA",
               "select": "Seleccione",
               "filters": "Filtros",
               "assign": "Asignar",

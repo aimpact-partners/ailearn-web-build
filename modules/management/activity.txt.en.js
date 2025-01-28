@@ -29,10 +29,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3968963607,
+        hash: 3297960127,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
+              "progress": {
+                "title": "Title",
+                "description": "Description",
+                "picture": "Picture",
+                "general": "General",
+                "agent": "AI Agent",
+                "advanced": "Advanced"
+              },
               "test": {
                 "warning": "You must fill in all required fields to be able to test the activity"
               },
@@ -40,7 +48,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "sections": {
                 "general": "",
                 "advanced": {
-                  "title": "Advanced Settings"
+                  "title": "Advanced Settings",
+                  "subtitle": "Additional instructions for the agent and the activity"
                 },
                 "agent": {
                   "title": "AI Agent Instructions",
@@ -84,6 +93,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "deleteModal": {
                 "title": "Delete Content",
                 "description": "Are you sure you want to delete the content from this activity?"
+              },
+              "settings": {
+                "layout": {
+                  "label": "Layout",
+                  "title": "Activity view",
+                  "description": "Select the type of visualization you want to give to the activity",
+                  "options": {
+                    "fullContentLayout": "Full content layout",
+                    "mainContentLayout": "Main content layout",
+                    "mainChatLayout": "Main chat layout"
+                  }
+                }
               }
             },
             "contentTheory": {
@@ -184,8 +205,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Add the task of the activity"
               },
               "objective": {
-                "label": "Objective",
-                "placeholder": "Add the objective of the activity"
+                "label": "Objectives",
+                "placeholder": "Add the objective of the activity",
+                "empty": "This activity does not have associated objectives. Add an objective to guide the AI"
               },
               "related": {
                 "label": "Related activity",
@@ -332,6 +354,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "progress": {
               "label": "Edition status",
               "states": {
+                "optional": "Optional",
                 "completed": "Completed",
                 "inprogress": "In progress",
                 "pending": "Pending"

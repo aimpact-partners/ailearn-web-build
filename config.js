@@ -6,12 +6,12 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/ailearn-app',
-				version: '0.3.1-dev.09',
+				version: '0.3.1-dev.10',
 				languages: {
 					default: 'en',
 					supported: ['en', 'es', 'pt']
 				},
-				environment: 'local',
+				environment: 'development',
 				'global.css': true,
 				params: {
 					config: {
@@ -29,7 +29,7 @@ System.register([], function (_export, _context) {
 						key: 'ebe05ca0a4d9aafb4024d0666471a0c7',
 						id: 'pNInz6obpgDQGcFmaJgB'
 					},
-					baseUrl: 'http://localhost:4530',
+					baseUrl: 'https://dev.app.rvd.ai',
 					apis: {
 						ailearn: 'https://dev.ailearn.api.aimpact.partners'
 					}
