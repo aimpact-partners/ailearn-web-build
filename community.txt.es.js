@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3160408918,
+        hash: 1791291574,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -48,7 +48,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "filters": {
               "audience": {
-                "label": "Audiencia",
+                "label": "Tipo de formación",
                 "error": "Por favor seleccione la audiencia",
                 "select": "Seleccione la audiencia"
               },

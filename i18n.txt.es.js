@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2565276299,
+        hash: 2067226722,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -91,7 +91,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "assignments": "Asignaciones",
               "modules": "Módulos de Aprendizaje",
               "community": "Comunidad",
-              "activities": "Actividades"
+              "activities": "Actividades",
+              "drafts": "Borradores",
+              "classrooms": "Aulas",
+              "newDraft": "Nuevo Borrador",
+              "trash": "Módulos en papelera"
             },
             "errors": {
               "46": "No posees creditos para utilizar acciones con Inteligencia artificial",
