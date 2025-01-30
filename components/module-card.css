@@ -90,7 +90,7 @@
   background: var(--background);
   max-width: 350px;
   color: var(--color);
-  aspect-ratio: 9/14;
+  aspect-ratio: 9/12;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -661,7 +661,7 @@
   background: var(--background);
   max-width: 350px;
   color: var(--color);
-  aspect-ratio: 9/14;
+  aspect-ratio: 9/12;
   padding-top: 70%; /* (9 / 16) * 100 */
   color: var(--color);
   width: 100%;
