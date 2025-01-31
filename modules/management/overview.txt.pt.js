@@ -29,32 +29,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 372689469,
+        hash: 2745614147,
         creator: function (require, exports) {
-          exports.txt = {
-            "refine": {
-              "module": {
-                "title": "Aprimore a qualidade do seu módulo",
-                "subtitle": "Suas sugestões nos ajudarão a aprimorar o conteúdo.",
-                "confirm": {
-                  "title": "Deseja substituir o conteúdo atual?",
-                  "subtitle": "Se você confirmar, o processo de geração substituirá o conteúdo atual pelo novo. Se desejar manter o conteúdo atual, clique em cancelar."
-                }
-              },
-              "textarea": {
-                "label": "Suas sugestões",
-                "placeholder": "Compartilhe sugestões específicas ou áreas para melhoria..."
-              },
-              "image": {
-                "title": "Aprimore a qualidade da sua imagem",
-                "subtitle": "Suas sugestões nos ajudarão a aprimorar o conteúdo.",
-                "confirm": {
-                  "title": "Deseja substituir a imagem atual?",
-                  "subtitle": "Se você confirmar, a imagem atual será substituída."
-                }
-              }
-            }
-          };
+          exports.txt = {};
         }
       });
       __pkg.exports.descriptor = [{

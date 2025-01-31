@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3899569408,
+        hash: 1312278679,
         creator: function (require, exports) {
           exports.txt = {
             "assign": {
@@ -51,7 +51,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "assign": {
                   "button": "Assign",
                   "label": "The module has not been assigned to this Classroom"
-                }
+                },
+                "createClassroom": "Create classroom"
               },
               "errors": {
                 "default": "The module could not be assigned to this Classroom, please try again later or contact the administrator"
