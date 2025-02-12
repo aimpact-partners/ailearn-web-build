@@ -295,6 +295,7 @@ h4,
 h5,
 h6 {
   font-weight: 500;
+  margin: 0;
 }
 
 h1 {
@@ -320,7 +321,7 @@ h4, h4 p {
 }
 
 h5 {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 h6 {
@@ -340,13 +341,8 @@ p {
   font-size: 0.75rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.label {
+  font-size: 0.65rem;
 }
 
 @media (max-width: 1024px) {

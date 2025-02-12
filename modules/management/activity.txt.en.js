@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3789025972,
+        hash: 2683032524,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -97,7 +97,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "settings": {
                 "layout": {
                   "label": "Layout",
-                  "title": "4. How do you want this activity to look?",
+                  "title": "How do you want this activity to look?",
                   "description": "Select the type of visualization you want to give to the activity",
                   "options": {
                     "fullContentLayout": "Full content layout",
@@ -110,7 +110,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "contentTheory": {
               "materials": {
                 "empty": "This learning module does not contain document attached",
-                "title": "3. What documents do you want the agent to be based on?",
+                "title": "What documents do you want the agent to be based on?",
                 "characters": "Available characters:",
                 "types": {
                   "article": "Content",

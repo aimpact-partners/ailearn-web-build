@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3135797379,
+        hash: 1099188671,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -96,7 +96,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "settings": {
                 "layout": {
                   "label": "Layout",
-                  "title": "4. ¿Cómo quieres que se vea esta actividad?",
+                  "title": "¿Cómo quieres que se vea esta actividad?",
                   "description": "Selecciona el tipo de visualización que quieres dar a la actividad",
                   "options": {
                     "fullContentLayout": "Diseño de contenido completo",
@@ -109,7 +109,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "contentTheory": {
               "materials": {
                 "empty": "Este módulo de aprendizaje no contiene documentos adjuntos",
-                "title": "3. ¿Sobre que documentos quiere se base el agente?",
+                "title": "¿Sobre que documentos quiere se base el agente?",
                 "characters": "Caracteres disponibles:",
                 "types": {
                   "article": "Contenido",
@@ -230,15 +230,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Agrega el personaje de la actividad"
               },
               "role": {
-                "label": "¿Qué rol debe asumir el agente en la actividad? *",
+                "title": "¿Qué rol debe cumplir el agente en el debate? *",
+                "label": "Rol del agente",
                 "placeholder": "Agrega el rol del personaje"
               },
               "questions": {
                 "title": "Preguntas"
               },
               "objectives": {
-                "title": "2. ¿Qué objetivos debe lograr el alumno? *",
-                "label": "2. ¿Qué objetivos debe lograr el alumno? *",
+                "title": "¿Qué objetivos debe lograr el alumno? *",
+                "label": "¿Qué objetivos debe lograr el alumno? *",
                 "name": {
                   "label": "Nombre",
                   "placeholder": "Agrega el nombre del objetivo"

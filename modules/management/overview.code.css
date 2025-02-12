@@ -114,7 +114,7 @@ Modal style
   border-bottom: 1px solid var(--outline);
 }
 .draft-activity-list .draft-activity-list__item:hover, .draft-activity-list .draft-activity-list__item.selected {
-  background: var(--background-hover);
+  background: var(--surface-variant);
 }
 .draft-activity-list .draft-activity-list__item .list-item__column.header__main-content {
   display: flex;

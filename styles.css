@@ -356,6 +356,7 @@
   --secondary-font-family: "Rubik", sans-serif;
   --font-family: "Rubik", sans-serif;
   --border-radius-sm: 10px;
+  --border-radius-xs: 5px;
   --border-radius-base: 16px;
   --border-radius-lg: 25px;
   --navbar-height: 79px;
@@ -459,6 +460,10 @@
   --on-disabled-light: var(--neutral-60);
   --disabled-dark: var(--neutral-90);
   --on-disabled-dark: var(--neutral-50);
+  --dark-container: var(--primary-10);
+  --on-dark-container: var(--primary-100);
+  --light-container: var(--primary-90);
+  --on-light-container: var(--primary-10);
 }
 :root[data-beyond-mode=light] {
   --text-color: #141414;
@@ -518,6 +523,10 @@
   --on-disabled-light: var(--neutral-60);
   --disabled-dark: var(--neutral-90);
   --on-disabled-dark: var(--neutral-50);
+  --dark-container: var(--primary-10);
+  --on-dark-container: var(--primary-100);
+  --light-container: var(--primary-90);
+  --on-light-container: var(--primary-10);
 }
 :root[data-accessibility-mode=dyslexia] {
   --font-family: "OpenDyslexic";
