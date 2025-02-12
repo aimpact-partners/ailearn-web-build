@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2683032524,
+        hash: 3798509399,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -197,7 +197,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Add the assessment of the activity"
               },
               "topic": {
-                "label": "What should the agent teach about? (Topic of study)*",
+                "title": "1. What should the agent teach about?",
+                "label": "Topic of study*",
                 "placeholder": "Add the topic of the activity"
               },
               "task": {
@@ -222,8 +223,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Add the motion of the debate"
               },
               "subject": {
-                "label": "What should the AI agent debate about? *",
-                "placeholder": "Add the subject of the criteria"
+                "title": "What should the AI agent debate about? *",
+                "label": "Subject of the debate",
+                "placeholder": "Add the subject of the debate"
               },
               "character": {
                 "label": "Character",

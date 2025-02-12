@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1099188671,
+        hash: 2336300470,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -99,9 +99,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "title": "¿Cómo quieres que se vea esta actividad?",
                   "description": "Selecciona el tipo de visualización que quieres dar a la actividad",
                   "options": {
-                    "fullContentLayout": "Diseño de contenido completo",
-                    "mainContentLayout": "Diseño de contenido principal",
-                    "mainChatLayout": "Diseño de chat principal"
+                    "fullContentLayout": {
+                      "title": "Diseño de contenido completo",
+                      "description": "<strong>Quiero una actividad de contenido educativo.</strong>"
+                    },
+                    "mainContentLayout": {
+                      "title": "Diseño de contenido principal",
+                      "description": "<strong>Quiero priorizar el contenido educativo</strong>, sobre el chat con el agente"
+                    },
+                    "mainChatLayout": {
+                      "title": "Diseño de chat principal",
+                      "description": "<strong>Quiero priorizar el chat con el agente</strong>, sobre el contenido educativo."
+                    }
                   }
                 }
               }
@@ -222,8 +231,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Add the subject"
               },
               "subject": {
-                "label": "¿Sobre qué debe debatir el agente de IA? *",
-                "placeholder": "Agrega el tema de los criterios"
+                "title": "¿Cúal es el tópico a debatir? *",
+                "label": "Tópico del debate",
+                "placeholder": "Tópico del debate"
               },
               "character": {
                 "label": "Personaje",
