@@ -82,7 +82,7 @@
 .cover-image-skeleton {
   height: 100px;
   width: 100px;
-  background: var(--primary-container);
+  background: var(--surface-variant);
   border-radius: var(--border-radius-base);
   width: 100px;
 }

@@ -128,14 +128,14 @@
 }
 .pui-modal .modal-content .primary-container {
   padding: 1rem;
-  background: var(--primary-container);
+  background: var(--surface-variant);
   border-radius: var(--border-radius-base);
 }
 .request__container {
   margin: auto;
 }
 .request__container .primary-container {
-  background: var(--primary-container);
+  background: var(--surface-variant);
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: var(--border-radius-base);
@@ -233,7 +233,7 @@
 .objective__container input {
   border: 1px solid var(--primary);
   width: 100%;
-  background: Var(--surface-variant);
+  background: var(--surface-variant);
   padding: 1rem;
   font-size: 1.2rem;
   border-radius: 1rem;
@@ -449,7 +449,7 @@ select:hover, select:focus {
   cursor: not-allowed !important;
 }
 .objective-suggestion {
-  background: var(--primary-container);
+  background: var(--surface-variant);
   border: var(--primary) 1px solid;
   border-radius: var(--border-radius-base);
   padding: 1rem;

@@ -60,7 +60,7 @@
 }
 .classroom__list li .list-item__image {
   width: 60px;
-  background: var(--primary-container);
+  background: var(--surface-variant);
   aspect-ratio: 1/1;
   border-radius: var(--border-radius-sm);
 }

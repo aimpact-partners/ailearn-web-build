@@ -114,7 +114,7 @@ Modal style
   border-bottom: 1px solid var(--outline);
 }
 .draft-activity-list .draft-activity-list__item:hover, .draft-activity-list .draft-activity-list__item.selected {
-  background: var(--on-hover-background);
+  background: var(--background-hover);
 }
 .draft-activity-list .draft-activity-list__item .list-item__column.header__main-content {
   display: flex;
@@ -270,7 +270,7 @@ Modal style
 .header-module__container .image-preload {
   height: 100px;
   width: 100px;
-  background: var(--primary-container);
+  background: var(--surface-variant);
   border-radius: var(--border-radius-base);
 }
 .pui-modal .modal-content,

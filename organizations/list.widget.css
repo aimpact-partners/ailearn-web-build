@@ -184,7 +184,7 @@
   top: 0;
 }
 .list__item:hover, .list__item:active {
-  background: var(--primary-container);
+  background: var(--surface-variant);
   cursor: pointer;
   color: var(--primary);
 }

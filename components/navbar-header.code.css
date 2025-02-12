@@ -306,7 +306,7 @@
   width: 1rem;
 }
 .off-canvas-menu nav li:hover {
-  background: var(--primary-container);
+  background: var(--surface-variant);
   color: var(--primary);
 }
 .overlay {

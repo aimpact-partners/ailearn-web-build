@@ -288,6 +288,15 @@ a {
 .bg-surface-variant {
   background-color: var(--surface-variant);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
 h1 {
   font-size: 1.4rem;
 }
@@ -325,6 +334,10 @@ p {
 
 .p2 {
   font-size: 0.875rem;
+}
+
+.p3 {
+  font-size: 0.75rem;
 }
 
 h1,

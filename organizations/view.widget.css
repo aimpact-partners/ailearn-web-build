@@ -22,7 +22,7 @@
   }
 }
 .page-container__header .group-code__container {
-  background: var(--primary-container);
+  background: var(--surface-variant);
   padding: 1rem;
   border-radius: var(--border-radius-base);
   display: grid;
@@ -62,7 +62,7 @@
   width: 2rem;
   align-self: center;
   border-radius: 50%;
-  background: var(--primary-container);
+  background: var(--surface-variant);
 }
 .page-container__header .pui-icon-button.btn-header__edit-action .pui-icon {
   fill: var(--primary);
@@ -118,7 +118,7 @@
   height: 1rem;
 }
 .filters__container {
-  background: var(--background-neutral);
+  background: var(--surface-neutral);
   border-radius: var(--border-radius-base);
   width: 100%;
 }

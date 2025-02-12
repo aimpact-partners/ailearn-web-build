@@ -22,7 +22,7 @@
 }
 .page__container.container__error .access-classroom__container {
   padding: 1rem;
-  background: var(--primary-container);
+  background: var(--surface-variant);
   border-radius: var(--border-radius-base);
   display: grid;
   grid-template-columns: 75px auto;
@@ -75,7 +75,7 @@
   grid-template-areas: "image title" "description description";
   gap: 1rem;
   padding: 1rem;
-  background: var(--background-neutral);
+  background: var(--surface-variant);
   border-radius: 1rem;
   border-top-left-radius: var(--border-radius-base);
   border-bottom-left-radius: var(--border-radius-base);

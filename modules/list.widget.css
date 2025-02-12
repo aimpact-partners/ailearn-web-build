@@ -48,7 +48,7 @@
   cursor: pointer;
 }
 .pui-modal.modal__assignment .modal-content .organization-list li:hover, .pui-modal.modal__assignment .modal-content .organization-list li.item__active {
-  background: var(--primary-container);
+  background: var(--surface-variant);
 }
 .pui-modal.modal__assignment .modal-content .organization-list li .item__icon {
   position: absolute;
