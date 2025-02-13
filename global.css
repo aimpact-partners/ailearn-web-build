@@ -36,32 +36,6 @@
   color: var(--disabled);
   background: var(--neutral-4);
 }
-.pui-button {
-  font-size: 0.85rem !important;
-}
-.pui-button .button-label {
-  font-size: 0.85rem !important;
-}
-
-.pui-button.btn-link {
-  color: var(--secondary) !important;
-  text-transform: capitalize;
-}
-
-.pui-button {
-  border-radius: 4rem;
-}
-.pui-button.outline:hover {
-  background: transparent !important;
-  box-shadow: var(--box-shadow-default);
-}
-.pui-button.outline:hover.btn-primary {
-  color: var(--primary) !important;
-  background: var(--primary-container) !important;
-}
-.pui-button.outline:hover.btn-secondary {
-  color: var(--secondary) !important;
-}
 .grid-container {
   display: grid !important;
   grid-template-columns: 1fr;
