@@ -191,7 +191,7 @@
 }
 .content-activity__main-content-layout .chat-container,
 .page__container.content-activity--desktop-container .chat-container {
-  background: var(--secondary-background);
+  background: var(--surface);
   border-radius: var(--border-radius-base);
   padding: 1rem;
   flex-grow: 1;
