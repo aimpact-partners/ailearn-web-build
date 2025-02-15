@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@aimpact/chat-sdk@1.4.1/widgets/markdown", "@beyond-js/react-18-widgets@1.1.2/hooks"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "react@18.2.0", "@aimpact/chat-sdk@1.4.1/widgets/markdown", "@beyond-js/react-18-widgets@1.1.3/hooks"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Message, __beyond_pkg, hmr;
@@ -12,8 +12,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       dependency_2 = _react;
     }, function (_aimpactChatSdk141WidgetsMarkdown) {
       dependency_3 = _aimpactChatSdk141WidgetsMarkdown;
-    }, function (_beyondJsReact18Widgets112Hooks) {
-      dependency_4 = _beyondJsReact18Widgets112Hooks;
+    }, function (_beyondJsReact18Widgets113Hooks) {
+      dependency_4 = _beyondJsReact18Widgets113Hooks;
     }],
     execute: function () {
       bimport = specifier => {

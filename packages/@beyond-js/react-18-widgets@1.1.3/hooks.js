@@ -16,7 +16,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "@beyond-js/k
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["react", "18.2.0"], ["react-dom", "18.2.0"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/kernel", "0.1.9"], ["@types/react", "18.0.26"], ["@types/react-dom", "18.0.10"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@aimpact/ailearn-app", "0.3.1"]]);
+        const dependencies = new Map([["react", "18.2.0"], ["react-dom", "18.2.0"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/kernel", "0.1.9"], ["@types/react", "18.0.26"], ["@types/react-dom", "18.0.10"], ["@beyond-js/react-18-widgets", "1.1.3"], ["@aimpact/ailearn-app", "0.3.1"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -24,7 +24,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "@beyond-js/k
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@beyond-js/react-18-widgets@1.1.2/hooks"
+          "vspecifier": "@beyond-js/react-18-widgets@1.1.3/hooks"
         },
         "type": "ts"
       }, _context.meta.url).package();

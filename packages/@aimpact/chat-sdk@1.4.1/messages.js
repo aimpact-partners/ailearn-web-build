@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@1.0.0-beta.7/icons", "@aimpact/chat-sdk@1.4.1/components/icons", "pragmate-ui@1.0.0-beta.7/empty", "@beyond-js/react-18-widgets@1.1.2/hooks", "pragmate-ui@1.0.0-beta.7/toast", "@aimpact/chat-sdk@1.4.1/audio-player", "wavesurfer.js@7.8.5", "pragmate-ui@1.0.0-beta.7/image", "@aimpact/chat-sdk@1.4.1/widgets/playable", "@aimpact/chat-sdk@1.4.1/chat/messages/item", "@aimpact/chat-sdk@1.4.1/widgets/markdown", "pragmate-ui@1.0.0-beta.7/collapsible", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@1.0.0-beta.7/icons", "@aimpact/chat-sdk@1.4.1/components/icons", "pragmate-ui@1.0.0-beta.7/empty", "@beyond-js/react-18-widgets@1.1.3/hooks", "pragmate-ui@1.0.0-beta.7/toast", "@aimpact/chat-sdk@1.4.1/audio-player", "wavesurfer.js@7.8.5", "pragmate-ui@1.0.0-beta.7/image", "@aimpact/chat-sdk@1.4.1/widgets/playable", "@aimpact/chat-sdk@1.4.1/chat/messages/item", "@aimpact/chat-sdk@1.4.1/widgets/markdown", "pragmate-ui@1.0.0-beta.7/collapsible", "@beyond-js/kernel@0.1.9/styles"], function (_export, _context2) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, bimport, __Bundle, __pkg, ims, Messages, __beyond_pkg, hmr;
@@ -14,8 +14,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "react@18.2.0", "pragmate-ui@
       dependency_3 = _aimpactChatSdk141ComponentsIcons;
     }, function (_pragmateUi100Beta7Empty) {
       dependency_4 = _pragmateUi100Beta7Empty;
-    }, function (_beyondJsReact18Widgets112Hooks) {
-      dependency_5 = _beyondJsReact18Widgets112Hooks;
+    }, function (_beyondJsReact18Widgets113Hooks) {
+      dependency_5 = _beyondJsReact18Widgets113Hooks;
     }, function (_pragmateUi100Beta7Toast) {
       dependency_6 = _pragmateUi100Beta7Toast;
     }, function (_aimpactChatSdk141AudioPlayer) {

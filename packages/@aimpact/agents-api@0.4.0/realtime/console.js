@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.2/page", "@aimpact/agents-api@0.4.0/realtime/audio/recorder", "react@18.2.0", "@aimpact/agents-api@0.4.0/realtime/widgets/state", "@aimpact/agents-api@0.4.0/realtime/client", "@aimpact/agents-api@0.4.0/realtime/client/conversation"], function (_export, _context) {
+System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.3/page", "@aimpact/agents-api@0.4.0/realtime/audio/recorder", "react@18.2.0", "@aimpact/agents-api@0.4.0/realtime/widgets/state", "@aimpact/agents-api@0.4.0/realtime/client", "@aimpact/agents-api@0.4.0/realtime/client/conversation"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, bimport, __Bundle, __pkg, ims, Controller, __beyond_pkg, hmr;
@@ -10,8 +10,8 @@ System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bun
       dependency_1 = _beyondJsKernel019Bundle;
     }, function (_beyondJsKernel019Styles) {
       dependency_2 = _beyondJsKernel019Styles;
-    }, function (_beyondJsReact18Widgets112Page) {
-      dependency_3 = _beyondJsReact18Widgets112Page;
+    }, function (_beyondJsReact18Widgets113Page) {
+      dependency_3 = _beyondJsReact18Widgets113Page;
     }, function (_aimpactAgentsApi040RealtimeAudioRecorder) {
       dependency_4 = _aimpactAgentsApi040RealtimeAudioRecorder;
     }, function (_react2) {

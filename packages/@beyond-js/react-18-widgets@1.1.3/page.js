@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/widgets@1.1.1/routing", "@beyond-js/react-18-widgets@1.1.2/base"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/widgets@1.1.1/routing", "@beyond-js/react-18-widgets@1.1.3/base"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, PageReactWidgetController, __beyond_pkg, hmr;
@@ -8,12 +8,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/widgets@1.1.1/rou
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_beyondJsWidgets111Routing) {
       dependency_1 = _beyondJsWidgets111Routing;
-    }, function (_beyondJsReact18Widgets112Base) {
-      dependency_2 = _beyondJsReact18Widgets112Base;
+    }, function (_beyondJsReact18Widgets113Base) {
+      dependency_2 = _beyondJsReact18Widgets113Base;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["react", "18.2.0"], ["react-dom", "18.2.0"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/kernel", "0.1.9"], ["@types/react", "18.0.26"], ["@types/react-dom", "18.0.10"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@aimpact/ailearn-app", "0.3.1"]]);
+        const dependencies = new Map([["react", "18.2.0"], ["react-dom", "18.2.0"], ["@beyond-js/widgets", "1.1.0"], ["@beyond-js/kernel", "0.1.9"], ["@types/react", "18.0.26"], ["@types/react-dom", "18.0.10"], ["@beyond-js/react-18-widgets", "1.1.3"], ["@aimpact/ailearn-app", "0.3.1"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -21,7 +21,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/widgets@1.1.1/rou
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@beyond-js/react-18-widgets@1.1.2/page"
+          "vspecifier": "@beyond-js/react-18-widgets@1.1.3/page"
         },
         "type": "ts"
       }, _context.meta.url).package();

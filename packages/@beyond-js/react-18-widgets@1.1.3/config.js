@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "@beyond-js/react-18-widgets",
-        "version": "1.1.2",
+        "version": "1.1.3",
         "languages": {
           "supported": [],
           "default": "en"
