@@ -36,7 +36,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/text
       INTERNAL MODULE: ./loader
       ************************/
       ims.set('./loader', {
-        hash: 2490104139,
+        hash: 4220326772,
         creator: function (require, exports) {
           "use strict";
 

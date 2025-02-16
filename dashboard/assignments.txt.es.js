@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2804220593,
+        hash: 787044154,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -116,6 +116,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "archived": "Esta asignación se encuentra archivada",
             "type": "Tipo de actividad",
             "subtype": "Subtipo de actividad",
+            "noMessages": "No existe mensaje previo",
             "addCredits": {
               "action": "Habiliar IA",
               "title": "¿Deseas habilitar la ia al alumno?",

@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 370188380,
+        hash: 1029238726,
         creator: function (require, exports) {
           exports.txt = {
             "assign": {
@@ -69,6 +69,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "errors": {
                 "59": "El módulo no puede ser eliminado porque ya posee datos asociados.",
                 "default": "Ocurrió un error al eliminar el módulo."
+              }
+            },
+            "archive": {
+              "title": "Archivar módulo",
+              "description": "¿Está seguro que desea archivar este módulo?",
+              "errors": {
+                "default": "Ocurrió un error al archivar el módulo."
               }
             },
             "empty": {

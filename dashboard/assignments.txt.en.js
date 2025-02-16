@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3538237551,
+        hash: 1567690494,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -116,6 +116,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "archived": "This assignment is archived",
             "owner": "Administrator",
             "creator": "Creator",
+            "noMessages": "There is no previous message",
             "addCredits": {
               "action": "Request credits",
               "title": "Do you want to request credits to the student?",

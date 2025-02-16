@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 350708234,
+        hash: 3971497183,
         creator: function (require, exports) {
           exports.txt = {
             "assign": {
@@ -69,6 +69,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "errors": {
                 "59": "The module cannot be deleted because it already has associated data.",
                 "default": "An error occurred while deleting the module."
+              }
+            },
+            "archive": {
+              "title": "Archive module",
+              "description": "Are you sure you want to archive this module?",
+              "errors": {
+                "default": "An error occurred while archiving the module."
               }
             },
             "empty": {

@@ -440,7 +440,7 @@
   --success: var(--success-10);
   --success-container: var(--success-90);
   --on-success-container: var(--success-10);
-  --info: var(--info-10);
+  --info: var(--info);
   --info-container: var(--info-90);
   --on-info-container: var(--info-10);
   --outline: var(--neutral-70);
@@ -503,7 +503,7 @@
   --success: var(--success-10);
   --success-container: var(--success-90);
   --on-success-container: var(--success-10);
-  --info: var(--info-10);
+  --info: var(--info);
   --info-container: var(--info-90);
   --on-info-container: var(--info-10);
   --outline: var(--neutral-70);

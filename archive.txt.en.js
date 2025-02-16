@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4267493958,
+        hash: 576634133,
         creator: function (require, exports) {
           exports.txt = {
             "delete": {
@@ -44,6 +44,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "modules": {
                 "title": "No Published Modules",
                 "description": "There are no  archived modules .  "
+              },
+              "assignments": {
+                "title": "No Archived Assignments",
+                "description": "There are no archived assignments .  "
               }
             },
             "errors": {
@@ -53,6 +57,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "tabs": {
               "modules": "Modules",
               "assignments": "Assignments"
+            },
+            "restore": {
+              "modules": {
+                "title": "Restore Module",
+                "description": "Are you sure you want to restore this module?"
+              },
+              "assignments": {
+                "title": "Restore Assignment",
+                "description": "Are you sure you want to restore this assignment?"
+              }
             }
           };
         }
