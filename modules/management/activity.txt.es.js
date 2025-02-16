@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1994358420,
+        hash: 1607576004,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -86,8 +86,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               },
               "empty": {
-                "title": "Crea Este Elemento",
-                "description": "Utiliza la IA para dar forma a este elemento específico. Haz clic en 'Generar con IA' para crear contenido atractivo sin esfuerzo. Eleva tu experiencia de enseñanza con una creación innovadora. "
+                "title": "Genera contenido para la actividad",
+                "description": "Puedes crear este contenido de manera manual o generar una versión automática con inteligencia artificial haciendo clic en ‘Generar con IA’"
               },
               "deleteModal": {
                 "title": "Eliminar Contenido",
@@ -101,7 +101,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "options": {
                     "fullContentLayout": {
                       "title": "Diseño de contenido completo",
-                      "description": "<strong>Quiero una actividad de contenido educativo.</strong>"
+                      "description": "Quiero <strong>que el contenido educativo ocupe el mayor espacio disponible.</strong>"
                     },
                     "mainContentLayout": {
                       "title": "Diseño de contenido principal",
@@ -117,8 +117,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "contentTheory": {
               "materials": {
-                "empty": "Este módulo de aprendizaje no contiene documentos adjuntos",
-                "title": "¿Sobre que documentos quiere se base el agente?",
+                "empty": "Esta actividad no contiene contenido adjunto",
+                "title": "Adjunta contenido a la actividad",
                 "characters": "Caracteres disponibles:",
                 "types": {
                   "article": "Contenido",
@@ -155,7 +155,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Esta actividad no tiene contenido educativo asociado",
                 "description": "Agrega un contenido educativo a tu módulo para comenzar.",
                 "actions": {
-                  "add": "Agregar articulo",
+                  "add": "Agregar contenido",
                   "upload": "Cargar documento"
                 }
               }

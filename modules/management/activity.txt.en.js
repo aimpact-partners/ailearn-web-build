@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 4056215792,
+        hash: 2045613356,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -87,8 +87,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               },
               "empty": {
-                "title": "Create This Element",
-                "description": "Use AI to shape this specific element. Click 'Generate with AI' to effortlessly craft engaging content. Elevate your teaching experience with innovative creation!"
+                "title": "Generate content for the activity",
+                "description": "You can create this content manually or generate an automatic version using artificial intelligence by clicking ‘Generate with AI’"
               },
               "deleteModal": {
                 "title": "Delete Content",
@@ -100,17 +100,26 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "title": "How do you want this activity to look?",
                   "description": "Select the type of visualization you want to give to the activity",
                   "options": {
-                    "fullContentLayout": "Full content layout",
-                    "mainContentLayout": "Main content layout",
-                    "mainChatLayout": "Main chat layout"
+                    "fullContentLayout": {
+                      "title": "Full Content Layout",
+                      "description": "I want <strong>the educational content to take up as much space as possible.</strong>"
+                    },
+                    "mainContentLayout": {
+                      "title": "Main Content Layout",
+                      "description": "<strong>I want to prioritize educational content</strong>, over the chat with the agent"
+                    },
+                    "mainChatLayout": {
+                      "title": "Main Chat Layout",
+                      "description": "<strong>I want to prioritize the chat with the agent</strong>, over the educational content."
+                    }
                   }
                 }
               }
             },
             "contentTheory": {
               "materials": {
-                "empty": "This learning module does not contain document attached",
-                "title": "What documents do you want the agent to be based on?",
+                "empty": "This activity has no attached content",
+                "title": "Attach content to the activity",
                 "characters": "Available characters:",
                 "types": {
                   "article": "Content",
@@ -147,7 +156,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "This activity has no educational content associated",
                 "description": "Add educational content to your module to start.",
                 "actions": {
-                  "add": "Add article",
+                  "add": "Add content",
                   "upload": "Upload document"
                 }
               }
