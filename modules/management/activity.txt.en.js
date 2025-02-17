@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2453893636,
+        hash: 987192074,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -241,8 +241,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Add the character of the activity"
               },
               "role": {
-                "label": "What role should the agent assume in the activity? *",
-                "placeholder": "Add the role of the character"
+                "label": "Agent role",
+                "placeholder": "Add the role of the character",
+                "title": "What role should the agent assume in the debate? *"
               },
               "questions": {
                 "title": "Questions"
