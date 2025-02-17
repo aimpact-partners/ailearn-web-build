@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2045613356,
+        hash: 2453893636,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -206,7 +206,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Add the assessment of the activity"
               },
               "topic": {
-                "title": "1. What should the agent teach about?",
+                "title": "What should the agent teach about?",
                 "label": "Topic of study*",
                 "placeholder": "Add the topic of the activity"
               },
