@@ -29,11 +29,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1029238726,
+        hash: 3191979956,
         creator: function (require, exports) {
           exports.txt = {
             "assign": {
-              "title": "Listado de aulas",
+              "title": {
+                "share": "Asignar módulo a aulas",
+                "dashboard": "Acceder a dashboard de la asignación"
+              },
               "noAssigned": "No hay aulas asignadas",
               "module": "Módulo",
               "messages": {
@@ -58,9 +61,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "default": "No se ha podido asignar el módulo a esta Aula, por favor inténtelo de nuevo más tarde o contacte al administador"
               },
               "empty": {
-                "title": "Atención",
-                "description": "Aún no posees aulas creadas, debes crear una para poder asignar esta actividad.",
-                "action": "Crear aula"
+                "share": {
+                  "text": "Atención",
+                  "description": "Aún no posees aulas creadas, debes crear una para poder asignar esta actividad.",
+                  "action": "Crear aula"
+                },
+                "dashboard": {
+                  "description": "Módulo sin asignaciones"
+                }
               }
             },
             "delete": {

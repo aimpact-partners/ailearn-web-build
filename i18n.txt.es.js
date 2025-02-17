@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3615556520,
+        hash: 3457396162,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -40,6 +40,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "select": "Seleccione",
               "filters": "Filtros",
               "assign": "Asignar",
+              "assignToClassroom": "Asignar a un aula",
               "use": "Usar",
               "refresh": "Actualizar",
               "copy": "Copiar",

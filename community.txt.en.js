@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3254709965,
+        hash: 1102344796,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -50,17 +50,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "audience": {
                 "label": "Training type",
                 "error": "Please select the audience",
-                "select": "Select Audience"
+                "select": "All Audiences"
               },
               "level": {
                 "label": "Grade or Level",
                 "error": "Please select a grade level",
-                "select": "Select Grade"
+                "select": "All Grades"
               },
               "languages": {
                 "select": {
                   "label": "Language",
-                  "placeholder": "Select Language"
+                  "placeholder": "All Languages"
                 },
                 "label": "Languages",
                 "en": "English",

@@ -511,7 +511,7 @@
   box-shadow: var(--box-shadow-hover);
 }
 .content-activity__main-content-layout {
-  height: calc(100vh - (var(--navbar-height) + 55px + 2rem)) !important;
+  height: calc(100vh - (var(--navbar-height))) !important;
   min-height: auto !important;
   position: relative;
   display: grid !important;
