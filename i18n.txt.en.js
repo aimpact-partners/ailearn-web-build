@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1138428922,
+        hash: 2955831410,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -107,9 +107,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "activities": "Activities",
               "drafts": "Drafts",
               "classrooms": "Classrooms",
-              "newDraft": "New Draft",
+              "newDraft": "Module",
               "archive": "Archive",
-              "organizations": "Insitutions"
+              "organizations": "Insitutions",
+              "profile": "My Profile"
             },
             "errors": {
               "46": "You don't have enough credits to perform this action with AI",
