@@ -109,7 +109,7 @@
   background: var(--success);
 }
 .notifications-bar.notifications--info {
-  background: var(--info);
+  background: var(--info-container);
   color: var(--on-primary);
 }
 .notifications-bar.notifications--error {

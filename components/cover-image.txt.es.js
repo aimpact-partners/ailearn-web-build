@@ -29,14 +29,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3358207292,
+        hash: 834362869,
         creator: function (require, exports) {
           exports.txt = {
             "errors": {
               "content_policy_violation": "El contenido de la imagen no cumple con la política de contenido de la aplicación. Por favor, valídalo e inténtalo de nuevo.",
               "default": "Ha ocurrido un error. Por favor, inténtalo de nuevo."
             },
-            "title": "Genera la mejor imagen para tu módulo",
+            "title": "Genera la imagen de módulo",
             "description": "Esta herramienta te ayudará a generar la mejor imagen para tu módulo. Puedes subir una imagen y nosotros generaremos la mejor imagen para tu módulo. También puedes usar el editor de imágenes para editar la imagen y generar la mejor imagen para tu módulo.",
             "notes": {
               "label": "Notas",
@@ -50,6 +50,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "confirm": {
               "title": "¿Quieres reemplazar la imagen actual?",
               "subtitle": "Si confirmas, la imagen actual será reemplazada."
+            },
+            "textarea": {
+              "label": "Descripción de la imagen"
+            },
+            "textareaImage": {
+              "label": "Descripción de la imagen"
             }
           };
         }

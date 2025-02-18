@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 469228106,
+        hash: 2367213130,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -197,7 +197,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               },
               "total": "Sugerencias seleccionadas",
-              "origin": "Ministerio",
+              "origin": "Entidad educativa",
               "label": "Sugerencia",
               "irrelevant": "El objetivo del módulo proporcionado parece no ser adecuado para la audiencia definida. Por favor, verifica esto y vuelve a intentarlo."
             },

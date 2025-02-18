@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3191979956,
+        hash: 1787686285,
         creator: function (require, exports) {
           exports.txt = {
             "assign": {
@@ -41,7 +41,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "module": "Módulo",
               "messages": {
                 "copied": "Enlace copiado al portapapeles",
-                "assigned": "Aula asignada"
+                "assigned": "Módulo asignado al aula {classroom}"
               },
               "item": {
                 "description": "El item no tiene descripción"
@@ -95,17 +95,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Aún no hay Borradores",
                 "description": "No tienes borradores en este momento. Comienza a crear y perfeccionar tu contenido antes de publicarlo. "
               },
-              "trash": {
-                "title": "No hay Módulos en la Papelera",
-                "description": "No tienes módulos en la papelera. Los módulos eliminados se moverán aquí. "
-              },
               "published": {
                 "title": "No hay Módulos Publicados",
                 "description": "No hay módulos publicados disponibles. Trabaja en cada módulo y publícalos para actualizar este listado de publicaciones. "
-              },
-              "community": {
-                "title": "No hay Módulos en la Comunidad",
-                "description": "No hay módulos disponibles en la comunidad. ¡Comparte tus módulos con la comunidad y descubre los módulos de otros autores! "
               }
             },
             "errors": {
@@ -115,9 +107,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "title": "Mis módulos de aprendizaje",
             "tabs": {
               "drafts": "Borradores",
-              "published": "Publicados",
-              "community": "Comunidad",
-              "trash": "Papelera"
+              "published": "Publicados"
             },
             "actions": {
               "create": "Crear",

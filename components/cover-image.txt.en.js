@@ -29,14 +29,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1131418953,
+        hash: 2147961549,
         creator: function (require, exports) {
           exports.txt = {
             "errors": {
               "content_policy_violation": "The content of the image does not comply with the application's content policy. Please validate it and try again.",
               "default": "An error occurred. Please try again."
             },
-            "title": "Generate the best image for your module",
+            "title": "Generate the image of your module",
             "description": "This tool will help you generate the best image for your module. You can upload an image and we will generate the best image for your module. You can also use the image editor to edit the image and generate the best image for your module.",
             "notes": {
               "label": "Notes",
@@ -50,6 +50,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "confirm": {
               "title": "Do you want to replace the current image?",
               "subtitle": "If you confirm, the current image will be replaced."
+            },
+            "textarea": {
+              "label": "Image description"
             }
           };
         }

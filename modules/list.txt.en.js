@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 821222682,
+        hash: 621404669,
         creator: function (require, exports) {
           exports.txt = {
             "assign": {
@@ -41,7 +41,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "module": "Module",
               "messages": {
                 "copied": "Link copied to clipboard",
-                "assigned": "Classroom assigned"
+                "assigned": "Module assigned to classroom {classroom}"
               },
               "item": {
                 "description": "The item has no description"
@@ -95,17 +95,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "No Drafts Yet",
                 "description": "You don't have any drafts at the moment. Start creating and perfecting your content before publishing. "
               },
-              "trash": {
-                "title": "No Modules in the Trash",
-                "description": "You don't have any modules in the trash. Deleted modules will be moved here. "
-              },
               "published": {
                 "title": "No Published Modules",
                 "description": "There are no published modules available. Work on each module and publish them to update this list of publications. "
-              },
-              "community": {
-                "title": "No Modules in the Community",
-                "description": "There are no modules available in the community. Share your modules with the community and discover modules from other authors! "
               }
             },
             "errors": {
@@ -115,9 +107,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "title": "My Learning Modules",
             "tabs": {
               "drafts": "Drafts",
-              "published": "Published",
-              "community": "Comunidad",
-              "trash": "Trash"
+              "published": "Published"
             },
             "actions": {
               "create": "Create",
