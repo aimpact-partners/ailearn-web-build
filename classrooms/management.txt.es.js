@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3098651437,
+        hash: 663245009,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -41,8 +41,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "success": "Aula publicada con éxito",
               "error": "Error al publicar la aula",
               "name": {
-                "label": "Nombre de la Aula",
-                "placeholder": "¿Cuál será el nombre de la Aula?"
+                "label": "Nombre del Aula",
+                "placeholder": "¿Cuál será el nombre del Aula?"
               },
               "description": {
                 "label": "Descripción de la Aula",

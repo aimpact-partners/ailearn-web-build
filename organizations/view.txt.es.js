@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 266916127,
+        hash: 2640043600,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -55,8 +55,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "coins": {
               "label": "Intereacciones disponibles",
-              "assignments": "Asignaciones",
-              "modules": "Módulos"
+              "assignments": "Interactivos",
+              "modules": "Generativos"
             },
             "errors": {
               "10003": "No se ha podido aprobar el usuario, vuelva a intentarlo más tarde y si el problema persiste contacte con el soporte."
