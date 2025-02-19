@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1607576004,
+        hash: 2623670417,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -128,7 +128,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 },
                 "audio": {
                   "noAudio": "Este elemento no posee audio creado",
-                  "maxLength": "No se puede crear el audio del elemento pues supera el límite de caracteres permitidos (4000)."
+                  "maxLength": "No se puede crear el audio del elemento pues supera el límite de caracteres permitidos (4000).",
+                  "emptyMaterial": "No se puede generar este audio si no se ha definido {type}",
+                  "content": "El contenido",
+                  "dyslexia": "Las adaptaciones"
                 },
                 "article": {
                   "textarea": "Artículo"
@@ -270,6 +273,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "label": "Criterio",
                   "placeholder": "Agrega los criterios de la actividad"
                 }
+              },
+              "characterRole": {
+                "title": "¿Qué rol debe cumplir el personaje en la conversación? *",
+                "label": "Rol del personaje",
+                "placeholder": "Agrega el rol del personaje"
               }
             },
             "spoken": {

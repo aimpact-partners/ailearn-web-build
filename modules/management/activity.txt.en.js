@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 987192074,
+        hash: 1933383502,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -135,7 +135,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 },
                 "audio": {
                   "noAudio": "This element does not have audio created",
-                  "maxLength": "The audio of the element cannot be created because it exceeds the allowed character limit (4000)."
+                  "maxLength": "The audio of the element cannot be created because it exceeds the allowed character limit (4000).",
+                  "emptyMaterial": "This audio cannot be generated if {type} has not been defined",
+                  "content": "The content",
+                  "dyslexia": "The adaptations"
                 },
                 "refinement": {
                   "title": "Create the content of your activity with AI",
@@ -242,7 +245,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "role": {
                 "label": "Agent role",
-                "placeholder": "Add the role of the character",
+                "placeholder": "Add the role of the agent",
                 "title": "What role should the agent assume in the debate? *"
               },
               "questions": {
@@ -270,6 +273,16 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "label": "Criteria",
                   "placeholder": "Add the criteria of the activity"
                 }
+              },
+              "CharacterRole": {
+                "title": "What role should the agent assume in the debate? *",
+                "label": "Agent role",
+                "placeholder": "Add the role of the character"
+              },
+              "characterRole": {
+                "title": "What role should the character assume in the conversation? *",
+                "label": "Character role",
+                "placeholder": "Add the role of the character"
               }
             },
             "spoken": {
