@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1626586392,
+        hash: 2227396950,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -79,6 +79,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "processing": "En edición"
               }
             },
+            "synthesis": "Synthesis",
+            "article": "Content",
+            "description": "Description",
+            "objectives": "Objectives",
             "chat": {
               "empty": {
                 "credits": {
@@ -90,6 +94,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "description": "Request credits to start learning with the AI Agent"
                 }
               }
+            },
+            "tabs": {
+              "chat": "Chat",
+              "content": "Content"
             },
             "languages": {
               "select": {
@@ -248,19 +256,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "confirmation": {
                 "title": "⚠️ Review & Confirm",
-                "subtitle": "You are about to create a learning module for:",
                 "ownerDescription": "Owner of the learning module",
                 "description": "Once this information is saved, it cannot be changed."
               }
-            },
-            "tabs": {
-              "chat": "Chat",
-              "content": "Content"
-            },
-            "synthesis": "Synthesis",
-            "article": "Content",
-            "description": "Description",
-            "objectives": "Objectives"
+            }
           };
         }
       });

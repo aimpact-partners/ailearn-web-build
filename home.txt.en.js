@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 478370623,
+        hash: 2745757567,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -115,7 +115,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "description": "Find all the information in our tutorials designed to help you get the most out of RVD.AI. Learn how to create learning modules, manage your classrooms, and use all the tools we offer. Explore our tutorials and navigate the platform!"
               },
               "modules": {
-                "title": "My Modules",
+                "title": "My Learning Modules",
                 "description": "This section will show the modules that the user has created."
               },
               "assignments": {
@@ -141,7 +141,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               }
             },
             "modules": {
-              "title": "My Modules",
+              "title": "My Learning Modules",
               "empty": "You don't have learning modules yet",
               "action": "Publish a module",
               "activities": "My Activities",
@@ -153,9 +153,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "drafts": {
               "title": "My Drafts",
               "empty": {
-                "title": "Create your first learning module",
-                "description": "Generate dynamic and interactive activities that you can assign to a classroom.",
-                "action": "Create your first learning module"
+                "title": "You have no drafts",
+                "action": "Create a new one!"
               },
               "action": "Create",
               "items": {

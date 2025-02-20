@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 969426128,
+        hash: 1237676254,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -115,7 +115,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "description": "Encuentra toda la información en nuestros tutoriales diseñados para ayudarte a sacar el máximo provecho de RVD.AI. Aprende a crear módulos de aprendizaje, gestionar tus aulas y utilizar todas las herramientas que ofrecemos. ¡Explora nuestros tutoriales y navega la plataforma!"
               },
               "modules": {
-                "title": "Mis módulos",
+                "title": "Mis módulos de aprendizaje",
                 "description": "En esta sección se verán los módulos que el usuario ha creado."
               },
               "assignments": {
@@ -141,7 +141,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               }
             },
             "modules": {
-              "title": "Mis Módulos",
+              "title": "Mis Módulos de aprendizaje",
               "empty": "No posees módulos de aprendizaje aún",
               "action": "Publicar un módulo",
               "activities": "Mis Actividades",
@@ -153,9 +153,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "drafts": {
               "title": "Mis Borradores",
               "empty": {
-                "description": "Genera actividades dinámicas e interactivas que podrás asignar a un aula.",
-                "title": "Crea tu primer módulo de aprendizaje",
-                "action": "CREA TU PRIMER MÓDULO"
+                "description": "No posees borradores aún",
+                "action": "Crear uno nuevo"
               },
               "action": "Crear",
               "items": {

@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1656760883,
+        hash: 3007868666,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -79,6 +79,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "processing": "En edición"
               }
             },
+            "synthesis": "Síntesis",
+            "article": "Contenido",
+            "description": "Descripción",
+            "objectives": "Objetivos",
             "chat": {
               "empty": {
                 "credits": {
@@ -90,6 +94,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "description": "Solicita creditos para empezar a aprender con el Agente de AI"
                 }
               }
+            },
+            "tabs": {
+              "chat": "Chat",
+              "content": "Contenido"
             },
             "languages": {
               "select": {
@@ -247,19 +255,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "confirmation": {
                 "title": "⚠️ Revisa y confirma",
-                "subtitle": "Estás a punto de crear un módulo de aprendizaje para:",
                 "label": "Propietario del módulo de aprendizaje",
                 "description": "Una vez guardada esta información, no podrá ser modificada."
               }
-            },
-            "tabs": {
-              "chat": "Chat",
-              "content": "Contenido"
-            },
-            "synthesis": "Síntesis",
-            "article": "Contenido",
-            "description": "Descripción",
-            "objectives": "Objetivos"
+            }
           };
         }
       });

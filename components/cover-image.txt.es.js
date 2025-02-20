@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 834362869,
+        hash: 34123977,
         creator: function (require, exports) {
           exports.txt = {
             "errors": {
@@ -52,9 +52,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "subtitle": "Si confirmas, la imagen actual será reemplazada."
             },
             "textarea": {
-              "label": "Descripción de la imagen"
-            },
-            "textareaImage": {
               "label": "Descripción de la imagen"
             }
           };

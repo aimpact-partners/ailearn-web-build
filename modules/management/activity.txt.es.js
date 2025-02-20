@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2623670417,
+        hash: 2722095402,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -247,6 +247,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "label": "Rol del agente",
                 "placeholder": "Agrega el rol del personaje"
               },
+              "characterRole": {
+                "title": "¿Qué rol debe cumplir el personaje en la conversación? *",
+                "label": "Rol del personaje",
+                "placeholder": "Agrega el rol del personaje"
+              },
               "questions": {
                 "title": "Preguntas"
               },
@@ -273,11 +278,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "label": "Criterio",
                   "placeholder": "Agrega los criterios de la actividad"
                 }
-              },
-              "characterRole": {
-                "title": "¿Qué rol debe cumplir el personaje en la conversación? *",
-                "label": "Rol del personaje",
-                "placeholder": "Agrega el rol del personaje"
               }
             },
             "spoken": {

@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1933383502,
+        hash: 1805909187,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -244,9 +244,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Add the character of the activity"
               },
               "role": {
+                "title": "What role should the agent assume in the debate? *",
                 "label": "Agent role",
-                "placeholder": "Add the role of the agent",
-                "title": "What role should the agent assume in the debate? *"
+                "placeholder": "Add the role of the agent"
+              },
+              "characterRole": {
+                "title": "What role should the character assume in the conversation? *",
+                "label": "Character role",
+                "placeholder": "Add the role of the character"
               },
               "questions": {
                 "title": "Questions"
@@ -273,16 +278,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "label": "Criteria",
                   "placeholder": "Add the criteria of the activity"
                 }
-              },
-              "CharacterRole": {
-                "title": "What role should the agent assume in the debate? *",
-                "label": "Agent role",
-                "placeholder": "Add the role of the character"
-              },
-              "characterRole": {
-                "title": "What role should the character assume in the conversation? *",
-                "label": "Character role",
-                "placeholder": "Add the role of the character"
               }
             },
             "spoken": {
