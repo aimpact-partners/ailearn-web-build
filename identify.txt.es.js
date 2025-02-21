@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1136760082,
+        hash: 1147331824,
         creator: function (require, exports) {
           exports.txt = {
             "errors": {
@@ -37,7 +37,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "INVALID_CODE": "Código incorrecto",
               "ALREADY_WAITING": "Ya realizaste la solicitud para unirte a la institución, espera a que el administrador te acepte o ponte en contacto con él",
               "ALREADY_MEMBER": "Ya eres miembro de la institución",
-              "ALREADY_WAITING_CLASSROOM": "Tu solicitud de acceso sigue estando pendiente, contacta al profesor del aula"
+              "ALREADY_WAITING_CLASSROOM": "Tu solicitud de acceso sigue estando pendiente, contacta al profesor del aula",
+              "ALREADY_WAITING_ORG": "Ya realizaste la solicitud para unirte a la institución, espera a que el administrador te acepte o ponte en contacto con él"
             },
             "institution": {
               "form": {

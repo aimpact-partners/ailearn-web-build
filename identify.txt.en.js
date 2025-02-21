@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3573465190,
+        hash: 2619103975,
         creator: function (require, exports) {
           exports.txt = {
             "errors": {
@@ -37,7 +37,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "INVALID_CODE": "Incorrect code",
               "ALREADY_WAITING": "You have already made the request to join the organization, wait for the administrator to accept you or contact him",
               "ALREADY_MEMBER": "You are already a member of the organization",
-              "ALREADY_WAITING_CLASSROOM": "Your access request is still pending, contact the classroom teacher"
+              "ALREADY_WAITING_CLASSROOM": "Your access request is still pending, contact the classroom teacher",
+              "ALREADY_WAITING_ORG": "You have already made the request to join the organization, wait for the administrator to accept you or contact him"
             },
             "institution": {
               "form": {

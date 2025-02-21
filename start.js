@@ -446,7 +446,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
         ********************************/
 
         ims.set('./handlers/roles', {
-          hash: 3948214652,
+          hash: 2541798624,
           creator: function (require, exports) {
             "use strict";
 
@@ -472,7 +472,9 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/tran
                 }
                 return false;
               }
-              // if (pathname === '/next-steps' && sessionWrapper.user?.roles.length) return { pathname: '/' };
+              if (pathname === '/next-steps' && _session.sessionWrapper.user?.roles.length) return {
+                pathname: '/'
+              };
               if (!_session.sessionWrapper.user.roles.length && !containsPath(validRoutes, uri.uri)) {
                 return {
                   pathname: '/next-steps'
