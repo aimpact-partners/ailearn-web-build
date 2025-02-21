@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.1"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.2.17"], ["@aimpact/ailearn-app", "0.2.17"]]);
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", null], ["@aimpact/auth", null], ["@aimpact/chat-sdk", "1.4.1"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.1"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.3"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["@google-cloud/storage", "7.15.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.24.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.3.1"], ["@aimpact/ailearn-app", "0.3.1"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.2.17/modules/management/activity",
+          "vspecifier": "@aimpact/ailearn-app@0.3.1/modules/management/activity",
           "multibundle": true
         },
         "type": "txt"
@@ -29,13 +29,27 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3103595088,
+        hash: 1429290811,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
+              "test": {
+                "warning": "You must fill in all required fields to be able to test the activity"
+              },
               "minutes": "Min",
+              "sections": {
+                "general": "",
+                "advanced": {
+                  "title": "Advanced Settings",
+                  "subtitle": "Additional instructions for the agent and the activity"
+                },
+                "agent": {
+                  "title": "AI Agent Settings",
+                  "subtitle": "These are the data that the AI will use to interact with each of the students."
+                }
+              },
               "description": {
-                "label": "Description",
+                "label": "What is this activity about?*",
                 "placeholder": "Add a description"
               },
               "instructions": {
@@ -65,17 +79,39 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               },
               "empty": {
-                "title": "Create This Element",
-                "description": "Use AI to shape this specific element. Click 'Generate with AI' to effortlessly craft engaging content. Elevate your teaching experience with innovative creation!"
+                "title": "Generate content for the activity",
+                "description": "You can create this content manually or generate an automatic version using artificial intelligence by clicking ‘Generate with AI’"
               },
               "deleteModal": {
                 "title": "Delete Content",
                 "description": "Are you sure you want to delete the content from this activity?"
+              },
+              "settings": {
+                "layout": {
+                  "label": "Layout",
+                  "title": "How do you want this activity to look?",
+                  "description": "Select the type of visualization you want to give to the activity",
+                  "options": {
+                    "fullContentLayout": {
+                      "title": "Full Content Layout",
+                      "description": "I want <strong>the educational content to take up as much space as possible.</strong>"
+                    },
+                    "mainContentLayout": {
+                      "title": "Main Content Layout",
+                      "description": "<strong>I want to prioritize educational content</strong>, over the chat with the agent"
+                    },
+                    "mainChatLayout": {
+                      "title": "Main Chat Layout",
+                      "description": "<strong>I want to prioritize the chat with the agent</strong>, over the educational content."
+                    }
+                  }
+                }
               }
             },
             "contentTheory": {
               "materials": {
-                "title": "Attachments",
+                "empty": "This activity has no attached content",
+                "title": "Attach content to the activity",
                 "characters": "Available characters:",
                 "types": {
                   "article": "Content",
@@ -83,9 +119,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                   "dyslexia": "Adaptations",
                   "audios": "Audios"
                 },
+                "article": {
+                  "textarea": "Article"
+                },
+                "dyslexia": {
+                  "textarea": "Adaptations"
+                },
                 "audio": {
                   "noAudio": "This element does not have audio created",
-                  "maxLength": "The audio of the element cannot be created because it exceeds the allowed character limit (4000)."
+                  "maxLength": "The audio of the element cannot be created because it exceeds the allowed character limit (4000).",
+                  "emptyMaterial": "This audio cannot be generated if {type} has not been defined",
+                  "content": "The content",
+                  "dyslexia": "The adaptations"
                 },
                 "refinement": {
                   "title": "Create the content of your activity with AI",
@@ -106,7 +151,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "This activity has no educational content associated",
                 "description": "Add educational content to your module to start.",
                 "actions": {
-                  "add": "Add article",
+                  "add": "Add content",
                   "upload": "Upload document"
                 }
               }
@@ -141,29 +186,40 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "emptyOptions": "Answer options have not been defined"
             },
             "specs": {
+              "general": {
+                "label": "General data"
+              },
+              "agent": {
+                "label": "Data required for the agent"
+              },
+              "advanced": {
+                "label": "Advanced data"
+              },
               "title": "Activity specifications",
               "assessment": {
-                "label": "Assessment",
+                "label": "How will the AI evaluate the student's oral presentation?",
                 "placeholder": "Add the assessment of the activity"
               },
               "topic": {
-                "label": "Topic *",
+                "title": "What should the agent teach about?",
+                "label": "Topic of study*",
                 "placeholder": "Add the topic of the activity"
               },
               "task": {
-                "label": "Task requested to the student *",
+                "label": "Additional information for the student",
                 "placeholder": "Add the task of the activity"
               },
               "objective": {
-                "label": "Objective",
-                "placeholder": "Add the objective of the activity"
+                "label": "Objectives",
+                "placeholder": "Add the objective of the activity",
+                "empty": "This activity does not have associated objectives. Add an objective to guide the AI"
               },
               "related": {
                 "label": "Related activity",
                 "placeholder": "Select the related activity"
               },
               "instructions": {
-                "label": "Additional instructions",
+                "label": "Additional instructions for the agent",
                 "placeholder": "Add additional instructions if necessary"
               },
               "subjectDebate": {
@@ -171,22 +227,29 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "placeholder": "Add the motion of the debate"
               },
               "subject": {
-                "label": "Subject",
-                "placeholder": "Add the subject of the criteria"
+                "title": "What should the AI agent debate about? *",
+                "label": "Subject of the debate",
+                "placeholder": "Add the subject of the debate"
               },
               "character": {
                 "label": "Character",
                 "placeholder": "Add the character of the activity"
               },
               "role": {
-                "label": "Role",
+                "title": "What role should the agent assume in the debate? *",
+                "label": "Agent role",
+                "placeholder": "Add the role of the agent"
+              },
+              "characterRole": {
+                "title": "What role should the character assume in the conversation? *",
+                "label": "Character role",
                 "placeholder": "Add the role of the character"
               },
               "questions": {
                 "title": "Questions"
               },
               "objectives": {
-                "label": "Objectives of the activity *",
+                "label": "What objectives should the student achieve? *",
                 "name": {
                   "label": "Name",
                   "placeholder": "Add the name of the objective"
@@ -197,8 +260,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               },
               "criteria": {
-                "title": "Evaluation criteria",
-                "label": "Criteria",
+                "label": "Evaluation criteria",
                 "placeholder": "Add the criteria of the activity",
                 "name": {
                   "label": "Name",
@@ -223,9 +285,17 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "spoken": "Oral Presentation",
               "written": "Written"
             },
-            "conversation": {
-              "description": "Specify everything you consider important for the conversation. This will help the bot to understand you better and to provide you with the best possible answers. You can also specify the topics you want to talk about.",
-              "topics": "List all topics you want to talk about"
+            "chat": {
+              "empty": {
+                "credits": {
+                  "title": "Ready to learn?",
+                  "description": "Start by making the query you want"
+                },
+                "noCredits": {
+                  "title": "You need AI credits to start",
+                  "description": "Request credits to start learning with the AI Agent"
+                }
+              }
             },
             "errors": {
               "INCOMPLETE_MODULE": "You must complete the module before continuing. Missing fields: ",
@@ -234,7 +304,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "wrongQuestions": "To save, you must have correctly added response options and selected the correct option for each question."
             },
             "form": {
-              "title": "Add the name of the activity"
+              "title": "Activity title *"
             },
             "languages": {
               "select": {
@@ -302,6 +372,25 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "confirm": {
                 "title": "Do you want to replace the current image?",
                 "subtitle": "If you confirm, the current image will be replaced."
+              }
+            },
+            "progress": {
+              "label": "Edition status",
+              "fields": {
+                "title": "Title",
+                "description": "Description",
+                "picture": "Picture",
+                "general": "General",
+                "agent": "AI Agent",
+                "advanced": "Advanced",
+                "questions": "Questions"
+              },
+              "states": {
+                "optional": "Optional",
+                "completed": "Complete",
+                "inprogress": "In progress",
+                "pending": "To complete",
+                "questions": "Questions"
               }
             }
           };

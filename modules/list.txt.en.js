@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.1"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.2.17"], ["@aimpact/ailearn-app", "0.2.17"]]);
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", null], ["@aimpact/auth", null], ["@aimpact/chat-sdk", "1.4.1"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.1"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.3"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["@google-cloud/storage", "7.15.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.24.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.3.1"], ["@aimpact/ailearn-app", "0.3.1"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.2.17/modules/list",
+          "vspecifier": "@aimpact/ailearn-app@0.3.1/modules/list",
           "multibundle": true
         },
         "type": "txt"
@@ -29,23 +29,19 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2323396122,
+        hash: 621404669,
         creator: function (require, exports) {
           exports.txt = {
-            "actions": {
-              "assign": "Assign",
-              "use": "Use",
-              "continue": "Continue",
-              "create": "Create",
-              "delete": "Delete item"
-            },
             "assign": {
-              "title": "Classrooms list",
+              "title": {
+                "share": "Assign module to classrooms",
+                "dashboard": "Access assignment dashboard"
+              },
               "noAssigned": "No classrooms assigned",
               "module": "Module",
               "messages": {
                 "copied": "Link copied to clipboard",
-                "assigned": "Classroom assigned"
+                "assigned": "Module assigned to classroom {classroom}"
               },
               "item": {
                 "description": "The item has no description"
@@ -58,15 +54,21 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "assign": {
                   "button": "Assign",
                   "label": "The module has not been assigned to this Classroom"
-                }
+                },
+                "createClassroom": "Create classroom"
               },
               "errors": {
                 "default": "The module could not be assigned to this Classroom, please try again later or contact the administrator"
               },
               "empty": {
-                "title": "Attention",
-                "description": "You do not have any classrooms created yet, you must create one to be able to assign this activity.",
-                "action": "Create classroom"
+                "share": {
+                  "text": "Attention",
+                  "description": "You do not have any classrooms created yet, you must create one to be able to assign this activity.",
+                  "action": "Create classroom"
+                },
+                "dashboard": {
+                  "description": "Module without assignments"
+                }
               }
             },
             "delete": {
@@ -75,6 +77,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "errors": {
                 "59": "The module cannot be deleted because it already has associated data.",
                 "default": "An error occurred while deleting the module."
+              }
+            },
+            "archive": {
+              "title": "Archive module",
+              "description": "Are you sure you want to archive this module?",
+              "errors": {
+                "default": "An error occurred while archiving the module."
               }
             },
             "empty": {
@@ -89,10 +98,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "published": {
                 "title": "No Published Modules",
                 "description": "There are no published modules available. Work on each module and publish them to update this list of publications. "
-              },
-              "community": {
-                "title": "No Modules in the Community",
-                "description": "There are no modules available in the community. Share your modules with the community and discover modules from other authors! "
               }
             },
             "errors": {
@@ -102,15 +107,20 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "title": "My Learning Modules",
             "tabs": {
               "drafts": "Drafts",
-              "published": "Published",
-              "community": "Comunidad"
+              "published": "Published"
+            },
+            "actions": {
+              "create": "Create",
+              "delete": "Delete item",
+              "use": "Create a new version"
             },
             "loading": {
               "title": "Loading Data",
               "description": "We are loading your data. Please wait for a moment."
             },
             "item": {
-              "description": "The module does not have a description yet"
+              "description": "The module does not have a description yet",
+              "draftTitle": "Draft Module"
             }
           };
         }

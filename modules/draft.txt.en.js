@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/auth", "0.0.1"], ["@aimpact/chat-sdk", "1.3.0"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.1.12"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.1"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.2.17"], ["@aimpact/ailearn-app", "0.2.17"]]);
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.0"], ["@aimpact/ailearn-sdk", "1.0.0"], ["@aimpact/ailearn-api", null], ["@aimpact/auth", null], ["@aimpact/chat-sdk", "1.4.1"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.1"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.3"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@emotion/css", "11.13.0"], ["@emotion/react", "11.13.3"], ["@emotion/styled", "11.13.0"], ["@google-cloud/storage", "7.15.0"], ["apexcharts", "3.53.0"], ["bourbon", "7.3.0"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.1.6"], ["driver.js", "1.3.1"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.10.0"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.11"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.1.4"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.5"], ["react", "18.2.0"], ["react-dom", "18.2.0"], ["react-select", "5.8.0"], ["simplebar-react", "3.2.6"], ["slate", "0.103.0"], ["slate-react", "0.110.1"], ["socket.io-client", "4.7.5"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.8.5"], ["zod", "3.24.1"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.5"], ["@types/react-dom", "18.3.0"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.3.1"], ["@aimpact/ailearn-app", "0.3.1"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -17,7 +17,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/ailearn-app@0.2.17/modules/draft",
+          "vspecifier": "@aimpact/ailearn-app@0.3.1/modules/draft",
           "multibundle": true
         },
         "type": "txt"
@@ -29,9 +29,18 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2397178582,
+        hash: 1620937763,
         creator: function (require, exports) {
           exports.txt = {
+            "activities": {
+              "types": {
+                "content-theory": "Content/Theory",
+                "multiple-choice": "Multiple Choice",
+                "character-talk": "Character Talk",
+                "debate": "Debate",
+                "spoken": "Spoken Presentation"
+              }
+            },
             "alerts": {
               "coins": {
                 "available": "Owner has AI credits available",
@@ -57,59 +66,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               },
               "header": {
                 "actions": {
-                  "require": "REQUEST CREDITS",
-                  "available": "AVAILABLE CREDITS"
+                  "require": "Enable AI",
+                  "available": "Available request"
                 },
                 "messages": {
-                  "add": "You acquired credits to use the AI functions",
-                  "middle": "You consumed 50% of the available credits",
-                  "finishing": "You are running out of available AI credits"
+                  "add": "You acquired request to use the AI functions",
+                  "middle": "You consumed 50% of the Available request",
+                  "finishing": "You are running out of available AI request"
                 }
               }
-            },
-            "audience": {
-              "input": {
-                "label": "Grade level",
-                "error": "Please select a grade level",
-                "select": "Select grade level"
-              },
-              "argentine": {
-                "4th grade": "4th grade",
-                "5th grade": "5th grade",
-                "6th grade": "6th grade",
-                "7th grade": "7th grade",
-                "1st year": "1st year",
-                "2nd year": "2nd year",
-                "3rd year": "3rd year",
-                "4th year": "4th year",
-                "5th year": "5th year",
-                "6th year": "6th year"
-              },
-              "k12": {
-                "4": "Year 4",
-                "5": "Year 5",
-                "6": "Year 6",
-                "7": "Year 7",
-                "8": "Year 8",
-                "9": "Year 9",
-                "10": "Year 10",
-                "11": "Year 11",
-                "12": "Year 12"
-              }
-            },
-            "languages": {
-              "select": {
-                "label": "Language",
-                "placeholder": "Select Language"
-              },
-              "selectLabel": "Select Language",
-              "label": "Languages",
-              "en": "English",
-              "es": "Spanish",
-              "pt": "Portuguese",
-              "fr": "French",
-              "de": "German",
-              "it": "Italian"
             },
             "refine": {
               "activities": {
@@ -117,7 +82,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "description": "Guide the Artificial Intelligence to generate content based on your pedagogical principles by indicating, for example, the types of activities and their tone (informal, inspiring, etc.)."
               },
               "textarea": {
-                "label": "Your Insights",
+                "label": "Additional information",
                 "placeholder": "Share specific suggestions or areas for improvement..."
               },
               "errors": {
@@ -126,92 +91,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "confirm": {
                 "title": "You are about to confirm the objective of your module",
                 "description": "You have not selected any of the generated suggestions. Do you want to proceed without implementing them?"
-              }
-            },
-            "requestCredits": {
-              "title": "Request Credits",
-              "subtitle": "You must request AI credits from the module owner to use this feature.",
-              "ownerDescription": "Module owner",
-              "action": "Do you want to request credits from the module owner?",
-              "detail": "AI credits enable all advanced Artificial Intelligence features in the creation of learning modules."
-            },
-            "pathway": {
-              "manual": {
-                "title": {
-                  "label": "Module Title",
-                  "placeholder": "Enter the module title"
-                },
-                "description": {
-                  "label": "Module Description",
-                  "placeholder": "Enter the module description"
-                }
-              },
-              "ai": {
-                "title": "Let's continue with AI",
-                "form": {
-                  "size": {
-                    "placeholder": "Amount of activities in the module",
-                    "items": {
-                      "brief": "Brief (3 activities)",
-                      "standard": "Standard (5 activities)",
-                      "extended": "Extended (7 activities)"
-                    },
-                    "notes": {
-                      "placeholder": "Enter the instructions to guide the AI in creating your activities"
-                    }
-                  }
-                }
-              }
-            },
-            "setup": {
-              "actions": {
-                "cancel": "Cancel",
-                "continue": "Continue"
-              },
-              "messages": {
-                "save": "Objective saved successfully"
-              },
-              "title": "Create a New Learning Module",
-              "subtitle": "Set up the features of your module to get started.",
-              "generation": {
-                "title": "Let's shape the module",
-                "subtitle": "Indicate how you want to continue",
-                "options": {
-                  "ai": "I want to generate the activities with the help of AI",
-                  "manually": "I want to generate the activities manually"
-                }
-              },
-              "form": {
-                "administrator": {
-                  "label": "Administrator",
-                  "select": "Select administrator",
-                  "account": "Current account",
-                  "error": "You need to specify the administrator of the learning module"
-                },
-                "title": {
-                  "label": "Module title"
-                },
-                "description": {
-                  "label": "Module description"
-                },
-                "activities": {
-                  "label": "Number of module activities"
-                },
-                "notes": {
-                  "placeholder": "Enter the instructions to guide the AI in creating your activities"
-                },
-                "objective": {
-                  "textArea": "Enter the module objective"
-                }
-              },
-              "sugestions": {
-                "title": "Instruction suggestions"
-              },
-              "confirmation": {
-                "title": "Attention",
-                "subtitle": "You are about to create a learning module for:",
-                "ownerDescription": "Owner of the learning module",
-                "description": "The AI credits you request within the creation of this learning module will be requested and provided by the module owner"
               }
             },
             "suggestions": {
@@ -223,8 +102,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 }
               },
               "total": "Selected suggestions",
-              "origin": "Ministry",
-              "label": "Suggestion",
+              "origin": "Educational guidelines",
+              "label": "Recommended Adjustments",
               "irrelevant": "The objective of the provided module seems not to be suitable for the defined audience. Please, check this and try again."
             },
             "title": "Create a Learning Module",
@@ -249,29 +128,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             "confirm": {
               "title": "You are about to confirm the objective of your module",
               "messages": "You have not selected any of the generated suggestions. Do you want to continue without implementing them?"
-            },
-            "objectiveTour": {
-              "buttons": {
-                "nextBtnText": "Next",
-                "prevBtnText": "Previous",
-                "doneBtnText": "Done"
-              },
-              "administrator": {
-                "title": "Select an Administrator",
-                "description": "Choose the administrator responsible for the learning module. They must have credits assigned to create modules with AI assistance."
-              },
-              "parameters": {
-                "title": "Select the parameters of the learning module",
-                "description": "Select the language of the learning module, the school year of your students, and the number of activities. You can find more information on our YouTube channel @RVDAIRIVADAVIA24."
-              },
-              "objective": {
-                "title": "Write the main objective of the learning module",
-                "description": "This objective will be central to guide the rest of the content and activities of the module."
-              },
-              "save": {
-                "title": "Save the objective of the learning module",
-                "description": "Once saved, you can request credits to improve the objective and start working with AI."
-              }
             }
           };
         }
