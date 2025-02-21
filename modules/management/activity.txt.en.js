@@ -29,18 +29,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1805909187,
+        hash: 1429290811,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
-              "progress": {
-                "title": "Title",
-                "description": "Description",
-                "picture": "Picture",
-                "general": "General",
-                "agent": "AI Agent",
-                "advanced": "Advanced"
-              },
               "test": {
                 "warning": "You must fill in all required fields to be able to test the activity"
               },
@@ -384,11 +376,21 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "progress": {
               "label": "Edition status",
+              "fields": {
+                "title": "Title",
+                "description": "Description",
+                "picture": "Picture",
+                "general": "General",
+                "agent": "AI Agent",
+                "advanced": "Advanced",
+                "questions": "Questions"
+              },
               "states": {
                 "optional": "Optional",
                 "completed": "Complete",
                 "inprogress": "In progress",
-                "pending": "To complete"
+                "pending": "To complete",
+                "questions": "Questions"
               }
             }
           };
