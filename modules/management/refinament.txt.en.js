@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1487294681,
+        hash: 400172586,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -59,6 +59,10 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "200": "The activity objective is required",
               "NO_RELATED_ACTIVITY": "The related activity still does not have content, it is necessary to generate the content before using it",
               "default": "An error occurred, please try again"
+            },
+            "activity": {
+              "title": "Generar la actividad con IA",
+              "description": "Vamos a generar la actividad en base al siguiente objetivo"
             },
             "error": "Please, add detailed notes for the generation",
             "textarea": {

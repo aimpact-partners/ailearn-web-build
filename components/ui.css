@@ -941,12 +941,12 @@ input {
 .pui-modal .modal-content header + .alert {
   margin-top: -1rem;
 }
-.pui-modal .modal-content form {
+.pui-modal .modal-content > form {
   display: grid;
   gap: 1rem;
   width: 100%;
 }
-.pui-modal .modal-content form header {
+.pui-modal .modal-content > form header {
   margin-bottom: 0;
 }
 .pui-modal .modal-content .empty-section__container {

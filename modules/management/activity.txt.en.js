@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1300972929,
+        hash: 3697112977,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -348,6 +348,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               }
             },
             "refine": {
+              "title": "Generate Activity",
+              "description": "We will generate the activity based on the following objective",
               "synthesis": {
                 "title": "Generate summary",
                 "description": "A summary of the previously generated content will be created."
@@ -356,8 +358,6 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "title": "Generate adaptations",
                 "description": "An accessible version of the content will be generated for students with diverse learning styles and needs."
               },
-              "title": "Generate summary",
-              "description": "A summary of the previously generated content will be created.",
               "textarea": {
                 "label": "Additional instructions",
                 "placeholder": "Share specific suggestions or areas for improvement..."
