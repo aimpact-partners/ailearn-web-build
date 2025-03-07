@@ -1,13 +1,10 @@
 System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, bimport, __Bundle, __pkg, ims, AgentEventName, IAgentItem, IAgentItemCreatedEvent, IAgentItemAudioDeltaEvent, IUserSpeechStartedEvent, __beyond_pkg, hmr;
+  var dependency_0, bimport, __Bundle, __pkg, ims, url, setEnv, __beyond_pkg, hmr;
   _export({
-    AgentEventName: void 0,
-    IAgentItem: void 0,
-    IAgentItemCreatedEvent: void 0,
-    IAgentItemAudioDeltaEvent: void 0,
-    IUserSpeechStartedEvent: void 0
+    url: void 0,
+    setEnv: void 0
   });
   return {
     setters: [function (_beyondJsKernel019Bundle) {
@@ -23,7 +20,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/agents-api@0.4.1/realtime/interfaces/agent-events"
+          "vspecifier": "@aimpact/agents-api@0.4.1/ws-config"
         },
         "type": "ts"
       }, _context.meta.url).package();
@@ -34,35 +31,42 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 1688429245,
+        hash: 367395818,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
+          exports.url = exports.setEnv = void 0;
+          const environments = {
+            development: 'wss://dev.agents.api.aimpact.partners',
+            local: 'wss://dev.agents.api.aimpact.partners',
+            testing: 'wss://test.agents.api.aimpact.partners',
+            beta: 'wss://beta.agents.api.aimpact.partners',
+            production: 'wss://agents.api.aimpact.partners'
+          };
+          /*bundle*/
+          let url = exports.url = environments.production;
+          /*bundle*/
+          const setEnv = function ({
+            port,
+            environment
+          }) {
+            environment = !environment && !port ? 'production' : environment;
+            exports.url = url = port ? `http://localhost:${port}` : environments[environment];
+          };
+          exports.setEnv = setEnv;
         }
       });
       __pkg.exports.descriptor = [{
         "im": "./index",
-        "from": "AgentEventName",
-        "name": "AgentEventName"
+        "from": "url",
+        "name": "url"
       }, {
         "im": "./index",
-        "from": "IAgentItem",
-        "name": "IAgentItem"
-      }, {
-        "im": "./index",
-        "from": "IAgentItemCreatedEvent",
-        "name": "IAgentItemCreatedEvent"
-      }, {
-        "im": "./index",
-        "from": "IAgentItemAudioDeltaEvent",
-        "name": "IAgentItemAudioDeltaEvent"
-      }, {
-        "im": "./index",
-        "from": "IUserSpeechStartedEvent",
-        "name": "IUserSpeechStartedEvent"
+        "from": "setEnv",
+        "name": "setEnv"
       }];
       // Module exports
       __pkg.exports.process = function ({
@@ -70,11 +74,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
         prop,
         value
       }) {
-        (require || prop === 'AgentEventName') && _export("AgentEventName", AgentEventName = require ? require('./index').AgentEventName : value);
-        (require || prop === 'IAgentItem') && _export("IAgentItem", IAgentItem = require ? require('./index').IAgentItem : value);
-        (require || prop === 'IAgentItemCreatedEvent') && _export("IAgentItemCreatedEvent", IAgentItemCreatedEvent = require ? require('./index').IAgentItemCreatedEvent : value);
-        (require || prop === 'IAgentItemAudioDeltaEvent') && _export("IAgentItemAudioDeltaEvent", IAgentItemAudioDeltaEvent = require ? require('./index').IAgentItemAudioDeltaEvent : value);
-        (require || prop === 'IUserSpeechStartedEvent') && _export("IUserSpeechStartedEvent", IUserSpeechStartedEvent = require ? require('./index').IUserSpeechStartedEvent : value);
+        (require || prop === 'url') && _export("url", url = require ? require('./index').url : value);
+        (require || prop === 'setEnv') && _export("setEnv", setEnv = require ? require('./index').setEnv : value);
       };
       _export("__beyond_pkg", __beyond_pkg = __pkg);
       _export("hmr", hmr = new function () {
@@ -85,4 +86,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsImV4cG9ydHMiLCJ2YWx1ZSJdLCJzb3VyY2VzIjpbIi9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTs7VUFFQUEsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBIiwiaWdub3JlTGlzdCI6W119
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJlbnZpcm9ubWVudHMiLCJkZXZlbG9wbWVudCIsImxvY2FsIiwidGVzdGluZyIsImJldGEiLCJwcm9kdWN0aW9uIiwidXJsIiwiZXhwb3J0cyIsInNldEVudiIsInBvcnQiLCJlbnZpcm9ubWVudCJdLCJzb3VyY2VzIjpbIi9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFNQSxNQUFNQSxZQUFZLEdBQXNDO1lBQ3ZEQyxXQUFXLEVBQUUsdUNBQXVDO1lBQ3BEQyxLQUFLLEVBQUUsdUNBQXVDO1lBQzlDQyxPQUFPLEVBQUUsd0NBQXdDO1lBQ2pEQyxJQUFJLEVBQUUsd0NBQXdDO1lBQzlDQyxVQUFVLEVBQUU7V0FDWjtVQUVNO1VBQVcsSUFBSUMsR0FBRyxHQUFBQyxPQUFBLENBQUFELEdBQUEsR0FBR04sWUFBWSxDQUFDSyxVQUFVO1VBRTVDO1VBQVcsTUFBTUcsTUFBTSxHQUFHLFNBQUFBLENBQVU7WUFBRUMsSUFBSTtZQUFFQztVQUFXLENBQWE7WUFDMUVBLFdBQVcsR0FBRyxDQUFDQSxXQUFXLElBQUksQ0FBQ0QsSUFBSSxHQUFHLFlBQVksR0FBR0MsV0FBVztZQUNoRUgsT0FBQSxDQUFBRCxHQUFBLEdBQUFBLEdBQUcsR0FBR0csSUFBSSxHQUFHLG9CQUFvQkEsSUFBSSxFQUFFLEdBQUdULFlBQVksQ0FBQ1UsV0FBVyxDQUFDO1VBQ3BFLENBQUM7VUFBQ0gsT0FBQSxDQUFBQyxNQUFBLEdBQUFBLE1BQUEiLCJpZ25vcmVMaXN0IjpbXX0=

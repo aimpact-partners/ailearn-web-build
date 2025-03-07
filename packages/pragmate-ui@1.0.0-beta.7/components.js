@@ -140,7 +140,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       *******************************/
 
       ims.set('./button/button', {
-        hash: 2765231862,
+        hash: 28591129,
         creator: function (require, exports) {
           "use strict";
 
