@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 874807691,
+        hash: 1753067128,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -63,7 +63,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
             },
             "messages": {
               "authorized": "Ya tienes acceso al aula",
-              "pending,": "Tu solicitud de acceso está pendiente de aprobación por el profesor"
+              "pending,": "Tu solicitud de acceso está pendiente de aprobación por el profesor",
+              "pending": "Tu solicitud de acceso está pendiente de aprobación por el profesor"
             },
             "ready": {
               "title": "Solicitud enviada",
