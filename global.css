@@ -125,21 +125,6 @@ option {
 .pui-modal.pui-confirm-dialog .actions .pui-button {
   width: auto !important;
 }
-:host-context(html[data-beyond-mode=dark]) {
-  --option-success-bg: var(--success-40);
-  --option-error-bg: var(--error-40);
-}
-
-:host-context(html) {
-  --option-success-bg: var(--success-70);
-  --option-error-bg: var(--error-70);
-}
-
-:host-context(html[data-beyond-mode=light]) {
-  --option-success-bg: var(--success-60);
-  --option-error-bg: var(--error-40);
-}
-
 .question__container--results .option-item {
   padding: 1rem;
   border-radius: var(--border-radius-base);
@@ -147,14 +132,14 @@ option {
   border: 1px solid var(--outline);
 }
 .question__container--results .option-item.option--selected, .question__container--results .option-item.option--correct {
-  background: var(--option-success-bg);
-  color: var(--on-primary);
-  border: var(--option-success-bg);
+  background: var(--success-container);
+  color: var(--on-success-container);
+  border: var(--success-container);
 }
 .question__container--results .option-item.option--wrong {
-  background: var(--option-error-bg);
-  color: var(--on-primary);
-  border: var(--option-error-bg);
+  background: var(--error-container);
+  color: var(--on-error-container);
+  border: var(--error-container);
 }
 select,
 .pui-mobile-select {
