@@ -1,22 +1,15 @@
-System.register([], function (_export, _context) {
-	'use strict';
-
+System.register([], function (a, e) {
 	return {
 		setters: [],
 		execute: function () {
-			_export('default', {
+			a('default', {
 				package: '@aimpact/ailearn-app',
 				version: '0.3.22',
-				languages: {
-					default: 'en',
-					supported: ['en', 'es', 'pt']
-				},
-				environment: 'development',
-				'global.css': true,
+				languages: { default: 'en', supported: ['en', 'es', 'pt'] },
+				environment: 'production',
+				'global.css': !0,
 				params: {
-					config: {
-						system: false
-					},
+					config: { system: !1 },
 					container: 'file',
 					project: 'ailearn-estrada',
 					APP_NAME: 'RVD.AI',
@@ -24,15 +17,10 @@ System.register([], function (_export, _context) {
 					url: 'https://documents-rb5caohzgq-wl.a.run.app/upload',
 					DOCUMENTS_SERVER: 'https://documents-rb5caohzgq-wl.a.run.app',
 					CHAT_API_SERVER: 'https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload',
-					beta: false,
-					elevenlabs: {
-						key: 'ebe05ca0a4d9aafb4024d0666471a0c7',
-						id: 'pNInz6obpgDQGcFmaJgB'
-					},
-					baseUrl: 'https://dev.app.rvd.ai',
-					apis: {
-						ailearn: 'https://dev.ailearn.api.aimpact.partners'
-					}
+					beta: !1,
+					elevenlabs: { key: 'ebe05ca0a4d9aafb4024d0666471a0c7', id: 'pNInz6obpgDQGcFmaJgB' },
+					baseUrl: 'https://app.rvd.ai',
+					apis: { ailearn: 'https://ailearn.api.aimpact.partners' }
 				},
 				ssr: {},
 				backend: {}
