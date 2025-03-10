@@ -1,1 +1,127 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle","@aimpact/ailearn-sdk@1.1.0/groups","@aimpact/ailearn-sdk@1.1.0/config","@aimpact/chat-sdk@1.4.1/session","@aimpact/http-suite@0.0.1/api"],function(t,i){var a,n,e,r,o,s,c;return t({Organizations:void 0,Organization:void 0}),{setters:[function(i){a=i},function(i){n=i},function(i){e=i},function(i){r=i},function(i){o=i}],execute:function(){c=a.Bundle,(s=new c({module:{vspecifier:"@aimpact/ailearn-sdk@1.1.0/entities/organizations"},type:"ts"},i.meta.url).package()).dependencies.update([["@aimpact/ailearn-sdk/groups",n],["@aimpact/ailearn-sdk/config",e],["@aimpact/chat-sdk/session",r],["@aimpact/http-suite/api",o]]),(c=new Map).set("./collection",{hash:1470987630,creator:function(i,a){Object.defineProperty(a,"__esModule",{value:!0}),a.Organizations=void 0;var n=i("@aimpact/ailearn-sdk/groups"),t=i("./item");class e extends n.Groups{constructor(i){super("organizations",t.Organization)}}a.Organizations=e}}),c.set("./item",{hash:528223131,creator:function(i,a){Object.defineProperty(a,"__esModule",{value:!0}),a.Organization=void 0;var n=i("@aimpact/ailearn-sdk/config"),t=i("@aimpact/ailearn-sdk/groups"),e=i("@aimpact/chat-sdk/session"),r=i("@aimpact/http-suite/api");class o extends t.GroupItem{#api;constructor(i){super("organizations",{...i,properties:["address","type","educationalLevel","coins","code"]}),this.#api=new r.Api(n.default.params.apis.ailearn)}async freeTrial(i={}){return this.#api.bearer(e.sessionWrapper.user.token),this.#api.post(`/organizations/${this.id}/free-trial`,i)}async join(i){return this.provider.join(i)}}a.Organization=o}}),s.exports.descriptor=[{im:"./collection",from:"Organizations",name:"Organizations"},{im:"./item",from:"Organization",name:"Organization"}],s.exports.process=function({require:i,prop:a,value:n}){!i&&"Organizations"!==a||t("Organizations",i?i("./collection").Organizations:n),!i&&"Organization"!==a||t("Organization",i?i("./item").Organization:n)},t("__beyond_pkg",s),t("hmr",new function(){this.on=(i,a)=>s.hmr.on(i,a),this.off=(i,a)=>s.hmr.off(i,a)}),s.initialise(c)}}});
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/ailearn-sdk@1.1.0/groups", "@aimpact/ailearn-sdk@1.1.0/config", "@aimpact/chat-sdk@1.4.1/session", "@aimpact/http-suite@0.0.1/api"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Organizations, Organization, __beyond_pkg, hmr;
+  _export({
+    Organizations: void 0,
+    Organization: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel019Bundle) {
+      dependency_0 = _beyondJsKernel019Bundle;
+    }, function (_aimpactAilearnSdk110Groups) {
+      dependency_1 = _aimpactAilearnSdk110Groups;
+    }, function (_aimpactAilearnSdk110Config) {
+      dependency_2 = _aimpactAilearnSdk110Config;
+    }, function (_aimpactChatSdk141Session) {
+      dependency_3 = _aimpactChatSdk141Session;
+    }, function (_aimpactHttpSuite001Api) {
+      dependency_4 = _aimpactHttpSuite001Api;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@aimpact/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.4.1"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "1.2.0"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@types/node", "22.5.5"], ["dexie", "4.0.8"], ["firebase", "10.13.2"], ["pragmate-ui", "0.0.6"], ["react-select", "5.8.1"], ["socket.io-client", "4.7.5"], ["zod", "3.23.8"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-app", "0.3.20"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-sdk@1.1.0/entities/organizations"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@aimpact/ailearn-sdk/groups', dependency_1], ['@aimpact/ailearn-sdk/config', dependency_2], ['@aimpact/chat-sdk/session', dependency_3], ['@aimpact/http-suite/api', dependency_4]]);
+      ims = new Map();
+      /****************************
+      INTERNAL MODULE: ./collection
+      ****************************/
+      ims.set('./collection', {
+        hash: 1470987630,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Organizations = void 0;
+          var _groups = require("@aimpact/ailearn-sdk/groups");
+          var _item = require("./item");
+          /*bundle */ //your code here
+          class Organizations extends _groups.Groups {
+            constructor(args) {
+              super('organizations', _item.Organization);
+            }
+          }
+          exports.Organizations = Organizations;
+        }
+      });
+
+      /**********************
+      INTERNAL MODULE: ./item
+      **********************/
+
+      ims.set('./item', {
+        hash: 528223131,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Organization = void 0;
+          var _config = require("@aimpact/ailearn-sdk/config");
+          var _groups = require("@aimpact/ailearn-sdk/groups");
+          var _session = require("@aimpact/chat-sdk/session");
+          var _api = require("@aimpact/http-suite/api");
+          /*bundle */ //your code here
+          class Organization extends _groups.GroupItem {
+            #api;
+            constructor(args) {
+              super('organizations', {
+                ...args,
+                properties: ['address', 'type', 'educationalLevel', 'coins', 'code']
+              });
+              this.#api = new _api.Api(_config.default.params.apis.ailearn);
+            }
+            async freeTrial(data = {}) {
+              this.#api.bearer(_session.sessionWrapper.user.token);
+              return this.#api.post(`/organizations/${this.id}/free-trial`, data);
+            }
+            async join(specs) {
+              return await this.provider.join(specs);
+            }
+          }
+          exports.Organization = Organization;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./collection",
+        "from": "Organizations",
+        "name": "Organizations"
+      }, {
+        "im": "./item",
+        "from": "Organization",
+        "name": "Organization"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Organizations') && _export("Organizations", Organizations = require ? require('./collection').Organizations : value);
+        (require || prop === 'Organization') && _export("Organization", Organization = require ? require('./item').Organization : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZ3JvdXBzIiwicmVxdWlyZSIsIl9pdGVtIiwiT3JnYW5pemF0aW9ucyIsIkdyb3VwcyIsImNvbnN0cnVjdG9yIiwiYXJncyIsIk9yZ2FuaXphdGlvbiIsImV4cG9ydHMiLCJfY29uZmlnIiwiX3Nlc3Npb24iLCJfYXBpIiwiR3JvdXBJdGVtIiwiYXBpIiwicHJvcGVydGllcyIsIkFwaSIsImRlZmF1bHQiLCJwYXJhbXMiLCJhcGlzIiwiYWlsZWFybiIsImZyZWVUcmlhbCIsImRhdGEiLCJiZWFyZXIiLCJzZXNzaW9uV3JhcHBlciIsInVzZXIiLCJ0b2tlbiIsInBvc3QiLCJpZCIsImpvaW4iLCJzcGVjcyIsInByb3ZpZGVyIl0sInNvdXJjZXMiOlsiL2NvbGxlY3Rpb24udHMiLCIvaXRlbS50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsT0FBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsS0FBQSxHQUFBRCxPQUFBO1VBR08sWUFEUDtVQUNrQixNQUFPRSxhQUFjLFNBQVFILE9BQUEsQ0FBQUksTUFBTTtZQUNwREMsWUFBWUMsSUFBSTtjQUNmLEtBQUssQ0FBQyxlQUFlLEVBQUVKLEtBQUEsQ0FBQUssWUFBWSxDQUFDO1lBQ3JDOztVQUNBQyxPQUFBLENBQUFMLGFBQUEsR0FBQUEsYUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNSRCxJQUFBTSxPQUFBLEdBQUFSLE9BQUE7VUFDQSxJQUFBRCxPQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBUyxRQUFBLEdBQUFULE9BQUE7VUFDQSxJQUFBVSxJQUFBLEdBQUFWLE9BQUE7VUFFTyxZQURQO1VBQ2tCLE1BQU9NLFlBQWEsU0FBUVAsT0FBQSxDQUFBWSxTQUFTO1lBQ3RELENBQUFDLEdBQUk7WUFFSlIsWUFBWUMsSUFBSztjQUNoQixLQUFLLENBQUMsZUFBZSxFQUFFO2dCQUN0QixHQUFHQSxJQUFJO2dCQUNQUSxVQUFVLEVBQUUsQ0FBQyxTQUFTLEVBQUUsTUFBTSxFQUFFLGtCQUFrQixFQUFFLE9BQU8sRUFBRSxNQUFNO2VBQ25FLENBQUM7Y0FDRixJQUFJLENBQUMsQ0FBQUQsR0FBSSxHQUFHLElBQUlGLElBQUEsQ0FBQUksR0FBRyxDQUFDTixPQUFBLENBQUFPLE9BQU0sQ0FBQ0MsTUFBTSxDQUFDQyxJQUFJLENBQUNDLE9BQU8sQ0FBQztZQUNoRDtZQUVBLE1BQU1DLFNBQVNBLENBQUNDLElBQUksR0FBRyxFQUFFO2NBQ3hCLElBQUksQ0FBQyxDQUFBUixHQUFJLENBQUNTLE1BQU0sQ0FBQ1osUUFBQSxDQUFBYSxjQUFjLENBQUNDLElBQUksQ0FBQ0MsS0FBSyxDQUFDO2NBQzNDLE9BQU8sSUFBSSxDQUFDLENBQUFaLEdBQUksQ0FBQ2EsSUFBSSxDQUFDLGtCQUFrQixJQUFJLENBQUNDLEVBQUUsYUFBYSxFQUFFTixJQUFJLENBQUM7WUFDcEU7WUFFQSxNQUFNTyxJQUFJQSxDQUFDQyxLQUFLO2NBQ2YsT0FBTyxNQUFNLElBQUksQ0FBQ0MsUUFBUSxDQUFDRixJQUFJLENBQUNDLEtBQUssQ0FBQztZQUN2Qzs7VUFDQXJCLE9BQUEsQ0FBQUQsWUFBQSxHQUFBQSxZQUFBIiwiaWdub3JlTGlzdCI6W119
