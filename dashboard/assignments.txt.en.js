@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1013192641,
+        hash: 1240125880,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -43,7 +43,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "empty": "The student has not yet completed this activity",
               "noAnalysis": "The student has not made any progress on this objective",
               "interactions": "Interactions",
-              "chat": "Conversation",
+              "chat": "View chat",
               "status": {
                 "done": "Done",
                 "pending": "Pending"

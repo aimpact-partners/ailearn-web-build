@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1787686285,
+        hash: 4171778809,
         creator: function (require, exports) {
           exports.txt = {
             "assign": {
@@ -37,6 +37,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
                 "share": "Asignar módulo a aulas",
                 "dashboard": "Acceder a dashboard de la asignación"
               },
+              "assigned": "Asignado",
               "noAssigned": "No hay aulas asignadas",
               "module": "Módulo",
               "messages": {
