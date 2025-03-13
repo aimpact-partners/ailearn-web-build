@@ -1,7 +1,7 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/agents-api@0.4.1/realtime/audio/worklet-bridge"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/agents-api@0.4.1/realtime/audio/worklet-bridge", "@aimpact/agents-api@0.4.1/config"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, bimport, __Bundle, __pkg, ims, IPlayerWorkletConfig, StreamWorkletBridge, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, IPlayerWorkletConfig, StreamWorkletBridge, __beyond_pkg, hmr;
   _export({
     IPlayerWorkletConfig: void 0,
     StreamWorkletBridge: void 0
@@ -11,6 +11,8 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/agents-api@0.4.1/re
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_aimpactAgentsApi041RealtimeAudioWorkletBridge) {
       dependency_1 = _aimpactAgentsApi041RealtimeAudioWorkletBridge;
+    }, function (_aimpactAgentsApi041Config) {
+      dependency_2 = _aimpactAgentsApi041Config;
     }],
     execute: function () {
       bimport = specifier => {
@@ -27,13 +29,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/agents-api@0.4.1/re
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@aimpact/agents-api/realtime/audio/worklet-bridge', dependency_1]]);
+      __pkg.dependencies.update([['@aimpact/agents-api/realtime/audio/worklet-bridge', dependency_1], ['@aimpact/agents-api/config', dependency_2]]);
       ims = new Map();
       /***********************
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 2552233324,
+        hash: 2899756593,
         creator: function (require, exports) {
           "use strict";
 
@@ -42,11 +44,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/agents-api@0.4.1/re
           });
           exports.StreamWorkletBridge = void 0;
           var _workletBridge = require("@aimpact/agents-api/realtime/audio/worklet-bridge");
+          var _config = require("@aimpact/agents-api/config");
           /*bundle*/
           class StreamWorkletBridge extends _workletBridge.WorkletBridge {
             constructor(context, timeout) {
               // super(context, 'stream_processor', './realtime/audio/player/worklet/processor/index.js', timeout);
-              super(context, 'stream_processor', '/packages/@aimpact/agents-api@0.4.0/realtime/audio/player/worklet/processor/index.js', timeout);
+              super(context, 'stream_processor', `/packages/${_config.default.package}@${_config.default.version}/realtime/audio/player/worklet/processor/index.js`, timeout);
             }
           }
           exports.StreamWorkletBridge = StreamWorkletBridge;
@@ -79,4 +82,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/agents-api@0.4.1/re
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfd29ya2xldEJyaWRnZSIsInJlcXVpcmUiLCJTdHJlYW1Xb3JrbGV0QnJpZGdlIiwiV29ya2xldEJyaWRnZSIsImNvbnN0cnVjdG9yIiwiY29udGV4dCIsInRpbWVvdXQiLCJleHBvcnRzIl0sInNvdXJjZXMiOlsiL2luZGV4LnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsY0FBQSxHQUFBQyxPQUFBO1VBSU87VUFBVSxNQUFPQyxtQkFBb0IsU0FBUUYsY0FBQSxDQUFBRyxhQUFhO1lBQ2hFQyxZQUFZQyxPQUFxQixFQUFFQyxPQUFnQjtjQUNsRDtjQUNBLEtBQUssQ0FDSkQsT0FBTyxFQUNQLGtCQUFrQixFQUNsQixzRkFBc0YsRUFDdEZDLE9BQU8sQ0FDUDtZQUNGOztVQUNBQyxPQUFBLENBQUFMLG1CQUFBLEdBQUFBLG1CQUFBIiwiaWdub3JlTGlzdCI6W119
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfd29ya2xldEJyaWRnZSIsInJlcXVpcmUiLCJfY29uZmlnIiwiU3RyZWFtV29ya2xldEJyaWRnZSIsIldvcmtsZXRCcmlkZ2UiLCJjb25zdHJ1Y3RvciIsImNvbnRleHQiLCJ0aW1lb3V0IiwiZGVmYXVsdCIsInBhY2thZ2UiLCJ2ZXJzaW9uIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIi9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsY0FBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsT0FBQSxHQUFBRCxPQUFBO1VBSU87VUFBVSxNQUFPRSxtQkFBb0IsU0FBUUgsY0FBQSxDQUFBSSxhQUFhO1lBQ2hFQyxZQUFZQyxPQUFxQixFQUFFQyxPQUFnQjtjQUNsRDtjQUNBLEtBQUssQ0FDSkQsT0FBTyxFQUNQLGtCQUFrQixFQUNsQixhQUFhSixPQUFBLENBQUFNLE9BQU0sQ0FBQ0MsT0FBTyxJQUFJUCxPQUFBLENBQUFNLE9BQU0sQ0FBQ0UsT0FBTyxtREFBbUQsRUFDaEdILE9BQU8sQ0FDUDtZQUNGOztVQUNBSSxPQUFBLENBQUFSLG1CQUFBLEdBQUFBLG1CQUFBIiwiaWdub3JlTGlzdCI6W119

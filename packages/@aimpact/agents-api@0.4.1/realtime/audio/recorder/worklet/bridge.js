@@ -1,13 +1,15 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/agents-api@0.4.1/realtime/audio/worklet-bridge"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/agents-api@0.4.1/realtime/audio/worklet-bridge", "@aimpact/agents-api@0.4.1/config"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, bimport, __Bundle, __pkg, ims, RecorderWorkletBridge, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, RecorderWorkletBridge, __beyond_pkg, hmr;
   _export("RecorderWorkletBridge", void 0);
   return {
     setters: [function (_beyondJsKernel019Bundle) {
       dependency_0 = _beyondJsKernel019Bundle;
     }, function (_aimpactAgentsApi041RealtimeAudioWorkletBridge) {
       dependency_1 = _aimpactAgentsApi041RealtimeAudioWorkletBridge;
+    }, function (_aimpactAgentsApi041Config) {
+      dependency_2 = _aimpactAgentsApi041Config;
     }],
     execute: function () {
       bimport = specifier => {
@@ -24,13 +26,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/agents-api@0.4.1/re
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@aimpact/agents-api/realtime/audio/worklet-bridge', dependency_1]]);
+      __pkg.dependencies.update([['@aimpact/agents-api/realtime/audio/worklet-bridge', dependency_1], ['@aimpact/agents-api/config', dependency_2]]);
       ims = new Map();
       /***********************
       INTERNAL MODULE: ./index
       ***********************/
       ims.set('./index', {
-        hash: 545320038,
+        hash: 3325032668,
         creator: function (require, exports) {
           "use strict";
 
@@ -39,10 +41,11 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/agents-api@0.4.1/re
           });
           exports.RecorderWorkletBridge = void 0;
           var _workletBridge = require("@aimpact/agents-api/realtime/audio/worklet-bridge");
+          var _config = require("@aimpact/agents-api/config");
           /*bundle*/
           class RecorderWorkletBridge extends _workletBridge.WorkletBridge {
             constructor(context, timeout) {
-              super(context, 'recorder_processor', '/packages/@aimpact/agents-api@0.4.0/realtime/audio/recorder/worklet/processor/index.js', timeout);
+              super(context, 'recorder_processor', `/packages/${_config.default.package}@${_config.default.version}/realtime/audio/recorder/worklet/processor/index.js`, timeout);
             }
           }
           exports.RecorderWorkletBridge = RecorderWorkletBridge;
@@ -70,4 +73,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/agents-api@0.4.1/re
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfd29ya2xldEJyaWRnZSIsInJlcXVpcmUiLCJSZWNvcmRlcldvcmtsZXRCcmlkZ2UiLCJXb3JrbGV0QnJpZGdlIiwiY29uc3RydWN0b3IiLCJjb250ZXh0IiwidGltZW91dCIsImV4cG9ydHMiXSwic291cmNlcyI6WyIvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxjQUFBLEdBQUFDLE9BQUE7VUFFTztVQUFVLE1BQU9DLHFCQUFzQixTQUFRRixjQUFBLENBQUFHLGFBQWE7WUFDbEVDLFlBQVlDLE9BQXFCLEVBQUVDLE9BQWdCO2NBQ2xELEtBQUssQ0FDSkQsT0FBTyxFQUNQLG9CQUFvQixFQUNwQix3RkFBd0YsRUFDeEZDLE9BQU8sQ0FDUDtZQUNGOztVQUNBQyxPQUFBLENBQUFMLHFCQUFBLEdBQUFBLHFCQUFBIiwiaWdub3JlTGlzdCI6W119
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfd29ya2xldEJyaWRnZSIsInJlcXVpcmUiLCJfY29uZmlnIiwiUmVjb3JkZXJXb3JrbGV0QnJpZGdlIiwiV29ya2xldEJyaWRnZSIsImNvbnN0cnVjdG9yIiwiY29udGV4dCIsInRpbWVvdXQiLCJkZWZhdWx0IiwicGFja2FnZSIsInZlcnNpb24iLCJleHBvcnRzIl0sInNvdXJjZXMiOlsiL2luZGV4LnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxjQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxPQUFBLEdBQUFELE9BQUE7VUFFTztVQUFVLE1BQU9FLHFCQUFzQixTQUFRSCxjQUFBLENBQUFJLGFBQWE7WUFDbEVDLFlBQVlDLE9BQXFCLEVBQUVDLE9BQWdCO2NBQ2xELEtBQUssQ0FDSkQsT0FBTyxFQUNQLG9CQUFvQixFQUNwQixhQUFhSixPQUFBLENBQUFNLE9BQU0sQ0FBQ0MsT0FBTyxJQUFJUCxPQUFBLENBQUFNLE9BQU0sQ0FBQ0UsT0FBTyxxREFBcUQsRUFDbEdILE9BQU8sQ0FDUDtZQUNGOztVQUNBSSxPQUFBLENBQUFSLHFCQUFBLEdBQUFBLHFCQUFBIiwiaWdub3JlTGlzdCI6W119
