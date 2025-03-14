@@ -692,7 +692,7 @@
   flex-grow: 1;
   gap: 1rem;
   height: 100%;
-  transition: op acity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .pui-drawer.ds-drawer .ds-drawer-container.is-fetching,
 .pui-drawer.ds-drawer .ds-drawer-container .is-fetching {
