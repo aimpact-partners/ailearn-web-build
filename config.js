@@ -4,7 +4,7 @@ System.register([], function (a, e) {
 		execute: function () {
 			a('default', {
 				package: '@aimpact/ailearn-app',
-				version: '0.3.27-beta.01',
+				version: '0.3.27-beta.02',
 				languages: { default: 'en', supported: ['en', 'es', 'pt'] },
 				environment: 'quality',
 				'global.css': !0,
