@@ -6,10 +6,10 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/ailearn-app',
-				version: '0.3.26-dev.01',
+				version: '0.3.29-dev.01',
 				languages: {
 					default: 'en',
-					supported: ['en', 'es', 'pt']
+					supported: ['en', 'es']
 				},
 				environment: 'development',
 				'global.css': true,
