@@ -233,7 +233,7 @@
     flex-direction: column;
   }
   .user-profile .user-profile__content .card__actions {
-    justify-self: flex-end;
+    align-self: flex-end;
   }
 }
 .user-profile .card__actions {
