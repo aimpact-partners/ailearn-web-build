@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/startup", "@aimpact/reactive@0.0.1/entities/item", "@beyond-js/kernel@0.1.9/core", "firebase@10.14.1/auth", "@aimpact/http-suite@0.0.1/api", "@aimpact/chat-sdk@1.4.1/config"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/startup", "@aimpact/reactive@0.0.1/entities/item", "@beyond-js/kernel@0.1.9/core", "firebase@10.14.1/auth", "@beyond-js/http-suite@0.0.1/api", "@aimpact/chat-sdk@1.4.1/config"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, IChatUser, User, __beyond_pkg, hmr;
@@ -17,14 +17,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/star
       dependency_3 = _beyondJsKernel019Core;
     }, function (_firebase10141Auth) {
       dependency_4 = _firebase10141Auth;
-    }, function (_aimpactHttpSuite001Api) {
-      dependency_5 = _aimpactHttpSuite001Api;
+    }, function (_beyondJsHttpSuite001Api) {
+      dependency_5 = _beyondJsHttpSuite001Api;
     }, function (_aimpactChatSdk141Config) {
       dependency_6 = _aimpactChatSdk141Config;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/reactive", "1.1.12"], ["@aimpact/http-suite", "0.0.1"], ["@aimpact/reactive", "0.0.1"], ["@aimpact/agents-api", "0.4.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/widgets", "1.1.0"], ["@google-cloud/storage", "7.15.0"], ["dompurify", "3.1.7"], ["firebase", "10.14.1"], ["highlight.js", "11.10.0"], ["katex", "0.16.11"], ["marked", "14.1.3"], ["marked-gfm-heading-id", "4.1.0"], ["marked-highlight", "2.2.0"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["pragmate-ui", "1.0.0-beta.6"], ["prism-themes", "1.9.0"], ["prismjs", "1.29.0"], ["socket.io-client", "4.8.1"], ["wavesurfer.js", "7.8.8"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["typescript", "5.6.3"], ["@aimpact/chat-sdk", "1.4.1"], ["@aimpact/ailearn-app", "0.3.24"]]);
+        const dependencies = new Map([["@beyond-js/reactive", "1.1.12"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/reactive", "0.0.1"], ["@aimpact/agents-api", "0.4.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "0.0.6"], ["@beyond-js/widgets", "1.1.0"], ["@google-cloud/storage", "7.15.0"], ["dompurify", "3.1.7"], ["firebase", "10.14.1"], ["highlight.js", "11.10.0"], ["katex", "0.16.11"], ["marked", "14.1.3"], ["marked-gfm-heading-id", "4.1.0"], ["marked-highlight", "2.2.0"], ["marked-mangle", "1.1.9"], ["media-suite", "0.0.4"], ["pragmate-ui", "1.0.0-beta.6"], ["prism-themes", "1.9.0"], ["prismjs", "1.29.0"], ["socket.io-client", "4.8.1"], ["wavesurfer.js", "7.8.8"], ["zod", "3.23.8"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["typescript", "5.6.3"], ["@aimpact/chat-sdk", "1.4.1"], ["@aimpact/ailearn-app", "0.3.29"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -37,7 +37,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/star
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@aimpact/chat-sdk/startup', dependency_1], ['@aimpact/reactive/entities/item', dependency_2], ['@beyond-js/kernel/core', dependency_3], ['firebase/auth', dependency_4], ['@aimpact/http-suite/api', dependency_5], ['@aimpact/chat-sdk/config', dependency_6]]);
+      __pkg.dependencies.update([['@aimpact/chat-sdk/startup', dependency_1], ['@aimpact/reactive/entities/item', dependency_2], ['@beyond-js/kernel/core', dependency_3], ['firebase/auth', dependency_4], ['@beyond-js/http-suite/api', dependency_5], ['@aimpact/chat-sdk/config', dependency_6]]);
       ims = new Map();
       /***************************
       INTERNAL MODULE: ./interface
@@ -150,7 +150,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/star
       **************************/
 
       ims.set('./provider', {
-        hash: 1081948398,
+        hash: 1862273026,
         creator: function (require, exports) {
           "use strict";
 
@@ -158,7 +158,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/chat-sdk@1.4.1/star
             value: true
           });
           exports.UserProvider = void 0;
-          var _api = require("@aimpact/http-suite/api");
+          var _api = require("@beyond-js/http-suite/api");
           var _startup = require("@aimpact/chat-sdk/startup");
           class UserProvider {
             #api;

@@ -13,7 +13,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/reactive", "1.1.6"], ["socket.io-client", "4.7.2"], ["zod", "3.24.1"], ["@aimpact/http-suite", "0.0.1"], ["@aimpact/ailearn-app", "0.3.24"]]);
+        const dependencies = new Map([["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/reactive", "1.1.6"], ["socket.io-client", "4.7.2"], ["zod", "3.24.1"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/ailearn-app", "0.3.29"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -21,7 +21,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@aimpact/http-suite@0.0.1/api"
+          "vspecifier": "@beyond-js/http-suite@0.0.1/api"
         },
         "type": "ts"
       }, _context.meta.url).package();

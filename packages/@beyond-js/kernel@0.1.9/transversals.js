@@ -1,208 +1,182 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle"], (_exports, _context) => {
+System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
+  "use strict";
 
-const bimport = specifier => {
-	const dependencies = new Map([["@beyond-js/kernel","0.1.9"]]);
-	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
-};
+  var dependency_0, bimport, __Bundle, __pkg, ims, Transversal, __beyond_pkg, hmr;
+  _export("Transversal", void 0);
+  return {
+    setters: [function (_beyondJsKernel019Bundle) {
+      dependency_0 = _beyondJsKernel019Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/backend", null], ["@types/node", "18.11.18"], ["@beyond-js/kernel", "0.1.9"], ["@aimpact/ailearn-app", "0.3.29"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@beyond-js/kernel@0.1.9/transversals"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /******************************
+      INTERNAL MODULE: ./dependencies
+      ******************************/
+      ims.set('./dependencies', {
+        hash: 916907578,
+        creator: function (require, exports) {
+          "use strict";
 
-
-var dependencies = new Map();
-var require = dependency => dependencies.get(dependency);
-return {
-setters: [dep => dependencies.set('@beyond-js/kernel@0.1.9/bundle', dep)],
-execute: function() {
-// Prevent esbuild from considering the context to be amd
-const define = void 0;
-const module = {};
-
-const code = (module, require) => {
-var __create = Object.create;
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __export = (target, all) => {
-  for (var name in all) __defProp(target, name, {
-    get: all[name],
-    enumerable: true
-  });
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, {
-      get: () => from[key],
-      enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
-    });
-  }
-  return to;
-};
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", {
-  value: mod,
-  enumerable: true
-}) : target, mod));
-var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
-  value: true
-}), mod);
-
-// .beyond/uimport/@beyond-js/kernel/transversals.0.1.9.js
-var transversals_0_1_9_exports = {};
-__export(transversals_0_1_9_exports, {
-  Transversal: () => Transversal,
-  __beyond_pkg: () => __beyond_pkg,
-  hmr: () => hmr
-});
-module.exports = __toCommonJS(transversals_0_1_9_exports);
-
-// node_modules/@beyond-js/kernel/transversals/transversals.browser.mjs
-var dependency_0 = __toESM(require("@beyond-js/kernel@0.1.9/bundle"), 0);
-var import_meta = {};
-var {
-  Bundle: __Bundle
-} = dependency_0;
-var __pkg = new __Bundle({
-  "module": {
-    "vspecifier": "@beyond-js/kernel@0.1.9/transversals"
-  },
-  "type": "ts"
-}, _context.meta.url).package();
-;
-__pkg.dependencies.update([]);
-var ims = /* @__PURE__ */new Map();
-ims.set("./dependencies", {
-  hash: 916907578,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.default = void 0;
-    class _default extends Map {
-      update(deps) {
-        this.clear();
-        deps?.forEach(([specifier, dependency]) => this.set(specifier, dependency));
-      }
-    }
-    exports.default = _default;
-  }
-});
-ims.set("./transversal", {
-  hash: 2292377186,
-  creator: function (require2, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports.Transversal = void 0;
-    var _bundle = require2("@beyond-js/kernel/bundle");
-    var _dependencies = require2("./dependencies");
-    class Transversal2 {
-      #name;
-      get name() {
-        return this.#name;
-      }
-      #language;
-      get language() {
-        return this.#language;
-      }
-      #bundles = /* @__PURE__ */new Map();
-      get bundles() {
-        return this.#bundles;
-      }
-      #dependencies = new _dependencies.default();
-      get dependencies() {
-        return this.#dependencies;
-      }
-      constructor(name, language) {
-        this.#name = name;
-        this.#language = language;
-      }
-      #initialised = false;
-      initialise(bundles) {
-        if (this.#initialised) throw new Error(`Transversal "${this.#name}" already initialised`);
-        this.#initialised = true;
-        const packages = /* @__PURE__ */new Map();
-        bundles.forEach(([specs, creator]) => {
-          const pkg = new _bundle.Bundle(specs).package(this.#language);
-          const ims2 = /* @__PURE__ */new Map();
-          const exports2 = {};
-          const response = creator(ims2, exports2);
-          const {
-            dependencies
-          } = response ? response : {
-            dependencies: void 0
-          };
-          pkg.exports.descriptor = exports2.descriptor;
-          packages.set(pkg.specifier, {
-            pkg,
-            dependencies,
-            ims: ims2
+          Object.defineProperty(exports, "__esModule", {
+            value: true
           });
-        });
-        packages.forEach(({
-          pkg,
-          dependencies,
-          ims: ims2
-        }) => {
-          const register = (() => {
-            const register2 = [];
-            dependencies?.forEach(specifier => {
-              if (this.#dependencies.has(specifier)) {
-                register2.push([specifier, this.#dependencies.get(specifier)]);
-                return;
-              }
-              if (!packages.has(specifier)) {
-                const data = `
-	Dependencies: ${JSON.stringify([...this.#dependencies.keys()])}. 
-	Bundles: ${JSON.stringify([...packages.keys()])}`;
-                throw new Error(`Dependency "${specifier}" not found on "${this.#name}" transversal. ${data}`);
-              }
-              const {
-                pkg: pkg2
-              } = packages.get(specifier);
-              register2.push([specifier, pkg2.exports.values]);
-            });
-            return register2;
-          })();
-          packages.forEach(({
-            pkg: pkg2
-          }) => this.#bundles.set(pkg2.specifier, pkg2.exports.values));
-          register && pkg.dependencies.update(register);
-          pkg.ims.register(ims2);
-        });
-        packages.forEach(({
-          pkg
-        }) => !pkg.initialised && pkg.initialise());
-      }
+          exports.default = void 0;
+          class _default extends Map {
+            update(deps) {
+              this.clear();
+              deps?.forEach(([specifier, dependency]) => this.set(specifier, dependency));
+            }
+          }
+          exports.default = _default;
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./transversal
+      *****************************/
+
+      ims.set('./transversal', {
+        hash: 2292377186,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Transversal = void 0;
+          var _bundle = require("@beyond-js/kernel/bundle");
+          var _dependencies = require("./dependencies");
+          /*bundle*/
+          class Transversal {
+            #name;
+            get name() {
+              return this.#name;
+            }
+            #language;
+            get language() {
+              return this.#language;
+            }
+            #bundles = new Map();
+            get bundles() {
+              return this.#bundles;
+            }
+            #dependencies = new _dependencies.default();
+            get dependencies() {
+              return this.#dependencies;
+            }
+            constructor(name, language) {
+              this.#name = name;
+              this.#language = language;
+            }
+            #initialised = false;
+            initialise(bundles) {
+              if (this.#initialised) throw new Error(`Transversal "${this.#name}" already initialised`);
+              this.#initialised = true;
+              const packages = new Map();
+              /**
+               * First create the bundles and then initialize them,
+               * to allow dependencies among bundles of the same traversal
+               */
+              bundles.forEach(([specs, creator]) => {
+                const pkg = new _bundle.Bundle(specs).package(this.#language);
+                const ims = new Map(); // The internal modules map
+                const exports = {}; // The exports.managed function
+                // Execute the bundle creation function
+                const response = creator(ims, exports);
+                const {
+                  dependencies
+                } = response ? response : {
+                  dependencies: void 0
+                };
+                // Set the descriptor of the exports
+                pkg.exports.descriptor = exports.descriptor;
+                // Store the package and its dependencies to register the dependencies once all the bundles
+                // of the transversal are created
+                packages.set(pkg.specifier, {
+                  pkg,
+                  dependencies,
+                  ims
+                });
+              });
+              /**
+               * Once all the bundles of the transversal are created,
+               * then register all the dependencies of the packages
+               */
+              packages.forEach(({
+                pkg,
+                dependencies,
+                ims
+              }) => {
+                const register = (() => {
+                  const register = [];
+                  dependencies?.forEach(specifier => {
+                    if (this.#dependencies.has(specifier)) {
+                      register.push([specifier, this.#dependencies.get(specifier)]);
+                      return;
+                    }
+                    // Check if dependency is a bundle of the transversal
+                    if (!packages.has(specifier)) {
+                      const data = `\n\tDependencies: ${JSON.stringify([...this.#dependencies.keys()])}. ` + `\n\tBundles: ${JSON.stringify([...packages.keys()])}`;
+                      throw new Error(`Dependency "${specifier}" not found on "${this.#name}" transversal. ${data}`);
+                    }
+                    const {
+                      pkg
+                    } = packages.get(specifier);
+                    register.push([specifier, pkg.exports.values]);
+                  });
+                  return register;
+                })();
+                packages.forEach(({
+                  pkg
+                }) => this.#bundles.set(pkg.specifier, pkg.exports.values));
+                register && pkg.dependencies.update(register);
+                // Register the ims, but do not initialise them until all bundles of the transversal are set
+                // To allow dependencies among bundles
+                pkg.ims.register(ims);
+              });
+              packages.forEach(({
+                pkg
+              }) => !pkg.initialised && pkg.initialise());
+            }
+          }
+          exports.Transversal = Transversal;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./transversal",
+        "from": "Transversal",
+        "name": "Transversal"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Transversal') && _export("Transversal", Transversal = require ? require('./transversal').Transversal : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
     }
-    exports.Transversal = Transversal2;
-  }
+  };
 });
-__pkg.exports.descriptor = [{
-  "im": "./transversal",
-  "from": "Transversal",
-  "name": "Transversal"
-}];
-var Transversal;
-__pkg.exports.process = function ({
-  require: require2,
-  prop,
-  value
-}) {
-  (require2 || prop === "Transversal") && (Transversal = require2 ? require2("./transversal").Transversal : value);
-};
-var __beyond_pkg = __pkg;
-var hmr = new function () {
-  this.on = (event, listener) => void 0;
-  this.off = (event, listener) => void 0;
-}();
-__pkg.initialise(ims);
-};
-
-code(module, require);
-_exports(module.exports);
-}}});
-
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC9AYmV5b25kLWpzL2tlcm5lbC90cmFuc3ZlcnNhbHMuMC4xLjkuanMiLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy9rZXJuZWwvdHJhbnN2ZXJzYWxzL19fc291cmNlcy90cmFuc3ZlcnNhbHMvZGVwZW5kZW5jaWVzLnRzIiwiLi4vbm9kZV9tb2R1bGVzL0BiZXlvbmQtanMva2VybmVsL3RyYW5zdmVyc2Fscy9fX3NvdXJjZXMvdHJhbnN2ZXJzYWxzL3RyYW5zdmVyc2FsLnRzIl0sIm5hbWVzIjpbInRyYW5zdmVyc2Fsc18wXzFfOV9leHBvcnRzIiwiX19leHBvcnQiLCJUcmFuc3ZlcnNhbCIsIl9fYmV5b25kX3BrZyIsImhtciIsIm1vZHVsZSIsImV4cG9ydHMiLCJfX3RvQ29tbW9uSlMiLCJfZGVmYXVsdCIsIk1hcCIsInVwZGF0ZSIsImRlcHMiLCJjbGVhciIsImZvckVhY2giLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmN5Iiwic2V0IiwiZGVmYXVsdCIsIl9idW5kbGUiLCJyZXF1aXJlMiIsIl9kZXBlbmRlbmNpZXMiLCJUcmFuc3ZlcnNhbDIiLCJuYW1lIiwibGFuZ3VhZ2UiLCJidW5kbGVzIiwiZGVwZW5kZW5jaWVzIiwiY29uc3RydWN0b3IiLCJpbml0aWFsaXNlZCIsImluaXRpYWxpc2UiLCJFcnJvciIsInBhY2thZ2VzIiwic3BlY3MiLCJjcmVhdG9yIiwicGtnIiwiQnVuZGxlIiwicGFja2FnZSIsImltczIiLCJleHBvcnRzMiIsInJlc3BvbnNlIiwiZGVzY3JpcHRvciIsImltcyIsInJlZ2lzdGVyIiwicmVnaXN0ZXIyIiwiaGFzIiwicHVzaCIsImdldCIsImRhdGEiLCJKU09OIiwic3RyaW5naWZ5Iiwia2V5cyIsInBrZzIiLCJ2YWx1ZXMiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLElBQUFBLDBCQUFBO0FBQUFDLFFBQUEsQ0FB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LElBQUksS0FBSyxDQUFBVyxZQUFBLENBQWNrQixHQUFBLENBQUk3QixTQUFTLEdBQUc7Z0JBQ25DNEIsU0FBQSxDQUFTRSxJQUFBLENBQUssQ0FBQzlCLFNBQUEsRUFBVyxLQUFLLENBQUFXLFlBQUEsQ0FBY29CLEdBQUEsQ0FBSS9CLFNBQVMsQ0FBQyxDQUFDO2dCQUM1RDs7Y0FJSixJQUFJLENBQUNnQixRQUFBLENBQVNhLEdBQUEsQ0FBSTdCLFNBQVMsR0FBRztnQkFDMUIsTUFBTWdDLElBQUEsR0FBTztpQkFBcUJDLElBQUEsQ0FBS0MsU0FBQSxDQUFVLENBQUMsR0FBRyxLQUFLLENBQUF2QixZQUFBLENBQWN3QixJQUFBLENBQUksQ0FBRSxDQUFDO1lBQzNERixJQUFBLENBQUtDLFNBQUEsQ0FBVSxDQUFDLEdBQUdsQixRQUFBLENBQVNtQixJQUFBLENBQUksQ0FBRSxDQUFDO2dCQUN2RCxNQUFNLElBQUlwQixLQUFBLENBQU0sZUFBZWYsU0FBQSxtQkFBNEIsS0FBSyxDQUFBUSxJQUFBLGtCQUF1QndCLElBQUEsRUFBTTs7Y0FHakcsTUFBTTtnQkFBQ2IsR0FBQSxFQUFBaUI7Y0FBRyxJQUFJcEIsUUFBQSxDQUFTZSxHQUFBLENBQUkvQixTQUFTO2NBQ3BDNEIsU0FBQSxDQUFTRSxJQUFBLENBQUssQ0FBQzlCLFNBQUEsRUFBV29DLElBQUEsQ0FBSTVDLE9BQUEsQ0FBUTZDLE1BQU0sQ0FBQztZQUNqRCxDQUFDO1lBQ0QsT0FBT1QsU0FBQTtVQUNYLEdBQUM7VUFFRFosUUFBQSxDQUFTakIsT0FBQSxDQUFRLENBQUM7WUFBQ29CLEdBQUEsRUFBQWlCO1VBQUcsTUFBTSxLQUFLLENBQUExQixPQUFBLENBQVNSLEdBQUEsQ0FBSWtDLElBQUEsQ0FBSXBDLFNBQUEsRUFBV29DLElBQUEsQ0FBSTVDLE9BQUEsQ0FBUTZDLE1BQU0sQ0FBQztVQUVoRlYsUUFBQSxJQUFZUixHQUFBLENBQUlSLFlBQUEsQ0FBYWYsTUFBQSxDQUFPK0IsUUFBUTtVQUk1Q1IsR0FBQSxDQUFJTyxHQUFBLENBQUlDLFFBQUEsQ0FBU0wsSUFBRztRQUN4QixDQUFDO1FBRUROLFFBQUEsQ0FBU2pCLE9BQUEsQ0FBUSxDQUFDO1VBQUNvQjtRQUFHLE1BQU0sQ0FBQ0EsR0FBQSxDQUFJTixXQUFBLElBQWVNLEdBQUEsQ0FBSUwsVUFBQSxDQUFVLENBQUU7TUFDcEU7O0lBQ0h0QixPQUFBLENBQUFKLFdBQUEsR0FBQW1CLFlBQUEiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii9haS9haWxlYXJuL2NsaWVudC9hcHAvb3V0In0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGVmYXVsdCIsIk1hcCIsInVwZGF0ZSIsImRlcHMiLCJjbGVhciIsImZvckVhY2giLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmN5Iiwic2V0IiwiZXhwb3J0cyIsImRlZmF1bHQiLCJfYnVuZGxlIiwicmVxdWlyZSIsIl9kZXBlbmRlbmNpZXMiLCJUcmFuc3ZlcnNhbCIsIm5hbWUiLCJsYW5ndWFnZSIsImJ1bmRsZXMiLCJkZXBlbmRlbmNpZXMiLCJjb25zdHJ1Y3RvciIsImluaXRpYWxpc2VkIiwiaW5pdGlhbGlzZSIsIkVycm9yIiwicGFja2FnZXMiLCJzcGVjcyIsImNyZWF0b3IiLCJwa2ciLCJCdW5kbGUiLCJwYWNrYWdlIiwiaW1zIiwicmVzcG9uc2UiLCJkZXNjcmlwdG9yIiwicmVnaXN0ZXIiLCJoYXMiLCJwdXNoIiwiZ2V0IiwiZGF0YSIsIkpTT04iLCJzdHJpbmdpZnkiLCJrZXlzIiwidmFsdWVzIl0sInNvdXJjZXMiOlsiL2RlcGVuZGVuY2llcy50cyIsIi90cmFuc3ZlcnNhbC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFjLE1BQUFBLFFBQUEsU0FBZUMsR0FBZ0I7WUFDekNDLE1BQU1BLENBQUNDLElBQXNCO2NBQ3pCLElBQUksQ0FBQ0MsS0FBSyxFQUFFO2NBQ1pELElBQUksRUFBRUUsT0FBTyxDQUFDLENBQUMsQ0FBQ0MsU0FBUyxFQUFFQyxVQUFVLENBQUMsS0FBSyxJQUFJLENBQUNDLEdBQUcsQ0FBQ0YsU0FBUyxFQUFFQyxVQUFVLENBQUMsQ0FBQztZQUMvRTs7VUFDSEUsT0FBQSxDQUFBQyxPQUFBLEdBQUFWLFFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDTEQsSUFBQVcsT0FBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsYUFBQSxHQUFBRCxPQUFBO1VBUU87VUFBVSxNQUNYRSxXQUFXO1lBQ0osQ0FBQUMsSUFBSztZQUNkLElBQUlB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
