@@ -29,13 +29,15 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 76634504,
+        hash: 1085629304,
         creator: function (require, exports) {
           exports.txt = {
-            "header": "Muro de ",
-            "emptyTitle": "¡Ups! La lista está vacía.",
-            "empty": "No hay elementos que mostrar en este momento. ¡Pero no te preocupes, pronto habrá mucho historial para explorar!",
-            "description": "¡Bienvenidos al Historial de Conversaciones!  Este espacio es una ventana a las interacciones fascinantes entre nuestros alumnos en cada actividad, enriquecidas con un chat incorporado. Explora la elegancia del aprendizaje en este detallado timeline. 📚 "
+            "wall": {
+              "header": "Muro de ",
+              "emptyTitle": "¡Ups! La lista está vacía.",
+              "empty": "No hay elementos que mostrar en este momento. ¡Pero no te preocupes, pronto habrá mucho historial para explorar!",
+              "description": "¡Bienvenidos al Historial de Conversaciones!  Este espacio es una ventana a las interacciones fascinantes entre nuestros alumnos en cada actividad, enriquecidas con un chat incorporado. Explora la elegancia del aprendizaje en este detallado timeline. 📚 "
+            }
           };
         }
       });

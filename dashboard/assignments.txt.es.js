@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2761321904,
+        hash: 2281680320,
         creator: function (require, exports) {
           exports.txt = {
             "activities": {
@@ -150,7 +150,13 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
               "total": "Participación total",
               "pending": "Alumnos sin participar"
             },
-            "messageCounter": "Mensajes "
+            "messageCounter": "Mensajes ",
+            "wall": {
+              "header": "Muro de ",
+              "emptyTitle": "¡Ups! La lista está vacía.",
+              "empty": "No hay elementos que mostrar en este momento. ¡Pero no te preocupes, pronto habrá mucho historial para explorar!",
+              "description": "¡Bienvenidos al Historial de Conversaciones!  Este espacio es una ventana a las interacciones fascinantes entre nuestros alumnos en cada actividad, enriquecidas con un chat incorporado. Explora la elegancia del aprendizaje en este detallado timeline. 📚 "
+            }
           };
         }
       });

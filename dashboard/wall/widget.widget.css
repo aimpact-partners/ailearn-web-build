@@ -26,7 +26,7 @@
 .message-text__container {
   position: relative;
 }
-.wall-container {
+.wall__container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -36,7 +36,7 @@
   border-radius: var(--border-radius-base);
   gap: 1rem;
 }
-.wall-container .title-activity {
+.wall__container .title-activity {
   font-weight: 500;
   margin-top: 0;
 }
