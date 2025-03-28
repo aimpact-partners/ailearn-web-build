@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context) {
   "use strict";
 
   var dependency_0, bimport, __Bundle, __pkg, ims, Events, ListenerFunction, __beyond_pkg, hmr;
@@ -7,12 +7,12 @@ System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context)
     ListenerFunction: void 0
   });
   return {
-    setters: [function (_beyondJsKernel019Bundle) {
-      dependency_0 = _beyondJsKernel019Bundle;
+    setters: [function (_beyondJsKernel0112Bundle) {
+      dependency_0 = _beyondJsKernel0112Bundle;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@types/node", "16.18.11"], ["@beyond-js/local", "0.1.2"], ["@beyond-js/events", "0.0.7"], ["@aimpact/ailearn-app", "0.3.29"]]);
+        const dependencies = new Map([["@types/node", "16.18.11"], ["@beyond-js/local", "0.1.2"], ["@beyond-js/events", "0.0.7"], ["@aimpact/ailearn-app", "0.3.32"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

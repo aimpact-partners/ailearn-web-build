@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styles", "@beyond-js/react-18-widgets@1.1.3/base", "pragmate-ui@1.0.0-beta.7/template/manager", "react@18.2.0", "pragmate-ui@1.0.0-beta.7/components", "pragmate-ui@1.0.0-beta.7/theme-switcher", "pragmate-ui@1.0.0-beta.7/tooltip", "@beyond-js/react-18-widgets@1.1.3/hooks"], function (_export, _context) {
+System.register(["@beyond-js/widgets@1.1.3/render", "@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/styles", "@beyond-js/react-18-widgets@1.1.4/base", "pragmate-ui@1.0.0-beta.7/template/manager", "react@18.3.1", "pragmate-ui@1.0.0-beta.7/components", "pragmate-ui@1.0.0-beta.7/theme-switcher", "pragmate-ui@1.0.0-beta.7/tooltip", "@beyond-js/react-18-widgets@1.1.4/hooks"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
@@ -7,14 +7,14 @@ System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bun
     View: void 0
   });
   return {
-    setters: [function (_beyondJsWidgets111Render) {
-      dependency_0 = _beyondJsWidgets111Render;
-    }, function (_beyondJsKernel019Bundle) {
-      dependency_1 = _beyondJsKernel019Bundle;
-    }, function (_beyondJsKernel019Styles) {
-      dependency_2 = _beyondJsKernel019Styles;
-    }, function (_beyondJsReact18Widgets113Base) {
-      dependency_3 = _beyondJsReact18Widgets113Base;
+    setters: [function (_beyondJsWidgets113Render) {
+      dependency_0 = _beyondJsWidgets113Render;
+    }, function (_beyondJsKernel0112Bundle) {
+      dependency_1 = _beyondJsKernel0112Bundle;
+    }, function (_beyondJsKernel0112Styles) {
+      dependency_2 = _beyondJsKernel0112Styles;
+    }, function (_beyondJsReact18Widgets114Base) {
+      dependency_3 = _beyondJsReact18Widgets114Base;
     }, function (_pragmateUi100Beta7TemplateManager) {
       dependency_4 = _pragmateUi100Beta7TemplateManager;
     }, function (_react2) {
@@ -25,12 +25,12 @@ System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bun
       dependency_7 = _pragmateUi100Beta7ThemeSwitcher;
     }, function (_pragmateUi100Beta7Tooltip) {
       dependency_8 = _pragmateUi100Beta7Tooltip;
-    }, function (_beyondJsReact18Widgets113Hooks) {
-      dependency_9 = _beyondJsReact18Widgets113Hooks;
+    }, function (_beyondJsReact18Widgets114Hooks) {
+      dependency_9 = _beyondJsReact18Widgets114Hooks;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/reactive", "1.1.13"], ["@beyond-js/widgets", "0.1.6"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["is-mobile", "4.0.0"], ["perfect-scrollbar", "1.5.6"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/ailearn-app", "0.3.29"]]);
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/reactive", "1.1.13"], ["@beyond-js/widgets", "0.1.6"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["is-mobile", "4.0.0"], ["perfect-scrollbar", "1.5.6"], ["prism-react-renderer", "1.3.5"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/ailearn-app", "0.3.32"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
