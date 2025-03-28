@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/reactive@0.0.1/model", "@aimpact/reactive@0.0.1/entities/item", "@aimpact/chat-sdk@1.4.1/core", "@aimpact/ailearn-sdk@1.1.0/config", "@aimpact/chat-sdk@1.4.1/session", "@beyond-js/http-suite@0.0.1/api", "@aimpact/media-manager@1.0.0/uploader", "@beyond-js/kernel@0.1.9/core", "@aimpact/ailearn-sdk@1.1.0/entities/learning-modules", "@aimpact/reactive@0.0.1/entities/collection", "@aimpact/chat-sdk@1.4.1/users"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/reactive@0.0.1/model", "@aimpact/reactive@0.0.1/entities/item", "@aimpact/chat-sdk@1.4.3/core", "@aimpact/ailearn-sdk@1.1.0/config", "@aimpact/chat-sdk@1.4.3/session", "@beyond-js/http-suite@0.0.1/api", "@aimpact/media-manager@1.0.0/uploader", "@beyond-js/kernel@0.1.12/core", "@aimpact/ailearn-sdk@1.1.0/entities/learning-modules", "@aimpact/reactive@0.0.1/entities/collection", "@aimpact/chat-sdk@1.4.3/users"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, bimport, __Bundle, __pkg, ims, AssignmentActivity, Assessment, DashboardWall, Assignment, GClass, ArchiveCollection, ArchiveItem, ICoinsCreditData, ICoinModuleConsumptionData, ICoinAssignmentConsumptionData, ICreditsConsumptionsData, RoleType, IPeopleData, IInviteData, IAILearnUserData, Metadata, CreditsData, Credits, StudentsHome, User, __beyond_pkg, hmr;
@@ -25,34 +25,34 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@aimpact/reactive@0.0.1/mode
     User: void 0
   });
   return {
-    setters: [function (_beyondJsKernel019Bundle) {
-      dependency_0 = _beyondJsKernel019Bundle;
+    setters: [function (_beyondJsKernel0112Bundle) {
+      dependency_0 = _beyondJsKernel0112Bundle;
     }, function (_aimpactReactive001Model) {
       dependency_1 = _aimpactReactive001Model;
     }, function (_aimpactReactive001EntitiesItem) {
       dependency_2 = _aimpactReactive001EntitiesItem;
-    }, function (_aimpactChatSdk141Core) {
-      dependency_3 = _aimpactChatSdk141Core;
+    }, function (_aimpactChatSdk143Core) {
+      dependency_3 = _aimpactChatSdk143Core;
     }, function (_aimpactAilearnSdk110Config) {
       dependency_4 = _aimpactAilearnSdk110Config;
-    }, function (_aimpactChatSdk141Session) {
-      dependency_5 = _aimpactChatSdk141Session;
+    }, function (_aimpactChatSdk143Session) {
+      dependency_5 = _aimpactChatSdk143Session;
     }, function (_beyondJsHttpSuite001Api) {
       dependency_6 = _beyondJsHttpSuite001Api;
     }, function (_aimpactMediaManager100Uploader) {
       dependency_7 = _aimpactMediaManager100Uploader;
-    }, function (_beyondJsKernel019Core) {
-      dependency_8 = _beyondJsKernel019Core;
+    }, function (_beyondJsKernel0112Core) {
+      dependency_8 = _beyondJsKernel0112Core;
     }, function (_aimpactAilearnSdk110EntitiesLearningModules) {
       dependency_9 = _aimpactAilearnSdk110EntitiesLearningModules;
     }, function (_aimpactReactive001EntitiesCollection) {
       dependency_10 = _aimpactReactive001EntitiesCollection;
-    }, function (_aimpactChatSdk141Users) {
-      dependency_11 = _aimpactChatSdk141Users;
+    }, function (_aimpactChatSdk143Users) {
+      dependency_11 = _aimpactChatSdk143Users;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.4.1"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "1.2.0"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@types/node", "22.5.5"], ["dexie", "4.0.8"], ["firebase", "10.13.2"], ["pragmate-ui", "0.0.6"], ["react-select", "5.8.1"], ["socket.io-client", "4.7.5"], ["zod", "3.23.8"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-app", "0.3.29"]]);
+        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.4.3"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "1.2.0"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@types/node", "22.5.5"], ["dexie", "4.0.8"], ["firebase", "10.13.2"], ["pragmate-ui", "0.0.6"], ["react-select", "5.8.1"], ["socket.io-client", "4.7.5"], ["zod", "3.23.8"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-app", "0.3.32"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

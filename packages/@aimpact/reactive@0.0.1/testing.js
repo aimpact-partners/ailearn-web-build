@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bundle", "@beyond-js/react-18-widgets@1.1.3/page", "react@18.2.0"], function (_export, _context) {
+System.register(["@beyond-js/widgets@1.1.3/render", "@beyond-js/kernel@0.1.12/bundle", "@beyond-js/react-18-widgets@1.1.4/page", "react@18.3.1"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
@@ -7,18 +7,18 @@ System.register(["@beyond-js/widgets@1.1.1/render", "@beyond-js/kernel@0.1.9/bun
     View: void 0
   });
   return {
-    setters: [function (_beyondJsWidgets111Render) {
-      dependency_0 = _beyondJsWidgets111Render;
-    }, function (_beyondJsKernel019Bundle) {
-      dependency_1 = _beyondJsKernel019Bundle;
-    }, function (_beyondJsReact18Widgets113Page) {
-      dependency_2 = _beyondJsReact18Widgets113Page;
+    setters: [function (_beyondJsWidgets113Render) {
+      dependency_0 = _beyondJsWidgets113Render;
+    }, function (_beyondJsKernel0112Bundle) {
+      dependency_1 = _beyondJsKernel0112Bundle;
+    }, function (_beyondJsReact18Widgets114Page) {
+      dependency_2 = _beyondJsReact18Widgets114Page;
     }, function (_react) {
       dependency_3 = _react;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["react", "18.3.1"], ["socket.io-client", "4.8.1"], ["uuid", "11.0.3"], ["zod", "3.23.8"], ["@aimpact/reactive", "0.0.1"], ["@aimpact/ailearn-app", "0.3.29"]]);
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["react", "18.3.1"], ["socket.io-client", "4.8.1"], ["uuid", "11.0.3"], ["zod", "3.23.8"], ["@aimpact/reactive", "0.0.1"], ["@aimpact/ailearn-app", "0.3.32"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

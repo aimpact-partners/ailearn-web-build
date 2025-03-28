@@ -1,14 +1,14 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context) {
   "use strict";
 
   var dependency_0, bimport, __Bundle, __pkg, ims, __beyond_pkg, hmr;
   return {
-    setters: [function (_beyondJsKernel019Bundle) {
-      dependency_0 = _beyondJsKernel019Bundle;
+    setters: [function (_beyondJsKernel0112Bundle) {
+      dependency_0 = _beyondJsKernel0112Bundle;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/reactive", "1.1.13"], ["socket.io-client", "4.8.1"], ["@aimpact/media-manager", "1.0.0"], ["@aimpact/ailearn-app", "0.3.29"]]);
+        const dependencies = new Map([["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.1.2"], ["@beyond-js/reactive", "1.1.13"], ["socket.io-client", "4.8.1"], ["@aimpact/media-manager", "1.0.0"], ["@aimpact/ailearn-app", "0.3.32"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

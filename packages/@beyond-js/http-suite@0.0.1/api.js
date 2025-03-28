@@ -1,19 +1,19 @@
-System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core", "@aimpact/reactive@0.0.1/model"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/core", "@beyond-js/reactive@1.2.0-beta.01/model"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, Api, __beyond_pkg, hmr;
   _export("Api", void 0);
   return {
-    setters: [function (_beyondJsKernel019Bundle) {
-      dependency_0 = _beyondJsKernel019Bundle;
-    }, function (_beyondJsKernel019Core) {
-      dependency_1 = _beyondJsKernel019Core;
-    }, function (_aimpactReactive001Model) {
-      dependency_2 = _aimpactReactive001Model;
+    setters: [function (_beyondJsKernel0112Bundle) {
+      dependency_0 = _beyondJsKernel0112Bundle;
+    }, function (_beyondJsKernel0112Core) {
+      dependency_1 = _beyondJsKernel0112Core;
+    }, function (_beyondJsReactive120Beta01Model) {
+      dependency_2 = _beyondJsReactive120Beta01Model;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/reactive", "1.1.6"], ["socket.io-client", "4.7.2"], ["zod", "3.24.1"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/ailearn-app", "0.3.29"]]);
+        const dependencies = new Map([["@beyond-js/kernel", "0.1.9"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/reactive", "1.1.6"], ["socket.io-client", "4.7.2"], ["zod", "3.24.1"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/ailearn-app", "0.3.32"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -26,7 +26,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/kernel/core', dependency_1], ['@aimpact/reactive/model', dependency_2]]);
+      __pkg.dependencies.update([['@beyond-js/kernel/core', dependency_1], ['@beyond-js/reactive/model', dependency_2]]);
       ims = new Map();
       /*********************
       INTERNAL MODULE: ./api
@@ -107,7 +107,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
       *************************/
 
       ims.set('./fetcher', {
-        hash: 2361657994,
+        hash: 1619673536,
         creator: function (require, exports) {
           "use strict";
 
@@ -115,7 +115,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/core
             value: true
           });
           exports.Fetcher = void 0;
-          var _model = require("@aimpact/reactive/model");
+          var _model = require("@beyond-js/reactive/model");
           var _stream = require("./stream");
           class Fetcher extends _model.ReactiveModel {
             #bearer;
