@@ -1,11 +1,11 @@
-System.register([], function (a, e) {
+System.register([], function (a, t) {
 	return {
 		setters: [],
 		execute: function () {
 			a('default', {
 				package: '@aimpact/ailearn-app',
-				version: '0.3.23',
-				languages: { default: 'en', supported: ['en', 'es', 'pt'] },
+				version: '0.3.32',
+				languages: { default: 'en', supported: ['en', 'es'] },
 				environment: 'production',
 				'global.css': !0,
 				params: {
@@ -18,7 +18,6 @@ System.register([], function (a, e) {
 					DOCUMENTS_SERVER: 'https://documents-rb5caohzgq-wl.a.run.app',
 					CHAT_API_SERVER: 'https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload',
 					beta: !1,
-					elevenlabs: { key: 'ebe05ca0a4d9aafb4024d0666471a0c7', id: 'pNInz6obpgDQGcFmaJgB' },
 					baseUrl: 'https://app.rvd.ai',
 					apis: { ailearn: 'https://ailearn.api.aimpact.partners' }
 				},
