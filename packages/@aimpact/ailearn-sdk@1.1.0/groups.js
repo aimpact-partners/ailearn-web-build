@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/reactive@0.0.1/entities/collection", "@aimpact/reactive@0.0.1/model", "@aimpact/chat-sdk@1.4.3/session", "@beyond-js/http-suite@0.0.1/api", "@aimpact/ailearn-sdk@1.1.0/config", "@aimpact/reactive@0.0.1/entities/item"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/reactive@2.0.4/entities/collection", "@beyond-js/reactive@2.0.4/model", "@aimpact/chat-sdk@1.4.4/session", "@beyond-js/http-suite@0.0.1/api", "@aimpact/ailearn-sdk@1.1.0/config", "@beyond-js/reactive@2.0.4/entities/item"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, Groups, DataProvider, GroupItem, __beyond_pkg, hmr;
@@ -10,22 +10,22 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/reactive@0.0.1/ent
   return {
     setters: [function (_beyondJsKernel0112Bundle) {
       dependency_0 = _beyondJsKernel0112Bundle;
-    }, function (_aimpactReactive001EntitiesCollection) {
-      dependency_1 = _aimpactReactive001EntitiesCollection;
-    }, function (_aimpactReactive001Model) {
-      dependency_2 = _aimpactReactive001Model;
-    }, function (_aimpactChatSdk143Session) {
-      dependency_3 = _aimpactChatSdk143Session;
+    }, function (_beyondJsReactive204EntitiesCollection) {
+      dependency_1 = _beyondJsReactive204EntitiesCollection;
+    }, function (_beyondJsReactive204Model) {
+      dependency_2 = _beyondJsReactive204Model;
+    }, function (_aimpactChatSdk144Session) {
+      dependency_3 = _aimpactChatSdk144Session;
     }, function (_beyondJsHttpSuite001Api) {
       dependency_4 = _beyondJsHttpSuite001Api;
     }, function (_aimpactAilearnSdk110Config) {
       dependency_5 = _aimpactAilearnSdk110Config;
-    }, function (_aimpactReactive001EntitiesItem) {
-      dependency_6 = _aimpactReactive001EntitiesItem;
+    }, function (_beyondJsReactive204EntitiesItem) {
+      dependency_6 = _beyondJsReactive204EntitiesItem;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.4.3"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "1.2.0"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@types/node", "22.5.5"], ["dexie", "4.0.8"], ["firebase", "10.13.2"], ["pragmate-ui", "0.0.6"], ["react-select", "5.8.1"], ["socket.io-client", "4.7.5"], ["zod", "3.23.8"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-app", "0.3.32"]]);
+        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.4.4"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "2.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@firebase/auth", "1.10.0"], ["@types/node", "22.13.16"], ["dexie", "4.0.11"], ["firebase", "10.14.1"], ["pragmate-ui", "0.0.6"], ["react-select", "5.10.1"], ["socket.io-client", "4.8.1"], ["zod", "3.24.2"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-app", "0.3.32"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -38,13 +38,13 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/reactive@0.0.1/ent
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@aimpact/reactive/entities/collection', dependency_1], ['@aimpact/reactive/model', dependency_2], ['@aimpact/chat-sdk/session', dependency_3], ['@beyond-js/http-suite/api', dependency_4], ['@aimpact/ailearn-sdk/config', dependency_5], ['@aimpact/reactive/entities/item', dependency_6]]);
+      __pkg.dependencies.update([['@beyond-js/reactive/entities/collection', dependency_1], ['@beyond-js/reactive/model', dependency_2], ['@aimpact/chat-sdk/session', dependency_3], ['@beyond-js/http-suite/api', dependency_4], ['@aimpact/ailearn-sdk/config', dependency_5], ['@beyond-js/reactive/entities/item', dependency_6]]);
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./collection
       ****************************/
       ims.set('./collection', {
-        hash: 883863687,
+        hash: 270024252,
         creator: function (require, exports) {
           "use strict";
 
@@ -52,7 +52,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/reactive@0.0.1/ent
             value: true
           });
           exports.Groups = void 0;
-          var _collection = require("@aimpact/reactive/entities/collection");
+          var _collection = require("@beyond-js/reactive/entities/collection");
           var _dataProvider = require("./data-provider");
           /*bundle*/
           class Groups extends _collection.Collection {
@@ -73,7 +73,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/reactive@0.0.1/ent
       *******************************/
 
       ims.set('./data-provider', {
-        hash: 3521591978,
+        hash: 3287756534,
         creator: function (require, exports) {
           "use strict";
 
@@ -253,7 +253,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/reactive@0.0.1/ent
       **********************/
 
       ims.set('./item', {
-        hash: 238610483,
+        hash: 1225737504,
         creator: function (require, exports) {
           "use strict";
 
@@ -261,7 +261,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/reactive@0.0.1/ent
             value: true
           });
           exports.GroupItem = void 0;
-          var _item = require("@aimpact/reactive/entities/item");
+          var _item = require("@beyond-js/reactive/entities/item");
           var _dataProvider = require("./data-provider");
           var _session = require("@aimpact/chat-sdk/session");
           /*bundle*/

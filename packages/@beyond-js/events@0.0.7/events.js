@@ -1,212 +1,223 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context) {
-  "use strict";
+System.register(["@beyond-js/kernel@0.1.12/bundle"], (_exports, _context) => {
 
-  var dependency_0, bimport, __Bundle, __pkg, ims, Events, ListenerFunction, __beyond_pkg, hmr;
-  _export({
-    Events: void 0,
-    ListenerFunction: void 0
+const bimport = specifier => {
+	const dependencies = new Map([["@beyond-js/kernel","0.1.12"],["@beyond-js/events","0.0.7"]]);
+	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+};
+
+
+var dependencies = new Map();
+var require = dependency => dependencies.get(dependency);
+return {
+setters: [dep => dependencies.set('@beyond-js/kernel@0.1.12/bundle', dep)],
+execute: function() {
+// Prevent esbuild from considering the context to be amd
+const define = void 0;
+const module = {};
+
+const code = (module, require) => {
+var __create = Object.create;
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getProtoOf = Object.getPrototypeOf;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all) __defProp(target, name, {
+    get: all[name],
+    enumerable: true
   });
-  return {
-    setters: [function (_beyondJsKernel0112Bundle) {
-      dependency_0 = _beyondJsKernel0112Bundle;
-    }],
-    execute: function () {
-      bimport = specifier => {
-        const dependencies = new Map([["@types/node", "16.18.11"], ["@beyond-js/local", "0.1.2"], ["@beyond-js/events", "0.0.7"], ["@aimpact/ailearn-app", "0.3.32"]]);
-        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
-      };
-      ({
-        Bundle: __Bundle
-      } = dependency_0);
-      __pkg = new __Bundle({
-        "module": {
-          "vspecifier": "@beyond-js/events@0.0.7/events"
-        },
-        "type": "ts"
-      }, _context.meta.url).package();
-      ;
-      __pkg.dependencies.update([]);
-      ims = new Map();
-      /************************
-      INTERNAL MODULE: ./events
-      ************************/
-      ims.set('./events', {
-        hash: 1607618800,
-        creator: function (require, exports) {
-          "use strict";
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, {
+      get: () => from[key],
+      enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
+    });
+  }
+  return to;
+};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", {
+  value: mod,
+  enumerable: true
+}) : target, mod));
+var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
+  value: true
+}), mod);
 
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.Events = void 0;
-          /*bundle*/
-          class Events {
-            #specs;
-            #listeners = new Map();
-            #destroyed = false;
-            get destroyed() {
-              return this.#destroyed;
-            }
-            constructor(specs) {
-              specs = specs ? specs : {};
-              if (specs.supported && !(specs.supported instanceof Array)) throw new Error('Invalid parameters');
-              this.#specs = specs;
-              if (specs.bind) {
-                specs.bind.bind = (event, listener, priority) => this.on(event, listener, priority);
-                specs.bind.unbind = (event, listener) => this.off(event, listener);
-              }
-            }
-            /**
-             * Binds an event handler to an event name
-             *
-             * @param {string} event
-             * @param {ListenerFunction} listener
-             * @param {number} priority
-             * @returns {this}
-             */
-            on(event, listener, priority) {
-              if (this.#destroyed) {
-                throw new Error('Events object is destroyed');
-              }
-              if (this.#specs.supported && !this.#specs.supported.includes(event)) {
-                throw new Error(`Event "${event}" is not defined`);
-              }
-              if (typeof listener !== 'function') {
-                throw new Error('Listener is not a function');
-              }
-              this.off(event, listener); // Just in case the listener is already registered
-              const l = this.#listeners.has(event) ? this.#listeners.get(event) : [];
-              this.#listeners.set(event, l);
-              l.push({
-                listener: listener,
-                priority: priority ? priority : 0
-              });
-              return this;
-            }
-            bind = (event, listener, priority) => this.on(event, listener, priority);
-            /**
-             * Unbind an event listener
-             *
-             * @param {string} event
-             * @param {ListenerFunction} listener
-             * @param {number} force
-             * @returns {this}
-             */
-            off(event, listener, force) {
-              if (this.#destroyed) {
-                throw new Error('Events object is destroyed');
-              }
-              if (!event) {
-                throw new Error(`Event name not specified`);
-              }
-              if (this.#specs.supported && !this.#specs.supported.includes(event)) {
-                throw new Error(`Event "${event}" is not defined`);
-              }
-              if (!listener) {
-                if (!force) throw new Error('Listener function not set');
-                this.#listeners.delete(event);
-                return this;
-              }
-              if (!this.#listeners.has(event)) {
-                return this;
-              }
-              const e = this.#listeners.get(event);
-              const filtered = e.filter(item => item.listener !== listener);
-              this.#listeners.set(event, filtered);
-              return this;
-            }
-            unbind = (event, listener, force) => this.off(event, listener, force);
-            /**
-             * Triggers an event
-             *
-             * @param {Trigger} event
-             * @param {*} rest
-             * @returns {Promise<*>}
-             */
-            trigger(event, ...rest) {
-              if (this.#destroyed) {
-                throw new Error('Events object is destroyed');
-              }
-              if (typeof event === 'object') console.trace(event);
-              event = typeof event === 'string' ? {
-                name: event
-              } : event;
-              // console.log(0.2, event);
-              if (typeof event !== 'object') throw new Error('Invalid parameters');
-              if (typeof event.name !== 'string') throw new Error('Invalid event name');
-              if (this.#specs.supported && !this.#specs.supported.includes(event.name)) {
-                throw new Error(`Event "${event.name}" is not defined`);
-              }
-              let args = [...arguments];
-              args.shift(); // Remove the event name from the list of arguments
-              if (!this.#listeners.has(event.name)) return;
-              let l = this.#listeners.get(event.name);
-              // Sort by priority
-              l.sort((a, b) => b.priority - a.priority);
-              if (event.async) {
-                const trigger = async function () {
-                  const promises = [];
-                  for (let listener of l) {
-                    promises.push(listener.listener(...args));
-                  }
-                  await Promise.all(promises);
-                };
-                return trigger.call(this, ...args).catch(exc => console.error(exc.stack));
-              } else {
-                for (let listener of l) {
-                  listener.listener(...args);
-                }
-              }
-            }
-            destroy() {
-              this.#destroyed = true;
-              this.#listeners.clear();
-            }
-          }
-          exports.Events = Events;
-          globalThis.Events = Events;
-        }
-      });
-
-      /***********************
-      INTERNAL MODULE: ./types
-      ***********************/
-
-      ims.set('./types', {
-        hash: 1632705009,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-        }
-      });
-      __pkg.exports.descriptor = [{
-        "im": "./events",
-        "from": "Events",
-        "name": "Events"
-      }, {
-        "im": "./types",
-        "from": "ListenerFunction",
-        "name": "ListenerFunction"
-      }];
-      // Module exports
-      __pkg.exports.process = function ({
-        require,
-        prop,
-        value
-      }) {
-        (require || prop === 'Events') && _export("Events", Events = require ? require('./events').Events : value);
-        (require || prop === 'ListenerFunction') && _export("ListenerFunction", ListenerFunction = require ? require('./types').ListenerFunction : value);
-      };
-      _export("__beyond_pkg", __beyond_pkg = __pkg);
-      _export("hmr", hmr = new function () {
-        this.on = (event, listener) => __pkg.hmr.on(event, listener);
-        this.off = (event, listener) => __pkg.hmr.off(event, listener);
-      }());
-      __pkg.initialise(ims);
-    }
-  };
+// .beyond/uimport/@beyond-js/events/events.0.0.7.js
+var events_0_0_7_exports = {};
+__export(events_0_0_7_exports, {
+  Events: () => Events,
+  ListenerFunction: () => ListenerFunction,
+  __beyond_pkg: () => __beyond_pkg,
+  hmr: () => hmr
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJFdmVudHMiLCJzcGVjcyIsImxpc3RlbmVycyIsIk1hcCIsImRlc3Ryb3llZCIsImNvbnN0cnVjdG9yIiwic3VwcG9ydGVkIiwiQXJyYXkiLCJFcnJvciIsImJpbmQiLCJldmVudCIsImxpc3RlbmVyIiwicHJpb3JpdHkiLCJvbiIsInVuYmluZCIsIm9mZiIsImluY2x1ZGVzIiwibCIsImhhcyIsImdldCIsInNldCIsInB1c2giLCJmb3JjZSIsImRlbGV0ZSIsImUiLCJmaWx0ZXJlZCIsImZpbHRlciIsIml0ZW0iLCJ0cmlnZ2VyIiwicmVzdCIsImNvbnNvbGUiLCJ0cmFjZSIsIm5hbWUiLCJhcmdzIiwiYXJndW1lbnRzIiwic2hpZnQiLCJzb3J0IiwiYSIsImIiLCJhc3luYyIsInByb21pc2VzIiwiUHJvbWlzZSIsImFsbCIsImNhbGwiLCJjYXRjaCIsImV4YyIsImVycm9yIiwic3RhY2siLCJkZXN0cm95IiwiY2xlYXIiLCJleHBvcnRzIiwiZ2xvYmFsVGhpcyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiXSwic291cmNlcyI6WyIvZXZlbnRzLnRzIiwiL3R5cGVzLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBRU87VUFBVSxNQUNYQSxNQUFNO1lBQ1gsQ0FBQUMsS0FBTTtZQUNOLENBQUFDLFNBQVUsR0FBaUMsSUFBSUMsR0FBRyxFQUFFO1lBQ3BELENBQUFDLFNBQVUsR0FBRyxLQUFLO1lBQ2xCLElBQUlBLFNBQVNBLENBQUE7Y0FDWixPQUFPLElBQUksQ0FBQyxDQUFBQSxTQUFVO1lBQ3ZCO1lBRUFDLFlBQVlKLEtBQW1CO2NBQzlCQSxLQUFLLEdBQUdBLEtBQUssR0FBR0EsS0FBSyxHQUFHLEVBQUU7Y0FFMUIsSUFBSUEsS0FBSyxDQUFDSyxTQUFTLElBQUksRUFBRUwsS0FBSyxDQUFDSyxTQUFTLFlBQVlDLEtBQUssQ0FB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
+module.exports = __toCommonJS(events_0_0_7_exports);
+
+// node_modules/@beyond-js/events/events/events.browser.mjs
+var dependency_0 = __toESM(require("@beyond-js/kernel@0.1.12/bundle"), 0);
+var import_meta = {};
+var {
+  Bundle: __Bundle
+} = dependency_0;
+var __pkg = new __Bundle({
+  "module": {
+    "vspecifier": "@beyond-js/events@0.0.7/events"
+  },
+  "type": "ts"
+}, _context.meta.url).package();
+;
+__pkg.dependencies.update([]);
+var ims = /* @__PURE__ */new Map();
+ims.set("./events", {
+  hash: 3993267980,
+  creator: function (require2, exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.Events = void 0;
+    class Events2 {
+      #specs;
+      #listeners = /* @__PURE__ */new Map();
+      #destroyed = false;
+      get destroyed() {
+        return this.#destroyed;
+      }
+      constructor(specs) {
+        specs = specs ? specs : {};
+        if (specs.supported && !(specs.supported instanceof Array)) throw new Error("Invalid parameters");
+        this.#specs = specs;
+        if (specs.bind) {
+          specs.bind.bind = (event, listener, priority) => this.on(event, listener, priority);
+          specs.bind.unbind = (event, listener) => this.off(event, listener);
+        }
+      }
+      on(event, listener, priority) {
+        if (this.#destroyed) {
+          throw new Error("Events object is destroyed");
+        }
+        if (this.#specs.supported && !this.#specs.supported.includes(event)) {
+          throw new Error(`Event "${event}" is not defined`);
+        }
+        if (typeof listener !== "function") {
+          throw new Error("Listener is not a function");
+        }
+        this.off(event, listener);
+        const l = this.#listeners.has(event) ? this.#listeners.get(event) : [];
+        this.#listeners.set(event, l);
+        l.push({
+          listener,
+          priority: priority ? priority : 0
+        });
+        return this;
+      }
+      bind = (event, listener, priority) => this.on(event, listener, priority);
+      off(event, listener, force) {
+        if (this.#destroyed) {
+          throw new Error("Events object is destroyed");
+        }
+        if (!event) {
+          throw new Error(`Event name not specified`);
+        }
+        if (this.#specs.supported && !this.#specs.supported.includes(event)) {
+          throw new Error(`Event "${event}" is not defined`);
+        }
+        if (!listener) {
+          if (!force) throw new Error("Listener function not set");
+          this.#listeners.delete(event);
+          return this;
+        }
+        if (!this.#listeners.has(event)) {
+          return this;
+        }
+        const e = this.#listeners.get(event);
+        const filtered = e.filter(item => item.listener !== listener);
+        this.#listeners.set(event, filtered);
+        return this;
+      }
+      unbind = (event, listener, force) => this.off(event, listener, force);
+      trigger(event, ...rest) {
+        if (this.#destroyed) {
+          throw new Error("Events object is destroyed");
+        }
+        event = typeof event === "string" ? {
+          "name": event
+        } : event;
+        if (typeof event !== "object") throw new Error("Invalid parameters");
+        if (typeof event.name !== "string") throw new Error("Invalid event name");
+        if (this.#specs.supported && !this.#specs.supported.includes(event.name)) {
+          throw new Error(`Event "${event.name}" is not defined`);
+        }
+        let args = [...arguments];
+        args.shift();
+        if (!this.#listeners.has(event.name)) return;
+        let l = this.#listeners.get(event.name);
+        l.sort((a, b) => b.priority - a.priority);
+        if (event.async) {
+          const trigger = async function () {
+            const promises = [];
+            for (let listener of l) {
+              promises.push(listener.listener(...args));
+            }
+            await Promise.all(promises);
+          };
+          return trigger.call(this, ...args).catch(exc => console.error(exc.stack));
+        } else {
+          for (let listener of l) {
+            listener.listener(...args);
+          }
+        }
+      }
+      destroy() {
+        this.#destroyed = true;
+        this.#listeners.clear();
+      }
+    }
+    exports.Events = Events2;
+    globalThis.Events = Events2;
+  }
+});
+ims.set("./types", {
+  hash: 1632705009,
+  creator: function (require2, exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+  }
+});
+__pkg.exports.descriptor = [{
+  "im": "./events",
+  "from": "Events",
+  "name": "Events"
+}, {
+  "im": "./types",
+  "from": "ListenerFunction",
+  "name": "ListenerFunction"
+}];
+var Events, ListenerFunction;
+__pkg.exports.process = function ({
+  require: require2,
+  prop,
+  value
+}) {
+  (require2 || prop === "Events") && (Events = require2 ? require2("./events").Events : value);
+  (require2 || prop === "ListenerFunction") && (ListenerFunction = require2 ? require2("./types").ListenerFunction : value);
+};
+var __beyond_pkg = __pkg;
+var hmr = new function () {
+  this.on = (event, listener) => void 0;
+  this.off = (event, listener) => void 0;
+}();
+__pkg.initialise(ims);
+};
+
+code(module, require);
+_exports(module.exports);
+}}});
+
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC9AYmV5b25kLWpzL2V2ZW50cy9ldmVudHMuMC4wLjcuanMiLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy9ldmVudHMvZXZlbnRzL19fc291cmNlcy9ldmVudHMvZXZlbnRzLnRzIiwiLi4vbm9kZV9tb2R1bGVzL0BiZXlvbmQtanMvZXZlbnRzL2V2ZW50cy9fX3NvdXJjZXMvZXZlbnRzL3R5cGVzLnRzIl0sIm5hbWVzIjpbImV2ZW50c18wXzBfN19leHBvcnRzIiwiX19leHBvcnQiLCJFdmVudHMiLCJMaXN0ZW5lckZ1bmN0aW9uIiwiX19iZXlvbmRfcGtnIiwiaG1yIiwibW9kdWxlIiwiZXhwb3J0cyIsIl9fdG9Db21tb25KUyIsIkV2ZW50czIiLCJzcGVjcyIsImxpc3RlbmVycyIsIk1hcCIsImRlc3Ryb3llZCIsImNvbnN0cnVjdG9yIiwic3VwcG9ydGVkIiwiQXJyYXkiLCJFcnJvciIsImJpbmQiLCJldmVudCIsImxpc3RlbmVyIiwicHJpb3JpdHkiLCJvbiIsInVuYmluZCIsIm9mZiIsImluY2x1ZGVzIiwibCIsImhhcyIsImdldCIsInNldCIsInB1c2giLCJmb3JjZSIsImRlbGV0ZSIsImUiLCJmaWx0ZXJlZCIsImZpbHRlciIsIml0ZW0iLCJ0cmlnZ2VyIiwicmVzdCIsIm5hbWUiLCJhcmdzIiwiYXJndW1lbnRzIiwic2hpZnQiLCJzb3J0IiwiYSIsImIiLCJhc3luYyIsInByb21pc2VzIiwiUHJvbWlzZSIsImFsbCIsImNhbGwiLCJjYXRjaCIsImV4YyIsImNvbnNvbGUiLCJlcnJvciIsInN0YWNrIiwiZGVzdHJveSIsImNsZWFyIiwiZ2xvYmFsVGhpcyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLElBQUFBLG9CQUFBO0FBQUFDLFFBQUEsQ0FBQUQsb0JBQUE7RUFBQUUs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RXhFLElBQUksS0FBSyxDQUFBUCxLQUFBLENBQU9LLFNBQUEsSUFBYSxDQUFDLEtBQUssQ0FBQUwsS0FBQSxDQUFPSyxTQUFBLENBQVVVLFFBQUEsQ0FBU04sS0FBQSxDQUFNb0IsSUFBSSxHQUFHO1VBQ3RFLE1BQU0sSUFBSXRCLEtBQUEsQ0FBTSxVQUFVRSxLQUFBLENBQU1vQixJQUFBLGtCQUFzQjs7UUFHMUQsSUFBSUMsSUFBQSxHQUFPLENBQUMsR0FBR0MsU0FBUztRQUN4QkQsSUFBQSxDQUFLRSxLQUFBLENBQUs7UUFFVixJQUFJLENBQUMsS0FBSyxDQUFBL0IsU0FBQSxDQUFXZ0IsR0FBQSxDQUFJUixLQUFBLENBQU1vQixJQUFJLEdBQUc7UUFFdEMsSUFBSWIsQ0FBQSxHQUFJLEtBQUssQ0FBQWYsU0FBQSxDQUFXaUIsR0FBQSxDQUFJVCxLQUFBLENBQU1vQixJQUFJO1FBR3RDYixDQUFBLENBQUVpQixJQUFBLENBQUssQ0FBQ0MsQ0FBQSxFQUFHQyxDQUFBLEtBQU1BLENBQUEsQ0FBRXhCLFFBQUEsR0FBV3VCLENBQUEsQ0FBRXZCLFFBQVE7UUFFeEMsSUFBSUYsS0FBQSxDQUFNMkIsS0FBQSxFQUFPO1VBRWIsTUFBTVQsT0FBQSxHQUFVLGVBQUFBLENBQUEsRUFBSztZQUVqQixNQUFNVSxRQUFBLEdBQVc7WUFDakIsU0FBUzNCLFFBQUEsSUFBWU0sQ0FBQSxFQUFHO2NBQ3BCcUIsUUFBQSxDQUFTakIsSUFBQSxDQUFLVixRQUFBLENBQVNBLFFBQUEsQ0FBUyxHQUFHb0IsSUFBSSxDQUFDOztZQUc1QyxNQUFNUSxPQUFBLENBQVFDLEdBQUEsQ0FBSUYsUUFBUTtVQUU5QjtVQUVBLE9BQU9WLE9BQUEsQ0FBUWEsSUFBQSxDQUFLLE1BQU0sR0FBR1YsSUFBSSxFQUFFVyxLQUFBLENBQU9DLEdBQUEsSUFBZUMsT0FBQSxDQUFRQyxLQUFBLENBQU1GLEdBQUEsQ0FBSUcsS0FBSyxDQUFDO2VBRTlFO1VBQ0gsU0FBU25DLFFBQUEsSUFBWU0sQ0FBQSxFQUFHO1lBQ3BCTixRQUFBLENBQVNBLFFBQUEsQ0FBUyxHQUFHb0IsSUFBSTs7O01BR3JDO01BRUFnQixRQUFBLEVBQU87UUFDSCxLQUFLLENBQUEzQyxTQUFBLEdBQWE7UUFDbEIsS0FBSyxDQUFBRixTQUFBLENBQVc4QyxLQUFBLENBQUs7TUFDekI7O0lBQ0hsRCxPQUFBLENBQUFMLE1BQUEsR0FBQU8sT0FBQTtJQUVLaUQsVUFBQSxDQUFZeEQsTUFBQSxHQUFTTyxPQUFBOzs7Ozs7SUN4SjNCOztJQUVBa0QsTUFBQSxDQUFBQyxjQUFBLENBQUFyRCxPQUFBO01BQ0FzRCxLQUFBO0lBQ0EiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii9haS9haWxlYXJuL2NsaWVudC9hcHAvb3V0In0=

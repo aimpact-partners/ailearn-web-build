@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.1.0/data/interfaces", "@aimpact/reactive@0.0.1/entities/item", "@aimpact/ailearn-app@0.3.32/config", "@beyond-js/http-suite@0.0.1/api", "@aimpact/chat-sdk@1.4.3/session"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.1.0/data/interfaces", "@beyond-js/reactive@2.0.4/entities/item", "@aimpact/ailearn-app@0.3.32/config", "@beyond-js/http-suite@0.0.1/api", "@aimpact/chat-sdk@1.4.4/session"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, ActivityClosing, __beyond_pkg, hmr;
@@ -8,18 +8,18 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.1.0/
       dependency_0 = _beyondJsKernel0112Bundle;
     }, function (_aimpactAilearnSdk110DataInterfaces) {
       dependency_1 = _aimpactAilearnSdk110DataInterfaces;
-    }, function (_aimpactReactive001EntitiesItem) {
-      dependency_2 = _aimpactReactive001EntitiesItem;
+    }, function (_beyondJsReactive204EntitiesItem) {
+      dependency_2 = _beyondJsReactive204EntitiesItem;
     }, function (_aimpactAilearnApp0332Config) {
       dependency_3 = _aimpactAilearnApp0332Config;
     }, function (_beyondJsHttpSuite001Api) {
       dependency_4 = _beyondJsHttpSuite001Api;
-    }, function (_aimpactChatSdk143Session) {
-      dependency_5 = _aimpactChatSdk143Session;
+    }, function (_aimpactChatSdk144Session) {
+      dependency_5 = _aimpactChatSdk144Session;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.4.3"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "1.2.0"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@types/node", "22.5.5"], ["dexie", "4.0.8"], ["firebase", "10.13.2"], ["pragmate-ui", "0.0.6"], ["react-select", "5.8.1"], ["socket.io-client", "4.7.5"], ["zod", "3.23.8"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-app", "0.3.32"]]);
+        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.4.4"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "2.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@firebase/auth", "1.10.0"], ["@types/node", "22.13.16"], ["dexie", "4.0.11"], ["firebase", "10.14.1"], ["pragmate-ui", "0.0.6"], ["react-select", "5.10.1"], ["socket.io-client", "4.8.1"], ["zod", "3.24.2"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-app", "0.3.32"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -32,13 +32,13 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.1.0/
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@aimpact/ailearn-sdk/data/interfaces', dependency_1], ['@aimpact/reactive/entities/item', dependency_2], ['@aimpact/ailearn-app/config', dependency_3], ['@beyond-js/http-suite/api', dependency_4], ['@aimpact/chat-sdk/session', dependency_5]]);
+      __pkg.dependencies.update([['@aimpact/ailearn-sdk/data/interfaces', dependency_1], ['@beyond-js/reactive/entities/item', dependency_2], ['@aimpact/ailearn-app/config', dependency_3], ['@beyond-js/http-suite/api', dependency_4], ['@aimpact/chat-sdk/session', dependency_5]]);
       ims = new Map();
       /**************************
       INTERNAL MODULE: ./activity
       **************************/
       ims.set('./activity', {
-        hash: 2764263861,
+        hash: 1997506834,
         creator: function (require, exports) {
           "use strict";
 
@@ -46,7 +46,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.1.0/
             value: true
           });
           exports.ActivityClosing = void 0;
-          var _item = require("@aimpact/reactive/entities/item");
+          var _item = require("@beyond-js/reactive/entities/item");
           var _activity = require("./providers/activity");
           /*bundle*/
           class ActivityClosing extends _item.Item {
