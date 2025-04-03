@@ -1,275 +1,292 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/widgets@1.1.3/controller", "react@18.3.1", "react-dom@18.3.1/client", "@beyond-js/widgets@1.1.3/routing"], function (_export, _context) {
-  "use strict";
+System.register(["@beyond-js/kernel@0.1.12/bundle","@beyond-js/kernel@0.1.12/core","@beyond-js/widgets@1.1.2/render","@beyond-js/kernel@0.1.12/styles","@beyond-js/widgets@1.1.2/controller","react@18.3.1","scheduler@0.23.2","react-dom@18.3.1","react-dom@18.3.1/client","@beyond-js/kernel@0.1.12/routing","@beyond-js/events@0.0.7/events","@beyond-js/widgets@1.1.2/routing"], (_exports, _context) => {
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, IWidgetProps, IPageWidgetProps, ReactWidgetController, __beyond_pkg, hmr;
-  _export({
-    IWidgetProps: void 0,
-    IPageWidgetProps: void 0,
-    ReactWidgetController: void 0
+const bimport = specifier => {
+	const dependencies = new Map([["@beyond-js/kernel","0.1.12"],["@beyond-js/widgets","1.1.2"],["react","18.3.1"],["scheduler","0.23.2"],["react-dom","18.3.1"],["@beyond-js/events","0.0.7"],["@beyond-js/react-18-widgets","1.1.4"]]);
+	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+};
+
+
+var dependencies = new Map();
+var require = dependency => dependencies.get(dependency);
+return {
+setters: [dep => dependencies.set('@beyond-js/kernel@0.1.12/bundle', dep), dep => dependencies.set('@beyond-js/kernel@0.1.12/core', dep), dep => dependencies.set('@beyond-js/widgets@1.1.2/render', dep), dep => dependencies.set('@beyond-js/kernel@0.1.12/styles', dep), dep => dependencies.set('@beyond-js/widgets@1.1.2/controller', dep), dep => dependencies.set('react@18.3.1', dep), dep => dependencies.set('scheduler@0.23.2', dep), dep => dependencies.set('react-dom@18.3.1', dep), dep => dependencies.set('react-dom@18.3.1/client', dep), dep => dependencies.set('@beyond-js/kernel@0.1.12/routing', dep), dep => dependencies.set('@beyond-js/events@0.0.7/events', dep), dep => dependencies.set('@beyond-js/widgets@1.1.2/routing', dep)],
+execute: function() {
+// Prevent esbuild from considering the context to be amd
+const define = void 0;
+const module = {};
+
+const code = (module, require) => {
+var __create = Object.create;
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getProtoOf = Object.getPrototypeOf;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all) __defProp(target, name, {
+    get: all[name],
+    enumerable: true
   });
-  return {
-    setters: [function (_beyondJsKernel0112Bundle) {
-      dependency_0 = _beyondJsKernel0112Bundle;
-    }, function (_beyondJsWidgets113Controller) {
-      dependency_1 = _beyondJsWidgets113Controller;
-    }, function (_react) {
-      dependency_2 = _react;
-    }, function (_reactDom1831Client) {
-      dependency_3 = _reactDom1831Client;
-    }, function (_beyondJsWidgets113Routing) {
-      dependency_4 = _beyondJsWidgets113Routing;
-    }],
-    execute: function () {
-      bimport = specifier => {
-        const dependencies = new Map([["react", "18.2.0"], ["react-dom", "18.2.0"], ["@beyond-js/widgets", "1.1.2"], ["@beyond-js/kernel", "0.1.12"], ["@types/react", "18.0.26"], ["@types/react-dom", "18.0.10"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@aimpact/ailearn-app", "0.3.32"]]);
-        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
-      };
-      ({
-        Bundle: __Bundle
-      } = dependency_0);
-      __pkg = new __Bundle({
-        "module": {
-          "vspecifier": "@beyond-js/react-18-widgets@1.1.4/base"
-        },
-        "type": "ts"
-      }, _context.meta.url).package();
-      ;
-      __pkg.dependencies.update([['@beyond-js/widgets/controller', dependency_1], ['react', dependency_2], ['react-dom/client', dependency_3], ['@beyond-js/widgets/routing', dependency_4]]);
-      ims = new Map();
-      /****************************
-      INTERNAL MODULE: ./controller
-      ****************************/
-      ims.set('./controller', {
-        hash: 2404965063,
-        creator: function (require, exports) {
-          "use strict";
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, {
+      get: () => from[key],
+      enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
+    });
+  }
+  return to;
+};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", {
+  value: mod,
+  enumerable: true
+}) : target, mod));
+var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
+  value: true
+}), mod);
 
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.ReactWidgetController = void 0;
-          var React = require("react");
-          var _client = require("react-dom/client");
-          var _controller = require("@beyond-js/widgets/controller");
-          var _widget = require("./widget");
-          var _wrapper = require("./wrapper");
-          /*bundle*/
-          class ReactWidgetController extends _controller.WidgetClientController {
-            #wrapper;
-            #root;
-            #mounted = false;
-            get mounted() {
-              return this.#mounted;
-            }
-            // This property must be overwritten
-            get Widget() {
-              return null;
-            }
-            mount(props) {
-              if (this.#mounted) return;
-              this.#mounted = true;
-              if (!this.Widget) {
-                return {
-                  errors: [`Widget "${this.element}" does not export a Widget class`]
-                };
-              }
-              props = Object.assign({
-                widget: this.widget,
-                attributes: this.attributes,
-                component: this.widget,
-                store: this.store
-              }, props ? props : {});
-              const holder = this.widget.holder;
-              const hydrate = !!holder.children.length;
-              // Render the widget
-              try {
-                const wrapper = this.#wrapper = new _wrapper.Wrapper(this);
-                const {
-                  styles,
-                  widget
-                } = this;
-                const {
-                  holder
-                } = widget;
-                const p = {
-                  wrapper,
-                  props,
-                  styles,
-                  holder,
-                  hydrate
-                };
-                const element = React.createElement(_widget.default, p);
-                if (hydrate) {
-                  this.#root = (0, _client.hydrateRoot)(holder, element);
-                } else {
-                  const root = this.#root = (0, _client.createRoot)(holder);
-                  root.render(element);
-                }
-              } catch (exc) {
-                console.log(`Error rendering widget "${this.widget.localName}":`);
-                console.log(exc.stack);
-              }
-            }
-            unmount() {
-              if (!this.#mounted) return;
-              this.#mounted = false;
-              globalThis.setTimeout(() => this.#root.unmount(), 0);
-            }
-            refresh() {
-              this.#wrapper.changed();
-            }
-          }
-          exports.ReactWidgetController = ReactWidgetController;
+// .beyond/uimport/@beyond-js/react-18-widgets/base.1.1.4.js
+var base_1_1_4_exports = {};
+__export(base_1_1_4_exports, {
+  IPageWidgetProps: () => IPageWidgetProps,
+  IWidgetProps: () => IWidgetProps,
+  ReactWidgetController: () => ReactWidgetController,
+  __beyond_pkg: () => __beyond_pkg,
+  hmr: () => hmr
+});
+module.exports = __toCommonJS(base_1_1_4_exports);
+
+// node_modules/@beyond-js/react-18-widgets/base/base.browser.mjs
+var dependency_0 = __toESM(require("@beyond-js/kernel@0.1.12/bundle"), 0);
+var dependency_1 = __toESM(require("@beyond-js/widgets@1.1.2/controller"), 0);
+var dependency_2 = __toESM(require("react@18.3.1"), 0);
+var dependency_3 = __toESM(require("react-dom@18.3.1/client"), 0);
+var dependency_4 = __toESM(require("@beyond-js/widgets@1.1.2/routing"), 0);
+var import_meta = {};
+var {
+  Bundle: __Bundle
+} = dependency_0;
+var __pkg = new __Bundle({
+  "module": {
+    "vspecifier": "@beyond-js/react-18-widgets@1.1.4/base"
+  },
+  "type": "ts"
+}, _context.meta.url).package();
+;
+__pkg.dependencies.update([["@beyond-js/widgets/controller", dependency_1], ["react", dependency_2], ["react-dom/client", dependency_3], ["@beyond-js/widgets/routing", dependency_4]]);
+var ims = /* @__PURE__ */new Map();
+ims.set("./controller", {
+  hash: 2404965063,
+  creator: function (require2, exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.ReactWidgetController = void 0;
+    var React = require2("react");
+    var _client = require2("react-dom/client");
+    var _controller = require2("@beyond-js/widgets/controller");
+    var _widget = require2("./widget");
+    var _wrapper = require2("./wrapper");
+    class ReactWidgetController2 extends _controller.WidgetClientController {
+      #wrapper;
+      #root;
+      #mounted = false;
+      get mounted() {
+        return this.#mounted;
+      }
+      get Widget() {
+        return null;
+      }
+      mount(props) {
+        if (this.#mounted) return;
+        this.#mounted = true;
+        if (!this.Widget) {
+          return {
+            errors: [`Widget "${this.element}" does not export a Widget class`]
+          };
         }
-      });
-
-      /************************
-      INTERNAL MODULE: ./styles
-      ************************/
-
-      ims.set('./styles', {
-        hash: 3367909987,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.default = _default;
-          var React = require("react");
-          function _default({
-            styles
-          }) {
-            const rs = React.useState(0);
-            // Listen for .css bundle changes
-            React.useEffect(() => {
-              const refresh = () => rs[1](prev => prev + 1);
-              styles.on('change', refresh);
-              return () => styles.off('change', refresh) && void 0;
-            }, []);
-            const head = [...styles.resources].map(url => {
-              const loaded = () => styles.onloaded(url);
-              return React.createElement("link", {
-                key: url,
-                href: url,
-                rel: "stylesheet",
-                onLoad: loaded,
-                onError: loaded
-              });
-            });
-            return React.createElement(React.Fragment, null, head);
-          }
-        }
-      });
-
-      /************************
-      INTERNAL MODULE: ./widget
-      ************************/
-
-      ims.set('./widget', {
-        hash: 2641106731,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.default = _default;
-          var React = require("react");
-          var _styles = require("./styles");
-          function _default({
+        props = Object.assign({
+          widget: this.widget,
+          attributes: this.attributes,
+          component: this.widget,
+          store: this.store
+        }, props ? props : {});
+        const holder = this.widget.holder;
+        const hydrate = !!holder.children.length;
+        try {
+          const wrapper = this.#wrapper = new _wrapper.Wrapper(this);
+          const {
+            styles,
+            widget
+          } = this;
+          const {
+            holder: holder2
+          } = widget;
+          const p = {
             wrapper,
             props,
             styles,
-            holder,
+            holder: holder2,
             hydrate
-          }) {
-            const elements = [];
-            elements.push(React.createElement(_styles.default, {
-              key: "styles",
-              styles: styles,
-              widget: props.widget
-            }));
-            const rs = React.useState(0);
-            const refresh = () => rs[1](rs[0] + 1);
-            // Listen for .js bundle changes
-            wrapper.changed = refresh;
-            // Check for styles to be loaded
-            const loaded = (() => {
-              !styles.loaded && styles.ready.then(refresh);
-              holder.style.display = '';
-              return styles.loaded;
-            })();
-            const {
-              Widget
-            } = wrapper;
-            const widget = React.createElement(Widget, {
-              key: "widget",
-              ...props
-            });
-            (hydrate || loaded) && elements.push(widget);
-            return React.createElement(React.Fragment, null, elements);
+          };
+          const element = React.createElement(_widget.default, p);
+          if (hydrate) {
+            this.#root = (0, _client.hydrateRoot)(holder2, element);
+          } else {
+            const root = this.#root = (0, _client.createRoot)(holder2);
+            root.render(element);
           }
+        } catch (exc) {
+          console.log(`Error rendering widget "${this.widget.localName}":`);
+          console.log(exc.stack);
         }
-      });
-
-      /*************************
-      INTERNAL MODULE: ./wrapper
-      *************************/
-
-      ims.set('./wrapper', {
-        hash: 4085792261,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.Wrapper = void 0;
-          class Wrapper {
-            #Widget;
-            get Widget() {
-              return this.#Widget.Widget;
-            }
-            // Property changed should be overwritten to get notified about HMR changes
-            changed = () => void 0;
-            constructor(Widget) {
-              this.#Widget = Widget;
-            }
-          }
-          exports.Wrapper = Wrapper;
-        }
-      });
-      __pkg.exports.descriptor = [{
-        "im": "./controller",
-        "from": "IWidgetProps",
-        "name": "IWidgetProps"
-      }, {
-        "im": "./controller",
-        "from": "IPageWidgetProps",
-        "name": "IPageWidgetProps"
-      }, {
-        "im": "./controller",
-        "from": "ReactWidgetController",
-        "name": "ReactWidgetController"
-      }];
-      // Module exports
-      __pkg.exports.process = function ({
-        require,
-        prop,
-        value
-      }) {
-        (require || prop === 'IWidgetProps') && _export("IWidgetProps", IWidgetProps = require ? require('./controller').IWidgetProps : value);
-        (require || prop === 'IPageWidgetProps') && _export("IPageWidgetProps", IPageWidgetProps = require ? require('./controller').IPageWidgetProps : value);
-        (require || prop === 'ReactWidgetController') && _export("ReactWidgetController", ReactWidgetController = require ? require('./controller').ReactWidgetController : value);
-      };
-      _export("__beyond_pkg", __beyond_pkg = __pkg);
-      _export("hmr", hmr = new function () {
-        this.on = (event, listener) => __pkg.hmr.on(event, listener);
-        this.off = (event, listener) => __pkg.hmr.off(event, listener);
-      }());
-      __pkg.initialise(ims);
+      }
+      unmount() {
+        if (!this.#mounted) return;
+        this.#mounted = false;
+        globalThis.setTimeout(() => this.#root.unmount(), 0);
+      }
+      refresh() {
+        this.#wrapper.changed();
+      }
     }
-  };
+    exports.ReactWidgetController = ReactWidgetController2;
+  }
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJSZWFjdCIsInJlcXVpcmUiLCJfY2xpZW50IiwiX2NvbnRyb2xsZXIiLCJfd2lkZ2V0IiwiX3dyYXBwZXIiLCJSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJXaWRnZXRDbGllbnRDb250cm9sbGVyIiwid3JhcHBlciIsInJvb3QiLCJtb3VudGVkIiwiV2lkZ2V0IiwibW91bnQiLCJwcm9wcyIsImVycm9ycyIsImVsZW1lbnQiLCJPYmplY3QiLCJhc3NpZ24iLCJ3aWRnZXQiLCJhdHRyaWJ1dGVzIiwiY29tcG9uZW50Iiwic3RvcmUiLCJob2xkZXIiLCJoeWRyYXRlIiwiY2hpbGRyZW4iLCJsZW5ndGgiLCJXcmFwcGVyIiwic3R5bGVzIiwicCIsImNyZWF0ZUVsZW1lbnQiLCJkZWZhdWx0IiwiaHlkcmF0ZVJvb3QiLCJjcmVhdGVSb290IiwicmVuZGVyIiwiZXhjIiwiY29uc29sZSIsImxvZyIsImxvY2FsTmFtZSIsInN0YWNrIiwidW5tb3VudCIsImdsb2JhbFRoaXMiLCJzZXRUaW1lb3V0IiwicmVmcmVzaCIsImNoYW5nZWQiLCJleHBvcnRzIiwiX2RlZmF1bHQiLCJycyIsInVzZVN0YXRlIiwidXNlRWZmZWN0IiwicHJldiIsIm9uIiwib2ZmIiwiaGVhZCIsInJlc291cmNlcyIsIm1hcCIsInVybCIsImxvYWRlZCIsIm9ubG9hZGVkIiwia2V5IiwiaHJlZiIsInJlbCIsIm9uTG9hZCIsIm9uRXJyb3IiLCJGcmFnbWVudCIsIl9zdHlsZXMiLCJlbGVtZW50cyIsInB1c2giLCJyZWFkeSIsInRoZW4iLCJzdHlsZSIsImRpc3BsYXkiLCJjb25zdHJ1Y3RvciJdLCJzb3VyY2VzIjpbIi9jb250cm9sbGVyLnRzIiwiL3N0eWxlcy50c3giLCIvd2lkZ2V0LnRzeCIsIi93cmFwcGVyLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsLG51bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7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
+ims.set("./styles", {
+  hash: 3367909987,
+  creator: function (require2, exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.default = _default;
+    var React = require2("react");
+    function _default({
+      styles
+    }) {
+      const rs = React.useState(0);
+      React.useEffect(() => {
+        const refresh = () => rs[1](prev => prev + 1);
+        styles.on("change", refresh);
+        return () => styles.off("change", refresh) && void 0;
+      }, []);
+      const head = [...styles.resources].map(url => {
+        const loaded = () => styles.onloaded(url);
+        return React.createElement("link", {
+          key: url,
+          href: url,
+          rel: "stylesheet",
+          onLoad: loaded,
+          onError: loaded
+        });
+      });
+      return React.createElement(React.Fragment, null, head);
+    }
+  }
+});
+ims.set("./widget", {
+  hash: 2641106731,
+  creator: function (require2, exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.default = _default;
+    var React = require2("react");
+    var _styles = require2("./styles");
+    function _default({
+      wrapper,
+      props,
+      styles,
+      holder,
+      hydrate
+    }) {
+      const elements = [];
+      elements.push(React.createElement(_styles.default, {
+        key: "styles",
+        styles,
+        widget: props.widget
+      }));
+      const rs = React.useState(0);
+      const refresh = () => rs[1](rs[0] + 1);
+      wrapper.changed = refresh;
+      const loaded = (() => {
+        !styles.loaded && styles.ready.then(refresh);
+        holder.style.display = "";
+        return styles.loaded;
+      })();
+      const {
+        Widget
+      } = wrapper;
+      const widget = React.createElement(Widget, {
+        key: "widget",
+        ...props
+      });
+      (hydrate || loaded) && elements.push(widget);
+      return React.createElement(React.Fragment, null, elements);
+    }
+  }
+});
+ims.set("./wrapper", {
+  hash: 4085792261,
+  creator: function (require2, exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.Wrapper = void 0;
+    class Wrapper {
+      #Widget;
+      get Widget() {
+        return this.#Widget.Widget;
+      }
+      changed = () => void 0;
+      constructor(Widget) {
+        this.#Widget = Widget;
+      }
+    }
+    exports.Wrapper = Wrapper;
+  }
+});
+__pkg.exports.descriptor = [{
+  "im": "./controller",
+  "from": "IWidgetProps",
+  "name": "IWidgetProps"
+}, {
+  "im": "./controller",
+  "from": "IPageWidgetProps",
+  "name": "IPageWidgetProps"
+}, {
+  "im": "./controller",
+  "from": "ReactWidgetController",
+  "name": "ReactWidgetController"
+}];
+var IWidgetProps, IPageWidgetProps, ReactWidgetController;
+__pkg.exports.process = function ({
+  require: require2,
+  prop,
+  value
+}) {
+  (require2 || prop === "IWidgetProps") && (IWidgetProps = require2 ? require2("./controller").IWidgetProps : value);
+  (require2 || prop === "IPageWidgetProps") && (IPageWidgetProps = require2 ? require2("./controller").IPageWidgetProps : value);
+  (require2 || prop === "ReactWidgetController") && (ReactWidgetController = require2 ? require2("./controller").ReactWidgetController : value);
+};
+var __beyond_pkg = __pkg;
+var hmr = new function () {
+  this.on = (event, listener) => void 0;
+  this.off = (event, listener) => void 0;
+}();
+__pkg.initialise(ims);
+};
+
+code(module, require);
+_exports(module.exports);
+}}});
+
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC9AYmV5b25kLWpzL3JlYWN0LTE4LXdpZGdldHMvYmFzZS4xLjEuNC5qcyIsIi4uL25vZGVfbW9kdWxlcy9AYmV5b25kLWpzL3JlYWN0LTE4LXdpZGdldHMvYmFzZS9fX3NvdXJjZXMvYmFzZS9jb250cm9sbGVyLnRzIiwiLi4vbm9kZV9tb2R1bGVzL0BiZXlvbmQtanMvcmVhY3QtMTgtd2lkZ2V0cy9iYXNlL19fc291cmNlcy9iYXNlL3N0eWxlcy50c3giLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy9yZWFjdC0xOC13aWRnZXRzL2Jhc2UvX19zb3VyY2VzL2Jhc2Uvd2lkZ2V0LnRzeCIsIi4uL25vZGVfbW9kdWxlcy9AYmV5b25kLWpzL3JlYWN0LTE4LXdpZGdldHMvYmFzZS9fX3NvdXJjZXMvYmFzZS93cmFwcGVyLnRzIl0sIm5hbWVzIjpbImJhc2VfMV8xXzRfZXhwb3J0cyIsIl9fZXhwb3J0IiwiSVBhZ2VXaWRnZXRQcm9wcyIsIklXaWRnZXRQcm9wcyIsIlJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIl9fYmV5b25kX3BrZyIsImhtciIsIm1vZHVsZSIsImV4cG9ydHMiLCJfX3RvQ29tbW9uSlMiLCJSZWFjdCIsInJlcXVpcmUyIiwiX2NsaWVudCIsIl9jb250cm9sbGVyIiwiX3dpZGdldCIsIl93cmFwcGVyIiwiUmVhY3RXaWRnZXRDb250cm9sbGVyMiIsIldpZGdldENsaWVudENvbnRyb2xsZXIiLCJ3cmFwcGVyIiwicm9vdCIsIm1vdW50ZWQiLCJXaWRnZXQiLCJtb3VudCIsInByb3BzIiwiZXJyb3JzIiwiZWxlbWVudCIsIk9iamVjdCIsImFzc2lnbiIsIndpZGdldCIsImF0dHJpYnV0ZXMiLCJjb21wb25lbnQiLCJzdG9yZSIsImhvbGRlciIsImh5ZHJhdGUiLCJjaGlsZHJlbiIsImxlbmd0aCIsIldyYXBwZXIiLCJzdHlsZXMiLCJob2xkZXIyIiwicCIsImNyZWF0ZUVsZW1lbnQiLCJkZWZhdWx0IiwiaHlkcmF0ZVJvb3QiLCJjcmVhdGVSb290IiwicmVuZGVyIiwiZXhjIiwiY29uc29sZSIsImxvZyIsImxvY2FsTmFtZSIsInN0YWNrIiwidW5tb3VudCIsImdsb2JhbFRoaXMiLCJzZXRUaW1lb3V0IiwicmVmcmVzaCIsImNoYW5nZWQiLCJfZGVmYXVsdCIsInJzIiwidXNlU3RhdGUiLCJ1c2VFZmZlY3QiLCJwcmV2Iiwib24iLCJvZmYiLCJoZWFkIiwicmVzb3VyY2VzIiwibWFwIiwidXJsIiwibG9hZGVkIiwib25sb2FkZWQiLCJrZXkiLCJocmVmIiwicmVsIiwib25Mb2FkIiwib25FcnJvciIsIkZyYWdtZW50IiwiX3N0eWxlcyIsImVsZW1lbnRzIiwicHVzaCIsInJlYWR5IiwidGhlbiIsInN0eWxlIiwiZGlzcGxheSIsImNvbnN0cnVjdG9yIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxJQUFBQSxrQkFBQTtBQUFBQyxRQUFBLENBQUFELGtCQUFBO0VBQUFFLGdCQUFBLEVBQUFBLENBQUEsS0FBQUEsZ0JBQUE7RUFBQUMsWUFBQSxFQUFBQSxDQUFBLEtBQUFBLFlBQUE7RUFBQUMscUJBQUEsRUFBQUEsQ0FBQSxLQUFBQSxxQkFBQTtFQUFBQyxZQUFBLEVBQUFBLENBQUEsS0FBQUEsWUFBQTtFQUFBQyxHQUFBLEVBQUFBLENBQUEsS0FBQUE7QUFBQTtBQUFBQyxNQUFBLENBQUFDLE9BQUEsR0FBQUMsWUFBQSxDQUFBVCxrQkFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lDRUEsSUFBQVUsS0FBQSxHQUFBQyxRQUFBO0lBQ0EsSUFBQUMsT0FBQSxHQUFBRCxRQUFBO0lBQ0EsSUFBQUUsV0FBQSxHQUFBRixRQUFBO0lBQ0EsSUFBQUcsT0FBQSxHQUFBSCxRQUFBO0lBQ0EsSUFBQUksUUFBQSxHQUFBSixRQUFBO0lBY2lCLE1BQ0ZLLHNCQUFBLFNBQThCSCxXQUFBLENBQUFJLHNCQUFBLENBQXNCO01BQ2xFLENBQUFD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

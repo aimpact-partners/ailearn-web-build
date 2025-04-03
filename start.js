@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/transversals", "@beyond-js/widgets@1.1.3/render", "@aimpact/ailearn-app@0.3.32/model/wrapper", "@aimpact/chat-sdk@1.4.3/session", "@beyond-js/kernel@0.1.12/routing", "react@18.3.1", "pragmate-ui@1.0.0-beta.7/icons", "pragmate-ui@1.0.0-beta.7/image", "@aimpact/reactive@0.0.1/model", "@aimpact/ailearn-sdk@1.1.0/core", "@aimpact/ailearn-app@0.3.32/config", "@aimpact/chat-sdk@1.4.3/startup", "@aimpact/agents-api@0.4.1/ws-config"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/transversals", "@beyond-js/widgets@1.1.2/render", "@aimpact/ailearn-app@0.3.32/model/wrapper", "@aimpact/chat-sdk@1.4.4/session", "@beyond-js/kernel@0.1.12/routing", "react@18.3.1", "pragmate-ui@1.0.0-beta.7/icons", "pragmate-ui@1.0.0-beta.7/image", "@beyond-js/reactive@2.0.4/model", "@aimpact/ailearn-sdk@1.1.0/core", "@aimpact/ailearn-app@0.3.32/config", "@aimpact/chat-sdk@1.4.4/startup", "@aimpact/agents-api@0.4.1/ws-config"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, Transversal, __beyond_transversal, widgets, bundles;
@@ -7,12 +7,12 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
       dependency_0 = _beyondJsKernel0112Bundle;
     }, function (_beyondJsKernel0112Transversals) {
       dependency_1 = _beyondJsKernel0112Transversals;
-    }, function (_beyondJsWidgets113Render) {
-      dependency_2 = _beyondJsWidgets113Render;
+    }, function (_beyondJsWidgets112Render) {
+      dependency_2 = _beyondJsWidgets112Render;
     }, function (_aimpactAilearnApp0332ModelWrapper) {
       dependency_3 = _aimpactAilearnApp0332ModelWrapper;
-    }, function (_aimpactChatSdk143Session) {
-      dependency_4 = _aimpactChatSdk143Session;
+    }, function (_aimpactChatSdk144Session) {
+      dependency_4 = _aimpactChatSdk144Session;
     }, function (_beyondJsKernel0112Routing) {
       dependency_5 = _beyondJsKernel0112Routing;
     }, function (_react2) {
@@ -21,14 +21,14 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
       dependency_7 = _pragmateUi100Beta7Icons;
     }, function (_pragmateUi100Beta7Image) {
       dependency_8 = _pragmateUi100Beta7Image;
-    }, function (_aimpactReactive001Model) {
-      dependency_9 = _aimpactReactive001Model;
+    }, function (_beyondJsReactive204Model) {
+      dependency_9 = _beyondJsReactive204Model;
     }, function (_aimpactAilearnSdk110Core) {
       dependency_10 = _aimpactAilearnSdk110Core;
     }, function (_aimpactAilearnApp0332Config) {
       dependency_11 = _aimpactAilearnApp0332Config;
-    }, function (_aimpactChatSdk143Startup) {
-      dependency_12 = _aimpactChatSdk143Startup;
+    }, function (_aimpactChatSdk144Startup) {
+      dependency_12 = _aimpactChatSdk144Startup;
     }, function (_aimpactAgentsApi041WsConfig) {
       dependency_13 = _aimpactAgentsApi041WsConfig;
     }],
@@ -37,7 +37,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
         Transversal
       } = brequire('@beyond-js/kernel/transversals'));
       _export("__beyond_transversal", __beyond_transversal = new Transversal('start', ''));
-      __beyond_transversal.dependencies.update([['@beyond-js/kernel/transversals', dependency_1], ['@beyond-js/widgets/render', dependency_2], ['@aimpact/ailearn-app/model/wrapper', dependency_3], ['@aimpact/chat-sdk/session', dependency_4], ['@beyond-js/kernel/routing', dependency_5], ['react', dependency_6], ['pragmate-ui/icons', dependency_7], ['pragmate-ui/image', dependency_8], ['@aimpact/reactive/model', dependency_9], ['@aimpact/ailearn-sdk/core', dependency_10], ['@aimpact/ailearn-app/config', dependency_11], ['@aimpact/chat-sdk/startup', dependency_12], ['@aimpact/agents-api/ws-config', dependency_13]]);
+      __beyond_transversal.dependencies.update([['@beyond-js/kernel/transversals', dependency_1], ['@beyond-js/widgets/render', dependency_2], ['@aimpact/ailearn-app/model/wrapper', dependency_3], ['@aimpact/chat-sdk/session', dependency_4], ['@beyond-js/kernel/routing', dependency_5], ['react', dependency_6], ['pragmate-ui/icons', dependency_7], ['pragmate-ui/image', dependency_8], ['@beyond-js/reactive/model', dependency_9], ['@aimpact/ailearn-sdk/core', dependency_10], ['@aimpact/ailearn-app/config', dependency_11], ['@aimpact/chat-sdk/startup', dependency_12], ['@aimpact/agents-api/ws-config', dependency_13]]);
 
       /*************
       BUNDLE: WIDGET
@@ -72,28 +72,15 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
         "route": "/recorder"
       }, {
         "name": "chat-sdk-markdown-page",
-        "vspecifier": "@aimpact/chat-sdk@1.4.3/tests/markdown",
+        "vspecifier": "@aimpact/chat-sdk@1.4.4/tests/markdown",
         "is": "page",
         "route": "/chat/sdk/markdown",
         "layout": "general-layout"
       }, {
         "name": "chat-sdk-playable",
-        "vspecifier": "@aimpact/chat-sdk@1.4.3/tests/playable",
+        "vspecifier": "@aimpact/chat-sdk@1.4.4/tests/playable",
         "is": "page",
         "route": "/chat/sdk/playable"
-      }, {
-        "name": "coming-soon",
-        "vspecifier": "pragmate-ui@1.0.0-beta.7/coming-soon",
-        "is": "page",
-        "route": "/components/coming-soon"
-      }, {
-        "name": "pui-template-view-widget",
-        "vspecifier": "pragmate-ui@1.0.0-beta.7/pui/template/palette"
-      }, {
-        "name": "reactive-testing",
-        "vspecifier": "@aimpact/reactive@0.0.1/testing",
-        "is": "page",
-        "route": "/test"
       }, {
         "name": "app-ailearn-components-page",
         "vspecifier": "@aimpact/ailearn-app@0.3.32/components/ui/page",
@@ -266,10 +253,6 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
         "route": "/auth/login",
         "layout": "auth-layout"
       }, {
-        "name": "aimpact-login-presentation",
-        "attrs": ["dynamic-children"],
-        "vspecifier": "@aimpact/ailearn-app@0.3.32/auth/login/presentation.widget"
-      }, {
         "name": "app-not-allowed",
         "vspecifier": "@aimpact/ailearn-app@0.3.32/not-allowed-control.widget"
       }, {
@@ -356,7 +339,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
         "type": "start"
       }, function (ims, exports) {
         const bimport = specifier => {
-          const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-api", null], ["@aimpact/auth", null], ["@aimpact/chat-sdk", "1.4.3"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.2"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.7.9"], ["@google-cloud/storage", "7.15.2"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-select", "5.10.1"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.3.32"], ["@aimpact/ailearn-app", "0.3.32"]]);
+          const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-api", null], ["@aimpact/chat-sdk", "1.4.4"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/http-suite", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.0.4"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-select", "5.10.1"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.3.32"], ["@aimpact/ailearn-app", "0.3.32"]]);
           return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
         };
         /************************************
@@ -709,7 +692,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
         "type": "start"
       }, function (ims, exports) {
         const bimport = specifier => {
-          const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-api", null], ["@aimpact/auth", null], ["@aimpact/chat-sdk", "1.4.3"], ["@aimpact/media-manager", "1.0.0"], ["@beyond-js/reactive", "1.2.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/http-suite", "0.0.1"], ["@beyond-js/widgets", "1.1.2"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/routing", "0.0.1"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.7.9"], ["@google-cloud/storage", "7.15.2"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "10.14.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-select", "5.10.1"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "10.0.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.3.32"], ["@aimpact/ailearn-app", "0.3.32"]]);
+          const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-api", null], ["@aimpact/chat-sdk", "1.4.4"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/http-suite", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.0.4"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-select", "5.10.1"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.3.32"], ["@aimpact/ailearn-app", "0.3.32"]]);
           return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
         };
         /*******************************
@@ -773,7 +756,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
         *************************/
 
         ims.set('./startup', {
-          hash: 338450415,
+          hash: 623677479,
           creator: function (require, exports) {
             "use strict";
 
@@ -781,7 +764,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
               value: true
             });
             exports.Startup = void 0;
-            var _model = require("@aimpact/reactive/model");
+            var _model = require("@beyond-js/reactive/model");
             var _render = require("@beyond-js/widgets/render");
             var _session = require("@aimpact/chat-sdk/session");
             var _core = require("@aimpact/ailearn-sdk/core");
@@ -842,7 +825,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
           "name": "ProfileIcon"
         }];
         return {
-          dependencies: ['react', 'pragmate-ui/icons', '@aimpact/chat-sdk/session', 'pragmate-ui/image', '@aimpact/reactive/model', '@beyond-js/widgets/render', '@aimpact/ailearn-sdk/core', '@aimpact/ailearn-app/config', '@aimpact/chat-sdk/startup', '@aimpact/agents-api/ws-config']
+          dependencies: ['react', 'pragmate-ui/icons', '@aimpact/chat-sdk/session', 'pragmate-ui/image', '@beyond-js/reactive/model', '@beyond-js/widgets/render', '@aimpact/ailearn-sdk/core', '@aimpact/ailearn-app/config', '@aimpact/chat-sdk/startup', '@aimpact/agents-api/ws-config']
         };
       }]);
       __beyond_transversal.initialise(bundles);

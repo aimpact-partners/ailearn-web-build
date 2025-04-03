@@ -1,156 +1,178 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "react@18.3.1", "@beyond-js/kernel@0.1.12/texts"], function (_export, _context) {
-  "use strict";
+System.register(["@beyond-js/kernel@0.1.12/bundle","react@18.3.1","@beyond-js/kernel@0.1.12/core","@beyond-js/kernel@0.1.12/texts"], (_exports, _context) => {
 
-  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, useBinder, useTexts, __beyond_pkg, hmr;
-  _export({
-    useBinder: void 0,
-    useTexts: void 0
+const bimport = specifier => {
+	const dependencies = new Map([["@beyond-js/kernel","0.1.12"],["react","18.3.1"],["@beyond-js/react-18-widgets","1.1.4"]]);
+	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+};
+
+
+var dependencies = new Map();
+var require = dependency => dependencies.get(dependency);
+return {
+setters: [dep => dependencies.set('@beyond-js/kernel@0.1.12/bundle', dep), dep => dependencies.set('react@18.3.1', dep), dep => dependencies.set('@beyond-js/kernel@0.1.12/core', dep), dep => dependencies.set('@beyond-js/kernel@0.1.12/texts', dep)],
+execute: function() {
+// Prevent esbuild from considering the context to be amd
+const define = void 0;
+const module = {};
+
+const code = (module, require) => {
+var __create = Object.create;
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getProtoOf = Object.getPrototypeOf;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all) __defProp(target, name, {
+    get: all[name],
+    enumerable: true
   });
-  return {
-    setters: [function (_beyondJsKernel0112Bundle) {
-      dependency_0 = _beyondJsKernel0112Bundle;
-    }, function (_react) {
-      dependency_1 = _react;
-    }, function (_beyondJsKernel0112Texts) {
-      dependency_2 = _beyondJsKernel0112Texts;
-    }],
-    execute: function () {
-      bimport = specifier => {
-        const dependencies = new Map([["react", "18.2.0"], ["react-dom", "18.2.0"], ["@beyond-js/widgets", "1.1.2"], ["@beyond-js/kernel", "0.1.12"], ["@types/react", "18.0.26"], ["@types/react-dom", "18.0.10"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@aimpact/ailearn-app", "0.3.32"]]);
-        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
-      };
-      ({
-        Bundle: __Bundle
-      } = dependency_0);
-      __pkg = new __Bundle({
-        "module": {
-          "vspecifier": "@beyond-js/react-18-widgets@1.1.4/hooks"
-        },
-        "type": "ts"
-      }, _context.meta.url).package();
-      ;
-      __pkg.dependencies.update([['react', dependency_1], ['@beyond-js/kernel/texts', dependency_2]]);
-      ims = new Map();
-      /***********************
-      INTERNAL MODULE: ./index
-      ***********************/
-      ims.set('./index', {
-        hash: 3517680304,
-        creator: function (require, exports) {
-          "use strict";
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, {
+      get: () => from[key],
+      enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
+    });
+  }
+  return to;
+};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", {
+  value: mod,
+  enumerable: true
+}) : target, mod));
+var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
+  value: true
+}), mod);
 
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.useBinder = useBinder;
-          var React = require("react");
-          /*bundle*/ /***
-                      * Executes a useEffect hook binging the event defined in all
-                      * objects passed
-                         @@ -8,13 +7,18 @@ import * as React from 'react';
-                      * @param {function} onBinder function to be executed when the event is fired
-                      * @param {string} events the event to be listened, by default is event change
-                      */
-          function useBinder(objects, onBinder, events = 'change') {
-            const bindEvents = typeof events === 'string' ? [events] : events;
-            React.useEffect(() => {
-              const callback = (object, method) => {
-                if (!object[method]) return;
-                bindEvents.forEach(event => {
-                  object[method](event, onBinder);
-                });
-              };
-              objects.forEach(object => callback(object, 'on'));
-              return () => objects.forEach(object => callback(object, 'off'));
-            }, []);
-          }
-        }
-      });
-
-      /***********************
-      INTERNAL MODULE: ./types
-      ***********************/
-
-      ims.set('./types', {
-        hash: 1313278057,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-        }
-      });
-
-      /***************************
-      INTERNAL MODULE: ./use-texts
-      ***************************/
-
-      ims.set('./use-texts', {
-        hash: 2200528805,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.useTexts = useTexts;
-          var React = require("react");
-          var _texts = require("@beyond-js/kernel/texts");
-          /*bundle*/
-          function useTexts(specifier, key) {
-            const [ready, setReady] = React.useState(false);
-            const [texts, setTexts] = React.useState({});
-            React.useEffect(() => {
-              const modelTexts = new _texts.CurrentTexts(specifier);
-              const triggerEvent = () => {
-                let value = modelTexts.value;
-                if (modelTexts.ready && key) {
-                  if (!value.hasOwnProperty(key)) {
-                    console.warn(`the key specified for texts was not found. Key passed: ${key}, module specifier: ${specifier}`);
-                  }
-                  //@ts-ignore
-                  value = modelTexts.value[key];
-                }
-                setTexts(value);
-                setReady(modelTexts.ready);
-              };
-              modelTexts.on('change', triggerEvent);
-              triggerEvent();
-              return () => {
-                modelTexts.on('change', triggerEvent);
-              };
-            }, []);
-            const isReady = ready && !!texts;
-            return [isReady, texts];
-          }
-        }
-      });
-      __pkg.exports.descriptor = [{
-        "im": "./index",
-        "from": "useBinder",
-        "name": "useBinder"
-      }, {
-        "im": "./use-texts",
-        "from": "useTexts",
-        "name": "useTexts"
-      }];
-      // Module exports
-      __pkg.exports.process = function ({
-        require,
-        prop,
-        value
-      }) {
-        (require || prop === 'useBinder') && _export("useBinder", useBinder = require ? require('./index').useBinder : value);
-        (require || prop === 'useTexts') && _export("useTexts", useTexts = require ? require('./use-texts').useTexts : value);
-      };
-      _export("__beyond_pkg", __beyond_pkg = __pkg);
-      _export("hmr", hmr = new function () {
-        this.on = (event, listener) => __pkg.hmr.on(event, listener);
-        this.off = (event, listener) => __pkg.hmr.off(event, listener);
-      }());
-      __pkg.initialise(ims);
-    }
-  };
+// .beyond/uimport/@beyond-js/react-18-widgets/hooks.1.1.4.js
+var hooks_1_1_4_exports = {};
+__export(hooks_1_1_4_exports, {
+  __beyond_pkg: () => __beyond_pkg,
+  hmr: () => hmr,
+  useBinder: () => useBinder,
+  useTexts: () => useTexts
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJSZWFjdCIsInJlcXVpcmUiLCJ1c2VCaW5kZXIiLCJvYmplY3RzIiwib25CaW5kZXIiLCJldmVudHMiLCJiaW5kRXZlbnRzIiwidXNlRWZmZWN0IiwiY2FsbGJhY2siLCJvYmplY3QiLCJtZXRob2QiLCJmb3JFYWNoIiwiZXZlbnQiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsImV4cG9ydHMiLCJ2YWx1ZSIsIl90ZXh0cyIsInVzZVRleHRzIiwic3BlY2lmaWVyIiwia2V5IiwicmVhZHkiLCJzZXRSZWFkeSIsInVzZVN0YXRlIiwidGV4dHMiLCJzZXRUZXh0cyIsIm1vZGVsVGV4dHMiLCJDdXJyZW50VGV4dHMiLCJ0cmlnZ2VyRXZlbnQiLCJoYXNPd25Qcm9wZXJ0eSIsImNvbnNvbGUiLCJ3YXJuIiwib24iLCJpc1JlYWR5Il0sInNvdXJjZXMiOlsiL2luZGV4LnRzIiwiL3R5cGVzLnRzIiwiL3VzZS10ZXh0cy50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLEtBQUEsR0FBQUMsT0FBQTtVQVNPLFdBUFA7Ozs7Ozs7VUFPaUIsU0FDUkMsU0FBU0EsQ0FBQ0MsT0FBd0IsRUFBRUMsUUFBMEIsRUFBRUMsTUFBQSxHQUF1QixRQUFRO1lBQ3ZHLE1BQU1DLFVBQVUsR0FBYSxPQUFPRCxNQUFNLEtBQUssUUFBUSxHQUFHLENBQUNBLE1BQU0sQ0FBQyxHQUFHQSxNQUFNO1lBRTNFTCxLQUFLLENBQUNPLFNBQVMsQ0FBQyxNQUFLO2NBQ3BCLE1BQU1DLFFBQVEsR0FBR0EsQ0FBQ0MsTUFBcUIsRUFBRUMsTUFBb0IsS0FBSTtnQkFDaEUsSUFBSSxDQUFDRCxNQUFNLENBQUNDLE1BQU0sQ0FBQyxFQUFFO2dCQUNyQkosVUFBVSxDQUFDSyxPQUFPLENBQUNDLEtBQUssSUFBRztrQkFDMUJILE1BQU0sQ0FBQ0MsTUFBTSxDQUFDLENBQUNFLEtBQUssRUFBRVIsUUFBUSxDQUFDO2dCQUNoQyxDQUFDLENBQUM7Y0FDSCxDQUFDO2NBQ0RELE9BQU8sQ0FBQ1EsT0FBTyxDQUFDRixNQUFNLElBQUlELFFBQVEsQ0FBQ0MsTUFBTSxFQUFFLElBQUksQ0FBQyxDQUFDO2NBQ2pELE9BQU8sTUFBTU4sT0FBTyxDQUFDUSxPQUFPLENBQUNGLE1BQU0sSUFBSUQsUUFBUSxDQUFDQyxNQUFNLEVBQUUsS0FBSyxDQUFDLENBQUM7WUFDaEUsQ0FBQyxFQUFFLEVBQUUsQ0FBQztVQUNQOzs7Ozs7Ozs7OztVQ3ZCQTs7VUFFQUksTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7WUFDQUMsS0FBQTtVQUNBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ0pBLElBQUFoQixLQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBZ0IsTUFBQSxHQUFBaEIsT0FBQTtVQUVPO1VBQVUsU0FDUmlCLFFBQVFBLENBQUNDLFNBQWlCLEVBQUVDLEdBQVk7WUFDaEQsTUFBTSxDQUFDQyxLQUFLLEVBQUVDLFFBQVEsQ0FBQyxHQUFHdEIsS0FBSyxDQUFDdUIsUUFBUSxDQUFDLEtBQUssQ0FBQztZQUMvQyxNQUFNLENBQUNDLEtBQUssRUFBRUMsUUFBUSxDQUFDLEdBQUd6QixLQUFLLENBQUN1QixRQUFRLENBQUMsRUFBRSxDQUFDO1lBRTVDdkIsS0FBSyxDQUFDTyxTQUFTLENBQUMsTUFBSztjQUNwQixNQUFNbUIsVUFBVSxHQUFHLElBQUlULE1BQUEsQ0FBQVUsWUFBWSxDQUFDUixTQUFTLENBQUM7Y0FDOUMsTUFBTVMsWUFBWSxHQUFHQSxDQUFBLEtBQUs7Z0JBQ3pCLElBQUlaLEtBQUssR0FBR1UsVUFBVSxDQUFDVixLQUFLO2dCQUM1QixJQUFJVSxVQUFVLENBQUNMLEtBQUssSUFBSUQsR0FBRyxFQUFFO2tCQUM1QixJQUFJLENBQUNKLEtBQUssQ0FBQ2EsY0FBYyxDQUFDVCxHQUFHLENBQUMsRUFBRTtvQkFDL0JVLE9BQU8sQ0FBQ0MsSUFBSSxDQUNYLDBEQUEwRFgsR0FBRyx1QkFBdUJELFNBQVMsRUFBRSxDQUMvRjs7a0JBRUY7a0JBQ0FILEtBQUssR0FBR1UsVUFBVSxDQUFDVixLQUFLLENBQUNJLEdBQUcsQ0FBQzs7Z0JBRTlCSyxRQUFRLENBQUNULEtBQUssQ0FBQztnQkFDZk0sUUFBUSxDQUFDSSxVQUFVLENBQUNMLEtBQUssQ0FBQztjQUMzQixDQUFDO2NBQ0RLLFVBQVUsQ0FBQ00sRUFBRSxDQUFDLFFBQVEsRUFBRUosWUFBWSxDQUFDO2NBQ3JDQSxZQUFZLEVBQUU7Y0FDZCxPQUFPLE1BQUs7Z0JBQ1hGLFVBQVUsQ0FBQ00sRUFBRSxDQUFDLFFBQVEsRUFBRUosWUFBWSxDQUFDO2NBQ3RDLENBQUM7WUFDRixDQUFDLEVBQUUsRUFBRSxDQUFDO1lBQ04sTUFBTUssT0FBTyxHQUFHWixLQUFLLElBQUksQ0FBQyxDQUFDRyxLQUFLO1lBQ2hDLE9BQU8sQ0FBQ1MsT0FBTyxFQUFFVCxLQUFLLENBQUM7VUFDeEIiLCJpZ25vcmVMaXN0IjpbXX0=
+module.exports = __toCommonJS(hooks_1_1_4_exports);
+
+// node_modules/@beyond-js/react-18-widgets/hooks/hooks.browser.mjs
+var dependency_0 = __toESM(require("@beyond-js/kernel@0.1.12/bundle"), 0);
+var dependency_1 = __toESM(require("react@18.3.1"), 0);
+var dependency_2 = __toESM(require("@beyond-js/kernel@0.1.12/texts"), 0);
+var import_meta = {};
+var {
+  Bundle: __Bundle
+} = dependency_0;
+var __pkg = new __Bundle({
+  "module": {
+    "vspecifier": "@beyond-js/react-18-widgets@1.1.4/hooks"
+  },
+  "type": "ts"
+}, _context.meta.url).package();
+;
+__pkg.dependencies.update([["react", dependency_1], ["@beyond-js/kernel/texts", dependency_2]]);
+var ims = /* @__PURE__ */new Map();
+ims.set("./index", {
+  hash: 3517680304,
+  creator: function (require2, exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.useBinder = useBinder2;
+    var React = require2("react");
+    function useBinder2(objects, onBinder, events = "change") {
+      const bindEvents = typeof events === "string" ? [events] : events;
+      React.useEffect(() => {
+        const callback = (object, method) => {
+          if (!object[method]) return;
+          bindEvents.forEach(event => {
+            object[method](event, onBinder);
+          });
+        };
+        objects.forEach(object => callback(object, "on"));
+        return () => objects.forEach(object => callback(object, "off"));
+      }, []);
+    }
+  }
+});
+ims.set("./types", {
+  hash: 1313278057,
+  creator: function (require2, exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+  }
+});
+ims.set("./use-texts", {
+  hash: 2200528805,
+  creator: function (require2, exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.useTexts = useTexts2;
+    var React = require2("react");
+    var _texts = require2("@beyond-js/kernel/texts");
+    function useTexts2(specifier, key) {
+      const [ready, setReady] = React.useState(false);
+      const [texts, setTexts] = React.useState({});
+      React.useEffect(() => {
+        const modelTexts = new _texts.CurrentTexts(specifier);
+        const triggerEvent = () => {
+          let value = modelTexts.value;
+          if (modelTexts.ready && key) {
+            if (!value.hasOwnProperty(key)) {
+              console.warn(`the key specified for texts was not found. Key passed: ${key}, module specifier: ${specifier}`);
+            }
+            value = modelTexts.value[key];
+          }
+          setTexts(value);
+          setReady(modelTexts.ready);
+        };
+        modelTexts.on("change", triggerEvent);
+        triggerEvent();
+        return () => {
+          modelTexts.on("change", triggerEvent);
+        };
+      }, []);
+      const isReady = ready && !!texts;
+      return [isReady, texts];
+    }
+  }
+});
+__pkg.exports.descriptor = [{
+  "im": "./index",
+  "from": "useBinder",
+  "name": "useBinder"
+}, {
+  "im": "./use-texts",
+  "from": "useTexts",
+  "name": "useTexts"
+}];
+var useBinder, useTexts;
+__pkg.exports.process = function ({
+  require: require2,
+  prop,
+  value
+}) {
+  (require2 || prop === "useBinder") && (useBinder = require2 ? require2("./index").useBinder : value);
+  (require2 || prop === "useTexts") && (useTexts = require2 ? require2("./use-texts").useTexts : value);
+};
+var __beyond_pkg = __pkg;
+var hmr = new function () {
+  this.on = (event, listener) => void 0;
+  this.off = (event, listener) => void 0;
+}();
+__pkg.initialise(ims);
+};
+
+code(module, require);
+_exports(module.exports);
+}}});
+
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC9AYmV5b25kLWpzL3JlYWN0LTE4LXdpZGdldHMvaG9va3MuMS4xLjQuanMiLCIuLi9ub2RlX21vZHVsZXMvQGJleW9uZC1qcy9yZWFjdC0xOC13aWRnZXRzL2hvb2tzL19fc291cmNlcy9ob29rcy9pbmRleC50cyIsIi4uL25vZGVfbW9kdWxlcy9AYmV5b25kLWpzL3JlYWN0LTE4LXdpZGdldHMvaG9va3MvX19zb3VyY2VzL2hvb2tzL3R5cGVzLnRzIiwiLi4vbm9kZV9tb2R1bGVzL0BiZXlvbmQtanMvcmVhY3QtMTgtd2lkZ2V0cy9ob29rcy9fX3NvdXJjZXMvaG9va3MvdXNlLXRleHRzLnRzIl0sIm5hbWVzIjpbImhvb2tzXzFfMV80X2V4cG9ydHMiLCJfX2V4cG9ydCIsIl9fYmV5b25kX3BrZyIsImhtciIsInVzZUJpbmRlciIsInVzZVRleHRzIiwibW9kdWxlIiwiZXhwb3J0cyIsIl9fdG9Db21tb25KUyIsIlJlYWN0IiwicmVxdWlyZTIiLCJ1c2VCaW5kZXIyIiwib2JqZWN0cyIsIm9uQmluZGVyIiwiZXZlbnRzIiwiYmluZEV2ZW50cyIsInVzZUVmZmVjdCIsImNhbGxiYWNrIiwib2JqZWN0IiwibWV0aG9kIiwiZm9yRWFjaCIsImV2ZW50IiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJ2YWx1ZSIsIl90ZXh0cyIsInVzZVRleHRzMiIsInNwZWNpZmllciIsImtleSIsInJlYWR5Iiwic2V0UmVhZHkiLCJ1c2VTdGF0ZSIsInRleHRzIiwic2V0VGV4dHMiLCJtb2RlbFRleHRzIiwiQ3VycmVudFRleHRzIiwidHJpZ2dlckV2ZW50IiwiaGFzT3duUHJvcGVydHkiLCJjb25zb2xlIiwid2FybiIsIm9uIiwiaXNSZWFkeSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsSUFBQUEsbUJBQUE7QUFBQUMsUUFBQSxDQUFBRCxtQkFBQTtFQUFBRSxZ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

@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/reactive@1.2.0-beta.01/model", "@beyond-js/kernel@0.1.12/core"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/reactive@2.0.4/model", "@beyond-js/kernel@0.1.12/core"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, mediaDevice, __beyond_pkg, hmr;
@@ -6,8 +6,8 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/reactive@1.2.0-b
   return {
     setters: [function (_beyondJsKernel0112Bundle) {
       dependency_0 = _beyondJsKernel0112Bundle;
-    }, function (_beyondJsReactive120Beta01Model) {
-      dependency_1 = _beyondJsReactive120Beta01Model;
+    }, function (_beyondJsReactive204Model) {
+      dependency_1 = _beyondJsReactive204Model;
     }, function (_beyondJsKernel0112Core) {
       dependency_2 = _beyondJsKernel0112Core;
     }],

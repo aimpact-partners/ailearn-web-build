@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.1.0/groups", "@aimpact/ailearn-sdk@1.1.0/config", "@aimpact/chat-sdk@1.4.3/session", "@beyond-js/http-suite@0.0.1/api"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.1.0/groups", "@aimpact/ailearn-sdk@1.1.0/config", "@aimpact/chat-sdk@1.4.4/session", "@beyond-js/http-suite@0.0.1/api"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Organizations, Organization, __beyond_pkg, hmr;
@@ -13,14 +13,14 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.1.0/
       dependency_1 = _aimpactAilearnSdk110Groups;
     }, function (_aimpactAilearnSdk110Config) {
       dependency_2 = _aimpactAilearnSdk110Config;
-    }, function (_aimpactChatSdk143Session) {
-      dependency_3 = _aimpactChatSdk143Session;
+    }, function (_aimpactChatSdk144Session) {
+      dependency_3 = _aimpactChatSdk144Session;
     }, function (_beyondJsHttpSuite001Api) {
       dependency_4 = _beyondJsHttpSuite001Api;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.4.3"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "1.2.0"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@types/node", "22.5.5"], ["dexie", "4.0.8"], ["firebase", "10.13.2"], ["pragmate-ui", "0.0.6"], ["react-select", "5.8.1"], ["socket.io-client", "4.7.5"], ["zod", "3.23.8"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-app", "0.3.32"]]);
+        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.4.4"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "2.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@firebase/auth", "1.10.0"], ["@types/node", "22.13.16"], ["dexie", "4.0.11"], ["firebase", "10.14.1"], ["pragmate-ui", "0.0.6"], ["react-select", "5.10.1"], ["socket.io-client", "4.8.1"], ["zod", "3.24.2"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-app", "0.3.32"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({

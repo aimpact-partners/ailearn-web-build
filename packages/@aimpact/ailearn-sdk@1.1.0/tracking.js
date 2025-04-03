@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1/api", "@aimpact/ailearn-sdk@1.1.0/config", "@aimpact/chat-sdk@1.4.3/session", "@aimpact/media-manager@1.0.0/uploader", "@aimpact/reactive@0.0.1/entities/item", "@aimpact/reactive@0.0.1/entities/collection", "@aimpact/chat-sdk@1.4.3/core", "@aimpact/ailearn-sdk@1.1.0/entities/learning-modules", "@aimpact/reactive@0.0.1/model", "@aimpact/ailearn-sdk@1.1.0/entities/classrooms"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1/api", "@aimpact/ailearn-sdk@1.1.0/config", "@aimpact/chat-sdk@1.4.4/session", "@aimpact/media-manager@1.0.0/uploader", "@beyond-js/reactive@2.0.4/entities/item", "@beyond-js/reactive@2.0.4/entities/collection", "@aimpact/chat-sdk@1.4.4/core", "@aimpact/ailearn-sdk@1.1.0/entities/learning-modules", "@beyond-js/reactive@2.0.4/model", "@aimpact/ailearn-sdk@1.1.0/entities/classrooms"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, bimport, __Bundle, __pkg, ims, Activity, Assignments, Assignment, Credits, TrackingDashboard, ParticipantProvider, Tracking, IActivityListItem, IActivityBase, TrackingStatusType, IActivityTrackingBase, IDashboard, __beyond_pkg, hmr;
@@ -23,26 +23,26 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       dependency_1 = _beyondJsHttpSuite001Api;
     }, function (_aimpactAilearnSdk110Config) {
       dependency_2 = _aimpactAilearnSdk110Config;
-    }, function (_aimpactChatSdk143Session) {
-      dependency_3 = _aimpactChatSdk143Session;
+    }, function (_aimpactChatSdk144Session) {
+      dependency_3 = _aimpactChatSdk144Session;
     }, function (_aimpactMediaManager100Uploader) {
       dependency_4 = _aimpactMediaManager100Uploader;
-    }, function (_aimpactReactive001EntitiesItem) {
-      dependency_5 = _aimpactReactive001EntitiesItem;
-    }, function (_aimpactReactive001EntitiesCollection) {
-      dependency_6 = _aimpactReactive001EntitiesCollection;
-    }, function (_aimpactChatSdk143Core) {
-      dependency_7 = _aimpactChatSdk143Core;
+    }, function (_beyondJsReactive204EntitiesItem) {
+      dependency_5 = _beyondJsReactive204EntitiesItem;
+    }, function (_beyondJsReactive204EntitiesCollection) {
+      dependency_6 = _beyondJsReactive204EntitiesCollection;
+    }, function (_aimpactChatSdk144Core) {
+      dependency_7 = _aimpactChatSdk144Core;
     }, function (_aimpactAilearnSdk110EntitiesLearningModules) {
       dependency_8 = _aimpactAilearnSdk110EntitiesLearningModules;
-    }, function (_aimpactReactive001Model) {
-      dependency_9 = _aimpactReactive001Model;
+    }, function (_beyondJsReactive204Model) {
+      dependency_9 = _beyondJsReactive204Model;
     }, function (_aimpactAilearnSdk110EntitiesClassrooms) {
       dependency_10 = _aimpactAilearnSdk110EntitiesClassrooms;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.4.3"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "1.2.0"], ["@aimpact/reactive", "0.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@types/node", "22.5.5"], ["dexie", "4.0.8"], ["firebase", "10.13.2"], ["pragmate-ui", "0.0.6"], ["react-select", "5.8.1"], ["socket.io-client", "4.7.5"], ["zod", "3.23.8"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-app", "0.3.32"]]);
+        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.0.1"], ["@aimpact/chat-sdk", "1.4.4"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "2.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@firebase/auth", "1.10.0"], ["@types/node", "22.13.16"], ["dexie", "4.0.11"], ["firebase", "10.14.1"], ["pragmate-ui", "0.0.6"], ["react-select", "5.10.1"], ["socket.io-client", "4.8.1"], ["zod", "3.24.2"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.1.0"], ["@aimpact/ailearn-app", "0.3.32"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -55,13 +55,13 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
         "type": "ts"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/http-suite/api', dependency_1], ['@aimpact/ailearn-sdk/config', dependency_2], ['@aimpact/chat-sdk/session', dependency_3], ['@aimpact/media-manager/uploader', dependency_4], ['@aimpact/reactive/entities/item', dependency_5], ['@aimpact/reactive/entities/collection', dependency_6], ['@aimpact/chat-sdk/core', dependency_7], ['@aimpact/ailearn-sdk/entities/learning-modules', dependency_8], ['@aimpact/reactive/model', dependency_9], ['@aimpact/ailearn-sdk/entities/classrooms', dependency_10]]);
+      __pkg.dependencies.update([['@beyond-js/http-suite/api', dependency_1], ['@aimpact/ailearn-sdk/config', dependency_2], ['@aimpact/chat-sdk/session', dependency_3], ['@aimpact/media-manager/uploader', dependency_4], ['@beyond-js/reactive/entities/item', dependency_5], ['@beyond-js/reactive/entities/collection', dependency_6], ['@aimpact/chat-sdk/core', dependency_7], ['@aimpact/ailearn-sdk/entities/learning-modules', dependency_8], ['@beyond-js/reactive/model', dependency_9], ['@aimpact/ailearn-sdk/entities/classrooms', dependency_10]]);
       ims = new Map();
       /************************************************
       INTERNAL MODULE: ./activities/collection-provider
       ************************************************/
       ims.set('./activities/collection-provider', {
-        hash: 3968252624,
+        hash: 3881695611,
         creator: function (require, exports) {
           "use strict";
 
@@ -148,7 +148,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       ***************************************/
 
       ims.set('./activities/collection', {
-        hash: 952222850,
+        hash: 74674477,
         creator: function (require, exports) {
           "use strict";
 
@@ -156,7 +156,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
             value: true
           });
           exports.Activities = void 0;
-          var _collection = require("@aimpact/reactive/entities/collection");
+          var _collection = require("@beyond-js/reactive/entities/collection");
           var _ = require("./");
           var _provider = require("./provider");
           class Activities extends _collection.Collection {
@@ -236,7 +236,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       **********************************/
 
       ims.set('./activities/index', {
-        hash: 9964714,
+        hash: 1985366736,
         creator: function (require, exports) {
           "use strict";
 
@@ -245,7 +245,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
           });
           exports.Activity = void 0;
           var _core = require("@aimpact/chat-sdk/core");
-          var _item = require("@aimpact/reactive/entities/item");
+          var _item = require("@beyond-js/reactive/entities/item");
           var _credits = require("../credits");
           var _provider = require("./provider");
           /*bundle*/
@@ -424,7 +424,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       *************************************/
 
       ims.set('./activities/provider', {
-        hash: 3377177728,
+        hash: 2123071808,
         creator: function (require, exports) {
           "use strict";
 
@@ -515,7 +515,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       ****************************************/
 
       ims.set('./assignments/collection', {
-        hash: 3043141596,
+        hash: 2173799384,
         creator: function (require, exports) {
           "use strict";
 
@@ -523,7 +523,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
             value: true
           });
           exports.Assignments = void 0;
-          var _collection = require("@aimpact/reactive/entities/collection");
+          var _collection = require("@beyond-js/reactive/entities/collection");
           var _item = require("./item");
           /*bundle*/
           class Assignments extends _collection.Collection {
@@ -543,7 +543,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       **********************************/
 
       ims.set('./assignments/item', {
-        hash: 3263239267,
+        hash: 1328445365,
         creator: function (require, exports) {
           "use strict";
 
@@ -551,7 +551,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
             value: true
           });
           exports.Assignment = void 0;
-          var _item = require("@aimpact/reactive/entities/item");
+          var _item = require("@beyond-js/reactive/entities/item");
           /*bundle */
           class Assignment extends _item.Item {
             constructor(args) {
@@ -571,7 +571,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       *************************/
 
       ims.set('./credits', {
-        hash: 1084823483,
+        hash: 2299380065,
         creator: function (require, exports) {
           "use strict";
 
@@ -579,7 +579,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
             value: true
           });
           exports.Credits = void 0;
-          var _model = require("@aimpact/reactive/model");
+          var _model = require("@beyond-js/reactive/model");
           /*bundle*/
           class Credits extends _model.ReactiveModel {
             constructor(args) {
@@ -598,7 +598,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       ********************************************/
 
       ims.set('./dashboard/activities/index', {
-        hash: 2352927759,
+        hash: 3676316793,
         creator: function (require, exports) {
           "use strict";
 
@@ -606,7 +606,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
             value: true
           });
           exports.DashboardActivities = void 0;
-          var _collection = require("@aimpact/reactive/entities/collection");
+          var _collection = require("@beyond-js/reactive/entities/collection");
           var _item = require("./item");
           class DashboardActivities extends _collection.Collection {
             #parent;
@@ -652,7 +652,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       *******************************************/
 
       ims.set('./dashboard/activities/item', {
-        hash: 3025749353,
+        hash: 1697760133,
         creator: function (require, exports) {
           "use strict";
 
@@ -660,7 +660,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
             value: true
           });
           exports.DashboardActivity = void 0;
-          var _item = require("@aimpact/reactive/entities/item");
+          var _item = require("@beyond-js/reactive/entities/item");
           class DashboardActivity extends _item.Item {
             #parent;
             #dashboard;
@@ -692,7 +692,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       *********************************/
 
       ims.set('./dashboard/index', {
-        hash: 180038894,
+        hash: 3873797573,
         creator: function (require, exports) {
           "use strict";
 
@@ -701,7 +701,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
           });
           exports.TrackingDashboard = void 0;
           var _session = require("@aimpact/chat-sdk/session");
-          var _item = require("@aimpact/reactive/entities/item");
+          var _item = require("@beyond-js/reactive/entities/item");
           var _activities = require("./activities");
           var _participants = require("./participants");
           var _dashboard = require("./providers/dashboard");
@@ -759,7 +759,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       *********************************************************/
 
       ims.set('./dashboard/participants/activities/index', {
-        hash: 219202554,
+        hash: 225838489,
         creator: function (require, exports) {
           "use strict";
 
@@ -767,7 +767,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
             value: true
           });
           exports.ParticipantActivities = void 0;
-          var _model = require("@aimpact/reactive/model");
+          var _model = require("@beyond-js/reactive/model");
           var _item = require("./item");
           var _multipleChoice = require("./multiple-choice");
           var _spoken = require("./spoken");
@@ -854,7 +854,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       ********************************************************/
 
       ims.set('./dashboard/participants/activities/item', {
-        hash: 1871136456,
+        hash: 1072921300,
         creator: function (require, exports) {
           "use strict";
 
@@ -863,7 +863,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
           });
           exports.ParticipantActivity = void 0;
           var _core = require("@aimpact/chat-sdk/core");
-          var _item = require("@aimpact/reactive/entities/item");
+          var _item = require("@beyond-js/reactive/entities/item");
           class ParticipantActivity extends _item.Item {
             #parent;
             get dashboard() {
@@ -940,7 +940,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       *******************************************************************/
 
       ims.set('./dashboard/participants/activities/multiple-choice', {
-        hash: 3949132676,
+        hash: 4142976364,
         creator: function (require, exports) {
           "use strict";
 
@@ -948,7 +948,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
             value: true
           });
           exports.ParticipantMultipleChoiceActivity = void 0;
-          var _item = require("@aimpact/reactive/entities/item");
+          var _item = require("@beyond-js/reactive/entities/item");
           class ParticipantMultipleChoiceActivity extends _item.Item {
             #objectives = [];
             get objectives() {
@@ -991,7 +991,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       **********************************************************/
 
       ims.set('./dashboard/participants/activities/spoken', {
-        hash: 1727874112,
+        hash: 1641659011,
         creator: function (require, exports) {
           "use strict";
 
@@ -999,7 +999,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
             value: true
           });
           exports.ParticipantSpokenActivity = void 0;
-          var _item = require("@aimpact/reactive/entities/item");
+          var _item = require("@beyond-js/reactive/entities/item");
           class ParticipantSpokenActivity extends _item.Item {
             get icons() {
               if (this.assessment) {
@@ -1046,7 +1046,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       **********************************************/
 
       ims.set('./dashboard/participants/index', {
-        hash: 3019558684,
+        hash: 3470754433,
         creator: function (require, exports) {
           "use strict";
 
@@ -1054,7 +1054,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
             value: true
           });
           exports.Participants = void 0;
-          var _collection = require("@aimpact/reactive/entities/collection");
+          var _collection = require("@beyond-js/reactive/entities/collection");
           var _item = require("./item");
           class Participants extends _collection.Collection {
             #parent;
@@ -1103,7 +1103,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       *********************************************/
 
       ims.set('./dashboard/participants/item', {
-        hash: 3070139033,
+        hash: 3841754010,
         creator: function (require, exports) {
           "use strict";
 
@@ -1111,7 +1111,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
             value: true
           });
           exports.Participant = void 0;
-          var _item = require("@aimpact/reactive/entities/item");
+          var _item = require("@beyond-js/reactive/entities/item");
           var _activities = require("./activities");
           var _participant = require("../providers/participant");
           var _credits = require("../../credits");
@@ -1211,7 +1211,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       *********************************************/
 
       ims.set('./dashboard/participants/user', {
-        hash: 1674227001,
+        hash: 3284649687,
         creator: function (require, exports) {
           "use strict";
 
@@ -1219,7 +1219,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
             value: true
           });
           exports.UserData = void 0;
-          var _item = require("@aimpact/reactive/entities/item");
+          var _item = require("@beyond-js/reactive/entities/item");
           class UserData extends _item.Item {
             constructor({
               parent,
@@ -1241,7 +1241,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       ***********************************************/
 
       ims.set('./dashboard/providers/dashboard', {
-        hash: 1579106053,
+        hash: 287869986,
         creator: function (require, exports) {
           "use strict";
 
@@ -1388,7 +1388,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       ***********************/
 
       ims.set('./index', {
-        hash: 3658574719,
+        hash: 1846372231,
         creator: function (require, exports) {
           "use strict";
 
@@ -1399,7 +1399,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
           var _config = require("@aimpact/ailearn-sdk/config");
           var _session = require("@aimpact/chat-sdk/session");
           var _api = require("@beyond-js/http-suite/api");
-          var _item = require("@aimpact/reactive/entities/item");
+          var _item = require("@beyond-js/reactive/entities/item");
           var _collection = require("./activities/collection");
           var _learningModules = require("@aimpact/ailearn-sdk/entities/learning-modules");
           var _credits = require("./credits");
@@ -1546,7 +1546,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/http-suite@0.0.1
       **************************/
 
       ims.set('./provider', {
-        hash: 3044593225,
+        hash: 3762021847,
         creator: function (require, exports) {
           "use strict";
 

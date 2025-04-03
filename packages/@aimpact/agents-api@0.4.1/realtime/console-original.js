@@ -1,11 +1,11 @@
-System.register(["@beyond-js/widgets@1.1.3/render", "@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/styles", "@beyond-js/react-18-widgets@1.1.4/page", "@aimpact/agents-api@0.4.1/realtime/audio/recorder", "react@18.3.1", "@aimpact/agents-api@0.4.1/realtime/widgets/state", "@aimpact/agents-api@0.4.1/realtime/client", "@aimpact/agents-api@0.4.1/realtime/client/conversation"], function (_export, _context) {
+System.register(["@beyond-js/widgets@1.1.2/render", "@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/styles", "@beyond-js/react-18-widgets@1.1.4/page", "@aimpact/agents-api@0.4.1/realtime/audio/recorder", "react@18.3.1", "@aimpact/agents-api@0.4.1/realtime/widgets/state", "@aimpact/agents-api@0.4.1/realtime/client", "@aimpact/agents-api@0.4.1/realtime/client/conversation"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, bimport, __Bundle, __pkg, ims, Controller, __beyond_pkg, hmr;
   _export("Controller", void 0);
   return {
-    setters: [function (_beyondJsWidgets113Render) {
-      dependency_0 = _beyondJsWidgets113Render;
+    setters: [function (_beyondJsWidgets112Render) {
+      dependency_0 = _beyondJsWidgets112Render;
     }, function (_beyondJsKernel0112Bundle) {
       dependency_1 = _beyondJsKernel0112Bundle;
     }, function (_beyondJsKernel0112Styles) {
