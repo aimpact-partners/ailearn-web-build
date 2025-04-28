@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "@beyond-js/http-suite",
-        "version": "0.0.1",
+        "version": "0.1.0",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]
