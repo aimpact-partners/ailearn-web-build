@@ -14,10 +14,17 @@ System.register([], function (_export, _context) {
         "environment": "testing",
         "global.css": true,
         "params": {
+          "project": "ailearn",
           "baseUrl": "https://test.app.rvd.ai",
           "apis": {
-            "ailearn": "https://test.ailearn.api.aimpact.partners",
-            "chat": "https://test.agents.api.aimpact.partners"
+            "rvd": {
+              "ailearn": "https://test.ailearn.api.aimpact.partners",
+              "chat": "https://test.agents.api.aimpact.partners"
+            },
+            "betterMind": {
+              "ailearn": "https://better-mind-api-1062406359948.europe-west10.run.app/",
+              "chat": "https://agents-api-883367315651.europe-west10.run.app/"
+            }
           }
         },
         "ssr": {},
