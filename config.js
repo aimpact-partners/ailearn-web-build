@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/ailearn-app',
-				version: '0.3.35-test.01',
+				version: '0.4.1-test.06',
 				languages: {
 					default: 'en',
 					supported: ['en', 'es', 'de']
@@ -18,15 +18,15 @@ System.register([], function (_export, _context) {
 						system: false
 					},
 					container: 'file',
-					project: 'ailearn',
-					APP_NAME: 'RVD.AI',
-					APP_LOGO: '/assets/rvd/rvd.png',
+					project: 'rvd',
+					APP_NAME: 'Ailearn',
+					APP_LOGO: 'logo.png',
 					url: 'https://documents-rb5caohzgq-wl.a.run.app/upload',
 					DOCUMENTS_SERVER: 'https://documents-rb5caohzgq-wl.a.run.app',
 					CHAT_API_SERVER: 'https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload',
 					beta: false,
 					apps: {
-						betterMind: {
+						'better-mind': {
 							apiKey: 'AIzaSyBpF4toVpG-m_XQa3S1Z43hpe766H2JUUA',
 							authDomain: 'better-mind-dev.firebaseapp.com',
 							projectId: 'better-mind-dev',
@@ -35,7 +35,7 @@ System.register([], function (_export, _context) {
 							appId: '1:1062406359948:web:6423f65f5a0cb0358864a9',
 							measurementId: 'G-KMQ7Z80SH9'
 						},
-						ailearn: {
+						rvd: {
 							apiKey: 'AIzaSyBYiZcPNBky2QvNdVwgCgU_v2B7feLtbQU',
 							authDomain: 'aimpact-partners-dev.firebaseapp.com',
 							databaseURL: 'https://aimpact-partners-dev-default-rtdb.firebaseio.com',
@@ -48,8 +48,8 @@ System.register([], function (_export, _context) {
 					},
 					baseUrl: 'https://test.app.rvd.ai',
 					apis: {
-						ailearn: 'https://test.ailearn.api.aimpact.partners',
-						betterMind: 'https://better-mind-api-1062406359948.europe-west10.run.app/'
+						rvd: 'https://test.ailearn.api.aimpact.partners',
+						'better-mind': 'https://better-mind-api-1062406359948.europe-west10.run.app'
 					}
 				},
 				ssr: {},
