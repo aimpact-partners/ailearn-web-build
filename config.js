@@ -18,6 +18,7 @@ System.register([], function (e, a) {
 					DOCUMENTS_SERVER: 'https://documents-rb5caohzgq-wl.a.run.app',
 					CHAT_API_SERVER: 'https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload',
 					beta: !1,
+					baseUrl: 'https://beta.app.rvd.ai',
 					apps: {
 						'better-mind': {
 							apiKey: 'AIzaSyBpF4toVpG-m_XQa3S1Z43hpe766H2JUUA',
@@ -29,17 +30,14 @@ System.register([], function (e, a) {
 							measurementId: 'G-KMQ7Z80SH9'
 						},
 						rvd: {
-							apiKey: 'AIzaSyBYiZcPNBky2QvNdVwgCgU_v2B7feLtbQU',
-							authDomain: 'aimpact-partners-dev.firebaseapp.com',
-							databaseURL: 'https://aimpact-partners-dev-default-rtdb.firebaseio.com',
-							projectId: 'aimpact-partners-dev',
-							storageBucket: 'aimpact-partners-dev.appspot.com',
-							messagingSenderId: '1081434267674',
-							appId: '1:1081434267674:web:9396cc23e55385b5d171a3',
-							measurementId: 'G-QLL5WFH89Y'
+							apiKey: 'AIzaSyAEEozzwR0cguqynxvL1qB38i8liOCgtJc',
+							authDomain: 'aimpact-partners-prod.firebaseapp.com',
+							projectId: 'aimpact-partners-prod',
+							storageBucket: 'aimpact-partners-prod.appspot.com',
+							messagingSenderId: '741854278426',
+							appId: '1:741854278426:web:9ff2a50e705edcc501f2a3'
 						}
 					},
-					baseUrl: 'https://beta.app.rvd.ai',
 					apis: {
 						rvd: 'https://beta.ailearn.api.aimpact.partners',
 						'better-mind': 'https://better-mind-api-1062406359948.europe-west10.run.app'
