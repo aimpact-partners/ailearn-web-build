@@ -48,4 +48,4 @@ System.register([], function (e, a) {
 			});
 		}
 	};
-});
+}); //beta.07
