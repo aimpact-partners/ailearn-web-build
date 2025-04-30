@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/ailearn-app',
-				version: '0.4.1-test.06',
+				version: '0.4.1-test.07',
 				languages: {
 					default: 'en',
 					supported: ['en', 'es', 'de']
@@ -25,6 +25,7 @@ System.register([], function (_export, _context) {
 					DOCUMENTS_SERVER: 'https://documents-rb5caohzgq-wl.a.run.app',
 					CHAT_API_SERVER: 'https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload',
 					beta: false,
+					baseUrl: 'https://test.app.rvd.ai',
 					apps: {
 						'better-mind': {
 							apiKey: 'AIzaSyBpF4toVpG-m_XQa3S1Z43hpe766H2JUUA',
@@ -36,17 +37,14 @@ System.register([], function (_export, _context) {
 							measurementId: 'G-KMQ7Z80SH9'
 						},
 						rvd: {
-							apiKey: 'AIzaSyBYiZcPNBky2QvNdVwgCgU_v2B7feLtbQU',
-							authDomain: 'aimpact-partners-dev.firebaseapp.com',
-							databaseURL: 'https://aimpact-partners-dev-default-rtdb.firebaseio.com',
-							projectId: 'aimpact-partners-dev',
-							storageBucket: 'aimpact-partners-dev.appspot.com',
-							messagingSenderId: '1081434267674',
-							appId: '1:1081434267674:web:9396cc23e55385b5d171a3',
-							measurementId: 'G-QLL5WFH89Y'
+							apiKey: 'AIzaSyDiwwiF_O_WZHyq7QrjnxqIg9EXz1vavV0',
+							authDomain: 'chat-api-test-393820.firebaseapp.com',
+							projectId: 'chat-api-test-393820',
+							storageBucket: 'chat-api-test-393820.appspot.com',
+							messagingSenderId: '1083395329827',
+							appId: '1:1083395329827:web:c6fead0e2d4124b4f90696'
 						}
 					},
-					baseUrl: 'https://test.app.rvd.ai',
 					apis: {
 						rvd: 'https://test.ailearn.api.aimpact.partners',
 						'better-mind': 'https://better-mind-api-1062406359948.europe-west10.run.app'
