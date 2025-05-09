@@ -4,7 +4,7 @@ System.register([], function (a, e) {
 		execute: function () {
 			a('default', {
 				package: '@aimpact/rvd',
-				version: '0.4.1-beta.11',
+				version: '0.4.1-beta.12',
 				languages: { default: 'en', supported: ['en', 'es', 'de'] },
 				environment: 'quality',
 				'global.css': !0,
@@ -13,9 +13,10 @@ System.register([], function (a, e) {
 					APP_LOGO: '/assets/images/branding/logo.png',
 					APP_NAME: 'AILearn',
 					APP_SUPPORT_EMAIL: 'soporte@rvd.ai',
+					tutorials: !0,
 					baseUrl: 'https://beta.app.rvd.ai',
 					apis: {
-						ailearn: 'https://beta.agents.api.aimpact.partners',
+						ailearn: 'https://beta.ailearn.api.aimpact.partners',
 						agents: 'https://beta.agents.api.aimpact.partners'
 					},
 					firebase: {
