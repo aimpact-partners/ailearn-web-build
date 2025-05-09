@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2578742009,
+        hash: 602054958,
         creator: function (require, exports) {
           exports.txt = {
             "menu": {
@@ -41,7 +41,8 @@ System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context
               "classworks": "Klassenarbeiten",
               "chat": "Chat",
               "organizations": "Institute",
-              "archive": "Archiv"
+              "archive": "Archiv",
+              "support": "Support"
             },
             "userMenu": {
               "logout": "Abmelden",

@@ -758,7 +758,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
         *************************/
 
         ims.set('./startup', {
-          hash: 3380910174,
+          hash: 3523488308,
           creator: function (require, exports) {
             "use strict";
 
@@ -793,7 +793,9 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
                 const {
                   firebase,
                   apis,
-                  baseUrl
+                  baseUrl,
+                  APP_LOGO,
+                  APP_NAME
                 } = params;
                 _session.sessionWrapper.settings({
                   firebase
@@ -804,14 +806,18 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
                   apis,
                   baseUrl,
                   project,
-                  version
+                  version,
+                  APP_LOGO,
+                  APP_NAME,
+                  ...params
                 });
                 // initialize chat-sdk settings
                 await _startup.sdkConfig.initialize({
                   environment: environment,
                   userModel: _core.User,
                   project,
-                  apis
+                  apis,
+                  api: apis.agents
                 });
                 await _startup2.sdkConfig.initialize({
                   environment: environment,
