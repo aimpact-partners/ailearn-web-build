@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1390665716,
+        hash: 2606463085,
         creator: function (require, exports) {
           exports.txt = {
             "errors": {
@@ -112,7 +112,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context
               "institution": {
                 "icon": "institution",
                 "title": "Ich bin eine Institution",
-                "description": "Fügen Sie künstliche Intelligenz zu Ihrem Bildungsangebot hinzu und ermöglichen Sie Ihrer Gemeinschaft, KI-unterstützte Inhalte zu generieren."
+                "description": "Fügen Sie künstliche Intelligenz zu Ihrem Bildungsangebot hinzu und ermöglichen Sie Ihrer Community, KI-unterstützte Inhalte zu generieren."
               }
             },
             "student": {
