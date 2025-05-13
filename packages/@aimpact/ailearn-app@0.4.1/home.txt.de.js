@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 1679167937,
+        hash: 3479968889,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -106,7 +106,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context
                   "description": "Hier können Sie Ihre Erfahrung in RVD.AI anpassen. Sie können Ihre persönlichen Informationen aktualisieren, Ihre bevorzugte Sprache angeben, Barrierefreiheitsoptionen konfigurieren und die Audiogeschwindigkeit anpassen."
                 },
                 "community": {
-                  "title": "Gemeinschaft",
+                  "title": "Community",
                   "description": "Entdecken Sie unsere Sammlung von Lernmodulen, die von Experten erstellt wurden. Finden Sie eine Vielzahl von einsatzbereiten Inhalten für Ihre Klassenräume. Sie können diese Module nach Ihren Kriterien bearbeiten und anpassen, um sie an die Bedürfnisse Ihrer Schüler anzupassen."
                 },
                 "drafts": {
@@ -188,7 +188,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context
               }
             },
             "community": {
-              "title": "Gemeinschaft",
+              "title": "Community",
               "actions": {
                 "link": "Alle anzeigen",
                 "test": "Demo",
