@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/rvd',
-				version: '0.4.1-dev.11',
+				version: '0.4.5',
 				languages: {
 					default: 'en',
 					supported: ['en', 'es', 'de']
@@ -18,9 +18,10 @@ System.register([], function (_export, _context) {
 					APP_LOGO: '/assets/images/branding/logo.png',
 					APP_NAME: 'AILearn',
 					APP_SUPPORT_EMAIL: 'soporte@rvd.ai',
+					tutorials: true,
 					baseUrl: 'https://test.app.rvd.ai',
 					apis: {
-						ailearn: 'https://test.agents.api.aimpact.partners',
+						ailearn: 'https://test.ailearn.api.aimpact.partners',
 						agents: 'https://test.agents.api.aimpact.partners'
 					},
 					firebase: {

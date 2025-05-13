@@ -758,7 +758,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
         *************************/
 
         ims.set('./startup', {
-          hash: 3523488308,
+          hash: 564348798,
           creator: function (require, exports) {
             "use strict";
 
@@ -775,6 +775,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
             var _wsConfig = require("@aimpact/agents-api/ws-config");
             var _wrapper = require("@aimpact/ailearn-app/model/wrapper");
             var _startup2 = require("@aimpact/ailearn-sdk/startup");
+            var _routing = require("@aimpact/rvd/routing");
             //@ts-ignore
 
             class Startup extends _model.ReactiveModel {
@@ -803,6 +804,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
                 const project = 'rvd';
                 // initialize ailearn-app settings
                 _wrapper.Config.initialize({
+                  Router: _routing.Router,
                   apis,
                   baseUrl,
                   project,
@@ -859,7 +861,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
           "name": "ProfileIcon"
         }];
         return {
-          dependencies: ['react', 'pragmate-ui/icons', '@aimpact/chat-sdk/session', 'pragmate-ui/image', '@beyond-js/reactive/model', '@beyond-js/widgets/render', '@aimpact/ailearn-sdk/core', '@aimpact/rvd/config', '@aimpact/chat-sdk/startup', '@aimpact/agents-api/ws-config', '@aimpact/ailearn-app/model/wrapper', '@aimpact/ailearn-sdk/startup']
+          dependencies: ['react', 'pragmate-ui/icons', '@aimpact/chat-sdk/session', 'pragmate-ui/image', '@beyond-js/reactive/model', '@beyond-js/widgets/render', '@aimpact/ailearn-sdk/core', '@aimpact/rvd/config', '@aimpact/chat-sdk/startup', '@aimpact/agents-api/ws-config', '@aimpact/ailearn-app/model/wrapper', '@aimpact/ailearn-sdk/startup', '@aimpact/rvd/routing']
         };
       }]);
       __beyond_transversal.initialise(bundles);
