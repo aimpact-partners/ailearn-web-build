@@ -1,30 +1,42 @@
-System.register([], function (a, e) {
-	return {
-		setters: [],
-		execute: function () {
-			a('default', {
-				package: '@aimpact/ailearn-app',
-				version: '0.3.31',
-				languages: { default: 'en', supported: ['en', 'es'] },
-				environment: 'production',
-				'global.css': !0,
-				params: {
-					config: { system: !1 },
-					container: 'file',
-					project: 'ailearn-estrada',
-					APP_NAME: 'RVD.AI',
-					APP_LOGO: '/assets/rvd/rvd.png',
-					url: 'https://documents-rb5caohzgq-wl.a.run.app/upload',
-					DOCUMENTS_SERVER: 'https://documents-rb5caohzgq-wl.a.run.app',
-					CHAT_API_SERVER: 'https://chat-api-http-v2-rb5caohzgq-uc.a.run.app/upload',
-					beta: !1,
-					elevenlabs: { key: 'ebe05ca0a4d9aafb4024d0666471a0c7', id: 'pNInz6obpgDQGcFmaJgB' },
-					baseUrl: 'https://app.rvd.ai',
-					apis: { ailearn: 'https://ailearn.api.aimpact.partners' }
-				},
-				ssr: {},
-				backend: {}
-			});
-		}
-	};
+System.register([], function (_export, _context) {
+  "use strict";
+
+  return {
+    setters: [],
+    execute: function () {
+      _export("default", {
+        "package": "@aimpact/rvd",
+        "version": "0.4.1",
+        "languages": {
+          "default": "en",
+          "supported": ["en", "es", "de"]
+        },
+        "environment": "production",
+        "global.css": true,
+        "params": {
+          "app": "rvd",
+          "APP_LOGO": "/assets/images/branding/logo.png",
+          "APP_NAME": "AILearn",
+          "APP_SUPPORT_EMAIL": "soporte@rvd.ai",
+          "tutorials": true,
+          "baseUrl": "https://app.rvd.ai",
+          "apis": {
+            "ailearn": "https://ailearn.api.aimpact.partners",
+            "agents": "https://agents.api.aimpact.partners"
+          },
+          "firebase": {
+            "baseUrl": "https://app.rvd.ai",
+            "apiKey": "AIzaSyAEEozzwR0cguqynxvL1qB38i8liOCgtJc",
+            "authDomain": "aimpact-partners-prod.firebaseapp.com",
+            "projectId": "aimpact-partners-prod",
+            "storageBucket": "aimpact-partners-prod.appspot.com",
+            "messagingSenderId": "741854278426",
+            "appId": "1:741854278426:web:9ff2a50e705edcc501f2a3"
+          }
+        },
+        "ssr": {},
+        "backend": {}
+      });
+    }
+  };
 });
