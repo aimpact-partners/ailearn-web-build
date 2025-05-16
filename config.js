@@ -15,9 +15,10 @@ System.register([], function (a, e) {
 					APP_SUPPORT_EMAIL: 'soporte@rvd.ai',
 					tutorials: !0,
 					baseUrl: 'https://app.rvd.ai',
+					after: 1,
 					apis: {
 						ailearn: 'https://ailearn.api.aimpact.partners',
-						agents: 'https://agents.api.aimpact.partners'
+						agents: 'https://agents.api.aimpact.partners',
 					},
 					firebase: {
 						baseUrl: 'https://app.rvd.ai',
@@ -26,12 +27,12 @@ System.register([], function (a, e) {
 						projectId: 'aimpact-partners-prod',
 						storageBucket: 'aimpact-partners-prod.appspot.com',
 						messagingSenderId: '741854278426',
-						appId: '1:741854278426:web:9ff2a50e705edcc501f2a3'
-					}
+						appId: '1:741854278426:web:9ff2a50e705edcc501f2a3',
+					},
 				},
 				ssr: {},
-				backend: {}
+				backend: {},
 			});
-		}
+		},
 	};
 });
