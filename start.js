@@ -59,10 +59,6 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
         "route": "/dashboard/${id}",
         "layout": "dashboard-layout"
       }, {
-        "name": "app-dashboard-wall",
-        "attrs": ["id"],
-        "vspecifier": "@aimpact/ailearn-app@0.4.2/dashboard/wall/widget.widget"
-      }, {
         "name": "ailearn-sessions-access",
         "vspecifier": "@aimpact/ailearn-app@0.4.2/sessions/access.widget",
         "is": "page",

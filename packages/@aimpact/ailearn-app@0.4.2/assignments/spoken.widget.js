@@ -383,7 +383,7 @@ System.register(["@beyond-js/widgets@1.1.2/render", "@beyond-js/kernel@0.1.12/bu
       *****************************************/
 
       ims.set('./views/analysis/feedback', {
-        hash: 173252563,
+        hash: 1494190621,
         creator: function (require, exports) {
           "use strict";
 
@@ -411,7 +411,7 @@ System.register(["@beyond-js/widgets@1.1.2/render", "@beyond-js/kernel@0.1.12/bu
               id: userId
             } = _session.sessionWrapper.user;
             const feedback = store.model.data.attempts[0];
-            const audioUrl = `${_wrapper.settings.apis.ailearn}/assignments/${store.assignmentId}/activities/${id}/tracking/${userId}/audio?date=${feedback.date}`;
+            const audioUrl = `${_wrapper.settings.apis.ailearn}/assignments/${store.assignmentId}/activities/${id}/progress/${userId}/audio?date=${feedback.date}`;
             const keys = Object.keys(feedback.assessment);
             return _react.default.createElement("section", {
               className: "analysis__container"
@@ -859,7 +859,7 @@ System.register(["@beyond-js/widgets@1.1.2/render", "@beyond-js/kernel@0.1.12/bu
       ******************************/
 
       ims.set('./views/mobile', {
-        hash: 2771334083,
+        hash: 784417116,
         creator: function (require, exports) {
           "use strict";
 
@@ -894,7 +894,7 @@ System.register(["@beyond-js/widgets@1.1.2/render", "@beyond-js/kernel@0.1.12/bu
               assignmentId,
               id
             } = store.model;
-            const audioUrl = `${_wrapper.settings.apis.ailearn}/assignments/${assignmentId}/activities/${id}/tracking/${userId}/audio`;
+            const audioUrl = `${_wrapper.settings.apis.ailearn}/assignments/${assignmentId}/activities/${id}/progress/${userId}/audio`;
             return _react.default.createElement("main", {
               className: "mobile-view"
             }, _react.default.createElement(_tabs.TabsContainer, {

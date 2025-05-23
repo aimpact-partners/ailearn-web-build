@@ -6,10 +6,10 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/rvd',
-				version: '0.4.12-dev.02',
+				version: '0.4.12-dev.03',
 				languages: {
 					default: 'en',
-					supported: ['en', 'es', 'de'],
+					supported: ['en', 'es', 'de']
 				},
 				environment: 'development',
 				'global.css': true,
@@ -22,7 +22,7 @@ System.register([], function (_export, _context) {
 					baseUrl: 'https://dev.app.rvd.ai',
 					apis: {
 						ailearn: 'https://dev.ailearn.api.aimpact.partners',
-						agents: 'https://dev.agents.api.aimpact.partners',
+						agents: 'https://dev.agents.api.aimpact.partners'
 					},
 					firebase: {
 						baseUrl: 'https://dev.app.rvd.ai',
@@ -33,12 +33,12 @@ System.register([], function (_export, _context) {
 						storageBucket: 'aimpact-partners-dev.appspot.com',
 						messagingSenderId: '1081434267674',
 						appId: '1:1081434267674:web:9396cc23e55385b5d171a3',
-						measurementId: 'G-QLL5WFH89Y',
-					},
+						measurementId: 'G-QLL5WFH89Y'
+					}
 				},
 				ssr: {},
-				backend: {},
+				backend: {}
 			});
-		},
+		}
 	};
 });
