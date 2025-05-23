@@ -572,7 +572,7 @@
   background: var(--neutral-90);
   padding: 1rem;
 }
-.message__container.user {
+.message__container.message__container--user {
   width: auto !important;
   align-self: flex-end;
   background: var(--surface);
