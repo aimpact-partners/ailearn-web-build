@@ -14,7 +14,7 @@ System.register([], function (_export, _context) {
         "environment": "development",
         "global.css": true,
         "params": {
-          "project": "better-mind"
+          "project": "rvd"
         },
         "ssr": {},
         "backend": {}
