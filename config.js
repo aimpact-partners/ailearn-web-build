@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/rvd',
-				version: '0.4.12-dev.05',
+				version: '0.4.13-dev.01',
 				languages: {
 					default: 'en',
 					supported: ['en', 'es', 'de']
@@ -22,7 +22,8 @@ System.register([], function (_export, _context) {
 					baseUrl: 'https://dev.app.rvd.ai',
 					apis: {
 						ailearn: 'https://dev.ailearn.api.aimpact.partners',
-						agents: 'https://dev.agents.api.aimpact.partners'
+						agents: 'https://dev.agents.api.aimpact.partners',
+						realtime: 'wss://dev.agents.api.aimpact.partners'
 					},
 					firebase: {
 						baseUrl: 'https://dev.app.rvd.ai',
