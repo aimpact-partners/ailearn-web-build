@@ -17,7 +17,8 @@ System.register([], function (a, e) {
 					baseUrl: 'https://beta.app.rvd.ai',
 					apis: {
 						ailearn: 'https://beta.ailearn.api.aimpact.partners',
-						agents: 'https://beta.agents.api.aimpact.partners'
+						agents: 'https://beta.agents.api.aimpact.partners',
+						realtime: 'wss://beta.agents.api.aimpact.partners'
 					},
 					firebase: {
 						baseUrl: 'https://beta.app.rvd.ai',
