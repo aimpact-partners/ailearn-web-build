@@ -1,1 +1,1787 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle","@aimpact/ailearn-sdk@1.2.0/startup","@aimpact/chat-sdk@1.5.4/session","@aimpact/media-manager@1.0.0/uploader","@beyond-js/http-suite@0.1.0/api","@beyond-js/reactive@2.0.5/entities/item","@beyond-js/reactive@2.0.5/entities/collection","@aimpact/chat-sdk@1.5.4/core","@beyond-js/reactive@2.0.5/model","@aimpact/ailearn-sdk@1.2.0/config","@aimpact/ailearn-sdk@1.2.0/entities/learning-modules","@aimpact/ailearn-sdk@1.2.0/entities/classrooms"],function(s,e){var a,i,t,n,o,r,c,d,l,u,p,m,b,g;return s({Activity:void 0,Assignments:void 0,Assignment:void 0,Credits:void 0,TrackingDashboard:void 0,ParticipantProvider:void 0,Tracking:void 0,IActivityListItem:void 0,IActivityBase:void 0,TrackingStatusType:void 0,IActivityTrackingBase:void 0,IDashboard:void 0}),{setters:[function(e){a=e},function(e){i=e},function(e){t=e},function(e){n=e},function(e){o=e},function(e){r=e},function(e){c=e},function(e){d=e},function(e){l=e},function(e){u=e},function(e){p=e},function(e){m=e}],execute:function(){g=a.Bundle,(b=new g({module:{vspecifier:"@aimpact/ailearn-sdk@1.2.0/tracking"},type:"ts"},e.meta.url).package()).dependencies.update([["@aimpact/ailearn-sdk/startup",i],["@aimpact/chat-sdk/session",t],["@aimpact/media-manager/uploader",n],["@beyond-js/http-suite/api",o],["@beyond-js/reactive/entities/item",r],["@beyond-js/reactive/entities/collection",c],["@aimpact/chat-sdk/core",d],["@beyond-js/reactive/model",l],["@aimpact/ailearn-sdk/config",u],["@aimpact/ailearn-sdk/entities/learning-modules",p],["@aimpact/ailearn-sdk/entities/classrooms",m]]),(g=new Map).set("./HADERCODED",{hash:4029911701,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.HARDCODED_RESPONSE=void 0,a.HARDCODED_RESPONSE={status:!0,data:{id:"0138c77d-c3ae-4b86-a943-f86320d6cb14",classroom:{id:"7d1848f3-1a65-4723-a5ad-c085216a51f6",name:"1° - Técnicas de Mezcla",picture:""},module:{id:"c083dd01-36f5-4c7b-8f52-2a5100d52ae0",creator:{id:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"},owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},language:"es",title:"Introducción al Estudio de Grabación",description:"Este módulo se centra en el análisis del estudio de grabación como una herramienta esencial en la producción musical, explorando sus elementos técnicos y creativos.",picture:"https://ailearn.api.aimpact.partners/modules/c083dd01-36f5-4c7b-8f52-2a5100d52ae0/picture",objective:"Analizar el concepto Estudio de Grabación como herramienta fundamental en la Producción Musical.",audience:{category:"higher-education",level:"tertiary-education",format:"Educación Superior",entity:"Referencias Académicas para Educación Superior"},activities:{count:5,types:["content-theory","character-talk","debate","multiple-choice","spoken"]}},payer:"module-owner",code:"AEPSKUT",public:!1,activities:{order:["5b56ad68-53c2-43da-86b9-e7d6c4409966","e90b3b7f-2569-491b-8290-2ad1842056e8","fe93270f-cd49-430e-81bc-817449c280f0","b0074f49-5100-4731-b771-db3befd44577","5bed3375-873d-414f-a52d-577e382f3091"],items:{"5b56ad68-53c2-43da-86b9-e7d6c4409966":{id:"5b56ad68-53c2-43da-86b9-e7d6c4409966",type:"content-theory",title:"Explorando el Estudio de Grabación",description:"Actividad centrada en la identificación y análisis de los dos espacios fundamentales en un Estudio de Grabación.",language:"es",picture:"",module:{id:"c083dd01-36f5-4c7b-8f52-2a5100d52ae0",creator:{id:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"},objective:"Analizar el concepto Estudio de Grabación como herramienta fundamental en la Producción Musical.",title:"Introducción al Estudio de Grabación",description:"Este módulo se centra en el análisis del estudio de grabación como una herramienta esencial en la producción musical, explorando sus elementos técnicos y creativos.",language:"es",picture:"https://ailearn.api.aimpact.partners/modules/c083dd01-36f5-4c7b-8f52-2a5100d52ae0/picture",audience:{category:"higher-education",level:"tertiary-education",format:"Educación Superior",entity:"Referencias Académicas para Educación Superior"},public:!0,status:"active",type:"module",timeCreated:1743372113244,timeUpdated:1743372113244,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{article:"Un estudio de grabación es un espacio diseñado específicamente para la grabación, mezcla y en ciertos casos tambien el proceso de masterización. Comprender los elementos esenciales de un estudio de grabación permite apreciar su papel crucial en el proceso de producción musical.\n\nEl control room es el espacio donde se encuentran los dipositivos que nos permiten realizar las diferentes tareas. La consola Anlogica de Estudio, El Dispositivo de Grabación Multicanal, el Sistema de Monitoreo y los Procesadores de Señal Externos. La importancia radica en que permite al ingeniero de sonido tener un control absoluto sobre todos los aspectos de la grabación o mezcla. Aquí se gestionan las señales que provienen de las diferentes espacios del estudio.\n\nLa sala de grabación, o live room, es donde los músicos ejecutan sus piezas. Esta sala está diseñada para optimizar la acústica y proporcionar un entorno sonoro adecuado. Sus dimensiones y materiales influyen en el resultado final. Es fundamental para la producción musical, ya que facilita la captación de la interpretación de los músicos, asegurando que cada matiz se registre con claridad.\n\nEl tratamiento acústico es un componente fundamental en un estudio de grabación. Este se logra a través de diversas herramientas acusticas, El tratamiento Acustico se divide fundamentalmente en dos instancias. Aislación, terminos de aislar el Recinto donde trabajamos de elementos externos y  viceversa. La otra instancia es el tratamiento de los Recintos del Estudio, para obtener espacios con un comportamiento acorde a los estandares de diversos criterios, relacionados con la respuesta en Frecuencia del Recinto y el RT60.\n\nAdemás, el estudio cuenta con áreas específicas como la Iso Booth, o cabina de aislación, que se utilizan principalmente para grabaciones vocales o de instrumentos donde se requiere un control aún más riguroso de esa fuente sonora y su relación o interacción con otras fuentes sonoras.\n\nLa sala de control es donde se lleva a cabo una parte crítica del proceso de producción musical. Aquí se busca dar forma al sonido final a través de la manipulación de la mezcla de diferentes señales. La calidad de esta sala influye en la decisión sobre niveles, distribución de señales dentro de la iamgen estereo y todas las alternativas de procesamiento. Permitiendo a los productores y músicos articular su visión creativa en el producto final.\n\nEl uso del equipo técnico es otro pilar fundamental en el estudio de grabación. Desde micrófonos y accesorios hasta los mencionados procesadores de señal, cada una de estas herramientas tiene su función específica. La selección del equipo adecuado para cada sesión es crucial, ya que puede alterar radicalmente el sonido obtenido y, por ende, la percepción y recepción de la música por parte del público.\n\nPor último, el personal especializado que opera en un estudio de grabación juega un papel decisivo en el éxito del proceso de producción musical. Tecnicas/os de grabación y Mezcla, Productoras/es, Asistentes trabajan conjuntamente en diferentes etapas, aportando su conocimiento y experiencia para optimizar el resultado final.\n\nEn resumen, un estudio de grabación no es solo un espacio físico, sino un ecosistema complejo donde cada elemento, desde los espacios fisicos hasta el personal, contribuyen al proceso creativo. Conocer estos elementos y sus funciones es fundamental para cualquier alumno que desee profundizar en el ámbito de la producción musical.",synthesis:"- **Estudio de grabación**\n  - Espacio para *grabación*, *mezcla* y en ciertos casos *masterización*\n  - Rol *crucial* en producción musical\n\n- **Control room**\n  - Equipos: \n    - **Consola analógica**\n    - **Grabador multicanal**\n    - **Sistema de monitoreo**\n    - **Procesadores de señal externos**\n  - Control *absoluto* sobre grabación y mezcla\n  - Gestión de *señales* del estudio\n\n- **Sala de grabación (live room)**\n  - Espacio para *ejecución* musical\n  - Diseñada para *optimizar acústica*\n  - Influencia de *dimensiones* y *materiales*\n  - Captación de *matices sonoros* \n\n- **Tratamiento acústico**\n  - Componentes *fundamentales*\n  - **Aislación**: separación de elementos externos \n  - **Tratamiento de recintos**: \n    - Comportamiento acústico acorde a *estándares*\n    - *Respuesta en frecuencia* y *RT60*\n\n- **Iso Booth**\n  - Cabina de *aislación*\n  - Uso en grabaciones de *voces* e *instrumentos*\n  - Control *riguroso* de fuente sonora\n\n- **Sala de control**\n  - *Formación* del sonido final\n  - Manipulación de *mezcla de señales*\n  - Influencia en *niveles* y *distribución* de señales\n  - Permite articular *visión creativa*\n\n- **Equipo técnico**\n  - Herramientas: *micrófonos*, *accesorios*, *procesadores*\n  - Selección adecuada impacta en *sonido* y *percepción*\n\n- **Personal especializado**\n  - Rola clave en el éxito del proceso\n  - Técnicos de *grabación* y *mezcla*\n  - Productores y *asistentes* \n  - Aportan *conocimiento* y *experiencia*\n\n- **Resumen**\n  - Estudio como *ecosistema complejo*\n  - Conocimiento de *elementos* y *funciones* esencial para la producción musical",dyslexia:"Un estudio de grabación es un lugar donde se crea música y otros sonidos. En este espacio se graba, mezcla. Es importante entender cómo funciona un estudio para valorar su papel en la música.\n\nEl control room es la sala principal. Aquí están los dispositivos que ayudan a grabar y mezclar. Hay una consola que controla el sonido. También hay un dispositivo para grabar muchos sonidos a la vez. La mezcla se escucha en altavoces llamados monitores. Este espacio permite al ingeniero de sonido controlar todo lo que se graba.\n\nLa sala de grabación, o recording room, es el lugar donde los músicos tocan. Está diseñada para que suene bien. La forma y los materiales de la sala afectan cómo se escucha la música. Es clave para grabar la interpretación de los músicos. Así, cada detalle se escucha con claridad.\n\nEl tratamiento acústico es muy importante en un estudio. Esto significa eliminar los ruidos de afuera y mejorar el sonido dentro del estudio. Hay dos partes en el tratamiento acústico. Primero, la aislación, que evita que el ruido exterior entre. Segundo, el tratamiento, que mejora cómo suena el espacio donde se graba.\n\nTambién hay áreas especiales como la Iso Booth, que es una cabina aislada. Se usa para grabar voces e instrumentos de manera más controlada. En este lugar, el sonido se mantiene limpio y sin distracciones.\n\nLa sala de control es donde se produce el sonido final. Aquí se mezcla el sonido de diferentes grabaciones. La calidad de esta sala es muy importante. Ayuda a los productores y músicos a lograr su idea de cómo debe sonar la canción.\n\nEl equipo técnico es esencial en el estudio. Hay micrófonos, procesadores y otros instrumentos que ayudan durante las diferentes etapas. Elegir el equipo correcto es crucial. Esto puede cambiar mucho cómo suena la música, y cómo la escucha el público.\n\nEl personal que trabaja en un estudio es clave. Hay técnicos de grabación, mezcladores y asistentes. Todos colaboran en las diferentes etapas del proceso. Su experiencia mejora el resultado final.\n\nPara resumir, un estudio de grabación es más que solo un lugar. Es un sistema donde cada parte, desde el espacio hasta las personas, ayuda a crear música. Conocer estos elementos es importante para cualquier estudiante que quiera aprender sobre producción musical.",audios:{article:{status:!0,url:"https://ailearn.api.aimpact.partners/activities/5b56ad68-53c2-43da-86b9-e7d6c4409966/materials/article/audio"}}},specs:{topic:"Espacios del Estudio de Grabación",task:"Investiga y presenta detalladamente los dos espacios que componen el Estudio de Grabación: la Sala de Control y la Sala de Grabación. Describe sus características, funciones y cómo interactúan entre sí durante el proceso de producción musical. Utiliza ejemplos prácticos y visuales para respaldar tu presentación.",objectives:[{name:"Identificación de Espacios",objective:"Reconocer y describir la Sala de Control y la Sala de Grabación como elementos clave en la Producción Musical."},{name:"Análisis Funcional",objective:"Analizar las funciones específicas y la importancia de cada sala en el proceso de grabación y producción."}],instructions:"Presentar los dos espacios fundamentales que componen el Estudio de Grabación. Sala de Control (Control Room), Sala de Grabación (Recording/Tracking Room)."}},settings:{layout:"main-content-layout"}},"e90b3b7f-2569-491b-8290-2ad1842056e8":{id:"e90b3b7f-2569-491b-8290-2ad1842056e8",type:"character-talk",title:"Conversación con un Productor Musical",description:"Explora y reflexiona sobre las decisiones técnicas y creativas en un estudio de grabación a través de un diálogo con un famoso productor musical.",language:"es",picture:"",module:{id:"c083dd01-36f5-4c7b-8f52-2a5100d52ae0",creator:{id:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"},objective:"Analizar el concepto Estudio de Grabación como herramienta fundamental en la Producción Musical.",title:"Introducción al Estudio de Grabación",description:"Este módulo se centra en el análisis del estudio de grabación como una herramienta esencial en la producción musical, explorando sus elementos técnicos y creativos.",language:"es",picture:"https://ailearn.api.aimpact.partners/modules/c083dd01-36f5-4c7b-8f52-2a5100d52ae0/picture",audience:{category:"higher-education",level:"tertiary-education",format:"Educación Superior",entity:"Referencias Académicas para Educación Superior"},public:!0,status:"active",type:"module",timeCreated:1743372113244,timeUpdated:1743372113244,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{},specs:{role:"Eres un productor musical reconocido que comparte su experiencia y responde a las preguntas sobre la mezcla y la producción en un estudio.",task:"Interactúa con el productor musical haciendo preguntas sobre su trabajo en el estudio. Reflexiona sobre las decisiones que toma durante el proceso de mezcla y cómo estas afectan el resultado final de la música. Aprovecha esta oportunidad para aprender sobre las técnicas y la creatividad en la producción musical.",objectives:[{name:"Decisiones técnicas",objective:"Entender las decisiones técnicas cruciales al mezclar música."},{name:"Creatividad en producción",objective:"Fomentar la creatividad al elegir elementos sonoros y técnicas de producción."},{name:"Formulación de preguntas",objective:"Desarrollar habilidades para formular preguntas relevantes sobre producción musical."}],instructions:""}},settings:{layout:"main-chat-layout"}},"fe93270f-cd49-430e-81bc-817449c280f0":{id:"fe93270f-cd49-430e-81bc-817449c280f0",type:"debate",title:"Defensa del Estudio de Grabación",description:"Un debate enfocado en la importancia de los estudios de grabación y los dispositivos analógicos en la producción musical frente a herramientas digitales.",language:"es",picture:"",module:{id:"c083dd01-36f5-4c7b-8f52-2a5100d52ae0",creator:{id:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"},objective:"Analizar el concepto Estudio de Grabación como herramienta fundamental en la Producción Musical.",title:"Introducción al Estudio de Grabación",description:"Este módulo se centra en el análisis del estudio de grabación como una herramienta esencial en la producción musical, explorando sus elementos técnicos y creativos.",language:"es",picture:"https://ailearn.api.aimpact.partners/modules/c083dd01-36f5-4c7b-8f52-2a5100d52ae0/picture",audience:{category:"higher-education",level:"tertiary-education",format:"Educación Superior",entity:"Referencias Académicas para Educación Superior"},public:!0,status:"active",type:"module",timeCreated:1743372113244,timeUpdated:1743372113244,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{},specs:{role:"Docente",subject:"La relevancia del estudio de grabación de Grbaciòn y los dispositivos analogicos que lo componen como estándar en la producción musical.",task:"Vas a participar en un debate donde deberás defender la importancia de los estudios de grabación y los dispositivos analógicos en la producción musical. Presenta tus argumentos de manera clara y concisa, y utiliza ejemplos que respalden tu postura. También tendrás que anticipar las objeciones que pueda presentar el chatbot y prepararte para responder a ellas con lógica y claridad.",objectives:[{name:"Argumentación",objective:"Desarrollar habilidades de argumentación en la defensa de los estudios de grabación."},{name:"Pensamiento Crítico",objective:"Fomentar el pensamiento crítico al comparar dispositivos analógicos y digitales."},{name:"Competencias Emocionales",objective:"Incorporar la autoconfianza y la gestión emocional durante el debate."},{name:"Metacognición",objective:"Reflexionar sobre el proceso de argumentación y los propios pensamientos en el debate."}],instructions:""}},settings:{layout:"main-chat-layout"}},"b0074f49-5100-4731-b771-db3befd44577":{id:"b0074f49-5100-4731-b771-db3befd44577",type:"multiple-choice",title:"Evaluación sobre el Estudio de Grabación en Producción Musical",description:"Esta actividad tiene como objetivo evaluar tu comprensión sobre el funcionamiento y los elementos esenciales de un estudio de grabación, así como su papel en la producción musical.",language:"es",picture:"",module:{id:"c083dd01-36f5-4c7b-8f52-2a5100d52ae0",creator:{id:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"},objective:"Analizar el concepto Estudio de Grabación como herramienta fundamental en la Producción Musical.",title:"Introducción al Estudio de Grabación",description:"Este módulo se centra en el análisis del estudio de grabación como una herramienta esencial en la producción musical, explorando sus elementos técnicos y creativos.",language:"es",picture:"https://ailearn.api.aimpact.partners/modules/c083dd01-36f5-4c7b-8f52-2a5100d52ae0/picture",audience:{category:"higher-education",level:"tertiary-education",format:"Educación Superior",entity:"Referencias Académicas para Educación Superior"},public:!0,status:"active",type:"module",timeCreated:1743372113244,timeUpdated:1743372113244,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{assessment:'{"title":"Evaluación sobre el Estudio de Grabación en Producción Musical","questions":[{"question":"¿Cuál es el propósito principal de un estudio de grabación?","options":["Mejorar la calidad visual de las grabaciones","Diseñar espacios para ensayar","Proveer un espacio adecuado para la grabación, mezcla y en ciertos casos la masterización de un Proyecto Musical.  ","Almacenar instrumentos musicales"],"correctAnswer":2},{"question":"¿Qué función cumple la sala de control en un estudio de grabación?","options":["Grabar las voces de los músicos","Cambiar la acústica del recinto","Dar forma al sonido final mediante mezcla","Aislar instrumentos ruidosos"],"correctAnswer":2},{"question":"¿Qué aspecto es fundamental en el tratamiento acústico de un estudio?","options":["La estética de los muebles","La capacitación del personal","La respuesta en frecuencia del recinto y el rt60.","La variedad de instrumentos disponibles"],"correctAnswer":2},{"question":"¿Qué es una Iso Booth en un estudio de grabación?","options":["Una sala destinada para la mezcla","Un espacio para grabaciones en un ambiente controlado","Un área de descanso para los músicos","Un equipo de grabación multicanal"],"correctAnswer":1},{"question":"¿Por qué es importante la selección de equipo técnico en un estudio de grabación?","options":["Asegura que el estudio esté ordenado","Aumenta la velocidad de grabación","Puede alterar radicalmente el sonido obtenido","Facilita el trabajo del personal administrativo"],"correctAnswer":2}]}'},specs:{task:"",objectives:"",instructions:""}},settings:{layout:"main-chat-layout"}},"5bed3375-873d-414f-a52d-577e382f3091":{id:"5bed3375-873d-414f-a52d-577e382f3091",type:"spoken",title:"Diferencias en Mezclas de Sonido",description:"Exposición sobre las diferencias entre la mezcla Out The Box y las mezclas In The Box e Híbrida, mostrando claridad en la comprensión del tema.",language:"es",picture:"",module:{id:"c083dd01-36f5-4c7b-8f52-2a5100d52ae0",creator:{id:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"},objective:"Analizar el concepto Estudio de Grabación como herramienta fundamental en la Producción Musical.",title:"Introducción al Estudio de Grabación",description:"Este módulo se centra en el análisis del estudio de grabación como una herramienta esencial en la producción musical, explorando sus elementos técnicos y creativos.",language:"es",picture:"https://ailearn.api.aimpact.partners/modules/c083dd01-36f5-4c7b-8f52-2a5100d52ae0/picture",audience:{category:"higher-education",level:"tertiary-education",format:"Educación Superior",entity:"Referencias Académicas para Educación Superior"},public:!0,status:"active",type:"module",timeCreated:1743372113244,timeUpdated:1743372113244,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{},specs:{assessment:"El estudiante debe exponer oralmente las diferencias entre los tipos de mezcla indicados. Evalúa la claridad de la presentación, la profundidad del contenido, la estructura lógica de la exposición y el cumplimiento del tiempo asignado. Asegúrate de leer la transcripción del discurso para una evaluación precisa.",criteria:[{name:"Claridad",subject:"El estudiante debe presentar sus ideas de manera clara y comprensible, empleando un lenguaje apropiado para el tema abordado."},{name:"Contenido",subject:"La presentación debe incluir las diferencias clave entre Out The Box, In The Box e Híbrida, evidenciando un buen dominio del tema."},{name:"Estructura",subject:"La exposición debe tener una introducción clara, un desarrollo coherente y una conclusión que resuma las ideas principales."},{name:"Tiempo",subject:"El hablante debe realizar la presentación dentro del tiempo estipulado de tres minutos, administrando el tiempo de manera efectiva."}],task:"Prepara una exposición de no más de tres minutos sobre las diferencias entre la mezcla Out The Box y las mezclas In The Box e Híbrida. Asegúrate de abordar las características distintivas de cada tipo de mezcla, estructurando tu presentación con una introducción, desarrollo y conclusión clara. Mantén un lenguaje técnico apropiado y asegúrate de terminar tu exposición en el tiempo indicado.",objectives:"",instructions:""}},settings:{layout:"main-chat-layout"}}}},teachers:[{uid:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"}],archived:!1,access:"approved",accessed:!1,community:!1}}}}),g.set("./HARCODED_2",{hash:151410810,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.HARDCODED2=void 0,a.HARDCODED2={status:!0,data:{id:"0138c77d-c3ae-4b86-a943-f86320d6cb14",classroom:{id:"7d1848f3-1a65-4723-a5ad-c085216a51f6",name:"1° - Técnicas de Mezcla",picture:""},module:{id:"c083dd01-36f5-4c7b-8f52-2a5100d52ae0",creator:{id:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"},owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},language:"es",title:"Introducción al Estudio de Grabación",description:"Este módulo se centra en el análisis del estudio de grabación como una herramienta esencial en la producción musical, explorando sus elementos técnicos y creativos.",picture:"https://ailearn.api.aimpact.partners/modules/c083dd01-36f5-4c7b-8f52-2a5100d52ae0/picture",objective:"Analizar el concepto Estudio de Grabación como herramienta fundamental en la Producción Musical.",audience:{category:"higher-education",level:"tertiary-education",format:"Educación Superior",entity:"Referencias Académicas para Educación Superior"},activities:{count:5,types:["content-theory","character-talk","debate","multiple-choice","spoken"]}},payer:"module-owner",code:"AEPSKUT",public:!1,activities:{order:["5b56ad68-53c2-43da-86b9-e7d6c4409966","e90b3b7f-2569-491b-8290-2ad1842056e8","fe93270f-cd49-430e-81bc-817449c280f0","b0074f49-5100-4731-b771-db3befd44577","5bed3375-873d-414f-a52d-577e382f3091"],items:{"5b56ad68-53c2-43da-86b9-e7d6c4409966":{id:"5b56ad68-53c2-43da-86b9-e7d6c4409966",type:"content-theory",title:"Explorando el Estudio de Grabación",description:"Actividad centrada en la identificación y análisis de los dos espacios fundamentales en un Estudio de Grabación.",language:"es",picture:"",module:{id:"c083dd01-36f5-4c7b-8f52-2a5100d52ae0",creator:{id:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"},objective:"Analizar el concepto Estudio de Grabación como herramienta fundamental en la Producción Musical.",title:"Introducción al Estudio de Grabación",description:"Este módulo se centra en el análisis del estudio de grabación como una herramienta esencial en la producción musical, explorando sus elementos técnicos y creativos.",language:"es",picture:"https://ailearn.api.aimpact.partners/modules/c083dd01-36f5-4c7b-8f52-2a5100d52ae0/picture",audience:{category:"higher-education",level:"tertiary-education",format:"Educación Superior",entity:"Referencias Académicas para Educación Superior"},public:!0,status:"active",type:"module",timeCreated:1743372113244,timeUpdated:1743372113244,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{article:"Un estudio de grabación es un espacio diseñado específicamente para la grabación, mezcla y en ciertos casos tambien el proceso de masterización. Comprender los elementos esenciales de un estudio de grabación permite apreciar su papel crucial en el proceso de producción musical.\n\nEl control room es el espacio donde se encuentran los dipositivos que nos permiten realizar las diferentes tareas. La consola Anlogica de Estudio, El Dispositivo de Grabación Multicanal, el Sistema de Monitoreo y los Procesadores de Señal Externos. La importancia radica en que permite al ingeniero de sonido tener un control absoluto sobre todos los aspectos de la grabación o mezcla. Aquí se gestionan las señales que provienen de las diferentes espacios del estudio.\n\nLa sala de grabación, o live room, es donde los músicos ejecutan sus piezas. Esta sala está diseñada para optimizar la acústica y proporcionar un entorno sonoro adecuado. Sus dimensiones y materiales influyen en el resultado final. Es fundamental para la producción musical, ya que facilita la captación de la interpretación de los músicos, asegurando que cada matiz se registre con claridad.\n\nEl tratamiento acústico es un componente fundamental en un estudio de grabación. Este se logra a través de diversas herramientas acusticas, El tratamiento Acustico se divide fundamentalmente en dos instancias. Aislación, terminos de aislar el Recinto donde trabajamos de elementos externos y  viceversa. La otra instancia es el tratamiento de los Recintos del Estudio, para obtener espacios con un comportamiento acorde a los estandares de diversos criterios, relacionados con la respuesta en Frecuencia del Recinto y el RT60.\n\nAdemás, el estudio cuenta con áreas específicas como la Iso Booth, o cabina de aislación, que se utilizan principalmente para grabaciones vocales o de instrumentos donde se requiere un control aún más riguroso de esa fuente sonora y su relación o interacción con otras fuentes sonoras.\n\nLa sala de control es donde se lleva a cabo una parte crítica del proceso de producción musical. Aquí se busca dar forma al sonido final a través de la manipulación de la mezcla de diferentes señales. La calidad de esta sala influye en la decisión sobre niveles, distribución de señales dentro de la iamgen estereo y todas las alternativas de procesamiento. Permitiendo a los productores y músicos articular su visión creativa en el producto final.\n\nEl uso del equipo técnico es otro pilar fundamental en el estudio de grabación. Desde micrófonos y accesorios hasta los mencionados procesadores de señal, cada una de estas herramientas tiene su función específica. La selección del equipo adecuado para cada sesión es crucial, ya que puede alterar radicalmente el sonido obtenido y, por ende, la percepción y recepción de la música por parte del público.\n\nPor último, el personal especializado que opera en un estudio de grabación juega un papel decisivo en el éxito del proceso de producción musical. Tecnicas/os de grabación y Mezcla, Productoras/es, Asistentes trabajan conjuntamente en diferentes etapas, aportando su conocimiento y experiencia para optimizar el resultado final.\n\nEn resumen, un estudio de grabación no es solo un espacio físico, sino un ecosistema complejo donde cada elemento, desde los espacios fisicos hasta el personal, contribuyen al proceso creativo. Conocer estos elementos y sus funciones es fundamental para cualquier alumno que desee profundizar en el ámbito de la producción musical.",synthesis:"- **Estudio de grabación**\n  - Espacio para *grabación*, *mezcla* y en ciertos casos *masterización*\n  - Rol *crucial* en producción musical\n\n- **Control room**\n  - Equipos: \n    - **Consola analógica**\n    - **Grabador multicanal**\n    - **Sistema de monitoreo**\n    - **Procesadores de señal externos**\n  - Control *absoluto* sobre grabación y mezcla\n  - Gestión de *señales* del estudio\n\n- **Sala de grabación (live room)**\n  - Espacio para *ejecución* musical\n  - Diseñada para *optimizar acústica*\n  - Influencia de *dimensiones* y *materiales*\n  - Captación de *matices sonoros* \n\n- **Tratamiento acústico**\n  - Componentes *fundamentales*\n  - **Aislación**: separación de elementos externos \n  - **Tratamiento de recintos**: \n    - Comportamiento acústico acorde a *estándares*\n    - *Respuesta en frecuencia* y *RT60*\n\n- **Iso Booth**\n  - Cabina de *aislación*\n  - Uso en grabaciones de *voces* e *instrumentos*\n  - Control *riguroso* de fuente sonora\n\n- **Sala de control**\n  - *Formación* del sonido final\n  - Manipulación de *mezcla de señales*\n  - Influencia en *niveles* y *distribución* de señales\n  - Permite articular *visión creativa*\n\n- **Equipo técnico**\n  - Herramientas: *micrófonos*, *accesorios*, *procesadores*\n  - Selección adecuada impacta en *sonido* y *percepción*\n\n- **Personal especializado**\n  - Rola clave en el éxito del proceso\n  - Técnicos de *grabación* y *mezcla*\n  - Productores y *asistentes* \n  - Aportan *conocimiento* y *experiencia*\n\n- **Resumen**\n  - Estudio como *ecosistema complejo*\n  - Conocimiento de *elementos* y *funciones* esencial para la producción musical",dyslexia:"Un estudio de grabación es un lugar donde se crea música y otros sonidos. En este espacio se graba, mezcla. Es importante entender cómo funciona un estudio para valorar su papel en la música.\n\nEl control room es la sala principal. Aquí están los dispositivos que ayudan a grabar y mezclar. Hay una consola que controla el sonido. También hay un dispositivo para grabar muchos sonidos a la vez. La mezcla se escucha en altavoces llamados monitores. Este espacio permite al ingeniero de sonido controlar todo lo que se graba.\n\nLa sala de grabación, o recording room, es el lugar donde los músicos tocan. Está diseñada para que suene bien. La forma y los materiales de la sala afectan cómo se escucha la música. Es clave para grabar la interpretación de los músicos. Así, cada detalle se escucha con claridad.\n\nEl tratamiento acústico es muy importante en un estudio. Esto significa eliminar los ruidos de afuera y mejorar el sonido dentro del estudio. Hay dos partes en el tratamiento acústico. Primero, la aislación, que evita que el ruido exterior entre. Segundo, el tratamiento, que mejora cómo suena el espacio donde se graba.\n\nTambién hay áreas especiales como la Iso Booth, que es una cabina aislada. Se usa para grabar voces e instrumentos de manera más controlada. En este lugar, el sonido se mantiene limpio y sin distracciones.\n\nLa sala de control es donde se produce el sonido final. Aquí se mezcla el sonido de diferentes grabaciones. La calidad de esta sala es muy importante. Ayuda a los productores y músicos a lograr su idea de cómo debe sonar la canción.\n\nEl equipo técnico es esencial en el estudio. Hay micrófonos, procesadores y otros instrumentos que ayudan durante las diferentes etapas. Elegir el equipo correcto es crucial. Esto puede cambiar mucho cómo suena la música, y cómo la escucha el público.\n\nEl personal que trabaja en un estudio es clave. Hay técnicos de grabación, mezcladores y asistentes. Todos colaboran en las diferentes etapas del proceso. Su experiencia mejora el resultado final.\n\nPara resumir, un estudio de grabación es más que solo un lugar. Es un sistema donde cada parte, desde el espacio hasta las personas, ayuda a crear música. Conocer estos elementos es importante para cualquier estudiante que quiera aprender sobre producción musical.",audios:{article:{status:!0,url:"https://ailearn.api.aimpact.partners/activities/5b56ad68-53c2-43da-86b9-e7d6c4409966/materials/article/audio"}}},specs:{topic:"Espacios del Estudio de Grabación",task:"Investiga y presenta detalladamente los dos espacios que componen el Estudio de Grabación: la Sala de Control y la Sala de Grabación. Describe sus características, funciones y cómo interactúan entre sí durante el proceso de producción musical. Utiliza ejemplos prácticos y visuales para respaldar tu presentación.",objectives:[{name:"Identificación de Espacios",objective:"Reconocer y describir la Sala de Control y la Sala de Grabación como elementos clave en la Producción Musical."},{name:"Análisis Funcional",objective:"Analizar las funciones específicas y la importancia de cada sala en el proceso de grabación y producción."}],instructions:"Presentar los dos espacios fundamentales que componen el Estudio de Grabación. Sala de Control (Control Room), Sala de Grabación (Recording/Tracking Room)."}},settings:{layout:"main-content-layout"}},"e90b3b7f-2569-491b-8290-2ad1842056e8":{id:"e90b3b7f-2569-491b-8290-2ad1842056e8",type:"character-talk",title:"Conversación con un Productor Musical",description:"Explora y reflexiona sobre las decisiones técnicas y creativas en un estudio de grabación a través de un diálogo con un famoso productor musical.",language:"es",picture:"",module:{id:"c083dd01-36f5-4c7b-8f52-2a5100d52ae0",creator:{id:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"},objective:"Analizar el concepto Estudio de Grabación como herramienta fundamental en la Producción Musical.",title:"Introducción al Estudio de Grabación",description:"Este módulo se centra en el análisis del estudio de grabación como una herramienta esencial en la producción musical, explorando sus elementos técnicos y creativos.",language:"es",picture:"https://ailearn.api.aimpact.partners/modules/c083dd01-36f5-4c7b-8f52-2a5100d52ae0/picture",audience:{category:"higher-education",level:"tertiary-education",format:"Educación Superior",entity:"Referencias Académicas para Educación Superior"},public:!0,status:"active",type:"module",timeCreated:1743372113244,timeUpdated:1743372113244,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{},specs:{role:"Eres un productor musical reconocido que comparte su experiencia y responde a las preguntas sobre la mezcla y la producción en un estudio.",task:"Interactúa con el productor musical haciendo preguntas sobre su trabajo en el estudio. Reflexiona sobre las decisiones que toma durante el proceso de mezcla y cómo estas afectan el resultado final de la música. Aprovecha esta oportunidad para aprender sobre las técnicas y la creatividad en la producción musical.",objectives:[{name:"Decisiones técnicas",objective:"Entender las decisiones técnicas cruciales al mezclar música."},{name:"Creatividad en producción",objective:"Fomentar la creatividad al elegir elementos sonoros y técnicas de producción."},{name:"Formulación de preguntas",objective:"Desarrollar habilidades para formular preguntas relevantes sobre producción musical."}],instructions:""}},settings:{layout:"main-chat-layout"}},"fe93270f-cd49-430e-81bc-817449c280f0":{id:"fe93270f-cd49-430e-81bc-817449c280f0",type:"debate",title:"Defensa del Estudio de Grabación",description:"Un debate enfocado en la importancia de los estudios de grabación y los dispositivos analógicos en la producción musical frente a herramientas digitales.",language:"es",picture:"",module:{id:"c083dd01-36f5-4c7b-8f52-2a5100d52ae0",creator:{id:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"},objective:"Analizar el concepto Estudio de Grabación como herramienta fundamental en la Producción Musical.",title:"Introducción al Estudio de Grabación",description:"Este módulo se centra en el análisis del estudio de grabación como una herramienta esencial en la producción musical, explorando sus elementos técnicos y creativos.",language:"es",picture:"https://ailearn.api.aimpact.partners/modules/c083dd01-36f5-4c7b-8f52-2a5100d52ae0/picture",audience:{category:"higher-education",level:"tertiary-education",format:"Educación Superior",entity:"Referencias Académicas para Educación Superior"},public:!0,status:"active",type:"module",timeCreated:1743372113244,timeUpdated:1743372113244,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{},specs:{role:"Docente",subject:"La relevancia del estudio de grabación de Grbaciòn y los dispositivos analogicos que lo componen como estándar en la producción musical.",task:"Vas a participar en un debate donde deberás defender la importancia de los estudios de grabación y los dispositivos analógicos en la producción musical. Presenta tus argumentos de manera clara y concisa, y utiliza ejemplos que respalden tu postura. También tendrás que anticipar las objeciones que pueda presentar el chatbot y prepararte para responder a ellas con lógica y claridad.",objectives:[{name:"Argumentación",objective:"Desarrollar habilidades de argumentación en la defensa de los estudios de grabación."},{name:"Pensamiento Crítico",objective:"Fomentar el pensamiento crítico al comparar dispositivos analógicos y digitales."},{name:"Competencias Emocionales",objective:"Incorporar la autoconfianza y la gestión emocional durante el debate."},{name:"Metacognición",objective:"Reflexionar sobre el proceso de argumentación y los propios pensamientos en el debate."}],instructions:""}},settings:{layout:"main-chat-layout"}},"b0074f49-5100-4731-b771-db3befd44577":{id:"b0074f49-5100-4731-b771-db3befd44577",type:"multiple-choice",title:"Evaluación sobre el Estudio de Grabación en Producción Musical",description:"Esta actividad tiene como objetivo evaluar tu comprensión sobre el funcionamiento y los elementos esenciales de un estudio de grabación, así como su papel en la producción musical.",language:"es",picture:"",module:{id:"c083dd01-36f5-4c7b-8f52-2a5100d52ae0",creator:{id:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"},objective:"Analizar el concepto Estudio de Grabación como herramienta fundamental en la Producción Musical.",title:"Introducción al Estudio de Grabación",description:"Este módulo se centra en el análisis del estudio de grabación como una herramienta esencial en la producción musical, explorando sus elementos técnicos y creativos.",language:"es",picture:"https://ailearn.api.aimpact.partners/modules/c083dd01-36f5-4c7b-8f52-2a5100d52ae0/picture",audience:{category:"higher-education",level:"tertiary-education",format:"Educación Superior",entity:"Referencias Académicas para Educación Superior"},public:!0,status:"active",type:"module",timeCreated:1743372113244,timeUpdated:1743372113244,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{assessment:'{"title":"Evaluación sobre el Estudio de Grabación en Producción Musical","questions":[{"question":"¿Cuál es el propósito principal de un estudio de grabación?","options":["Mejorar la calidad visual de las grabaciones","Diseñar espacios para ensayar","Proveer un espacio adecuado para la grabación, mezcla y en ciertos casos la masterización de un Proyecto Musical.  ","Almacenar instrumentos musicales"],"correctAnswer":2},{"question":"¿Qué función cumple la sala de control en un estudio de grabación?","options":["Grabar las voces de los músicos","Cambiar la acústica del recinto","Dar forma al sonido final mediante mezcla","Aislar instrumentos ruidosos"],"correctAnswer":2},{"question":"¿Qué aspecto es fundamental en el tratamiento acústico de un estudio?","options":["La estética de los muebles","La capacitación del personal","La respuesta en frecuencia del recinto y el rt60.","La variedad de instrumentos disponibles"],"correctAnswer":2},{"question":"¿Qué es una Iso Booth en un estudio de grabación?","options":["Una sala destinada para la mezcla","Un espacio para grabaciones en un ambiente controlado","Un área de descanso para los músicos","Un equipo de grabación multicanal"],"correctAnswer":1},{"question":"¿Por qué es importante la selección de equipo técnico en un estudio de grabación?","options":["Asegura que el estudio esté ordenado","Aumenta la velocidad de grabación","Puede alterar radicalmente el sonido obtenido","Facilita el trabajo del personal administrativo"],"correctAnswer":2}]}'},specs:{task:"",objectives:"",instructions:""}},settings:{layout:"main-chat-layout"}},"5bed3375-873d-414f-a52d-577e382f3091":{id:"5bed3375-873d-414f-a52d-577e382f3091",type:"spoken",title:"Diferencias en Mezclas de Sonido",description:"Exposición sobre las diferencias entre la mezcla Out The Box y las mezclas In The Box e Híbrida, mostrando claridad en la comprensión del tema.",language:"es",picture:"",module:{id:"c083dd01-36f5-4c7b-8f52-2a5100d52ae0",creator:{id:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"},objective:"Analizar el concepto Estudio de Grabación como herramienta fundamental en la Producción Musical.",title:"Introducción al Estudio de Grabación",description:"Este módulo se centra en el análisis del estudio de grabación como una herramienta esencial en la producción musical, explorando sus elementos técnicos y creativos.",language:"es",picture:"https://ailearn.api.aimpact.partners/modules/c083dd01-36f5-4c7b-8f52-2a5100d52ae0/picture",audience:{category:"higher-education",level:"tertiary-education",format:"Educación Superior",entity:"Referencias Académicas para Educación Superior"},public:!0,status:"active",type:"module",timeCreated:1743372113244,timeUpdated:1743372113244,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{},specs:{assessment:"El estudiante debe exponer oralmente las diferencias entre los tipos de mezcla indicados. Evalúa la claridad de la presentación, la profundidad del contenido, la estructura lógica de la exposición y el cumplimiento del tiempo asignado. Asegúrate de leer la transcripción del discurso para una evaluación precisa.",criteria:[{name:"Claridad",subject:"El estudiante debe presentar sus ideas de manera clara y comprensible, empleando un lenguaje apropiado para el tema abordado."},{name:"Contenido",subject:"La presentación debe incluir las diferencias clave entre Out The Box, In The Box e Híbrida, evidenciando un buen dominio del tema."},{name:"Estructura",subject:"La exposición debe tener una introducción clara, un desarrollo coherente y una conclusión que resuma las ideas principales."},{name:"Tiempo",subject:"El hablante debe realizar la presentación dentro del tiempo estipulado de tres minutos, administrando el tiempo de manera efectiva."}],task:"Prepara una exposición de no más de tres minutos sobre las diferencias entre la mezcla Out The Box y las mezclas In The Box e Híbrida. Asegúrate de abordar las características distintivas de cada tipo de mezcla, estructurando tu presentación con una introducción, desarrollo y conclusión clara. Mantén un lenguaje técnico apropiado y asegúrate de terminar tu exposición en el tiempo indicado.",objectives:"",instructions:""}},settings:{layout:"main-chat-layout"}}}},teachers:[{uid:"qRTrEUtIhVV8jwLPBNOCx2cSMaq1",name:"Docente Mezcla Tamaba",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocJ4_6Wg8clPeLzfWsOVX0Dob0TP8c0TganBLSh7uJSdb5hMyA=s96-c"}],archived:!1,access:"approved",accessed:!1,community:!1}}}}),g.set("./HARDCODED3",{hash:2468639777,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.HARDCODED=void 0,a.HARDCODED={status:!0,data:{id:"eb7b5bf0-e64b-4d18-bf6b-9dfdc6906a51",classroom:{id:"7d1848f3-1a65-4723-a5ad-c085216a51f6",name:"Técnicas de Mezcla",picture:""},module:{id:"cc4a3fb1-84d8-4115-ba58-cd4aba91c47a",creator:{id:"67FGRegtcXVOZuqC6Sse7MIPtQw1",name:"Guido Alfonsi",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocI44V5_Dd2nIISOR0QxrxOh3zp3N9ejrt-rdvOlthCUdJr_Wg=s96-c"},language:"es",title:"Live Looping",description:"Este módulo tiene como objetivo introducir a los alumnos en el arte del live looping utilizando el controlador Akai APC Key 25 y el software Ableton Live, fomentando la creatividad y el uso de tecnologías actuales en la creación musical.",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/modules/cc4a3fb1-84d8-4115-ba58-cd4aba91c47a/picture",objective:"Introducir el arte del live looping con el controlador Akai APC Key 25 y Ableton Live, desarrollando habilidades en la creación musical con el uso de nuevas tecnologías.",duration:"15",audience:"6to año",owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""}},payer:"module-owner",code:"AIN9KRG",public:!1,activities:{order:["49dda241-1a8b-4f04-9472-f88ea064651f","5b0f86e2-0496-4ebc-80c8-9c28924eb12c","dd07950d-9705-4051-a6e7-4ee3a16a25fe","46eb3701-4fd2-427b-babb-fca9a5dba92a","215d4030-bbd3-4297-8c28-184ff8aba623","d924379f-4f53-4df8-999e-eb4b8d74b281","18ff5738-0a07-40b4-bd4c-088758b4da35"],items:{"49dda241-1a8b-4f04-9472-f88ea064651f":{id:"49dda241-1a8b-4f04-9472-f88ea064651f",objective:"El alumno comprenderá qué es el live looping y su evolución en la música contemporánea.",type:"content-theory",title:"Fundamentos del Live Looping",description:"Exploración de los conceptos básicos del live looping y su historia, incluyendo ejemplos famosos de artistas que usan esta técnica.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/activities/82c2d2d5-799a-4bc0-a69c-06a3a20cdf96/picture",duration:30,module:{id:"cc4a3fb1-84d8-4115-ba58-cd4aba91c47a",creator:{id:"67FGRegtcXVOZuqC6Sse7MIPtQw1",name:"Guido Alfonsi",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocI44V5_Dd2nIISOR0QxrxOh3zp3N9ejrt-rdvOlthCUdJr_Wg=s96-c"},objective:"Introducir el arte del live looping con el controlador Akai APC Key 25 y Ableton Live, desarrollando habilidades en la creación musical con el uso de nuevas tecnologías.",title:"Live Looping",description:"Este módulo tiene como objetivo introducir a los alumnos en el arte del live looping utilizando el controlador Akai APC Key 25 y el software Ableton Live, fomentando la creatividad y el uso de tecnologías actuales en la creación musical.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/modules/cc4a3fb1-84d8-4115-ba58-cd4aba91c47a/picture",duration:"15",audience:"6to año",public:!0,status:"active",type:"module",timeCreated:1740070992173,timeUpdated:1740070992173,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{article:'El live looping es una técnica fascinante que permite registrar (grabar) y reproducir fragmentos de señales audio y señales MIDI de manera cíclica y simultánea. Además de la posibilidad de registrar, el live looping también te ofrece la posibilidad de procesar tus señales de audio en tiempo real. Construí una composición en vivo, capa por capa. Esta práctica, con raíces en la música académica, ha trascendido géneros y conquistado la escena musical contemporánea, brindando a personas de todas las disciplinas posibilidades ilimitadas.\n\nPioneros y Evolución Tecnológica\nDesde la década del 60 (Siglo XX), muchos artistas exploraron las posibilidades de la repetición y la reiteración. No obstante, la evolución tecnológica ha catapultado el live looping a una nueva dimensión. Hoy, músicos solistas y bandas por igual, aprovechan está técnica para crear performances únicas. \n\nTu Primer Acercamiento al Live Looping con Ableton Live y Akai APC Key 25\nTe presentamos, a continuación, una breve guía para comenzar a experimentar con Ableton Live y el controlador Akai APC Key 25:\n\n1. Conexión:\nConectá el Akai APC Key 25 a tu computadora mediante un cable USB.\nAsegurate de tener Ableton Live instalado y actualizado.\n\n2. Configuración en Ableton Live:\nAbrí Ableton Live y creá un nuevo proyecto.\nPaso 1 - Andá a "Preferencias" > "Midi Sync".\nPaso 2 - En la sección "Midi Sync", activá el control MIDI para el Akai APC Key 25.\n\n3. Creación de Canal de Audio:\nEn la "Vista de Sesión", hacé clic en "Crear" > "Canal de Audio".\n\n4. Ajuste de Tempo y Tipo de Compás:\nEstablecé el tempo y el tipo de compás deseados en la esquina superior izquierda.\n\n5. Configuración de Entrada de Audio:\nEn el canal de audio, seleccioná la entrada de audio (micrófono o instrumento).\nActivá el monitoreo para escuchar la señal en tiempo real.\n\n6. Registro / grabación de un fragmento de Audio (Clip):\nHacé clic en el botón de grabación del canal de audio.\nPresioná el botón de grabación en el controlador para capturar tu primer loop.\n\n7. Exploración Creativa:\nUtilizá las funciones de reproducción y sobregrabación del controlador para añadir capas y construir tu composición.\n\n8. Procesamiento de Señal:\nAñadí procesos a tus señales de audio desde la sección "Efectos de Audio" para enriquecer tu narrativa.\n\nYa estás dentro del Universo de la experimentación y la creatividad, ya sos parte del live looping.',synthesis:'- **Live Looping**\n  - _Técnica fascinante_\n  - _Grabar y reproducir_ señales audio y MIDI\n  - _Procesamiento en tiempo real_\n  - _Construcción en vivo_, capa por capa\n  - _Raíces en la música académica_\n\n- **Pioneros y Evolución Tecnológica**\n  - _Desde la década del 60_\n  - _Exploración de repetición y reiteración_\n  - _Catapulta a nueva dimensión_ \n  - _Utilizado por músicos solistas y bandas_\n\n- **Guía para Live Looping con Ableton Live y Akai APC Key 25**\n  - **Conexión**\n    - _Cable USB Akai APC Key 25_\n    - _Ableton Live instalado y actualizado_\n\n  - **Configuración en Ableton Live**\n    - _Nuevo proyecto_\n    - _Preferencias > Midi Sync_\n    - _Activar control MIDI Akai APC Key 25_\n\n  - **Creación de Canal de Audio**\n    - _Vista de Sesión > Crear > Canal de Audio_\n\n  - **Ajuste de Tempo y Tipo de Compás**\n    - _Establecer tempo y compás en esquina superior izquierda_\n\n  - **Configuración de Entrada de Audio**\n    - _Seleccionar entrada (micrófono/instrumento)_\n    - _Activar monitoreo para señal en tiempo real_\n\n  - **Registro/Grabación de Fragmento de Audio**\n    - _Clic en botón de grabación del canal_\n    - _Presionar botón de grabación en controlador_\n\n  - **Exploración Creativa**\n    - _Utilizar funciones de reproducción y sobregrabación_\n    - _Añadir capas y construir composición_\n\n  - **Procesamiento de Señal**\n    - _Agregar efectos desde "Efectos de Audio"_\n    - _Enriquecer narrativa_',dyslexia:'El live looping es una técnica que permite grabar y reproducir sonidos de manera cíclica, es decir, repetitiva. Puedes grabar audio, que son los sonidos que escuchamos, y también MIDI, que es un tipo de información musical que indica notas y ritmos. Puedes procesar estos sonidos en tiempo real. Esto significa que puedes hacer cambios mientras tocas. \n\nEl live looping tiene raíces en la música clásica, pero hoy se usa en muchos estilos diferentes. Muchos músicos solistas y bandas utilizan esta técnica. Es una forma de crear música única.\n\nPara empezar con el live looping, necesitarás un programa llamado Ableton Live y un controlador llamado Akai APC Key 25. Aquí te explico cómo hacerlo, paso a paso.\n\nPrimero, conecta tu Akai APC Key 25 a la computadora usando un cable USB. Asegúrate de que el programa Ableton Live esté instalado y actualizado.\n\nLuego, abre Ableton Live y crea un nuevo proyecto. Ve a "Preferencias" y después a "Midi Sync". Activa la opción para el Akai APC Key 25.\n\nAhora, crea un canal de audio. Haz clic en "Crear" y luego en "Canal de Audio".\n\nDespués, debes establecer el tempo, que es la velocidad de la música, y el tipo de compás en la esquina superior izquierda de la pantalla.\n\nLuego, selecciona la entrada de audio en tu canal de audio. Puedes elegir un micrófono o un instrumento. Activa el monitoreo. Esto te permitirá escuchar lo que estás grabando en tiempo real.\n\nPara grabar un sonido, haz clic en el botón de grabación del canal de audio. Luego, presiona el botón de grabación en el Akai APC Key 25 para capturar tu primer loop.\n\nAhora es tiempo de ser creativo. Usa las funciones de reproducción y sobregrabación del controlador. Puedes añadir más capas a tu música y crear una composición.\n\nFinalmente, puedes agregar efectos a tus sonidos desde la sección de "Efectos de Audio". Esto hará que tu música suene más rica y emocionante.\n\nHas comenzado a experimentar con el live looping. Ya eres parte de un mundo creativo y lleno de posibilidades. ¿Te gustaría intentar grabar diferentes sonidos? ¿Qué tipos de música quieres crear?',audios:{dyslexia:{url:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/activities/49dda241-1a8b-4f04-9472-f88ea064651f/materials/dyslexia/audio"}}},specs:{topic:"Live Looping en la música contemporánea",task:"Investiga y comprende el concepto de live looping. Describe su evolución en la música contemporánea y proporciona ejemplos de artistas que lo utilizan en su obra. Asegúrate de incluir cómo este recurso afecta la creatividad y la producción musical en distintos géneros.",objectives:[{name:"Definición",objective:"Comprender qué es el live looping y su significado en la música."},{name:"Evolución",objective:"Analizar la evolución del live looping a través de ejemplos de artistas contemporáneos."},{name:"Aplicación",objective:"Identificar cómo se utiliza el live looping en diferentes géneros musicales."}],instructions:""}}},"5b0f86e2-0496-4ebc-80c8-9c28924eb12c":{id:"5b0f86e2-0496-4ebc-80c8-9c28924eb12c",objective:"",type:"multiple-choice",title:"Quiz sobre conceptos del Live Looping",description:"Una actividad de opción múltiple que evalúa la comprensión de los conceptos vistos en el módulo, utilizando preguntas sobre el live looping y el uso de Ableton Live.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/activities/538000e7-2a1d-4b53-bf7d-a90afee1403d/picture",duration:20,module:{id:"cc4a3fb1-84d8-4115-ba58-cd4aba91c47a",creator:{id:"67FGRegtcXVOZuqC6Sse7MIPtQw1",name:"Guido Alfonsi",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocI44V5_Dd2nIISOR0QxrxOh3zp3N9ejrt-rdvOlthCUdJr_Wg=s96-c"},objective:"Introducir el arte del live looping con el controlador Akai APC Key 25 y Ableton Live, desarrollando habilidades en la creación musical con el uso de nuevas tecnologías.",title:"Live Looping",description:"Este módulo tiene como objetivo introducir a los alumnos en el arte del live looping utilizando el controlador Akai APC Key 25 y el software Ableton Live, fomentando la creatividad y el uso de tecnologías actuales en la creación musical.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/modules/cc4a3fb1-84d8-4115-ba58-cd4aba91c47a/picture",duration:"15",audience:"6to año",public:!0,status:"active",type:"module",timeCreated:1740070992173,timeUpdated:1740070992173,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{assessment:'{"title":"Quiz sobre conceptos del Live Looping","questions":[{"question":"¿Cuál es la función principal del Akai APC Key 25 en el live looping?","options":["Mejorar la calidad del audio","Controlar Ableton Live de manera intuitiva","Aumentar el volumen de las pistas","Sustituir a la computadora"],"correctAnswer":1},{"question":"¿Qué software se utiliza comúnmente junto al Akai APC Key 25 para live looping?","options":["FL Studio","Cubase","Ableton Live","Pro Tools"],"correctAnswer":2},{"question":"¿Qué permite el live looping en una presentación musical?","options":["Grabar y reproducir audio en tiempo real","Modificar la música después de la presentación","Solo utilizar instrumentos acústicos","Limitar la creatividad del músico"],"correctAnswer":0},{"question":"¿Cuál de las siguientes características del APC Key 25 es crucial para la creación musical?","options":["Suspiro de aire","Controles de mezcla y efectos","Altavoces integrados","Grabar video"],"correctAnswer":1},{"question":"En Ableton Live, ¿qué es lo que se manipula principalmente para el live looping?","options":["La señal MIDI","Los efectos de video","Las imágenes de fondo","La iluminación del escenario"],"correctAnswer":0}]}'},specs:{task:"",objectives:"",instructions:""}}},"dd07950d-9705-4051-a6e7-4ee3a16a25fe":{id:"dd07950d-9705-4051-a6e7-4ee3a16a25fe",objective:"Al finalizar esta actividad, los estudiantes deberán ser capaces de identificar y utilizar las principales funcionalidades de Ableton Live, aplicándolas en la creación de loops musicales.",type:"content-theory",title:"Introducción a las Funcionalidades de Ableton Live",description:"Esta actividad tiene como objetivo proporcionar a los estudiantes una comprensión profunda de las funcionalidades de Ableton Live, centrándose en cómo se pueden utilizar para la creación musical y el live looping. Se abordarán aspectos como la interfaz del software, herramientas de edición, efectos de audio, y técnicas básicas de looping. Al final de la sesión, los estudiantes deberán tener las nociones básicas para comenzar a manipular el software en su proceso de creación musical.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/activities/23d12a0c-87a4-4494-a668-09f9cc748389/picture",duration:0,module:{id:"cc4a3fb1-84d8-4115-ba58-cd4aba91c47a",creator:{id:"67FGRegtcXVOZuqC6Sse7MIPtQw1",name:"Guido Alfonsi",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocI44V5_Dd2nIISOR0QxrxOh3zp3N9ejrt-rdvOlthCUdJr_Wg=s96-c"},objective:"Introducir el arte del live looping con el controlador Akai APC Key 25 y Ableton Live, desarrollando habilidades en la creación musical con el uso de nuevas tecnologías.",title:"Live Looping",description:"Este módulo tiene como objetivo introducir a los alumnos en el arte del live looping utilizando el controlador Akai APC Key 25 y el software Ableton Live, fomentando la creatividad y el uso de tecnologías actuales en la creación musical.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/modules/cc4a3fb1-84d8-4115-ba58-cd4aba91c47a/picture",duration:"15",audience:"6to año",public:!0,status:"active",type:"module",timeCreated:1740070992173,timeUpdated:1740070992173,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{article:"Ableton Live es un software de producción musical (DAW) ampliamente utilizado por músicos, productores y DJs por su flexibilidad y funcionalidad. Su diseño se basa en dos vistas principales: la Vista Sesión y la Vista Arranger. La Vista Sesión es ideal para la improvisación y la creación de loops, donde las regiones de audio (clips) y regiones MIDI se organizan en columnas, permitiendo activar y desactivar elementos rápidamente. Esto facilita la experimentación, ya que puedes probar diferentes combinaciones de señales en tiempo real, lo que resulta útil para la creación de arreglos musicales instantáneos.\nEn la parte superior de la Vista Sesión se encuentran los canales. Cada canal puede contener una señal de Audio o datos MIDI y contiene regiones o clips que representan fragmentos de una señal. Al seleccionar una región o clip, el área de contenido muestra detalles sobre él, donde puedes editar parámetros como la duración, el tempo y los procesos aplicados. La función 'Warp' es esencial, ya que permite ajustar el tempo de las regiones o clips de audio para que se sincronicen perfectamente con el Tempo Map del Proyecto, independientemente de su tempo original.\nLa Vista Arranger, en cambio, se utiliza para estructurar el arreglo o canción completa. En esta vista, los canales se organizan de forma horizontal y podes arrastrar y soltar regiones para definir el orden de una composición. Podes utilizar la barra de herramientas para agregar transiciones, como fundidos, cortes y definir la duración de cada sección. La automatización es otra herramienta poderosa en esta vista, permitiéndote modificar parámetros a lo largo del tiempo, como el nivel, el paneo y los parámetros de los procesos aplicados.\nEl navegador, ubicado a la izquierda, es un recurso importante para explorar y organizar tus elementos. Puedes buscar instrumentos virtuales, procesos y sonidos pregrabados. Una vez que encuentras un evento que te gusta, podes arrastrarlo directamente a un canal. Ableton Live incluye una amplia gama de instrumentos y procesos nativos que podes utilizar para enriquecer tus producciones. También es posible cargar samples/muestras desde tu propia librería personal y utilizarlas en tus proyectos.\nLos procesos de audio, que se encuentran en el navegador, permiten modificar las señales presentes en cada canal. Podes aplicar procesos como reverb, delay, compresión y ecualización para dar forma a tu mezcla. Cada proceso puede ajustarse mediante diferentes parámetros, lo que brinda un amplio rango de posibilidades creativas. Experimentar con estos procesos en diferentes canales ayudará a entender cómo influyen en el resultado final de un proyecto.\nEl MIDI desempeña un papel fundamental en la creación y la producción músical. Ableton Live permite la grabación y edición de datos MIDI, lo que es esencial para utilizar instrumentos virtuales. Al crear un canal MIDI, podes ingresar eventos MIDI utilizando un teclado MIDI o dibujando directamente en el editor de piano. Desde ahí podes ajustar la duración, la velocidad y otros aspectos de cada nota, lo que te dará control total sobre la interpretación musical.\nPara facilitar el flujo de trabajo, Ableton Live también incluye una función de 'session loop', ideal para ensayar. Está función te permite grabar ideas rápidamente y reproducirlas en un bucle para experimentarlas. Esta funcionalidad es perfecta para la creación de bases rítmicas y melódicas, permitiendo explorar distintas variaciones y progresiones de acordes sin la presión de tener que definir inmediatamente un arreglo completo.\nAl final, entender las funcionalidades de Ableton Live te permitirá crear música de manera más efectiva. Al conocer la interacción entre la Vista Sesión y la Vista Arranger, cómo utilizar el navegador, trabajar con MIDI y aplicar procesos, tendrás las herramientas necesarias para comenzar a componer tus propios loops. Con práctica y experimentación, tu creatividad podrá fluir a través de este potente software.",synthesis:"- **Ableton Live**\n  - DAW popular\n  - Músicos, productores, DJs\n\n- **Vistas principales**\n  - **Vista Sesión**\n    - Improvisación y loops\n    - Organiza clips en columnas\n    - Activación/desactivación rápida\n    - Experimentación en tiempo real\n  - **Vista Arranger**\n    - Estructura de la canción\n    - Organización horizontal de canales\n    - Arrastrar y soltar regiones\n    - Inserción de transiciones\n      - Fundidos\n      - Cortes\n    - Automatización de parámetros\n\n- **Navegador**\n  - Ubicación: izquierda\n  - Exploración y organización de elementos\n  - Búsqueda de instrumentos y sonidos\n  - Arrastrar eventos a canales\n\n- **Procesos de audio**\n  - Modificación de señales en canales\n  - Aplicar efectos:\n    - Reverb\n    - Delay\n    - Compresión\n    - Ecualización\n  - Ajustes de parámetros\n\n- **MIDI en producción musical**\n  - Grabación y edición de datos MIDI\n  - Creación de canal MIDI\n  - Ingreso mediante teclado MIDI o editor de piano\n  - Control de duración y velocidad\n\n- **Session Loop**\n  - Función para ensayar\n  - Grabación rápida de ideas\n  - Reproducción en bucle\n  - Exploración de variaciones y acordes\n\n- **Conclusión**\n  - Comprender funcionalidades clave\n  - Interacción entre vistas\n  - Uso del navegador y procesos\n  - Práctica y experimentación para creatividad",introduction:"",dyslexia:"Ableton Live es un programa para hacer música. Es usado por músicos y DJs. Este programa tiene dos partes principales: la Vista Sesión y la Vista Arranger.\n\nLa Vista Sesión es buena para improvisar y crear loops. Un loop es un fragmento de música que se repite. Aquí, las partes de música se organizan en columnas. Puedes encender y apagar los clips de música fácilmente. Esto permite probar diferentes sonidos de forma rápida. Por ejemplo, puedes mezclar sonidos de guitarra con electrónicos en tiempo real para ver cómo suenan juntos.\n\nEn la parte de arriba de la Vista Sesión hay canales. Cada canal puede tener sonidos o datos MIDI. MIDI es un tipo de información que se usa para controlar instrumentos en el programa. Cuando eliges un clip, puedes ver sus detalles. Puedes cambiar cosas como la duración y el tempo. El 'Warp' es una herramienta importante que ayuda a que todos los sonidos tengan el mismo tempo. Esto significa que todos suenan en el mismo ritmo, aunque tengan tempos diferentes al principio.\n\nLa Vista Arranger es para organizar la canción completa. Aquí los canales están en filas. Puedes arrastrar y soltar clips para cambiar el orden de la música. También hay una barra de herramientas que permite añadir transiciones. Por ejemplo, puedes hacer que la música suba o baje poco a poco con un fundido. La automatización te ayuda a cambiar cosas como el volumen a lo largo del tiempo.\n\nA la izquierda de la pantalla está el navegador. Este es un lugar para buscar sonidos e instrumentos. Puedes encontrar muchos sonidos y arrastrarlos a un canal. Ableton Live tiene muchos sonidos y herramientas que puedes usar. También puedes usar tus propios sonidos almacenados en tu computadora.\n\nLos procesos de audio están en el navegador. Estos te permiten cambiar los sonidos en cada canal. Puedes añadir efectos como reverb, que hace que suene lejano, o delay, que repite el sonido. Jugar con estos procesos en diferentes sonidos te ayudará a ver cómo cambian la música.\n\nEl MIDI es muy importante para hacer música. En Ableton Live puedes grabar y editar datos MIDI. Para usar un instrumento virtual, necesitas un canal MIDI. Puedes escribir eventos MIDI usando un teclado o dibujando en el programa. Desde allí puedes cambiar cosas como la duración y la velocidad de cada nota.\n\nAbleton Live también tiene una función llamada 'session loop'. Esta función es buena para ensayar. Puedes grabar ideas y reproducirlas en un bucle. Esto significa que puedes escuchar la misma parte de música repetidamente. Es útil para crear ritmos y melodías, y explorar variaciones sin presionarte.\n\nAl final, aprender a usar Ableton Live te ayudará a hacer música mejor. Conocer las dos vistas, cómo buscar sonidos, trabajar con MIDI y aplicar efectos te dará herramientas para comenzar a crear. Con práctica, tu creatividad puede fluir y podrás hacer tu propia música. \n\nRecuerda, Ableton Live tiene muchas posibilidades. Prueba, experimenta y diviértete creando.",flashcard:{},audios:{article:{status:!0,url:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/activities/dd07950d-9705-4051-a6e7-4ee3a16a25fe/materials/article/audio"},dyslexia:{status:!0,url:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/activities/dd07950d-9705-4051-a6e7-4ee3a16a25fe/materials/dyslexia/audio"}}},specs:{topic:"Funcionalidades de Ableton Live",task:"Explora las funcionalidades de Ableton Live y utiliza estas herramientas para crear al menos tres loops musicales originales. Asegúrate de aplicar diferentes técnicas de edición y manipulación de audio. Al finalizar, presenta tus loops junto con una breve descripción del proceso creativo que seguiste y las funcionalidades que utilizaste en cada uno.",objectives:[{name:"Identificación de funcionalidades",objective:"Capacitar a los estudiantes para que reconozcan las principales herramientas de Ableton Live y su aplicación en la producción musical."},{name:"Creación de loops",objective:"Desarrollar la habilidad de los estudiantes para crear loops musicales utilizando las funcionalidades aprendidas en Ableton Live."}],instructions:"ejercicios relacionados"}}},"46eb3701-4fd2-427b-babb-fca9a5dba92a":{id:"46eb3701-4fd2-427b-babb-fca9a5dba92a",objective:"",type:"multiple-choice",title:"Ableton Live",description:"Selecciona la opción correcta sobre Ableton Live",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/activities/5508fcc6-8e4b-49a4-8361-a5f85e8788a3/picture",duration:0,module:{id:"cc4a3fb1-84d8-4115-ba58-cd4aba91c47a",creator:{id:"67FGRegtcXVOZuqC6Sse7MIPtQw1",name:"Guido Alfonsi",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocI44V5_Dd2nIISOR0QxrxOh3zp3N9ejrt-rdvOlthCUdJr_Wg=s96-c"},objective:"Introducir el arte del live looping con el controlador Akai APC Key 25 y Ableton Live, desarrollando habilidades en la creación musical con el uso de nuevas tecnologías.",title:"Live Looping",description:"Este módulo tiene como objetivo introducir a los alumnos en el arte del live looping utilizando el controlador Akai APC Key 25 y el software Ableton Live, fomentando la creatividad y el uso de tecnologías actuales en la creación musical.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/modules/cc4a3fb1-84d8-4115-ba58-cd4aba91c47a/picture",duration:"15",audience:"6to año",public:!0,status:"active",type:"module",timeCreated:1740070992173,timeUpdated:1740070992173,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{assessment:'{"title":"Ableton Live","questions":[{"question":"¿Cuál de las siguientes opciones permite grabar audio en Ableton Live?","options":["Clip de MIDI","Clip de audio","Automatización","Efecto de retorno"],"correctAnswer":1},{"question":"¿Qué elemento se utiliza para disparar clips en Ableton Live?","options":["Escena","Línea de tiempo","Controlador MIDI","Grupos"],"correctAnswer":0},{"question":"¿Cuál es la función del \'Session View\' en Ableton Live?","options":["Modificar efectos","Grabar MIDI","Disparar clips y escenas","Exportar audio"],"correctAnswer":2},{"question":"¿Qué tipo de archivo se utiliza principalmente para almacenar MIDI en Ableton Live?","options":["Archivo de audio .wav","Archivo de proyecto .als","Archivo MIDI .mid","Archivo de clip .aif"],"correctAnswer":2},{"question":"¿Cuál de estos efectos se puede aplicar a un clip de audio en Ableton Live?","options":["Compresor","Metrónomo","Escala","Conector de red"],"correctAnswer":0}]}'},specs:{task:"",objectives:"",instructions:""}}},"215d4030-bbd3-4297-8c28-184ff8aba623":{id:"215d4030-bbd3-4297-8c28-184ff8aba623",objective:"Los alumnos entenderán el funcionamiento de cada control del Akai APC Key 25 y cómo interactúa con Ableton Live para facilitar la creación musical.",type:"content-theory",title:"Introducción al Akai APC Key 25",description:"En esta actividad se explorarán los diferentes controles del Akai APC Key 25, un controlador MIDI especialmente diseñado para trabajar con Ableton Live. Los estudiantes aprenderán sobre la disposición de los botones, faders y pads, así como su función en la creación musical mediante técnicas de live looping.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/activities/dd10c349-24db-4b9c-a5f9-7aba8725473a/picture",duration:0,module:{id:"cc4a3fb1-84d8-4115-ba58-cd4aba91c47a",creator:{id:"67FGRegtcXVOZuqC6Sse7MIPtQw1",name:"Guido Alfonsi",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocI44V5_Dd2nIISOR0QxrxOh3zp3N9ejrt-rdvOlthCUdJr_Wg=s96-c"},objective:"Introducir el arte del live looping con el controlador Akai APC Key 25 y Ableton Live, desarrollando habilidades en la creación musical con el uso de nuevas tecnologías.",title:"Live Looping",description:"Este módulo tiene como objetivo introducir a los alumnos en el arte del live looping utilizando el controlador Akai APC Key 25 y el software Ableton Live, fomentando la creatividad y el uso de tecnologías actuales en la creación musical.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/modules/cc4a3fb1-84d8-4115-ba58-cd4aba91c47a/picture",duration:"15",audience:"6to año",public:!0,status:"active",type:"module",timeCreated:1740070992173,timeUpdated:1740070992173,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{article:'El Akai APC Key 25 es un controlador MIDI diseñado específicamente para trabajar en conjunto con el software Ableton Live, una de las herramientas más populares para la producción musical. Este equipo combina la funcionalidad de un controlador tradicional con la facilidad de un teclado, lo que lo convierte en una excelente opción para quienes buscan crear y ejecutar música de manera eficiente.\nEl APC Key 25 cuenta con 25 teclas de tamaño estándar que permiten ejecutar piezas musicales. Estas teclas son sensitivas (reconocen cambios a la intensidad de la ejecución), lo que significa que los cambios dinámicos de la frase musical afectarán la reproducción y el registro. Para familiarizarse con él concepto de un controlador sensitivo, podes comenzar tocando una melodia o un acorde, tanto durante la ejecución, cómo luego observando la información MIDI registrada, vas a verificar qué cada uno de los eventos Note On (mensaje MIDI qué se utiliza para declarar la activación de una Tecla), tiene asociado un valor de Velocity diferente. (El Velocity es el Mensaje del Protocolo MIDI, qué codifica en valores entre 0 y 127 la intensidad con la qué se presionó una Tecla).\nUno de los elementos más destacados del Akai APC Key 25 es su matriz de 8x8 pads. Cada uno de estos pads se ilumina y se puede programar para lanzar eventos o clips en Ableton Live. Cada pad se puede asignar a un evento o clip específico, lo que te brinda la posibilidad de activar y desactivar rápidamente cada evento. Podes empezar la práctica asignando diferentes eventos a cada pad y luego intentar lanzar algunos de manera secuencial, lo que te ayudará a entender cómo se relacionan los eventos o clips entre sí.\nEn la parte superior del controlador, encontrarás los botones de “Track”, “Scene” y los potenciómetros de nivel. Los botones de "Track" permiten seleccionar diferentes canales dentro de tu proyecto. Por lo tanto, un ejercicio útil sería asignar instrumentos o muestras de audio a cada canal y experimentar con las señales asociadas a cada uno mientras tocas. Al usar el botón de "Scene", puedes lanzar todas las pistas de una escena a la vez, facilitando su composición en vivo. \nLos potenciómetros de nivel, ubicados en el lado derecho, son ideales para ajustar el nivel de cada canal sin necesidad de utilizar el mouse. Puedes realizar un ejercicio de mezcla práctico donde vayas ajustando los niveles de los diferentes canales mientras escuchas, el resultado de esos cambios.\nAdemás, el APC Key 25 tiene botones asignables que se pueden usar para funciones específicas en Ableton Live, como las funciones de transporte (reproducir, pausar y detener). Familiarizarse con estos botones es esencial, por lo que te recomiendo que hagas una práctica donde utilices únicamente el APC Key 25 para controlar la reproducción de tu proyecto, evitando el uso del mouse.\nFinalmente, el Akai APC Key 25 también cuenta con una sección de transposición de la altura tonal (pitch bend) y modulación, representadas por dos sliders. Estos controles en formato deslizable (sliders) se pueden mapear (asignar) a diferentes controles dentro de Ableton Live, lo que te permitirá alterar la altura tonal, la intensidad, etc de tus señales en tiempo real. Para practicar, intenta asignar cada slider a parámetros de procesos cómo una reverb o un delay y explora cómo su ese cambio/ajuste afecta tu mezcla.\nA medida que vas explorando el Akai APC Key 25 junto con Ableton Live, es importante dedicar tiempo a cada uno de los controles y funciones que ofrece. La práctica regular te permitirá sentirte cada vez más cerca utilizando tanto el controlador como el software, facilitando tu proceso creativo y mejorando tus habilidades en la creación musical.',synthesis:"- **Akai APC Key 25**\n  - Controlador **MIDI**\n  - Diseñado para **Ableton Live**\n  - Combina **controlador tradicional** con **teclado**\n\n- **Teclas**\n  - **25 teclas** de tamaño estándar\n  - **Sensitivas**: reconocen intensidad (velocity)\n    - **Velocity**: 0 a 127\n    - **Note On**: activación de teclas\n\n- **Matriz de Pads**\n  - **8x8 pads**\n  - Iluminación para **eventos/clips** en Ableton Live\n  - **Asignación**: eventos específicos a cada pad\n\n- **Controles en la parte superior**\n  - **Botones de Track**: seleccionar canales\n  - **Botón de Scene**: lanzar pistas de una escena\n  - **Potenciómetros de nivel**: ajuste de niveles sin mouse\n\n- **Botones Asignables**\n  - Funciones de **transporte** (reproducir, pausar, detener)\n  - Práctica: controlar reproducción con APC Key 25 solo\n\n- **Sección de Transposición y Modulación**\n  - **Sliders** para **pitch bend** y **modulación**\n  - Mapear a controles en Ableton Live\n    - Ejemplo: asignar a reverb o delay\n\n- **Práctica Regular**\n  - Familiarizarse con controles y funciones\n  - Mejora de habilidades en **creación musical**",introduction:"",dyslexia:'El Akai APC Key 25 es un controlador MIDI que trabaja con el software Ableton Live. Esto es una herramienta muy popular para hacer música. El controlador tiene funciones de un teclado y un controlador tradicional. Esto lo hace ideal para crear y ejecutar música de manera fácil.\n\nEl APC Key 25 tiene 25 teclas. Estas son de tamaño estándar y permiten tocar piezas musicales. Las teclas son sensitivas. Esto significa que pueden sentir cuán fuerte tocas. Si tocas más fuerte, suena más fuerte. Un ejercicio simple es tocar una melodía o un acorde y luego ver cómo se registran las notas en el software. Cada toque tiene un valor diferente llamado "Velocity". Este valor va de 0 a 127 y indica la intensidad de tu toque.\n\nEl controlador tiene 64 pads organizados en una matriz de 8x8. Cada pad se ilumina y puedes programarlo para que active eventos o clips en Ableton Live. Puedes empezar por asignar diferentes clips a cada pad. Luego, intenta activarlos uno tras otro. Así aprenderás a relacionar los eventos.\n\nEn la parte superior del controlador, hay botones que dicen "Track", "Scene" y potenciómetros de nivel. Los botones de "Track" te permiten seleccionar canales en tu proyecto. Un ejercicio útil es asignar diferentes instrumentos a cada canal. Al usar los botones de "Scene", puedes activar todas las pistas de una escena al mismo tiempo. Esto ayuda a hacer música en vivo.\n\nLos potenciómetros de nivel están a la derecha. Estos son para ajustar el volumen de cada canal sin usar el mouse. Puedes practicar mezclando los niveles de los canales y escuchar cómo cambia el sonido.\n\nEl APC Key 25 también tiene botones adicionales que puedes usar para funciones como reproducir, pausar y detener. Es buena idea practicar con estos botones y tratar de controlar tu proyecto sin usar el mouse.\n\nAdemás, el controlador tiene dos sliders para cambiar la altura tonal (pitch bend) y la modulación. Estos sliders pueden ser asignados a diferentes controles en Ableton Live. Puedes probar asignar un slider a efectos como reverb o delay. Escucha cómo cambian los sonidos al usar los sliders.\n\nEs muy importante que practiques con cada control y función del Akai APC Key 25 y Ableton Live. Cuanto más practiques, más fácil te será usar el controlador y crear música. Recuerda que la práctica regular mejora tus habilidades.',flashcard:{},audios:{article:{url:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/activities/215d4030-bbd3-4297-8c28-184ff8aba623/materials/article/audio"}}},specs:{topic:"Akai APC Key 25 y Ableton Live",task:"Explora cada control del Akai APC Key 25 utilizando la guía proporcionada. Realiza los ejercicios prácticos para comprobar tu comprensión sobre cómo cada control interactúa con Ableton Live. Al finalizar, reflexiona sobre cómo estos controles pueden facilitar tu proceso de creación musical.",objectives:[{name:"Conocimiento técnico",objective:"Comprender el funcionamiento de cada control del Akai APC Key 25."},{name:"Interacción software",objective:"Analizar cómo los controles del Akai APC Key 25 interactúan con Ableton Live para la creación musical."},{name:"Práctica musical",objective:"Desarrollar habilidades prácticas en la implementación de los controles del Akai APC Key 25 en proyectos musicales."}],instructions:"Sigue la guía extensa y detallada con paso a paso y ejercicios prácticos."}}},"d924379f-4f53-4df8-999e-eb4b8d74b281":{id:"d924379f-4f53-4df8-999e-eb4b8d74b281",objective:"",type:"multiple-choice",title:"Akai APC Key 25",description:"Selecciona la opción correcta que identifica la función de cada uno de los botones del controlador Akai APC Key 25 utilizados en la creación de loops en Ableton Live.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/activities/97e98f52-cda1-43f3-aa18-00ada9ea3eec/picture",duration:0,module:{id:"cc4a3fb1-84d8-4115-ba58-cd4aba91c47a",creator:{id:"67FGRegtcXVOZuqC6Sse7MIPtQw1",name:"Guido Alfonsi",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocI44V5_Dd2nIISOR0QxrxOh3zp3N9ejrt-rdvOlthCUdJr_Wg=s96-c"},objective:"Introducir el arte del live looping con el controlador Akai APC Key 25 y Ableton Live, desarrollando habilidades en la creación musical con el uso de nuevas tecnologías.",title:"Live Looping",description:"Este módulo tiene como objetivo introducir a los alumnos en el arte del live looping utilizando el controlador Akai APC Key 25 y el software Ableton Live, fomentando la creatividad y el uso de tecnologías actuales en la creación musical.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/modules/cc4a3fb1-84d8-4115-ba58-cd4aba91c47a/picture",duration:"15",audience:"6to año",public:!0,status:"active",type:"module",timeCreated:1740070992173,timeUpdated:1740070992173,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{assessment:'{"title":"Akai APC Key 25","questions":[{"question":"¿Cuántas teclas tiene el Akai APC Key 25?","options":["25","32","16","44"],"correctAnswer":0},{"question":"¿Qué función tienen los botones de \'Track\' en el APC Key 25?","options":["Seleccionar diferentes pistas","Ajustar el volumen","Asignar clips","Activar la modulación"],"correctAnswer":0},{"question":"¿Cuál es la disposición de los pads en el APC Key 25?","options":["8x8","4x4","6x6","2x10"],"correctAnswer":0},{"question":"¿Qué permiten hacer los sliders de pitch bend y modulación?","options":["Alterar el tempo","Controlar el volumen","Modificar tono o amplitud","Seleccionar escenas"],"correctAnswer":2},{"question":"¿Qué función tienen las perillas de volumen en el APC Key 25?","options":["Activar clips","Ajustar el nivel de volumen de cada pista","Cambiar el tempo","Seleccionar el instrumento"],"correctAnswer":1}]}'},specs:{task:"",objectives:"",instructions:""}}},"18ff5738-0a07-40b4-bd4c-088758b4da35":{id:"18ff5738-0a07-40b4-bd4c-088758b4da35",objective:"El alumno podrá expresar y defender su punto de vista sobre los efectos de la tecnología en la música actual.",type:"debate",title:"El impacto de la tecnología en la música",description:"Discusión sobre cómo las nuevas tecnologías, como el live looping, han transformado la producción musical y el papel del músico.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/activities/a1089cfd-6fc6-40fc-8921-f019edee29e2/picture",duration:40,module:{id:"cc4a3fb1-84d8-4115-ba58-cd4aba91c47a",creator:{id:"67FGRegtcXVOZuqC6Sse7MIPtQw1",name:"Guido Alfonsi",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocI44V5_Dd2nIISOR0QxrxOh3zp3N9ejrt-rdvOlthCUdJr_Wg=s96-c"},objective:"Introducir el arte del live looping con el controlador Akai APC Key 25 y Ableton Live, desarrollando habilidades en la creación musical con el uso de nuevas tecnologías.",title:"Live Looping",description:"Este módulo tiene como objetivo introducir a los alumnos en el arte del live looping utilizando el controlador Akai APC Key 25 y el software Ableton Live, fomentando la creatividad y el uso de tecnologías actuales en la creación musical.",language:"es",picture:"https://ailearn-http-d7gw5k2ica-uc.a.run.app/modules/cc4a3fb1-84d8-4115-ba58-cd4aba91c47a/picture",duration:"15",audience:"6to año",public:!0,status:"active",type:"module",timeCreated:1740070992173,timeUpdated:1740070992173,owner:{id:"a4b45f4b-4342-4351-ba65-3464b4e82ce3",name:"Instituto Terciario Tamaba",photoUrl:""},ai:!0},resources:{materials:{},specs:{role:"Intérprete de live looping, dj y músico.",subject:"Efectos de la tecnología en la música actual",task:"Participa en un debate sobre los efectos de la tecnología en la música actual. Tienes que expresar y defender tu punto de vista, considerando tanto los aspectos positivos como negativos. Escucha atentamente las respuestas del chatbot y argumenta tus ideas de manera clara y convincente, desarrollando tu pensamiento crítico y habilidades comunicativas.",objectives:[{name:"Argumentación efectiva",objective:"Desarrollar la capacidad de argumentar y defender un punto de vista sobre un tema contemporáneo."},{name:"Pensamiento crítico",objective:"Fomentar el análisis crítico de cómo la tecnología influye en la creación y percepción de la música."},{name:"Conexiones emocionales",objective:"Reflexionar sobre cómo la tecnología afecta emocionalmente a los artistas y oyentes."},{name:"Metacognición",objective:"Promover la autoconciencia en el proceso de formación de opiniones y la gestión de argumentos."}],instructions:""}}}}},teachers:[{uid:"67FGRegtcXVOZuqC6Sse7MIPtQw1",name:"Guido Alfonsi",photoUrl:"https://lh3.googleusercontent.com/a/ACg8ocI44V5_Dd2nIISOR0QxrxOh3zp3N9ejrt-rdvOlthCUdJr_Wg=s96-c"}],access:"approved",accessed:!1,community:!1}}}}),g.set("./activities/collection-provider",{hash:3089474622,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.ActivityCollectionProvider=void 0;var s=e("@aimpact/ailearn-sdk/startup"),t=e("@aimpact/chat-sdk/session"),n=e("@aimpact/media-manager/uploader"),i=e("@beyond-js/http-suite/api");class o{#api;#parent;constructor(e){this.#api=new i.Api(s.sdkConfig.apis.ailearn),this.#parent=e}load=async e=>{var a=await t.sessionWrapper.user.token,{status:a,data:e}=(this.#api.bearer(a),await this.#api.get(`/assignments/${e.assignmentId}/activities/`+e.id));if(a)return{status:a,data:e};throw new Error("error loading activity")};list=this.load;publish=async e=>"assessment"==e.type?(delete e.type,this.assessment(e.params)):this.spoken(e.data);assessment=async e=>{var a=await t.sessionWrapper.user.token,{status:a,data:e,error:i}=(this.#api.bearer(a),await this.#api.post("/activities/assessments/completion",e));if(i)throw new Error("error processing assessment");return{status:a,data:e}};spoken=async a=>{var e=Object.getOwnPropertyNames(a);let i=new FormData;if(e.forEach(e=>{i.append(e,a[e])}),(e=new n.XHRLoader).bearer(t.sessionWrapper.user.token),(e=await(await e.upload(i,s.sdkConfig.apis.ailearn+"/activities/spoken/completion")).json()).status)return this.triggerEvent(),e.data;throw new Error("error publishing assessment")};async consumeCoins(){var e=await t.sessionWrapper.user.token;return this.#api.bearer(e),this.#api.post(`/assignments/${this.#parent.assignmentId}/coins/consume`,{})}}a.ActivityCollectionProvider=o}}),g.set("./activities/collection",{hash:74674477,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.Activities=void 0;var i=e("@beyond-js/reactive/entities/collection"),s=e("./"),t=e("./provider");class n extends i.Collection{#tracking;get tracking(){return this.#tracking}#loadChat;get loadChat(){return this.#loadChat}#order;get order(){return this.#order}constructor(e){super({...e,entity:"activity",item:s.Activity,provider:t.ActivityProvider});var{parent:e,loadChat:a=!1}=e;this.#tracking=e,this.#loadChat=a}set=i=>{if(i&&0!==Object.keys(i).length){var e;this.#order=i.order,Object.values(i.items);let a=this.#tracking.module.getProperties();return e=i.order.map(e=>({...i.items[e],module:a,parent:this,loadChat:!0})),this.setItems(e),this.items.forEach(e=>{e.setTracking(this.#tracking),e.processMaterials()}),i}};async loadActivity({id:e}){return this.map.has(e)?this.map.get(e):(await(e=new s.Activity({parent:this,id:e,loadChat:this.#loadChat,assignmentId:this.tracking.modelId,testing:this.tracking.testing,tracking:this.tracking})).load(),e.trigger("credits.change"),this.#tracking.trigger("credits.change"),e)}}a.Activities=n}}),g.set("./activities/index",{hash:2059445287,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.Activity=void 0;var i=e("@aimpact/chat-sdk/core"),s=e("@beyond-js/reactive/entities/item"),t=e("../credits"),n=e("./provider");class o extends s.Item{#tracking;get tracking(){return this.#tracking}#assignmentId;get assignmentId(){return this.#assignmentId}#feedback;get feedback(){return this.#feedback}#competenciesFeedback;get competenciesFeedback(){return this.#competenciesFeedback}#analysis;get analysis(){return this.#analysis}get objectives(){return this.resources?.specs?.objectives}#assessment;get assessment(){return this.#assessment}#chatModel;get chatModel(){return this.#chatModel}#testing;get testing(){return this.#testing}#loadChat;getMaterials(){return(this.resources?.materials?this.resources:this).materials}getSpecs(){return(this.resources?.specs?this.resources:this).specs}constructor({parent:e,id:a,testing:i=!1,...s}){super({id:a,entity:"Activities",...s,properties:["id","type","subtype","title","description","language","status","picture","objectives","resources","materials","settings","specs","chat","module",{name:"credits",value:t.Credits},"data","user"],provider:n.ActivityProvider}),s.tracking&&this.setTracking(s.tracking),this.#testing=i;var{assignmentId:a,data:i,loadChat:s}=s;this.#loadChat=s,a=a||e.tracking.assignmentId,this.startup(a,i)}setTracking(e){this.#tracking=e,this.#tracking.on("credits.change",()=>{this.set({credits:this.#tracking.credits.getProperties()}),this.trigger("credits.change")})}async startup(e,a){this.#assignmentId=e,this.#loadChat&&this.getProperty("chat")&&this.loadChat(this.getProperty("chat"))}async loadChat(e){var a=new i.Chat({id:e.id,language:this.language});await(this.#chatModel=a).loadAll({id:e.id}),this.triggerEvent("chat.loaded")}load=async(e={})=>(e.id||(e.id=this.getProperty("id")),e.assignmentId=this.#assignmentId,e=this.testing?await this.provider.loadTestingActivity(this.tracking.getProperty("id"),this.getProperty("id")):await super.load(e),await this.set({...e.activity,credits:e.credits,module:e.module}),this.#tracking.set(e),this.#tracking.trigger("credits.change"),this.#process(),e);#process(){this.materials?.assessment&&(this.#assessment=JSON.parse(this.materials.assessment)),this.resources?.materials?.assessment&&(this.#assessment=JSON.parse(this.resources.materials.assessment))}processMaterials(){return this.#process()}async publish({params:e,type:a}){try{var i=await this.provider.publish({params:e,type:a});this.#tracking=i.data.tracking,this.#assessment.selection="results",this.data=i.data.tracking}catch(e){throw new Error("error publishing spoken activity")}}async publishSpoken({params:e,type:a}){e.draftId||(e.assignmentId=e.assignmentId??this.#assignmentId),e.activityId=e.activityId??this.id,e=await this.provider.publish({data:e,type:a}),this.set({data:e}),this.#analysis=e.analysis,this.#feedback=e.feedback,this.#competenciesFeedback=e.competenciesFeedback}set=e=>(e=super.set(e),this.#process(),this.trigger("change"),e);consumeCoins=async()=>this.#tracking.consumeCoins()}a.Activity=o}}),g.set("./activities/provider",{hash:2933913951,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.ActivityProvider=void 0;var i=e("@beyond-js/http-suite/api"),s=e("@aimpact/ailearn-sdk/startup"),t=e("@aimpact/chat-sdk/session"),n=e("@aimpact/media-manager/uploader");class o{#api;#parent;constructor(e){this.#api=new i.Api(s.sdkConfig.apis.ailearn),this.#parent=e}load=async e=>{var a=await t.sessionWrapper.user.token,{status:a,data:i}=(this.#api.bearer(a),await this.#api.get(`/assignments/${e.assignmentId}/activities/`+e.id));if(a)return e?.progress&&await this.#parent.processLoad(i),i;throw new Error("error loading activity")};loadTestingActivity=async(e,a)=>{var i=await t.sessionWrapper.user.token;return this.#api.bearer(i),(await this.#api.get(`/modules/drafts/${e}/activities/${a}/testing`)).data};list=this.load;publish=async e=>"assessment"==e.type?(delete e.type,this.assessment(e.params)):this.spoken(e.data);assessment=async e=>{var a=await t.sessionWrapper.user.token,{status:a,data:e,error:i}=(this.#api.bearer(a),await this.#api.post("/activities/assessments/completion",e));if(i)throw new Error("error processing assessment");return{status:a,data:e}};spoken=async a=>{var e=Object.getOwnPropertyNames(a);let i=new FormData;if(e.forEach(e=>{i.append(e,a[e])}),(e=new n.XHRLoader).bearer(await t.sessionWrapper.user.token),(e=await(await e.upload(i,s.sdkConfig.apis.ailearn+"/activities/spoken/completion")).json()).status)return e.data;throw new Error("error publishing assessment")};async consumeCoins(){var e=await t.sessionWrapper.user.token;return this.#api.bearer(e),this.#api.post(`/assignments/${this.#parent.assignmentId}/coins/consume`,{})}}a.ActivityProvider=o}}),g.set("./assignments/collection",{hash:2173799384,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.Assignments=void 0;var i=e("@beyond-js/reactive/entities/collection"),s=e("./item");class t extends i.Collection{constructor(){super({entity:"assignments",item:s.Assignment})}}a.Assignments=t}}),g.set("./assignments/item",{hash:1328445365,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.Assignment=void 0,e=e("@beyond-js/reactive/entities/item");class i extends e.Item{constructor(e){super({entity:"assignments",properties:["id","title","description","name"],...e})}}a.Assignment=i}}),g.set("./credits",{hash:2299380065,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.Credits=void 0,e=e("@beyond-js/reactive/model");class i extends e.ReactiveModel{constructor(e){super({properties:["consumed","total"],...e})}}a.Credits=i}}),g.set("./dashboard/activities/index",{hash:3676316793,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.DashboardActivities=void 0;var i=e("@beyond-js/reactive/entities/collection"),s=e("./item");class t extends i.Collection{#parent;get parent(){return this.#parent}constructor({parent:e}){super({entity:"DashboardActivities",item:s.DashboardActivity}),this.#parent=e}set(a){var e=a.order.map(e=>a.items[e]);return super.setItems(e),super.set(e)}get(e){return this.map.get(e)}has(e){return this.map.has(e)}}a.DashboardActivities=t}}),g.set("./dashboard/activities/item",{hash:1697760133,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.DashboardActivity=void 0,e=e("@beyond-js/reactive/entities/item");class i extends e.Item{#parent;#dashboard;get participants(){return this.#dashboard?.participants.items.filter(e=>e.activities.has(this.id))??[]}get assessment(){return JSON.parse(this.resources?.materials?.assessment??"{}")}constructor({parent:e,...a}={}){super({...a,entity:"DashboardParticipants",properties:["id","type","language","title","description","picture","settings","materials","specs","resources"]}),this.#parent=e,this.#dashboard=e.parent}}a.DashboardActivity=i}}),g.set("./dashboard/index",{hash:3873797573,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.TrackingDashboard=void 0;var i=e("@aimpact/chat-sdk/session"),s=e("@beyond-js/reactive/entities/item"),t=e("./activities"),n=e("./participants"),o=e("./providers/dashboard");class r extends s.Item{get isUserCreator(){return i.sessionWrapper.user.id===this.module.creator?.id}get totalParticipants(){return this.participants.items.length}constructor({id:e,...a}={}){super({id:e,...a,entity:"Dashboard",properties:["id","classroom","module","archived",{name:"activities",value:t.DashboardActivities},{name:"participants",value:n.Participants}],provider:o.DashboardProvider})}set(e){return super.set(e)}async archive(){var e=await this.provider.archive();return this.set({archived:e.archived}),e}async restore(){var e=await this.provider.restore();return this.set({archived:e.archived}),e}}a.TrackingDashboard=r}}),g.set("./dashboard/participants/activities/index",{hash:225838489,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.ParticipantActivities=void 0;var i=e("@beyond-js/reactive/model"),n=e("./item"),o=e("./multiple-choice"),r=e("./spoken");class s extends i.ReactiveModel{#data;#map=new Map;get map(){return this.#map}get items(){return[...this.#map.values()]}get(e){return this.map.get(e)}has(e){return this.map.has(e)}#parent;get dashboard(){return this.#parent.dashboard}constructor(e){super(),e||console.trace(2,e),this.#parent=e,this.#data={}}setData(e){this.#data=e}set(e){return e.forEach(e=>{this.#map.has(e.id)?this.#map.get(e.id).set(e):this.#map.set(e.id,new n.ParticipantActivity({parent:this,...e}))}),e}check(s){let t={spoken:r.ParticipantSpokenActivity,detault:n.ParticipantActivity,"multiple-choice":o.ParticipantMultipleChoiceActivity};Object.keys(this.#data).forEach(e=>{var a,i;if(s.has(e))return a=s.get(e),this.has(e)?(this.get(a.id).set(this.#data[e]?.data??this.#data[e]),this.get(a.id)):(i=new(t[a.type]||t.detault)({parent:this,activity:a,...this.#data[e]?.data??this.#data[e]}),this.#map.set(a.id,i),i);console.warn("something wrong, this activity is not loaded in dashboard tracking: ",e)})}}a.ParticipantActivities=s}}),g.set("./dashboard/participants/activities/item",{hash:1072921300,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.ParticipantActivity=void 0;var i=e("@aimpact/chat-sdk/core"),e=e("@beyond-js/reactive/entities/item");class s extends e.Item{#parent;get dashboard(){return this.#parent.dashboard}get activity(){return this.dashboard?.activities?.get(this.id)}#chatModel;get chatModel(){return this.#chatModel}get assessment(){var e=this.activity.assessment;return"multiple-choice"===this.activity.type?{title:e.title,questions:e.questions.map((e,a)=>({...e,...this.responses[a]}))}:this.attempts?.[0]?.assessment}get transcription(){return this.attempts?.[0]?.transcription}get objectives(){return this.assessment?Object.keys(this.assessment).map(e=>({objective:e,...this.assessment[e]})):[]}constructor({parent:e,properties:a=[],...i}){super({...i,entity:"participant-activity",properties:["id","alerts","messages","interactions","progress","synthesis","attempts","chat","data","counters","responses",...a]}),this.#parent=e}async loadChat(){var e;this.chat&&this.chat?.id?(e=new i.Chat({id:this.chat.id}),await(this.#chatModel=e).loadAll({id:this.chat.id}),this.triggerEvent("chat.loaded")):console.warn("The activity does not have a chat id")}}a.ParticipantActivity=s}}),g.set("./dashboard/participants/activities/multiple-choice",{hash:4142976364,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.ParticipantMultipleChoiceActivity=void 0,e=e("@beyond-js/reactive/entities/item");class i extends e.Item{#objectives=[];get objectives(){return this.#objectives}get questions(){try{return JSON.parse(this?.activity.resources.materials.assessment).questions}catch(e){console.warn(e)}}get participationData(){return this.questions?.map((e,a)=>({...e,answer:this.responses?.[a].answer,accuracy:this.responses?.[a].accuracy}))}constructor({properties:e=[],...a}){super({...a,entity:"participant-activity",properties:["alerts","activity","counters","responses",...e]}),this.#objectives=e}}a.ParticipantMultipleChoiceActivity=i}}),g.set("./dashboard/participants/activities/spoken",{hash:1641659011,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.ParticipantSpokenActivity=void 0,e=e("@beyond-js/reactive/entities/item");class i extends e.Item{get icons(){return this.assessment?Object.keys(this.assessment).map(e=>this.assessment[e]):[]}get totalPoints(){return this.assessment?.reduce((e,a)=>e+this.assessment[a].points,0)}get assessment(){return this.attempts?.[0]?.assessment}get transcription(){return this.attempts?.[0]?.transcription}get objectives(){return this.assessment?Object.keys(this.assessment).map(e=>({objective:e,...this.assessment[e]})):[]}constructor({properties:e=[],...a}){super({...a,entity:"participant-activity",properties:["activity","attempts"]})}}a.ParticipantSpokenActivity=i}}),g.set("./dashboard/participants/index",{hash:3470754433,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.Participants=void 0;var i=e("@beyond-js/reactive/entities/collection"),s=e("./item");class t extends i.Collection{#parent;get parent(){return this.#parent}get dashboard(){return this.#parent}constructor({parent:e}){super({entity:"DashboardParticipants",item:s.Participant}),this.#parent=e}set(a){var e;return e=Array.isArray(a)?a.sort((e,a)=>e.name?.localeCompare(a.name)):Object.keys(a).map(e=>({id:e,...a[e]})).sort((e,a)=>e.user.name?.localeCompare(a.user.name)),super.setItems(e),super.set(e)}}a.Participants=t}}),g.set("./dashboard/participants/item",{hash:3841754010,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.Participant=void 0;var i=e("@beyond-js/reactive/entities/item"),s=e("./activities"),t=e("../providers/participant"),n=e("../../credits"),o=e("./user");class r extends i.Item{#activitiesData;get assignmentId(){return this.#parent.dashboard.id}#parent;get dashboard(){return this.#parent?.dashboard}#activities;get activities(){return this.#activities}constructor({parent:e,...a}){super({...a,entity:"TrackingDashboard",provider:t.ParticipantProvider,properties:["id",{name:"user",value:o.UserData},{name:"credits",value:n.Credits}]}),this.#parent=e,this.#activities=new s.ParticipantActivities(this),this.setActivities(a.activities)}setActivities(i){var e=Array.isArray(i.order)?i.order.filter(e=>!!i.items[e]?.data).map(e=>{var a=(e={...i.items[e]}).data;return delete e.data,{...e,...a}}):Object.keys(i).map(e=>({id:e,...i[e]?.data??i[e]}));this.#activities.set(e)}set(e){return this.setActivities(e.activities),super.set({...e})}async load(){var e=await super.load({userId:this.user.id??this.user.uid});return super.ready=!0,e}enableAI=async()=>{var e=await this.provider.enableAI({userId:this.user.id});this.credits.set(e.credits),this.trigger("credits.changed"),this.trigger("change")}}a.Participant=r}}),g.set("./dashboard/participants/user",{hash:3284649687,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.UserData=void 0,e=e("@beyond-js/reactive/entities/item");class i extends e.Item{constructor({parent:e,...a}){super({...a,entity:"TrackingDashboard",properties:["photoUrl","name","id"]})}}a.UserData=i}}),g.set("./dashboard/providers/dashboard",{hash:2251720750,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.DashboardProvider=void 0;var i=e("@aimpact/ailearn-sdk/startup"),s=e("@aimpact/chat-sdk/session"),t=e("@beyond-js/http-suite/api");a.DashboardProvider=class{#api;#parent;constructor(e){this.#api=new t.Api(i.sdkConfig.apis.ailearn),this.#parent=e}async load(){var e=await s.sessionWrapper.user.token,{status:e,data:a}=(this.#api.bearer(e),await this.#api.get(`/assignments/${this.#parent.id}/dashboard`));if(e)return a;throw new Error("error loading dashboard")}async archive(){var e=await s.sessionWrapper.user.token;if(this.#api.bearer(e),(e=await this.#api.post(`/assignments/${this.#parent.id}/archive`,{})).status)return e.data;throw new Error(e.error.text)}async restore(){var e=await s.sessionWrapper.user.token;if(this.#api.bearer(e),(e=await this.#api.post(`/assignments/${this.#parent.id}/restore`,{})).status)return e.data;throw new Error(e.error.text)}}}}),g.set("./dashboard/providers/participant",{hash:922316604,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.ParticipantProvider=void 0;var s=e("@aimpact/chat-sdk/session"),i=e("@beyond-js/http-suite/api"),t=e("@aimpact/ailearn-sdk/startup");class n{#api;#parent;constructor(e){this.#api=new i.Api(t.sdkConfig.apis.ailearn),this.#parent=e}load=async e=>{var a=await s.sessionWrapper.user.token;this.#api.bearer(a);var{status:a,data:i}=await this.#api.get(`/assignments/${this.#parent.assignmentId}/progress`,e);if(a)return e?.progress&&await this.#parent.processLoad(i),i;throw new Error("error loading class")};enableAI=async e=>{var a=await s.sessionWrapper.user.token,{data:a,status:e}=(this.#api.bearer(a),await this.#api.post(`/assignments/${this.#parent.assignmentId}/ai/enable`,e));if(e)return a;throw console.log(a),new Error("error enabling AI")}}a.ParticipantProvider=n}}),g.set("./error",{hash:385040768,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.CustomError=void 0;class i extends Error{message;code;constructor({texts:e,code:a}){super(e),this.name="CustomError",this.code=a}}a.CustomError=i}}),g.set("./index",{hash:3441500721,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.Tracking=void 0;var s=e("@aimpact/ailearn-sdk/startup"),i=e("@aimpact/chat-sdk/session"),t=e("@beyond-js/http-suite/api"),n=e("@beyond-js/reactive/entities/item"),o=e("./activities/collection"),r=e("@aimpact/ailearn-sdk/entities/learning-modules"),c=e("./credits"),d=e("./provider"),l=e("@aimpact/ailearn-sdk/entities/classrooms");class u extends n.Item{#api;#modelId;modelType="tracking";get modelId(){return this.#modelId}get assignmentId(){return this.#modelId}#order;get order(){return this.#order}static#instances=new Map;constructor({id:e,chat:a,testing:i}){super({id:e,entity:"Tracking",provider:d.TrackingProvider,properties:["id",{name:"module",value:r.ModuleListItem},"status","user","community","access","accessed","assignment","realtime",{name:"classroom",value:l.Classroom},{name:"activities",value:o.Activities,properties:{loadChat:!0}},{name:"credits",value:c.Credits}]}),this.reactiveProps(["loadChat","testing"]),this.#api=new t.Api(s.sdkConfig.apis.ailearn),this.loadChat=!!a,this.testing=i,this.#modelId=e}async loadTesting({id:e,activityId:a}){return this.provider.getActivityTesting(e,a)}async load(e={}){e.id||(e.id=this.getProperty("id"));let a=this.testing?await this.loadTesting(e):await super.load(e);return this.classroom.set(a.classroom),this.getProperty("activities").items.map(e=>{e.set({credits:a.credits})}),a.activities&&(this.#order=a.activities.order),this.ready=!0,a}consumeCoins=async()=>{var e=await this.provider.consumeCoins();return e.status&&(await this.set(e.data),this.trigger("credits.change","add")),e};async accessToAssignment(){var e={id:this.#modelId},e=await this.provider.access(e);this.set(e)}static get({id:e,userId:a,chat:i,testing:s=!1}){return this.#instances.has(a=e+"."+a)?this.#instances.get(a):(e=new u({id:e,chat:i,testing:s}),this.#instances.set(a,e),e)}async setCredits(e){await this.credits.set(e),this.trigger("credits.change")}async requestClassroomAccess(){var e=await i.sessionWrapper.user.token;return this.#api.bearer(e),(e=await this.#api.post(`/classrooms/${this.classroom.id}/request`,{})).status||38!==e.error?.code?"authorized"===e.data.status.toLowerCase()?await this.load({id:this.modelId}):await this.set({access:e.data.status}):console.error(e.error),e}}a.Tracking=u}}),g.set("./provider",{hash:1556176488,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.TrackingProvider=void 0;var i=e("@aimpact/ailearn-sdk/startup"),s=e("@aimpact/chat-sdk/session"),t=e("@beyond-js/http-suite/api"),n=e("./error");class o{#api;#parent;#accessed;get accessed(){return this.#accessed}#activities;get activities(){return this.#activities}constructor(e){this.#api=new t.Api(i.sdkConfig.apis.ailearn),this.#parent=e}load=async e=>{var a=await s.sessionWrapper.user.token;this.#api.bearer(a);var{status:e,data:a,error:i}=await this.#api.get(`/assignments/${e.id}/progress`,e);if(i)throw new n.CustomError(i);if(e)return a;throw new Error("error loading class")};async access(e={}){var a=await s.sessionWrapper.user.token;if(this.#api.bearer(a),(a=await this.#api.post(`/assignments/${e.id}/access`,e)).status)return a.data;throw new Error("Error accessing assignment: "+a.error)}consumeCoins=async()=>{var e=await s.sessionWrapper.user.token;return this.#api.bearer(e),this.#api.post(`/assignments/${this.#parent.assignmentId}/coins/consume`,{})};getActivityTesting=async(e,a)=>{var i=await s.sessionWrapper.user.token;return this.#api.bearer(i),(await this.#api.get(`/modules/drafts/${e}/activities/${a}/testing`)).data}}a.TrackingProvider=o}}),g.set("./types/activity",{hash:3025505518,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0})}}),g.set("./types/dashboard",{hash:2151938038,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0}),a.ActivityStatus=void 0,a.ActivityStatus={PENDING:"pending",IN_PROGRESS:"in-progress",COMPLETED:"completed",OUTSTANDING:"outstanding"}}}),g.set("./types/response",{hash:1501783281,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0})}}),g.set("./types/tracking",{hash:3168921732,creator:function(e,a){Object.defineProperty(a,"__esModule",{value:!0})}}),b.exports.descriptor=[{im:"./activities/index",from:"Activity",name:"Activity"},{im:"./assignments/collection",from:"Assignments",name:"Assignments"},{im:"./assignments/item",from:"Assignment",name:"Assignment"},{im:"./credits",from:"Credits",name:"Credits"},{im:"./dashboard/index",from:"TrackingDashboard",name:"TrackingDashboard"},{im:"./dashboard/providers/participant",from:"ParticipantProvider",name:"ParticipantProvider"},{im:"./index",from:"Tracking",name:"Tracking"},{im:"./types/activity",from:"IActivityListItem",name:"IActivityListItem"},{im:"./types/activity",from:"IActivityBase",name:"IActivityBase"},{im:"./types/dashboard",from:"TrackingStatusType",name:"TrackingStatusType"},{im:"./types/dashboard",from:"IActivityTrackingBase",name:"IActivityTrackingBase"},{im:"./types/dashboard",from:"IDashboard",name:"IDashboard"}],b.exports.process=function({require:e,prop:a,value:i}){!e&&"Activity"!==a||s("Activity",e?e("./activities/index").Activity:i),!e&&"Assignments"!==a||s("Assignments",e?e("./assignments/collection").Assignments:i),!e&&"Assignment"!==a||s("Assignment",e?e("./assignments/item").Assignment:i),!e&&"Credits"!==a||s("Credits",e?e("./credits").Credits:i),!e&&"TrackingDashboard"!==a||s("TrackingDashboard",e?e("./dashboard/index").TrackingDashboard:i),!e&&"ParticipantProvider"!==a||s("ParticipantProvider",e?e("./dashboard/providers/participant").ParticipantProvider:i),!e&&"Tracking"!==a||s("Tracking",e?e("./index").Tracking:i),!e&&"IActivityListItem"!==a||s("IActivityListItem",e?e("./types/activity").IActivityListItem:i),!e&&"IActivityBase"!==a||s("IActivityBase",e?e("./types/activity").IActivityBase:i),!e&&"TrackingStatusType"!==a||s("TrackingStatusType",e?e("./types/dashboard").TrackingStatusType:i),!e&&"IActivityTrackingBase"!==a||s("IActivityTrackingBase",e?e("./types/dashboard").IActivityTrackingBase:i),!e&&"IDashboard"!==a||s("IDashboard",e?e("./types/dashboard").IDashboard:i)},s("__beyond_pkg",b),s("hmr",new function(){this.on=(e,a)=>b.hmr.on(e,a),this.off=(e,a)=>b.hmr.off(e,a)}),b.initialise(g)}}});
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/startup", "@aimpact/chat-sdk@1.5.4/session", "@aimpact/media-manager@1.0.0/uploader", "@beyond-js/http-suite@0.1.0/api", "@beyond-js/reactive@2.0.5/entities/item", "@beyond-js/reactive@2.0.5/entities/collection", "@aimpact/chat-sdk@1.5.4/core", "@beyond-js/reactive@2.0.5/model", "@aimpact/ailearn-sdk@1.2.0/config", "@aimpact/ailearn-sdk@1.2.0/entities/learning-modules", "@aimpact/ailearn-sdk@1.2.0/entities/classrooms"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, bimport, __Bundle, __pkg, ims, Activity, Assignments, Assignment, Credits, TrackingDashboard, ParticipantProvider, Tracking, IActivityListItem, IActivityBase, TrackingStatusType, IActivityTrackingBase, IDashboard, __beyond_pkg, hmr;
+  _export({
+    Activity: void 0,
+    Assignments: void 0,
+    Assignment: void 0,
+    Credits: void 0,
+    TrackingDashboard: void 0,
+    ParticipantProvider: void 0,
+    Tracking: void 0,
+    IActivityListItem: void 0,
+    IActivityBase: void 0,
+    TrackingStatusType: void 0,
+    IActivityTrackingBase: void 0,
+    IDashboard: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0112Bundle) {
+      dependency_0 = _beyondJsKernel0112Bundle;
+    }, function (_aimpactAilearnSdk120Startup) {
+      dependency_1 = _aimpactAilearnSdk120Startup;
+    }, function (_aimpactChatSdk154Session) {
+      dependency_2 = _aimpactChatSdk154Session;
+    }, function (_aimpactMediaManager100Uploader) {
+      dependency_3 = _aimpactMediaManager100Uploader;
+    }, function (_beyondJsHttpSuite010Api) {
+      dependency_4 = _beyondJsHttpSuite010Api;
+    }, function (_beyondJsReactive205EntitiesItem) {
+      dependency_5 = _beyondJsReactive205EntitiesItem;
+    }, function (_beyondJsReactive205EntitiesCollection) {
+      dependency_6 = _beyondJsReactive205EntitiesCollection;
+    }, function (_aimpactChatSdk154Core) {
+      dependency_7 = _aimpactChatSdk154Core;
+    }, function (_beyondJsReactive205Model) {
+      dependency_8 = _beyondJsReactive205Model;
+    }, function (_aimpactAilearnSdk120Config) {
+      dependency_9 = _aimpactAilearnSdk120Config;
+    }, function (_aimpactAilearnSdk120EntitiesLearningModules) {
+      dependency_10 = _aimpactAilearnSdk120EntitiesLearningModules;
+    }, function (_aimpactAilearnSdk120EntitiesClassrooms) {
+      dependency_11 = _aimpactAilearnSdk120EntitiesClassrooms;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.1.0"], ["@aimpact/chat-sdk", "1.5.4"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "2.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@firebase/auth", "1.10.0"], ["@types/node", "22.13.16"], ["dexie", "4.0.11"], ["firebase", "10.14.1"], ["pragmate-ui", "0.0.6"], ["react-select", "5.10.1"], ["socket.io-client", "4.8.1"], ["zod", "3.24.2"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/rvd", "0.4.14"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-sdk@1.2.0/tracking"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@aimpact/ailearn-sdk/startup', dependency_1], ['@aimpact/chat-sdk/session', dependency_2], ['@aimpact/media-manager/uploader', dependency_3], ['@beyond-js/http-suite/api', dependency_4], ['@beyond-js/reactive/entities/item', dependency_5], ['@beyond-js/reactive/entities/collection', dependency_6], ['@aimpact/chat-sdk/core', dependency_7], ['@beyond-js/reactive/model', dependency_8], ['@aimpact/ailearn-sdk/config', dependency_9], ['@aimpact/ailearn-sdk/entities/learning-modules', dependency_10], ['@aimpact/ailearn-sdk/entities/classrooms', dependency_11]]);
+      ims = new Map();
+      /************************************************
+      INTERNAL MODULE: ./activities/collection-provider
+      ************************************************/
+      ims.set('./activities/collection-provider', {
+        hash: 3089474622,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ActivityCollectionProvider = void 0;
+          var _startup = require("@aimpact/ailearn-sdk/startup");
+          var _session = require("@aimpact/chat-sdk/session");
+          var _uploader = require("@aimpact/media-manager/uploader");
+          var _api = require("@beyond-js/http-suite/api");
+          class ActivityCollectionProvider {
+            #api;
+            #parent;
+            constructor(parent) {
+              this.#api = new _api.Api(_startup.sdkConfig.apis.ailearn);
+              this.#parent = parent;
+            }
+            load = async specs => {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const {
+                status,
+                data
+              } = await this.#api.get(`/assignments/${specs.assignmentId}/activities/${specs.id}`);
+              if (!status) {
+                throw new Error('error loading activity');
+              }
+              // if (specs?.progress) await this.#parent.processLoad(data);
+              return {
+                status,
+                data
+              };
+            };
+            list = this.load;
+            publish = async specs => {
+              if (specs.type == 'assessment') {
+                delete specs.type;
+                return this.assessment(specs.params);
+              }
+              return this.spoken(specs.data);
+            };
+            assessment = async specs => {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const {
+                status,
+                data,
+                error
+              } = await this.#api.post('/activities/assessments/completion', specs);
+              if (error) {
+                throw new Error('error processing assessment');
+              }
+              return {
+                status,
+                data
+              };
+            };
+            spoken = async specs => {
+              const props = Object.getOwnPropertyNames(specs);
+              const form = new FormData();
+              props.forEach(prop => {
+                form.append(prop, specs[prop]);
+              });
+              const xhr = new _uploader.XHRLoader();
+              xhr.bearer(_session.sessionWrapper.user.token);
+              const response = await xhr.upload(form, `${_startup.sdkConfig.apis.ailearn}/activities/spoken/completion`);
+              const json = await response.json();
+              if (!json.status) {
+                throw new Error('error publishing assessment');
+              }
+              this.triggerEvent();
+              return json.data;
+            };
+            async consumeCoins() {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              return this.#api.post(`/assignments/${this.#parent.assignmentId}/coins/consume`, {});
+            }
+          }
+          exports.ActivityCollectionProvider = ActivityCollectionProvider;
+        }
+      });
+
+      /***************************************
+      INTERNAL MODULE: ./activities/collection
+      ***************************************/
+
+      ims.set('./activities/collection', {
+        hash: 74674477,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Activities = void 0;
+          var _collection = require("@beyond-js/reactive/entities/collection");
+          var _ = require("./");
+          var _provider = require("./provider");
+          class Activities extends _collection.Collection {
+            #tracking;
+            get tracking() {
+              return this.#tracking;
+            }
+            #loadChat;
+            get loadChat() {
+              return this.#loadChat;
+            }
+            #order;
+            get order() {
+              return this.#order;
+            }
+            constructor(props) {
+              super({
+                ...props,
+                entity: 'activity',
+                item: _.Activity,
+                provider: _provider.ActivityProvider
+              });
+              const {
+                parent,
+                loadChat = false,
+                ...specs
+              } = props;
+              this.#tracking = parent;
+              this.#loadChat = loadChat;
+            }
+            set = data => {
+              if (!data || Object.keys(data).length === 0) {
+                return;
+              }
+              this.#order = data.order;
+              let items = Object.values(data.items);
+              const module = this.#tracking.module.getProperties();
+              items = data.order.map(id => ({
+                ...data.items[id],
+                module,
+                parent: this,
+                loadChat: true
+              }));
+              this.setItems(items);
+              this.items.forEach(item => {
+                item.setTracking(this.#tracking);
+                item.processMaterials();
+              });
+              return data;
+            };
+            async loadActivity({
+              id
+            }) {
+              if (this.map.has(id)) return this.map.get(id);
+              // const instance = new Activity({ id, assignmentId: this.tracking.assignmentId, tracking: this.tracking });
+              const instance = new _.Activity({
+                parent: this,
+                id,
+                loadChat: this.#loadChat,
+                assignmentId: this.tracking.modelId,
+                testing: this.tracking.testing,
+                tracking: this.tracking
+              });
+              // instance.setTracking(this.#tracking);
+              await instance.load();
+              instance.trigger('credits.change');
+              this.#tracking.trigger('credits.change');
+              return instance;
+            }
+          }
+          exports.Activities = Activities;
+        }
+      });
+
+      /**********************************
+      INTERNAL MODULE: ./activities/index
+      **********************************/
+
+      ims.set('./activities/index', {
+        hash: 2059445287,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Activity = void 0;
+          var _core = require("@aimpact/chat-sdk/core");
+          var _item = require("@beyond-js/reactive/entities/item");
+          var _credits = require("../credits");
+          var _provider = require("./provider");
+          /*bundle*/
+          class Activity extends _item.Item {
+            #tracking;
+            get tracking() {
+              return this.#tracking;
+            }
+            #assignmentId;
+            get assignmentId() {
+              return this.#assignmentId;
+            }
+            #feedback;
+            get feedback() {
+              return this.#feedback;
+            }
+            #competenciesFeedback;
+            get competenciesFeedback() {
+              return this.#competenciesFeedback;
+            }
+            #analysis;
+            get analysis() {
+              return this.#analysis;
+            }
+            get objectives() {
+              return this.resources?.specs?.objectives;
+            }
+            #assessment;
+            get assessment() {
+              return this.#assessment;
+            }
+            #chatModel;
+            get chatModel() {
+              return this.#chatModel;
+            }
+            #testing;
+            get testing() {
+              return this.#testing;
+            }
+            #loadChat;
+            getMaterials() {
+              return this.resources?.materials ? this.resources.materials : this.materials;
+            }
+            getSpecs() {
+              return this.resources?.specs ? this.resources.specs : this.specs;
+            }
+            constructor({
+              parent,
+              id,
+              testing = false,
+              ...specs
+            }) {
+              super({
+                id,
+                entity: 'Activities',
+                ...specs,
+                properties: ['id', 'type', 'subtype', 'title', 'description', 'language', 'status', 'picture', 'objectives', 'resources', 'materials', 'settings', 'specs', 'chat', 'module', {
+                  name: 'credits',
+                  value: _credits.Credits
+                }, 'data', 'user'],
+                provider: _provider.ActivityProvider
+              });
+              if (specs.tracking) this.setTracking(specs.tracking);
+              this.#testing = testing;
+              let {
+                assignmentId,
+                data,
+                loadChat
+              } = specs;
+              this.#loadChat = loadChat;
+              assignmentId = assignmentId ? assignmentId : parent.tracking.assignmentId;
+              this.startup(assignmentId, data);
+            }
+            setTracking(tracking) {
+              this.#tracking = tracking;
+              this.#tracking.on('credits.change', () => {
+                this.set({
+                  credits: this.#tracking.credits.getProperties()
+                });
+                this.trigger('credits.change');
+              });
+            }
+            async startup(assignmentId, data) {
+              this.#assignmentId = assignmentId;
+              if (this.#loadChat && this.getProperty('chat')) {
+                this.loadChat(this.getProperty('chat'));
+              }
+            }
+            async loadChat(data) {
+              const chat = new _core.Chat({
+                id: data.id,
+                language: this.language
+              });
+              this.#chatModel = chat;
+              await chat.loadAll({
+                id: data.id
+              });
+              this.triggerEvent('chat.loaded');
+            }
+            load = async (specs = {}) => {
+              if (!specs.id) specs.id = this.getProperty('id');
+              specs.assignmentId = this.#assignmentId;
+              const data = this.testing ? await this.provider.loadTestingActivity(this.tracking.getProperty('id'), this.getProperty('id')) : await super.load(specs);
+              await this.set({
+                ...data.activity,
+                credits: data.credits,
+                module: data.module
+              });
+              //when the activity is loaded in assignments view, the tracking is not loaded.
+              this.#tracking.set(data);
+              this.#tracking.trigger('credits.change');
+              //todo: this code must be removed when the reactive model is fixed
+              this.#process();
+              return data;
+            };
+            #process() {
+              if (this.materials?.assessment) {
+                this.#assessment = JSON.parse(this.materials.assessment);
+              }
+              if (this.resources?.materials?.assessment) {
+                this.#assessment = JSON.parse(this.resources.materials.assessment);
+              }
+            }
+            processMaterials() {
+              return this.#process();
+            }
+            async publish({
+              params,
+              type
+            }) {
+              try {
+                const response = await this.provider.publish({
+                  params,
+                  type
+                });
+                this.#tracking = response.data.tracking;
+                this.#assessment.selection = 'results';
+                this.data = response.data.tracking;
+              } catch (e) {
+                throw new Error('error publishing spoken activity');
+              }
+            }
+            async publishSpoken({
+              params,
+              type
+            }) {
+              if (!params.draftId) params.assignmentId = params.assignmentId ?? this.#assignmentId;
+              params.activityId = params.activityId ?? this.id;
+              const data = await this.provider.publish({
+                data: params,
+                type
+              });
+              this.set({
+                data
+              });
+              this.#analysis = data.analysis;
+              this.#feedback = data.feedback;
+              this.#competenciesFeedback = data.competenciesFeedback;
+            }
+            set = data => {
+              const response = super.set(data);
+              this.#process();
+              this.trigger('change');
+              return response;
+            };
+            consumeCoins = async () => {
+              return this.#tracking.consumeCoins();
+            };
+          }
+          exports.Activity = Activity;
+        }
+      });
+
+      /*************************************
+      INTERNAL MODULE: ./activities/provider
+      *************************************/
+
+      ims.set('./activities/provider', {
+        hash: 2933913951,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ActivityProvider = void 0;
+          var _api = require("@beyond-js/http-suite/api");
+          var _startup = require("@aimpact/ailearn-sdk/startup");
+          var _session = require("@aimpact/chat-sdk/session");
+          var _uploader = require("@aimpact/media-manager/uploader");
+          class ActivityProvider {
+            #api;
+            #parent;
+            constructor(parent) {
+              this.#api = new _api.Api(_startup.sdkConfig.apis.ailearn);
+              this.#parent = parent;
+            }
+            load = async specs => {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const {
+                status,
+                data
+              } = await this.#api.get(`/assignments/${specs.assignmentId}/activities/${specs.id}`);
+              if (!status) {
+                throw new Error('error loading activity');
+              }
+              if (specs?.progress) await this.#parent.processLoad(data);
+              return data;
+            };
+            loadTestingActivity = async (draftId, activityId) => {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const {
+                status,
+                data
+              } = await this.#api.get(`/modules/drafts/${draftId}/activities/${activityId}/testing`);
+              return data;
+            };
+            list = this.load;
+            publish = async specs => {
+              if (specs.type == 'assessment') {
+                delete specs.type;
+                return this.assessment(specs.params);
+              }
+              return this.spoken(specs.data);
+            };
+            assessment = async specs => {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const {
+                status,
+                data,
+                error
+              } = await this.#api.post('/activities/assessments/completion', specs);
+              if (error) {
+                throw new Error('error processing assessment');
+              }
+              return {
+                status,
+                data
+              };
+            };
+            spoken = async specs => {
+              const props = Object.getOwnPropertyNames(specs);
+              const form = new FormData();
+              props.forEach(prop => {
+                form.append(prop, specs[prop]);
+              });
+              const xhr = new _uploader.XHRLoader();
+              xhr.bearer(await _session.sessionWrapper.user.token);
+              const response = await xhr.upload(form, `${_startup.sdkConfig.apis.ailearn}/activities/spoken/completion`);
+              const json = await response.json();
+              if (!json.status) {
+                throw new Error('error publishing assessment');
+              }
+              return json.data;
+            };
+            async consumeCoins() {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              return this.#api.post(`/assignments/${this.#parent.assignmentId}/coins/consume`, {});
+            }
+          }
+          exports.ActivityProvider = ActivityProvider;
+        }
+      });
+
+      /****************************************
+      INTERNAL MODULE: ./assignments/collection
+      ****************************************/
+
+      ims.set('./assignments/collection', {
+        hash: 2173799384,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Assignments = void 0;
+          var _collection = require("@beyond-js/reactive/entities/collection");
+          var _item = require("./item");
+          /*bundle*/
+          class Assignments extends _collection.Collection {
+            constructor() {
+              super({
+                entity: 'assignments',
+                item: _item.Assignment
+              });
+            }
+          }
+          exports.Assignments = Assignments;
+        }
+      });
+
+      /**********************************
+      INTERNAL MODULE: ./assignments/item
+      **********************************/
+
+      ims.set('./assignments/item', {
+        hash: 1328445365,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Assignment = void 0;
+          var _item = require("@beyond-js/reactive/entities/item");
+          /*bundle */
+          class Assignment extends _item.Item {
+            constructor(args) {
+              super({
+                entity: 'assignments',
+                properties: ['id', 'title', 'description', 'name'],
+                ...args
+              });
+            }
+          }
+          exports.Assignment = Assignment;
+        }
+      });
+
+      /*************************
+      INTERNAL MODULE: ./credits
+      *************************/
+
+      ims.set('./credits', {
+        hash: 2299380065,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Credits = void 0;
+          var _model = require("@beyond-js/reactive/model");
+          /*bundle*/
+          class Credits extends _model.ReactiveModel {
+            constructor(args) {
+              super({
+                properties: ['consumed', 'total'],
+                ...args
+              });
+            }
+          }
+          exports.Credits = Credits;
+        }
+      });
+
+      /********************************************
+      INTERNAL MODULE: ./dashboard/activities/index
+      ********************************************/
+
+      ims.set('./dashboard/activities/index', {
+        hash: 3676316793,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DashboardActivities = void 0;
+          var _collection = require("@beyond-js/reactive/entities/collection");
+          var _item = require("./item");
+          class DashboardActivities extends _collection.Collection {
+            #parent;
+            get parent() {
+              return this.#parent;
+            }
+            constructor({
+              parent
+            }) {
+              super({
+                entity: 'DashboardActivities',
+                item: _item.DashboardActivity
+              });
+              this.#parent = parent;
+            }
+            /**
+             * Processes the activities data by sorting the items according to the given order.
+             * It then updates the items structure accordingly.
+             *
+             * @param {IDashboard["activities"]} activities - The activities data containing the order array and items record.
+             
+             */
+            // @ts-ignore
+            set(data) {
+              const items = data.order.map(id => data.items[id]);
+              super.setItems(items);
+              //@ts-ignore
+              return super.set(items);
+            }
+            get(id) {
+              return this.map.get(id);
+            }
+            has(id) {
+              return this.map.has(id);
+            }
+          }
+          exports.DashboardActivities = DashboardActivities;
+        }
+      });
+
+      /*******************************************
+      INTERNAL MODULE: ./dashboard/activities/item
+      *******************************************/
+
+      ims.set('./dashboard/activities/item', {
+        hash: 1697760133,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DashboardActivity = void 0;
+          var _item = require("@beyond-js/reactive/entities/item");
+          class DashboardActivity extends _item.Item {
+            #parent;
+            #dashboard;
+            get participants() {
+              return this.#dashboard?.participants.items.filter(participant => participant.activities.has(this.id)) ?? [];
+            }
+            get assessment() {
+              return JSON.parse(this.resources?.materials?.assessment ?? '{}');
+            }
+            constructor({
+              parent,
+              ...args
+            } = {}) {
+              super({
+                ...args,
+                entity: 'DashboardParticipants',
+                properties: ['id', 'type', 'language', 'title', 'description', 'picture', 'settings', 'materials', 'specs', 'resources']
+              });
+              this.#parent = parent;
+              this.#dashboard = parent.parent;
+            }
+          }
+          exports.DashboardActivity = DashboardActivity;
+        }
+      });
+
+      /*********************************
+      INTERNAL MODULE: ./dashboard/index
+      *********************************/
+
+      ims.set('./dashboard/index', {
+        hash: 3873797573,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.TrackingDashboard = void 0;
+          var _session = require("@aimpact/chat-sdk/session");
+          var _item = require("@beyond-js/reactive/entities/item");
+          var _activities = require("./activities");
+          var _participants = require("./participants");
+          var _dashboard = require("./providers/dashboard");
+          /*bundle*/
+          class TrackingDashboard extends _item.Item {
+            get isUserCreator() {
+              return _session.sessionWrapper.user.id === this.module.creator?.id;
+            }
+            get totalParticipants() {
+              return this.participants.items.length;
+            }
+            constructor({
+              id,
+              ...specs
+            } = {}) {
+              super({
+                id,
+                ...specs,
+                entity: 'Dashboard',
+                properties: ['id', 'classroom', 'module', 'archived', {
+                  name: 'activities',
+                  value: _activities.DashboardActivities
+                }, {
+                  name: 'participants',
+                  value: _participants.Participants
+                }],
+                provider: _dashboard.DashboardProvider
+              });
+            }
+            set(data) {
+              const response = super.set(data);
+              return response;
+            }
+            async archive() {
+              const data = await this.provider.archive();
+              this.set({
+                archived: data.archived
+              });
+              return data;
+            }
+            async restore() {
+              const data = await this.provider.restore();
+              this.set({
+                archived: data.archived
+              });
+              return data;
+            }
+          }
+          exports.TrackingDashboard = TrackingDashboard;
+        }
+      });
+
+      /*********************************************************
+      INTERNAL MODULE: ./dashboard/participants/activities/index
+      *********************************************************/
+
+      ims.set('./dashboard/participants/activities/index', {
+        hash: 225838489,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ParticipantActivities = void 0;
+          var _model = require("@beyond-js/reactive/model");
+          var _item = require("./item");
+          var _multipleChoice = require("./multiple-choice");
+          var _spoken = require("./spoken");
+          class ParticipantActivities extends _model.ReactiveModel {
+            #data;
+            #map = new Map();
+            get map() {
+              return this.#map;
+            }
+            get items() {
+              return [...this.#map.values()];
+            }
+            get(id) {
+              return this.map.get(id);
+            }
+            has(id) {
+              return this.map.has(id);
+            }
+            #parent;
+            get dashboard() {
+              return this.#parent.dashboard;
+            }
+            constructor(parent) {
+              super();
+              if (!parent) console.trace(2, parent);
+              this.#parent = parent;
+              this.#data = {};
+            }
+            setData(data) {
+              this.#data = data;
+            }
+            set(data) {
+              data.forEach(item => {
+                if (this.#map.has(item.id)) {
+                  this.#map.get(item.id).set(item);
+                  return;
+                }
+                this.#map.set(item.id, new _item.ParticipantActivity({
+                  parent: this,
+                  ...item
+                }));
+              });
+              return data;
+            }
+            /**
+             * @deprecated
+             * @param activities
+             */
+            check(activities) {
+              const types = {
+                spoken: _spoken.ParticipantSpokenActivity,
+                detault: _item.ParticipantActivity,
+                'multiple-choice': _multipleChoice.ParticipantMultipleChoiceActivity
+              };
+              const currents = Object.keys(this.#data);
+              currents.forEach(id => {
+                if (!activities.has(id)) {
+                  console.warn('something wrong, this activity is not loaded in dashboard tracking: ', id);
+                  return;
+                }
+                const activity = activities.get(id);
+                if (this.has(id)) {
+                  this.get(activity.id).set(this.#data[id]?.data ?? this.#data[id]);
+                  return this.get(activity.id);
+                }
+                const Activity = types[activity.type] || types.detault;
+                const data = this.#data[id]?.data ?? this.#data[id];
+                const instance = new Activity({
+                  parent: this,
+                  activity,
+                  ...data
+                });
+                this.#map.set(activity.id, instance);
+                return instance;
+              });
+            }
+          }
+          exports.ParticipantActivities = ParticipantActivities;
+        }
+      });
+
+      /********************************************************
+      INTERNAL MODULE: ./dashboard/participants/activities/item
+      ********************************************************/
+
+      ims.set('./dashboard/participants/activities/item', {
+        hash: 1072921300,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ParticipantActivity = void 0;
+          var _core = require("@aimpact/chat-sdk/core");
+          var _item = require("@beyond-js/reactive/entities/item");
+          class ParticipantActivity extends _item.Item {
+            #parent;
+            get dashboard() {
+              return this.#parent.dashboard;
+            }
+            get activity() {
+              return this.dashboard?.activities?.get(this.id);
+            }
+            #chatModel;
+            get chatModel() {
+              return this.#chatModel;
+            }
+            get assessment() {
+              const data = this.activity.assessment;
+              if (this.activity.type === 'multiple-choice') {
+                return {
+                  title: data.title,
+                  questions: data.questions.map((item, index) => {
+                    return {
+                      ...item,
+                      ...this.responses[index]
+                    };
+                  })
+                };
+              }
+              return this.attempts?.[0]?.assessment;
+            }
+            get transcription() {
+              return this.attempts?.[0]?.transcription;
+            }
+            get objectives() {
+              if (!this.assessment) return [];
+              const objectivesKeys = Object.keys(this.assessment);
+              return objectivesKeys.map(key => {
+                return {
+                  objective: key,
+                  ...this.assessment[key]
+                };
+              });
+            }
+            constructor({
+              parent,
+              properties = [],
+              ...data
+            }) {
+              super({
+                ...data,
+                entity: 'participant-activity',
+                properties: ['id', 'alerts', 'messages', 'interactions', 'progress', 'synthesis', 'attempts', 'chat', 'data', 'counters', 'responses', ...properties]
+              });
+              this.#parent = parent;
+            }
+            async loadChat() {
+              if (!this.chat || !this.chat?.id) {
+                console.warn('The activity does not have a chat id');
+                return;
+              }
+              const chat = new _core.Chat({
+                id: this.chat.id
+              });
+              this.#chatModel = chat;
+              await chat.loadAll({
+                id: this.chat.id
+              });
+              this.triggerEvent('chat.loaded');
+            }
+          }
+          exports.ParticipantActivity = ParticipantActivity;
+        }
+      });
+
+      /*******************************************************************
+      INTERNAL MODULE: ./dashboard/participants/activities/multiple-choice
+      *******************************************************************/
+
+      ims.set('./dashboard/participants/activities/multiple-choice', {
+        hash: 4142976364,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ParticipantMultipleChoiceActivity = void 0;
+          var _item = require("@beyond-js/reactive/entities/item");
+          class ParticipantMultipleChoiceActivity extends _item.Item {
+            #objectives = [];
+            get objectives() {
+              return this.#objectives;
+            }
+            get questions() {
+              try {
+                return JSON.parse(this?.activity.resources.materials.assessment).questions;
+              } catch (e) {
+                console.warn(e);
+              }
+            }
+            get participationData() {
+              return this.questions?.map((question, index) => {
+                return {
+                  ...question,
+                  answer: this.responses?.[index].answer,
+                  accuracy: this.responses?.[index].accuracy
+                };
+              });
+            }
+            constructor({
+              properties = [],
+              ...data
+            }) {
+              super({
+                ...data,
+                entity: 'participant-activity',
+                properties: ['alerts', 'activity', 'counters', 'responses', ...properties]
+              });
+              this.#objectives = properties;
+            }
+          }
+          exports.ParticipantMultipleChoiceActivity = ParticipantMultipleChoiceActivity;
+        }
+      });
+
+      /**********************************************************
+      INTERNAL MODULE: ./dashboard/participants/activities/spoken
+      **********************************************************/
+
+      ims.set('./dashboard/participants/activities/spoken', {
+        hash: 1641659011,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ParticipantSpokenActivity = void 0;
+          var _item = require("@beyond-js/reactive/entities/item");
+          class ParticipantSpokenActivity extends _item.Item {
+            get icons() {
+              if (this.assessment) {
+                return Object.keys(this.assessment).map(key => this.assessment[key]);
+              }
+              return [];
+            }
+            get totalPoints() {
+              return this.assessment?.reduce((acc, objective) => acc + this.assessment[objective].points, 0);
+            }
+            get assessment() {
+              return this.attempts?.[0]?.assessment;
+            }
+            get transcription() {
+              return this.attempts?.[0]?.transcription;
+            }
+            get objectives() {
+              if (!this.assessment) return [];
+              const objectivesKeys = Object.keys(this.assessment);
+              return objectivesKeys.map(key => {
+                return {
+                  objective: key,
+                  ...this.assessment[key]
+                };
+              });
+            }
+            constructor({
+              properties = [],
+              ...data
+            }) {
+              super({
+                ...data,
+                entity: 'participant-activity',
+                properties: ['activity', 'attempts']
+              });
+            }
+          }
+          exports.ParticipantSpokenActivity = ParticipantSpokenActivity;
+        }
+      });
+
+      /**********************************************
+      INTERNAL MODULE: ./dashboard/participants/index
+      **********************************************/
+
+      ims.set('./dashboard/participants/index', {
+        hash: 3470754433,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Participants = void 0;
+          var _collection = require("@beyond-js/reactive/entities/collection");
+          var _item = require("./item");
+          class Participants extends _collection.Collection {
+            #parent;
+            get parent() {
+              return this.#parent;
+            }
+            get dashboard() {
+              return this.#parent;
+            }
+            constructor({
+              parent
+            }) {
+              super({
+                entity: 'DashboardParticipants',
+                item: _item.Participant
+              });
+              this.#parent = parent;
+            }
+            set(data) {
+              const sort = (a, b) => {
+                return a.user.name?.localeCompare(b.user.name);
+              };
+              if (Array.isArray(data)) {
+                const items = data.sort((a, b) => a.name?.localeCompare(b.name));
+                super.setItems(items);
+                //@ts-ignore
+                return super.set(items);
+              } else {
+                const ids = Object.keys(data);
+                const items = ids.map(id => ({
+                  id,
+                  ...data[id]
+                })).sort(sort);
+                super.setItems(items);
+                //@ts-ignore
+                return super.set(items);
+              }
+            }
+          }
+          exports.Participants = Participants;
+        }
+      });
+
+      /*********************************************
+      INTERNAL MODULE: ./dashboard/participants/item
+      *********************************************/
+
+      ims.set('./dashboard/participants/item', {
+        hash: 3841754010,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Participant = void 0;
+          var _item = require("@beyond-js/reactive/entities/item");
+          var _activities = require("./activities");
+          var _participant = require("../providers/participant");
+          var _credits = require("../../credits");
+          var _user = require("./user");
+          class Participant extends _item.Item {
+            #activitiesData;
+            get assignmentId() {
+              return this.#parent.dashboard.id;
+            }
+            #parent;
+            get dashboard() {
+              return this.#parent?.dashboard;
+            }
+            #activities;
+            get activities() {
+              return this.#activities;
+            }
+            constructor({
+              parent,
+              ...args
+            }) {
+              super({
+                ...args,
+                entity: 'TrackingDashboard',
+                provider: _participant.ParticipantProvider,
+                properties: ['id', {
+                  name: 'user',
+                  value: _user.UserData
+                }, {
+                  name: 'credits',
+                  value: _credits.Credits
+                }]
+              });
+              // console.log(-1, this?.dashboard);
+              this.#parent = parent;
+              this.#activities = new _activities.ParticipantActivities(this);
+              this.setActivities(args.activities);
+            }
+            setActivities(elements) {
+              if (Array.isArray(elements.order)) {
+                const activitiesData = elements.order.filter(id => !!elements.items[id]?.data);
+                const activities = activitiesData.map(id => {
+                  const item = {
+                    ...elements.items[id]
+                  };
+                  const {
+                    data
+                  } = item;
+                  delete item.data;
+                  return {
+                    ...item,
+                    ...data
+                  };
+                });
+                this.#activities.set(activities);
+              } else {
+                const ids = Object.keys(elements);
+                const activities = ids.map(id => {
+                  const data = elements[id]?.data ?? elements[id];
+                  return {
+                    id,
+                    ...data
+                  };
+                });
+                this.#activities.set(activities);
+              }
+            }
+            set(data) {
+              this.setActivities(data.activities);
+              return super.set({
+                ...data
+              });
+            }
+            async load() {
+              // console.log(1, 'loading', this.user.id);
+              const data = await super.load({
+                userId: this.user.id ?? this.user.uid
+              });
+              super.ready = true;
+              return data;
+            }
+            enableAI = async () => {
+              const data = await this.provider.enableAI({
+                userId: this.user.id
+              });
+              this.credits.set(data.credits);
+              this.trigger('credits.changed');
+              this.trigger('change');
+            };
+          }
+          exports.Participant = Participant;
+        }
+      });
+
+      /*********************************************
+      INTERNAL MODULE: ./dashboard/participants/user
+      *********************************************/
+
+      ims.set('./dashboard/participants/user', {
+        hash: 3284649687,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.UserData = void 0;
+          var _item = require("@beyond-js/reactive/entities/item");
+          class UserData extends _item.Item {
+            constructor({
+              parent,
+              ...args
+            }) {
+              super({
+                ...args,
+                entity: 'TrackingDashboard',
+                properties: ['photoUrl', 'name', 'id']
+              });
+            }
+          }
+          exports.UserData = UserData;
+        }
+      });
+
+      /***********************************************
+      INTERNAL MODULE: ./dashboard/providers/dashboard
+      ***********************************************/
+
+      ims.set('./dashboard/providers/dashboard', {
+        hash: 2251720750,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DashboardProvider = void 0;
+          var _startup = require("@aimpact/ailearn-sdk/startup");
+          var _session = require("@aimpact/chat-sdk/session");
+          var _api = require("@beyond-js/http-suite/api");
+          class DashboardProvider {
+            #api;
+            #parent;
+            constructor(parent) {
+              this.#api = new _api.Api(_startup.sdkConfig.apis.ailearn);
+              this.#parent = parent;
+            }
+            async load() {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const {
+                status,
+                data
+              } = await this.#api.get(`/assignments/${this.#parent.id}/dashboard`);
+              if (!status) {
+                throw new Error('error loading dashboard');
+              }
+              return data;
+            }
+            async archive() {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const response = await this.#api.post(`/assignments/${this.#parent.id}/archive`, {});
+              if (!response.status) {
+                throw new Error(response.error.text);
+              }
+              return response.data;
+            }
+            async restore() {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const response = await this.#api.post(`/assignments/${this.#parent.id}/restore`, {});
+              if (!response.status) {
+                throw new Error(response.error.text);
+              }
+              return response.data;
+            }
+          }
+          exports.DashboardProvider = DashboardProvider;
+        }
+      });
+
+      /*************************************************
+      INTERNAL MODULE: ./dashboard/providers/participant
+      *************************************************/
+
+      ims.set('./dashboard/providers/participant', {
+        hash: 922316604,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ParticipantProvider = void 0;
+          var _session = require("@aimpact/chat-sdk/session");
+          var _api = require("@beyond-js/http-suite/api");
+          var _startup = require("@aimpact/ailearn-sdk/startup");
+          /*bundle*/ /**
+                      * Represents the Tracking of an assignment.
+                      *
+                      *
+                      */
+          class ParticipantProvider {
+            #api;
+            #parent;
+            constructor(parent) {
+              this.#api = new _api.Api(_startup.sdkConfig.apis.ailearn);
+              this.#parent = parent;
+            }
+            load = async specs => {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const response = await this.#api.get(`/assignments/${this.#parent.assignmentId}/progress`, specs);
+              const {
+                status,
+                data,
+                error
+              } = response;
+              if (!status) {
+                throw new Error('error loading class');
+              }
+              if (specs?.progress) await this.#parent.processLoad(data);
+              return data;
+            };
+            enableAI = async props => {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const {
+                data,
+                status
+              } = await this.#api.post(`/assignments/${this.#parent.assignmentId}/ai/enable`, props);
+              if (!status) {
+                console.log(data);
+                throw new Error('error enabling AI');
+              }
+              return data;
+            };
+          }
+          exports.ParticipantProvider = ParticipantProvider;
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./error
+      ***********************/
+
+      ims.set('./error', {
+        hash: 385040768,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.CustomError = void 0;
+          class CustomError extends Error {
+            message;
+            code;
+            constructor({
+              texts,
+              code
+            }) {
+              super(texts); // Call the parent constructor (Error) with the message
+              this.name = 'CustomError'; // Set the name of the error (optional)
+              this.code = code; // Add a custom 'code' property
+            }
+          }
+          exports.CustomError = CustomError;
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 3441500721,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Tracking = void 0;
+          var _startup = require("@aimpact/ailearn-sdk/startup");
+          var _session = require("@aimpact/chat-sdk/session");
+          var _api = require("@beyond-js/http-suite/api");
+          var _item = require("@beyond-js/reactive/entities/item");
+          var _collection = require("./activities/collection");
+          var _learningModules = require("@aimpact/ailearn-sdk/entities/learning-modules");
+          var _credits = require("./credits");
+          var _provider = require("./provider");
+          var _classrooms = require("@aimpact/ailearn-sdk/entities/classrooms");
+          /*bundle*/ /**
+                      * Represents the Tracking of an assignment.
+                      *
+                      *
+                      */
+          class Tracking extends _item.Item {
+            #api;
+            #modelId;
+            modelType = 'tracking';
+            get modelId() {
+              return this.#modelId;
+            }
+            get assignmentId() {
+              return this.#modelId;
+            }
+            #order;
+            get order() {
+              return this.#order;
+            }
+            static #instances = new Map();
+            constructor({
+              id,
+              chat,
+              testing
+            }) {
+              super({
+                id,
+                entity: 'Tracking',
+                provider: _provider.TrackingProvider,
+                properties: ['id', {
+                  name: 'module',
+                  value: _learningModules.ModuleListItem
+                }, 'status', 'user', 'community', 'access', 'accessed', 'assignment', 'realtime', {
+                  name: 'classroom',
+                  value: _classrooms.Classroom
+                }, {
+                  name: 'activities',
+                  value: _collection.Activities,
+                  properties: {
+                    loadChat: true
+                  }
+                }, {
+                  name: 'credits',
+                  value: _credits.Credits
+                }]
+              });
+              //@ts-ignore;
+              this.reactiveProps(['loadChat', 'testing']);
+              this.#api = new _api.Api(_startup.sdkConfig.apis.ailearn);
+              this.loadChat = !!chat;
+              this.testing = testing;
+              this.#modelId = id;
+            }
+            async loadTesting({
+              id,
+              activityId
+            }) {
+              return this.provider.getActivityTesting(id, activityId);
+            }
+            async load(specs = {}) {
+              if (!specs.id) specs.id = this.getProperty('id');
+              const data = this.testing ? await this.loadTesting(specs) : await super.load(specs);
+              this.classroom.set(data.classroom);
+              this.getProperty('activities').items.map(item => {
+                item.set({
+                  credits: data.credits
+                });
+              });
+              if (data.activities) {
+                // await this.#activities.setData(data.activities);
+                this.#order = data.activities.order;
+              }
+              this.ready = true;
+              // this.#activities = data.activities;
+              return data;
+            }
+            consumeCoins = async () => {
+              const response = await this.provider.consumeCoins();
+              if (!response.status) return response;
+              //await this.credits.set(response.data.credits);
+              await this.set(response.data);
+              this.trigger('credits.change', 'add');
+              return response;
+            };
+            async accessToAssignment() {
+              const specs = {
+                id: this.#modelId
+              };
+              const data = await this.provider.access(specs);
+              this.set(data);
+            }
+            static get({
+              id,
+              userId,
+              chat,
+              testing = false
+            }) {
+              const trackingId = `${id}.${userId}`;
+              if (this.#instances.has(trackingId)) {
+                return this.#instances.get(trackingId);
+              }
+              const instance = new Tracking({
+                id,
+                chat,
+                testing
+              });
+              this.#instances.set(trackingId, instance);
+              return instance;
+            }
+            async setCredits(data) {
+              await this.credits.set(data);
+              this.trigger('credits.change');
+            }
+            async requestClassroomAccess() {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const response = await this.#api.post(`/classrooms/${this.classroom.id}/request`, {});
+              if (!response.status && response.error?.code === 38) {
+                console.error(response.error);
+                return response;
+              }
+              if (response.data.status.toLowerCase() === 'authorized') {
+                await this.load({
+                  id: this.modelId
+                });
+              } else {
+                await this.set({
+                  access: response.data.status
+                });
+              }
+              return response;
+            }
+          }
+          exports.Tracking = Tracking;
+        }
+      });
+
+      /**************************
+      INTERNAL MODULE: ./provider
+      **************************/
+
+      ims.set('./provider', {
+        hash: 1556176488,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.TrackingProvider = void 0;
+          var _startup = require("@aimpact/ailearn-sdk/startup");
+          var _session = require("@aimpact/chat-sdk/session");
+          var _api = require("@beyond-js/http-suite/api");
+          var _error = require("./error");
+          class TrackingProvider {
+            #api;
+            #parent;
+            #accessed;
+            get accessed() {
+              return this.#accessed;
+            }
+            #activities;
+            get activities() {
+              return this.#activities;
+            }
+            constructor(parent) {
+              this.#api = new _api.Api(_startup.sdkConfig.apis.ailearn);
+              this.#parent = parent;
+            }
+            load = async specs => {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const response = await this.#api.get(`/assignments/${specs.id}/progress`, specs);
+              const {
+                status,
+                data,
+                error
+              } = response;
+              if (error) {
+                throw new _error.CustomError(error);
+              }
+              if (!status) {
+                throw new Error('error loading class');
+              }
+              return data;
+            };
+            async access(specs = {}) {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const response = await this.#api.post(`/assignments/${specs.id}/access`, specs);
+              if (!response.status) {
+                throw new Error(`Error accessing assignment: ${response.error}`);
+              }
+              return response.data;
+            }
+            consumeCoins = async () => {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              return this.#api.post(`/assignments/${this.#parent.assignmentId}/coins/consume`, {});
+            };
+            getActivityTesting = async (draftId, activityId) => {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const {
+                status,
+                data
+              } = await this.#api.get(`/modules/drafts/${draftId}/activities/${activityId}/testing`);
+              return data;
+            };
+          }
+          exports.TrackingProvider = TrackingProvider;
+        }
+      });
+
+      /********************************
+      INTERNAL MODULE: ./types/activity
+      ********************************/
+
+      ims.set('./types/activity', {
+        hash: 3025505518,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          var ActivityTypeEnum;
+          (function (ActivityTypeEnum) {
+            ActivityTypeEnum["ContentTheory"] = "content-theory";
+            ActivityTypeEnum["CharacterTalk"] = "character-talk";
+            ActivityTypeEnum["Debate"] = "debate";
+            ActivityTypeEnum["MultipleChoice"] = "multiple-choice";
+            ActivityTypeEnum["Spoken"] = "spoken";
+          })(ActivityTypeEnum || (ActivityTypeEnum = {}));
+        }
+      });
+
+      /*********************************
+      INTERNAL MODULE: ./types/dashboard
+      *********************************/
+
+      ims.set('./types/dashboard', {
+        hash: 2151938038,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ActivityStatus = void 0;
+          /**
+           * Represents the possible statuses of an activity.
+           */
+          var ActivityStatus;
+          (function (ActivityStatus) {
+            ActivityStatus["PENDING"] = "pending";
+            ActivityStatus["IN_PROGRESS"] = "in-progress";
+            ActivityStatus["COMPLETED"] = "completed";
+            ActivityStatus["OUTSTANDING"] = "outstanding";
+          })(ActivityStatus || (exports.ActivityStatus = ActivityStatus = {}));
+        }
+      });
+
+      /********************************
+      INTERNAL MODULE: ./types/response
+      ********************************/
+
+      ims.set('./types/response', {
+        hash: 1501783281,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+
+      /********************************
+      INTERNAL MODULE: ./types/tracking
+      ********************************/
+
+      ims.set('./types/tracking', {
+        hash: 3168921732,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./activities/index",
+        "from": "Activity",
+        "name": "Activity"
+      }, {
+        "im": "./assignments/collection",
+        "from": "Assignments",
+        "name": "Assignments"
+      }, {
+        "im": "./assignments/item",
+        "from": "Assignment",
+        "name": "Assignment"
+      }, {
+        "im": "./credits",
+        "from": "Credits",
+        "name": "Credits"
+      }, {
+        "im": "./dashboard/index",
+        "from": "TrackingDashboard",
+        "name": "TrackingDashboard"
+      }, {
+        "im": "./dashboard/providers/participant",
+        "from": "ParticipantProvider",
+        "name": "ParticipantProvider"
+      }, {
+        "im": "./index",
+        "from": "Tracking",
+        "name": "Tracking"
+      }, {
+        "im": "./types/activity",
+        "from": "IActivityListItem",
+        "name": "IActivityListItem"
+      }, {
+        "im": "./types/activity",
+        "from": "IActivityBase",
+        "name": "IActivityBase"
+      }, {
+        "im": "./types/dashboard",
+        "from": "TrackingStatusType",
+        "name": "TrackingStatusType"
+      }, {
+        "im": "./types/dashboard",
+        "from": "IActivityTrackingBase",
+        "name": "IActivityTrackingBase"
+      }, {
+        "im": "./types/dashboard",
+        "from": "IDashboard",
+        "name": "IDashboard"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Activity') && _export("Activity", Activity = require ? require('./activities/index').Activity : value);
+        (require || prop === 'Assignments') && _export("Assignments", Assignments = require ? require('./assignments/collection').Assignments : value);
+        (require || prop === 'Assignment') && _export("Assignment", Assignment = require ? require('./assignments/item').Assignment : value);
+        (require || prop === 'Credits') && _export("Credits", Credits = require ? require('./credits').Credits : value);
+        (require || prop === 'TrackingDashboard') && _export("TrackingDashboard", TrackingDashboard = require ? require('./dashboard/index').TrackingDashboard : value);
+        (require || prop === 'ParticipantProvider') && _export("ParticipantProvider", ParticipantProvider = require ? require('./dashboard/providers/participant').ParticipantProvider : value);
+        (require || prop === 'Tracking') && _export("Tracking", Tracking = require ? require('./index').Tracking : value);
+        (require || prop === 'IActivityListItem') && _export("IActivityListItem", IActivityListItem = require ? require('./types/activity').IActivityListItem : value);
+        (require || prop === 'IActivityBase') && _export("IActivityBase", IActivityBase = require ? require('./types/activity').IActivityBase : value);
+        (require || prop === 'TrackingStatusType') && _export("TrackingStatusType", TrackingStatusType = require ? require('./types/dashboard').TrackingStatusType : value);
+        (require || prop === 'IActivityTrackingBase') && _export("IActivityTrackingBase", IActivityTrackingBase = require ? require('./types/dashboard').IActivityTrackingBase : value);
+        (require || prop === 'IDashboard') && _export("IDashboard", IDashboard = require ? require('./types/dashboard').IDashboard : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfc3RhcnR1cCIsInJlcXVpcmUiLCJfc2Vzc2lvbiIsIl91cGxvYWRlciIsIl9hcGkiLCJBY3Rpdml0eUNvbGxlY3Rpb25Qcm92aWRlciIsImFwaSIsInBhcmVudCIsImNvbnN0cnVjdG9yIiwiQXBpIiwic2RrQ29uZmlnIiwiYXBpcyIsImFpbGVhcm4iLCJsb2FkIiwic3BlY3MiLCJ0b2tlbiIsInNlc3Npb25XcmFwcGVyIiwidXNlciIsImJlYXJlciIsInN0YXR1cyIsImRhdGEiLCJnZXQiLCJhc3NpZ25tZW50SWQiLCJpZCIsIkVycm9yIiwibGlzdCIsInB1Ymxpc2giLCJ0eXBlIiwiYXNzZXNzbWVudCIsInBhcmFtcyIsInNwb2tlbiIsImVycm9yIiwicG9zdCIsInByb3BzIiwiT2JqZWN0IiwiZ2V0T3duUHJvcGVydHlOYW1lcyIsImZvcm0iLCJGb3JtRGF0YSIsImZvckVhY2giLCJwcm9wIiwiYXBwZW5kIiwieGhyIiwiWEhSTG9hZGVyIiwicmVzcG9uc2UiLCJ1cGxvYWQiLCJqc29uIiwidHJpZ2dlckV2ZW50IiwiY29uc3VtZUNvaW5zIiwiZXhwb3J0cyIsIl9jb2xsZWN0aW9uIiwiXyIsIl9wcm92aWRlciIsIkFjdGl2aXRpZXMiLCJDb2xsZWN0aW9uIiwidHJhY2tpbmciLCJsb2FkQ2hhdCIsIm9yZGVyIiwiZW50aXR5IiwiaXRlbSIsIkFjdGl2aXR5IiwicHJvdmlkZXIiLCJBY3Rpdml0eVByb3ZpZGVyIiwic2V0Iiwia2V5cyIsImxlbmd0aCIsIml0ZW1zIiwidmFsdWVzIiwibW9kdWxlIiwiZ2V0UHJvcGVydGllcyIsIm1hcCIsInNldEl0ZW1zIiwic2V0VHJhY2tpbmciLCJwcm9jZXNzTWF0ZXJpYWxzIiwibG9hZEFjdGl2aXR5IiwiaGFzIiwiaW5zdGFuY2UiLCJtb2RlbElkIiwidGVzdGluZyIsInRyaWdnZXIiLCJfY29yZSIsIl9pdGVtIiwiX2NyZWRpdHMiLCJJdGVtIiwiZmVlZGJhY2siLCJjb21wZXRlbmNpZXNGZWVkYmFjayIsImFuYWx5c2lzIiwib2JqZWN0aXZlcyIsInJlc291cmNlcyIsImNoYXRNb2RlbCIsImdldE1hdGVyaWFscyIsIm1hdGVyaWFscyIsImdldFNwZWNzIiwicHJvcGVydGllcyIsIm5hbWUiLCJ2YWx1ZSIsIkNyZWRpdHMiLCJzdGFydHVwIiwib24iLCJjcmVkaXRzIiwiZ2V0UHJvcGVydHkiLCJjaGF0IiwiQ2hhdCIsImxhbmd1YWdlIiwibG9hZEFsbCIsImxvYWRUZXN0aW5nQWN0aXZpdHkiLCJhY3Rpdml0eSIsInByb2Nlc3MiLCIjcHJvY2VzcyIsIkpTT04iLCJwYXJzZSIsInNlbGVjdGlvbiIsImUiLCJwdWJsaXNoU3Bva2VuIiwiZHJhZnRJZCIsImFjdGl2aXR5SWQiLCJwcm9ncmVzcyIsInByb2Nlc3NMb2FkIiwiQXNzaWdubWVudHMiLCJBc3NpZ25tZW50IiwiYXJncyIsIl9tb2RlbCIsIlJlYWN0aXZlTW9kZWwiLCJEYXNoYm9hcmRBY3Rpdml0aWVzIiwiRGFzaGJvYXJkQWN0aXZpdHkiLCJkYXNoYm9hcmQiLCJwYXJ0aWNpcGFudHMiLCJmaWx0ZXIiLCJwYXJ0aWNpcGFudCIsImFjdGl2aXRpZXMiLCJfYWN0aXZpdGllcyIsIl9wYXJ0aWNpcGFudHMiLCJfZGFzaGJvYXJkIiwiVHJhY2tpbmdEYXNoYm9hcmQiLCJpc1VzZXJDcmVhdG9yIiwiY3JlYXRvciIsInRvdGFsUGFydGljaXBhbnRzIiwiUGFydGljaXBhbnRzIiwiRGFzaGJvYXJkUHJvdmlkZXIiLCJhcmNoaXZlIiwiYXJjaGl2ZWQiLCJyZXN0b3JlIiwiX211bHRpcGxlQ2hvaWNlIiwiX3Nwb2tlbiIsIlBhcnRpY2lwYW50QWN0aXZpdGllcyIsIk1hcCIsImNvbnNvbGUiLCJ0cmFjZSIsInNldERhdGEiLCJQYXJ0aWNpcGFudEFjdGl2aXR5IiwiY2hlY2siLCJ0eXBlcyIsIlBhcnRpY2lwYW50U3Bva2VuQWN0aXZpdHkiLCJkZXRhdWx0IiwiUGFydGljaXBhbnRNdWx0aXBsZUNob2ljZUFjdGl2aXR5IiwiY3VycmVudHMiLCJ3YXJuIiwidGl0bGUiLCJxdWVzdGlvbnMiLCJpbmRleCIsInJlc3BvbnNlcyIsImF0dGVtcHRzIiwidHJhbnNjcmlwdGlvbiIsIm9iamVjdGl2ZXNLZXlzIiwia2V5Iiwib2JqZWN0aXZlIiwicGFydGljaXBhdGlvbkRhdGEiLCJxdWVzdGlvbiIsImFuc3dlciIsImFjY3VyYWN5IiwiaWNvbnMiLCJ0b3RhbFBvaW50cyIsInJlZHVjZSIsImFjYyIsInBvaW50cyIsIlBhcnRpY2lwYW50Iiwic29ydCIsImEiLCJiIiwibG9jYWxlQ29tcGFyZSIsIkFycmF5IiwiaXNBcnJheSIsImlkcyIsIl9wYXJ0aWNpcGFudCIsIl91c2VyIiwiYWN0aXZpdGllc0RhdGEiLCJQYXJ0aWNpcGFudFByb3ZpZGVyIiwiVXNlckRhdGEiLCJzZXRBY3Rpdml0aWVzIiwiZWxlbWVudHMiLCJ1c2VySWQiLCJ1aWQiLCJyZWFkeSIsImVuYWJsZUFJIiwidGV4dCIsImxvZyIsIkN1c3RvbUVycm9yIiwibWVzc2FnZSIsImNvZGUiLCJ0ZXh0cyIsIl9sZWFybmluZ01vZHVsZXMiLCJfY2xhc3Nyb29tcyIsIlRyYWNraW5nIiwibW9kZWxUeXBlIiwiaW5zdGFuY2VzIiwiVHJhY2tpbmdQcm92aWRlciIsIk1vZHVsZUxpc3RJdGVtIiwiQ2xhc3Nyb29tIiwicmVhY3RpdmVQcm9wcyIsImxvYWRUZXN0aW5nIiwiZ2V0QWN0aXZpdHlUZXN0aW5nIiwiY2xhc3Nyb29tIiwiYWNjZXNzVG9Bc3NpZ25tZW50IiwiYWNjZXNzIiwidHJhY2tpbmdJZCIsInNldENyZWRpdHMiLCJyZXF1ZXN0Q2xhc3Nyb29tQWNjZXNzIiwidG9Mb3dlckNhc2UiLCJfZXJyb3IiLCJhY2Nlc3NlZCIsIkFjdGl2aXR5VHlwZUVudW0iLCJBY3Rpdml0eVN0YXR1cyIsImRlZmluZVByb3BlcnR5Il0sInNvdXJjZXMiOlsiL2FjdGl2aXRpZXMvY29sbGVjdGlvbi1wcm92aWRlci50cyIsIi9hY3Rpdml0aWVzL2NvbGxlY3Rpb24udHMiLCIvYWN0aXZpdGllcy9pbmRleC50cyIsIi9hY3Rpdml0aWVzL3Byb3ZpZGVyLnRzIiwiL2Fzc2lnbm1lbnRzL2NvbGxlY3Rpb24udHMiLCIvYXNzaWdubWVudHMvaXRlbS50cyIsIi9jcmVkaXRzLnRzIiwiL2Rhc2hib2FyZC9hY3Rpdml0aWVzL2luZGV4LnRzIiwiL2Rhc2hib2FyZC9hY3Rpdml0aWVzL2l0ZW0udHMiLCIvZGFzaGJvYXJkL2luZGV4LnRzIiwiL2Rhc2hib2FyZC9wYXJ0aWNpcGFudHMvYWN0aXZpdGllcy9pbmRleC50cyIsIi9kYXNoYm9hcmQvcGFydGljaXBhbnRzL2FjdGl2aXRpZXMvaXRlbS50cyIsIi9kYXNoYm9hcmQvcGFydGljaXBhbnRzL2FjdGl2aXRpZXMvbXVsdGlwbGUtY2hvaWNlLnRzIiwiL2Rhc2hib2FyZC9wYXJ0aWNpcGFudHMvYWN0aXZpdGllcy9zcG9rZW4udHMiLCIvZGFzaGJvYXJkL3BhcnRpY2lwYW50cy9pbmRleC50cyIsIi9kYXNoYm9hcmQvcGFydGljaXBhbnRzL2l0ZW0udHMiLCIvZGFzaGJvYXJkL3BhcnRpY2lwYW50cy91c2VyLnRzIiwiL2Rhc2hib2FyZC9wcm92aWRlcnMvZGFzaGJvYXJkLnRzIiwiL2Rhc2hib2FyZC9wcm92aWRlcnMvcGFydGljaXBhbnQudHMiLCIvZXJyb3IudHMiLCIvaW5kZXgudHMiLCIvcHJvdmlkZXIudHMiLCIvdHlwZXMvYWN0aXZpdHkudHMiLCIvdHlwZXMvZGFzaGJvYXJkLnRzIiwiL3Jlc3BvbnNlLnRzIiwiL3RyYWNraW5nLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFB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
