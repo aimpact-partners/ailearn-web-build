@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
     execute: function () {
       _export("default", {
         "package": "@aimpact/rvd",
-        "version": "0.4.14",
+        "version": "0.4.14-beta.02",
         "languages": {
           "default": "en",
           "supported": ["en", "es", "de"]
