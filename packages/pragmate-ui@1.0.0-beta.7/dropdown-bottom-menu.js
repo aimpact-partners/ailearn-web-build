@@ -1,2 +1,180 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle","@beyond-js/kernel@0.1.12/styles","react@18.3.1","pragmate-ui@1.0.0-beta.7/image","pragmate-ui@1.0.0-beta.7/icons"],function(_export,_context){var dependency_0,dependency_1,dependency_2,dependency_3,dependency_4,__pkg,__Bundle;return _export("DropdownBottomMenu",void 0),{setters:[function(_beyondJsKernel0112Bundle){dependency_0=_beyondJsKernel0112Bundle},function(_beyondJsKernel0112Styles){dependency_1=_beyondJsKernel0112Styles},function(_react2){dependency_2=_react2},function(_pragmateUi100Beta7Image){dependency_3=_pragmateUi100Beta7Image},function(_pragmateUi100Beta7Icons){dependency_4=_pragmateUi100Beta7Icons}],execute:function(){__Bundle=dependency_0.Bundle,(__pkg=new __Bundle({module:{vspecifier:"pragmate-ui@1.0.0-beta.7/dropdown-bottom-menu"},type:"code"},_context.meta.url).package()).dependencies.update([["@beyond-js/kernel/styles",dependency_1],["react",dependency_2],["pragmate-ui/image",dependency_3],["pragmate-ui/icons",dependency_4]]),brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@1.0.0-beta.7/dropdown-bottom-menu"),(__Bundle=new Map).set("./definitions",{hash:3481600907,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0})}}),__Bundle.set("./index",{hash:1436471338,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.DropdownBottomMenu=function({handleClick,show,items,children,isImage,title}){var cls=show?"pull-down-menu":"pull-down-menu pull-down-menu__hide",isItems=!!items&&Array.isArray(items);return _react.default.createElement(_react.default.Fragment,null,_react.default.createElement("div",{className:cls},(title||isImage)&&_react.default.createElement("header",null,isImage&&_react.default.createElement("div",{className:"image-menu"},_react.default.createElement(_image.Image,{src:globalThis.baseDir+"assets/dummy.svg",alt:" "})),title&&_react.default.createElement("span",null,title)),isItems&&_react.default.createElement(_list.MenuList,{items:items}),children),show&&_react.default.createElement("div",{onClick:handleClick,className:"background-black"}))};var _react=require("react"),_image=require("pragmate-ui/image"),_list=require("./list")}}),__Bundle.set("./item",{hash:4263323519,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.MenuItem=void 0;var _react=require("react"),_icons=require("pragmate-ui/icons");exports.MenuItem=({item})=>{var{title:item,link,icon}=item;return _react.default.createElement("li",{className:"pull-down-menu__item"},_react.default.createElement(_icons.Icon,{icon:icon}),_react.default.createElement("a",{href:link},item))}}}),__Bundle.set("./list",{hash:3770438484,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.MenuList=void 0;var _react=require("react"),_item=require("./item");exports.MenuList=({items})=>{items=items.map(item=>_react.default.createElement(_item.MenuItem,{key:item.icon,item:item}));return _react.default.createElement("ul",{className:"pull-down-menu__list"},items)}}}),__pkg.exports.descriptor=[{im:"./index",from:"DropdownBottomMenu",name:"DropdownBottomMenu"}],__pkg.exports.process=function({require,prop,value}){!require&&"DropdownBottomMenu"!==prop||_export("DropdownBottomMenu",require?require("./index").DropdownBottomMenu:value)},_export("__beyond_pkg",__pkg),_export("hmr",new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener),this.off=(event,listener)=>__pkg.hmr.off(event,listener)}),__pkg.initialise(__Bundle)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9kZWZpbml0aW9ucy50cyIsIi90cy9pbmRleC50c3giLCIvdHMvaXRlbS50c3giLCIvdHMvbGlzdC50c3giXSwibmFtZXMiOlsiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJleHBvcnRzIiwidmFsdWUiLCJoYW5kbGVDbGljayIsInNob3ciLCJpdGVtcyIsImNoaWxkcmVuIiwiaXNJbWFnZSIsInRpdGxlIiwiY2xzIiwiaXNJdGVtcyIsIkFycmF5IiwiaXNBcnJheSIsIl9yZWFjdCIsImRlZmF1bHQiLCJjcmVhdGVFbGVtZW50IiwiRnJhZ21lbnQiLCJjbGFzc05hbWUiLCJfaW1hZ2UiLCJJbWFnZSIsInNyYyIsImdsb2JhbFRoaXMiLCJiYXNlRGlyIiwiYWx0IiwiX2xpc3QiLCJNZW51TGlzdCIsIm9uQ2xpY2siLCJyZXF1aXJlIiwiX2ljb25zIiwiTWVudUl0ZW0iLCJpdGVtIiwibGluayIsImljb24iLCJJY29uIiwiaHJlZiIsIl9pdGVtIiwib3V0cHV0IiwibWFwIiwia2V5Il0sIm1hcHBpbmdzIjoibXJDQUVBQSxPQUFBQyxlQUFBQyxRQUFBLGFBQUEsQ0FDQUMsTUFBQSxDQUFBLENBQ0EsQ0FBQSxDLGdLQ0NpQixTQUE2QixDQUM1Q0MsWUFDQUMsS0FDQUMsTUFDQUMsU0FDQUMsUUFDQUMsS0FBSyxHQUVMLElBQU1DLElBQWNMLEtBQ2hCLGlCQUNBLHNDQUNFTSxRQUFtQixDQUFDLENBQUNMLE9BQVNNLE1BQU1DLFFBQVFQLEtBQUssRUFDdkQsT0FDRVEsT0FBQUMsUUFBQUMsY0FBQUYsT0FBQUMsUUFBQUUsU0FBQSxLQUNFSCxPQUFBQyxRQUFBQyxjQUFBLE1BQUEsQ0FBS0UsVUFBV1IsR0FBRyxHQUNmRCxPQUFTRCxVQUNUTSxPQUFBQyxRQUFBQyxjQUFBLFNBQUEsS0FDR1IsU0FDQ00sT0FBQUMsUUFBQUMsY0FBQSxNQUFBLENBQUtFLFVBQVUsWUFBWSxFQUN6QkosT0FBQUMsUUFBQUMsY0FBQ0csT0FBQUMsTUFBSyxDQUFDQyxJQUFRQyxXQUFXQyxRQUFkLG1CQUF5Q0MsSUFBSSxHQUFHLENBQUEsQ0FBRyxFQUdsRWYsT0FBU0ssT0FBQUMsUUFBQUMsY0FBQSxPQUFBLEtBQU9QLEtBQUssQ0FBUSxFQUdqQ0UsU0FBV0csT0FBQUMsUUFBQUMsY0FBQ1MsTUFBQUMsU0FBUSxDQUFDcEIsTUFBT0EsS0FBSyxDQUFBLEVBQ2pDQyxRQUFRLEVBRVZGLE1BQVFTLE9BQUFDLFFBQUFDLGNBQUEsTUFBQSxDQUFLVyxRQUFTdkIsWUFBYWMsVUFBVSxrQkFBa0IsQ0FBQSxDQUFHLENBR3pFLEVBcENBLElBQUFKLE9BQUFjLFFBQUEsT0FBQSxFQUNBVCxPQUFBUyxRQUFBLG1CQUFBLEVBQ0FILE1BQUFHLFFBQUEsUUFBQSxDLDRKQ0ZBLElBQUFkLE9BQUFjLFFBQUEsT0FBQSxFQUNBQyxPQUFBRCxRQUFBLG1CQUFBLEVBVUUxQixRQUFBNEIsU0FSc0JBLENBQUFBLENBQUdDLElBQU0sS0FDL0IsR0FBTSxDQUFFdEIsTUFBQUEsS0FBT3VCLEtBQU1DLElBQUksRUFBS0YsS0FDOUIsT0FDRWpCLE9BQUFDLFFBQUFDLGNBQUEsS0FBQSxDQUFJRSxVQUFVLHNCQUFzQixFQUNsQ0osT0FBQUMsUUFBQUMsY0FBQ2EsT0FBQUssS0FBSSxDQUFDRCxLQUFNQSxJQUFJLENBQUEsRUFDaEJuQixPQUFBQyxRQUFBQyxjQUFBLElBQUEsQ0FBR21CLEtBQU1ILElBQUksRUFBR3ZCLElBQUssQ0FBSyxDQUdoQyxDLDRKQ1hBLElBQUFLLE9BQUFjLFFBQUEsT0FBQSxFQUNBUSxNQUFBUixRQUFBLFFBQUEsRUFZQzFCLFFBQUF3QixTQVZ1QkEsQ0FBQUEsQ0FBR3BCLEtBQU8sS0FFeEIrQixNQUF3Qi9CLE1BQU1nQyxJQUFLUCxNQUNyQ2pCLE9BQUFDLFFBQUFDLGNBQUNvQixNQUFBTixTQUFRLENBQUNTLElBQUtSLEtBQUtFLEtBQU1GLEtBQU1BLElBQUksQ0FBQSxDQUN2QyxFQUNELE9BQ0lqQixPQUFBQyxRQUFBQyxjQUFBLEtBQUEsQ0FBSUUsVUFBVSxzQkFBc0IsRUFDL0JtQixLQUFNLENBR25CIn0=
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/styles", "react@18.3.1", "pragmate-ui@1.0.0-beta.7/image", "pragmate-ui@1.0.0-beta.7/icons"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, DropdownBottomMenu, __beyond_pkg, hmr;
+  _export("DropdownBottomMenu", void 0);
+  return {
+    setters: [function (_beyondJsKernel0112Bundle) {
+      dependency_0 = _beyondJsKernel0112Bundle;
+    }, function (_beyondJsKernel0112Styles) {
+      dependency_1 = _beyondJsKernel0112Styles;
+    }, function (_react2) {
+      dependency_2 = _react2;
+    }, function (_pragmateUi100Beta7Image) {
+      dependency_3 = _pragmateUi100Beta7Image;
+    }, function (_pragmateUi100Beta7Icons) {
+      dependency_4 = _pragmateUi100Beta7Icons;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/reactive", "2.1.0"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["is-mobile", "4.0.0"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.0-beta.7"], ["@aimpact/rvd", "0.4.14"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.0-beta.7/dropdown-bottom-menu"
+        },
+        "type": "code"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2], ['pragmate-ui/image', dependency_3], ['pragmate-ui/icons', dependency_4]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@1.0.0-beta.7/dropdown-bottom-menu');
+      ims = new Map();
+      /*****************************
+      INTERNAL MODULE: ./definitions
+      *****************************/
+      ims.set('./definitions', {
+        hash: 3481600907,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 1436471338,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DropdownBottomMenu = DropdownBottomMenu;
+          var _react = require("react");
+          var _image = require("pragmate-ui/image");
+          var _list = require("./list");
+          /*bundle*/
+          function DropdownBottomMenu({
+            handleClick,
+            show,
+            items,
+            children,
+            isImage,
+            title
+          }) {
+            const cls = show ? "pull-down-menu" : "pull-down-menu pull-down-menu__hide";
+            const isItems = !!items && Array.isArray(items);
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("div", {
+              className: cls
+            }, (title || isImage) && _react.default.createElement("header", null, isImage && _react.default.createElement("div", {
+              className: "image-menu"
+            }, _react.default.createElement(_image.Image, {
+              src: `${globalThis.baseDir}assets/dummy.svg`,
+              alt: " "
+            })), title && _react.default.createElement("span", null, title)), isItems && _react.default.createElement(_list.MenuList, {
+              items: items
+            }), children), show && _react.default.createElement("div", {
+              onClick: handleClick,
+              className: "background-black"
+            }));
+          }
+        }
+      });
+
+      /**********************
+      INTERNAL MODULE: ./item
+      **********************/
+
+      ims.set('./item', {
+        hash: 4263323519,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.MenuItem = void 0;
+          var _react = require("react");
+          var _icons = require("pragmate-ui/icons");
+          const MenuItem = ({
+            item
+          }) => {
+            const {
+              title,
+              link,
+              icon
+            } = item;
+            return _react.default.createElement("li", {
+              className: "pull-down-menu__item"
+            }, _react.default.createElement(_icons.Icon, {
+              icon: icon
+            }), _react.default.createElement("a", {
+              href: link
+            }, title));
+          };
+          exports.MenuItem = MenuItem;
+        }
+      });
+
+      /**********************
+      INTERNAL MODULE: ./list
+      **********************/
+
+      ims.set('./list', {
+        hash: 3770438484,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.MenuList = void 0;
+          var _react = require("react");
+          var _item = require("./item");
+          const MenuList = ({
+            items
+          }) => {
+            const output = items.map(item => _react.default.createElement(_item.MenuItem, {
+              key: item.icon,
+              item: item
+            }));
+            return _react.default.createElement("ul", {
+              className: "pull-down-menu__list"
+            }, output);
+          };
+          exports.MenuList = MenuList;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "DropdownBottomMenu",
+        "name": "DropdownBottomMenu"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'DropdownBottomMenu') && _export("DropdownBottomMenu", DropdownBottomMenu = require ? require('./index').DropdownBottomMenu : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsImV4cG9ydHMiLCJ2YWx1ZSIsIl9yZWFjdCIsInJlcXVpcmUiLCJfaW1hZ2UiLCJfbGlzdCIsIkRyb3Bkb3duQm90dG9tTWVudSIsImhhbmRsZUNsaWNrIiwic2hvdyIsIml0ZW1zIiwiY2hpbGRyZW4iLCJpc0ltYWdlIiwidGl0bGUiLCJjbHMiLCJpc0l0ZW1zIiwiQXJyYXkiLCJpc0FycmF5IiwiZGVmYXVsdCIsImNyZWF0ZUVsZW1lbnQiLCJGcmFnbWVudCIsImNsYXNzTmFtZSIsIkltYWdlIiwic3JjIiwiZ2xvYmFsVGhpcyIsImJhc2VEaXIiLCJhbHQiLCJNZW51TGlzdCIsIm9uQ2xpY2siLCJfaWNvbnMiLCJNZW51SXRlbSIsIml0ZW0iLCJsaW5rIiwiaWNvbiIsIkljb24iLCJocmVmIiwiX2l0ZW0iLCJvdXRwdXQiLCJtYXAiLCJrZXkiXSwic291cmNlcyI6WyIvZGVmaW5pdGlvbnMudHMiLCIvdHMvaW5kZXgudHN4IiwiL3RzL2l0ZW0udHN4IiwiL3RzL2xpc3QudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsLG51bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBOztVQUVBQSxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0E7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDSkEsSUFBQUMsTUFBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsTUFBQSxHQUFBRCxPQUFBO1VBQ0EsSUFBQUUsS0FBQSxHQUFBRixPQUFBO1VBR087VUFBVSxTQUFVRyxrQkFBa0JBLENBQUM7WUFDNUNDLFdBQVc7WUFDWEMsSUFBSTtZQUNKQyxLQUFLO1lBQ0xDLFFBQVE7WUFDUkMsT0FBTztZQUNQQztVQUFLLENBQ1U7WUFDZixNQUFNQyxHQUFHLEdBQVdMLElBQUksR0FDcEIsZ0JBQWdCLEdBQ2hCLHFDQUFxQztZQUN6QyxNQUFNTSxPQUFPLEdBQVksQ0FBQyxDQUFDTCxLQUFLLElBQUlNLEtBQUssQ0FBQ0MsT0FBTyxDQUFDUCxLQUFLLENBQUM7WUFDeEQsT0FDRVAsTUFBQSxDQUFBZSxPQUFBLENBQUFDLGFBQUEsQ0FBQWhCLE1BQUEsQ0FBQWUsT0FBQSxDQUFBRSxRQUFBLFFBQ0VqQixNQUFBLENBQUFlLE9BQUEsQ0FBQUMsYUFBQTtjQUFLRSxTQUFTLEVBQUVQO1lBQUcsR0FDaEIsQ0FBQ0QsS0FBSyxJQUFJRCxPQUFPLEtBQ2hCVCxNQUFBLENBQUFlLE9BQUEsQ0FBQUMsYUFBQSxpQkFDR1AsT0FBTyxJQUNOVCxNQUFBLENBQUFlLE9BQUEsQ0FBQUMsYUFBQTtjQUFLRSxTQUFTLEVBQUM7WUFBWSxHQUN6QmxCLE1BQUEsQ0FBQWUsT0FBQSxDQUFBQyxhQUFBLENBQUNkLE1BQUEsQ0FBQWlCLEtBQUs7Y0FBQ0MsR0FBRyxFQUFFLEdBQUdDLFVBQVUsQ0FBQ0MsT0FBTyxrQkFBa0I7Y0FBRUMsR0FBRyxFQUFDO1lBQUcsRUFBRyxDQUVsRSxFQUNBYixLQUFLLElBQUlWLE1BQUEsQ0FBQWUsT0FBQSxDQUFBQyxhQUFBLGVBQU9OLEtBQUssQ0FBUSxDQUVqQyxFQUNBRSxPQUFPLElBQUlaLE1BQUEsQ0FBQWUsT0FBQSxDQUFBQyxhQUFBLENBQUNiLEtBQUEsQ0FBQXFCLFFBQVE7Y0FBQ2pCLEtBQUssRUFBRUE7WUFBSyxFQUFJLEVBQ3JDQyxRQUFRLENBQ0wsRUFDTEYsSUFBSSxJQUFJTixNQUFBLENBQUFlLE9BQUEsQ0FBQUMsYUFBQTtjQUFLUyxPQUFPLEVBQUVwQixXQUFXO2NBQUVhLFNBQVMsRUFBQztZQUFrQixFQUFHLENBQ2xFO1VBRVA7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDcENBLElBQUFsQixNQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBeUIsTUFBQSxHQUFBekIsT0FBQTtVQUVPLE1BQU0wQixRQUFRLEdBQUdBLENBQUM7WUFBRUM7VUFBSSxDQUFFLEtBQWlCO1lBQ2hELE1BQU07Y0FBRWxCLEtBQUs7Y0FBRW1CLElBQUk7Y0FBRUM7WUFBSSxDQUFFLEdBQUdGLElBQUk7WUFDbEMsT0FDRTVCLE1BQUEsQ0FBQWUsT0FBQSxDQUFBQyxhQUFBO2NBQUlFLFNBQVMsRUFBQztZQUFzQixHQUNsQ2xCLE1BQUEsQ0FBQWUsT0FBQSxDQUFBQyxhQUFBLENBQUNVLE1BQUEsQ0FBQUssSUFBSTtjQUFDRCxJQUFJLEVBQUVBO1lBQUksRUFBSSxFQUNwQjlCLE1BQUEsQ0FBQWUsT0FBQSxDQUFBQyxhQUFBO2NBQUdnQixJQUFJLEVBQUVIO1lBQUksR0FBR25CLEtBQUssQ0FBSyxDQUN2QjtVQUVULENBQUM7VUFBQ1osT0FBQSxDQUFBNkIsUUFBQSxHQUFBQSxRQUFBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1hGLElBQUEzQixNQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBZ0MsS0FBQSxHQUFBaEMsT0FBQTtVQUVPLE1BQU11QixRQUFRLEdBQUdBLENBQUM7WUFBRWpCO1VBQUssQ0FBRSxLQUFpQjtZQUUvQyxNQUFNMkIsTUFBTSxHQUFrQjNCLEtBQUssQ0FBQzRCLEdBQUcsQ0FBRVAsSUFBSSxJQUN6QzVCLE1BQUEsQ0FBQWUsT0FBQSxDQUFBQyxhQUFBLENBQUNpQixLQUFBLENBQUFOLFFBQVE7Y0FBQ1MsR0FBRyxFQUFFUixJQUFJLENBQUNFLElBQUk7Y0FBRUYsSUFBSSxFQUFFQTtZQUFJLEVBQ3ZDLENBQUM7WUFDRixPQUNJNUIsTUFBQSxDQUFBZSxPQUFBLENBQUFDLGFBQUE7Y0FBSUUsU0FBUyxFQUFDO1lBQXNCLEdBQy9CZ0IsTUFBTSxDQUNOO1VBRWIsQ0FBQztVQUFBcEMsT0FBQSxDQUFBMEIsUUFBQSxHQUFBQSxRQUFBIiwiaWdub3JlTGlzdCI6W119

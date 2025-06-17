@@ -6,12 +6,12 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/rvd',
-				version: '0.4.14-dev.03',
+				version: '0.5.1-dev.01',
 				languages: {
 					default: 'en',
 					supported: ['en', 'es', 'de']
 				},
-				environment: 'development',
+				environment: 'local',
 				'global.css': true,
 				params: {
 					app: 'rvd',
@@ -19,14 +19,14 @@ System.register([], function (_export, _context) {
 					APP_NAME: 'AILearn',
 					APP_SUPPORT_EMAIL: 'soporte@rvd.ai',
 					tutorials: true,
-					baseUrl: 'https://dev.app.rvd.ai',
+					baseUrl: 'http://localhost:4530',
 					apis: {
 						ailearn: 'https://dev.ailearn.api.aimpact.partners',
 						agents: 'https://dev.agents.api.aimpact.partners',
 						realtime: 'wss://dev.agents.api.aimpact.partners'
 					},
 					firebase: {
-						baseUrl: 'https://dev.app.rvd.ai',
+						baseUrl: 'http://localhost:4530',
 						apiKey: 'AIzaSyBYiZcPNBky2QvNdVwgCgU_v2B7feLtbQU',
 						authDomain: 'aimpact-partners-dev.firebaseapp.com',
 						databaseURL: 'https://aimpact-partners-dev-default-rtdb.firebaseio.com',
