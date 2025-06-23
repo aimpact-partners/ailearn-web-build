@@ -1,10 +1,10 @@
-System.register([], function (_export, _context) {
+System.register([], function (a, e) {
 	return {
 		setters: [],
 		execute: function () {
-			_export('default', {
+			a('default', {
 				package: '@aimpact/rvd',
-				version: '0.5.1-dev.05',
+				version: '0.5.1-dev.06',
 				languages: { default: 'en', supported: ['en', 'es', 'de'] },
 				environment: 'development',
 				'global.css': !0,
