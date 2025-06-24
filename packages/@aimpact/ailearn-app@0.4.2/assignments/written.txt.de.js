@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 3290393928,
+        hash: 3709370253,
         creator: function (require, exports) {
           exports.txt = {
             "breadcrumb": {
@@ -48,11 +48,11 @@ System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context
             },
             "analysis": {
               "audio": "Inhalt",
-              "transcript": "Transkription",
+              "transcript": "Produktion",
               "report": "Bericht"
             },
             "form": {
-              "submit": "Speichern",
+              "submit": "Senden",
               "editor": {
                 "placeholder": "Schreibe hier deine Antwort..."
               }
