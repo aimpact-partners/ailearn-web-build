@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/transversals", "@beyond-js/widgets@1.1.2/render", "@aimpact/ailearn-app@0.4.2/model/wrapper", "@aimpact/chat-sdk@1.5.4/session", "@beyond-js/kernel@0.1.12/routing", "react@18.3.1", "pragmate-ui@1.0.0-beta.7/icons", "pragmate-ui@1.0.0-beta.7/image", "@beyond-js/reactive@2.0.5/model", "@aimpact/ailearn-sdk@1.2.0/core", "@aimpact/rvd@0.4.12/config", "@aimpact/chat-sdk@1.5.4/startup", "@aimpact/agents-api@0.4.1/ws-config", "@aimpact/ailearn-sdk@1.2.0/startup"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/transversals", "@beyond-js/widgets@1.1.2/render", "@aimpact/ailearn-app@0.4.2/model/wrapper", "@aimpact/chat-sdk@1.5.4/session", "@beyond-js/kernel@0.1.12/routing", "react@18.3.1", "pragmate-ui@1.0.0-beta.7/icons", "pragmate-ui@1.0.0-beta.7/image", "@beyond-js/reactive@2.0.5/model", "@aimpact/ailearn-sdk@1.2.0/core", "@aimpact/rvd@0.5.1/config", "@aimpact/chat-sdk@1.5.4/startup", "@aimpact/agents-api@0.4.1/ws-config", "@aimpact/ailearn-sdk@1.2.0/startup"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, Transversal, __beyond_transversal, widgets, bundles;
@@ -25,8 +25,8 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
       dependency_9 = _beyondJsReactive205Model;
     }, function (_aimpactAilearnSdk120Core) {
       dependency_10 = _aimpactAilearnSdk120Core;
-    }, function (_aimpactRvd0412Config) {
-      dependency_11 = _aimpactRvd0412Config;
+    }, function (_aimpactRvd051Config) {
+      dependency_11 = _aimpactRvd051Config;
     }, function (_aimpactChatSdk154Startup) {
       dependency_12 = _aimpactChatSdk154Startup;
     }, function (_aimpactAgentsApi041WsConfig) {
@@ -95,10 +95,34 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
         "route": "/assignments/${assignmentId}/debate/${activityId}/chat/${chatId}",
         "layout": "main-layout"
       }, {
+        "name": "ailearn-exercise-page",
+        "vspecifier": "@aimpact/ailearn-app@0.4.2/assignments/exercise.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/exercise/${activityId}/chat/${chatId}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-free-conversation-page",
+        "vspecifier": "@aimpact/ailearn-app@0.4.2/assignments/free-conversation.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/free-conversation/${activityId}/chat/${chatId}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-assignments-hand-written",
+        "vspecifier": "@aimpact/ailearn-app@0.4.2/assignments/hand-written.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/hand-written/${id}",
+        "layout": "main-layout"
+      }, {
         "name": "ailearn-assignments-spoken",
         "vspecifier": "@aimpact/ailearn-app@0.4.2/assignments/spoken.widget",
         "is": "page",
         "route": "/assignments/${assignmentId}/spoken/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-assignments-written",
+        "vspecifier": "@aimpact/ailearn-app@0.4.2/assignments/written.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/written/${id}",
         "layout": "main-layout"
       }, {
         "name": "ailearn-gclassroom-permissions",
@@ -332,12 +356,12 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
       ***************************/
       bundles.push([{
         "module": {
-          "vspecifier": "@aimpact/rvd@0.4.12/routing"
+          "vspecifier": "@aimpact/rvd@0.5.1/routing"
         },
         "type": "start"
       }, function (ims, exports) {
         const bimport = specifier => {
-          const dependencies = new Map([["@aimpact/ailearn-app", "0.4.2"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", null], ["@aimpact/chat-sdk", "1.5.4"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/http-suite", "0.1.0"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.0.5"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.1"], ["@google-cloud/storage", "7.16.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.5"], ["driver.js", "1.3.5"], ["firebase", "11.6.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.22"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-select", "5.10.1"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.4"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.7"], ["react-is", "16.13.1"], ["@aimpact/rvd", "0.4.12"], ["@aimpact/rvd", "0.4.12"]]);
+          const dependencies = new Map([["@aimpact/ailearn-app", "0.4.2"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", null], ["@aimpact/chat-sdk", "1.5.4"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.0.5"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.1"], ["@google-cloud/storage", "7.16.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.5"], ["driver.js", "1.3.5"], ["firebase", "11.6.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.22"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.2.2"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.4"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.7"], ["react-is", "16.13.1"], ["@aimpact/rvd", "0.5.1"], ["@aimpact/rvd", "0.5.1"]]);
           return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
         };
         /************************************
@@ -686,12 +710,12 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
 
       bundles.push([{
         "module": {
-          "vspecifier": "@aimpact/rvd@0.4.12/initialize-app"
+          "vspecifier": "@aimpact/rvd@0.5.1/initialize-app"
         },
         "type": "start"
       }, function (ims, exports) {
         const bimport = specifier => {
-          const dependencies = new Map([["@aimpact/ailearn-app", "0.4.2"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", null], ["@aimpact/chat-sdk", "1.5.4"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/http-suite", "0.1.0"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.0.5"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.1"], ["@google-cloud/storage", "7.16.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.5"], ["driver.js", "1.3.5"], ["firebase", "11.6.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.22"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-select", "5.10.1"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.4"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.7"], ["react-is", "16.13.1"], ["@aimpact/rvd", "0.4.12"], ["@aimpact/rvd", "0.4.12"]]);
+          const dependencies = new Map([["@aimpact/ailearn-app", "0.4.2"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", null], ["@aimpact/chat-sdk", "1.5.4"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.0.5"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.1"], ["@google-cloud/storage", "7.16.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.5"], ["driver.js", "1.3.5"], ["firebase", "11.6.1"], ["framer-motion", "10.18.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.22"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.2.2"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.4"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.7"], ["react-is", "16.13.1"], ["@aimpact/rvd", "0.5.1"], ["@aimpact/rvd", "0.5.1"]]);
           return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
         };
         /*******************************
@@ -754,7 +778,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
         *************************/
 
         ims.set('./startup', {
-          hash: 1273421246,
+          hash: 1062726220,
           creator: function (require, exports) {
             "use strict";
 
@@ -825,11 +849,10 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
               };
               #start = async () => {
                 const {
-                  environment
+                  environment,
+                  params
                 } = _config.default;
-                (0, _wsConfig.setEnv)({
-                  environment
-                });
+                (0, _wsConfig.setUrl)(params.apis.realtime);
                 await this.#initSDK();
                 const promises = [_session.sessionWrapper.isReady];
                 await Promise.all(promises);

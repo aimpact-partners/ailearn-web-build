@@ -9,7 +9,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", null], ["@aimpact/chat-sdk", "1.5.4"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/http-suite", "0.1.0"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.0.4"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-select", "5.10.1"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.4.2"], ["@aimpact/rvd", "0.4.12"]]);
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", null], ["@aimpact/chat-sdk", "1.5.4"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.0-beta.7"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.0.4"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.2.2"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.4.2"], ["@aimpact/rvd", "0.5.1"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2236975175,
+        hash: 202873237,
         creator: function (require, exports) {
           exports.txt = {
             "actions": {
@@ -59,49 +59,57 @@ System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context
             },
             "activities": {
               "item": {
-                "empty": "Esta actividad aún no posee contenido o titulo definido"
+                "empty": "This activity does not yet have defined content or title"
               },
               "types": {
                 "content-theory": "Content/Theory",
                 "multiple-choice": "Multiple Choice",
                 "character-talk": "Character Talk",
                 "debate": "Debate",
-                "spoken": "Spoken Presentation"
+                "spoken": "Spoken Presentation",
+                "hand-written": "Manual Activity",
+                "written": "Written Activity",
+                "free-conversation": "Free Conversation",
+                "exercise": "Exercise"
               },
               "minutes": "Min",
-              "description": "Descripción",
-              "objective": "Objetivo",
+              "description": "Description",
+              "objective": "Objective",
               "activity": {
-                "empty": "Esta actividad no tiene contenido"
+                "empty": "This activity has no content"
               },
-              "type": "Tipo",
-              "questions": "Preguntas",
-              "topics": "Temas",
-              "title": "Actividades",
+              "type": "Type",
+              "questions": "Questions",
+              "topics": "Topics",
+              "title": "Activities",
               "empty": {
-                "title": "Aún no posees actividades",
-                "text": "Agrega una actividad a tu módulo"
+                "title": "You do not have activities yet",
+                "text": "Add an activity to your module"
               },
               "createModal": {
-                "title": "Selecciona el tipo de actividad",
-                "validation": "Debes completar el titulo y la descripción del módulo para poder agregar una actividad.",
-                "validationTitle": "Módulo incompleto"
+                "title": "Select the type of activity",
+                "validation": "You must complete the module title and description to add an activity.",
+                "validationTitle": "Incomplete module"
               },
               "delete": {
-                "title": "¿Realmente desea eliminar esta actividad?",
-                "subtitle": "Al eliminar esta actividad, no podrá recuperarla."
+                "title": "Do you really want to delete this activity?",
+                "subtitle": "Once deleted, you will not be able to recover this activity."
               },
               "descriptionTypes": {
-                "content-theory": "Artículo, adaptaciones y audios sobre un tema específico para construir una base teórica.",
-                "multiple-choice": "Preguntas de selección múltiple para evaluar comprensión",
-                "character-talk": "Aprender a través de una conversación con un personaje de ficción",
-                "debate": " Conversación uno-a-uno con un asistente virtual para explorar y profundizar temas",
-                "spoken": "Presentación oral sobre un tema asignado para evaluar conocimientos u otros usos como creatividad, presentaciones originales, etc"
+                "content-theory": "Learn and internalize theoretical content through guided explanations and examples.",
+                "multiple-choice": "Answer multiple choice questions to assess understanding.",
+                "character-talk": "Learn through a guided conversation with a fictional character to explore a topic or perspective.",
+                "debate": "Argue and defend a position in a one-on-one conversation with a virtual assistant.",
+                "spoken": "Oral presentation on an assigned topic to demonstrate knowledge, creativity, or originality.",
+                "free-conversation": "Flexible activity where the student reflects, explains, or describes how they carried out a task assigned by the teacher.",
+                "hand-written": "Versatile activity where the student uploads a photo of a handwritten production.",
+                "written": "Versatile activity where the student writes and submits a text on any topic.",
+                "exercise": "Step-by-step resolution of a specific task guided through a conversation with the assistant."
               },
               "states": {
-                "empty": "Actividad vacia",
-                "completed": "Completada",
-                "processing": "En edición"
+                "empty": "Empty activity",
+                "completed": "Completed",
+                "processing": "In editing"
               }
             },
             "module": {
