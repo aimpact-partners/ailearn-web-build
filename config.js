@@ -1,8 +1,8 @@
-System.register([], function (a, e) {
+System.register([], function (_export, _context) {
 	return {
 		setters: [],
 		execute: function () {
-			a('default', {
+			_export('default', {
 				package: '@aimpact/rvd',
 				version: '0.5.1-dev.06',
 				languages: { default: 'en', supported: ['en', 'es', 'de'] },
