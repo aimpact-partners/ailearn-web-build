@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/startup", "@aimpact/chat-sdk@1.5.4/session", "@aimpact/media-manager@1.0.0/uploader", "@beyond-js/http-suite@0.1.1/api", "@beyond-js/reactive@2.0.5/entities/item", "@beyond-js/reactive@2.0.5/entities/collection", "@aimpact/chat-sdk@1.5.4/core", "@beyond-js/reactive@2.0.5/model", "@aimpact/ailearn-sdk@1.2.0/config", "@aimpact/ailearn-sdk@1.2.0/entities/learning-modules", "@aimpact/ailearn-sdk@1.2.0/entities/classrooms"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/startup", "@aimpact/chat-sdk@1.5.4/session", "@aimpact/media-manager@1.0.0/uploader", "@beyond-js/http-suite@0.1.1/api", "@beyond-js/reactive@2.1.0/entities/item", "@beyond-js/reactive@2.1.0/entities/collection", "@aimpact/chat-sdk@1.5.4/core", "@beyond-js/reactive@2.1.0/model", "@aimpact/ailearn-sdk@1.2.0/config", "@aimpact/ailearn-sdk@1.2.0/entities/learning-modules", "@aimpact/ailearn-sdk@1.2.0/entities/classrooms"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, bimport, __Bundle, __pkg, ims, Activity, Assignments, Assignment, Credits, TrackingDashboard, ParticipantProvider, Tracking, IActivityListItem, IActivityBase, TrackingStatusType, IActivityTrackingBase, IDashboard, __beyond_pkg, hmr;
@@ -27,14 +27,14 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/
       dependency_3 = _aimpactMediaManager100Uploader;
     }, function (_beyondJsHttpSuite011Api) {
       dependency_4 = _beyondJsHttpSuite011Api;
-    }, function (_beyondJsReactive205EntitiesItem) {
-      dependency_5 = _beyondJsReactive205EntitiesItem;
-    }, function (_beyondJsReactive205EntitiesCollection) {
-      dependency_6 = _beyondJsReactive205EntitiesCollection;
+    }, function (_beyondJsReactive210EntitiesItem) {
+      dependency_5 = _beyondJsReactive210EntitiesItem;
+    }, function (_beyondJsReactive210EntitiesCollection) {
+      dependency_6 = _beyondJsReactive210EntitiesCollection;
     }, function (_aimpactChatSdk154Core) {
       dependency_7 = _aimpactChatSdk154Core;
-    }, function (_beyondJsReactive205Model) {
-      dependency_8 = _beyondJsReactive205Model;
+    }, function (_beyondJsReactive210Model) {
+      dependency_8 = _beyondJsReactive210Model;
     }, function (_aimpactAilearnSdk120Config) {
       dependency_9 = _aimpactAilearnSdk120Config;
     }, function (_aimpactAilearnSdk120EntitiesLearningModules) {

@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/startup", "@aimpact/chat-sdk@1.5.4/session", "@beyond-js/http-suite@0.1.1/api", "@beyond-js/reactive@2.0.5/model"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/startup", "@aimpact/chat-sdk@1.5.4/session", "@beyond-js/http-suite@0.1.1/api", "@beyond-js/reactive@2.1.0/model"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Application, __beyond_pkg, hmr;
@@ -12,8 +12,8 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/
       dependency_2 = _aimpactChatSdk154Session;
     }, function (_beyondJsHttpSuite011Api) {
       dependency_3 = _beyondJsHttpSuite011Api;
-    }, function (_beyondJsReactive205Model) {
-      dependency_4 = _beyondJsReactive205Model;
+    }, function (_beyondJsReactive210Model) {
+      dependency_4 = _beyondJsReactive210Model;
     }],
     execute: function () {
       bimport = specifier => {

@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/groups", "@beyond-js/reactive@2.0.5/entities/collection", "@beyond-js/http-suite@0.1.1/api"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/groups", "@beyond-js/reactive@2.1.0/entities/collection", "@beyond-js/http-suite@0.1.1/api"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, Classrooms, Classroom, __beyond_pkg, hmr;
@@ -11,8 +11,8 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/
       dependency_0 = _beyondJsKernel0112Bundle;
     }, function (_aimpactAilearnSdk120Groups) {
       dependency_1 = _aimpactAilearnSdk120Groups;
-    }, function (_beyondJsReactive205EntitiesCollection) {
-      dependency_2 = _beyondJsReactive205EntitiesCollection;
+    }, function (_beyondJsReactive210EntitiesCollection) {
+      dependency_2 = _beyondJsReactive210EntitiesCollection;
     }, function (_beyondJsHttpSuite011Api) {
       dependency_3 = _beyondJsHttpSuite011Api;
     }],
