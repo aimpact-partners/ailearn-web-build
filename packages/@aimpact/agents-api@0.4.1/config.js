@@ -1,1 +1,24 @@
-System.register([],function(_export,_context){return{setters:[],execute:function(){_export("default",{package:"@aimpact/agents-api",version:"0.4.1",languages:{default:"en",supported:["en","es"]},environment:"development","global.css":!0,params:{project:"rvd"},ssr:{},backend:{}})}}});
+System.register([], function (_export, _context) {
+  "use strict";
+
+  return {
+    setters: [],
+    execute: function () {
+      _export("default", {
+        "package": "@aimpact/agents-api",
+        "version": "0.4.1",
+        "languages": {
+          "default": "en",
+          "supported": ["en", "es"]
+        },
+        "environment": "development",
+        "global.css": true,
+        "params": {
+          "project": "rvd"
+        },
+        "ssr": {},
+        "backend": {}
+      });
+    }
+  };
+});
