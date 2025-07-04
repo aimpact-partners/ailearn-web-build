@@ -1,24 +1,19 @@
-System.register([], function (_export, _context) {
-	'use strict';
-
+System.register([], function (a, e) {
 	return {
 		setters: [],
 		execute: function () {
-			_export('default', {
+			a('default', {
 				package: '@aimpact/rvd',
-				version: '0.4.14-beta.03',
-				languages: {
-					default: 'en',
-					supported: ['en', 'es', 'de']
-				},
+				version: '0.5.1-beta.17',
+				languages: { default: 'en', supported: ['en', 'es', 'de'] },
 				environment: 'quality',
-				'global.css': true,
+				'global.css': !0,
 				params: {
 					app: 'rvd',
 					APP_LOGO: '/assets/images/branding/logo.png',
-					APP_NAME: 'AILearn',
+					APP_NAME: 'RVD AI',
 					APP_SUPPORT_EMAIL: 'soporte@rvd.ai',
-					tutorials: true,
+					tutorials: !0,
 					baseUrl: 'https://beta.app.rvd.ai',
 					apis: {
 						ailearn: 'https://beta.ailearn.api.aimpact.partners',
