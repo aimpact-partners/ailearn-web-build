@@ -6,7 +6,7 @@ System.register([], function (_export, _context) {
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/rvd',
-				version: '0.5.1-test.15',
+				version: '0.5.1-test.16',
 				languages: {
 					default: 'en',
 					supported: ['en', 'es', 'de']
@@ -16,7 +16,7 @@ System.register([], function (_export, _context) {
 				params: {
 					app: 'rvd',
 					APP_LOGO: '/assets/images/branding/logo.png',
-					APP_NAME: 'AILearn',
+					APP_NAME: 'RVD AI',
 					APP_SUPPORT_EMAIL: 'soporte@rvd.ai',
 					tutorials: true,
 					baseUrl: 'https://test.app.rvd.ai',

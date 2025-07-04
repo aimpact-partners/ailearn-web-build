@@ -671,16 +671,16 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@beyond-js/kernel@0.1.12/tr
         *************************/
 
         ims.set('./routing', {
-          hash: 2781683819,
+          hash: 3012943386,
           creator: function (require, exports) {
             "use strict";
 
             var _routing = require("@beyond-js/kernel/routing");
+            var _dashboard = require("./handlers/dashboard");
             var _policies = require("./handlers/policies");
             var _roles = require("./handlers/roles");
             var _session = require("./handlers/session");
             var _router = require("./router");
-            var _dashboard = require("./handlers/dashboard");
             const handlers = [_session.checkSession, _policies.checkPolicies, _roles.checkRoles, _dashboard.checkDashboard];
             const /*bundle*/router = new _router.Router(handlers);
             /**
