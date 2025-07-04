@@ -4,14 +4,14 @@ System.register([], function (a, e) {
 		execute: function () {
 			a('default', {
 				package: '@aimpact/rvd',
-				version: '0.4.13',
+				version: '0.5.1',
 				languages: { default: 'en', supported: ['en', 'es', 'de'] },
 				environment: 'production',
 				'global.css': !0,
 				params: {
 					app: 'rvd',
 					APP_LOGO: '/assets/images/branding/logo.png',
-					APP_NAME: 'AILearn',
+					APP_NAME: 'RVD AI',
 					APP_SUPPORT_EMAIL: 'soporte@rvd.ai',
 					tutorials: !0,
 					baseUrl: 'https://app.rvd.ai',
