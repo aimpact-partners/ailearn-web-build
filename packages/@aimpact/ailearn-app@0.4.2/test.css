@@ -1,1 +1,0 @@
-.grid-container{display:grid;grid-template-rows:auto 1fr;grid-template-columns:1fr 1fr;height:300px}.header{grid-column:span 2;background-color:#f0f0f0;padding:1rem;text-align:center}.child-2,.child-3{overflow:auto;height:100%;padding:1rem}.child-2{background-color:#e0f7fa}.child-3{background-color:#ffe0b2}
