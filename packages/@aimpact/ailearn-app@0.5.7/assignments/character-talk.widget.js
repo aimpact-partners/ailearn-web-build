@@ -1,1 +1,157 @@
-System.register(["@beyond-js/widgets@1.1.2/render","@beyond-js/kernel@0.1.12/bundle","@aimpact/ailearn-app@0.5.7/assignments/chat","@beyond-js/react-18-widgets@1.1.4/page","@aimpact/ailearn-app@0.5.7/main-layout.widget","@aimpact/ailearn-app@0.5.7/entities/assignments/activities/base","@beyond-js/widgets@1.1.2/controller"],function(r,e){var t,a,i,n,s,o,c,l,d;return r({Controller:void 0,StoreManager:void 0}),{setters:[function(e){t=e},function(e){a=e},function(e){i=e},function(e){n=e},function(e){s=e},function(e){o=e},function(e){c=e}],execute:function(){d=a.Bundle,(l=new d({module:{vspecifier:"@aimpact/ailearn-app@0.5.7/assignments/character-talk",multibundle:!0},type:"widget"},e.meta.url).package()).dependencies.update([["@beyond-js/widgets/render",t],["@aimpact/ailearn-app/assignments/chat",i],["@beyond-js/react-18-widgets/page",n],["@aimpact/ailearn-app/main-layout.widget",s],["@aimpact/ailearn-app/entities/assignments/activities/base",o],["@beyond-js/widgets/controller",c]]),brequire("@beyond-js/widgets/render").widgets.register([{name:"ailearn-character-talk",vspecifier:"@aimpact/ailearn-app@0.5.7/assignments/character-talk.widget",is:"page",route:"/assignments/${assignmentId}/character-talk/${activityId}/chat/${chatId}",layout:"main-layout"}]),(d=new Map).set("./controller",{hash:2758603960,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.Controller=void 0;var a=e("@aimpact/ailearn-app/assignments/chat"),r=e("@beyond-js/react-18-widgets/page"),i=e("./store"),n=e("@aimpact/ailearn-app/main-layout.widget");class s extends r.PageReactWidgetController{#store;createStore(){return this.#store=new i.StoreManager,this.#store}get Widget(){return a.ChatView}show(){this.#store.testing="draft"===this.uri.qs.get("type"),this.#store.load(this.uri.vars.get("assignmentId"),this.uri.vars.get("activityId"),this.uri.vars.get("chatId"),this.#store.testing)}hide(){n.LayoutBroker.clear()}}t.Controller=s}}),d.set("./store",{hash:3967976741,creator:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.StoreManager=void 0;var a=e("@aimpact/ailearn-app/entities/assignments/activities/base"),r=e("beyond_context");class i extends a.BaseStoreManager{isStore;get tabs(){return["activity","objectives"]}get data(){var e=this.model.getMaterials(),t=this.model.getSpecs();return{image:this.model.picture,type:this.model.type,description:this.model.description,...e,...t}}constructor(){super(r.module.specifier)}}t.StoreManager=i}}),l.exports.descriptor=[{im:"./controller",from:"Controller",name:"Controller"},{im:"./store",from:"StoreManager",name:"StoreManager"}],l.exports.process=function({require:e,prop:t,value:a}){!e&&"Controller"!==t||r("Controller",e?e("./controller").Controller:a),!e&&"StoreManager"!==t||r("StoreManager",e?e("./store").StoreManager:a)},r("__beyond_pkg",l),r("hmr",new function(){this.on=(e,t)=>l.hmr.on(e,t),this.off=(e,t)=>l.hmr.off(e,t)}),l.initialise(d)}}});
+System.register(["@beyond-js/widgets@1.1.2/render", "@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-app@0.5.7/assignments/chat", "@beyond-js/react-18-widgets@1.1.4/page", "@aimpact/ailearn-app@0.5.7/main-layout.widget", "@aimpact/ailearn-app@0.5.7/entities/assignments/activities/base", "@beyond-js/widgets@1.1.2/controller"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, Controller, StoreManager, __beyond_pkg, hmr;
+  _export({
+    Controller: void 0,
+    StoreManager: void 0
+  });
+  return {
+    setters: [function (_beyondJsWidgets112Render) {
+      dependency_0 = _beyondJsWidgets112Render;
+    }, function (_beyondJsKernel0112Bundle) {
+      dependency_1 = _beyondJsKernel0112Bundle;
+    }, function (_aimpactAilearnApp057AssignmentsChat) {
+      dependency_2 = _aimpactAilearnApp057AssignmentsChat;
+    }, function (_beyondJsReact18Widgets114Page) {
+      dependency_3 = _beyondJsReact18Widgets114Page;
+    }, function (_aimpactAilearnApp057MainLayoutWidget) {
+      dependency_4 = _aimpactAilearnApp057MainLayoutWidget;
+    }, function (_aimpactAilearnApp057EntitiesAssignmentsActivitiesBase) {
+      dependency_5 = _aimpactAilearnApp057EntitiesAssignmentsActivitiesBase;
+    }, function (_beyondJsWidgets112Controller) {
+      dependency_6 = _beyondJsWidgets112Controller;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.6"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.2.0"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.5.7"], ["@aimpact/rvd", "0.5.7"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_1);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.5.7/assignments/character-talk",
+          "multibundle": true
+        },
+        "type": "widget"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@aimpact/ailearn-app/assignments/chat', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@aimpact/ailearn-app/main-layout.widget', dependency_4], ['@aimpact/ailearn-app/entities/assignments/activities/base', dependency_5], ['@beyond-js/widgets/controller', dependency_6]]);
+      brequire('@beyond-js/widgets/render').widgets.register([{
+        "name": "ailearn-character-talk",
+        "vspecifier": "@aimpact/ailearn-app@0.5.7/assignments/character-talk.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/character-talk/${activityId}/chat/${chatId}",
+        "layout": "main-layout"
+      }]);
+      ims = new Map();
+      /****************************
+      INTERNAL MODULE: ./controller
+      ****************************/
+      ims.set('./controller', {
+        hash: 2758603960,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Controller = void 0;
+          var _chat = require("@aimpact/ailearn-app/assignments/chat");
+          var _page = require("@beyond-js/react-18-widgets/page");
+          var _store = require("./store");
+          var _mainLayout = require("@aimpact/ailearn-app/main-layout.widget");
+          /*bundle*/
+          class Controller extends _page.PageReactWidgetController {
+            #store;
+            createStore() {
+              this.#store = new _store.StoreManager();
+              return this.#store;
+            }
+            get Widget() {
+              return _chat.ChatView;
+            }
+            /**
+             * this method is executed when the widget is showd
+             */
+            show() {
+              this.#store.testing = this.uri.qs.get('type') === 'draft';
+              this.#store.load(this.uri.vars.get('assignmentId'), this.uri.vars.get('activityId'), this.uri.vars.get('chatId'), this.#store.testing);
+            }
+            hide() {
+              _mainLayout.LayoutBroker.clear();
+            }
+          }
+          exports.Controller = Controller;
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./store
+      ***********************/
+
+      ims.set('./store', {
+        hash: 3967976741,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StoreManager = void 0;
+          var _base = require("@aimpact/ailearn-app/entities/assignments/activities/base");
+          var _beyond_context = require("beyond_context");
+          /*bundle*/
+          class StoreManager extends _base.BaseStoreManager {
+            isStore;
+            get tabs() {
+              return ['activity', 'objectives'];
+            }
+            get data() {
+              const materials = this.model.getMaterials();
+              const specs = this.model.getSpecs();
+              return {
+                image: this.model.picture,
+                type: this.model.type,
+                description: this.model.description,
+                ...materials,
+                ...specs
+              };
+            }
+            constructor() {
+              super(_beyond_context.module.specifier);
+            }
+          }
+          exports.StoreManager = StoreManager;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./controller",
+        "from": "Controller",
+        "name": "Controller"
+      }, {
+        "im": "./store",
+        "from": "StoreManager",
+        "name": "StoreManager"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Controller') && _export("Controller", Controller = require ? require('./controller').Controller : value);
+        (require || prop === 'StoreManager') && _export("StoreManager", StoreManager = require ? require('./store').StoreManager : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfY2hhdCIsInJlcXVpcmUiLCJfcGFnZSIsIl9zdG9yZSIsIl9tYWluTGF5b3V0IiwiQ29udHJvbGxlciIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJzdG9yZSIsImNyZWF0ZVN0b3JlIiwiU3RvcmVNYW5hZ2VyIiwiV2lkZ2V0IiwiQ2hhdFZpZXciLCJzaG93IiwidGVzdGluZyIsInVyaSIsInFzIiwiZ2V0IiwibG9hZCIsInZhcnMiLCJoaWRlIiwiTGF5b3V0QnJva2VyIiwiY2xlYXIiLCJleHBvcnRzIiwiX2Jhc2UiLCJfYmV5b25kX2NvbnRleHQiLCJCYXNlU3RvcmVNYW5hZ2VyIiwiaXNTdG9yZSIsInRhYnMiLCJkYXRhIiwibWF0ZXJpYWxzIiwibW9kZWwiLCJnZXRNYXRlcmlhbHMiLCJzcGVjcyIsImdldFNwZWNzIiwiaW1hZ2UiLCJwaWN0dXJlIiwidHlwZSIsImRlc2NyaXB0aW9uIiwiY29uc3RydWN0b3IiLCJtb2R1bGUiLCJzcGVjaWZpZXIiXSwic291cmNlcyI6WyIvL3RzL2NvbnRyb2xsZXIudHMiLCIvL3RzL3N0b3JlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxLQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxLQUFBLEdBQUFELE9BQUE7VUFDQSxJQUFBRSxNQUFBLEdBQUFGLE9BQUE7VUFDQSxJQUFBRyxXQUFBLEdBQUFILE9BQUE7VUFDTztVQUFVLE1BQ1hJLFVBQVcsU0FBUUgsS0FBQSxDQUFBSSx5QkFBeUI7WUFDakQsQ0FBQUMsS0FBTTtZQUNOQyxXQUFXQSxDQUFBO2NBQ1YsSUFBSSxDQUFDLENBQUFELEtBQU0sR0FBRyxJQUFJSixNQUFBLENBQUFNLFlBQVksRUFBRTtjQUNoQyxPQUFPLElBQUksQ0FBQyxDQUFBRixLQUFNO1lBQ25CO1lBQ0EsSUFBSUcsTUFBTUEsQ0FBQTtjQUNULE9BQU9WLEtBQUEsQ0FBQVcsUUFBUTtZQUNoQjtZQUVBOzs7WUFHQUMsSUFBSUEsQ0FBQTtjQUNILElBQUksQ0FBQyxDQUFBTCxLQUFNLENBQUNNLE9BQU8sR0FBRyxJQUFJLENBQUNDLEdBQUcsQ0FBQ0MsRUFBRSxDQUFDQyxHQUFHLENBQUMsTUFBTSxDQUFDLEtBQUssT0FBTztjQUV6RCxJQUFJLENBQUMsQ0FBQVQsS0FBTSxDQUFDVSxJQUFJLENBQ2YsSUFBSSxDQUFDSCxHQUFHLENBQUNJLElBQUksQ0FBQ0YsR0FBRyxDQUFDLGNBQWMsQ0FBQyxFQUNqQyxJQUFJLENBQUNGLEdBQUcsQ0FBQ0ksSUFBSSxDQUFDRixHQUFHLENBQUMsWUFBWSxDQUFDLEVBQy9CLElBQUksQ0FBQ0YsR0FBRyxDQUFDSSxJQUFJLENBQUNGLEdBQUcsQ0FBQyxRQUFRLENBQUMsRUFDM0IsSUFBSSxDQUFDLENBQUFULEtBQU0sQ0FBQ00sT0FBTyxDQUNuQjtZQUNGO1lBRUFNLElBQUlBLENBQUE7Y0FDSGYsV0FBQSxDQUFBZ0IsWUFBWSxDQUFDQyxLQUFLLEVBQUU7WUFDckI7O1VBQ0FDLE9BQUEsQ0FBQWpCLFVBQUEsR0FBQUEsVUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNoQ0QsSUFBQWtCLEtBQUEsR0FBQXRCLE9BQUE7VUFFQSxJQUFBdUIsZUFBQSxHQUFBdkIsT0FBQTtVQUVPO1VBQVUsTUFBT1EsWUFBYSxTQUFRYyxLQUFBLENBQUFFLGdCQUFnQjtZQUM1REMsT0FBTztZQWdCUCxJQUFJQyxJQUFJQSxDQUFBO2NBQ1AsT0FBTyxDQUFDLFVBQVUsRUFBRSxZQUFZLENBQUM7WUFDbEM7WUFFQSxJQUFJQyxJQUFJQSxDQUFBO2NBQ1AsTUFBTUMsU0FBUyxHQUFHLElBQUksQ0FBQ0MsS0FBSyxDQUFDQyxZQUFZLEVBQUU7Y0FDM0MsTUFBTUMsS0FBSyxHQUFHLElBQUksQ0FBQ0YsS0FBSyxDQUFDRyxRQUFRLEVBQUU7Y0FDbkMsT0FBTztnQkFDTkMsS0FBSyxFQUFFLElBQUksQ0FBQ0osS0FBSyxDQUFDSyxPQUFPO2dCQUN6QkMsSUFBSSxFQUFFLElBQUksQ0FBQ04sS0FBSyxDQUFDTSxJQUFJO2dCQUNyQkMsV0FBVyxFQUFFLElBQUksQ0FBQ1AsS0FBSyxDQUFDTyxXQUFXO2dCQUNuQyxHQUFHUixTQUFTO2dCQUNaLEdBQUdHO2VBQ0g7WUFDRjtZQUVBTSxZQUFBO2NBQ0MsS0FBSyxDQUFDZCxlQUFBLENBQUFlLE1BQU0sQ0FBQ0MsU0FBUyxDQUFDO1lBQ3hCOztVQUNBbEIsT0FBQSxDQUFBYixZQUFBLEdBQUFBLFlBQUEiLCJpZ25vcmVMaXN0IjpbXX0=

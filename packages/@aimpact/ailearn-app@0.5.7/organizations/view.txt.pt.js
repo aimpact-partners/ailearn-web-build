@@ -1,1 +1,193 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle"],function(a,e){var o,r,i;return a("txt",void 0),{setters:[function(e){o=e}],execute:function(){i=o.Bundle,(r=new i({module:{vspecifier:"@aimpact/ailearn-app@0.5.7/organizations/view",multibundle:!0},type:"txt"},e.meta.url).package("pt")).dependencies.update([]),(i=new Map).set("./txt",{hash:3880413577,creator:function(e,o){o.txt={actions:{add:"Adicionar",approve:"Autorizar",reject:"Rejeitar",invite:"Convidar",copy:"Copiar para a área de transferência",create:"Criar",activities:"Gerar Atividades",refine:"Refinar",generate:"Gerar",save:"Salvar",clean:"Limpar",activity:"Atividades",upload:"Carregar",edit:"Editar",delete:"Excluir",cancel:"Cancelar",next:"Próximo",back:"Voltar",confirm:"Confirmar"},coins:{label:"Créditos disponíveis",assignments:"Interativos",modules:"Gerativos"},errors:{10003:"O usuário não pôde ser aprovado, tente novamente mais tarde e se o problema persistir entre em contato com o suporte."},form:{title:"Convidar usuário",role:{label:"Função",placeholder:"Selecionar função"},name:{label:"Nome",placeholder:"Digite o nome do usuário"},email:{label:"E-mail",placeholder:"Digite o e-mail do usuário"},button:"Enviar"},forms:{approve:{title:"Deseja aprovar a solicitação do usuário?",description:"Lembre-se que aprovar a solicitação do usuário também modifica sua função e acesso dentro da organização."},delete:{title:"Deseja excluir o usuário?",description:"Lembre-se que excluir um usuário também exclui seu acesso e ações dentro da organização."},cancel:{title:"Deseja cancelar o convite do usuário?",description:"Lembre-se que cancelar o convite do usuário também cancela seu acesso e ações dentro da organização."},reject:{title:"Deseja rejeitar a solicitação do usuário?",description:"Lembre-se que rejeitar a solicitação do usuário também cancela seu acesso e ações dentro da organização."},edit:{title:"Deseja alterar a função do usuário?",info:"Lembre-se que alterar a função também modifica o acesso e as ações do usuário dentro da organização."}},editForm:{title:"Deseja alterar a função do usuário?",info:"Lembre-se que alterar a função também modifica o acesso e as ações do usuário dentro da organização."},roles:{all:{identifier:"all",title:"Todos",entity:"Todos"},manager:{identifier:"managers",title:"Administrador",entity:"Administradores"},member:{identifier:"members",title:"Professor",entity:"Professores"},pending:{identifier:"pendings",title:"Pendente",entity:"Pendentes"}},list:{managers:{title:"Administradores",role:"Administrador",single:"Administrador"},members:{title:"Professores",role:"Professor",single:"Professor"},pendings:{title:"Pendentes",invited:"Convidado"}},ERR_GENERATING_ACTIVITIES:"Erro ao gerar classes",messages:{approval:{success:"Usuário aprovado com sucesso",error:"Erro ao aprovar usuário"},copy:"Texto copiado com sucesso",copyError:"Erro ao copiar para a área de transferência"},orgCode:"Código da Organização",title:"Adicione um nome",description:"Adicione uma descrição",empty:{rol:{title:"Nenhum membro registrado com este perfil"},pending:{title:"Nenhum membro pendente de revisão"}},system:{invite:{success:"Convite enviado"}}}}}),r.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}],r.exports.process=function({require:e,prop:o,value:r}){!e&&"txt"!==o||a("txt",e?e("./txt").txt:r)},a("__beyond_pkg",r),a("hmr",new function(){this.on=(e,o)=>r.hmr.on(e,o),this.off=(e,o)=>r.hmr.off(e,o)}),r.initialise(i)}}});
+System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0112Bundle) {
+      dependency_0 = _beyondJsKernel0112Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.6"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.2.0"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.5.7"], ["@aimpact/rvd", "0.5.7"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.5.7/organizations/view",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('pt');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 3880413577,
+        creator: function (require, exports) {
+          exports.txt = {
+            "actions": {
+              "add": "Adicionar",
+              "approve": "Autorizar",
+              "reject": "Rejeitar",
+              "invite": "Convidar",
+              "copy": "Copiar para a área de transferência",
+              "create": "Criar",
+              "activities": "Gerar Atividades",
+              "refine": "Refinar",
+              "generate": "Gerar",
+              "save": "Salvar",
+              "clean": "Limpar",
+              "activity": "Atividades",
+              "upload": "Carregar",
+              "edit": "Editar",
+              "delete": "Excluir",
+              "cancel": "Cancelar",
+              "next": "Próximo",
+              "back": "Voltar",
+              "confirm": "Confirmar"
+            },
+            "coins": {
+              "label": "Créditos disponíveis",
+              "assignments": "Interativos",
+              "modules": "Gerativos"
+            },
+            "errors": {
+              "10003": "O usuário não pôde ser aprovado, tente novamente mais tarde e se o problema persistir entre em contato com o suporte."
+            },
+            "form": {
+              "title": "Convidar usuário",
+              "role": {
+                "label": "Função",
+                "placeholder": "Selecionar função"
+              },
+              "name": {
+                "label": "Nome",
+                "placeholder": "Digite o nome do usuário"
+              },
+              "email": {
+                "label": "E-mail",
+                "placeholder": "Digite o e-mail do usuário"
+              },
+              "button": "Enviar"
+            },
+            "forms": {
+              "approve": {
+                "title": "Deseja aprovar a solicitação do usuário?",
+                "description": "Lembre-se que aprovar a solicitação do usuário também modifica sua função e acesso dentro da organização."
+              },
+              "delete": {
+                "title": "Deseja excluir o usuário?",
+                "description": "Lembre-se que excluir um usuário também exclui seu acesso e ações dentro da organização."
+              },
+              "cancel": {
+                "title": "Deseja cancelar o convite do usuário?",
+                "description": "Lembre-se que cancelar o convite do usuário também cancela seu acesso e ações dentro da organização."
+              },
+              "reject": {
+                "title": "Deseja rejeitar a solicitação do usuário?",
+                "description": "Lembre-se que rejeitar a solicitação do usuário também cancela seu acesso e ações dentro da organização."
+              },
+              "edit": {
+                "title": "Deseja alterar a função do usuário?",
+                "info": "Lembre-se que alterar a função também modifica o acesso e as ações do usuário dentro da organização."
+              }
+            },
+            "editForm": {
+              "title": "Deseja alterar a função do usuário?",
+              "info": "Lembre-se que alterar a função também modifica o acesso e as ações do usuário dentro da organização."
+            },
+            "roles": {
+              "all": {
+                "identifier": "all",
+                "title": "Todos",
+                "entity": "Todos"
+              },
+              "manager": {
+                "identifier": "managers",
+                "title": "Administrador",
+                "entity": "Administradores"
+              },
+              "member": {
+                "identifier": "members",
+                "title": "Professor",
+                "entity": "Professores"
+              },
+              "pending": {
+                "identifier": "pendings",
+                "title": "Pendente",
+                "entity": "Pendentes"
+              }
+            },
+            "list": {
+              "managers": {
+                "title": "Administradores",
+                "role": "Administrador",
+                "single": "Administrador"
+              },
+              "members": {
+                "title": "Professores",
+                "role": "Professor",
+                "single": "Professor"
+              },
+              "pendings": {
+                "title": "Pendentes",
+                "invited": "Convidado"
+              }
+            },
+            "ERR_GENERATING_ACTIVITIES": "Erro ao gerar classes",
+            "messages": {
+              "approval": {
+                "success": "Usuário aprovado com sucesso",
+                "error": "Erro ao aprovar usuário"
+              },
+              "copy": "Texto copiado com sucesso",
+              "copyError": "Erro ao copiar para a área de transferência"
+            },
+            "orgCode": "Código da Organização",
+            "title": "Adicione um nome",
+            "description": "Adicione uma descrição",
+            "empty": {
+              "rol": {
+                "title": "Nenhum membro registrado com este perfil"
+              },
+              "pending": {
+                "title": "Nenhum membro pendente de revisão"
+              }
+            },
+            "system": {
+              "invite": {
+                "success": "Convite enviado"
+              }
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

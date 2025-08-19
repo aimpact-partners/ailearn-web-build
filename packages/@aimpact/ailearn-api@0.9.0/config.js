@@ -1,0 +1,22 @@
+System.register([], function (_export, _context) {
+  "use strict";
+
+  return {
+    setters: [],
+    execute: function () {
+      _export("default", {
+        "package": "@aimpact/ailearn-api",
+        "version": "0.9.0",
+        "languages": {
+          "default": "en",
+          "supported": ["en", "es"]
+        },
+        "environment": "development",
+        "global.css": true,
+        "params": {},
+        "ssr": {},
+        "backend": {}
+      });
+    }
+  };
+});
