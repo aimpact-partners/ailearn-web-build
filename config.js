@@ -1,32 +1,28 @@
-System.register([], function (_export, _context) {
-	'use strict';
-
+System.register([], function (a, e) {
 	return {
 		setters: [],
 		execute: function () {
-			_export('default', {
+			a('default', {
 				package: '@aimpact/rvd',
 				version: '0.6.1-dev.01',
-				languages: {
-					default: 'en',
-					supported: ['en', 'es', 'de', 'pt', 'fr']
-				},
-				environment: 'local',
-				'global.css': true,
+				languages: { default: 'en', supported: ['en', 'es', 'de', 'pt', 'fr'] },
+				environment: 'development',
+				'global.css': !0,
 				params: {
 					app: 'rvd',
 					APP_LOGO: '/assets/images/branding/logo.png',
 					APP_NAME: 'RVD AI',
 					APP_SUPPORT_EMAIL: 'soporte@rvd.ai',
-					tutorials: true,
-					baseUrl: 'http://localhost:4530',
+					tutorials: !0,
+					baseUrl: 'https://dev.app.rvd.ai',
 					apis: {
 						ailearn: 'https://dev.ailearn.api.aimpact.partners',
 						agents: 'https://dev.agents.api.aimpact.partners',
 						realtime: 'wss://dev.agents.api.aimpact.partners'
 					},
+					agents: { projectId: 'a1l34rn1-453a-4612-b6fd-59cb742111d0' },
 					firebase: {
-						baseUrl: 'http://localhost:4530',
+						baseUrl: 'https://dev.app.rvd.ai',
 						apiKey: 'AIzaSyBYiZcPNBky2QvNdVwgCgU_v2B7feLtbQU',
 						authDomain: 'aimpact-partners-dev.firebaseapp.com',
 						databaseURL: 'https://aimpact-partners-dev-default-rtdb.firebaseio.com',
