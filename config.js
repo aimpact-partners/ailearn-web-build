@@ -1,10 +1,10 @@
-System.register([], function (a, e) {
+System.register([], function (e, a) {
 	return {
 		setters: [],
 		execute: function () {
-			a('default', {
+			e('default', {
 				package: '@aimpact/rvd',
-				version: '0.6.1-dev.02',
+				version: '0.6.2-dev.01',
 				languages: { default: 'en', supported: ['en', 'es', 'de', 'pt', 'fr'] },
 				environment: 'development',
 				'global.css': !0,
@@ -23,13 +23,13 @@ System.register([], function (a, e) {
 					agents: { projectId: 'a1l34rn1-453a-4612-b6fd-59cb742111d0' },
 					firebase: {
 						baseUrl: 'https://dev.app.rvd.ai',
-						apiKey: 'AIzaSyBYiZcPNBky2QvNdVwgCgU_v2B7feLtbQU',
-						authDomain: 'aimpact-partners-dev.firebaseapp.com',
-						databaseURL: 'https://aimpact-partners-dev-default-rtdb.firebaseio.com',
-						projectId: 'aimpact-partners-dev',
-						storageBucket: 'aimpact-partners-dev.appspot.com',
-						messagingSenderId: '1081434267674',
-						appId: '1:1081434267674:web:9396cc23e55385b5d171a3',
+						apiKey: 'AIzaSyBLJbMs8avqc-poEz_CA0qzF8-0DzAtxfI',
+						authDomain: 'ailearn-dev-393820.firebaseapp.com',
+						databaseURL: 'https://ailearn-dev-393820-default-rtdb.firebaseio.com',
+						projectId: 'ailearn-dev-393820',
+						storageBucket: 'ailearn-dev-393820.firebasestorage.app',
+						messagingSenderId: '192195764403',
+						appId: '1:192195764403:web:fa6928e365b01ee6d310c6',
 						measurementId: 'G-QLL5WFH89Y'
 					}
 				},
