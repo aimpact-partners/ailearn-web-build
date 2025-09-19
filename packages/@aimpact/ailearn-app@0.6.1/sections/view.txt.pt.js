@@ -1,1 +1,205 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle"],function(i,e){var o,a,r;return i("txt",void 0),{setters:[function(e){o=e}],execute:function(){r=o.Bundle,(a=new r({module:{vspecifier:"@aimpact/ailearn-app@0.6.1/sections/view",multibundle:!0},type:"txt"},e.meta.url).package("pt")).dependencies.update([]),(r=new Map).set("./txt",{hash:915866139,creator:function(e,o){o.txt={coins:{label:"Créditos disponíveis",assignments:"Bases de Conhecimento",modules:"Módulos"},errors:{10003:"O usuário não pôde ser aprovado, tente novamente mais tarde e se o problema persistir, entre em contato com o suporte."},form:{title:"Convidar usuário",role:{label:"Função",placeholder:"Selecionar função"},name:{label:"Nome",placeholder:"Inserir nome do usuário"},email:{label:"Email",placeholder:"Inserir email do usuário"},button:"Enviar"},forms:{approve:{title:"Deseja aprovar a solicitação do usuário?",description:"Lembre-se de que aprovar a solicitação do usuário também modifica sua função e acesso dentro da seção."},delete:{title:"Deseja excluir o usuário?",description:"Lembre-se de que excluir um usuário também exclui seu acesso e ações dentro da seção."},cancel:{title:"Deseja cancelar o convite do usuário?",description:"Lembre-se de que cancelar o convite do usuário também cancela seu acesso e ações dentro da seção."},reject:{title:"Deseja rejeitar a solicitação do usuário?",description:"Lembre-se de que rejeitar a solicitação do usuário também cancela seu acesso e ações dentro da seção."},edit:{title:"Deseja alterar a função do usuário?",info:"Lembre-se de que alterar a função também modifica o acesso e as ações do usuário dentro da seção."}},editForm:{title:"Deseja alterar a função do usuário?",info:"Lembre-se de que alterar a função também modifica o acesso e as ações do usuário dentro da seção."},item:{description:"A seção ainda não tem uma descrição"},roles:{all:{identifier:"all",title:"Todos",entity:"Todos"},manager:{title:"Gerentes",role:"Gerente",single:"Gerente",entity:"Gerentes",identifier:"managers"},member:{title:"Membros",identifier:"members",entity:"Membros"},pending:{identifier:"pendings",title:"Pendente",entity:"Pendentes"}},list:{manager:{title:"Gerentes",role:"Gerente",single:"Gerente",entity:"Gerentes"},member:{title:"Membros",role:"Membro",single:"Membro"},pendings:{title:"Pendentes",invited:"Convidado"}},ERR_GENERATING_ACTIVITIES:"Erro ao gerar seções",messages:{approval:{success:"Usuário aprovado com sucesso",error:"Erro ao aprovar usuário"},copy:"Texto copiado com sucesso",copyError:"Erro ao copiar para a área de transferência"},not_member:{title:"Olá",subtitle:"Parece que você ainda não tem acesso a",description:"Você não tem acesso à seção, deve solicitá-lo ao professor e aguardar que ele confirme",action:"Solicitar acesso",request:{error:"Erro ao solicitar acesso, tente novamente",success:"Sua solicitação de acesso foi enviada, aguarde o professor confirmar"}},invited:{title:"Olá",subtitle:"Você tem um convite para participar",description:"Inicie sua experiência de aprendizagem assistida por IA, explore conteúdo projetado especialmente para você participando de atividades interativas no seu próprio ritmo e de acordo com seu estilo de aprendizagem.",action:"Acessar"},pending:{title:"Olá",subtitle:"Sua solicitação está sendo processada",description:"Por favor, verifique seu email para confirmar a aprovação da sua solicitação. Se você está trabalhando com seu professor neste momento, pode atualizar a página para ver se já recebeu acesso.",action:"Atualizar"},orgCode:"Código da Seção",title:"Adicionar um nome",description:"Adicionar uma descrição",people:"Pessoas",viewAssignment:"Ver Bases de Conhecimento",empty:{assignments:{title:"Nenhuma base de conhecimento disponível"},rol:{title:"Nenhum membro registrado com este perfil"},pending:{title:"Nenhum membro pendente de revisão"}},system:{invite:{success:"Convite enviado"}}}}}),a.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}],a.exports.process=function({require:e,prop:o,value:a}){!e&&"txt"!==o||i("txt",e?e("./txt").txt:a)},i("__beyond_pkg",a),i("hmr",new function(){this.on=(e,o)=>a.hmr.on(e,o),this.off=(e,o)=>a.hmr.off(e,o)}),a.initialise(r)}}});
+System.register(["@beyond-js/kernel@0.1.12/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0112Bundle) {
+      dependency_0 = _beyondJsKernel0112Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.2.0"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "22.13.16"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.6.1"], ["@aimpact/rvd", "0.6.2"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.6.1/sections/view",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('pt');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 915866139,
+        creator: function (require, exports) {
+          exports.txt = {
+            "coins": {
+              "label": "Créditos disponíveis",
+              "assignments": "Bases de Conhecimento",
+              "modules": "Módulos"
+            },
+            "errors": {
+              "10003": "O usuário não pôde ser aprovado, tente novamente mais tarde e se o problema persistir, entre em contato com o suporte."
+            },
+            "form": {
+              "title": "Convidar usuário",
+              "role": {
+                "label": "Função",
+                "placeholder": "Selecionar função"
+              },
+              "name": {
+                "label": "Nome",
+                "placeholder": "Inserir nome do usuário"
+              },
+              "email": {
+                "label": "Email",
+                "placeholder": "Inserir email do usuário"
+              },
+              "button": "Enviar"
+            },
+            "forms": {
+              "approve": {
+                "title": "Deseja aprovar a solicitação do usuário?",
+                "description": "Lembre-se de que aprovar a solicitação do usuário também modifica sua função e acesso dentro da seção."
+              },
+              "delete": {
+                "title": "Deseja excluir o usuário?",
+                "description": "Lembre-se de que excluir um usuário também exclui seu acesso e ações dentro da seção."
+              },
+              "cancel": {
+                "title": "Deseja cancelar o convite do usuário?",
+                "description": "Lembre-se de que cancelar o convite do usuário também cancela seu acesso e ações dentro da seção."
+              },
+              "reject": {
+                "title": "Deseja rejeitar a solicitação do usuário?",
+                "description": "Lembre-se de que rejeitar a solicitação do usuário também cancela seu acesso e ações dentro da seção."
+              },
+              "edit": {
+                "title": "Deseja alterar a função do usuário?",
+                "info": "Lembre-se de que alterar a função também modifica o acesso e as ações do usuário dentro da seção."
+              }
+            },
+            "editForm": {
+              "title": "Deseja alterar a função do usuário?",
+              "info": "Lembre-se de que alterar a função também modifica o acesso e as ações do usuário dentro da seção."
+            },
+            "item": {
+              "description": "A seção ainda não tem uma descrição"
+            },
+            "roles": {
+              "all": {
+                "identifier": "all",
+                "title": "Todos",
+                "entity": "Todos"
+              },
+              "manager": {
+                "title": "Gerentes",
+                "role": "Gerente",
+                "single": "Gerente",
+                "entity": "Gerentes",
+                "identifier": "managers"
+              },
+              "member": {
+                "title": "Membros",
+                "identifier": "members",
+                "entity": "Membros"
+              },
+              "pending": {
+                "identifier": "pendings",
+                "title": "Pendente",
+                "entity": "Pendentes"
+              }
+            },
+            "list": {
+              "manager": {
+                "title": "Gerentes",
+                "role": "Gerente",
+                "single": "Gerente",
+                "entity": "Gerentes"
+              },
+              "member": {
+                "title": "Membros",
+                "role": "Membro",
+                "single": "Membro"
+              },
+              "pendings": {
+                "title": "Pendentes",
+                "invited": "Convidado"
+              }
+            },
+            "ERR_GENERATING_ACTIVITIES": "Erro ao gerar seções",
+            "messages": {
+              "approval": {
+                "success": "Usuário aprovado com sucesso",
+                "error": "Erro ao aprovar usuário"
+              },
+              "copy": "Texto copiado com sucesso",
+              "copyError": "Erro ao copiar para a área de transferência"
+            },
+            "not_member": {
+              "title": "Olá",
+              "subtitle": "Parece que você ainda não tem acesso a",
+              "description": "Você não tem acesso à seção, deve solicitá-lo ao professor e aguardar que ele confirme",
+              "action": "Solicitar acesso",
+              "request": {
+                "error": "Erro ao solicitar acesso, tente novamente",
+                "success": "Sua solicitação de acesso foi enviada, aguarde o professor confirmar"
+              }
+            },
+            "invited": {
+              "title": "Olá",
+              "subtitle": "Você tem um convite para participar",
+              "description": "Inicie sua experiência de aprendizagem assistida por IA, explore conteúdo projetado especialmente para você participando de atividades interativas no seu próprio ritmo e de acordo com seu estilo de aprendizagem.",
+              "action": "Acessar"
+            },
+            "pending": {
+              "title": "Olá",
+              "subtitle": "Sua solicitação está sendo processada",
+              "description": "Por favor, verifique seu email para confirmar a aprovação da sua solicitação. Se você está trabalhando com seu professor neste momento, pode atualizar a página para ver se já recebeu acesso.",
+              "action": "Atualizar"
+            },
+            "orgCode": "Código da Seção",
+            "title": "Adicionar um nome",
+            "description": "Adicionar uma descrição",
+            "people": "Pessoas",
+            "viewAssignment": "Ver Bases de Conhecimento",
+            "empty": {
+              "assignments": {
+                "title": "Nenhuma base de conhecimento disponível"
+              },
+              "rol": {
+                "title": "Nenhum membro registrado com este perfil"
+              },
+              "pending": {
+                "title": "Nenhum membro pendente de revisão"
+              }
+            },
+            "system": {
+              "invite": {
+                "success": "Convite enviado"
+              }
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

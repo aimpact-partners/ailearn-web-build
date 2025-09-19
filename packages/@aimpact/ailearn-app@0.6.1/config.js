@@ -11,7 +11,7 @@ System.register([], function (_export, _context) {
           "default": "en",
           "supported": ["en", "es", "de", "pt", "fr"]
         },
-        "environment": "development",
+        "environment": "local",
         "global.css": true,
         "params": {
           "container": "file",
