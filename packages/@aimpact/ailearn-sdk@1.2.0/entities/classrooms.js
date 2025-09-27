@@ -1,4 +1,4 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/groups", "@beyond-js/reactive@2.1.0/entities/collection", "@beyond-js/http-suite@0.1.1/api"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@aimpact/ailearn-sdk@1.2.0/groups", "@beyond-js/reactive@2.1.1/entities/collection", "@beyond-js/http-suite@0.1.1/api"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, Classrooms, Classroom, __beyond_pkg, hmr;
@@ -7,18 +7,18 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/
     Classroom: void 0
   });
   return {
-    setters: [function (_beyondJsKernel0112Bundle) {
-      dependency_0 = _beyondJsKernel0112Bundle;
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
     }, function (_aimpactAilearnSdk120Groups) {
       dependency_1 = _aimpactAilearnSdk120Groups;
-    }, function (_beyondJsReactive210EntitiesCollection) {
-      dependency_2 = _beyondJsReactive210EntitiesCollection;
+    }, function (_beyondJsReactive211EntitiesCollection) {
+      dependency_2 = _beyondJsReactive211EntitiesCollection;
     }, function (_beyondJsHttpSuite011Api) {
       dependency_3 = _beyondJsHttpSuite011Api;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.1.1"], ["@aimpact/chat-sdk", "1.5.4"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "2.0.1"], ["@beyond-js/backend", "0.1.9"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@firebase/auth", "1.10.0"], ["@types/node", "22.13.16"], ["dexie", "4.0.11"], ["firebase", "10.14.1"], ["pragmate-ui", "0.0.6"], ["react-select", "5.10.1"], ["socket.io-client", "4.8.1"], ["zod", "3.24.2"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/rvd", "0.5.3"]]);
+        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.1.1"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@firebase/auth", "1.10.0"], ["@types/node", "22.13.16"], ["dexie", "4.0.11"], ["firebase", "10.14.1"], ["pragmate-ui", "0.0.6"], ["react-select", "5.10.1"], ["socket.io-client", "4.8.1"], ["zod", "3.24.2"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/rvd", "0.6.2"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -124,4 +124,4 @@ System.register(["@beyond-js/kernel@0.1.12/bundle", "@aimpact/ailearn-sdk@1.2.0/
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZ3JvdXBzIiwicmVxdWlyZSIsIl9pdGVtIiwiQ2xhc3Nyb29tcyIsIkdyb3VwcyIsImNvbnN0cnVjdG9yIiwiYXJncyIsIkNsYXNzcm9vbSIsImxvYWQiLCJ1c2VyIiwiZW5kcG9pbnQiLCJleHBvcnRzIiwiR3JvdXBJdGVtIiwiYXBpIiwicHJvcGVydGllcyJdLCJzb3VyY2VzIjpbIi9jb2xsZWN0aW9uLnRzIiwiL2l0ZW0udHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxPQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxLQUFBLEdBQUFELE9BQUE7VUFPTyxXQURQO1VBQ2lCLE1BQU9FLFVBQVcsU0FBUUgsT0FBQSxDQUFBSSxNQUFNO1lBQ2hEQyxZQUFZQyxJQUFJO2NBQ2YsS0FBSyxDQUFDLFlBQVksRUFBRUosS0FBQSxDQUFBSyxTQUFTLENBQUM7WUFDL0I7WUFFQUMsSUFBSUEsQ0FBQ0YsSUFBQSxHQUFvQztjQUFFRyxJQUFJLEVBQUU7WUFBSyxDQUFFO2NBQ3ZELElBQUlILElBQUksQ0FBQ0csSUFBSSxFQUFFO2dCQUNkLE9BQU9ILElBQUksQ0FBQ0csSUFBSTtnQkFDaEI7Z0JBQ0EsT0FBTyxLQUFLLENBQUNELElBQUksQ0FBQztrQkFBRUUsUUFBUSxFQUFFLG1CQUFtQjtrQkFBRSxHQUFHSjtnQkFBSSxDQUFFLENBQUM7O2NBRTlELE9BQU8sS0FBSyxDQUFDRSxJQUFJLENBQUNGLElBQUksQ0FBQztZQUN4Qjs7VUFDQUssT0FBQSxDQUFBUixVQUFBLEdBQUFBLFVBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDckJELElBQUFILE9BQUEsR0FBQUMsT0FBQTtVQUdPLFlBRFA7VUFDa0IsTUFBT00sU0FBVSxTQUFRUCxPQUFBLENBQUFZLFNBQVM7WUFDbkQsQ0FBQUMsR0FBSTtZQVNKUixZQUFZQyxJQUFLO2NBQ2hCLEtBQUssQ0FBQyxZQUFZLEVBQUU7Z0JBQ25CLEdBQUdBLElBQUk7Z0JBQ1BRLFVBQVUsRUFBRSxDQUFDLFNBQVMsRUFBRSxVQUFVLEVBQUUsT0FBTyxFQUFFLGFBQWEsRUFBRSxnQkFBZ0IsRUFBRSxNQUFNO2VBQ3BGLENBQUM7WUFDSDs7VUFDQUgsT0FBQSxDQUFBSixTQUFBLEdBQUFBLFNBQUEiLCJpZ25vcmVMaXN0IjpbXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZ3JvdXBzIiwicmVxdWlyZSIsIl9pdGVtIiwiQ2xhc3Nyb29tcyIsIkdyb3VwcyIsImNvbnN0cnVjdG9yIiwiYXJncyIsIkNsYXNzcm9vbSIsImxvYWQiLCJ1c2VyIiwiZW5kcG9pbnQiLCJleHBvcnRzIiwiR3JvdXBJdGVtIiwiYXBpIiwicHJvcGVydGllcyJdLCJzb3VyY2VzIjpbIi8vY29sbGVjdGlvbi50cy8iLCIvL2l0ZW0udHMvIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsT0FBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsS0FBQSxHQUFBRCxPQUFBO1VBT08sV0FEUDtVQUNpQixNQUFPRSxVQUFXLFNBQVFILE9BQUEsQ0FBQUksTUFBTTtZQUNoREMsWUFBWUMsSUFBSTtjQUNmLEtBQUssQ0FBQyxZQUFZLEVBQUVKLEtBQUEsQ0FBQUssU0FBUyxDQUFDO1lBQy9CO1lBRUFDLElBQUlBLENBQUNGLElBQUEsR0FBb0M7Y0FBRUcsSUFBSSxFQUFFO1lBQUssQ0FBRTtjQUN2RCxJQUFJSCxJQUFJLENBQUNHLElBQUksRUFBRTtnQkFDZCxPQUFPSCxJQUFJLENBQUNHLElBQUk7Z0JBQ2hCO2dCQUNBLE9BQU8sS0FBSyxDQUFDRCxJQUFJLENBQUM7a0JBQUVFLFFBQVEsRUFBRSxtQkFBbUI7a0JBQUUsR0FBR0o7Z0JBQUksQ0FBRSxDQUFDOztjQUU5RCxPQUFPLEtBQUssQ0FBQ0UsSUFBSSxDQUFDRixJQUFJLENBQUM7WUFDeEI7O1VBQ0FLLE9BQUEsQ0FBQVIsVUFBQSxHQUFBQSxVQUFBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ3JCRCxJQUFBSCxPQUFBLEdBQUFDLE9BQUE7VUFHTyxZQURQO1VBQ2tCLE1BQU9NLFNBQVUsU0FBUVAsT0FBQSxDQUFBWSxTQUFTO1lBQ25ELENBQUFDLEdBQUk7WUFTSlIsWUFBWUMsSUFBSztjQUNoQixLQUFLLENBQUMsWUFBWSxFQUFFO2dCQUNuQixHQUFHQSxJQUFJO2dCQUNQUSxVQUFVLEVBQUUsQ0FBQyxTQUFTLEVBQUUsVUFBVSxFQUFFLE9BQU8sRUFBRSxhQUFhLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTTtlQUNwRixDQUFDO1lBQ0g7O1VBQ0FILE9BQUEsQ0FBQUosU0FBQSxHQUFBQSxTQUFBIiwiaWdub3JlTGlzdCI6W119

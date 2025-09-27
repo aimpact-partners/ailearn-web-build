@@ -34,7 +34,7 @@ var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
   value: true
 }), mod);
 
-// .beyond/uimport/temp/firebase/app.11.9.1.js
+// .beyond/uimport/firebase/app.11.9.1.js
 var app_11_9_1_exports = {};
 module.exports = __toCommonJS(app_11_9_1_exports);
 
@@ -46,28 +46,32 @@ var name = "firebase";
 var version = "11.9.1";
 (0, import_app.registerVersion)(name, version, "app");
 
-// .beyond/uimport/temp/firebase/app.11.9.1.js
+// .beyond/uimport/firebase/app.11.9.1.js
 __reExport(app_11_9_1_exports, index_esm_exports, module.exports);
-/**
- * @license
- * Copyright 2020 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*! Bundled license information:
+
+firebase/app/dist/esm/index.esm.js:
+  (**
+   * @license
+   * Copyright 2020 Google LLC
+   *
+   * Licensed under the Apache License, Version 2.0 (the "License");
+   * you may not use this file except in compliance with the License.
+   * You may obtain a copy of the License at
+   *
+   *   http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Unless required by applicable law or agreed to in writing, software
+   * distributed under the License is distributed on an "AS IS" BASIS,
+   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   * See the License for the specific language governing permissions and
+   * limitations under the License.
+   *)
+*/
 };
 
 code(module, require);
 _exports(module.exports);
 }}});
 
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC90ZW1wL2ZpcmViYXNlL2FwcC4xMS45LjEuanMiLCIuLi9ub2RlX21vZHVsZXMvZmlyZWJhc2UvYXBwL2luZGV4LnRzIl0sIm5hbWVzIjpbImFwcF8xMV85XzFfZXhwb3J0cyIsIm1vZHVsZSIsImV4cG9ydHMiLCJfX3RvQ29tbW9uSlMiLCJpbXBvcnRfYXBwIiwicmVnaXN0ZXJWZXJzaW9uIiwibmFtZSIsInZlcnNpb24iLCJfX3JlRXhwb3J0IiwiaW5kZXhfZXNtX2V4cG9ydHMiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxJQUFBQSxrQkFBQTtBQUFBQyxNQUFBLENBQUFDLE9BQUEsR0FBQUMsWUFBQSxDQUFBSCxrQkFBQTs7Ozs7Ozs7SUNtQkFJLFVBQUEsQ0FBQUMsZUFBQSxFQUFnQkMsSUFBQSxFQUFNQyxPQUFBLEVBQVMsS0FBSzs7O0FEbkJwQ0MsVUFBQSxDQUFBUixrQkFBQSxFQUFjUyxpQkFBQSxFQUFkUixNQUFBLENBQUFDLE9BQUEiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii9haS9haWxlYXJuL2NsaWVudC9hcHBzL3J2ZC9vdXQifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC9maXJlYmFzZS9hcHAuMTEuOS4xLmpzIiwiLi4vbm9kZV9tb2R1bGVzL2ZpcmViYXNlL2FwcC9pbmRleC50cyJdLCJuYW1lcyI6WyJhcHBfMTFfOV8xX2V4cG9ydHMiLCJtb2R1bGUiLCJleHBvcnRzIiwiX190b0NvbW1vbkpTIiwiaW1wb3J0X2FwcCIsInJlZ2lzdGVyVmVyc2lvbiIsIm5hbWUiLCJ2ZXJzaW9uIiwiX19yZUV4cG9ydCIsImluZGV4X2VzbV9leHBvcnRzIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsSUFBQUEsa0JBQUE7QUFBQUMsTUFBQSxDQUFBQyxPQUFBLEdBQUFDLFlBQUEsQ0FBQUgsa0JBQUE7Ozs7Ozs7O0lDbUJBSSxVQUFBLENBQUFDLGVBQUEsRUFBZ0JDLElBQUEsRUFBTUMsT0FBQSxFQUFTLEtBQUs7OztBRG5CcENDLFVBQUEsQ0FBQVIsa0JBQUEsRUFBY1MsaUJBQUEsRUFBZFIsTUFBQSxDQUFBQyxPQUFBIiwiZmlsZSI6IiIsInNvdXJjZVJvb3QiOiIvYWkvYWlsZWFybi9jbGllbnQvYXBwcy9ydmQvb3V0In0=
