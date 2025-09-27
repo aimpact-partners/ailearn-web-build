@@ -1,10 +1,10 @@
-System.register([], function (a, e) {
+System.register([], function (_export, _context) {
 	return {
 		setters: [],
 		execute: function () {
-			a('default', {
+			_export('default', {
 				package: '@aimpact/rvd',
-				version: '0.5.7-beta-05',
+				version: '0.6.2-beta.04',
 				languages: { default: 'en', supported: ['en', 'es', 'de', 'pt', 'fr'] },
 				environment: 'quality',
 				'global.css': !0,
@@ -20,6 +20,8 @@ System.register([], function (a, e) {
 						agents: 'https://beta.agents.api.aimpact.partners',
 						realtime: 'wss://beta.agents.api.aimpact.partners'
 					},
+					ailearn: 'https://dev.ailearn.api.aimpact.partners',
+					agents: { projectId: 'a1l34rn1-453a-4612-b6fd-59cb742111d0' },
 					firebase: {
 						baseUrl: 'https://beta.app.rvd.ai',
 						apiKey: 'AIzaSyAEEozzwR0cguqynxvL1qB38i8liOCgtJc',
