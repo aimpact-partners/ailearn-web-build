@@ -1,7 +1,7 @@
-System.register(["@beyond-js/kernel@0.1.12/bundle","@beyond-js/kernel@0.1.12/core"], (_exports, _context) => {
+System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/core"], (_exports, _context) => {
 
 const bimport = specifier => {
-	const dependencies = new Map([["@beyond-js/kernel","0.1.12"],["@beyond-js/widgets","1.1.2"]]);
+	const dependencies = new Map([["@beyond-js/kernel","0.1.14"],["@beyond-js/widgets","1.1.2"]]);
 	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
 };
 
@@ -9,7 +9,7 @@ const bimport = specifier => {
 var dependencies = new Map();
 var require = dependency => dependencies.get(dependency);
 return {
-setters: [dep => dependencies.set('@beyond-js/kernel@0.1.12/bundle', dep), dep => dependencies.set('@beyond-js/kernel@0.1.12/core', dep)],
+setters: [dep => dependencies.set('@beyond-js/kernel@0.1.14/bundle', dep), dep => dependencies.set('@beyond-js/kernel@0.1.14/core', dep)],
 execute: function() {
 // Prevent esbuild from considering the context to be amd
 const define = void 0;
@@ -69,8 +69,8 @@ __export(render_1_1_2_exports, {
 module.exports = __toCommonJS(render_1_1_2_exports);
 
 // node_modules/@beyond-js/widgets/render/render.browser.mjs
-var dependency_0 = __toESM(require("@beyond-js/kernel@0.1.12/bundle"), 0);
-var dependency_1 = __toESM(require("@beyond-js/kernel@0.1.12/core"), 0);
+var dependency_0 = __toESM(require("@beyond-js/kernel@0.1.14/bundle"), 0);
+var dependency_1 = __toESM(require("@beyond-js/kernel@0.1.14/core"), 0);
 var import_meta = {};
 var {
   Bundle: __Bundle
