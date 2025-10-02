@@ -1,33 +1,26 @@
 System.register([], function (_export, _context) {
-	'use strict';
-
 	return {
 		setters: [],
 		execute: function () {
 			_export('default', {
 				package: '@aimpact/rvd',
-				version: '0.6.4-dev.02',
-				languages: {
-					default: 'en',
-					supported: ['en', 'es', 'de', 'pt', 'fr']
-				},
+				version: '0.6.4-dev.03',
+				languages: { default: 'en', supported: ['en', 'es', 'de', 'pt', 'fr'] },
 				environment: 'development',
-				'global.css': true,
+				'global.css': !0,
 				params: {
 					app: 'rvd',
 					APP_LOGO: '/assets/images/branding/logo.png',
 					APP_NAME: 'RVD AI',
 					APP_SUPPORT_EMAIL: 'soporte@rvd.ai',
-					tutorials: true,
+					tutorials: !0,
 					baseUrl: 'https://dev.app.rvd.ai',
 					apis: {
 						ailearn: 'https://dev.ailearn.api.aimpact.partners',
 						agents: 'https://dev.agents.api.aimpact.partners',
 						realtime: 'wss://dev.agents.api.aimpact.partners'
 					},
-					agents: {
-						projectId: 'a1l34rn1-453a-4612-b6fd-59cb742111d0'
-					},
+					agents: { projectId: 'a1l34rn1-453a-4612-b6fd-59cb742111d0' },
 					firebase: {
 						baseUrl: 'https://dev.app.rvd.ai',
 						apiKey: 'AIzaSyBLJbMs8avqc-poEz_CA0qzF8-0DzAtxfI',
