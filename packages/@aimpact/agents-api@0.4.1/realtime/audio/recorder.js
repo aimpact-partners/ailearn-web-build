@@ -1,2 +1,482 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@aimpact/agents-api@0.4.1/realtime/audio/packer","@beyond-js/events@0.0.7/events","@beyond-js/kernel@0.1.14/core","@aimpact/agents-api@0.4.1/realtime/audio/recorder/worklet/bridge"],function(_export,_context){var dependency_0,dependency_1,dependency_2,dependency_3,dependency_4,__pkg,__Bundle;return _export({IDevice:void 0,devices:void 0,IRecorderConfig:void 0,Recorder:void 0}),{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_aimpactAgentsApi041RealtimeAudioPacker){dependency_1=_aimpactAgentsApi041RealtimeAudioPacker},function(_beyondJsEvents007Events){dependency_2=_beyondJsEvents007Events},function(_beyondJsKernel0114Core){dependency_3=_beyondJsKernel0114Core},function(_aimpactAgentsApi041RealtimeAudioRecorderWorkletBridge){dependency_4=_aimpactAgentsApi041RealtimeAudioRecorderWorkletBridge}],execute:function(){__Bundle=dependency_0.Bundle,(__pkg=new __Bundle({module:{vspecifier:"@aimpact/agents-api@0.4.1/realtime/audio/recorder"},type:"ts"},_context.meta.url).package()).dependencies.update([["@aimpact/agents-api/realtime/audio/packer",dependency_1],["@beyond-js/events/events",dependency_2],["@beyond-js/kernel/core",dependency_3],["@aimpact/agents-api/realtime/audio/recorder/worklet/bridge",dependency_4]]),(__Bundle=new Map).set("./chunks",{hash:2640714357,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.RecorderChunks=void 0;var _packer=require("@aimpact/agents-api/realtime/audio/packer");exports.RecorderChunks=class{#buffer={raw:new ArrayBuffer(0),mono:new ArrayBuffer(0)};#size;constructor(config){this.#size=config?.size??8192}process({raw,mono}){if(!this.#size)return{raw:raw,mono:mono};let buffer=this.#buffer;if(this.#buffer={raw:_packer.WavPacker.mergeBuffers(buffer.raw,raw),mono:_packer.WavPacker.mergeBuffers(buffer.mono,mono)},this.#buffer.mono.byteLength>=this.#size){let buffer=this.#buffer;return this.#buffer={raw:new ArrayBuffer(0),mono:new ArrayBuffer(0)},buffer}}pause(){this.#buffer.raw.byteLength&&this.process(this.#buffer)}}}}),__Bundle.set("./device",{hash:1032545960,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.Device=void 0;var _recorder=require("./recorder");exports.Device=class{#id;get id(){return this.#id}#label;get label(){return this.#label}#groupId;get groupId(){return this.#groupId}#default;get default(){return this.#default}#recorder;get recorder(){return this.#recorder}constructor(device){this.#id=device.deviceId,this.#label=device.label,this.#default=!!device.default,this.#groupId=device.groupId}async record(config){this.#recorder||(this.#recorder=new _recorder.Recorder(this,config)),await this.#recorder.record()}async pause(){if(!this.#recorder)throw new Error("Recorder has not been initialized");await this.#recorder.pause()}async stop(){if(!this.#recorder)throw new Error("Recorder has not been initialized");await this.#recorder.stop()}}}}),__Bundle.set("./index",{hash:2424296560,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.devices=void 0;var _permission=require("./permission"),_device=require("./device");exports.devices=new class extends Map{#available=!1;get available(){return this.#available}get default(){var devices=[...this.values()],def=devices.find(device=>device.default);return def||devices[0]}constructor(){super(),navigator.mediaDevices&&"getUserMedia"in navigator.mediaDevices?navigator.mediaDevices.addEventListener("devicechange",async()=>this.prepare()):this.#available=!1}async prepare(){if(await _permission.permissions.request(),"granted"!==_permission.permissions.state)return!1;(await(async()=>{var devices=await navigator.mediaDevices.enumerateDevices();let def=devices.find(device=>"default"===device.deviceId);var devices=devices.filter(device=>"audioinput"===device.kind&&device!==def),other=devices.find(device=>device.groupId===def.groupId),other=other||def;return other.default=!0,devices.unshift(other),devices})()).forEach(item=>{var device=new _device.Device(item);this.set(item.deviceId,device)})}}}}),__Bundle.set("./permission",{hash:3084074630,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.permissions=void 0;var _events=require("@beyond-js/events/events"),_core=require("@beyond-js/kernel/core");exports.permissions=new class extends _events.Events{#ready;get ready(){if(this.#ready)return this.#ready;this.#ready=new _core.PendingPromise;var permission=navigator.permissions?.query({name:"microphone"});if(permission instanceof Promise)return permission.then(permission=>{(this.#permission=permission).onchange=this.#onchange.bind(this),this.#ready.resolve()}).catch(error=>{this.#ready.resolve()}),this.#ready;this.#ready.resolve()}#permission;#state;get state(){return this.#state}#error;get error(){return this.#error}#set(state){state!==this.#state&&(this.#state=state)&&this.trigger("change")}#onchange(status){this.#set(status.state)}async request(){await this.#ready;try{var stream=await navigator.mediaDevices.getUserMedia({audio:!0});return stream?(stream.getTracks().forEach(track=>track.stop()),this.#set("granted")):this.#set("denied")}catch(error){return this.#error=error,this.#set("denied")}}release(){this.#permission&&(this.#permission.onchange=void 0)}}}}),__Bundle.set("./recorder",{hash:1741352668,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.Recorder=void 0;var _bridge=require("@aimpact/agents-api/realtime/audio/recorder/worklet/bridge"),_events=require("@beyond-js/events/events"),_core=require("@beyond-js/kernel/core"),_chunks=require("./chunks");class Recorder extends _events.Events{#worklet;#chunks;#device;get device(){return this.#device}#config;get config(){return this.#config}#status="stopped";get status(){return this.#status}#error;get error(){return this.#error}#ready;get ready(){return this.#ready||(this.#ready=new _core.PendingPromise,this.#setup().then(()=>this.#ready.resolve()).catch(error=>{this.#error=error,this.#ready.resolve()})),this.#ready}#context;constructor(device,config){super(),this.#device=device,this.#config=config,this.#config.samplerate=this.#config.samplerate??44100,this.#chunks=new _chunks.RecorderChunks(config.chunks)}async#setup(){var context={};try{var config={audio:{deviceId:{exact:this.#device.id}}};context.stream=await navigator.mediaDevices.getUserMedia(config)}catch(error){return void(this.#error=error)}context.context=new AudioContext({sampleRate:this.#config.samplerate}),context.media=context.context.createMediaStreamSource(context.stream);var analyser,config=this.#worklet=new _bridge.RecorderWorkletBridge(context.context);await config.setup(),config.error?this.#error=config.error:(config.create(),config=context.media.connect(config.node),(analyser=context.context.createAnalyser()).fftSize=8192,analyser.smoothingTimeConstant=.1,config.connect(analyser),this.#config.debug&&(console.warn("Warning: Output to speakers may affect sound quality, especially due to system audio feedback preventative measures. Use only for debugging"),analyser.connect(context.context.destination)),this.#context=context)}#onchunk=({raw,mono})=>{raw=this.#chunks.process({raw:raw,mono:mono});this.trigger("chunk",raw)};async record(){if(await this.ready,this.#worklet.check()){if(!["stopped","paused"].includes(this.#status))throw new Error("Cannot start recording as it is not stopped or paused");this.#status="starting";try{var config=this.#config;await this.#worklet.dispatch("record",{config:config}),this.#status="recording"}catch(exc){throw this.#status="stopped",exc}this.#worklet.on("chunk",this.#onchunk)}}async pause(){if(!this.#context)throw new Error("Recorder not initialized");this.#worklet.check()&&(this.#worklet.off("chunk",this.#onchunk),this.#status="pausing",await this.#worklet.dispatch("pause"),this.#status="paused",this.#chunks.pause())}async stop(){if(!this.#context)throw new Error("Recorder not initialized");this.#worklet.check()&&(this.#worklet.off("chunk",this.#onchunk),this.#status="stopping",await this.#worklet.dispatch("stop"),this.#status="stopped",this.#context.stream.getTracks().forEach(track=>track.stop()))}}exports.Recorder=Recorder}}),__pkg.exports.descriptor=[{im:"./device",from:"IDevice",name:"IDevice"},{im:"./index",from:"devices",name:"devices"},{im:"./recorder",from:"IRecorderConfig",name:"IRecorderConfig"},{im:"./recorder",from:"Recorder",name:"Recorder"}],__pkg.exports.process=function({require,prop,value}){!require&&"IDevice"!==prop||_export("IDevice",require?require("./device").IDevice:value),!require&&"devices"!==prop||_export("devices",require?require("./index").devices:value),!require&&"IRecorderConfig"!==prop||_export("IRecorderConfig",require?require("./recorder").IRecorderConfig:value),!require&&"Recorder"!==prop||_export("Recorder",require?require("./recorder").Recorder:value)},_export("__beyond_pkg",__pkg),_export("hmr",new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener),this.off=(event,listener)=>__pkg.hmr.off(event,listener)}),__pkg.initialise(__Bundle)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8vY2h1bmtzLnRzLyIsIi8vZGV2aWNlLnRzLyIsIi8vaW5kZXgudHMvIiwiLy9wZXJtaXNzaW9uLnRzLyIsIi8vcmVjb3JkZXIudHMvIl0sIm5hbWVzIjpbIl9wYWNrZXIiLCJyZXF1aXJlIiwiZXhwb3J0cyIsIlJlY29yZGVyQ2h1bmtzIiwiI2J1ZmZlciIsInJhdyIsIkFycmF5QnVmZmVyIiwibW9ubyIsIiNzaXplIiwiY29uc3RydWN0b3IiLCJjb25maWciLCJ0aGlzIiwic2l6ZSIsInByb2Nlc3MiLCJidWZmZXIiLCJXYXZQYWNrZXIiLCJtZXJnZUJ1ZmZlcnMiLCJieXRlTGVuZ3RoIiwicGF1c2UiLCJfcmVjb3JkZXIiLCJEZXZpY2UiLCIjaWQiLCJpZCIsIiNsYWJlbCIsImxhYmVsIiwiI2dyb3VwSWQiLCJncm91cElkIiwiI2RlZmF1bHQiLCJkZWZhdWx0IiwiI3JlY29yZGVyIiwicmVjb3JkZXIiLCJkZXZpY2UiLCJkZXZpY2VJZCIsInJlY29yZCIsIlJlY29yZGVyIiwiYXdhaXQiLCJFcnJvciIsInN0b3AiLCJfcGVybWlzc2lvbiIsIl9kZXZpY2UiLCJkZXZpY2VzIiwiTWFwIiwiI2F2YWlsYWJsZSIsImF2YWlsYWJsZSIsInZhbHVlcyIsImRlZiIsImZpbmQiLCJzdXBlciIsIm5hdmlnYXRvciIsIm1lZGlhRGV2aWNlcyIsImFkZEV2ZW50TGlzdGVuZXIiLCJhc3luYyIsInByZXBhcmUiLCJwZXJtaXNzaW9ucyIsInJlcXVlc3QiLCJzdGF0ZSIsImVudW1lcmF0ZURldmljZXMiLCJhdWRpb2lucHV0cyIsImZpbHRlciIsImtpbmQiLCJvdGhlciIsInJlcGxhY2VtZW50IiwidW5zaGlmdCIsImZvckVhY2giLCJpdGVtIiwic2V0IiwiX2V2ZW50cyIsIl9jb3JlIiwiRXZlbnRzIiwiI3JlYWR5IiwicmVhZHkiLCJQZW5kaW5nUHJvbWlzZSIsInBlcm1pc3Npb24iLCJxdWVyeSIsIm5hbWUiLCJQcm9taXNlIiwidGhlbiIsIiNwZXJtaXNzaW9uIiwib25jaGFuZ2UiLCIjb25jaGFuZ2UiLCJiaW5kIiwicmVzb2x2ZSIsImNhdGNoIiwiZXJyb3IiLCIjc3RhdGUiLCIjZXJyb3IiLCIjc2V0IiwidHJpZ2dlciIsInN0YXR1cyIsInN0cmVhbSIsImdldFVzZXJNZWRpYSIsImF1ZGlvIiwiZ2V0VHJhY2tzIiwidHJhY2siLCJyZWxlYXNlIiwiX2JyaWRnZSIsIl9jaHVua3MiLCIjd29ya2xldCIsIiNjaHVua3MiLCIjZGV2aWNlIiwiI2NvbmZpZyIsIiNzdGF0dXMiLCIjc2V0dXAiLCIjY29udGV4dCIsInNhbXBsZXJhdGUiLCJjaHVua3MiLCJjb250ZXh0IiwiZXhhY3QiLCJBdWRpb0NvbnRleHQiLCJzYW1wbGVSYXRlIiwibWVkaWEiLCJjcmVhdGVNZWRpYVN0cmVhbVNvdXJjZSIsImFuYWx5c2VyIiwid29ya2xldCIsIlJlY29yZGVyV29ya2xldEJyaWRnZSIsInNldHVwIiwiY3JlYXRlIiwibm9kZSIsImNvbm5lY3QiLCJjcmVhdGVBbmFseXNlciIsImZmdFNpemUiLCJzbW9vdGhpbmdUaW1lQ29uc3RhbnQiLCJkZWJ1ZyIsImNvbnNvbGUiLCJ3YXJuIiwiZGVzdGluYXRpb24iLCIjb25jaHVuayIsImNodW5rIiwiY2hlY2siLCJpbmNsdWRlcyIsImRpc3BhdGNoIiwiZXhjIiwib24iLCJvZmYiXSwibWFwcGluZ3MiOiJ1OUNBQUEsSUFBQUEsUUFBQUMsUUFBQSwyQ0FBQSxFQXFDQ0MsUUFBQUMscUJBOUJBQyxRQUFtRCxDQUFFQyxJQUFLLElBQUlDLFlBQVksQ0FBQyxFQUFHQyxLQUFNLElBQUlELFlBQVksQ0FBQyxDQUFDLEVBQ3RHRSxNQUVBQyxZQUFZQyxRQUNYQyxLQUFLSCxNQUFRRSxRQUFRRSxNQUFRLElBQzlCLENBRUFDLFFBQVEsQ0FBRVIsSUFBS0UsSUFBSSxHQUNsQixHQUFJLENBQUNJLEtBQUtILE1BQU8sTUFBTyxDQUFFSCxJQUFBQSxJQUFLRSxLQUFBQSxJQUFJLEVBRW5DLElBQU1PLE9BQVNILEtBQUtQLFFBTXBCLEdBTEFP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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@aimpact/agents-api@0.4.1/realtime/audio/packer", "@beyond-js/events@0.0.7/events", "@beyond-js/kernel@0.1.14/core", "@aimpact/agents-api@0.4.1/realtime/audio/recorder/worklet/bridge"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, IDevice, devices, IRecorderConfig, Recorder, __beyond_pkg, hmr;
+  _export({
+    IDevice: void 0,
+    devices: void 0,
+    IRecorderConfig: void 0,
+    Recorder: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_aimpactAgentsApi041RealtimeAudioPacker) {
+      dependency_1 = _aimpactAgentsApi041RealtimeAudioPacker;
+    }, function (_beyondJsEvents007Events) {
+      dependency_2 = _beyondJsEvents007Events;
+    }, function (_beyondJsKernel0114Core) {
+      dependency_3 = _beyondJsKernel0114Core;
+    }, function (_aimpactAgentsApi041RealtimeAudioRecorderWorkletBridge) {
+      dependency_4 = _aimpactAgentsApi041RealtimeAudioRecorderWorkletBridge;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/firestore-collection", "0.0.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/response", "0.0.3"], ["@google-cloud/storage", "7.15.2"], ["express", "4.21.2"], ["express-rate-limit", "7.2.0"], ["express-openapi-validator", "5.3.9"], ["firebase-admin", "12.7.0"], ["multer", "1.4.5-lts.1"], ["form-data", "4.0.2"], ["jsonwebtoken", "9.0.2"], ["ws", "8.18.1"], ["socket.io", "4.8.1"], ["node-fetch", "2.7.0"], ["dotenv", "16.4.7"], ["fluent-ffmpeg", "2.1.3"], ["dayjs", "1.11.13"], ["openai", "4.83.0"], ["uuid", "10.0.0"], ["find-up", "7.0.0"], ["postmark", "4.0.2"], ["socket.io-client", "4.8.1"], ["@beyond-js/react-18-widgets", "1.1.3"], ["@beyond-js/bee", "0.0.6"], ["@beyond-js/local", "0.1.3"], ["@types/jsonwebtoken", "9.0.9"], ["@types/express", "5.0.0"], ["@types/node", "20.6.5"], ["@types/uuid", "9.0.8"], ["@types/ws", "8.5.14"], ["@types/react", "18.3.18"], ["@types/audioworklet", "0.0.71"], ["swagger-ui-express", "5.0.1"], ["yaml", "2.7.0"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/rvd", "0.6.3"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/agents-api@0.4.1/realtime/audio/recorder"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@aimpact/agents-api/realtime/audio/packer', dependency_1], ['@beyond-js/events/events', dependency_2], ['@beyond-js/kernel/core', dependency_3], ['@aimpact/agents-api/realtime/audio/recorder/worklet/bridge', dependency_4]]);
+      ims = new Map();
+      /************************
+      INTERNAL MODULE: ./chunks
+      ************************/
+      ims.set('./chunks', {
+        hash: 2640714357,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.RecorderChunks = void 0;
+          var _packer = require("@aimpact/agents-api/realtime/audio/packer");
+          class RecorderChunks {
+            #buffer = {
+              raw: new ArrayBuffer(0),
+              mono: new ArrayBuffer(0)
+            };
+            #size;
+            constructor(config) {
+              this.#size = config?.size ?? 8192;
+            }
+            process({
+              raw,
+              mono
+            }) {
+              if (!this.#size) return {
+                raw,
+                mono
+              };
+              const buffer = this.#buffer;
+              this.#buffer = {
+                raw: _packer.WavPacker.mergeBuffers(buffer.raw, raw),
+                mono: _packer.WavPacker.mergeBuffers(buffer.mono, mono)
+              };
+              if (this.#buffer.mono.byteLength >= this.#size) {
+                const buffer = this.#buffer;
+                this.#buffer = {
+                  raw: new ArrayBuffer(0),
+                  mono: new ArrayBuffer(0)
+                };
+                return buffer;
+              }
+            }
+            pause() {
+              this.#buffer.raw.byteLength && this.process(this.#buffer);
+            }
+          }
+          exports.RecorderChunks = RecorderChunks;
+        }
+      });
+
+      /************************
+      INTERNAL MODULE: ./device
+      ************************/
+
+      ims.set('./device', {
+        hash: 1032545960,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Device = void 0;
+          var _recorder = require("./recorder");
+          class Device {
+            #id;
+            get id() {
+              return this.#id;
+            }
+            #label;
+            get label() {
+              return this.#label;
+            }
+            #groupId;
+            get groupId() {
+              return this.#groupId;
+            }
+            #default;
+            get default() {
+              return this.#default;
+            }
+            #recorder;
+            get recorder() {
+              return this.#recorder;
+            }
+            constructor(device) {
+              this.#id = device.deviceId;
+              this.#label = device.label;
+              this.#default = !!device.default;
+              this.#groupId = device.groupId;
+            }
+            async record(config) {
+              !this.#recorder && (this.#recorder = new _recorder.Recorder(this, config));
+              await this.#recorder.record();
+            }
+            async pause() {
+              if (!this.#recorder) throw new Error('Recorder has not been initialized');
+              await this.#recorder.pause();
+            }
+            async stop() {
+              if (!this.#recorder) throw new Error('Recorder has not been initialized');
+              await this.#recorder.stop();
+            }
+          }
+          exports.Device = Device;
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 2424296560,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.devices = void 0;
+          var _permission = require("./permission");
+          var _device = require("./device");
+          /*bundle*/
+          const devices = exports.devices = new class Devices extends Map {
+            #available = false;
+            get available() {
+              return this.#available;
+            }
+            get default() {
+              const devices = [...this.values()];
+              const def = devices.find(device => device.default);
+              return def ? def : devices[0];
+            }
+            constructor() {
+              super();
+              if (!navigator.mediaDevices || !('getUserMedia' in navigator.mediaDevices)) {
+                this.#available = false;
+                return;
+              }
+              navigator.mediaDevices.addEventListener('devicechange', async () => await this.prepare());
+            }
+            async prepare() {
+              await _permission.permissions.request();
+              if (_permission.permissions.state !== 'granted') return false;
+              const devices = await (async () => {
+                const devices = await navigator.mediaDevices.enumerateDevices();
+                // The default device comes duplicated with another device in the same group
+                // "Default - Internal Microphone (Built-in)" / "Internal Microphone (Built-in)"
+                const def = devices.find(device => device.deviceId === 'default');
+                // Only take the audioinputs devices and not the default device,
+                // as we need to take the other device in the same group that the default device is
+                const audioinputs = devices.filter(device => device.kind === 'audioinput' && device !== def);
+                // Search for the other device in the same group as the default device
+                // (this is going to be the real default device)
+                const other = audioinputs.find(device => device.groupId === def.groupId);
+                const replacement = other ? other : def;
+                replacement.default = true;
+                audioinputs.unshift(replacement);
+                return audioinputs;
+              })();
+              devices.forEach(item => {
+                const device = new _device.Device(item);
+                this.set(item.deviceId, device);
+              });
+            }
+          }();
+        }
+      });
+
+      /****************************
+      INTERNAL MODULE: ./permission
+      ****************************/
+
+      ims.set('./permission', {
+        hash: 3084074630,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.permissions = void 0;
+          var _events = require("@beyond-js/events/events");
+          var _core = require("@beyond-js/kernel/core");
+          const permissions = exports.permissions = new class MediaPermissions extends _events.Events {
+            #ready;
+            get ready() {
+              if (this.#ready) return this.#ready;
+              this.#ready = new _core.PendingPromise();
+              // In some versions of TypeScript, the "microphone" permission is not
+              // included by default in the allowed list of permission names.
+              const name = 'microphone';
+              const permission = navigator.permissions?.query({
+                name
+              });
+              if (!(permission instanceof Promise)) {
+                this.#ready.resolve();
+                return;
+              }
+              permission.then(permission => {
+                this.#permission = permission;
+                permission.onchange = this.#onchange.bind(this);
+                this.#ready.resolve();
+              }).catch(error => {
+                this.#ready.resolve();
+              });
+              return this.#ready;
+            }
+            #permission; // Actually not available in safari
+            #state;
+            get state() {
+              return this.#state;
+            }
+            #error;
+            get error() {
+              return this.#error;
+            }
+            #set(state) {
+              state !== this.#state && (this.#state = state) && this.trigger('change');
+            }
+            /**
+             * Not available in Safari
+             */
+            #onchange(status) {
+              this.#set(status.state);
+            }
+            async request() {
+              await this.#ready;
+              try {
+                const stream = await navigator.mediaDevices.getUserMedia({
+                  audio: true
+                });
+                if (!stream) return this.#set('denied');
+                const tracks = stream.getTracks();
+                tracks.forEach(track => track.stop());
+                return this.#set('granted');
+              } catch (error) {
+                this.#error = error;
+                return this.#set('denied');
+              }
+            }
+            release() {
+              if (this.#permission) this.#permission.onchange = void 0;
+            }
+          }();
+        }
+      });
+
+      /**************************
+      INTERNAL MODULE: ./recorder
+      **************************/
+
+      ims.set('./recorder', {
+        hash: 1741352668,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Recorder = void 0;
+          var _bridge = require("@aimpact/agents-api/realtime/audio/recorder/worklet/bridge");
+          var _events = require("@beyond-js/events/events");
+          var _core = require("@beyond-js/kernel/core");
+          var _chunks = require("./chunks");
+          /*bundle*/ /**
+                      * Records live stream of user audio as PCM16 "audio/wav" data
+                      */
+          class Recorder extends _events.Events {
+            #worklet;
+            #chunks;
+            #device;
+            get device() {
+              return this.#device;
+            }
+            #config;
+            get config() {
+              return this.#config;
+            }
+            #status = 'stopped';
+            get status() {
+              return this.#status;
+            }
+            #error;
+            get error() {
+              return this.#error;
+            }
+            #ready;
+            get ready() {
+              if (this.#ready) return this.#ready;
+              this.#ready = new _core.PendingPromise();
+              this.#setup().then(() => this.#ready.resolve()).catch(error => {
+                this.#error = error;
+                this.#ready.resolve();
+              });
+              return this.#ready;
+            }
+            #context;
+            constructor(device, config) {
+              super();
+              this.#device = device;
+              this.#config = config;
+              this.#config.samplerate = this.#config.samplerate ?? 44100;
+              this.#chunks = new _chunks.RecorderChunks(config.chunks);
+            }
+            /**
+             * Do not call it directly, access the .ready property instead
+             * @returns
+             */
+            async #setup() {
+              const context = {};
+              try {
+                const config = {
+                  audio: {
+                    deviceId: {
+                      exact: this.#device.id
+                    }
+                  }
+                };
+                context.stream = await navigator.mediaDevices.getUserMedia(config);
+              } catch (error) {
+                this.#error = error;
+                return;
+              }
+              // Set up AudioContext and connect the audio stream source
+              context.context = new AudioContext({
+                sampleRate: this.#config.samplerate
+              });
+              context.media = context.context.createMediaStreamSource(context.stream);
+              // Create an AudioWorkletNode for processing audio data
+              const worklet = this.#worklet = new _bridge.RecorderWorkletBridge(context.context);
+              await worklet.setup();
+              if (worklet.error) {
+                this.#error = worklet.error;
+                return;
+              }
+              worklet.create();
+              const node = context.media.connect(worklet.node);
+              const analyser = context.context.createAnalyser();
+              analyser.fftSize = 8192;
+              analyser.smoothingTimeConstant = 0.1;
+              node.connect(analyser);
+              if (this.#config.debug) {
+                console.warn(`Warning: Output to speakers may affect sound quality, ` + `especially due to system audio feedback preventative measures. Use only for debugging`);
+                analyser.connect(context.context.destination);
+              }
+              // Store references for future use
+              this.#context = context;
+            }
+            #onchunk = ({
+              raw,
+              mono
+            }) => {
+              const chunk = this.#chunks.process({
+                raw,
+                mono
+              });
+              this.trigger('chunk', chunk);
+            };
+            async record() {
+              await this.ready;
+              if (!this.#worklet.check()) return;
+              if (!['stopped', 'paused'].includes(this.#status)) {
+                throw new Error(`Cannot start recording as it is not stopped or paused`);
+              }
+              this.#status = 'starting';
+              try {
+                const config = this.#config;
+                await this.#worklet.dispatch('record', {
+                  config
+                });
+                this.#status = 'recording';
+              } catch (exc) {
+                this.#status = 'stopped';
+                throw exc;
+              }
+              this.#worklet.on('chunk', this.#onchunk);
+            }
+            async pause() {
+              if (!this.#context) throw new Error(`Recorder not initialized`);
+              if (!this.#worklet.check()) return;
+              this.#worklet.off('chunk', this.#onchunk);
+              this.#status = 'pausing';
+              await this.#worklet.dispatch('pause');
+              this.#status = 'paused';
+              this.#chunks.pause();
+            }
+            async stop() {
+              if (!this.#context) throw new Error(`Recorder not initialized`);
+              if (!this.#worklet.check()) return;
+              this.#worklet.off('chunk', this.#onchunk);
+              this.#status = 'stopping';
+              await this.#worklet.dispatch('stop');
+              this.#status = 'stopped';
+              // Stop all audio tracks to release the microphone
+              const tracks = this.#context.stream.getTracks();
+              tracks.forEach(track => track.stop());
+            }
+          }
+          exports.Recorder = Recorder;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./device",
+        "from": "IDevice",
+        "name": "IDevice"
+      }, {
+        "im": "./index",
+        "from": "devices",
+        "name": "devices"
+      }, {
+        "im": "./recorder",
+        "from": "IRecorderConfig",
+        "name": "IRecorderConfig"
+      }, {
+        "im": "./recorder",
+        "from": "Recorder",
+        "name": "Recorder"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'IDevice') && _export("IDevice", IDevice = require ? require('./device').IDevice : value);
+        (require || prop === 'devices') && _export("devices", devices = require ? require('./index').devices : value);
+        (require || prop === 'IRecorderConfig') && _export("IRecorderConfig", IRecorderConfig = require ? require('./recorder').IRecorderConfig : value);
+        (require || prop === 'Recorder') && _export("Recorder", Recorder = require ? require('./recorder').Recorder : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFja2VyIiwicmVxdWlyZSIsIlJlY29yZGVyQ2h1bmtzIiwiYnVmZmVyIiwicmF3IiwiQXJyYXlCdWZmZXIiLCJtb25vIiwic2l6ZSIsImNvbnN0cnVjdG9yIiwiY29uZmlnIiwicHJvY2VzcyIsIldhdlBhY2tlciIsIm1lcmdlQnVmZmVycyIsImJ5dGVMZW5ndGgiLCJwYXVzZSIsImV4cG9ydHMiLCJfcmVjb3JkZXIiLCJEZXZpY2UiLCJpZCIsImxhYmVsIiwiZ3JvdXBJZCIsImRlZmF1bHQiLCJyZWNvcmRlciIsImRldmljZSIsImRldmljZUlkIiwicmVjb3JkIiwiUmVjb3JkZXIiLCJFcnJvciIsInN0b3AiLCJfcGVybWlzc2lvbiIsIl9kZXZpY2UiLCJkZXZpY2VzIiwiRGV2aWNlcyIsIk1hcCIsImF2YWlsYWJsZSIsInZhbHVlcyIsImRlZiIsImZpbmQiLCJuYXZpZ2F0b3IiLCJtZWRpYURldmljZXMiLCJhZGRFdmVudExpc3RlbmVyIiwicHJlcGFyZSIsInBlcm1pc3Npb25zIiwicmVxdWVzdCIsInN0YXRlIiwiZW51bWVyYXRlRGV2aWNlcyIsImF1ZGlvaW5wdXRzIiwiZmlsdGVyIiwia2luZCIsIm90aGVyIiwicmVwbGFjZW1lbnQiLCJ1bnNoaWZ0IiwiZm9yRWFjaCIsIml0ZW0iLCJzZXQiLCJfZXZlbnRzIiwiX2NvcmUiLCJNZWRpYVBlcm1pc3Npb25zIiwiRXZlbnRzIiwicmVhZHkiLCJQZW5kaW5nUHJvbWlzZSIsIm5hbWUiLCJwZXJtaXNzaW9uIiwicXVlcnkiLCJQcm9taXNlIiwicmVzb2x2ZSIsInRoZW4iLCJvbmNoYW5nZSIsImJpbmQiLCJjYXRjaCIsImVycm9yIiwiI3NldCIsInRyaWdnZXIiLCIjb25jaGFuZ2UiLCJzdGF0dXMiLCJzdHJlYW0iLCJnZXRVc2VyTWVkaWEiLCJhdWRpbyIsInRyYWNrcyIsImdldFRyYWNrcyIsInRyYWNrIiwicmVsZWFzZSIsIl9icmlkZ2UiLCJfY2h1bmtzIiwid29ya2xldCIsImNodW5rcyIsInNldHVwIiwiY29udGV4dCIsInNhbXBsZXJhdGUiLCIjc2V0dXAiLCJleGFjdCIsIkF1ZGlvQ29udGV4dCIsInNhbXBsZVJhdGUiLCJtZWRpYSIsImNyZWF0ZU1lZGlhU3RyZWFtU291cmNlIiwiUmVjb3JkZXJXb3JrbGV0QnJpZGdlIiwiY3JlYXRlIiwibm9kZSIsImNvbm5lY3QiLCJhbmFseXNlciIsImNyZWF0ZUFuYWx5c2VyIiwiZmZ0U2l6ZSIsInNtb290aGluZ1RpbWVDb25zdGFudCIsImRlYnVnIiwiY29uc29sZSIsIndhcm4iLCJkZXN0aW5hdGlvbiIsIm9uY2h1bmsiLCIjb25jaHVuayIsImNodW5rIiwiY2hlY2siLCJpbmNsdWRlcyIsImRpc3BhdGNoIiwiZXhjIiwib24iLCJvZmYiXSwic291cmNlcyI6WyIvL2NodW5rcy50cy8iLCIvL2RldmljZS50cy8iLCIvL2luZGV4LnRzLyIsIi8vcGVybWlzc2lvbi50cy8iLCIvL3JlY29yZGVyLnRzLyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxPQUFBLEdBQUFDLE9BQUE7VUFNTSxNQUFPQyxjQUFjO1lBQzFCLENBQUFDLE1BQU8sR0FBNEM7Y0FBRUMsR0FBRyxFQUFFLElBQUlDLFdBQVcsQ0FBQyxDQUFDLENBQUM7Y0FBRUMsSUFBSSxFQUFFLElBQUlELFdBQVcsQ0FBQyxDQUFDO1lBQUMsQ0FBRTtZQUN4RyxDQUFBRSxJQUFLO1lBRUxDLFlBQVlDLE1BQXNCO2NBQ2pDLElBQUksQ0FBQyxDQUFBRixJQUFLLEdBQUdFLE1BQU0sRUFBRUYsSUFBSSxJQUFJLElBQUk7WUFDbEM7WUFFQUcsT0FBT0EsQ0FBQztjQUFFTixHQUFHO2NBQUVFO1lBQUksQ0FBMkM7Y0FDN0QsSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFBQyxJQUFLLEVBQUUsT0FBTztnQkFBRUgsR0FBRztnQkFBRUU7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

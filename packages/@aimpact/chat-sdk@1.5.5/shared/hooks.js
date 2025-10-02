@@ -1,2 +1,184 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","react@18.3.1","@beyond-js/react-18-widgets@1.1.8/hooks"],function(_export,_context){var dependency_0,dependency_1,dependency_2,__pkg,__Bundle;return _export({useHmr:void 0,useMediaQuery:void 0,useStore:void 0}),{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_react2){dependency_1=_react2},function(_beyondJsReact18Widgets118Hooks){dependency_2=_beyondJsReact18Widgets118Hooks}],execute:function(){__Bundle=dependency_0.Bundle,(__pkg=new __Bundle({module:{vspecifier:"@aimpact/chat-sdk@1.5.5/shared/hooks"},type:"code"},_context.meta.url).package()).dependencies.update([["react",dependency_1],["@beyond-js/react-18-widgets/hooks",dependency_2]]),(__Bundle=new Map).set("./use-hmr",{hash:2839122136,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.useHmr=function(hmr){let[update,setUpdate]=_react.default.useState({});return(0,_hooks.useBinder)([hmr],()=>{setUpdate({})}),[update,setUpdate]};var _react=require("react"),_hooks=require("@beyond-js/react-18-widgets/hooks")}}),__Bundle.set("./use-media-query",{hash:2034606327,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.useMediaQuery=function(){let[size,setSize]=(0,_react.useState)("lg");return(0,_react.useEffect)(()=>{let handleResize=()=>{var width=(width=window.innerWidth)<576?"xs":576<=width&&width<768?"sm":768<=width&&width<992?"md":"lg";setSize(width)};return handleResize(),window.addEventListener("resize",handleResize),()=>{window.removeEventListener("resize",handleResize)}},[]),size};var _react=require("react")}}),__Bundle.set("./use-store",{hash:4171293876,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.useStore=function(store,events=["change"],onListen){if(!Array.isArray(events))throw new Error("The events parameter must be an array of strings");let[,setVersion]=(0,_react.useState)(0);return(0,_react.useEffect)(()=>{let handler=()=>{setVersion(v=>v+1),onListen?.()};return events.forEach(event=>store.on(event,handler)),()=>{events.forEach(event=>store.off(event,handler))}},[store,events]),store};var _react=require("react")}}),__pkg.exports.descriptor=[{im:"./use-hmr",from:"useHmr",name:"useHmr"},{im:"./use-media-query",from:"useMediaQuery",name:"useMediaQuery"},{im:"./use-store",from:"useStore",name:"useStore"}],__pkg.exports.process=function({require,prop,value}){!require&&"useHmr"!==prop||_export("useHmr",require?require("./use-hmr").useHmr:value),!require&&"useMediaQuery"!==prop||_export("useMediaQuery",require?require("./use-media-query").useMediaQuery:value),!require&&"useStore"!==prop||_export("useStore",require?require("./use-store").useStore:value)},_export("__beyond_pkg",__pkg),_export("hmr",new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener),this.off=(event,listener)=>__pkg.hmr.off(event,listener)}),__pkg.initialise(__Bundle)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8vdXNlLWhtci50c3gvIiwiLy91c2UtbWVkaWEtcXVlcnkudHMvIiwiLy91c2Utc3RvcmUudHMvIl0sIm5hbWVzIjpbImhtciIsInVwZGF0ZSIsInNldFVwZGF0ZSIsIl9yZWFjdCIsImRlZmF1bHQiLCJ1c2VTdGF0ZSIsIl9ob29rcyIsInVzZUJpbmRlciIsInJlcXVpcmUiLCJzaXplIiwic2V0U2l6ZSIsInVzZUVmZmVjdCIsImhhbmRsZVJlc2l6ZSIsIm5ld1NpemUiLCJ3aWR0aCIsIndpbmRvdyIsImlubmVyV2lkdGgiLCJhZGRFdmVudExpc3RlbmVyIiwicmVtb3ZlRXZlbnRMaXN0ZW5lciIsInN0b3JlIiwiZXZlbnRzIiwib25MaXN0ZW4iLCJBcnJheSIsImlzQXJyYXkiLCJFcnJvciIsInNldFZlcnNpb24iLCJoYW5kbGVyIiwidiIsImZvckVhY2giLCJldmVudCIsIm9uIiwib2ZmIl0sIm1hcHBpbmdzIjoiczRCQUVpQixTQUFpQkEsS0FDakMsR0FBTSxDQUFDQyxPQUFRQyxXQUFhQyxPQUFBQyxRQUFNQyxTQUFTLEVBQUUsRUFLN0MsT0FIQSxFQUFBQyxPQUFBQyxXQUFVLENBQUNQLEtBQU0sS0FDaEJFLFVBQVUsRUFBRSxDQUNiLENBQUMsRUFDTSxDQUFDRCxPQUFRQyxVQUNqQixFQVRBLElBQUFDLE9BQUFLLFFBQUEsT0FBQSxFQUNBRixPQUFBRSxRQUFBLG1DQUFBLEMscUtDQ2lCLFdBQ2hCLEdBQU0sQ0FBQ0MsS0FBTUMsVUFBVyxFQUFBUCxPQUFBRSxVQUFTLElBQUksRUErQnJDLE9BaEJBLEVBQUFGLE9BQUFRLFdBQVUsS0FDVCxJQUFNQyxhQUFlQSxLQUNwQixJQUFNQyxPQWREQyxNQUFRQyxPQUFPQyxZQUNULElBQ0osS0FDWSxLQUFURixPQUFnQkEsTUFBUSxJQUMzQixLQUNZLEtBQVRBLE9BQWdCQSxNQUFRLElBQzNCLEtBRUEsS0FPUEosUUFBUUcsS0FBTyxDQUNoQixFQU9BLE9BSkFELGFBQVksRUFFWkcsT0FBT0UsaUJBQWlCLFNBQVVMLFlBQVksRUFFdkMsS0FDTkcsT0FBT0csb0JBQW9CLFNBQVVOLFlBQVksQ0FDbEQsQ0FDRCxFQUFHLEVBQUUsRUFFRUgsSUFDUixFQW5DQSxJQUFBTixPQUFBSyxRQUFBLE9BQUEsQywwSkNjaUIsU0FDaEJXLE1BQ0FDLE9BQW1CLENBQUMsVUFDcEJDLFVBRUEsR0FBSSxDQUFDQyxNQUFNQyxRQUFRSCxNQUFNLEVBQ3hCLE1BQU0sSUFBSUksTUFBTSxrREFBa0QsRUFHbkUsR0FBTSxDQUFBLENBQUdDLGFBQWMsRUFBQXRCLE9BQUFFLFVBQVMsQ0FBQyxFQWdCakMsT0FkQSxFQUFBRixPQUFBUSxXQUFVLEtBQ1QsSUFBTWUsUUFBVUEsS0FDZkQsV0FBV0UsR0FBS0EsRUFBSSxDQUFDLEVBQ3JCTixXQUFVLENBQ1gsRUFJQSxPQUZBRCxPQUFPUSxRQUFRQyxPQUFTVixNQUFNVyxHQUFHRCxNQUFPSCxPQUFPLENBQUMsRUFFekMsS0FDTk4sT0FBT1EsUUFBUUMsT0FBU1YsTUFBTVksSUFBSUYsTUFBT0gsT0FBTyxDQUFDLENBQ2xELENBQ0QsRUFBRyxDQUFDUCxNQUFPQyxPQUFPLEVBR1hELEtBQ1IsRUF4Q0EsSUFBQWhCLE9BQUFLLFFBQUEsT0FBQSJ9
+System.register(["@beyond-js/kernel@0.1.14/bundle", "react@18.3.1", "@beyond-js/react-18-widgets@1.1.8/hooks"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, useHmr, useMediaQuery, useStore, __beyond_pkg, hmr;
+  _export({
+    useHmr: void 0,
+    useMediaQuery: void 0,
+    useStore: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_react2) {
+      dependency_1 = _react2;
+    }, function (_beyondJsReact18Widgets118Hooks) {
+      dependency_2 = _beyondJsReact18Widgets118Hooks;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/widgets", "1.1.4"], ["@google-cloud/storage", "7.17.1"], ["@radix-ui/react-icons", "1.3.2"], ["@tiptap/extension-blockquote", "3.6.2"], ["@tiptap/extension-code-block", "3.6.2"], ["@tiptap/extension-horizontal-rule", "3.6.2"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.6.2"], ["@tiptap/extension-task-list", "3.6.2"], ["@tiptap/extension-underline", "3.6.2"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.6.2"], ["@tiptap/starter-kit", "3.6.2"], ["clsx", "2.1.1"], ["dayjs", "1.11.18"], ["dompurify", "3.2.7"], ["firebase", "11.10.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["katex", "0.16.22"], ["marked", "14.1.4"], ["marked-gfm-heading-id", "4.1.2"], ["marked-highlight", "2.2.2"], ["marked-mangle", "1.1.11"], ["media-suite", "0.0.4"], ["pragmate-ui", "1.0.10"], ["prism-themes", "1.9.0"], ["prismjs", "1.30.0"], ["react-icons", "5.5.0"], ["socket.io-client", "4.8.1"], ["turndown", "7.2.1"], ["wavesurfer.js", "7.10.3"], ["zod", "3.25.76"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.25"], ["@types/react-dom", "18.3.7"], ["typescript", "5.9.3"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/rvd", "0.6.3"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/chat-sdk@1.5.5/shared/hooks"
+        },
+        "type": "code"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['react', dependency_1], ['@beyond-js/react-18-widgets/hooks', dependency_2]]);
+      ims = new Map();
+      /*************************
+      INTERNAL MODULE: ./use-hmr
+      *************************/
+      ims.set('./use-hmr', {
+        hash: 2839122136,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useHmr = useHmr;
+          var _react = require("react");
+          var _hooks = require("@beyond-js/react-18-widgets/hooks");
+          /*bundle*/
+          function useHmr(hmr) {
+            const [update, setUpdate] = _react.default.useState({});
+            (0, _hooks.useBinder)([hmr], () => {
+              setUpdate({});
+            });
+            return [update, setUpdate];
+          }
+        }
+      });
+
+      /*********************************
+      INTERNAL MODULE: ./use-media-query
+      *********************************/
+
+      ims.set('./use-media-query', {
+        hash: 2034606327,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useMediaQuery = useMediaQuery;
+          var _react = require("react");
+          /*bundle*/
+          function useMediaQuery() {
+            const [size, setSize] = (0, _react.useState)('lg');
+            const calculateSize = () => {
+              const width = window.innerWidth;
+              if (width < 576) {
+                return 'xs';
+              } else if (width >= 576 && width < 768) {
+                return 'sm';
+              } else if (width >= 768 && width < 992) {
+                return 'md';
+              } else {
+                return 'lg';
+              }
+            };
+            (0, _react.useEffect)(() => {
+              const handleResize = () => {
+                const newSize = calculateSize();
+                setSize(newSize);
+              };
+              // Set initial size
+              handleResize();
+              // Set up event listener for resizing
+              window.addEventListener('resize', handleResize);
+              // Clean up function
+              return () => {
+                window.removeEventListener('resize', handleResize);
+              };
+            }, []);
+            return size;
+          }
+        }
+      });
+
+      /***************************
+      INTERNAL MODULE: ./use-store
+      ***************************/
+
+      ims.set('./use-store', {
+        hash: 4171293876,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useStore = useStore;
+          var _react = require("react");
+          /*bundle*/ /**
+                      * A generic React hook that subscribes to a reactive store.
+                      * The store must implement `.on(event, handler)` and `.off(event, handler)`
+                      * to manage subscriptions, and emit events to trigger re-renders.
+                      * @param store The reactive store to subscribe to
+                      * @param events Array of event names to subscribe to. Defaults to ['change']
+                      */
+          function useStore(store, events = ['change'], onListen) {
+            if (!Array.isArray(events)) {
+              throw new Error('The events parameter must be an array of strings');
+            }
+            // We use a local counter to force re-render whenever the store emits any of the subscribed events.
+            const [, setVersion] = (0, _react.useState)(0);
+            (0, _react.useEffect)(() => {
+              const handler = () => {
+                setVersion(v => v + 1);
+                onListen?.();
+              };
+              // Subscribe to all specified events
+              events.forEach(event => store.on(event, handler));
+              // Cleanup: unsubscribe from all events
+              return () => {
+                events.forEach(event => store.off(event, handler));
+              };
+            }, [store, events]);
+            // Return the store directly so components can read from it.
+            return store;
+          }
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./use-hmr",
+        "from": "useHmr",
+        "name": "useHmr"
+      }, {
+        "im": "./use-media-query",
+        "from": "useMediaQuery",
+        "name": "useMediaQuery"
+      }, {
+        "im": "./use-store",
+        "from": "useStore",
+        "name": "useStore"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'useHmr') && _export("useHmr", useHmr = require ? require('./use-hmr').useHmr : value);
+        (require || prop === 'useMediaQuery') && _export("useMediaQuery", useMediaQuery = require ? require('./use-media-query').useMediaQuery : value);
+        (require || prop === 'useStore') && _export("useStore", useStore = require ? require('./use-store').useStore : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX2hvb2tzIiwidXNlSG1yIiwiaG1yIiwidXBkYXRlIiwic2V0VXBkYXRlIiwiZGVmYXVsdCIsInVzZVN0YXRlIiwidXNlQmluZGVyIiwidXNlTWVkaWFRdWVyeSIsInNpemUiLCJzZXRTaXplIiwiY2FsY3VsYXRlU2l6ZSIsIndpZHRoIiwid2luZG93IiwiaW5uZXJXaWR0aCIsInVzZUVmZmVjdCIsImhhbmRsZVJlc2l6ZSIsIm5ld1NpemUiLCJhZGRFdmVudExpc3RlbmVyIiwicmVtb3ZlRXZlbnRMaXN0ZW5lciIsInVzZVN0b3JlIiwic3RvcmUiLCJldmVudHMiLCJvbkxpc3RlbiIsIkFycmF5IiwiaXNBcnJheSIsIkVycm9yIiwic2V0VmVyc2lvbiIsImhhbmRsZXIiLCJ2IiwiZm9yRWFjaCIsImV2ZW50Iiwib24iLCJvZmYiXSwic291cmNlcyI6WyIvL3VzZS1obXIudHN4LyIsIi8vdXNlLW1lZGlhLXF1ZXJ5LnRzLyIsIi8vdXNlLXN0b3JlLnRzLyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxNQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxNQUFBLEdBQUFELE9BQUE7VUFDTztVQUFVLFNBQVVFLE1BQU1BLENBQUNDLEdBQUc7WUFDcEMsTUFBTSxDQUFDQyxNQUFNLEVBQUVDLFNBQVMsQ0FBQyxHQUFHTixNQUFBLENBQUFPLE9BQUssQ0FBQ0MsUUFBUSxDQUFDLEVBQUUsQ0FBQztZQUU5QyxJQUFBTixNQUFBLENBQUFPLFNBQVMsRUFBQyxDQUFDTCxHQUFHLENBQUMsRUFBRSxNQUFLO2NBQ3JCRSxTQUFTLENBQUMsRUFBRSxDQUFDO1lBQ2QsQ0FBQyxDQUFDO1lBQ0YsT0FBTyxDQUFDRCxNQUFNLEVBQUVDLFNBQVMsQ0FBQztVQUMzQjs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNUQSxJ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

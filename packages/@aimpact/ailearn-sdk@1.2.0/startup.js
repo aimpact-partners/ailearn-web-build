@@ -1,2 +1,116 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/reactive@2.1.1/model"],function(_export,_context){var dependency_0,dependency_1,__pkg,__Bundle;return _export({EnvironmentType:void 0,sdkConfig:void 0}),{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_beyondJsReactive211Model){dependency_1=_beyondJsReactive211Model}],execute:function(){__Bundle=dependency_0.Bundle,(__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-sdk@1.2.0/startup"},type:"ts"},_context.meta.url).package()).dependencies.update([["@beyond-js/reactive/model",dependency_1]]),(__Bundle=new Map).set("./index",{hash:1018138792,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.sdkConfig=void 0;require=require("@beyond-js/reactive/model");class SDKInitializer extends require.ReactiveModel{#environment;get environment(){return this.#environment}#apis;get apis(){return this.#apis}#userModel;get userModel(){return this.#userModel}set userModel(value){this.#userModel=value,this.triggerEvent()}async initialize({environment,apis}){this.#environment=environment,this.#apis=apis}}exports.sdkConfig=new SDKInitializer}}),__Bundle.set("./types",{hash:3029498029,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0})}}),__pkg.exports.descriptor=[{im:"./index",from:"EnvironmentType",name:"EnvironmentType"},{im:"./index",from:"sdkConfig",name:"sdkConfig"}],__pkg.exports.process=function({require,prop,value}){!require&&"EnvironmentType"!==prop||_export("EnvironmentType",require?require("./index").EnvironmentType:value),!require&&"sdkConfig"!==prop||_export("sdkConfig",require?require("./index").sdkConfig:value)},_export("__beyond_pkg",__pkg),_export("hmr",new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener),this.off=(event,listener)=>__pkg.hmr.off(event,listener)}),__pkg.initialise(__Bundle)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8vaW5kZXgudHMvIiwiLy90eXBlcy50cy8iXSwibmFtZXMiOlsiX21vZGVsIiwicmVxdWlyZSIsIlNES0luaXRpYWxpemVyIiwiUmVhY3RpdmVNb2RlbCIsIiNlbnZpcm9ubWVudCIsImVudmlyb25tZW50IiwidGhpcyIsIiNhcGlzIiwiYXBpcyIsIiN1c2VyTW9kZWwiLCJ1c2VyTW9kZWwiLCJ2YWx1ZSIsInRyaWdnZXJFdmVudCIsImluaXRpYWxpemUiLCJleHBvcnRzIiwic2RrQ29uZmlnIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiXSwibWFwcGluZ3MiOiJ3d0JBQUFBLFFBQUFDLFFBQUEsMkJBQUEsUUFJTUMsdUJBQXVCRixRQUFBRyxjQUM1QkMsYUFDQUMsa0JBQ0MsT0FBT0MsS0FBS0YsWUFDYixDQUVBRyxNQUNBQyxXQUNDLE9BQU9GLEtBQUtDLEtBQ2IsQ0FFQUUsV0FDQUMsZ0JBQ0MsT0FBT0osS0FBS0csVUFDYixDQUVBQyxjQUFjQyxPQUNiTCxLQUFLRyxXQUFhRSxNQUNsQkwsS0FBS00sYUFBWSxDQUNsQixDQUVBQyxpQkFBaUIsQ0FBRVIsWUFBYUcsSUFBSSxHQUNuQ0YsS0FBS0YsYUFBZUMsWUFDcEJDLEtBQUtDLE1BQVFDLElBQ2QsQyxDQUdnQ00sUUFBQUMsVUFBRyxJQUFJYixjLDhFQzdCeENjLE9BQUFDLGVBQUFILFFBQUEsYUFBQSxDQUNBSCxNQUFBLENBQUEsQ0FDQSxDQUFBIn0=
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/reactive@2.1.1/model"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, bimport, __Bundle, __pkg, ims, EnvironmentType, sdkConfig, __beyond_pkg, hmr;
+  _export({
+    EnvironmentType: void 0,
+    sdkConfig: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsReactive211Model) {
+      dependency_1 = _beyondJsReactive211Model;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.1.1"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@firebase/auth", "1.10.0"], ["@types/node", "22.13.16"], ["dexie", "4.0.11"], ["firebase", "10.14.1"], ["pragmate-ui", "0.0.6"], ["react-select", "5.10.1"], ["socket.io-client", "4.8.1"], ["zod", "3.24.2"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/rvd", "0.6.3"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-sdk@1.2.0/startup"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/reactive/model', dependency_1]]);
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 1018138792,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.sdkConfig = void 0;
+          var _model = require("@beyond-js/reactive/model");
+          class SDKInitializer extends _model.ReactiveModel {
+            #environment;
+            get environment() {
+              return this.#environment;
+            }
+            #apis;
+            get apis() {
+              return this.#apis;
+            }
+            #userModel;
+            get userModel() {
+              return this.#userModel;
+            }
+            set userModel(value) {
+              this.#userModel = value;
+              this.triggerEvent();
+            }
+            async initialize({
+              environment,
+              apis
+            }) {
+              this.#environment = environment;
+              this.#apis = apis;
+            }
+          }
+          /*bundle*/
+          const sdkConfig = exports.sdkConfig = new SDKInitializer();
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./types
+      ***********************/
+
+      ims.set('./types', {
+        hash: 3029498029,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "EnvironmentType",
+        "name": "EnvironmentType"
+      }, {
+        "im": "./index",
+        "from": "sdkConfig",
+        "name": "sdkConfig"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'EnvironmentType') && _export("EnvironmentType", EnvironmentType = require ? require('./index').EnvironmentType : value);
+        (require || prop === 'sdkConfig') && _export("sdkConfig", sdkConfig = require ? require('./index').sdkConfig : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfbW9kZWwiLCJyZXF1aXJlIiwiU0RLSW5pdGlhbGl6ZXIiLCJSZWFjdGl2ZU1vZGVsIiwiZW52aXJvbm1lbnQiLCJhcGlzIiwidXNlck1vZGVsIiwidmFsdWUiLCJ0cmlnZ2VyRXZlbnQiLCJpbml0aWFsaXplIiwic2RrQ29uZmlnIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5Il0sInNvdXJjZXMiOlsiLy9pbmRleC50cy8iLCIvL3R5cGVzLnRzLyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO1VBSUEsTUFBTUMsY0FBZSxTQUFRRixNQUFBLENBQUFHLGFBQTZCO1lBQ3pELENBQUFDLFdBQVk7WUFDWixJQUFJQSxXQUFXQSxDQUFBO2NBQ2QsT0FBTyxJQUFJLENBQUMsQ0FBQUEsV0FBWTtZQUN6QjtZQUVBLENBQUFDLElBQUs7WUFDTCxJQUFJQSxJQUFJQSxDQUFBO2NBQ1AsT0FBTyxJQUFJLENBQUMsQ0FBQUEsSUFBSztZQUNsQjtZQUVBLENBQUFDLFNBQVU7WUFDVixJQUFJQSxTQUFTQSxDQUFBO2NBQ1osT0FBTyxJQUFJLENBQUMsQ0FBQUEsU0FBVTtZQUN2QjtZQUVBLElBQUlBLFNBQVNBLENBQUNDLEtBQUs7Y0FDbEIsSUFBSSxDQUFDLENBQUFELFNBQVUsR0FBR0MsS0FBSztjQUN2QixJQUFJLENBQUNDLFlBQVksRUFBRTtZQUNwQjtZQUVBLE1BQU1DLFVBQVVBLENBQUM7Y0FBRUwsV0FBVztjQUFFQztZQUFJLENBQWdCO2NBQ25ELElBQUksQ0FBQyxDQUFBRCxXQUFZLEdBQUdBLFdBQVc7Y0FDL0IsSUFBSSxDQUFDLENBQUFDLElBQUssR0FBR0EsSUFBSTtZQUNsQjs7VUFHTTtVQUFXLE1BQU1LLFNBQVMsR0FBQUMsT0FBQSxDQUFBRCxTQUFBLEdBQUcsSUFBSVIsY0FBYyxFQUFFOzs7Ozs7Ozs7OztVQy9CeEQ7O1VBRUFVLE1BQUEsQ0FBQUMsY0FBQSxDQUFBRixPQUFBO1lBQ0FKLEtBQUE7VUFDQSIsImlnbm9yZUxpc3QiOltdfQ==

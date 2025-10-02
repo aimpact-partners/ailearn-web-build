@@ -1,2 +1,592 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","react@18.3.1","pragmate-ui@1.0.8/components","pragmate-ui@1.0.8/icons","pragmate-ui@1.0.8/base","lodash@4.17.21","@beyond-js/kernel@0.1.14/styles"],function(_export,_context2){var dependency_0,dependency_1,dependency_2,dependency_3,dependency_4,dependency_5,dependency_6,__pkg,__Bundle;return _export({AddButton:void 0,RemoveButton:void 0,DynamicButton:void 0,DynamicIconButton:void 0,useDynamicFieldContext:void 0,DynamicField:void 0,DynamicFieldContainer:void 0,TotalElements:void 0}),{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_react2){dependency_1=_react2},function(_pragmateUi108Components){dependency_2=_pragmateUi108Components},function(_pragmateUi108Icons){dependency_3=_pragmateUi108Icons},function(_pragmateUi108Base){dependency_4=_pragmateUi108Base},function(_lodash){dependency_5=_lodash},function(_beyondJsKernel0114Styles){dependency_6=_beyondJsKernel0114Styles}],execute:function(){__Bundle=dependency_0.Bundle,(__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-app@0.6.1/components/dynamic-field"},type:"code"},_context2.meta.url).package()).dependencies.update([["react",dependency_1],["pragmate-ui/components",dependency_2],["pragmate-ui/icons",dependency_3],["pragmate-ui/base",dependency_4],["lodash",dependency_5],["@beyond-js/kernel/styles",dependency_6]]),brequire("@beyond-js/kernel/styles").styles.register("@aimpact/ailearn-app@0.6.1/components/dynamic-field"),(__Bundle=new Map).set("./actions/add",{hash:4126504715,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.AddButton=void 0;var _react=require("react"),_context=require("../context"),_wrapper=require("./wrapper");exports.AddButton=({children})=>{var onAdd=(0,_context.useDynamicFieldContext)().onAdd;return _react.default.createElement(_wrapper.ActionWrapper,{onClick:onAdd},children)}}}),__Bundle.set("./actions/remove",{hash:1978015170,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.RemoveButton=void 0;var _react=require("react"),_context=require("../context"),_wrapper=require("./wrapper");exports.RemoveButton=({index,children})=>{let onRemove=(0,_context.useDynamicFieldContext)().onRemove;return _react.default.createElement(_wrapper.ActionWrapper,{onClick:()=>onRemove(index)},children)}}}),__Bundle.set("./actions/wrapper",{hash:3526438104,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.ActionWrapper=void 0;var _react=require("react");exports.ActionWrapper=({children,onClick})=>_react.default.isValidElement(children)?_react.default.cloneElement(children,{onClick:onClick}):(console.error("ActionWrapper: The child must be a valid React element."),null)}}),__Bundle.set("./components/button",{hash:4291481084,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.DynamicButton=function({children,action,index,onClick,...props}){let{onAdd,onRemove}=(0,_context.useDynamicFieldContext)(),actions={add:onAdd,remove:onRemove},handleClick=()=>{onClick&&onClick(),action&&actions[action]&&actions[action](index)};return _react.default.createElement(_components.Button,{...props,onClick:handleClick},children)},exports.DynamicIconButton=function({children,index,action,onClick,...props}){let{onAdd,onRemove}=(0,_context.useDynamicFieldContext)(),actions={add:onAdd,remove:onRemove},handleClick=()=>{onClick&&onClick(),action&&actions[action]&&actions[action](index)};return _react.default.createElement(_icons.IconButton,{...props,onClick:handleClick},children)};var _react=require("react"),_components=require("pragmate-ui/components"),_icons=require("pragmate-ui/icons"),_context=require("../context")}}),__Bundle.set("./components/template",{hash:1394527578,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.defaultFieldTemplate=void 0;var React=require("react");exports.defaultFieldTemplate=children=>React.Children.toArray(children).reduce((acc,child)=>(React.isValidElement(child)&&child.props.name&&(acc[child.props.name]=""),acc),{})}}),__Bundle.set("./context",{hash:3988890539,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.useDynamicFieldContext=exports.ModuleContext=void 0;var React=require("react");let ModuleContext=exports.ModuleContext=React.createContext({});exports.useDynamicFieldContext=()=>React.useContext(ModuleContext)}}),__Bundle.set("./field/field",{hash:1156756761,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.DynamicField=function({children}){let{onBlur,fields,onRemove,onUpdate,name,Empty}=(0,_context.useDynamicFieldContext)(),handleOnBlur=event=>{var target;onBlur&&(target={name:name,value:fields},onBlur({target:target,currentTarget:target}))};return fields.length?_react.default.createElement("div",{className:"dynamic-form__container"},fields.map((field,index)=>_react.default.createElement(_row.FieldRow,{key:index,field:field,index:index,children:children,onRemove:onRemove,onBlur:handleOnBlur,onUpdate:onUpdate}))):_react.default.createElement(Empty,null)};var _react=require("react"),_context=require("../context"),_row=require("../field/row")}}),__Bundle.set("./field/row",{hash:1132438387,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.FieldRow=void 0;var _react=require("react");exports.FieldRow=({field,index,children,onBlur,onUpdate})=>{let renderChild=child=>_react.default.isValidElement(child)?_react.default.cloneElement(child,{value:field[child.props.name]||"",onChange:e=>onUpdate(index,e.currentTarget.name,e.currentTarget.value),onBlur:onBlur,index:index}):child;return _react.default.createElement("div",{className:"dynamic-form__field","data-index":index},_react.default.Children.map(children,renderChild))}}}),__Bundle.set("./hooks/use-field-manager",{hash:1699253795,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.useFieldManager=function(lazyInit,initialFields=[]){let initialValue=initialFields.length?initialFields:lazyInit?[{}]:[],[fields,setFields]=(0,_react.useState)(initialValue);(0,_react.useEffect)(()=>{setFields(initialFields)},[initialFields]);return{fields:fields,add:template=>{template=[...fields,{...template}];return setFields(template),template},remove:index=>{var newFields=fields.filter((_,i)=>i!==index);return setFields([...newFields]),newFields},update:(index,name,newValue)=>{var newFields=fields.map((field,i)=>i===index?{...field,[name]:newValue}:field);return setFields(newFields),newFields}}};var _react=require("react")}}),__Bundle.set("./index",{hash:1897305872,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.DynamicFieldContainer=function({texts={add:"Add",remove:"Remove"},children,value,name,lazyInit=!1,onChange,empty,onBlur}){let{fields,add,remove,update}=(0,_useFieldManager.useFieldManager)(lazyInit,value),fieldTemplate=(0,_react.useMemo)(()=>(0,_template.defaultFieldTemplate)(children),[children]),executeOnChange=(newFields,name)=>{onChange&&onChange({target:newFields={name:name,value:newFields},currentTarget:newFields,name:name})},onAdd=()=>{var newFields=add(fieldTemplate);executeOnChange(newFields,"add")},onRemove=index=>{index=remove(index);executeOnChange(index,"remove")},onUpdate=(index,name,value)=>{index=update(index,name,value);executeOnChange(index,"change")};return _react.default.createElement(_context.ModuleContext.Provider,{value:{Empty:empty,onBlur:onBlur,texts:texts,fields:fields,onAdd:onAdd,onRemove:onRemove,onUpdate:onUpdate,value:fields,name:name}},children)};var _react=require("react"),_context=require("./context"),_useFieldManager=require("./hooks/use-field-manager"),_template=require("./components/template")}}),__Bundle.set("./total-elements",{hash:2002400230,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.TotalElements=function(){var fields=(0,_context.useDynamicFieldContext)().fields;return React.createElement("span",{className:"pui-dynamic-field__total-elements"},fields.length)};var React=require("react"),_context=require("./context")}}),__Bundle.set("./types",{hash:1566740805,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0})}}),__pkg.exports.descriptor=[{im:"./actions/add",from:"AddButton",name:"AddButton"},{im:"./actions/remove",from:"RemoveButton",name:"RemoveButton"},{im:"./components/button",from:"DynamicButton",name:"DynamicButton"},{im:"./components/button",from:"DynamicIconButton",name:"DynamicIconButton"},{im:"./context",from:"useDynamicFieldContext",name:"useDynamicFieldContext"},{im:"./field/field",from:"DynamicField",name:"DynamicField"},{im:"./index",from:"DynamicFieldContainer",name:"DynamicFieldContainer"},{im:"./total-elements",from:"TotalElements",name:"TotalElements"}],__pkg.exports.process=function({require,prop,value}){!require&&"AddButton"!==prop||_export("AddButton",require?require("./actions/add").AddButton:value),!require&&"RemoveButton"!==prop||_export("RemoveButton",require?require("./actions/remove").RemoveButton:value),!require&&"DynamicButton"!==prop||_export("DynamicButton",require?require("./components/button").DynamicButton:value),!require&&"DynamicIconButton"!==prop||_export("DynamicIconButton",require?require("./components/button").DynamicIconButton:value),!require&&"useDynamicFieldContext"!==prop||_export("useDynamicFieldContext",require?require("./context").useDynamicFieldContext:value),!require&&"DynamicField"!==prop||_export("DynamicField",require?require("./field/field").DynamicField:value),!require&&"DynamicFieldContainer"!==prop||_export("DynamicFieldContainer",require?require("./index").DynamicFieldContainer:value),!require&&"TotalElements"!==prop||_export("TotalElements",require?require("./total-elements").TotalElements:value)},_export("__beyond_pkg",__pkg),_export("hmr",new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener),this.off=(event,listener)=>__pkg.hmr.off(event,listener)}),__pkg.initialise(__Bundle)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8vdHMvYWN0aW9ucy9hZGQudHN4IiwiLy90cy9hY3Rpb25zL3JlbW92ZS50c3giLCIvL3RzL2FjdGlvbnMvd3JhcHBlci50c3giLCIvL3RzL2NvbXBvbmVudHMvYnV0dG9uLnRzeCIsIi8vdHMvY29tcG9uZW50cy90ZW1wbGF0ZS50c3giLCIvL3RzL2NvbnRleHQudHMiLCIvL3RzL2ZpZWxkL2ZpZWxkLnRzeCIsIi8vdHMvZmllbGQvcm93LnRzeCIsIi8vdHMvaG9va3MvdXNlLWZpZWxkLW1hbmFnZXIudHN4IiwiLy90cy9pbmRleC50c3giLCIvL3RzL3RvdGFsLWVsZW1lbnRzLnRzeCIsIi8vdHlwZXMudHN4LyJdLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX2NvbnRleHQiLCJfd3JhcHBlciIsImV4cG9ydHMiLCJBZGRCdXR0b24iLCJjaGlsZHJlbiIsIm9uQWRkIiwidXNlRHluYW1pY0ZpZWxkQ29udGV4dCIsImRlZmF1bHQiLCJjcmVhdGVFbGVtZW50IiwiQWN0aW9uV3JhcHBlciIsIm9uQ2xpY2siLCJSZW1vdmVCdXR0b24iLCJpbmRleCIsIm9uUmVtb3ZlIiwiaXNWYWxpZEVsZW1lbnQiLCJjbG9uZUVsZW1lbnQiLCJjb25zb2xlIiwiZXJyb3IiLCJhY3Rpb24iLCJwcm9wcyIsImFjdGlvbnMiLCJhZGQiLCJyZW1vdmUiLCJoYW5kbGVDbGljayIsIl9jb21wb25lbnRzIiwiQnV0dG9uIiwiX2ljb25zIiwiSWNvbkJ1dHRvbiIsIlJlYWN0IiwiZGVmYXVsdEZpZWxkVGVtcGxhdGUiLCJDaGlsZHJlbiIsInRvQXJyYXkiLCJyZWR1Y2UiLCJhY2MiLCJjaGlsZCIsIm5hbWUiLCJNb2R1bGVDb250ZXh0IiwiY3JlYXRlQ29udGV4dCIsInVzZUNvbnRleHQiLCJvbkJsdXIiLCJmaWVsZHMiLCJvblVwZGF0ZSIsIkVtcHR5IiwiaGFuZGxlT25CbHVyIiwiZXZlbnQiLCJ0YXJnZXQiLCJ2YWx1ZSIsImN1cnJlbnRUYXJnZXQiLCJsZW5ndGgiLCJjbGFzc05hbWUiLCJtYXAiLCJmaWVsZCIsIl9yb3ciLCJGaWVsZFJvdyIsImtleSIsInJlbmRlckNoaWxkIiwib25DaGFuZ2UiLCJlIiwiZGF0YS1pbmRleCIsImxhenlJbml0IiwiaW5pdGlhbEZpZWxkcyIsImluaXRpYWxWYWx1ZSIsInNldEZpZWxkcyIsInVzZVN0YXRlIiwidXNlRWZmZWN0IiwidGVtcGxhdGUiLCJuZXdGaWVsZHMiLCJmaWx0ZXIiLCJfIiwiaSIsInVwZGF0ZSIsIm5ld1ZhbHVlIiwidGV4dHMiLCJlbXB0eSIsIl91c2VGaWVsZE1hbmFnZXIiLCJ1c2VGaWVsZE1hbmFnZXIiLCJmaWVsZFRlbXBsYXRlIiwidXNlTWVtbyIsIl90ZW1wbGF0ZSIsImV4ZWN1dGVPbkNoYW5nZSIsIlByb3ZpZGVyIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiXSwibWFwcGluZ3MiOiJvb0RBQ0EsSUFBQUEsT0FBQUMsUUFBQSxPQUFBLEVBQ0FDLFNBQUFELFFBQUEsWUFBQSxFQUNBRSxTQUFBRixRQUFBLFdBQUEsRUFXRUcsUUFBQUMsVUFKa0NBLENBQUFBLENBQWFDLFFBQTBCLEtBQzFFLElBQVFDLE9BQVUsRUFBQUwsU0FBQU0sd0JBQXNCLEVBQTNCLE1BRWIsT0FBT1IsT0FBQVMsUUFBQUMsY0FBQ1AsU0FBQVEsY0FBYSxDQUFDQyxRQUFTTCxLQUFLLEVBQUdELFFBQVEsQ0FDaEQsQywwS0NiQSxJQUFBTixPQUFBQyxRQUFBLE9BQUEsRUFDQUMsU0FBQUQsUUFBQSxZQUFBLEVBQ0FFLFNBQUFGLFFBQUEsV0FBQSxFQVVFRyxRQUFBUyxhQUhxQ0EsQ0FBQUEsQ0FBR0MsTUFBT1IsUUFBNkIsS0FDN0UsSUFBUVMsVUFBYSxFQUFBYixTQUFBTSx3QkFBc0IsRUFBM0IsU0FDaEIsT0FBT1IsT0FBQVMsUUFBQUMsY0FBQ1AsU0FBQVEsY0FBYSxDQUFDQyxRQUFTQSxJQUFNRyxTQUFTRCxLQUFLLENBQUMsRUFBR1IsUUFBUSxDQUNoRSxDLDRLQ2JBLElBQUFOLE9BQUFDLFFBQUEsT0FBQSxFQWNFRyxR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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "react@18.3.1", "pragmate-ui@1.0.8/components", "pragmate-ui@1.0.8/icons", "pragmate-ui@1.0.8/base", "lodash@4.17.21", "@beyond-js/kernel@0.1.14/styles"], function (_export, _context2) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, AddButton, RemoveButton, DynamicButton, DynamicIconButton, useDynamicFieldContext, DynamicField, DynamicFieldContainer, TotalElements, __beyond_pkg, hmr;
+  _export({
+    AddButton: void 0,
+    RemoveButton: void 0,
+    DynamicButton: void 0,
+    DynamicIconButton: void 0,
+    useDynamicFieldContext: void 0,
+    DynamicField: void 0,
+    DynamicFieldContainer: void 0,
+    TotalElements: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_react2) {
+      dependency_1 = _react2;
+    }, function (_pragmateUi108Components) {
+      dependency_2 = _pragmateUi108Components;
+    }, function (_pragmateUi108Icons) {
+      dependency_3 = _pragmateUi108Icons;
+    }, function (_pragmateUi108Base) {
+      dependency_4 = _pragmateUi108Base;
+    }, function (_lodash) {
+      dependency_5 = _lodash;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_6 = _beyondJsKernel0114Styles;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.6.1"], ["@aimpact/rvd", "0.6.3"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.6.1/components/dynamic-field"
+        },
+        "type": "code"
+      }, _context2.meta.url).package();
+      ;
+      __pkg.dependencies.update([['react', dependency_1], ['pragmate-ui/components', dependency_2], ['pragmate-ui/icons', dependency_3], ['pragmate-ui/base', dependency_4], ['lodash', dependency_5], ['@beyond-js/kernel/styles', dependency_6]]);
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.6.1/components/dynamic-field');
+      ims = new Map();
+      /*****************************
+      INTERNAL MODULE: ./actions/add
+      *****************************/
+      ims.set('./actions/add', {
+        hash: 4126504715,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.AddButton = void 0;
+          var _react = require("react");
+          var _context = require("../context");
+          var _wrapper = require("./wrapper");
+          /*bundle*/ // AddButton.tsx
+
+          const AddButton = ({
+            template,
+            children
+          }) => {
+            const {
+              onAdd
+            } = (0, _context.useDynamicFieldContext)();
+            return _react.default.createElement(_wrapper.ActionWrapper, {
+              onClick: onAdd
+            }, children);
+          };
+          exports.AddButton = AddButton;
+        }
+      });
+
+      /********************************
+      INTERNAL MODULE: ./actions/remove
+      ********************************/
+
+      ims.set('./actions/remove', {
+        hash: 1978015170,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.RemoveButton = void 0;
+          var _react = require("react");
+          var _context = require("../context");
+          var _wrapper = require("./wrapper");
+          /*bundle*/ // RemoveButton.tsx
+
+          const RemoveButton = ({
+            index,
+            children
+          }) => {
+            const {
+              onRemove
+            } = (0, _context.useDynamicFieldContext)();
+            return _react.default.createElement(_wrapper.ActionWrapper, {
+              onClick: () => onRemove(index)
+            }, children);
+          };
+          exports.RemoveButton = RemoveButton;
+        }
+      });
+
+      /*********************************
+      INTERNAL MODULE: ./actions/wrapper
+      *********************************/
+
+      ims.set('./actions/wrapper', {
+        hash: 3526438104,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ActionWrapper = void 0;
+          var _react = require("react");
+          const ActionWrapper = ({
+            children,
+            onClick
+          }) => {
+            if (!_react.default.isValidElement(children)) {
+              console.error('ActionWrapper: The child must be a valid React element.');
+              return null;
+            }
+            return _react.default.cloneElement(children, {
+              onClick
+            });
+          };
+          exports.ActionWrapper = ActionWrapper;
+        }
+      });
+
+      /***********************************
+      INTERNAL MODULE: ./components/button
+      ***********************************/
+
+      ims.set('./components/button', {
+        hash: 4291481084,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DynamicButton = DynamicButton;
+          exports.DynamicIconButton = DynamicIconButton;
+          var _react = require("react");
+          var _components = require("pragmate-ui/components");
+          var _icons = require("pragmate-ui/icons");
+          var _context = require("../context");
+          /*bundle*/
+          function DynamicButton({
+            children,
+            action,
+            index,
+            onClick,
+            ...props
+          }) {
+            const {
+              onAdd,
+              onRemove
+            } = (0, _context.useDynamicFieldContext)();
+            const actions = {
+              add: onAdd,
+              remove: onRemove
+            };
+            const handleClick = () => {
+              if (onClick) onClick();
+              if (action && actions[action]) actions[action](index);
+            };
+            return _react.default.createElement(_components.Button, {
+              ...props,
+              onClick: handleClick
+            }, children);
+          }
+          /*bundle*/
+          function DynamicIconButton({
+            children,
+            index,
+            action,
+            onClick,
+            ...props
+          }) {
+            const {
+              onAdd,
+              onRemove
+            } = (0, _context.useDynamicFieldContext)();
+            const actions = {
+              add: onAdd,
+              remove: onRemove
+            };
+            const handleClick = () => {
+              if (onClick) onClick();
+              if (action && actions[action]) actions[action](index);
+            };
+            return _react.default.createElement(_icons.IconButton, {
+              ...props,
+              onClick: handleClick
+            }, children);
+          }
+        }
+      });
+
+      /*************************************
+      INTERNAL MODULE: ./components/template
+      *************************************/
+
+      ims.set('./components/template', {
+        hash: 1394527578,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.defaultFieldTemplate = void 0;
+          var React = require("react");
+          const defaultFieldTemplate = children => {
+            return React.Children.toArray(children).reduce((acc, child) => {
+              if (React.isValidElement(child) && child.props.name) {
+                acc[child.props.name] = '';
+              }
+              return acc;
+            }, {});
+          };
+          exports.defaultFieldTemplate = defaultFieldTemplate;
+        }
+      });
+
+      /*************************
+      INTERNAL MODULE: ./context
+      *************************/
+
+      ims.set('./context', {
+        hash: 3988890539,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useDynamicFieldContext = exports.ModuleContext = void 0;
+          var React = require("react");
+          const ModuleContext = exports.ModuleContext = React.createContext({});
+          const /*bundle*/useDynamicFieldContext = () => React.useContext(ModuleContext);
+          exports.useDynamicFieldContext = useDynamicFieldContext;
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./field/field
+      *****************************/
+
+      ims.set('./field/field', {
+        hash: 1156756761,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DynamicField = DynamicField;
+          var _react = require("react");
+          var _context = require("../context");
+          var _row = require("../field/row");
+          /*bundle*/ // DynamicField.tsx
+
+          function DynamicField({
+            children,
+            index
+          }) {
+            const {
+              onBlur,
+              fields,
+              onRemove,
+              onUpdate,
+              name,
+              Empty
+            } = (0, _context.useDynamicFieldContext)();
+            const handleOnBlur = event => {
+              if (!onBlur) return;
+              const target = {
+                name,
+                value: fields
+              };
+              onBlur({
+                target,
+                currentTarget: target
+              });
+            };
+            if (!fields.length) return _react.default.createElement(Empty, null);
+            return _react.default.createElement("div", {
+              className: "dynamic-form__container"
+            }, fields.map((field, index) => _react.default.createElement(_row.FieldRow, {
+              key: index,
+              field: field,
+              index: index,
+              children: children,
+              onRemove: onRemove,
+              onBlur: handleOnBlur,
+              onUpdate: onUpdate
+            })));
+          }
+        }
+      });
+
+      /***************************
+      INTERNAL MODULE: ./field/row
+      ***************************/
+
+      ims.set('./field/row', {
+        hash: 1132438387,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.FieldRow = void 0;
+          var _react = require("react");
+          // field-row.tsx
+
+          const FieldRow = ({
+            field,
+            index,
+            children,
+            onRemove,
+            onBlur,
+            onUpdate
+          }) => {
+            const renderChild = child => {
+              if (!_react.default.isValidElement(child)) return child;
+              const onChange = e => onUpdate(index, e.currentTarget.name, e.currentTarget.value);
+              return _react.default.cloneElement(child, {
+                value: field[child.props.name] || '',
+                onChange,
+                onBlur,
+                index
+              });
+            };
+            const renderChildren = () => _react.default.Children.map(children, renderChild);
+            return _react.default.createElement("div", {
+              className: "dynamic-form__field",
+              "data-index": index
+            }, renderChildren());
+          };
+          exports.FieldRow = FieldRow;
+        }
+      });
+
+      /*****************************************
+      INTERNAL MODULE: ./hooks/use-field-manager
+      *****************************************/
+
+      ims.set('./hooks/use-field-manager', {
+        hash: 1699253795,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useFieldManager = useFieldManager;
+          var _react = require("react");
+          // use-field-manager.ts
+
+          function useFieldManager(lazyInit, initialFields = []) {
+            const initialValue = initialFields.length ? initialFields : lazyInit ? [{}] : [];
+            const [fields, setFields] = (0, _react.useState)(initialValue);
+            (0, _react.useEffect)(() => {
+              setFields(initialFields);
+            }, [initialFields]);
+            const add = template => {
+              const newFields = [...fields, {
+                ...template
+              }];
+              setFields(newFields);
+              return newFields;
+            };
+            const remove = index => {
+              const newFields = fields.filter((_, i) => i !== index);
+              setFields([...newFields]);
+              return newFields;
+            };
+            const update = (index, name, newValue) => {
+              const newFields = fields.map((field, i) => i === index ? {
+                ...field,
+                [name]: newValue
+              } : field);
+              setFields(newFields);
+              return newFields;
+            };
+            return {
+              fields,
+              add,
+              remove,
+              update
+            };
+          }
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 1897305872,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.DynamicFieldContainer = DynamicFieldContainer;
+          var _react = require("react");
+          var _context = require("./context");
+          var _useFieldManager = require("./hooks/use-field-manager");
+          var _template = require("./components/template");
+          /*bundle*/ // DynamicField.tsx
+
+          function DynamicFieldContainer({
+            texts = {
+              add: 'Add',
+              remove: 'Remove'
+            },
+            children,
+            value,
+            name,
+            lazyInit = false,
+            onChange,
+            empty,
+            onBlur
+          }) {
+            const {
+              fields,
+              add,
+              remove,
+              update
+            } = (0, _useFieldManager.useFieldManager)(lazyInit, value);
+            const fieldTemplate = (0, _react.useMemo)(() => (0, _template.defaultFieldTemplate)(children), [children]);
+            const executeOnChange = (newFields, name) => {
+              if (!onChange) return;
+              const target = {
+                name,
+                value: newFields
+              };
+              onChange({
+                target,
+                currentTarget: target,
+                name
+              });
+            };
+            const onAdd = () => {
+              const newFields = add(fieldTemplate);
+              executeOnChange(newFields, 'add');
+            };
+            const onRemove = index => {
+              const newFields = remove(index);
+              executeOnChange(newFields, 'remove');
+            };
+            const onUpdate = (index, name, value) => {
+              const newFields = update(index, name, value);
+              executeOnChange(newFields, 'change');
+            };
+            return _react.default.createElement(_context.ModuleContext.Provider, {
+              value: {
+                Empty: empty,
+                onBlur,
+                texts,
+                fields,
+                onAdd,
+                onRemove,
+                onUpdate,
+                value: fields,
+                name
+              }
+            }, children);
+          }
+        }
+      });
+
+      /********************************
+      INTERNAL MODULE: ./total-elements
+      ********************************/
+
+      ims.set('./total-elements', {
+        hash: 2002400230,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.TotalElements = TotalElements;
+          var React = require("react");
+          var _context = require("./context");
+          /*bundle*/
+          function TotalElements() {
+            const {
+              fields
+            } = (0, _context.useDynamicFieldContext)();
+            return React.createElement("span", {
+              className: "pui-dynamic-field__total-elements"
+            }, fields.length);
+          }
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./types
+      ***********************/
+
+      ims.set('./types', {
+        hash: 1566740805,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./actions/add",
+        "from": "AddButton",
+        "name": "AddButton"
+      }, {
+        "im": "./actions/remove",
+        "from": "RemoveButton",
+        "name": "RemoveButton"
+      }, {
+        "im": "./components/button",
+        "from": "DynamicButton",
+        "name": "DynamicButton"
+      }, {
+        "im": "./components/button",
+        "from": "DynamicIconButton",
+        "name": "DynamicIconButton"
+      }, {
+        "im": "./context",
+        "from": "useDynamicFieldContext",
+        "name": "useDynamicFieldContext"
+      }, {
+        "im": "./field/field",
+        "from": "DynamicField",
+        "name": "DynamicField"
+      }, {
+        "im": "./index",
+        "from": "DynamicFieldContainer",
+        "name": "DynamicFieldContainer"
+      }, {
+        "im": "./total-elements",
+        "from": "TotalElements",
+        "name": "TotalElements"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'AddButton') && _export("AddButton", AddButton = require ? require('./actions/add').AddButton : value);
+        (require || prop === 'RemoveButton') && _export("RemoveButton", RemoveButton = require ? require('./actions/remove').RemoveButton : value);
+        (require || prop === 'DynamicButton') && _export("DynamicButton", DynamicButton = require ? require('./components/button').DynamicButton : value);
+        (require || prop === 'DynamicIconButton') && _export("DynamicIconButton", DynamicIconButton = require ? require('./components/button').DynamicIconButton : value);
+        (require || prop === 'useDynamicFieldContext') && _export("useDynamicFieldContext", useDynamicFieldContext = require ? require('./context').useDynamicFieldContext : value);
+        (require || prop === 'DynamicField') && _export("DynamicField", DynamicField = require ? require('./field/field').DynamicField : value);
+        (require || prop === 'DynamicFieldContainer') && _export("DynamicFieldContainer", DynamicFieldContainer = require ? require('./index').DynamicFieldContainer : value);
+        (require || prop === 'TotalElements') && _export("TotalElements", TotalElements = require ? require('./total-elements').TotalElements : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX2NvbnRleHQiLCJfd3JhcHBlciIsIkFkZEJ1dHRvbiIsInRlbXBsYXRlIiwiY2hpbGRyZW4iLCJvbkFkZCIsInVzZUR5bmFtaWNGaWVsZENvbnRleHQiLCJkZWZhdWx0IiwiY3JlYXRlRWxlbWVudCIsIkFjdGlvbldyYXBwZXIiLCJvbkNsaWNrIiwiZXhwb3J0cyIsIlJlbW92ZUJ1dHRvbiIsImluZGV4Iiwib25SZW1vdmUiLCJpc1ZhbGlkRWxlbWVudCIsImNvbnNvbGUiLCJlcnJvciIsImNsb25lRWxlbWVudCIsIl9jb21wb25lbnRzIiwiX2ljb25zIiwiRHluYW1pY0J1dHRvbiIsImFjdGlvbiIsInByb3BzIiwiYWN0aW9ucyIsImFkZCIsInJlbW92ZSIsImhhbmRsZUNsaWNrIiwiQnV0dG9uIiwiRHluYW1pY0ljb25CdXR0b24iLCJJY29uQnV0dG9uIiwiUmVhY3QiLCJkZWZhdWx0RmllbGRUZW1wbGF0ZSIsIkNoaWxkcmVuIiwidG9BcnJheSIsInJlZHVjZSIsImFjYyIsImNoaWxkIiwibmFtZSIsIk1vZHVsZUNvbnRleHQiLCJjcmVhdGVDb250ZXh0IiwidXNlQ29udGV4dCIsIl9yb3ciLCJEeW5hbWljRmllbGQiLCJvbkJsdXIiLCJmaWVsZHMiLCJvblVwZGF0ZSIsIkVtcHR5IiwiaGFuZGxlT25CbHVyIiwiZXZlbnQiLCJ0YXJnZXQiLCJ2YWx1ZSIsImN1cnJlbnRUYXJnZXQiLCJsZW5ndGgiLCJjbGFzc05hbWUiLCJtYXAiLCJmaWVsZCIsIkZpZWxkUm93Iiwia2V5IiwicmVuZGVyQ2hpbGQiLCJvbkNoYW5nZSIsImUiLCJyZW5kZXJDaGlsZHJlbiIsInVzZUZpZWxkTWFuYWdlciIsImxhenlJbml0IiwiaW5pdGlhbEZpZWxkcyIsImluaXRpYWxWYWx1ZSIsInNldEZpZWxkcyIsInVzZVN0YXRlIiwidXNlRWZmZWN0IiwibmV3RmllbGRzIiwiZmlsdGVyIiwiXyIsImkiLCJ1cGRhdGUiLCJuZXdWYWx1ZSIsIl91c2VGaWVsZE1hbmFnZXIiLCJfdGVtcGxhdGUiLCJEeW5hbWljRmllbGRDb250YWluZXIiLCJ0ZXh0cyIsImVtcHR5IiwiZmllbGRUZW1wbGF0ZSIsInVzZU1lbW8iLCJleGVjdXRlT25DaGFuZ2UiLCJQcm92aWRlciIsIlRvdGFsRWxlbWVudHMiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSJdLCJzb3VyY2VzIjpbIi8vdHMvYWN0aW9ucy9hZGQudHN4IiwiLy90cy9hY3Rpb25zL3JlbW92ZS50c3giLCIvL3RzL2FjdGlvbnMvd3JhcHBlci50c3giLCIvL3RzL2NvbXBvbmVudHMvYnV0dG9uLnRzeCIsIi8vdHMvY29tcG9uZW50cy90ZW1wbGF0ZS50c3giLCIvL3RzL2NvbnRleHQudHMiLCIvL3RzL2ZpZWxkL2ZpZWxkLnRzeCIsIi8vdHMvZmllbGQvcm93LnRzeCIsIi8vdHMvaG9va3MvdXNlLWZpZWxkLW1hbmFnZXIudHN4IiwiLy90cy9pbmRleC50c3giLCIvL3RzL3RvdGFsLWVsZW1lbnRzLnRzeCIsIi8vdHlwZXMudHN4LyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUNBLElBQUFBLE1BQUEsR0FBQUMsT0FBQTtVQUNBLElBQUFDLFFBQUEsR0FBQUQsT0FBQTtVQUNBLElBQUFFLFFBQUEsR0FBQUYsT0FBQTtVQU9PLFdBVlA7O1VBVWtCLE1BQU1HLFNBQVMsR0FBR0EsQ0FBQztZQUFFQyxRQUFRO1lBQUVDO1VBQVEsQ0FBa0IsS0FBSTtZQUM5RSxNQUFNO2NBQUVDO1lBQUssQ0FBRSxHQUFHLElBQUFMLFFBQUEsQ0FBQU0sc0JBQXNCLEdBQUU7WUFFMUMsT0FBT1IsTUFBQSxDQUFBUyxPQUFBLENBQUFDLGFBQUEsQ0FBQ1AsUUFBQSxDQUFBUSxhQUFhO2NBQUND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
