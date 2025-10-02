@@ -1,2 +1,443 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/reactive@2.1.1/entities/collection","@beyond-js/reactive@2.1.1/model","@aimpact/chat-sdk@1.5.5/session","@beyond-js/http-suite@0.1.1/api","@aimpact/ailearn-sdk@1.2.0/config","@aimpact/ailearn-sdk@1.2.0/startup","@beyond-js/reactive@2.1.1/entities/item"],function(_export,_context){var dependency_0,dependency_1,dependency_2,dependency_3,dependency_4,dependency_5,dependency_6,dependency_7,__pkg,__Bundle;return _export({Groups:void 0,DataProvider:void 0,GroupItem:void 0}),{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_beyondJsReactive211EntitiesCollection){dependency_1=_beyondJsReactive211EntitiesCollection},function(_beyondJsReactive211Model){dependency_2=_beyondJsReactive211Model},function(_aimpactChatSdk155Session){dependency_3=_aimpactChatSdk155Session},function(_beyondJsHttpSuite011Api){dependency_4=_beyondJsHttpSuite011Api},function(_aimpactAilearnSdk120Config){dependency_5=_aimpactAilearnSdk120Config},function(_aimpactAilearnSdk120Startup){dependency_6=_aimpactAilearnSdk120Startup},function(_beyondJsReactive211EntitiesItem){dependency_7=_beyondJsReactive211EntitiesItem}],execute:function(){__Bundle=dependency_0.Bundle,(__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-sdk@1.2.0/groups"},type:"ts"},_context.meta.url).package()).dependencies.update([["@beyond-js/reactive/entities/collection",dependency_1],["@beyond-js/reactive/model",dependency_2],["@aimpact/chat-sdk/session",dependency_3],["@beyond-js/http-suite/api",dependency_4],["@aimpact/ailearn-sdk/config",dependency_5],["@aimpact/ailearn-sdk/startup",dependency_6],["@beyond-js/reactive/entities/item",dependency_7]]),(__Bundle=new Map).set("./collection",{hash:270024252,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.Groups=void 0;var _collection=require("@beyond-js/reactive/entities/collection"),_dataProvider=require("./data-provider");class Groups extends _collection.Collection{constructor(entity,item){super({entity:entity,item:item,provider:_dataProvider.DataProvider})}}exports.Groups=Groups}}),__Bundle.set("./data-provider",{hash:655844068,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.DataProvider=void 0;var _session=require("@aimpact/chat-sdk/session"),_api=require("@beyond-js/http-suite/api"),_error=require("./error"),_startup=require("@aimpact/ailearn-sdk/startup");exports.DataProvider=class{#api;#model;#entity;constructor(model){this.#api=new _api.Api(_startup.sdkConfig.apis.ailearn),this.#model=model,this.#entity=model.entity}setModel(model){this.#model=model}async load(specs){console.log("specs in data-provider.ts line 32\n",specs);var token=await _session.sessionWrapper.user.token,token=(this.#api.bearer(token),specs.id||specs.code),specs=await this.#api.get(`/${this.#entity}/`+token);if(specs.status)return specs.data;throw new _error.CustomError(specs.error.text,specs.error.code)}async publish(specs={}){var token=await _session.sessionWrapper.user.token,token=(this.#api.bearer(token),await this.#api.post("/"+this.#entity,specs));if(token.status)return token;throw new _error.CustomError(token.error.text,token.error.code)}async list(specs={endpoint:void 0}){try{var token=await _session.sessionWrapper.user.token,endpoint=(this.#api.bearer(token),specs.endpoint||"/"+this.#entity),response=(delete specs.endpoint,await this.#api.get(endpoint,specs));return response.data.items}catch(e){console.error(e)}}test(){}async invite(specs={}){try{var token=await _session.sessionWrapper.user.token,res=(this.#api.bearer(token),await this.#api.post(`/${this.#entity}/${this.#model.id}/invite`,specs));if(res.status)return res;throw new Error("error publishing organization")}catch(e){console.error(e)}}async cancelInvitation(specs={}){try{var token=await _session.sessionWrapper.user.token,res=(this.#api.bearer(token),await this.#api.delete(`/${this.#entity}/${this.#model.id}/invite/user/`+specs.email,specs));if(res.status)return res;throw new Error("error publishing organization")}catch(e){console.error(e)}}async join(specs={}){var token=await _session.sessionWrapper.user.token,token=(this.#api.bearer(token),await this.#api.post(`/${this.#entity}/join`,specs));if(token.status)return token;if(104===token.error.code)throw new Error("ALREADY_MEMBER");if(101===token.error.code)throw new Error("ALREADY_WAITING");if(100===token.error.code)throw new Error("INVALID_CODE");throw new Error("ERROR_PUBLISHING")}async approve(specs={}){var token=await _session.sessionWrapper.user.token,token=(this.#api.bearer(token),await this.#api.post(`/${this.#entity}/${this.#model.id}/approve`,specs));if(token.status)return token;throw new _error.CustomError(token.error.text,token.error.code)}async delete(specs){var token=await _session.sessionWrapper.user.token,token=(this.#api.bearer(token),await this.#api.delete(`/${this.#entity}/`+specs.id));if(token.status)return token;throw new _error.CustomError(token.error.text,token.error.code)}async removeMember(specs){var token=await _session.sessionWrapper.user.token,token=(this.#api.bearer(token),await this.#api.delete(`/${this.#entity}/${specs.id}/user/`+specs.uid));if(token.status)return token;throw new _error.CustomError(token.error.text,token.error.code)}async reject(specs){try{var token=await _session.sessionWrapper.user.token,res=(this.#api.bearer(token),await this.#api.delete(`/${this.#entity}/${specs.id}/join/user/`+specs.uid,{}));if(res.status)return res;throw new Error("Error rejecting the user from the "+this.#entity)}catch(e){console.error(e)}}async requestAccess(){return(await this.#api.post(`/classrooms/${this.#model.id}/request`,{})).data}}}}),__Bundle.set("./error",{hash:2905388780,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.CustomError=void 0;class CustomError extends Error{message;code;constructor(message,code){super(message),this.name="CustomError",this.code=code}}exports.CustomError=CustomError}}),__Bundle.set("./item",{hash:888708355,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.GroupItem=void 0;var _item=require("@beyond-js/reactive/entities/item"),_dataProvider=require("./data-provider"),_session=require("@aimpact/chat-sdk/session");class GroupItem extends _item.Item{#hasAccess=!1;get hasAccess(){return this.#hasAccess}#members=[];get members(){return this.#members}#managers=[];get managers(){return this.#managers}#pendings=[];get pendings(){return this.#pendings}#registered=new Map;#isAdmin;get isAdmin(){return this.#isAdmin}get authorizedPeople(){return this.people.filter(i=>i.authorized)}#ready=!1;get ready(){return this.#ready}constructor(entity,{properties,...data}){super({entity:entity,...data,provider:_dataProvider.DataProvider,properties:["timeCreated","timeUpdated","name","access","address","description","people","joinSpecs","id","status","joined",...properties]}),this.provider.setModel(this)}async load(specs){console.log("specs in item.ts line 82\n",specs),this.#pendings=[],this.#managers=[],this.#members=[],this.#registered=new Map,console.log("specs in item.ts line 86\n",specs),(specs="number"==typeof specs||"string"==typeof specs?{id:specs}:specs)&&0!==Object.keys(specs).length||(specs={id:this.id}),console.log("specs in item.ts line 89\n",specs);specs=await super.load(specs);if(this.people){this.#hasAccess=!0,this.people.sort((a,b)=>a.name.localeCompare(b.name));var people=this.people;let isAdmin=people.some(i=>"manager"===i.role&&i.uid===_session.sessionWrapper.user.id);this.#isAdmin=isAdmin;return this.#ready=!0,people.forEach(person=>{var currentRole=this.#registered.get(person.id);!person.invited&&person.role&&currentRole===person.role?this.#pendings=this.#pendings.filter(i=>i.id!==person.id):(isAdmin&&!person.invited&&currentRole&&("manager"===currentRole?this.#managers=this.#managers.filter(i=>i.id!==person.id):this.#members=this.#members.filter(i=>i.id!==person.id)),this.#pendings=this.#pendings.filter(i=>i.id!==person.id),!isAdmin||person.authorized&&!person.invited||this.#pendings.push(person),person.role&&("manager"===person.role?this.#managers:this.#members).push(person),person.invited||this.#registered.set(person.id,person.role))}),specs}}async approve(specs){if(!specs||!specs.uid)throw new Error("Invalid specifications provided.");var uid=((await this.provider.approve(specs)).status,specs).uid;let id=uid||specs.id;var uid=this.#pendings.findIndex(p=>p.uid===id||p.id===id);this.#registered.set(this.#pendings[uid].id,specs.role),0<=uid&&([uid]=this.#pendings.splice(uid,1),uid.authorized=!0,("member"===specs.role?this.#members:this.#managers).push(uid)),this.triggerEvent()}async removeMember(args){(await this.provider.removeMember(args)).status&&(this.people=this.people.filter(i=>i.uid!==args.uid),this.#managers=this.#managers.filter(i=>i.uid!==args.uid),this.#members=this.#members.filter(i=>i.uid!==args.uid),this.triggerEvent())}async reject(specs){(await this.provider.reject({id:this.id,...specs})).status&&(this.people=this.people.filter(i=>i.uid!==specs.uid),this.#pendings=this.#pendings.filter(i=>i.uid!==specs.uid),this.triggerEvent())}async invite(specs){var response=await this.provider.invite(specs),specs={...specs,invited:!0};return this.people.push(specs),this.#pendings.push(specs),this.trigger("change"),response}async cancelInvitation(specs){(await this.provider.cancelInvitation(specs)).status&&(this.people=this.people.filter(i=>i.email!==specs.email),this.#pendings=this.#pendings.filter(i=>i.email!==specs.email),this.triggerEvent())}async delete(){var response=await this.provider.delete({id:this.id});return response.status&&this.triggerEvent(),response}async join({code}){var data=await this.provider.join({code:code});return this.set({code:code}),data}async requestAccess(){var data=await this.provider.requestAccess();return"authorized"===data.status.toLowerCase()?await this.load({id:this.id}):await this.set({access:data.status}),this.set(data),data}}exports.GroupItem=GroupItem}}),__pkg.exports.descriptor=[{im:"./collection",from:"Groups",name:"Groups"},{im:"./data-provider",from:"DataProvider",name:"DataProvider"},{im:"./item",from:"GroupItem",name:"GroupItem"}],__pkg.exports.process=function({require,prop,value}){!require&&"Groups"!==prop||_export("Groups",require?require("./collection").Groups:value),!require&&"DataProvider"!==prop||_export("DataProvider",require?require("./data-provider").DataProvider:value),!require&&"GroupItem"!==prop||_export("GroupItem",require?require("./item").GroupItem:value)},_export("__beyond_pkg",__pkg),_export("hmr",new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener),this.off=(event,listener)=>__pkg.hmr.off(event,listener)}),__pkg.initialise(__Bundle)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8vY29sbGVjdGlvbi50cy8iLCIvL2RhdGEtcHJvdmlkZXIudHMvIiwiLy9lcnJvci50cy8iLCIvL2l0ZW0udHMvIl0sIm5hbWVzIjpbIl9jb2xsZWN0aW9uIiwicmVxdWlyZSIsIl9kYXRhUHJvdmlkZXIiLCJHcm91cHMiLCJDb2xsZWN0aW9uIiwiY29uc3RydWN0b3IiLCJlbnRpdHkiLCJpdGVtIiwic3VwZXIiLCJwcm92aWRlciIsIkRhdGFQcm92aWRlciIsImV4cG9ydHMiLCJfc2Vzc2lvbiIsIl9hcGkiLCJfZXJyb3IiLCJfc3RhcnR1cCIsIiNhcGkiLCIjbW9kZWwiLCIjZW50aXR5IiwibW9kZWwiLCJ0aGlzIiwiQXBpIiwic2RrQ29uZmlnIiwiYXBpcyIsImFpbGVhcm4iLCJzZXRNb2RlbCIsImxvYWQiLCJzcGVjcyIsImNvbnNvbGUiLCJsb2ciLCJ0b2tlbiIsImF3YWl0Iiwic2Vzc2lvbldyYXBwZXIiLCJ1c2VyIiwiaWQiLCJiZWFyZXIiLCJjb2RlIiwicmVzcG9uc2UiLCJnZXQiLCJzdGF0dXMiLCJkYXRhIiwiQ3VzdG9tRXJyb3IiLCJlcnJvciIsInRleHQiLCJwdWJsaXNoIiwicG9zdCIsImxpc3QiLCJlbmRwb2ludCIsInVuZGVmaW5lZCIsIml0ZW1zIiwiZSIsInRlc3QiLCJpbnZpdGUiLCJyZXMiLCJFcnJvciIsImNhbmNlbEludml0YXRpb24iLCJkZWxldGUiLCJlbWFpbCIsImpvaW4iLCJhcHByb3ZlIiwicmVtb3ZlTWVtYmVyIiwidWlkIiwicmVqZWN0IiwicmVxdWVzdEFjY2VzcyIsIm1lc3NhZ2UiLCJuYW1lIiwiX2l0ZW0iLCJHcm91cEl0ZW0iLCJJdGVtIiwiI2hhc0FjY2VzcyIsImhhc0FjY2VzcyIsIiNtZW1iZXJzIiwibWVtYmVycyIsIiNtYW5hZ2VycyIsIm1hbmFnZXJzIiwiI3BlbmRpbmdzIiwicGVuZGluZ3MiLCIjcmVnaXN0ZXJlZCIsIk1hcCIsIiNpc0FkbWluIiwiaXNBZG1pbiIsImF1dGhvcml6ZWRQZW9wbGUiLCJwZW9wbGUiLCJmaWx0ZXIiLCJpIiwiYXV0aG9yaXplZCIsIiNyZWFkeSIsInJlYWR5IiwicHJvcGVydGllcyIsIk9iamVjdCIsImtleXMiLCJsZW5ndGgiLCJzb3J0IiwiYSIsImIiLCJsb2NhbGVDb21wYXJlIiwic29tZSIsInJvbGUiLCJmb3JFYWNoIiwicGVyc29uIiwiY3VycmVudFJvbGUiLCJpbnZpdGVkIiwicHVzaCIsInNldCIsInBlbmRpbmdJbmRleCIsImZpbmRJbmRleCIsInAiLCJwZW5kaW5nTWVtYmVyIiwic3BsaWNlIiwidHJpZ2dlckV2ZW50IiwiYXJncyIsIm1lbWJlciIsInRyaWdnZXIiLCJ0b0xvd2VyQ2FzZSIsImFjY2VzcyJdLCJtYXBwaW5ncyI6IjYxREFBQSxJQUFBQSxZQUFBQyxRQUFBLHlDQUFBLEVBQ0FDLGNBQUFELFFBQUEsaUJBQUEsUUFFd0JFLGVBQWVILFlBQUFJLFdBQ3RDQyxZQUFZQyxPQUFRQyxNQUNuQkMsTUFBTSxDQUNMRixPQUFBQSxPQUNBQyxLQUFBQSxLQUNBRSxTQUFVUCxjQUFBUSxZLENBQ1YsQ0FDRixDLENBQ0FDLFFBQUFSLE9BQUFBLE0sd0tDVkQsSUFBQVMsU0FBQVgsUUFBQSwyQkFBQSxFQUVBWSxLQUFBWixRQUFBLDJCQUFBLEVBSUFhLE9BQUFiLFFBQUEsU0FBQSxFQUNBYyxTQUFBZCxRQUFBLDhCQUFBLEVBc0tDVSxRQUFBRCxtQkE5SkFNLEtBQ0FDLE9BRUFDLFFBRUFiLFlBQVljLE9BQ1hDLEtBQUtKLEtBQU8sSUFBSUgsS0FBQVEsSUFBSU4sU0FBQU8sVUFBVUMsS0FBS0MsT0FBTyxFQUMxQ0osS0FBS0gsT0FBU0UsTUFDZEMsS0FBS0YsUUFBVUMsTUFBTWIsTUFDdEIsQ0FFQW1CLFNBQVNOLE9BQ1JDLEtBQUtILE9BQVNFLEtBQ2YsQ0FDQU8sV0FBV0MsT0FDVkMsUUFBUUMsSUFBSSxzQ0FBdUNGLEtBQUssRUFDeEQsSUFBTUcsTUFBUUMsTUFBTW5CLFNBQUFvQixlQUFlQyxLQUFLSCxNQUVsQ0ksT0FETmQsS0FBS0osS0FBS21C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
+System.register(
+	[
+		'@beyond-js/kernel@0.1.14/bundle',
+		'@beyond-js/reactive@2.1.1/entities/collection',
+		'@beyond-js/reactive@2.1.1/model',
+		'@aimpact/chat-sdk@1.5.5/session',
+		'@beyond-js/http-suite@0.1.1/api',
+		'@aimpact/ailearn-sdk@1.2.0/config',
+		'@aimpact/ailearn-sdk@1.2.0/startup',
+		'@beyond-js/reactive@2.1.1/entities/item'
+	],
+	function (_export, _context) {
+		var dependency_0,
+			dependency_1,
+			dependency_2,
+			dependency_3,
+			dependency_4,
+			dependency_5,
+			dependency_6,
+			dependency_7,
+			__pkg,
+			__Bundle;
+		return (
+			_export({ Groups: void 0, DataProvider: void 0, GroupItem: void 0 }),
+			{
+				setters: [
+					function (_beyondJsKernel0114Bundle) {
+						dependency_0 = _beyondJsKernel0114Bundle;
+					},
+					function (_beyondJsReactive211EntitiesCollection) {
+						dependency_1 = _beyondJsReactive211EntitiesCollection;
+					},
+					function (_beyondJsReactive211Model) {
+						dependency_2 = _beyondJsReactive211Model;
+					},
+					function (_aimpactChatSdk155Session) {
+						dependency_3 = _aimpactChatSdk155Session;
+					},
+					function (_beyondJsHttpSuite011Api) {
+						dependency_4 = _beyondJsHttpSuite011Api;
+					},
+					function (_aimpactAilearnSdk120Config) {
+						dependency_5 = _aimpactAilearnSdk120Config;
+					},
+					function (_aimpactAilearnSdk120Startup) {
+						dependency_6 = _aimpactAilearnSdk120Startup;
+					},
+					function (_beyondJsReactive211EntitiesItem) {
+						dependency_7 = _beyondJsReactive211EntitiesItem;
+					}
+				],
+				execute: function () {
+					(__Bundle = dependency_0.Bundle),
+						(__pkg = new __Bundle(
+							{ module: { vspecifier: '@aimpact/ailearn-sdk@1.2.0/groups' }, type: 'ts' },
+							_context.meta.url
+						).package()).dependencies.update([
+							['@beyond-js/reactive/entities/collection', dependency_1],
+							['@beyond-js/reactive/model', dependency_2],
+							['@aimpact/chat-sdk/session', dependency_3],
+							['@beyond-js/http-suite/api', dependency_4],
+							['@aimpact/ailearn-sdk/config', dependency_5],
+							['@aimpact/ailearn-sdk/startup', dependency_6],
+							['@beyond-js/reactive/entities/item', dependency_7]
+						]),
+						(__Bundle = new Map()).set('./collection', {
+							hash: 270024252,
+							creator: function (require, exports) {
+								Object.defineProperty(exports, '__esModule', { value: !0 }), (exports.Groups = void 0);
+								var _collection = require('@beyond-js/reactive/entities/collection'),
+									_dataProvider = require('./data-provider');
+								class Groups extends _collection.Collection {
+									constructor(entity, item) {
+										super({ entity: entity, item: item, provider: _dataProvider.DataProvider });
+									}
+								}
+								exports.Groups = Groups;
+							}
+						}),
+						__Bundle.set('./data-provider', {
+							hash: 655844068,
+							creator: function (require, exports) {
+								Object.defineProperty(exports, '__esModule', { value: !0 }),
+									(exports.DataProvider = void 0);
+								var _session = require('@aimpact/chat-sdk/session'),
+									_api = require('@beyond-js/http-suite/api'),
+									_error = require('./error'),
+									_startup = require('@aimpact/ailearn-sdk/startup');
+								exports.DataProvider = class {
+									#api;
+									#model;
+									#entity;
+									constructor(model) {
+										(this.#api = new _api.Api(_startup.sdkConfig.apis.ailearn)),
+											(this.#model = model),
+											(this.#entity = model.entity);
+									}
+									setModel(model) {
+										this.#model = model;
+									}
+									async load(specs) {
+										console.trace('specs in data-provider.ts line 32\n', specs);
+										var token = await _session.sessionWrapper.user.token,
+											token = (this.#api.bearer(token), specs.id || specs.code),
+											specs = await this.#api.get(`/${this.#entity}/` + token);
+										if (specs.status) return specs.data;
+										throw new _error.CustomError(specs.error.text, specs.error.code);
+									}
+									async publish(specs = {}) {
+										var token = await _session.sessionWrapper.user.token,
+											token =
+												(this.#api.bearer(token),
+												await this.#api.post('/' + this.#entity, specs));
+										if (token.status) return token;
+										throw new _error.CustomError(token.error.text, token.error.code);
+									}
+									async list(specs = { endpoint: void 0 }) {
+										try {
+											var token = await _session.sessionWrapper.user.token,
+												endpoint =
+													(this.#api.bearer(token), specs.endpoint || '/' + this.#entity),
+												response =
+													(delete specs.endpoint, await this.#api.get(endpoint, specs));
+											return response.data.items;
+										} catch (e) {
+											console.error(e);
+										}
+									}
+									test() {}
+									async invite(specs = {}) {
+										try {
+											var token = await _session.sessionWrapper.user.token,
+												res =
+													(this.#api.bearer(token),
+													await this.#api.post(
+														`/${this.#entity}/${this.#model.id}/invite`,
+														specs
+													));
+											if (res.status) return res;
+											throw new Error('error publishing organization');
+										} catch (e) {
+											console.error(e);
+										}
+									}
+									async cancelInvitation(specs = {}) {
+										try {
+											var token = await _session.sessionWrapper.user.token,
+												res =
+													(this.#api.bearer(token),
+													await this.#api.delete(
+														`/${this.#entity}/${this.#model.id}/invite/user/` + specs.email,
+														specs
+													));
+											if (res.status) return res;
+											throw new Error('error publishing organization');
+										} catch (e) {
+											console.error(e);
+										}
+									}
+									async join(specs = {}) {
+										var token = await _session.sessionWrapper.user.token,
+											token =
+												(this.#api.bearer(token),
+												await this.#api.post(`/${this.#entity}/join`, specs));
+										if (token.status) return token;
+										if (104 === token.error.code) throw new Error('ALREADY_MEMBER');
+										if (101 === token.error.code) throw new Error('ALREADY_WAITING');
+										if (100 === token.error.code) throw new Error('INVALID_CODE');
+										throw new Error('ERROR_PUBLISHING');
+									}
+									async approve(specs = {}) {
+										var token = await _session.sessionWrapper.user.token,
+											token =
+												(this.#api.bearer(token),
+												await this.#api.post(
+													`/${this.#entity}/${this.#model.id}/approve`,
+													specs
+												));
+										if (token.status) return token;
+										throw new _error.CustomError(token.error.text, token.error.code);
+									}
+									async delete(specs) {
+										var token = await _session.sessionWrapper.user.token,
+											token =
+												(this.#api.bearer(token),
+												await this.#api.delete(`/${this.#entity}/` + specs.id));
+										if (token.status) return token;
+										throw new _error.CustomError(token.error.text, token.error.code);
+									}
+									async removeMember(specs) {
+										var token = await _session.sessionWrapper.user.token,
+											token =
+												(this.#api.bearer(token),
+												await this.#api.delete(
+													`/${this.#entity}/${specs.id}/user/` + specs.uid
+												));
+										if (token.status) return token;
+										throw new _error.CustomError(token.error.text, token.error.code);
+									}
+									async reject(specs) {
+										try {
+											var token = await _session.sessionWrapper.user.token,
+												res =
+													(this.#api.bearer(token),
+													await this.#api.delete(
+														`/${this.#entity}/${specs.id}/join/user/` + specs.uid,
+														{}
+													));
+											if (res.status) return res;
+											throw new Error('Error rejecting the user from the ' + this.#entity);
+										} catch (e) {
+											console.error(e);
+										}
+									}
+									async requestAccess() {
+										return (await this.#api.post(`/classrooms/${this.#model.id}/request`, {})).data;
+									}
+								};
+							}
+						}),
+						__Bundle.set('./error', {
+							hash: 2905388780,
+							creator: function (require, exports) {
+								Object.defineProperty(exports, '__esModule', { value: !0 }),
+									(exports.CustomError = void 0);
+								class CustomError extends Error {
+									message;
+									code;
+									constructor(message, code) {
+										super(message), (this.name = 'CustomError'), (this.code = code);
+									}
+								}
+								exports.CustomError = CustomError;
+							}
+						}),
+						__Bundle.set('./item', {
+							hash: 888708355,
+							creator: function (require, exports) {
+								Object.defineProperty(exports, '__esModule', { value: !0 }),
+									(exports.GroupItem = void 0);
+								var _item = require('@beyond-js/reactive/entities/item'),
+									_dataProvider = require('./data-provider'),
+									_session = require('@aimpact/chat-sdk/session');
+								class GroupItem extends _item.Item {
+									#hasAccess = !1;
+									get hasAccess() {
+										return this.#hasAccess;
+									}
+									#members = [];
+									get members() {
+										return this.#members;
+									}
+									#managers = [];
+									get managers() {
+										return this.#managers;
+									}
+									#pendings = [];
+									get pendings() {
+										return this.#pendings;
+									}
+									#registered = new Map();
+									#isAdmin;
+									get isAdmin() {
+										return this.#isAdmin;
+									}
+									get authorizedPeople() {
+										return this.people.filter(i => i.authorized);
+									}
+									#ready = !1;
+									get ready() {
+										return this.#ready;
+									}
+									constructor(entity, { properties, ...data }) {
+										super({
+											entity: entity,
+											...data,
+											provider: _dataProvider.DataProvider,
+											properties: [
+												'timeCreated',
+												'timeUpdated',
+												'name',
+												'access',
+												'address',
+												'description',
+												'people',
+												'joinSpecs',
+												'id',
+												'status',
+												'joined',
+												...properties
+											]
+										}),
+											this.provider.setModel(this);
+									}
+									async load(specs) {
+										console.log('specs in item.ts line 82\n', specs),
+											(this.#pendings = []),
+											(this.#managers = []),
+											(this.#members = []),
+											(this.#registered = new Map()),
+											console.log('specs in item.ts line 86\n', specs),
+											((specs =
+												'number' == typeof specs || 'string' == typeof specs
+													? { id: specs }
+													: specs) &&
+												0 !== Object.keys(specs).length) ||
+												(specs = { id: this.id }),
+											console.log('specs in item.ts line 89\n', specs);
+										specs = await super.load(specs);
+										if (this.people) {
+											(this.#hasAccess = !0),
+												this.people.sort((a, b) => a.name.localeCompare(b.name));
+											var people = this.people;
+											let isAdmin = people.some(
+												i => 'manager' === i.role && i.uid === _session.sessionWrapper.user.id
+											);
+											this.#isAdmin = isAdmin;
+											return (
+												(this.#ready = !0),
+												people.forEach(person => {
+													var currentRole = this.#registered.get(person.id);
+													!person.invited && person.role && currentRole === person.role
+														? (this.#pendings = this.#pendings.filter(
+																i => i.id !== person.id
+														  ))
+														: (isAdmin &&
+																!person.invited &&
+																currentRole &&
+																('manager' === currentRole
+																	? (this.#managers = this.#managers.filter(
+																			i => i.id !== person.id
+																	  ))
+																	: (this.#members = this.#members.filter(
+																			i => i.id !== person.id
+																	  ))),
+														  (this.#pendings = this.#pendings.filter(
+																i => i.id !== person.id
+														  )),
+														  !isAdmin ||
+																(person.authorized && !person.invited) ||
+																this.#pendings.push(person),
+														  person.role &&
+																('manager' === person.role
+																	? this.#managers
+																	: this.#members
+																).push(person),
+														  person.invited ||
+																this.#registered.set(person.id, person.role));
+												}),
+												specs
+											);
+										}
+									}
+									async approve(specs) {
+										if (!specs || !specs.uid) throw new Error('Invalid specifications provided.');
+										var uid = ((await this.provider.approve(specs)).status, specs).uid;
+										let id = uid || specs.id;
+										var uid = this.#pendings.findIndex(p => p.uid === id || p.id === id);
+										this.#registered.set(this.#pendings[uid].id, specs.role),
+											0 <= uid &&
+												(([uid] = this.#pendings.splice(uid, 1)),
+												(uid.authorized = !0),
+												('member' === specs.role ? this.#members : this.#managers).push(uid)),
+											this.triggerEvent();
+									}
+									async removeMember(args) {
+										(await this.provider.removeMember(args)).status &&
+											((this.people = this.people.filter(i => i.uid !== args.uid)),
+											(this.#managers = this.#managers.filter(i => i.uid !== args.uid)),
+											(this.#members = this.#members.filter(i => i.uid !== args.uid)),
+											this.triggerEvent());
+									}
+									async reject(specs) {
+										(await this.provider.reject({ id: this.id, ...specs })).status &&
+											((this.people = this.people.filter(i => i.uid !== specs.uid)),
+											(this.#pendings = this.#pendings.filter(i => i.uid !== specs.uid)),
+											this.triggerEvent());
+									}
+									async invite(specs) {
+										var response = await this.provider.invite(specs),
+											specs = { ...specs, invited: !0 };
+										return (
+											this.people.push(specs),
+											this.#pendings.push(specs),
+											this.trigger('change'),
+											response
+										);
+									}
+									async cancelInvitation(specs) {
+										(await this.provider.cancelInvitation(specs)).status &&
+											((this.people = this.people.filter(i => i.email !== specs.email)),
+											(this.#pendings = this.#pendings.filter(i => i.email !== specs.email)),
+											this.triggerEvent());
+									}
+									async delete() {
+										var response = await this.provider.delete({ id: this.id });
+										return response.status && this.triggerEvent(), response;
+									}
+									async join({ code }) {
+										var data = await this.provider.join({ code: code });
+										return this.set({ code: code }), data;
+									}
+									async requestAccess() {
+										var data = await this.provider.requestAccess();
+										return (
+											'authorized' === data.status.toLowerCase()
+												? await this.load({ id: this.id })
+												: await this.set({ access: data.status }),
+											this.set(data),
+											data
+										);
+									}
+								}
+								exports.GroupItem = GroupItem;
+							}
+						}),
+						(__pkg.exports.descriptor = [
+							{ im: './collection', from: 'Groups', name: 'Groups' },
+							{ im: './data-provider', from: 'DataProvider', name: 'DataProvider' },
+							{ im: './item', from: 'GroupItem', name: 'GroupItem' }
+						]),
+						(__pkg.exports.process = function ({ require, prop, value }) {
+							(!require && 'Groups' !== prop) ||
+								_export('Groups', require ? require('./collection').Groups : value),
+								(!require && 'DataProvider' !== prop) ||
+									_export('DataProvider', require ? require('./data-provider').DataProvider : value),
+								(!require && 'GroupItem' !== prop) ||
+									_export('GroupItem', require ? require('./item').GroupItem : value);
+						}),
+						_export('__beyond_pkg', __pkg),
+						_export(
+							'hmr',
+							new (function () {
+								(this.on = (event, listener) => __pkg.hmr.on(event, listener)),
+									(this.off = (event, listener) => __pkg.hmr.off(event, listener));
+							})()
+						),
+						__pkg.initialise(__Bundle);
+				}
+			}
+		);
+	}
+);
