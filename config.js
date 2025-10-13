@@ -1,19 +1,20 @@
-System.register([], function (_export, _context) {
+System.register([], function (a, e) {
+	'use strict';
 	return {
 		setters: [],
 		execute: function () {
-			_export('default', {
+			a('default', {
 				package: '@aimpact/rvd',
-				version: '0.6.6',
+				version: '0.6.7',
 				languages: { default: 'en', supported: ['en', 'es', 'de', 'pt', 'fr'] },
 				environment: 'production',
-				'global.css': !0,
+				'global.css': true,
 				params: {
 					app: 'rvd',
 					APP_LOGO: '/assets/images/branding/logo.png',
 					APP_NAME: 'RVD AI',
 					APP_SUPPORT_EMAIL: 'soporte@rvd.ai',
-					tutorials: !0,
+					tutorials: true,
 					baseUrl: 'https://app.rvd.ai',
 					apis: {
 						ailearn: 'https://ailearn.api.aimpact.partners',
@@ -38,3 +39,4 @@ System.register([], function (_export, _context) {
 		}
 	};
 });
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlnLmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQiLCJzZXR0ZXJzIiwiZXhlY3V0ZSIsInBhY2thZ2UiLCJ2ZXJzaW9uIiwibGFuZ3VhZ2VzIiwiZGVmYXVsdCIsInN1cHBvcnRlZCIsImVudmlyb25tZW50IiwicGFyYW1zIiwiYXBwIiwiQVBQX0xPR08iLCJBUFBfTkFNRSIsIkFQUF9TVVBQT1JUX0VNQUlMIiwidHV0b3JpYWxzIiwiYmFzZVVybCIsImFwaXMiLCJhaWxlYXJuIiwiYWdlbnRzIiwicmVhbHRpbWUiLCJwcm9qZWN0SWQiLCJmaXJlYmFzZSIsImFwaUtleSIsImF1dGhEb21haW4iLCJzdG9yYWdlQnVja2V0IiwibWVzc2FnaW5nU2VuZGVySWQiLCJhcHBJZCIsInNzciIsImJhY2tlbmQiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxHQUFJLFNBQVVDLEVBQVNDLEdBQ3JDLGFBRUEsTUFBTyxDQUNMQyxRQUFTLEdBQ1RDLFFBQVMsV0FDUEgsRUFBUSxVQUFXLENBQ2pCSSxRQUFXLGVBQ1hDLFFBQVcsUUFDWEMsVUFBYSxDQUNYQyxRQUFXLEtBQ1hDLFVBQWEsQ0FBQyxLQUFNLEtBQU0sS0FBTSxLQUFNLE9BRXhDQyxZQUFlLGFBQ2YsYUFBYyxLQUNkQyxPQUFVLENBQ1JDLElBQU8sTUFDUEMsU0FBWSxtQ0FDWkMsU0FBWSxTQUNaQyxrQkFBcUIsaUJBQ3JCQyxVQUFhLEtBQ2JDLFFBQVcscUJBQ1hDLEtBQVEsQ0FDTkMsUUFBVyx1Q0FDWEMsT0FBVSxzQ0FDVkMsU0FBWSxxQ0FFZEYsUUFBVywyQ0FDWEMsT0FBVSxDQUNSRSxVQUFhLHdDQUVmQyxTQUFZLENBQ1ZOLFFBQVcscUJBQ1hPLE9BQVUsMENBQ1ZDLFdBQWMsc0NBQ2RILFVBQWEsc0JBQ2JJLGNBQWlCLDBDQUNqQkMsa0JBQXFCLGVBQ3JCQyxNQUFTLDhDQUdiQyxJQUFPLENBQUMsRUFDUkMsUUFBVyxDQUFDLEdBRWhCLEVBRUoiLCJpZ25vcmVMaXN0IjpbXX0=
