@@ -5,7 +5,7 @@ System.register([], function (e, a) {
 		execute: function () {
 			e('default', {
 				package: '@aimpact/rvd',
-				version: '0.6.6-dev.01',
+				version: '0.7.0-dev.01',
 				languages: { default: 'en', supported: ['en', 'es', 'de', 'pt', 'fr'] },
 				environment: 'development',
 				'global.css': true,
