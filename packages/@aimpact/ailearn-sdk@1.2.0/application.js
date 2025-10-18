@@ -1,2 +1,95 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@aimpact/ailearn-sdk@1.2.0/startup","@aimpact/chat-sdk@1.5.5/session","@beyond-js/http-suite@0.1.1/api","@beyond-js/reactive@2.1.1/model"],function(e,t){"use strict";var i,a,n,s,o,r,p,c,d,l,u,m;e("Application",void 0);return{setters:[function(e){i=e},function(e){a=e},function(e){n=e},function(e){s=e},function(e){o=e}],execute:function(){r=e=>{const t=new Map([["@aimpact/media-manager","1.0.0"],["@beyond-js/http-suite","0.1.1"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-app",null],["@beyond-js/reactive","2.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/kernel","0.1.12"],["@beyond-js/local","0.1.3"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/widgets","1.1.2"],["@firebase/auth","1.10.0"],["@types/node","22.13.16"],["dexie","4.0.11"],["firebase","10.14.1"],["pragmate-ui","0.0.6"],["react-select","5.10.1"],["socket.io-client","4.8.1"],["zod","3.24.2"],["jest","29.7.0"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/rvd","0.6.7"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:p}=i);c=new p({module:{vspecifier:"@aimpact/ailearn-sdk@1.2.0/application"},type:"ts"},t.meta.url).package();c.dependencies.update([["@aimpact/ailearn-sdk/startup",a],["@aimpact/chat-sdk/session",n],["@beyond-js/http-suite/api",s],["@beyond-js/reactive/model",o]]);d=new Map;d.set("./index",{hash:1460778365,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.Application=void 0;var i=e("@aimpact/ailearn-sdk/startup");var a=e("@aimpact/chat-sdk/session");var n=e("@beyond-js/http-suite/api");var s=e("@beyond-js/reactive/model");class o extends s.ReactiveModel{#e;constructor(){super();this.#e=new n.Api(i.sdkConfig.apis.ailearn)}async policies(){try{const e=await a.sessionWrapper.user.token;this.#e.bearer(e);const t=await this.#e.get("/application/metadata/policy");if(!t.status)throw new Error("Error fetching policies");return t.data}catch(e){console.error(e)}}}t.Application=o}});c.exports.descriptor=[{im:"./index",from:"Application",name:"Application"}];c.exports.process=function({require:t,prop:i,value:a}){(t||i==="Application")&&e("Application",l=t?t("./index").Application:a)};e("__beyond_pkg",u=c);e("hmr",m=new function(){this.on=(e,t)=>c.hmr.on(e,t);this.off=(e,t)=>c.hmr.off(e,t)});c.initialise(d)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1zZGtAMS4yLjAvYXBwbGljYXRpb24uanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImRlcGVuZGVuY3lfMSIsImRlcGVuZGVuY3lfMiIsImRlcGVuZGVuY3lfMyIsImRlcGVuZGVuY3lfNCIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwiQXBwbGljYXRpb24iLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsIl9haW1wYWN0QWlsZWFyblNkazEyMFN0YXJ0dXAiLCJfYWltcGFjdENoYXRTZGsxNTVTZXNzaW9uIiwiX2JleW9uZEpzSHR0cFN1aXRlMDExQXBpIiwiX2JleW9uZEpzUmVhY3RpdmUyMTFNb2RlbCIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJ2YWx1ZSIsIl9zdGFydHVwIiwiX3Nlc3Npb24iLCJfYXBpIiwiX21vZGVsIiwiUmVhY3RpdmVNb2RlbCIsImFwaSIsImNvbnN0cnVjdG9yIiwic3VwZXIiLCJ0aGlzIiwiQXBpIiwic2RrQ29uZmlnIiwiYXBpcyIsImFpbGVhcm4iLCJwb2xpY2llcyIsInRva2VuIiwic2Vzc2lvbldyYXBwZXIiLCJ1c2VyIiwiYmVhcmVyIiwicmVzcG9uc2UiLCJnZXQiLCJzdGF0dXMiLCJFcnJvciIsImRhdGEiLCJlIiwiY29uc29sZSIsImVycm9yIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLGtDQUFtQyxxQ0FBc0Msa0NBQW1DLGtDQUFtQyxtQ0FBb0MsU0FBVUMsRUFBU0MsR0FDck4sYUFFQSxJQUFJQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFTQyxFQUFVQyxFQUFPQyxFQUFLQyxFQUFhQyxFQUFjQyxFQUNwSWIsRUFBUSxtQkFBb0IsR0FDNUIsTUFBTyxDQUNMYyxRQUFTLENBQUMsU0FBVUMsR0FDbEJiLEVBQWVhLENBQ2pCLEVBQUcsU0FBVUMsR0FDWGIsRUFBZWEsQ0FDakIsRUFBRyxTQUFVQyxHQUNYYixFQUFlYSxDQUNqQixFQUFHLFNBQVVDLEdBQ1hiLEVBQWVhLENBQ2pCLEVBQUcsU0FBVUMsR0FDWGIsRUFBZWEsQ0FDakIsR0FDQUMsUUFBUyxXQUNQYixFQUFVYyxJQUNSLE1BQU1DLEVBQWUsSUFBSUMsSUFBSSxDQUFDLENBQUMseUJBQTBCLFNBQVUsQ0FBQyx3QkFBeUIsU0FBVSxDQUFDLG9CQUFxQixTQUFVLENBQUMsdUJBQXdCLFNBQVUsQ0FBQyxvQkFBcUIsTUFBTyxDQUFDLHNCQUF1QixTQUFVLENBQUMscUJBQXNCLFVBQVcsQ0FBQyxvQkFBcUIsVUFBVyxDQUFDLG1CQUFvQixTQUFVLENBQUMsNkJBQThCLFNBQVUsQ0FBQyw4QkFBK0IsU0FBVSxDQUFDLHFCQUFzQixTQUFVLENBQUMsaUJBQWtCLFVBQVcsQ0FBQyxjQUFlLFlBQWEsQ0FBQyxRQUFTLFVBQVcsQ0FBQyxXQUFZLFdBQVksQ0FBQyxjQUFlLFNBQVUsQ0FBQyxlQUFnQixVQUFXLENBQUMsbUJBQW9CLFNBQVUsQ0FBQyxNQUFPLFVBQVcsQ0FBQyxPQUFRLFVBQVcsQ0FBQyx1QkFBd0IsU0FBVSxDQUFDLGVBQWdCLFdBQ3h0QixPQUFPQyxXQUFXakIsUUFBUWlCLFdBQVdqQixRQUFRa0IsUUFBUUosRUFBV0MsT0FHaEVJLE9BQVFsQixHQUNOTixHQUNKTyxFQUFRLElBQUlELEVBQVMsQ0FDbkJtQixPQUFVLENBQ1JDLFdBQWMsMENBRWhCQyxLQUFRLE1BQ1A1QixFQUFTNkIsS0FBS0MsS0FBS0MsVUFFdEJ2QixFQUFNYSxhQUFhVyxPQUFPLENBQUMsQ0FBQywrQkFBZ0M5QixHQUFlLENBQUMsNEJBQTZCQyxHQUFlLENBQUMsNEJBQTZCQyxHQUFlLENBQUMsNEJBQTZCQyxLQUNuTUksRUFBTSxJQUFJYSxJQUlWYixFQUFJd0IsSUFBSSxVQUFXLENBQ2pCQyxLQUFNLFdBQ05DLFFBQVMsU0FBVUMsRUFBU0MsR0FDMUIsYUFFQUMsT0FBT0MsZUFBZUYsRUFBUyxhQUFjLENBQzNDRyxNQUFPLE9BRVRILEVBQVEzQixpQkFBbUIsRUFDM0IsSUFBSStCLEVBQVdMLEVBQVEsZ0NBQ3ZCLElBQUlNLEVBQVdOLEVBQVEsNkJBQ3ZCLElBQUlPLEVBQU9QLEVBQVEsNkJBQ25CLElBQUlRLEVBQVNSLEVBQVEsNkJBRXJCLE1BQU0xQixVQUFvQmtDLEVBQU9DLGNBQy9CQyxHQUNBLFdBQUFDLEdBQ0VDLFFBQ0FDLE1BQUtILEVBQU8sSUFBSUgsRUFBS08sSUFBSVQsRUFBU1UsVUFBVUMsS0FBS0MsUUFDbkQsQ0FDQSxjQUFNQyxHQUNKLElBQ0UsTUFBTUMsUUFBY2IsRUFBU2MsZUFBZUMsS0FBS0YsTUFDakROLE1BQUtILEVBQUtZLE9BQU9ILEdBQ2pCLE1BQU1JLFFBQWlCVixNQUFLSCxFQUFLYyxJQUFJLGdDQUNyQyxJQUFLRCxFQUFTRSxPQUFRLE1BQU0sSUFBSUMsTUFBTSwyQkFDdEMsT0FBT0gsRUFBU0ksSUFDbEIsQ0FBRSxNQUFPQyxHQUNQQyxRQUFRQyxNQUFNRixFQUNoQixDQUNGLEVBRUYzQixFQUFRM0IsWUFBY0EsQ0FDeEIsSUFFRkYsRUFBTTZCLFFBQVE4QixXQUFhLENBQUMsQ0FDMUJDLEdBQU0sVUFDTkMsS0FBUSxjQUNSQyxLQUFRLGdCQUdWOUQsRUFBTTZCLFFBQVFrQyxRQUFVLFVBQVVuQyxRQUNoQ0EsRUFBT29DLEtBQ1BBLEVBQUloQyxNQUNKQSxLQUVDSixHQUFXb0MsSUFBUyxnQkFBa0J6RSxFQUFRLGNBQWVXLEVBQWMwQixFQUFVQSxFQUFRLFdBQVcxQixZQUFjOEIsRUFDekgsRUFDQXpDLEVBQVEsZUFBZ0JZLEVBQWVILEdBQ3ZDVCxFQUFRLE1BQU9hLEVBQU0sSUFBSSxXQUN2QnFDLEtBQUt3QixHQUFLLENBQUNDLEVBQU9DLElBQWFuRSxFQUFNSSxJQUFJNkQsR0FBR0MsRUFBT0MsR0FDbkQxQixLQUFLMkIsSUFBTSxDQUFDRixFQUFPQyxJQUFhbkUsRUFBTUksSUFBSWdFLElBQUlGLEVBQU9DLEVBQ3ZELEdBQ0FuRSxFQUFNcUUsV0FBV3BFLEVBQ25CLEVBRUoiLCJpZ25vcmVMaXN0IjpbXX0=
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@aimpact/ailearn-sdk@1.2.0/startup", "@aimpact/chat-sdk@1.5.5/session", "@beyond-js/http-suite@0.1.1/api", "@beyond-js/reactive@2.1.1/model"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Application, __beyond_pkg, hmr;
+  _export("Application", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_aimpactAilearnSdk120Startup) {
+      dependency_1 = _aimpactAilearnSdk120Startup;
+    }, function (_aimpactChatSdk155Session) {
+      dependency_2 = _aimpactChatSdk155Session;
+    }, function (_beyondJsHttpSuite011Api) {
+      dependency_3 = _beyondJsHttpSuite011Api;
+    }, function (_beyondJsReactive211Model) {
+      dependency_4 = _beyondJsReactive211Model;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.1.1"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@firebase/auth", "1.10.0"], ["@types/node", "22.13.16"], ["dexie", "4.0.11"], ["firebase", "10.14.1"], ["pragmate-ui", "0.0.6"], ["react-select", "5.10.1"], ["socket.io-client", "4.8.1"], ["zod", "3.24.2"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-sdk@1.2.0/application"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@aimpact/ailearn-sdk/startup', dependency_1], ['@aimpact/chat-sdk/session', dependency_2], ['@beyond-js/http-suite/api', dependency_3], ['@beyond-js/reactive/model', dependency_4]]);
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 1460778365,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Application = void 0;
+          var _startup = require("@aimpact/ailearn-sdk/startup");
+          var _session = require("@aimpact/chat-sdk/session");
+          var _api = require("@beyond-js/http-suite/api");
+          var _model = require("@beyond-js/reactive/model");
+          /*bundle */
+          class Application extends _model.ReactiveModel {
+            #api;
+            constructor() {
+              super();
+              this.#api = new _api.Api(_startup.sdkConfig.apis.ailearn);
+            }
+            async policies() {
+              try {
+                const token = await _session.sessionWrapper.user.token;
+                this.#api.bearer(token);
+                const response = await this.#api.get('/application/metadata/policy');
+                if (!response.status) throw new Error('Error fetching policies');
+                return response.data;
+              } catch (e) {
+                console.error(e);
+              }
+            }
+          }
+          exports.Application = Application;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "Application",
+        "name": "Application"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Application') && _export("Application", Application = require ? require('./index').Application : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfc3RhcnR1cCIsInJlcXVpcmUiLCJfc2Vzc2lvbiIsIl9hcGkiLCJfbW9kZWwiLCJBcHBsaWNhdGlvbiIsIlJlYWN0aXZlTW9kZWwiLCJhcGkiLCJjb25zdHJ1Y3RvciIsIkFwaSIsInNka0NvbmZpZyIsImFwaXMiLCJhaWxlYXJuIiwicG9saWNpZXMiLCJ0b2tlbiIsInNlc3Npb25XcmFwcGVyIiwidXNlciIsImJlYXJlciIsInJlc3BvbnNlIiwiZ2V0Iiwic3RhdHVzIiwiRXJyb3IiLCJkYXRhIiwiZSIsImNvbnNvbGUiLCJlcnJvciIsImV4cG9ydHMiXSwic291cmNlcyI6WyIvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxRQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxRQUFBLEdBQUFELE9BQUE7VUFDQSxJQUFBRSxJQUFBLEdBQUFGLE9BQUE7VUFDQSxJQUFBRyxNQUFBLEdBQUFILE9BQUE7VUFFTztVQUFXLE1BQU9JLFdBQVksU0FBUUQsTUFBQSxDQUFBRSxhQUEyQjtZQUN2RSxDQUFBQyxHQUFJO1lBRUpDLFlBQUE7Y0FDQyxLQUFLLEVBQUU7Y0FDUCxJQUFJLENBQUMsQ0FBQUQsR0FBSSxHQUFHLElBQUlKLElBQUEsQ0FBQU0sR0FBRyxDQUFDVCxRQUFBLENBQUFVLFNBQVMsQ0FBQ0MsSUFBSSxDQUFDQyxPQUFPLENBQUM7WUFDNUM7WUFFQSxNQUFNQyxRQUFRQSxDQUFBO2NBQ2IsSUFBSTtnQkFDSCxNQUFNQyxLQUFLLEdBQUcsTUFBTVosUUFBQSxDQUFBYSxjQUFjLENBQUNDLElBQUksQ0FBQ0YsS0FBSztnQkFDN0MsSUFBSSxDQUFDLENBQUFQLEdBQUksQ0FBQ1UsTUFBTSxDQUFDSCxLQUFLLENBQUM7Z0JBQ3ZCLE1BQU1JLFFBQVEsR0FBRyxNQUFNLElBQUksQ0FBQyxDQUFBWCxHQUFJLENBQUNZLEdBQUcsQ0FBQyw4QkFBOEIsQ0FBQztnQkFDcEUsSUFBSSxDQUFDRCxRQUFRLENBQUNFLE1BQU0sRUFBRSxNQUFNLElBQUlDLEtBQUssQ0FBQyx5QkFBeUIsQ0FBQztnQkFDaEUsT0FBT0gsUUFBUSxDQUFDSSxJQUFJO2VBQ3BCLENBQUMsT0FBT0MsQ0FBQyxFQUFFO2dCQUNYQyxPQUFPLENBQUNDLEtBQUssQ0FBQ0YsQ0FBQyxDQUFDOztZQUVsQjs7VUFDQUcsT0FBQSxDQUFBckIsV0FBQSxHQUFBQSxXQUFBIiwiaWdub3JlTGlzdCI6W119

@@ -1,12 +1,16 @@
-System.register([], function (e, a) {
+System.register([], function (_export, _context) {
 	'use strict';
+
 	return {
 		setters: [],
 		execute: function () {
-			e('default', {
+			_export('default', {
 				package: '@aimpact/rvd',
-				version: '0.7.0-dev.04',
-				languages: { default: 'en', supported: ['en', 'es', 'de', 'pt', 'fr'] },
+				version: '0.7.0-dev.05',
+				languages: {
+					default: 'en',
+					supported: ['en', 'es', 'de', 'pt', 'fr']
+				},
 				environment: 'development',
 				'global.css': true,
 				params: {
@@ -21,7 +25,9 @@ System.register([], function (e, a) {
 						agents: 'https://dev.agents.api.aimpact.partners',
 						realtime: 'wss://dev.agents.api.aimpact.partners'
 					},
-					agents: { projectId: 'a1l34rn1-453a-4612-b6fd-59cb742111d0' },
+					agents: {
+						projectId: 'a1l34rn1-453a-4612-b6fd-59cb742111d0'
+					},
 					firebase: {
 						baseUrl: 'https://dev.app.rvd.ai',
 						apiKey: 'AIzaSyBLJbMs8avqc-poEz_CA0qzF8-0DzAtxfI',
@@ -40,4 +46,3 @@ System.register([], function (e, a) {
 		}
 	};
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlnLmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQiLCJzZXR0ZXJzIiwiZXhlY3V0ZSIsInBhY2thZ2UiLCJ2ZXJzaW9uIiwibGFuZ3VhZ2VzIiwiZGVmYXVsdCIsInN1cHBvcnRlZCIsImVudmlyb25tZW50IiwicGFyYW1zIiwiYXBwIiwiQVBQX0xPR08iLCJBUFBfTkFNRSIsIkFQUF9TVVBQT1JUX0VNQUlMIiwidHV0b3JpYWxzIiwiYmFzZVVybCIsImFwaXMiLCJhaWxlYXJuIiwiYWdlbnRzIiwicmVhbHRpbWUiLCJwcm9qZWN0SWQiLCJmaXJlYmFzZSIsImFwaUtleSIsImF1dGhEb21haW4iLCJkYXRhYmFzZVVSTCIsInN0b3JhZ2VCdWNrZXQiLCJtZXNzYWdpbmdTZW5kZXJJZCIsImFwcElkIiwibWVhc3VyZW1lbnRJZCIsInNzciIsImJhY2tlbmQiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxHQUFJLFNBQVVDLEVBQVNDLEdBQ3JDLGFBRUEsTUFBTyxDQUNMQyxRQUFTLEdBQ1RDLFFBQVMsV0FDUEgsRUFBUSxVQUFXLENBQ2pCSSxRQUFXLGVBQ1hDLFFBQVcsUUFDWEMsVUFBYSxDQUNYQyxRQUFXLEtBQ1hDLFVBQWEsQ0FBQyxLQUFNLEtBQU0sS0FBTSxLQUFNLE9BRXhDQyxZQUFlLGNBQ2YsYUFBYyxLQUNkQyxPQUFVLENBQ1JDLElBQU8sTUFDUEMsU0FBWSxtQ0FDWkMsU0FBWSxTQUNaQyxrQkFBcUIsaUJBQ3JCQyxVQUFhLEtBQ2JDLFFBQVcseUJBQ1hDLEtBQVEsQ0FDTkMsUUFBVywyQ0FDWEMsT0FBVSwwQ0FDVkMsU0FBWSx5Q0FFZEQsT0FBVSxDQUNSRSxVQUFhLHdDQUVmQyxTQUFZLENBQ1ZOLFFBQVcseUJBQ1hPLE9BQVUsMENBQ1ZDLFdBQWMscUNBQ2RDLFlBQWUseURBQ2ZKLFVBQWEscUJBQ2JLLGNBQWlCLHlDQUNqQkMsa0JBQXFCLGVBQ3JCQyxNQUFTLDRDQUNUQyxjQUFpQixpQkFHckJDLElBQU8sQ0FBQyxFQUNSQyxRQUFXLENBQUMsR0FFaEIsRUFFSiIsImlnbm9yZUxpc3QiOltdfQ==

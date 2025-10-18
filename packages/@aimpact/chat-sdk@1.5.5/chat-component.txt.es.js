@@ -1,2 +1,97 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(e,t){"use strict";var i,a,o,n,s,r,c,d;e("txt",void 0);return{setters:[function(e){i=e}],execute:function(){a=e=>{const t=new Map([["@aimpact/agents-api","0.4.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/reactive","2.1.1"],["@beyond-js/widgets","1.1.4"],["@google-cloud/storage","7.17.1"],["@radix-ui/react-icons","1.3.2"],["@tiptap/extension-blockquote","3.6.2"],["@tiptap/extension-code-block","3.6.2"],["@tiptap/extension-horizontal-rule","3.6.2"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.6.2"],["@tiptap/extension-task-list","3.6.2"],["@tiptap/extension-underline","3.6.2"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.6.2"],["@tiptap/starter-kit","3.6.2"],["clsx","2.1.1"],["dayjs","1.11.18"],["dompurify","3.2.7"],["firebase","11.10.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["katex","0.16.22"],["marked","14.1.4"],["marked-gfm-heading-id","4.1.2"],["marked-highlight","2.2.2"],["marked-mangle","1.1.11"],["media-suite","0.0.4"],["pragmate-ui","1.0.10"],["prism-themes","1.9.0"],["prismjs","1.30.0"],["react-icons","5.5.0"],["socket.io-client","4.8.1"],["turndown","7.2.1"],["wavesurfer.js","7.10.3"],["zod","3.25.76"],["@beyond-js/local","0.1.3"],["@types/react","18.3.25"],["@types/react-dom","18.3.7"],["typescript","5.9.3"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/rvd","0.6.7"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:o}=i);n=new o({module:{vspecifier:"@aimpact/chat-sdk@1.5.5/chat-component",multibundle:true},type:"txt"},t.meta.url).package("es");n.dependencies.update([]);s=new Map;s.set("./txt",{hash:2213946840,creator:function(e,t){t.txt={permissions:{intro:"Permisos de acceso",title:"Activaci\xf3n de voz",description:"Activa el micr\xf3fono para potenciar tu experiencia interactuando por medio de comandos de voz.",concedded:{title:"\xa1Listo!",description:"Ahora puedes disfrutar de la activaci\xf3n por voz."},error:{title:"No tenemos acceso al micr\xf3fono",description:"Para activar la funci\xf3n de voz, necesitamos acceso a tu micr\xf3fono. Por favor, habil\xedtalo en la configuraci\xf3n de tu navegador y refresca la p\xe1gina."}},systemActions:{"kb-response":"Datos obtenidos de la base de conocimientos: ","fetching-tool-data":"Voy a cosultar los documentos de la clase","kb-processed-response":"An\xe1lisis sobre contenido finalizado",transcription:"Obteniendo transcripci\xf3n",functions:{kb:"Consultando la base de conocimiento acerca de: "}},system:{success:"Sistema actualizado correctamente"},assistant:{title:"Assistant mission",message:"La misi\xf3n que tendr\xe1 el agente para interactuar en el chat"},errors:{default:"Ha ocurrido un error, por favor intente nuevamente"},actions:{retry:"Reintentar"},message:{transcribing:"Transcribiendo..."}}}});n.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];n.exports.process=function({require:t,prop:i,value:a}){(t||i==="txt")&&e("txt",r=t?t("./txt").txt:a)};e("__beyond_pkg",c=n);e("hmr",d=new function(){this.on=(e,t)=>n.hmr.on(e,t);this.off=(e,t)=>n.hmr.off(e,t)});n.initialise(s)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvY2hhdC1zZGtAMS41LjUvY2hhdC1jb21wb25lbnQudHh0LmVzLmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQiLCJkZXBlbmRlbmN5XzAiLCJiaW1wb3J0IiwiX19CdW5kbGUiLCJfX3BrZyIsImltcyIsInR4dCIsIl9fYmV5b25kX3BrZyIsImhtciIsInNldHRlcnMiLCJfYmV5b25kSnNLZXJuZWwwMTE0QnVuZGxlIiwiZXhlY3V0ZSIsInNwZWNpZmllciIsImRlcGVuZGVuY2llcyIsIk1hcCIsImdsb2JhbFRoaXMiLCJyZXNvbHZlIiwiQnVuZGxlIiwibW9kdWxlIiwidnNwZWNpZmllciIsIm11bHRpYnVuZGxlIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsInBlcm1pc3Npb25zIiwiaW50cm8iLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwiY29uY2VkZGVkIiwiZXJyb3IiLCJzeXN0ZW1BY3Rpb25zIiwidHJhbnNjcmlwdGlvbiIsImZ1bmN0aW9ucyIsImtiIiwic3lzdGVtIiwic3VjY2VzcyIsImFzc2lzdGFudCIsIm1lc3NhZ2UiLCJlcnJvcnMiLCJkZWZhdWx0IiwiYWN0aW9ucyIsInJldHJ5IiwidHJhbnNjcmliaW5nIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInZhbHVlIiwidGhpcyIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLG1DQUFvQyxTQUFVQyxFQUFTQyxHQUN0RSxhQUVBLElBQUlDLEVBQWNDLEVBQVNDLEVBQVVDLEVBQU9DLEVBQUtDLEVBQUtDLEVBQWNDLEVBQ3BFVCxFQUFRLFdBQVksR0FD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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/widgets", "1.1.4"], ["@google-cloud/storage", "7.17.1"], ["@radix-ui/react-icons", "1.3.2"], ["@tiptap/extension-blockquote", "3.6.2"], ["@tiptap/extension-code-block", "3.6.2"], ["@tiptap/extension-horizontal-rule", "3.6.2"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.6.2"], ["@tiptap/extension-task-list", "3.6.2"], ["@tiptap/extension-underline", "3.6.2"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.6.2"], ["@tiptap/starter-kit", "3.6.2"], ["clsx", "2.1.1"], ["dayjs", "1.11.18"], ["dompurify", "3.2.7"], ["firebase", "11.10.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["katex", "0.16.22"], ["marked", "14.1.4"], ["marked-gfm-heading-id", "4.1.2"], ["marked-highlight", "2.2.2"], ["marked-mangle", "1.1.11"], ["media-suite", "0.0.4"], ["pragmate-ui", "1.0.10"], ["prism-themes", "1.9.0"], ["prismjs", "1.30.0"], ["react-icons", "5.5.0"], ["socket.io-client", "4.8.1"], ["turndown", "7.2.1"], ["wavesurfer.js", "7.10.3"], ["zod", "3.25.76"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.25"], ["@types/react-dom", "18.3.7"], ["typescript", "5.9.3"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/chat-sdk@1.5.5/chat-component",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('es');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 2213946840,
+        creator: function (require, exports) {
+          exports.txt = {
+            "permissions": {
+              "intro": "Permisos de acceso",
+              "title": "Activación de voz",
+              "description": "Activa el micrófono para potenciar tu experiencia interactuando por medio de comandos de voz.",
+              "concedded": {
+                "title": "¡Listo!",
+                "description": "Ahora puedes disfrutar de la activación por voz."
+              },
+              "error": {
+                "title": "No tenemos acceso al micrófono",
+                "description": "Para activar la función de voz, necesitamos acceso a tu micrófono. Por favor, habilítalo en la configuración de tu navegador y refresca la página."
+              }
+            },
+            "systemActions": {
+              "kb-response": "Datos obtenidos de la base de conocimientos: ",
+              "fetching-tool-data": "Voy a cosultar los documentos de la clase",
+              "kb-processed-response": "Análisis sobre contenido finalizado",
+              "transcription": "Obteniendo transcripción",
+              "functions": {
+                "kb": "Consultando la base de conocimiento acerca de: "
+              }
+            },
+            "system": {
+              "success": "Sistema actualizado correctamente"
+            },
+            "assistant": {
+              "title": "Assistant mission",
+              "message": "La misión que tendrá el agente para interactuar en el chat"
+            },
+            "errors": {
+              "default": "Ha ocurrido un error, por favor intente nuevamente"
+            },
+            "actions": {
+              "retry": "Reintentar"
+            },
+            "message": {
+              "transcribing": "Transcribiendo..."
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
