@@ -1,2 +1,197 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@aimpact/agents-api@0.4.1/realtime/audio/player/worklet/bridge","@aimpact/agents-api@0.4.1/realtime/audio/player/analyzer"],function(_export,_context){var dependency_0,dependency_1,dependency_2,__pkg,__Bundle;return _export("StreamPlayer",void 0),{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_aimpactAgentsApi041RealtimeAudioPlayerWorkletBridge){dependency_1=_aimpactAgentsApi041RealtimeAudioPlayerWorkletBridge},function(_aimpactAgentsApi041RealtimeAudioPlayerAnalyzer){dependency_2=_aimpactAgentsApi041RealtimeAudioPlayerAnalyzer}],execute:function(){__Bundle=dependency_0.Bundle,(__pkg=new __Bundle({module:{vspecifier:"@aimpact/agents-api@0.4.1/realtime/audio/player"},type:"ts"},_context.meta.url).package()).dependencies.update([["@aimpact/agents-api/realtime/audio/player/worklet/bridge",dependency_1],["@aimpact/agents-api/realtime/audio/player/analyzer",dependency_2]]),(__Bundle=new Map).set("./index",{hash:1932622764,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.StreamPlayer=void 0;var _bridge=require("@aimpact/agents-api/realtime/audio/player/worklet/bridge"),_analyzer=require("@aimpact/agents-api/realtime/audio/player/analyzer");class StreamPlayer{#context;#stream;#analyzer;#samplerate;#trackSampleOffsets={};#interruptedTrackIds={};#error;get error(){return this.#error}constructor({samplerate=44100}={}){this.#samplerate=samplerate}async connect(){var context=this.#context=new AudioContext({sampleRate:this.#samplerate}),worklet=("suspended"===context.state&&await context.resume(),this.#stream=new _bridge.StreamWorkletBridge(context));await worklet.setup(),worklet.error?this.#error=worklet.error:((worklet=context.createAnalyser()).fftSize=8192,worklet.smoothingTimeConstant=.1,this.#analyzer=worklet)}disconnect(){}getFrequencies(analysisType="frequency",minDecibels=-100,maxDecibels=-30){if(this.#analyzer)return _analyzer.AudioAnalyzer.getFrequencies(this.#analyzer,this.#samplerate,null,analysisType,minDecibels,maxDecibels);throw new Error("Not connected, please call .connect() first")}#start(){this.#stream.create(),this.#stream.connect(this.#context.destination),this.#stream.on("stop",this.#onstop),this.#stream.on("offset",this.#onoffset),this.#analyzer.disconnect(),this.#stream.connect(this.#analyzer)}#onstop=()=>{this.#stream.off("stop",this.#onstop),this.#stream.off("offset",this.#onoffset),this.#stream.disconnect()};#onoffset=data=>{var{requestId:data,trackId,offset}=data,currentTime=offset/this.#samplerate;this.#trackSampleOffsets[data]={trackId:trackId,offset:offset,currentTime:currentTime}};add16BitPCM(arrayBuffer,trackId="default"){if(this.#error)throw new Error("Cannot play audio as player is in an invalid state. Check the 'error' property.");if(!this.#stream)throw new Error("Stream player not connected");if("string"!=typeof trackId)throw new Error("trackId must be a string");var buffer;if(!this.#interruptedTrackIds[trackId])return this.#stream.node||this.#start(),buffer=(()=>{if(arrayBuffer instanceof Int16Array)return arrayBuffer;if(arrayBuffer instanceof ArrayBuffer)return new Int16Array(arrayBuffer);throw new Error("argument must be Int16Array or ArrayBuffer")})(),this.#stream.dispatch("write",{buffer:buffer,trackId:trackId}),buffer}async getTrackSampleOffset(interrupt=!1){if(!this.#stream.node)return null;var requestId=crypto.randomUUID();this.#stream.dispatch(interrupt?"interrupt":"offset",{requestId:requestId});let trackSampleOffset;for(;!trackSampleOffset;)trackSampleOffset=this.#trackSampleOffsets[requestId],await new Promise(resolve=>setTimeout(()=>resolve(),1));var trackId=trackSampleOffset.trackId;return interrupt&&trackId&&(this.#interruptedTrackIds[trackId]=!0),trackSampleOffset}async interrupt(){return this.getTrackSampleOffset(!0)}}exports.StreamPlayer=StreamPlayer}}),__pkg.exports.descriptor=[{im:"./index",from:"StreamPlayer",name:"StreamPlayer"}],__pkg.exports.process=function({require,prop,value}){!require&&"StreamPlayer"!==prop||_export("StreamPlayer",require?require("./index").StreamPlayer:value)},_export("__beyond_pkg",__pkg),_export("hmr",new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener),this.off=(event,listener)=>__pkg.hmr.off(event,listener)}),__pkg.initialise(__Bundle)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8vaW5kZXgudHMvIl0sIm5hbWVzIjpbIl9icmlkZ2UiLCJyZXF1aXJlIiwiX2FuYWx5emVyIiwiU3RyZWFtUGxheWVyIiwiI2NvbnRleHQiLCIjc3RyZWFtIiwiI2FuYWx5emVyIiwiI3NhbXBsZXJhdGUiLCIjdHJhY2tTYW1wbGVPZmZzZXRzIiwiI2ludGVycnVwdGVkVHJhY2tJZHMiLCIjZXJyb3IiLCJlcnJvciIsInRoaXMiLCJjb25zdHJ1Y3RvciIsInNhbXBsZXJhdGUiLCJjb25uZWN0IiwiY29udGV4dCIsIkF1ZGlvQ29udGV4dCIsInNhbXBsZVJhdGUiLCJ3b3JrbGV0Iiwic3RhdGUiLCJyZXN1bWUiLCJTdHJlYW1Xb3JrbGV0QnJpZGdlIiwiYXdhaXQiLCJzZXR1cCIsImFuYWx5emVyIiwiY3JlYXRlQW5hbHlzZXIiLCJmZnRTaXplIiwic21vb3RoaW5nVGltZUNvbnN0YW50IiwiZGlzY29ubmVjdCIsImdldEZyZXF1ZW5jaWVzIiwiYW5hbHlzaXNUeXBlIiwibWluRGVjaWJlbHMiLCJtYXhEZWNpYmVscyIsIkF1ZGlvQW5hbHl6ZXIiLCJFcnJvciIsIiNzdGFydCIsImNyZWF0ZSIsImRlc3RpbmF0aW9uIiwib24iLCIjb25zdG9wIiwiI29ub2Zmc2V0Iiwib2ZmIiwiZGF0YSIsInJlcXVlc3RJZCIsInRyYWNrSWQiLCJvZmZzZXQiLCJjdXJyZW50VGltZSIsImFkZDE2Qml0UENNIiwiYXJyYXlCdWZmZXIiLCJidWZmZXIiLCJub2RlIiwiSW50MTZBcnJheSIsIkFycmF5QnVmZmVyIiwiZGlzcGF0Y2giLCJnZXRUcmFja1NhbXBsZU9mZnNldCIsImludGVycnVwdCIsImNyeXB0byIsInJhbmRvbVVVSUQiLCJsZXQiLCJ0cmFja1NhbXBsZU9mZnNldCIsIlByb21pc2UiLCJyZXNvbHZlIiwic2V0VGltZW91dCIsImV4cG9ydHMiXSwibWFwcGluZ3MiOiI0bkNBQUEsSUFBQUEsUUFBQUMsUUFBQSwwREFBQSxFQUNBQyxVQUFBRCxRQUFBLG9EQUFB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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@aimpact/agents-api@0.4.1/realtime/audio/player/worklet/bridge", "@aimpact/agents-api@0.4.1/realtime/audio/player/analyzer"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, StreamPlayer, __beyond_pkg, hmr;
+  _export("StreamPlayer", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_aimpactAgentsApi041RealtimeAudioPlayerWorkletBridge) {
+      dependency_1 = _aimpactAgentsApi041RealtimeAudioPlayerWorkletBridge;
+    }, function (_aimpactAgentsApi041RealtimeAudioPlayerAnalyzer) {
+      dependency_2 = _aimpactAgentsApi041RealtimeAudioPlayerAnalyzer;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/firestore-collection", "0.0.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/response", "0.0.3"], ["@google-cloud/storage", "7.17.0"], ["@openai/agents", "0.1.3"], ["@pinecone-database/pinecone", "6.1.2"], ["express", "4.21.2"], ["express-rate-limit", "7.2.0"], ["express-openapi-validator", "5.5.8"], ["firebase-admin", "12.7.0"], ["multer", "2.0.2"], ["form-data", "4.0.4"], ["jsonwebtoken", "9.0.2"], ["ws", "8.18.3"], ["socket.io", "4.8.1"], ["node-fetch", "2.7.0"], ["dotenv", "16.6.1"], ["fluent-ffmpeg", "2.1.3"], ["dayjs", "1.11.17"], ["openai", "4.104.0"], ["uuid", "10.0.0"], ["find-up", "7.0.0"], ["postmark", "4.0.5"], ["zod", "3.25.67"], ["axios", "1.12.2"], ["socket.io-client", "4.8.1"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/bee", "0.0.7"], ["@beyond-js/local", "0.1.3"], ["@types/jsonwebtoken", "9.0.10"], ["@types/express", "5.0.3"], ["@types/node", "20.6.5"], ["@types/uuid", "9.0.8"], ["@types/ws", "8.5.14"], ["@types/react", "18.3.24"], ["@types/audioworklet", "0.0.83"], ["swagger-ui-express", "5.0.1"], ["yaml", "2.8.1"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/agents-api@0.4.1/realtime/audio/player"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@aimpact/agents-api/realtime/audio/player/worklet/bridge', dependency_1], ['@aimpact/agents-api/realtime/audio/player/analyzer', dependency_2]]);
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 1932622764,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StreamPlayer = void 0;
+          var _bridge = require("@aimpact/agents-api/realtime/audio/player/worklet/bridge");
+          var _analyzer = require("@aimpact/agents-api/realtime/audio/player/analyzer");
+          /*bundle*/ /**
+                      * Plays audio streams received in raw PCM16 chunks from the browser
+                      */
+          class StreamPlayer {
+            #context;
+            #stream;
+            #analyzer;
+            #samplerate;
+            #trackSampleOffsets = {};
+            #interruptedTrackIds = {};
+            #error;
+            get error() {
+              return this.#error;
+            }
+            constructor({
+              samplerate = 44100
+            } = {}) {
+              this.#samplerate = samplerate;
+            }
+            /**
+             * Connects the audio context and enables output to speakers
+             * @returns
+             */
+            async connect() {
+              const context = this.#context = new AudioContext({
+                sampleRate: this.#samplerate
+              });
+              context.state === 'suspended' && (await context.resume());
+              // Create an AudioWorkletNode for processing audio data
+              const worklet = this.#stream = new _bridge.StreamWorkletBridge(context);
+              await worklet.setup();
+              if (worklet.error) {
+                this.#error = worklet.error;
+                return;
+              }
+              const analyzer = context.createAnalyser();
+              analyzer.fftSize = 8192;
+              analyzer.smoothingTimeConstant = 0.1;
+              this.#analyzer = analyzer;
+            }
+            /**
+             * @TODO: Disconnect player
+             */
+            disconnect() {}
+            /**
+             * Gets the current frequency domain data from the playing track
+             */
+            getFrequencies(analysisType = 'frequency', minDecibels = -100, maxDecibels = -30) {
+              if (!this.#analyzer) throw new Error('Not connected, please call .connect() first');
+              return _analyzer.AudioAnalyzer.getFrequencies(this.#analyzer, this.#samplerate, null, analysisType, minDecibels, maxDecibels);
+            }
+            #start() {
+              this.#stream.create();
+              this.#stream.connect(this.#context.destination);
+              this.#stream.on('stop', this.#onstop);
+              this.#stream.on('offset', this.#onoffset);
+              this.#analyzer.disconnect();
+              this.#stream.connect(this.#analyzer);
+            }
+            #onstop = () => {
+              this.#stream.off('stop', this.#onstop);
+              this.#stream.off('offset', this.#onoffset);
+              this.#stream.disconnect();
+            };
+            #onoffset = data => {
+              const {
+                requestId,
+                trackId,
+                offset
+              } = data;
+              const currentTime = offset / this.#samplerate;
+              this.#trackSampleOffsets[requestId] = {
+                trackId,
+                offset,
+                currentTime
+              };
+            };
+            /**
+             * Adds 16BitPCM data to the currently playing audio stream
+             * You can add chunks beyond the current play point and they will be queued for play
+             */
+            add16BitPCM(arrayBuffer, trackId = 'default') {
+              if (this.#error) {
+                throw new Error(`Cannot play audio as player is in an invalid state. Check the 'error' property.`);
+              }
+              if (!this.#stream) throw new Error(`Stream player not connected`);
+              if (typeof trackId !== 'string') throw new Error(`trackId must be a string`);
+              if (this.#interruptedTrackIds[trackId]) return;
+              !this.#stream.node && this.#start();
+              const buffer = (() => {
+                if (arrayBuffer instanceof Int16Array) return arrayBuffer;
+                if (arrayBuffer instanceof ArrayBuffer) return new Int16Array(arrayBuffer);
+                throw new Error(`argument must be Int16Array or ArrayBuffer`);
+              })();
+              this.#stream.dispatch('write', {
+                buffer,
+                trackId
+              });
+              return buffer;
+            }
+            /**
+             * Gets the offset (sample count) of the currently playing stream
+             */
+            async getTrackSampleOffset(interrupt = false) {
+              if (!this.#stream.node) return null;
+              const requestId = crypto.randomUUID();
+              this.#stream.dispatch(interrupt ? 'interrupt' : 'offset', {
+                requestId
+              });
+              let trackSampleOffset;
+              while (!trackSampleOffset) {
+                trackSampleOffset = this.#trackSampleOffsets[requestId];
+                await new Promise(resolve => setTimeout(() => resolve(), 1));
+              }
+              const {
+                trackId
+              } = trackSampleOffset;
+              interrupt && trackId && (this.#interruptedTrackIds[trackId] = true);
+              return trackSampleOffset;
+            }
+            /**
+             * Strips the current stream and returns the sample offset of the audio
+             */
+            async interrupt() {
+              return this.getTrackSampleOffset(true);
+            }
+          }
+          exports.StreamPlayer = StreamPlayer;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "StreamPlayer",
+        "name": "StreamPlayer"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'StreamPlayer') && _export("StreamPlayer", StreamPlayer = require ? require('./index').StreamPlayer : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfYnJpZGdlIiwicmVxdWlyZSIsIl9hbmFseXplciIsIlN0cmVhbVBsYXllciIsImNvbnRleHQiLCJzdHJlYW0iLCJhbmFseXplciIsInNhbXBsZXJhdGUiLCJ0cmFja1NhbXBsZU9mZnNldHMiLCJpbnRlcnJ1cHRlZFRyYWNrSWRzIiwiZXJyb3IiLCJjb25zdHJ1Y3RvciIsImNvbm5lY3QiLCJBdWRpb0NvbnRleHQiLCJzYW1wbGVSYXRlIiwic3RhdGUiLCJyZXN1bWUiLCJ3b3JrbGV0IiwiU3RyZWFtV29ya2xldEJyaWRnZSIsInNldHVwIiwiY3JlYXRlQW5hbHlzZXIiLCJmZnRTaXplIiwic21vb3RoaW5nVGltZUNvbnN0YW50IiwiZGlzY29ubmVjdCIsImdldEZyZXF1ZW5jaWVzIiwiYW5hbHlzaXNUeXBlIiwibWluRGVjaWJlbHMiLCJtYXhEZWNpYmVscyIsIkVycm9yIiwiQXVkaW9BbmFseXplciIsInN0YXJ0IiwiI3N0YXJ0IiwiY3JlYXRlIiwiZGVzdGluYXRpb24iLCJvbiIsIm9uc3RvcCIsIm9ub2Zmc2V0IiwiI29uc3RvcCIsIm9mZiIsImRhdGEiLCJyZXF1ZXN0SWQiLCJ0cmFja0lkIiwib2Zmc2V0IiwiY3VycmVudFRpbWUiLCJhZGQxNkJpdFBDTSIsImFycmF5QnVmZmVyIiwibm9kZSIsImJ1ZmZlciIsIkludDE2QXJyYXkiLCJBcnJheUJ1ZmZlciIsImRpc3BhdGNoIiwiZ2V0VHJhY2tTYW1wbGVPZmZzZXQiLCJpbnRlcnJ1cHQiLCJjcnlwdG8iLCJyYW5kb21VVUlEIiwidHJhY2tTYW1wbGVPZmZzZXQiLCJQcm9taXNlIiwicmVzb2x2ZSIsInNldFRpbWVvdXQiLCJleHBvcnRzIl0sInNvdXJjZXMiOlsiL2luZGV4LnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxPQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxTQUFB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

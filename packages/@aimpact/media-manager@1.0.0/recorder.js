@@ -1,2 +1,305 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/core","@beyond-js/reactive@2.1.1/model"],function(_export,_context){var dependency_0,dependency_1,dependency_2,__pkg,__Bundle;return _export("Recorder",void 0),{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_beyondJsKernel0114Core){dependency_1=_beyondJsKernel0114Core},function(_beyondJsReactive211Model){dependency_2=_beyondJsReactive211Model}],execute:function(){__Bundle=dependency_0.Bundle,(__pkg=new __Bundle({module:{vspecifier:"@aimpact/media-manager@1.0.0/recorder"},type:"ts"},_context.meta.url).package()).dependencies.update([["@beyond-js/kernel/core",dependency_1],["@beyond-js/reactive/model",dependency_2]]),(__Bundle=new Map).set("./index",{hash:2533696947,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.Recorder=void 0;var _core=require("@beyond-js/kernel/core"),require=require("@beyond-js/reactive/model");class Recorder extends require.ReactiveModel{#initialised=!1;#source;#stream;#startTime;#initPromise;#stopPromise;#audioContext;#recordingPromise;#mediaRecorder;#chunks=[];get chunks(){return this.#chunks}#status;get status(){return this.#status}#recording=!1;get recording(){return this.#recording}#error;get error(){return this.#error}get valid(){return!this.#error}#audio;get audio(){return this.#audio}#analyser;get analyser(){return this.#analyser}#speechRecognition;#transcription="";get transcription(){return this.#transcription}#promiseSpeech;#permissions;#permissionObserver;#permissionState;constructor(){super(),this.init()}async hasPermissions(){try{return await navigator.mediaDevices.getUserMedia({audio:!0}),!0}catch(e){return console.log("aja"),this.#error=e,!1}}async init(){try{var permissions=await navigator.permissions.query({name:"microphone"});this.#permissions="granted"===permissions.state,this.#permissionObserver=permissions,this.#permissionState=permissions.state,permissions.onchange=this.#onChangeStatus.bind(this)}catch(e){}finally{this.ready=!0}}#onChangeStatus(){this.#permissionState=this.#permissionObserver.state,this.trigger("change")}getSpeechRecognition(){this.#speechRecognition=new webkitSpeechRecognition,this.#speechRecognition.lang="es-ES",this.#speechRecognition.continuous=!0,this.#speechRecognition.interimResults=!0,this.#promiseSpeech=new _core.PendingPromise,this.#speechRecognition.onresult=event=>{let interimTranscript="",finalTranscript="";for(let i=event.resultIndex;i<event.results.length;++i)event.results[i].isFinal?(finalTranscript+=event.results[i][0].transcript,this.#transcription=finalTranscript,this.#promiseSpeech.resolve(this.#transcription)):interimTranscript+=event.results[i][0].transcript},this.#speechRecognition.onerror=event=>console.error("error in transcription"),this.#speechRecognition.start()}#onDataAvailable=event=>{0!==event.data.size&&(this.#chunks.push(event.data),this.trigger("dataavailable"))};#startRecording=(stream,specs)=>{this.#mediaRecorder=new MediaRecorder(stream),this.#stream=stream,this.#audioContext=new(globalThis.AudioContext||globalThis.webkitAudioContext),this.#analyser=this.#audioContext.createAnalyser(),this.#source=this.#audioContext.createMediaStreamSource(stream),specs.analyser&&this.#source.connect(this.#analyser),specs.speechRecognition&&"webkitSpeechRecognition"in globalThis&&this.getSpeechRecognition(),this.#mediaRecorder.addEventListener("dataavailable",this.#onDataAvailable)};async initialise(specs={}){return this.#initPromise||(this.#initPromise=new _core.PendingPromise,globalThis?.navigator.mediaDevices.getUserMedia({audio:!0}).then(stream=>this.#startRecording(stream,specs)).catch(error=>{this.#error=error.message,this.#initPromise.reject()}).finally(()=>{this.#initialised=!0,this.#initPromise.resolve()})),this.#initPromise}record(specs={analyser:!0}){try{if(!this.#recordingPromise){if(this.#recordingPromise=new _core.PendingPromise,this.#recording)throw new Error("Wait for recorder to be stopped and transcription ready");this.#status="started",this.#recording=!0,this.trigger("change"),globalThis?.navigator.mediaDevices.getUserMedia({audio:!0}).then(async stream=>{this.#startRecording(stream,specs),this.#recordingPromise.resolve(),this.#initialised=!0,this.#mediaRecorder?.start()}).catch(error=>{console.error(error),this.#error=error.message,this.#recordingPromise.reject()})}return this.#recordingPromise}catch(e){}}stopStream=()=>{this.#stream.getTracks().forEach(track=>track.stop())};stop(){if(this.#mediaRecorder){if(!this.#stopPromise){if(this.#stopPromise=new _core.PendingPromise,!this.#recording)throw new Error("Recorder is not currently recording");this.#status="stopped";var stop=()=>{this.#chunks=[],this.#recording=!1,this.#mediaRecorder.addEventListener("stop",async()=>{let audio=new Blob(this.#chunks,{type:this.#mediaRecorder.mimeType});this.#audio=audio;var onFinish=()=>{this.#stopPromise.resolve(audio),this.#stopPromise=void 0};this.#promiseSpeech?this.#promiseSpeech.then(onFinish):this.#stopPromise&&onFinish(),this.#recordingPromise&&(this.#recordingPromise.resolve(audio),this.#recordingPromise=void 0),this.stopStream(),this.#mediaRecorder=void 0,this.#stream=void 0,this.#initPromise=void 0}),this.#mediaRecorder?.stop(),this.#speechRecognition?.stop(),this.trigger("change")};this.#initialised?stop():this.record().then(stop)}return this.#stopPromise}console.warn("this.#mediaRecorder no initialize")}}exports.Recorder=Recorder}}),__Bundle.set("./interface",{hash:939057662,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0})}}),__pkg.exports.descriptor=[{im:"./index",from:"Recorder",name:"Recorder"}],__pkg.exports.process=function({require,prop,value}){!require&&"Recorder"!==prop||_export("Recorder",require?require("./index").Recorder:value)},_export("__beyond_pkg",__pkg),_export("hmr",new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener),this.off=(event,listener)=>__pkg.hmr.off(event,listener)}),__pkg.initialise(__Bundle)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8vaW5kZXgudHMvIiwiLy9pbnRlcmZhY2UudHMvIl0sIm5hbWVzIjpbIl9jb3JlIiwicmVxdWlyZSIsIl9tb2RlbCIsIlJlY29yZGVyIiwiUmVhY3RpdmVNb2RlbCIsIiNpbml0aWFsaXNlZCIsIiNzb3VyY2UiLCIjc3RyZWFtIiwiI3N0YXJ0VGltZSIsIiNpbml0UHJvbWlzZSIsIiNzdG9wUHJvbWlzZSIsIiNhdWRpb0NvbnRleHQiLCIjcmVjb3JkaW5nUHJvbWlzZSIsIiNtZWRpYVJlY29yZGVyIiwiI2NodW5rcyIsImNodW5rcyIsInRoaXMiLCIjc3RhdHVzIiwic3RhdHVzIiwiI3JlY29yZGluZyIsInJlY29yZGluZyIsIiNlcnJvciIsImVycm9yIiwidmFsaWQiLCIjYXVkaW8iLCJhdWRpbyIsIiNhbmFseXNlciIsImFuYWx5c2VyIiwiI3NwZWVjaFJlY29nbml0aW9uIiwiI3RyYW5zY3JpcHRpb24iLCJ0cmFuc2NyaXB0aW9uIiwiI3Byb21pc2VTcGVlY2giLCIjcGVybWlzc2lvbnMiLCIjcGVybWlzc2lvbk9ic2VydmVyIiwiI3Blcm1pc3Npb25TdGF0ZSIsImNvbnN0cnVjdG9yIiwic3VwZXIiLCJpbml0IiwiaGFzUGVybWlzc2lvbnMiLCJhd2FpdCIsIm5hdmlnYXRvciIsIm1lZGlhRGV2aWNlcyIsImdldFVzZXJNZWRpYSIsImUiLCJjb25zb2xlIiwibG9nIiwicGVybWlzc2lvbnMiLCJxdWVyeSIsIm5hbWUiLCJzdGF0ZSIsIm9uY2hhbmdlIiwiI29uQ2hhbmdlU3RhdHVzIiwiYmluZCIsInJlYWR5IiwidHJpZ2dlciIsImdldFNwZWVjaFJlY29nbml0aW9uIiwid2Via2l0U3BlZWNoUmVjb2duaXRpb24iLCJsYW5nIiwiY29udGludW91cyIsImludGVyaW1SZXN1bHRzIiwiUGVuZGluZ1Byb21pc2UiLCJvbnJlc3VsdCIsImV2ZW50IiwibGV0IiwiaW50ZXJpbVRyYW5zY3JpcHQiLCJmaW5hbFRyYW5zY3JpcHQiLCJpIiwicmVzdWx0SW5kZXgiLCJyZXN1bHRzIiwibGVuZ3RoIiwiaXNGaW5hbCIsInRyYW5zY3JpcHQiLCJyZXNvbHZlIiwib25lcnJvciIsInN0YXJ0IiwiI29uRGF0YUF2YWlsYWJsZSIsImRhdGEiLCJzaXplIiwicHVzaCIsIiNzdGFydFJlY29yZGluZyIsInN0cmVhbSIsInNwZWNzIiwiTWVkaWFSZWNvcmRlciIsImdsb2JhbFRoaXMiLCJBdWRpb0NvbnRleHQiLCJ3ZWJraXRBdWRpb0NvbnRleHQiLCJjcmVhdGVBbmFseXNlciIsImNyZWF0ZU1lZGlhU3RyZWFtU291cmNlIiwiY29ubmVjdCIsInNwZWVjaFJlY29nbml0aW9uIiwiYWRkRXZlbnRMaXN0ZW5lciIsImluaXRpYWxpc2UiLCJ0aGVuIiwiY2F0Y2giLCJtZXNzYWdlIiwicmVqZWN0IiwiZmluYWxseSIsInJlY29yZCIsIkVycm9yIiwic3RvcFN0cmVhbSIsImdldFRyYWNrcyIsImZvckVhY2giLCJ0cmFjayIsInN0b3AiLCJhc3luYyIsIkJsb2IiLCJ0eXBlIiwibWltZVR5cGUiLCJvbkZpbmlzaCIsInVuZGVmaW5lZCIsIndhcm4iLCJleHBvcnRzIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJ2YWx1ZSJdLCJtYXBwaW5ncyI6Iis0QkFBQSxJQUFBQSxNQUFBQyxRQUFBLHdCQUFBLEVBQ0FDLFFBQUFELFFBQUEsMkJBQUEsUUFLTUUsaUJBQWlCRCxRQUFBRSxjQUN0QkMsYUFBZSxDQUFBLEVBQ2ZDLFFBQ0FDLFFBQ0FDLFdBQ0FDLGFBQ0FDLGFBQ0FDLGNBQ0FDLGtCQUNBQyxlQUVBQyxRQUFrQixHQUNsQkMsYUFDQyxPQUFPQyxLQUFLRixPQUNiLENBQ0FHLFFBQ0FDLGFBQ0MsT0FBT0YsS0FBS0MsT0FDYixDQUVBRSxXQUFhLENBQUEsRUFDYkMsZ0JBQ0MsT0FBT0osS0FBS0csVUFDYixDQUVBRSxPQUNBQyxZQUNDLE9BQU9OLEtBQUtLLE1BQ2IsQ0FFQUUsWUFDQyxNQUFPLENBQUNQLEtBQUtLLE1BQ2QsQ0FFQUcsT0FDQUMsWUFDQyxPQUFPVCxL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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/core", "@beyond-js/reactive@2.1.1/model"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, Recorder, __beyond_pkg, hmr;
+  _export("Recorder", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Core) {
+      dependency_1 = _beyondJsKernel0114Core;
+    }, function (_beyondJsReactive211Model) {
+      dependency_2 = _beyondJsReactive211Model;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["pragmate-ui", "1.0.8"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/reactive", "2.1.0"], ["react", "18.3.1"], ["socket.io-client", "4.8.1"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.3.25"], ["@types/react-dom", "18.3.7"], ["@aimpact/media-manager", "1.0.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/media-manager@1.0.0/recorder"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/core', dependency_1], ['@beyond-js/reactive/model', dependency_2]]);
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 2533696947,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Recorder = void 0;
+          var _core = require("@beyond-js/kernel/core");
+          var _model = require("@beyond-js/reactive/model");
+          /*bundle */
+          class Recorder extends _model.ReactiveModel {
+            #initialised = false;
+            #source;
+            #stream;
+            #startTime;
+            #initPromise;
+            #stopPromise;
+            #audioContext;
+            #recordingPromise;
+            #mediaRecorder;
+            #chunks = [];
+            get chunks() {
+              return this.#chunks;
+            }
+            #status;
+            get status() {
+              return this.#status;
+            }
+            #recording = false;
+            get recording() {
+              return this.#recording;
+            }
+            #error;
+            get error() {
+              return this.#error;
+            }
+            get valid() {
+              return !this.#error;
+            }
+            #audio;
+            get audio() {
+              return this.#audio;
+            }
+            #analyser;
+            get analyser() {
+              return this.#analyser;
+            }
+            #speechRecognition;
+            #transcription = '';
+            get transcription() {
+              return this.#transcription;
+            }
+            #promiseSpeech;
+            #permissions;
+            #permissionObserver;
+            #permissionState;
+            constructor() {
+              super();
+              this.init();
+            }
+            async hasPermissions() {
+              try {
+                await navigator.mediaDevices.getUserMedia({
+                  audio: true
+                });
+                return true;
+              } catch (e) {
+                console.log('aja');
+                this.#error = e;
+                return false;
+              }
+            }
+            async init() {
+              try {
+                const permissions = await navigator.permissions.query({
+                  name: 'microphone'
+                });
+                this.#permissions = permissions.state === 'granted';
+                this.#permissionObserver = permissions;
+                this.#permissionState = permissions.state;
+                permissions.onchange = this.#onChangeStatus.bind(this);
+              } catch (e) {
+                // the permissions.query microphone validation is not supported in safari and firefox
+                // this.#permissions = await this.getPermissions();
+              } finally {
+                this.ready = true;
+              }
+            }
+            #onChangeStatus() {
+              this.#permissionState = this.#permissionObserver.state;
+              this.trigger('change');
+            }
+            getSpeechRecognition() {
+              //@ts-ignore
+              this.#speechRecognition = new webkitSpeechRecognition();
+              this.#speechRecognition.lang = 'es-ES';
+              this.#speechRecognition.continuous = true;
+              this.#speechRecognition.interimResults = true;
+              // this.#speechRecognition.lang = 'en-US'; // Change this to the desired language
+              this.#promiseSpeech = new _core.PendingPromise();
+              this.#speechRecognition.onresult = event => {
+                let interimTranscript = '';
+                let finalTranscript = '';
+                for (let i = event.resultIndex; i < event.results.length; ++i) {
+                  if (event.results[i].isFinal) {
+                    finalTranscript += event.results[i][0].transcript;
+                    this.#transcription = finalTranscript;
+                    this.#promiseSpeech.resolve(this.#transcription);
+                  } else {
+                    interimTranscript += event.results[i][0].transcript;
+                  }
+                }
+              };
+              this.#speechRecognition.onerror = event => console.error('error in transcription');
+              this.#speechRecognition.start();
+            }
+            #onDataAvailable = event => {
+              if (event.data.size === 0) return;
+              this.#chunks.push(event.data);
+              this.trigger('dataavailable');
+            };
+            #startRecording = (stream, specs) => {
+              this.#mediaRecorder = new MediaRecorder(stream);
+              this.#stream = stream;
+              // Create an AudioContext
+              this.#audioContext = new (globalThis.AudioContext || globalThis.webkitAudioContext)();
+              // Create an AnalyserNode
+              this.#analyser = this.#audioContext.createAnalyser();
+              // Create a source from the stream and connect it to the analyser
+              this.#source = this.#audioContext.createMediaStreamSource(stream);
+              if (specs.analyser) this.#source.connect(this.#analyser);
+              //@ts-ignore
+              if (specs.speechRecognition && 'webkitSpeechRecognition' in globalThis) {
+                this.getSpeechRecognition();
+              }
+              this.#mediaRecorder.addEventListener('dataavailable', this.#onDataAvailable);
+            };
+            async initialise(specs = {}) {
+              if (this.#initPromise) return await this.#initPromise;
+              this.#initPromise = new _core.PendingPromise();
+              globalThis?.navigator.mediaDevices.getUserMedia({
+                audio: true
+              }).then(stream => this.#startRecording(stream, specs)).catch(error => {
+                this.#error = error.message;
+                this.#initPromise.reject();
+              }).finally(() => {
+                this.#initialised = true;
+                this.#initPromise.resolve();
+              });
+              return this.#initPromise;
+            }
+            record(specs = {
+              analyser: true
+            }) {
+              try {
+                if (this.#recordingPromise) return this.#recordingPromise;
+                this.#recordingPromise = new _core.PendingPromise();
+                if (this.#recording) {
+                  throw new Error('Wait for recorder to be stopped and transcription ready');
+                }
+                this.#status = 'started';
+                this.#recording = true;
+                this.trigger('change');
+                globalThis?.navigator.mediaDevices.getUserMedia({
+                  audio: true
+                }).then(async stream => {
+                  this.#startRecording(stream, specs);
+                  this.#recordingPromise.resolve();
+                  this.#initialised = true;
+                  this.#mediaRecorder?.start();
+                }).catch(error => {
+                  console.error(error);
+                  this.#error = error.message;
+                  this.#recordingPromise.reject();
+                });
+                return this.#recordingPromise;
+              } catch (e) {} finally {}
+            }
+            stopStream = () => {
+              //stopping the capturing request by stopping all the tracks on the active stream
+              this.#stream.getTracks() //get all tracks from the stream
+              .forEach(track => track.stop()); //stop each one
+            };
+            stop() {
+              if (!this.#mediaRecorder) {
+                console.warn('this.#mediaRecorder no initialize');
+                return;
+              }
+              if (this.#stopPromise) return this.#stopPromise;
+              this.#stopPromise = new _core.PendingPromise();
+              if (!this.#recording) throw new Error('Recorder is not currently recording');
+              this.#status = 'stopped';
+              const stop = () => {
+                this.#chunks = [];
+                this.#recording = false;
+                this.#mediaRecorder.addEventListener('stop', async () => {
+                  const audio = new Blob(this.#chunks, {
+                    type: this.#mediaRecorder.mimeType
+                  });
+                  //@ts-ignore
+                  this.#audio = audio;
+                  const onFinish = () => {
+                    this.#stopPromise.resolve(audio);
+                    this.#stopPromise = undefined;
+                  };
+                  if (this.#promiseSpeech) {
+                    this.#promiseSpeech.then(onFinish);
+                  } else {
+                    if (this.#stopPromise) {
+                      onFinish();
+                    }
+                  }
+                  if (this.#recordingPromise) {
+                    this.#recordingPromise.resolve(audio);
+                    this.#recordingPromise = undefined;
+                  }
+                  this.stopStream();
+                  this.#mediaRecorder = undefined;
+                  this.#stream = undefined;
+                  this.#initPromise = undefined;
+                });
+                this.#mediaRecorder?.stop();
+                this.#speechRecognition?.stop();
+                this.trigger('change');
+              };
+              this.#initialised ? stop() : this.record().then(stop);
+              return this.#stopPromise;
+            }
+          }
+          exports.Recorder = Recorder;
+        }
+      });
+
+      /***************************
+      INTERNAL MODULE: ./interface
+      ***************************/
+
+      ims.set('./interface', {
+        hash: 939057662,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "Recorder",
+        "name": "Recorder"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Recorder') && _export("Recorder", Recorder = require ? require('./index').Recorder : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfY29yZSIsInJlcXVpcmUiLCJfbW9kZWwiLCJSZWNvcmRlciIsIlJlYWN0aXZlTW9kZWwiLCJpbml0aWFsaXNlZCIsInNvdXJjZSIsInN0cmVhbSIsInN0YXJ0VGltZSIsImluaXRQcm9taXNlIiwic3RvcFByb21pc2UiLCJhdWRpb0NvbnRleHQiLCJyZWNvcmRpbmdQcm9taXNlIiwibWVkaWFSZWNvcmRlciIsImNodW5rcyIsInN0YXR1cyIsInJlY29yZGluZyIsImVycm9yIiwidmFsaWQiLCJhdWRpbyIsImFuYWx5c2VyIiwic3BlZWNoUmVjb2duaXRpb24iLCJ0cmFuc2NyaXB0aW9uIiwicHJvbWlzZVNwZWVjaCIsInBlcm1pc3Npb25zIiwicGVybWlzc2lvbk9ic2VydmVyIiwicGVybWlzc2lvblN0YXRlIiwiY29uc3RydWN0b3IiLCJpbml0IiwiaGFzUGVybWlzc2lvbnMiLCJuYXZpZ2F0b3IiLCJtZWRpYURldmljZXMiLCJnZXRVc2VyTWVkaWEiLCJlIiwiY29uc29sZSIsImxvZyIsInF1ZXJ5IiwibmFtZSIsInN0YXRlIiwib25jaGFuZ2UiLCJvbkNoYW5nZVN0YXR1cyIsImJpbmQiLCJyZWFkeSIsIiNvbkNoYW5nZVN0YXR1cyIsInRyaWdnZXIiLCJnZXRTcGVlY2hSZWNvZ25pdGlvbiIsIndlYmtpdFNwZWVjaFJlY29nbml0aW9uIiwibGFuZyIsImNvbnRpbnVvdXMiLCJpbnRlcmltUmVzdWx0cyIsIlBlbmRpbmdQcm9taXNlIiwib25yZXN1bHQiLCJldmVudCIsImludGVyaW1UcmFuc2NyaXB0IiwiZmluYWxUcmFuc2NyaXB0IiwiaSIsInJlc3VsdEluZGV4IiwicmVzdWx0cyIsImxlbmd0aCIsImlzRmluYWwiLCJ0cmFuc2NyaXB0IiwicmVzb2x2ZSIsIm9uZXJyb3IiLCJzdGFydCIsIm9uRGF0YUF2YWlsYWJsZSIsImRhdGEiLCJzaXplIiwicHVzaCIsInN0YXJ0UmVjb3JkaW5nIiwiI3N0YXJ0UmVjb3JkaW5nIiwic3BlY3MiLCJNZWRpYVJlY29yZGVyIiwiZ2xvYmFsVGhpcyIsIkF1ZGlvQ29udGV4dCIsIndlYmtpdEF1ZGlvQ29udGV4dCIsImNyZWF0ZUFuYWx5c2VyIiwiY3JlYXRlTWVkaWFTdHJlYW1Tb3VyY2UiLCJjb25uZWN0IiwiYWRkRXZlbnRMaXN0ZW5lciIsImluaXRpYWxpc2UiLCJ0aGVuIiwiY2F0Y2giLCJtZXNzYWdlIiwicmVqZWN0IiwiZmluYWxseSIsInJlY29yZCIsIkVycm9yIiwic3RvcFN0cmVhbSIsImdldFRyYWNrcyIsImZvckVhY2giLCJ0cmFjayIsInN0b3AiLCJ3YXJuIiwiQmxvYiIsInR5cGUiLCJtaW1lVHlwZSIsIm9uRmluaXNoIiwidW5kZWZpbmVkIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiXSwic291cmNlcyI6WyIvaW5kZXgudHMiLCIvaW50ZXJmYWNlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLEtBQUEsR0FBQUMsT0FBQTtVQUNBLElBQUFDLE1BQUEsR0FBQUQsT0FBQTtVQUdPO1VBQVcsTUFFWkUsUUFBUyxTQUFRRCxNQUFBLENBQUFFLGFBQXVCO1lBQzdDLENBQUFDLFdBQVksR0FBRyxLQUFLO1lBQ3BCLENBQUFDLE1BQU87WUFDUCxDQUFBQyxNQUFPO1lBQ1AsQ0FBQUMsU0FBVTtZQUNWLENBQUFDLFdBQVk7WUFDWixDQUFBQyxXQUFZO1lBQ1osQ0FBQUMsWUFBYTtZQUNiLENBQUFDLGdCQUFpQjtZQUNqQixDQUFBQyxhQUFjO1lBRWQsQ0FBQUMsTUFBTyxHQUFXLEVBQUU7WUFDcEIsSUFBSUEsTUFBTUEsQ0FBQTtjQUNULE9BQU8sSUFBSSxDQUFDLENBQUFBLE1BQU87WUFDcEI7WUFDQSxDQUFBQyxNQUFPO1lBQ1AsSUFBSUEsTUFBTUEsQ0FBQTtjQUNULE9BQU8sSUFBSSxDQUFDLENBQUFBLE1BQU87WUFDcEI7WUFFQSxD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

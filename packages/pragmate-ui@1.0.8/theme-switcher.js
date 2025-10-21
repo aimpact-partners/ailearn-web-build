@@ -1,2 +1,109 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/styles","react@18.3.1","pragmate-ui@1.0.8/form","pragmate-ui@1.0.8/icons"],function(_export,_context){var dependency_0,dependency_1,dependency_2,dependency_3,dependency_4,__pkg,__Bundle;return _export("ThemeSwitcher",void 0),{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_beyondJsKernel0114Styles){dependency_1=_beyondJsKernel0114Styles},function(_react2){dependency_2=_react2},function(_pragmateUi108Form){dependency_3=_pragmateUi108Form},function(_pragmateUi108Icons){dependency_4=_pragmateUi108Icons}],execute:function(){__Bundle=dependency_0.Bundle,(__pkg=new __Bundle({module:{vspecifier:"pragmate-ui@1.0.8/theme-switcher"},type:"code"},_context.meta.url).package()).dependencies.update([["@beyond-js/kernel/styles",dependency_1],["react",dependency_2],["pragmate-ui/form",dependency_3],["pragmate-ui/icons",dependency_4]]),brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@1.0.8/theme-switcher"),(__Bundle=new Map).set("./index",{hash:1174528906,creator:function(require,exports){Object.defineProperty(exports,"__esModule",{value:!0}),exports.ThemeSwitcher=function(){let theme=globalThis?.matchMedia("(prefers-color-scheme: dark)").matches,themeStorage=localStorage.getItem("theme"),defaultTheme=theme?"dark":"light",userTheme=themeStorage?"dark"===themeStorage:"dark"==defaultTheme,[isDark,setIsDark]=_react.default.useState(userTheme);_react.default.useEffect(()=>{themeStorage&&document.querySelector("html").setAttribute("data-beyond-mode",themeStorage)},[]);var icon=isDark?"moon":"sun";return _react.default.createElement("div",{className:"theme"},_react.default.createElement("div",{className:"container-theme"},_react.default.createElement(_icons.Icon,{icon:icon}),_react.default.createElement(_form.Switch,{className:"checkbox",checked:isDark,onChange:function({target}){var container=document.querySelector("html"),theme=isDark?"light":"dark";container.setAttribute("data-beyond-mode",theme),localStorage.setItem("theme",theme),setIsDark(target.checked)}})))};var _react=require("react"),_form=require("pragmate-ui/form"),_icons=require("pragmate-ui/icons")}}),__pkg.exports.descriptor=[{im:"./index",from:"ThemeSwitcher",name:"ThemeSwitcher"}],__pkg.exports.process=function({require,prop,value}){!require&&"ThemeSwitcher"!==prop||_export("ThemeSwitcher",require?require("./index").ThemeSwitcher:value)},_export("__beyond_pkg",__pkg),_export("hmr",new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener),this.off=(event,listener)=>__pkg.hmr.off(event,listener)}),__pkg.initialise(__Bundle)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8vdHMvaW5kZXgudHN4Il0sIm5hbWVzIjpbInRoZW1lIiwiZ2xvYmFsVGhpcyIsIm1hdGNoTWVkaWEiLCJtYXRjaGVzIiwidGhlbWVTdG9yYWdlIiwibG9jYWxTdG9yYWdlIiwiZ2V0SXRlbSIsImRlZmF1bHRUaGVtZSIsInVzZXJUaGVtZSIsImlzRGFyayIsInNldElzRGFyayIsIl9yZWFjdCIsImRlZmF1bHQiLCJ1c2VTdGF0ZSIsInVzZUVmZmVjdCIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsInNldEF0dHJpYnV0ZSIsImljb24iLCJjcmVhdGVFbGVtZW50IiwiY2xhc3NOYW1lIiwiX2ljb25zIiwiSWNvbiIsIl9mb3JtIiwiU3dpdGNoIiwiY2hlY2tlZCIsIm9uQ2hhbmdlIiwidGFyZ2V0IiwiY29udGFpbmVyIiwic2V0SXRlbSIsInJlcXVpcmUiXSwibWFwcGluZ3MiOiJxckNBSWlCLFdBQ2hCLElBQU1BLE1BQVFDLFlBQVlDLFdBQVcsOEJBQThCLEVBQUVDLFFBQy9EQyxhQUFlQyxhQUFhQyxRQUFRLE9BQU8sRUFDM0NDLGFBQXVCUCxNQUFRLE9BQVMsUUFDeENRLFVBQXFCSixhQUFnQyxTQUFqQkEsYUFBMkMsUUFBakJHLGFBQzlELENBQUNFLE9BQVFDLFdBQWFDLE9BQUFDLFFBQU1DLFNBQWtCTCxTQUFTLEVBVTdERyxPQUFBQyxRQUFNRSxVQUFVLEtBQ1ZWLGNBQ2FXLFNBQVNDLGNBQWMsTUFBTSxFQUNyQ0MsYUFBYSxtQkFBb0JiLFlBQVksQ0FDeEQsRUFBRyxFQUFFLEVBRUwsSUFBTWMsS0FBZVQsT0FBUyxPQUFTLE1BQ3ZDLE9BQ0NFLE9BQUFDLFFBQUFPLGNBQUEsTUFBQSxDQUFLQyxVQUFVLE9BQU8sRUFDckJULE9BQUFDLFFBQUFPLGNBQUEsTUFBQSxDQUFLQyxVQUFVLGlCQUFpQixFQUMvQlQsT0FBQUMsUUFBQU8sY0FBQ0UsT0FBQUMsS0FBSSxDQUFDSixLQUFNQSxJQUFJLENBQUEsRUFDaEJQLE9BQUFDLFFBQUFPLGNBQUNJLE1BQUFDLE9BQU0sQ0FBQ0osVUFBVSxXQUFXSyxRQUFTaEIsT0FBUWlCLFNBbkJqRCxTQUFzQixDQUFDQyxNQUFNLEdBQzVCLElBQU1DLFVBQVliLFNBQVNDLGNBQWMsTUFBTSxFQUN6Q2hCLE1BQVFTLE9BQVMsUUFBVSxPQUNqQ21CLFVBQVVYLGFBQWEsbUJBQW9CakIsS0FBSyxFQUNoREssYUFBYXdCLFFBQVEsUUFBUzdCLEtBQUssRUFDbkNVLFVBQVVpQixPQUFPRixPQUFPLENBQ3pCLENBYXVFLENBQUEsQ0FBSSxDQUNuRSxDQUdULEVBbENBLElBQUFkLE9BQUFtQixRQUFBLE9BQUEsRUFDQVAsTUFBQU8sUUFBQSxrQkFBQSxFQUNBVCxPQUFBUyxRQUFBLG1CQUFBIn0=
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/styles", "react@18.3.1", "pragmate-ui@1.0.8/form", "pragmate-ui@1.0.8/icons"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, ThemeSwitcher, __beyond_pkg, hmr;
+  _export("ThemeSwitcher", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_1 = _beyondJsKernel0114Styles;
+    }, function (_react2) {
+      dependency_2 = _react2;
+    }, function (_pragmateUi108Form) {
+      dependency_3 = _pragmateUi108Form;
+    }, function (_pragmateUi108Icons) {
+      dependency_4 = _pragmateUi108Icons;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.0"], ["@beyond-js/widgets", "0.1.6"], ["@floating-ui/dom", "1.7.3"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.8"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.8/theme-switcher"
+        },
+        "type": "code"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2], ['pragmate-ui/form', dependency_3], ['pragmate-ui/icons', dependency_4]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@1.0.8/theme-switcher');
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 1174528906,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ThemeSwitcher = ThemeSwitcher;
+          var _react = require("react");
+          var _form = require("pragmate-ui/form");
+          var _icons = require("pragmate-ui/icons");
+          /*bundle*/
+          function ThemeSwitcher() {
+            const theme = globalThis?.matchMedia('(prefers-color-scheme: dark)').matches;
+            const themeStorage = localStorage.getItem('theme');
+            const defaultTheme = theme ? 'dark' : 'light';
+            const userTheme = themeStorage ? themeStorage === 'dark' : defaultTheme === 'dark';
+            const [isDark, setIsDark] = _react.default.useState(userTheme);
+            function handleChange({
+              target
+            }) {
+              const container = document.querySelector('html');
+              const theme = isDark ? 'light' : 'dark';
+              container.setAttribute('data-beyond-mode', theme);
+              localStorage.setItem('theme', theme);
+              setIsDark(target.checked);
+            }
+            _react.default.useEffect(() => {
+              if (!themeStorage) return;
+              const container = document.querySelector('html');
+              container.setAttribute('data-beyond-mode', themeStorage);
+            }, []);
+            const icon = isDark ? 'moon' : 'sun';
+            return _react.default.createElement("div", {
+              className: "theme"
+            }, _react.default.createElement("div", {
+              className: "container-theme"
+            }, _react.default.createElement(_icons.Icon, {
+              icon: icon
+            }), _react.default.createElement(_form.Switch, {
+              className: "checkbox",
+              checked: isDark,
+              onChange: handleChange
+            })));
+          }
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "ThemeSwitcher",
+        "name": "ThemeSwitcher"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'ThemeSwitcher') && _export("ThemeSwitcher", ThemeSwitcher = require ? require('./index').ThemeSwitcher : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX2Zvcm0iLCJfaWNvbnMiLCJUaGVtZVN3aXRjaGVyIiwidGhlbWUiLCJnbG9iYWxUaGlzIiwibWF0Y2hNZWRpYSIsIm1hdGNoZXMiLCJ0aGVtZVN0b3JhZ2UiLCJsb2NhbFN0b3JhZ2UiLCJnZXRJdGVtIiwiZGVmYXVsdFRoZW1lIiwidXNlclRoZW1lIiwiaXNEYXJrIiwic2V0SXNEYXJrIiwiZGVmYXVsdCIsInVzZVN0YXRlIiwiaGFuZGxlQ2hhbmdlIiwidGFyZ2V0IiwiY29udGFpbmVyIiwiZG9jdW1lbnQiLCJxdWVyeVNlbGVjdG9yIiwic2V0QXR0cmlidXRlIiwic2V0SXRlbSIsImNoZWNrZWQiLCJ1c2VFZmZlY3QiLCJpY29uIiwiY3JlYXRlRWxlbWVudCIsImNsYXNzTmFtZSIsIkljb24iLCJTd2l0Y2giLCJvbkNoYW5nZSJdLCJzb3VyY2VzIjpbIi90cy9pbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsS0FBQSxHQUFBRCxPQUFBO1VBQ0EsSUFBQUUsTUFBQSxHQUFBRixPQUFBO1VBRU87VUFBVSxTQUFVRyxhQUFhQSxDQUFBO1lBQ3ZDLE1BQU1DLEtBQUssR0FBR0MsVUFBVSxFQUFFQyxVQUFVLENBQUMsOEJBQThCLENBQUMsQ0FBQ0MsT0FBTztZQUM1RSxNQUFNQyxZQUFZLEdBQUdDLFlBQVksQ0FBQ0MsT0FBTyxDQUFDLE9BQU8sQ0FBQztZQUNsRCxNQUFNQyxZQUFZLEdBQVdQLEtBQUssR0FBRyxNQUFNLEdBQUcsT0FBTztZQUNyRCxNQUFNUSxTQUFTLEdBQVlKLFlBQVksR0FBR0EsWUFBWSxLQUFLLE1BQU0sR0FBR0csWUFBWSxLQUFLLE1BQU07WUFDM0YsTUFBTSxDQUFDRSxNQUFNLEVBQUVDLFNBQVMsQ0FBQyxHQUFHZixNQUFBLENBQUFnQixPQUFLLENBQUNDLFFBQVEsQ0FBVUosU0FBUyxDQUFDO1lBRTlELFNBQVNLLFlBQVlBLENBQUM7Y0FBQ0M7WUFBTSxDQUFDO2NBQzdCLE1BQU1DLFNBQVMsR0FBR0MsUUFBUSxDQUFDQyxhQUFhLENBQUMsTUFBTSxDQUFDO2NBQ2hELE1BQU1qQixLQUFLLEdBQUdTLE1BQU0sR0FBRyxPQUFPLEdBQUcsTUFBTTtjQUN2Q00sU0FBUyxDQUFDRyxZQUFZLENBQUMsa0JBQWtCLEVBQUVsQixLQUFLLENBQUM7Y0FDakRLLFlBQVksQ0FBQ2MsT0FBTyxDQUFDLE9BQU8sRUFBRW5CLEtBQUssQ0FBQztjQUNwQ1UsU0FBUyxDQUFDSSxNQUFNLENBQUNNLE9BQU8sQ0FBQztZQUMxQjtZQUVBekIsTUFBQSxDQUFBZ0IsT0FBSyxDQUFDVSxTQUFTLENBQUMsTUFBSztjQUNwQixJQUFJLENBQUNqQixZQUFZLEVBQUU7Y0FDbkIsTUFBTVcsU0FBUyxHQUFHQyxRQUFRLENBQUNDLGFBQWEsQ0FBQyxNQUFNLENBQUM7Y0FDaERGLFNBQVMsQ0FBQ0csWUFBWSxDQUFDLGtCQUFrQixFQUFFZCxZQUFZLENBQUM7WUFDekQsQ0FBQyxFQUFFLEVBQUUsQ0FBQztZQUVOLE1BQU1rQixJQUFJLEdBQVdiLE1BQU0sR0FBRyxNQUFNLEdBQUcsS0FBSztZQUM1QyxPQUNDZCxNQUFBLENBQUFnQixPQUFBLENBQUFZLGFBQUE7Y0FBS0MsU0FBUyxFQUFDO1lBQU8sR0FDckI3QixNQUFBLENBQUFnQixPQUFBLENBQUFZLGFBQUE7Y0FBS0MsU0FBUyxFQUFDO1lBQWlCLEdBQy9CN0IsTUFBQSxDQUFBZ0IsT0FBQSxDQUFBWSxhQUFBLENBQUN6QixNQUFBLENBQUEyQixJQUFJO2NBQUNILElBQUksRUFBRUE7WUFBSSxFQUFJLEVBQ3BCM0IsTUFBQSxDQUFBZ0IsT0FBQSxDQUFBWSxhQUFBLENBQUMxQixLQUFBLENBQUE2QixNQUFNO2NBQUNGLFNBQVMsRUFBQyxVQUFVO2NBQUNKLE9BQU8sRUFBRVgsTUFBTTtjQUFFa0IsUUFBUSxFQUFFZDtZQUFZLEVBQUksQ0FDbkUsQ0FDRDtVQUVSIiwiaWdub3JlTGlzdCI6W119
