@@ -29,7 +29,7 @@ System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context
       INTERNAL MODULE: ./txt
       *********************/
       ims.set('./txt', {
-        hash: 2995831282,
+        hash: 2347467384,
         creator: function (require, exports) {
           exports.txt = {
             "gallery": {
@@ -37,6 +37,7 @@ System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context
                 "title": "Angehängte Bilder"
               },
               "search": {
+                "title": "Bilder in Google suchen",
                 "placeholder": "Bild in Google suchen",
                 "button": {
                   "label": "Suchen"
@@ -72,7 +73,7 @@ System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context
               },
               "selectedImage": {
                 "title": "Bildoptionen",
-                "copyrightNotice": "Urheberrechte und Nutzungsrechte des Bildes überprüfen",
+                "copyrightNotice": "<br>Besuchen > ",
                 "disclaimer": "<strong>Hinweis:</strong> Bilder mit offenen Lizenzen werden gemäß dem Google-Filter angezeigt. Wir empfehlen, die Quelle zu überprüfen, um die Nutzungsbedingungen zu bestätigen."
               },
               "generator": {
