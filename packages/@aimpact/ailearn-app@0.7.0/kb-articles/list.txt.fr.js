@@ -1,2 +1,119 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(e,t){"use strict";var i,a,s,r,n,o,c,p;e("txt",void 0);return{setters:[function(e){i=e}],execute:function(){a=e=>{const t=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:s}=i);r=new s({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/kb-articles/list",multibundle:true},type:"txt"},t.meta.url).package("fr");r.dependencies.update([]);n=new Map;n.set("./txt",{hash:3821872340,creator:function(e,t){t.txt={assign:{title:{share:"Assigner l'article aux sections",dashboard:"Acc\xe9der au tableau de bord des affectations"},assigned:"Assign\xe9",noAssigned:"Aucune section assign\xe9e",module:"Article",messages:{copied:"Lien copi\xe9 dans le presse-papiers",assigned:"Article assign\xe9 \xe0 la section {classroom}"},item:{description:"L'\xe9l\xe9ment n'a pas de description"},actions:{dashboard:"Tableau de bord",copy:"Copier le lien",test:"Tester",navigate:"Naviguer",assign:{button:"Assigner",label:"L'article n'a pas \xe9t\xe9 assign\xe9 \xe0 cette section"},createClassroom:"Cr\xe9er une section"},errors:{default:"L'article n'a pas pu \xeatre assign\xe9 \xe0 cette section, veuillez r\xe9essayer plus tard ou contacter l'administrateur"},empty:{share:{text:"Attention",description:"Vous n'avez pas encore de sections cr\xe9\xe9es, vous devez en cr\xe9er une pour pouvoir assigner cette activit\xe9.",action:"Cr\xe9er une section"},dashboard:{description:"Article sans affectations"}}},title:"Articles",tabs:{drafts:"Brouillons",published:"Publi\xe9s"},actions:{view:"Voir",delete:"Supprimer",edit:"Modifier"},delete:{title:"Supprimer l'article",message:"\xcates-vous s\xfbr de vouloir supprimer cet article ? Cette action ne peut pas \xeatre annul\xe9e.",confirm:"Supprimer",cancel:"Annuler"},empty:{title:"Aucun article trouv\xe9",description:"Commencez par cr\xe9er votre premier article pour organiser vos connaissances"}}}});r.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];r.exports.process=function({require:t,prop:i,value:a}){(t||i==="txt")&&e("txt",o=t?t("./txt").txt:a)};e("__beyond_pkg",c=r);e("hmr",p=new function(){this.on=(e,t)=>r.hmr.on(e,t);this.off=(e,t)=>r.hmr.off(e,t)});r.initialise(n)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAva2ItYXJ0aWNsZXMvbGlzdC50eHQuZnIuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwidHh0IiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwibXVsdGlidW5kbGUiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwiYXNzaWduIiwidGl0bGUiLCJzaGFyZSIsImRhc2hib2FyZCIsImFzc2lnbmVkIiwibm9Bc3NpZ25lZCIsIm1lc3NhZ2VzIiwiY29waWVkIiwiaXRlbSIsImRlc2NyaXB0aW9uIiwiYWN0aW9ucyIsImNvcHkiLCJ0ZXN0IiwibmF2aWdhdGUiLCJidXR0b24iLCJsYWJlbCIsImNyZWF0ZUNsYXNzcm9vbSIsImVycm9ycyIsImRlZmF1bHQiLCJlbXB0eSIsInRleHQiLCJhY3Rpb24iLCJ0YWJzIiwiZHJhZnRzIiwicHVibGlzaGVkIiwidmlldyIsImRlbGV0ZSIsImVkaXQiLCJtZXNzYWdlIiwiY29uZmlybSIsImNhbmNlbCIsImRlc2NyaXB0b3IiLCJpbSIsImZyb20iLCJuYW1lIiwicHJvY2VzcyIsInByb3AiLCJ2YWx1ZSIsInRoaXMiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxtQ0FB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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/kb-articles/list",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('fr');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 3821872340,
+        creator: function (require, exports) {
+          exports.txt = {
+            "assign": {
+              "title": {
+                "share": "Assigner l'article aux sections",
+                "dashboard": "Accéder au tableau de bord des affectations"
+              },
+              "assigned": "Assigné",
+              "noAssigned": "Aucune section assignée",
+              "module": "Article",
+              "messages": {
+                "copied": "Lien copié dans le presse-papiers",
+                "assigned": "Article assigné à la section {classroom}"
+              },
+              "item": {
+                "description": "L'élément n'a pas de description"
+              },
+              "actions": {
+                "dashboard": "Tableau de bord",
+                "copy": "Copier le lien",
+                "test": "Tester",
+                "navigate": "Naviguer",
+                "assign": {
+                  "button": "Assigner",
+                  "label": "L'article n'a pas été assigné à cette section"
+                },
+                "createClassroom": "Créer une section"
+              },
+              "errors": {
+                "default": "L'article n'a pas pu être assigné à cette section, veuillez réessayer plus tard ou contacter l'administrateur"
+              },
+              "empty": {
+                "share": {
+                  "text": "Attention",
+                  "description": "Vous n'avez pas encore de sections créées, vous devez en créer une pour pouvoir assigner cette activité.",
+                  "action": "Créer une section"
+                },
+                "dashboard": {
+                  "description": "Article sans affectations"
+                }
+              }
+            },
+            "title": "Articles",
+            "tabs": {
+              "drafts": "Brouillons",
+              "published": "Publiés"
+            },
+            "actions": {
+              "view": "Voir",
+              "delete": "Supprimer",
+              "edit": "Modifier"
+            },
+            "delete": {
+              "title": "Supprimer l'article",
+              "message": "Êtes-vous sûr de vouloir supprimer cet article ? Cette action ne peut pas être annulée.",
+              "confirm": "Supprimer",
+              "cancel": "Annuler"
+            },
+            "empty": {
+              "title": "Aucun article trouvé",
+              "description": "Commencez par créer votre premier article pour organiser vos connaissances"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

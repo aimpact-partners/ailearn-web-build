@@ -1,2 +1,116 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(e,t){"use strict";var n,i,r,s,a,o,l,c;e("txt",void 0);return{setters:[function(e){n=e}],execute:function(){i=e=>{const t=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:r}=n);s=new r({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/auth-login",multibundle:true},type:"txt"},t.meta.url).package("de");s.dependencies.update([]);a=new Map;a.set("./txt",{hash:1550082841,creator:function(e,t){t.txt={version:"Version",footer:{intro:"Durch die Erstellung eines Kontos stimmen Sie den ",terms:"Nutzungsbedingungen",connector:"des Dienstes und der",privacy:"Datenschutzerkl\xe4rung"},tutorials:{webinar:{title:"Online-Webinar",description:"Jeden Donnerstag 17:30 Uhr"},teachers:"Anleitung f\xfcr Lehrer",students:"Anleitung f\xfcr Sch\xfcler"},presentation:{title:"Wir st\xe4rken den Unterricht und den Lernprozess mit k\xfcnstlicher Intelligenz",contents:"<strong>Erstellen Sie dynamische Lehrinhalte</strong> und \xfcberwachen Sie den Lernprozess der Sch\xfcler.",experience:"<strong>Personalisieren Sie das Lernerlebnis</strong>, indem Sie sich an das Lerntempo und den Lernstil der Sch\xfcler anpassen.",tutorials:{webinar:{title:"Online-Webinar",description:"Besuchen Sie unseren YouTube-Kanal"},teachers:"Tutorial f\xfcr Lehrer",students:"Tutorial f\xfcr Sch\xfcler"},socialMedia:"Folgen Sie uns in unseren sozialen Medien"},errors:{unknown:"Die Aktion konnte nicht abgeschlossen werden. Bitte versuchen Sie es sp\xe4ter erneut."},title:"Bildung mit der Kraft der KI transformieren",description:"Unsere Plattform bietet sowohl eine KI-Assistentin f\xfcr Lehrer als auch einen KI-Tutor f\xfcr Sch\xfcler. Wir m\xf6chten umfassende Unterst\xfctzung f\xfcr P\xe4dagogen und Lernende gleicherma\xdfen bieten.",loginTitle:"Anmelden",subtitle:"Starten Sie Ihre Testphase",emailLabel:"E-Mail",passwordLabel:"Passwort",termsAndPrivacy:"Durch die Erstellung eines Kontos stimmen Sie unseren ",terms:"Nutzungsbedingungen",connector:"und",policy:"Datenschutzrichtlinie zu",signInButton:"Anmelden",socialLoginTitle:"Oder melden Sie sich mit einem sozialen Konto an",googleSignInButton:"Mit Google anmelden",emailSignInButton:"Mit E-Mail fortfahren",closeButton:"Schlie\xdfen",facebookSignInButton:"Mit Facebook anmelden",forgotPasswordLink:"Passwort vergessen?",createAccountLink:"Neues Konto erstellen",theme:"%them Modus",passwordConditions:{title:"Das Passwort muss enthalten",minimumCharacters:"Mindestens 8 Zeichen",minimumLetters:"Mindestens ein Buchstabe",minimumSpecial:"Mindestens eine Zahl oder ein Sonderzeichen"}}}});s.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];s.exports.process=function({require:t,prop:n,value:i}){(t||n==="txt")&&e("txt",o=t?t("./txt").txt:i)};e("__beyond_pkg",l=s);e("hmr",c=new function(){this.on=(e,t)=>s.hmr.on(e,t);this.off=(e,t)=>s.hmr.off(e,t)});s.initialise(a)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvYXV0aC1sb2dpbi50eHQuZGUuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwidHh0IiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwibXVsdGlidW5kbGUiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwidmVyc2lvbiIsImZvb3RlciIsImludHJvIiwidGVybXMiLCJjb25uZWN0b3IiLCJwcml2YWN5IiwidHV0b3JpYWxzIiwid2ViaW5hciIsInRpdGxlIiwiZGVzY3JpcHRpb24iLCJ0ZWFjaGVycyIsInN0dWRlbnRzIiwicHJlc2VudGF0aW9uIiwiY29udGVudHMiLCJleHBlcmllbmNlIiwic29jaWFsTWVkaWEiLCJlcnJvcnMiLCJ1bmtub3duIiwibG9naW5UaXRsZSIsInN1YnRpdGxlIiwiZW1haWxMYWJlbCIsInBhc3N3b3JkTGFiZWwiLCJ0ZXJtc0FuZFByaXZhY3kiLCJwb2xpY3kiLCJzaWduSW5CdXR0b24iLCJzb2NpYWxMb2dpblRpdGxlIiwiZ29vZ2xlU2lnbkluQnV0dG9uIiwiZW1haWxTaWduSW5CdXR0b24iLCJjbG9zZUJ1dHRvbiIsImZhY2Vib29rU2lnbkluQnV0dG9uIiwiZm9yZ290UGFzc3dvcmRMaW5rIiwiY3JlYXRlQWNjb3VudExpbmsiLCJ0aGVtZSIsInBhc3N3b3JkQ29uZGl0aW9ucyIsIm1pbmltdW1DaGFyYWN0ZXJzIiwibWluaW11bUxldHRlcnMiLCJtaW5pbXVtU3BlY2lhbCIsImRlc2NyaXB0b3IiLCJpbSIsImZyb20iLCJuYW1lIiwicHJvY2VzcyIsInByb3AiLCJ2YWx1ZSIsInRoaXMiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxtQ0FBb0MsU0FBVUMsRUFBU0MsR0FDdEUsYUFFQSxJQUFJQyxFQUFjQyxFQUFTQyxFQUFVQyxFQUFPQyxFQUFLQyxFQUFLQyxFQUFjQyxFQUNwRVQsRUFBUSxXQUFZLEdBQ3BCLE1BQU8sQ0FDTFUsUUFBUyxDQUFDLFNBQVVDLEdBQ2xCVCxFQUFlUyxDQUNqQixHQUNBQyxRQUFTLFdBQ1BULEVBQVVVLElBQ1IsTUFBTUMsRUFBZSxJQUFJQyxJQUFJLENBQUMsQ0FBQyxzQkFBdUIsU0FBVSxDQUFDLHVCQUF3QixTQUFVLENBQUMsdUJBQXdCLFNBQVUsQ0FBQyxvQkFBcUIsU0FBVSxDQUFDLHlCQUEwQixTQUFVLENBQUMsY0FBZSxTQUFVLENBQUMsc0JBQXVCLFNBQVUsQ0FBQyx3QkFBeUIsU0FBVSxDQUFDLHFCQUFzQixVQUFXLENBQUMsb0JBQXFCLFNBQVUsQ0FBQyxvQkFBcUIsVUFBVyxDQUFDLDZCQUE4QixTQUFVLENBQUMsOEJBQStCLFNBQVUsQ0FBQyxxQkFBc0IsU0FBVSxDQUFDLGVBQWdCLFdBQVksQ0FBQyxpQkFBa0IsV0FBWSxDQUFDLGtCQUFtQixXQUFZLENBQUMsaUJBQWtCLFVBQVcsQ0FBQyx3QkFBeUIsVUFBVyxDQUFDLDRCQUE2QixVQUFXLENBQUMsOEJBQStCLFVBQVcsQ0FBQyx3QkFBeUIsU0FBVSxDQUFDLHlCQUEwQixTQUFVLENBQUMsNEJBQTZCLFNBQVUsQ0FBQywrQkFBZ0MsU0FBVSxDQUFDLCtCQUFnQyxTQUFVLENBQUMsb0NBQXFDLFNBQVUsQ0FBQywwQkFBMkIsU0FBVSxDQUFDLDhCQUErQixTQUFVLENB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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/auth-login",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('de');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 1550082841,
+        creator: function (require, exports) {
+          exports.txt = {
+            "version": "Version",
+            "footer": {
+              "intro": "Durch die Erstellung eines Kontos stimmen Sie den ",
+              "terms": "Nutzungsbedingungen",
+              "connector": "des Dienstes und der",
+              "privacy": "Datenschutzerklärung"
+            },
+            "tutorials": {
+              "webinar": {
+                "title": "Online-Webinar",
+                "description": "Jeden Donnerstag 17:30 Uhr"
+              },
+              "teachers": "Anleitung für Lehrer",
+              "students": "Anleitung für Schüler"
+            },
+            "presentation": {
+              "title": "Wir stärken den Unterricht und den Lernprozess mit künstlicher Intelligenz",
+              "contents": "<strong>Erstellen Sie dynamische Lehrinhalte</strong> und überwachen Sie den Lernprozess der Schüler.",
+              "experience": "<strong>Personalisieren Sie das Lernerlebnis</strong>, indem Sie sich an das Lerntempo und den Lernstil der Schüler anpassen.",
+              "tutorials": {
+                "webinar": {
+                  "title": "Online-Webinar",
+                  "description": "Besuchen Sie unseren YouTube-Kanal"
+                },
+                "teachers": "Tutorial für Lehrer",
+                "students": "Tutorial für Schüler"
+              },
+              "socialMedia": "Folgen Sie uns in unseren sozialen Medien"
+            },
+            "errors": {
+              "unknown": "Die Aktion konnte nicht abgeschlossen werden. Bitte versuchen Sie es später erneut."
+            },
+            "title": "Bildung mit der Kraft der KI transformieren",
+            "description": "Unsere Plattform bietet sowohl eine KI-Assistentin für Lehrer als auch einen KI-Tutor für Schüler. Wir möchten umfassende Unterstützung für Pädagogen und Lernende gleichermaßen bieten.",
+            "loginTitle": "Anmelden",
+            "subtitle": "Starten Sie Ihre Testphase",
+            "emailLabel": "E-Mail",
+            "passwordLabel": "Passwort",
+            "termsAndPrivacy": "Durch die Erstellung eines Kontos stimmen Sie unseren ",
+            "terms": "Nutzungsbedingungen",
+            "connector": "und",
+            "policy": "Datenschutzrichtlinie zu",
+            "signInButton": "Anmelden",
+            "socialLoginTitle": "Oder melden Sie sich mit einem sozialen Konto an",
+            "googleSignInButton": "Mit Google anmelden",
+            "emailSignInButton": "Mit E-Mail fortfahren",
+            "closeButton": "Schließen",
+            "facebookSignInButton": "Mit Facebook anmelden",
+            "forgotPasswordLink": "Passwort vergessen?",
+            "createAccountLink": "Neues Konto erstellen",
+            "theme": "%them Modus",
+            "passwordConditions": {
+              "title": "Das Passwort muss enthalten",
+              "minimumCharacters": "Mindestens 8 Zeichen",
+              "minimumLetters": "Mindestens ein Buchstabe",
+              "minimumSpecial": "Mindestens eine Zahl oder ein Sonderzeichen"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

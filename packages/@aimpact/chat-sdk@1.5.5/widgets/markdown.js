@@ -1,2 +1,194 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/styles","react@18.3.1","marked-mangle@1.1.11","marked@5.1.2","marked-gfm-heading-id@3.2.0","katex@0.16.22","highlight.js@11.11.1","marked-highlight@2.2.2"],function(e,t){"use strict";var a,r,n,i,s,d,o,u,c,l,m,g,k,p,h,f,y;e({Markdown:void 0,useMarked:void 0});return{setters:[function(e){a=e},function(e){r=e},function(e){n=e},function(e){i=e},function(e){s=e},function(e){d=e},function(e){o=e},function(e){u=e},function(e){c=e}],execute:function(){l=e=>{const t=new Map([["@aimpact/agents-api","0.4.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/reactive","2.1.1"],["@beyond-js/widgets","1.1.4"],["@google-cloud/storage","7.17.1"],["@radix-ui/react-icons","1.3.2"],["@tiptap/extension-blockquote","3.6.2"],["@tiptap/extension-code-block","3.6.2"],["@tiptap/extension-horizontal-rule","3.6.2"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.6.2"],["@tiptap/extension-task-list","3.6.2"],["@tiptap/extension-underline","3.6.2"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.6.2"],["@tiptap/starter-kit","3.6.2"],["clsx","2.1.1"],["dayjs","1.11.18"],["dompurify","3.2.7"],["firebase","11.10.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["katex","0.16.22"],["marked","14.1.4"],["marked-gfm-heading-id","4.1.2"],["marked-highlight","2.2.2"],["marked-mangle","1.1.11"],["media-suite","0.0.4"],["pragmate-ui","1.0.10"],["prism-themes","1.9.0"],["prismjs","1.30.0"],["react-icons","5.5.0"],["socket.io-client","4.8.1"],["turndown","7.2.1"],["wavesurfer.js","7.10.3"],["zod","3.25.76"],["@beyond-js/local","0.1.3"],["@types/react","18.3.25"],["@types/react-dom","18.3.7"],["typescript","5.9.3"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:m}=a);g=new m({module:{vspecifier:"@aimpact/chat-sdk@1.5.5/widgets/markdown"},type:"code"},t.meta.url).package();g.dependencies.update([["@beyond-js/kernel/styles",r],["react",n],["marked-mangle",i],["marked",s],["marked-gfm-heading-id",d],["katex",o],["highlight.js",u],["marked-highlight",c]]);brequire("@beyond-js/kernel/styles").styles.register("@aimpact/chat-sdk@1.5.5/widgets/markdown");k=new Map;k.set("./markdown",{hash:3844225378,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.Markdown=n;var a=e("react");var r=e("./use-marked");function n({content:e,children:t,inline:n=false,...i}){const{output:s}=(0,r.useMarked)(e??t);const d={...i};if(s==="")return null;const o=n?"span":"div";return a.default.createElement(o,{...d,dangerouslySetInnerHTML:{__html:s}})}}});k.set("./use-marked",{hash:2698766898,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.useMarked=u;var a=e("marked-mangle");var r=e("marked");var n=e("marked-gfm-heading-id");var i=e("katex");var s=e("highlight.js");var d=e("marked-highlight");r.marked.use((0,a.mangle)());const o={prefix:"my-prefix-"};r.marked.use((0,n.gfmHeadingId)(o));function u(e){function t(e){const t={breaks:false};r.marked.setOptions(t);r.marked.use((0,d.markedHighlight)({langPrefix:"language-",highlight(e,t){const a=s.default.getLanguage(t)?t:"plaintext";return s.default.highlight(e,{language:a}).value}}));let a=0;const n={};const o="MATH_PLACEHOLDER_";e=e.replace(/\\\((.*?)\\\)/g,(e,t)=>{const r=`${o}${a++}`;n[r]=i.default.renderToString(t,{displayMode:false});return r});e=e.replace(/\\\[(.*?)\\\]/gs,(e,t)=>{const r=`${o}${a++}`;n[r]=i.default.renderToString(t,{displayMode:true});return r});let u=(0,r.marked)(e,{breaks:false});Object.keys(n).forEach(e=>{u=u.replace(new RegExp(e,"g"),n[e])});return u}return{ready:!!e,output:t(e??"")}}}});g.exports.descriptor=[{im:"./markdown",from:"Markdown",name:"Markdown"},{im:"./use-marked",from:"useMarked",name:"useMarked"}];g.exports.process=function({require:t,prop:a,value:r}){(t||a==="Markdown")&&e("Markdown",p=t?t("./markdown").Markdown:r);(t||a==="useMarked")&&e("useMarked",h=t?t("./use-marked").useMarked:r)};e("__beyond_pkg",f=g);e("hmr",y=new function(){this.on=(e,t)=>g.hmr.on(e,t);this.off=(e,t)=>g.hmr.off(e,t)});g.initialise(k)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvY2hhdC1zZGtAMS41LjUvd2lkZ2V0cy9tYXJrZG93bi5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiZGVwZW5kZW5jeV8xIiwiZGVwZW5kZW5jeV8yIiwiZGVwZW5kZW5jeV8zIiwiZGVwZW5kZW5jeV80IiwiZGVwZW5kZW5jeV81IiwiZGVwZW5kZW5jeV82IiwiZGVwZW5kZW5jeV83IiwiZGVwZW5kZW5jeV84IiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJNYXJrZG93biIsInVzZU1hcmtlZCIsIl9fYmV5b25kX3BrZyIsImhtciIsInNldHRlcnMiLCJfYmV5b25kSnNLZXJuZWwwMTE0QnVuZGxlIiwiX2JleW9uZEpzS2VybmVsMDExNFN0eWxlcyIsIl9yZWFjdDIiLCJfbWFya2VkTWFuZ2xlMiIsIl9tYXJrZWQyIiwiX21hcmtlZEdmbUhlYWRpbmdJZDIiLCJfa2F0ZXgyIiwiX2hpZ2hsaWdodEpzIiwiX21hcmtlZEhpZ2hsaWdodDIiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwiYnJlcXVpcmUiLCJzdHlsZXMiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJ2YWx1ZSIsIl9yZWFjdCIsIl91c2VNYXJrZWQiLCJjb250ZW50IiwiY2hpbGRyZW4iLCJpbmxpbmUiLCJwcm9wcyIsIm91dHB1dCIsImF0dHJzIiwiVGFnIiwiZGVmYXVsdCIsImNyZWF0ZUVsZW1lbnQiLCJkYW5nZXJvdXNseVNldElubmVySFRNTCIsIl9faHRtbCIsIl9tYXJrZWRNYW5nbGUiLCJfbWFya2VkIiwiX21hcmtlZEdmbUhlYWRpbmdJZCIsIl9rYXRleCIsIl9oaWdobGlnaHQiLCJfbWFya2VkSGlnaGxpZ2h0IiwibWFya2VkIiwidXNlIiwibWFuZ2xlIiwib3B0aW9ucyIsInByZWZpeCIsImdmbUhlYWRpbmdJZCIsInJlbmRlciIsImJyZWFrcyIsInNldE9wdGlvbnMiLCJtYXJrZWRIaWdobGlnaHQiLCJsYW5nUHJlZml4IiwiaGlnaGxpZ2h0IiwiY29kZSIsImxhbmciLCJsYW5ndWFnZSIsImdldExhbmd1YWdlIiwicGxhY2Vob2xkZXJDb3VudGVyIiwibWF0aFBsYWNlaG9sZGVycyIsInBsYWNlaG9sZGVyUHJlZml4IiwicmVwbGFjZSIsIm1hdGNoIiwibWF0aENvbnRlbnQiLCJwbGFjZWhvbGRlciIsInJlbmRlclRvU3RyaW5nIiwiZGlzcGxheU1vZGUiLCJrZXlzIiwiZm9yRWFjaCIsIlJlZ0V4cCIsInJlYWR5IiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInRoaXMiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxrQ0FBbUMsa0NBQW1DLGVBQWdCLHVCQUF3QixlQUFnQiw4QkFBK0IsZ0JBQWlCLHVCQUF3QiwwQkFBMkIsU0FBVUMsRUFBU0MsR0FDblEsYUFFQSxJQUFJQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFTQyxFQUFVQyxFQUFPQyxFQUFLQyxFQUFVQyxFQUFXQyxFQUFjQyxFQUNwTWxCLEVBQVEsQ0FDTmUsY0FBZSxFQUNmQyxlQUFnQixJQUVsQixNQUFPLENBQ0xHLFFBQVMsQ0FBQyxTQUFVQyxHQUNsQmxCLEVBQWVrQixDQUNqQixFQUFHLFNBQVVDLEdBQ1hsQixFQUFla0IsQ0FDakIsRUFBRyxTQUFVQyxHQUNYbEIsRUFBZWtC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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/styles", "react@18.3.1", "marked-mangle@1.1.11", "marked@5.1.2", "marked-gfm-heading-id@3.2.0", "katex@0.16.22", "highlight.js@11.11.1", "marked-highlight@2.2.2"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, bimport, __Bundle, __pkg, ims, Markdown, useMarked, __beyond_pkg, hmr;
+  _export({
+    Markdown: void 0,
+    useMarked: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_1 = _beyondJsKernel0114Styles;
+    }, function (_react2) {
+      dependency_2 = _react2;
+    }, function (_markedMangle2) {
+      dependency_3 = _markedMangle2;
+    }, function (_marked2) {
+      dependency_4 = _marked2;
+    }, function (_markedGfmHeadingId2) {
+      dependency_5 = _markedGfmHeadingId2;
+    }, function (_katex2) {
+      dependency_6 = _katex2;
+    }, function (_highlightJs) {
+      dependency_7 = _highlightJs;
+    }, function (_markedHighlight2) {
+      dependency_8 = _markedHighlight2;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/widgets", "1.1.4"], ["@google-cloud/storage", "7.17.1"], ["@radix-ui/react-icons", "1.3.2"], ["@tiptap/extension-blockquote", "3.6.2"], ["@tiptap/extension-code-block", "3.6.2"], ["@tiptap/extension-horizontal-rule", "3.6.2"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.6.2"], ["@tiptap/extension-task-list", "3.6.2"], ["@tiptap/extension-underline", "3.6.2"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.6.2"], ["@tiptap/starter-kit", "3.6.2"], ["clsx", "2.1.1"], ["dayjs", "1.11.18"], ["dompurify", "3.2.7"], ["firebase", "11.10.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["katex", "0.16.22"], ["marked", "14.1.4"], ["marked-gfm-heading-id", "4.1.2"], ["marked-highlight", "2.2.2"], ["marked-mangle", "1.1.11"], ["media-suite", "0.0.4"], ["pragmate-ui", "1.0.10"], ["prism-themes", "1.9.0"], ["prismjs", "1.30.0"], ["react-icons", "5.5.0"], ["socket.io-client", "4.8.1"], ["turndown", "7.2.1"], ["wavesurfer.js", "7.10.3"], ["zod", "3.25.76"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.25"], ["@types/react-dom", "18.3.7"], ["typescript", "5.9.3"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/chat-sdk@1.5.5/widgets/markdown"
+        },
+        "type": "code"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2], ['marked-mangle', dependency_3], ['marked', dependency_4], ['marked-gfm-heading-id', dependency_5], ['katex', dependency_6], ['highlight.js', dependency_7], ['marked-highlight', dependency_8]]);
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/chat-sdk@1.5.5/widgets/markdown');
+      ims = new Map();
+      /**************************
+      INTERNAL MODULE: ./markdown
+      **************************/
+      ims.set('./markdown', {
+        hash: 3844225378,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Markdown = Markdown;
+          var _react = require("react");
+          var _useMarked = require("./use-marked");
+          /*bundle */
+          function Markdown({
+            content,
+            children,
+            inline = false,
+            ...props
+          }) {
+            const {
+              output
+            } = (0, _useMarked.useMarked)(content ?? children);
+            const attrs = {
+              ...props
+            };
+            if (output === '') return null;
+            // Use span for inline content, div for block content
+            const Tag = inline ? 'span' : 'div';
+            return _react.default.createElement(Tag, {
+              ...attrs,
+              dangerouslySetInnerHTML: {
+                __html: output
+              }
+            });
+          }
+        }
+      });
+
+      /****************************
+      INTERNAL MODULE: ./use-marked
+      ****************************/
+
+      ims.set('./use-marked', {
+        hash: 2698766898,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useMarked = useMarked;
+          var _markedMangle = require("marked-mangle");
+          var _marked = require("marked");
+          var _markedGfmHeadingId = require("marked-gfm-heading-id");
+          var _katex = require("katex");
+          var _highlight = require("highlight.js");
+          var _markedHighlight = require("marked-highlight");
+          // Import highlight.js
+          // Import marked-highlight
+          _marked.marked.use((0, _markedMangle.mangle)());
+          const options = {
+            prefix: 'my-prefix-'
+          };
+          _marked.marked.use((0, _markedGfmHeadingId.gfmHeadingId)(options));
+          /*bundle*/
+          function useMarked(content) {
+            // const [output, setOutput] = React.useState<string>('');
+            function render(content) {
+              const options = {
+                breaks: false // Disable line breaks for Markdown
+              };
+              _marked.marked.setOptions(options);
+              _marked.marked.use((0, _markedHighlight.markedHighlight)({
+                // async: true,
+                langPrefix: 'language-',
+                highlight(code, lang) {
+                  const language = _highlight.default.getLanguage(lang) ? lang : 'plaintext';
+                  return _highlight.default.highlight(code, {
+                    language
+                  }).value;
+                }
+              }));
+              // 1. Temporarily replace inline and block math expressions with placeholders
+              let placeholderCounter = 0;
+              const mathPlaceholders = {};
+              const placeholderPrefix = 'MATH_PLACEHOLDER_';
+              content = content.replace(/\\\((.*?)\\\)/g, (match, mathContent) => {
+                const placeholder = `${placeholderPrefix}${placeholderCounter++}`;
+                mathPlaceholders[placeholder] = _katex.default.renderToString(mathContent, {
+                  displayMode: false
+                });
+                return placeholder;
+              });
+              content = content.replace(/\\\[(.*?)\\\]/gs, (match, mathContent) => {
+                const placeholder = `${placeholderPrefix}${placeholderCounter++}`;
+                mathPlaceholders[placeholder] = _katex.default.renderToString(mathContent, {
+                  displayMode: true
+                });
+                return placeholder;
+              });
+              // 2. Pass the content through marked
+              let output = (0, _marked.marked)(content, {
+                breaks: false
+              });
+              // 3. Replace placeholders with actual rendered KaTeX
+              Object.keys(mathPlaceholders).forEach(placeholder => {
+                output = output.replace(new RegExp(placeholder, 'g'), mathPlaceholders[placeholder]);
+              });
+              return output;
+            }
+            // React.useEffect(() => {}, [content]);
+            return {
+              ready: !!content,
+              output: render(content ?? '')
+            };
+          }
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./markdown",
+        "from": "Markdown",
+        "name": "Markdown"
+      }, {
+        "im": "./use-marked",
+        "from": "useMarked",
+        "name": "useMarked"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Markdown') && _export("Markdown", Markdown = require ? require('./markdown').Markdown : value);
+        (require || prop === 'useMarked') && _export("useMarked", useMarked = require ? require('./use-marked').useMarked : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX3VzZU1hcmtlZCIsIk1hcmtkb3duIiwiY29udGVudCIsImNoaWxkcmVuIiwiaW5saW5lIiwicHJvcHMiLCJvdXRwdXQiLCJ1c2VNYXJrZWQiLCJhdHRycyIsIlRhZyIsImRlZmF1bHQiLCJjcmVhdGVFbGVtZW50IiwiZGFuZ2Vyb3VzbHlTZXRJbm5lckhUTUwiLCJfX2h0bWwiLCJfbWFya2VkTWFuZ2xlIiwiX21hcmtlZCIsIl9tYXJrZWRHZm1IZWFkaW5nSWQiLCJfa2F0ZXgiLCJfaGlnaGxpZ2h0IiwiX21hcmtlZEhpZ2hsaWdodCIsIm1hcmtlZCIsInVzZSIsIm1hbmdsZSIsIm9wdGlvbnMiLCJwcmVmaXgiLCJnZm1IZWFkaW5nSWQiLCJyZW5kZXIiLCJicmVha3MiLCJzZXRPcHRpb25zIiwibWFya2VkSGlnaGxpZ2h0IiwibGFuZ1ByZWZpeCIsImhpZ2hsaWdodCIsImNvZGUiLCJsYW5nIiwibGFuZ3VhZ2UiLCJnZXRMYW5ndWFnZSIsInZhbHVlIiwicGxhY2Vob2xkZXJDb3VudGVyIiwibWF0aFBsYWNlaG9sZGVycyIsInBsYWNlaG9sZGVyUHJlZml4IiwicmVwbGFjZSIsIm1hdGNoIiwibWF0aENvbnRlbnQiLCJwbGFjZWhvbGRlciIsInJlbmRlclRvU3RyaW5nIiwiZGlzcGxheU1vZGUiLCJPYmplY3QiLCJrZXlzIiwiZm9yRWFjaCIsIlJlZ0V4cCIsInJlYWR5Il0sInNvdXJjZXMiOlsiL3RzL21hcmtkb3duLnRzeCIsIi90cy91c2UtbWFya2VkLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxNQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxVQUFBLEdBQUFELE9BQUE7VUFFTztVQUFXLFNBQVVFLFFBQVFBLENBQUM7WUFDcENDLE9BQU87WUFDUEMsUUFB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

@@ -1,2 +1,451 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(e,a){"use strict";var o,t,i,r,s,d,n,c;e("txt",void 0);return{setters:[function(e){o=e}],execute:function(){t=e=>{const a=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,a))};({Bundle:i}=o);r=new i({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/modules/management/activity",multibundle:true},type:"txt"},a.meta.url).package("pt");r.dependencies.update([]);s=new Map;s.set("./txt",{hash:2112309030,creator:function(e,a){a.txt={activities:{test:{warning:"Voc\xea deve preencher todos os campos obrigat\xf3rios para poder testar a atividade"},minutes:"Min",sections:{general:"",advanced:{title:"Configura\xe7\xf5es Avan\xe7adas",subtitle:"Instru\xe7\xf5es adicionais para o agente e a atividade"},agent:{title:"Configura\xe7\xf5es do Agente de IA",subtitle:"Estes s\xe3o os dados que a IA usar\xe1 para interagir com cada um dos alunos."}},description:{label:"Sobre o que \xe9 esta atividade?*",placeholder:"Adicionar uma descri\xe7\xe3o"},instructions:{label:"Instru\xe7\xf5es",placeholder:"Adicionar instru\xe7\xf5es"},objective:{label:"Objetivo",placeholder:"Adicionar um objetivo"},module:"M\xf3dulo",type:"Tipo",questions:"Perguntas",topics:"T\xf3picos",form:{description:"Descri\xe7\xe3o",title:"T\xedtulo"},actions:{generateAnswers:"Gerar respostas"},generateImage:{prefix:"Ilustra\xe7\xe3o:",sufix:"gere a imagem no formato 16:9."},refine:{type:{label:"O que voc\xea quer melhorar?",answers:"Respostas",questions:"Perguntas"}},empty:{title:"Gerar conte\xfado para a atividade",description:"Voc\xea pode criar este conte\xfado manualmente ou gerar uma vers\xe3o autom\xe1tica usando intelig\xeancia artificial clicando em 'Gerar com IA'"},deleteModal:{title:"Excluir Conte\xfado",description:"Tem certeza de que deseja excluir o conte\xfado desta atividade?"},settings:{layout:{label:"Layout",title:"Como voc\xea quer que esta atividade pare\xe7a?",description:"Selecione o tipo de visualiza\xe7\xe3o que deseja dar \xe0 atividade",options:{fullContentLayout:{title:"Layout de Conte\xfado Completo",description:"Quero <strong>que o conte\xfado educacional ocupe o m\xe1ximo de espa\xe7o poss\xedvel.</strong>"},mainContentLayout:{title:"Layout de Conte\xfado Principal",description:"<strong>Quero priorizar o conte\xfado educacional</strong>, em vez do chat com o agente"},mainChatLayout:{title:"Layout de Chat Principal",description:"<strong>Quero priorizar o chat com o agente</strong>, em vez do conte\xfado educacional."}}}}},contentTheory:{materials:{empty:"Esta atividade n\xe3o possui conte\xfado anexado",title:"Anexe conte\xfado \xe0 atividade",characters:"Caracteres dispon\xedveis:",deleteModal:{title:"Deseja excluir este conte\xfado?",description:"Esta a\xe7\xe3o n\xe3o pode ser desfeita."},types:{article:"Conte\xfado",synthesis:"Resumo",dyslexia:"Adapta\xe7\xf5es",audios:"\xc1udios"},article:{textarea:"Artigo"},dyslexia:{textarea:"Adapta\xe7\xf5es"},audio:{noAudio:"Este elemento n\xe3o possui \xe1udio criado",maxLength:"O \xe1udio do elemento n\xe3o pode ser criado porque excede o limite de caracteres permitido (4000).",emptyMaterial:"Este \xe1udio n\xe3o pode ser gerado se {type} n\xe3o foi definido",content:"O conte\xfado",dyslexia:"As adapta\xe7\xf5es"},refinement:{title:"Gerar conte\xfado",description:"O conte\xfado ser\xe1 gerado com base no seguinte objetivo:"},form:{title:"Artigos de conte\xfado educacional",content:{title:"Reda\xe7\xe3o do conte\xfado",placeholder:"Comece a criar seu conte\xfado aqui\u2026."},article:{placeholder:"Comece a criar seu conte\xfado aqui\u2026."}}},empty:{title:"Esta atividade n\xe3o possui conte\xfado educacional associado",description:"Adicione conte\xfado educacional ao seu m\xf3dulo para come\xe7ar.",actions:{add:"Adicionar conte\xfado",upload:"Carregar documento"}}},multipleChoice:{questions:{placeholder:"Insira uma pergunta"},modalQuestions:{title:"Gerar perguntas",description:"Adicione as observa\xe7\xf5es que considerar necess\xe1rias para gerar as perguntas e respostas"},modalAnswers:{title:"Gerar respostas",description:"Adicione as observa\xe7\xf5es que considerar necess\xe1rias para gerar as respostas"},actions:{generateAnswers:"Gerar respostas",addAnswer:"Adicionar resposta",addQuestion:"Adicionar pergunta",generateQuestions:"Gerar perguntas",delete:"Excluir",markCorrect:"Marcar como correta"},cancel:{title:"Deseja voltar?",description:"Quaisquer altera\xe7\xf5es feitas ser\xe3o perdidas"},answers:{placeholder:"Insira uma op\xe7\xe3o de resposta e marque-a como correta ou incorreta"},related:{label:"Atividade relacionada",independent:"Independente"},emptyOptions:"As op\xe7\xf5es de resposta n\xe3o foram definidas"},specs:{title:"Especifica\xe7\xf5es da atividade",titles:{multiplechoice:"Perguntas e respostas"},requestedTask:{title:"Qual tarefa deve ser realizada pelo aluno? *",label:"Tarefa solicitada"},exercise:{title:"Qual exerc\xedcio deve ser realizado pelo aluno? *",label:"Exercicio"},general:{label:"Dados gerais"},agent:{label:"Dados necess\xe1rios para o agente"},advanced:{label:"Dados avan\xe7ados"},assessment:{label:"Como a IA avaliar\xe1 a apresenta\xe7\xe3o oral do aluno?",placeholder:"Adicione a avalia\xe7\xe3o da atividade"},topic:{title:"Sobre o que o agente deve ensinar?",label:"T\xf3pico de estudo*",placeholder:"Adicione o t\xf3pico da atividade"},task:{label:"Informa\xe7\xf5es adicionais para o aluno *",placeholder:"Adicione a tarefa da atividade"},objective:{label:"Objetivos",placeholder:"Adicione o objetivo da atividade",empty:"Esta atividade n\xe3o possui objetivos associados. Adicione um objetivo para orientar a IA"},related:{label:"Atividade relacionada",placeholder:"Selecione a atividade relacionada"},instructions:{label:"Instru\xe7\xf5es adicionais para o agente",placeholder:"Adicione instru\xe7\xf5es adicionais se necess\xe1rio"},subjectDebate:{label:"Mo\xe7\xe3o do debate",placeholder:"Adicione a mo\xe7\xe3o do debate"},subject:{title:"Sobre o que o agente de IA deve debater? *",label:"Assunto do debate",placeholder:"Adicione o assunto do debate"},character:{label:"Personagem",placeholder:"Adicione o personagem da atividade"},role:{title:"Que papel o agente deve assumir no debate? *",label:"Papel do agente",placeholder:"Adicione o papel do agente"},characterRole:{title:"Que papel o personagem deve assumir na conversa? *",label:"Papel do personagem",placeholder:"Adicione o papel do personagem"},questions:{title:"Perguntas"},objectives:{label:"Quais objetivos o aluno deve alcan\xe7ar? *",name:{label:"Nome",placeholder:"Adicione o nome do objetivo"},objective:{label:"Objetivo",placeholder:"Adicione o objetivo da atividade"}},criteria:{label:"Crit\xe9rios de avalia\xe7\xe3o",placeholder:"Adicione os crit\xe9rios da atividade",name:{label:"Nome",placeholder:"Adicione o nome do crit\xe9rio"},subject:{label:"Crit\xe9rio",placeholder:"Adicione os crit\xe9rios da atividade"}}},spoken:{criteria:{label:"Crit\xe9rios de Avalia\xe7\xe3o"}},types:{"content-theory":"Conte\xfado/Teoria",debate:"Debate","multiple-choice":"M\xfaltipla Escolha","character-talk":"Conversa com um Personagem",spoken:"Apresenta\xe7\xe3o Oral","hand-written":"Escrito a m\xe3o",written:"Escrito","free-conversation":"Conversa\xe7\xe3o livre"},chat:{empty:{credits:{title:"Pronto para aprender?",description:"Comece fazendo a consulta que desejar"},noCredits:{title:"Voc\xea precisa de cr\xe9ditos de IA para come\xe7ar",description:"Solicite cr\xe9ditos para come\xe7ar a aprender com o Agente de IA"}}},errors:{INCOMPLETE_MODULE:"Voc\xea deve completar o m\xf3dulo antes de continuar. Campos ausentes: ",default:"Ocorreu um erro. Por favor, tente novamente.",NO_RELATED_ACTIVITY:"A atividade selecionada n\xe3o possui um artigo. Voc\xea deve gerar o artigo primeiro para poder us\xe1-la",wrongQuestions:"Para salvar, voc\xea deve ter adicionado corretamente as op\xe7\xf5es de resposta e selecionado a op\xe7\xe3o correta para cada pergunta."},form:{title:"T\xedtulo da atividade *"},languages:{select:{label:"Idioma",placeholder:"Selecionar Idioma"},label:"Idiomas",en:"Ingl\xeas",es:"Espanhol",pt:"Portugu\xeas",fr:"Franc\xeas",de:"Alem\xe3o",it:"Italiano"},manual:{cancel:"Tem certeza de que deseja cancelar?",article:{textarea:"Adicione o conte\xfado da atividade"},content:{textarea:"Adicione o conte\xfado da atividade"},synthesis:{textarea:"Adicione seu resumo aqui"},dyslexia:{textarea:"Adicione seu conte\xfado aqui"}},refine:{title:"Gerar Atividade",description:"Vamos gerar a atividade com base no seguinte objetivo",synthesis:{title:"Gerar resumo",description:"Um resumo do conte\xfado previamente gerado ser\xe1 criado."},dyslexia:{title:"Gerar adapta\xe7\xf5es",description:"Uma vers\xe3o acess\xedvel do conte\xfado ser\xe1 gerada para alunos com diferentes estilos e necessidades de aprendizagem."},textarea:{label:"Instru\xe7\xf5es adicionais",placeholder:"Compartilhe sugest\xf5es espec\xedficas ou \xe1reas para melhoria..."},image:{title:"Aprimore a qualidade da sua imagem",subtitle:"Suas ideias nos ajudar\xe3o a aprimorar o conte\xfado.",confirm:{title:"Deseja substituir a imagem atual?",subtitle:"Se voc\xea confirmar, a imagem atual ser\xe1 substitu\xedda."}}},modal:{cancel:{title:"Tem certeza?",description:"Suas altera\xe7\xf5es n\xe3o foram salvas. Se continuar, voc\xea as perder\xe1."}},delete:{title:"Excluir Conte\xfado",description:"Tem certeza de que deseja excluir o conte\xfado desta atividade?"},picture:{title:"Gere imagens para sua atividade",description:"Descreva a imagem que deseja gerar em detalhes para que a intelig\xeancia artificial possa imagin\xe1-la e ger\xe1-la.",notes:{label:"Notas",placeholder:"Compartilhe suas sugest\xf5es para criar a melhor imagem para o seu m\xf3dulo"},confirm:{title:"Deseja substituir a imagem atual?",subtitle:"Se voc\xea confirmar, a imagem atual ser\xe1 substitu\xedda."}},progress:{label:"Status da edi\xe7\xe3o",fields:{title:"T\xedtulo",description:"Descri\xe7\xe3o",picture:"Imagem",general:"Geral",agent:"Agente IA",advanced:"Avan\xe7ado",questions:"Perguntas"},states:{optional:"Opcional",completed:"Completo",inprogress:"Em progresso",pending:"A completar"}}}}});r.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];r.exports.process=function({require:a,prop:o,value:t}){(a||o==="txt")&&e("txt",d=a?a("./txt").txt:t)};e("__beyond_pkg",n=r);e("hmr",c=new function(){this.on=(e,a)=>r.hmr.on(e,a);this.off=(e,a)=>r.hmr.off(e,a)});r.initialise(s)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvbW9kdWxlcy9tYW5hZ2VtZW50L2FjdGl2aXR5LnR4dC5wdC5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJ0eHQiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJtdWx0aWJ1bmRsZSIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJhY3Rpdml0aWVzIiwidGVzdCIsIndhcm5pbmciLCJtaW51dGVzIiwic2VjdGlvbnMiLCJnZW5lcmFsIiwiYWR2YW5jZWQiLCJ0aXRsZSIsInN1YnRpdGxlIiwiYWdlbnQiLCJkZXNjcmlwdGlvbiIsImxhYmVsIiwicGxhY2Vob2xkZXIiLCJpbnN0cnVjdGlvbnMiLCJvYmplY3RpdmUiLCJxdWVzdGlvbnMiLCJ0b3BpY3MiLCJmb3JtIiwiYWN0aW9ucyIsImdlbmVyYXRlQW5zd2VycyIsImdlbmVyYXRlSW1hZ2UiLCJwcmVmaXgiLCJzdWZpeCIsInJlZmluZSIsImFuc3dlcnMiLCJlbXB0eSIsImRlbGV0ZU1vZGFsIiwic2V0dGluZ3MiLCJsYXlvdXQiLCJvcHRpb25zIiwiZnVsbENvbnRlbnRMYXlvdXQiLCJtYWluQ29udGVudExheW91dCIsIm1haW5DaGF0TGF5b3V0IiwiY29udGVudFRoZW9yeSIsIm1hdGVyaWFscyIsImNoYXJhY3RlcnMiLCJ0eXBlcyIsImFydGljbGUiLCJzeW50aGVzaXMiLCJkeXNsZXhpYSIsImF1ZGlvcyIsInRleHRhcmVhIiwiYXVkaW8iLCJub0F1ZGlvIiwibWF4TGVuZ3RoIiwiZW1wdHlNYXRlcmlhbCIsImNvbnRlbnQiLCJyZWZpbmVtZW50IiwiYWRkIiwidXBsb2FkIiwibXVsdGlwbGVDaG9pY2UiLCJtb2RhbFF1ZXN0aW9ucyIsIm1vZGFsQW5zd2VycyIsImFkZEFuc3dlciIsImFkZFF1ZXN0aW9uIiwiZ2VuZXJhdGVRdWVzdGlvbnMiLCJkZWxldGUiLCJtYXJrQ29ycmVjdCIsImNhbmNlbCIsInJlbGF0ZWQiLCJpbmRlcGVuZGVudCIsImVtcHR5T3B0aW9ucyIsInNwZWNzIiwidGl0bGVzIiwibXVsdGlwbGVjaG9pY2UiLCJyZXF1ZXN0ZWRUYXNrIiwiZXhlcmNpc2UiLCJhc3Nlc3NtZW50IiwidG9waWMiLCJ0YXNrIiwic3ViamVjdERlYmF0ZSIsInN1YmplY3QiLCJjaGFyYWN0ZXIiLCJyb2xlIiwiY2hhcmFjdGVyUm9sZSIsIm9iamVjdGl2ZXMiLCJuYW1lIiwiY3JpdGVyaWEiLCJzcG9rZW4iLCJkZWJhdGUiLCJ3cml0dGVuIiwiY2hhdCIsImNyZWRpdHMiLCJub0NyZWRpdHMiLCJlcnJvcnMiLCJJTkNPTVBMRVRFX01PRFVMRSIsImRlZmF1bHQiLCJOT19SRUxBVEVEX0FDVElWSVRZIiwid3JvbmdRdWVzdGlvbnMiLCJsYW5ndWFnZXMiLCJzZWxlY3QiLCJlbiIsImVzIiwicHQiLCJmciIsImRlIiwiaXQiLCJtYW51YWwiLCJpbWFnZSIsImNvbmZpcm0iLCJtb2RhbCIsInBpY3R1cmUiLCJub3RlcyIsInByb2dyZXNzIiwiZmllbGRzIiwic3RhdGVzIiwib3B0aW9uYWwiLCJjb21wbGV0ZWQiLCJpbnByb2dyZXNzIiwicGVuZGluZyIsImRlc2NyaXB0b3IiLCJpbSIsImZyb20iLCJwcm9jZXNzIiwicHJvcCIsInZhbHVlIiwidGhpcyIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1h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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/modules/management/activity",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('pt');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 3582197583,
+        creator: function (require, exports) {
+          exports.txt = {
+            "activities": {
+              "test": {
+                "warning": "Você deve preencher todos os campos obrigatórios para poder testar a atividade"
+              },
+              "minutes": "Min",
+              "sections": {
+                "general": "",
+                "advanced": {
+                  "title": "Configurações Avançadas",
+                  "subtitle": "Instruções adicionais para o agente e a atividade"
+                },
+                "agent": {
+                  "title": "Configurações do Agente de IA",
+                  "subtitle": "Estes são os dados que a IA usará para interagir com cada um dos alunos."
+                }
+              },
+              "description": {
+                "label": "Sobre o que é esta atividade?*",
+                "placeholder": "Adicionar uma descrição"
+              },
+              "instructions": {
+                "label": "Instruções",
+                "placeholder": "Adicionar instruções"
+              },
+              "objective": {
+                "label": "Objetivo",
+                "placeholder": "Adicionar um objetivo"
+              },
+              "module": "Módulo",
+              "type": "Tipo",
+              "questions": "Perguntas",
+              "topics": "Tópicos",
+              "form": {
+                "description": "Descrição",
+                "title": "Título"
+              },
+              "actions": {
+                "generateAnswers": "Gerar respostas"
+              },
+              "generateImage": {
+                "prefix": "Ilustração:",
+                "sufix": "gere a imagem no formato 16:9."
+              },
+              "refine": {
+                "type": {
+                  "label": "O que você quer melhorar?",
+                  "answers": "Respostas",
+                  "questions": "Perguntas"
+                }
+              },
+              "empty": {
+                "title": "Gerar conteúdo para a atividade",
+                "description": "Você pode criar este conteúdo manualmente ou gerar uma versão automática usando inteligência artificial clicando em 'Gerar com IA'"
+              },
+              "deleteModal": {
+                "title": "Excluir Conteúdo",
+                "description": "Tem certeza de que deseja excluir o conteúdo desta atividade?"
+              },
+              "settings": {
+                "layout": {
+                  "label": "Layout",
+                  "title": "Como você quer que esta atividade pareça?",
+                  "description": "Selecione o tipo de visualização que deseja dar à atividade",
+                  "options": {
+                    "fullContentLayout": {
+                      "title": "Layout de Conteúdo Completo",
+                      "description": "Quero <strong>que o conteúdo educacional ocupe o máximo de espaço possível.</strong>"
+                    },
+                    "mainContentLayout": {
+                      "title": "Layout de Conteúdo Principal",
+                      "description": "<strong>Quero priorizar o conteúdo educacional</strong>, em vez do chat com o agente"
+                    },
+                    "mainChatLayout": {
+                      "title": "Layout de Chat Principal",
+                      "description": "<strong>Quero priorizar o chat com o agente</strong>, em vez do conteúdo educacional."
+                    }
+                  }
+                }
+              }
+            },
+            "contentTheory": {
+              "materials": {
+                "empty": "Esta atividade não possui conteúdo anexado",
+                "title": "Anexe conteúdo à atividade",
+                "characters": "Caracteres disponíveis:",
+                "deleteModal": {
+                  "title": "Deseja excluir este conteúdo?",
+                  "description": "Esta ação não pode ser desfeita."
+                },
+                "types": {
+                  "article": "Conteúdo",
+                  "synthesis": "Resumo",
+                  "dyslexia": "Adaptações",
+                  "audios": "Áudios",
+                  "attachments": "Imagens"
+                },
+                "article": {
+                  "textarea": "Artigo"
+                },
+                "dyslexia": {
+                  "textarea": "Adaptações"
+                },
+                "audio": {
+                  "noAudio": "Este elemento não possui áudio criado",
+                  "maxLength": "O áudio do elemento não pode ser criado porque excede o limite de caracteres permitido (4000).",
+                  "emptyMaterial": "Este áudio não pode ser gerado se {type} não foi definido",
+                  "content": "O conteúdo",
+                  "dyslexia": "As adaptações"
+                },
+                "refinement": {
+                  "title": "Gerar conteúdo",
+                  "description": "O conteúdo será gerado com base no seguinte objetivo:"
+                },
+                "form": {
+                  "title": "Artigos de conteúdo educacional",
+                  "content": {
+                    "title": "Redação do conteúdo",
+                    "placeholder": "Comece a criar seu conteúdo aqui…."
+                  },
+                  "article": {
+                    "placeholder": "Comece a criar seu conteúdo aqui…."
+                  }
+                }
+              },
+              "empty": {
+                "title": "Esta atividade não possui conteúdo educacional associado",
+                "description": "Adicione conteúdo educacional ao seu módulo para começar.",
+                "actions": {
+                  "add": "Adicionar conteúdo",
+                  "upload": "Carregar documento"
+                }
+              }
+            },
+            "multipleChoice": {
+              "questions": {
+                "placeholder": "Insira uma pergunta"
+              },
+              "modalQuestions": {
+                "title": "Gerar perguntas",
+                "description": "Adicione as observações que considerar necessárias para gerar as perguntas e respostas"
+              },
+              "modalAnswers": {
+                "title": "Gerar respostas",
+                "description": "Adicione as observações que considerar necessárias para gerar as respostas"
+              },
+              "actions": {
+                "generateAnswers": "Gerar respostas",
+                "addAnswer": "Adicionar resposta",
+                "addQuestion": "Adicionar pergunta",
+                "generateQuestions": "Gerar perguntas",
+                "delete": "Excluir",
+                "markCorrect": "Marcar como correta"
+              },
+              "cancel": {
+                "title": "Deseja voltar?",
+                "description": "Quaisquer alterações feitas serão perdidas"
+              },
+              "answers": {
+                "placeholder": "Insira uma opção de resposta e marque-a como correta ou incorreta"
+              },
+              "related": {
+                "label": "Atividade relacionada",
+                "independent": "Independente"
+              },
+              "emptyOptions": "As opções de resposta não foram definidas"
+            },
+            "specs": {
+              "title": "Especificações da atividade",
+              "titles": {
+                "multiplechoice": "Perguntas e respostas"
+              },
+              "requestedTask": {
+                "title": "Qual tarefa deve ser realizada pelo aluno? *",
+                "label": "Tarefa solicitada"
+              },
+              "exercise": {
+                "title": "Qual exercício deve ser realizado pelo aluno? *",
+                "label": "Exercicio"
+              },
+              "general": {
+                "label": "Dados gerais"
+              },
+              "agent": {
+                "label": "Dados necessários para o agente"
+              },
+              "advanced": {
+                "label": "Dados avançados"
+              },
+              "assessment": {
+                "label": "Como a IA avaliará a apresentação oral do aluno?",
+                "placeholder": "Adicione a avaliação da atividade"
+              },
+              "topic": {
+                "title": "Sobre o que o agente deve ensinar?",
+                "label": "Tópico de estudo*",
+                "placeholder": "Adicione o tópico da atividade"
+              },
+              "task": {
+                "label": "Informações adicionais para o aluno *",
+                "placeholder": "Adicione a tarefa da atividade"
+              },
+              "objective": {
+                "label": "Objetivos",
+                "placeholder": "Adicione o objetivo da atividade",
+                "empty": "Esta atividade não possui objetivos associados. Adicione um objetivo para orientar a IA"
+              },
+              "related": {
+                "label": "Atividade relacionada",
+                "placeholder": "Selecione a atividade relacionada"
+              },
+              "instructions": {
+                "label": "Instruções adicionais para o agente",
+                "placeholder": "Adicione instruções adicionais se necessário"
+              },
+              "subjectDebate": {
+                "label": "Moção do debate",
+                "placeholder": "Adicione a moção do debate"
+              },
+              "subject": {
+                "title": "Sobre o que o agente de IA deve debater? *",
+                "label": "Assunto do debate",
+                "placeholder": "Adicione o assunto do debate"
+              },
+              "character": {
+                "label": "Personagem",
+                "placeholder": "Adicione o personagem da atividade"
+              },
+              "role": {
+                "title": "Que papel o agente deve assumir no debate? *",
+                "label": "Papel do agente",
+                "placeholder": "Adicione o papel do agente"
+              },
+              "characterRole": {
+                "title": "Que papel o personagem deve assumir na conversa? *",
+                "label": "Papel do personagem",
+                "placeholder": "Adicione o papel do personagem"
+              },
+              "questions": {
+                "title": "Perguntas"
+              },
+              "objectives": {
+                "label": "Quais objetivos o aluno deve alcançar? *",
+                "name": {
+                  "label": "Nome",
+                  "placeholder": "Adicione o nome do objetivo"
+                },
+                "objective": {
+                  "label": "Objetivo",
+                  "placeholder": "Adicione o objetivo da atividade"
+                }
+              },
+              "criteria": {
+                "label": "Critérios de avaliação",
+                "placeholder": "Adicione os critérios da atividade",
+                "name": {
+                  "label": "Nome",
+                  "placeholder": "Adicione o nome do critério"
+                },
+                "subject": {
+                  "label": "Critério",
+                  "placeholder": "Adicione os critérios da atividade"
+                }
+              }
+            },
+            "spoken": {
+              "criteria": {
+                "label": "Critérios de Avaliação"
+              }
+            },
+            "types": {
+              "content-theory": "Conteúdo/Teoria",
+              "debate": "Debate",
+              "multiple-choice": "Múltipla Escolha",
+              "character-talk": "Conversa com um Personagem",
+              "spoken": "Apresentação Oral",
+              "hand-written": "Escrito a mão",
+              "written": "Escrito",
+              "free-conversation": "Conversação livre"
+            },
+            "chat": {
+              "empty": {
+                "credits": {
+                  "title": "Pronto para aprender?",
+                  "description": "Comece fazendo a consulta que desejar"
+                },
+                "noCredits": {
+                  "title": "Você precisa de créditos de IA para começar",
+                  "description": "Solicite créditos para começar a aprender com o Agente de IA"
+                }
+              }
+            },
+            "errors": {
+              "INCOMPLETE_MODULE": "Você deve completar o módulo antes de continuar. Campos ausentes: ",
+              "default": "Ocorreu um erro. Por favor, tente novamente.",
+              "NO_RELATED_ACTIVITY": "A atividade selecionada não possui um artigo. Você deve gerar o artigo primeiro para poder usá-la",
+              "wrongQuestions": "Para salvar, você deve ter adicionado corretamente as opções de resposta e selecionado a opção correta para cada pergunta."
+            },
+            "form": {
+              "title": "Título da atividade *"
+            },
+            "languages": {
+              "select": {
+                "label": "Idioma",
+                "placeholder": "Selecionar Idioma"
+              },
+              "label": "Idiomas",
+              "en": "Inglês",
+              "es": "Espanhol",
+              "pt": "Português",
+              "fr": "Francês",
+              "de": "Alemão",
+              "it": "Italiano"
+            },
+            "manual": {
+              "cancel": "Tem certeza de que deseja cancelar?",
+              "article": {
+                "textarea": "Adicione o conteúdo da atividade"
+              },
+              "content": {
+                "textarea": "Adicione o conteúdo da atividade"
+              },
+              "synthesis": {
+                "textarea": "Adicione seu resumo aqui"
+              },
+              "dyslexia": {
+                "textarea": "Adicione seu conteúdo aqui"
+              }
+            },
+            "refine": {
+              "title": "Gerar Atividade",
+              "description": "Vamos gerar a atividade com base no seguinte objetivo",
+              "synthesis": {
+                "title": "Gerar resumo",
+                "description": "Um resumo do conteúdo previamente gerado será criado."
+              },
+              "dyslexia": {
+                "title": "Gerar adaptações",
+                "description": "Uma versão acessível do conteúdo será gerada para alunos com diferentes estilos e necessidades de aprendizagem."
+              },
+              "textarea": {
+                "label": "Instruções adicionais",
+                "placeholder": "Compartilhe sugestões específicas ou áreas para melhoria..."
+              },
+              "image": {
+                "title": "Aprimore a qualidade da sua imagem",
+                "subtitle": "Suas ideias nos ajudarão a aprimorar o conteúdo.",
+                "confirm": {
+                  "title": "Deseja substituir a imagem atual?",
+                  "subtitle": "Se você confirmar, a imagem atual será substituída."
+                }
+              }
+            },
+            "modal": {
+              "cancel": {
+                "title": "Tem certeza?",
+                "description": "Suas alterações não foram salvas. Se continuar, você as perderá."
+              }
+            },
+            "delete": {
+              "title": "Excluir Conteúdo",
+              "description": "Tem certeza de que deseja excluir o conteúdo desta atividade?"
+            },
+            "picture": {
+              "title": "Gere imagens para sua atividade",
+              "description": "Descreva a imagem que deseja gerar em detalhes para que a inteligência artificial possa imaginá-la e gerá-la.",
+              "notes": {
+                "label": "Notas",
+                "placeholder": "Compartilhe suas sugestões para criar a melhor imagem para o seu módulo"
+              },
+              "confirm": {
+                "title": "Deseja substituir a imagem atual?",
+                "subtitle": "Se você confirmar, a imagem atual será substituída."
+              }
+            },
+            "progress": {
+              "label": "Status da edição",
+              "fields": {
+                "title": "Título",
+                "description": "Descrição",
+                "picture": "Imagem",
+                "general": "Geral",
+                "agent": "Agente IA",
+                "advanced": "Avançado",
+                "questions": "Perguntas"
+              },
+              "states": {
+                "optional": "Opcional",
+                "completed": "Completo",
+                "inprogress": "Em progresso",
+                "pending": "A completar"
+              }
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
