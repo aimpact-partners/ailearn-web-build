@@ -1,2 +1,304 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/styles","react@18.3.1","pragmate-ui@1.0.8/icons","pragmate-ui@1.0.8/base","framer-motion@10.18.0"],function(_export,_context2){"use strict";var dependency_0,dependency_1,dependency_2,dependency_3,dependency_4,dependency_5,bimport,__Bundle,__pkg,ims,CloseButton,useDrawerContext,Drawer,__beyond_pkg,hmr;_export({CloseButton:void 0,useDrawerContext:void 0,Drawer:void 0});return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_beyondJsKernel0114Styles){dependency_1=_beyondJsKernel0114Styles},function(_react2){dependency_2=_react2},function(_pragmateUi108Icons){dependency_3=_pragmateUi108Icons},function(_pragmateUi108Base){dependency_4=_pragmateUi108Base},function(_framerMotion2){dependency_5=_framerMotion2}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.12"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/reactive","2.1.0"],["@beyond-js/widgets","0.1.6"],["@floating-ui/dom","1.7.3"],["clsx","2.1.1"],["framer-motion","11.11.11"],["perfect-scrollbar","1.5.6"],["prismjs","1.29.0"],["swiper","10.3.1"],["tippy.js","6.3.7"],["@types/react","18.3.12"],["@types/react-dom","18.3.1"],["pragmate-ui","1.0.8"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"pragmate-ui@1.0.8/drawer"},type:"code"},_context2.meta.url).package();__pkg.dependencies.update([["@beyond-js/kernel/styles",dependency_1],["react",dependency_2],["pragmate-ui/icons",dependency_3],["pragmate-ui/base",dependency_4],["framer-motion",dependency_5]]);brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@1.0.8/drawer");ims=new Map;ims.set("./animations",{hash:114192017,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.animations=void 0;const animations=exports.animations={slideDown:{initial:{y:"-50%",opacity:0},animate:{y:0,opacity:1,transition:{duration:.3}},exit:{y:"50%",opacity:0,transition:{duration:.3}}},default:{initial:{opacity:0},animate:{y:0,opacity:1,transition:{duration:.3}},exit:{y:"50%",opacity:0,transition:{duration:.3}}},fadeInUpfadeOutLeft:{initial:{y:"-90%",opacity:0},animate:{y:0,opacity:1,transition:{duration:.3}},exit:{x:"50%",opacity:0,transition:{duration:.3}}}}}});ims.set("./close-button",{hash:1994997619,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.CloseButton=CloseButton;var _react=require("react");var _icons=require("pragmate-ui/icons");var _context=require("./context");function CloseButton({className:className,onClick:onClick}){const{onClose:onClose}=(0,_context.useDrawerContext)();const listener=event=>{if(onClick)return onClick();onClose()};const cls=`pui-drawer-close-button circle${className?` ${className}`:""}`;return _react.default.createElement(_icons.IconButton,{className:cls,icon:"close",onClick:listener})}}});ims.set("./context",{hash:3738712239,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.useDrawerContext=exports.DrawerContext=void 0;var _react=require("react");const DrawerContext=exports.DrawerContext=_react.default.createContext({open:false,onClose:()=>{}});const useDrawerContext=()=>{const context=_react.default.useContext(DrawerContext);if(!context){throw new Error("useDrawerContext must be used within a DrawerProvider")}return context};exports.useDrawerContext=useDrawerContext}});ims.set("./index",{hash:2417431811,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Drawer=Drawer;var React=require("react");var _framerMotion=require("framer-motion");var _context=require("./context");const positionClasses={left:"pui-drawer-left",right:"pui-drawer-right",top:"pui-drawer-top",bottom:"pui-drawer-bottom"};function Drawer({className:className,position:position="left",open:open,onClose:onClose,children:children}){let drawerClass=open?`pui-drawer ${positionClasses[position]}`:"pui-drawer hidden";if(className)drawerClass+=" "+className;if(open)drawerClass+=` pui-drawer-open-${position}`;if(!open)return;const cls=`pui-drawer-container${className?` ${className}`:""}`;const onClickContent=e=>{e.stopPropagation()};return React.createElement(_context.DrawerContext.Provider,{value:{open:open,onClose:onClose}},React.createElement(_framerMotion.motion.div,{className:cls,onClick:onClose},React.createElement(_framerMotion.motion.div,{onClick:onClickContent,initial:{x:"+100vh",opacity:0},animate:{x:0,opacity:1},exit:{x:"100vh",opacity:0},transition:{duration:.3,ease:"linear"},className:drawerClass},React.createElement("div",{className:"pui-drawer-content"},children))))}}});__pkg.exports.descriptor=[{im:"./close-button",from:"CloseButton",name:"CloseButton"},{im:"./context",from:"useDrawerContext",name:"useDrawerContext"},{im:"./index",from:"Drawer",name:"Drawer"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="CloseButton")&&_export("CloseButton",CloseButton=require?require("./close-button").CloseButton:value);(require||prop==="useDrawerContext")&&_export("useDrawerContext",useDrawerContext=require?require("./context").useDrawerContext:value);(require||prop==="Drawer")&&_export("Drawer",Drawer=require?require("./index").Drawer:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvcHJhZ21hdGUtdWlAMS4wLjgvZHJhd2VyLmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQyIiwiZGVwZW5kZW5jeV8wIiwiZGVwZW5kZW5jeV8xIiwiZGVwZW5kZW5jeV8yIiwiZGVwZW5kZW5jeV8zIiwiZGVwZW5kZW5jeV80IiwiZGVwZW5kZW5jeV81IiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJDbG9zZUJ1dHRvbiIsInVzZURyYXdlckNvbnRleHQiLCJEcmF3ZXIiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsIl9iZXlvbmRKc0tlcm5lbDAxMTRTdHlsZXMiLCJfcmVhY3QyIiwiX3ByYWdtYXRlVWkxMDhJY29ucyIsIl9wcmFnbWF0ZVVpMTA4QmFzZSIsIl9mcmFtZXJNb3Rpb24yIiwiZXhlY3V0ZSIsInNwZWNpZmllciIsImRlcGVuZGVuY2llcyIsIk1hcCIsImdsb2JhbFRoaXMiLCJyZXNvbHZlIiwiQnVuZGxlIiwibW9kdWxlIiwidnNwZWNpZmllciIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsImJyZXF1aXJlIiwic3R5bGVzIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiLCJhbmltYXRpb25zIiwic2xpZGVEb3duIiwiaW5pdGlhbCIsInkiLCJvcGFjaXR5IiwiYW5pbWF0ZSIsInRyYW5zaXRpb24iLCJkdXJhdGlvbiIsImV4aXQiLCJkZWZhdWx0IiwiZmFkZUluVXBmYWRlT3V0TGVmdCIsIngiLCJfcmVhY3QiLCJfaWNvbnMiLCJfY29udGV4dCIsImNsYXNzTmFtZSIsIm9uQ2xpY2siLCJvbkNsb3NlIiwibGlzdGVuZXIiLCJldmVudCIsImNscyIsImNyZWF0ZUVsZW1lbnQiLCJJY29uQnV0dG9uIiwiaWNvbiIsIkRyYXdlckNvbnRleHQiLCJjcmVhdGVDb250ZXh0Iiwib3BlbiIsImNvbnRleHQiLCJ1c2VDb250ZXh0IiwiRXJyb3IiLCJSZWFjdCIsIl9mcmFtZXJNb3Rpb24iLCJwb3NpdGlvbkNsYXNzZXMiLCJsZWZ0IiwicmlnaHQiLCJ0b3AiLCJib3R0b20iLCJwb3NpdGlvbiIsImNoaWxkcmVuIiwiZHJhd2VyQ2xhc3MiLCJvbkNsaWNrQ29udGVudCIsImUiLCJzdG9wUHJvcGFnYXRpb24iLCJQcm92aWRlciIsIm1vdGlvbiIsImRpdiIsImVhc2UiLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwibmFtZSIsInByb2Nlc3MiLCJwcm9wIiwidGhpcyIsIm9uIiwib2ZmIiwiaW5pdGlhbGlzZSJdLCJzb3VyY2VzIjpbIjAiXSwibWFwcGluZ3MiOiJBQUFBQSxPQUFPQyxTQUFTLENBQUMsa0NBQW1DLGtDQUFtQyxlQUFnQiwwQkFBMkIseUJBQTBCLHlCQUEwQixTQUFVQyxRQUFTQyxXQUN2TSxhQUVBLElBQUlDLGFBQWNDLGFBQWNDLGFBQWNDLGFBQWNDLGFBQWNDLGFBQWNDLFFBQVNDLFNBQVVDLE1BQU9DLElBQUtDLFlBQWFDLGlCQUFrQkMsT0FBUUMsYUFBY0MsSUFDNUtoQixRQUFRLENBQ05ZLGlCQUFrQixFQUNsQkMsc0JBQXVCLEVBQ3ZCQyxZQUFhLElBRWYsTUFBTyxDQUNMRyxRQUFTLENBQUMsU0FBVUMsMkJBQ2xCaEIsYUFBZWdCLHlCQUNqQixFQUFHLFNBQVVDLDJCQUNYaEIsYUFBZWdCLHlCQUNqQixFQUFHLFNBQVVDLFNBQ1hoQixhQUFlZ0IsT0FDakIsRUFBRyxTQUFVQyxxQkFDWGhCLGFBQWVnQixtQkFDakIsRUFBRyxTQUFVQyxvQkFDWGhCLGFBQWVnQixrQkFDakIsRUFBRyxTQUFVQyxnQkFDWGhCLGFBQWVnQixjQUNqQixHQUNBQyxRQUFTLFdBQ1BoQixRQUFVaUIsWUFDUixNQUFNQyxhQUFlLElBQUlDLElBQUksQ0FBQyxDQUFDLG9CQUFxQixTQUFVLENBQUMs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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/styles", "react@18.3.1", "pragmate-ui@1.0.8/icons", "pragmate-ui@1.0.8/base", "framer-motion@10.18.0"], function (_export, _context2) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, CloseButton, useDrawerContext, Drawer, Container, __beyond_pkg, hmr;
+  _export({
+    CloseButton: void 0,
+    useDrawerContext: void 0,
+    Drawer: void 0,
+    Container: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_1 = _beyondJsKernel0114Styles;
+    }, function (_react2) {
+      dependency_2 = _react2;
+    }, function (_pragmateUi108Icons) {
+      dependency_3 = _pragmateUi108Icons;
+    }, function (_pragmateUi108Base) {
+      dependency_4 = _pragmateUi108Base;
+    }, function (_framerMotion2) {
+      dependency_5 = _framerMotion2;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.0"], ["@beyond-js/widgets", "0.1.6"], ["@floating-ui/dom", "1.7.3"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.8"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.8/drawer"
+        },
+        "type": "code"
+      }, _context2.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2], ['pragmate-ui/icons', dependency_3], ['pragmate-ui/base', dependency_4], ['framer-motion', dependency_5]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@1.0.8/drawer');
+      ims = new Map();
+      /****************************
+      INTERNAL MODULE: ./animations
+      ****************************/
+      ims.set('./animations', {
+        hash: 114192017,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.animations = void 0;
+          const animations = exports.animations = {
+            slideDown: {
+              initial: {
+                y: '-50%',
+                opacity: 0
+              },
+              animate: {
+                y: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.3
+                }
+              },
+              exit: {
+                y: '50%',
+                opacity: 0,
+                transition: {
+                  duration: 0.3
+                }
+              }
+            },
+            default: {
+              initial: {
+                opacity: 0
+              },
+              animate: {
+                y: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.3
+                }
+              },
+              exit: {
+                y: '50%',
+                opacity: 0,
+                transition: {
+                  duration: 0.3
+                }
+              }
+            },
+            fadeInUpfadeOutLeft: {
+              initial: {
+                y: '-90%',
+                opacity: 0
+              },
+              animate: {
+                y: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.3
+                }
+              },
+              exit: {
+                x: '50%',
+                opacity: 0,
+                transition: {
+                  duration: 0.3
+                }
+              }
+            }
+          };
+        }
+      });
+
+      /******************************
+      INTERNAL MODULE: ./close-button
+      ******************************/
+
+      ims.set('./close-button', {
+        hash: 1994997619,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.CloseButton = CloseButton;
+          var _react = require("react");
+          var _icons = require("pragmate-ui/icons");
+          var _context = require("./context");
+          /*bundle*/
+          function CloseButton({
+            className,
+            onClick
+          }) {
+            const {
+              onClose
+            } = (0, _context.useDrawerContext)();
+            const listener = event => {
+              if (onClick) return onClick();
+              onClose();
+            };
+            const cls = `pui-drawer-close-button circle${className ? ` ${className}` : ''}`;
+            return _react.default.createElement(_icons.IconButton, {
+              className: cls,
+              icon: 'close',
+              onClick: listener
+            });
+          }
+        }
+      });
+
+      /*************************
+      INTERNAL MODULE: ./context
+      *************************/
+
+      ims.set('./context', {
+        hash: 3738712239,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useDrawerContext = exports.DrawerContext = void 0;
+          var _react = require("react");
+          const DrawerContext = exports.DrawerContext = _react.default.createContext({
+            open: false,
+            onClose: () => {}
+          });
+          /*bundle*/
+          const useDrawerContext = () => {
+            const context = _react.default.useContext(DrawerContext);
+            if (!context) {
+              throw new Error('useDrawerContext must be used within a DrawerProvider');
+            }
+            return context;
+          };
+          exports.useDrawerContext = useDrawerContext;
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 2434882231,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Container = void 0;
+          exports.Drawer = Drawer;
+          var React = require("react");
+          var _framerMotion = require("framer-motion");
+          var _context = require("./context");
+          const positionClasses = {
+            left: 'pui-drawer-left',
+            right: 'pui-drawer-right',
+            top: 'pui-drawer-top',
+            bottom: 'pui-drawer-bottom'
+          };
+          /*bundle*/
+          function Drawer({
+            className,
+            position = 'left',
+            open,
+            onClose,
+            children,
+            closeBackdrop = true
+          }) {
+            let drawerClass = open ? `pui-drawer ${positionClasses[position]}` : 'pui-drawer hidden';
+            if (className) drawerClass += ' ' + className;
+            if (open) drawerClass += ` pui-drawer-open-${position}`;
+            if (!open) return;
+            const cls = `pui-drawer-container${className ? ` ${className}` : ''}`;
+            const onClickContent = e => {
+              e.stopPropagation();
+            };
+            const onClickBackdrop = e => {
+              if (closeBackdrop) {
+                onClose();
+              }
+            };
+            return React.createElement(_context.DrawerContext.Provider, {
+              value: {
+                open,
+                onClose
+              }
+            }, React.createElement(_framerMotion.motion.div, {
+              className: cls,
+              onClick: onClickBackdrop
+            }, React.createElement(_framerMotion.motion.div, {
+              onClick: onClickContent,
+              initial: {
+                x: '+100vh',
+                opacity: 0
+              },
+              animate: {
+                x: 0,
+                opacity: 1
+              },
+              exit: {
+                x: '100vh',
+                opacity: 0
+              },
+              transition: {
+                duration: 0.3,
+                ease: 'linear'
+              },
+              className: drawerClass
+            }, React.createElement("div", {
+              className: "pui-drawer-content"
+            }, children))));
+          }
+          /*bundle*/
+          const Container = exports.Container = Drawer;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./close-button",
+        "from": "CloseButton",
+        "name": "CloseButton"
+      }, {
+        "im": "./context",
+        "from": "useDrawerContext",
+        "name": "useDrawerContext"
+      }, {
+        "im": "./index",
+        "from": "Drawer",
+        "name": "Drawer"
+      }, {
+        "im": "./index",
+        "from": "Container",
+        "name": "Container"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'CloseButton') && _export("CloseButton", CloseButton = require ? require('./close-button').CloseButton : value);
+        (require || prop === 'useDrawerContext') && _export("useDrawerContext", useDrawerContext = require ? require('./context').useDrawerContext : value);
+        (require || prop === 'Drawer') && _export("Drawer", Drawer = require ? require('./index').Drawer : value);
+        (require || prop === 'Container') && _export("Container", Container = require ? require('./index').Container : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJhbmltYXRpb25zIiwiZXhwb3J0cyIsInNsaWRlRG93biIsImluaXRpYWwiLCJ5Iiwib3BhY2l0eSIsImFuaW1hdGUiLCJ0cmFuc2l0aW9uIiwiZHVyYXRpb24iLCJleGl0IiwiZGVmYXVsdCIsImZhZGVJblVwZmFkZU91dExlZnQiLCJ4IiwiX3JlYWN0IiwicmVxdWlyZSIsIl9pY29ucyIsIl9jb250ZXh0IiwiQ2xvc2VCdXR0b24iLCJjbGFzc05hbWUiLCJvbkNsaWNrIiwib25DbG9zZSIsInVzZURyYXdlckNvbnRleHQiLCJsaXN0ZW5lciIsImV2ZW50IiwiY2xzIiwiY3JlYXRlRWxlbWVudCIsIkljb25CdXR0b24iLCJpY29uIiwiRHJhd2VyQ29udGV4dCIsImNyZWF0ZUNvbnRleHQiLCJvcGVuIiwiY29udGV4dCIsInVzZUNvbnRleHQiLCJFcnJvciIsIlJlYWN0IiwiX2ZyYW1lck1vdGlvbiIsInBvc2l0aW9uQ2xhc3NlcyIsImxlZnQiLCJyaWdodCIsInRvcCIsImJvdHRvbSIsIkRyYXdlciIsInBvc2l0aW9uIiwiY2hpbGRyZW4iLCJjbG9zZUJhY2tkcm9wIiwiZHJhd2VyQ2xhc3MiLCJvbkNsaWNrQ29udGVudCIsImUiLCJzdG9wUHJvcGFnYXRpb24iLCJvbkNsaWNrQmFja2Ryb3AiLCJQcm92aWRlciIsInZhbHVlIiwibW90aW9uIiwiZGl2IiwiZWFzZSIsIkNvbnRhaW5lciJdLCJzb3VyY2VzIjpbIi90cy9hbmltYXRpb25zLnRzeCIsIi90cy9jbG9zZS1idXR0b24udHN4IiwiL3RzL2NvbnRleHQudHN4IiwiL3RzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQU8sTUFBTUEsVUFBVSxHQUFBQyxPQUFBLENBQUFELFVBQUEsR0FBRztZQUN6QkUsU0FBUyxFQUFFO2NBQ1ZDLE9B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

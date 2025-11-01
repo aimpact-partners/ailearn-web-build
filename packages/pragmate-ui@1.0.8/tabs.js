@@ -1,2 +1,358 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/styles","react@18.3.1","@beyond-js/kernel@0.1.14/routing"],function(_export,_context2){"use strict";var dependency_0,dependency_1,dependency_2,dependency_3,bimport,__Bundle,__pkg,ims,TabsContainer,Panes,Tab,Tabs,__beyond_pkg,hmr;_export({TabsContainer:void 0,Panes:void 0,Tab:void 0,Tabs:void 0});return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_beyondJsKernel0114Styles){dependency_1=_beyondJsKernel0114Styles},function(_react2){dependency_2=_react2},function(_beyondJsKernel0114Routing){dependency_3=_beyondJsKernel0114Routing}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.12"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/reactive","2.1.0"],["@beyond-js/widgets","0.1.6"],["@floating-ui/dom","1.7.3"],["clsx","2.1.1"],["framer-motion","11.11.11"],["perfect-scrollbar","1.5.6"],["prismjs","1.29.0"],["swiper","10.3.1"],["tippy.js","6.3.7"],["@types/react","18.3.12"],["@types/react-dom","18.3.1"],["pragmate-ui","1.0.8"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"pragmate-ui@1.0.8/tabs"},type:"code"},_context2.meta.url).package();__pkg.dependencies.update([["@beyond-js/kernel/styles",dependency_1],["react",dependency_2],["@beyond-js/kernel/routing",dependency_3]]);brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@1.0.8/tabs");ims=new Map;ims.set("./context",{hash:3884495398,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.useTabsContext=exports.TabsContext=void 0;var _react=require("react");const TabsContext=exports.TabsContext=_react.default.createContext({});const useTabsContext=()=>_react.default.useContext(TabsContext);exports.useTabsContext=useTabsContext}});ims.set("./definitions",{hash:623591079,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true})}});ims.set("./index",{hash:1102662752,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.TabsContainer=TabsContainer;var _routing=require("@beyond-js/kernel/routing");var _react=require("react");var _context=require("./context");function TabsContainer({active:active=0,onChange:onChange,className:className,current:current,children:children,tabs:tabs=[],panes:panes,trackUrl:trackUrl}){if(trackUrl){const tab=_routing.routing.uri.qs.get("tab");current=current??tab}const activeIndex=tabs.includes(current)?tabs.indexOf(current):active;const[activeTab,setActiveTab]=_react.default.useState(activeIndex);const[currentTabName,setCurrentTabName]=_react.default.useState(current);const value={panes:panes,activeTab:activeTab,setActiveTab:setActiveTab,onChange:onChange,trackUrl:trackUrl,current:currentTabName,currentTabName:currentTabName,setCurrentTabName:setCurrentTabName,names:tabs};const cls=`pui-tabs-container${className?` ${className}`:""}`;return _react.default.createElement(_context.TabsContext.Provider,{value:value},_react.default.createElement("section",{className:cls},children))}}});ims.set("./panes",{hash:1726352262,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Panes=Panes;var _react=require("react");var _context=require("./context");function Panes({children:children,className:className,items:items}){const{activeTab:activeTab}=(0,_context.useTabsContext)();if(items){const Control=items[activeTab];return _react.default.createElement("section",{className:`tab-content ${className?` ${className}`:""}`},_react.default.createElement(Control,null))}const childrenArray=_react.default.Children.toArray(children);const Control=childrenArray[activeTab];const cls=`tab-content ${className?` ${className}`:""}`;return _react.default.createElement("section",{className:cls},Control)}}});ims.set("./tab",{hash:588532965,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Tab=Tab;var _react=require("react");var _context=require("./context");var _routing=require("@beyond-js/kernel/routing");function Tab(props){const{children:children,index:index,disabled:disabled,className:className,name:name}=props;const{activeTab:activeTab,setActiveTab:setActiveTab,onChange:onChange,trackUrl:trackUrl}=(0,_context.useTabsContext)();let cls=`tab ${index===activeTab?"active":""} ${disabled?" is-disabled":""}`;if(className)cls+=" "+className;const onClick=event=>{if(trackUrl){const queryParams=Object.fromEntries(_routing.routing.uri.qs.entries());queryParams.tab=name;const queryString=new URLSearchParams(queryParams).toString();_routing.routing.replaceState({},"",`${_routing.routing.uri.pathname}?${queryString}`)}if(onChange)onChange(event,index);setActiveTab(index)};const attrs={};if(!disabled)attrs.onClick=onClick;return _react.default.createElement("div",{className:cls,...attrs,"data-name":name,"data-index":index},children)}}});ims.set("./tabs",{hash:1755048068,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Tabs=void 0;var _react=require("react");var _context=require("./context");var _useScroll=require("./use-scroll");var _tab=require("./tab");const Tabs=({children:children,className:className})=>{const{activeTab:activeTab,names:names}=(0,_context.useTabsContext)();const ref=_react.default.useRef(null);const cls=`pui-tabs-menu tabs${className?` ${className}`:""}`;const clone=(item,index)=>{if(!_react.default.isValidElement(item)||item.type!==_tab.Tab)return item;const props={...item.props,index:index,key:index,name:names[index]};const tabChild=item;return _react.default.cloneElement(tabChild,props)};const output=_react.default.Children.map(children,clone);(0,_useScroll.useScroll)(ref,activeTab);return _react.default.createElement("header",{className:cls,ref:ref},output)};exports.Tabs=Tabs}});ims.set("./use-scroll",{hash:1668718188,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.useScroll=useScroll;var _react=require("react");function useScroll(tabRef,activeTab){_react.default.useEffect(()=>{const scrollToTab=index=>{const tabElement=tabRef.current?.querySelectorAll(".tab")[index];if(tabElement){const container=tabRef.current;const containerRect=container.getBoundingClientRect();const tabRect=tabElement.getBoundingClientRect();const scrollLeft=container.scrollLeft;if(tabRect.left<containerRect.left){container.scrollTo({left:scrollLeft+tabRect.left-containerRect.left,behavior:"smooth"})}else if(tabRect.right>containerRect.right){container.scrollTo({left:scrollLeft+tabRect.right-containerRect.right,behavior:"smooth"})}}};scrollToTab(activeTab)},[activeTab])}}});__pkg.exports.descriptor=[{im:"./index",from:"TabsContainer",name:"TabsContainer"},{im:"./panes",from:"Panes",name:"Panes"},{im:"./tab",from:"Tab",name:"Tab"},{im:"./tabs",from:"Tabs",name:"Tabs"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="TabsContainer")&&_export("TabsContainer",TabsContainer=require?require("./index").TabsContainer:value);(require||prop==="Panes")&&_export("Panes",Panes=require?require("./panes").Panes:value);(require||prop==="Tab")&&_export("Tab",Tab=require?require("./tab").Tab:value);(require||prop==="Tabs")&&_export("Tabs",Tabs=require?require("./tabs").Tabs:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvcHJhZ21hdGUtdWlAMS4wLjgvdGFicy5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0MiIsImRlcGVuZGVuY3lfMCIsImRlcGVuZGVuY3lfMSIsImRlcGVuZGVuY3lfMiIsImRlcGVuZGVuY3lfMyIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwiVGFic0NvbnRhaW5lciIsIlBhbmVzIiwiVGFiIiwiVGFicyIsIl9fYmV5b25kX3BrZyIsImhtciIsInNldHRlcnMiLCJfYmV5b25kSnNLZXJuZWwwMTE0QnVuZGxlIiwiX2JleW9uZEpzS2VybmVsMDExNFN0eWxlcyIsIl9yZWFjdDIiLCJfYmV5b25kSnNLZXJuZWwwMTE0Um91dGluZyIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJicmVxdWlyZSIsInN0eWxlcyIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsInZhbHVlIiwidXNlVGFic0NvbnRleHQiLCJUYWJzQ29udGV4dCIsIl9yZWFjdCIsImRlZmF1bHQiLCJjcmVhdGVDb250ZXh0IiwidXNlQ29udGV4dCIsIl9yb3V0aW5nIiwiX2NvbnRleHQiLCJhY3RpdmUiLCJvbkNoYW5nZSIsImNsYXNzTmFtZSIsImN1cnJlbnQiLCJjaGlsZHJlbiIsInRhYnMiLCJwYW5lcyIsInRyYWNrVXJsIiwidGFiIiwicm91dGluZyIsInVyaSIsInFzIiwiZ2V0IiwiYWN0aXZlSW5kZXgiLCJpbmNsdWRlcyIsImluZGV4T2YiLCJhY3RpdmVUYWIiLCJzZXRBY3RpdmVUYWIiLCJ1c2VTdGF0ZSIsImN1cnJlbnRUYWJOYW1lIiwic2V0Q3VycmVudFRhYk5hbWUiLCJuYW1lcyIsImNscyIsImNyZWF0ZUVsZW1lbnQiLCJQcm92aWRlciIsIml0ZW1zIiwiQ29udHJvbCIsImNoaWxkcmVuQXJyYXkiLCJDaGlsZHJlbiIsInRvQXJyYXkiLCJwcm9wcyIsImluZGV4IiwiZGlzYWJsZWQiLCJuYW1lIiwib25DbGljayIsImV2ZW50IiwicXVlcnlQYXJhbXMiLCJmcm9tRW50cmllcyIsImVudHJpZXMiLCJxdWVyeVN0cmluZyIsIlVSTFNlYXJjaFBhcmFtcyIsInRvU3RyaW5nIiwicmVwbGFjZVN0YXRlIiwicGF0aG5hbWUiLCJhdHRycyIsIl91c2VTY3JvbGwiLCJfdGFiIiwicmVmIiwidXNlUmVmIiwiY2xvbmUiLCJpdGVtIiwiaXNWYWxpZEVsZW1lbnQiLCJrZXkiLCJ0YWJDaGlsZCIsImNsb25lRWxlbWVudCIsIm91dHB1dCIsIm1hcCIsInVzZVNjcm9sbCIsInRhYlJlZiIsInVzZUVmZmVjdCIsInNjcm9sbFRvVGFiIiwidGFiRWxlbWVudCIsInF1ZXJ5U2VsZWN0b3JBbGwiLCJjb250YWluZXIiLCJjb250YWluZXJSZWN0IiwiZ2V0Qm91bmRpbmdDbGllbnRSZWN0IiwidGFiUmVjdCIsInNjcm9sbExlZnQiLCJsZWZ0Iiwic2Nyb2xsVG8iLCJiZWhhdmlvciIsInJpZ2h0IiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsInByb2Nlc3MiLCJwcm9wIiwidGhpcyIsIm9uIiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxrQ0FBbUMsa0NBQW1DLGVBQWdCLG9DQUFxQyxTQUFVQyxRQUFTQyxXQUM3SixhQUVBLElBQUlDLGFBQWNDLGFBQWNDLGFBQWNDLGFBQWNDLFFBQVNDLFNBQVVDLE1BQU9DLElBQUtDLGNBQWVDLE1BQU9DLElBQUtDLEtBQU1DLGFBQWNDLElBQzFJZixRQUFRLENBQ05VLG1CQUFvQixFQUNwQkMsV0FBWSxFQUNa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QUFNRSxVQUFZTCxPQUFPdkQsUUFDekIsTUFBTTZELGNBQWdCRCxVQUFVRSx3QkFDaEMsTUFBTUMsUUFBVUwsV0FBV0ksd0JBQzNCLE1BQU1FLFdBQWFKLFVBQVVJLFdBQzdCLEdBQUlELFFBQVFFLEtBQU9KLGNBQWNJLEtBQU0sQ0FDckNMLFVBQVVNLFNBQVMsQ0FDakJELEtBQU1ELFdBQWFELFFBQVFFLEtBQU9KLGNBQWNJLEtBQ2hERSxTQUFVLFVBRWQsTUFBTyxHQUFJSixRQUFRSyxNQUFRUCxjQUFjTyxNQUFPLENBQzlDUixVQUFVTSxTQUFTLENBQ2pCRCxLQUFNRCxXQUFhRCxRQUFRSyxNQUFRUCxjQUFjTyxNQUNqREQsU0FBVSxVQUVkLENBQ0YsR0FFRlYsWUFBWTVDLFlBQ1gsQ0FBQ0EsV0FDTixDQUNGLElBRUY3RCxNQUFNaUMsUUFBUW9GLFdBQWEsQ0FBQyxDQUMxQkMsR0FBTSxVQUNOQyxLQUFRLGdCQUNSekMsS0FBUSxpQkFDUCxDQUNEd0MsR0FBTSxVQUNOQyxLQUFRLFFBQ1J6QyxLQUFRLFNBQ1AsQ0FDRHdDLEdBQU0sUUFDTkMsS0FBUSxNQUNSekMsS0FBUSxPQUNQLENBQ0R3QyxHQUFNLFNBQ05DLEtBQVEsT0FDUnpDLEtBQVEsU0FHVjlFLE1BQU1pQyxRQUFRdUYsUUFBVSxVQUFVeEYsUUFDaENBLFFBQU95RixLQUNQQSxLQUFJckYsTUFDSkEsU0FFQ0osU0FBV3lGLE9BQVMsa0JBQW9CakksUUFBUSxnQkFBaUJVLGNBQWdCOEIsUUFBVUEsUUFBUSxXQUFXOUIsY0FBZ0JrQyxRQUM5SEosU0FBV3lGLE9BQVMsVUFBWWpJLFFBQVEsUUFBU1csTUFBUTZCLFFBQVVBLFFBQVEsV0FBVzdCLE1BQVFpQyxRQUM5RkosU0FBV3lGLE9BQVMsUUFBVWpJLFFBQVEsTUFBT1ksSUFBTTRCLFFBQVVBLFFBQVEsU0FBUzVCLElBQU1nQyxRQUNwRkosU0FBV3lGLE9BQVMsU0FBV2pJLFFBQVEsT0FBUWEsS0FBTzJCLFFBQVVBLFFBQVEsVUFBVTNCLEtBQU8rQixNQUM1RixFQUNBNUMsUUFBUSxlQUFnQmMsYUFBZU4sT0FDdkNSLFFBQVEsTUFBT2UsSUFBTSxJQUFJLFdBQ3ZCbUgsS0FBS0MsR0FBSyxDQUFDM0MsTUFBTzRDLFdBQWE1SCxNQUFNTyxJQUFJb0gsR0FBRzNDLE1BQU80QyxVQUNuREYsS0FBS0csSUFBTSxDQUFDN0MsTUFBTzRDLFdBQWE1SCxNQUFNTyxJQUFJc0gsSUFBSTdDLE1BQU80QyxTQUN2RCxHQUNBNUgsTUFBTThILFdBQVc3SCxJQUNuQixFQUVKIiwiaWdub3JlTGlzdCI6W119
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/styles", "react@18.3.1", "@beyond-js/kernel@0.1.14/routing"], function (_export, _context2) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, TabsContainer, Panes, Tab, Tabs, __beyond_pkg, hmr;
+  _export({
+    TabsContainer: void 0,
+    Panes: void 0,
+    Tab: void 0,
+    Tabs: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_1 = _beyondJsKernel0114Styles;
+    }, function (_react2) {
+      dependency_2 = _react2;
+    }, function (_beyondJsKernel0114Routing) {
+      dependency_3 = _beyondJsKernel0114Routing;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.0"], ["@beyond-js/widgets", "0.1.6"], ["@floating-ui/dom", "1.7.3"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.8"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.8/tabs"
+        },
+        "type": "code"
+      }, _context2.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2], ['@beyond-js/kernel/routing', dependency_3]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@1.0.8/tabs');
+      ims = new Map();
+      /*************************
+      INTERNAL MODULE: ./context
+      *************************/
+      ims.set('./context', {
+        hash: 3884495398,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useTabsContext = exports.TabsContext = void 0;
+          var _react = require("react");
+          const TabsContext = exports.TabsContext = _react.default.createContext({});
+          const useTabsContext = () => _react.default.useContext(TabsContext);
+          exports.useTabsContext = useTabsContext;
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./definitions
+      *****************************/
+
+      ims.set('./definitions', {
+        hash: 623591079,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 1102662752,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.TabsContainer = TabsContainer;
+          var _routing = require("@beyond-js/kernel/routing");
+          var _react = require("react");
+          var _context = require("./context");
+          /* bundle  */
+          function TabsContainer({
+            active = 0,
+            onChange,
+            className,
+            current,
+            children,
+            tabs = [],
+            panes,
+            trackUrl
+          }) {
+            // Extract tab names from children
+            if (trackUrl) {
+              const tab = _routing.routing.uri.qs.get('tab');
+              current = current ?? tab;
+            }
+            const activeIndex = tabs.includes(current) ? tabs.indexOf(current) : active;
+            const [activeTab, setActiveTab] = _react.default.useState(activeIndex);
+            const [currentTabName, setCurrentTabName] = _react.default.useState(current);
+            // Update active tab if `current` prop changes
+            const value = {
+              panes,
+              activeTab,
+              setActiveTab,
+              onChange,
+              trackUrl,
+              current: currentTabName,
+              currentTabName,
+              setCurrentTabName,
+              names: tabs
+            };
+            const cls = `pui-tabs-container${className ? ` ${className}` : ''}`;
+            return _react.default.createElement(_context.TabsContext.Provider, {
+              value: value
+            }, _react.default.createElement("section", {
+              className: cls
+            }, children));
+          }
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./panes
+      ***********************/
+
+      ims.set('./panes', {
+        hash: 1726352262,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Panes = Panes;
+          var _react = require("react");
+          var _context = require("./context");
+          /*bundle*/
+          function Panes({
+            children,
+            className,
+            items
+          }) {
+            const {
+              activeTab
+            } = (0, _context.useTabsContext)();
+            if (items) {
+              const Control = items[activeTab];
+              return _react.default.createElement("section", {
+                className: `tab-content ${className ? ` ${className}` : ''}`
+              }, _react.default.createElement(Control, null));
+            }
+            const childrenArray = _react.default.Children.toArray(children);
+            const Control = childrenArray[activeTab];
+            const cls = `tab-content ${className ? ` ${className}` : ''}`;
+            return _react.default.createElement("section", {
+              className: cls
+            }, Control);
+          }
+        }
+      });
+
+      /*********************
+      INTERNAL MODULE: ./tab
+      *********************/
+
+      ims.set('./tab', {
+        hash: 588532965,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Tab = Tab;
+          var _react = require("react");
+          var _context = require("./context");
+          var _routing = require("@beyond-js/kernel/routing");
+          /*bundle */
+          function Tab(props) {
+            const {
+              children,
+              index,
+              disabled,
+              className,
+              name
+            } = props;
+            const {
+              activeTab,
+              setActiveTab,
+              onChange,
+              trackUrl
+            } = (0, _context.useTabsContext)();
+            let cls = `tab ${index === activeTab ? 'active' : ''} ${disabled ? ' is-disabled' : ''}`;
+            if (className) cls += ' ' + className;
+            const onClick = event => {
+              // todo: this event must be removed
+              if (trackUrl) {
+                // Convert `routing.uri.qs.entries` to an object
+                const queryParams = Object.fromEntries(_routing.routing.uri.qs.entries());
+                // Update the `tab` parameter
+                queryParams.tab = name;
+                // Build the new query string
+                const queryString = new URLSearchParams(queryParams).toString();
+                // Update the URL without reloading the page
+                _routing.routing.replaceState({}, '', `${_routing.routing.uri.pathname}?${queryString}`);
+              }
+              if (onChange) onChange(event, index);
+              setActiveTab(index);
+            };
+            const attrs = {};
+            if (!disabled) attrs.onClick = onClick;
+            return _react.default.createElement("div", {
+              className: cls,
+              ...attrs,
+              "data-name": name,
+              "data-index": index
+            }, children);
+          }
+        }
+      });
+
+      /**********************
+      INTERNAL MODULE: ./tabs
+      **********************/
+
+      ims.set('./tabs', {
+        hash: 1755048068,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Tabs = void 0;
+          var _react = require("react");
+          var _context = require("./context");
+          var _useScroll = require("./use-scroll");
+          var _tab = require("./tab");
+          /*bundle*/
+          const Tabs = ({
+            children,
+            className
+          }) => {
+            const {
+              activeTab,
+              names
+            } = (0, _context.useTabsContext)();
+            const ref = _react.default.useRef(null);
+            const cls = `pui-tabs-menu tabs${className ? ` ${className}` : ''}`;
+            const clone = (item, index) => {
+              if (!_react.default.isValidElement(item) || item.type !== _tab.Tab) return item;
+              const props = {
+                ...item.props,
+                index,
+                key: index,
+                name: names[index]
+              };
+              const tabChild = item;
+              return _react.default.cloneElement(tabChild, props);
+            };
+            const output = _react.default.Children.map(children, clone);
+            (0, _useScroll.useScroll)(ref, activeTab);
+            return _react.default.createElement("header", {
+              className: cls,
+              ref: ref
+            }, output);
+          };
+          exports.Tabs = Tabs;
+        }
+      });
+
+      /****************************
+      INTERNAL MODULE: ./use-scroll
+      ****************************/
+
+      ims.set('./use-scroll', {
+        hash: 1668718188,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useScroll = useScroll;
+          var _react = require("react");
+          function useScroll(tabRef, activeTab) {
+            _react.default.useEffect(() => {
+              const scrollToTab = index => {
+                const tabElement = tabRef.current?.querySelectorAll('.tab')[index];
+                if (tabElement) {
+                  const container = tabRef.current;
+                  const containerRect = container.getBoundingClientRect();
+                  const tabRect = tabElement.getBoundingClientRect();
+                  const scrollLeft = container.scrollLeft;
+                  if (tabRect.left < containerRect.left) {
+                    container.scrollTo({
+                      left: scrollLeft + tabRect.left - containerRect.left,
+                      behavior: 'smooth'
+                    });
+                  } else if (tabRect.right > containerRect.right) {
+                    container.scrollTo({
+                      left: scrollLeft + tabRect.right - containerRect.right,
+                      behavior: 'smooth'
+                    });
+                  }
+                }
+              };
+              scrollToTab(activeTab);
+            }, [activeTab]);
+          }
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "TabsContainer",
+        "name": "TabsContainer"
+      }, {
+        "im": "./panes",
+        "from": "Panes",
+        "name": "Panes"
+      }, {
+        "im": "./tab",
+        "from": "Tab",
+        "name": "Tab"
+      }, {
+        "im": "./tabs",
+        "from": "Tabs",
+        "name": "Tabs"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'TabsContainer') && _export("TabsContainer", TabsContainer = require ? require('./index').TabsContainer : value);
+        (require || prop === 'Panes') && _export("Panes", Panes = require ? require('./panes').Panes : value);
+        (require || prop === 'Tab') && _export("Tab", Tab = require ? require('./tab').Tab : value);
+        (require || prop === 'Tabs') && _export("Tabs", Tabs = require ? require('./tabs').Tabs : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiVGFic0NvbnRleHQiLCJleHBvcnRzIiwiZGVmYXVsdCIsImNyZWF0ZUNvbnRleHQiLCJ1c2VUYWJzQ29udGV4dCIsInVzZUNvbnRleHQiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsInZhbHVlIiwiX3JvdXRpbmciLCJfY29udGV4dCIsIlRhYnNDb250YWluZXIiLCJhY3RpdmUiLCJvbkNoYW5nZSIsImNsYXNzTmFtZSIsImN1cnJlbnQiLCJjaGlsZHJlbiIsInRhYnMiLCJwYW5lcyIsInRyYWNrVXJsIiwidGFiIiwicm91dGluZyIsInVyaSIsInFzIiwiZ2V0IiwiYWN0aXZlSW5kZXgiLCJpbmNsdWRlcyIsImluZGV4T2YiLCJhY3RpdmVUYWIiLCJzZXRBY3RpdmVUYWIiLCJ1c2VTdGF0ZSIsImN1cnJlbnRUYWJOYW1lIiwic2V0Q3VycmVudFRhYk5hbWUiLCJuYW1lcyIsImNscyIsImNyZWF0ZUVsZW1lbnQiLCJQcm92aWRlciIsIlBhbmVzIiwiaXRlbXMiLCJDb250cm9sIiwiY2hpbGRyZW5BcnJheSIsIkNoaWxkcmVuIiwidG9BcnJheSIsIlRhYiIsInByb3BzIiwiaW5kZXgiLCJkaXNhYmxlZCIsIm5hbWUiLCJvbkNsaWNrIiwiZXZlbnQiLCJxdWVyeVBhcmFtcyIsImZyb21FbnRyaWVzIiwiZW50cmllcyIsInF1ZXJ5U3RyaW5nIiwiVVJMU2VhcmNoUGFyYW1zIiwidG9TdHJpbmciLCJyZXBsYWNlU3RhdGUiLCJwYXRobmFtZSIsImF0dHJzIiwiX3VzZVNjcm9sbCIsIl90YWIiLCJUYWJzIiwicmVmIiwidXNlUmVmIiwiY2xvbmUiLCJpdGVtIiwiaXNWYWxpZEVsZW1lbnQiLCJ0eXBlIiwia2V5IiwidGFiQ2hpbGQiLCJjbG9uZUVsZW1lbnQiLCJvdXRwdXQiLCJtYXAiLCJ1c2VTY3JvbGwiLCJ0YWJSZWYiLCJ1c2VFZmZlY3QiLCJzY3JvbGxUb1RhYiIsInRhYkVsZW1lbnQiLCJxdWVyeVNlbGVjdG9yQWxsIiwiY29udGFpbmVyIiwiY29udGFpbmVyUmVjdCIsImdldEJvdW5kaW5nQ2xpZW50UmVjdCIsInRhYlJlY3QiLCJzY3JvbGxMZWZ0IiwibGVmdCIsInNjcm9sbFRvIiwiYmVoYXZpb3IiLCJyaWdodCJdLCJzb3VyY2VzIjpbIi90cy9jb250ZXh0LnRzeCIsIi9kZWZpbml0aW9ucy50cyIsIi90cy9pbmRleC50c3giLCIvdHMvcGFuZXMudHN4IiwiL3RzL3RhYi50c3giLCIvdHMvdGFicy50c3giLCIvdHMvdXNlLXNjcm9sbC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO1VBYU8sTUFBTUMsV0FBVyxHQUFBQyxPQUFBLENBQUFELFdBQUEsR0FBR0YsTUFBQSxDQUFBSSxPQUFLLENBQUNDLGFBQWEsQ0FBQyxFQUFrQixDQUFDO1VBQzNELE1BQU1DLGNBQWMsR0FBR0EsQ0FBQSxLQUFNTixNQUFBLENBQUFJLE9BQUssQ0FBQ0csVUFBVSxDQUFDTCxXQUFXLENBQUM7VUFBQ0MsT0FBQSxDQUFBRyxjQUFBLEdBQUFBLGNBQUE7Ozs7Ozs7Ozs7O1VDZGxFOztVQUVBRSxNQUFBLENBQUFDLGNBQUEsQ0FBQU4sT0FBQTtZQUNBTyxLQUFBO1VBQ0E7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDSkEsSUFBQUMsUUFBQSxHQUFBVixPQUFBO1VBQ0EsSUFBQUQsTUFBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQVcsUUFBQSxHQUFBWCxPQUFBO1VBRU87VUFBYSxTQUFVWSxhQUFhQSxDQUFDO1lBQzNDQyxNQUFNLEdBQUcsQ0FBQztZQUNWQyxRQUFRO1lBQ1JDLFNBQVM7WUFDVEMsT0FBTztZQUNQQyxRQUFRO1lBQ1JDLElBQUksR0FBRyxFQUFFO1lBQ1RDLEtBQUs7WUFDTEM7VUFBUSxDQUNhO1lBQ3JCO1lBRUEsSUFB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

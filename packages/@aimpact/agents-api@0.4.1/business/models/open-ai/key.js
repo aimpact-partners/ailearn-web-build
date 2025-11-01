@@ -1,2 +1,81 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,key,__beyond_pkg,hmr;_export("key",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@beyond-js/firestore-collection","0.0.9"],["@beyond-js/events","0.0.7"],["@beyond-js/response","0.0.3"],["@google-cloud/storage","7.17.0"],["@openai/agents","0.1.3"],["@pinecone-database/pinecone","6.1.2"],["express","4.21.2"],["express-rate-limit","7.2.0"],["express-openapi-validator","5.5.8"],["firebase-admin","12.7.0"],["multer","2.0.2"],["form-data","4.0.4"],["jsonwebtoken","9.0.2"],["ws","8.18.3"],["socket.io","4.8.1"],["node-fetch","2.7.0"],["dotenv","16.6.1"],["fluent-ffmpeg","2.1.3"],["dayjs","1.11.17"],["openai","4.104.0"],["uuid","10.0.0"],["find-up","7.0.0"],["postmark","4.0.5"],["zod","3.25.67"],["axios","1.12.2"],["socket.io-client","4.8.1"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/bee","0.0.7"],["@beyond-js/local","0.1.3"],["@types/jsonwebtoken","9.0.10"],["@types/express","5.0.3"],["@types/node","20.6.5"],["@types/uuid","9.0.8"],["@types/ws","8.5.14"],["@types/react","18.3.24"],["@types/audioworklet","0.0.83"],["swagger-ui-express","5.0.1"],["yaml","2.8.1"],["@aimpact/agents-api","0.4.1"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/agents-api@0.4.1/business/models/open-ai/key"},type:"ts"},_context.meta.url).package();__pkg.dependencies.update([]);ims=new Map;ims.set("./index",{hash:877688233,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.key=void 0;const key=exports.key=new class OpenAIKey{#key;async get(){if(this.#key)return this.#key;const dotenv=await bimport("dotenv");dotenv.config();this.#key=process.env.OPENAI_API_KEY;return this.#key}set(value){if(!value){console.error("value must be specified")}this.#key=value;return this.#key}}}});__pkg.exports.descriptor=[{im:"./index",from:"key",name:"key"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="key")&&_export("key",key=require?require("./index").key:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWdlbnRzLWFwaUAwLjQuMS9idXNpbmVzcy9tb2RlbHMvb3Blbi1haS9rZXkuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwia2V5IiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiLCJPcGVuQUlLZXkiLCJnZXQiLCJ0aGlzIiwiZG90ZW52IiwiY29uZmlnIiwicHJvY2VzcyIsImVudiIsIk9QRU5BSV9BUElfS0VZIiwiY29uc29sZSIsImVycm9yIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9wIiwib24iLCJldmVudCIsImxpc3RlbmVyIiwib2ZmIiwiaW5pdGlhbGlzZSJdLCJzb3VyY2VzIjpbIjAiXSwibWFwcGluZ3MiOiJBQUFBQSxPQUFPQyxTQUFTLENBQUMsbUNBQW9DLFNBQVVDLFFBQVNDLFVBQ3RFLGFBRUEsSUFBSUMsYUFBY0MsUUFBU0MsU0FBVUMsTUFBT0MsSUFBS0MsSUFBS0MsYUFBY0MsSUFDcEVULFFBQVEsV0FBWSxHQUNwQixNQUFPLENBQ0xVLFFBQVMsQ0FBQyxTQUFVQywyQkFDbEJULGFBQWVTLHlCQUNqQixHQUNBQyxRQUFTLFdBQ1BULFFBQVVVLFlBQ1IsTUFBTUMsYUFBZSxJQUFJQyxJQUFJLENBQUMsQ0FB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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, key, __beyond_pkg, hmr;
+  _export("key", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/firestore-collection", "0.0.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/response", "0.0.3"], ["@google-cloud/storage", "7.17.0"], ["@openai/agents", "0.1.3"], ["@pinecone-database/pinecone", "6.1.2"], ["express", "4.21.2"], ["express-rate-limit", "7.2.0"], ["express-openapi-validator", "5.5.8"], ["firebase-admin", "12.7.0"], ["multer", "2.0.2"], ["form-data", "4.0.4"], ["jsonwebtoken", "9.0.2"], ["ws", "8.18.3"], ["socket.io", "4.8.1"], ["node-fetch", "2.7.0"], ["dotenv", "16.6.1"], ["fluent-ffmpeg", "2.1.3"], ["dayjs", "1.11.17"], ["openai", "4.104.0"], ["uuid", "10.0.0"], ["find-up", "7.0.0"], ["postmark", "4.0.5"], ["zod", "3.25.67"], ["axios", "1.12.2"], ["socket.io-client", "4.8.1"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/bee", "0.0.7"], ["@beyond-js/local", "0.1.3"], ["@types/jsonwebtoken", "9.0.10"], ["@types/express", "5.0.3"], ["@types/node", "20.6.5"], ["@types/uuid", "9.0.8"], ["@types/ws", "8.5.14"], ["@types/react", "18.3.24"], ["@types/audioworklet", "0.0.83"], ["swagger-ui-express", "5.0.1"], ["yaml", "2.8.1"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/agents-api@0.4.1/business/models/open-ai/key"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 877688233,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.key = void 0;
+          /*bundle*/
+          const key = exports.key = new class OpenAIKey {
+            #key;
+            async get() {
+              if (this.#key) return this.#key;
+              const dotenv = await bimport('dotenv');
+              dotenv.config();
+              this.#key = process.env.OPENAI_API_KEY;
+              return this.#key;
+            }
+            set(value) {
+              if (!value) {
+                console.error('value must be specified');
+              }
+              this.#key = value;
+              return this.#key;
+            }
+          }();
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "key",
+        "name": "key"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'key') && _export("key", key = require ? require('./index').key : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJrZXkiLCJleHBvcnRzIiwiT3BlbkFJS2V5IiwiZ2V0IiwiZG90ZW52IiwiYmltcG9ydCIsImNvbmZpZyIsInByb2Nlc3MiLCJlbnYiLCJPUEVOQUlfQVBJX0tFWSIsInNldCIsInZhbHVlIiwiY29uc29sZSIsImVycm9yIl0sInNvdXJjZXMiOlsiL2luZGV4LnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUVPO1VBQVcsTUFBTUEsR0FBRyxHQUFBQyxPQUFBLENBQUFELEdBQUEsR0FBRyxJQUFLLE1BQU1FLFNBQVM7WUFDakQsQ0FBQUYsR0FBSTtZQUVKLE1BQU1HLEdBQUdBLENBQUE7Y0FDUixJQUFJLElBQUksQ0FBQyxDQUFBSCxHQUFJLEVBQUUsT0FBTyxJQUFJLENBQUMsQ0FBQUEsR0FBSTtjQUUvQixNQUFNSSxNQUFNLEdBQUcsTUFBTUMsT0FBTyxDQUFDLFFBQVEsQ0FBQztjQUN0Q0QsTUFBTSxDQUFDRSxNQUFNLEVBQUU7Y0FFZixJQUFJLENBQUMsQ0FBQU4sR0FBSSxHQUFHTyxPQUFPLENBQUNDLEdBQUcsQ0FBQ0MsY0FBYztjQUV0QyxPQUFPLElBQUksQ0FBQyxDQUFBVCxHQUFJO1lBQ2pCO1lBRUFVLEdBQUdBLENBQUNDLEtBQWE7Y0FDaEIsSUFBSSxDQUFDQSxLQUFLLEVBQUU7Z0JBQ1hDLE9BQU8sQ0FBQ0MsS0FBSyxDQUFDLHlCQUF5QixDQUFDOztjQUd6QyxJQUFJLENBQUMsQ0FBQWIsR0FBSSxHQUFHVyxLQUFLO2NBQ2pCLE9BQU8sSUFBSSxDQUFDLENBQUFYLEdBQUk7WUFDakI7V0FDQSxDQUFDLENBQUUiLCJpZ25vcmVMaXN0IjpbXX0=

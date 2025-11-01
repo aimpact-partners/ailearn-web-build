@@ -1,2 +1,82 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@aimpact/agents-api@0.4.1/realtime/audio/worklet-bridge"],function(_export,_context){"use strict";var dependency_0,dependency_1,bimport,__Bundle,__pkg,ims,IPlayerWorkletConfig,StreamWorkletBridge,__beyond_pkg,hmr;_export({IPlayerWorkletConfig:void 0,StreamWorkletBridge:void 0});return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_aimpactAgentsApi041RealtimeAudioWorkletBridge){dependency_1=_aimpactAgentsApi041RealtimeAudioWorkletBridge}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@beyond-js/firestore-collection","0.0.9"],["@beyond-js/events","0.0.7"],["@beyond-js/response","0.0.3"],["@google-cloud/storage","7.17.0"],["@openai/agents","0.1.3"],["@pinecone-database/pinecone","6.1.2"],["express","4.21.2"],["express-rate-limit","7.2.0"],["express-openapi-validator","5.5.8"],["firebase-admin","12.7.0"],["multer","2.0.2"],["form-data","4.0.4"],["jsonwebtoken","9.0.2"],["ws","8.18.3"],["socket.io","4.8.1"],["node-fetch","2.7.0"],["dotenv","16.6.1"],["fluent-ffmpeg","2.1.3"],["dayjs","1.11.17"],["openai","4.104.0"],["uuid","10.0.0"],["find-up","7.0.0"],["postmark","4.0.5"],["zod","3.25.67"],["axios","1.12.2"],["socket.io-client","4.8.1"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/bee","0.0.7"],["@beyond-js/local","0.1.3"],["@types/jsonwebtoken","9.0.10"],["@types/express","5.0.3"],["@types/node","20.6.5"],["@types/uuid","9.0.8"],["@types/ws","8.5.14"],["@types/react","18.3.24"],["@types/audioworklet","0.0.83"],["swagger-ui-express","5.0.1"],["yaml","2.8.1"],["@aimpact/agents-api","0.4.1"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/agents-api@0.4.1/realtime/audio/player/worklet/bridge"},type:"ts"},_context.meta.url).package();__pkg.dependencies.update([["@aimpact/agents-api/realtime/audio/worklet-bridge",dependency_1]]);ims=new Map;ims.set("./index",{hash:3555101245,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.StreamWorkletBridge=void 0;var _workletBridge=require("@aimpact/agents-api/realtime/audio/worklet-bridge");class StreamWorkletBridge extends _workletBridge.WorkletBridge{constructor(context,timeout){super(context,"stream_processor","/packages/@aimpact/agents-api@0.4.1/realtime/audio/player/worklet/processor/index.js",timeout)}}exports.StreamWorkletBridge=StreamWorkletBridge}});__pkg.exports.descriptor=[{im:"./index",from:"IPlayerWorkletConfig",name:"IPlayerWorkletConfig"},{im:"./index",from:"StreamWorkletBridge",name:"StreamWorkletBridge"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="IPlayerWorkletConfig")&&_export("IPlayerWorkletConfig",IPlayerWorkletConfig=require?require("./index").IPlayerWorkletConfig:value);(require||prop==="StreamWorkletBridge")&&_export("StreamWorkletBridge",StreamWorkletBridge=require?require("./index").StreamWorkletBridge:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWdlbnRzLWFwaUAwLjQuMS9yZWFsdGltZS9hdWRpby9wbGF5ZXIvd29ya2xldC9icmlkZ2UuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImRlcGVuZGVuY3lfMSIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwiSVBsYXllcldvcmtsZXRDb25maWciLCJTdHJlYW1Xb3JrbGV0QnJpZGdlIiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJfYWltcGFjdEFnZW50c0FwaTA0MVJlYWx0aW1lQXVkaW9Xb3JrbGV0QnJpZGdlIiwiZXhlY3V0ZSIsInNwZWNpZmllciIsImRlcGVuZGVuY2llcyIsIk1hcCIsImdsb2JhbFRoaXMiLCJyZXNvbHZlIiwiQnVuZGxlIiwibW9kdWxlIiwidnNwZWNpZmllciIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsInZhbHVlIiwiX3dvcmtsZXRCcmlkZ2UiLCJXb3JrbGV0QnJpZGdlIiwiY29uc3RydWN0b3IiLCJjb250ZXh0IiwidGltZW91dCIsInN1cGVyIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInRoaXMiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxrQ0FBbUMsMkRBQTRELFNBQVVDLFFBQVNDLFVBQ2pJLGFBRUEsSUFBSUMsYUFBY0MsYUFBY0MsUUFBU0MsU0FBVUMsTUFBT0MsSUFBS0MscUJBQXNCQyxvQkFBcUJDLGFB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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@aimpact/agents-api@0.4.1/realtime/audio/worklet-bridge"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, bimport, __Bundle, __pkg, ims, IPlayerWorkletConfig, StreamWorkletBridge, __beyond_pkg, hmr;
+  _export({
+    IPlayerWorkletConfig: void 0,
+    StreamWorkletBridge: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_aimpactAgentsApi041RealtimeAudioWorkletBridge) {
+      dependency_1 = _aimpactAgentsApi041RealtimeAudioWorkletBridge;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/firestore-collection", "0.0.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/response", "0.0.3"], ["@google-cloud/storage", "7.17.0"], ["@openai/agents", "0.1.3"], ["@pinecone-database/pinecone", "6.1.2"], ["express", "4.21.2"], ["express-rate-limit", "7.2.0"], ["express-openapi-validator", "5.5.8"], ["firebase-admin", "12.7.0"], ["multer", "2.0.2"], ["form-data", "4.0.4"], ["jsonwebtoken", "9.0.2"], ["ws", "8.18.3"], ["socket.io", "4.8.1"], ["node-fetch", "2.7.0"], ["dotenv", "16.6.1"], ["fluent-ffmpeg", "2.1.3"], ["dayjs", "1.11.17"], ["openai", "4.104.0"], ["uuid", "10.0.0"], ["find-up", "7.0.0"], ["postmark", "4.0.5"], ["zod", "3.25.67"], ["axios", "1.12.2"], ["socket.io-client", "4.8.1"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/bee", "0.0.7"], ["@beyond-js/local", "0.1.3"], ["@types/jsonwebtoken", "9.0.10"], ["@types/express", "5.0.3"], ["@types/node", "20.6.5"], ["@types/uuid", "9.0.8"], ["@types/ws", "8.5.14"], ["@types/react", "18.3.24"], ["@types/audioworklet", "0.0.83"], ["swagger-ui-express", "5.0.1"], ["yaml", "2.8.1"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/agents-api@0.4.1/realtime/audio/player/worklet/bridge"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@aimpact/agents-api/realtime/audio/worklet-bridge', dependency_1]]);
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 3555101245,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StreamWorkletBridge = void 0;
+          var _workletBridge = require("@aimpact/agents-api/realtime/audio/worklet-bridge");
+          /*bundle*/
+          class StreamWorkletBridge extends _workletBridge.WorkletBridge {
+            constructor(context, timeout) {
+              // super(context, 'stream_processor', './realtime/audio/player/worklet/processor/index.js', timeout);
+              super(context, 'stream_processor', '/packages/@aimpact/agents-api@0.4.1/realtime/audio/player/worklet/processor/index.js', timeout);
+            }
+          }
+          exports.StreamWorkletBridge = StreamWorkletBridge;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "IPlayerWorkletConfig",
+        "name": "IPlayerWorkletConfig"
+      }, {
+        "im": "./index",
+        "from": "StreamWorkletBridge",
+        "name": "StreamWorkletBridge"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'IPlayerWorkletConfig') && _export("IPlayerWorkletConfig", IPlayerWorkletConfig = require ? require('./index').IPlayerWorkletConfig : value);
+        (require || prop === 'StreamWorkletBridge') && _export("StreamWorkletBridge", StreamWorkletBridge = require ? require('./index').StreamWorkletBridge : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfd29ya2xldEJyaWRnZSIsInJlcXVpcmUiLCJTdHJlYW1Xb3JrbGV0QnJpZGdlIiwiV29ya2xldEJyaWRnZSIsImNvbnN0cnVjdG9yIiwiY29udGV4dCIsInRpbWVvdXQiLCJleHBvcnRzIl0sInNvdXJjZXMiOlsiL2luZGV4LnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsY0FBQSxHQUFBQyxPQUFBO1VBSU87VUFBVSxNQUFPQyxtQkFBb0IsU0FBUUYsY0FBQSxDQUFBRyxhQUFhO1lBQ2hFQyxZQUFZQyxPQUFxQixFQUFFQyxPQUFnQjtjQUNsRDtjQUNBLEtBQUssQ0FDSkQsT0FBTyxFQUNQLGtCQUFrQixFQUNsQixzRkFBc0YsRUFDdEZDLE9BQU8sQ0FDUDtZQUNGOztVQUNBQyxPQUFBLENBQUFMLG1CQUFBLEdBQUFBLG1CQUFBIiwiaWdub3JlTGlzdCI6W119

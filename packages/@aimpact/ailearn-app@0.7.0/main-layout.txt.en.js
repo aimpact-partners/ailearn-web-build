@@ -1,2 +1,127 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,txt,__beyond_pkg,hmr;_export("txt",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/main-layout",multibundle:true},type:"txt"},_context.meta.url).package("en");__pkg.dependencies.update([]);ims=new Map;ims.set("./txt",{hash:3878982735,creator:function(require,exports){exports.txt={breadcrumb:{modules:"Modules",management:"Draft"},coins:{alert:{title:"You need AI credits",description:"You need to get AI credits to enable all the features with artificial intelligence.",action:"Accept"},modal:{title:"Request AI credits to continue with this feature",description:"You need to get AI credits to enable all the features with artificial intelligence.",actions:{cancel:"No, not now, thanks",confirm:"Request now"},errors:{noCredits:"The assignment could not be processed, please contact the institution's administrator"}},header:{actions:{require:"Enable AI",available:"Available credits"},messages:{add:"You acquired credits to use the AI functions",middle:"You consumed 50% of the Available credits",finishing:"You are running out of available AI credits"}}},notifications:{saved:"Request AI credits to enable all AI functions.",credits:"You already have <strong>credits assigned</strong> to use AI functions that will be automatically discounted with use."},chat:{title:"Chat",empty:{message:"Ask here everything you need to know about your knowledge bases.",noActive:"No active chat",createButton:"Create Chat",startChat:"Write your message to start the conversation"},creating:{message:"Creating chat..."},organization:{placeholder:"Select organization"}},drawer:{title:"Side Panel",content:"Side panel content",sections:{quickActions:"Quick Actions",recentActivity:"Recent Activity",search:"Search",settings:"Settings",help:"Help"},search:{placeholder:"Search in knowledge bases...",clear:"Clear search",search:"Search"}}}}});__pkg.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="txt")&&_export("txt",txt=require?require("./txt").txt:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvbWFpbi1sYXlvdXQudHh0LmVuLmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQiLCJkZXBlbmRlbmN5XzAiLCJiaW1wb3J0IiwiX19CdW5kbGUiLCJfX3BrZyIsImltcyIsInR4dCIsIl9fYmV5b25kX3BrZyIsImhtciIsInNldHRlcnMiLCJfYmV5b25kSnNLZXJuZWwwMTE0QnVuZGxlIiwiZXhlY3V0ZSIsInNwZWNpZmllciIsImRlcGVuZGVuY2llcyIsIk1hcCIsImdsb2JhbFRoaXMiLCJyZXNvbHZlIiwiQnVuZGxlIiwibW9kdWxlIiwidnNwZWNpZmllciIsIm11bHRpYnVuZGxlIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsImJyZWFkY3J1bWIiLCJtb2R1bGVzIiwibWFuYWdlbWVudCIsImNvaW5zIiwiYWxlcnQiLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwiYWN0aW9uIiwibW9kYWwiLCJhY3Rpb25zIiwiY2FuY2VsIiwiY29uZmlybSIsImVycm9ycyIsIm5vQ3JlZGl0cyIsImhlYWRlciIsImF2YWlsYWJsZSIsIm1lc3NhZ2VzIiwiYWRkIiwibWlkZGxlIiwiZmluaXNoaW5nIiwibm90aWZpY2F0aW9ucyIsInNhdmVkIiwiY3JlZGl0cyIsImNoYXQiLCJlbXB0eSIsIm1lc3NhZ2UiLCJub0FjdGl2ZSIsImNyZWF0ZUJ1dHRvbiIsInN0YXJ0Q2hhdCIsImNyZWF0aW5nIiwib3JnYW5pemF0aW9uIiwicGxhY2Vob2xkZXIiLCJkcmF3ZXIiLCJjb250ZW50Iiwic2VjdGlvbnMiLCJxdWlja0FjdGlvbnMiLCJyZWNlbnRBY3Rpdml0eSIsInNlYXJjaCIsInNldHRpbmdzIiwiaGVscCIsImNsZWFyIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInZhbHVlIiwidGhpcyIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLG1DQUFvQyxTQUFVQyxRQUFTQyxVQUN0RSxhQUVBLElBQUlDLGFBQWNDLFFBQVNDLFNBQVVDLE1BQU9DLElBQUtDLElBQUtDLGFBQWNDLElBQ3BFVCxRQUFRLFdBQVksR0FDcEIsTUFBTyxDQUNMVSxRQUFTLENBQUMsU0FBVUMsMkJBQ2xCVCxhQUFlUyx5QkFDakIsR0FDQUMsUUFBUyxXQUNQVCxRQUFVVSxZQUNSLE1BQU1DLGFBQWUsSUFBSUMsSUFBSSxDQUFDLENBQUMsc0JBQXVCLFNBQVUsQ0FBQyx1QkFBd0IsU0FBVSxDQUFDLHVCQUF3QixTQUFVLENBQUMsb0JBQXFCLFNBQVUsQ0FBQyx5QkFBMEIsU0FBVSxDQUFDLGNBQWUsU0FBVSxDQUFDLHNCQUF1QixTQUFVLENBQUMsd0JBQXlCLFNBQVUsQ0FBQyxxQkFBc0IsVUFBVyxDQUFDLG9CQUFxQixTQUFVLENBQUMsb0JBQXFCLFVBQVcsQ0FBQyw2QkFBOEIsU0FBVSxDQUFDLDhCQUErQixTQUFVLENBQUMscUJBQXNCLFNBQVUsQ0FBQyxlQUFnQixXQUFZLENBQUMsaUJBQWtCLFdBQVksQ0FBQyxrQkFBbUIsV0FBWSxDQUFDLGlCQUFrQixVQUFXLENBQUMsd0JBQXlCLFVBQVcsQ0FBQyw0QkFBNkIsVUFBVyxDQUFDLDhCQUErQixVQUFXLENBQUMsd0JBQXlCLFNBQVUsQ0FBQyx5QkFBMEIsU0FBVSxDQUFDLDRCQUE2QixTQUFVLENBQUMsK0JBQWdDLFNBQVUsQ0FBQywrQkFBZ0MsU0FBVSxDQUFDLG9DQUFxQyxTQUFVLENBQUMsMEJBQTJCLFNBQVUsQ0FBQyw4QkFBK0IsU0FBVSxDQUFDLDhCQUErQixTQUFVLENBQUMsOEJBQStCLFNBQVUsQ0FBQyxhQUFjLFNBQVUsQ0FBQyxnQkFBaUIsU0FBVSxDQUFDLHNCQUF1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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/main-layout",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('en');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 3878982735,
+        creator: function (require, exports) {
+          exports.txt = {
+            "breadcrumb": {
+              "modules": "Modules",
+              "management": "Draft"
+            },
+            "coins": {
+              "alert": {
+                "title": "You need AI credits",
+                "description": "You need to get AI credits to enable all the features with artificial intelligence.",
+                "action": "Accept"
+              },
+              "modal": {
+                "title": "Request AI credits to continue with this feature",
+                "description": "You need to get AI credits to enable all the features with artificial intelligence.",
+                "actions": {
+                  "cancel": "No, not now, thanks",
+                  "confirm": "Request now"
+                },
+                "errors": {
+                  "noCredits": "The assignment could not be processed, please contact the institution's administrator"
+                }
+              },
+              "header": {
+                "actions": {
+                  "require": "Enable AI",
+                  "available": "Available credits"
+                },
+                "messages": {
+                  "add": "You acquired credits to use the AI functions",
+                  "middle": "You consumed 50% of the Available credits",
+                  "finishing": "You are running out of available AI credits"
+                }
+              }
+            },
+            "notifications": {
+              "saved": "Request AI credits to enable all AI functions.",
+              "credits": "You already have <strong>credits assigned</strong> to use AI functions that will be automatically discounted with use."
+            },
+            "chat": {
+              "title": "Chat",
+              "empty": {
+                "message": "Ask here everything you need to know about your knowledge bases.",
+                "noActive": "No active chat",
+                "createButton": "Create Chat",
+                "startChat": "Write your message to start the conversation"
+              },
+              "creating": {
+                "message": "Creating chat..."
+              },
+              "organization": {
+                "placeholder": "Select organization"
+              }
+            },
+            "drawer": {
+              "title": "Side Panel",
+              "content": "Side panel content",
+              "sections": {
+                "quickActions": "Quick Actions",
+                "recentActivity": "Recent Activity",
+                "search": "Search",
+                "settings": "Settings",
+                "help": "Help"
+              },
+              "search": {
+                "placeholder": "Search in knowledge bases...",
+                "clear": "Clear search",
+                "search": "Search"
+              }
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

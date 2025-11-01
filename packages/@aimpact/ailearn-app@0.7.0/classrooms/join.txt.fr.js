@@ -1,2 +1,100 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,txt,__beyond_pkg,hmr;_export("txt",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/classrooms/join",multibundle:true},type:"txt"},_context.meta.url).package("fr");__pkg.dependencies.update([]);ims=new Map;ims.set("./txt",{hash:698603657,creator:function(require,exports){exports.txt={breadcrumb:{classrooms:"Salle de classe",management:"Gestion",join:"Rejoindre"},errors:{INVALID_CODE:"Le code de v\xe9rification n'est pas valide",ERROR_PUBLISHING:"La demande n'a pas pu \xeatre effectu\xe9e, veuillez r\xe9essayer plus tard",ALREADY_WAITING:"Il y a d\xe9j\xe0 une demande en attente pour cette salle de classe",ALREADY_MEMBER:"Vous \xeates d\xe9j\xe0 membre de cette salle de classe"},action:{join:"Rejoindre"},title:"Rejoindre une salle de classe",describe:"Rejoignez une salle de classe pour acc\xe9der au contenu et participer \xe0 des activit\xe9s \xe9ducatives.",form:{title:"Code de la salle de classe",subtitle:"Entrez le code de classe fourni par votre enseignant",placeholder:"Code de la salle de classe"},info:{title:"Comment rejoindre avec un code valide",rules:{first:"Utilisez un compte autoris\xe9",second:"Entrez le code alphanum\xe9rique pour acc\xe9der \xe0 la salle de classe"},help:"Si vous avez des difficult\xe9s \xe0 rejoindre une salle de classe, consultez votre enseignant ou visitez notre Centre d'aide."},messages:{authorized:"Vous avez maintenant acc\xe8s \xe0 la salle de classe",pending:"Votre demande d'acc\xe8s est en attente d'approbation par l'enseignant"},member:{title:"Vous \xeates d\xe9j\xe0 membre de la salle de classe",action:"Aller \xe0 la salle de classe"},ready:{title:"Demande envoy\xe9e",description:"Maintenant vous devez attendre que l'administrateur l'approuve et ensuite vous pourrez avoir acc\xe8s"}}}});__pkg.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="txt")&&_export("txt",txt=require?require("./txt").txt:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvY2xhc3Nyb29tcy9qb2luLnR4dC5mci5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJ0eHQiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJtdWx0aWJ1bmRsZSIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJicmVhZGNydW1iIiwiY2xhc3Nyb29tcyIsIm1hbmFnZW1lbnQiLCJqb2luIiwiZXJyb3JzIiwiSU5WQUxJRF9DT0RFIiwiRVJST1JfUFVCTElTSElORyIsIkFMUkVBRFlfV0FJVElORyIsIkFMUkVBRFlfTUVNQkVSIiwiYWN0aW9uIiwidGl0bGUiLCJkZXNjcmliZSIsImZvcm0iLCJzdWJ0aXRsZSIsInBsYWNlaG9sZGVyIiwiaW5mbyIsInJ1bGVzIiwiZmlyc3QiLCJzZWNvbmQiLCJoZWxwIiwibWVzc2FnZXMiLCJhdXRob3JpemVkIiwicGVuZGluZyIsIm1lbWJlciIsInJlYWR5IiwiZGVzY3JpcHRpb24iLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwibmFtZSIsInByb2Nlc3MiLCJwcm9wIiwidmFsdWUiLCJ0aGlzIiwib24iLCJldmVudCIsImxpc3RlbmVyIiwib2ZmIiwiaW5pdGlhbGlzZSJdLCJzb3VyY2VzIjpbIjAiXSwibWFwcGluZ3MiOiJBQUFBQSxPQUFPQyxTQUFTLENBQUMsbUNBQW9DLFNBQVVD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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/classrooms/join",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('fr');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 698603657,
+        creator: function (require, exports) {
+          exports.txt = {
+            "breadcrumb": {
+              "classrooms": "Salle de classe",
+              "management": "Gestion",
+              "join": "Rejoindre"
+            },
+            "errors": {
+              "INVALID_CODE": "Le code de vérification n'est pas valide",
+              "ERROR_PUBLISHING": "La demande n'a pas pu être effectuée, veuillez réessayer plus tard",
+              "ALREADY_WAITING": "Il y a déjà une demande en attente pour cette salle de classe",
+              "ALREADY_MEMBER": "Vous êtes déjà membre de cette salle de classe"
+            },
+            "action": {
+              "join": "Rejoindre"
+            },
+            "title": "Rejoindre une salle de classe",
+            "describe": "Rejoignez une salle de classe pour accéder au contenu et participer à des activités éducatives.",
+            "form": {
+              "title": "Code de la salle de classe",
+              "subtitle": "Entrez le code de classe fourni par votre enseignant",
+              "placeholder": "Code de la salle de classe"
+            },
+            "info": {
+              "title": "Comment rejoindre avec un code valide",
+              "rules": {
+                "first": "Utilisez un compte autorisé",
+                "second": "Entrez le code alphanumérique pour accéder à la salle de classe"
+              },
+              "help": "Si vous avez des difficultés à rejoindre une salle de classe, consultez votre enseignant ou visitez notre Centre d'aide."
+            },
+            "messages": {
+              "authorized": "Vous avez maintenant accès à la salle de classe",
+              "pending": "Votre demande d'accès est en attente d'approbation par l'enseignant"
+            },
+            "member": {
+              "title": "Vous êtes déjà membre de la salle de classe",
+              "action": "Aller à la salle de classe"
+            },
+            "ready": {
+              "title": "Demande envoyée",
+              "description": "Maintenant vous devez attendre que l'administrateur l'approuve et ensuite vous pourrez avoir accès"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

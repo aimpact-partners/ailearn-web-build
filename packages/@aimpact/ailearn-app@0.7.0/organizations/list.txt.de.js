@@ -1,2 +1,113 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,txt,__beyond_pkg,hmr;_export("txt",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/organizations/list",multibundle:true},type:"txt"},_context.meta.url).package("de");__pkg.dependencies.update([]);ims=new Map;ims.set("./txt",{hash:2045133059,creator:function(require,exports){exports.txt={actions:{join:"Join",create:"Erstellen",register:"Registrieren",activities:"Aktivit\xe4ten generieren",refine:"Verfeinern",imported:"Importiert",generate:"Generieren",save:"Speichern",clean:"Reinigen",activity:"Aktivit\xe4ten",update:"Dokument hochladen",edit:"Bearbeiten",delete:"L\xf6schen",cancel:"Abbrechen",next:"Weiter",back:"Zur\xfcck",link:"Link",gTooltip:"Klassenzimmer von Google importiert",import:"Importieren"},create:{title:"Organisation hinzuf\xfcgen",success:"Organisation erfolgreich ver\xf6ffentlicht",error:"Fehler beim Ver\xf6ffentlichen der Organisation",name:{label:"Organisation Name",placeholder:"Was wird der Name der Organisation sein?"},description:{label:"Organisation Beschreibung",placeholder:"Was ist die Mission dieser Organisation?"},actions:{save:"Weitermachen"}},title:"Organisationen",subtitle:"Entdecken, anpassen und verwalten Sie Ihre Organisationen nach Ihren Bed\xfcrfnissen",code:"Organisation Code",messages:{copied:"Code in die Zwischenablage kopiert"},empty:{title:"Registrieren Sie eine Bildungsorganisation in RVD.AI",description:"Beginnen Sie mit der Registrierung Ihrer Organisation."},welcome:{message:"Willkommen %name zu Ihrer Liste von Organisationen",actionInfo:"Hier k\xf6nnen Sie alle Organisationen anzeigen und verwalten, die Sie derzeit haben. Sie haben Zugriff auf verschiedene Aktionen, einschlie\xdflich der Erstellung, L\xf6schung und Bearbeitung von Organisationen. Nutzen Sie diese Tools, um jede Organisation nach Ihren Bed\xfcrfnissen anzupassen."},errors:{ERROR_GETTING_URL:"Fehler beim Abrufen der URL"}}}});__pkg.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="txt")&&_export("txt",txt=require?require("./txt").txt:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvb3JnYW5pemF0aW9ucy9saXN0LnR4dC5kZS5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJ0eHQiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJtdWx0aWJ1bmRsZSIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJhY3Rpb25zIiwiam9pbiIsImNyZWF0ZSIsImFjdGl2aXRpZXMiLCJyZWZpbmUiLCJpbXBvcnRlZCIsImdlbmVyYXRlIiwic2F2ZSIsImNsZWFuIiwiYWN0aXZpdHkiLCJlZGl0IiwiZGVsZXRlIiwiY2FuY2VsIiwibmV4dCIsImJhY2siLCJsaW5rIiwiZ1Rvb2x0aXAiLCJpbXBvcnQiLCJ0aXRsZSIsInN1Y2Nlc3MiLCJlcnJvciIsIm5hbWUiLCJsYWJlbCIsInBsYWNlaG9sZGVyIiwiZGVzY3JpcHRpb24iLCJzdWJ0aXRsZSIsImNvZGUiLCJtZXNzYWdlcyIsImNvcGllZCIsImVtcHR5Iiwid2VsY29tZSIsIm1lc3NhZ2UiLCJhY3Rpb25JbmZvIiwiZXJyb3JzIiwiRVJST1JfR0VUVElOR19VUkwiLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwicHJvY2VzcyIsInByb3AiLCJ2YWx1ZSIsInRoaXMiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJd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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/organizations/list",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('de');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 2045133059,
+        creator: function (require, exports) {
+          exports.txt = {
+            "actions": {
+              "join": "Join",
+              "create": "Erstellen",
+              "register": "Registrieren",
+              "activities": "Aktivitäten generieren",
+              "refine": "Verfeinern",
+              "imported": "Importiert",
+              "generate": "Generieren",
+              "save": "Speichern",
+              "clean": "Reinigen",
+              "activity": "Aktivitäten",
+              "update": "Dokument hochladen",
+              "edit": "Bearbeiten",
+              "delete": "Löschen",
+              "cancel": "Abbrechen",
+              "next": "Weiter",
+              "back": "Zurück",
+              "link": "Link",
+              "gTooltip": "Klassenzimmer von Google importiert",
+              "import": "Importieren"
+            },
+            "create": {
+              "title": "Organisation hinzufügen",
+              "success": "Organisation erfolgreich veröffentlicht",
+              "error": "Fehler beim Veröffentlichen der Organisation",
+              "name": {
+                "label": "Organisation Name",
+                "placeholder": "Was wird der Name der Organisation sein?"
+              },
+              "description": {
+                "label": "Organisation Beschreibung",
+                "placeholder": "Was ist die Mission dieser Organisation?"
+              },
+              "actions": {
+                "save": "Weitermachen"
+              }
+            },
+            "title": "Organisationen",
+            "subtitle": "Entdecken, anpassen und verwalten Sie Ihre Organisationen nach Ihren Bedürfnissen",
+            "code": "Organisation Code",
+            "messages": {
+              "copied": "Code in die Zwischenablage kopiert"
+            },
+            "empty": {
+              "title": "Registrieren Sie eine Bildungsorganisation in RVD.AI",
+              "description": "Beginnen Sie mit der Registrierung Ihrer Organisation."
+            },
+            "welcome": {
+              "message": "Willkommen %name zu Ihrer Liste von Organisationen",
+              "actionInfo": "Hier können Sie alle Organisationen anzeigen und verwalten, die Sie derzeit haben. Sie haben Zugriff auf verschiedene Aktionen, einschließlich der Erstellung, Löschung und Bearbeitung von Organisationen. Nutzen Sie diese Tools, um jede Organisation nach Ihren Bedürfnissen anzupassen."
+            },
+            "errors": {
+              "ERROR_GETTING_URL": "Fehler beim Abrufen der URL"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

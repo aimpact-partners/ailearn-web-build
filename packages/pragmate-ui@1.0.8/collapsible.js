@@ -1,2 +1,375 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/styles","pragmate-ui@1.0.8/icons","react@18.3.1","pragmate-ui@1.0.8/base","clsx@2.1.1"],function(_export,_context2){"use strict";var dependency_0,dependency_1,dependency_2,dependency_3,dependency_4,dependency_5,bimport,__Bundle,__pkg,ims,Header,Item,Container,Accordion,CollapsibleContent,CollapsibleHeader,CollapsibleContainer,__beyond_pkg,hmr;_export({Header:void 0,Item:void 0,Container:void 0,Accordion:void 0,CollapsibleContent:void 0,CollapsibleHeader:void 0,CollapsibleContainer:void 0});return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_beyondJsKernel0114Styles){dependency_1=_beyondJsKernel0114Styles},function(_pragmateUi108Icons){dependency_2=_pragmateUi108Icons},function(_react2){dependency_3=_react2},function(_pragmateUi108Base){dependency_4=_pragmateUi108Base},function(_clsx2){dependency_5=_clsx2}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.12"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/reactive","2.1.0"],["@beyond-js/widgets","0.1.6"],["@floating-ui/dom","1.7.3"],["clsx","2.1.1"],["framer-motion","11.11.11"],["perfect-scrollbar","1.5.6"],["prismjs","1.29.0"],["swiper","10.3.1"],["tippy.js","6.3.7"],["@types/react","18.3.12"],["@types/react-dom","18.3.1"],["pragmate-ui","1.0.8"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"pragmate-ui@1.0.8/collapsible"},type:"code"},_context2.meta.url).package();__pkg.dependencies.update([["@beyond-js/kernel/styles",dependency_1],["pragmate-ui/icons",dependency_2],["react",dependency_3],["pragmate-ui/base",dependency_4],["clsx",dependency_5]]);brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@1.0.8/collapsible");ims=new Map;ims.set("./accordion",{hash:187534641,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.AccordionContext=exports.Accordion=void 0;exports.Container=Container;exports.Header=Header;exports.Item=Item;exports.useAccordionContext=void 0;var _icons=require("pragmate-ui/icons");var _react=require("react");const AccordionContext=exports.AccordionContext=_react.default.createContext({});const useAccordionContext=()=>_react.default.useContext(AccordionContext);exports.useAccordionContext=useAccordionContext;function Header({disabled:disabled,children:children,index:index}){const{setOpened:setOpened,opened:opened}=useAccordionContext();const onClick=event=>{event.stopPropagation();event.currentTarget.classList.toggle("accordion-item__header-icon--opened");setOpened(index===opened?false:index)};const attrs={};if(!disabled)attrs.onClick=onClick;const icon=opened?"expandMore":"chevronRight";return _react.default.createElement("header",{...attrs,className:"accordion-item__header"},children,_react.default.createElement("div",{className:"accordion-item__header-icon"},_react.default.createElement(_icons.Icon,{icon:icon,className:"accordion-item__icon-button circle"})))}function Item({disabled:disabled,children:children,title:title,index:index}){const{opened:opened}=useAccordionContext();let cls=`accordion-item${index===opened?` accordion-item--opened`:``}`;if(disabled)cls+=` accordion-item--disabled`;return _react.default.createElement("article",{className:cls},title&&_react.default.createElement(Header,{disabled:disabled,index:index},title),_react.default.createElement("div",{className:"accordion-item__content"},children))}function Container({children:children,active:active=0}){const[opened,setOpened]=_react.default.useState(active);const onChange=event=>{};const value={onChange:onChange,opened:opened,setOpened:setOpened};_react.default.useEffect(()=>setOpened(active),[active]);const output=[];_react.default.Children.map(children,(child,index)=>{if(!child)return null;output.push(_react.default.cloneElement(child,{index:index,key:`item$.${index}`}))});return _react.default.createElement(AccordionContext.Provider,{value:value},_react.default.createElement("div",{className:"accordion"},output))}const Accordion=exports.Accordion={Header:Header,Item:Item,Container:Container}}});ims.set("./content",{hash:4052548813,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.CollapsibleContent=CollapsibleContent;var _react=require("react");var _context=require("./context");function CollapsibleContent({className:className,children:children}){const{open:open,toggleable:toggleable}=(0,_context.useCollapsibleContext)();const cls=`collapsible__content${className?` ${className}`:""} ${open?" collapsible__content--opened":""}`;if(!toggleable)return null;return _react.default.createElement("section",{className:cls},children)}}});ims.set("./context",{hash:4042704803,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.useCollapsibleContext=exports.CollapsibleContext=void 0;var _react=require("react");const CollapsibleContext=exports.CollapsibleContext=_react.default.createContext(null);const useCollapsibleContext=()=>_react.default.useContext(CollapsibleContext);exports.useCollapsibleContext=useCollapsibleContext}});ims.set("./header",{hash:2088199145,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.CollapsibleHeader=CollapsibleHeader;var _react=require("react");var _context=require("./context");var _icons=require("pragmate-ui/icons");var _clsx=require("clsx");function CollapsibleHeader({children:children,className:className,toggleTitle:toggleTitle=true}){const{setOpen:setOpen,onToggle:onToggle,open:open,toggleable:toggleable}=(0,_context.useCollapsibleContext)();const onClick=async()=>{if(!onToggle){setOpen(!open);return}if(await onToggle(!open))setOpen(!open)};const cls=(0,_clsx.default)("collapsible__header",className,{open:open});const clsButton=(0,_clsx.default)("collapsible__button","collapsible__button--circle",{"collapsible__button--opened":open});return _react.default.createElement("header",{className:cls,onClick:onClick,"aria-expanded":open},_react.default.createElement("div",{className:"collapsible__header-content"},children),toggleable&&_react.default.createElement(_icons.Icon,{className:clsButton,icon:"left","aria-label":open?"Collapse section":"Expand section","aria-expanded":open}))}}});ims.set("./index",{hash:4233091753,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.CollapsibleContainer=CollapsibleContainer;var _react=require("react");var _context=require("./context");function CollapsibleContainer({children:children,onToggle:onToggle,open:open=false,className:className,toggleable:toggleable=true,data:data}){open;const[opened,setOpen]=_react.default.useState(open);const value={open:opened,setOpen:setOpen,onToggle:onToggle,toggleable:toggleable,...data};const cls=`collapsible__container ${className?` ${className}`:""} `;_react.default.useEffect(()=>{setOpen(open)},[open]);return _react.default.createElement(_context.CollapsibleContext.Provider,{value:value},_react.default.createElement("article",{className:cls},children))}}});ims.set("./types",{hash:1378472229,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true})}});__pkg.exports.descriptor=[{im:"./accordion",from:"Header",name:"Header"},{im:"./accordion",from:"Item",name:"Item"},{im:"./accordion",from:"Container",name:"Container"},{im:"./accordion",from:"Accordion",name:"Accordion"},{im:"./content",from:"CollapsibleContent",name:"CollapsibleContent"},{im:"./header",from:"CollapsibleHeader",name:"CollapsibleHeader"},{im:"./index",from:"CollapsibleContainer",name:"CollapsibleContainer"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="Header")&&_export("Header",Header=require?require("./accordion").Header:value);(require||prop==="Item")&&_export("Item",Item=require?require("./accordion").Item:value);(require||prop==="Container")&&_export("Container",Container=require?require("./accordion").Container:value);(require||prop==="Accordion")&&_export("Accordion",Accordion=require?require("./accordion").Accordion:value);(require||prop==="CollapsibleContent")&&_export("CollapsibleContent",CollapsibleContent=require?require("./content").CollapsibleContent:value);(require||prop==="CollapsibleHeader")&&_export("CollapsibleHeader",CollapsibleHeader=require?require("./header").CollapsibleHeader:value);(require||prop==="CollapsibleContainer")&&_export("CollapsibleContainer",CollapsibleContainer=require?require("./index").CollapsibleContainer:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvcHJhZ21hdGUtdWlAMS4wLjgvY29sbGFwc2libGUuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dDIiLCJkZXBlbmRlbmN5XzAiLCJkZXBlbmRlbmN5XzEiLCJkZXBlbmRlbmN5XzIiLCJkZXBlbmRlbmN5XzMiLCJkZXBlbmRlbmN5XzQiLCJkZXBlbmRlbmN5XzUiLCJiaW1wb3J0IiwiX19CdW5kbGUiLCJfX3BrZyIsImltcyIsIkhlYWRlciIsIkl0ZW0iLCJDb250YWluZXIiLCJBY2NvcmRpb24iLCJDb2xsYXBzaWJsZUNvbnRlbnQiLCJDb2xsYXBzaWJsZUhlYWRlciIsIkNvbGxhcHNpYmxlQ29udGFpbmVyIiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJfYmV5b25kSnNLZXJuZWwwMTE0U3R5bGVzIiwiX3ByYWdtYXRlVWkxMDhJY29ucyIsIl9yZWFjdDIiLCJfcHJhZ21hdGVVaTEwOEJhc2UiLCJfY2xzeDIiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwiYnJlcXVpcmUiLCJzdHlsZXMiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJ2YWx1ZSIsIkFjY29yZGlvbkNvbnRleHQiLCJ1c2VBY2NvcmRpb25Db250ZXh0IiwiX2ljb25zIiwiX3JlYWN0IiwiZGVmYXVsdCIsImNyZWF0ZUNvbnRleHQiLCJ1c2VDb250ZXh0IiwiZGlzYWJsZWQiLCJjaGlsZHJlbiIsImluZGV4Iiwic2V0T3BlbmVkIiwib3BlbmVkIiwib25DbGljayIsImV2ZW50Iiwic3RvcFByb3BhZ2F0aW9uIiwiY3VycmVudFRhcmdldCIsImNsYXNzTGlzdCIsInRvZ2dsZSIsImF0dHJzIiwiaWNvbiIsImNyZWF0ZUVsZW1lbnQiLCJjbGFzc05hbWUiLCJJY29uIiwidGl0bGUiLCJjbHMiLCJhY3RpdmUiLCJ1c2VTdGF0ZSIsIm9uQ2hhbmdlIiwidXNlRWZmZWN0Iiwib3V0cHV0IiwiQ2hpbGRyZW4iLCJtYXAiLCJjaGlsZCIsInB1c2giLCJjbG9uZUVsZW1lbnQiLCJrZXkiLCJQcm92aWRlciIsIl9jb250ZXh0Iiwib3BlbiIsInRvZ2dsZWFibGUiLCJ1c2VDb2xsYXBzaWJsZUNvbnRleHQiLCJDb2xsYXBzaWJsZUNvbnRleHQiLCJfY2xzeCIsInRvZ2dsZVRpdGxlIiwic2V0T3BlbiIsIm9uVG9nZ2xlIiwiYXN5bmMiLCJjbHNCdXR0b24iLCJkYXRhIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInRoaXMiLCJvbiIsImxpc3RlbmVyIiwib2ZmIiwiaW5pdGlhbGlzZSJdLCJzb3VyY2VzIjpbIjAiXSwibWFwcGluZ3MiOiJBQUFBQSxPQUFPQyxTQUFTLENBQUMsa0NBQW1DLGtDQUFtQywwQkFBMkIsZUFBZ0IseUJBQTBCLGNBQWUsU0FBVUMsUUFBU0MsV0FDNUwsYUFFQSxJQUFJQyxhQUFjQyxhQUFjQyxhQUFjQyxhQUFjQyxhQUFjQyxhQUFjQyxRQUFTQyxTQUFVQyxNQUFPQyxJQUFLQyxPQUFRQyxLQUFNQyxVQUFXQyxVQUFXQyxtQkFBb0JDLGtCQUFtQkMscUJBQXNCQyxhQUFjQyxJQUN0T3BCLFFBQVEsQ0FDTlksWUFBYSxFQUNiQyxVQUFXLEVBQ1hDLGVBQWdCLEVBQ2hCQyxlQUFnQixFQUNoQkMsd0JBQXlCLEVBQ3pCQyx1QkFBd0IsRUFDeEJDLDBCQUEyQixJQUU3QixNQUFPLENBQ0xHLFFBQVMsQ0FBQyxTQUFVQywyQkFDbEJwQixhQUFlb0IseUJBQ2pCLEVBQUcsU0FBVUMsMkJBQ1hwQixhQUFlb0IseUJBQ2pCLEVBQUcsU0FBVUMscUJBQ1hwQixhQUFlb0IsbUJBQ2pCLEVBQUcsU0FBVUMsU0FDWHBCLGFBQWVvQixPQUNqQixFQUFHLFNBQVVDLG9CQUNYcEIsYUFBZW9CLGtCQUNqQixFQUFHLFNBQVVDLFFBQ1hwQixhQUFlb0IsTUFDakIsR0FDQUMsUUFBUyxXQUNQcEIsUUFBVXFCLFlBQ1IsTUFBTUMsYUFBZSxJQUFJQyxJQUFJLENBQUMsQ0FBQyxvQkFBcUIsU0FBVSxDQUFDLG9CQUFxQixVQUFXLENBQUMsOEJBQStCLFNBQVUsQ0FBQyxzQkFBdUIsU0FBVSxDQUFDLHFCQUFzQixTQUFVLENBQUMsbUJBQW9CLFNBQVUsQ0FBQyxPQUFRLFNBQVUsQ0FBQyxnQkFBaUIsWUFBYSxDQUFDLG9CQUFxQixTQUFVLENBQUMsVUFBVyxVQUFXLENBQUMsU0FBVSxVQUFXLENBQUMsV0FBWSxTQUFVLENBQUMsZUFBZ0IsV0FBWSxDQUFDLG1CQUFvQixVQUFXLENBQUMsY0FBZSxTQUFVLENBQUMsZUFBZ0IsV0FDemUsT0FBT0MsV0FBV3hCLFFBQVF3QixXQUFXeEIsUUFBUXlCLFFBQVFKLFVBQVdDLGtCQUdoRUksT0FBUXpCLFVBQ05QLGNBQ0pRLE1BQVEsSUFBSUQsU0FBUyxDQUNuQjBCLE9BQVUsQ0FDUkMsV0FBYyxpQ0FFaEJDLEtBQVEsUUFDUHBDLFVBQVVxQyxLQUFLQyxLQUFLQyxVQUV2QjlCLE1BQU1vQixhQUFhVyxPQUFPLENBQUMsQ0FBQywyQkFBNEJ0QyxjQUFlLENBQUMsb0JBQXFCQyxjQUFlLENBQUMsUUFBU0MsY0FBZSxDQUFDLG1CQUFvQkMsY0FBZSxDQUFDLE9BQVFDLGdCQUNsTG1DLFNBQVMsNEJBQTRCQyxPQUFPNUMsU0FBUyxpQ0FDckRZLElBQU0sSUFBSW9CLElBSVZwQixJQUFJaUMsSUFBSSxjQUFlLENBQ3JCQyxLQUFNLFVBQ05DLFFBQVMsU0FBVUMsUUFBU0MsU0FDMUIsYUFFQUMsT0FBT0MsZUFBZUYsUUFBUyxhQUFjLENBQzNDRyxNQUFPLE9BRVRILFFBQVFJLGlCQUFtQkosUUFBUWpDLGVBQWlCLEVBQ3BEaUMsUUFBUWxDLFVBQVlBLFVBQ3BCa0MsUUFBUXBDLE9BQVNBLE9BQ2pCb0MsUUFBUW5DLEtBQU9BLEtBQ2ZtQyxRQUFRSyx5QkFBMkIsRUFDbkMsSUFBSUMsT0FBU1AsUUFBUSxxQkFDckIsSUFBSVEsT0FBU1IsUUFBUSxTQUNyQixNQUFNSyxpQkFBbUJKLFFBQVFJLGlCQUFtQkcsT0FBT0MsUUFBUUMsY0FBYyxDQUFDLEdBQ2xGLE1BQU1KLG9CQUFzQixJQUFNRSxPQUFPQyxRQUFRRSxXQUFXTixrQkFDNURKLFFBQVFLLG9CQUFzQkEsb0JBRTlCLFNBQVN6QyxRQUFPK0MsU0FDZEEsU0FBUUMsU0FDUkEsU0FBUUMsTUFDUkEsUUFFQSxNQUFNQyxVQUNKQSxVQUFTQyxPQUNUQSxRQUNFVixzQkFDSixNQUFNVyxRQUFVQyxRQUNkQSxNQUFNQyxrQkFDTkQsTUFBTUUsY0FBY0MsVUFBVUMsT0FBTyx1Q0FDckNQLFVBQVVELFFBQVVFLE9BQVMsTUFBUUYsUUFFdkMsTUFBTVMsTUFBUSxDQUFDLEVBQ2YsSUFBS1gsU0FBVVcsTUFBTU4sUUFBVUEsUUFDL0IsTUFBTU8sS0FBT1IsT0FBUyxhQUFlLGVBQ3JDLE9BQU9SLE9BQU9DLFFBQVFnQixjQUFjLFNBQVUsSUFDekNGLE1BQ0hHLFVBQVcsMEJBQ1ZiLFNBQVVMLE9BQU9DLFFBQVFnQixjQUFjLE1BQU8sQ0FDL0NDLFVBQVcsK0JBQ1ZsQixPQUFPQyxRQUFRZ0IsY0FBY2xCLE9BQU9vQixLQUFNLENBQzNDSCxLQUFNQSxLQUNORSxVQUFXLHdDQUVmLENBRUEsU0FBUzVELE1BQUs4QyxTQUNaQSxTQUFRQyxTQUNSQSxTQUFRZSxNQUNSQSxNQUFLZCxNQUNMQSxRQUVBLE1BQU1FLE9BQ0pBLFFBQ0VWLHNCQUNKLElBQUl1QixJQUFNLGlCQUFpQmYsUUFBVUUsT0FBUywwQkFBNEIsS0FDMUUsR0FBSUosU0FBVWlCLEtBQU8sNEJBQ3JCLE9BQU9yQixPQUFPQyxRQUFRZ0IsY0FBYyxVQUFXLENBQzdDQyxVQUFXRyxLQUNWRCxPQUFTcEIsT0FBT0MsUUFBUWdCLGNBQWM1RCxPQUFRLENBQy9DK0MsU0FBVUEsU0FDVkUsTUFBT0EsT0FDTmMsT0FBUXBCLE9BQU9DLFFBQVFnQixjQUFjLE1BQU8sQ0FDN0NDLFVBQVcsMkJBQ1ZiLFVBQ0wsQ0FFQSxTQUFTOUMsV0FBVThDLFNBQ2pCQSxTQUFRaUIsT0FDUkEsT0FBUyxJQUVULE1BQU9kLE9BQVFELFdBQWFQLE9BQU9DLFFBQVFzQixTQUFTRCxRQUNwRCxNQUFNRSxTQUFXZCxVQUNqQixNQUFNZCxNQUFRLENBQ1o0QixrQkFDQWhCLGNBQ0FELHFCQUVGUCxPQUFPQyxRQUFRd0IsVUFBVSxJQUFNbEIsVUFBVWUsUUFBUyxDQUFDQSxTQUNuRCxNQUFNSSxPQUFTLEdBQ2YxQixPQUFPQyxRQUFRMEIsU0FBU0MsSUFBSXZCLFNBQVUsQ0FBQ3dCLE1BQU92QixTQUM1QyxJQUFLdUIsTUFBTyxPQUFPLEtBQ25CSCxPQUFPSSxLQUFLOUIsT0FBT0MsUUFBUThCLGFBQWFGLE1BQU8sQ0FDN0N2QixZQUNBMEIsSUFBSyxTQUFTMUIsYUFHbEIsT0FBT04sT0FBT0MsUUFBUWdCLGNBQWNwQixpQkFBaUJvQyxTQUFVLENBQzdEckMsTUFBT0EsT0FDTkksT0FBT0MsUUFBUWdCLGNBQWMsTUFBTyxDQUNyQ0MsVUFBVyxhQUNWUSxRQUNMLENBRUEsTUFBTWxFLFVBQVlpQyxRQUFRakMsVUFBWSxDQUNwQ0gsY0FDQUMsVUFDQUMsb0JBRUosSUFPRkgsSUFBSWlDLElBQUksWUFBYSxDQUNuQkMsS0FBTSxXQUNOQyxRQUFTLFNBQVVDLFFBQVNDLFNBQzFCLGFBRUFDLE9BQU9DLGVBQWVGLFFBQVMsYUFBYyxDQUMzQ0csTUFBTyxPQUVUSCxRQUFRaEMsbUJBQXFCQSxtQkFDN0IsSUFBSXVDLE9BQVNSLFFBQVEsU0FDckIsSUFBSTBDLFNBQVcxQyxRQUFRLGFBRXZCLFNBQVMvQixvQkFBbUJ5RCxVQUMxQkEsVUFBU2IsU0FDVEEsV0FFQSxNQUFNOEIsS0FDSkEsS0FBSUMsV0FDSkEsYUFDRyxFQUFHRixTQUFTRyx5QkFDakIsTUFBTWhCLElBQU0sdUJBQXVCSCxVQUFZLElBQUlBLFlBQWMsTUFBTWlCLEtBQU8sZ0NBQWtDLEtBQ2hILElBQUtDLFdBQVksT0FBTyxLQUN4QixPQUFPcEMsT0FBT0MsUUFBUWdCLGNBQWMsVUFBVyxDQUM3Q0MsVUFBV0csS0FDVmhCLFNBQ0wsQ0FDRixJQU9GakQsSUFBSWlDLElBQUksWUFBYSxDQUNuQkMsS0FBTSxXQUNOQyxRQUFTLFNBQVVDLFFBQVNDLFNBQzFCLGFBRUFDLE9BQU9DLGVBQWVGLFFBQVMsYUFBYyxDQUMzQ0csTUFBTyxPQUVUSCxRQUFRNEMsc0JBQXdCNUMsUUFBUTZDLHdCQUEwQixFQUNsRSxJQUFJdEMsT0FBU1IsUUFBUSxTQUNyQixNQUFNOEMsbUJBQXFCN0MsUUFBUTZDLG1CQUFxQnRDLE9BQU9DLFFBQVFDLGNBQWMsTUFDckYsTUFBTW1DLHNCQUF3QixJQUFNckMsT0FBT0MsUUFBUUUsV0FBV21DLG9CQUM5RDdDLFFBQVE0QyxzQkFBd0JBLHFCQUNsQyxJQU9GakYsSUFBSWlDLElBQUksV0FBWSxDQUNsQkMsS0FBTSxXQUNOQyxRQUFTLFNBQVVDLFFBQVNDLFNBQzFCLGFBRUFDLE9BQU9DLGVBQWVGLFFBQVMsYUFBYyxDQUMzQ0csTUFBTyxPQUVUSCxRQUFRL0Isa0JBQW9CQSxrQkFDNUIsSUFBSXNDLE9BQVNSLFFBQVEsU0FDckIsSUFBSTBDLFNBQVcxQyxRQUFRLGFBQ3ZCLElBQUlPLE9BQVNQLFFBQVEscUJBQ3JCLElBQUkrQyxNQUFRL0MsUUFBUSxRQUVwQixTQUFTOUIsbUJBQWtCMkMsU0FDekJBLFNBQVFhLFVBQ1JBLFVBQVNzQixZQUNUQSxZQUFjLE9BRWQsTUFBTUMsUUFDSkEsUUFBT0MsU0FDUEEsU0FBUVAsS0FDUkEsS0FBSUMsV0FDSkEsYUFDRyxFQUFHRixTQUFTRyx5QkFDakIsTUFBTTVCLFFBQVVrQyxVQUNkLElBQUtELFNBQVUsQ0FDYkQsU0FBU04sTUFDVCxNQUNGLENBQ0EsU0FBVU8sVUFBVVAsTUFBT00sU0FBU04sT0FFdEMsTUFBTWQsS0FBTyxFQUFHa0IsTUFBTXRDLFNBQVMsc0JBQXVCaUIsVUFBVyxDQUMvRGlCLFlBRUYsTUFBTVMsV0FBYSxFQUFHTCxNQUFNdEMsU0FBUyxzQkFBdUIsOEJBQStCLENBQ3pGLDhCQUErQmtDLE9BRWpDLE9BQU9uQyxPQUFPQyxRQUFRZ0IsY0FBYyxTQUFVLENBQzVDQyxVQUFXRyxJQUNYWixRQUFTQSxRQUNULGdCQUFpQjBCLE1BQ2hCbkMsT0FBT0MsUUFBUWdCLGNBQWMsTUFBTyxDQUNyQ0MsVUFBVywrQkFDVmIsVUFBVytCLFlBQWNwQyxPQUFPQyxRQUFRZ0IsY0FBY2xCLE9BQU9vQixLQUFNLENBQ3BFRCxVQUFXMEIsVUFDWDVCLEtBQU0sT0FDTixhQUFjbUIsS0FBTyxtQkFBcUIsaUJBQzFDLGdCQUFpQkEsT0FFckIsQ0FDRixJQU9GL0UsSUFBSWlDLElBQUksVUFBVyxDQUNqQkMsS0FBTSxXQUNOQyxRQUFTLFNBQVVDLFFBQVNDLFNBQzFCLGFBRUFDLE9BQU9DLGVBQWVGLFFBQVMsYUFBYyxDQUMzQ0csTUFBTyxPQUVUSCxRQUFROUIscUJBQXVCQSxxQkFDL0IsSUFBSXFDLE9BQVNSLFFBQVEsU0FDckIsSUFBSTBDLFNBQVcxQyxRQUFRLGFBRXZCLFNBQVM3QixzQkFBcUIwQyxTQUM1QkEsU0FBUXFDLFNBQ1JBLFNBQVFQLEtBQ1JBLEtBQU8sTUFBS2pCLFVBQ1pBLFVBQVNrQixXQUNUQSxXQUFhLEtBQUlTLEtBQ2pCQSxPQUVBVixLQUNBLE1BQU8zQixPQUFRaUMsU0FBV3pDLE9BQU9DLFFBQVFzQixTQUFTWSxNQUNsRCxNQUFNdkMsTUFBUSxDQUNadUMsS0FBTTNCLE9BQ05pQyxnQkFDQUMsa0JBQ0FOLHlCQUNHUyxNQUVMLE1BQU14QixJQUFNLDBCQUEwQkgsVUFBWSxJQUFJQSxZQUFjLE1BQ3BFbEIsT0FBT0MsUUFBUXdCLFVBQVUsS0FDdkJnQixRQUFRTixPQUNQLENBQUNBLE9BQ0osT0FBT25DLE9BQU9DLFFBQVFnQixjQUFjaUIsU0FBU0ksbUJBQW1CTCxTQUFVLENBQ3hFckMsTUFBT0EsT0FDTkksT0FBT0MsUUFBUWdCLGNBQWMsVUFBVyxDQUN6Q0MsVUFBV0csS0FDVmhCLFVBQ0wsQ0FDRixJQU9GakQsSUFBSWlDLElBQUksVUFBVyxDQUNqQkMsS0FBTSxXQUNOQyxRQUFTLFNBQVVDLFFBQVNDLFNBQzFCLGFBRUFDLE9BQU9DLGVBQWVGLFFBQVMsYUFBYyxDQUMzQ0csTUFBTyxNQUVYLElBRUZ6QyxNQUFNc0MsUUFBUXFELFdBQWEsQ0FBQyxDQUMxQkMsR0FBTSxjQUNOQyxLQUFRLFNBQ1JDLEtBQVEsVUFDUCxDQUNERixHQUFNLGNBQ05DLEtBQVEsT0FDUkMsS0FBUSxRQUNQLENBQ0RGLEdBQU0sY0FDTkMsS0FBUSxZQUNSQyxLQUFRLGFBQ1AsQ0FDREYsR0FBTSxjQUNOQyxLQUFRLFlBQ1JDLEtBQVEsYUFDUCxDQUNERixHQUFNLFlBQ05DLEtBQVEscUJBQ1JDLEtBQVEsc0JBQ1AsQ0FDREYsR0FBTSxXQUNOQyxLQUFRLG9CQUNSQyxLQUFRLHFCQUNQLENBQ0RGLEdBQU0sVUFDTkMsS0FBUSx1QkFDUkMsS0FBUSx5QkFHVjlGLE1BQU1zQyxRQUFReUQsUUFBVSxVQUFVMUQsUUFDaENBLFFBQU8yRCxLQUNQQSxLQUFJdkQsTUFDSkEsU0FFQ0osU0FBVzJELE9BQVMsV0FBYTFHLFFBQVEsU0FBVVksT0FBU21DLFFBQVVBLFFBQVEsZUFBZW5DLE9BQVN1QyxRQUN0R0osU0FBVzJELE9BQVMsU0FBVzFHLFFBQVEsT0FBUWEsS0FBT2tDLFFBQVVBLFFBQVEsZUFBZWxDLEtBQU9zQyxRQUM5RkosU0FBVzJELE9BQVMsY0FBZ0IxRyxRQUFRLFlBQWFjLFVBQVlpQyxRQUFVQSxRQUFRLGVBQWVqQyxVQUFZcUMsUUFDbEhKLFNBQVcyRCxPQUFTLGNBQWdCMUcsUUFBUSxZQUFhZSxVQUFZZ0MsUUFBVUEsUUFBUSxlQUFlaEMsVUFBWW9DLFFBQ2xISixTQUFXMkQsT0FBUyx1QkFBeUIxRyxRQUFRLHFCQUFzQmdCLG1CQUFxQitCLFFBQVVBLFFBQVEsYUFBYS9CLG1CQUFxQm1DLFFBQ3BKSixTQUFXMkQsT0FBUyxzQkFBd0IxRyxRQUFRLG9CQUFxQmlCLGtCQUFvQjhCLFFBQVVBLFFBQVEsWUFBWTlCLGtCQUFvQmtDLFFBQy9JSixTQUFXMkQsT0FBUyx5QkFBMkIxRyxRQUFRLHVCQUF3QmtCLHFCQUF1QjZCLFFBQVVBLFFBQVEsV0FBVzdCLHFCQUF1QmlDLE1BQzdKLEVBQ0FuRCxRQUFRLGVBQWdCbUIsYUFBZVQsT0FDdkNWLFFBQVEsTUFBT29CLElBQU0sSUFBSSxXQUN2QnVGLEtBQUtDLEdBQUssQ0FBQzNDLE1BQU80QyxXQUFhbkcsTUFBTVUsSUFBSXdGLEdBQUczQyxNQUFPNEMsVUFDbkRGLEtBQUtHLElBQU0sQ0FBQzdDLE1BQU80QyxXQUFhbkcsTUFBTVUsSUFBSTBGLElBQUk3QyxNQUFPNEMsU0FDdkQsR0FDQW5HLE1BQU1xRyxXQUFXcEcsSUFDbkIsRUFFSiIsImlnbm9yZUxpc3QiOltdfQ==
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/styles", "pragmate-ui@1.0.8/icons", "react@18.3.1", "pragmate-ui@1.0.8/base", "clsx@2.1.1"], function (_export, _context2) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, Header, Item, Container, Accordion, CollapsibleContent, CollapsibleHeader, CollapsibleContainer, __beyond_pkg, hmr;
+  _export({
+    Header: void 0,
+    Item: void 0,
+    Container: void 0,
+    Accordion: void 0,
+    CollapsibleContent: void 0,
+    CollapsibleHeader: void 0,
+    CollapsibleContainer: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_1 = _beyondJsKernel0114Styles;
+    }, function (_pragmateUi108Icons) {
+      dependency_2 = _pragmateUi108Icons;
+    }, function (_react2) {
+      dependency_3 = _react2;
+    }, function (_pragmateUi108Base) {
+      dependency_4 = _pragmateUi108Base;
+    }, function (_clsx2) {
+      dependency_5 = _clsx2;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.0"], ["@beyond-js/widgets", "0.1.6"], ["@floating-ui/dom", "1.7.3"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.8"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.8/collapsible"
+        },
+        "type": "code"
+      }, _context2.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['pragmate-ui/icons', dependency_2], ['react', dependency_3], ['pragmate-ui/base', dependency_4], ['clsx', dependency_5]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@1.0.8/collapsible');
+      ims = new Map();
+      /***************************
+      INTERNAL MODULE: ./accordion
+      ***************************/
+      ims.set('./accordion', {
+        hash: 187534641,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.AccordionContext = exports.Accordion = void 0;
+          exports.Container = Container;
+          exports.Header = Header;
+          exports.Item = Item;
+          exports.useAccordionContext = void 0;
+          var _icons = require("pragmate-ui/icons");
+          var _react = require("react");
+          const AccordionContext = exports.AccordionContext = _react.default.createContext({});
+          const useAccordionContext = () => _react.default.useContext(AccordionContext);
+          exports.useAccordionContext = useAccordionContext;
+          /*bundle */
+          function Header({
+            disabled,
+            children,
+            index
+          }) {
+            const {
+              setOpened,
+              opened
+            } = useAccordionContext();
+            const onClick = event => {
+              event.stopPropagation();
+              event.currentTarget.classList.toggle('accordion-item__header-icon--opened');
+              setOpened(index === opened ? false : index);
+            };
+            const attrs = {};
+            if (!disabled) attrs.onClick = onClick;
+            const icon = opened ? 'expandMore' : 'chevronRight';
+            return _react.default.createElement("header", {
+              ...attrs,
+              className: "accordion-item__header"
+            }, children, _react.default.createElement("div", {
+              className: "accordion-item__header-icon"
+            }, _react.default.createElement(_icons.Icon, {
+              icon: icon,
+              className: "accordion-item__icon-button circle"
+            })));
+          }
+          /*bundle */
+          function Item({
+            disabled,
+            children,
+            title,
+            index
+          }) {
+            const {
+              opened
+            } = useAccordionContext();
+            let cls = `accordion-item${index === opened ? ` accordion-item--opened` : ``}`;
+            if (disabled) cls += ` accordion-item--disabled`;
+            return _react.default.createElement("article", {
+              className: cls
+            }, title && _react.default.createElement(Header, {
+              disabled: disabled,
+              index: index
+            }, title), _react.default.createElement("div", {
+              className: "accordion-item__content"
+            }, children));
+          }
+          /*bundle */
+          function Container({
+            children,
+            active = 0
+          }) {
+            const [opened, setOpened] = _react.default.useState(active);
+            const onChange = event => {};
+            const value = {
+              onChange,
+              opened,
+              setOpened
+            };
+            _react.default.useEffect(() => setOpened(active), [active]);
+            const output = [];
+            _react.default.Children.map(children, (child, index) => {
+              if (!child) return null;
+              output.push(_react.default.cloneElement(child, {
+                index,
+                key: `item$.${index}`
+              }));
+            });
+            return _react.default.createElement(AccordionContext.Provider, {
+              value: value
+            }, _react.default.createElement("div", {
+              className: "accordion"
+            }, output));
+          }
+          /*bundle */
+          const Accordion = exports.Accordion = {
+            Header,
+            Item,
+            Container
+          };
+        }
+      });
+
+      /*************************
+      INTERNAL MODULE: ./content
+      *************************/
+
+      ims.set('./content', {
+        hash: 4052548813,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.CollapsibleContent = CollapsibleContent;
+          var _react = require("react");
+          var _context = require("./context");
+          /*bundle */
+          function CollapsibleContent({
+            className,
+            children
+          }) {
+            const {
+              open,
+              toggleable
+            } = (0, _context.useCollapsibleContext)();
+            const cls = `collapsible__content${className ? ` ${className}` : ''} ${open ? ' collapsible__content--opened' : ''}`;
+            if (!toggleable) return null;
+            return _react.default.createElement("section", {
+              className: cls
+            }, children);
+          }
+        }
+      });
+
+      /*************************
+      INTERNAL MODULE: ./context
+      *************************/
+
+      ims.set('./context', {
+        hash: 4042704803,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useCollapsibleContext = exports.CollapsibleContext = void 0;
+          var _react = require("react");
+          const CollapsibleContext = exports.CollapsibleContext = _react.default.createContext(null);
+          const useCollapsibleContext = () => _react.default.useContext(CollapsibleContext);
+          exports.useCollapsibleContext = useCollapsibleContext;
+        }
+      });
+
+      /************************
+      INTERNAL MODULE: ./header
+      ************************/
+
+      ims.set('./header', {
+        hash: 2088199145,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.CollapsibleHeader = CollapsibleHeader;
+          var _react = require("react");
+          var _context = require("./context");
+          var _icons = require("pragmate-ui/icons");
+          var _clsx = require("clsx");
+          /*bundle */
+          function CollapsibleHeader({
+            children,
+            className,
+            toggleTitle = true
+          }) {
+            const {
+              setOpen,
+              onToggle,
+              open,
+              toggleable
+            } = (0, _context.useCollapsibleContext)();
+            const onClick = async () => {
+              if (!onToggle) {
+                setOpen(!open);
+                return;
+              }
+              if (await onToggle(!open)) setOpen(!open);
+            };
+            const cls = (0, _clsx.default)('collapsible__header', className, {
+              open
+            });
+            const clsButton = (0, _clsx.default)('collapsible__button', 'collapsible__button--circle', {
+              'collapsible__button--opened': open
+            });
+            return _react.default.createElement("header", {
+              className: cls,
+              onClick: onClick,
+              "aria-expanded": open
+            }, _react.default.createElement("div", {
+              className: "collapsible__header-content"
+            }, children), toggleable && _react.default.createElement(_icons.Icon, {
+              className: clsButton,
+              icon: "left",
+              "aria-label": open ? 'Collapse section' : 'Expand section',
+              "aria-expanded": open
+            }));
+          }
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 4233091753,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.CollapsibleContainer = CollapsibleContainer;
+          var _react = require("react");
+          var _context = require("./context");
+          /*bundle */
+          function CollapsibleContainer({
+            children,
+            onToggle,
+            open = false,
+            className,
+            toggleable = true,
+            data
+          }) {
+            open;
+            const [opened, setOpen] = _react.default.useState(open);
+            const value = {
+              open: opened,
+              setOpen,
+              onToggle,
+              toggleable,
+              ...data
+            };
+            const cls = `collapsible__container ${className ? ` ${className}` : ''} `;
+            _react.default.useEffect(() => {
+              setOpen(open);
+            }, [open]);
+            return _react.default.createElement(_context.CollapsibleContext.Provider, {
+              value: value
+            }, _react.default.createElement("article", {
+              className: cls
+            }, children));
+          }
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./types
+      ***********************/
+
+      ims.set('./types', {
+        hash: 1378472229,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./accordion",
+        "from": "Header",
+        "name": "Header"
+      }, {
+        "im": "./accordion",
+        "from": "Item",
+        "name": "Item"
+      }, {
+        "im": "./accordion",
+        "from": "Container",
+        "name": "Container"
+      }, {
+        "im": "./accordion",
+        "from": "Accordion",
+        "name": "Accordion"
+      }, {
+        "im": "./content",
+        "from": "CollapsibleContent",
+        "name": "CollapsibleContent"
+      }, {
+        "im": "./header",
+        "from": "CollapsibleHeader",
+        "name": "CollapsibleHeader"
+      }, {
+        "im": "./index",
+        "from": "CollapsibleContainer",
+        "name": "CollapsibleContainer"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Header') && _export("Header", Header = require ? require('./accordion').Header : value);
+        (require || prop === 'Item') && _export("Item", Item = require ? require('./accordion').Item : value);
+        (require || prop === 'Container') && _export("Container", Container = require ? require('./accordion').Container : value);
+        (require || prop === 'Accordion') && _export("Accordion", Accordion = require ? require('./accordion').Accordion : value);
+        (require || prop === 'CollapsibleContent') && _export("CollapsibleContent", CollapsibleContent = require ? require('./content').CollapsibleContent : value);
+        (require || prop === 'CollapsibleHeader') && _export("CollapsibleHeader", CollapsibleHeader = require ? require('./header').CollapsibleHeader : value);
+        (require || prop === 'CollapsibleContainer') && _export("CollapsibleContainer", CollapsibleContainer = require ? require('./index').CollapsibleContainer : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfaWNvbnMiLCJyZXF1aXJlIiwiX3JlYWN0IiwiQWNjb3JkaW9uQ29udGV4dCIsImV4cG9ydHMiLCJkZWZhdWx0IiwiY3JlYXRlQ29udGV4dCIsInVzZUFjY29yZGlvbkNvbnRleHQiLCJ1c2VDb250ZXh0IiwiSGVhZGVyIiwiZGlzYWJsZWQiLCJjaGlsZHJlbiIsImluZGV4Iiwic2V0T3BlbmVkIiwib3BlbmVkIiwib25DbGljayIsImV2ZW50Iiwic3RvcFByb3BhZ2F0aW9uIiwiY3VycmVudFRhcmdldCIsImNsYXNzTGlzdCIsInRvZ2dsZSIsImF0dHJzIiwiaWNvbiIsImNyZWF0ZUVsZW1lbnQiLCJjbGFzc05hbWUiLCJJY29uIiwiSXRlbSIsInRpdGxlIiwiY2xzIiwiQ29udGFpbmVyIiwiYWN0aXZlIiwidXNlU3RhdGUiLCJvbkNoYW5nZSIsInZhbHVlIiwidXNlRWZmZWN0Iiwib3V0cHV0IiwiQ2hpbGRyZW4iLCJtYXAiLCJjaGlsZCIsInB1c2giLCJjbG9uZUVsZW1lbnQiLCJrZXkiLCJQcm92aWRlciIsIkFjY29yZGlvbiIsIl9jb250ZXh0IiwiQ29sbGFwc2libGVDb250ZW50Iiwib3BlbiIsInRvZ2dsZWFibGUiLCJ1c2VDb2xsYXBzaWJsZUNvbnRleHQiLCJDb2xsYXBzaWJsZUNvbnRleHQiLCJfY2xzeCIsIkNvbGxhcHNpYmxlSGVhZGVyIiwidG9nZ2xlVGl0bGUiLCJzZXRPcGVuIiwib25Ub2dnbGUiLCJjbHNCdXR0b24iLCJDb2xsYXBzaWJsZUNvbnRhaW5lciIsImRhdGEiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSJdLCJzb3VyY2VzIjpbIi90cy9hY2NvcmRpb24udHN4IiwiL3RzL2NvbnRlbnQudHN4IiwiL3RzL2NvbnRleHQudHN4IiwiL3RzL2hlYWRlci50c3giLCIvdHMvaW5kZXgudHN4IiwiL3R5cGVzLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7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

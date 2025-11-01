@@ -1,2 +1,134 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@aimpact/ailearn-sdk@1.2.0/data/interfaces","@beyond-js/reactive@2.1.1/entities/item","@aimpact/ailearn-app@0.7.0/config","@beyond-js/http-suite@0.1.1/api","@aimpact/chat-sdk@1.5.5/session","@aimpact/ailearn-sdk@1.2.0/startup"],function(_export,_context){"use strict";var dependency_0,dependency_1,dependency_2,dependency_3,dependency_4,dependency_5,dependency_6,bimport,__Bundle,__pkg,ims,ActivityClosing,__beyond_pkg,hmr;_export("ActivityClosing",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_aimpactAilearnSdk120DataInterfaces){dependency_1=_aimpactAilearnSdk120DataInterfaces},function(_beyondJsReactive211EntitiesItem){dependency_2=_beyondJsReactive211EntitiesItem},function(_aimpactAilearnApp070Config){dependency_3=_aimpactAilearnApp070Config},function(_beyondJsHttpSuite011Api){dependency_4=_beyondJsHttpSuite011Api},function(_aimpactChatSdk155Session){dependency_5=_aimpactChatSdk155Session},function(_aimpactAilearnSdk120Startup){dependency_6=_aimpactAilearnSdk120Startup}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/media-manager","1.0.0"],["@beyond-js/http-suite","0.1.1"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-app",null],["@beyond-js/reactive","2.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/kernel","0.1.12"],["@beyond-js/local","0.1.3"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/widgets","1.1.2"],["@firebase/auth","1.10.0"],["@types/node","22.13.16"],["dexie","4.0.11"],["firebase","10.14.1"],["pragmate-ui","0.0.6"],["react-select","5.10.1"],["socket.io-client","4.8.1"],["zod","3.24.2"],["jest","29.7.0"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-sdk@1.2.0/data/models"},type:"ts"},_context.meta.url).package();__pkg.dependencies.update([["@aimpact/ailearn-sdk/data/interfaces",dependency_1],["@beyond-js/reactive/entities/item",dependency_2],["@aimpact/ailearn-app/config",dependency_3],["@beyond-js/http-suite/api",dependency_4],["@aimpact/chat-sdk/session",dependency_5],["@aimpact/ailearn-sdk/startup",dependency_6]]);ims=new Map;ims.set("./activity",{hash:1997506834,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.ActivityClosing=void 0;var _item=require("@beyond-js/reactive/entities/item");var _activity=require("./providers/activity");class ActivityClosing extends _item.Item{constructor({id:id,...specs}={}){super({id:id,...specs,entity:"ActivityClosing",properties:["participants"],provider:_activity.ActivityClosingProvider})}}exports.ActivityClosing=ActivityClosing}});ims.set("./providers/activity",{hash:2028672775,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.ActivityClosingProvider=void 0;var _api=require("@beyond-js/http-suite/api");var _session=require("@aimpact/chat-sdk/session");var _startup=require("@aimpact/ailearn-sdk/startup");class ActivityClosingProvider{#api;constructor(){this.#api=new _api.Api(_startup.sdkConfig.apis.ailearn)}async load({id:id,activityId:activityId}){const token=await _session.sessionWrapper.user.token;this.#api.bearer(token);const{status:status,data:data}=await this.#api.get(`/assignments/${id}/activity/${activityId}/closing`);if(!status)throw new Error("error loading activity closing");return data}}exports.ActivityClosingProvider=ActivityClosingProvider}});__pkg.exports.descriptor=[{im:"./activity",from:"ActivityClosing",name:"ActivityClosing"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="ActivityClosing")&&_export("ActivityClosing",ActivityClosing=require?require("./activity").ActivityClosing:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1zZGtAMS4yLjAvZGF0YS9tb2RlbHMuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImRlcGVuZGVuY3lfMSIsImRlcGVuZGVuY3lfMiIsImRlcGVuZGVuY3lfMyIsImRlcGVuZGVuY3lfNCIsImRlcGVuZGVuY3lfNSIsImRlcGVuZGVuY3lfNiIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwiQWN0aXZpdHlDbG9zaW5nIiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJfYWltcGFjdEFpbGVhcm5TZGsxMjBEYXRhSW50ZXJmYWNlcyIsIl9iZXlvbmRKc1JlYWN0aXZlMjExRW50aXRpZXNJdGVtIiwiX2FpbXBhY3RBaWxlYXJuQXBwMDcwQ29uZmlnIiwiX2JleW9uZEpzSHR0cFN1aXRlMDExQXBpIiwiX2FpbXBhY3RDaGF0U2RrMTU1U2Vzc2lvbiIsIl9haW1wYWN0QWlsZWFyblNkazEyMFN0YXJ0dXAiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiLCJfaXRlbSIsIl9hY3Rpdml0eSIsIkl0ZW0iLCJjb25zdHJ1Y3RvciIsImlkIiwic3BlY3MiLCJzdXBlciIsImVudGl0eSIsInByb3BlcnRpZXMiLCJwcm92aWRlciIsIkFjdGl2aXR5Q2xvc2luZ1Byb3ZpZGVyIiwiX2FwaSIsIl9zZXNzaW9uIiwiX3N0YXJ0dXAiLCJhcGkiLCJ0aGlzIiwiQXBpIiwic2RrQ29uZmlnIiwiYXBpcyIsImFpbGVhcm4iLCJsb2FkIiwiYWN0aXZpdHlJZCIsInRva2VuIiwic2Vzc2lvbldyYXBwZXIiLCJ1c2VyIiwiYmVhcmVyIiwic3RhdHVzIiwiZGF0YSIsImdldCIsIkVycm9yIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLGtDQUFtQyw2Q0FBOEMsMENBQTJDLG9DQUFxQyxrQ0FBbUMsa0NBQW1DLHNDQUF1QyxTQUFVQyxRQUFTQyxVQUNoVCxhQUVBLElBQUlDLGFBQWNDLGFBQWNDLGFBQWNDLGFBQWNDLGFBQWNDLGFBQWNDLGFBQWNDLFFBQVNDLFNBQVVDLE1BQU9DLElBQUtDLGdCQUFpQkMsYUFBY0MsSUFDcEtmLFFBQVEsdUJBQXdCLEdBQ2hDLE1BQU8sQ0FDTGdCLFFBQVMsQ0FBQyxTQUFVQywyQkFDbEJmLGFBQWVlLHlCQUNqQixFQUFHLFNBQVVDLHFDQUNYZixhQUFlZSxtQ0FDakIsRUFBRyxTQUFVQyxrQ0FDWGYsYUFBZWUsZ0NBQ2pCLEVBQUcsU0FBVUMsNkJBQ1hmLGFBQWVlLDJCQUNqQixFQUFHLFNBQVVDLDBCQUNYZixhQUFlZSx3QkFDakIsRUFBRyxTQUFVQywyQkFDWGYsYUFBZWUseUJBQ2pCLEVBQUcsU0FBVUMsOEJBQ1hmLGFBQWVlLDRCQUNqQixHQUNBQyxRQUFTLFdBQ1BmLFFBQVVnQixZQUNSLE1BQU1DLGFBQWUsSUFBSUMsSUFBSSxDQUFDLENBQUMseUJBQTBCLFNBQVUsQ0FBQyx3QkFBeUIsU0FBVSxDQUFDLG9CQUFxQixTQUFVLENBQUMsdUJBQXdCLFNBQVUsQ0FBQyxvQkFBcUIsTUFBTyxDQUFDLHNCQUF1QixTQUFVLENBQUMscUJBQXNCLFVBQVcsQ0FBQyxvQkFBcUIsVUFBVyxDQUFDLG1CQUFvQixTQUFV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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@aimpact/ailearn-sdk@1.2.0/data/interfaces", "@beyond-js/reactive@2.1.2/entities/item", "@aimpact/ailearn-app@0.7.0/config", "@beyond-js/http-suite@0.1.1/api", "@aimpact/chat-sdk@1.5.5/session", "@aimpact/ailearn-sdk@1.2.0/startup"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, ActivityClosing, __beyond_pkg, hmr;
+  _export("ActivityClosing", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_aimpactAilearnSdk120DataInterfaces) {
+      dependency_1 = _aimpactAilearnSdk120DataInterfaces;
+    }, function (_beyondJsReactive212EntitiesItem) {
+      dependency_2 = _beyondJsReactive212EntitiesItem;
+    }, function (_aimpactAilearnApp070Config) {
+      dependency_3 = _aimpactAilearnApp070Config;
+    }, function (_beyondJsHttpSuite011Api) {
+      dependency_4 = _beyondJsHttpSuite011Api;
+    }, function (_aimpactChatSdk155Session) {
+      dependency_5 = _aimpactChatSdk155Session;
+    }, function (_aimpactAilearnSdk120Startup) {
+      dependency_6 = _aimpactAilearnSdk120Startup;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/media-manager", "1.0.0"], ["@beyond-js/http-suite", "0.1.1"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-app", null], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/widgets", "1.1.2"], ["@firebase/auth", "1.10.0"], ["@types/node", "22.13.16"], ["dexie", "4.0.11"], ["firebase", "10.14.1"], ["pragmate-ui", "0.0.6"], ["react-select", "5.10.1"], ["socket.io-client", "4.8.1"], ["zod", "3.24.2"], ["jest", "29.7.0"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-sdk@1.2.0/data/models"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@aimpact/ailearn-sdk/data/interfaces', dependency_1], ['@beyond-js/reactive/entities/item', dependency_2], ['@aimpact/ailearn-app/config', dependency_3], ['@beyond-js/http-suite/api', dependency_4], ['@aimpact/chat-sdk/session', dependency_5], ['@aimpact/ailearn-sdk/startup', dependency_6]]);
+      ims = new Map();
+      /**************************
+      INTERNAL MODULE: ./activity
+      **************************/
+      ims.set('./activity', {
+        hash: 1997506834,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ActivityClosing = void 0;
+          var _item = require("@beyond-js/reactive/entities/item");
+          var _activity = require("./providers/activity");
+          /*bundle*/
+          class ActivityClosing extends _item.Item {
+            constructor({
+              id,
+              ...specs
+            } = {}) {
+              super({
+                id,
+                ...specs,
+                entity: 'ActivityClosing',
+                properties: ['participants'],
+                provider: _activity.ActivityClosingProvider
+              });
+            }
+          }
+          exports.ActivityClosing = ActivityClosing;
+        }
+      });
+
+      /************************************
+      INTERNAL MODULE: ./providers/activity
+      ************************************/
+
+      ims.set('./providers/activity', {
+        hash: 2028672775,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ActivityClosingProvider = void 0;
+          var _api = require("@beyond-js/http-suite/api");
+          var _session = require("@aimpact/chat-sdk/session");
+          var _startup = require("@aimpact/ailearn-sdk/startup");
+          // const TOKEN = config.params.apis.token;
+
+          class ActivityClosingProvider {
+            #api;
+            constructor() {
+              this.#api = new _api.Api(_startup.sdkConfig.apis.ailearn);
+            }
+            async load({
+              id,
+              activityId
+            }) {
+              const token = await _session.sessionWrapper.user.token;
+              this.#api.bearer(token);
+              const {
+                status,
+                data
+              } = await this.#api.get(`/assignments/${id}/activity/${activityId}/closing`);
+              if (!status) throw new Error('error loading activity closing');
+              return data;
+            }
+          }
+          exports.ActivityClosingProvider = ActivityClosingProvider;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./activity",
+        "from": "ActivityClosing",
+        "name": "ActivityClosing"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'ActivityClosing') && _export("ActivityClosing", ActivityClosing = require ? require('./activity').ActivityClosing : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfaXRlbSIsInJlcXVpcmUiLCJfYWN0aXZpdHkiLCJBY3Rpdml0eUNsb3NpbmciLCJJdGVtIiwiY29uc3RydWN0b3IiLCJpZCIsInNwZWNzIiwiZW50aXR5IiwicHJvcGVydGllcyIsInByb3ZpZGVyIiwiQWN0aXZpdHlDbG9zaW5nUHJvdmlkZXIiLCJleHBvcnRzIiwiX2FwaSIsIl9zZXNzaW9uIiwiX3N0YXJ0dXAiLCJhcGkiLCJBcGkiLCJzZGtDb25maWciLCJhcGlzIiwiYWlsZWFybiIsImxvYWQiLCJhY3Rpdml0eUlkIiwidG9rZW4iLCJzZXNzaW9uV3JhcHBlciIsInVzZXIiLCJiZWFyZXIiLCJzdGF0dXMiLCJkYXRhIiwiZ2V0IiwiRXJyb3IiXSwic291cmNlcyI6WyIvYWN0aXZpdHkudHMiLCIvcHJvdmlkZXJzL2FjdGl2aXR5LnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQ0EsSUFBQUEsS0FBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsU0FBQSxHQUFBRCxPQUFBO1VBRU87VUFBVSxNQUFPRSxlQUFnQixTQUFRSCxLQUFBLENBQUFJLElBQXFEO1lBR3BHQyxZQUFZO2NBQUVDLEVBQUU7Y0FBRSxHQUFHQztZQUFLLElBQXNCLEVBQUU7Y0FDakQsS0FBSyxDQUFDO2dCQUNMRCxFQUFFO2dCQUNGLEdBQUdDLEtBQUs7Z0JBQ1JDLE1BQU0sRUFBRSxpQkFBaUI7Z0JBQ3pCQyxVQUFVLEVBQUUsQ0FBQyxjQUFjLENBQUM7Z0JBQzVCQyxRQUFRLEVBQUVSLFNBQUEsQ0FBQVM7ZUFDVixDQUFDO1lBQ0g7O1VBQ0FDLE9BQUEsQ0FBQVQsZUFBQSxHQUFBQSxlQUFBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ2ZELElBQUFVLElBQUEsR0FBQVosT0FBQTtVQUNBLElBQUFhLFFBQUEsR0FBQWIsT0FBQTtVQUVBLElBQUFjLFFBQUEsR0FBQWQsT0FBQTtVQURBOztVQVFNLE1BQU9VLHVCQUF1QjtZQUNuQyxDQUFBSyxHQUFJO1lBRUpYLFlBQUE7Y0FDQyxJQUFJLENBQUMsQ0FBQVcsR0FBSSxHQUFHLElBQUlILElBQUEsQ0FBQUksR0FBRyxDQUFDRixRQUFBLENBQUFHLFNBQVMsQ0FBQ0MsSUFBSSxDQUFDQyxPQUFPLENBQUM7WUFDNUM7WUFFQSxNQUFNQyxJQUFJQSxDQUFDO2NBQUVmLEVBQUU7Y0FBRWdCO1lBQVUsQ0FBc0M7Y0FDaEUsTUFBTUMsS0FBSyxHQUFHLE1BQU1ULFFBQUEsQ0FBQVUsY0FBYyxDQUFDQyxJQUFJLENBQUNGLEtBQUs7Y0FDN0MsSUFBSSxDQUFDLENBQUFQLEdBQUksQ0FBQ1UsTUFBTSxDQUFDSCxLQUFLLENBQUM7Y0FDdkIsTUFBTTtnQkFBRUksTUFBTTtnQkFBRUM7Y0FBSSxDQUFFLEdBQUcsTUFBTSxJQUFJLENBQUMsQ0FBQVosR0FBSSxDQUFDYSxHQUFHLENBQUMsZ0JBQWdCdkIsRUFBRSxhQUFhZ0IsVUFBVSxVQUFVLENBQUM7Y0FDakcsSUFBSSxDQUFDSyxNQUFNLEVBQUUsTUFBTSxJQUFJRyxLQUFLLENBQUMsZ0NBQWdDLENBQUM7Y0FFOUQsT0FBT0YsSUFBSTtZQUNaOztVQUNBaEIsT0FBQSxDQUFBRCx1QkFBQSxHQUFBQSx1QkFBQSIsImlnbm9yZUxpc3QiOltdfQ==

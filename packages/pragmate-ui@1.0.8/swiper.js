@@ -1,2 +1,515 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","react@18.3.1","pragmate-ui@1.0.8/icons","swiper@12.0.2","swiper@12.0.2/modules","@beyond-js/reactive@2.1.1/model","@beyond-js/kernel@0.1.14/styles"],function(_export,_context2){"use strict";var dependency_0,dependency_1,dependency_2,dependency_3,dependency_4,dependency_5,dependency_6,bimport,__Bundle,__pkg,ims,SwiperSlider,__beyond_pkg,hmr;_export("SwiperSlider",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_react2){dependency_1=_react2},function(_pragmateUi108Icons){dependency_2=_pragmateUi108Icons},function(_swiper){dependency_3=_swiper},function(_swiper1202Modules){dependency_4=_swiper1202Modules},function(_beyondJsReactive211Model){dependency_5=_beyondJsReactive211Model},function(_beyondJsKernel0114Styles){dependency_6=_beyondJsKernel0114Styles}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.12"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/reactive","2.1.0"],["@beyond-js/widgets","0.1.6"],["@floating-ui/dom","1.7.3"],["clsx","2.1.1"],["framer-motion","11.11.11"],["perfect-scrollbar","1.5.6"],["prismjs","1.29.0"],["swiper","10.3.1"],["tippy.js","6.3.7"],["@types/react","18.3.12"],["@types/react-dom","18.3.1"],["pragmate-ui","1.0.8"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"pragmate-ui@1.0.8/swiper"},type:"code"},_context2.meta.url).package();__pkg.dependencies.update([["react",dependency_1],["pragmate-ui/icons",dependency_2],["swiper",dependency_3],["swiper/modules",dependency_4],["@beyond-js/reactive/model",dependency_5],["@beyond-js/kernel/styles",dependency_6]]);brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@1.0.8/swiper");ims=new Map;ims.set("./components/footer",{hash:4152585320,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.SwiperFooter=SwiperFooter;var _react=require("react");function SwiperFooter(props){const{footer:footer,controller:controller,refs:refs}=props;if(!footer)return null;return _react.default.createElement(_react.default.Fragment,null,!controller?.swiper.isEnd&&_react.default.createElement("button",{className:"swiper-button-prev",onClick:props.functionNext},"SKIP"),_react.default.createElement("div",{ref:refs.pagination,className:"swiper-pagination"}),_react.default.createElement("button",{className:"swiper-button-next ",onClick:controller?.next},"Next"))}}});ims.set("./components/navigation",{hash:1445369557,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.SwiperNavigation=SwiperNavigation;var _react=require("react");var _icons=require("pragmate-ui/icons");var _context=require("../context");function SwiperNavigation(){const{controller:controller,navigation:navigation,refs:{prev:prev,next:next}}=(0,_context.useSwiperContext)();if(!navigation)return null;return _react.default.createElement(_react.default.Fragment,null,_react.default.createElement(_icons.IconButton,{ref:prev,icon:"left",variant:"primary",className:"swiper__navigation-btn swiper-button-prev",onClick:controller?.prevSlide}),_react.default.createElement(_icons.IconButton,{icon:"right",ref:next,variant:"primary",onClick:controller?.nextSlide,className:"swiper__navigation-btn  swiper-button-next"}))}}});ims.set("./components/pagination",{hash:1487697459,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Pagination=Pagination;var _react=require("react");var _context=require("../context");function Pagination(){const{pagination:pagination,refs:refs}=(0,_context.useSwiperContext)();if(!pagination)return null;return _react.default.createElement("div",{ref:refs.pagination,className:"swiper-pagination"})}}});ims.set("./context",{hash:522084440,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.useSwiperContext=exports.SwiperContext=void 0;var _react=require("react");const SwiperContext=exports.SwiperContext=_react.default.createContext({});const useSwiperContext=()=>_react.default.useContext(SwiperContext);exports.useSwiperContext=useSwiperContext}});ims.set("./index",{hash:4094575603,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.SwiperSlider=SwiperSlider;var _react=require("react");var _footer=require("./components/footer");var _navigation=require("./components/navigation");var _slide=require("./slide");var _useSwiper=require("./use-swiper");var _context=require("./context");var _pagination=require("./components/pagination");function SwiperSlider(props){const{pagination:pagination,footer:footer,navigation:navigation,children:children}=props;const{refs:refs,state:state}=(0,_useSwiper.useSwiperSlider)(props);const{controller:controller}=state;const contextValue={footer:footer,pagination:pagination,controller:controller,navigation:navigation,refs:refs};const cls=`swiper-container swiper ${props.className?`${props.className} pui-swiper-slider`:"pui-swiper-slider"};`;return _react.default.createElement(_context.SwiperContext.Provider,{value:contextValue},_react.default.createElement("div",{ref:refs.container,className:cls},_react.default.createElement(_slide.SlideItems,{items:children}),_react.default.createElement(_pagination.Pagination,null),_react.default.createElement(_footer.SwiperFooter,null),_react.default.createElement(_navigation.SwiperNavigation,null)))}}});ims.set("./interfaces/options",{hash:1670442219,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});class Swiper{constructor(container,options){}slideNext(speed,runCallbacks){}slidePrev(speed,runCallbacks){}slideTo(index,speed,runCallbacks){}update(){}destroy(deleteInstance,cleanStyles){}}}});ims.set("./interfaces/swiper-props",{hash:3138111793,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true})}});ims.set("./slide/index",{hash:721733334,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.SlideItems=SlideItems;var _react=require("react");var _slide=require("./slide");function SlideItems({items:items}){const slides=items.map((slide,index)=>_react.default.createElement(_slide.Slide,{key:index},slide));return _react.default.createElement("div",{className:"swiper-wrapper"},slides)}}});ims.set("./slide/slide",{hash:2855517027,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Slide=Slide;var _react=require("react");function Slide({children:children}){return _react.default.createElement("div",{className:"swiper-slide"},children)}}});ims.set("./state/controller",{hash:3431124586,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Controller=void 0;var Swiper=require("swiper");var _modules=require("swiper/modules");var _model=require("@beyond-js/reactive/model");const SwiperCasted=Swiper.Swiper;class Controller extends _model.ReactiveModel{#swiper;get swiper(){return this.#swiper}#onEnd;#props;setSwiper=(element,props,ref)=>{this.#props=props;let specs={spaceBetween:props.spaceBetween??10,modules:[_modules.Navigation,_modules.Pagination],...props};Object.keys(specs).forEach(key=>{if(["children"].includes(key))delete specs[key]});if(!Swiper){console.warn("Swiper keeps without been loaded");return}if(props.pagination||props.footer){specs.pagination={el:ref.pagination.current,clickable:true,type:props.typePagination??"bullets",dynamicBullets:props.dynamicBullets??false}}if(props.navigation){specs.navigation={nextEl:ref.next.current,prevEl:ref.prev.current}}this.#swiper=new SwiperCasted(element,specs);if(props.activeSlide)this.#swiper.slideTo(parseInt(props.activeSlide));const nextSlide=()=>{if(this.#swiper)this.#swiper.slideNext()};const prevSlide=()=>{if(this.#swiper)this.#swiper.slidePrev()};const slideTo=index=>{if(this.#swiper)this.#swiper.slideTo(parseInt(index))};if(props.nextSlide&&typeof props.nextSlide==="function")props.nextSlide(nextSlide);if(props.prevSlide&&typeof props.prevSlide==="function")props.prevSlide(prevSlide);if(props.slideTo&&typeof props.slideTo==="function")props.slideTo(slideTo);this.#swiper.on("slideChange",()=>{if(this.#swiper?.isEnd){this.#onEnd=true;this.triggerEvent()}else{this.#onEnd=false;this.triggerEvent()}})};nextSlide=()=>{if(!this.#swiper?.isEnd){this.#swiper?.slideNext(500,false);return}if(!this.#onEnd)return;if(this.#props.onNext)this.#props.onNext();else this.#swiper?.slideNext(500,false)};prevSlide=()=>{if(!this.#swiper?.isEnd){this.#swiper?.slidePrev(500,false);return}if(this.#props.onPrev)this.#props.onPrev();else this.#swiper?.slidePrev(500,false)};next=()=>{if(!this.#swiper?.isEnd){this.#swiper?.slideNext(500,false);return}if(!this.#onEnd)return;this.#props.functionNext()}}exports.Controller=Controller}});ims.set("./state/interface",{hash:3704574833,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true})}});ims.set("./use-swiper",{hash:2195260495,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.useSwiperSlider=void 0;var _react=require("react");var _controller=require("./state/controller");const useSwiperSlider=props=>{const refs={next:_react.default.useRef(),container:_react.default.useRef(),pagination:_react.default.useRef(),prev:_react.default.useRef()};const{slideTo:slideTo}=props;const{container:container,prev:prev}=refs;const[state,setState]=_react.default.useState({});_react.default.useEffect(()=>{const controller=new _controller.Controller;const onChange=()=>setState({...state,ready:true,swiper:controller.swiper,controller:controller,lastIndex:controller.lastIndex});controller.on("change",onChange);if(!controller.destroyed)controller.setSwiper(container.current,props,refs);onChange();return()=>controller.off("change",onChange)},[]);_react.default.useEffect(()=>{if(!state.swiper||!slideTo)return;state.swiper.slideTo(slideTo)},[slideTo]);return{refs:refs,state:state,prev:prev,container:container}};exports.useSwiperSlider=useSwiperSlider}});__pkg.exports.descriptor=[{im:"./index",from:"SwiperSlider",name:"SwiperSlider"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="SwiperSlider")&&_export("SwiperSlider",SwiperSlider=require?require("./index").SwiperSlider:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvcHJhZ21hdGUtdWlAMS4wLjgvc3dpcGVyLmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQyIiwiZGVwZW5kZW5jeV8wIiwiZGVwZW5kZW5jeV8xIiwiZGVwZW5kZW5jeV8yIiwiZGVwZW5kZW5jeV8zIiwiZGVwZW5kZW5jeV80IiwiZGVwZW5kZW5jeV81IiwiZGVwZW5kZW5jeV82IiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJTd2lwZXJTbGlkZXIiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsIl9yZWFjdDIiLCJfcHJhZ21hdGVVaTEwOEljb25zIiwiX3N3aXBlciIsIl9zd2lwZXIxMjAyTW9kdWxlcyIsIl9iZXlvbmRKc1JlYWN0aXZlMjExTW9kZWwiLCJfYmV5b25kSnNLZXJuZWwwMTE0U3R5bGVzIiwiZXhlY3V0ZSIsInNwZWNpZmllciIsImRlcGVuZGVuY2llcyIsIk1hcCIsImdsb2JhbFRoaXMiLCJyZXNvbHZlIiwiQnVuZGxlIiwibW9kdWxlIiwidnNwZWNpZmllciIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsImJyZXF1aXJlIiwic3R5bGVzIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiLCJTd2lwZXJGb290ZXIiLCJfcmVhY3QiLCJwcm9wcyIsImZvb3RlciIsImNvbnRyb2xsZXIiLCJyZWZzIiwiZGVmYXVsdCIsImNyZWF0ZUVsZW1lbnQiLCJGcmFnbWVudCIsInN3aXBlciIsImlzRW5kIiwiY2xhc3NOYW1lIiwib25DbGljayIsImZ1bmN0aW9uTmV4dCIsInJlZiIsInBhZ2luYXRpb24iLCJuZXh0IiwiU3dpcGVyTmF2aWdhdGlvbiIsIl9pY29ucyIsIl9jb250ZXh0IiwibmF2aWdhdGlvbiIsInByZXYiLCJ1c2VTd2lwZXJDb250ZXh0IiwiSWNvbkJ1dHRvbiIsImljb24iLCJ2YXJpYW50IiwicHJldlNsaWRlIiwibmV4dFNsaWRlIiwiUGFnaW5hdGlvbiIsIlN3aXBlckNvbnRleHQiLCJjcmVhdGVDb250ZXh0IiwidXNlQ29udGV4dCIsIl9mb290ZXIiLCJfbmF2aWdhdGlvbiIsIl9zbGlkZSIsIl91c2VTd2lwZXIiLCJfcGFnaW5hdGlvbiIsImNoaWxkcmVuIiwic3RhdGUiLCJ1c2VTd2lwZXJTbGlkZXIiLCJjb250ZXh0VmFsdWUiLCJjbHMiLCJQcm92aWRlciIsImNvbnRhaW5lciIsIlNsaWRlSXRlbXMiLCJpdGVtcyIsIlN3aXBlciIsImNvbnN0cnVjdG9yIiwib3B0aW9ucyIsInNsaWRlTmV4dCIsInNwZWVkIiwicnVuQ2FsbGJhY2tzIiwic2xpZGVQcmV2Iiwic2xpZGVUbyIsImluZGV4IiwiZGVzdHJveSIsImRlbGV0ZUluc3RhbmNlIiwiY2xlYW5TdHlsZXMiLCJzbGlkZXMiLCJtYXAiLCJzbGlkZSIsIlNsaWRlIiwia2V5IiwiQ29udHJvbGxlciIsIl9tb2R1bGVzIiwiX21vZGVsIiwiU3dpcGVyQ2FzdGVkIiwiUmVhY3RpdmVNb2RlbCIsInRoaXMiLCJvbkVuZCIsInNldFN3aXBlciIsImVsZW1lbnQiLCJzcGVjcyIsInNwYWNlQmV0d2VlbiIsIm1vZHVsZXMiLCJOYXZpZ2F0aW9uIiwia2V5cyIsImZvckVhY2giLCJpbmNsdWRlcyIsImNvbnNvbGUiLCJ3YXJuIiwiZWwiLCJjdXJyZW50IiwiY2xpY2thYmxlIiwidHlwZVBhZ2luYXRpb24iLCJkeW5hbWljQnVsbGV0cyIsIm5leHRFbCIsInByZXZFbCIsImFjdGl2ZVNsaWRlIiwicGFyc2VJbnQiLCJvbiIsInRyaWdnZXJFdmVudCIsIm9uTmV4dCIsIm9uUHJldiIsIl9jb250cm9sbGVyIiwidXNlUmVmIiwic2V0U3RhdGUiLCJ1c2VTdGF0ZSIsInVzZUVmZmVjdCIsIm9uQ2hhbmdlIiwicmVhZHkiLCJsYXN0SW5kZXgiLCJkZXN0cm95ZWQiLCJvZmYiLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwibmFtZSIsInByb2Nlc3MiLCJwcm9wIiwiZXZlbnQiLCJsaXN0ZW5lciIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLGtDQUFtQyxlQUFnQiwwQkFBMkIsZ0JBQWlCLHdCQUF5QixrQ0FBbUMsbUNBQW9DLFNBQVVDLFFBQVNDLFdBQ2pPLGFBRUEsSUFBSUMsYUFBY0MsYUFBY0MsYUFBY0MsYUFBY0MsYUFBY0MsYUFBY0MsYUFBY0MsUUFBU0MsU0FBVUMsTUFBT0MsSUFBS0MsYUFBY0MsYUFBY0MsSUFDaktmLFFBQVEsb0JBQXFCLEdBQzdCLE1BQU8sQ0FDTGdCLFFBQVMsQ0FBQyxTQUFVQywyQkFDbEJmLGFBQWVlLHlCQUNqQixFQUFHLFNBQVVDLFNBQ1hmLGFBQWVlLE9BQ2pCLEVBQUcsU0FBVUMscUJBQ1hmLGFBQWVlLG1CQUNqQixFQUFHLFNBQVVDLFNBQ1hmLGFBQWVlLE9BQ2pCLEVBQUcsU0FBVUMsb0JBQ1hmLGFBQWVlLGtCQUNqQixFQUFHLFNBQVVDLDJCQUNYZixhQUFlZSx5QkFDakIsRUFBRyxTQUFVQywyQkFDWGYsYUFBZWUseUJBQ2pCLEdBQ0FDLFFBQVMsV0FDUGYsUUFBVWdCLFlBQ1IsTUFBTUMsYUFBZSxJQUFJQyxJQUFJLENBQUMsQ0FBQyxvQkFBcUIsU0FBVSxDQUFDLG9CQUFxQixVQUFXLENBQUMsOEJBQStCLFNBQVUsQ0FBQyxzQkFBdUIsU0FBVSxDQUFDLHFCQUFzQixTQUFVLENBQUMsbUJBQW9CLFNBQVUsQ0FBQyxPQUFRLFNBQVUsQ0FBQyxnQkFBaUIsWUFBYSxDQUFDLG9CQUFxQixTQUFVLENBQUMsVUFBVyxVQUFXLENBQUMsU0FBVSxVQUFXLENBQUMsV0FBWSxTQUFVLENBQUMsZUFBZ0IsV0FBWSxDQUFDLG1CQUFvQixVQUFXLENBQUMsY0FBZSxTQUFVLENBQUMsZUFBZ0IsV0FDemUsT0FBT0MsV0FBV25CLFFBQVFt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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "react@18.3.1", "pragmate-ui@1.0.8/icons", "swiper@12.0.2", "swiper@12.0.2/modules", "@beyond-js/reactive@2.1.2/model", "@beyond-js/kernel@0.1.14/styles"], function (_export, _context2) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, bimport, __Bundle, __pkg, ims, SwiperSlider, __beyond_pkg, hmr;
+  _export("SwiperSlider", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_react2) {
+      dependency_1 = _react2;
+    }, function (_pragmateUi108Icons) {
+      dependency_2 = _pragmateUi108Icons;
+    }, function (_swiper) {
+      dependency_3 = _swiper;
+    }, function (_swiper1202Modules) {
+      dependency_4 = _swiper1202Modules;
+    }, function (_beyondJsReactive212Model) {
+      dependency_5 = _beyondJsReactive212Model;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_6 = _beyondJsKernel0114Styles;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.0"], ["@beyond-js/widgets", "0.1.6"], ["@floating-ui/dom", "1.7.3"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.8"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.8/swiper"
+        },
+        "type": "code"
+      }, _context2.meta.url).package();
+      ;
+      __pkg.dependencies.update([['react', dependency_1], ['pragmate-ui/icons', dependency_2], ['swiper', dependency_3], ['swiper/modules', dependency_4], ['@beyond-js/reactive/model', dependency_5], ['@beyond-js/kernel/styles', dependency_6]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@1.0.8/swiper');
+      ims = new Map();
+      /***********************************
+      INTERNAL MODULE: ./components/footer
+      ***********************************/
+      ims.set('./components/footer', {
+        hash: 4152585320,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.SwiperFooter = SwiperFooter;
+          var _react = require("react");
+          function SwiperFooter(props) {
+            const {
+              footer,
+              controller,
+              refs
+            } = props;
+            if (!footer) return null;
+            return _react.default.createElement(_react.default.Fragment, null, !controller?.swiper.isEnd && _react.default.createElement("button", {
+              className: "swiper-button-prev",
+              onClick: props.functionNext
+            }, "SKIP"), _react.default.createElement("div", {
+              ref: refs.pagination,
+              className: "swiper-pagination"
+            }), _react.default.createElement("button", {
+              className: "swiper-button-next ",
+              onClick: controller?.next
+            }, "Next"));
+          }
+        }
+      });
+
+      /***************************************
+      INTERNAL MODULE: ./components/navigation
+      ***************************************/
+
+      ims.set('./components/navigation', {
+        hash: 1445369557,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.SwiperNavigation = SwiperNavigation;
+          var _react = require("react");
+          var _icons = require("pragmate-ui/icons");
+          var _context = require("../context");
+          function SwiperNavigation() {
+            const {
+              controller,
+              navigation,
+              refs: {
+                prev,
+                next
+              }
+            } = (0, _context.useSwiperContext)();
+            if (!navigation) return null;
+            return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_icons.IconButton, {
+              ref: prev,
+              icon: 'left',
+              variant: 'primary',
+              className: 'swiper__navigation-btn swiper-button-prev',
+              onClick: controller?.prevSlide
+            }), _react.default.createElement(_icons.IconButton, {
+              icon: 'right',
+              ref: next,
+              variant: 'primary',
+              onClick: controller?.nextSlide,
+              className: 'swiper__navigation-btn  swiper-button-next'
+            }));
+          }
+        }
+      });
+
+      /***************************************
+      INTERNAL MODULE: ./components/pagination
+      ***************************************/
+
+      ims.set('./components/pagination', {
+        hash: 1487697459,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Pagination = Pagination;
+          var _react = require("react");
+          var _context = require("../context");
+          function Pagination() {
+            const {
+              pagination,
+              refs
+            } = (0, _context.useSwiperContext)();
+            if (!pagination) return null;
+            return _react.default.createElement("div", {
+              ref: refs.pagination,
+              className: "swiper-pagination"
+            });
+          }
+        }
+      });
+
+      /*************************
+      INTERNAL MODULE: ./context
+      *************************/
+
+      ims.set('./context', {
+        hash: 522084440,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useSwiperContext = exports.SwiperContext = void 0;
+          var _react = require("react");
+          const SwiperContext = exports.SwiperContext = _react.default.createContext({});
+          const useSwiperContext = () => _react.default.useContext(SwiperContext);
+          exports.useSwiperContext = useSwiperContext;
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 4094575603,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.SwiperSlider = SwiperSlider;
+          var _react = require("react");
+          var _footer = require("./components/footer");
+          var _navigation = require("./components/navigation");
+          var _slide = require("./slide");
+          var _useSwiper = require("./use-swiper");
+          var _context = require("./context");
+          var _pagination = require("./components/pagination");
+          /*bundle*/
+          function SwiperSlider(props) {
+            const {
+              pagination,
+              footer,
+              navigation,
+              children
+            } = props;
+            const {
+              refs,
+              state
+            } = (0, _useSwiper.useSwiperSlider)(props);
+            const {
+              controller
+            } = state;
+            const contextValue = {
+              footer,
+              pagination,
+              controller,
+              navigation,
+              refs
+            };
+            const cls = `swiper-container swiper ${props.className ? `${props.className} pui-swiper-slider` : 'pui-swiper-slider'};`;
+            return _react.default.createElement(_context.SwiperContext.Provider, {
+              value: contextValue
+            }, _react.default.createElement("div", {
+              ref: refs.container,
+              className: cls
+            }, _react.default.createElement(_slide.SlideItems, {
+              items: children
+            }), _react.default.createElement(_pagination.Pagination, null), _react.default.createElement(_footer.SwiperFooter, null), _react.default.createElement(_navigation.SwiperNavigation, null)));
+          }
+        }
+      });
+
+      /************************************
+      INTERNAL MODULE: ./interfaces/options
+      ************************************/
+
+      ims.set('./interfaces/options', {
+        hash: 1670442219,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          class Swiper {
+            constructor(container, options) {
+              // Swiper initialization code
+            }
+            // Swiper methods
+            slideNext(speed, runCallbacks) {}
+            slidePrev(speed, runCallbacks) {}
+            slideTo(index, speed, runCallbacks) {}
+            update() {}
+            destroy(deleteInstance, cleanStyles) {}
+          }
+        }
+      });
+
+      /*****************************************
+      INTERNAL MODULE: ./interfaces/swiper-props
+      *****************************************/
+
+      ims.set('./interfaces/swiper-props', {
+        hash: 3138111793,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./slide/index
+      *****************************/
+
+      ims.set('./slide/index', {
+        hash: 721733334,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.SlideItems = SlideItems;
+          var _react = require("react");
+          var _slide = require("./slide");
+          function SlideItems({
+            items
+          }) {
+            const slides = items.map((slide, index) => _react.default.createElement(_slide.Slide, {
+              key: index
+            }, slide));
+            return _react.default.createElement("div", {
+              className: "swiper-wrapper"
+            }, slides);
+          }
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./slide/slide
+      *****************************/
+
+      ims.set('./slide/slide', {
+        hash: 2855517027,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Slide = Slide;
+          var _react = require("react");
+          function Slide({
+            children
+          }) {
+            return _react.default.createElement("div", {
+              className: "swiper-slide"
+            }, children);
+          }
+        }
+      });
+
+      /**********************************
+      INTERNAL MODULE: ./state/controller
+      **********************************/
+
+      ims.set('./state/controller', {
+        hash: 3431124586,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Controller = void 0;
+          var Swiper = require("swiper");
+          var _modules = require("swiper/modules");
+          var _model = require("@beyond-js/reactive/model");
+          const SwiperCasted = Swiper.Swiper;
+          class Controller extends _model.ReactiveModel {
+            #swiper;
+            get swiper() {
+              return this.#swiper;
+            }
+            #onEnd;
+            #props;
+            setSwiper = (element, props, ref) => {
+              this.#props = props;
+              let specs = {
+                // slidesPerView: props.slidesPerView ?? 3,
+                spaceBetween: props.spaceBetween ?? 10,
+                modules: [_modules.Navigation, _modules.Pagination],
+                ...props
+              };
+              Object.keys(specs).forEach(key => {
+                if (['children'].includes(key)) delete specs[key];
+              });
+              if (!Swiper) {
+                console.warn('Swiper keeps without been loaded');
+                return;
+              }
+              if (props.pagination || props.footer) {
+                specs.pagination = {
+                  el: ref.pagination.current,
+                  clickable: true,
+                  type: props.typePagination ?? 'bullets',
+                  dynamicBullets: props.dynamicBullets ?? false
+                };
+              }
+              if (props.navigation) {
+                specs.navigation = {
+                  nextEl: ref.next.current,
+                  prevEl: ref.prev.current
+                };
+              }
+              this.#swiper = new SwiperCasted(element, specs);
+              if (props.activeSlide) this.#swiper.slideTo(parseInt(props.activeSlide));
+              const nextSlide = () => {
+                if (this.#swiper) this.#swiper.slideNext();
+              };
+              const prevSlide = () => {
+                if (this.#swiper) this.#swiper.slidePrev();
+              };
+              const slideTo = index => {
+                if (this.#swiper) this.#swiper.slideTo(parseInt(index));
+              };
+              if (props.nextSlide && typeof props.nextSlide === 'function') props.nextSlide(nextSlide);
+              if (props.prevSlide && typeof props.prevSlide === 'function') props.prevSlide(prevSlide);
+              if (props.slideTo && typeof props.slideTo === 'function') props.slideTo(slideTo);
+              this.#swiper.on('slideChange', () => {
+                if (this.#swiper?.isEnd) {
+                  this.#onEnd = true;
+                  this.triggerEvent();
+                } else {
+                  this.#onEnd = false;
+                  this.triggerEvent();
+                }
+              });
+            };
+            nextSlide = () => {
+              if (!this.#swiper?.isEnd) {
+                this.#swiper?.slideNext(500, false);
+                return;
+              }
+              if (!this.#onEnd) return;
+              if (this.#props.onNext) this.#props.onNext();else this.#swiper?.slideNext(500, false);
+            };
+            prevSlide = () => {
+              if (!this.#swiper?.isEnd) {
+                this.#swiper?.slidePrev(500, false);
+                return;
+              }
+              if (this.#props.onPrev) this.#props.onPrev();else this.#swiper?.slidePrev(500, false);
+            };
+            next = () => {
+              if (!this.#swiper?.isEnd) {
+                this.#swiper?.slideNext(500, false);
+                return;
+              }
+              if (!this.#onEnd) return;
+              this.#props.functionNext();
+            };
+          }
+          exports.Controller = Controller;
+        }
+      });
+
+      /*********************************
+      INTERNAL MODULE: ./state/interface
+      *********************************/
+
+      ims.set('./state/interface', {
+        hash: 3704574833,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+
+      /****************************
+      INTERNAL MODULE: ./use-swiper
+      ****************************/
+
+      ims.set('./use-swiper', {
+        hash: 2195260495,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useSwiperSlider = void 0;
+          var _react = require("react");
+          var _controller = require("./state/controller");
+          const useSwiperSlider = props => {
+            /* const { props } = useSwiperContext(); */
+            const refs = {
+              next: _react.default.useRef(),
+              container: _react.default.useRef(),
+              pagination: _react.default.useRef(),
+              prev: _react.default.useRef()
+            };
+            const {
+              slideTo
+            } = props;
+            const {
+              container,
+              prev
+            } = refs;
+            const [state, setState] = _react.default.useState({});
+            _react.default.useEffect(() => {
+              const controller = new _controller.Controller();
+              const onChange = () => setState({
+                ...state,
+                ready: true,
+                swiper: controller.swiper,
+                controller,
+                lastIndex: controller.lastIndex
+              });
+              controller.on('change', onChange);
+              if (!controller.destroyed) controller.setSwiper(container.current, props, refs);
+              onChange();
+              return () => controller.off('change', onChange);
+            }, []);
+            _react.default.useEffect(() => {
+              if (!state.swiper || !slideTo) return;
+              state.swiper.slideTo(slideTo);
+            }, [slideTo]);
+            return {
+              refs,
+              state,
+              prev,
+              container
+            };
+          };
+          exports.useSwiperSlider = useSwiperSlider;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "SwiperSlider",
+        "name": "SwiperSlider"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'SwiperSlider') && _export("SwiperSlider", SwiperSlider = require ? require('./index').SwiperSlider : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiU3dpcGVyRm9vdGVyIiwicHJvcHMiLCJmb290ZXIiLCJjb250cm9sbGVyIiwicmVmcyIsImRlZmF1bHQiLCJjcmVhdGVFbGVtZW50IiwiRnJhZ21lbnQiLCJzd2lwZXIiLCJpc0VuZCIsImNsYXNzTmFtZSIsIm9uQ2xpY2siLCJmdW5jdGlvbk5leHQiLCJyZWYiLCJwYWdpbmF0aW9uIiwibmV4dCIsIl9pY29ucyIsIl9jb250ZXh0IiwiU3dpcGVyTmF2aWdhdGlvbiIsIm5hdmlnYXRpb24iLCJwcmV2IiwidXNlU3dpcGVyQ29udGV4dCIsIkljb25CdXR0b24iLCJpY29uIiwidmFyaWFudCIsInByZXZTbGlkZSIsIm5leHRTbGlkZSIsIlBhZ2luYXRpb24iLCJTd2lwZXJDb250ZXh0IiwiZXhwb3J0cyIsImNyZWF0ZUNvbnRleHQiLCJ1c2VDb250ZXh0IiwiX2Zvb3RlciIsIl9uYXZpZ2F0aW9uIiwiX3NsaWRlIiwiX3VzZVN3aXBlciIsIl9wYWdpbmF0aW9uIiwiU3dpcGVyU2xpZGVyIiwiY2hpbGRyZW4iLCJzdGF0ZSIsInVzZVN3aXBlclNsaWRlciIsImNvbnRleHRWYWx1ZSIsImNscyIsIlByb3ZpZGVyIiwidmFsdWUiLCJjb250YWluZXIiLCJTbGlkZUl0ZW1zIiwiaXRlbXMiLCJTd2lwZXIiLCJjb25zdHJ1Y3RvciIsIm9wdGlvbnMiLCJzbGlkZU5leHQiLCJzcGVlZCIsInJ1bkNhbGxiYWNrcyIsInNsaWRlUHJldiIsInNsaWRlVG8iLCJpbmRleCIsInVwZGF0ZSIsImRlc3Ryb3kiLCJkZWxldGVJbnN0YW5jZSIsImNsZWFuU3R5bGVzIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJzbGlkZXMiLCJtYXAiLCJzbGlkZSIsIlNsaWRlIiwia2V5IiwiX21vZHVsZXMiLCJfbW9kZWwiLCJTd2lwZXJDYXN0ZWQiLCJDb250cm9sbGVyIiwiUmVhY3RpdmVNb2RlbCIsIm9uRW5kIiwic2V0U3dpcGVyIiwiZWxlbWVudCIsInNwZWNzIiwic3BhY2VCZXR3ZWVuIiwibW9kdWxlcyIsIk5hdmlnYXRpb24iLCJrZXlzIiwiZm9yRWFjaCIsImluY2x1ZGVzIiwiY29uc29sZSIsIndhcm4iLCJlbCIsImN1cnJlbnQiLCJjbGlja2FibGUiLCJ0eXBlIiwidHlwZVBhZ2luYXRpb24iLCJkeW5hbWljQnVsbGV0cyIsIm5leHRFbCIsInByZXZFbCIsImFjdGl2ZVNsaWRlIiwicGFyc2VJbnQiLCJvbiIsInRyaWdnZXJFdmVudCIsIm9uTmV4dCIsIm9uUHJldiIsIl9jb250cm9sbGVyIiwidXNlUmVmIiwic2V0U3RhdGUiLCJ1c2VTdGF0ZSIsInVzZUVmZmVjdCIsIm9uQ2hhbmdlIiwicmVhZHkiLCJsYXN0SW5kZXgiLCJkZXN0cm95ZWQiLCJvZmYiXSwic291cmNlcyI6WyIvdHMvY29tcG9uZW50cy9mb290ZXIudHN4IiwiL3RzL2NvbXBvbmVudHMvbmF2aWdhdGlvbi50c3giLCIvdHMvY29tcG9uZW50cy9wYWdpbmF0aW9uLnRzeCIsIi90cy9jb250ZXh0LnRzeCIsIi90cy9pbmRleC50c3giLCIvdHMvaW50ZXJmYWNlcy9vcHRpb25zLnRzIiwiL3N3aXBlci1wcm9wcy50cyIsIi90cy9zbGlkZS9pbmRleC50c3giLCIvdHMvc2xpZGUvc2xpZGUudHN4IiwiL3RzL3N0YXRlL2NvbnRyb2xsZXIudHMiLCIvaW50ZXJmYWNlLnRzIiwiL3RzL3VzZS1zd2lwZXIudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO1VBQ00sU0FBVUMsWUFBWUEsQ0FBQ0MsS0FBSztZQUNqQyxNQUFNO2NBQUNDLE1BQU07Y0FBRUMsVUFBVTtjQUFFQztZQUFJLENBQUMsR0FBR0gsS0FBSztZQUN4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

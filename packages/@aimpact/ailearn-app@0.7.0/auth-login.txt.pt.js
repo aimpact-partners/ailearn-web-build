@@ -1,2 +1,116 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,txt,__beyond_pkg,hmr;_export("txt",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/auth-login",multibundle:true},type:"txt"},_context.meta.url).package("pt");__pkg.dependencies.update([]);ims=new Map;ims.set("./txt",{hash:3688690197,creator:function(require,exports){exports.txt={version:"Vers\xe3o",footer:{intro:"Ao criar uma conta, voc\xea est\xe1 aceitando os ",terms:"termos e condi\xe7\xf5es",connector:"do servi\xe7o e a",privacy:"pol\xedtica de privacidade"},tutorials:{webinar:{title:"Webinar online",description:"Todas as quintas-feiras \xe0s 17h30"},teachers:"Tutorial para professores",students:"Tutorial para alunos"},presentation:{title:"Potencializamos o ensino e o processo de aprendizagem com Intelig\xeancia Artificial",contents:"<strong>Crie conte\xfados curriculares</strong> din\xe2micos e monitore o processo de aprendizagem dos alunos.",experience:"<strong>Personalize a experi\xeancia educacional</strong>, adaptando-se ao ritmo e estilo de aprendizagem dos alunos.",tutorials:{webinar:{title:"Webinar online",description:"Visite nosso canal no YouTube"},teachers:"Tutorial para professores",students:"Tutorial para alunos"},socialMedia:"Siga-nos nas redes sociais"},errors:{unknown:"N\xe3o foi poss\xedvel completar a a\xe7\xe3o. Por favor, tente novamente mais tarde."},title:"Transformando a educa\xe7\xe3o com o poder da IA",description:"Nossa plataforma oferece tanto um assistente de IA para professores quanto um tutor de IA para alunos. Nosso objetivo \xe9 fornecer suporte abrangente para educadores e alunos.",loginTitle:"Entrar",subtitle:"Comece seu per\xedodo de teste",emailLabel:"E-mail",passwordLabel:"Senha",termsAndPrivacy:"Ao criar uma conta, voc\xea concorda com",terms:"Termos de Servi\xe7o",connector:"e",policy:"Pol\xedtica de Privacidade",signInButton:"Entrar",closeButton:"Fechar",socialLoginTitle:"Ou entre com login social",googleSignInButton:"Entrar com Google",emailSignInButton:"Continuar com e-mail",facebookSignInButton:"Entrar com Facebook",forgotPasswordLink:"Esqueceu sua senha?",createAccountLink:"Criar uma nova conta?",theme:"Modo tema",passwordConditions:{title:"A senha deve conter",minimumCharacters:"Pelo menos 8 caracteres",minimumLetters:"Pelo menos uma letra",minimumSpecial:"Pelo menos um n\xfamero ou caractere especial"}}}});__pkg.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="txt")&&_export("txt",txt=require?require("./txt").txt:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvYXV0aC1sb2dpbi50eHQucHQuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwidHh0IiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwibXVsdGlidW5kbGUiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwidmVyc2lvbiIsImZvb3RlciIsImludHJvIiwidGVybXMiLCJjb25uZWN0b3IiLCJwcml2YWN5IiwidHV0b3JpYWxzIiwid2ViaW5hciIsInRpdGxlIiwiZGVzY3JpcHRpb24iLCJ0ZWFjaGVycyIsInN0dWRlbnRzIiwicHJlc2VudGF0aW9uIiwiY29udGVudHMiLCJleHBlcmllbmNlIiwic29jaWFsTWVkaWEiLCJlcnJvcnMiLCJ1bmtub3duIiwibG9naW5UaXRsZSIsInN1YnRpdGxlIiwiZW1haWxMYWJlbCIsInBhc3N3b3JkTGFiZWwiLCJ0ZXJtc0FuZFByaXZhY3kiLCJwb2xpY3kiLCJzaWduSW5CdXR0b24iLCJjbG9zZUJ1dHRvbiIsInNvY2lhbExvZ2luVGl0bGUiLCJnb29nbGVTaWduSW5CdXR0b24iLCJlbWFpbFNpZ25JbkJ1dHRvbiIsImZhY2Vib29rU2lnbkluQnV0dG9uIiwiZm9yZ290UGFzc3dvcmRMaW5rIiwiY3JlYXRlQWNjb3VudExpbmsiLCJ0aGVtZSIsInBhc3N3b3JkQ29uZGl0aW9ucyIsIm1pbmltdW1DaGFyYWN0ZXJzIiwibWluaW11bUxldHRlcnMiLCJtaW5pbXVtU3BlY2lhbCIsImRlc2NyaXB0b3IiLCJpbSIsImZyb20iLCJuYW1lIiwicHJvY2VzcyIsInByb3AiLCJ2YWx1ZSIsInRoaXMiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxtQ0FBb0MsU0FBVUMsUUFBU0MsVUFDdEUsYUFFQSxJQUFJQyxhQUFjQyxRQUFTQyxTQUFVQyxNQUFPQyxJQUFLQyxJQUFLQyxhQUFjQyxJQUNwRVQsUUFBUSxXQUFZLEdBQ3BCLE1BQU8sQ0FDTFUsUUFBUyxDQUFDLFNBQVVDLDJCQUNsQlQsYUFBZVMseUJBQ2pCLEdBQ0FDLFFBQVMsV0FDUFQsUUFBVVUsWUFDUixNQUFNQyxhQUFlLElBQUlDLElBQUksQ0FBQyxDQUFDLHNCQUF1QixTQUFVLENBQUMsdUJBQXdCLFNBQVUsQ0FBQyx1QkFBd0IsU0FBVSxDQUFDLG9CQUFxQixTQUFVLENBQUMseUJBQTBCLFNBQVUsQ0FBQyxjQUFlLFNBQVUsQ0FBQyxzQkFBdUIsU0FBVSxDQUFDLHdCQUF5QixTQUFVLENBQUMscUJBQXNCLFVBQVcsQ0FBQyxvQkFBcUIsU0FBVSxDQUFDLG9CQUFxQixVQUFXLENBQUMsNkJBQThCLFNBQVUsQ0FBQyw4QkFBK0IsU0FBVSxDQUFDLHFCQUFzQixTQUFVLENBQUMsZUFBZ0IsV0FBWSxDQUFDLGlCQUFrQixXQUFZLENBQUMsa0JBQW1CLFdBQVksQ0FBQyxpQkFBa0IsVUFBVyxDQUFDLHdCQUF5QixVQUFXLENBQUMsNEJBQTZCLFVBQVcsQ0FBQyw4QkFBK0IsVUFBVyxDQUFDLHdCQUF5QixTQUFVLENBQUMseUJBQTBCLFNBQVUsQ0FBQyw0QkFBNkIsU0FBVSxDQUFDLCtCQUFnQyxTQUFVLENBQUMsK0JBQWdDLFNBQVUsQ0FBQyxvQ0FBcUMsU0FBVSxDQUFDLDBCQUEyQixTQUFVLENBQUMsOEJBQStCLFNBQVUs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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/auth-login",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('pt');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 3688690197,
+        creator: function (require, exports) {
+          exports.txt = {
+            "version": "Versão",
+            "footer": {
+              "intro": "Ao criar uma conta, você está aceitando os ",
+              "terms": "termos e condições",
+              "connector": "do serviço e a",
+              "privacy": "política de privacidade"
+            },
+            "tutorials": {
+              "webinar": {
+                "title": "Webinar online",
+                "description": "Todas as quintas-feiras às 17h30"
+              },
+              "teachers": "Tutorial para professores",
+              "students": "Tutorial para alunos"
+            },
+            "presentation": {
+              "title": "Potencializamos o ensino e o processo de aprendizagem com Inteligência Artificial",
+              "contents": "<strong>Crie conteúdos curriculares</strong> dinâmicos e monitore o processo de aprendizagem dos alunos.",
+              "experience": "<strong>Personalize a experiência educacional</strong>, adaptando-se ao ritmo e estilo de aprendizagem dos alunos.",
+              "tutorials": {
+                "webinar": {
+                  "title": "Webinar online",
+                  "description": "Visite nosso canal no YouTube"
+                },
+                "teachers": "Tutorial para professores",
+                "students": "Tutorial para alunos"
+              },
+              "socialMedia": "Siga-nos nas redes sociais"
+            },
+            "errors": {
+              "unknown": "Não foi possível completar a ação. Por favor, tente novamente mais tarde."
+            },
+            "title": "Transformando a educação com o poder da IA",
+            "description": "Nossa plataforma oferece tanto um assistente de IA para professores quanto um tutor de IA para alunos. Nosso objetivo é fornecer suporte abrangente para educadores e alunos.",
+            "loginTitle": "Entrar",
+            "subtitle": "Comece seu período de teste",
+            "emailLabel": "E-mail",
+            "passwordLabel": "Senha",
+            "termsAndPrivacy": "Ao criar uma conta, você concorda com",
+            "terms": "Termos de Serviço",
+            "connector": "e",
+            "policy": "Política de Privacidade",
+            "signInButton": "Entrar",
+            "closeButton": "Fechar",
+            "socialLoginTitle": "Ou entre com login social",
+            "googleSignInButton": "Entrar com Google",
+            "emailSignInButton": "Continuar com e-mail",
+            "facebookSignInButton": "Entrar com Facebook",
+            "forgotPasswordLink": "Esqueceu sua senha?",
+            "createAccountLink": "Criar uma nova conta?",
+            "theme": "Modo tema",
+            "passwordConditions": {
+              "title": "A senha deve conter",
+              "minimumCharacters": "Pelo menos 8 caracteres",
+              "minimumLetters": "Pelo menos uma letra",
+              "minimumSpecial": "Pelo menos um número ou caractere especial"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

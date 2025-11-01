@@ -1,2 +1,210 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,txt,__beyond_pkg,hmr;_export("txt",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/i18n",multibundle:true},type:"txt"},_context.meta.url).package("de");__pkg.dependencies.update([]);ims=new Map;ims.set("./txt",{hash:3476911768,creator:function(require,exports){exports.txt={actions:{management:"Verwaltung",add:"Hinzuf\xfcgen",analyse:"Verbesserungen vorschlagen",activities:"Aktivit\xe4ten generieren",activity:"Aktivit\xe4ten",applySuggestions:"Vorschl\xe4ge anwenden",back:"Zur\xfcck",cancel:"Abbrechen",continue:"Weiter",cover:"Cover generieren",clean:"Reinigen",create:"Erstellen",confirm:"Best\xe4tigen",delete:"L\xf6schen",edit:"Bearbeiten",generate:"Mit KI generieren",next:"Weiter",publish:"Ver\xf6ffentlichen",removeSuggestions:"Vorschl\xe4ge entfernen",refine:"Verfeinern",save:"Speichern",update:"Dokument hochladen",upload:"Bild hochladen",recordAgain:"Erneut aufnehmen",archive:"Archivieren",restore:"Wiederherstellen",close:"Schlie\xdfen",talktoAI:"Mit KI sprechen",select:"Ausw\xe4hlen",filters:"Filter",assign:"Zuweisen",assignToClassroom:"Dem Klassenraum zuweisen",use:"Verwenden",refresh:"Aktualisieren",copy:"Kopieren",watch:"Ansehen",testActivity:"Aktivit\xe4t testen",invite:"Einladen",dashboard:"Dashboard",search:"Suchen",watchActivity:"Aktivit\xe4t ansehen",share:"Teilen",clone:"Klonen",send:"Senden",inspiration:"Mit KI generieren",manual:"Manuelles Design",order:"Reihenfolge bearbeiten",remove:"Entfernen",approve:"Genehmigen",reject:"Ablehnen",join:"Beitreten",register:"Registrieren",imported:"Importiert",link:"Link",gTooltip:"Klassenzimmer von Google importiert",import:"Importieren"},activities:{types:{"content-theory":"Inhalt/Theorie","multiple-choice":"Multiple-Choice","character-talk":"Charaktergespr\xe4ch",debate:"Debatte",assessment:"Multiple-Choice",spoken:"M\xfcndlicher Vortrag","hand-written":"Hand Written",written:"Written","free-conversation":"Free Conversation",exercise:"Exercise"},empty:{synthesis:"Die Aktivit\xe4t hat keine Zusammenfassung",content:"Die Aktivit\xe4t hat keinen Inhalt"}},classrooms:{code:"Klassenraum-Code"},entities:{assignments:"Aufgaben",modules:"Lernmodule",community:"Community",activities:"Aktivit\xe4ten",drafts:"Entw\xfcrfe",classrooms:"Klassenr\xe4ume",newDraft:"Modul",archive:"Archiv",organizations:"Institutionen",profile:"Mein Profil",kb:"Wissensdatenbanken",kbSections:"Abschnitte",kbArticles:"Artikel"},errors:{46:"Sie haben nicht genug Guthaben, um diese Aktion mit KI auszuf\xfchren",NO_CREDITS:"Sie haben nicht genug Guthaben, um diese Aktion auszuf\xfchren",DEFAULT_ERROR:"Ein Fehler ist aufgetreten, bitte versuchen Sie es sp\xe4ter erneut"},languages:{es:{code:"es",name:"Spanisch"},en:{code:"en",name:"Englisch"},pt:{code:"pt",name:"Portugiesisch"},de:{code:"de",name:"Deutsch"},fr:{code:"fr",name:"Fran\xe7ais"}},languagesSelect:{label:"Sprache",placeholder:"Sprache ausw\xe4hlen"},modal:{delete:{title:"M\xf6chten Sie dieses Element l\xf6schen?",description:"Nach dem L\xf6schen k\xf6nnen Sie es nicht mehr wiederherstellen."}},requestCredits:{title:"KI aktivieren",subtitle:{user:"M\xf6chten Sie ein Guthaben verwenden, um KI-Funktionen f\xfcr die Modulgenerierung zu aktivieren?",org:"Sie sind ein von {institution} autorisierter Dozent, der KI-Guthaben f\xfcr die Generierung von Modulen verwenden darf. Bitte best\xe4tigen Sie die Verwendung eines Guthabens, um KI in diesem Lernmodul zu aktivieren.",interactive:"M\xf6chten Sie ein Guthaben verwenden, um KI-Funktionen zu aktivieren?"},ownerDescription:"Modulinhaber",action:"M\xf6chten Sie Guthaben vom Modulinhaber anfordern?",detail:{user:"In RVD.AI verwenden Funktionen, die KI ben\xf6tigen, ein guthabenbasiertes System. Jedes verbrauchte Guthaben erm\xf6glicht Interaktionen mit KI.",org:"In RVD.AI verwenden Funktionen, die KI ben\xf6tigen, ein guthabenbasiertes System. Jedes verbrauchte Guthaben erm\xf6glicht KI-Interaktionen und wird von der Institution gew\xe4hrt, in der das Modul erstellt wird.",interactive:"In RVD.AI verwenden Funktionen, die KI ben\xf6tigen, ein guthabenbasiertes System. Jedes verbrauchte Guthaben erm\xf6glicht Interaktionen mit KI."},alerts:{noCredits:"Die Zuweisung konnte nicht verarbeitet werden, bitte kontaktieren Sie den Administrator der Institution"}}}}});__pkg.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="txt")&&_export("txt",txt=require?require("./txt").txt:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvaTE4bi50eHQuZGUuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwidHh0IiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwibXVsdGlidW5kbGUiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwiYWN0aW9ucyIsIm1hbmFnZW1lbnQiLCJhZGQiLCJhbmFseXNlIiwiYWN0aXZpdGllcyIsImFjdGl2aXR5IiwiYXBwbHlTdWdnZXN0aW9ucyIsImJhY2siLCJjYW5jZWwiLCJjb250aW51ZSIsImNvdmVyIiwiY2xlYW4iLCJjcmVhdGUiLCJjb25maXJtIiwiZGVsZXRlIiwiZWRpdCIsImdlbmVyYXRlIiwibmV4dCIsInB1Ymxpc2giLCJyZW1vdmVTdWdnZXN0aW9ucyIsInJlZmluZSIsInNhdmUiLCJ1cGxvYWQiLCJyZWNvcmRBZ2FpbiIsImFyY2hpdmUiLCJyZXN0b3JlIiwiY2xvc2UiLCJ0YWxrdG9BSSIsInNlbGVjdCIsImZpbHRlcnMiLCJhc3NpZ24iLCJhc3NpZ25Ub0NsYXNzcm9vbSIsInVzZSIsInJlZnJlc2giLCJjb3B5Iiwid2F0Y2giLCJ0ZXN0QWN0aXZpdHkiLCJpbnZpdGUiLCJkYXNoYm9hcmQiLCJzZWFyY2giLCJ3YXRjaEFjdGl2aXR5Iiwic2hhcmUiLCJjbG9uZSIsInNlbmQiLCJpbnNwaXJhdGlvbiIsIm1hbnVhbCIsIm9yZGVyIiwicmVtb3ZlIiwiYXBwcm92ZSIsInJlamVjdCIsImpvaW4iLCJpbXBvcnRlZCIsImxpbmsiLCJnVG9vbHRpcCIsImltcG9ydCIsInR5cGVzIiwiZGViYXRlIiwiYXNzZXNzbWVudCIsInNwb2tlbiIsIndyaXR0ZW4iLCJleGVyY2lzZSIsImVtcHR5Iiwic3ludGhlc2lzIiwiY29udGVudCIsImNsYXNzcm9vbXMiLCJjb2RlIiwiZW50aXRpZXMiLCJhc3NpZ25tZW50cyIsIm1vZHVsZXMiLCJjb21tdW5pdHkiLCJkcmFmdHMiLCJuZXdEcmFmdCIsIm9yZ2FuaXphdGlvbnMiLCJwcm9maWxlIiwia2IiLCJrYlNlY3Rpb25zIiwia2JBcnRpY2xlcyIsImVycm9ycyIsIk5PX0NSRURJVFMiLCJERUZBVUxUX0VSUk9SIiwibGFuZ3VhZ2VzIiwiZXMiLCJuYW1lIiwiZW4iLCJwdCIsImRlIiwiZnIiLCJsYW5ndWFnZXNTZWxlY3QiLCJsYWJlbCIsInBsYWNlaG9sZGVyIiwibW9kYWwiLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwicmVxdWVzdENyZWRpdHMiLCJzdWJ0aXRsZSIsInVzZXIiLCJvcmciLCJpbnRlcmFjdGl2ZSIsIm93bmVyRGVzY3JpcHRpb24iLCJhY3Rpb24iLCJkZXRhaWwiLCJhbGVydHMiLCJub0NyZWRpdHMiLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwicHJvY2VzcyIsInByb3AiLCJ2YWx1ZSIsInRoaXMiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxtQ0FBb0MsU0FBVUMsUUFBU0MsVUFDdEUsYUFFQSxJQUFJQyxhQUFjQyxRQUFTQyxTQUFVQyxNQUFPQyxJQUFLQyxJQUFLQyxhQUFjQyxJQUNwRVQsUUFBUSxXQUFZLEdBQ3BCLE1BQU8sQ0FDTFUsUUFBUyxDQUFDLFNBQVVDLDJCQUNsQlQsYUFBZVMseUJBQ2pCLEdBQ0FDLFFBQVMsV0FDUFQs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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/i18n",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('de');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 128833020,
+        creator: function (require, exports) {
+          exports.txt = {
+            "actions": {
+              "management": "Verwaltung",
+              "add": "Hinzufügen",
+              "analyse": "Verbesserungen vorschlagen",
+              "activities": "Aktivitäten generieren",
+              "activity": "Aktivitäten",
+              "applySuggestions": "Vorschläge anwenden",
+              "back": "Zurück",
+              "cancel": "Abbrechen",
+              "continue": "Weiter",
+              "cover": "Cover generieren",
+              "clean": "Reinigen",
+              "create": "Erstellen",
+              "confirm": "Bestätigen",
+              "delete": "Löschen",
+              "edit": "Bearbeiten",
+              "generate": "Mit KI generieren",
+              "next": "Weiter",
+              "publish": "Veröffentlichen",
+              "removeSuggestions": "Vorschläge entfernen",
+              "refine": "Verfeinern",
+              "save": "Speichern",
+              "update": "Dokument hochladen",
+              "upload": "Bild hochladen",
+              "recordAgain": "Erneut aufnehmen",
+              "archive": "Archivieren",
+              "restore": "Wiederherstellen",
+              "close": "Schließen",
+              "talktoAI": "Mit KI sprechen",
+              "select": "Auswählen",
+              "filters": "Filter",
+              "assign": "Zuweisen",
+              "assignToClassroom": "Dem Klassenraum zuweisen",
+              "use": "Verwenden",
+              "refresh": "Aktualisieren",
+              "copy": "Kopieren",
+              "watch": "Ansehen",
+              "testActivity": "Aktivität testen",
+              "invite": "Einladen",
+              "dashboard": "Dashboard",
+              "search": "Suchen",
+              "watchActivity": "Aktivität ansehen",
+              "share": "Teilen",
+              "clone": "Klonen",
+              "send": "Senden",
+              "inspiration": "Mit KI generieren",
+              "manual": "Manuelles Design",
+              "order": "Reihenfolge bearbeiten",
+              "remove": "Entfernen",
+              "approve": "Genehmigen",
+              "reject": "Ablehnen",
+              "join": "Beitreten",
+              "register": "Registrieren",
+              "imported": "Importiert",
+              "link": "Link",
+              "gTooltip": "Klassenzimmer von Google importiert",
+              "import": "Importieren"
+            },
+            "activities": {
+              "types": {
+                "content-theory": "Inhalt/Theorie",
+                "multiple-choice": "Multiple-Choice",
+                "character-talk": "Charaktergespräch",
+                "debate": "Debatte",
+                "assessment": "Multiple-Choice",
+                "spoken": "Mündlicher Vortrag",
+                "hand-written": "Hand Written",
+                "written": "Written",
+                "free-conversation": "Free Conversation",
+                "exercise": "Exercise"
+              },
+              "empty": {
+                "synthesis": "Die Aktivität hat keine Zusammenfassung",
+                "content": "Die Aktivität hat keinen Inhalt"
+              }
+            },
+            "classrooms": {
+              "code": "Klassenraum-Code"
+            },
+            "entities": {
+              "assignments": "Aufgaben",
+              "modules": "Lernmodule",
+              "community": "Community",
+              "activities": "Aktivitäten",
+              "drafts": "Entwürfe",
+              "classrooms": "Klassenräume",
+              "newDraft": "Modul",
+              "archive": "Archiv",
+              "organizations": "Institutionen",
+              "profile": "Mein Profil",
+              "kb": "Wissensdatenbanken",
+              "kbSections": "Abschnitte",
+              "kbArticles": "Artikel"
+            },
+            "errors": {
+              "46": "Sie haben nicht genug Guthaben, um diese Aktion mit KI auszuführen",
+              "NO_CREDITS": "Sie haben nicht genug Guthaben, um diese Aktion auszuführen",
+              "DEFAULT_ERROR": "Ein Fehler ist aufgetreten, bitte versuchen Sie es später erneut",
+              "NO_ENOUGH_CONTEXT": "Der bereitgestellte Kontext reicht nicht aus, um das Bild zu generieren. Bitte fügen Sie weitere beschreibende Details hinzu. Zum Beispiel: 'Eine futuristische Stadt bei Sonnenuntergang mit fliegenden Autos und Neonlichtern'.",
+              "NO_IMAGE_GENERATED": "Wir konnten Ihre Anfrage nicht verarbeiten. Bitte versuchen Sie es erneut."
+            },
+            "languages": {
+              "es": {
+                "code": "es",
+                "name": "Spanisch"
+              },
+              "en": {
+                "code": "en",
+                "name": "Englisch"
+              },
+              "pt": {
+                "code": "pt",
+                "name": "Portugiesisch"
+              },
+              "de": {
+                "code": "de",
+                "name": "Deutsch"
+              },
+              "fr": {
+                "code": "fr",
+                "name": "Français"
+              }
+            },
+            "languagesSelect": {
+              "label": "Sprache",
+              "placeholder": "Sprache auswählen"
+            },
+            "modal": {
+              "delete": {
+                "title": "Möchten Sie dieses Element löschen?",
+                "description": "Nach dem Löschen können Sie es nicht mehr wiederherstellen."
+              }
+            },
+            "requestCredits": {
+              "title": "KI aktivieren",
+              "subtitle": {
+                "user": "Möchten Sie ein Guthaben verwenden, um KI-Funktionen für die Modulgenerierung zu aktivieren?",
+                "org": "Sie sind ein von {institution} autorisierter Dozent, der KI-Guthaben für die Generierung von Modulen verwenden darf. Bitte bestätigen Sie die Verwendung eines Guthabens, um KI in diesem Lernmodul zu aktivieren.",
+                "interactive": "Möchten Sie ein Guthaben verwenden, um KI-Funktionen zu aktivieren?"
+              },
+              "ownerDescription": "Modulinhaber",
+              "action": "Möchten Sie Guthaben vom Modulinhaber anfordern?",
+              "detail": {
+                "user": "In RVD.AI verwenden Funktionen, die KI benötigen, ein guthabenbasiertes System. Jedes verbrauchte Guthaben ermöglicht Interaktionen mit KI.",
+                "org": "In RVD.AI verwenden Funktionen, die KI benötigen, ein guthabenbasiertes System. Jedes verbrauchte Guthaben ermöglicht KI-Interaktionen und wird von der Institution gewährt, in der das Modul erstellt wird.",
+                "interactive": "In RVD.AI verwenden Funktionen, die KI benötigen, ein guthabenbasiertes System. Jedes verbrauchte Guthaben ermöglicht Interaktionen mit KI."
+              },
+              "alerts": {
+                "noCredits": "Die Zuweisung konnte nicht verarbeitet werden, bitte kontaktieren Sie den Administrator der Institution"
+              }
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

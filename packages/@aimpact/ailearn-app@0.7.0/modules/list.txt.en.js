@@ -1,2 +1,150 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,txt,__beyond_pkg,hmr;_export("txt",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/modules/list",multibundle:true},type:"txt"},_context.meta.url).package("en");__pkg.dependencies.update([]);ims=new Map;ims.set("./txt",{hash:2170501786,creator:function(require,exports){exports.txt={assign:{title:{share:"Assign module to classrooms",dashboard:"Access assignment dashboard"},assigned:"Assigned",noAssigned:"No classrooms assigned",module:"Module",messages:{copied:"Link copied to clipboard",assigned:"Module assigned to classroom {classroom}"},item:{description:"The item has no description"},actions:{dashboard:"Dashboard",copy:"Copy link",test:"Test",navigate:"Navigate",assign:{button:"Assign",label:"The module has not been assigned to this Classroom"},createClassroom:"Create classroom"},errors:{default:"The module could not be assigned to this Classroom, please try again later or contact the administrator"},empty:{share:{text:"Attention",description:"You do not have any classrooms created yet, you must create one to be able to assign this activity.",action:"Create classroom"},dashboard:{description:"Module without assignments"}}},delete:{title:"Delete module",description:"Are you sure you want to delete this module? This action cannot be undone.",errors:{59:"The module cannot be deleted because it already has associated data.",default:"An error occurred while deleting the module."}},archive:{title:"Archive module",description:"Are you sure you want to archive this module?",errors:{default:"An error occurred while archiving the module."}},empty:{general:{title:"Create Your First Module",description:"Modernize your teaching approach by bringing your first module to life. Unleash your creativity, shape your content, and enjoy the experience of learning! "},drafts:{title:"No Drafts Yet",description:"You don't have any drafts at the moment. Start creating and perfecting your content before publishing. "},published:{title:"No Published Modules",description:"There are no published modules available. Work on each module and publish them to update this list of publications. "}},errors:{default:"Operation failed. Please try again.",ERROR_GETTING_URL:"Error getting url"},title:"My Learning Modules",tabs:{drafts:"Drafts",published:"Published"},actions:{create:"Create",delete:"Delete item",use:"Create a new version"},loading:{title:"Loading Data",description:"We are loading your data. Please wait for a moment."},item:{description:"The module does not have a description yet",draftTitle:"Draft Module"}}}});__pkg.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="txt")&&_export("txt",txt=require?require("./txt").txt:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvbW9kdWxlcy9saXN0LnR4dC5lbi5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJ0eHQiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJtdWx0aWJ1bmRsZSIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJhc3NpZ24iLCJ0aXRsZSIsInNoYXJlIiwiZGFzaGJvYXJkIiwiYXNzaWduZWQiLCJub0Fzc2lnbmVkIiwibWVzc2FnZXMiLCJjb3BpZWQiLCJpdGVtIiwiZGVzY3JpcHRpb24iLCJhY3Rpb25zIiwiY29weSIsInRlc3QiLCJuYXZpZ2F0ZSIsImJ1dHRvbiIsImxhYmVsIiwiY3JlYXRlQ2xhc3Nyb29tIiwiZXJyb3JzIiwiZGVmYXVsdCIsImVtcHR5IiwidGV4dCIsImFjdGlvbiIsImRlbGV0ZSIsImFyY2hpdmUiLCJnZW5lcmFsIiwiZHJhZnRzIiwicHVibGlzaGVkIiwiRVJST1JfR0VUVElOR19VUkwiLCJ0YWJzIiwiY3JlYXRlIiwidXNlIiwibG9hZGluZyIsImRyYWZ0VGl0bGUiLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwibmFtZSIsInByb2Nlc3MiLCJwcm9wIiwidmFsdWUiLCJ0aGlzIiwib24iLCJldmVudCIsImxpc3RlbmVyIiwib2ZmIiwiaW5pdGlhbGlzZSJdLCJzb3VyY2VzIjpbIjAiXSwibWFwcGlu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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/modules/list",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('en');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 2170501786,
+        creator: function (require, exports) {
+          exports.txt = {
+            "assign": {
+              "title": {
+                "share": "Assign module to classrooms",
+                "dashboard": "Access assignment dashboard"
+              },
+              "assigned": "Assigned",
+              "noAssigned": "No classrooms assigned",
+              "module": "Module",
+              "messages": {
+                "copied": "Link copied to clipboard",
+                "assigned": "Module assigned to classroom {classroom}"
+              },
+              "item": {
+                "description": "The item has no description"
+              },
+              "actions": {
+                "dashboard": "Dashboard",
+                "copy": "Copy link",
+                "test": "Test",
+                "navigate": "Navigate",
+                "assign": {
+                  "button": "Assign",
+                  "label": "The module has not been assigned to this Classroom"
+                },
+                "createClassroom": "Create classroom"
+              },
+              "errors": {
+                "default": "The module could not be assigned to this Classroom, please try again later or contact the administrator"
+              },
+              "empty": {
+                "share": {
+                  "text": "Attention",
+                  "description": "You do not have any classrooms created yet, you must create one to be able to assign this activity.",
+                  "action": "Create classroom"
+                },
+                "dashboard": {
+                  "description": "Module without assignments"
+                }
+              }
+            },
+            "delete": {
+              "title": "Delete module",
+              "description": "Are you sure you want to delete this module? This action cannot be undone.",
+              "errors": {
+                "59": "The module cannot be deleted because it already has associated data.",
+                "default": "An error occurred while deleting the module."
+              }
+            },
+            "archive": {
+              "title": "Archive module",
+              "description": "Are you sure you want to archive this module?",
+              "errors": {
+                "default": "An error occurred while archiving the module."
+              }
+            },
+            "empty": {
+              "general": {
+                "title": "Create Your First Module",
+                "description": "Modernize your teaching approach by bringing your first module to life. Unleash your creativity, shape your content, and enjoy the experience of learning! "
+              },
+              "drafts": {
+                "title": "No Drafts Yet",
+                "description": "You don't have any drafts at the moment. Start creating and perfecting your content before publishing. "
+              },
+              "published": {
+                "title": "No Published Modules",
+                "description": "There are no published modules available. Work on each module and publish them to update this list of publications. "
+              }
+            },
+            "errors": {
+              "default": "Operation failed. Please try again.",
+              "ERROR_GETTING_URL": "Error getting url"
+            },
+            "title": "My Learning Modules",
+            "tabs": {
+              "drafts": "Drafts",
+              "published": "Published"
+            },
+            "actions": {
+              "create": "Create",
+              "delete": "Delete item",
+              "use": "Create a new version"
+            },
+            "loading": {
+              "title": "Loading Data",
+              "description": "We are loading your data. Please wait for a moment."
+            },
+            "item": {
+              "description": "The module does not have a description yet",
+              "draftTitle": "Draft Module"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

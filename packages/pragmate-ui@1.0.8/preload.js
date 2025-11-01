@@ -1,2 +1,92 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/styles","react@18.3.1"],function(_export,_context){"use strict";var dependency_0,dependency_1,dependency_2,bimport,__Bundle,__pkg,ims,Preload,__beyond_pkg,hmr;_export("Preload",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_beyondJsKernel0114Styles){dependency_1=_beyondJsKernel0114Styles},function(_react2){dependency_2=_react2}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.12"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/reactive","2.1.0"],["@beyond-js/widgets","0.1.6"],["@floating-ui/dom","1.7.3"],["clsx","2.1.1"],["framer-motion","11.11.11"],["perfect-scrollbar","1.5.6"],["prismjs","1.29.0"],["swiper","10.3.1"],["tippy.js","6.3.7"],["@types/react","18.3.12"],["@types/react-dom","18.3.1"],["pragmate-ui","1.0.8"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"pragmate-ui@1.0.8/preload"},type:"code"},_context.meta.url).package();__pkg.dependencies.update([["@beyond-js/kernel/styles",dependency_1],["react",dependency_2]]);brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@1.0.8/preload");ims=new Map;ims.set("./index",{hash:384493270,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Preload=Preload;var _react=require("react");function Preload(props){const{width:width,height:height,color:color,stopAnimation:stopAnimation,radio:radio}=props;return _react.default.createElement("span",{className:"pui-preload",style:{width:width||"100%",height:height||"14px",background:color||"",borderRadius:radio||""}},_react.default.createElement("span",{style:{display:stopAnimation?"none":"block"}}))}}});__pkg.exports.descriptor=[{im:"./index",from:"Preload",name:"Preload"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="Preload")&&_export("Preload",Preload=require?require("./index").Preload:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvcHJhZ21hdGUtdWlAMS4wLjgvcHJlbG9hZC5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiZGVwZW5kZW5jeV8xIiwiZGVwZW5kZW5jeV8yIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJQcmVsb2FkIiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJfYmV5b25kSnNLZXJuZWwwMTE0U3R5bGVzIiwiX3JlYWN0MiIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJicmVxdWlyZSIsInN0eWxlcyIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsInZhbHVlIiwiX3JlYWN0IiwicHJvcHMiLCJ3aWR0aCIsImhlaWdodCIsImNvbG9yIiwic3RvcEFuaW1hdGlvbiIsInJhZGlvIiwiZGVmYXVsdCIsImNyZWF0ZUVsZW1lbnQiLCJjbGFzc05hbWUiLCJzdHlsZSIsImJhY2tncm91bmQiLCJib3JkZXJSYWRpdXMiLCJkaXNwbGF5IiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInRoaXMiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxrQ0FBbUMsa0NBQW1DLGdCQUFpQixTQUFVQyxRQUFTQyxVQUN6SCxhQUVBLElBQUlDLGFBQWNDLGFBQWNDLGFBQWNDLFFB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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/styles", "react@18.3.1"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, Preload, __beyond_pkg, hmr;
+  _export("Preload", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_1 = _beyondJsKernel0114Styles;
+    }, function (_react2) {
+      dependency_2 = _react2;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.0"], ["@beyond-js/widgets", "0.1.6"], ["@floating-ui/dom", "1.7.3"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.8"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.8/preload"
+        },
+        "type": "code"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@1.0.8/preload');
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 384493270,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Preload = Preload;
+          var _react = require("react");
+          /*bundle */
+          function Preload(props) {
+            const {
+              width,
+              height,
+              color,
+              stopAnimation,
+              radio
+            } = props;
+            return _react.default.createElement("span", {
+              className: 'pui-preload',
+              style: {
+                width: width || '100%',
+                height: height || '14px',
+                background: color || '',
+                borderRadius: radio || ''
+              }
+            }, _react.default.createElement("span", {
+              style: {
+                display: stopAnimation ? 'none' : 'block'
+              }
+            }));
+          }
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "Preload",
+        "name": "Preload"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Preload') && _export("Preload", Preload = require ? require('./index').Preload : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiUHJlbG9hZCIsInByb3BzIiwid2lkdGgiLCJoZWlnaHQiLCJjb2xvciIsInN0b3BBbmltYXRpb24iLCJyYWRpbyIsImRlZmF1bHQiLCJjcmVhdGVFbGVtZW50IiwiY2xhc3NOYW1lIiwic3R5bGUiLCJiYWNrZ3JvdW5kIiwiYm9yZGVyUmFkaXVzIiwiZGlzcGxheSJdLCJzb3VyY2VzIjpbIi90cy9pbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxNQUFBLEdBQUFDLE9BQUE7VUFVTztVQUFXLFNBQVVDLE9BQU9BLENBQUNDLEtBQXFCO1lBQ3hELE1BQU07Y0FBRUMsS0FBSztjQUFFQyxNQUFNO2NBQUVDLEtBQUs7Y0FBRUMsYUFBYTtjQUFFQztZQUFLLENBQUUsR0FBR0wsS0FBSztZQUU1RCxPQUNDSCxNQUFBLENBQUFTLE9BQUEsQ0FBQUMsYUFBQTtjQUNDQyxTQUFTLEVBQUMsYUFBYTtjQUN2QkMsS0FBSyxFQUFFO2dCQUNOUixLQUFLLEVBQUVBLEtBQUssSUFBSSxNQUFNO2dCQUN0QkMsTUFBTSxFQUFFQSxNQUFNLElBQUksTUFBTTtnQkFDeEJRLFVBQVUsRUFBRVAsS0FBSyxJQUFJLEVBQUU7Z0JBQ3ZCUSxZQUFZLEVBQUVOLEtBQUssSUFBSTs7WUFDdkIsR0FFRFIsTUFBQSxDQUFBUyxPQUFBLENBQUFDLGFBQUE7Y0FBTUUsS0FBSyxFQUFFO2dCQUFFRyxPQUFPLEVBQUVSLGFBQWEsR0FBRyxNQUFNLEdBQUc7Y0FBTztZQUFFLEVBQUksQ0FDeEQ7VUFFVCIsImlnbm9yZUxpc3QiOltdfQ==

@@ -1,2 +1,97 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,txt,__beyond_pkg,hmr;_export("txt",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/agents-api","0.4.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/reactive","2.1.1"],["@beyond-js/widgets","1.1.4"],["@google-cloud/storage","7.17.1"],["@radix-ui/react-icons","1.3.2"],["@tiptap/extension-blockquote","3.6.2"],["@tiptap/extension-code-block","3.6.2"],["@tiptap/extension-horizontal-rule","3.6.2"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.6.2"],["@tiptap/extension-task-list","3.6.2"],["@tiptap/extension-underline","3.6.2"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.6.2"],["@tiptap/starter-kit","3.6.2"],["clsx","2.1.1"],["dayjs","1.11.18"],["dompurify","3.2.7"],["firebase","11.10.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["katex","0.16.22"],["marked","14.1.4"],["marked-gfm-heading-id","4.1.2"],["marked-highlight","2.2.2"],["marked-mangle","1.1.11"],["media-suite","0.0.4"],["pragmate-ui","1.0.10"],["prism-themes","1.9.0"],["prismjs","1.30.0"],["react-icons","5.5.0"],["socket.io-client","4.8.1"],["turndown","7.2.1"],["wavesurfer.js","7.10.3"],["zod","3.25.76"],["@beyond-js/local","0.1.3"],["@types/react","18.3.25"],["@types/react-dom","18.3.7"],["typescript","5.9.3"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/chat-sdk@1.5.5/chat-component",multibundle:true},type:"txt"},_context.meta.url).package("de");__pkg.dependencies.update([]);ims=new Map;ims.set("./txt",{hash:3972369660,creator:function(require,exports){exports.txt={permissions:{intro:"Zugriffsberechtigungen",title:"Sprachaktivierung",description:"Aktivieren Sie das Mikrofon, um Ihr Erlebnis durch Interaktion mit Sprachbefehlen zu verbessern.",concedded:{title:"Fertig!",description:"Jetzt k\xf6nnen Sie die Sprachaktivierung genie\xdfen."},error:{title:"Wir haben keinen Zugriff auf das Mikrofon",description:"Um die Sprachfunktion zu aktivieren, ben\xf6tigen wir Zugriff auf Ihr Mikrofon. Bitte aktivieren Sie es in Ihren Browsereinstellungen und aktualisieren Sie die Seite."}},systemActions:{"kb-response":"Daten aus der Wissensdatenbank erhalten: ","fetching-tool-data":"Ich werde die Dokumente der Klasse abfragen","kb-processed-response":"Analyse des Inhalts abgeschlossen",transcription:"Transkription wird abgerufen",functions:{kb:"Abfrage der Wissensdatenbank \xfcber: "}},system:{success:"System erfolgreich aktualisiert"},assistant:{title:"Assistenten-Mission",message:"Die Mission, die der Agent haben wird, um im Chat zu interagieren"},errors:{default:"Ein Fehler ist aufgetreten, bitte versuchen Sie es erneut"},actions:{retry:"Wiederholen"},message:{transcribing:"Transkribieren..."}}}});__pkg.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="txt")&&_export("txt",txt=require?require("./txt").txt:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvY2hhdC1zZGtAMS41LjUvY2hhdC1jb21wb25lbnQudHh0LmRlLmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQiLCJkZXBlbmRlbmN5XzAiLCJiaW1wb3J0IiwiX19CdW5kbGUiLCJfX3BrZyIsImltcyIsInR4dCIsIl9fYmV5b25kX3BrZyIsImhtciIsInNldHRlcnMiLCJfYmV5b25kSnNLZXJuZWwwMTE0QnVuZGxlIiwiZXhlY3V0ZSIsInNwZWNpZmllciIsImRlcGVuZGVuY2llcyIsIk1hcCIsImdsb2JhbFRoaXMiLCJyZXNvbHZlIiwiQnVuZGxlIiwibW9kdWxlIiwidnNwZWNpZmllciIsIm11bHRpYnVuZGxlIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsInBlcm1pc3Npb25zIiwiaW50cm8iLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwiY29uY2VkZGVkIiwiZXJyb3IiLCJzeXN0ZW1BY3Rpb25zIiwidHJhbnNjcmlwdGlvbiIsImZ1bmN0aW9ucyIsImtiIiwic3lzdGVtIiwic3VjY2VzcyIsImFzc2lzdGFudCIsIm1lc3NhZ2UiLCJlcnJvcnMiLCJkZWZhdWx0IiwiYWN0aW9ucyIsInJldHJ5IiwidHJhbnNjcmliaW5nIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInZhbHVlIiwidGhpcyIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLG1DQUFvQyxTQUFVQyxRQUFTQyxVQUN0RSxhQUVBLElBQUlDLGFBQWNDLFFBQVNDLFNBQVVDLE1BQU9DLElBQUtDLElBQUtDLGFBQWNDLElBQ3BFVCxRQUFRLFdBQVksR0FD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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/widgets", "1.1.4"], ["@google-cloud/storage", "7.17.1"], ["@radix-ui/react-icons", "1.3.2"], ["@tiptap/extension-blockquote", "3.6.2"], ["@tiptap/extension-code-block", "3.6.2"], ["@tiptap/extension-horizontal-rule", "3.6.2"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.6.2"], ["@tiptap/extension-task-list", "3.6.2"], ["@tiptap/extension-underline", "3.6.2"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.6.2"], ["@tiptap/starter-kit", "3.6.2"], ["clsx", "2.1.1"], ["dayjs", "1.11.18"], ["dompurify", "3.2.7"], ["firebase", "11.10.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["katex", "0.16.22"], ["marked", "14.1.4"], ["marked-gfm-heading-id", "4.1.2"], ["marked-highlight", "2.2.2"], ["marked-mangle", "1.1.11"], ["media-suite", "0.0.4"], ["pragmate-ui", "1.0.10"], ["prism-themes", "1.9.0"], ["prismjs", "1.30.0"], ["react-icons", "5.5.0"], ["socket.io-client", "4.8.1"], ["turndown", "7.2.1"], ["wavesurfer.js", "7.10.3"], ["zod", "3.25.76"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.25"], ["@types/react-dom", "18.3.7"], ["typescript", "5.9.3"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/chat-sdk@1.5.5/chat-component",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('de');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 3972369660,
+        creator: function (require, exports) {
+          exports.txt = {
+            "permissions": {
+              "intro": "Zugriffsberechtigungen",
+              "title": "Sprachaktivierung",
+              "description": "Aktivieren Sie das Mikrofon, um Ihr Erlebnis durch Interaktion mit Sprachbefehlen zu verbessern.",
+              "concedded": {
+                "title": "Fertig!",
+                "description": "Jetzt können Sie die Sprachaktivierung genießen."
+              },
+              "error": {
+                "title": "Wir haben keinen Zugriff auf das Mikrofon",
+                "description": "Um die Sprachfunktion zu aktivieren, benötigen wir Zugriff auf Ihr Mikrofon. Bitte aktivieren Sie es in Ihren Browsereinstellungen und aktualisieren Sie die Seite."
+              }
+            },
+            "systemActions": {
+              "kb-response": "Daten aus der Wissensdatenbank erhalten: ",
+              "fetching-tool-data": "Ich werde die Dokumente der Klasse abfragen",
+              "kb-processed-response": "Analyse des Inhalts abgeschlossen",
+              "transcription": "Transkription wird abgerufen",
+              "functions": {
+                "kb": "Abfrage der Wissensdatenbank über: "
+              }
+            },
+            "system": {
+              "success": "System erfolgreich aktualisiert"
+            },
+            "assistant": {
+              "title": "Assistenten-Mission",
+              "message": "Die Mission, die der Agent haben wird, um im Chat zu interagieren"
+            },
+            "errors": {
+              "default": "Ein Fehler ist aufgetreten, bitte versuchen Sie es erneut"
+            },
+            "actions": {
+              "retry": "Wiederholen"
+            },
+            "message": {
+              "transcribing": "Transkribieren..."
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

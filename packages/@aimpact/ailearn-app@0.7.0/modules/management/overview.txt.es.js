@@ -1,2 +1,245 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,txt,__beyond_pkg,hmr;_export("txt",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/modules/management/overview",multibundle:true},type:"txt"},_context.meta.url).package("es");__pkg.dependencies.update([]);ims=new Map;ims.set("./txt",{hash:851640107,creator:function(require,exports){exports.txt={actions:{add:"Agregar",analyse:"Sugerir mejoras",activities:"Generar actividades",activity:"Actividades",applySuggestions:"Aplicar sugerencias",back:"Atr\xe1s",cancel:"Cancelar",continue:"Continuar",cover:"Generar portada",clean:"Limpiar",create:"Crear",confirm:"Confirmar",delete:"Eliminar",edit:"Editar",generate:"Generar con IA",next:"Siguiente",publish:"Publicar",removeSuggestions:"Ignorar sugerencias",refine:"Refinar",save:"Guardar",update:"Subir documento",upload:"Subir imagen",manual:"Dise\xf1o manual"},activities:{item:{empty:"Esta actividad a\xfan no posee contenido o titulo definido"},types:{"content-theory":"Contenido/Teor\xeda","multiple-choice":"Selecci\xf3n M\xfaltiple","character-talk":"Conversaci\xf3n con un Personaje",debate:"Debate",spoken:"Exposici\xf3n oral","hand-written":"Actividad manual",written:"Actividad escrita",exercise:"Actividad de ejercicio","free-conversation":"Conversaci\xf3n libre"},minutes:"Min",description:"Descripci\xf3n",objective:"Objetivo",activity:{empty:"Esta actividad no tiene contenido"},type:"Tipo",questions:"Preguntas",topics:"Temas",title:"Actividades",empty:{title:"A\xfan no posees actividades",text:"Agrega una actividad a tu m\xf3dulo"},createModal:{title:"Selecciona el tipo de actividad",validation:"Debes completar el titulo y la descripci\xf3n del m\xf3dulo para poder agregar una actividad.",validationTitle:"M\xf3dulo incompleto"},delete:{title:"\xbfRealmente desea eliminar esta actividad?",subtitle:"Al eliminar esta actividad, no podr\xe1 recuperarla."},descriptionTypes:{"content-theory":"Aprender y comprender contenido te\xf3rico a trav\xe9s de explicaciones y ejemplos guiados.","multiple-choice":"Responder preguntas de opci\xf3n m\xfaltiple para evaluar la comprensi\xf3n.","character-talk":"Aprender mediante una conversaci\xf3n guiada con un personaje ficticio para explorar un tema o perspectiva.",debate:"Argumentar y defender una postura en una conversaci\xf3n uno a uno con un asistente virtual.",spoken:"Presentaci\xf3n oral sobre un tema asignado para demostrar conocimiento, creatividad u originalidad.","free-conversation":"Actividad flexible donde el estudiante relata, explica o reflexiona sobre una tarea asignada por el docente.","hand-written":"Actividad vers\xe1til donde el estudiante sube una foto de una producci\xf3n manuscrita.",written:"Actividad vers\xe1til donde el estudiante redacta y env\xeda un texto sobre cualquier tema.",exercise:"Resoluci\xf3n paso a paso de una consigna espec\xedfica guiada mediante conversaci\xf3n con el asistente."},states:{empty:"Actividad vacia",completed:"Completada",processing:"En edici\xf3n"}},images:{generation:{prefix:"Ilustaci\xf3n:",sufix:"genera la imagen en formato 16:9."}},module:{title:"Agrega el nombre del m\xf3dulo de aprendizaje",description:{label:"Descripci\xf3n",placeholder:"Agrega descripci\xf3n aqu\xed"},objective:"Objetivo del m\xf3dulo",owner:"Administrador",actions:{description:"Agrega una descripci\xf3n",addActivity:"Agrega actividad"},activities:{title:"Lista de actividades",empty:{title:"M\xf3dulo sin actividades",text:"Agrega una actividad a tu m\xf3dulo"}}},refine:{title:"Asistente de Dise\xf1o de Actividad con IA",description:"Utiliza el asistente de IA para personalizar y mejorar el dise\xf1o de la actividad.",description2:"Simplemente escribe lo que tienes en mente, y la IA ayudar\xe1 a estructurar la actividad para que se ajuste a tus objetivos de aprendizaje.",textarea:{label:"Instrucciones adicionales",placeholder:"Comparte sugerencias espec\xedficas o \xe1reas de mejora..."},image:{title:"Refina la calidad de tu imagen",subtitle:"Tus aportes nos ayudar\xe1n a mejorar el contenido.",confirm:{title:"\xbfDeseas reemplazar la imagen actual?",subtitle:"Si confirmas, la imagen actual ser\xe1 reemplazada."}},module:{title:"Refina la calidad de tu m\xf3dulo",subtitle:"Tus aportes nos ayudar\xe1n a mejorar el contenido.",confirm:{title:"\xbfDeseas reemplazar el contenido actual?",subtitle:"Si confirmas, el proceso de generaci\xf3n reemplazar\xe1 el contenido actual con el nuevo. Si deseas conservar el contenido actual, haz clic en cancelar."}}},modal:{cancel:{title:"\xbfEst\xe1s seguro?",description:"Tus cambios no han sido guardados. Si contin\xfaas, los perder\xe1s."}},delete:{title:"Eliminar contenido",description:"\xbfEst\xe1s seguro de que quieres eliminar el contenido de esta actividad?"},picture:{title:"Genera la mejor imagen para tu m\xf3dulo",description:"Esta herramienta te ayudar\xe1 a generar la mejor imagen para tu m\xf3dulo. Puedes subir una imagen y nosotros generaremos la mejor imagen para tu m\xf3dulo. Tambi\xe9n puedes usar el editor de im\xe1genes para editar la imagen y generar la mejor imagen para tu m\xf3dulo.",notes:{label:"Notas",placeholder:"Comparte tus sugerencias para crear la mejor imagen para tu m\xf3dulo"},confirm:{title:"\xbfQuieres reemplazar la imagen actual?",subtitle:"Si confirmas, la imagen actual ser\xe1 reemplazada."}},errors:{CONTACT_ADMIN:"Por favor, contacte con el administrador"},toast:{modulePublished:"M\xf3dulo publicado correctamente",errorPublishingModule:"Error al publicar el m\xf3dulo"},moduleTour:{moduleName:{title:"Agrega el nombre del m\xf3dulo de aprendizaje",description:"Ingresa el nombre del m\xf3dulo de aprendizaje en este campo."},description:{title:"Descripci\xf3n",description:"Agrega una descripci\xf3n del m\xf3dulo aqu\xed."},image:{title:"Generar Imagen",description:"Haz clic en este \xedcono para generar una imagen del m\xf3dulo usando AI."},activities:{title:"Actividades",description:"Ac\xe1 podr\xe1s visualizar las actividades agregadas en el m\xf3dulo"},addActivity:{title:"Agrega Actividad",description:"Haz clic en este bot\xf3n para agregar una nueva actividad al m\xf3dulo."},publish:{title:"Una vez completado",description:"Haz clic en este bot\xf3n para publicar el m\xf3dulo una vez completado."}}}}});__pkg.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="txt")&&_export("txt",txt=require?require("./txt").txt:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvbW9kdWxlcy9tYW5hZ2VtZW50L292ZXJ2aWV3LnR4dC5lcy5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJ0eHQiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJtdWx0aWJ1bmRsZSIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJhY3Rpb25zIiwiYWRkIiwiYW5hbHlzZSIsImFjdGl2aXRpZXMiLCJhY3Rpdml0eSIsImFwcGx5U3VnZ2VzdGlvbnMiLCJiYWNrIiwiY2FuY2VsIiwiY29udGludWUiLCJjb3ZlciIsImNsZWFuIiwiY3JlYXRlIiwiY29uZmlybSIsImRlbGV0ZSIsImVkaXQiLCJnZW5lcmF0ZSIsIm5leHQiLCJwdWJsaXNoIiwicmVtb3ZlU3VnZ2VzdGlvbnMiLCJyZWZpbmUiLCJzYXZlIiwidXBsb2FkIiwibWFudWFsIiwiaXRlbSIsImVtcHR5IiwidHlwZXMiLCJkZWJhdGUiLCJzcG9rZW4iLCJ3cml0dGVuIiwiZXhlcmNpc2UiLCJtaW51dGVzIiwiZGVzY3JpcHRpb24iLCJvYmplY3RpdmUiLCJxdWVzdGlvbnMiLCJ0b3BpY3MiLCJ0aXRsZSIsInRleHQiLCJjcmVhdGVNb2RhbCIsInZhbGlkYXRpb24iLCJ2YWxpZGF0aW9uVGl0bGUiLCJzdWJ0aXRsZSIsImRlc2NyaXB0aW9uVHlwZXMiLCJzdGF0ZXMiLCJjb21wbGV0ZWQiLCJwcm9jZXNzaW5nIiwiaW1hZ2VzIiwiZ2VuZXJhdGlvbiIsInByZWZpeCIsInN1Zml4IiwibGFiZWwiLCJwbGFjZWhvbGRlciIsIm93bmVyIiwiYWRkQWN0aXZpdHkiLCJkZXNjcmlwdGlvbjIiLCJ0ZXh0YXJlYSIsImltYWdlIiwibW9kYWwiLCJwaWN0dXJlIiwibm90ZXMiLCJlcnJvcnMiLCJDT05UQUNUX0FETUlOIiwidG9hc3QiLCJtb2R1bGVQdWJsaXNoZWQiLCJlcnJvclB1Ymxpc2hpbmdNb2R1bGUiLCJtb2R1bGVUb3VyIiwibW9kdWxlTmFtZSIsImRlc2NyaXB0b3IiLCJpbSIsImZyb20iLCJuYW1lIiwicHJvY2VzcyIsInByb3AiLCJ2YWx1ZSIsInRoaXMiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxtQ0FBb0MsU0FBVUMsUUFBU0MsVUFDdEUsYUFFQSxJQUFJQyxhQUFjQyxRQUFTQyxTQUFVQyxNQUFPQyxJQUFLQyxJQUFLQyxhQUFjQyxJQUNwRVQsUUFBUSxXQUFZLEdBQ3BCLE1BQU8sQ0FDTFUsUUFBUyxDQUFDLFNBQVVDLDJCQUNsQlQsYUFBZVMseUJBQ2pCLEdBQ0FDLFFBQVMsV0FDUFQsUUFBVVUsWUFDUixNQUFNQyxhQUFlLElBQUlDLElBQUksQ0FBQyxDQUFDLHNCQUF1QixTQUFVLENBQUMsdUJBQXdCLFNBQVUsQ0FBQyx1QkFBd0IsU0FBVSxDQUFDLG9CQUFxQixTQUFVLENBQUMseUJBQTBCLFNBQVUsQ0FBQyxjQUFlLFNBQVUsQ0FBQyxzQkFBdUIsU0FBVSxDQUFDLHdCQUF5QixTQUFVLENBQUMscUJBQXNCLFVBQVcsQ0FBQyxvQkFBcUIsU0FBVSxDQUFDLG9CQUFxQixVQUFXLENBQUMsNkJBQThCLFNBQVUsQ0FBQyw4QkFBK0IsU0FBVSxDQUFDLHFCQUFzQixTQUFVLENBQUMsZUFBZ0IsV0FBWSxDQUFDLGlCQUFrQixXQUFZ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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/modules/management/overview",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('es');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 851640107,
+        creator: function (require, exports) {
+          exports.txt = {
+            "actions": {
+              "add": "Agregar",
+              "analyse": "Sugerir mejoras",
+              "activities": "Generar actividades",
+              "activity": "Actividades",
+              "applySuggestions": "Aplicar sugerencias",
+              "back": "Atrás",
+              "cancel": "Cancelar",
+              "continue": "Continuar",
+              "cover": "Generar portada",
+              "clean": "Limpiar",
+              "create": "Crear",
+              "confirm": "Confirmar",
+              "delete": "Eliminar",
+              "edit": "Editar",
+              "generate": "Generar con IA",
+              "next": "Siguiente",
+              "publish": "Publicar",
+              "removeSuggestions": "Ignorar sugerencias",
+              "refine": "Refinar",
+              "save": "Guardar",
+              "update": "Subir documento",
+              "upload": "Subir imagen",
+              "manual": "Diseño manual"
+            },
+            "activities": {
+              "item": {
+                "empty": "Esta actividad aún no posee contenido o titulo definido"
+              },
+              "types": {
+                "content-theory": "Contenido/Teoría",
+                "multiple-choice": "Selección Múltiple",
+                "character-talk": "Conversación con un Personaje",
+                "debate": "Debate",
+                "spoken": "Exposición oral",
+                "hand-written": "Actividad manual",
+                "written": "Actividad escrita",
+                "exercise": "Actividad de ejercicio",
+                "free-conversation": "Conversación libre"
+              },
+              "minutes": "Min",
+              "description": "Descripción",
+              "objective": "Objetivo",
+              "activity": {
+                "empty": "Esta actividad no tiene contenido"
+              },
+              "type": "Tipo",
+              "questions": "Preguntas",
+              "topics": "Temas",
+              "title": "Actividades",
+              "empty": {
+                "title": "Aún no posees actividades",
+                "text": "Agrega una actividad a tu módulo"
+              },
+              "createModal": {
+                "title": "Selecciona el tipo de actividad",
+                "validation": "Debes completar el titulo y la descripción del módulo para poder agregar una actividad.",
+                "validationTitle": "Módulo incompleto"
+              },
+              "delete": {
+                "title": "¿Realmente desea eliminar esta actividad?",
+                "subtitle": "Al eliminar esta actividad, no podrá recuperarla."
+              },
+              "descriptionTypes": {
+                "content-theory": "Aprender y comprender contenido teórico a través de explicaciones y ejemplos guiados.",
+                "multiple-choice": "Responder preguntas de opción múltiple para evaluar la comprensión.",
+                "character-talk": "Aprender mediante una conversación guiada con un personaje ficticio para explorar un tema o perspectiva.",
+                "debate": "Argumentar y defender una postura en una conversación uno a uno con un asistente virtual.",
+                "spoken": "Presentación oral sobre un tema asignado para demostrar conocimiento, creatividad u originalidad.",
+                "free-conversation": "Actividad flexible donde el estudiante relata, explica o reflexiona sobre una tarea asignada por el docente.",
+                "hand-written": "Actividad versátil donde el estudiante sube una foto de una producción manuscrita.",
+                "written": "Actividad versátil donde el estudiante redacta y envía un texto sobre cualquier tema.",
+                "exercise": "Resolución paso a paso de una consigna específica guiada mediante conversación con el asistente."
+              },
+              "states": {
+                "empty": "Actividad vacia",
+                "completed": "Completada",
+                "processing": "En edición"
+              }
+            },
+            "images": {
+              "generation": {
+                "prefix": "Ilustación:",
+                "sufix": "genera la imagen en formato 16:9."
+              }
+            },
+            "module": {
+              "title": "Agrega el nombre del módulo de aprendizaje",
+              "description": {
+                "label": "Descripción",
+                "placeholder": "Agrega descripción aquí"
+              },
+              "objective": "Objetivo del módulo",
+              "owner": "Administrador",
+              "actions": {
+                "description": "Agrega una descripción",
+                "addActivity": "Agrega actividad"
+              },
+              "activities": {
+                "title": "Lista de actividades",
+                "empty": {
+                  "title": "Módulo sin actividades",
+                  "text": "Agrega una actividad a tu módulo"
+                }
+              }
+            },
+            "refine": {
+              "title": "Asistente de Diseño de Actividad con IA",
+              "description": "Utiliza el asistente de IA para personalizar y mejorar el diseño de la actividad.",
+              "description2": "Simplemente escribe lo que tienes en mente, y la IA ayudará a estructurar la actividad para que se ajuste a tus objetivos de aprendizaje.",
+              "textarea": {
+                "label": "Instrucciones adicionales",
+                "placeholder": "Comparte sugerencias específicas o áreas de mejora..."
+              },
+              "image": {
+                "title": "Refina la calidad de tu imagen",
+                "subtitle": "Tus aportes nos ayudarán a mejorar el contenido.",
+                "confirm": {
+                  "title": "¿Deseas reemplazar la imagen actual?",
+                  "subtitle": "Si confirmas, la imagen actual será reemplazada."
+                }
+              },
+              "module": {
+                "title": "Refina la calidad de tu módulo",
+                "subtitle": "Tus aportes nos ayudarán a mejorar el contenido.",
+                "confirm": {
+                  "title": "¿Deseas reemplazar el contenido actual?",
+                  "subtitle": "Si confirmas, el proceso de generación reemplazará el contenido actual con el nuevo. Si deseas conservar el contenido actual, haz clic en cancelar."
+                }
+              }
+            },
+            "modal": {
+              "cancel": {
+                "title": "¿Estás seguro?",
+                "description": "Tus cambios no han sido guardados. Si continúas, los perderás."
+              }
+            },
+            "delete": {
+              "title": "Eliminar contenido",
+              "description": "¿Estás seguro de que quieres eliminar el contenido de esta actividad?"
+            },
+            "picture": {
+              "title": "Genera la mejor imagen para tu módulo",
+              "description": "Esta herramienta te ayudará a generar la mejor imagen para tu módulo. Puedes subir una imagen y nosotros generaremos la mejor imagen para tu módulo. También puedes usar el editor de imágenes para editar la imagen y generar la mejor imagen para tu módulo.",
+              "notes": {
+                "label": "Notas",
+                "placeholder": "Comparte tus sugerencias para crear la mejor imagen para tu módulo"
+              },
+              "confirm": {
+                "title": "¿Quieres reemplazar la imagen actual?",
+                "subtitle": "Si confirmas, la imagen actual será reemplazada."
+              }
+            },
+            "errors": {
+              "CONTACT_ADMIN": "Por favor, contacte con el administrador"
+            },
+            "toast": {
+              "modulePublished": "Módulo publicado correctamente",
+              "errorPublishingModule": "Error al publicar el módulo"
+            },
+            "moduleTour": {
+              "moduleName": {
+                "title": "Agrega el nombre del módulo de aprendizaje",
+                "description": "Ingresa el nombre del módulo de aprendizaje en este campo."
+              },
+              "description": {
+                "title": "Descripción",
+                "description": "Agrega una descripción del módulo aquí."
+              },
+              "image": {
+                "title": "Generar Imagen",
+                "description": "Haz clic en este ícono para generar una imagen del módulo usando AI."
+              },
+              "activities": {
+                "title": "Actividades",
+                "description": "Acá podrás visualizar las actividades agregadas en el módulo"
+              },
+              "addActivity": {
+                "title": "Agrega Actividad",
+                "description": "Haz clic en este botón para agregar una nueva actividad al módulo."
+              },
+              "publish": {
+                "title": "Una vez completado",
+                "description": "Haz clic en este botón para publicar el módulo una vez completado."
+              }
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

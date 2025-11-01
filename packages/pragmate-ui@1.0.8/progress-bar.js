@@ -1,2 +1,102 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/styles","react@18.3.1"],function(_export,_context){"use strict";var dependency_0,dependency_1,dependency_2,bimport,__Bundle,__pkg,ims,ProgressBar,__beyond_pkg,hmr;_export("ProgressBar",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_beyondJsKernel0114Styles){dependency_1=_beyondJsKernel0114Styles},function(_react2){dependency_2=_react2}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.12"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/reactive","2.1.0"],["@beyond-js/widgets","0.1.6"],["@floating-ui/dom","1.7.3"],["clsx","2.1.1"],["framer-motion","11.11.11"],["perfect-scrollbar","1.5.6"],["prismjs","1.29.0"],["swiper","10.3.1"],["tippy.js","6.3.7"],["@types/react","18.3.12"],["@types/react-dom","18.3.1"],["pragmate-ui","1.0.8"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"pragmate-ui@1.0.8/progress-bar"},type:"code"},_context.meta.url).package();__pkg.dependencies.update([["@beyond-js/kernel/styles",dependency_1],["react",dependency_2]]);brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@1.0.8/progress-bar");ims=new Map;ims.set("./definitions",{hash:2062575629,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true})}});ims.set("./index",{hash:851346157,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.ProgressBar=ProgressBar;var _react=require("react");function ProgressBar(props){const{value:value,maxValue:maxValue=100,variant:variant="primary"}=props;const percentage=value/maxValue*100;const cls=variant?`progress-bar__progress ${variant}`:"progress-bar__progress";return _react.default.createElement("div",{className:"pui-progress-bar"},_react.default.createElement("span",{className:cls,style:{width:`${percentage}%`}},value,"%"))}}});__pkg.exports.descriptor=[{im:"./index",from:"ProgressBar",name:"ProgressBar"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="ProgressBar")&&_export("ProgressBar",ProgressBar=require?require("./index").ProgressBar:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvcHJhZ21hdGUtdWlAMS4wLjgvcHJvZ3Jlc3MtYmFyLmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQiLCJkZXBlbmRlbmN5XzAiLCJkZXBlbmRlbmN5XzEiLCJkZXBlbmRlbmN5XzIiLCJiaW1wb3J0IiwiX19CdW5kbGUiLCJfX3BrZyIsImltcyIsIlByb2dyZXNzQmFyIiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJfYmV5b25kSnNLZXJuZWwwMTE0U3R5bGVzIiwiX3JlYWN0MiIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJicmVxdWlyZSIsInN0eWxlcyIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsInZhbHVlIiwiX3JlYWN0IiwicHJvcHMiLCJtYXhWYWx1ZSIsInZhcmlhbnQiLCJwZXJjZW50YWdlIiwiY2xzIiwiZGVmYXVsdCIsImNyZWF0ZUVsZW1lbnQiLCJjbGFzc05hbWUiLCJzdHlsZSIsIndpZHRoIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInRoaXMiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxrQ0FBbUMsa0NBQW1DLGdCQUFpQixTQUFVQyxRQUFTQyxVQUN6SCxhQUVBLElBQUlDLGFBQWNDLGFBQWNDLGFBQWNDLFFBQVNDLFNBQVVDLE1BQU9DLElBQUtDLFlBQWFDLGFB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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/styles", "react@18.3.1"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, ProgressBar, __beyond_pkg, hmr;
+  _export("ProgressBar", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_1 = _beyondJsKernel0114Styles;
+    }, function (_react2) {
+      dependency_2 = _react2;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.0"], ["@beyond-js/widgets", "0.1.6"], ["@floating-ui/dom", "1.7.3"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.8"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.8/progress-bar"
+        },
+        "type": "code"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@1.0.8/progress-bar');
+      ims = new Map();
+      /*****************************
+      INTERNAL MODULE: ./definitions
+      *****************************/
+      ims.set('./definitions', {
+        hash: 2062575629,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 851346157,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ProgressBar = ProgressBar;
+          var _react = require("react");
+          /* bundle */
+          function ProgressBar(props) {
+            const {
+              value,
+              maxValue = 100,
+              variant = 'primary'
+            } = props;
+            const percentage = value / maxValue * 100;
+            const cls = variant ? `progress-bar__progress ${variant}` : 'progress-bar__progress';
+            return _react.default.createElement("div", {
+              className: "pui-progress-bar"
+            }, _react.default.createElement("span", {
+              className: cls,
+              style: {
+                width: `${percentage}%`
+              }
+            }, value, "%"));
+          }
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "ProgressBar",
+        "name": "ProgressBar"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'ProgressBar') && _export("ProgressBar", ProgressBar = require ? require('./index').ProgressBar : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsImV4cG9ydHMiLCJ2YWx1ZSIsIl9yZWFjdCIsInJlcXVpcmUiLCJQcm9ncmVzc0JhciIsInByb3BzIiwibWF4VmFsdWUiLCJ2YXJpYW50IiwicGVyY2VudGFnZSIsImNscyIsImRlZmF1bHQiLCJjcmVhdGVFbGVtZW50IiwiY2xhc3NOYW1lIiwic3R5bGUiLCJ3aWR0aCJdLCJzb3VyY2VzIjpbIi9kZWZpbml0aW9ucy50cyIsIi90cy9pbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBOztVQUVBQSxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0E7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDSkEsSUFBQUMsTUFBQSxHQUFBQyxPQUFBO1VBR087VUFBWSxTQUFVQyxXQUFXQSxDQUFDQyxLQUFhO1lBQ3JELE1BQU07Y0FBRUosS0FBSztjQUFFSyxRQUFRLEdBQUcsR0FBRztjQUFFQyxPQUFPLEdBQUc7WUFBUyxDQUFFLEdBQUdGLEtBQUs7WUFFNUQsTUFBTUcsVUFBVSxHQUFJUCxLQUFLLEdBQUdLLFFBQVEsR0FBSSxHQUFHO1lBRTNDLE1BQU1HLEdBQUcsR0FBR0YsT0FBTyxHQUFHLDBCQUEwQkEsT0FBTyxFQUFFLEdBQUcsd0JBQXdCO1lBQ3BGLE9BQ0NMLE1BQUEsQ0FBQVEsT0FBQSxDQUFBQyxhQUFBO2NBQUtDLFNBQVMsRUFBQztZQUFrQixHQUNoQ1YsTUFBQSxDQUFBUSxPQUFBLENBQUFDLGFBQUE7Y0FBTUMsU0FBUyxFQUFFSCxHQUFHO2NBQUVJLEtBQUssRUFBRTtnQkFBRUMsS0FBSyxFQUFFLEdBQUdOLFVBQVU7Y0FBRztZQUFFLEdBQ3REUCxLQUFLLEUsSUFDQSxDQUNGO1VBRVIiLCJpZ25vcmVMaXN0IjpbXX0=

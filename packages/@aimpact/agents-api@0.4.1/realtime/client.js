@@ -1,2 +1,193 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@aimpact/agents-api@0.4.1/ws-config","@aimpact/agents-api@0.4.1/realtime/channel","@beyond-js/events@0.0.7/events","@aimpact/agents-api@0.4.1/realtime/client/base","@aimpact/agents-api@0.4.1/realtime/utils"],function(_export,_context){"use strict";var dependency_0,dependency_1,dependency_2,dependency_3,dependency_4,dependency_5,bimport,__Bundle,__pkg,ims,ClientSession,__beyond_pkg,hmr;_export("ClientSession",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_aimpactAgentsApi041WsConfig){dependency_1=_aimpactAgentsApi041WsConfig},function(_aimpactAgentsApi041RealtimeChannel){dependency_2=_aimpactAgentsApi041RealtimeChannel},function(_beyondJsEvents007Events){dependency_3=_beyondJsEvents007Events},function(_aimpactAgentsApi041RealtimeClientBase){dependency_4=_aimpactAgentsApi041RealtimeClientBase},function(_aimpactAgentsApi041RealtimeUtils){dependency_5=_aimpactAgentsApi041RealtimeUtils}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@beyond-js/firestore-collection","0.0.9"],["@beyond-js/events","0.0.7"],["@beyond-js/response","0.0.3"],["@google-cloud/storage","7.17.0"],["@openai/agents","0.1.3"],["@pinecone-database/pinecone","6.1.2"],["express","4.21.2"],["express-rate-limit","7.2.0"],["express-openapi-validator","5.5.8"],["firebase-admin","12.7.0"],["multer","2.0.2"],["form-data","4.0.4"],["jsonwebtoken","9.0.2"],["ws","8.18.3"],["socket.io","4.8.1"],["node-fetch","2.7.0"],["dotenv","16.6.1"],["fluent-ffmpeg","2.1.3"],["dayjs","1.11.17"],["openai","4.104.0"],["uuid","10.0.0"],["find-up","7.0.0"],["postmark","4.0.5"],["zod","3.25.67"],["axios","1.12.2"],["socket.io-client","4.8.1"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/bee","0.0.7"],["@beyond-js/local","0.1.3"],["@types/jsonwebtoken","9.0.10"],["@types/express","5.0.3"],["@types/node","20.6.5"],["@types/uuid","9.0.8"],["@types/ws","8.5.14"],["@types/react","18.3.24"],["@types/audioworklet","0.0.83"],["swagger-ui-express","5.0.1"],["yaml","2.8.1"],["@aimpact/agents-api","0.4.1"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/agents-api@0.4.1/realtime/client"},type:"ts"},_context.meta.url).package();__pkg.dependencies.update([["@aimpact/agents-api/ws-config",dependency_1],["@aimpact/agents-api/realtime/channel",dependency_2],["@beyond-js/events/events",dependency_3],["@aimpact/agents-api/realtime/client/base",dependency_4],["@aimpact/agents-api/realtime/utils",dependency_5]]);ims=new Map;ims.set("./channel",{hash:2749510134,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Channel=void 0;var _wsConfig=require("@aimpact/agents-api/ws-config");var _channel=require("@aimpact/agents-api/realtime/channel");var _events=require("@beyond-js/events/events");const SERVER_URL=_wsConfig.url;class Channel extends _events.Events{#channel;#created=false;get status(){const{status:status}=this.#channel;return status==="open"&&this.#created?"created":status}get error(){return this.#channel.error}constructor(){super();this.#channel=new _channel.Channel({url:SERVER_URL});this.#channel.on("open",this.#onopen);this.#channel.on("close",this.#onclose);this.#channel.on("message",this.#onmessage)}#onopen=()=>this.trigger("open");#onclose=()=>this.trigger("close");#onmessage=message=>{let event,data;try{const parsed=JSON.parse(message);({event:event,data:data}=parsed);if(!event){console.warn(`Agent message seems to be invalid, event not defined:`,message);return}}catch(exc){console.warn(`Unable to parse agent message:`,message,exc.message);return}console.log(`Event "${event}" has been received:`,data);event==="session.created"&&(this.#created=true);this.trigger(event,data)};#cleanup(){this.#channel.off("open",this.#onopen);this.#channel.off("close",this.#onclose);this.#channel.off("message",this.#onmessage)}async connect(){return await this.#channel.connect()}async close(){this.#cleanup();return await this.#channel.close()}send(event,data){this.#channel.send(JSON.stringify({event:event,data:data}))}}exports.Channel=Channel}});ims.set("./index",{hash:314552738,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.ClientSession=void 0;var _base=require("@aimpact/agents-api/realtime/client/base");var _channel=require("./channel");var _utils=require("@aimpact/agents-api/realtime/utils");class ClientSession extends _base.ClientSessionBase{#channel;get status(){return this.#channel.status}get error(){return this.#channel.error}constructor(settings){const channel=new _channel.Channel;super(channel,channel,settings);this.#channel=channel}async connect(){const ok=await this.#channel.connect();ok&&await super.connect();return ok}async close(){this.#channel.close();return await super.close()}async update(settings){this.#channel.send("connect",settings)}listen(data){const audio=_utils.RealtimeUtils.arrayBufferToBase64(data.mono);this.#channel.send("listen",{audio:audio})}}exports.ClientSession=ClientSession}});__pkg.exports.descriptor=[{im:"./index",from:"ClientSession",name:"ClientSession"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="ClientSession")&&_export("ClientSession",ClientSession=require?require("./index").ClientSession:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWdlbnRzLWFwaUAwLjQuMS9yZWFsdGltZS9jbGllbnQuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImRlcGVuZGVuY3lfMSIsImRlcGVuZGVuY3lfMiIsImRlcGVuZGVuY3lfMyIsImRlcGVuZGVuY3lfNCIsImRlcGVuZGVuY3lfNSIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwiQ2xpZW50U2Vzc2lvbiIsIl9fYmV5b25kX3BrZyIsImhtciIsInNldHRlcnMiLCJfYmV5b25kSnNLZXJuZWwwMTE0QnVuZGxlIiwiX2FpbXBhY3RBZ2VudHNBcGkwNDFXc0NvbmZpZyIsIl9haW1wYWN0QWdlbnRzQXBpMDQxUmVhbHRpbWVDaGFubmVsIiwiX2JleW9uZEpzRXZlbnRzMDA3RXZlbnRzIiwiX2FpbXBhY3RBZ2VudHNBcGkwNDFSZWFsdGltZUNsaWVudEJhc2UiLCJfYWltcGFjdEFnZW50c0FwaTA0MVJlYWx0aW1lVXRpbHMiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiLCJDaGFubmVsIiwiX3dzQ29uZmlnIiwiX2NoYW5uZWwiLCJfZXZlbnRzIiwiU0VSVkVSX1VSTCIsIkV2ZW50cyIsImNoYW5uZWwiLCJjcmVhdGVkIiwic3RhdHVzIiwidGhpcyIsImVycm9yIiwiY29uc3RydWN0b3IiLCJzdXBlciIsIm9uIiwib25vcGVuIiwib25jbG9zZSIsIm9ubWVzc2FnZSIsInRyaWdnZXIiLCJtZXNzYWdlIiwiZXZlbnQiLCJkYXRhIiwicGFyc2VkIiwiSlNPTiIsInBhcnNlIiwiY29uc29sZSIsIndhcm4iLCJleGMiLCJsb2ciLCJjbGVhbnVwIiwib2ZmIiwiY29ubmVjdCIsImNsb3NlIiwic2VuZCIsInN0cmluZ2lmeSIsIl9iYXNlIiwiX3V0aWxzIiwiQ2xpZW50U2Vzc2lvbkJhc2UiLCJzZXR0aW5ncyIsIm9rIiwibGlzdGVuIiwiYXVkaW8iLCJSZWFsdGltZVV0aWxzIiwiYXJyYXlCdWZmZXJUb0Jhc2U2NCIsIm1vbm8iLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwibmFtZSIsInByb2Nlc3MiLCJwcm9wIiwibGlzdGVuZXIiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxrQ0FBbUMsc0NBQXVDLDZDQUE4QyxpQ0FBa0MsaURBQWtELDRDQUE2QyxTQUFVQyxRQUFTQyxVQUMzUixhQUVBLElBQUlDLGFBQWNDLGFBQWNDLGFBQWNDLGFBQWNDLGFBQWNDLGFBQWNDLFFBQVNDLFNBQVVDLE1BQU9DLElBQUtDLGNBQWVDLGFBQWNDLElBQ3BKZCxRQUFRLHFCQUFzQixHQUM5QixNQUFPLENBQ0xlLFFBQVMsQ0FBQyxTQUFVQywyQkFDbEJkLGFBQWVjLHlCQUNqQixFQUFHLFNBQVVDLDhCQUNYZCxhQUFlYyw0QkFDakIsRUFBRyxTQUFVQyxxQ0FDWGQsYUFBZWMsbUNBQ2pCLEVBQUcsU0FBVUMsMEJBQ1hkLGFBQWVjLHdCQUNqQixFQUFHLFNBQVVDLHdDQUNYZCxhQUFlYyxzQ0FDakIsRUFBRyxTQUFVQyxtQ0FDWGQsYUFBZWMsaUNBQ2pCLEdBQ0FDLFFBQVMsV0FDUGQsUUFBVWUsWUFDUixNQUFNQyxhQUFlLElBQUlDLElBQUksQ0FBQyxDQUFDLGtDQUFtQyxTQUFVLENBQUMsb0JBQXFCLFNBQVUsQ0FBQyxzQkFBdUIsU0FBVSxDQUFDLHdCQUF5QixVQUFXLENBQUMsaUJBQWtCLFNBQVUsQ0FBQyw4QkFBK0IsU0FBVSxDQUFDLFVBQVcsVUFB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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@aimpact/agents-api@0.4.1/ws-config", "@aimpact/agents-api@0.4.1/realtime/channel", "@beyond-js/events@0.0.7/events", "@aimpact/agents-api@0.4.1/realtime/client/base", "@aimpact/agents-api@0.4.1/realtime/utils"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, ClientSession, __beyond_pkg, hmr;
+  _export("ClientSession", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_aimpactAgentsApi041WsConfig) {
+      dependency_1 = _aimpactAgentsApi041WsConfig;
+    }, function (_aimpactAgentsApi041RealtimeChannel) {
+      dependency_2 = _aimpactAgentsApi041RealtimeChannel;
+    }, function (_beyondJsEvents007Events) {
+      dependency_3 = _beyondJsEvents007Events;
+    }, function (_aimpactAgentsApi041RealtimeClientBase) {
+      dependency_4 = _aimpactAgentsApi041RealtimeClientBase;
+    }, function (_aimpactAgentsApi041RealtimeUtils) {
+      dependency_5 = _aimpactAgentsApi041RealtimeUtils;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/firestore-collection", "0.0.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/response", "0.0.3"], ["@google-cloud/storage", "7.17.0"], ["@openai/agents", "0.1.3"], ["@pinecone-database/pinecone", "6.1.2"], ["express", "4.21.2"], ["express-rate-limit", "7.2.0"], ["express-openapi-validator", "5.5.8"], ["firebase-admin", "12.7.0"], ["multer", "2.0.2"], ["form-data", "4.0.4"], ["jsonwebtoken", "9.0.2"], ["ws", "8.18.3"], ["socket.io", "4.8.1"], ["node-fetch", "2.7.0"], ["dotenv", "16.6.1"], ["fluent-ffmpeg", "2.1.3"], ["dayjs", "1.11.17"], ["openai", "4.104.0"], ["uuid", "10.0.0"], ["find-up", "7.0.0"], ["postmark", "4.0.5"], ["zod", "3.25.67"], ["axios", "1.12.2"], ["socket.io-client", "4.8.1"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/bee", "0.0.7"], ["@beyond-js/local", "0.1.3"], ["@types/jsonwebtoken", "9.0.10"], ["@types/express", "5.0.3"], ["@types/node", "20.6.5"], ["@types/uuid", "9.0.8"], ["@types/ws", "8.5.14"], ["@types/react", "18.3.24"], ["@types/audioworklet", "0.0.83"], ["swagger-ui-express", "5.0.1"], ["yaml", "2.8.1"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/agents-api@0.4.1/realtime/client"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@aimpact/agents-api/ws-config', dependency_1], ['@aimpact/agents-api/realtime/channel', dependency_2], ['@beyond-js/events/events', dependency_3], ['@aimpact/agents-api/realtime/client/base', dependency_4], ['@aimpact/agents-api/realtime/utils', dependency_5]]);
+      ims = new Map();
+      /*************************
+      INTERNAL MODULE: ./channel
+      *************************/
+      ims.set('./channel', {
+        hash: 2749510134,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Channel = void 0;
+          var _wsConfig = require("@aimpact/agents-api/ws-config");
+          var _channel = require("@aimpact/agents-api/realtime/channel");
+          var _events = require("@beyond-js/events/events");
+          const SERVER_URL = _wsConfig.url;
+          class Channel extends _events.Events {
+            #channel;
+            #created = false;
+            get status() {
+              const {
+                status
+              } = this.#channel;
+              return status === 'open' && this.#created ? 'created' : status;
+            }
+            get error() {
+              return this.#channel.error;
+            }
+            constructor() {
+              super();
+              this.#channel = new _channel.Channel({
+                url: SERVER_URL
+              });
+              this.#channel.on('open', this.#onopen);
+              this.#channel.on('close', this.#onclose);
+              this.#channel.on('message', this.#onmessage);
+            }
+            #onopen = () => this.trigger('open');
+            #onclose = () => this.trigger('close');
+            #onmessage = message => {
+              let event, data;
+              try {
+                const parsed = JSON.parse(message);
+                ({
+                  event,
+                  data
+                } = parsed);
+                if (!event) {
+                  console.warn(`Agent message seems to be invalid, event not defined:`, message);
+                  return;
+                }
+              } catch (exc) {
+                console.warn(`Unable to parse agent message:`, message, exc.message);
+                return;
+              }
+              console.log(`Event "${event}" has been received:`, data);
+              event === 'session.created' && (this.#created = true);
+              this.trigger(event, data);
+            };
+            #cleanup() {
+              this.#channel.off('open', this.#onopen);
+              this.#channel.off('close', this.#onclose);
+              this.#channel.off('message', this.#onmessage);
+            }
+            async connect() {
+              return await this.#channel.connect();
+            }
+            async close() {
+              this.#cleanup();
+              return await this.#channel.close();
+            }
+            send(event, data) {
+              this.#channel.send(JSON.stringify({
+                event,
+                data
+              }));
+            }
+          }
+          exports.Channel = Channel;
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 314552738,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ClientSession = void 0;
+          var _base = require("@aimpact/agents-api/realtime/client/base");
+          var _channel = require("./channel");
+          var _utils = require("@aimpact/agents-api/realtime/utils");
+          /*bundle*/
+          class ClientSession extends _base.ClientSessionBase {
+            #channel;
+            get status() {
+              return this.#channel.status;
+            }
+            get error() {
+              return this.#channel.error;
+            }
+            constructor(settings) {
+              const channel = new _channel.Channel();
+              super(channel, channel, settings);
+              this.#channel = channel;
+            }
+            async connect() {
+              const ok = await this.#channel.connect();
+              ok && (await super.connect());
+              return ok;
+            }
+            async close() {
+              this.#channel.close();
+              return await super.close();
+            }
+            async update(settings) {
+              this.#channel.send('connect', settings);
+            }
+            listen(data) {
+              const audio = _utils.RealtimeUtils.arrayBufferToBase64(data.mono);
+              this.#channel.send('listen', {
+                audio
+              });
+            }
+          }
+          exports.ClientSession = ClientSession;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "ClientSession",
+        "name": "ClientSession"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'ClientSession') && _export("ClientSession", ClientSession = require ? require('./index').ClientSession : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfd3NDb25maWciLCJyZXF1aXJlIiwiX2NoYW5uZWwiLCJfZXZlbnRzIiwiU0VSVkVSX1VSTCIsInVybCIsIkNoYW5uZWwiLCJFdmVudHMiLCJjaGFubmVsIiwiY3JlYXRlZCIsInN0YXR1cyIsImVycm9yIiwiY29uc3RydWN0b3IiLCJvbiIsIm9ub3BlbiIsIm9uY2xvc2UiLCJvbm1lc3NhZ2UiLCIjb25vcGVuIiwidHJpZ2dlciIsIiNvbmNsb3NlIiwibWVzc2FnZSIsImV2ZW50IiwiZGF0YSIsInBhcnNlZCIsIkpTT04iLCJwYXJzZSIsImNvbnNvbGUiLCJ3YXJuIiwiZXhjIiwibG9nIiwiY2xlYW51cCIsIiNjbGVhbnVwIiwib2ZmIiwiY29ubmVjdCIsImNsb3NlIiwic2VuZCIsInN0cmluZ2lmeSIsImV4cG9ydHMiLCJfYmFzZSIsIl91dGlscyIsIkNsaWVudFNlc3Npb24iLCJDbGllbnRTZXNzaW9uQmFzZSIsInNldHRpbmdzIiwib2siLCJ1cGRhdGUiLCJsaXN0ZW4iLCJhdWRpbyIsIlJlYWx0aW1lVXRpbHMiLCJhcnJheUJ1ZmZlclRvQmFzZTY0IiwibW9ubyJdLCJzb3VyY2VzIjpbIi9jaGFubmVsLnRzIiwiL2luZGV4LnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLFNBQUEsR0FBQUMsT0FBQTtVQUNBLElBQUFDLFFBQUEsR0FBQUQsT0FBQTtVQUNBLElBQUFFLE9BQUEsR0FBQUYsT0FBQTtVQUVBLE1BQU1HLFVBQVUsR0FBR0osU0FBQSxDQUFBSyxHQUFLO1VBRWxCLE1BQU9DLE9BQVEsU0FBUUgsT0FBQSxDQUFBSSxNQUFNO1lBQ2xDLENBQUFDLE9BQVE7WUFDUixDQUFBQyxPQUFRLEdBQUcsS0FBSztZQUVoQixJQUFJQyxNQUFNQSxDQUFBO2NBQ1QsTUFBTTtnQkFBRUE7Y0FBTSxDQUFFLEdBQUcsSUFB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O2NBQUksQ0FBRSxDQUFDLENBQUM7WUFDcEQ7O1VBQ0FlLE9BQUEsQ0FBQS9CLE9BQUEsR0FBQUEsT0FBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7VUN0RUQsSUFBQWdDLEtBQUEsR0FBQXJDLE9BQUE7VUFDQSxJQUFBQyxRQUFBLEdBQUFELE9BQUE7VUFDQSxJQUFBc0MsTUFBQSxHQUFBdEMsT0FBQTtVQUVPO1VBQVUsTUFBT3VDLGFBQWMsU0FBUUYsS0FBQSxDQUFBRyxpQkFBaUI7WUFDOUQsQ0FBQWpDLE9BQVE7WUFFUixJQUFJRSxNQUFNQSxDQUFBO2NBQ1QsT0FBTyxJQUFJLENBQUMsQ0FBQUYsT0FBUSxDQUFDRSxNQUFNO1lBQzVCO1lBRUEsSUFBSUMsS0FBS0EsQ0FBQTtjQUNSLE9BQU8sSUFBSSxDQUFDLENBQUFILE9BQVEsQ0FBQ0csS0FBSztZQUMzQjtZQUVBQyxZQUFZOEIsUUFBdUM7Y0FDbEQsTUFBTWxDLE9BQU8sR0FBRyxJQUFJTixRQUFBLENBQUFJLE9BQU8sRUFBRTtjQUM3QixLQUFLLENBQUNFLE9BQU8sRUFBRUEsT0FBTyxFQUFFa0MsUUFBUSxDQUFDO2NBRWpDLElBQUksQ0FBQyxDQUFBbEMsT0FBUSxHQUFHQSxPQUFPO1lBQ3hCO1lBRUEsTUFBTXlCLE9BQU9BLENBQUE7Y0FDWixNQUFNVSxFQUFFLEdBQUcsTUFBTSxJQUFJLENBQUMsQ0FBQW5DLE9BQVEsQ0FBQ3lCLE9BQU8sRUFBRTtjQUN4Q1UsRUFBRSxLQUFLLE1BQU0sS0FBSyxDQUFDVixPQUFPLEVBQUUsQ0FBQztjQUU3QixPQUFPVSxFQUFFO1lBQ1Y7WUFFQSxNQUFNVCxLQUFLQSxDQUFBO2NBQ1YsSUFBSSxDQUFDLENBQUExQixPQUFRLENBQUMwQixLQUFLLEVBQUU7Y0FDckIsT0FBTyxNQUFNLEtBQUssQ0FBQ0EsS0FBSyxFQUFFO1lBQzNCO1lBRUEsTUFBTVUsTUFBTUEsQ0FBQ0YsUUFBeUQ7Y0FDckUsSUFBSSxDQUFDLENBQUFsQyxPQUFRLENBQUMyQixJQUFJLENBQUMsU0FBUyxFQUFFTyxRQUFRLENBQUM7WUFDeEM7WUFFQUcsTUFBTUEsQ0FBQ3ZCLElBQTJDO2NBQ2pELE1BQU13QixLQUFLLEdBQUdQLE1BQUEsQ0FBQVEsYUFBYSxDQUFDQyxtQkFBbUIsQ0FBQzFCLElBQUksQ0FBQzJCLElBQUksQ0FBQztjQUMxRCxJQUFJLENBQUMsQ0FBQXpDLE9BQVEsQ0FBQzJCLElBQUksQ0FBQyxRQUFRLEVBQUU7Z0JBQUVXO2NBQUssQ0FBRSxDQUFDO1lBQ3hDOztVQUNBVCxPQUFBLENBQUFHLGFBQUEsR0FBQUEsYUFBQSIsImlnbm9yZUxpc3QiOltdfQ==

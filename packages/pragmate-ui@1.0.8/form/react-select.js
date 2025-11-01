@@ -1,2 +1,222 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/styles","react@18.3.1"],function(_export,_context){"use strict";var dependency_0,dependency_1,dependency_2,bimport,__Bundle,__pkg,ims,ReactSelect,__beyond_pkg,hmr;_export("ReactSelect",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_beyondJsKernel0114Styles){dependency_1=_beyondJsKernel0114Styles},function(_react2){dependency_2=_react2}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.12"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/reactive","2.1.0"],["@beyond-js/widgets","0.1.6"],["@floating-ui/dom","1.7.3"],["clsx","2.1.1"],["framer-motion","11.11.11"],["perfect-scrollbar","1.5.6"],["prismjs","1.29.0"],["swiper","10.3.1"],["tippy.js","6.3.7"],["@types/react","18.3.12"],["@types/react-dom","18.3.1"],["pragmate-ui","1.0.8"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"pragmate-ui@1.0.8/form/react-select"},type:"code"},_context.meta.url).package();__pkg.dependencies.update([["@beyond-js/kernel/styles",dependency_1],["react",dependency_2]]);brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@1.0.8/form/react-select");ims=new Map;ims.set("./index",{hash:1442099142,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.ReactSelect=ReactSelect;var _react=require("react");var _mobileSelect=require("./mobile-select");function ReactSelect(props){let properties={...props};delete properties.onChange;return _react.default.createElement(_mobileSelect.MobileSelect,{...props})}}});ims.set("./mobile-select",{hash:1249938230,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.MobileSelect=MobileSelect;var React=require("react");function MobileSelect({label:label,options:options,placeholder:placeholder,id:id,isDisabled:isDisabled,disabled:disabled,...rest}){const selectId=id??React.useId();return React.createElement("div",{className:"pui-mobile-select__container"},React.createElement("label",{htmlFor:selectId,className:"sr-only"},label),React.createElement("select",{id:selectId,"aria-label":label,disabled:isDisabled||disabled,...rest,className:"pui-mobile-select"},placeholder&&React.createElement("option",{value:""},placeholder),options.map(({value:value,label:label})=>React.createElement("option",{key:value.toString(),value:value},label))))}}});ims.set("./observer",{hash:3933443758,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.StyleObserver=void 0;class StyleObserver{observer;constructor({callback:callback}){this.observer=new MutationObserver(mutations=>{mutations.forEach(mutation=>{if(mutation.type!=="childList")return;callback(mutation.addedNodes)})})}startObserving(targetNode){if(!targetNode)return;const config={childList:true};this.observer.observe(targetNode,config)}stopObserving(){this.observer.disconnect()}}exports.StyleObserver=StyleObserver}});ims.set("./use-styles",{hash:2902897892,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.useStyles=useStyles;var _react=require("react");var _observer=require("./observer");function useStyles(){const ref=_react.default.useRef(null);_react.default.useEffect(()=>{if(!ref.current)return;const host=ref.current.getRootNode()?.host;if(!host)console.warn("is not inside a web component");if(!host.shadowRoot.insertedStyles)host.shadowRoot.insertedStyles=new Set;const headStyles=document.head.querySelectorAll("style[data-emotion]");const callback=nodes=>{const insertedStyles=new Set;nodes.forEach(node=>{const styleContent=node?.textContent;if(!(node instanceof HTMLStyleElement)||insertedStyles.has(styleContent))return;const clonedStyle=node.cloneNode(true);host.shadowRoot.appendChild(clonedStyle);insertedStyles.add(styleContent)})};const styleObserver=new _observer.StyleObserver({callback:callback});const targetNode=document.head;styleObserver.startObserving(targetNode);callback(headStyles);return()=>styleObserver.stopObserving()},[ref.current]);return{ref:ref}}}});__pkg.exports.descriptor=[{im:"./index",from:"ReactSelect",name:"ReactSelect"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="ReactSelect")&&_export("ReactSelect",ReactSelect=require?require("./index").ReactSelect:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvcHJhZ21hdGUtdWlAMS4wLjgvZm9ybS9yZWFjdC1zZWxlY3QuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImRlcGVuZGVuY3lfMSIsImRlcGVuZGVuY3lfMiIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwiUmVhY3RTZWxlY3QiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsIl9iZXlvbmRKc0tlcm5lbDAxMTRTdHlsZXMiLCJfcmVhY3QyIiwiZXhlY3V0ZSIsInNwZWNpZmllciIsImRlcGVuZGVuY2llcyIsIk1hcCIsImdsb2JhbFRoaXMiLCJyZXNvbHZlIiwiQnVuZGxlIiwibW9kdWxlIiwidnNwZWNpZmllciIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsImJyZXF1aXJlIiwic3R5bGVzIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiLCJfcmVhY3QiLCJfbW9iaWxlU2VsZWN0IiwicHJvcHMiLCJwcm9wZXJ0aWVzIiwib25DaGFuZ2UiLCJkZWZhdWx0IiwiY3JlYXRlRWxlbWVudCIsIk1vYmlsZVNlbGVjdCIsIlJlYWN0IiwibGFiZWwiLCJvcHRpb25zIiwicGxhY2Vob2xkZXIiLCJpZCIsImlzRGlzYWJsZWQiLCJkaXNhYmxlZCIsInJlc3QiLCJzZWxlY3RJZCIsInVzZUlkIiwiY2xhc3NOYW1lIiwiaHRtbEZvciIsIm1hcCIsImtleSIsInRvU3RyaW5nIiwiU3R5bGVPYnNlcnZlciIsIm9ic2VydmVyIiwiY29uc3RydWN0b3IiLCJjYWxsYmFjayIsInRoaXMiLCJNdXRhdGlvbk9ic2VydmVyIiwibXV0YXRpb25zIiwiZm9yRWFjaCIsIm11dGF0aW9uIiwiYWRkZWROb2RlcyIsInN0YXJ0T2JzZXJ2aW5nIiwidGFyZ2V0Tm9kZSIsImNvbmZpZyIsImNoaWxkTGlzdCIsIm9ic2VydmUiLCJzdG9wT2JzZXJ2aW5nIiwiZGlzY29ubmVjdCIsInVzZVN0eWxlcyIsIl9vYnNlcnZlciIsInJlZiIsInVzZVJlZiIsInVzZUVmZmVjdCIsImN1cnJlbnQiLCJob3N0IiwiZ2V0Um9vdE5vZGUiLCJjb25zb2xlIiwid2FybiIsInNoYWRvd1Jvb3QiLCJpbnNlcnRlZFN0eWxlcyIsIlNldCIsImhlYWRTdHlsZXMiLCJkb2N1bWVudCIsImhlYWQiLCJxdWVyeVNlbGVjdG9yQWxsIiwibm9kZXMiLCJub2RlIiwic3R5bGVDb250ZW50IiwidGV4dENvbnRlbnQiLCJIVE1MU3R5bGVFbGVtZW50IiwiaGFzIiwiY2xvbmVkU3R5bGUiLCJjbG9uZU5vZGUiLCJhcHBlbmRDaGlsZCIsImFkZCIsInN0eWxlT2JzZXJ2ZXIiLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwibmFtZSIsInByb2Nlc3MiLCJwcm9wIiwib24iLCJldmVudCIsImxpc3RlbmVyIiwib2ZmIiwiaW5pdGlhbGlzZSJdLCJzb3VyY2VzIjpbIjAiXSwibWFwcGluZ3MiOiJBQUFBQSxPQUFPQyxTQUFTLENBQUMsa0NBQW1DLGtDQUFtQyxnQkFBaUIsU0FBVUMsUUFBU0MsVUFDekgsYUFFQSxJQUFJQyxhQUFjQyxhQUFjQyxhQUFjQyxRQUFTQyxTQUFVQyxNQUFPQyxJQUFLQyxZQUFhQyxhQUFjQyxJQUN4R1gsUUFBUSxtQkFBb0IsR0FDNUIsTUFBTyxDQUNMWSxRQUFTLENBQUMsU0FBVUMsMkJBQ2xCWCxhQUFlVyx5QkFDakIsRUFBRyxTQUFVQywyQkFDWFgsYUFBZVcseUJBQ2pCLEVBQUcsU0FBVUMsU0FDWFgsYUFBZVcsT0FDakIsR0FDQUMsUUFBUyxXQUNQWCxRQUFVWSxZQUNSLE1BQU1DLGFBQWUsSUFBSUMsSUFBSSxDQUFDLENBQUMsb0JBQXFCLFNBQVUsQ0FBQyxvQkFBcUIsVUFBVyxDQUFDLDhCQUErQixTQUFVLENB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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/styles", "react@18.3.1"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, ReactSelect, __beyond_pkg, hmr;
+  _export("ReactSelect", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_1 = _beyondJsKernel0114Styles;
+    }, function (_react2) {
+      dependency_2 = _react2;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.0"], ["@beyond-js/widgets", "0.1.6"], ["@floating-ui/dom", "1.7.3"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.8"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.8/form/react-select"
+        },
+        "type": "code"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@1.0.8/form/react-select');
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 1442099142,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ReactSelect = ReactSelect;
+          var _react = require("react");
+          var _mobileSelect = require("./mobile-select");
+          /*bundle*/ /**
+                      * The component is deprecated is 'select' component instead.
+                      * @deprecated
+                      * @param props
+                      * @returns
+                      */
+          function ReactSelect(props) {
+            let properties = {
+              ...props
+            };
+            delete properties.onChange;
+            return _react.default.createElement(_mobileSelect.MobileSelect, {
+              ...props
+            });
+          }
+        }
+      });
+
+      /*******************************
+      INTERNAL MODULE: ./mobile-select
+      *******************************/
+
+      ims.set('./mobile-select', {
+        hash: 1249938230,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.MobileSelect = MobileSelect;
+          var React = require("react");
+          function MobileSelect({
+            label,
+            options,
+            placeholder,
+            id,
+            isDisabled,
+            disabled,
+            ...rest
+          }) {
+            const selectId = id ?? React.useId(); // genera id único
+            return React.createElement("div", {
+              className: "pui-mobile-select__container"
+            }, React.createElement("label", {
+              htmlFor: selectId,
+              className: "sr-only"
+            }, label), React.createElement("select", {
+              id: selectId,
+              "aria-label": label,
+              disabled: isDisabled || disabled,
+              ...rest,
+              className: "pui-mobile-select"
+            }, placeholder && React.createElement("option", {
+              value: ""
+            }, placeholder), options.map(({
+              value,
+              label
+            }) => React.createElement("option", {
+              key: value.toString(),
+              value: value
+            }, label))));
+          }
+        }
+      });
+
+      /**************************
+      INTERNAL MODULE: ./observer
+      **************************/
+
+      ims.set('./observer', {
+        hash: 3933443758,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StyleObserver = void 0;
+          class StyleObserver {
+            observer;
+            constructor({
+              callback
+            }) {
+              this.observer = new MutationObserver(mutations => {
+                mutations.forEach(mutation => {
+                  if (mutation.type !== 'childList') return;
+                  callback(mutation.addedNodes);
+                });
+              });
+            }
+            startObserving(targetNode) {
+              if (!targetNode) return;
+              const config = {
+                childList: true
+              };
+              this.observer.observe(targetNode, config);
+            }
+            stopObserving() {
+              this.observer.disconnect();
+            }
+          }
+          exports.StyleObserver = StyleObserver;
+        }
+      });
+
+      /****************************
+      INTERNAL MODULE: ./use-styles
+      ****************************/
+
+      ims.set('./use-styles', {
+        hash: 2902897892,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useStyles = useStyles;
+          var _react = require("react");
+          var _observer = require("./observer");
+          function useStyles() {
+            const ref = _react.default.useRef(null);
+            _react.default.useEffect(() => {
+              if (!ref.current) return;
+              const host = ref.current.getRootNode()?.host;
+              if (!host) console.warn('is not inside a web component');
+              if (!host.shadowRoot.insertedStyles) host.shadowRoot.insertedStyles = new Set();
+              const headStyles = document.head.querySelectorAll('style[data-emotion]');
+              // the callback name is used because it is the property parameter of the StyleObserver class
+              const callback = nodes => {
+                const insertedStyles = new Set();
+                nodes.forEach(node => {
+                  const styleContent = node?.textContent;
+                  if (!(node instanceof HTMLStyleElement) || insertedStyles.has(styleContent)) return;
+                  const clonedStyle = node.cloneNode(true);
+                  host.shadowRoot.appendChild(clonedStyle);
+                  insertedStyles.add(styleContent);
+                });
+              };
+              const styleObserver = new _observer.StyleObserver({
+                callback
+              });
+              const targetNode = document.head;
+              styleObserver.startObserving(targetNode);
+              callback(headStyles);
+              return () => styleObserver.stopObserving();
+            }, [ref.current]);
+            return {
+              ref
+            };
+          }
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "ReactSelect",
+        "name": "ReactSelect"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'ReactSelect') && _export("ReactSelect", ReactSelect = require ? require('./index').ReactSelect : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX21vYmlsZVNlbGVjdCIsIlJlYWN0U2VsZWN0IiwicHJvcHMiLCJwcm9wZXJ0aWVzIiwib25DaGFuZ2UiLCJkZWZhdWx0IiwiY3JlYXRlRWxlbWVudCIsIk1vYmlsZVNlbGVjdCIsIlJlYWN0IiwibGFiZWwiLCJvcHRpb25zIiwicGxhY2Vob2xkZXIiLCJpZCIsImlzRGlzYWJsZWQiLCJkaXNhYmxlZCIsInJlc3QiLCJzZWxlY3RJZCIsInVzZUlkIiwiY2xhc3NOYW1lIiwiaHRtbEZvciIsInZhbHVlIiwibWFwIiwia2V5IiwidG9TdHJpbmciLCJTdHlsZU9ic2VydmVyIiwib2JzZXJ2ZXIiLCJjb25zdHJ1Y3RvciIsImNhbGxiYWNrIiwiTXV0YXRpb25PYnNlcnZlciIsIm11dGF0aW9ucyIsImZvckVhY2giLCJtdXRhdGlvbiIsInR5cGUiLCJhZGRlZE5vZGVzIiwic3RhcnRPYnNlcnZpbmciLCJ0YXJnZXROb2RlIiwiY29uZmlnIiwiY2hpbGRMaXN0Iiwib2JzZXJ2ZSIsInN0b3BPYnNlcnZpbmciLCJkaXNjb25uZWN0IiwiZXhwb3J0cyIsIl9vYnNlcnZlciIsInVzZVN0eWxlcyIsInJlZiIsInVzZVJlZiIsInVzZUVmZmVjdCIsImN1cnJlbnQiLCJob3N0IiwiZ2V0Um9vdE5vZGUiLCJjb25zb2xlIiwid2FybiIsInNoYWRvd1Jvb3QiLCJpbnNlcnRlZFN0eWxlcyIsIlNldCIsImhlYWRTdHlsZXMiLCJkb2N1bWVudCIsImhlYWQiLCJxdWVyeVNlbGVjdG9yQWxsIiwibm9kZXMiLCJub2RlIiwic3R5bGVDb250ZW50IiwidGV4dENvbnRlbnQiLCJIVE1MU3R5bGVFbGVtZW50IiwiaGFzIiwiY2xvbmVkU3R5bGUiLCJjbG9uZU5vZGUiLCJhcHBlbmRDaGlsZCIsImFkZCIsInN0eWxlT2JzZXJ2ZXIiXSwic291cmNlcyI6WyIvdHMvaW5kZXgudHN4IiwiL3RzL21vYmlsZS1zZWxlY3QudHN4IiwiL3RzL29ic2VydmVyLnRzIiwiL3RzL3VzZS1zdHlsZXMudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxNQUFBLEdBQUFDLE9BQUE7VUFFQSxJQUFBQyxhQUFBLEdBQUFELE9BQUE7VUFRTyxXQU5QOzs7Ozs7VUFNaUIsU0FDUkUsV0FBV0EsQ0FBQ0MsS0FBSztZQUN6QixJQUFJQyxVQUFVLEdBQUc7Y0FBRSxHQUFHRDtZQUFLLENBQUU7WUFFN0IsT0FBT0MsVUFBVSxDQUFDQyxRQUFRO1lBRTFCLE9BQU9OLE1BQUEsQ0FBQU8sT0FBQSxDQUFBQyxhQUFBLENBQUNOLGFBQUEsQ0FBQU8sWUFBWTtjQUFBLEdBQUtMO1lBQUssRUFBSTtVQUNuQzs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNqQkEsSUFBQU0sS0FBQSxHQUFBVCxPQUFBO1VBZU0sU0FBVVEsWUFBWUEsQ0FBQztZQUFFRSxLQUFLO1lBQUVDLE9BQU87WUFBRUMsV0FBVztZQUFFQyxFQUFFO1lBQUVDLFVBQVU7WUFBRUMsUUFBUTtZQUFFLEdBQUdDO1VBQUksQ0FBVztZQUN2RyxNQUFNQyxRQUFRLEdBQUdKLEVBQUUsSUFBSUosS0FBSyxDQUFDUyxLQUFLLEVBQUUsQ0FBQyxDQUFDO1lBRXRDLE9BQ0NULEtBQUEsQ0FBQUYsYUFBQTtjQUFLWSxTQUFTLEVBQUM7WUFBOEIsR0FFNUNWLEtBQUEsQ0FBQUYsYUFBQTtjQUFPYSxPQUFPLEVBQUVILFFBQVE7Y0FBRUUsU0FBUyxFQUFDO1lBQVMsR0FDM0NULEtBQUssQ0FDQyxFQUVSRCxLQUFBLENBQUFGLGFBQUE7Y0FDQ00sRUFBRSxFQUFFSSxRQUFRO2NBQUEsY0FDQVAsS0FBSztjQUNqQkssUUFBUSxFQUFFRCxVQUFVLElBQUlDLFFBQVE7Y0FBQSxHQUM1QkMsSUFBSTtjQUNSRyxTQUFTLEVBQUM7WUFBbUIsR0FFNUJQLFdBQVcsSUFBSUgsS0FBQSxDQUFBRixhQUFBO2NBQVFjLEtBQUssRUFBQztZQUFFLEdBQUVULFdBQVcsQ0FBVSxFQUV0REQsT0FBTyxDQUFDVyxHQUFHLENBQUMsQ0FBQztjQUFFRCxLQUFLO2NBQUVYO1lBQUssQ0FBRSxLQUM3QkQsS0FBQSxDQUFBRixhQUFBO2NBQVFnQixHQUFHLEVBQUVGLEtBQUssQ0FBQ0csUUFBUSxFQUFFO2NBQUVILEtBQUssRUFBRUE7WUFBSyxHQUN6Q1gsS0FBSyxDQUVQLENBQUMsQ0FDTSxDQUNKO1VBRVI7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDMUNNLE1BQU9lLGFBQWE7WUFDakJDLFFBQVE7WUFFaEJDLFlBQVk7Y0FBRUM7WUFBUSxDQUEwQjtjQUMvQyxJQUFJLENBQUNGLFFBQVEsR0FBRyxJQUFJRyxnQkFBZ0IsQ0FBQ0MsU0FBUyxJQUFHO2dCQUNoREEsU0FBUyxDQUFDQyxPQUFPLENBQUVDLFFBQXdCLElBQUk7a0JBQzlDLElBQUlBLFFBQVEsQ0FBQ0MsSUFBSSxLQUFLLFdBQVcsRUFBRTtrQkFDbkNMLFFBQVEsQ0FBQ0ksUUFBUSxDQUFDRSxVQUFVLENBQUM7Z0JBQzlCLENBQUMsQ0FBQztjQUNILENBQUMsQ0FBQztZQUNIO1lBRUFDLGNBQWNBLENBQUNDLFVBQXVCO2NBQ3JDLElBQUksQ0FBQ0EsVUFBVSxFQUFFO2NBQ2pCLE1BQU1DLE1BQU0sR0FBRztnQkFBRUMsU0FBUyxFQUFFO2NBQUksQ0FBRTtjQUNsQyxJQUFJLENBQUNaLFFBQVEsQ0FBQ2EsT0FBTyxDQUFDSCxVQUFVLEVBQUVDLE1BQU0sQ0FBQztZQUMxQztZQUVBRyxhQUFhQSxDQUFBO2NBQ1osSUFBSSxDQUFDZCxRQUFRLENBQUNlLFVBQVUsRUFBRTtZQUMzQjs7VUFDQUMsT0FBQSxDQUFBakIsYUFBQSxHQUFBQSxhQUFBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ3JCRCxJQUFBMUIsTUFBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQTJDLFNBQUEsR0FBQTNDLE9BQUE7VUFDTSxTQUFVNEMsU0FBU0EsQ0FBQTtZQUN4QixNQUFNQyxHQUFHLEdBQUc5QyxNQUFBLENBQUFPLE9BQUssQ0FBQ3dDLE1BQU0sQ0FBQyxJQUFJLENBQUM7WUFFOUIvQyxNQUFBLENBQUFPLE9BQUssQ0FBQ3lDLFNBQVMsQ0FBQyxNQUFLO2NBQ3BCLElBQUksQ0FBQ0YsR0FBRyxDQUFDRyxPQUFPLEVBQUU7Y0FDbEIsTUFBTUMsSUFBSSxHQUFHSixHQUFHLENBQUNHLE9BQU8sQ0FBQ0UsV0FBVyxFQUFFLEVBQUVELElBQUk7Y0FDNUMsSUFBSSxDQUFDQSxJQUFJLEVBQUVFLE9BQU8sQ0FBQ0MsSUFBSSxDQUFDLCtCQUErQixDQUFDO2NBQ3hELElBQUksQ0FBQ0gsSUFBSSxDQUFDSSxVQUFVLENBQUNDLGNBQWMsRUFBRUwsSUFBSSxDQUFDSSxVQUFVLENBQUNDLGNBQWMsR0FBRyxJQUFJQyxHQUFHLEVBQUU7Y0FFL0UsTUFBTUMsVUFBVSxHQUFHQyxRQUFRLENBQUNDLElBQUksQ0FBQ0MsZ0JBQWdCLENBQUMscUJBQXFCLENBQUM7Y0FDeEU7Y0FDQSxNQUFNL0IsUUFBUSxHQUFJZ0MsS0FBK0IsSUFBSTtnQkFDcEQsTUFBTU4sY0FBYyxHQUFHLElBQUlDLEdBQUcsRUFBRTtnQkFDaENLLEtBQUssQ0FBQzdCLE9BQU8sQ0FBQzhCLElBQUksSUFBRztrQkFDcEIsTUFBTUMsWUFBWSxHQUFHRCxJQUFJLEVBQUVFLFdBQVc7a0JBQ3RDLElBQUksRUFBRUYsSUFBSSxZQUFZRyxnQkFBZ0IsQ0FBQyxJQUFJVixjQUFjLENBQUNXLEdBQUcsQ0FBQ0gsWUFBWSxDQUFDLEVBQUU7a0JBRTdFLE1BQU1JLFdBQVcsR0FBR0wsSUFBSSxDQUFDTSxTQUFTLENBQUMsSUFBSSxDQUFDO2tCQUN4Q2xCLElBQUksQ0FBQ0ksVUFBVSxDQUFDZSxXQUFXLENBQUNGLFdBQVcsQ0FBQztrQkFDeENaLGNBQWMsQ0FBQ2UsR0FBRyxDQUFDUCxZQUFZLENBQUM7Z0JBQ2pDLENBQUMsQ0FBQztjQUNILENBQUM7Y0FFRCxNQUFNUSxhQUFhLEdBQWtCLElBQUkzQixTQUFBLENBQUFsQixhQUFhLENBQUM7Z0JBQUVHO2NBQVEsQ0FBRSxDQUFDO2NBQ3BFLE1BQU1RLFVBQVUsR0FBb0JxQixRQUFRLENBQUNDLElBQUk7Y0FDakRZLGFBQWEsQ0FBQ25DLGNBQWMsQ0FBQ0MsVUFBVSxDQUFDO2NBQ3hDUixRQUFRLENBQUM0QixVQUFVLENBQUM7Y0FFcEIsT0FBTyxNQUFNYyxhQUFhLENBQUM5QixhQUFhLEVBQUU7WUFDM0MsQ0FBQyxFQUFFLENBQUNLLEdBQUcsQ0FBQ0csT0FBTyxDQUFDLENBQUM7WUFFakIsT0FBTztjQUFFSDtZQUFHLENBQUU7VUFDZiIsImlnbm9yZUxpc3QiOltdfQ==

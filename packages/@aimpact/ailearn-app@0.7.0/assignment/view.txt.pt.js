@@ -1,2 +1,102 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,txt,__beyond_pkg,hmr;_export("txt",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/assignment/view",multibundle:true},type:"txt"},_context.meta.url).package("pt");__pkg.dependencies.update([]);ims=new Map;ims.set("./txt",{hash:2424697616,creator:function(require,exports){exports.txt={breadcrumb:{modules:"M\xf3dulos",management:"Gest\xe3o",assignment:"Atribui\xe7\xe3o",chat:"Chat"},not_member:{title:"Ol\xe1",subtitle:"Parece que voc\xea ainda n\xe3o tem acesso a",description:"Voc\xea n\xe3o tem acesso \xe0 sala de aula, deve solicit\xe1-lo ao professor e aguardar que ele confirme",action:"Solicitar acesso",request:{error:"Erro ao solicitar acesso, tente novamente",success:"Sua solicita\xe7\xe3o de acesso foi enviada, aguarde o professor confirmar"}},invited:{title:"Ol\xe1",subtitle:"Voc\xea tem um convite para participar",description:"Inicie sua experi\xeancia de aprendizagem assistida por IA, explore conte\xfado projetado especialmente para voc\xea participando de atividades interativas no seu pr\xf3prio ritmo e de acordo com seu estilo de aprendizagem.",action:"Acessar"},pending:{title:"Ol\xe1",subtitle:"Sua solicita\xe7\xe3o est\xe1 sendo processada",description:"Por favor, verifique seu email para confirmar a aprova\xe7\xe3o da sua solicita\xe7\xe3o. Se voc\xea est\xe1 trabalhando com seu professor neste momento, pode atualizar a p\xe1gina para ver se j\xe1 recebeu acesso.",action:"Atualizar"},module:{description:"Descri\xe7\xe3o",objective:"Objetivo"},activities:{title:"Lista de atividades"},empty:"Voc\xea ainda n\xe3o tem trabalhos de classe",access:"Acessar",description:"Aqui voc\xea encontrar\xe1 os M\xf3dulos de Aprendizagem que seu professor compartilhar\xe1 com voc\xea para trabalhar nos objetivos curriculares. Entre nas diferentes salas de aula e divirta-se aprendendo com seu tutor.",dividerTitle:"Atividades",textCounter:"Atividade ",moduleSubtitleText:"Atividades",accessed:"Agora voc\xea pode acessar as atividades",moduleAccess:"Acesso"}}});__pkg.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="txt")&&_export("txt",txt=require?require("./txt").txt:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvYXNzaWdubWVudC92aWV3LnR4dC5wdC5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJ0eHQiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJtdWx0aWJ1bmRsZSIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJicmVhZGNydW1iIiwibW9kdWxlcyIsIm1hbmFnZW1lbnQiLCJhc3NpZ25tZW50IiwiY2hhdCIsIm5vdF9tZW1iZXIiLCJ0aXRsZSIsInN1YnRpdGxlIiwiZGVzY3JpcHRpb24iLCJhY3Rpb24iLCJyZXF1ZXN0IiwiZXJyb3IiLCJzdWNjZXNzIiwiaW52aXRlZCIsInBlbmRpbmciLCJvYmplY3RpdmUiLCJhY3Rpdml0aWVzIiwiZW1wdHkiLCJhY2Nlc3MiLCJkaXZpZGVyVGl0bGUiLCJ0ZXh0Q291bnRlciIsIm1vZHVsZVN1YnRpdGxlVGV4dCIsImFjY2Vzc2VkIiwibW9kdWxlQWNjZXNzIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInZhbHVlIiwidGhpcyIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLG1DQUFvQyxTQUFVQyxRQUFTQyxVQUN0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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/assignment/view",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('pt');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 2424697616,
+        creator: function (require, exports) {
+          exports.txt = {
+            "breadcrumb": {
+              "modules": "Módulos",
+              "management": "Gestão",
+              "assignment": "Atribuição",
+              "chat": "Chat"
+            },
+            "not_member": {
+              "title": "Olá",
+              "subtitle": "Parece que você ainda não tem acesso a",
+              "description": "Você não tem acesso à sala de aula, deve solicitá-lo ao professor e aguardar que ele confirme",
+              "action": "Solicitar acesso",
+              "request": {
+                "error": "Erro ao solicitar acesso, tente novamente",
+                "success": "Sua solicitação de acesso foi enviada, aguarde o professor confirmar"
+              }
+            },
+            "invited": {
+              "title": "Olá",
+              "subtitle": "Você tem um convite para participar",
+              "description": "Inicie sua experiência de aprendizagem assistida por IA, explore conteúdo projetado especialmente para você participando de atividades interativas no seu próprio ritmo e de acordo com seu estilo de aprendizagem.",
+              "action": "Acessar"
+            },
+            "pending": {
+              "title": "Olá",
+              "subtitle": "Sua solicitação está sendo processada",
+              "description": "Por favor, verifique seu email para confirmar a aprovação da sua solicitação. Se você está trabalhando com seu professor neste momento, pode atualizar a página para ver se já recebeu acesso.",
+              "action": "Atualizar"
+            },
+            "module": {
+              "description": "Descrição",
+              "objective": "Objetivo"
+            },
+            "activities": {
+              "title": "Lista de atividades"
+            },
+            "empty": "Você ainda não tem trabalhos de classe",
+            "access": "Acessar",
+            "description": "Aqui você encontrará os Módulos de Aprendizagem que seu professor compartilhará com você para trabalhar nos objetivos curriculares. Entre nas diferentes salas de aula e divirta-se aprendendo com seu tutor.",
+            "dividerTitle": "Atividades",
+            "textCounter": "Atividade ",
+            "moduleSubtitleText": "Atividades",
+            "accessed": "Agora você pode acessar as atividades",
+            "moduleAccess": "Acesso"
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

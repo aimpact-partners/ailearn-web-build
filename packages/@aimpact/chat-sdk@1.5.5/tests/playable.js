@@ -1,2 +1,179 @@
-System.register(["@beyond-js/widgets@1.1.2/render","@beyond-js/kernel@0.1.14/bundle","@beyond-js/react-18-widgets@1.1.8/page","react@18.3.1","@aimpact/chat-sdk@1.5.5/widgets/playable","@aimpact/chat-sdk@1.5.5/voice"],function(_export,_context){"use strict";var dependency_0,dependency_1,dependency_2,dependency_3,dependency_4,dependency_5,bimport,__Bundle,__pkg,ims,Controller,View,__beyond_pkg,hmr;_export({Controller:void 0,View:void 0});return{setters:[function(_beyondJsWidgets112Render){dependency_0=_beyondJsWidgets112Render},function(_beyondJsKernel0114Bundle){dependency_1=_beyondJsKernel0114Bundle},function(_beyondJsReact18Widgets118Page){dependency_2=_beyondJsReact18Widgets118Page},function(_react){dependency_3=_react},function(_aimpactChatSdk155WidgetsPlayable){dependency_4=_aimpactChatSdk155WidgetsPlayable},function(_aimpactChatSdk155Voice){dependency_5=_aimpactChatSdk155Voice}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/agents-api","0.4.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/reactive","2.1.1"],["@beyond-js/widgets","1.1.4"],["@google-cloud/storage","7.17.1"],["@radix-ui/react-icons","1.3.2"],["@tiptap/extension-blockquote","3.6.2"],["@tiptap/extension-code-block","3.6.2"],["@tiptap/extension-horizontal-rule","3.6.2"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.6.2"],["@tiptap/extension-task-list","3.6.2"],["@tiptap/extension-underline","3.6.2"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.6.2"],["@tiptap/starter-kit","3.6.2"],["clsx","2.1.1"],["dayjs","1.11.18"],["dompurify","3.2.7"],["firebase","11.10.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["katex","0.16.22"],["marked","14.1.4"],["marked-gfm-heading-id","4.1.2"],["marked-highlight","2.2.2"],["marked-mangle","1.1.11"],["media-suite","0.0.4"],["pragmate-ui","1.0.10"],["prism-themes","1.9.0"],["prismjs","1.30.0"],["react-icons","5.5.0"],["socket.io-client","4.8.1"],["turndown","7.2.1"],["wavesurfer.js","7.10.3"],["zod","3.25.76"],["@beyond-js/local","0.1.3"],["@types/react","18.3.25"],["@types/react-dom","18.3.7"],["typescript","5.9.3"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_1);__pkg=new __Bundle({module:{vspecifier:"@aimpact/chat-sdk@1.5.5/tests/playable"},type:"widget"},_context.meta.url).package();__pkg.dependencies.update([["@beyond-js/widgets/render",dependency_0],["@beyond-js/react-18-widgets/page",dependency_2],["react",dependency_3],["@aimpact/chat-sdk/widgets/playable",dependency_4],["@aimpact/chat-sdk/voice",dependency_5]]);brequire("@beyond-js/widgets/render").widgets.register([{name:"chat-sdk-playable",vspecifier:"@aimpact/chat-sdk@1.5.5/tests/playable",is:"page",route:"/chat/sdk/playable"}]);ims=new Map;ims.set("./controller",{hash:1927493790,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Controller=void 0;var _page=require("@beyond-js/react-18-widgets/page");var _store=require("./store");var _views=require("./views");class Controller extends _page.PageReactWidgetController{#store;createStore(){this.#store=new _store.StoreManager;return this.#store}get Widget(){return _views.View}show(){}hide(){}}exports.Controller=Controller}});ims.set("./store",{hash:1793251939,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.StoreManager=void 0;class StoreManager{}exports.StoreManager=StoreManager}});ims.set("./views/index",{hash:1265480085,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.View=View;var React=require("react");var _playable=require("@aimpact/chat-sdk/widgets/playable");var _voice=require("@aimpact/chat-sdk/voice");const text=`\n# Hola como te va ?\n\n## pensamientos\n\nyo pensaba que esto era una prueba pero no lo es`;const text2="hola como te a ti? que me cuentas?";const markdowntext=`\n\n- **work**: software architech\n- hobbie\n- rap\n`;const voice=new _voice.Voice({language:"es",rate:1});voice.langue="es";function View(){const playable=true;const onClickWord=e=>{console.log("clicked",e)};return React.createElement("div",null,React.createElement("h1",null,"Playable component"),React.createElement("h2",null,"Content with markdown"),React.createElement(_playable.Playable,{content:markdowntext,id:"id2",player:voice,playable:playable,onClickWord:onClickWord}))}}});__pkg.exports.descriptor=[{im:"./controller",from:"Controller",name:"Controller"},{im:"./views/index",from:"View",name:"View"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="Controller")&&_export("Controller",Controller=require?require("./controller").Controller:value);(require||prop==="View")&&_export("View",View=require?require("./views/index").View:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvY2hhdC1zZGtAMS41LjUvdGVzdHMvcGxheWFibGUuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImRlcGVuZGVuY3lfMSIsImRlcGVuZGVuY3lfMiIsImRlcGVuZGVuY3lfMyIsImRlcGVuZGVuY3lfNCIsImRlcGVuZGVuY3lfNSIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwiQ29udHJvbGxlciIsIlZpZXciLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzV2lkZ2V0czExMlJlbmRlciIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJfYmV5b25kSnNSZWFjdDE4V2lkZ2V0czExOFBhZ2UiLCJfcmVhY3QiLCJfYWltcGFjdENoYXRTZGsxNTVXaWRnZXRzUGxheWFibGUiLCJfYWltcGFjdENoYXRTZGsxNTVWb2ljZSIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJicmVxdWlyZSIsIndpZGdldHMiLCJuYW1lIiwiaXMiLCJyb3V0ZSIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsInZhbHVlIiwiX3BhZ2UiLCJfc3RvcmUiLCJfdmlld3MiLCJQYWdlUmVhY3RXaWRnZXRDb250cm9sbGVyIiwic3RvcmUiLCJjcmVhdGVTdG9yZSIsInRoaXMiLCJTdG9yZU1hbmFnZXIiLCJXaWRnZXQiLCJzaG93IiwiaGlkZSIsIlJlYWN0IiwiX3BsYXlhYmxlIiwiX3ZvaWNlIiwidGV4dCIsInRleHQyIiwibWFya2Rvd250ZXh0Iiwidm9pY2UiLCJWb2ljZSIsImxhbmd1YWdlIiwicmF0ZSIsImxhbmd1ZSIsInBsYXlhYmxlIiwib25DbGlja1dvcmQiLCJlIiwiY29uc29sZSIsImxvZyIsImNyZWF0ZUVsZW1lbnQiLCJQbGF5YWJsZSIsImNvbnRlbnQiLCJpZCIsInBsYXllciIsImRlc2NyaXB0b3IiLCJpbSIsImZyb20iLCJwcm9jZXNzIiwicHJvcCIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLGtDQUFtQyxrQ0FBbUMseUNBQTBDLGVBQWdCLDJDQUE0QyxpQ0FBa0MsU0FBVUMsUUFBU0MsVUFDaFAsYUFFQSxJQUFJQyxhQUFjQyxhQUFjQyxhQUFjQyxhQUFjQyxhQUFjQyxhQUFjQyxRQUFTQyxTQUFVQyxNQUFPQyxJQUFLQyxXQUFZQyxLQUFNQyxhQUFjQyxJQUN2SmYsUUFBUSxDQUNOWSxnQkFBaUIsRUFDakJDLFVBQVcsSUFFYixNQUFPLENBQ0xHLFFBQVMsQ0FBQyxTQUFVQywyQkFDbEJmLGFBQWVlLHlCQUNqQixFQUFHLFNBQVVDLDJCQUNYZixhQUFlZSx5QkFDakIsRUFBRyxTQUFVQyxnQ0FDWGYsYUFBZWUsOEJBQ2pCLEVBQUcsU0FBVUMsUUFDWGYsYUFBZWUsTUFDakIsRUFBRyxTQUFVQyxtQ0FDWGYsYUFBZWUsaUNBQ2pCLEVBQUcsU0FBVUMseUJBQ1hmLGFBQWVlLHVCQUNqQixHQUNBQyxRQUFTLFdBQ1BmLFFBQVVnQixZQUNSLE1BQU1DLGFBQWUsSUFBSUMsSUFBSSxDQUFDLENBQUMsc0JBQXVCLFNBQVUsQ0FBQyxxQkFBc0IsVUFBVyxDQUFDLG9CQUFxQixTQUFVLENBQUMsd0JBQXlCLFNBQVUsQ0FBQyxvQkFBcUIsVUFBVyxDQUFDLDZCQUE4QixTQUFVLENBQUMsOEJBQStCLFNBQVUsQ0FBQyxzQkFBdUIsU0FBVSxDQUFDLHFCQUFzQixTQUFVLENBQUMsd0JBQXlCLFVBQVcsQ0FBQyx3QkFBeUIsU0FB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
+System.register(["@beyond-js/widgets@1.1.2/render", "@beyond-js/kernel@0.1.14/bundle", "@beyond-js/react-18-widgets@1.1.8/page", "react@18.3.1", "@aimpact/chat-sdk@1.5.5/widgets/playable", "@aimpact/chat-sdk@1.5.5/voice"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
+  _export({
+    Controller: void 0,
+    View: void 0
+  });
+  return {
+    setters: [function (_beyondJsWidgets112Render) {
+      dependency_0 = _beyondJsWidgets112Render;
+    }, function (_beyondJsKernel0114Bundle) {
+      dependency_1 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsReact18Widgets118Page) {
+      dependency_2 = _beyondJsReact18Widgets118Page;
+    }, function (_react) {
+      dependency_3 = _react;
+    }, function (_aimpactChatSdk155WidgetsPlayable) {
+      dependency_4 = _aimpactChatSdk155WidgetsPlayable;
+    }, function (_aimpactChatSdk155Voice) {
+      dependency_5 = _aimpactChatSdk155Voice;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/reactive", "2.1.1"], ["@beyond-js/widgets", "1.1.4"], ["@google-cloud/storage", "7.17.1"], ["@radix-ui/react-icons", "1.3.2"], ["@tiptap/extension-blockquote", "3.6.2"], ["@tiptap/extension-code-block", "3.6.2"], ["@tiptap/extension-horizontal-rule", "3.6.2"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.6.2"], ["@tiptap/extension-task-list", "3.6.2"], ["@tiptap/extension-underline", "3.6.2"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.6.2"], ["@tiptap/starter-kit", "3.6.2"], ["clsx", "2.1.1"], ["dayjs", "1.11.18"], ["dompurify", "3.2.7"], ["firebase", "11.10.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["katex", "0.16.22"], ["marked", "14.1.4"], ["marked-gfm-heading-id", "4.1.2"], ["marked-highlight", "2.2.2"], ["marked-mangle", "1.1.11"], ["media-suite", "0.0.4"], ["pragmate-ui", "1.0.10"], ["prism-themes", "1.9.0"], ["prismjs", "1.30.0"], ["react-icons", "5.5.0"], ["socket.io-client", "4.8.1"], ["turndown", "7.2.1"], ["wavesurfer.js", "7.10.3"], ["zod", "3.25.76"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.25"], ["@types/react-dom", "18.3.7"], ["typescript", "5.9.3"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_1);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/chat-sdk@1.5.5/tests/playable"
+        },
+        "type": "widget"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-18-widgets/page', dependency_2], ['react', dependency_3], ['@aimpact/chat-sdk/widgets/playable', dependency_4], ['@aimpact/chat-sdk/voice', dependency_5]]);
+      brequire('@beyond-js/widgets/render').widgets.register([{
+        "name": "chat-sdk-playable",
+        "vspecifier": "@aimpact/chat-sdk@1.5.5/tests/playable",
+        "is": "page",
+        "route": "/chat/sdk/playable"
+      }]);
+      ims = new Map();
+      /****************************
+      INTERNAL MODULE: ./controller
+      ****************************/
+      ims.set('./controller', {
+        hash: 1927493790,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Controller = void 0;
+          var _page = require("@beyond-js/react-18-widgets/page");
+          var _store = require("./store");
+          var _views = require("./views");
+          /*bundle*/
+          class Controller extends _page.PageReactWidgetController {
+            #store;
+            createStore() {
+              this.#store = new _store.StoreManager();
+              return this.#store;
+            }
+            get Widget() {
+              return _views.View;
+            }
+            /**
+             * this method is executed when the widget is showd
+             */
+            show() {}
+            /**
+             * this method is executed when the widget is hidden
+             */
+            hide() {}
+          }
+          exports.Controller = Controller;
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./store
+      ***********************/
+
+      ims.set('./store', {
+        hash: 1793251939,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StoreManager = void 0;
+          class StoreManager {}
+          exports.StoreManager = StoreManager;
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./views/index
+      *****************************/
+
+      ims.set('./views/index', {
+        hash: 1265480085,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.View = View;
+          var React = require("react");
+          var _playable = require("@aimpact/chat-sdk/widgets/playable");
+          var _voice = require("@aimpact/chat-sdk/voice");
+          const text = `
+# Hola como te va ?
+
+## pensamientos
+
+yo pensaba que esto era una prueba pero no lo es`;
+          const text2 = 'hola como te a ti? que me cuentas?';
+          const markdowntext = `
+
+- **work**: software architech
+- hobbie
+- rap
+`;
+          const voice = new _voice.Voice({
+            language: 'es',
+            rate: 1
+          });
+          voice.langue = 'es';
+          /*bundle*/
+          function View() {
+            const playable = true;
+            const onClickWord = e => {
+              console.log('clicked', e);
+            };
+            return React.createElement("div", null, React.createElement("h1", null, "Playable component"), React.createElement("h2", null, "Content with markdown"), React.createElement(_playable.Playable, {
+              content: markdowntext,
+              id: "id2",
+              player: voice,
+              playable: playable,
+              onClickWord: onClickWord
+            }));
+          }
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./controller",
+        "from": "Controller",
+        "name": "Controller"
+      }, {
+        "im": "./views/index",
+        "from": "View",
+        "name": "View"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Controller') && _export("Controller", Controller = require ? require('./controller').Controller : value);
+        (require || prop === 'View') && _export("View", View = require ? require('./views/index').View : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfc3RvcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsInN0b3JlIiwiY3JlYXRlU3RvcmUiLCJTdG9yZU1hbmFnZXIiLCJXaWRnZXQiLCJWaWV3Iiwic2hvdyIsImhpZGUiLCJleHBvcnRzIiwiUmVhY3QiLCJfcGxheWFibGUiLCJfdm9pY2UiLCJ0ZXh0IiwidGV4dDIiLCJtYXJrZG93bnRleHQiLCJ2b2ljZSIsIlZvaWNlIiwibGFuZ3VhZ2UiLCJyYXRlIiwibGFuZ3VlIiwicGxheWFibGUiLCJvbkNsaWNrV29yZCIsImUiLCJjb25zb2xlIiwibG9nIiwiY3JlYXRlRWxlbWVudCIsIlBsYXlhYmxlIiwiY29udGVudCIsImlkIiwicGxheWVyIl0sInNvdXJjZXMiOlsiL3RzL2NvbnRyb2xsZXIudHMiLCIvdHMvc3RvcmUudHMiLCIvdHMvdmlld3MvaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsLG51bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsS0FBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsTUFBQSxHQUFBRCxPQUFBO1VBQ0EsSUFBQUUsTUFBQSxHQUFBRixPQUFBO1VBRU87VUFBVSxNQUNYRyxVQUFXLFNBQVFKLEtBQUEsQ0FBQUsseUJBQXlCO1lBQ2pELENBQUFDLEtBQU07WUFDTkMsV0FBV0EsQ0FBQTtjQUNWLElBQUksQ0FBQyxDQUFBRCxLQUFNLEdBQUcsSUFBSUosTUFBQSxDQUFBTSxZQUFZLEVBQUU7Y0FDaEMsT0FBTyxJQUFJLENBQUMsQ0FBQUYsS0FBTTtZQUNuQjtZQUNBLElBQUlHLE1BQU1BLENBQUE7Y0FDVCxPQUFPTixNQUFBLENBQUFPLElBQUk7WUFDWjtZQUVBOzs7WUFHQUMsSUFBSUEsQ0FBQSxHQUFJO1lBRVI7OztZQUdBQyxJQUFJQSxDQUFBLEdBQUk7O1VBQ1JDLE9BQUEsQ0FBQVQsVUFBQSxHQUFBQSxVQUFBOzs7Ozs7Ozs7Ozs7Ozs7OztVQ3ZCSyxNQUFPSSxZQUFZO1VBQTJCSyxPQUFBLENBQUFMLFlBQUEsR0FBQUEsWUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNEcEQsSUFBQU0sS0FBQSxHQUFBYixPQUFBO1VBQ0EsSUFBQWMsU0FBQSxHQUFBZCxPQUFBO1VBQ0EsSUFBQWUsTUFBQSxHQUFBZixPQUFBO1VBQ0EsTUFBTWdCLElBQUksR0FBRzs7Ozs7aURBS29DO1VBRWpELE1BQU1DLEtBQUssR0FBRyxvQ0FBb0M7VUFFbEQsTUFBTUMsWUFBWSxHQUFHOzs7OztDQUtwQjtVQUNELE1BQU1DLEtBQUssR0FBRyxJQUFJSixNQUFBLENBQUFLLEtBQUssQ0FBQztZQUFFQyxRQUFRLEVBQUUsSUFBSTtZQUFFQyxJQUFJLEVBQUU7VUFBQyxDQUFFLENBQUM7VUFDcERILEtBQUssQ0FBQ0ksTUFBTSxHQUFHLElBQUk7VUFDWjtVQUFVLFNBQ1JkLElBQUlBLENBQUE7WUFDWixNQUFNZSxRQUFRLEdBQUcsSUFBSTtZQUNyQixNQUFNQyxXQUFXLEdBQUdDLENBQUMsSUFBRztjQUN2QkMsT0FBTyxDQUFDQyxHQUFHLENBQUMsU0FBUyxFQUFFRixDQUFDLENBQUM7WUFDMUIsQ0FBQztZQUNELE9BQ0NiLEtBQUEsQ0FBQWdCLGFBQUEsY0FDQ2hCLEtBQUEsQ0FBQWdCLGFBQUEsa0NBQTJCLEVBRTNCaEIsS0FBQSxDQUFBZ0IsYUFBQSxxQ0FBOEIsRUFDOUJoQixLQUFBLENBQUFnQixhQUFBLENBQUNmLFNBQUEsQ0FBQWdCLFFBQVE7Y0FBQ0MsT0FBTyxFQUFFYixZQUFZO2NBQUVjLEVBQUUsRUFBQyxLQUFLO2NBQUNDLE1BQU0sRUFBRWQsS0FBSztjQUFFSyxRQUFRLEVBQUVBLFFBQVE7Y0FBRUMsV0FBVyxFQUFFQTtZQUFXLEVBQUksQ0FDcEc7VUFFUiIsImlnbm9yZUxpc3QiOltdfQ==

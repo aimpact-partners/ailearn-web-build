@@ -1,2 +1,229 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/styles","react@18.3.1"],function(_export,_context){"use strict";var dependency_0,dependency_1,dependency_2,bimport,__Bundle,__pkg,ims,InputCode,__beyond_pkg,hmr;_export("InputCode",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_beyondJsKernel0114Styles){dependency_1=_beyondJsKernel0114Styles},function(_react2){dependency_2=_react2}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.12"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/reactive","2.1.0"],["@beyond-js/widgets","0.1.6"],["@floating-ui/dom","1.7.3"],["clsx","2.1.1"],["framer-motion","11.11.11"],["perfect-scrollbar","1.5.6"],["prismjs","1.29.0"],["swiper","10.3.1"],["tippy.js","6.3.7"],["@types/react","18.3.12"],["@types/react-dom","18.3.1"],["pragmate-ui","1.0.8"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"pragmate-ui@1.0.8/code-verification"},type:"code",name:"code-verification"},_context.meta.url).package();__pkg.dependencies.update([["@beyond-js/kernel/styles",dependency_1],["react",dependency_2]]);brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@1.0.8/code-verification");ims=new Map;ims.set("./code-input",{hash:3163548358,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.InputCode=InputCode;var _react=require("react");var _input=require("./input");const defaultOnCodeFull=()=>null;let copied=false;function InputCode({length:length,onCodeFull:onCodeFull,className:className,onlyNumber:onlyNumber,reset:reset,value:value=""}){const initializeCode=(value,length)=>{const codeArray=new Array(length).fill("");for(let i=0;i<length&&i<value.length;i++){codeArray[i]=value[i]}return codeArray};const[code,setCode]=(0,_react.useState)(initializeCode(value,length));const[finalValue,setFinalValue]=_react.default.useState(value??"");const[isFull,setIsFull]=(0,_react.useState)(false);const[position,setPosition]=(0,_react.useState)();const refs=(0,_react.useRef)(Array(length));const onClean=event=>{const{index:index}=event.currentTarget.dataset;globalThis.setTimeout(()=>{if(event.which===8||event.key?.toLowerCase()==="backspace"){const current=[...code];current[index]="";setCode(current);setPosition(Number(index)-1)}},0)};const preventDefault=event=>{const{index:index}=event.currentTarget.dataset;const newValue=event.currentTarget.value;const current=[...code];if(newValue!==""){setPosition(Number(index)+1)}current[index]=event.currentTarget.value;setCode(value=>{const i=[...value];i[index]=newValue;setFinalValue(i.join(""));return i});const ready=current.every(item=>item!=="");setIsFull(ready);if(ready||!ready&&isFull)onCodeFull(current.join(""))};(0,_react.useEffect)(()=>{if(finalValue.length===length){setIsFull(true);onCodeFull(finalValue);return}if(isFull&&finalValue.length<length){setIsFull(false);onCodeFull("")}},[finalValue]);(0,_react.useEffect)(()=>{setTimeout(()=>refs.current[position]?.focus(),100)},[position]);const setFocus=()=>{let empty=code.findIndex(item=>item==="");if(empty===-1)empty=code.length-1;refs.current[empty]?.focus()};const cls=className?`${className} code-inputs`:"code-inputs";(0,_react.useEffect)(()=>{const onCopy=event=>{event.stopPropagation();const pastedData=event.clipboardData.getData("text");const value=pastedData.substring(0,length).split("");setFinalValue(value.join(""));setCode(value)};refs.current[0]?.addEventListener("paste",onCopy);return()=>{refs.current[0]?.removeEventListener("paste",onCopy)}},[]);const getItem=(_,i)=>{const getRef=el=>{refs.current[i]=el};return _react.default.createElement(_input.default,{value:code[i]??"",index:i,key:i.toString(),ref:getRef,onKeyDown:onClean,onChange:preventDefault})};const output=[...Array(length)].map(getItem);return _react.default.createElement("div",{className:cls},output)}InputCode.defaultPros={onCodeFull:defaultOnCodeFull,length:6}}});ims.set("./input",{hash:3296864983,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=void 0;var _react=require("react");var _default=exports.default=_react.default.forwardRef(function Input(props,ref){const className=_react.default.useMemo(()=>{const propsClassName=props.className??"";const filledClassName=Boolean(String(props.value??"").length)?"filled":"";return`box ${propsClassName} ${filledClassName}`},[props.value,props.className]);return _react.default.createElement("input",{...props,maxLength:1,"data-index":props.index,type:"text",className:className,ref:ref})})}});__pkg.exports.descriptor=[{im:"./code-input",from:"InputCode",name:"InputCode"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="InputCode")&&_export("InputCode",InputCode=require?require("./code-input").InputCode:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvcHJhZ21hdGUtdWlAMS4wLjgvY29kZS12ZXJpZmljYXRpb24uanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImRlcGVuZGVuY3lfMSIsImRlcGVuZGVuY3lfMiIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwiSW5wdXRDb2RlIiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJfYmV5b25kSnNLZXJuZWwwMTE0U3R5bGVzIiwiX3JlYWN0MiIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJ0eXBlIiwibmFtZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwiYnJlcXVpcmUiLCJzdHlsZXMiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJ2YWx1ZSIsIl9yZWFjdCIsIl9pbnB1dCIsImRlZmF1bHRPbkNvZGVGdWxsIiwiY29waWVkIiwibGVuZ3RoIiwib25Db2RlRnVsbCIsImNsYXNzTmFtZSIsIm9ubHlOdW1iZXIiLCJyZXNldCIsImluaXRpYWxpemVDb2RlIiwiY29kZUFycmF5IiwiQXJyYXkiLCJmaWxsIiwiaSIsImNvZGUiLCJzZXRDb2RlIiwidXNlU3RhdGUiLCJmaW5hbFZhbHVlIiwic2V0RmluYWxWYWx1ZSIsImRlZmF1bHQiLCJpc0Z1bGwiLCJzZXRJc0Z1bGwiLCJwb3NpdGlvbiIsInNldFBvc2l0aW9uIiwicmVmcyIsInVzZVJlZiIsIm9uQ2xlYW4iLCJldmVudCIsImluZGV4IiwiY3VycmVudFRhcmdldCIsImRhdGFzZXQiLCJzZXRUaW1lb3V0Iiwid2hpY2giLCJrZXkiLCJ0b0xvd2VyQ2FzZSIsImN1cnJlbnQiLCJOdW1iZXIiLCJwcmV2ZW50RGVmYXVsdCIsIm5ld1ZhbHVlIiwiam9pbiIsInJlYWR5IiwiZXZlcnkiLCJpdGVtIiwidXNlRWZmZWN0IiwiZm9jdXMiLCJzZXRGb2N1cyIsImVtcHR5IiwiZmluZEluZGV4IiwiY2xzIiwib25Db3B5Iiwic3RvcFByb3BhZ2F0aW9uIiwicGFzdGVkRGF0YSIsImNsaXBib2FyZERhdGEiLCJnZXREYXRhIiwic3Vic3RyaW5nIiwic3BsaXQiLCJhZGRFdmVudExpc3RlbmVyIiwicmVtb3ZlRXZlbnRMaXN0ZW5lciIsImdldEl0ZW0iLCJfIiwiZ2V0UmVmIiwiZWwiLCJjcmVhdGVFbGVtZW50IiwidG9TdHJpbmciLCJyZWYiLCJvbktleURvd24iLCJvbkNoYW5nZSIsIm91dHB1dCIsIm1hcCIsImRlZmF1bHRQcm9zIiwiX2RlZmF1bHQiLCJmb3J3YXJkUmVmIiwiSW5wdXQiLCJwcm9wcyIsInVzZU1lbW8iLCJwcm9wc0NsYXNzTmFtZSIsImZpbGxlZENsYXNzTmFtZSIsIkJvb2xlYW4iLCJTdHJpbmciLCJtYXhMZW5ndGgiLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwicHJvY2VzcyIsInByb3AiLCJ0aGlzIiwib24iLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLGtDQUFtQyxrQ0FBbUMsZ0JBQWlCLFNBQVVDLFFBQVNDLFVBQ3pILGFBRUEsSUFBSUMsYUFBY0MsYUFBY0MsYUFBY0MsUUFBU0MsU0FBVUMsTUFBT0MsSUFBS0MsVUFBV0MsYUFBY0MsSUFDdEdYLFFBQVEsaUJBQWtCLEdBQzFCLE1BQU8sQ0FDTFksUUFBUyxDQUFDLFNBQVVDLDJCQUNsQlgsYUFBZVcseUJBQ2pCLEVBQUcsU0FBVUMsMkJBQ1hYLGFBQWVXLHlCQUNqQixFQUFHLFNBQVVDLFNBQ1hYLGFBQWVXLE9BQ2pCLEdBQ0FDLFFBQVMsV0FDUFgs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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/styles", "react@18.3.1"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, InputCode, __beyond_pkg, hmr;
+  _export("InputCode", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_1 = _beyondJsKernel0114Styles;
+    }, function (_react2) {
+      dependency_2 = _react2;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.0"], ["@beyond-js/widgets", "0.1.6"], ["@floating-ui/dom", "1.7.3"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.8"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.8/code-verification"
+        },
+        "type": "code",
+        "name": "code-verification"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@1.0.8/code-verification');
+      ims = new Map();
+      /****************************
+      INTERNAL MODULE: ./code-input
+      ****************************/
+      ims.set('./code-input', {
+        hash: 3163548358,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.InputCode = InputCode;
+          var _react = require("react");
+          var _input = require("./input");
+          const defaultOnCodeFull = () => null;
+          /**
+           * It's a React component that takes a length prop and an onCodeFull prop. It renders an array of
+           * inputs, each of which is limited to one character. When the user enters a character, the component
+           * updates the state with the character and focuses the next input. When the user presses backspace,
+           * the component removes the last character from the state and focuses the previous input. When the
+           * user enters the last character, the component calls the onCodeFull prop with the code as a string.
+           * @param {props}  - props
+           */
+          let copied = false;
+          /*bundle*/
+          function InputCode({
+            length,
+            onCodeFull,
+            className,
+            onlyNumber,
+            reset,
+            value = ''
+          }) {
+            // Initializes the code state only once based on the value and length props.
+            // This operation will be carried out when the component mounts and will not react to prop changes afterward.
+            const initializeCode = (value, length) => {
+              const codeArray = new Array(length).fill('');
+              for (let i = 0; i < length && i < value.length; i++) {
+                codeArray[i] = value[i];
+              }
+              return codeArray;
+            };
+            const [code, setCode] = (0, _react.useState)(initializeCode(value, length));
+            const [finalValue, setFinalValue] = _react.default.useState(value ?? '');
+            const [isFull, setIsFull] = (0, _react.useState)(false);
+            const [position, setPosition] = (0, _react.useState)();
+            const refs = (0, _react.useRef)(Array(length));
+            const onClean = event => {
+              const {
+                index
+              } = event.currentTarget.dataset;
+              globalThis.setTimeout(() => {
+                if (event.which === 8 || event.key?.toLowerCase() === 'backspace') {
+                  const current = [...code];
+                  current[index] = '';
+                  setCode(current);
+                  setPosition(Number(index) - 1);
+                }
+              }, 0);
+            };
+            const preventDefault = event => {
+              const {
+                index
+              } = event.currentTarget.dataset;
+              const newValue = event.currentTarget.value;
+              const current = [...code];
+              if (newValue !== '') {
+                setPosition(Number(index) + 1);
+              }
+              current[index] = event.currentTarget.value;
+              setCode(value => {
+                const i = [...value];
+                i[index] = newValue;
+                setFinalValue(i.join(''));
+                return i;
+              });
+              const ready = current.every(item => item !== '');
+              setIsFull(ready);
+              /**
+               * If the code is full, and then the user presses backspace, the code will be cleared.
+               * so we call when the code is full and the user presses backspace to let the parent component know that the code is not full anymore.
+               */
+              if (ready || !ready && isFull) onCodeFull(current.join(''));
+            };
+            (0, _react.useEffect)(() => {
+              if (finalValue.length === length) {
+                setIsFull(true);
+                onCodeFull(finalValue);
+                return;
+              }
+              if (isFull && finalValue.length < length) {
+                setIsFull(false);
+                onCodeFull('');
+              }
+            }, [finalValue]);
+            (0, _react.useEffect)(() => {
+              setTimeout(() => refs.current[position]?.focus(), 100);
+            }, [position]);
+            const setFocus = () => {
+              let empty = code.findIndex(item => item === '');
+              if (empty === -1) empty = code.length - 1;
+              refs.current[empty]?.focus();
+            };
+            const cls = className ? `${className} code-inputs` : 'code-inputs';
+            (0, _react.useEffect)(() => {
+              const onCopy = event => {
+                event.stopPropagation();
+                const pastedData = event.clipboardData.getData('text');
+                const value = pastedData.substring(0, length).split('');
+                setFinalValue(value.join(''));
+                setCode(value);
+              };
+              refs.current[0]?.addEventListener('paste', onCopy);
+              return () => {
+                refs.current[0]?.removeEventListener('paste', onCopy);
+              };
+            }, []);
+            const getItem = (_, i) => {
+              const getRef = el => {
+                refs.current[i] = el;
+              };
+              return _react.default.createElement(_input.default, {
+                value: code[i] ?? '',
+                index: i,
+                key: i.toString(),
+                ref: getRef,
+                onKeyDown: onClean,
+                onChange: preventDefault
+              });
+            };
+            const output = [...Array(length)].map(getItem);
+            return _react.default.createElement("div", {
+              className: cls
+            }, output);
+          }
+          InputCode.defaultPros = {
+            onCodeFull: defaultOnCodeFull,
+            length: 6
+          };
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./input
+      ***********************/
+
+      ims.set('./input', {
+        hash: 3296864983,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.default = void 0;
+          var _react = require("react");
+          var _default = exports.default = _react.default.forwardRef(function Input(props, ref) {
+            const className = _react.default.useMemo(() => {
+              const propsClassName = props.className ?? '';
+              const filledClassName = Boolean(String(props.value ?? '').length) ? 'filled' : '';
+              return `box ${propsClassName} ${filledClassName}`;
+            }, [props.value, props.className]);
+            return _react.default.createElement("input", {
+              ...props,
+              maxLength: 1,
+              "data-index": props.index,
+              type: 'text',
+              // inputMode='numeric'
+              className: className,
+              ref: ref
+            });
+          });
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./code-input",
+        "from": "InputCode",
+        "name": "InputCode"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'InputCode') && _export("InputCode", InputCode = require ? require('./code-input').InputCode : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX2lucHV0IiwiZGVmYXVsdE9uQ29kZUZ1bGwiLCJjb3BpZWQiLCJJbnB1dENvZGUiLCJsZW5ndGgiLCJvbkNvZGVGdWxsIiwiY2xhc3NOYW1lIiwib25seU51bWJlciIsInJlc2V0IiwidmFsdWUiLCJpbml0aWFsaXplQ29kZSIsImNvZGVBcnJheSIsIkFycmF5IiwiZmlsbCIsImkiLCJjb2RlIiwic2V0Q29kZSIsInVzZVN0YXRlIiwiZmluYWxWYWx1ZSIsInNldEZpbmFsVmFsdWUiLCJkZWZhdWx0IiwiaXNGdWxsIiwic2V0SXNGdWxsIiwicG9zaXRpb24iLCJzZXRQb3NpdGlvbiIsInJlZnMiLCJ1c2VSZWYiLCJvbkNsZWFuIiwiZXZlbnQiLCJpbmRleCIsImN1cnJlbnRUYXJnZXQiLCJkYXRhc2V0IiwiZ2xvYmFsVGhpcyIsInNldFRpbWVvdXQiLCJ3aGljaCIsImtleSIsInRvTG93ZXJDYXNlIiwiY3VycmVudCIsIk51bWJlciIsInByZXZlbnREZWZhdWx0IiwibmV3VmFsdWUiLCJqb2luIiwicmVhZHkiLCJldmVyeSIsIml0ZW0iLCJ1c2VFZmZlY3QiLCJmb2N1cyIsInNldEZvY3VzIiwiZW1wdHkiLCJmaW5kSW5kZXgiLCJjbHMiLCJvbkNvcHkiLCJzdG9wUHJvcGFnYXRpb24iLCJwYXN0ZWREYXRhIiwiY2xpcGJvYXJkRGF0YSIsImdldERhdGEiLCJzdWJzdHJpbmciLCJzcGxpdCIsImFkZEV2ZW50TGlzdGVuZXIiLCJyZW1vdmVFdmVudExpc3RlbmVyIiwiZ2V0SXRlbSIsIl8iLCJnZXRSZWYiLCJlbCIsImNyZWF0ZUVsZW1lbnQiLCJ0b1N0cmluZyIsInJlZiIsIm9uS2V5RG93biIsIm9uQ2hhbmdlIiwib3V0cHV0IiwibWFwIiwiZGVmYXVsdFByb3MiLCJfZGVmYXVsdCIsImV4cG9ydHMiLCJmb3J3YXJkUmVmIiwiSW5wdXQiLCJwcm9wcyIsInVzZU1lbW8iLCJwcm9wc0NsYXNzTmFtZSIsImZpbGxlZENsYXNzTmFtZSIsIkJvb2xlYW4iLCJTdHJpbmciLCJtYXhMZW5ndGgiLCJ0eXBlIl0sInNvdXJjZXMiOlsiL3RzL2NvZGUtaW5wdXQudHN4IiwiL3RzL2lucHV0LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLE1BQUEsR0FBQUMsT0FBQTtVQUNBLElBQUFDLE1BQUEsR0FBQUQsT0FBQTtVQVNBLE1BQU1FLGlCQUFpQixHQUFtQkEsQ0FBQSxLQUFNLElBQUk7VUFFcEQ7Ozs7Ozs7O1VBU0EsSUFBSUMsTUFBTSxHQUFHLEtBQUs7VUFDWDtVQUFVLFNBQVVDLFNBQVNBLENBQUM7WUFDcENDLE1BQU07WUFDTkMsVUFBVTtZQUNWQyxTQUFTO1lBQ1RDLFVBQVU7WUFDVkMsS0FBSztZQUNMQyxLQUFLLEdBQUc7VUFBRSxDQUNGO1lBRVI7WUFDQTtZQUNBLE1BQU1DLGNBQWMsR0FBR0EsQ0FBQ0QsS0FBYSxFQUFFTCxNQUFjLEtBQWM7Y0FDbEUsTUFBTU8sU0FBUyxHQUFHLElBQUlDLEtBQUssQ0FBQ1IsTUFBTSxDQUFDLENBQUNTLElBQUksQ0FBQyxFQUFFLENBQUM7Y0FDNUMsS0FBSyxJQUFJQyxDQUFDLEdBQUcsQ0FBQyxFQUFFQSxDQUFDLEdBQUdWLE1BQU0sSUFBSVUsQ0FBQyxHQUFHTCxLQUFLLENBQUNMLE1BQU0sRUFBRVUsQ0FBQyxFQUFFLEVBQUU7Z0JBQ3BESCxTQUFTLENBQUNHLENBQUMsQ0FBQyxHQUFHTCxLQUFLLENBQUNLLENBQUMsQ0FBQzs7Y0FFeEIsT0FBT0gsU0FBUztZQUNqQixDQUFDO1lBRUQsTUFBTSxDQUFDSSxJQUFJLEVBQUVDLE9BQU8sQ0FBQyxHQUFHLElBQUFsQixNQUFBLENBQUFtQixRQUFRLEVBQVdQLGNBQWMsQ0FBQ0QsS0FBSyxFQUFFTCxNQUFNLENBQUMsQ0FBQztZQUN6RSxNQUFNLENBQUNjLFVBQVUsRUFBRUMsYUFBYSxDQUFDLEdBQUdy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

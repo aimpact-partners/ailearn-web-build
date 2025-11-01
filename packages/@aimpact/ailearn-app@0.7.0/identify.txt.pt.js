@@ -1,2 +1,259 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,txt,__beyond_pkg,hmr;_export("txt",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/identify",multibundle:true},type:"txt"},_context.meta.url).package("pt");__pkg.dependencies.update([]);ims=new Map;ims.set("./txt",{hash:94587574,creator:function(require,exports){exports.txt={errors:{ERROR_PUBLISHING:"N\xe3o foi poss\xedvel fazer a solicita\xe7\xe3o, tente novamente mais tarde",INVALID_CODE:"C\xf3digo incorreto",ALREADY_WAITING:"Voc\xea j\xe1 fez a solicita\xe7\xe3o para se juntar \xe0 institui\xe7\xe3o, aguarde que o administrador o aceite ou entre em contato com ele",ALREADY_MEMBER:"Voc\xea j\xe1 \xe9 membro da institui\xe7\xe3o",ALREADY_WAITING_CLASSROOM:"Sua solicita\xe7\xe3o de acesso ainda est\xe1 pendente, entre em contato com o professor da sala de aula",ALREADY_WAITING_ORG:"Voc\xea j\xe1 fez a solicita\xe7\xe3o para se juntar \xe0 institui\xe7\xe3o, aguarde que o administrador o aceite ou entre em contato com ele"},institution:{form:{title:"Comece uma prova gratuita para institui\xe7\xf5es e explore a transforma\xe7\xe3o educacional",description:"Acesse uma prova gratuita preenchendo o formul\xe1rio. Atribuiremos a voc\xea os cr\xe9ditos necess\xe1rios para que possa experimentar e compartilhar com seus professores a assist\xeancia da Intelig\xeancia Artificial no seu espa\xe7o educacional. Verifique seu e-mail para mais detalhes.",fields:{name:{label:"Nome da Institui\xe7\xe3o",errorMessage:"Campo obrigat\xf3rio"},type:{label:"Tipo de Institui\xe7\xe3o",errorMessage:"Campo obrigat\xf3rio"},educationalLevel:{label:"N\xedvel educacional",errorMessage:"Campo obrigat\xf3rio"},geographicAddress:{label:"Endere\xe7o geogr\xe1fico"},authorizedUser:{label:"Sou um usu\xe1rio autorizado pela institui\xe7\xe3o educacional"},submit:{label:"ENVIAR SOLICITA\xc7\xc3O"}}},title:"Solicite uma prova gratuita para institui\xe7\xf5es e comece a explorar a transforma\xe7\xe3o educacional",description:"Solicite o acesso a uma prova gratuita preenchendo o formul\xe1rio. Uma vez enviado, revisaremos sua solicita\xe7\xe3o. Lembre-se de verificar seu e-mail, onde informaremos sobre a aprova\xe7\xe3o da sua solicita\xe7\xe3o e atribuiremos os cr\xe9ditos necess\xe1rios para que sua comunidade educacional possa experimentar a assist\xeancia da Intelig\xeancia Artificial na sala de aula."},requested:{teacher:{title:"Parab\xe9ns! Voc\xea j\xe1 pode iniciar seu per\xedodo de teste",description:"Atribu\xedmos a voc\xea <strong>{totalGenerative} cr\xe9ditos gerativos</strong> para criar {totalGenerative} m\xf3dulos com IA e <strong>{totalInteraction} cr\xe9ditos interativos</strong> para a intera\xe7\xe3o com IA dos seus alunos."},teacherInstitution:{title:"Sua solicita\xe7\xe3o para se juntar \xe0 institui\xe7\xe3o est\xe1 em processo de revis\xe3o.",description:"Por favor, aguarde a aprova\xe7\xe3o do administrador para acessar o espa\xe7o educacional da institui\xe7\xe3o. <strong>Verifique seu e-mail</strong> onde notificaremos voc\xea assim que sua solicita\xe7\xe3o for aprovada para poder acessar o <strong>AILearn</strong>."},teacherApproved:{title:"Parab\xe9ns! Sua solicita\xe7\xe3o foi aprovada",description:"Voc\xea j\xe1 faz parte da institui\xe7\xe3o {organization}. Comece a usar o AILearn."},student:{title:"Sua solicita\xe7\xe3o para se juntar \xe0 sala de aula est\xe1 em processo de revis\xe3o.",description:"Por favor, aguarde a aprova\xe7\xe3o do professor para acessar a sala de aula. <strong>Verifique seu e-mail</strong> onde notificaremos voc\xea assim que sua solicita\xe7\xe3o for aprovada para poder acessar o <strong>AILearn</strong>."},studentApproved:{title:"Parab\xe9ns! Sua solicita\xe7\xe3o foi aprovada",description:"Voc\xea j\xe1 faz parte da sala de aula. Comece a usar o AILearn."},institution:{title:"Parab\xe9ns! Sua institui\xe7\xe3o j\xe1 pode iniciar seu per\xedodo de teste",description:"Atribu\xedmos ao seu per\xedodo de teste {totalGenerative} cr\xe9ditos para criar {totalGenerative} m\xf3dulos com IA e {totalInteraction} cr\xe9ditos para a intera\xe7\xe3o com IA dos alunos.",start:"Come\xe7ar"}},cards:{student:{icon:"student",title:"Sou Aluno",description:"Acesse os conte\xfados atribu\xeddos pelos seus professores e aprenda no seu pr\xf3prio ritmo com a orienta\xe7\xe3o da IA."},teacher:{icon:"teacher",title:"Sou Professor",description:"Crie conte\xfados educacionais e monitore seus alunos com a assist\xeancia da IA."},institution:{icon:"institution",title:"Sou uma Institui\xe7\xe3o",description:"Adicione Intelig\xeancia Artificial \xe0 sua proposta educacional e permita que sua comunidade gere conte\xfados assistidos por IA."}},student:{selection:{title:"Voc\xea est\xe1 prestes a come\xe7ar o caminho para a transforma\xe7\xe3o educacional",description:"Para come\xe7ar sua experi\xeancia de aprendizagem com o AILearn, voc\xea pode pedir ao professor o c\xf3digo de acesso \xe0 sala de aula e inseri-lo para continuar, ou solicitar o link de acesso a uma atividade. Uma vez que voc\xea tenha essas informa\xe7\xf5es, poder\xe1 entrar no m\xf3dulo de aprendizagem e come\xe7ar a explorar o conte\xfado projetado especialmente para voc\xea."},form:{title:"Comece sua transforma\xe7\xe3o educacional",description:"Voc\xea est\xe1 prestes a se juntar ao espa\xe7o educacional da sua institui\xe7\xe3o. Para entrar no AILearn, voc\xea deve validar o c\xf3digo de acesso fornecido pelo administrador da sua institui\xe7\xe3o.",form:{legend:{title:"N\xe3o tem seu c\xf3digo?",description:"Pe\xe7a ao seu professor o c\xf3digo de acesso ou link."},action:"Inserir c\xf3digo",error:{title:"C\xf3digo incorreto.",description:"Por favor, verifique o c\xf3digo e tente novamente. Se o problema persistir, entre em contato com o administrador da sua institui\xe7\xe3o para obter o c\xf3digo correto."}}}},teacher:{form:{title:"Comece sua prova gratuita para professores e explore a transforma\xe7\xe3o educacional",description:"Acesse uma prova gratuita preenchendo o formul\xe1rio. Atribuiremos a voc\xea os cr\xe9ditos necess\xe1rios para que possa experimentar a assist\xeancia da Intelig\xeancia Artificial no seu trabalho docente. Verifique seu e-mail para mais detalhes.",fields:{role:{label:"Cargo",errorMessage:"Campo obrigat\xf3rio"},grade:{label:"N\xedvel educacional",errorMessage:"Campo obrigat\xf3rio"},curricularArea:{label:"\xc1rea curricular",errorMessage:"Campo obrigat\xf3rio"},name:{label:"Nome da institui\xe7\xe3o",errorMessage:"Campo obrigat\xf3rio"},type:{label:"Tipo de institui\xe7\xe3o",errorMessage:"Campo obrigat\xf3rio"},address:{label:"Endere\xe7o geogr\xe1fico",errorMessage:"Campo obrigat\xf3rio"},submit:{label:"ENVIAR SOLICITA\xc7\xc3O",errorMessage:""}}},institution:{intro:{hello:"Ol\xe1 {username}",title:"A institui\xe7\xe3o onde voc\xea trabalha usa o AILearn?",description:"Minha institui\xe7\xe3o j\xe1 trabalha com o <strong>AILearn</strong> Rivadavia e quero me juntar ao seu espa\xe7o educacional.",options:{yes:{label:"Sim",description:"Minha institui\xe7\xe3o j\xe1 trabalha com o <strong>AILearn</strong> e quero me juntar ao seu espa\xe7o educacional."},no:{label:"N\xe3o",description:"Minha institui\xe7\xe3o n\xe3o trabalha com o <strong>AILearn</strong>. Quero me juntar \xe0 ferramenta como professor independente."}}},form:{title:"Comece a transforma\xe7\xe3o educacional",description:"Voc\xea est\xe1 prestes a se juntar ao espa\xe7o educacional da sua institui\xe7\xe3o. Para acessar o AILearn, voc\xea deve validar o c\xf3digo de acesso fornecido pelo administrador da sua institui\xe7\xe3o.",form:{legend:{title:"N\xe3o tem seu c\xf3digo?",description:"Verifique seu e-mail ou entre em contato com o administrador da sua institui\xe7\xe3o se ainda n\xe3o recebeu o convite."},action:"Inserir c\xf3digo",error:{title:"C\xf3digo incorreto.",description:"Por favor, verifique o c\xf3digo e tente novamente. Se o problema persistir, entre em contato com o administrador da sua institui\xe7\xe3o para obter o c\xf3digo correto."}}}},actions:{continue:"Continuar"},welcome:{user:{hello:"Ol\xe1 {username}!",description:"Bem-vindo ao AILearn"}},processed:{title:"Voc\xea j\xe1 tem cr\xe9ditos de IA atribu\xeddos ao seu perfil!",subtitle:"Atribu\xedmos ao seu per\xedodo de teste:",description:"{totalGenerative} cr\xe9ditos para criar 5 m\xf3dulos com IA e {totalInteraction} cr\xe9ditos para a intera\xe7\xe3o com IA dos seus alunos."}},title:"Bem-vindo!",subtitle:"Selecione seu papel no campo educacional",back:"Voltar",welcome:{hello:"Ol\xe1 {username}!",description:"Bem-vindo ao AILearn"},actions:{accept:"ACEITAR",back:"VOLTAR",continue:"Continuar",join:"Enviar solicita\xe7\xe3o",start:"Come\xe7ar"}}}});__pkg.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="txt")&&_export("txt",txt=require?require("./txt").txt:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvaWRlbnRpZnkudHh0LnB0LmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQiLCJkZXBlbmRlbmN5XzAiLCJiaW1wb3J0IiwiX19CdW5kbGUiLCJfX3BrZyIsImltcyIsInR4dCIsIl9fYmV5b25kX3BrZyIsImhtciIsInNldHRlcnMiLCJfYmV5b25kSnNLZXJuZWwwMTE0QnVuZGxlIiwiZXhlY3V0ZSIsInNwZWNpZmllciIsImRlcGVuZGVuY2llcyIsIk1hcCIsImdsb2JhbFRoaXMiLCJyZXNvbHZlIiwiQnVuZGxlIiwibW9kdWxlIiwidnNwZWNpZmllciIsIm11bHRpYnVuZGxlIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsImVycm9ycyIsIkVSUk9SX1BVQkxJU0hJTkciLCJJTlZBTElEX0NPREUiLCJBTFJFQURZX1dBSVRJTkciLCJBTFJFQURZX01FTUJFUiIsIkFMUkVBRFlfV0FJVElOR19DTEFTU1JPT00iLCJBTFJFQURZX1dBSVRJTkdfT1JHIiwiaW5zdGl0dXRpb24iLCJmb3JtIiwidGl0bGUiLCJkZXNjcmlwdGlvbiIsImZpZWxkcyIsIm5hbWUiLCJsYWJlbCIsImVycm9yTWVzc2FnZSIsImVkdWNhdGlvbmFsTGV2ZWwiLCJnZW9ncmFwaGljQWRkcmVzcyIsImF1dGhvcml6ZWRVc2VyIiwic3VibWl0IiwicmVxdWVzdGVkIiwidGVhY2hlciIsInRlYWNoZXJJbnN0aXR1dGlvbiIsInRlYWNoZXJBcHByb3ZlZCIsInN0dWRlbnQiLCJzdHVkZW50QXBwcm92ZWQiLCJzdGFydCIsImNhcmRzIiwiaWNvbiIsInNlbGVjdGlvbiIsImxlZ2VuZCIsImFjdGlvbiIsImVycm9yIiwicm9sZSIsImdyYWRlIiwiY3VycmljdWxhckFyZWEiLCJhZGRyZXNzIiwiaW50cm8iLCJoZWxsbyIsIm9wdGlvbnMiLCJ5ZXMiLCJubyIsImFjdGlvbnMiLCJjb250aW51ZSIsIndlbGNvbWUiLCJ1c2VyIiwicHJvY2Vzc2VkIiwic3VidGl0bGUiLCJiYWNrIiwiYWNjZXB0Iiwiam9pbiIsImRlc2NyaXB0b3IiLCJpbSIsImZyb20iLCJwcm9jZXNzIiwicHJvcCIsInZhbHVlIiwidGhpcyIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLG1DQUFvQyxTQUFVQyxRQUFTQyxVQUN0RSxhQUVBLElBQUlDLGFBQWNDLFFBQVNDLFNBQVVDLE1BQU9DLElBQUtDLElBQUtDLGFBQWNDLElBQ3BFVCxRQUFRLFdBQVksR0FDcEIsTUFBTyxDQUNMVSxRQUFTLENBQUMsU0FBVUMsMkJBQ2xCVCxhQUFlUyx5QkFDakIsR0FDQUMsUUFBUyxXQUNQVCxRQUFVVSxZQUNSLE1BQU1DLGFBQWUsSUFBSUMsSUFBSSxDQUFDLENBQUMsc0JBQXVCLFNBQVUsQ0FBQyx1QkFBd0IsU0FBVSxDQUFDLHVCQUF3QixTQUFVLENBQUMsb0JBQXFCLFNBQVUsQ0FBQyx5QkFBMEIsU0FBVSxDQUFDLGNBQWUsU0FBVSxDQUFDLHNCQUF1QixTQUFVLENBQUMsd0JBQXlCLFNBQVUsQ0FBQyxxQkFBc0IsVUFBVyxDQUFDLG9CQUFxQixTQUFVLENBQUMsb0JBQXFCLFVBQVcsQ0FBQyw2QkFBOEIsU0FBVSxDQUFDLDhCQUErQixTQUFVLENBQUMscUJBQXNCLFNBQVUsQ0FBQyxlQUFnQixXQUFZLENBQUMsaUJBQWtCLFdBQVksQ0FBQyxrQkFBbUIsV0FBWSxDQUFDLGlCQUFrQixVQUFXLENBQUMsd0JBQXlCLFVBQVcsQ0FBQyw0QkFBNkIsVUFBVyxDQUFDLDhCQUErQixVQUFXLENBQUMsd0JBQXlCLFNBQVUsQ0FBQyx5QkFBMEIsU0FBVSxDQUFDLDRCQUE2QixTQUFVLENBQUMsK0JBQWdDLFNBQVUs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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/identify",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('pt');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 94587574,
+        creator: function (require, exports) {
+          exports.txt = {
+            "errors": {
+              "ERROR_PUBLISHING": "Não foi possível fazer a solicitação, tente novamente mais tarde",
+              "INVALID_CODE": "Código incorreto",
+              "ALREADY_WAITING": "Você já fez a solicitação para se juntar à instituição, aguarde que o administrador o aceite ou entre em contato com ele",
+              "ALREADY_MEMBER": "Você já é membro da instituição",
+              "ALREADY_WAITING_CLASSROOM": "Sua solicitação de acesso ainda está pendente, entre em contato com o professor da sala de aula",
+              "ALREADY_WAITING_ORG": "Você já fez a solicitação para se juntar à instituição, aguarde que o administrador o aceite ou entre em contato com ele"
+            },
+            "institution": {
+              "form": {
+                "title": "Comece uma prova gratuita para instituições e explore a transformação educacional",
+                "description": "Acesse uma prova gratuita preenchendo o formulário. Atribuiremos a você os créditos necessários para que possa experimentar e compartilhar com seus professores a assistência da Inteligência Artificial no seu espaço educacional. Verifique seu e-mail para mais detalhes.",
+                "fields": {
+                  "name": {
+                    "label": "Nome da Instituição",
+                    "errorMessage": "Campo obrigatório"
+                  },
+                  "type": {
+                    "label": "Tipo de Instituição",
+                    "errorMessage": "Campo obrigatório"
+                  },
+                  "educationalLevel": {
+                    "label": "Nível educacional",
+                    "errorMessage": "Campo obrigatório"
+                  },
+                  "geographicAddress": {
+                    "label": "Endereço geográfico"
+                  },
+                  "authorizedUser": {
+                    "label": "Sou um usuário autorizado pela instituição educacional"
+                  },
+                  "submit": {
+                    "label": "ENVIAR SOLICITAÇÃO"
+                  }
+                }
+              },
+              "title": "Solicite uma prova gratuita para instituições e comece a explorar a transformação educacional",
+              "description": "Solicite o acesso a uma prova gratuita preenchendo o formulário. Uma vez enviado, revisaremos sua solicitação. Lembre-se de verificar seu e-mail, onde informaremos sobre a aprovação da sua solicitação e atribuiremos os créditos necessários para que sua comunidade educacional possa experimentar a assistência da Inteligência Artificial na sala de aula."
+            },
+            "requested": {
+              "teacher": {
+                "title": "Parabéns! Você já pode iniciar seu período de teste",
+                "description": "Atribuímos a você <strong>{totalGenerative} créditos gerativos</strong> para criar {totalGenerative} módulos com IA e <strong>{totalInteraction} créditos interativos</strong> para a interação com IA dos seus alunos."
+              },
+              "teacherInstitution": {
+                "title": "Sua solicitação para se juntar à instituição está em processo de revisão.",
+                "description": "Por favor, aguarde a aprovação do administrador para acessar o espaço educacional da instituição. <strong>Verifique seu e-mail</strong> onde notificaremos você assim que sua solicitação for aprovada para poder acessar o <strong>AILearn</strong>."
+              },
+              "teacherApproved": {
+                "title": "Parabéns! Sua solicitação foi aprovada",
+                "description": "Você já faz parte da instituição {organization}. Comece a usar o AILearn."
+              },
+              "student": {
+                "title": "Sua solicitação para se juntar à sala de aula está em processo de revisão.",
+                "description": "Por favor, aguarde a aprovação do professor para acessar a sala de aula. <strong>Verifique seu e-mail</strong> onde notificaremos você assim que sua solicitação for aprovada para poder acessar o <strong>AILearn</strong>."
+              },
+              "studentApproved": {
+                "title": "Parabéns! Sua solicitação foi aprovada",
+                "description": "Você já faz parte da sala de aula. Comece a usar o AILearn."
+              },
+              "institution": {
+                "title": "Parabéns! Sua instituição já pode iniciar seu período de teste",
+                "description": "Atribuímos ao seu período de teste {totalGenerative} créditos para criar {totalGenerative} módulos com IA e {totalInteraction} créditos para a interação com IA dos alunos.",
+                "start": "Começar"
+              }
+            },
+            "cards": {
+              "student": {
+                "icon": "student",
+                "title": "Sou Aluno",
+                "description": "Acesse os conteúdos atribuídos pelos seus professores e aprenda no seu próprio ritmo com a orientação da IA."
+              },
+              "teacher": {
+                "icon": "teacher",
+                "title": "Sou Professor",
+                "description": "Crie conteúdos educacionais e monitore seus alunos com a assistência da IA."
+              },
+              "institution": {
+                "icon": "institution",
+                "title": "Sou uma Instituição",
+                "description": "Adicione Inteligência Artificial à sua proposta educacional e permita que sua comunidade gere conteúdos assistidos por IA."
+              }
+            },
+            "student": {
+              "selection": {
+                "title": "Você está prestes a começar o caminho para a transformação educacional",
+                "description": "Para começar sua experiência de aprendizagem com o AILearn, você pode pedir ao professor o código de acesso à sala de aula e inseri-lo para continuar, ou solicitar o link de acesso a uma atividade. Uma vez que você tenha essas informações, poderá entrar no módulo de aprendizagem e começar a explorar o conteúdo projetado especialmente para você."
+              },
+              "form": {
+                "title": "Comece sua transformação educacional",
+                "description": "Você está prestes a se juntar ao espaço educacional da sua instituição. Para entrar no AILearn, você deve validar o código de acesso fornecido pelo administrador da sua instituição.",
+                "form": {
+                  "legend": {
+                    "title": "Não tem seu código?",
+                    "description": "Peça ao seu professor o código de acesso ou link."
+                  },
+                  "action": "Inserir código",
+                  "error": {
+                    "title": "Código incorreto.",
+                    "description": "Por favor, verifique o código e tente novamente. Se o problema persistir, entre em contato com o administrador da sua instituição para obter o código correto."
+                  }
+                }
+              }
+            },
+            "teacher": {
+              "form": {
+                "title": "Comece sua prova gratuita para professores e explore a transformação educacional",
+                "description": "Acesse uma prova gratuita preenchendo o formulário. Atribuiremos a você os créditos necessários para que possa experimentar a assistência da Inteligência Artificial no seu trabalho docente. Verifique seu e-mail para mais detalhes.",
+                "fields": {
+                  "role": {
+                    "label": "Cargo",
+                    "errorMessage": "Campo obrigatório"
+                  },
+                  "grade": {
+                    "label": "Nível educacional",
+                    "errorMessage": "Campo obrigatório"
+                  },
+                  "curricularArea": {
+                    "label": "Área curricular",
+                    "errorMessage": "Campo obrigatório"
+                  },
+                  "name": {
+                    "label": "Nome da instituição",
+                    "errorMessage": "Campo obrigatório"
+                  },
+                  "type": {
+                    "label": "Tipo de instituição",
+                    "errorMessage": "Campo obrigatório"
+                  },
+                  "address": {
+                    "label": "Endereço geográfico",
+                    "errorMessage": "Campo obrigatório"
+                  },
+                  "submit": {
+                    "label": "ENVIAR SOLICITAÇÃO",
+                    "errorMessage": ""
+                  }
+                }
+              },
+              "institution": {
+                "intro": {
+                  "hello": "Olá {username}",
+                  "title": "A instituição onde você trabalha usa o AILearn?",
+                  "description": "Minha instituição já trabalha com o <strong>AILearn</strong> Rivadavia e quero me juntar ao seu espaço educacional.",
+                  "options": {
+                    "yes": {
+                      "label": "Sim",
+                      "description": "Minha instituição já trabalha com o <strong>AILearn</strong> e quero me juntar ao seu espaço educacional."
+                    },
+                    "no": {
+                      "label": "Não",
+                      "description": "Minha instituição não trabalha com o <strong>AILearn</strong>. Quero me juntar à ferramenta como professor independente."
+                    }
+                  }
+                },
+                "form": {
+                  "title": "Comece a transformação educacional",
+                  "description": "Você está prestes a se juntar ao espaço educacional da sua instituição. Para acessar o AILearn, você deve validar o código de acesso fornecido pelo administrador da sua instituição.",
+                  "form": {
+                    "legend": {
+                      "title": "Não tem seu código?",
+                      "description": "Verifique seu e-mail ou entre em contato com o administrador da sua instituição se ainda não recebeu o convite."
+                    },
+                    "action": "Inserir código",
+                    "error": {
+                      "title": "Código incorreto.",
+                      "description": "Por favor, verifique o código e tente novamente. Se o problema persistir, entre em contato com o administrador da sua instituição para obter o código correto."
+                    }
+                  }
+                }
+              },
+              "actions": {
+                "continue": "Continuar"
+              },
+              "welcome": {
+                "user": {
+                  "hello": "Olá {username}!",
+                  "description": "Bem-vindo ao AILearn"
+                }
+              },
+              "processed": {
+                "title": "Você já tem créditos de IA atribuídos ao seu perfil!",
+                "subtitle": "Atribuímos ao seu período de teste:",
+                "description": "{totalGenerative} créditos para criar 5 módulos com IA e {totalInteraction} créditos para a interação com IA dos seus alunos."
+              }
+            },
+            "title": "Bem-vindo!",
+            "subtitle": "Selecione seu papel no campo educacional",
+            "back": "Voltar",
+            "welcome": {
+              "hello": "Olá {username}!",
+              "description": "Bem-vindo ao AILearn"
+            },
+            "actions": {
+              "accept": "ACEITAR",
+              "back": "VOLTAR",
+              "continue": "Continuar",
+              "join": "Enviar solicitação",
+              "start": "Começar"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

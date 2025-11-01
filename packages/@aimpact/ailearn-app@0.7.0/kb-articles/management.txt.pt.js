@@ -1,2 +1,106 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,txt,__beyond_pkg,hmr;_export("txt",void 0);return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/kb-articles/management",multibundle:true},type:"txt"},_context.meta.url).package("pt");__pkg.dependencies.update([]);ims=new Map;ims.set("./txt",{hash:1974087839,creator:function(require,exports){exports.txt={actions:{create:"Criar Artigo",edit:"Editar Artigo",delete:"Excluir Artigo",publish:"Publicar Artigo",unpublish:"Despublicar Artigo",feature:"Destacar Artigo",unfeature:"Remover Destaque",save:"Salvar Rascunho"},form:{administrator:{label:"Administrador",placeholder:"Seleccionar administrador"},title:{label:"T\xedtulo",placeholder:"Digite o t\xedtulo do artigo"},description:{label:"Descri\xe7\xe3o",placeholder:"Digite a descri\xe7\xe3o do artigo"},content:{label:"Conte\xfado"},tags:{label:"Tags",placeholder:"Adicione tags separadas por v\xedrgulas"}},title:"Editor de Artigos",subtitle:"Crie e edite os artigos da sua base de conhecimentos",status:{saving:"Salvando...",publishing:"Publicando...",saved:"Rascunho salvo",published:"Artigo publicado"},errors:{save:"Erro ao salvar rascunho",publish:"Erro ao publicar artigo"},empty:{title:"Nenhum artigo encontrado",description:"Comece criando seu primeiro artigo para compartilhar conhecimento com sua comunidade."}}}});__pkg.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="txt")&&_export("txt",txt=require?require("./txt").txt:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAva2ItYXJ0aWNsZXMvbWFuYWdlbWVudC50eHQucHQuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwidHh0IiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwibXVsdGlidW5kbGUiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwiYWN0aW9ucyIsImNyZWF0ZSIsImVkaXQiLCJkZWxldGUiLCJwdWJsaXNoIiwidW5wdWJsaXNoIiwiZmVhdHVyZSIsInVuZmVhdHVyZSIsInNhdmUiLCJmb3JtIiwiYWRtaW5pc3RyYXRvciIsImxhYmVsIiwicGxhY2Vob2xkZXIiLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwiY29udGVudCIsInRhZ3MiLCJzdWJ0aXRsZSIsInN0YXR1cyIsInNhdmluZyIsInB1Ymxpc2hpbmciLCJzYXZlZCIsInB1Ymxpc2hlZCIsImVycm9ycyIsImVtcHR5IiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInZhbHVlIiwidGhpcyIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLG1DQUFvQyxTQUFVQyxRQUFTQyxVQUN0RSxhQUVBLElBQUlDLGFBQWNDLFFB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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/kb-articles/management",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('pt');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 1974087839,
+        creator: function (require, exports) {
+          exports.txt = {
+            "actions": {
+              "create": "Criar Artigo",
+              "edit": "Editar Artigo",
+              "delete": "Excluir Artigo",
+              "publish": "Publicar Artigo",
+              "unpublish": "Despublicar Artigo",
+              "feature": "Destacar Artigo",
+              "unfeature": "Remover Destaque",
+              "save": "Salvar Rascunho"
+            },
+            "form": {
+              "administrator": {
+                "label": "Administrador",
+                "placeholder": "Seleccionar administrador"
+              },
+              "title": {
+                "label": "Título",
+                "placeholder": "Digite o título do artigo"
+              },
+              "description": {
+                "label": "Descrição",
+                "placeholder": "Digite a descrição do artigo"
+              },
+              "content": {
+                "label": "Conteúdo"
+              },
+              "tags": {
+                "label": "Tags",
+                "placeholder": "Adicione tags separadas por vírgulas"
+              }
+            },
+            "title": "Editor de Artigos",
+            "subtitle": "Crie e edite os artigos da sua base de conhecimentos",
+            "status": {
+              "saving": "Salvando...",
+              "publishing": "Publicando...",
+              "saved": "Rascunho salvo",
+              "published": "Artigo publicado"
+            },
+            "errors": {
+              "save": "Erro ao salvar rascunho",
+              "publish": "Erro ao publicar artigo"
+            },
+            "empty": {
+              "title": "Nenhum artigo encontrado",
+              "description": "Comece criando seu primeiro artigo para compartilhar conhecimento com sua comunidade."
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

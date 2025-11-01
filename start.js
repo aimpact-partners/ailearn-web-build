@@ -1,2 +1,930 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/transversals","@beyond-js/widgets@1.1.2/render","@aimpact/ailearn-app@0.7.0/model/wrapper","@aimpact/chat-sdk@1.5.5/session","@beyond-js/kernel@0.1.14/routing","react@18.3.1","pragmate-ui@1.0.8/icons","pragmate-ui@1.0.8/image","@beyond-js/reactive@2.1.1/model","@aimpact/ailearn-sdk@1.2.0/core","@aimpact/rvd@0.7.0/config","@aimpact/chat-sdk@1.5.5/startup","@aimpact/agents-api@0.4.1/ws-config","@aimpact/ailearn-sdk@1.2.0/startup"],function(_export,_context){"use strict";var dependency_0,dependency_1,dependency_2,dependency_3,dependency_4,dependency_5,dependency_6,dependency_7,dependency_8,dependency_9,dependency_10,dependency_11,dependency_12,dependency_13,dependency_14,Transversal,__beyond_transversal,widgets,bundles;return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_beyondJsKernel0114Transversals){dependency_1=_beyondJsKernel0114Transversals},function(_beyondJsWidgets112Render){dependency_2=_beyondJsWidgets112Render},function(_aimpactAilearnApp070ModelWrapper){dependency_3=_aimpactAilearnApp070ModelWrapper},function(_aimpactChatSdk155Session){dependency_4=_aimpactChatSdk155Session},function(_beyondJsKernel0114Routing){dependency_5=_beyondJsKernel0114Routing},function(_react2){dependency_6=_react2},function(_pragmateUi108Icons){dependency_7=_pragmateUi108Icons},function(_pragmateUi108Image){dependency_8=_pragmateUi108Image},function(_beyondJsReactive211Model){dependency_9=_beyondJsReactive211Model},function(_aimpactAilearnSdk120Core){dependency_10=_aimpactAilearnSdk120Core},function(_aimpactRvd070Config){dependency_11=_aimpactRvd070Config},function(_aimpactChatSdk155Startup){dependency_12=_aimpactChatSdk155Startup},function(_aimpactAgentsApi041WsConfig){dependency_13=_aimpactAgentsApi041WsConfig},function(_aimpactAilearnSdk120Startup){dependency_14=_aimpactAilearnSdk120Startup}],execute:function(){({Transversal:Transversal}=brequire("@beyond-js/kernel/transversals"));_export("__beyond_transversal",__beyond_transversal=new Transversal("start",""));__beyond_transversal.dependencies.update([["@beyond-js/kernel/transversals",dependency_1],["@beyond-js/widgets/render",dependency_2],["@aimpact/ailearn-app/model/wrapper",dependency_3],["@aimpact/chat-sdk/session",dependency_4],["@beyond-js/kernel/routing",dependency_5],["react",dependency_6],["pragmate-ui/icons",dependency_7],["pragmate-ui/image",dependency_8],["@beyond-js/reactive/model",dependency_9],["@aimpact/ailearn-sdk/core",dependency_10],["@aimpact/rvd/config",dependency_11],["@aimpact/chat-sdk/startup",dependency_12],["@aimpact/agents-api/ws-config",dependency_13],["@aimpact/ailearn-sdk/startup",dependency_14]]);({widgets:widgets}=brequire("@beyond-js/widgets/render"));widgets.register([{name:"app-ailearn-components-page",vspecifier:"@aimpact/ailearn-app@0.7.0/components/ui/page",is:"page",route:"/ui/components/test"},{name:"ailearn-dashboard-assignments",vspecifier:"@aimpact/ailearn-app@0.7.0/dashboard/assignments.widget",is:"page",route:"/dashboard/${id}",layout:"dashboard-layout"},{name:"ailearn-sessions-access",vspecifier:"@aimpact/ailearn-app@0.7.0/sessions/access.widget",is:"page",route:"/sessions/access/${id}",layout:"chat-layout"},{name:"ailearn-assignments-assessment",vspecifier:"@aimpact/ailearn-app@0.7.0/assignments/assessment.widget",is:"page",route:"/assignments/${assignmentId}/assessment/${id}",layout:"main-layout"},{name:"ailearn-character-talk",vspecifier:"@aimpact/ailearn-app@0.7.0/assignments/character-talk.widget",is:"page",route:"/assignments/${assignmentId}/character-talk/${activityId}/chat/${chatId}",layout:"main-layout"},{name:"assignments-activity-closing-page",vspecifier:"@aimpact/ailearn-app@0.7.0/assignments-activity-closing",is:"page",route:"/assignments/${id}/activity/${activityId}/closing",layout:"main-layout"},{name:"ailearn-content-theory-page",vspecifier:"@aimpact/ailearn-app@0.7.0/assignments/content-theory.widget",is:"page",route:"/assignments/${assignmentId}/content-theory/${activityId}/chat/${chatId}",layout:"main-layout"},{name:"ailearn-debate-activity-page",vspecifier:"@aimpact/ailearn-app@0.7.0/assignments/debate.widget",is:"page",route:"/assignments/${assignmentId}/debate/${activityId}/chat/${chatId}",layout:"main-layout"},{name:"ailearn-exercise-page",vspecifier:"@aimpact/ailearn-app@0.7.0/assignments/exercise.widget",is:"page",route:"/assignments/${assignmentId}/exercise/${activityId}/chat/${chatId}",layout:"main-layout"},{name:"ailearn-free-conversation-page",vspecifier:"@aimpact/ailearn-app@0.7.0/assignments/free-conversation.widget",is:"page",route:"/assignments/${assignmentId}/free-conversation/${activityId}/chat/${chatId}",layout:"main-layout"},{name:"ailearn-assignments-hand-written",vspecifier:"@aimpact/ailearn-app@0.7.0/assignments/hand-written.widget",is:"page",route:"/assignments/${assignmentId}/hand-written/${id}",layout:"main-layout"},{name:"ailearn-assignments-spoken",vspecifier:"@aimpact/ailearn-app@0.7.0/assignments/spoken.widget",is:"page",route:"/assignments/${assignmentId}/spoken/${id}",layout:"main-layout"},{name:"ailearn-assignments-written",vspecifier:"@aimpact/ailearn-app@0.7.0/assignments/written.widget",is:"page",route:"/assignments/${assignmentId}/written/${id}",layout:"main-layout"},{name:"ailearn-gclassroom-permissions",vspecifier:"@aimpact/ailearn-app@0.7.0/gclassroom-permissions.widget"},{name:"ailearn-assignment-view",vspecifier:"@aimpact/ailearn-app@0.7.0/assignment/view.widget",is:"page",route:"/assignments/${id}",layout:"main-layout"},{name:"ailearn-gclassrooms-access",vspecifier:"@aimpact/ailearn-app@0.7.0/gclassroom/access.widget",is:"page",route:"/gclassroom/access",layout:"chat-layout"},{name:"ailearn-gclassroom-explorer",vspecifier:"@aimpact/ailearn-app@0.7.0/gclassroom-explorer.widget"},{name:"ailearn-classroom-join",vspecifier:"@aimpact/ailearn-app@0.7.0/classrooms/join.widget",is:"page",route:"/classrooms/join",layout:"main-layout"},{name:"ailearn-classrooms-list",vspecifier:"@aimpact/ailearn-app@0.7.0/classrooms/list.widget",is:"page",route:"/classrooms/list",layout:"main-layout"},{name:"app-classrooms-management",vspecifier:"@aimpact/ailearn-app@0.7.0/classrooms/management.widget",is:"page",route:"/classrooms/management",layout:"main-layout"},{name:"app-classrooms-view",vspecifier:"@aimpact/ailearn-app@0.7.0/classrooms/view.widget",is:"page",route:"/classrooms/view/${id}",layout:"main-layout"},{name:"ailearn-kb-articles-list",vspecifier:"@aimpact/ailearn-app@0.7.0/kb-articles/list.widget",is:"page",route:"/kb/articles/list",layout:"main-layout"},{name:"ailearn-kb-articles-management",vspecifier:"@aimpact/ailearn-app@0.7.0/kb-articles/management.widget",is:"page",route:"/kb/articles/management",layout:"main-layout"},{name:"ailearn-kb-search",vspecifier:"@aimpact/ailearn-app@0.7.0/kb/search.widget",is:"page",route:"/kb/search",layout:"main-layout"},{name:"ailearn-sections-join",vspecifier:"@aimpact/ailearn-app@0.7.0/sections/join.widget",is:"page",route:"/kb/sections/join",layout:"main-layout"},{name:"ailearn-sections-list",vspecifier:"@aimpact/ailearn-app@0.7.0/sections/list.widget",is:"page",route:"/kb/sections/list",layout:"main-layout"},{name:"app-sections-management",vspecifier:"@aimpact/ailearn-app@0.7.0/sections/management.widget",is:"page",route:"/kb/sections/management",layout:"main-layout"},{name:"app-sections-view",vspecifier:"@aimpact/ailearn-app@0.7.0/sections/view.widget",is:"page",route:"/kb/sections/view/${id}",layout:"main-layout"},{name:"ailearn-community-modules",vspecifier:"@aimpact/ailearn-app@0.7.0/community.widget",is:"page",route:"/community",layout:"main-layout"},{name:"ailearn-modules-list",vspecifier:"@aimpact/ailearn-app@0.7.0/modules/list.widget",is:"page",route:"/modules/list",layout:"main-layout"},{name:"app-module-objective-management",vspecifier:"@aimpact/ailearn-app@0.7.0/modules/draft.widget",is:"page",route:"/modules/management",layout:"main-layout"},{name:"app-organizations-management",vspecifier:"@aimpact/ailearn-app@0.7.0/organizations/management.widget",is:"page",route:"/organizations/management",layout:"main-layout"},{name:"ailearn-organization-join",vspecifier:"@aimpact/ailearn-app@0.7.0/organizations/join.widget",is:"page",route:"/organizations/join",layout:"main-layout"},{name:"ailearn-organizations-list",vspecifier:"@aimpact/ailearn-app@0.7.0/organizations/list.widget",is:"page",route:"/organizations/list",layout:"main-layout"},{name:"app-organizations-view",vspecifier:"@aimpact/ailearn-app@0.7.0/organizations/view.widget",is:"page",route:"/organizations/view/${id}",layout:"main-layout"},{name:"ailearn-user-profile",vspecifier:"@aimpact/ailearn-app@0.7.0/user/profile.widget",is:"page",route:"/users/me",layout:"main-layout"},{name:"auth-layout",vspecifier:"@aimpact/ailearn-app@0.7.0/auth-layout",is:"layout"},{name:"dashboard-layout",vspecifier:"@aimpact/ailearn-app@0.7.0/dashboard-layout.widget",is:"layout"},{name:"main-layout",vspecifier:"@aimpact/ailearn-app@0.7.0/main-layout.widget",is:"layout"},{name:"ailearn-archive-app",vspecifier:"@aimpact/ailearn-app@0.7.0/archive.widget",is:"page",route:"/archive",layout:"main-layout"},{name:"auth-login-page",vspecifier:"@aimpact/ailearn-app@0.7.0/auth-login.widget",is:"page",route:"/auth/login",layout:"auth-layout"},{name:"app-not-allowed",vspecifier:"@aimpact/ailearn-app@0.7.0/not-allowed-control.widget"},{name:"app-not-allowed-page",vspecifier:"@aimpact/ailearn-app@0.7.0/not-allowed-page.widget"},{name:"app-missing-control",vspecifier:"@aimpact/ailearn-app@0.7.0/missing.widget"},{name:"app-missing-page",vspecifier:"@aimpact/ailearn-app@0.7.0/missing-page.widget",is:"page",route:"/error-404",layout:"main-layout"},{name:"app-system-error-control",attrs:["error"],vspecifier:"@aimpact/ailearn-app@0.7.0/system-error-widget.widget"},{name:"app-system-error-page",vspecifier:"@aimpact/ailearn-app@0.7.0/system-error.widget",is:"page",route:"/error-500",layout:"main-layout"},{name:"student-home",vspecifier:"@aimpact/ailearn-app@0.7.0/home.widget",is:"page",route:"/",layout:"main-layout"},{name:"ailearn-identify-page",vspecifier:"@aimpact/ailearn-app@0.7.0/identify.widget",is:"page",route:"/next-steps"},{name:"privacy-page",vspecifier:"@aimpact/ailearn-app@0.7.0/pages/privacy",is:"page",route:"/privacy"},{name:"ailearn-terms-and-conditions-page",vspecifier:"@aimpact/ailearn-app@0.7.0/pages/terms",is:"page",route:"/terms-and-conditions"},{name:"ailearn-test-dynamic",vspecifier:"@aimpact/ailearn-app@0.7.0/pages/test-dynamic.widget",is:"page",route:"/test/dynamic"},{name:"ailearn-test-editor",vspecifier:"@aimpact/ailearn-app@0.7.0/pages/test-editor.widget",is:"page",route:"/test/article/editor",layout:"main-layout"},{name:"ailearn-test-uploader",vspecifier:"@aimpact/ailearn-app@0.7.0/pages/test-uploader.widget",is:"page",route:"/test/uploader"},{name:"app-template-bottom-bar",vspecifier:"@aimpact/ailearn-app@0.7.0/template/bottom-bar",is:"page",route:"/template/bottom-bar"},{name:"ailearn-ui-components",vspecifier:"@aimpact/ailearn-app@0.7.0/ui/components",is:"page",route:"/ui/components",layout:"main-layout"},{name:"app-updating-page",vspecifier:"@aimpact/ailearn-app@0.7.0/pages/updating.widget",is:"page",route:"/updating"},{name:"app-policies-page",vspecifier:"@aimpact/ailearn-app@0.7.0/pages/age.widget",is:"page",route:"/user-validation"},{name:"ailearn-test-page",vspecifier:"@aimpact/ailearn-app@0.7.0/test",is:"page",route:"/dev/test",layout:"main-layout"},{name:"app-breadcrumb",vspecifier:"@aimpact/ailearn-app@0.7.0/widgets/breadcrumb.widget"},{name:"realtime-home-page",vspecifier:"@aimpact/agents-api@0.4.1/realtime/home",is:"page",route:"/realtime-home"},{name:"chat-sdk-markdown-page",vspecifier:"@aimpact/chat-sdk@1.5.5/tests/markdown",is:"page",route:"/chat/sdk/markdown",layout:"general-layout"},{name:"chat-sdk-playable",vspecifier:"@aimpact/chat-sdk@1.5.5/tests/playable",is:"page",route:"/chat/sdk/playable"},{name:"slate-editor",vspecifier:"@aimpact/chat-sdk@1.5.5/testing/slate-editor.widget",is:"page",route:"/testing/slate-editor",layout:"platform-layout"},{name:"app-testing-tiptap",vspecifier:"@aimpact/chat-sdk@1.5.5/tiptap",is:"page",route:"/testing/tiptap"}]);bundles=[];bundles.push([{module:{vspecifier:"@aimpact/rvd@0.7.0/routing"},type:"start"},function(ims,exports){const bimport=specifier=>{const dependencies=new Map([["@beyond-js/http-suite","0.1.1"],["@beyond-js/reactive","2.1.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.1"],["@firebase/auth","1.10.7"],["@google-cloud/storage","7.16.0"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.6"],["driver.js","1.3.6"],["firebase","11.9.1"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.22"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.2"],["marked-mangle","1.1.11"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.2.2"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.1"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.9"],["yet-another-react-lightbox","3.25.0"],["zod","3.25.67"],["@beyond-js/local","0.1.3"],["@types/react","18.3.23"],["@types/react-dom","18.3.7"],["react-is","16.13.1"],["@aimpact/rvd","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};ims.set("./handlers/dashboard",{hash:3727431712,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.checkDashboard=checkDashboard;function checkDashboard(uri,router,next){const match=/^\/?assignments\/([^/]+)\/dashboard\/classroom$/.exec(uri.pathname);if(match){const id=match[1];return{pathname:`/dashboard/${id}`}}return next(uri)}}});ims.set("./handlers/home",{hash:3464692361,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.checkHome=checkHome;async function checkHome({pathname:pathname},router,next){return next()}}});ims.set("./handlers/policies",{hash:779423052,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.checkPolicies=checkPolicies;var _session=require("@aimpact/chat-sdk/session");var _publicRoutes=require("../public-routes");async function checkPolicies(uriObject,router,next){await _session.sessionWrapper.isReady;await(_session.sessionWrapper?.user?.isReady);const{pathname:pathname,uri:uri}=uriObject;const{termsAccepted:termsAccepted,age:age}=_session.sessionWrapper.user;if(_publicRoutes.PUBLIC_ROUTES.includes(pathname))return uri;if(!termsAccepted&&age>17||!age){if(pathname&&pathname!=="/user-validation")router.previous=uriObject;return{pathname:"/user-validation"}}if(pathname==="/user-validation"&&termsAccepted&&age>17){return{pathname:"/"}}return next()}}});ims.set("./handlers/roles",{hash:2885694447,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.checkRoles=checkRoles;var _session=require("@aimpact/chat-sdk/session");async function checkRoles(uri,router,next){const{pathname:pathname}=uri;await _session.sessionWrapper.isReady;const regex=/^\/assignments\/.+$/;const isAssigment=regex.test(pathname);if(isAssigment)return next();const validRoutes=["/users/me","/organizations/create","/organizations/join","classrooms/join"];function containsPath(paths,url){for(const path of paths){if(url.includes(path)){return true}}return false}if(pathname==="/next-steps"&&_session.sessionWrapper.user?.roles.length)return{pathname:"/"};if(pathname==="/next-steps")return{pathname:"/next-steps"};if(!_session.sessionWrapper.user.roles.length&&!containsPath(validRoutes,uri.uri)){return{pathname:"/next-steps"}}return next()}}});ims.set("./handlers/session",{hash:2054232100,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.checkSession=checkSession;var _session=require("@aimpact/chat-sdk/session");var _publicRoutes=require("../public-routes");var _router=require("../router");const DEFAULT_ROUTE="/auth/login";async function checkSession(uri,router,next){const{pathname:pathname}=uri;await _session.sessionWrapper.isReady;if(!_session.sessionWrapper.logged&&_publicRoutes.PUBLIC_ROUTES.includes(pathname)){return{pathname:pathname}}if(!_session.sessionWrapper.logged&&!_publicRoutes.PUBLIC_ROUTES.includes(pathname)){router.previous=uri;return{pathname:DEFAULT_ROUTE}}if(_session.sessionWrapper.logged&&_session.sessionWrapper.user?.outdated){return{pathname:"/updating"}}if(_session.sessionWrapper.logged&&_publicRoutes.AUTH_ROUTES.includes(pathname)){return{pathname:"/"}}if(!_publicRoutes.AUTH_ROUTES.includes(pathname)&&_publicRoutes.PUBLIC_ROUTES.includes(pathname)||_session.sessionWrapper.logged){const route=_router.Router.getPreviousUrl();return next(route)}if(pathname!=="/"){router.previous=uri}return{pathname:DEFAULT_ROUTE}}}});ims.set("./public-routes",{hash:2866617319,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.PUBLIC_ROUTES=exports.AUTH_ROUTES=void 0;const PUBLIC_ROUTES=exports.PUBLIC_ROUTES=["/auth/login","/auth/register","/auth/recovery","/auth/recover-password","/documents/access","/privacy","/terms-and-conditions","/reactive/testing"];const AUTH_ROUTES=exports.AUTH_ROUTES=["/auth/login","/auth/register","/auth/recovery","/auth/recover-password"]}});ims.set("./router",{hash:3382285475,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Router=void 0;let previousURL;class Router{#isDefault;get isDefault(){return this.#pathname==="/"}#pathname;get pathname(){return this.#pathname}#data;get data(){return this.#data}#previous;get previous(){return previousURL}set previous(uri){if(uri?.pathname==="/")return;if(uri?.uri===this.#previous?.uri)return;this.#previous=uri;previousURL=uri}#index;#handlers;constructor(handlers){if(!Array.isArray(handlers)){throw new Error("handlers must be an array")}handlers.forEach(handler=>{if(typeof handler!=="function")throw new Error("handlers must be an array of functions")});this.#handlers=handlers}async process(index,uri){const next=async newUri=>{newUri=newUri||uri;if(index<this.#handlers.length-1){return await this.process(index+1,newUri)}return newUri};if(!this.#handlers.length)return uri.uri;const response=await this.#handlers[index](uri,this,next);return response}async validate(uri){if(!this.#handlers.length)return uri;return this.process(0,uri)}static getPreviousUrl(){return previousURL}static getAndCleanPreviousUrl(){const url=previousURL;previousURL=undefined;return url}static cleanPreviousUrl(){previousURL=undefined}}exports.Router=Router;globalThis.Router=Router}});ims.set("./routing",{hash:3012943386,creator:function(require,exports){"use strict";var _routing=require("@beyond-js/kernel/routing");var _dashboard=require("./handlers/dashboard");var _policies=require("./handlers/policies");var _roles=require("./handlers/roles");var _session=require("./handlers/session");var _router=require("./router");const handlers=[_session.checkSession,_policies.checkPolicies,_roles.checkRoles,_dashboard.checkDashboard];const router=new _router.Router(handlers);_routing.routing.redirect=async function redirect(uri){try{const response=await router.validate(uri);return response.uri??response.pathname}catch(e){console.error(e);return"/error-500"}};_routing.routing.missing=async function redirect(){return"app-missing-page"}}});exports.descriptor=[{im:"./router",from:"Router",name:"Router"}];return{dependencies:["@aimpact/ailearn-app/model/wrapper","@aimpact/chat-sdk/session","@beyond-js/kernel/routing"]}}]);bundles.push([{module:{vspecifier:"@aimpact/rvd@0.7.0/initialize-app"},type:"start"},function(ims,exports){const bimport=specifier=>{const dependencies=new Map([["@beyond-js/http-suite","0.1.1"],["@beyond-js/reactive","2.1.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.1"],["@firebase/auth","1.10.7"],["@google-cloud/storage","7.16.0"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.6"],["driver.js","1.3.6"],["firebase","11.9.1"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.22"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.2"],["marked-mangle","1.1.11"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.2.2"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.1"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.9"],["yet-another-react-lightbox","3.25.0"],["zod","3.25.67"],["@beyond-js/local","0.1.3"],["@types/react","18.3.23"],["@types/react-dom","18.3.7"],["react-is","16.13.1"],["@aimpact/rvd","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};ims.set("./icons/profile",{hash:2038903291,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.ProfileIcon=void 0;var _react=require("react");var _icons=require("pragmate-ui/icons");var _session=require("@aimpact/chat-sdk/session");var _image=require("pragmate-ui/image");const ProfileIcon=({onClick:onClick})=>{const[loadError,setLoadError]=_react.default.useState(false);if(!_session.sessionWrapper.user)return;const userProps=_session.sessionWrapper.user.getProperties();const handleLoadError=()=>setLoadError(true);return _react.default.createElement("div",{className:"aside-item",onClick:onClick},!loadError?_react.default.createElement(_image.Image,{alt:"user image profile",src:userProps.photoURL,onError:handleLoadError}):_react.default.createElement(_icons.Icon,{className:"lg",icon:"user"}))};exports.ProfileIcon=ProfileIcon}});ims.set("./index",{hash:562615362,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Startup=void 0;var _model=require("@beyond-js/reactive/model");var _render=require("@beyond-js/widgets/render");var _core=require("@aimpact/ailearn-sdk/core");var _session=require("@aimpact/chat-sdk/session");var _config=require("@aimpact/rvd/config");var _startup=require("@aimpact/chat-sdk/startup");var _wsConfig=require("@aimpact/agents-api/ws-config");var _wrapper=require("@aimpact/ailearn-app/model/wrapper");var _startup2=require("@aimpact/ailearn-sdk/startup");var _routing=require("@aimpact/rvd/routing");class Startup extends _model.ReactiveModel{constructor(){super();this.#start()}#initSDK=async()=>{const{environment:environment,params:params,version:version}=_config.default;const{firebase:firebase,apis:apis,baseUrl:baseUrl,APP_LOGO:APP_LOGO,APP_NAME:APP_NAME}=params;_session.sessionWrapper.settings({firebase:firebase});const project="rvd";_wrapper.Config.initialize({Router:_routing.Router,apis:apis,baseUrl:baseUrl,project:project,version:version,APP_LOGO:APP_LOGO,APP_NAME:APP_NAME,environment:environment,...params});await _startup.sdkConfig.initialize({environment:environment,userModel:_core.User,project:project,apis:apis,kb:false,api:apis.agents});await _startup2.sdkConfig.initialize({environment:environment,apis:apis,version:version})};#start=async()=>{const{environment:environment,params:params}=_config.default;(0,_wsConfig.setUrl)(params.apis.realtime);await this.#initSDK();const promises=[_session.sessionWrapper.isReady];await Promise.all(promises);this.checkMode()};checkMode(){const dyslexiaMode=localStorage.getItem("aimpact.accessibility.mode")?localStorage.getItem("aimpact.accessibility.mode"):"normal";const container=document.querySelector("html");if(container){container.setAttribute("data-accessibility-mode",dyslexiaMode);_render.widgets.attributes.add("data-accessibility-mode",dyslexiaMode)}}static setup(){const instance=new Startup}}exports.Startup=Startup;Startup.setup()}});exports.descriptor=[{im:"./icons/profile",from:"ProfileIcon",name:"ProfileIcon"}];return{dependencies:["react","pragmate-ui/icons","@aimpact/chat-sdk/session","pragmate-ui/image","@beyond-js/reactive/model","@beyond-js/widgets/render","@aimpact/ailearn-sdk/core","@aimpact/rvd/config","@aimpact/chat-sdk/startup","@aimpact/agents-api/ws-config","@aimpact/ailearn-app/model/wrapper","@aimpact/ailearn-sdk/startup","@aimpact/rvd/routing"]}}]);__beyond_transversal.initialise(bundles)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3RhcnQuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImRlcGVuZGVuY3lfMSIsImRlcGVuZGVuY3lfMiIsImRlcGVuZGVuY3lfMyIsImRlcGVuZGVuY3lfNCIsImRlcGVuZGVuY3lfNSIsImRlcGVuZGVuY3lfNiIsImRlcGVuZGVuY3lfNyIsImRlcGVuZGVuY3lfOCIsImRlcGVuZGVuY3lfOSIsImRlcGVuZGVuY3lfMTAiLCJkZXBlbmRlbmN5XzExIiwiZGVwZW5kZW5jeV8xMiIsImRlcGVuZGVuY3lfMTMiLCJkZXBlbmRlbmN5XzE0IiwiVHJhbnN2ZXJzYWwiLCJfX2JleW9uZF90cmFuc3ZlcnNhbCIsIndpZGdldHMiLCJidW5kbGVzIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJfYmV5b25kSnNLZXJuZWwwMTE0VHJhbnN2ZXJzYWxzIiwiX2JleW9uZEpzV2lkZ2V0czExMlJlbmRlciIsIl9haW1wYWN0QWlsZWFybkFwcDA3ME1vZGVsV3JhcHBlciIsIl9haW1wYWN0Q2hhdFNkazE1NVNlc3Npb24iLCJfYmV5b25kSnNLZXJuZWwwMTE0Um91dGluZyIsIl9yZWFjdDIiLCJfcHJhZ21hdGVVaTEwOEljb25zIiwiX3ByYWdtYXRlVWkxMDhJbWFnZSIsIl9iZXlvbmRKc1JlYWN0aXZlMjExTW9kZWwiLCJfYWltcGFjdEFpbGVhcm5TZGsxMjBDb3JlIiwiX2FpbXBhY3RSdmQwNzBDb25maWciLCJfYWltcGFjdENoYXRTZGsxNTVTdGFydHVwIiwiX2FpbXBhY3RBZ2VudHNBcGkwNDFXc0NvbmZpZyIsIl9haW1wYWN0QWlsZWFyblNkazEyMFN0YXJ0dXAiLCJleGVjdXRlIiwiYnJlcXVpcmUiLCJkZXBlbmRlbmNpZXMiLCJ1cGRhdGUiLCJuYW1lIiwidnNwZWNpZmllciIsImlzIiwicm91dGUiLCJsYXlvdXQiLCJhdHRycyIsInB1c2giLCJtb2R1bGUiLCJ0eXBlIiwiaW1zIiwiZXhwb3J0cyIsImJpbXBvcnQiLCJzcGVjaWZpZXIiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiLCJjaGVja0Rhc2hib2FyZCIsInVyaSIsInJvdXRlciIsIm5leHQiLCJtYXRjaCIsImV4ZWMiLCJwYXRobmFtZSIsImlkIiwiY2hlY2tIb21lIiwiYXN5bmMiLCJjaGVja1BvbGljaWVzIiwiX3Nlc3Npb24iLCJfcHVibGljUm91dGVzIiwidXJpT2JqZWN0Iiwic2Vzc2lvbldyYXBwZXIiLCJpc1JlYWR5IiwidXNlciIsInRlcm1zQWNjZXB0ZWQiLCJhZ2UiLCJQVUJMSUNfUk9VVEVTIiwiaW5jbHVkZXMiLCJwcmV2aW91cyIsImNoZWNrUm9sZXMiLCJyZWdleCIsImlzQXNzaWdtZW50IiwidGVzdCIsInZhbGlkUm91dGVzIiwiY29udGFpbnNQYXRoIiwicGF0aHMiLCJ1cmwiLCJwYXRoIiwicm9sZXMiLCJsZW5ndGgiLCJjaGVja1Nlc3Npb24iLCJfcm91dGVyIiwiREVGQVVMVF9ST1VURSIsImxvZ2dlZCIsIm91dGRhdGVkIiwiQVVUSF9ST1VURVMiLCJSb3V0ZXIiLCJnZXRQcmV2aW91c1VybCIsInByZXZpb3VzVVJMIiwiaXNEZWZhdWx0IiwidGhpcyIsImRhdGEiLCJpbmRleCIsImhhbmRsZXJzIiwiY29uc3RydWN0b3IiLCJBcnJheSIsImlzQXJyYXkiLCJFcnJvciIsImZvckVhY2giLCJoYW5kbGVyIiwicHJvY2VzcyIsIm5ld1VyaSIsInJlc3BvbnNlIiwidmFsaWRhdGUiLCJnZXRBbmRDbGVhblByZXZpb3VzVXJsIiwidW5kZWZpbmVkIiwiY2xlYW5QcmV2aW91c1VybCIsIl9yb3V0aW5nIiwiX2Rhc2hib2FyZCIsIl9wb2xpY2llcyIsIl9yb2xlcyIsInJvdXRpbmciLCJyZWRpcmVjdCIsImUiLCJjb25zb2xlIiwiZXJyb3IiLCJtaXNzaW5nIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIlByb2ZpbGVJY29uIiwiX3JlYWN0IiwiX2ljb25zIiwiX2ltYWdlIiwib25DbGljayIsImxvYWRFcnJvciIsInNldExvYWRFcnJvciIsImRlZmF1bHQiLCJ1c2VTdGF0ZSIsInVzZXJQcm9wcyIsImdldFByb3BlcnRpZXMiLCJoYW5kbGVMb2FkRXJyb3IiLCJjcmVhdGVFbGVtZW50IiwiY2xhc3NOYW1lIiwiSW1hZ2UiLCJhbHQiLCJzcmMiLCJwaG90b1VSTCIsIm9uRXJyb3IiLCJJY29uIiwiaWNvbiIsIlN0YXJ0dXAiLCJfbW9kZWwiLCJfcmVuZGVyIiwiX2NvcmUiLCJfY29uZmlnIiwiX3N0YXJ0dXAiLCJfd3NDb25maWciLCJfd3JhcHBlciIsIl9zdGFydHVwMiIsIlJlYWN0aXZlTW9kZWwiLCJzdXBlciIsInN0YXJ0IiwiaW5pdFNESyIsImVudmlyb25tZW50IiwicGFyYW1zIiwidmVyc2lvbiIsImZpcmViYXNlIiwiYXBpcyIsImJhc2VVcmwiLCJBUFBfTE9HTyIsIkFQUF9OQU1FIiwic2V0dGluZ3MiLCJwcm9qZWN0IiwiQ29uZmlnIiwiaW5pdGlhbGl6ZSIsInNka0NvbmZpZyIsInVzZXJNb2RlbCIsIlVzZXIiLCJrYiIsImFwaSIsImFnZW50cyIsInNldFVybCIsInJlYWx0aW1lIiwicHJvbWlzZXMiLCJQcm9taXNlIiwiYWxsIiwiY2hlY2tNb2RlIiwiZHlzbGV4aWFNb2RlIiwibG9jYWxTdG9yYWdlIiwiZ2V0SXRlbSIsImNvbnRhaW5lciIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsInNldEF0dHJpYnV0ZSIsImF0dHJpYnV0ZXMiLCJhZGQiLCJzZXR1cCIsImluc3RhbmNlIiwiaW5pdGlhbGlzZSJdLCJzb3VyY2VzIjpbIjAiXSwibWFwcGluZ3MiOiJBQUFBQSxPQUFPQyxTQUFTLENBQUMsa0NBQW1DLHdDQUF5QyxrQ0FBbUMsMkNBQTRDLGtDQUFtQyxtQ0FBb0MsZUFBZ0IsMEJBQTJCLDBCQUEyQixrQ0FBbUMsa0NBQW1DLDRCQUE2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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/transversals", "@beyond-js/widgets@1.1.2/render", "@aimpact/ailearn-app@0.7.0/model/wrapper", "@aimpact/chat-sdk@1.5.5/session", "@beyond-js/kernel@0.1.14/routing", "react@18.3.1", "pragmate-ui@1.0.8/icons", "pragmate-ui@1.0.8/image", "@beyond-js/reactive@2.1.2/model", "@aimpact/ailearn-sdk@1.2.0/core", "@aimpact/rvd@0.7.0/config", "@aimpact/chat-sdk@1.5.5/startup", "@aimpact/agents-api@0.4.1/ws-config", "@aimpact/ailearn-sdk@1.2.0/startup"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, dependency_12, dependency_13, dependency_14, Transversal, __beyond_transversal, widgets, bundles;
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Transversals) {
+      dependency_1 = _beyondJsKernel0114Transversals;
+    }, function (_beyondJsWidgets112Render) {
+      dependency_2 = _beyondJsWidgets112Render;
+    }, function (_aimpactAilearnApp070ModelWrapper) {
+      dependency_3 = _aimpactAilearnApp070ModelWrapper;
+    }, function (_aimpactChatSdk155Session) {
+      dependency_4 = _aimpactChatSdk155Session;
+    }, function (_beyondJsKernel0114Routing) {
+      dependency_5 = _beyondJsKernel0114Routing;
+    }, function (_react2) {
+      dependency_6 = _react2;
+    }, function (_pragmateUi108Icons) {
+      dependency_7 = _pragmateUi108Icons;
+    }, function (_pragmateUi108Image) {
+      dependency_8 = _pragmateUi108Image;
+    }, function (_beyondJsReactive212Model) {
+      dependency_9 = _beyondJsReactive212Model;
+    }, function (_aimpactAilearnSdk120Core) {
+      dependency_10 = _aimpactAilearnSdk120Core;
+    }, function (_aimpactRvd070Config) {
+      dependency_11 = _aimpactRvd070Config;
+    }, function (_aimpactChatSdk155Startup) {
+      dependency_12 = _aimpactChatSdk155Startup;
+    }, function (_aimpactAgentsApi041WsConfig) {
+      dependency_13 = _aimpactAgentsApi041WsConfig;
+    }, function (_aimpactAilearnSdk120Startup) {
+      dependency_14 = _aimpactAilearnSdk120Startup;
+    }],
+    execute: function () {
+      ({
+        Transversal
+      } = brequire('@beyond-js/kernel/transversals'));
+      _export("__beyond_transversal", __beyond_transversal = new Transversal('start', ''));
+      __beyond_transversal.dependencies.update([['@beyond-js/kernel/transversals', dependency_1], ['@beyond-js/widgets/render', dependency_2], ['@aimpact/ailearn-app/model/wrapper', dependency_3], ['@aimpact/chat-sdk/session', dependency_4], ['@beyond-js/kernel/routing', dependency_5], ['react', dependency_6], ['pragmate-ui/icons', dependency_7], ['pragmate-ui/image', dependency_8], ['@beyond-js/reactive/model', dependency_9], ['@aimpact/ailearn-sdk/core', dependency_10], ['@aimpact/rvd/config', dependency_11], ['@aimpact/chat-sdk/startup', dependency_12], ['@aimpact/agents-api/ws-config', dependency_13], ['@aimpact/ailearn-sdk/startup', dependency_14]]);
+
+      /*************
+      BUNDLE: WIDGET
+      *************/
+      ({
+        widgets
+      } = brequire('@beyond-js/widgets/render'));
+      widgets.register([{
+        "name": "app-ailearn-components-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/components/ui/page",
+        "is": "page",
+        "route": "/ui/components/test"
+      }, {
+        "name": "ailearn-dashboard-assignments",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/dashboard/assignments.widget",
+        "is": "page",
+        "route": "/dashboard/${id}",
+        "layout": "dashboard-layout"
+      }, {
+        "name": "ailearn-sessions-access",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/sessions/access.widget",
+        "is": "page",
+        "route": "/sessions/access/${id}",
+        "layout": "chat-layout"
+      }, {
+        "name": "ailearn-assignments-assessment",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/assignments/assessment.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/assessment/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-character-talk",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/assignments/character-talk.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/character-talk/${activityId}/chat/${chatId}",
+        "layout": "main-layout"
+      }, {
+        "name": "assignments-activity-closing-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/assignments-activity-closing",
+        "is": "page",
+        "route": "/assignments/${id}/activity/${activityId}/closing",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-content-theory-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/assignments/content-theory.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/content-theory/${activityId}/chat/${chatId}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-debate-activity-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/assignments/debate.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/debate/${activityId}/chat/${chatId}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-exercise-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/assignments/exercise.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/exercise/${activityId}/chat/${chatId}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-free-conversation-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/assignments/free-conversation.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/free-conversation/${activityId}/chat/${chatId}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-assignments-hand-written",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/assignments/hand-written.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/hand-written/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-assignments-spoken",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/assignments/spoken.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/spoken/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-assignments-written",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/assignments/written.widget",
+        "is": "page",
+        "route": "/assignments/${assignmentId}/written/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-gclassroom-permissions",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/gclassroom-permissions.widget"
+      }, {
+        "name": "ailearn-assignment-view",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/assignment/view.widget",
+        "is": "page",
+        "route": "/assignments/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-gclassrooms-access",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/gclassroom/access.widget",
+        "is": "page",
+        "route": "/gclassroom/access",
+        "layout": "chat-layout"
+      }, {
+        "name": "ailearn-gclassroom-explorer",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/gclassroom-explorer.widget"
+      }, {
+        "name": "ailearn-classroom-join",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/classrooms/join.widget",
+        "is": "page",
+        "route": "/classrooms/join",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-classrooms-list",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/classrooms/list.widget",
+        "is": "page",
+        "route": "/classrooms/list",
+        "layout": "main-layout"
+      }, {
+        "name": "app-classrooms-management",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/classrooms/management.widget",
+        "is": "page",
+        "route": "/classrooms/management",
+        "layout": "main-layout"
+      }, {
+        "name": "app-classrooms-view",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/classrooms/view.widget",
+        "is": "page",
+        "route": "/classrooms/view/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-kb-articles-list",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/kb-articles/list.widget",
+        "is": "page",
+        "route": "/kb/articles/list",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-kb-articles-management",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/kb-articles/management.widget",
+        "is": "page",
+        "route": "/kb/articles/management",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-kb-search",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/kb/search.widget",
+        "is": "page",
+        "route": "/kb/search",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-sections-join",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/sections/join.widget",
+        "is": "page",
+        "route": "/kb/sections/join",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-sections-list",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/sections/list.widget",
+        "is": "page",
+        "route": "/kb/sections/list",
+        "layout": "main-layout"
+      }, {
+        "name": "app-sections-management",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/sections/management.widget",
+        "is": "page",
+        "route": "/kb/sections/management",
+        "layout": "main-layout"
+      }, {
+        "name": "app-sections-view",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/sections/view.widget",
+        "is": "page",
+        "route": "/kb/sections/view/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-community-modules",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/community.widget",
+        "is": "page",
+        "route": "/community",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-modules-list",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/modules/list.widget",
+        "is": "page",
+        "route": "/modules/list",
+        "layout": "main-layout"
+      }, {
+        "name": "app-module-objective-management",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/modules/draft.widget",
+        "is": "page",
+        "route": "/modules/management",
+        "layout": "main-layout"
+      }, {
+        "name": "app-organizations-management",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/organizations/management.widget",
+        "is": "page",
+        "route": "/organizations/management",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-organization-join",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/organizations/join.widget",
+        "is": "page",
+        "route": "/organizations/join",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-organizations-list",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/organizations/list.widget",
+        "is": "page",
+        "route": "/organizations/list",
+        "layout": "main-layout"
+      }, {
+        "name": "app-organizations-view",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/organizations/view.widget",
+        "is": "page",
+        "route": "/organizations/view/${id}",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-user-profile",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/user/profile.widget",
+        "is": "page",
+        "route": "/users/me",
+        "layout": "main-layout"
+      }, {
+        "name": "auth-layout",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/auth-layout",
+        "is": "layout"
+      }, {
+        "name": "dashboard-layout",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/dashboard-layout.widget",
+        "is": "layout"
+      }, {
+        "name": "main-layout",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/main-layout.widget",
+        "is": "layout"
+      }, {
+        "name": "ailearn-archive-app",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/archive.widget",
+        "is": "page",
+        "route": "/archive",
+        "layout": "main-layout"
+      }, {
+        "name": "auth-login-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/auth-login.widget",
+        "is": "page",
+        "route": "/auth/login",
+        "layout": "auth-layout"
+      }, {
+        "name": "app-not-allowed",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/not-allowed-control.widget"
+      }, {
+        "name": "app-not-allowed-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/not-allowed-page.widget"
+      }, {
+        "name": "app-missing-control",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/missing.widget"
+      }, {
+        "name": "app-missing-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/missing-page.widget",
+        "is": "page",
+        "route": "/error-404",
+        "layout": "main-layout"
+      }, {
+        "name": "app-system-error-control",
+        "attrs": ["error"],
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/system-error-widget.widget"
+      }, {
+        "name": "app-system-error-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/system-error.widget",
+        "is": "page",
+        "route": "/error-500",
+        "layout": "main-layout"
+      }, {
+        "name": "student-home",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/home.widget",
+        "is": "page",
+        "route": "/",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-identify-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/identify.widget",
+        "is": "page",
+        "route": "/next-steps"
+      }, {
+        "name": "privacy-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/pages/privacy",
+        "is": "page",
+        "route": "/privacy"
+      }, {
+        "name": "ailearn-terms-and-conditions-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/pages/terms",
+        "is": "page",
+        "route": "/terms-and-conditions"
+      }, {
+        "name": "ailearn-test-dynamic",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/pages/test-dynamic.widget",
+        "is": "page",
+        "route": "/test/dynamic"
+      }, {
+        "name": "ailearn-test-editor",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/pages/test-editor.widget",
+        "is": "page",
+        "route": "/test/article/editor",
+        "layout": "main-layout"
+      }, {
+        "name": "ailearn-test-uploader",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/pages/test-uploader.widget",
+        "is": "page",
+        "route": "/test/uploader"
+      }, {
+        "name": "app-template-bottom-bar",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/template/bottom-bar",
+        "is": "page",
+        "route": "/template/bottom-bar"
+      }, {
+        "name": "ailearn-ui-components",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/ui/components",
+        "is": "page",
+        "route": "/ui/components",
+        "layout": "main-layout"
+      }, {
+        "name": "app-updating-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/pages/updating.widget",
+        "is": "page",
+        "route": "/updating"
+      }, {
+        "name": "app-policies-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/pages/age.widget",
+        "is": "page",
+        "route": "/user-validation"
+      }, {
+        "name": "ailearn-test-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/test",
+        "is": "page",
+        "route": "/dev/test",
+        "layout": "main-layout"
+      }, {
+        "name": "app-breadcrumb",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/widgets/breadcrumb.widget"
+      }, {
+        "name": "realtime-home-page",
+        "vspecifier": "@aimpact/agents-api@0.4.1/realtime/home",
+        "is": "page",
+        "route": "/realtime-home"
+      }, {
+        "name": "chat-sdk-markdown-page",
+        "vspecifier": "@aimpact/chat-sdk@1.5.5/tests/markdown",
+        "is": "page",
+        "route": "/chat/sdk/markdown",
+        "layout": "general-layout"
+      }, {
+        "name": "chat-sdk-playable",
+        "vspecifier": "@aimpact/chat-sdk@1.5.5/tests/playable",
+        "is": "page",
+        "route": "/chat/sdk/playable"
+      }, {
+        "name": "slate-editor",
+        "vspecifier": "@aimpact/chat-sdk@1.5.5/testing/slate-editor.widget",
+        "is": "page",
+        "route": "/testing/slate-editor",
+        "layout": "platform-layout"
+      }, {
+        "name": "app-testing-tiptap",
+        "vspecifier": "@aimpact/chat-sdk@1.5.5/tiptap",
+        "is": "page",
+        "route": "/testing/tiptap"
+      }]);
+      bundles = [];
+      /***************************
+      MODULE: @aimpact/rvd/routing
+      ***************************/
+      bundles.push([{
+        "module": {
+          "vspecifier": "@aimpact/rvd@0.7.0/routing"
+        },
+        "type": "start"
+      }, function (ims, exports) {
+        const bimport = specifier => {
+          const dependencies = new Map([["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/reactive", "2.1.2"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.1"], ["@firebase/auth", "1.10.7"], ["@google-cloud/storage", "7.16.0"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.6"], ["driver.js", "1.3.6"], ["firebase", "11.9.1"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.22"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.2"], ["marked-mangle", "1.1.11"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.2.2"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.1"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.9"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.25.67"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.23"], ["@types/react-dom", "18.3.7"], ["react-is", "16.13.1"], ["@aimpact/rvd", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+          return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+        };
+        /************************************
+        INTERNAL MODULE: ./handlers/dashboard
+        ************************************/
+
+        ims.set('./handlers/dashboard', {
+          hash: 3727431712,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.checkDashboard = checkDashboard;
+            function checkDashboard(uri, router, next) {
+              const match = /^\/?assignments\/([^/]+)\/dashboard\/classroom$/.exec(uri.pathname);
+              if (match) {
+                const id = match[1]; // Extraemos el id del grupo capturado en la regex
+                return {
+                  pathname: `/dashboard/${id}`
+                };
+              }
+              return next(uri);
+            }
+          }
+        });
+
+        /*******************************
+        INTERNAL MODULE: ./handlers/home
+        *******************************/
+
+        ims.set('./handlers/home', {
+          hash: 3464692361,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.checkHome = checkHome;
+            async function checkHome({
+              pathname
+            }, router, next) {
+              return next();
+            }
+          }
+        });
+
+        /***********************************
+        INTERNAL MODULE: ./handlers/policies
+        ***********************************/
+
+        ims.set('./handlers/policies', {
+          hash: 779423052,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.checkPolicies = checkPolicies;
+            var _session = require("@aimpact/chat-sdk/session");
+            var _publicRoutes = require("../public-routes");
+            async function checkPolicies(uriObject, router, next) {
+              await _session.sessionWrapper.isReady;
+              await _session.sessionWrapper?.user?.isReady;
+              const {
+                pathname,
+                uri
+              } = uriObject;
+              const {
+                termsAccepted,
+                age
+              } = _session.sessionWrapper.user;
+              if (_publicRoutes.PUBLIC_ROUTES.includes(pathname)) return uri;
+              if (!termsAccepted && age > 17 || !age) {
+                if (pathname && pathname !== '/user-validation') router.previous = uriObject;
+                return {
+                  pathname: '/user-validation'
+                };
+              }
+              if (pathname === '/user-validation' && termsAccepted && age > 17) {
+                return {
+                  pathname: '/'
+                };
+              }
+              return next();
+            }
+          }
+        });
+
+        /********************************
+        INTERNAL MODULE: ./handlers/roles
+        ********************************/
+
+        ims.set('./handlers/roles', {
+          hash: 2885694447,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.checkRoles = checkRoles;
+            var _session = require("@aimpact/chat-sdk/session");
+            async function checkRoles(uri, router, next) {
+              const {
+                pathname
+              } = uri;
+              await _session.sessionWrapper.isReady;
+              const regex = /^\/assignments\/.+$/;
+              const isAssigment = regex.test(pathname);
+              if (isAssigment) return next();
+              const validRoutes = ['/users/me', '/organizations/create', '/organizations/join', 'classrooms/join'];
+              function containsPath(paths, url) {
+                for (const path of paths) {
+                  if (url.includes(path)) {
+                    return true;
+                  }
+                }
+                return false;
+              }
+              if (pathname === '/next-steps' && _session.sessionWrapper.user?.roles.length) return {
+                pathname: '/'
+              };
+              if (pathname === '/next-steps') return {
+                pathname: '/next-steps'
+              };
+              if (!_session.sessionWrapper.user.roles.length && !containsPath(validRoutes, uri.uri)) {
+                return {
+                  pathname: '/next-steps'
+                };
+              }
+              return next();
+            }
+          }
+        });
+
+        /**********************************
+        INTERNAL MODULE: ./handlers/session
+        **********************************/
+
+        ims.set('./handlers/session', {
+          hash: 2054232100,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.checkSession = checkSession;
+            var _session = require("@aimpact/chat-sdk/session");
+            var _publicRoutes = require("../public-routes");
+            var _router = require("../router");
+            const DEFAULT_ROUTE = '/auth/login';
+            async function checkSession(uri, router, next) {
+              const {
+                pathname
+              } = uri;
+              await _session.sessionWrapper.isReady;
+              if (!_session.sessionWrapper.logged && _publicRoutes.PUBLIC_ROUTES.includes(pathname)) {
+                return {
+                  pathname
+                };
+              }
+              if (!_session.sessionWrapper.logged && !_publicRoutes.PUBLIC_ROUTES.includes(pathname)) {
+                router.previous = uri;
+                return {
+                  pathname: DEFAULT_ROUTE
+                };
+              }
+              if (_session.sessionWrapper.logged && _session.sessionWrapper.user?.outdated) {
+                return {
+                  pathname: '/updating'
+                };
+              }
+              if (_session.sessionWrapper.logged && _publicRoutes.AUTH_ROUTES.includes(pathname)) {
+                return {
+                  pathname: '/'
+                };
+              }
+              if (!_publicRoutes.AUTH_ROUTES.includes(pathname) && _publicRoutes.PUBLIC_ROUTES.includes(pathname) || _session.sessionWrapper.logged) {
+                const route = _router.Router.getPreviousUrl();
+                return next(route);
+              }
+              if (pathname !== '/') {
+                router.previous = uri;
+              }
+              return {
+                pathname: DEFAULT_ROUTE
+              };
+            }
+          }
+        });
+
+        /*******************************
+        INTERNAL MODULE: ./public-routes
+        *******************************/
+
+        ims.set('./public-routes', {
+          hash: 2866617319,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.PUBLIC_ROUTES = exports.AUTH_ROUTES = void 0;
+            const PUBLIC_ROUTES = exports.PUBLIC_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password', '/documents/access', '/privacy', '/terms-and-conditions', '/reactive/testing'];
+            const AUTH_ROUTES = exports.AUTH_ROUTES = ['/auth/login', '/auth/register', '/auth/recovery', '/auth/recover-password'];
+          }
+        });
+
+        /************************
+        INTERNAL MODULE: ./router
+        ************************/
+
+        ims.set('./router', {
+          hash: 3382285475,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.Router = void 0;
+            let previousURL;
+            /*bundle*/
+            class Router {
+              #isDefault;
+              get isDefault() {
+                return this.#pathname === '/';
+              }
+              #pathname;
+              get pathname() {
+                return this.#pathname;
+              }
+              #data;
+              get data() {
+                return this.#data;
+              }
+              #previous;
+              get previous() {
+                return previousURL;
+              }
+              set previous(uri) {
+                if (uri?.pathname === '/') return;
+                if (uri?.uri === this.#previous?.uri) return;
+                this.#previous = uri;
+                previousURL = uri;
+              }
+              #index;
+              #handlers;
+              constructor(handlers) {
+                if (!Array.isArray(handlers)) {
+                  throw new Error('handlers must be an array');
+                }
+                handlers.forEach(handler => {
+                  if (typeof handler !== 'function') throw new Error('handlers must be an array of functions');
+                });
+                this.#handlers = handlers;
+              }
+              async process(index, uri) {
+                const next = async newUri => {
+                  newUri = newUri || uri;
+                  if (index < this.#handlers.length - 1) {
+                    return await this.process(index + 1, newUri);
+                  }
+                  // If there are no more handlers, just return the current URI.
+                  return newUri;
+                };
+                if (!this.#handlers.length) return uri.uri;
+                const response = await this.#handlers[index](uri, this, next);
+                return response;
+              }
+              async validate(uri) {
+                if (!this.#handlers.length) return uri;
+                return this.process(0, uri);
+                // return uri.uri;
+              }
+              static getPreviousUrl() {
+                return previousURL;
+              }
+              static getAndCleanPreviousUrl() {
+                const url = previousURL;
+                previousURL = undefined;
+                return url;
+              }
+              static cleanPreviousUrl() {
+                previousURL = undefined;
+              }
+            }
+            exports.Router = Router;
+            globalThis.Router = Router;
+          }
+        });
+
+        /*************************
+        INTERNAL MODULE: ./routing
+        *************************/
+
+        ims.set('./routing', {
+          hash: 3012943386,
+          creator: function (require, exports) {
+            "use strict";
+
+            var _routing = require("@beyond-js/kernel/routing");
+            var _dashboard = require("./handlers/dashboard");
+            var _policies = require("./handlers/policies");
+            var _roles = require("./handlers/roles");
+            var _session = require("./handlers/session");
+            var _router = require("./router");
+            const handlers = [_session.checkSession, _policies.checkPolicies, _roles.checkRoles, _dashboard.checkDashboard];
+            const /*bundle*/router = new _router.Router(handlers);
+            /**
+             * The redirect function must returns
+             * @param uri
+             * @returns
+             */
+            _routing.routing.redirect = async function redirect(uri) {
+              try {
+                const response = await router.validate(uri);
+                return response.uri ?? response.pathname;
+              } catch (e) {
+                console.error(e);
+                return '/error-500';
+              }
+            };
+            _routing.routing.missing = async function redirect() {
+              return 'app-missing-page';
+            };
+          }
+        });
+        exports.descriptor = [{
+          "im": "./router",
+          "from": "Router",
+          "name": "Router"
+        }];
+        return {
+          dependencies: ['@aimpact/ailearn-app/model/wrapper', '@aimpact/chat-sdk/session', '@beyond-js/kernel/routing']
+        };
+      }]);
+
+      /**********************************
+      MODULE: @aimpact/rvd/initialize-app
+      **********************************/
+
+      bundles.push([{
+        "module": {
+          "vspecifier": "@aimpact/rvd@0.7.0/initialize-app"
+        },
+        "type": "start"
+      }, function (ims, exports) {
+        const bimport = specifier => {
+          const dependencies = new Map([["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/reactive", "2.1.2"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.1"], ["@firebase/auth", "1.10.7"], ["@google-cloud/storage", "7.16.0"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.6"], ["driver.js", "1.3.6"], ["firebase", "11.9.1"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.22"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.2"], ["marked-mangle", "1.1.11"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.2.2"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.1"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.9"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.25.67"], ["@beyond-js/local", "0.1.3"], ["@types/react", "18.3.23"], ["@types/react-dom", "18.3.7"], ["react-is", "16.13.1"], ["@aimpact/rvd", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+          return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+        };
+        /*******************************
+        INTERNAL MODULE: ./icons/profile
+        *******************************/
+
+        ims.set('./icons/profile', {
+          hash: 2038903291,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.ProfileIcon = void 0;
+            var _react = require("react");
+            var _icons = require("pragmate-ui/icons");
+            var _session = require("@aimpact/chat-sdk/session");
+            var _image = require("pragmate-ui/image");
+            /* bundle */
+            const ProfileIcon = ({
+              onClick
+            }) => {
+              const [loadError, setLoadError] = _react.default.useState(false);
+              if (!_session.sessionWrapper.user) return;
+              const userProps = _session.sessionWrapper.user.getProperties();
+              const handleLoadError = () => setLoadError(true);
+              return _react.default.createElement("div", {
+                className: "aside-item",
+                onClick: onClick
+              }, !loadError ? _react.default.createElement(_image.Image, {
+                alt: "user image profile",
+                src: userProps.photoURL,
+                onError: handleLoadError
+              }) : _react.default.createElement(_icons.Icon, {
+                className: "lg",
+                icon: 'user'
+              }));
+            };
+            exports.ProfileIcon = ProfileIcon;
+          }
+        });
+
+        /***********************
+        INTERNAL MODULE: ./index
+        ***********************/
+
+        ims.set('./index', {
+          hash: 562615362,
+          creator: function (require, exports) {
+            "use strict";
+
+            Object.defineProperty(exports, "__esModule", {
+              value: true
+            });
+            exports.Startup = void 0;
+            var _model = require("@beyond-js/reactive/model");
+            var _render = require("@beyond-js/widgets/render");
+            var _core = require("@aimpact/ailearn-sdk/core");
+            var _session = require("@aimpact/chat-sdk/session");
+            var _config = require("@aimpact/rvd/config");
+            var _startup = require("@aimpact/chat-sdk/startup");
+            var _wsConfig = require("@aimpact/agents-api/ws-config");
+            var _wrapper = require("@aimpact/ailearn-app/model/wrapper");
+            var _startup2 = require("@aimpact/ailearn-sdk/startup");
+            var _routing = require("@aimpact/rvd/routing");
+            //@ts-ignore
+
+            class Startup extends _model.ReactiveModel {
+              constructor() {
+                super();
+                this.#start();
+                // SDKSettings.userModel = User;
+              }
+              #initSDK = async () => {
+                //@ts-ignore
+                const {
+                  environment,
+                  params,
+                  version
+                } = _config.default;
+                const {
+                  firebase,
+                  apis,
+                  baseUrl,
+                  APP_LOGO,
+                  APP_NAME
+                } = params;
+                _session.sessionWrapper.settings({
+                  firebase
+                });
+                const project = 'rvd';
+                // initialize ailearn-app settings
+                _wrapper.Config.initialize({
+                  Router: _routing.Router,
+                  apis,
+                  baseUrl,
+                  project,
+                  version,
+                  APP_LOGO,
+                  APP_NAME,
+                  environment,
+                  ...params
+                });
+                // initialize chat-sdk settings
+                await _startup.sdkConfig.initialize({
+                  environment: environment,
+                  userModel: _core.User,
+                  project,
+                  apis,
+                  kb: false,
+                  api: apis.agents
+                });
+                await _startup2.sdkConfig.initialize({
+                  environment: environment,
+                  apis,
+                  version
+                });
+              };
+              #start = async () => {
+                const {
+                  environment,
+                  params
+                } = _config.default;
+                (0, _wsConfig.setUrl)(params.apis.realtime);
+                await this.#initSDK();
+                const promises = [_session.sessionWrapper.isReady];
+                await Promise.all(promises);
+                this.checkMode();
+                // registerExtensions();
+              };
+              checkMode() {
+                const dyslexiaMode = localStorage.getItem('aimpact.accessibility.mode') ? localStorage.getItem('aimpact.accessibility.mode') : 'normal';
+                const container = document.querySelector('html');
+                if (container) {
+                  container.setAttribute('data-accessibility-mode', dyslexiaMode);
+                  _render.widgets.attributes.add('data-accessibility-mode', dyslexiaMode);
+                }
+              }
+              static setup() {
+                const instance = new Startup();
+              }
+            }
+            exports.Startup = Startup;
+            Startup.setup();
+          }
+        });
+        exports.descriptor = [{
+          "im": "./icons/profile",
+          "from": "ProfileIcon",
+          "name": "ProfileIcon"
+        }];
+        return {
+          dependencies: ['react', 'pragmate-ui/icons', '@aimpact/chat-sdk/session', 'pragmate-ui/image', '@beyond-js/reactive/model', '@beyond-js/widgets/render', '@aimpact/ailearn-sdk/core', '@aimpact/rvd/config', '@aimpact/chat-sdk/startup', '@aimpact/agents-api/ws-config', '@aimpact/ailearn-app/model/wrapper', '@aimpact/ailearn-sdk/startup', '@aimpact/rvd/routing']
+        };
+      }]);
+      __beyond_transversal.initialise(bundles);
+    }
+  };
+});

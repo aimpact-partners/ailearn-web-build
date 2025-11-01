@@ -1,2 +1,84 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(_export,_context){"use strict";var dependency_0,bimport,__Bundle,__pkg,ims,__beyond_pkg,hmr;return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle}],execute:function(){bimport=specifier=>{const dependencies=new Map([["pragmate-ui","1.0.8"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/local","0.1.3"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/reactive","2.1.0"],["react","18.3.1"],["socket.io-client","4.8.1"],["@beyond-js/backend","0.1.9"],["@types/react","18.3.25"],["@types/react-dom","18.3.7"],["@aimpact/media-manager","1.0.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/media-manager@1.0.0/permissions"},type:"ts"},_context.meta.url).package();__pkg.dependencies.update([]);ims=new Map;ims.set("./index",{hash:2277821615,creator:function(require,exports){"use strict";let mediaStream=null;const initMedia=async()=>{try{mediaStream=await navigator.mediaDevices.getUserMedia({audio:true,video:true})}catch(error){console.error("Media stream initialization failed:",error)}};const monitorPermission=async permissionName=>{const permissionStatus=await navigator.permissions.query({name:permissionName});console.log(`${permissionName} permission is ${permissionStatus.state}`);permissionStatus.onchange=()=>{console.log(`${permissionName} permission changed to ${permissionStatus.state}`);if(permissionStatus.state==="granted"){initMedia()}}}}});__pkg.exports.process=function({require:require,prop:prop,value:value}){};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvbWVkaWEtbWFuYWdlckAxLjAuMC9wZXJtaXNzaW9ucy5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwibWVkaWFTdHJlYW0iLCJpbml0TWVkaWEiLCJhc3luYyIsIm5hdmlnYXRvciIsIm1lZGlhRGV2aWNlcyIsImdldFVzZXJNZWRpYSIsImF1ZGlvIiwidmlkZW8iLCJlcnJvciIsImNvbnNvbGUiLCJtb25pdG9yUGVybWlzc2lvbiIsInBlcm1pc3Npb25TdGF0dXMiLCJwZXJtaXNzaW9ucyIsInF1ZXJ5IiwibmFtZSIsInBlcm1pc3Npb25OYW1lIiwibG9nIiwic3RhdGUiLCJvbmNoYW5nZSIsInByb2Nlc3MiLCJwcm9wIiwidmFsdWUiLCJ0aGlzIiwib24iLCJldmVudCIsImxpc3RlbmVyIiwib2ZmIiwiaW5pdGlhbGlzZSJdLCJzb3VyY2VzIjpbIjAiXSwibWFwcGluZ3MiOiJBQUFBQSxPQUFPQyxTQUFTLENBQUMsbUNBQW9DLFNBQVVDLFFBQVNDLFVBQ3RFLGFBRUEsSUFBSUMsYUFBY0MsUUFBU0MsU0FBVUMsTUFBT0MsSUFBS0MsYUFBY0MsSUFDL0QsTUFBTyxDQUNMQyxRQUFTLENBQUMsU0FBVUMsMkJBQ2xCUixhQUFlUSx5QkFDakIsR0FDQUMsUUFBUyxXQUNQUixRQUFVUyxZQUNSLE1BQU1DLGFBQWUsSUFBSUMsSUFBSSxDQUFDLENBQUMsY0FBZSxTQUFVLENBQUMsb0JBQXFCLFNBQVUsQ0FBQyxvQkFBcUIsVUFBVyxDQUFDLG1CQUFvQixTQUFVLENBQUMsOEJBQStCLFNBQVUsQ0FBQyxzQkFBdUIsU0FBVSxDQUFDLFFBQVMsVUFBVyxDQUFDLG1CQUFvQixTQUFVLENBQUMscUJBQXNCLFNBQVUsQ0FBQyxlQUFnQixXQUFZLENBQUMsbUJBQW9CLFVBQVcsQ0FBQyx5QkFBMEIsU0FBVSxDQUFDLGVBQWdCLFdBQzVhLE9BQU9DLFdBQVdaLFFBQVFZLFdBQVdaLFFBQVFhLFFBQVFKLFVBQVdDLGtCQUdoRUksT0FBUWIsVUFDTkYsY0FDSkcsTUFBUSxJQUFJRCxTQUFTLENBQ25CYyxPQUFVLENBQ1JDLFdBQWMsNENBRWhCQyxLQUFRLE1BQ1BuQixTQUFTb0IsS0FBS0MsS0FBS0MsVUFFdEJsQixNQUFNUSxhQUFhVyxPQUFPLElBQzFCbEIsSUFBTSxJQUFJUSxJQUlWUixJQUFJbUIsSUFBSSxVQUFXLENBQ2pCQyxLQUFNLFdBQ05DLFFBQVMsU0FBVUMsUUFBU0MsU0FDMUIsYUFJQSxJQUFJQyxZQUFjLEtBQ2xCLE1BQU1DLFVBQVlDLFVBQ2hCLElBQ0VGLGtCQUFvQkcsVUFBVUMsYUFBYUMsYUFBYSxDQUN0REMsTUFBTyxLQUNQQyxNQUFPLE1BSVgsQ0FBRSxNQUFPQyxPQUNQQyxRQUFRRCxNQUFNLHNDQUF1Q0EsTUFDdkQsR0FHRixNQUFNRSxrQkFBb0JSLHVCQUN4QixNQUFNUyx1QkFBeUJSLFVBQVVTLFlBQVlDLE1BQU0sQ0FDekRDLEtBQU1DLGlCQUdSTixRQUFRTyxJQUFJLEdBQUdELGdDQUFnQ0osaUJBQWlCTSxTQUVoRU4saUJBQWlCTyxTQUFXLEtBQzFCVCxRQUFRTyxJQUFJLEdBQUdELHdDQUF3Q0osaUJBQWlCTSxTQUN4RSxHQUFJTixpQkFBaUJNLFFBQVUsVUFBVyxDQUV4Q2hCLFdBQ0YsR0FJTixJQUlGMUIsTUFBTXdCLFFBQVFvQixRQUFVLFVBQVVyQixRQUNoQ0EsUUFBT3NCLEtBQ1BBLEtBQUlDLE1BQ0pBLFFBQ0UsRUFDSm5ELFFBQVEsZUFBZ0JPLGFBQWVGLE9BQ3ZDTCxRQUFRLE1BQU9RLElBQU0sSUFBSSxXQUN2QjRDLEtBQUtDLEdBQUssQ0FBQ0MsTUFBT0MsV0FBYWxELE1BQU1HLElBQUk2QyxHQUFHQyxNQUFPQyxVQUNuREgsS0FBS0ksSUFBTSxDQUFDRixNQUFPQyxXQUFhbEQsTUFBTUcsSUFBSWdELElBQUlGLE1BQU9DLFNBQ3ZELEdBQ0FsRCxNQUFNb0QsV0FBV25ELElBQ25CLEVBRUoiLCJpZ25vcmVMaXN0IjpbXX0=
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, __beyond_pkg, hmr;
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["pragmate-ui", "1.0.8"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/local", "0.1.3"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/reactive", "2.1.0"], ["react", "18.3.1"], ["socket.io-client", "4.8.1"], ["@beyond-js/backend", "0.1.9"], ["@types/react", "18.3.25"], ["@types/react-dom", "18.3.7"], ["@aimpact/media-manager", "1.0.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/media-manager@1.0.0/permissions"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 2277821615,
+        creator: function (require, exports) {
+          "use strict";
+
+          //your code here
+          // Initialize media stream
+          let mediaStream = null;
+          const initMedia = async () => {
+            try {
+              mediaStream = await navigator.mediaDevices.getUserMedia({
+                audio: true,
+                video: true
+              });
+              // Handle media stream
+              // e.g., attach the stream to an HTMLVideoElement or use it in WebRTC
+            } catch (error) {
+              console.error('Media stream initialization failed:', error);
+            }
+          };
+          // Listen for PermissionStatus changes
+          const monitorPermission = async permissionName => {
+            const permissionStatus = await navigator.permissions.query({
+              name: permissionName
+            });
+            // Initial status
+            console.log(`${permissionName} permission is ${permissionStatus.state}`);
+            // Listen for changes
+            permissionStatus.onchange = () => {
+              console.log(`${permissionName} permission changed to ${permissionStatus.state}`);
+              if (permissionStatus.state === 'granted') {
+                // Re-initialize media if required
+                initMedia();
+              }
+              // Handle other states: 'denied', 'prompt'
+            };
+          };
+        }
+      });
+
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {};
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJtZWRpYVN0cmVhbSIsImluaXRNZWRpYSIsIm5hdmlnYXRvciIsIm1lZGlhRGV2aWNlcyIsImdldFVzZXJNZWRpYSIsImF1ZGlvIiwidmlkZW8iLCJlcnJvciIsImNvbnNvbGUiLCJtb25pdG9yUGVybWlzc2lvbiIsInBlcm1pc3Npb25OYW1lIiwicGVybWlzc2lvblN0YXR1cyIsInBlcm1pc3Npb25zIiwicXVlcnkiLCJuYW1lIiwibG9nIiwic3RhdGUiLCJvbmNoYW5nZSJdLCJzb3VyY2VzIjpbIi9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUE7VUFDQTtVQUNBLElBQUlBLFdBQVcsR0FBdUIsSUFBSTtVQUUxQyxNQUFNQyxTQUFTLEdBQUcsTUFBQUEsQ0FBQSxLQUFXO1lBQzVCLElBQUk7Y0FDSEQsV0FBVyxHQUFHLE1BQU1FLFNBQVMsQ0FBQ0MsWUFBWSxDQUFDQyxZQUFZLENBQUM7Z0JBQUNDLEtBQUssRUFBRSxJQUFJO2dCQUFFQyxLQUFLLEVBQUU7Y0FBSSxDQUFDLENBQUM7Y0FFbkY7Y0FDQTthQUNBLENBQUMsT0FBT0MsS0FBSyxFQUFFO2NBQ2ZDLE9BQU8sQ0FBQ0QsS0FBSyxDQUFDLHFDQUFxQyxFQUFFQSxLQUFLLENBQUM7O1VBRTdELENBQUM7VUFFRDtVQUNBLE1BQU1FLGlCQUFpQixHQUFHLE1BQU9DLGNBQThCLElBQUk7WUFDbEUsTUFBTUMsZ0JBQWdCLEdBQUcsTUFBTVQsU0FBUyxDQUFDVSxXQUFXLENBQUNDLEtBQUssQ0FBQztjQUFDQyxJQUFJLEVBQUVKO1lBQWMsQ0FBQyxDQUFDO1lBRWxGO1lBQ0FGLE9BQU8sQ0FBQ08sR0FBRyxDQUFDLEdBQUdMLGNBQWMsa0JBQWtCQyxnQkFBZ0IsQ0FBQ0ssS0FBSyxFQUFFLENBQUM7WUFFeEU7WUFDQUwsZ0JBQWdCLENBQUNNLFFBQVEsR0FBRyxNQUFLO2NBQ2hDVCxPQUFPLENBQUNPLEdBQUcsQ0FBQyxHQUFHTCxjQUFjLDBCQUEwQkMsZ0JBQWdCLENBQUNLLEtBQUssRUFBRSxDQUFDO2NBRWhGLElBQUlMLGdCQUFnQixDQUFDSyxLQUFLLEtBQUssU0FBUyxFQUFFO2dCQUN6QztnQkFDQWYsU0FBUyxFQUFFOztjQUVaO1lBQ0QsQ0FBQztVQUNGLENBQUMiLCJpZ25vcmVMaXN0IjpbXX0=

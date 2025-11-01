@@ -1,2 +1,165 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","react@18.3.1","@beyond-js/events@0.0.7/events"],function(_export,_context){"use strict";var dependency_0,dependency_1,dependency_2,bimport,__Bundle,__pkg,ims,Observer,State,__beyond_pkg,hmr;_export({Observer:void 0,State:void 0});return{setters:[function(_beyondJsKernel0114Bundle){dependency_0=_beyondJsKernel0114Bundle},function(_react2){dependency_1=_react2},function(_beyondJsEvents007Events){dependency_2=_beyondJsEvents007Events}],execute:function(){bimport=specifier=>{const dependencies=new Map([["@beyond-js/firestore-collection","0.0.9"],["@beyond-js/events","0.0.7"],["@beyond-js/response","0.0.3"],["@google-cloud/storage","7.17.0"],["@openai/agents","0.1.3"],["@pinecone-database/pinecone","6.1.2"],["express","4.21.2"],["express-rate-limit","7.2.0"],["express-openapi-validator","5.5.8"],["firebase-admin","12.7.0"],["multer","2.0.2"],["form-data","4.0.4"],["jsonwebtoken","9.0.2"],["ws","8.18.3"],["socket.io","4.8.1"],["node-fetch","2.7.0"],["dotenv","16.6.1"],["fluent-ffmpeg","2.1.3"],["dayjs","1.11.17"],["openai","4.104.0"],["uuid","10.0.0"],["find-up","7.0.0"],["postmark","4.0.5"],["zod","3.25.67"],["axios","1.12.2"],["socket.io-client","4.8.1"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/bee","0.0.7"],["@beyond-js/local","0.1.3"],["@types/jsonwebtoken","9.0.10"],["@types/express","5.0.3"],["@types/node","20.6.5"],["@types/uuid","9.0.8"],["@types/ws","8.5.14"],["@types/react","18.3.24"],["@types/audioworklet","0.0.83"],["swagger-ui-express","5.0.1"],["yaml","2.8.1"],["@aimpact/agents-api","0.4.1"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(specifier,dependencies))};({Bundle:__Bundle}=dependency_0);__pkg=new __Bundle({module:{vspecifier:"@aimpact/agents-api@0.4.1/realtime/widgets/state"},type:"ts"},_context.meta.url).package();__pkg.dependencies.update([["react",dependency_1],["@beyond-js/events/events",dependency_2]]);ims=new Map;ims.set("./observer",{hash:2129659437,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Observer=void 0;var _react=require("react");class Observer{#objects;#invalidate;constructor(){const[id,invalidate]=(0,_react.useState)(0);this.#invalidate=()=>invalidate(id+1)}static get instance(){const ref=(0,_react.useRef)(null);if(ref.current)return ref.current;const instance=ref.current=new Observer;(0,_react.useEffect)(()=>()=>{instance.#clean()},[])}static set(object,event){this.instance.#set(object,event)}#set(object,event){if(this.#objects.get(object)?.get(event))return;const listeners=(()=>{if(this.#objects.has(object))return this.#objects.get(object);const listeners=new Map;this.#objects.set(object,listeners);return listeners})();const listener=()=>this.#invalidate();listeners.set(event,listener);object.on(event,listener)}#clean(){this.#objects.forEach((listeners,object)=>{listeners.forEach((listener,event)=>{object.off(event,listener)})})}}exports.Observer=Observer}});ims.set("./state",{hash:2227409122,creator:function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.State=void 0;var _react=require("react");class State{#values={};get values(){return this.#values}define(p1,p2){const properties=typeof p1==="string"?[p1,p2]:Object.entries(p1);properties.forEach(([name,initial])=>{if(this.#values.hasOwnProperty(name))return;let[value,update]=(0,_react.useState)(initial);Object.defineProperty(this.#values,name,{get:()=>value,set:updated=>{update(updated);value=updated}})})}}exports.State=State}});__pkg.exports.descriptor=[{im:"./observer",from:"Observer",name:"Observer"},{im:"./state",from:"State",name:"State"}];__pkg.exports.process=function({require:require,prop:prop,value:value}){(require||prop==="Observer")&&_export("Observer",Observer=require?require("./observer").Observer:value);(require||prop==="State")&&_export("State",State=require?require("./state").State:value)};_export("__beyond_pkg",__beyond_pkg=__pkg);_export("hmr",hmr=new function(){this.on=(event,listener)=>__pkg.hmr.on(event,listener);this.off=(event,listener)=>__pkg.hmr.off(event,listener)});__pkg.initialise(ims)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWdlbnRzLWFwaUAwLjQuMS9yZWFsdGltZS93aWRnZXRzL3N0YXRlLmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQiLCJkZXBlbmRlbmN5XzAiLCJkZXBlbmRlbmN5XzEiLCJkZXBlbmRlbmN5XzIiLCJiaW1wb3J0IiwiX19CdW5kbGUiLCJfX3BrZyIsImltcyIsIk9ic2VydmVyIiwiU3RhdGUiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsIl9yZWFjdDIiLCJfYmV5b25kSnNFdmVudHMwMDdFdmVudHMiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiLCJfcmVhY3QiLCJvYmplY3RzIiwiaW52YWxpZGF0ZSIsImNvbnN0cnVjdG9yIiwiaWQiLCJ1c2VTdGF0ZSIsInRoaXMiLCJpbnN0YW5jZSIsInJlZiIsInVzZVJlZiIsImN1cnJlbnQiLCJ1c2VFZmZlY3QiLCJjbGVhbiIsIm9iamVjdCIsImV2ZW50IiwiZ2V0IiwibGlzdGVuZXJzIiwiaGFzIiwibGlzdGVuZXIiLCJvbiIsImZvckVhY2giLCJvZmYiLCJ2YWx1ZXMiLCJkZWZpbmUiLCJwMSIsInAyIiwicHJvcGVydGllcyIsImVudHJpZXMiLCJuYW1lIiwiaW5pdGlhbCIsImhhc093blByb3BlcnR5IiwidXBkYXRlZCIsImRlc2NyaXB0b3IiLCJpbSIsImZyb20iLCJwcm9jZXNzIiwicHJvcCIsImluaXRpYWxpc2UiXSwic291cmNlcyI6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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "react@18.3.1", "@beyond-js/events@0.0.7/events"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, Observer, State, __beyond_pkg, hmr;
+  _export({
+    Observer: void 0,
+    State: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_react2) {
+      dependency_1 = _react2;
+    }, function (_beyondJsEvents007Events) {
+      dependency_2 = _beyondJsEvents007Events;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/firestore-collection", "0.0.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/response", "0.0.3"], ["@google-cloud/storage", "7.17.0"], ["@openai/agents", "0.1.3"], ["@pinecone-database/pinecone", "6.1.2"], ["express", "4.21.2"], ["express-rate-limit", "7.2.0"], ["express-openapi-validator", "5.5.8"], ["firebase-admin", "12.7.0"], ["multer", "2.0.2"], ["form-data", "4.0.4"], ["jsonwebtoken", "9.0.2"], ["ws", "8.18.3"], ["socket.io", "4.8.1"], ["node-fetch", "2.7.0"], ["dotenv", "16.6.1"], ["fluent-ffmpeg", "2.1.3"], ["dayjs", "1.11.17"], ["openai", "4.104.0"], ["uuid", "10.0.0"], ["find-up", "7.0.0"], ["postmark", "4.0.5"], ["zod", "3.25.67"], ["axios", "1.12.2"], ["socket.io-client", "4.8.1"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/bee", "0.0.7"], ["@beyond-js/local", "0.1.3"], ["@types/jsonwebtoken", "9.0.10"], ["@types/express", "5.0.3"], ["@types/node", "20.6.5"], ["@types/uuid", "9.0.8"], ["@types/ws", "8.5.14"], ["@types/react", "18.3.24"], ["@types/audioworklet", "0.0.83"], ["swagger-ui-express", "5.0.1"], ["yaml", "2.8.1"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/agents-api@0.4.1/realtime/widgets/state"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['react', dependency_1], ['@beyond-js/events/events', dependency_2]]);
+      ims = new Map();
+      /**************************
+      INTERNAL MODULE: ./observer
+      **************************/
+      ims.set('./observer', {
+        hash: 2129659437,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Observer = void 0;
+          var _react = require("react");
+          /*bundle*/
+          class Observer {
+            #objects;
+            #invalidate;
+            constructor() {
+              const [id, invalidate] = (0, _react.useState)(0);
+              this.#invalidate = () => invalidate(id + 1);
+            }
+            static get instance() {
+              const ref = (0, _react.useRef)(null);
+              if (ref.current) return ref.current;
+              const instance = ref.current = new Observer();
+              (0, _react.useEffect)(() => {
+                return () => {
+                  instance.#clean();
+                };
+              }, []);
+            }
+            static set(object, event) {
+              this.instance.#set(object, event);
+            }
+            #set(object, event) {
+              // Observer alrady set
+              if (this.#objects.get(object)?.get(event)) return;
+              const listeners = (() => {
+                if (this.#objects.has(object)) return this.#objects.get(object);
+                const listeners = new Map();
+                this.#objects.set(object, listeners);
+                return listeners;
+              })();
+              const listener = () => this.#invalidate();
+              listeners.set(event, listener);
+              object.on(event, listener);
+            }
+            #clean() {
+              this.#objects.forEach((listeners, object) => {
+                listeners.forEach((listener, event) => {
+                  object.off(event, listener);
+                });
+              });
+            }
+          }
+          exports.Observer = Observer;
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./state
+      ***********************/
+
+      ims.set('./state', {
+        hash: 2227409122,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.State = void 0;
+          var _react = require("react");
+          /*bundle*/
+          class State {
+            #values = {};
+            get values() {
+              return this.#values;
+            }
+            /**
+             * Define a property or an array of properties of the state object
+             *
+             * @param p1 Can be the name of the property or an object with the values of the properties
+             * @param p2 The initial value if the value of p1 is the name of the property to be defined
+             */
+            define(p1, p2) {
+              // Normalize as an array of properties regardless wether a property or a properties object is being defined
+              const properties = typeof p1 === 'string' ? [p1, p2] : Object.entries(p1);
+              properties.forEach(([name, initial]) => {
+                if (this.#values.hasOwnProperty(name)) return;
+                let [value, update] = (0, _react.useState)(initial);
+                Object.defineProperty(this.#values, name, {
+                  get: () => value,
+                  set: updated => {
+                    update(updated);
+                    value = updated;
+                  }
+                });
+              });
+            }
+          }
+          exports.State = State;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./observer",
+        "from": "Observer",
+        "name": "Observer"
+      }, {
+        "im": "./state",
+        "from": "State",
+        "name": "State"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Observer') && _export("Observer", Observer = require ? require('./observer').Observer : value);
+        (require || prop === 'State') && _export("State", State = require ? require('./state').State : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiT2JzZXJ2ZXIiLCJvYmplY3RzIiwiaW52YWxpZGF0ZSIsImNvbnN0cnVjdG9yIiwiaWQiLCJ1c2VTdGF0ZSIsImluc3RhbmNlIiwicmVmIiwidXNlUmVmIiwiY3VycmVudCIsInVzZUVmZmVjdCIsImNsZWFuIiwic2V0Iiwib2JqZWN0IiwiZXZlbnQiLCIjc2V0IiwiZ2V0IiwibGlzdGVuZXJzIiwiaGFzIiwiTWFwIiwibGlzdGVuZXIiLCJvbiIsIiNjbGVhbiIsImZvckVhY2giLCJvZmYiLCJleHBvcnRzIiwiU3RhdGUiLCJ2YWx1ZXMiLCJkZWZpbmUiLCJwMSIsInAyIiwicHJvcGVydGllcyIsIk9iamVjdCIsImVudHJpZXMiLCJuYW1lIiwiaW5pdGlhbCIsImhhc093blByb3BlcnR5IiwidmFsdWUiLCJ1cGRhdGUiLCJkZWZpbmVQcm9wZXJ0eSIsInVwZGF0ZWQiXSwic291cmNlcyI6WyIvb2JzZXJ2ZXIudHMiLCIvc3RhdGUudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO1VBTU87VUFBVSxNQUFPQyxRQUFRO1lBQy9CLENBQUFDLE9BQVE7WUFDUixDQUFBQyxVQUFXO1lBRVhDLFlBQUE7Y0FDQyxNQUFNLENBQUNDLEVBQUUsRUFBRUYsVUFBVSxDQUFDLEdBQUcsSUFBQUosTUFBQSxDQUFBTyxRQUFRLEVBQUMsQ0FBQyxDQUFDO2NBQ3BDLElBQUksQ0FBQyxDQUFBSCxVQUFXLEdBQUcsTUFBTUEsVUFBVSxDQUFDRSxFQUFFLEdBQUcsQ0FBQyxDQUFDO1lBQzVDO1lBRUEsV0FBV0UsUUFBUUEsQ0FBQTtjQUNsQixNQUFNQyxHQUFHLEdBQUcsSUFBQVQsTUFBQSxDQUFBVSxNQUFNLEVBQVcsSUFBSSxDQUFDO2NBQ2xDLElBQUlELEdBQUcsQ0FBQ0UsT0FBTyxFQUFFLE9BQU9GLEdBQUcsQ0FBQ0UsT0FBTztjQUVuQyxNQUFNSCxRQUFRLEdBQUlDLEdBQUcsQ0FBQ0UsT0FBTyxHQUFHLElBQUlULFFBQVEsRUFBRztjQUMvQyxJQUFBRixNQUFBLENBQUFZLFNBQVMsRUFBQyxNQUFLO2dCQUNkLE9BQU8sTUFBSztrQkFDWEosUUFBUSxDQUFDLENBQUFLLEtBQU0sRUFBRTtnQkFDbEIsQ0FBQztjQUNGLENBQUMsRUFBRSxFQUFFLENBQUM7WUFDUDtZQUVBLE9BQU9DLEdBQUdBLENBQUNDLE1BQWMsRUFBRUMsS0FBYTtjQUN2QyxJQUFJLENBQUNSLFFBQVEsQ0FBQyxDQUFBTSxHQUFJLENBQUNDLE1BQU0sRUFBRUMsS0FBSyxDQUFDO1lBQ2xDO1lBRUEsQ0FBQUYsR0FBSUcsQ0FBQ0YsTUFBYyxFQUFFQyxLQUFhO2NBQ2pDO2NBQ0EsSUFBSSxJQUFJLENBQUMsQ0FBQWIsT0FBUSxDQUFDZSxHQUFHLENBQUNILE1BQU0sQ0FBQyxFQUFFRyxHQUFHLENBQUNGLEtBQUssQ0FBQyxFQUFFO2NBRTNDLE1BQU1HLFNBQVMsR0FBRyxDQUFDLE1BQUs7Z0JBQ3ZCLElBQUksSUFBSSxDQUFDLENBQUFoQixPQUFRLENBQUNpQixHQUFHLENBQUNMLE1BQU0sQ0FBQyxFQUFFLE9BQU8sSUFBSSxDQUFDLENBQUFaLE9BQVEsQ0FBQ2UsR0FBRyxDQUFDSCxNQUFNLENBQUM7Z0JBRS9ELE1BQU1JLFNBQVMsR0FBRyxJQUFJRSxHQUFHLEVBQUU7Z0JBQzNCLElBQUksQ0FBQyxDQUFBbEIsT0FBUSxDQUFDVyxHQUFHLENBQUNDLE1BQU0sRUFBRUksU0FBUyxDQUFDO2dCQUNwQyxPQUFPQSxTQUFTO2NBQ2pCLENBQUMsRUFBQyxDQUFFO2NBRUosTUFBTUcsUUFBUSxHQUFHQSxDQUFBLEtBQU0sSUFBSSxDQUFDLENBQUFsQixVQUFXLEVBQUU7Y0FFekNlLFNBQVMsQ0FBQ0wsR0FBRyxDQUFDRSxLQUFLLEVBQUVNLFFBQVEsQ0FBQztjQUM5QlAsTUFBTSxDQUFDUSxFQUFFLENBQUNQLEtBQUssRUFBRU0sUUFBUSxDQUFDO1lBQzNCO1lBRUEsQ0FBQVQsS0FBTVcsQ0FBQTtjQUNMLElBQUksQ0FBQyxDQUFBckIsT0FBUSxDQUFDc0IsT0FBTyxDQUFDLENBQUNOLFNBQVMsRUFBRUosTUFBTSxLQUFJO2dCQUMzQ0ksU0FBUyxDQUFDTSxPQUFPLENBQUMsQ0FBQ0gsUUFBUSxFQUFFTixLQUFLLEtBQUk7a0JBQ3JDRCxNQUFNLENBQUNXLEdBQUcsQ0FBQ1YsS0FBSyxFQUFFTSxRQUFRLENBQUM7Z0JBQzVCLENBQUMsQ0FBQztjQUNILENBQUMsQ0FBQztZQUNIOztVQUNBSyxPQUFBLENBQUF6QixRQUFBLEdBQUFBLFFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDeERELElBQUFGLE1BQUEsR0FBQUMsT0FBQTtVQUVPO1VBQVUsTUFBTzJCLEtBQUs7WUFDNUIsQ0FBQUMsTUFBTyxHQUFHLEVBQUU7WUFDWixJQUFJQSxNQUFNQSxDQUFBO2NBQ1QsT0FBbUIsSUFBSSxDQUFDLENBQUFBLE1BQU87WUFDaEM7WUFFQTs7Ozs7O1lBTUFDLE1BQU1BLENBQUNDLEVBQXVCLEVBQUVDLEVBQVE7Y0FDdkM7Y0FDQSxNQUFNQyxVQUFVLEdBQW9CLE9BQU9GLEVBQUUsS0FBSyxRQUFRLEdBQUcsQ0FBQ0EsRUFBRSxFQUFFQyxFQUFFLENBQUMsR0FBR0UsTUFBTSxDQUFDQyxPQUFPLENBQUNKLEVBQUUsQ0FBQztjQUUxRkUsVUFBVSxDQUFDUixPQUFPLENBQUMsQ0FBQyxDQUFDVyxJQUFJLEVBQUVDLE9BQU8sQ0FBQyxLQUFJO2dCQUN0QyxJQUFJLElBQUksQ0FBQyxDQUFBUixNQUFPLENBQUNTLGNBQWMsQ0FBQ0YsSUFBSSxDQUFDLEVBQUU7Z0JBRXZDLElBQUksQ0FBQ0csS0FBSyxFQUFFQyxNQUFNLENBQUMsR0FBRyxJQUFBeEMsTUFBQSxDQUFBTyxRQUFRLEVBQUM4QixPQUFPLENBQUM7Z0JBRXZDSCxNQUFNLENBQUNPLGNBQWMsQ0FBQyxJQUFJLENBQUMsQ0FBQVosTUFBTyxFQUFFTyxJQUFJLEVBQUU7a0JBQ3pDbEIsR0FBRyxFQUFFQSxDQUFBLEtBQU1xQixLQUFLO2tCQUNoQnpCLEdBQUcsRUFBRzRCLE9BQVksSUFBSTtvQkFDckJGLE1BQU0sQ0FBQ0UsT0FBTyxDQUFDO29CQUNmSCxLQUFLLEdBQUdHLE9BQU87a0JBQ2hCO2lCQUNBLENBQUM7Y0FDSCxDQUFDLENBQUM7WUFDSDs7VUFDQWYsT0FBQSxDQUFBQyxLQUFBLEdBQUFBLEtBQUEiLCJpZ25vcmVMaXN0IjpbXX0=
