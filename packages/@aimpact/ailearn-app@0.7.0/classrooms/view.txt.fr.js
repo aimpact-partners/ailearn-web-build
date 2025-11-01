@@ -1,2 +1,205 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(e,t){"use strict";var i,a,s,n,r,l,o,c;e("txt",void 0);return{setters:[function(e){i=e}],execute:function(){a=e=>{const t=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:s}=i);n=new s({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/classrooms/view",multibundle:true},type:"txt"},t.meta.url).package("fr");n.dependencies.update([]);r=new Map;r.set("./txt",{hash:2154938279,creator:function(e,t){t.txt={coins:{label:"Cr\xe9dits disponibles",assignments:"Devoirs",modules:"Modules"},errors:{10003:"L'utilisateur n'a pas pu \xeatre approuv\xe9, r\xe9essayez plus tard et si le probl\xe8me persiste, contactez le support."},form:{title:"Inviter un utilisateur",role:{label:"R\xf4le",placeholder:"S\xe9lectionner le r\xf4le"},name:{label:"Nom",placeholder:"Saisir le nom d'utilisateur"},email:{label:"Email",placeholder:"Saisir l'email de l'utilisateur"},button:"Soumettre"},forms:{approve:{title:"Voulez-vous approuver la demande de l'utilisateur ?",description:"N'oubliez pas qu'approuver la demande de l'utilisateur modifie \xe9galement son r\xf4le et son acc\xe8s dans la salle de classe."},delete:{title:"Voulez-vous supprimer l'utilisateur ?",description:"N'oubliez pas que supprimer un utilisateur supprime \xe9galement son acc\xe8s et ses actions dans la salle de classe."},cancel:{title:"Voulez-vous annuler l'invitation de l'utilisateur ?",description:"N'oubliez pas qu'annuler l'invitation de l'utilisateur annule \xe9galement son acc\xe8s et ses actions dans la salle de classe."},reject:{title:"Voulez-vous rejeter la demande de l'utilisateur ?",description:"N'oubliez pas que rejeter la demande de l'utilisateur annule \xe9galement son acc\xe8s et ses actions dans la salle de classe."},edit:{title:"Voulez-vous changer le r\xf4le de l'utilisateur ?",info:"N'oubliez pas que changer le r\xf4le modifie \xe9galement l'acc\xe8s et les actions de l'utilisateur dans la salle de classe."}},editForm:{title:"Voulez-vous changer le r\xf4le de l'utilisateur ?",info:"N'oubliez pas que changer le r\xf4le modifie \xe9galement l'acc\xe8s et les actions de l'utilisateur dans la salle de classe."},item:{description:"Le module n'a pas encore de description"},roles:{all:{identifier:"all",title:"Tous",entity:"Tous"},manager:{title:"Enseignants",role:"Enseignant",single:"Enseignant",entity:"Enseignants",identifier:"managers"},member:{title:"\xc9tudiant",identifier:"members",entity:"\xc9tudiants"},pending:{identifier:"pendings",title:"En attente",entity:"En attente"}},list:{manager:{title:"Enseignants",role:"Enseignant",single:"Enseignant",entity:"Enseignants"},member:{title:"Enseignants",role:"Enseignant",single:"Enseignant"},pendings:{title:"En attente",invited:"Invit\xe9"}},messages:{approval:{success:"Utilisateur approuv\xe9 avec succ\xe8s",error:"Erreur lors de l'approbation de l'utilisateur"},copy:"Texte copi\xe9 avec succ\xe8s",copyError:"Erreur lors de la copie dans le presse-papiers"},ERR_GENERATING_ACTIVITIES:"Erreur lors de la g\xe9n\xe9ration des classes",not_member:{title:"Bonjour",subtitle:"Il semble que vous n'ayez pas acc\xe8s \xe0",description:"Vous n'avez pas acc\xe8s \xe0 la salle de classe, vous devez le demander \xe0 l'enseignant et attendre qu'il confirme",action:"Demander l'acc\xe8s",request:{error:"Erreur lors de la demande d'acc\xe8s, r\xe9essayez",success:"Votre demande d'acc\xe8s a \xe9t\xe9 envoy\xe9e, attendez que l'enseignant confirme"}},invited:{title:"Bonjour",subtitle:"Vous avez une invitation \xe0 rejoindre",description:"Commencez votre exp\xe9rience d'apprentissage assist\xe9 par IA, explorez du contenu con\xe7u sp\xe9cialement pour vous en participant \xe0 des activit\xe9s interactives \xe0 votre propre rythme et selon votre style d'apprentissage.",action:"Acc\xe9der"},pending:{title:"Bonjour",subtitle:"Votre demande est en cours de traitement",description:"Veuillez v\xe9rifier votre email pour confirmer l'approbation de votre demande. Si vous travaillez avec votre enseignant en ce moment, vous pouvez actualiser la page pour voir si vous avez d\xe9j\xe0 obtenu l'acc\xe8s.",action:"Actualiser"},orgCode:"Code de la salle de classe",title:"Ajouter un nom",description:"Ajouter une description",people:"Personnes",viewAssignment:"Voir le devoir",empty:{assignments:{title:"Aucun devoir disponible"},rol:{title:"Aucun membre enregistr\xe9 avec ce profil"},pending:{title:"Aucun membre en attente de r\xe9vision"}},system:{invite:{success:"Invitation envoy\xe9e"}}}}});n.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];n.exports.process=function({require:t,prop:i,value:a}){(t||i==="txt")&&e("txt",l=t?t("./txt").txt:a)};e("__beyond_pkg",o=n);e("hmr",c=new function(){this.on=(e,t)=>n.hmr.on(e,t);this.off=(e,t)=>n.hmr.off(e,t)});n.initialise(r)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvY2xhc3Nyb29tcy92aWV3LnR4dC5mci5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJ0eHQiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJtdWx0aWJ1bmRsZSIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJjb2lucyIsImxhYmVsIiwiYXNzaWdubWVudHMiLCJtb2R1bGVzIiwiZXJyb3JzIiwiZm9ybSIsInRpdGxlIiwicm9sZSIsInBsYWNlaG9sZGVyIiwibmFtZSIsImVtYWlsIiwiYnV0dG9uIiwiZm9ybXMiLCJhcHByb3ZlIiwiZGVzY3JpcHRpb24iLCJkZWxldGUiLCJjYW5jZWwiLCJyZWplY3QiLCJlZGl0IiwiaW5mbyIsImVkaXRGb3JtIiwiaXRlbSIsInJvbGVzIiwiYWxsIiwiaWRlbnRpZmllciIsImVudGl0eSIsIm1hbmFnZXIiLCJzaW5nbGUiLCJtZW1iZXIiLCJwZW5kaW5nIiwibGlzdCIsInBlbmRpbmdzIiwiaW52aXRlZCIsIm1lc3NhZ2VzIiwiYXBwcm92YWwiLCJzdWNjZXNzIiwiZXJyb3IiLCJjb3B5IiwiY29weUVycm9yIiwiRVJSX0dFTkVSQVRJTkdfQUNUSVZJVElFUyIsIm5vdF9tZW1iZXIiLCJzdWJ0aXRsZSIsImFjdGlvbiIsInJlcXVlc3QiLCJvcmdDb2RlIiwicGVvcGxlIiwidmlld0Fzc2lnbm1lbnQiLCJlbXB0eSIsInJvbCIsInN5c3RlbSIsImludml0ZSIsImRlc2NyaXB0b3IiLCJpbSIsImZyb20iLCJwcm9jZXNzIiwicHJvcCIsInZhbHVlIiwidGhpcyIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLG1DQUFvQyxTQUFVQyxFQUFTQyxHQUN0RSxhQUVBLElBQUlDLEVBQWNDLEVBQVNDLEVBQVVDLEVBQU9DLEVBQUtDLEVBQUtDLEVBQWNDLEVBQ3BFVCxFQUFRLFdBQVksR0FDcEIsTUFBTyxDQUNMVSxRQUFTLENBQUMsU0FBVUMsR0FDbEJULEVBQWVTLENBQ2pCLEdBQ0FDLFFBQVMsV0FDUFQsRUFBVVUsSUFDUixNQUFNQyxFQUFlLElBQUlDLElBQUksQ0FBQyxDQUFDLHNCQUF1QixTQUFVLENBQUMsdUJBQXdCLFNBQVUsQ0FBQyx1QkFBd0IsU0FBVSxDQUFDLG9CQUFxQixTQUFVLENBQUMseUJBQTBCLFNBQVUsQ0FBQyxjQUFlLFNBQVUsQ0FBQyxzQkFBdUIsU0FBVSxDQUFDLHdCQUF5QixTQUFVLENBQUMscUJBQXNCLFVBQVcsQ0FBQyxvQkFBcUIsU0FBVSxDQUFDLG9CQUFxQixVQUFXLENBQUMsNkJBQThCLFNBQVUsQ0FBQyw4QkFBK0IsU0FBVSxDQUFDLHFCQUFzQixTQUFVLENBQUMsZUFBZ0IsV0FBWSxDQUFDLGlCQUFrQixXQUFZLENBQUMsa0JBQW1CLFdBQVksQ0FBQyxpQkFBa0IsVUFBVyxDQUFDLHdCQUF5QixVQUFXLENBQUMsNEJBQTZCLFVBQVcsQ0FBQyw4QkFBK0IsVUFBVyxDQUFDLHdCQUF5QixTQUFVLENBQUMseUJBQTBCLFNBQVUsQ0FBQyw0QkFBNkIsU0FBVSxDQUFDLCtCQUFnQyxTQUFVLENBQUMsK0JBQWdDLFNBQVUsQ0FBQyxvQ0FBcUMsU0FBVSxDQUFDLDBCQUEyQixTQUFVLENBQUMsOEJBQStCLFNBQVUsQ0FBQyw4QkFBK0IsU0FB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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/classrooms/view",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('fr');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 2154938279,
+        creator: function (require, exports) {
+          exports.txt = {
+            "coins": {
+              "label": "Crédits disponibles",
+              "assignments": "Devoirs",
+              "modules": "Modules"
+            },
+            "errors": {
+              "10003": "L'utilisateur n'a pas pu être approuvé, réessayez plus tard et si le problème persiste, contactez le support."
+            },
+            "form": {
+              "title": "Inviter un utilisateur",
+              "role": {
+                "label": "Rôle",
+                "placeholder": "Sélectionner le rôle"
+              },
+              "name": {
+                "label": "Nom",
+                "placeholder": "Saisir le nom d'utilisateur"
+              },
+              "email": {
+                "label": "Email",
+                "placeholder": "Saisir l'email de l'utilisateur"
+              },
+              "button": "Soumettre"
+            },
+            "forms": {
+              "approve": {
+                "title": "Voulez-vous approuver la demande de l'utilisateur ?",
+                "description": "N'oubliez pas qu'approuver la demande de l'utilisateur modifie également son rôle et son accès dans la salle de classe."
+              },
+              "delete": {
+                "title": "Voulez-vous supprimer l'utilisateur ?",
+                "description": "N'oubliez pas que supprimer un utilisateur supprime également son accès et ses actions dans la salle de classe."
+              },
+              "cancel": {
+                "title": "Voulez-vous annuler l'invitation de l'utilisateur ?",
+                "description": "N'oubliez pas qu'annuler l'invitation de l'utilisateur annule également son accès et ses actions dans la salle de classe."
+              },
+              "reject": {
+                "title": "Voulez-vous rejeter la demande de l'utilisateur ?",
+                "description": "N'oubliez pas que rejeter la demande de l'utilisateur annule également son accès et ses actions dans la salle de classe."
+              },
+              "edit": {
+                "title": "Voulez-vous changer le rôle de l'utilisateur ?",
+                "info": "N'oubliez pas que changer le rôle modifie également l'accès et les actions de l'utilisateur dans la salle de classe."
+              }
+            },
+            "editForm": {
+              "title": "Voulez-vous changer le rôle de l'utilisateur ?",
+              "info": "N'oubliez pas que changer le rôle modifie également l'accès et les actions de l'utilisateur dans la salle de classe."
+            },
+            "item": {
+              "description": "Le module n'a pas encore de description"
+            },
+            "roles": {
+              "all": {
+                "identifier": "all",
+                "title": "Tous",
+                "entity": "Tous"
+              },
+              "manager": {
+                "title": "Enseignants",
+                "role": "Enseignant",
+                "single": "Enseignant",
+                "entity": "Enseignants",
+                "identifier": "managers"
+              },
+              "member": {
+                "title": "Étudiant",
+                "identifier": "members",
+                "entity": "Étudiants"
+              },
+              "pending": {
+                "identifier": "pendings",
+                "title": "En attente",
+                "entity": "En attente"
+              }
+            },
+            "list": {
+              "manager": {
+                "title": "Enseignants",
+                "role": "Enseignant",
+                "single": "Enseignant",
+                "entity": "Enseignants"
+              },
+              "member": {
+                "title": "Enseignants",
+                "role": "Enseignant",
+                "single": "Enseignant"
+              },
+              "pendings": {
+                "title": "En attente",
+                "invited": "Invité"
+              }
+            },
+            "messages": {
+              "approval": {
+                "success": "Utilisateur approuvé avec succès",
+                "error": "Erreur lors de l'approbation de l'utilisateur"
+              },
+              "copy": "Texte copié avec succès",
+              "copyError": "Erreur lors de la copie dans le presse-papiers"
+            },
+            "ERR_GENERATING_ACTIVITIES": "Erreur lors de la génération des classes",
+            "not_member": {
+              "title": "Bonjour",
+              "subtitle": "Il semble que vous n'ayez pas accès à",
+              "description": "Vous n'avez pas accès à la salle de classe, vous devez le demander à l'enseignant et attendre qu'il confirme",
+              "action": "Demander l'accès",
+              "request": {
+                "error": "Erreur lors de la demande d'accès, réessayez",
+                "success": "Votre demande d'accès a été envoyée, attendez que l'enseignant confirme"
+              }
+            },
+            "invited": {
+              "title": "Bonjour",
+              "subtitle": "Vous avez une invitation à rejoindre",
+              "description": "Commencez votre expérience d'apprentissage assisté par IA, explorez du contenu conçu spécialement pour vous en participant à des activités interactives à votre propre rythme et selon votre style d'apprentissage.",
+              "action": "Accéder"
+            },
+            "pending": {
+              "title": "Bonjour",
+              "subtitle": "Votre demande est en cours de traitement",
+              "description": "Veuillez vérifier votre email pour confirmer l'approbation de votre demande. Si vous travaillez avec votre enseignant en ce moment, vous pouvez actualiser la page pour voir si vous avez déjà obtenu l'accès.",
+              "action": "Actualiser"
+            },
+            "orgCode": "Code de la salle de classe",
+            "title": "Ajouter un nom",
+            "description": "Ajouter une description",
+            "people": "Personnes",
+            "viewAssignment": "Voir le devoir",
+            "empty": {
+              "assignments": {
+                "title": "Aucun devoir disponible"
+              },
+              "rol": {
+                "title": "Aucun membre enregistré avec ce profil"
+              },
+              "pending": {
+                "title": "Aucun membre en attente de révision"
+              }
+            },
+            "system": {
+              "invite": {
+                "success": "Invitation envoyée"
+              }
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

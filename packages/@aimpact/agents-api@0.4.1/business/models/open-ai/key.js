@@ -1,2 +1,81 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(e,s){"use strict";var t,o,n,i,r,a,p,d;e("key",void 0);return{setters:[function(e){t=e}],execute:function(){o=e=>{const s=new Map([["@beyond-js/firestore-collection","0.0.9"],["@beyond-js/events","0.0.7"],["@beyond-js/response","0.0.3"],["@google-cloud/storage","7.17.0"],["@openai/agents","0.1.3"],["@pinecone-database/pinecone","6.1.2"],["express","4.21.2"],["express-rate-limit","7.2.0"],["express-openapi-validator","5.5.8"],["firebase-admin","12.7.0"],["multer","2.0.2"],["form-data","4.0.4"],["jsonwebtoken","9.0.2"],["ws","8.18.3"],["socket.io","4.8.1"],["node-fetch","2.7.0"],["dotenv","16.6.1"],["fluent-ffmpeg","2.1.3"],["dayjs","1.11.17"],["openai","4.104.0"],["uuid","10.0.0"],["find-up","7.0.0"],["postmark","4.0.5"],["zod","3.25.67"],["axios","1.12.2"],["socket.io-client","4.8.1"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/bee","0.0.7"],["@beyond-js/local","0.1.3"],["@types/jsonwebtoken","9.0.10"],["@types/express","5.0.3"],["@types/node","20.6.5"],["@types/uuid","9.0.8"],["@types/ws","8.5.14"],["@types/react","18.3.24"],["@types/audioworklet","0.0.83"],["swagger-ui-express","5.0.1"],["yaml","2.8.1"],["@aimpact/agents-api","0.4.1"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,s))};({Bundle:n}=t);i=new n({module:{vspecifier:"@aimpact/agents-api@0.4.1/business/models/open-ai/key"},type:"ts"},s.meta.url).package();i.dependencies.update([]);r=new Map;r.set("./index",{hash:877688233,creator:function(e,s){"use strict";Object.defineProperty(s,"__esModule",{value:true});s.key=void 0;const t=s.key=new class e{#e;async get(){if(this.#e)return this.#e;const e=await o("dotenv");e.config();this.#e=process.env.OPENAI_API_KEY;return this.#e}set(e){if(!e){console.error("value must be specified")}this.#e=e;return this.#e}}}});i.exports.descriptor=[{im:"./index",from:"key",name:"key"}];i.exports.process=function({require:s,prop:t,value:o}){(s||t==="key")&&e("key",a=s?s("./index").key:o)};e("__beyond_pkg",p=i);e("hmr",d=new function(){this.on=(e,s)=>i.hmr.on(e,s);this.off=(e,s)=>i.hmr.off(e,s)});i.initialise(r)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWdlbnRzLWFwaUAwLjQuMS9idXNpbmVzcy9tb2RlbHMvb3Blbi1haS9rZXkuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwia2V5IiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiLCJPcGVuQUlLZXkiLCJnZXQiLCJ0aGlzIiwiZG90ZW52IiwiY29uZmlnIiwicHJvY2VzcyIsImVudiIsIk9QRU5BSV9BUElfS0VZIiwiY29uc29sZSIsImVycm9yIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9wIiwib24iLCJldmVudCIsImxpc3RlbmVyIiwib2ZmIiwiaW5pdGlhbGlzZSJdLCJzb3VyY2VzIjpbIjAiXSwibWFwcGluZ3MiOiJBQUFBQSxPQUFPQyxTQUFTLENBQUMsbUNBQW9DLFNBQVVDLEVBQVNDLEdBQ3RFLGFBRUEsSUFBSUMsRUFBY0MsRUFBU0MsRUFBVUMsRUFBT0MsRUFBS0MsRUFBS0MsRUFBY0MsRUFDcEVULEVBQVEsV0FBWSxHQUNwQixNQUFPLENBQ0xVLFFBQVMsQ0FBQyxTQUFVQyxHQUNsQlQsRUFBZVMsQ0FDakIsR0FDQUMsUUFBUyxXQUNQVCxFQUFVVSxJQUNSLE1BQU1DLEVBQWUsSUFBSUMsSUFBSSxDQUFDLENBQUMs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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, key, __beyond_pkg, hmr;
+  _export("key", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/firestore-collection", "0.0.9"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/response", "0.0.3"], ["@google-cloud/storage", "7.17.0"], ["@openai/agents", "0.1.3"], ["@pinecone-database/pinecone", "6.1.2"], ["express", "4.21.2"], ["express-rate-limit", "7.2.0"], ["express-openapi-validator", "5.5.8"], ["firebase-admin", "12.7.0"], ["multer", "2.0.2"], ["form-data", "4.0.4"], ["jsonwebtoken", "9.0.2"], ["ws", "8.18.3"], ["socket.io", "4.8.1"], ["node-fetch", "2.7.0"], ["dotenv", "16.6.1"], ["fluent-ffmpeg", "2.1.3"], ["dayjs", "1.11.17"], ["openai", "4.104.0"], ["uuid", "10.0.0"], ["find-up", "7.0.0"], ["postmark", "4.0.5"], ["zod", "3.25.67"], ["axios", "1.12.2"], ["socket.io-client", "4.8.1"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/bee", "0.0.7"], ["@beyond-js/local", "0.1.3"], ["@types/jsonwebtoken", "9.0.10"], ["@types/express", "5.0.3"], ["@types/node", "20.6.5"], ["@types/uuid", "9.0.8"], ["@types/ws", "8.5.14"], ["@types/react", "18.3.24"], ["@types/audioworklet", "0.0.83"], ["swagger-ui-express", "5.0.1"], ["yaml", "2.8.1"], ["@aimpact/agents-api", "0.4.1"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/agents-api@0.4.1/business/models/open-ai/key"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 877688233,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.key = void 0;
+          /*bundle*/
+          const key = exports.key = new class OpenAIKey {
+            #key;
+            async get() {
+              if (this.#key) return this.#key;
+              const dotenv = await bimport('dotenv');
+              dotenv.config();
+              this.#key = process.env.OPENAI_API_KEY;
+              return this.#key;
+            }
+            set(value) {
+              if (!value) {
+                console.error('value must be specified');
+              }
+              this.#key = value;
+              return this.#key;
+            }
+          }();
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "key",
+        "name": "key"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'key') && _export("key", key = require ? require('./index').key : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJrZXkiLCJleHBvcnRzIiwiT3BlbkFJS2V5IiwiZ2V0IiwiZG90ZW52IiwiYmltcG9ydCIsImNvbmZpZyIsInByb2Nlc3MiLCJlbnYiLCJPUEVOQUlfQVBJX0tFWSIsInNldCIsInZhbHVlIiwiY29uc29sZSIsImVycm9yIl0sInNvdXJjZXMiOlsiL2luZGV4LnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUVPO1VBQVcsTUFBTUEsR0FBRyxHQUFBQyxPQUFBLENBQUFELEdBQUEsR0FBRyxJQUFLLE1BQU1FLFNBQVM7WUFDakQsQ0FBQUYsR0FBSTtZQUVKLE1BQU1HLEdBQUdBLENBQUE7Y0FDUixJQUFJLElBQUksQ0FBQyxDQUFBSCxHQUFJLEVBQUUsT0FBTyxJQUFJLENBQUMsQ0FBQUEsR0FBSTtjQUUvQixNQUFNSSxNQUFNLEdBQUcsTUFBTUMsT0FBTyxDQUFDLFFBQVEsQ0FBQztjQUN0Q0QsTUFBTSxDQUFDRSxNQUFNLEVBQUU7Y0FFZixJQUFJLENBQUMsQ0FBQU4sR0FBSSxHQUFHTyxPQUFPLENBQUNDLEdBQUcsQ0FBQ0MsY0FBYztjQUV0QyxPQUFPLElBQUksQ0FBQyxDQUFBVCxHQUFJO1lBQ2pCO1lBRUFVLEdBQUdBLENBQUNDLEtBQWE7Y0FDaEIsSUFBSSxDQUFDQSxLQUFLLEVBQUU7Z0JBQ1hDLE9BQU8sQ0FBQ0MsS0FBSyxDQUFDLHlCQUF5QixDQUFDOztjQUd6QyxJQUFJLENBQUMsQ0FBQWIsR0FBSSxHQUFHVyxLQUFLO2NBQ2pCLE9BQU8sSUFBSSxDQUFDLENBQUFYLEdBQUk7WUFDakI7V0FDQSxDQUFDLENBQUUiLCJpZ25vcmVMaXN0IjpbXX0=

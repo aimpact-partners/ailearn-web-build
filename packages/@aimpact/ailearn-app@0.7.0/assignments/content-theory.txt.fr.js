@@ -1,2 +1,95 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(e,t){"use strict";var i,a,r,s,n,o,c,p;e("txt",void 0);return{setters:[function(e){i=e}],execute:function(){a=e=>{const t=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:r}=i);s=new r({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/assignments/content-theory",multibundle:true},type:"txt"},t.meta.url).package("fr");s.dependencies.update([]);n=new Map;n.set("./txt",{hash:1875565056,creator:function(e,t){t.txt={breadcrumb:{modules:"Modules",management:"Gestion",assignment:"Devoir",chat:"Chat"},chat:{empty:{credits:{title:"Pr\xeat \xe0 apprendre ?",description:"Commencez par faire la requ\xeate que vous souhaitez"},noCredits:{title:"Vous avez besoin de cr\xe9dits IA pour commencer",description:"Demandez des cr\xe9dits pour commencer \xe0 apprendre avec l'Agent IA"}}},title:"Chattez avec un personnage",selectTitle:"S\xe9lectionnez le personnage avec lequel vous aimeriez discuter",buttonText:"Commencer",description:"Description",objectives:"Objectifs",task:"Votre t\xe2che",asideContent:{title:"Contenu de l'activit\xe9"},tabs:{chat:"Chat",content:"Contenu",synthesis:"R\xe9sum\xe9",objectives:"Objectifs",article:"Contenu",task:"Votre t\xe2che",activity:"Activit\xe9"}}}});s.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];s.exports.process=function({require:t,prop:i,value:a}){(t||i==="txt")&&e("txt",o=t?t("./txt").txt:a)};e("__beyond_pkg",c=s);e("hmr",p=new function(){this.on=(e,t)=>s.hmr.on(e,t);this.off=(e,t)=>s.hmr.off(e,t)});s.initialise(n)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvYXNzaWdubWVudHMvY29udGVudC10aGVvcnkudHh0LmZyLmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQiLCJkZXBlbmRlbmN5XzAiLCJiaW1wb3J0IiwiX19CdW5kbGUiLCJfX3BrZyIsImltcyIsInR4dCIsIl9fYmV5b25kX3BrZyIsImhtciIsInNldHRlcnMiLCJfYmV5b25kSnNLZXJuZWwwMTE0QnVuZGxlIiwiZXhlY3V0ZSIsInNwZWNpZmllciIsImRlcGVuZGVuY2llcyIsIk1hcCIsImdsb2JhbFRoaXMiLCJyZXNvbHZlIiwiQnVuZGxlIiwibW9kdWxlIiwidnNwZWNpZmllciIsIm11bHRpYnVuZGxlIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsImJyZWFkY3J1bWIiLCJtb2R1bGVzIiwibWFuYWdlbWVudCIsImFzc2lnbm1lbnQiLCJjaGF0IiwiZW1wdHkiLCJjcmVkaXRzIiwidGl0bGUiLCJkZXNjcmlwdGlvbiIsIm5vQ3JlZGl0cyIsInNlbGVjdFRpdGxlIiwiYnV0dG9uVGV4dCIsIm9iamVjdGl2ZXMiLCJ0YXNrIiwiYXNpZGVDb250ZW50IiwidGFicyIsImNvbnRlbnQiLCJzeW50aGVzaXMiLCJhcnRpY2xlIiwiYWN0aXZpdHkiLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwibmFtZSIsInByb2Nlc3MiLCJwcm9wIiwidmFsdWUiLCJ0aGlzIiwib24iLCJldmVudCIsImxpc3RlbmVyIiwib2ZmIiwiaW5pdGlhbGlzZSJdLCJzb3VyY2VzIjpbIjAiXSwibWFwcGluZ3MiOiJBQUFBQSxPQUFPQyxTQUFTLENBQUMsbUNBQW9DLFNBQVVDLEVBQVNDLEdBQ3RFLGFBRUEsSUFBSUMsRUFBY0MsRUFBU0MsRUFBVUMsRUFBT0MsRUFBS0MsRUFB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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/assignments/content-theory",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('fr');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 1875565056,
+        creator: function (require, exports) {
+          exports.txt = {
+            "breadcrumb": {
+              "modules": "Modules",
+              "management": "Gestion",
+              "assignment": "Devoir",
+              "chat": "Chat"
+            },
+            "chat": {
+              "empty": {
+                "credits": {
+                  "title": "Prêt à apprendre ?",
+                  "description": "Commencez par faire la requête que vous souhaitez"
+                },
+                "noCredits": {
+                  "title": "Vous avez besoin de crédits IA pour commencer",
+                  "description": "Demandez des crédits pour commencer à apprendre avec l'Agent IA"
+                }
+              }
+            },
+            "title": "Chattez avec un personnage",
+            "selectTitle": "Sélectionnez le personnage avec lequel vous aimeriez discuter",
+            "buttonText": "Commencer",
+            "description": "Description",
+            "objectives": "Objectifs",
+            "task": "Votre tâche",
+            "asideContent": {
+              "title": "Contenu de l'activité"
+            },
+            "tabs": {
+              "chat": "Chat",
+              "content": "Contenu",
+              "synthesis": "Résumé",
+              "objectives": "Objectifs",
+              "article": "Contenu",
+              "task": "Votre tâche",
+              "activity": "Activité"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

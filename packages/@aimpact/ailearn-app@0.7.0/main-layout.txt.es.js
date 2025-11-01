@@ -1,2 +1,127 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(e,a){"use strict";var t,i,s,r,o,n,c,d;e("txt",void 0);return{setters:[function(e){t=e}],execute:function(){i=e=>{const a=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,a))};({Bundle:s}=t);r=new s({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/main-layout",multibundle:true},type:"txt"},a.meta.url).package("es");r.dependencies.update([]);o=new Map;o.set("./txt",{hash:4231199500,creator:function(e,a){a.txt={breadcrumb:{modules:"M\xf3dulos",management:"Borrador"},coins:{alert:{title:"Necesitas cr\xe9ditos IA",description:"Necesitas obtener cr\xe9ditos IA para habilitar todas las funciones con inteligencia artificial.",action:"Aceptar"},modal:{title:"Solicita cr\xe9ditos IA para continuar con esa funci\xf3n",description:"Necesitas obtener cr\xe9ditos IA para habilitar todas las funciones con inteligencia artificial.",actions:{cancel:"No, por ahora, gracias",confirm:"Solicitar ahora"},errors:{noCredits:"No se ha podido procesar la asignacion, por favor contacte al administrador de la instituci\xf3n"}},header:{actions:{require:"Habilitar IA",available:"Interacciones"},messages:{add:"Adquiriste cr\xe9ditos para utilizar las funciones con IA",middle:"Consumiste el 50% de los cr\xe9ditos disponibles",finishing:"Te est\xe1s quedando sin cr\xe9ditos IA disponibles"}}},notifications:{saved:"Solicita cr\xe9ditos IA para habilitar todas las funciones con inteligencia artificial.",credits:"Ya tienes <strong>cr\xe9ditos asignados</strong> para utilizar funciones con IA que se ir\xe1n descontando autom\xe1ticamente con el uso."},chat:{title:"Chat",empty:{message:"Consulta aqu\xed todo lo que necesites saber de tus bases de conocimiento.",noActive:"No hay chat activo",createButton:"Crear Chat",startChat:"Escribe tu mensaje para comenzar la conversaci\xf3n"},creating:{message:"Creando chat..."},organization:{placeholder:"Seleccionar organizaci\xf3n"}},drawer:{title:"Panel lateral",content:"Contenido del panel lateral",sections:{quickActions:"Acciones r\xe1pidas",recentActivity:"Actividad reciente",search:"Buscar",settings:"Configuraci\xf3n",help:"Ayuda"},search:{placeholder:"Buscar en knowledge bases...",clear:"Limpiar b\xfasqueda",search:"Buscar"}}}}});r.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];r.exports.process=function({require:a,prop:t,value:i}){(a||t==="txt")&&e("txt",n=a?a("./txt").txt:i)};e("__beyond_pkg",c=r);e("hmr",d=new function(){this.on=(e,a)=>r.hmr.on(e,a);this.off=(e,a)=>r.hmr.off(e,a)});r.initialise(o)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvbWFpbi1sYXlvdXQudHh0LmVzLmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQiLCJkZXBlbmRlbmN5XzAiLCJiaW1wb3J0IiwiX19CdW5kbGUiLCJfX3BrZyIsImltcyIsInR4dCIsIl9fYmV5b25kX3BrZyIsImhtciIsInNldHRlcnMiLCJfYmV5b25kSnNLZXJuZWwwMTE0QnVuZGxlIiwiZXhlY3V0ZSIsInNwZWNpZmllciIsImRlcGVuZGVuY2llcyIsIk1hcCIsImdsb2JhbFRoaXMiLCJyZXNvbHZlIiwiQnVuZGxlIiwibW9kdWxlIiwidnNwZWNpZmllciIsIm11bHRpYnVuZGxlIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsImJyZWFkY3J1bWIiLCJtb2R1bGVzIiwibWFuYWdlbWVudCIsImNvaW5zIiwiYWxlcnQiLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwiYWN0aW9uIiwibW9kYWwiLCJhY3Rpb25zIiwiY2FuY2VsIiwiY29uZmlybSIsImVycm9ycyIsIm5vQ3JlZGl0cyIsImhlYWRlciIsImF2YWlsYWJsZSIsIm1lc3NhZ2VzIiwiYWRkIiwibWlkZGxlIiwiZmluaXNoaW5nIiwibm90aWZpY2F0aW9ucyIsInNhdmVkIiwiY3JlZGl0cyIsImNoYXQiLCJlbXB0eSIsIm1lc3NhZ2UiLCJub0FjdGl2ZSIsImNyZWF0ZUJ1dHRvbiIsInN0YXJ0Q2hhdCIsImNyZWF0aW5nIiwib3JnYW5pemF0aW9uIiwicGxhY2Vob2xkZXIiLCJkcmF3ZXIiLCJjb250ZW50Iiwic2VjdGlvbnMiLCJxdWlja0FjdGlvbnMiLCJyZWNlbnRBY3Rpdml0eSIsInNlYXJjaCIsInNldHRpbmdzIiwiaGVscCIsImNsZWFyIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInZhbHVlIiwidGhpcyIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLG1DQUFvQyxTQUFVQyxFQUFTQyxHQUN0RSxhQUVBLElBQUlDLEVBQWNDLEVBQVNDLEVBQVVDLEVBQU9DLEVBQUtDLEVBQUtDLEVBQWNDLEVBQ3BFVCxFQUFRLFdBQVksR0FDcEIsTUFBTyxDQUNMVSxRQUFTLENBQUMsU0FBVUMsR0FDbEJULEVBQWVTLENBQ2pCLEdBQ0FDLFFBQVMsV0FDUFQsRUFBVVUsSUFDUixNQUFNQyxFQUFlLElBQUlDLElBQUksQ0FBQyxDQUFDLHNCQUF1QixTQUFVLENBQUMsdUJBQXdCLFNBQVUsQ0FBQyx1QkFBd0IsU0FBVSxDQUFDLG9CQUFxQixTQUFVLENBQUMseUJBQTBCLFNBQVUsQ0FBQyxjQUFlLFNBQVUsQ0FBQyxzQkFBdUIsU0FBVSxDQUFDLHdCQUF5QixTQUFVLENBQUMscUJBQXNCLFVBQVcsQ0FBQyxvQkFBcUIsU0FBVSxDQUFDLG9CQUFxQixVQUFXLENBQUMsNkJBQThCLFNBQVUsQ0FBQyw4QkFBK0IsU0FBVSxDQUFDLHFCQUFzQixTQUFVLENBQUMsZUFBZ0IsV0FBWSxDQUFDLGlCQUFrQixXQUFZLENBQUMsa0JBQW1CLFdBQVksQ0FBQyxpQkFBa0IsVUFBVyxDQUFDLHdCQUF5QixVQUFXLENBQUMsNEJBQTZCLFVBQVcsQ0FBQyw4QkFBK0IsVUFBVyxDQUFDLHdCQUF5QixTQUFVLENBQUMseUJBQTBCLFNBQVUsQ0FBQyw0QkFBNkIsU0FBVSxDQUFDLCtCQUFnQyxTQUFVLENBQUMsK0JBQWdDLFNBQVUsQ0FBQyxvQ0FBcUMsU0FBVSxDQUFDLDBCQUEyQixTQUFVLENBQUMsOEJBQStCLFNBQVUsQ0FBQyw4QkFBK0IsU0FBVSxDQUFDLDhCQUErQixTQUFVLENBQUMsYUFBYyxTQUFVLENBQUMsZ0JBQWlCLFNBQVUsQ0FBQyxzQkFBdUIs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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/main-layout",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('es');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 4231199500,
+        creator: function (require, exports) {
+          exports.txt = {
+            "breadcrumb": {
+              "modules": "Módulos",
+              "management": "Borrador"
+            },
+            "coins": {
+              "alert": {
+                "title": "Necesitas créditos IA",
+                "description": "Necesitas obtener créditos IA para habilitar todas las funciones con inteligencia artificial.",
+                "action": "Aceptar"
+              },
+              "modal": {
+                "title": "Solicita créditos IA para continuar con esa función",
+                "description": "Necesitas obtener créditos IA para habilitar todas las funciones con inteligencia artificial.",
+                "actions": {
+                  "cancel": "No, por ahora, gracias",
+                  "confirm": "Solicitar ahora"
+                },
+                "errors": {
+                  "noCredits": "No se ha podido procesar la asignacion, por favor contacte al administrador de la institución"
+                }
+              },
+              "header": {
+                "actions": {
+                  "require": "Habilitar IA",
+                  "available": "Interacciones"
+                },
+                "messages": {
+                  "add": "Adquiriste créditos para utilizar las funciones con IA",
+                  "middle": "Consumiste el 50% de los créditos disponibles",
+                  "finishing": "Te estás quedando sin créditos IA disponibles"
+                }
+              }
+            },
+            "notifications": {
+              "saved": "Solicita créditos IA para habilitar todas las funciones con inteligencia artificial.",
+              "credits": "Ya tienes <strong>créditos asignados</strong> para utilizar funciones con IA que se irán descontando automáticamente con el uso."
+            },
+            "chat": {
+              "title": "Chat",
+              "empty": {
+                "message": "Consulta aquí todo lo que necesites saber de tus bases de conocimiento.",
+                "noActive": "No hay chat activo",
+                "createButton": "Crear Chat",
+                "startChat": "Escribe tu mensaje para comenzar la conversación"
+              },
+              "creating": {
+                "message": "Creando chat..."
+              },
+              "organization": {
+                "placeholder": "Seleccionar organización"
+              }
+            },
+            "drawer": {
+              "title": "Panel lateral",
+              "content": "Contenido del panel lateral",
+              "sections": {
+                "quickActions": "Acciones rápidas",
+                "recentActivity": "Actividad reciente",
+                "search": "Buscar",
+                "settings": "Configuración",
+                "help": "Ayuda"
+              },
+              "search": {
+                "placeholder": "Buscar en knowledge bases...",
+                "clear": "Limpiar búsqueda",
+                "search": "Buscar"
+              }
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

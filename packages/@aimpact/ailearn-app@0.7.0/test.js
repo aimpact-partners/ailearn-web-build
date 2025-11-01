@@ -1,2 +1,311 @@
-System.register(["@beyond-js/widgets@1.1.2/render","@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/styles","@beyond-js/react-18-widgets@1.1.8/page","@beyond-js/reactive@2.1.1/entities/collection","@beyond-js/reactive@2.1.1/entities/item","@beyond-js/reactive@2.1.1/model","@beyond-js/kernel@0.1.14/core","@aimpact/ailearn-sdk@1.2.0/tracking","react@18.3.1"],function(e,t){"use strict";var o,a,n,r,i,l,s,c,d,u,m,p,b,h,g,v,y,f;e({Controller:void 0,View:void 0});return{setters:[function(e){o=e},function(e){a=e},function(e){n=e},function(e){r=e},function(e){i=e},function(e){l=e},function(e){s=e},function(e){c=e},function(e){d=e},function(e){u=e}],execute:function(){m=e=>{const t=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.1"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:p}=a);b=new p({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/test"},type:"widget"},t.meta.url).package();b.dependencies.update([["@beyond-js/widgets/render",o],["@beyond-js/kernel/styles",n],["@beyond-js/react-18-widgets/page",r],["@beyond-js/reactive/entities/collection",i],["@beyond-js/reactive/entities/item",l],["@beyond-js/reactive/model",s],["@beyond-js/kernel/core",c],["@aimpact/ailearn-sdk/tracking",d],["react",u]]);brequire("@beyond-js/widgets/render").widgets.register([{name:"ailearn-test-page",vspecifier:"@aimpact/ailearn-app@0.7.0/test",is:"page",route:"/dev/test",layout:"main-layout"}]);brequire("@beyond-js/kernel/styles").styles.register("@aimpact/ailearn-app@0.7.0/test");h=new Map;h.set("./controller",{hash:1927493790,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.Controller=void 0;var o=e("@beyond-js/react-18-widgets/page");var a=e("./store");var n=e("./views");class r extends o.PageReactWidgetController{#e;createStore(){this.#e=new a.StoreManager;return this.#e}get Widget(){return n.View}show(){}hide(){}}t.Controller=r}});h.set("./model/collection",{hash:3327551805,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.TestCollection=void 0;var o=e("@beyond-js/reactive/entities/collection");var a=e("./item");var n=e("./provider");class r extends o.Collection{constructor(){super({entity:"User",item:a.User,provider:n.CollectionProvider})}async load(){const e=await super.load();return e}}t.TestCollection=r;globalThis.Collection=r;console.log(`Collection is being exposed as TestCollection in globaThis`)}});h.set("./model/item",{hash:3960757210,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.User=void 0;var o=e("@beyond-js/reactive/entities/item");class a extends o.Item{constructor(e={}){super({entity:"User",properties:["id","name"],...e})}}t.User=a;globalThis.Item=a;console.log(`Item is being exposed as User in globaThis`)}});h.set("./model/model",{hash:1000608760,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.User=void 0;var o=e("@beyond-js/reactive/model");class a extends o.ReactiveModel{constructor(){super({properties:["id","name",{name:"data"}]})}}t.User=a;globalThis.Model=a;console.log(`Model is being exposed as User in globaThis`)}});h.set("./model/provider",{hash:2831555185,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.CollectionProvider=void 0;var o=e("@beyond-js/kernel/core");class a{async list(){const e=new o.PendingPromise;setTimeout(()=>{e.resolve([{id:1,name:"Julio"},{id:2,name:"Julia"}])},1e3);return e}}t.CollectionProvider=a}});h.set("./store",{hash:2339039230,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.StoreManager=void 0;var o=e("@aimpact/ailearn-sdk/tracking");class a{constructor(){const e=new o.TrackingDashboard({id:"7470db91-c4ed-49a2-98dd-9759fcf377ae"});globalThis.dashboard=e;console.log(`TrackingDashboard is being exposed to the global scope as 'dashboard'`)}}t.StoreManager=a}});h.set("./views/index",{hash:3004610855,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.View=a;var o=e("react");function a(){return o.createElement("div",null,o.createElement("div",{className:"border-examples"},o.createElement("div",null,o.createElement("div",{className:"div"},"1"),o.createElement("button",null,"button vlue"),o.createElement("img",{src:"/assets/images/entities/activity/700.webp",alt:"placeholder"})),o.createElement("div",{className:"div"},"background-card")),o.createElement("div",{className:"grid-container"},o.createElement("div",{className:"header"},"Header fijo"),o.createElement("div",{className:"child-2"},"Contenido de Child 2 (scrollable)",o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo")),o.createElement("div",{className:"child-3"},"Contenido de Child 3 (scrollable)",o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"),o.createElement("p",null,"hola mundo"))))}}});b.exports.descriptor=[{im:"./controller",from:"Controller",name:"Controller"},{im:"./views/index",from:"View",name:"View"}];b.exports.process=function({require:t,prop:o,value:a}){(t||o==="Controller")&&e("Controller",g=t?t("./controller").Controller:a);(t||o==="View")&&e("View",v=t?t("./views/index").View:a)};e("__beyond_pkg",y=b);e("hmr",f=new function(){this.on=(e,t)=>b.hmr.on(e,t);this.off=(e,t)=>b.hmr.off(e,t)});b.initialise(h)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvdGVzdC5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiZGVwZW5kZW5jeV8xIiwiZGVwZW5kZW5jeV8yIiwiZGVwZW5kZW5jeV8zIiwiZGVwZW5kZW5jeV80IiwiZGVwZW5kZW5jeV81IiwiZGVwZW5kZW5jeV82IiwiZGVwZW5kZW5jeV83IiwiZGVwZW5kZW5jeV84IiwiZGVwZW5kZW5jeV85IiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJDb250cm9sbGVyIiwiVmlldyIsIl9fYmV5b25kX3BrZyIsImhtciIsInNldHRlcnMiLCJfYmV5b25kSnNXaWRnZXRzMTEyUmVuZGVyIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsIl9iZXlvbmRKc0tlcm5lbDAxMTRTdHlsZXMiLCJfYmV5b25kSnNSZWFjdDE4V2lkZ2V0czExOFBhZ2UiLCJfYmV5b25kSnNSZWFjdGl2ZTIxMUVudGl0aWVzQ29sbGVjdGlvbiIsIl9iZXlvbmRKc1JlYWN0aXZlMjExRW50aXRpZXNJdGVtIiwiX2JleW9uZEpzUmVhY3RpdmUyMTFNb2RlbCIsIl9iZXlvbmRKc0tlcm5lbDAxMTRDb3JlIiwiX2FpbXBhY3RBaWxlYXJuU2RrMTIwVHJhY2tpbmciLCJfcmVhY3QiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwiYnJlcXVpcmUiLCJ3aWRnZXRzIiwibmFtZSIsImlzIiwicm91dGUiLCJsYXlvdXQiLCJzdHlsZXMiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJ2YWx1ZSIsIl9wYWdlIiwiX3N0b3JlIiwiX3ZpZXdzIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsInN0b3JlIiwiY3JlYXRlU3RvcmUiLCJ0aGlzIiwiU3RvcmVNYW5hZ2VyIiwiV2lkZ2V0Iiwic2hvdyIsImhpZGUiLCJUZXN0Q29sbGVjdGlvbiIsIl9jb2xsZWN0aW9uIiwiX2l0ZW0iLCJfcHJvdmlkZXIiLCJDb2xsZWN0aW9uIiwiY29uc3RydWN0b3IiLCJzdXBlciIsImVudGl0eSIsIml0ZW0iLCJVc2VyIiwicHJvdmlkZXIiLCJDb2xsZWN0aW9uUHJvdmlkZXIiLCJsb2FkIiwiZGF0YSIsImNvbnNvbGUiLCJsb2ciLCJJdGVtIiwic3BlY3MiLCJwcm9wZXJ0aWVzIiwiX21vZGVsIiwiUmVhY3RpdmVNb2RlbCIsIk1vZGVsIiwiX2NvcmUiLCJsaXN0IiwicHJvbWlzZSIsIlBlbmRpbmdQcm9taXNlIiwic2V0VGltZW91dCIsImlkIiwiX3RyYWNraW5nIiwiZGFzaGJvYXJkIiwiVHJhY2tpbmdEYXNoYm9hcmQiLCJSZWFjdCIsImNyZWF0ZUVsZW1lbnQiLCJjbGFzc05hbWUiLCJzcmMiLCJhbHQiLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwicHJvY2VzcyIsInByb3AiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxrQ0FBbUMsa0NBQW1DLGtDQUFtQyx5Q0FBMEMsZ0RBQWlELDBDQUEyQyxrQ0FBbUMsZ0NBQWlDLHNDQUF1QyxnQkFBaUIsU0FBVUMsRUFBU0MsR0FDN1ksYUFFQSxJQUFJQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFjQyxFQUFTQyxFQUFVQyxFQUFPQyxFQUFLQyxFQUFZQyxFQUFNQyxFQUFjQyxFQUMvTW5CLEVBQVEsQ0FDTmdCLGdCQUFpQixFQUNqQkMsVUFBVyxJQUViLE1B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
+System.register(["@beyond-js/widgets@1.1.2/render", "@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/styles", "@beyond-js/react-18-widgets@1.1.8/page", "@beyond-js/reactive@2.1.2/entities/collection", "@beyond-js/reactive@2.1.2/entities/item", "@beyond-js/reactive@2.1.2/model", "@beyond-js/kernel@0.1.14/core", "@aimpact/ailearn-sdk@1.2.0/tracking", "react@18.3.1"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
+  _export({
+    Controller: void 0,
+    View: void 0
+  });
+  return {
+    setters: [function (_beyondJsWidgets112Render) {
+      dependency_0 = _beyondJsWidgets112Render;
+    }, function (_beyondJsKernel0114Bundle) {
+      dependency_1 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_2 = _beyondJsKernel0114Styles;
+    }, function (_beyondJsReact18Widgets118Page) {
+      dependency_3 = _beyondJsReact18Widgets118Page;
+    }, function (_beyondJsReactive212EntitiesCollection) {
+      dependency_4 = _beyondJsReactive212EntitiesCollection;
+    }, function (_beyondJsReactive212EntitiesItem) {
+      dependency_5 = _beyondJsReactive212EntitiesItem;
+    }, function (_beyondJsReactive212Model) {
+      dependency_6 = _beyondJsReactive212Model;
+    }, function (_beyondJsKernel0114Core) {
+      dependency_7 = _beyondJsKernel0114Core;
+    }, function (_aimpactAilearnSdk120Tracking) {
+      dependency_8 = _aimpactAilearnSdk120Tracking;
+    }, function (_react) {
+      dependency_9 = _react;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.0"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_1);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/test"
+        },
+        "type": "widget"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@beyond-js/reactive/entities/collection', dependency_4], ['@beyond-js/reactive/entities/item', dependency_5], ['@beyond-js/reactive/model', dependency_6], ['@beyond-js/kernel/core', dependency_7], ['@aimpact/ailearn-sdk/tracking', dependency_8], ['react', dependency_9]]);
+      brequire('@beyond-js/widgets/render').widgets.register([{
+        "name": "ailearn-test-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/test",
+        "is": "page",
+        "route": "/dev/test",
+        "layout": "main-layout"
+      }]);
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.7.0/test');
+      ims = new Map();
+      /****************************
+      INTERNAL MODULE: ./controller
+      ****************************/
+      ims.set('./controller', {
+        hash: 1927493790,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Controller = void 0;
+          var _page = require("@beyond-js/react-18-widgets/page");
+          var _store = require("./store");
+          var _views = require("./views");
+          /*bundle*/
+          class Controller extends _page.PageReactWidgetController {
+            #store;
+            createStore() {
+              this.#store = new _store.StoreManager();
+              return this.#store;
+            }
+            get Widget() {
+              return _views.View;
+            }
+            /**
+             * this method is executed when the widget is showd
+             */
+            show() {}
+            /**
+             * this method is executed when the widget is hidden
+             */
+            hide() {}
+          }
+          exports.Controller = Controller;
+        }
+      });
+
+      /**********************************
+      INTERNAL MODULE: ./model/collection
+      **********************************/
+
+      ims.set('./model/collection', {
+        hash: 3327551805,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.TestCollection = void 0;
+          var _collection = require("@beyond-js/reactive/entities/collection");
+          var _item = require("./item");
+          var _provider = require("./provider");
+          class TestCollection extends _collection.Collection {
+            constructor() {
+              super({
+                entity: 'User',
+                item: _item.User,
+                provider: _provider.CollectionProvider
+              });
+            }
+            async load() {
+              const data = await super.load();
+              return data;
+            }
+          }
+          exports.TestCollection = TestCollection;
+          globalThis.Collection = TestCollection;
+          console.log(`Collection is being exposed as TestCollection in globaThis`);
+        }
+      });
+
+      /****************************
+      INTERNAL MODULE: ./model/item
+      ****************************/
+
+      ims.set('./model/item', {
+        hash: 3960757210,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.User = void 0;
+          var _item = require("@beyond-js/reactive/entities/item");
+          class User extends _item.Item {
+            constructor(specs = {}) {
+              super({
+                entity: 'User',
+                properties: ['id', 'name'],
+                ...specs
+              });
+            }
+          }
+          exports.User = User;
+          globalThis.Item = User;
+          console.log(`Item is being exposed as User in globaThis`);
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./model/model
+      *****************************/
+
+      ims.set('./model/model', {
+        hash: 1000608760,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.User = void 0;
+          var _model = require("@beyond-js/reactive/model");
+          class User extends _model.ReactiveModel {
+            constructor() {
+              super({
+                properties: ['id', 'name', {
+                  name: 'data'
+                }]
+              });
+            }
+          }
+          exports.User = User;
+          globalThis.Model = User;
+          console.log(`Model is being exposed as User in globaThis`);
+        }
+      });
+
+      /********************************
+      INTERNAL MODULE: ./model/provider
+      ********************************/
+
+      ims.set('./model/provider', {
+        hash: 2831555185,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.CollectionProvider = void 0;
+          var _core = require("@beyond-js/kernel/core");
+          class CollectionProvider {
+            async list() {
+              const promise = new _core.PendingPromise();
+              setTimeout(() => {
+                promise.resolve([{
+                  id: 1,
+                  name: 'Julio'
+                }, {
+                  id: 2,
+                  name: 'Julia'
+                }]);
+              }, 1000);
+              return promise;
+            }
+          }
+          exports.CollectionProvider = CollectionProvider;
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./store
+      ***********************/
+
+      ims.set('./store', {
+        hash: 2339039230,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StoreManager = void 0;
+          var _tracking = require("@aimpact/ailearn-sdk/tracking");
+          class StoreManager {
+            constructor() {
+              const dashboard = new _tracking.TrackingDashboard({
+                id: '7470db91-c4ed-49a2-98dd-9759fcf377ae'
+              });
+              globalThis.dashboard = dashboard;
+              console.log(`TrackingDashboard is being exposed to the global scope as 'dashboard'`);
+            }
+          }
+          exports.StoreManager = StoreManager;
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./views/index
+      *****************************/
+
+      ims.set('./views/index', {
+        hash: 3004610855,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.View = View;
+          var React = require("react");
+          /*bundle*/
+          function View() {
+            return React.createElement("div", null, React.createElement("div", {
+              className: "border-examples"
+            }, React.createElement("div", null, React.createElement("div", {
+              className: "div"
+            }, "1"), React.createElement("button", null, "button vlue"), React.createElement("img", {
+              src: "/assets/images/entities/activity/700.webp",
+              alt: "placeholder"
+            })), React.createElement("div", {
+              className: "div"
+            }, "background-card")), React.createElement("div", {
+              className: "grid-container"
+            }, React.createElement("div", {
+              className: "header"
+            }, "Header fijo"), React.createElement("div", {
+              className: "child-2"
+            }, "Contenido de Child 2 (scrollable)", React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo")), React.createElement("div", {
+              className: "child-3"
+            }, "Contenido de Child 3 (scrollable)", React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"), React.createElement("p", null, "hola mundo"))));
+          }
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./controller",
+        "from": "Controller",
+        "name": "Controller"
+      }, {
+        "im": "./views/index",
+        "from": "View",
+        "name": "View"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Controller') && _export("Controller", Controller = require ? require('./controller').Controller : value);
+        (require || prop === 'View') && _export("View", View = require ? require('./views/index').View : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfc3RvcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsInN0b3JlIiwiY3JlYXRlU3RvcmUiLCJTdG9yZU1hbmFnZXIiLCJXaWRnZXQiLCJWaWV3Iiwic2hvdyIsImhpZGUiLCJleHBvcnRzIiwiX2NvbGxlY3Rpb24iLCJfaXRlbSIsIl9wcm92aWRlciIsIlRlc3RDb2xsZWN0aW9uIiwiQ29sbGVjdGlvbiIsImNvbnN0cnVjdG9yIiwiZW50aXR5IiwiaXRlbSIsIlVzZXIiLCJwcm92aWRlciIsIkNvbGxlY3Rpb25Qcm92aWRlciIsImxvYWQiLCJkYXRhIiwiZ2xvYmFsVGhpcyIsImNvbnNvbGUiLCJsb2ciLCJJdGVtIiwic3BlY3MiLCJwcm9wZXJ0aWVzIiwiX21vZGVsIiwiUmVhY3RpdmVNb2RlbCIsIm5hbWUiLCJNb2RlbCIsIl9jb3JlIiwibGlzdCIsInByb21pc2UiLCJQZW5kaW5nUHJvbWlzZSIsInNldFRpbWVvdXQiLCJyZXNvbHZlIiwiaWQiLCJfdHJhY2tpbmciLCJkYXNoYm9hcmQiLCJUcmFja2luZ0Rhc2hib2FyZCIsIlJlYWN0IiwiY3JlYXRlRWxlbWVudCIsImNsYXNzTmFtZSIsInNyYyIsImFsdCJdLCJzb3VyY2VzIjpbIi90cy9jb250cm9sbGVyLnRzIiwiL3RzL21vZGVsL2NvbGxlY3Rpb24udHMiLCIvdHMvbW9kZWwvaXRlbS50cyIsIi90cy9tb2RlbC9tb2RlbC50cyIsIi90cy9tb2RlbC9wcm92aWRlci50cyIsIi90cy9zdG9yZS50cyIsIi90cy92aWV3cy9pbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxLQUFBLEdBQUFDLE9B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
