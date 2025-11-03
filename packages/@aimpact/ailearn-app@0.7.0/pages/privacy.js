@@ -1,2 +1,328 @@
-System.register(["@beyond-js/widgets@1.1.2/render","@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/styles","@beyond-js/react-18-widgets@1.1.8/page","@aimpact/ailearn-sdk@1.2.0/application","@aimpact/chat-sdk@1.5.5/session","@beyond-js/reactive@2.1.2/model","react@18.3.1","@aimpact/chat-sdk@1.5.5/widgets/markdown","@beyond-js/react-18-widgets@1.1.8/hooks","pragmate-ui@1.0.8/components","react@18.3.1/jsx-runtime"],function(e,a){"use strict";var i,r,n,o,s,t,c,l,d,p,u,m,h,y,f,g,v,j,x,b;e({Controller:void 0,View:void 0});return{setters:[function(e){i=e},function(e){r=e},function(e){n=e},function(e){o=e},function(e){s=e},function(e){t=e},function(e){c=e},function(e){l=e},function(e){d=e},function(e){p=e},function(e){u=e},function(e){m=e}],execute:function(){h=e=>{const a=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.2"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,a))};({Bundle:y}=r);f=new y({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/pages/privacy"},type:"widget"},a.meta.url).package();f.dependencies.update([["@beyond-js/widgets/render",i],["@beyond-js/kernel/styles",n],["@beyond-js/react-18-widgets/page",o],["@aimpact/ailearn-sdk/application",s],["@aimpact/chat-sdk/session",t],["@beyond-js/reactive/model",c],["react",l],["@aimpact/chat-sdk/widgets/markdown",d],["@beyond-js/react-18-widgets/hooks",p],["pragmate-ui/components",u],["react/jsx-runtime",m]]);brequire("@beyond-js/widgets/render").widgets.register([{name:"privacy-page",vspecifier:"@aimpact/ailearn-app@0.7.0/pages/privacy",is:"page",route:"/privacy"}]);brequire("@beyond-js/kernel/styles").styles.register("@aimpact/ailearn-app@0.7.0/pages/privacy");g=new Map;g.set("./controller",{hash:308745009,creator:function(e,a){"use strict";Object.defineProperty(a,"__esModule",{value:true});a.Controller=void 0;var i=e("@beyond-js/react-18-widgets/page");var r=e("./store");var n=e("./views");class o extends i.PageReactWidgetController{#e;createStore(){this.#e=new r.StoreManager;return this.#e}get Widget(){return n.View}show(){this.#e.load(this.uri.vars.get("page"))}hide(){}}a.Controller=o}});g.set("./store",{hash:1722649233,creator:function(e,a){"use strict";Object.defineProperty(a,"__esModule",{value:true});a.StoreManager=void 0;var i=e("@aimpact/ailearn-sdk/application");var r=e("@beyond-js/reactive/model");class n extends r.ReactiveModel{application;#a;get content(){return this.#a}constructor(){super();this.reactiveProps(["page"]);this.application=new i.Application;globalThis.store=this}async load(e){this.page=e;this.ready=true}}a.StoreManager=n}});g.set("./views/context",{hash:3251310977,creator:function(e,a){"use strict";Object.defineProperty(a,"__esModule",{value:true});a.useModuleContext=a.ModuleContext=void 0;var i=e("react");const r=a.ModuleContext=i.default.createContext({});const n=()=>i.default.useContext(r);a.useModuleContext=n}});g.set("./views/index",{hash:3245278203,creator:function(e,a){"use strict";Object.defineProperty(a,"__esModule",{value:true});a.View=n;var i=e("react");var r=e("./privacy.mdx");function n({store:e}){return i.createElement("div",{className:"container-page-content"},i.createElement(r.default,null))}}});g.set("./views/privacy.mdx",{hash:2568567038,creator:function(e,a){"use strict";Object.defineProperty(a,"__esModule",{value:true});a.default=void 0;var i=e("react/jsx-runtime");function r(e){const a=Object.assign({h1:"h1",p:"p",h2:"h2",ul:"ul",li:"li"},e.components);return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(a.h1,{children:"Pol\xedtica de Privacidad RVD.AI"}),"\n",(0,i.jsx)(a.p,{children:"Fecha de \xfaltima actualizaci\xf3n: 4 de marzo de 2024"}),"\n",(0,i.jsx)(a.p,{children:"Esta Pol\xedtica de Privacidad forma parte integrante de los T\xe9rminos y Condiciones de Uso de RVD.AI (los \u201cT\xe9rminos y\r\nCondiciones de Uso\u201d). Todos los t\xe9rminos empleados en el presente documento que no se encuentran definidos especialmente\r\nen \xe9ste, tendr\xe1n el significado atribuidos a los mismos en los T\xe9rminos y Condiciones de Uso. Esta Pol\xedtica de\r\nPrivacidad describe c\xf3mo el Prestador (en adelante, \u201cEl Prestador\u201d) recopila, utiliza y protege la informaci\xf3n personal\r\nque el Usuario proporciona al utilizar el Servicio."}),"\n",(0,i.jsx)(a.p,{children:"Al aceptar los T\xe9rminos y Condiciones de Uso, el Usuario presta su consentimiento libre, expreso e informado a todas las\r\nprevisiones de la presente Pol\xedtica de Privacidad."}),"\n",(0,i.jsx)(a.h2,{children:"1. Informaci\xf3n que se Recopila:"}),"\n",(0,i.jsx)(a.p,{children:"Cuando el Usuario utiliza los Servicios, podr\xeda recopilarse la siguiente Informaci\xf3n:"}),"\n",(0,i.jsx)(a.p,{children:"Informaci\xf3n de Registro: Al registrarse el Usuario en nuestro servicio, podemos solicitar informaci\xf3n como su nombre,\r\ndirecci\xf3n de correo electr\xf3nico, fecha de nacimiento y otra informaci\xf3n necesaria para crear su cuenta."}),"\n",(0,i.jsx)(a.p,{children:"Interacci\xf3n con la IA: Podemos recopilar informaci\xf3n sobre la interacci\xf3n del Usuario con la IA incluidas las consultas\r\nrealizadas y las respuestas proporcionadas."}),"\n",(0,i.jsx)(a.p,{children:"Informaci\xf3n de Uso: Podemos recopilar informaci\xf3n sobre c\xf3mo utiliza el Servicio, como los recursos a los que el Usuario\r\naccede y el tiempo que pasa en el Sitio web (y aplicaciones). Tambi\xe9n podr\xe1n ser recopiladas la direcci\xf3n IP del\r\nUsuario, cookies, y datos que permitir\xe1n identificar el navegador o cuenta del Usuario."}),"\n",(0,i.jsx)(a.p,{children:"Todo ello, la \u201cinformaci\xf3n\u201d."}),"\n",(0,i.jsx)(a.h2,{children:"2. Uso de la Informaci\xf3n:"}),"\n",(0,i.jsx)(a.p,{children:"El Prestador utiliza la Informaci\xf3n recopilada para los siguientes prop\xf3sitos:"}),"\n",(0,i.jsxs)(a.ul,{children:["\n",(0,i.jsx)(a.li,{children:"Proporcionar y mantener el Servicio."}),"\n",(0,i.jsx)(a.li,{children:"Mejorar y personalizar la experiencia del Usuario."}),"\n",(0,i.jsx)(a.li,{children:"Comprender c\xf3mo se utiliza el Servicio y realizar an\xe1lisis para mejorar productos y servicios."}),"\n",(0,i.jsx)(a.li,{children:"Enviar comunicaciones promocionales y actualizaciones relacionadas con el Servicio, siempre que el Usuario no haya\r\nrechazado esta opci\xf3n."}),"\n"]}),"\n",(0,i.jsx)(a.p,{children:"La Informaci\xf3n objeto de Tratamiento no ser\xe1 utilizada para finalidades distintas o incompatibles con aquellas que\r\nmotivaron su obtenci\xf3n y ser\xe1 destruida cuando haya dejado de ser necesaria o pertinente a los fines para los cuales\r\nhubiese sido recolectada."}),"\n",(0,i.jsx)(a.h2,{children:"3. Como podr\xeda compartirse la Informaci\xf3n del Usuario:"}),"\n",(0,i.jsx)(a.p,{children:"El Prestador no vende ni alquila su Informaci\xf3n personal a terceros. Sin embargo, podemos compartir su Informaci\xf3n en\r\nlas siguientes circunstancias:"}),"\n",(0,i.jsxs)(a.ul,{children:["\n",(0,i.jsxs)(a.li,{children:["\n",(0,i.jsx)(a.p,{children:"Con proveedores de servicios que ayudan al Prestador a operar el Servicio y brindar otros productos y servicios."}),"\n"]}),"\n",(0,i.jsxs)(a.li,{children:["\n",(0,i.jsx)(a.p,{children:"Cuando sea requerido por la ley o en respuesta a una solicitud legal v\xe1lida, como una orden judicial."}),"\n"]}),"\n",(0,i.jsxs)(a.li,{children:["\n",(0,i.jsx)(a.p,{children:"Con el consentimiento del Usuario o de acuerdo con sus instrucciones."}),"\n"]}),"\n"]}),"\n",(0,i.jsx)(a.h2,{children:"4. Seguridad de la Informaci\xf3n:"}),"\n",(0,i.jsx)(a.p,{children:"El Usuario se compromete a proteger la seguridad de su Informaci\xf3n personal y a utilizar medidas de seguridad razonables\r\npara protegerla contra el acceso no autorizado, la divulgaci\xf3n, la alteraci\xf3n o la destrucci\xf3n. Se destaca que la\r\nInformaci\xf3n que se recopila puede ser transferida, almacenada y/o tratada en Estados Unidos u otros pa\xedses fuera de\r\nArgentina, y al proporcionar su Informaci\xf3n, el Usuario consiente dicha transferencia, almacenamiento y/o Tratamiento."}),"\n",(0,i.jsx)(a.p,{children:"Se entender\xe1 por \u201cTratamiento\u201d a todas las operaciones y procedimientos sistem\xe1ticos, electr\xf3nicos o no, que permitan la\r\nrecolecci\xf3n, conservaci\xf3n, ordenaci\xf3n, almacenamiento, modificaci\xf3n, relacionamiento, evaluaci\xf3n, bloqueo, destrucci\xf3n,\r\ny en general el procesamiento de datos personales, as\xed como tambi\xe9n su cesi\xf3n a terceros a trav\xe9s de comunicaciones,\r\nconsultas, interconexiones o transferencias."}),"\n",(0,i.jsx)(a.p,{children:"La transferencia de Informaci\xf3n se realizar\xe1 en todo caso, exclusivamente a pa\xedses cuyas legislaciones proporcionen\r\nniveles de protecci\xf3n adecuados y conformes con esta Pol\xedtica de Privacidad."}),"\n",(0,i.jsx)(a.h2,{children:"5. Cambios en la Pol\xedtica de Privacidad:"}),"\n",(0,i.jsx)(a.p,{children:"El Prestador se reserva el derecho de actualizar esta Pol\xedtica de Privacidad en cualquier momento para cumplir con las\r\nleyes y regulaciones aplicables. Le notificaremos cualquier cambio publicando la Pol\xedtica de Privacidad actualizada en\r\nnuestro sitio web y actualizando la fecha de \u201c\xdaltima Actualizaci\xf3n\u201d al principio de la Pol\xedtica de Privacidad, todo ello\r\nde acuerdo a lo indicado en los T\xe9rminos y Condiciones de Uso."}),"\n",(0,i.jsx)(a.h2,{children:"6. Sus Derechos y Opciones:"}),"\n",(0,i.jsx)(a.p,{children:"De acuerdo con la Ley de Protecci\xf3n de Datos Personales en Argentina (Ley 25.326), usted tiene derecho a acceder,\r\nrectificar y suprimir su Informaci\xf3n, as\xed como a oponerse al Tratamiento de los mismos. Tambi\xe9n tiene derecho a revocar\r\nsu consentimiento en cualquier momento. Para ejercer estos derechos o para hacer cualquier pregunta sobre la Pol\xedtica de\r\nPrivacidad deber\xe1 contactar al servicio de Soporte del Prestador mediante los siguientes medios:"}),"\n",(0,i.jsx)(a.p,{children:"Email:"}),"\n",(0,i.jsx)(a.p,{children:"Tel\xe9fono:"}),"\n",(0,i.jsx)(a.p,{children:"\xc1ngel Estrada y Compa\xf1\xeda S.A., con domicilio en la calle Maip\xfa 116, Piso 8 (C1084ABD) de la Ciudad Aut\xf3noma de Buenos\r\nAires, Argentina, es titular y responsable del tratamiento y de la protecci\xf3n de datos (Informaci\xf3n). Los Usuarios\r\npueden enviar solicitudes para ejercer sus derechos con respecto a su Informaci\xf3n en el marco de la Ley 25.326."}),"\n",(0,i.jsx)(a.p,{children:"La Agencia de Acceso a la Informaci\xf3n P\xfablica, como \xf3rgano regulador de la ley 25.326, es responsable de recibir los\r\nreclamos e informes presentados por interesados que consideren que sus datos se han visto afectados por una infracci\xf3n\r\nde la Ley de Protecci\xf3n de Datos Personales."})]})}function n(e={}){const{wrapper:a}=e.components||{};return a?(0,i.jsx)(a,Object.assign({},e,{children:(0,i.jsx)(r,e)})):r(e)}var o=a.default=n}});f.exports.descriptor=[{im:"./controller",from:"Controller",name:"Controller"},{im:"./views/index",from:"View",name:"View"}];f.exports.process=function({require:a,prop:i,value:r}){(a||i==="Controller")&&e("Controller",v=a?a("./controller").Controller:r);(a||i==="View")&&e("View",j=a?a("./views/index").View:r)};e("__beyond_pkg",x=f);e("hmr",b=new function(){this.on=(e,a)=>f.hmr.on(e,a);this.off=(e,a)=>f.hmr.off(e,a)});f.initialise(g)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvcGFnZXMvcHJpdmFjeS5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiZGVwZW5kZW5jeV8xIiwiZGVwZW5kZW5jeV8yIiwiZGVwZW5kZW5jeV8zIiwiZGVwZW5kZW5jeV80IiwiZGVwZW5kZW5jeV81IiwiZGVwZW5kZW5jeV82IiwiZGVwZW5kZW5jeV83IiwiZGVwZW5kZW5jeV84IiwiZGVwZW5kZW5jeV85IiwiZGVwZW5kZW5jeV8xMCIsImRlcGVuZGVuY3lfMTEiLCJiaW1wb3J0IiwiX19CdW5kbGUiLCJfX3BrZyIsImltcyIsIkNvbnRyb2xsZXIiLCJWaWV3IiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc1dpZGdldHMxMTJSZW5kZXIiLCJfYmV5b25kSnNLZXJuZWwwMTE0QnVuZGxlIiwiX2JleW9uZEpzS2VybmVsMDExNFN0eWxlcyIsIl9iZXlvbmRKc1JlYWN0MThXaWRnZXRzMTE4UGFnZSIsIl9haW1wYWN0QWlsZWFyblNkazEyMEFwcGxpY2F0aW9uIiwiX2FpbXBhY3RDaGF0U2RrMTU1U2Vzc2lvbiIsIl9iZXlvbmRKc1JlYWN0aXZlMjEyTW9kZWwiLCJfcmVhY3QyIiwiX2FpbXBhY3RDaGF0U2RrMTU1V2lkZ2V0c01hcmtkb3duIiwiX2JleW9uZEpzUmVhY3QxOFdpZGdldHMxMThIb29rcyIsIl9wcmFnbWF0ZVVpMTA4Q29tcG9uZW50cyIsIl9yZWFjdDE4MzFKc3hSdW50aW1lIiwiZXhlY3V0ZSIsInNwZWNpZmllciIsImRlcGVuZGVuY2llcyIsIk1hcCIsImdsb2JhbFRoaXMiLCJyZXNvbHZlIiwiQnVuZGxlIiwibW9kdWxlIiwidnNwZWNpZmllciIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsImJyZXF1aXJlIiwid2lkZ2V0cyIsIm5hbWUiLCJpcyIsInJvdXRlIiwic3R5bGVzIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiLCJfcGFnZSIsIl9zdG9yZSIsIl92aWV3cyIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJzdG9yZSIsImNyZWF0ZVN0b3JlIiwidGhpcyIsIlN0b3JlTWFuYWdlciIsIldpZGdldCIsInNob3ciLCJsb2FkIiwidXJpIiwidmFycyIsImdldCIsImhpZGUiLCJfYXBwbGljYXRpb24iLCJfbW9kZWwiLCJSZWFjdGl2ZU1vZGVsIiwiYXBwbGljYXRpb24iLCJjb250ZW50IiwiY29uc3RydWN0b3IiLCJzdXBlciIsInJlYWN0aXZlUHJvcHMiLCJBcHBsaWNhdGlvbiIsInBhZ2UiLCJyZWFkeSIsInVzZU1vZHVsZUNvbnRleHQiLCJNb2R1bGVDb250ZXh0IiwiX3JlYWN0IiwiZGVmYXVsdCIsImNyZWF0ZUNvbnRleHQiLCJ1c2VDb250ZXh0IiwiUmVhY3QiLCJfcHJpdmFjeSIsImNyZWF0ZUVsZW1lbnQiLCJjbGFzc05hbWUiLCJfanN4UnVudGltZSIsIl9jcmVhdGVNZHhDb250ZW50IiwicHJvcHMiLCJfY29tcG9uZW50cyIsImFzc2lnbiIsImgxIiwicCIsImgyIiwidWwiLCJsaSIsImNvbXBvbmVudHMiLCJqc3hzIiwiRnJhZ21lbnQiLCJjaGlsZHJlbiIsImpzeCIsIk1EWENvbnRlbnQiLCJ3cmFwcGVyIiwiTURYTGF5b3V0IiwiX2RlZmF1bHQiLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwicHJvY2VzcyIsInByb3AiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxrQ0FBbUMsa0NBQW1DLGtDQUFtQyx5Q0FBMEMseUNBQTBDLGtDQUFtQyxrQ0FBbUMsZUFBZ0IsMkNBQTRDLDBDQUEyQywrQkFBZ0MsNEJB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
+System.register(["@beyond-js/widgets@1.1.2/render", "@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/styles", "@beyond-js/react-18-widgets@1.1.8/page", "@aimpact/ailearn-sdk@1.2.0/application", "@aimpact/chat-sdk@1.5.5/session", "@beyond-js/reactive@2.1.2/model", "react@18.3.1", "@aimpact/chat-sdk@1.5.5/widgets/markdown", "@beyond-js/react-18-widgets@1.1.8/hooks", "pragmate-ui@1.0.8/components", "react@18.3.1/jsx-runtime"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, dependency_10, dependency_11, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
+  _export({
+    Controller: void 0,
+    View: void 0
+  });
+  return {
+    setters: [function (_beyondJsWidgets112Render) {
+      dependency_0 = _beyondJsWidgets112Render;
+    }, function (_beyondJsKernel0114Bundle) {
+      dependency_1 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_2 = _beyondJsKernel0114Styles;
+    }, function (_beyondJsReact18Widgets118Page) {
+      dependency_3 = _beyondJsReact18Widgets118Page;
+    }, function (_aimpactAilearnSdk120Application) {
+      dependency_4 = _aimpactAilearnSdk120Application;
+    }, function (_aimpactChatSdk155Session) {
+      dependency_5 = _aimpactChatSdk155Session;
+    }, function (_beyondJsReactive212Model) {
+      dependency_6 = _beyondJsReactive212Model;
+    }, function (_react2) {
+      dependency_7 = _react2;
+    }, function (_aimpactChatSdk155WidgetsMarkdown) {
+      dependency_8 = _aimpactChatSdk155WidgetsMarkdown;
+    }, function (_beyondJsReact18Widgets118Hooks) {
+      dependency_9 = _beyondJsReact18Widgets118Hooks;
+    }, function (_pragmateUi108Components) {
+      dependency_10 = _pragmateUi108Components;
+    }, function (_react1831JsxRuntime) {
+      dependency_11 = _react1831JsxRuntime;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.2"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_1);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/pages/privacy"
+        },
+        "type": "widget"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['@aimpact/ailearn-sdk/application', dependency_4], ['@aimpact/chat-sdk/session', dependency_5], ['@beyond-js/reactive/model', dependency_6], ['react', dependency_7], ['@aimpact/chat-sdk/widgets/markdown', dependency_8], ['@beyond-js/react-18-widgets/hooks', dependency_9], ['pragmate-ui/components', dependency_10], ['react/jsx-runtime', dependency_11]]);
+      brequire('@beyond-js/widgets/render').widgets.register([{
+        "name": "privacy-page",
+        "vspecifier": "@aimpact/ailearn-app@0.7.0/pages/privacy",
+        "is": "page",
+        "route": "/privacy"
+      }]);
+      brequire('@beyond-js/kernel/styles').styles.register('@aimpact/ailearn-app@0.7.0/pages/privacy');
+      ims = new Map();
+      /****************************
+      INTERNAL MODULE: ./controller
+      ****************************/
+      ims.set('./controller', {
+        hash: 308745009,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Controller = void 0;
+          var _page = require("@beyond-js/react-18-widgets/page");
+          var _store = require("./store");
+          var _views = require("./views");
+          /*bundle*/
+          class Controller extends _page.PageReactWidgetController {
+            #store;
+            createStore() {
+              this.#store = new _store.StoreManager();
+              return this.#store;
+            }
+            get Widget() {
+              return _views.View;
+            }
+            /**
+             * this method is executed when the widget is showd
+             */
+            show() {
+              this.#store.load(this.uri.vars.get('page'));
+            }
+            /**
+             * this method is executed when the widget is hidden
+             */
+            hide() {}
+          }
+          exports.Controller = Controller;
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./store
+      ***********************/
+
+      ims.set('./store', {
+        hash: 1722649233,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.StoreManager = void 0;
+          var _application = require("@aimpact/ailearn-sdk/application");
+          var _model = require("@beyond-js/reactive/model");
+          //@ts-ignore
+          class StoreManager extends _model.ReactiveModel {
+            application;
+            #content;
+            get content() {
+              return this.#content;
+            }
+            constructor() {
+              super();
+              this.reactiveProps(['page']);
+              this.application = new _application.Application();
+              globalThis.store = this;
+            }
+            async load(page) {
+              // const data = await this.application.policies();
+              // this.#content = data.policy;
+              this.page = page;
+              this.ready = true;
+            }
+          }
+          exports.StoreManager = StoreManager;
+        }
+      });
+
+      /*******************************
+      INTERNAL MODULE: ./views/context
+      *******************************/
+
+      ims.set('./views/context', {
+        hash: 3251310977,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.useModuleContext = exports.ModuleContext = void 0;
+          var _react = require("react");
+          const ModuleContext = exports.ModuleContext = _react.default.createContext({});
+          const useModuleContext = () => _react.default.useContext(ModuleContext);
+          exports.useModuleContext = useModuleContext;
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./views/index
+      *****************************/
+
+      ims.set('./views/index', {
+        hash: 3245278203,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.View = View;
+          var React = require("react");
+          var _privacy = require("./privacy.mdx");
+          /*bundle*/
+          function View({
+            store
+          }) {
+            return React.createElement("div", {
+              className: "container-page-content"
+            }, React.createElement(_privacy.default, null));
+          }
+        }
+      });
+
+      /***********************************
+      INTERNAL MODULE: ./views/privacy.mdx
+      ***********************************/
+
+      ims.set('./views/privacy.mdx', {
+        hash: 2568567038,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.default = void 0;
+          var _jsxRuntime = require("react/jsx-runtime");
+          /*@jsxRuntime automatic @jsxImportSource react*/
+
+          function _createMdxContent(props) {
+            const _components = Object.assign({
+              h1: "h1",
+              p: "p",
+              h2: "h2",
+              ul: "ul",
+              li: "li"
+            }, props.components);
+            return (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+              children: [(0, _jsxRuntime.jsx)(_components.h1, {
+                children: "Política de Privacidad RVD.AI"
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "Fecha de última actualización: 4 de marzo de 2024"
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "Esta Política de Privacidad forma parte integrante de los Términos y Condiciones de Uso de RVD.AI (los “Términos y\r\nCondiciones de Uso”). Todos los términos empleados en el presente documento que no se encuentran definidos especialmente\r\nen éste, tendrán el significado atribuidos a los mismos en los Términos y Condiciones de Uso. Esta Política de\r\nPrivacidad describe cómo el Prestador (en adelante, “El Prestador”) recopila, utiliza y protege la información personal\r\nque el Usuario proporciona al utilizar el Servicio."
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "Al aceptar los Términos y Condiciones de Uso, el Usuario presta su consentimiento libre, expreso e informado a todas las\r\nprevisiones de la presente Política de Privacidad."
+              }), "\n", (0, _jsxRuntime.jsx)(_components.h2, {
+                children: "1. Información que se Recopila:"
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "Cuando el Usuario utiliza los Servicios, podría recopilarse la siguiente Información:"
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "Información de Registro: Al registrarse el Usuario en nuestro servicio, podemos solicitar información como su nombre,\r\ndirección de correo electrónico, fecha de nacimiento y otra información necesaria para crear su cuenta."
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "Interacción con la IA: Podemos recopilar información sobre la interacción del Usuario con la IA incluidas las consultas\r\nrealizadas y las respuestas proporcionadas."
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "Información de Uso: Podemos recopilar información sobre cómo utiliza el Servicio, como los recursos a los que el Usuario\r\naccede y el tiempo que pasa en el Sitio web (y aplicaciones). También podrán ser recopiladas la dirección IP del\r\nUsuario, cookies, y datos que permitirán identificar el navegador o cuenta del Usuario."
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "Todo ello, la “información”."
+              }), "\n", (0, _jsxRuntime.jsx)(_components.h2, {
+                children: "2. Uso de la Información:"
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "El Prestador utiliza la Información recopilada para los siguientes propósitos:"
+              }), "\n", (0, _jsxRuntime.jsxs)(_components.ul, {
+                children: ["\n", (0, _jsxRuntime.jsx)(_components.li, {
+                  children: "Proporcionar y mantener el Servicio."
+                }), "\n", (0, _jsxRuntime.jsx)(_components.li, {
+                  children: "Mejorar y personalizar la experiencia del Usuario."
+                }), "\n", (0, _jsxRuntime.jsx)(_components.li, {
+                  children: "Comprender cómo se utiliza el Servicio y realizar análisis para mejorar productos y servicios."
+                }), "\n", (0, _jsxRuntime.jsx)(_components.li, {
+                  children: "Enviar comunicaciones promocionales y actualizaciones relacionadas con el Servicio, siempre que el Usuario no haya\r\nrechazado esta opción."
+                }), "\n"]
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "La Información objeto de Tratamiento no será utilizada para finalidades distintas o incompatibles con aquellas que\r\nmotivaron su obtención y será destruida cuando haya dejado de ser necesaria o pertinente a los fines para los cuales\r\nhubiese sido recolectada."
+              }), "\n", (0, _jsxRuntime.jsx)(_components.h2, {
+                children: "3. Como podría compartirse la Información del Usuario:"
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "El Prestador no vende ni alquila su Información personal a terceros. Sin embargo, podemos compartir su Información en\r\nlas siguientes circunstancias:"
+              }), "\n", (0, _jsxRuntime.jsxs)(_components.ul, {
+                children: ["\n", (0, _jsxRuntime.jsxs)(_components.li, {
+                  children: ["\n", (0, _jsxRuntime.jsx)(_components.p, {
+                    children: "Con proveedores de servicios que ayudan al Prestador a operar el Servicio y brindar otros productos y servicios."
+                  }), "\n"]
+                }), "\n", (0, _jsxRuntime.jsxs)(_components.li, {
+                  children: ["\n", (0, _jsxRuntime.jsx)(_components.p, {
+                    children: "Cuando sea requerido por la ley o en respuesta a una solicitud legal válida, como una orden judicial."
+                  }), "\n"]
+                }), "\n", (0, _jsxRuntime.jsxs)(_components.li, {
+                  children: ["\n", (0, _jsxRuntime.jsx)(_components.p, {
+                    children: "Con el consentimiento del Usuario o de acuerdo con sus instrucciones."
+                  }), "\n"]
+                }), "\n"]
+              }), "\n", (0, _jsxRuntime.jsx)(_components.h2, {
+                children: "4. Seguridad de la Información:"
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "El Usuario se compromete a proteger la seguridad de su Información personal y a utilizar medidas de seguridad razonables\r\npara protegerla contra el acceso no autorizado, la divulgación, la alteración o la destrucción. Se destaca que la\r\nInformación que se recopila puede ser transferida, almacenada y/o tratada en Estados Unidos u otros países fuera de\r\nArgentina, y al proporcionar su Información, el Usuario consiente dicha transferencia, almacenamiento y/o Tratamiento."
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "Se entenderá por “Tratamiento” a todas las operaciones y procedimientos sistemáticos, electrónicos o no, que permitan la\r\nrecolección, conservación, ordenación, almacenamiento, modificación, relacionamiento, evaluación, bloqueo, destrucción,\r\ny en general el procesamiento de datos personales, así como también su cesión a terceros a través de comunicaciones,\r\nconsultas, interconexiones o transferencias."
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "La transferencia de Información se realizará en todo caso, exclusivamente a países cuyas legislaciones proporcionen\r\nniveles de protección adecuados y conformes con esta Política de Privacidad."
+              }), "\n", (0, _jsxRuntime.jsx)(_components.h2, {
+                children: "5. Cambios en la Política de Privacidad:"
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "El Prestador se reserva el derecho de actualizar esta Política de Privacidad en cualquier momento para cumplir con las\r\nleyes y regulaciones aplicables. Le notificaremos cualquier cambio publicando la Política de Privacidad actualizada en\r\nnuestro sitio web y actualizando la fecha de “Última Actualización” al principio de la Política de Privacidad, todo ello\r\nde acuerdo a lo indicado en los Términos y Condiciones de Uso."
+              }), "\n", (0, _jsxRuntime.jsx)(_components.h2, {
+                children: "6. Sus Derechos y Opciones:"
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "De acuerdo con la Ley de Protección de Datos Personales en Argentina (Ley 25.326), usted tiene derecho a acceder,\r\nrectificar y suprimir su Información, así como a oponerse al Tratamiento de los mismos. También tiene derecho a revocar\r\nsu consentimiento en cualquier momento. Para ejercer estos derechos o para hacer cualquier pregunta sobre la Política de\r\nPrivacidad deberá contactar al servicio de Soporte del Prestador mediante los siguientes medios:"
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "Email:"
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "Teléfono:"
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "Ángel Estrada y Compañía S.A., con domicilio en la calle Maipú 116, Piso 8 (C1084ABD) de la Ciudad Autónoma de Buenos\r\nAires, Argentina, es titular y responsable del tratamiento y de la protección de datos (Información). Los Usuarios\r\npueden enviar solicitudes para ejercer sus derechos con respecto a su Información en el marco de la Ley 25.326."
+              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
+                children: "La Agencia de Acceso a la Información Pública, como órgano regulador de la ley 25.326, es responsable de recibir los\r\nreclamos e informes presentados por interesados que consideren que sus datos se han visto afectados por una infracción\r\nde la Ley de Protección de Datos Personales."
+              })]
+            });
+          }
+          function MDXContent(props = {}) {
+            const {
+              wrapper: MDXLayout
+            } = props.components || {};
+            return MDXLayout ? (0, _jsxRuntime.jsx)(MDXLayout, Object.assign({}, props, {
+              children: (0, _jsxRuntime.jsx)(_createMdxContent, props)
+            })) : _createMdxContent(props);
+          }
+          var _default = exports.default = MDXContent;
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./controller",
+        "from": "Controller",
+        "name": "Controller"
+      }, {
+        "im": "./views/index",
+        "from": "View",
+        "name": "View"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Controller') && _export("Controller", Controller = require ? require('./controller').Controller : value);
+        (require || prop === 'View') && _export("View", View = require ? require('./views/index').View : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcGFnZSIsInJlcXVpcmUiLCJfc3RvcmUiLCJfdmlld3MiLCJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsInN0b3JlIiwiY3JlYXRlU3RvcmUiLCJTdG9yZU1hbmFnZXIiLCJXaWRnZXQiLCJWaWV3Iiwic2hvdyIsImxvYWQiLCJ1cmkiLCJ2YXJzIiwiZ2V0IiwiaGlkZSIsImV4cG9ydHMiLCJfYXBwbGljYXRpb24iLCJfbW9kZWwiLCJSZWFjdGl2ZU1vZGVsIiwiYXBwbGljYXRpb24iLCJjb250ZW50IiwiY29uc3RydWN0b3IiLCJyZWFjdGl2ZVByb3BzIiwiQXBwbGljYXRpb24iLCJnbG9iYWxUaGlzIiwicGFnZSIsInJlYWR5IiwiX3JlYWN0IiwiTW9kdWxlQ29udGV4dCIsImRlZmF1bHQiLCJjcmVhdGVDb250ZXh0IiwidXNlTW9kdWxlQ29udGV4dCIsInVzZUNvbnRleHQiLCJSZWFjdCIsIl9wcml2YWN5IiwiY3JlYXRlRWxlbWVudCIsImNsYXNzTmFtZSJdLCJzb3VyY2VzIjpbIi90cy9jb250cm9sbGVyLnRzIiwiL3RzL3N0b3JlLnRzIiwiL3RzL3ZpZXdzL2NvbnRleHQudHMiLCIvdHMvdmlld3MvaW5kZXgudHN4IiwiL3RzL3ZpZXdzL3ZpZXdzXFxwcml2YWN5Lm1keCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbF0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsS0FBQSxHQUFBQyxPQUFBO1VBQ0EsSUFBQUMsTUFBQSxHQUFBRCxPQUFBO1VBQ0EsSUFBQUUsTUFBQSxHQUFBRixPQUFBO1VBRU87VUFBVSxNQUNYRyxVQUFXLFNBQVFKLEtBQUEsQ0FBQUsseUJBQXlCO1lBQ2pELENBQUFDLEtBQU07WUFDTkMsV0FBV0EsQ0FBQTtjQUNWLElBQUksQ0FBQyxDQUFBRCxL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

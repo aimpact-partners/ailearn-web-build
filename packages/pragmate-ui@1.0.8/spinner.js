@@ -1,2 +1,105 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","react@18.3.1","@beyond-js/kernel@0.1.14/styles"],function(e,r){"use strict";var n,t,s,i,o,a,c,p,l,d;e("Spinner",void 0);return{setters:[function(e){n=e},function(e){t=e},function(e){s=e}],execute:function(){i=e=>{const r=new Map([["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.12"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/reactive","2.1.0"],["@beyond-js/widgets","0.1.6"],["@floating-ui/dom","1.7.3"],["clsx","2.1.1"],["framer-motion","11.11.11"],["perfect-scrollbar","1.5.6"],["prismjs","1.29.0"],["swiper","10.3.1"],["tippy.js","6.3.7"],["@types/react","18.3.12"],["@types/react-dom","18.3.1"],["pragmate-ui","1.0.8"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,r))};({Bundle:o}=n);a=new o({module:{vspecifier:"pragmate-ui@1.0.8/spinner"},type:"code",name:"spinner"},r.meta.url).package();a.dependencies.update([["react",t],["@beyond-js/kernel/styles",s]]);brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@1.0.8/spinner");c=new Map;c.set("./spinner",{hash:3225295911,creator:function(e,r){"use strict";Object.defineProperty(r,"__esModule",{value:true});r.Spinner=void 0;var n=e("react");const t=r.Spinner=(0,n.forwardRef)((e,r)=>{let{color:t,className:s,size:i,type:o,active:a}=e;const c=["on-primary","on-secondary","on-surface","on-error","primary","secondary","tertiary"];const p=c.includes(o)?o:"primary";const l={};if(t)l.stroke=t;s=`${p}${s?` ${s}`:""}`;let d=s?`${s} pragmate-element-spinner`:"pragmate-element-spinner";if(a)d+=" is-active";const m={xs:30,md:40,lg:50,xl:60};const u=m[i]||30;return n.default.createElement("div",{className:d,ref:r},n.default.createElement("svg",{viewBox:"0 0 100 100"},n.default.createElement("circle",{cx:"50",cy:"50",r:u,style:l})))})}});a.exports.descriptor=[{im:"./spinner",from:"Spinner",name:"Spinner"}];a.exports.process=function({require:r,prop:n,value:t}){(r||n==="Spinner")&&e("Spinner",p=r?r("./spinner").Spinner:t)};e("__beyond_pkg",l=a);e("hmr",d=new function(){this.on=(e,r)=>a.hmr.on(e,r);this.off=(e,r)=>a.hmr.off(e,r)});a.initialise(c)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvcHJhZ21hdGUtdWlAMS4wLjgvc3Bpbm5lci5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiZGVwZW5kZW5jeV8xIiwiZGVwZW5kZW5jeV8yIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJTcGlubmVyIiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJfcmVhY3QyIiwiX2JleW9uZEpzS2VybmVsMDExNFN0eWxlcyIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJ0eXBlIiwibmFtZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwiYnJlcXVpcmUiLCJzdHlsZXMiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJ2YWx1ZSIsIl9yZWFjdCIsImZvcndhcmRSZWYiLCJwcm9wcyIsInJlZiIsImNvbG9yIiwiY2xhc3NOYW1lIiwic2l6ZSIsImFjdGl2ZSIsInR5cGVzIiwiY2xzVHlwZSIsImluY2x1ZGVzIiwic3R5bGUiLCJzdHJva2UiLCJjbHMiLCJzaXplcyIsInhzIiwibWQiLCJsZyIsInhsIiwiY2lyY2xlU2l6ZSIsImRlZmF1bHQiLCJjcmVhdGVFbGVtZW50Iiwidmlld0JveCIsImN4IiwiY3kiLCJyIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsInByb2Nlc3MiLCJwcm9wIiwidGhpcyIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLGtDQUFt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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "react@18.3.1", "@beyond-js/kernel@0.1.14/styles"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, Spinner, __beyond_pkg, hmr;
+  _export("Spinner", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_react2) {
+      dependency_1 = _react2;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_2 = _beyondJsKernel0114Styles;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.0"], ["@beyond-js/widgets", "0.1.6"], ["@floating-ui/dom", "1.7.3"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.8"], ["@aimpact/rvd", "0.7.2"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.8/spinner"
+        },
+        "type": "code",
+        "name": "spinner"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['react', dependency_1], ['@beyond-js/kernel/styles', dependency_2]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@1.0.8/spinner');
+      ims = new Map();
+      /*************************
+      INTERNAL MODULE: ./spinner
+      *************************/
+      ims.set('./spinner', {
+        hash: 3225295911,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Spinner = void 0;
+          var _react = require("react");
+          /*bundle*/
+          const Spinner = exports.Spinner = (0, _react.forwardRef)((props, ref) => {
+            let {
+              color,
+              className,
+              size,
+              type,
+              active
+            } = props;
+            const types = ['on-primary', 'on-secondary', 'on-surface', 'on-error', 'primary', 'secondary', 'tertiary'];
+            const clsType = types.includes(type) ? type : 'primary';
+            const style = {};
+            if (color) style.stroke = color;
+            className = `${clsType}${className ? ` ${className}` : ''}`;
+            let cls = className ? `${className} pragmate-element-spinner` : 'pragmate-element-spinner';
+            if (active) cls += ' is-active';
+            const sizes = {
+              xs: 30,
+              md: 40,
+              lg: 50,
+              xl: 60
+            };
+            const circleSize = sizes[size] || 30;
+            return _react.default.createElement("div", {
+              className: cls,
+              ref: ref
+            }, _react.default.createElement("svg", {
+              viewBox: '0 0 100 100'
+            }, _react.default.createElement("circle", {
+              cx: '50',
+              cy: '50',
+              r: circleSize,
+              style: style
+            })));
+          });
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./spinner",
+        "from": "Spinner",
+        "name": "Spinner"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Spinner') && _export("Spinner", Spinner = require ? require('./spinner').Spinner : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiU3Bpbm5lciIsImV4cG9ydHMiLCJmb3J3YXJkUmVmIiwicHJvcHMiLCJyZWYiLCJjb2xvciIsImNsYXNzTmFtZSIsInNpemUiLCJ0eXBlIiwiYWN0aXZlIiwidHlwZXMiLCJjbHNUeXBlIiwiaW5jbHVkZXMiLCJzdHlsZSIsInN0cm9rZSIsImNscyIsInNpemVzIiwieHMiLCJtZCIsImxnIiwieGwiLCJjaXJjbGVTaXplIiwiZGVmYXVsdCIsImNyZWF0ZUVsZW1lbnQiLCJ2aWV3Qm94IiwiY3giLCJjeSIsInIiXSwic291cmNlcyI6WyIvdHMvc3Bpbm5lci50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1VBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO1VBUU87VUFDUCxNQUFNQyxPQUFPLEdBQUFDLE9BQUEsQ0FBQUQsT0FBQSxHQUFrRCxJQUFBRixNQUFBLENBQUFJLFVBQVUsRUFDeEUsQ0FBQ0MsS0FBaUIsRUFBRUMsR0FBOEIsS0FBaUI7WUFDbEUsSUFBSTtjQUFFQyxLQUFLO2NBQUVDLFNBQVM7Y0FBRUMsSUFBSTtjQUFFQyxJQUFJO2NBQUVDO1lBQU0sQ0FBRSxHQUFHTixLQUFLO1lBRXBELE1BQU1PLEtBQUssR0FBRyxDQUFDLFlBQVksRUFBRSxjQUFjLEVBQUUsWUFBWSxFQUFFLFVBQVUsRUFBRSxTQUFTLEVBQUUsV0FBVyxFQUFFLFVBQVUsQ0FBQztZQUMxRyxNQUFNQyxPQUFPLEdBQUdELEtBQUssQ0FBQ0UsUUFBUSxDQUFDSixJQUFJLENBQUMsR0FBR0EsSUFBSSxHQUFHLFNBQVM7WUFFdkQsTUFBTUssS0FBSyxHQUF3QixFQUFFO1lBQ3JDLElBQUlSLEtBQUssRUFBRVEsS0FBSyxDQUFDQyxNQUFNLEdBQUdULEtBQUs7WUFDL0JDLFNBQVMsR0FBRyxHQUFHSyxPQUFPLEdBQUdMLFNBQVMsR0FBRyxJQUFJQSxTQUFTLEVBQUUsR0FBRyxFQUFFLEVBQUU7WUFDM0QsSUFBSVMsR0FBRyxHQUFXVCxTQUFTLEdBQUcsR0FBR0EsU0FBUywyQkFBMkIsR0FBRywwQkFBMEI7WUFDbEcsSUFBSUcsTUFBTSxFQUFFTSxHQUFHLElBQUksWUFBWTtZQUUvQixNQUFNQyxLQUFLLEdBQUc7Y0FDYkMsRUFBRSxFQUFFLEVBQUU7Y0FDTkMsRUFBRSxFQUFFLEVBQUU7Y0FDTkMsRUFBRSxFQUFFLEVBQUU7Y0FDTkMsRUFBRSxFQUFFO2FBQ0o7WUFDRCxNQUFNQyxVQUFVLEdBQUdMLEtBQUssQ0FBQ1QsSUFBSSxDQUFDLElBQUksRUFBRTtZQUVwQyxPQUNDVCxNQUFBLENBQUF3QixPQUFBLENBQUFDLGFBQUE7Y0FBS2pCLFNBQVMsRUFBRVMsR0FBRztjQUFFWCxHQUFHLEVBQUVBO1lBQUcsR0FDNUJOLE1BQUEsQ0FBQXdCLE9BQUEsQ0FBQUMsYUFBQTtjQUFLQyxPQUFPLEVBQUM7WUFBYSxHQUN6QjFCLE1BQUEsQ0FBQXdCLE9BQUEsQ0FBQUMsYUFBQTtjQUFRRSxFQUFFLEVBQUMsSUFBSTtjQUFDQyxFQUFFLEVBQUMsSUFBSTtjQUFDQyxDQUFDLEVBQUVOLFVBQVU7Y0FBRVIsS0FBSyxFQUFFQTtZQUFLLEVBQUksQ0FDbEQsQ0FDRDtVQUVSLENBQUMsQ0FDRCIsImlnbm9yZUxpc3QiOltdfQ==

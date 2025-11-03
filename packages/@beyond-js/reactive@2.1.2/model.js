@@ -1,2 +1,479 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","zod@3.25.67","@beyond-js/events@0.0.7/events"],function(e,t){"use strict";var i,r,s,o,n,a,c,l,u,p,d,h,f;e({ReactiveModel:void 0,ModelProperties:void 0,IReactiveModelOptions:void 0,SetPropertiesResult:void 0});return{setters:[function(e){i=e},function(e){r=e},function(e){s=e}],execute:function(){o=e=>{const t=new Map([["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["uuid","11.1.0"],["zod","3.24.2"],["react","18.3.1"],["@beyond-js/reactive","2.1.2"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:n}=i);a=new n({module:{vspecifier:"@beyond-js/reactive@2.1.2/model"},type:"ts"},t.meta.url).package();a.dependencies.update([["zod",r],["@beyond-js/events/events",s]]);c=new Map;c.set("./index",{hash:2855235355,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.ReactiveModel=void 0;var i=e("zod");var r=e("@beyond-js/events/events");class s extends r.Events{debounceTimeout;processing=false;processed=false;loaded=false;#e=false;#t;_reactiveProps={};static isReactive(){return true}get isReactive(){return true}properties=[];#i=false;get isDraft(){return this.#i}#r=new Set;get propertyNames(){return this.#r}get ready(){return this.#e}set ready(e){this.#e=e;this.trigger("ready");this.trigger("change")}schema;#s={};get initialValues(){return this.#s}get unpublished(){const e=this.getProperties()??{};return Object.keys(e).some(t=>{if(t==="id")return false;if(Array.isArray(e[t])){if(e[t].length!==this.#s[t]?.length)return true;return JSON.stringify(e[t])!==JSON.stringify(this.#s[t])}if(typeof e[t]==="object"){if(this[t]instanceof s){return this[t].unpublished}return JSON.stringify(e[t])!==JSON.stringify(this.#s[t])}return e[t]!==this.#s[t]})}get isUnpublished(){return this.unpublished}constructor({properties:e,...t}={properties:[]}){super();const i=["fetching","fetched","processing","processed","loaded"];if(e){this.properties=e;this.defineReactiveProps(e,t);if(Object.keys(t).length>0){this.setInitialValues(t)}}this.debug("props",t,e);this.defineReactiveProps(i,this.initialValues)}debug(...e){if(this.#t===this.constructor.name){console.log(...e)}}setInitialValues(e){if(!e)return this.#s;const t={};this.properties.forEach(i=>{if(typeof i!=="string"){i=i;t[i.name]=e[i.name];return}t[i]=e[i]});this.#i=Object.keys(e).length===0;this.#s=t;return this.#s}getProperty(e){return this._reactiveProps[e]}property=this.getProperty;defineReactiveProp(e,t,i=false){this._reactiveProps[e]=t;Object.defineProperty(this,e,{get:()=>this._reactiveProps[e],set:t=>{if(i){const i=this._reactiveProps[e];this.trigger(`${e}.changed`,{value:t,previous:i.getProperties()});this.trigger("change");this._reactiveProps[e].set(t);return}if(t!==undefined&&t===this._reactiveProps[e])return;const r=this._reactiveProps[e];this._reactiveProps[e]=t;this.trigger(`${e}.changed`,{value:t,previous:r});this.trigger("change")},enumerable:true,configurable:true})}defineReactiveProps(e,t){for(let i of e){const e=Object.getOwnPropertyDescriptor(this,i);if(i===undefined)continue;if(typeof i!=="object"){this.#r.add(i);let r=t?.[i]??e?.value;this.defineReactiveProp(i,r);continue}const r=i;const s=r.name;let o=t?.[s]??e?.value;const n=r.properties??{};if(typeof r.value!=="function"&&typeof r.value!=="object"){console.warn(`Invalid value type for  ${s}`);continue}const a=r.value.isCollection?{parent:this}:{parent:this,...o,...n};const c=new r.value(a);if(r.value.isCollection){c.setItems(o)}this.#r.add(s);this.defineReactiveProp(s,c,true);continue}}reactiveProps(e){this.defineReactiveProps(e)}setProperty(e,t){this._reactiveProps[e]=t}validateProperty(e,t){if(!this.schema){return{valid:true,error:null}}if(!this.schema.shape[e]){return{valid:false,error:new i.ZodError([{path:[e],message:`Property ${e} is not defined in the schema`,code:"custom"}])}}const r=this.schema.shape[e];const s=r.safeParse(t);if(!s.success){return{valid:false,error:s.error}}return{valid:true,error:null}}isSameObject=(e,t)=>JSON.stringify(e)===JSON.stringify(t);validate(e){const t=Object.keys(e);const i={};const r=t=>{if(!this.properties||!this.properties.includes(t)){console.trace(`is not a property`,t);return}const r=this.validateProperty(t,e[t]);if(!r.valid){i[t]=r.error}};t.forEach(r);return{valid:Object.keys(i).length===0,errors:i}}set(e){if(!e){console.warn("you are trying to set an empty object",this.constructor.name,e);return{updated:false}}const t=Object.keys(e);let i=false;const r={};this.debug(0,e);const s=t=>{this.debug(t,e[t]);if(!this.#r.has(t)){return}const s=this.validateProperty(t,e[t]);this.debug(t,e[t],s);if(!s.valid){r[t]=s}if(t==="provinces"){}if(this.getProperty(t)?.isReactive){const r=this.getProperty(t);if(r.isCollection){r.setItems(e[t])}else{r.set(e[t])}if(r.unpublished)i=true;return}const o=typeof e[t]==="object";const n=o&&this.isSameObject([t],this[t]);if(this[t]===e[t]||n){return}this.trigger(`${t}.changed`,{value:e[t],previous:this[t]});this[t]=e[t];i=true};t.forEach(s);if(i){this.trigger("change");this.trigger("set.executed")}return{updated:i,errors:r}}getProperties(){const e={};const t=t=>{let i=t;if(typeof t==="object"&&t.value.isReactive){i=t.name;e[String(i)]=t.value.isCollection?this[i].getItemProperties():this[i]?.getProperties();return}e[String(i)]=this[i]};this.properties.forEach(t);return e}revert(){this.set(this.initialValues)}saveChanges(){this.#s=this.getProperties();this.#i=false}triggerEvent=(e="change",t={})=>{this.trigger(e)}}t.ReactiveModel=s}});c.set("./types/index",{hash:2677658917,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true})}});a.exports.descriptor=[{im:"./index",from:"ReactiveModel",name:"ReactiveModel"},{im:"./types/index",from:"ModelProperties",name:"ModelProperties"},{im:"./types/index",from:"IReactiveModelOptions",name:"IReactiveModelOptions"},{im:"./types/index",from:"SetPropertiesResult",name:"SetPropertiesResult"}];a.exports.process=function({require:t,prop:i,value:r}){(t||i==="ReactiveModel")&&e("ReactiveModel",l=t?t("./index").ReactiveModel:r);(t||i==="ModelProperties")&&e("ModelProperties",u=t?t("./types/index").ModelProperties:r);(t||i==="IReactiveModelOptions")&&e("IReactiveModelOptions",p=t?t("./types/index").IReactiveModelOptions:r);(t||i==="SetPropertiesResult")&&e("SetPropertiesResult",d=t?t("./types/index").SetPropertiesResult:r)};e("__beyond_pkg",h=a);e("hmr",f=new function(){this.on=(e,t)=>a.hmr.on(e,t);this.off=(e,t)=>a.hmr.off(e,t)});a.initialise(c)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGJleW9uZC1qcy9yZWFjdGl2ZUAyLjEuMi9tb2RlbC5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiZGVwZW5kZW5jeV8xIiwiZGVwZW5kZW5jeV8yIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJSZWFjdGl2ZU1vZGVsIiwiTW9kZWxQcm9wZXJ0aWVzIiwiSVJlYWN0aXZlTW9kZWxPcHRpb25zIiwiU2V0UHJvcGVydGllc1Jlc3VsdCIsIl9fYmV5b25kX3BrZyIsImhtciIsInNldHRlcnMiLCJfYmV5b25kSnNLZXJuZWwwMTE0QnVuZGxlIiwiX3pvZDIiLCJfYmV5b25kSnNFdmVudHMwMDdFdmVudHMiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiLCJfem9kIiwiX2V2ZW50cyIsIkV2ZW50cyIsImRlYm91bmNlVGltZW91dCIsInByb2Nlc3NpbmciLCJwcm9jZXNzZWQiLCJsb2FkZWQiLCJyZWFkeSIsImRlYnVnIiwiX3JlYWN0aXZlUHJvcHMiLCJpc1JlYWN0aXZlIiwicHJvcGVydGllcyIsImlzRHJhZnQiLCJ0aGlzIiwicHJvcGVydHlOYW1lcyIsIlNldCIsInRyaWdnZXIiLCJzY2hlbWEiLCJpbml0aWFsVmFsdWVzIiwidW5wdWJsaXNoZWQiLCJnZXRQcm9wZXJ0aWVzIiwia2V5cyIsInNvbWUiLCJwcm9wIiwiQXJyYXkiLCJpc0FycmF5IiwibGVuZ3RoIiwiSlNPTiIsInN0cmluZ2lmeSIsImlzVW5wdWJsaXNoZWQiLCJjb25zdHJ1Y3RvciIsInByb3BzIiwic3VwZXIiLCJkZWZhdWx0UHJvcHMiLCJkZWZpbmVSZWFjdGl2ZVByb3BzIiwic2V0SW5pdGlhbFZhbHVlcyIsImFyZ3MiLCJuYW1lIiwiY29uc29sZSIsImxvZyIsInNwZWNzIiwidmFsdWVzIiwiZm9yRWFjaCIsInByb3BlcnR5IiwiZ2V0UHJvcGVydHkiLCJrZXkiLCJkZWZpbmVSZWFjdGl2ZVByb3AiLCJwcm9wS2V5IiwiaW5pdGlhbFZhbHVlIiwibW9kZWwiLCJnZXQiLCJuZXdWYWwiLCJpbnN0YW5jZSIsInByZXZpb3VzIiwidW5kZWZpbmVkIiwiZW51bWVyYWJsZSIsImNvbmZpZ3VyYWJsZSIsImRlc2NyaXB0b3IiLCJnZXRPd25Qcm9wZXJ0eURlc2NyaXB0b3IiLCJhZGQiLCJkYXRhIiwid2FybiIsInBhcmFtZXRlcnMiLCJpc0NvbGxlY3Rpb24iLCJwYXJlbnQiLCJzZXRJdGVtcyIsInJlYWN0aXZlUHJvcHMiLCJzZXRQcm9wZXJ0eSIsInZhbGlkYXRlUHJvcGVydHkiLCJ2YWxpZCIsImVycm9yIiwic2hhcGUiLCJab2RFcnJvciIsInBhdGgiLCJtZXNzYWdlIiwiY29kZSIsInByb3BTY2hlbWEiLCJyZXN1bHQiLCJzYWZlUGFyc2UiLCJzdWNjZXNzIiwiaXNTYW1lT2JqZWN0IiwiYSIsImIiLCJ2YWxpZGF0ZSIsImVycm9ycyIsIm9uVmFsaWRhdGUiLCJpbmNsdWRlcyIsInRyYWNlIiwidmFsaWRhdGVkIiwidXBkYXRlZCIsIm9uU2V0IiwiaGFzIiwiaXNPYmplY3QiLCJsb29wIiwiU3RyaW5nIiwiZ2V0SXRlbVByb3BlcnRpZXMiLCJyZXZlcnQiLCJzYXZlQ2hhbmdlcyIsInRyaWdnZXJFdmVudCIsImV2ZW50IiwicGFyYW1zIiwiaW0iLCJmcm9tIiwicHJvY2VzcyIsIm9uIiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxrQ0FBbUMs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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "zod@3.25.67", "@beyond-js/events@0.0.7/events"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, ReactiveModel, ModelProperties, IReactiveModelOptions, SetPropertiesResult, __beyond_pkg, hmr;
+  _export({
+    ReactiveModel: void 0,
+    ModelProperties: void 0,
+    IReactiveModelOptions: void 0,
+    SetPropertiesResult: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_zod2) {
+      dependency_1 = _zod2;
+    }, function (_beyondJsEvents007Events) {
+      dependency_2 = _beyondJsEvents007Events;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["uuid", "11.1.0"], ["zod", "3.24.2"], ["react", "18.3.1"], ["@beyond-js/reactive", "2.1.2"], ["@aimpact/rvd", "0.7.2"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@beyond-js/reactive@2.1.2/model"
+        },
+        "type": "ts"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['zod', dependency_1], ['@beyond-js/events/events', dependency_2]]);
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 2855235355,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.ReactiveModel = void 0;
+          var _zod = require("zod");
+          var _events = require("@beyond-js/events/events");
+          /*bundle */
+          class ReactiveModel extends _events.Events {
+            debounceTimeout;
+            processing = false;
+            processed = false;
+            loaded = false;
+            #ready = false;
+            #debug;
+            _reactiveProps = {};
+            static isReactive() {
+              return true;
+            }
+            get isReactive() {
+              return true;
+            }
+            //TODO: Validate how to handle the properties
+            properties = [];
+            // properties of the object
+            #isDraft = false;
+            get isDraft() {
+              return this.#isDraft;
+            }
+            #propertyNames = new Set();
+            get propertyNames() {
+              return this.#propertyNames;
+            }
+            get ready() {
+              return this.#ready;
+            }
+            set ready(value) {
+              this.#ready = value;
+              this.trigger('ready');
+              this.trigger('change');
+            }
+            schema;
+            #initialValues = {};
+            get initialValues() {
+              return this.#initialValues;
+            }
+            /**
+             * Defines if the model has been modified since it was loaded.
+             */
+            get unpublished() {
+              const properties = this.getProperties() ?? {};
+              return Object.keys(properties).some(prop => {
+                if (prop === 'id') return false;
+                if (Array.isArray(properties[prop])) {
+                  if (properties[prop].length !== this.#initialValues[prop]?.length) return true;
+                  return JSON.stringify(properties[prop]) !== JSON.stringify(this.#initialValues[prop]);
+                }
+                if (typeof properties[prop] === 'object') {
+                  if (this[prop] instanceof ReactiveModel) {
+                    return this[prop].unpublished;
+                  }
+                  return JSON.stringify(properties[prop]) !== JSON.stringify(this.#initialValues[prop]);
+                }
+                return properties[prop] !== this.#initialValues[prop];
+              });
+            }
+            /**
+             * @deprecated Use `unpublished` instead.
+             */
+            get isUnpublished() {
+              return this.unpublished;
+            }
+            constructor({
+              properties,
+              ...props
+            } = {
+              properties: []
+            }) {
+              super();
+              // this.#debug = 'Courier';
+              const defaultProps = ['fetching', 'fetched', 'processing', 'processed', 'loaded'];
+              if (properties) {
+                this.properties = properties;
+                this.defineReactiveProps(properties, props);
+                if (Object.keys(props).length > 0) {
+                  this.setInitialValues(props);
+                }
+              }
+              this.debug('props', props, properties);
+              this.defineReactiveProps(defaultProps, this.initialValues);
+            }
+            /**
+             * Logs debug information to the console only when the #debug property matches the constructor name.
+             * This allows for targeted debugging of specific model instances by setting the #debug property
+             * to the class name you want to debug.
+             *
+             * @param args - Any arguments to be logged to the console
+             */
+            debug(...args) {
+              if (this.#debug === this.constructor.name) {
+                console.log(...args);
+              }
+            }
+            /**
+             * Sets the initial values for the model based on the provided specifications.
+             * This method processes the model's properties and extracts their values from the specs object.
+             * If no specs are provided, it returns the existing initial values.
+             *
+             * The method also determines if the model is a draft by checking if the specs object is empty.
+             *
+             * @param specs - Optional partial object containing property values to set as initial values
+             * @returns The initial values object that was set
+             */
+            setInitialValues(specs) {
+              if (!specs) return this.#initialValues;
+              const values = {};
+              this.properties.forEach(property => {
+                if (typeof property !== 'string') {
+                  property = property;
+                  values[property.name] = specs[property.name];
+                  return;
+                }
+                values[property] = specs[property];
+              });
+              this.#isDraft = Object.keys(specs).length === 0;
+              this.#initialValues = values;
+              return this.#initialValues;
+            }
+            getProperty(key) {
+              return this._reactiveProps[key]; // Type-safe access.
+            }
+            property = this.getProperty;
+            defineReactiveProp(propKey, initialValue, model = false) {
+              this._reactiveProps[propKey] = initialValue;
+              Object.defineProperty(this, propKey, {
+                get: () => {
+                  return this._reactiveProps[propKey];
+                },
+                set: newVal => {
+                  if (model) {
+                    const instance = this._reactiveProps[propKey];
+                    this.trigger(`${propKey}.changed`, {
+                      value: newVal,
+                      previous: instance.getProperties()
+                    });
+                    this.trigger('change');
+                    this._reactiveProps[propKey].set(newVal);
+                    return;
+                  }
+                  if (newVal !== undefined && newVal === this._reactiveProps[propKey]) return;
+                  const previous = this._reactiveProps[propKey];
+                  this._reactiveProps[propKey] = newVal;
+                  this.trigger(`${propKey}.changed`, {
+                    value: newVal,
+                    previous
+                  });
+                  this.trigger('change');
+                },
+                enumerable: true,
+                configurable: true
+              });
+            }
+            /**
+             *  Defines the reactive properties of the object.
+             * The properties are defined as an array of strings or objects.
+             * The objects must have a `name` property with the name of the property and a `value` property with the class of the object.
+             * The `value` property can be a class or an object.
+             * If the `value` property is a class, the class must extend the `ReactiveModel` class.
+             *
+             * @param props
+             * @param values
+             */
+            defineReactiveProps(props, values) {
+              for (let propKey of props) {
+                const descriptor = Object.getOwnPropertyDescriptor(this, propKey);
+                if (propKey === undefined) continue;
+                if (typeof propKey !== 'object') {
+                  this.#propertyNames.add(propKey);
+                  let initialValue = values?.[propKey] ?? descriptor?.value;
+                  this.defineReactiveProp(propKey, initialValue);
+                  continue;
+                }
+                const data = propKey;
+                const name = data.name;
+                let initialValue = values?.[name] ?? descriptor?.value;
+                const specs = data.properties ?? {};
+                if (typeof data.value !== 'function' && typeof data.value !== 'object') {
+                  console.warn(`Invalid value type for  ${name}`);
+                  continue;
+                }
+                const parameters = data.value.isCollection ? {
+                  parent: this
+                } : {
+                  parent: this,
+                  ...initialValue,
+                  ...specs
+                };
+                const instance = new data.value(parameters);
+                if (data.value.isCollection) {
+                  instance.setItems(initialValue);
+                }
+                this.#propertyNames.add(name);
+                this.defineReactiveProp(name, instance, true);
+                continue;
+              }
+            }
+            reactiveProps(props) {
+              this.defineReactiveProps(props);
+            }
+            setProperty(propKey, value) {
+              this._reactiveProps[propKey] = value;
+            }
+            validateProperty(propKey, value) {
+              if (!this.schema) {
+                return {
+                  valid: true,
+                  error: null
+                };
+              }
+              if (!this.schema.shape[propKey]) {
+                return {
+                  valid: false,
+                  error: new _zod.ZodError([{
+                    path: [propKey],
+                    message: `Property ${propKey} is not defined in the schema`,
+                    code: 'custom'
+                  }])
+                };
+              }
+              const propSchema = this.schema.shape[propKey];
+              const result = propSchema.safeParse(value);
+              if (!result.success) {
+                return {
+                  valid: false,
+                  error: result.error
+                };
+              }
+              return {
+                valid: true,
+                error: null
+              };
+            }
+            isSameObject = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+            /**
+             * Validates the provided properties against the model's Zod schema.
+             * Only validates properties that are defined in the model's properties array.
+             *
+             * @param {Partial<T>} properties - The properties to validate
+             * @returns {{ valid: boolean; errors: PropertyValidationErrors<T> }} An object containing:
+             *   - `valid`: boolean indicating if all properties are valid
+             *   - `errors`: object containing validation errors for each invalid property
+             */
+            validate(properties) {
+              const keys = Object.keys(properties);
+              const errors = {};
+              const onValidate = prop => {
+                if (!this.properties || !this.properties.includes(prop)) {
+                  console.trace(`is not a property`, prop);
+                  return;
+                }
+                const validated = this.validateProperty(prop, properties[prop]);
+                if (!validated.valid) {
+                  errors[prop] = validated.error;
+                }
+              };
+              keys.forEach(onValidate);
+              return {
+                valid: Object.keys(errors).length === 0,
+                errors
+              };
+            }
+            set(properties) {
+              if (!properties) {
+                console.warn('you are trying to set an empty object', this.constructor.name, properties);
+                return {
+                  updated: false
+                };
+              }
+              const keys = Object.keys(properties);
+              let updated = false;
+              const errors = {};
+              this.debug(0, properties);
+              const onSet = prop => {
+                this.debug(prop, properties[prop]);
+                if (!this.#propertyNames.has(prop)) {
+                  // console.trace(`is not a property`, prop, this.constructor.name);
+                  return;
+                }
+                const validated = this.validateProperty(prop, properties[prop]);
+                this.debug(prop, properties[prop], validated);
+                // console.log('validated', validated, prop, properties[prop]);
+                if (!validated.valid) {
+                  errors[prop] = validated;
+                  // return;
+                }
+                if (prop === 'provinces') {}
+                //@ts-ignore
+                if (this.getProperty(prop)?.isReactive) {
+                  const instance = this.getProperty(prop);
+                  // check if it is a collection
+                  //@ts-ignore
+                  if (instance.isCollection) {
+                    //@ts-ignore
+                    instance.setItems(properties[prop]);
+                  } else {
+                    instance.set(properties[prop]);
+                  }
+                  if (instance.unpublished) updated = true;
+                  return;
+                }
+                const isObject = typeof properties[prop] === 'object';
+                const isSameObject = isObject && this.isSameObject([prop], this[prop]);
+                if (this[prop] === properties[prop] || isSameObject) {
+                  return;
+                }
+                this.trigger(`${prop}.changed`, {
+                  value: properties[prop],
+                  previous: this[prop]
+                });
+                this[prop] = properties[prop];
+                updated = true;
+              };
+              keys.forEach(onSet);
+              if (updated) {
+                this.trigger('change');
+                this.trigger('set.executed');
+              }
+              return {
+                updated,
+                errors
+              };
+            }
+            /**
+             * Gets all properties of the model, including nested reactive objects and collections.
+             * For collections, it returns the item properties instead of the collection instance.
+             *
+             * @returns {Partial<T>} An object containing all properties of the model
+             */
+            getProperties() {
+              const props = {};
+              const loop = property => {
+                let name = property;
+                if (typeof property === 'object' && property.value.isReactive) {
+                  name = property.name;
+                  /**
+                   * If the property is a collection, we return the items.
+                   */
+                  props[String(name)] = property.value.isCollection ? this[name].getItemProperties() : this[name]?.getProperties();
+                  return;
+                }
+                props[String(name)] = this[name];
+              };
+              this.properties.forEach(loop);
+              return props;
+            }
+            /**
+             * Reverts all properties of the model back to their initial values.
+             * This is useful for discarding changes and restoring the model to its original state.
+             */
+            revert() {
+              this.set(this.initialValues);
+            }
+            /**
+             * Saves the current state of the model as the new initial state.
+             * This marks the model as no longer being a draft and updates the initial values
+             * to match the current state. Useful after successfully persisting changes.
+             */
+            saveChanges() {
+              this.#initialValues = this.getProperties();
+              this.#isDraft = false;
+            }
+            /**
+             * Triggers an event after a specified delay.
+             * @deprecated use trigger method instead.
+             * @param {string} event - The name of the event to trigger.
+             * @param {Record<string, any>} params - Additional parameters for the event, including an optional `delay` property.
+             */
+            triggerEvent = (event = 'change', params = {}) => {
+              this.trigger(event);
+            };
+          }
+          exports.ReactiveModel = ReactiveModel;
+        }
+      });
+
+      /*****************************
+      INTERNAL MODULE: ./types/index
+      *****************************/
+
+      ims.set('./types/index', {
+        hash: 2677658917,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "ReactiveModel",
+        "name": "ReactiveModel"
+      }, {
+        "im": "./types/index",
+        "from": "ModelProperties",
+        "name": "ModelProperties"
+      }, {
+        "im": "./types/index",
+        "from": "IReactiveModelOptions",
+        "name": "IReactiveModelOptions"
+      }, {
+        "im": "./types/index",
+        "from": "SetPropertiesResult",
+        "name": "SetPropertiesResult"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'ReactiveModel') && _export("ReactiveModel", ReactiveModel = require ? require('./index').ReactiveModel : value);
+        (require || prop === 'ModelProperties') && _export("ModelProperties", ModelProperties = require ? require('./types/index').ModelProperties : value);
+        (require || prop === 'IReactiveModelOptions') && _export("IReactiveModelOptions", IReactiveModelOptions = require ? require('./types/index').IReactiveModelOptions : value);
+        (require || prop === 'SetPropertiesResult') && _export("SetPropertiesResult", SetPropertiesResult = require ? require('./types/index').SetPropertiesResult : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfem9kIiwicmVxdWlyZSIsIl9ldmVudHMiLCJSZWFjdGl2ZU1vZGVsIiwiRXZlbnRzIiwiZGVib3VuY2VUaW1lb3V0IiwicHJvY2Vzc2luZyIsInByb2Nlc3NlZCIsImxvYWRlZCIsInJlYWR5IiwiZGVidWciLCJfcmVhY3RpdmVQcm9wcyIsImlzUmVhY3RpdmUiLCJwcm9wZXJ0aWVzIiwiaXNEcmFmdCIsInByb3BlcnR5TmFtZXMiLCJTZXQiLCJ2YWx1ZSIsInRyaWdnZXIiLCJzY2hlbWEiLCJpbml0aWFsVmFsdWVzIiwidW5wdWJsaXNoZWQiLCJnZXRQcm9wZXJ0aWVzIiwiT2JqZWN0Iiwia2V5cyIsInNvbWUiLCJwcm9wIiwiQXJyYXkiLCJpc0FycmF5IiwibGVuZ3RoIiwiSlNPTiIsInN0cmluZ2lmeSIsImlzVW5wdWJsaXNoZWQiLCJjb25zdHJ1Y3RvciIsInByb3BzIiwiZGVmYXVsdFByb3BzIiwiZGVmaW5lUmVhY3RpdmVQcm9wcyIsInNldEluaXRpYWxWYWx1ZXMiLCJhcmdzIiwibmFtZSIsImNvbnNvbGUiLCJsb2ciLCJzcGVjcyIsInZhbHVlcyIsImZvckVhY2giLCJwcm9wZXJ0eSIsImdldFByb3BlcnR5Iiwia2V5IiwiZGVmaW5lUmVhY3RpdmVQcm9wIiwicHJvcEtleSIsImluaXRpYWxWYWx1ZSIsIm1vZGVsIiwiZGVmaW5lUHJvcGVydHkiLCJnZXQiLCJzZXQiLCJuZXdWYWwiLCJpbnN0YW5jZSIsInByZXZpb3VzIiwidW5kZWZpbmVkIiwiZW51bWVyYWJsZSIsImNvbmZpZ3VyYWJsZSIsImRlc2NyaXB0b3IiLCJnZXRPd25Qcm9wZXJ0eURlc2NyaXB0b3IiLCJhZGQiLCJkYXRhIiwid2FybiIsInBhcmFtZXRlcnMiLCJpc0NvbGxlY3Rpb24iLCJwYXJlbnQiLCJzZXRJdGVtcyIsInJlYWN0aXZlUHJvcHMiLCJzZXRQcm9wZXJ0eSIsInZhbGlkYXRlUHJvcGVydHkiLCJ2YWxpZCIsImVycm9yIiwic2hhcGUiLCJab2RFcnJvciIsInBhdGgiLCJtZXNzYWdlIiwiY29kZSIsInByb3BTY2hlbWEiLCJyZXN1bHQiLCJzYWZlUGFyc2UiLCJzdWNjZXNzIiwiaXNTYW1lT2JqZWN0IiwiYSIsImIiLCJ2YWxpZGF0ZSIsImVycm9ycyIsIm9uVmFsaWRhdGUiLCJpbmNsdWRlcyIsInRyYWNlIiwidmFsaWRhdGVkIiwidXBkYXRlZCIsIm9uU2V0IiwiaGFzIiwiaXNPYmplY3QiLCJsb29wIiwiU3RyaW5nIiwiZ2V0SXRlbVByb3BlcnRpZXMiLCJyZXZlcnQiLCJzYXZlQ2hhbmdlcyIsInRyaWdnZXJFdmVudCIsImV2ZW50IiwicGFyYW1zIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIi9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxJQUFBLEdBQUFDLE9BQUE7VUFjQSxJQUFBQyxPQUFBLEdBQUFELE9BQUE7VUFFTztVQUFXLE1BQU9FLGFBQWlCLFNBQVFELE9BQUEsQ0FBQUUsTUFBTTtZQUN2REMsZUFBZTtZQUNmQyxVQUFVLEdBQVksS0FBSztZQUMzQkMsU0FBUyxHQUFZLEtBQUs7WUFFMUJDLE1BQU0sR0FBWSxLQUFLO1lBQ3ZCLENBQUFDLEtBQU0sR0FBWSxLQUFLO1lBQ3ZCLENBQUFDLEtBQU07WUFFRUMsY0FBYyxHQUF5QixFQUEwQjtZQUN6RSxPQUFPQyxVQUFVQSxDQUFBO2NBQ2hCLE9BQU8sSUFBSTtZQUNaO1lBQ0EsSUFBSUEsVUFBVUEsQ0FBQTtjQUNiLE9BQU8sSUFBSTtZQUNaO1lBQ0E7WUFDVUMsVUFBVSxHQUF3QixFQUFFO1lBQzlDO1lBQ0EsQ0FBQUMsT0FBUSxHQUFZLEtBQUs7WUFDekIsSUFBSUEsT0FBT0EsQ0FBQTtjQUNWLE9BQU8sSUFBSSxDQUFDLENBQUFBLE9BQVE7WUFDckI7WUFDQSxDQUFBQyxhQUFjLEdBQUcsSUFBSUMsR0FBRyxFQUFFO1lBQzFCLElBQUlELGFBQWFBLENBQUE7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

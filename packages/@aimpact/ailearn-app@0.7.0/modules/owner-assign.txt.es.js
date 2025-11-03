@@ -1,2 +1,98 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(e,t){"use strict";var a,i,r,o,n,s,c,d;e("txt",void 0);return{setters:[function(e){a=e}],execute:function(){i=e=>{const t=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.2"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:r}=a);o=new r({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/modules/owner-assign",multibundle:true},type:"txt"},t.meta.url).package("es");o.dependencies.update([]);n=new Map;n.set("./txt",{hash:1757563707,creator:function(e,t){t.txt={actions:{analyse:"Sugerir mejoras",activities:"Generar actividades",activity:"Actividades",applySuggestions:"Aplicar sugerencias",back:"Atr\xe1s",cancel:"Cancelar",cover:"Generar portada",clean:"Limpiar",continue:"Continuar",create:"Crear",confirm:"Confirmar",delete:"Eliminar",edit:"Editar",generate:"Generar con IA",next:"Siguiente",publish:"Publicar",removeSuggestions:"Remover sugerencias",refine:"Refinar",save:"Guardar",update:"Subir documento",upload:"Subir imagen"},errors:{default:"No se ha podido realizar la operaci\xf3n. Por favor, int\xe9ntelo de nuevo."},title:"Indica un propietario",description:"El propietario del m\xf3dulo de aprendizaje ser\xe1 el  proveedor de los cr\xe9ditos de IA necesarios para su edici\xf3n e interacci\xf3n de los alumnos.",me:{label:"Yo ser\xe9 el propietario",description:"Ser\xe9 el administrador y proveedor de cr\xe9ditos IA del m\xf3dulo"},organization:{label:"Asignar a una Instituci\xf3n educativa",description:"La Instituci\xf3n seleccionada ser\xe1 el administrador y proveedor de cr\xe9ditos IA del m\xf3dulo"},institution:{label:"Instituci\xf3n educativa"}}}});o.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];o.exports.process=function({require:t,prop:a,value:i}){(t||a==="txt")&&e("txt",s=t?t("./txt").txt:i)};e("__beyond_pkg",c=o);e("hmr",d=new function(){this.on=(e,t)=>o.hmr.on(e,t);this.off=(e,t)=>o.hmr.off(e,t)});o.initialise(n)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvbW9kdWxlcy9vd25lci1hc3NpZ24udHh0LmVzLmpzIiwibmFtZXMiOlsiU3lzdGVtIiwicmVnaXN0ZXIiLCJfZXhwb3J0IiwiX2NvbnRleHQiLCJkZXBlbmRlbmN5XzAiLCJiaW1wb3J0IiwiX19CdW5kbGUiLCJfX3BrZyIsImltcyIsInR4dCIsIl9fYmV5b25kX3BrZyIsImhtciIsInNldHRlcnMiLCJfYmV5b25kSnNLZXJuZWwwMTE0QnVuZGxlIiwiZXhlY3V0ZSIsInNwZWNpZmllciIsImRlcGVuZGVuY2llcyIsIk1hcCIsImdsb2JhbFRoaXMiLCJyZXNvbHZlIiwiQnVuZGxlIiwibW9kdWxlIiwidnNwZWNpZmllciIsIm11bHRpYnVuZGxlIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsImFjdGlvbnMiLCJhbmFseXNlIiwiYWN0aXZpdGllcyIsImFjdGl2aXR5IiwiYXBwbHlTdWdnZXN0aW9ucyIsImJhY2siLCJjYW5jZWwiLCJjb3ZlciIsImNsZWFuIiwiY29udGludWUiLCJjcmVhdGUiLCJjb25maXJtIiwiZGVsZXRlIiwiZWRpdCIsImdlbmVyYXRlIiwibmV4dCIsInB1Ymxpc2giLCJyZW1vdmVTdWdnZXN0aW9ucyIsInJlZmluZSIsInNhdmUiLCJ1cGxvYWQiLCJlcnJvcnMiLCJkZWZhdWx0IiwidGl0bGUiLCJkZXNjcmlwdGlvbiIsIm1lIiwibGFiZWwiLCJvcmdhbml6YXRpb24iLCJpbnN0aXR1dGlvbiIsImRlc2NyaXB0b3IiLCJpbSIsImZyb20iLCJuYW1lIiwicHJvY2VzcyIsInByb3AiLCJ2YWx1ZSIsInRoaXMiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FB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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.2"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/modules/owner-assign",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('es');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 1757563707,
+        creator: function (require, exports) {
+          exports.txt = {
+            "actions": {
+              "analyse": "Sugerir mejoras",
+              "activities": "Generar actividades",
+              "activity": "Actividades",
+              "applySuggestions": "Aplicar sugerencias",
+              "back": "Atrás",
+              "cancel": "Cancelar",
+              "cover": "Generar portada",
+              "clean": "Limpiar",
+              "continue": "Continuar",
+              "create": "Crear",
+              "confirm": "Confirmar",
+              "delete": "Eliminar",
+              "edit": "Editar",
+              "generate": "Generar con IA",
+              "next": "Siguiente",
+              "publish": "Publicar",
+              "removeSuggestions": "Remover sugerencias",
+              "refine": "Refinar",
+              "save": "Guardar",
+              "update": "Subir documento",
+              "upload": "Subir imagen"
+            },
+            "errors": {
+              "default": "No se ha podido realizar la operación. Por favor, inténtelo de nuevo."
+            },
+            "title": "Indica un propietario",
+            "description": "El propietario del módulo de aprendizaje será el  proveedor de los créditos de IA necesarios para su edición e interacción de los alumnos.",
+            "me": {
+              "label": "Yo seré el propietario",
+              "description": "Seré el administrador y proveedor de créditos IA del módulo"
+            },
+            "organization": {
+              "label": "Asignar a una Institución educativa",
+              "description": "La Institución seleccionada será el administrador y proveedor de créditos IA del módulo"
+            },
+            "institution": {
+              "label": "Institución educativa"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

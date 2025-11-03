@@ -1,2 +1,100 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(e,t){"use strict";var a,i,s,n,r,o,c,d;e("txt",void 0);return{setters:[function(e){a=e}],execute:function(){i=e=>{const t=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.2"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:s}=a);n=new s({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/sections/list",multibundle:true},type:"txt"},t.meta.url).package("es");n.dependencies.update([]);r=new Map;r.set("./txt",{hash:481578224,creator:function(e,t){t.txt={create:{title:"Agregar Secci\xf3n",success:"Secci\xf3n publicada con \xe9xito",error:"Error al publicar la secci\xf3n",name:{label:"Nombre de la Secci\xf3n",placeholder:"\xbfCu\xe1l ser\xe1 el nombre de la Secci\xf3n?"},description:{label:"Descripci\xf3n de la Secci\xf3n",placeholder:"\xbfQu\xe9 tipo de contenido contendr\xe1 esta Secci\xf3n?"},actions:{save:"Continuar"}},delete:{title:"Eliminar secci\xf3n",description:"\xbfEst\xe1s seguro de que deseas eliminar esta secci\xf3n? Esta acci\xf3n no se puede deshacer.",errors:{59:"No se puede eliminar la secci\xf3n porque tiene datos asociados, como contenido vinculado. Desvincula o elimina esos datos para proceder.",default:"Ocurri\xf3 un error al eliminar la secci\xf3n."}},empty:{title:"Crear una secci\xf3n en tu base de conocimientos",description:"Comienza creando tu primera secci\xf3n para organizar tu contenido."},welcome:{message:"Bienvenido %name a tu lista de secciones",actionInfo:"Aqu\xed podr\xe1s ver y gestionar todas las secciones que tienes actualmente. Tendr\xe1s acceso a diversas acciones, incluyendo la creaci\xf3n, eliminaci\xf3n y edici\xf3n de secciones. Aprovecha estas herramientas para personalizar cada secci\xf3n de acuerdo a tus requerimientos."},title:"Secciones",subtitle:"Explora, ajusta y gestiona tus secciones de base de conocimientos seg\xfan tus necesidades",actions:{cancel:"Cancelar",confirm:"Confirmar"},errors:{ERROR_GETTING_URL:"Error obteniendo URL"}}}});n.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];n.exports.process=function({require:t,prop:a,value:i}){(t||a==="txt")&&e("txt",o=t?t("./txt").txt:i)};e("__beyond_pkg",c=n);e("hmr",d=new function(){this.on=(e,t)=>n.hmr.on(e,t);this.off=(e,t)=>n.hmr.off(e,t)});n.initialise(r)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvc2VjdGlvbnMvbGlzdC50eHQuZXMuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwidHh0IiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwibXVsdGlidW5kbGUiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwiY3JlYXRlIiwidGl0bGUiLCJzdWNjZXNzIiwiZXJyb3IiLCJuYW1lIiwibGFiZWwiLCJwbGFjZWhvbGRlciIsImRlc2NyaXB0aW9uIiwiYWN0aW9ucyIsInNhdmUiLCJkZWxldGUiLCJlcnJvcnMiLCJkZWZhdWx0IiwiZW1wdHkiLCJ3ZWxjb21lIiwibWVzc2FnZSIsImFjdGlvbkluZm8iLCJzdWJ0aXRsZSIsImNhbmNlbCIsImNvbmZpcm0iLCJFUlJPUl9HRVRUSU5HX1VSTCIsImRlc2NyaXB0b3IiLCJpbSIsImZyb20iLCJwcm9jZXNzIiwicHJvcCIsInZhbHVlIiwidGhpcyIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLG1DQUFvQyxTQUFVQyxFQUFTQyxHQUN0RSxhQUVBLElBQUlDLEVBQWNDLEVBQVNDLEVBQVVDLEVBQU9DLEVBQUtDLEVBQUtDLEVBQWNDLEVBQ3BFVCxFQUFRLFdBQVks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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.2"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/sections/list",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('es');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 481578224,
+        creator: function (require, exports) {
+          exports.txt = {
+            "create": {
+              "title": "Agregar Sección",
+              "success": "Sección publicada con éxito",
+              "error": "Error al publicar la sección",
+              "name": {
+                "label": "Nombre de la Sección",
+                "placeholder": "¿Cuál será el nombre de la Sección?"
+              },
+              "description": {
+                "label": "Descripción de la Sección",
+                "placeholder": "¿Qué tipo de contenido contendrá esta Sección?"
+              },
+              "actions": {
+                "save": "Continuar"
+              }
+            },
+            "delete": {
+              "title": "Eliminar sección",
+              "description": "¿Estás seguro de que deseas eliminar esta sección? Esta acción no se puede deshacer.",
+              "errors": {
+                "59": "No se puede eliminar la sección porque tiene datos asociados, como contenido vinculado. Desvincula o elimina esos datos para proceder.",
+                "default": "Ocurrió un error al eliminar la sección."
+              }
+            },
+            "empty": {
+              "title": "Crear una sección en tu base de conocimientos",
+              "description": "Comienza creando tu primera sección para organizar tu contenido."
+            },
+            "welcome": {
+              "message": "Bienvenido %name a tu lista de secciones",
+              "actionInfo": "Aquí podrás ver y gestionar todas las secciones que tienes actualmente. Tendrás acceso a diversas acciones, incluyendo la creación, eliminación y edición de secciones. Aprovecha estas herramientas para personalizar cada sección de acuerdo a tus requerimientos."
+            },
+            "title": "Secciones",
+            "subtitle": "Explora, ajusta y gestiona tus secciones de base de conocimientos según tus necesidades",
+            "actions": {
+              "cancel": "Cancelar",
+              "confirm": "Confirmar"
+            },
+            "errors": {
+              "ERROR_GETTING_URL": "Error obteniendo URL"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

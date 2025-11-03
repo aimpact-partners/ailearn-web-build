@@ -1,2 +1,191 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","@beyond-js/kernel@0.1.14/styles","react@18.3.1","pragmate-ui@1.0.8/ripple","pragmate-ui@1.0.8/icons","pragmate-ui@1.0.8/base"],function(e,t){"use strict";var i,n,s,a,r,c,o,p,l,u,d,f,m,h;e({Chip:void 0,Chips:void 0});return{setters:[function(e){i=e},function(e){n=e},function(e){s=e},function(e){a=e},function(e){r=e},function(e){c=e}],execute:function(){o=e=>{const t=new Map([["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.12"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/reactive","2.1.0"],["@beyond-js/widgets","0.1.6"],["@floating-ui/dom","1.7.3"],["clsx","2.1.1"],["framer-motion","11.11.11"],["perfect-scrollbar","1.5.6"],["prismjs","1.29.0"],["swiper","10.3.1"],["tippy.js","6.3.7"],["@types/react","18.3.12"],["@types/react-dom","18.3.1"],["pragmate-ui","1.0.8"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:p}=i);l=new p({module:{vspecifier:"pragmate-ui@1.0.8/chips"},type:"code"},t.meta.url).package();l.dependencies.update([["@beyond-js/kernel/styles",n],["react",s],["pragmate-ui/ripple",a],["pragmate-ui/icons",r],["pragmate-ui/base",c]]);brequire("@beyond-js/kernel/styles").styles.register("pragmate-ui@1.0.8/chips");u=new Map;u.set("./chip",{hash:2908861372,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.Chip=a;var i=e("react");var n=e("pragmate-ui/ripple");var s=e("pragmate-ui/icons");function a(e){const{type:t,title:a,children:r,icon:c}=e;const o={...e};const p=i.default.useRef(null);const[l,u]=i.default.useState(false);["children","type","className","variant"].forEach(e=>delete o[e]);i.default.useEffect(()=>{if(o.onClick){const e=new n.RippleEffect;e.addRippleEffect(p.current)}},[o.onClick]);const d=()=>{if(a)u(true)};const f=()=>{if(a)u(false)};const m=e.variant||e.type||"default";let h=`pui-chip pui-chip--${m}`;if(o.onClick){h+=` is-clickable`}return i.default.createElement("div",{style:{position:"relative",display:"inline-block"}},i.default.createElement("span",{ref:p,className:h,...o,onMouseEnter:d,onMouseLeave:f},r,c&&i.default.createElement(s.Icon,{icon:c})),l&&a&&i.default.createElement("div",{className:"floating-ui-tooltip",style:{position:"absolute",top:"-40px",left:"50%",transform:"translateX(-50%)",zIndex:9999}},a))}}});u.set("./index",{hash:3044580695,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.Chips=n;var i=e("react");function n(e){const{children:t}=e;const n={...e};["items","type","variant"].forEach(e=>delete n[e]);const s=e.variant||e.type||"default";const a=`pui-chip__container pui-chip__container--${s}`;n.className=`pui-chip__container${n.className?` ${n.className}`:""} ${a}`;return i.default.createElement("div",{...n},i.default.createElement("div",{className:"content-chip"},t))}}});u.set("./types",{hash:710310839,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true})}});l.exports.descriptor=[{im:"./chip",from:"Chip",name:"Chip"},{im:"./index",from:"Chips",name:"Chips"}];l.exports.process=function({require:t,prop:i,value:n}){(t||i==="Chip")&&e("Chip",d=t?t("./chip").Chip:n);(t||i==="Chips")&&e("Chips",f=t?t("./index").Chips:n)};e("__beyond_pkg",m=l);e("hmr",h=new function(){this.on=(e,t)=>l.hmr.on(e,t);this.off=(e,t)=>l.hmr.off(e,t)});l.initialise(u)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvcHJhZ21hdGUtdWlAMS4wLjgvY2hpcHMuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImRlcGVuZGVuY3lfMSIsImRlcGVuZGVuY3lfMiIsImRlcGVuZGVuY3lfMyIsImRlcGVuZGVuY3lfNCIsImRlcGVuZGVuY3lfNSIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwiQ2hpcCIsIkNoaXBzIiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJfYmV5b25kSnNLZXJuZWwwMTE0U3R5bGVzIiwiX3JlYWN0MiIsIl9wcmFnbWF0ZVVpMTA4UmlwcGxlIiwiX3ByYWdtYXRlVWkxMDhJY29ucyIsIl9wcmFnbWF0ZVVpMTA4QmFzZSIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJicmVxdWlyZSIsInN0eWxlcyIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsInZhbHVlIiwiX3JlYWN0IiwiX3JpcHBsZSIsIl9pY29ucyIsInByb3BzIiwidGl0bGUiLCJjaGlsZHJlbiIsImljb24iLCJwcm9wZXJ0aWVzIiwicmVmIiwiZGVmYXVsdCIsInVzZVJlZiIsInNob3dUb29sdGlwIiwic2V0U2hvd1Rvb2x0aXAiLCJ1c2VTdGF0ZSIsImZvckVhY2giLCJrZXkiLCJ1c2VFZmZlY3QiLCJvbkNsaWNrIiwicmlwcGxlIiwiUmlwcGxlRWZmZWN0IiwiYWRkUmlwcGxlRWZmZWN0IiwiY3VycmVudCIsImhhbmRsZU1vdXNlRW50ZXIiLCJoYW5kbGVNb3VzZUxlYXZlIiwidmFyaWFudCIsImNscyIsImNyZWF0ZUVsZW1lbnQiLCJzdHlsZSIsInBvc2l0aW9uIiwiZGlzcGxheSIsImNsYXNzTmFtZSIsIm9uTW91c2VFbnRlciIsIm9uTW91c2VMZWF2ZSIsIkljb24iLCJ0b3AiLCJsZWZ0IiwidHJhbnNmb3JtIiwiekluZGV4IiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInRoaXMiLCJvbiIsImV2ZW50IiwibGlzdGVuZXIiLCJvZmYiLCJpbml0aWFsaXNlIl0sInNvdXJjZXMiOlsiMCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLFNBQVMsQ0FBQyxrQ0FBbUMsa0NBQW1DLGVBQWdCLDJCQUE0QiwwQkFBMkIsMEJBQTJCLFNBQVVDLEVBQVNDLEdBQzFNLGFBRUEsSUFBSUMsRUFBY0MsRUFBY0MsRUFBY0MsRUFBY0MsRUFBY0MsRUFBY0MsRUFBU0MsRUFBVUMsRUFBT0MsRUFBS0MsRUFBTUMsRUFBT0MsRUFBY0MsRUFDbEpmLEVBQVEsQ0FDTlksVUFBVyxFQUNYQyxXQUFZLElBRWQsTUFBTyxDQUNMRyxRQUFTLENBQUMsU0FBVUMsR0FDbEJmLEVBQWVlLENBQ2pCLEVBQUcsU0FBVUMsR0FDWGYsRUFBZWUsQ0FDakIsRUFBRyxTQUFVQyxHQUNYZixFQUFlZSxDQUNqQixFQUFHLFNBQVVDLEdBQ1hmLEVBQWVlLENBQ2pCLEVBQUcsU0FBVUMsR0FDWGYsRUFBZWUsQ0FDakIsRUFBRyxTQUFVQyxHQUNYZixFQUFlZSxDQUNqQixHQUNBQyxRQUFTLFdBQ1BmLEVBQVVnQixJQUNSLE1BQU1DLEVBQWUsSUFBSUMsSUFBSSxDQUFDLENBQUMsb0JBQXFCLFNBQVUsQ0FBQyxvQkFBcUIsVUFBVyxDQUFDLDhCQUErQixTQUFVLENBQUMsc0JBQXVCLFNBQVUsQ0FBQyxxQkFBc0IsU0FBVSxDQUFDLG1CQUFvQixTQUFVLENBQUMsT0FBUSxTQUFVLENBQUMsZ0JBQWlCLFlBQWEsQ0FBQyxvQkFBcUIsU0FBVSxDQUFDLFVB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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "@beyond-js/kernel@0.1.14/styles", "react@18.3.1", "pragmate-ui@1.0.8/ripple", "pragmate-ui@1.0.8/icons", "pragmate-ui@1.0.8/base"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, Chip, Chips, __beyond_pkg, hmr;
+  _export({
+    Chip: void 0,
+    Chips: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_beyondJsKernel0114Styles) {
+      dependency_1 = _beyondJsKernel0114Styles;
+    }, function (_react2) {
+      dependency_2 = _react2;
+    }, function (_pragmateUi108Ripple) {
+      dependency_3 = _pragmateUi108Ripple;
+    }, function (_pragmateUi108Icons) {
+      dependency_4 = _pragmateUi108Icons;
+    }, function (_pragmateUi108Base) {
+      dependency_5 = _pragmateUi108Base;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.0"], ["@beyond-js/widgets", "0.1.6"], ["@floating-ui/dom", "1.7.3"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.8"], ["@aimpact/rvd", "0.7.2"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.8/chips"
+        },
+        "type": "code"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2], ['pragmate-ui/ripple', dependency_3], ['pragmate-ui/icons', dependency_4], ['pragmate-ui/base', dependency_5]]);
+      brequire('@beyond-js/kernel/styles').styles.register('pragmate-ui@1.0.8/chips');
+      ims = new Map();
+      /**********************
+      INTERNAL MODULE: ./chip
+      **********************/
+      ims.set('./chip', {
+        hash: 2908861372,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Chip = Chip;
+          var _react = require("react");
+          var _ripple = require("pragmate-ui/ripple");
+          var _icons = require("pragmate-ui/icons");
+          /*bundle*/
+          function Chip(props) {
+            const {
+              type,
+              title,
+              children,
+              icon
+            } = props;
+            const properties = {
+              ...props
+            };
+            const ref = _react.default.useRef(null);
+            const [showTooltip, setShowTooltip] = _react.default.useState(false);
+            ['children', 'type', 'className', 'variant'].forEach(key => delete properties[key]);
+            _react.default.useEffect(() => {
+              if (properties.onClick) {
+                const ripple = new _ripple.RippleEffect();
+                ripple.addRippleEffect(ref.current);
+              }
+            }, [properties.onClick]);
+            const handleMouseEnter = () => {
+              if (title) setShowTooltip(true);
+            };
+            const handleMouseLeave = () => {
+              if (title) setShowTooltip(false);
+            };
+            const variant = props.variant || props.type || 'default';
+            let cls = `pui-chip pui-chip--${variant}`;
+            if (properties.onClick) {
+              cls += ` is-clickable`;
+            }
+            return _react.default.createElement("div", {
+              style: {
+                position: 'relative',
+                display: 'inline-block'
+              }
+            }, _react.default.createElement("span", {
+              ref: ref,
+              className: cls,
+              ...properties,
+              onMouseEnter: handleMouseEnter,
+              onMouseLeave: handleMouseLeave
+            }, children, icon && _react.default.createElement(_icons.Icon, {
+              icon: icon
+            })), showTooltip && title && _react.default.createElement("div", {
+              className: "floating-ui-tooltip",
+              style: {
+                position: 'absolute',
+                top: '-40px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                zIndex: 9999
+              }
+            }, title));
+          }
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+
+      ims.set('./index', {
+        hash: 3044580695,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.Chips = Chips;
+          var _react = require("react");
+          /*bundle*/
+          function Chips(props) {
+            const {
+              children
+            } = props;
+            const properties = {
+              ...props
+            };
+            ['items', 'type', 'variant'].forEach(key => delete properties[key]);
+            // const cls = `${props.type ? `pui-chip__container--${props.type}` : ''}`;
+            const variant = props.variant || props.type || 'default';
+            const cls = `pui-chip__container pui-chip__container--${variant}`;
+            properties.className = `pui-chip__container${properties.className ? ` ${properties.className}` : ''} ${cls}`;
+            return _react.default.createElement("div", {
+              ...properties
+            }, _react.default.createElement("div", {
+              className: 'content-chip'
+            }, children));
+          }
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./types
+      ***********************/
+
+      ims.set('./types', {
+        hash: 710310839,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./chip",
+        "from": "Chip",
+        "name": "Chip"
+      }, {
+        "im": "./index",
+        "from": "Chips",
+        "name": "Chips"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'Chip') && _export("Chip", Chip = require ? require('./chip').Chip : value);
+        (require || prop === 'Chips') && _export("Chips", Chips = require ? require('./index').Chips : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX3JpcHBsZSIsIl9pY29ucyIsIkNoaXAiLCJwcm9wcyIsInR5cGUiLCJ0aXRsZSIsImNoaWxkcmVuIiwiaWNvbiIsInByb3BlcnRpZXMiLCJyZWYiLCJkZWZhdWx0IiwidXNlUmVmIiwic2hvd1Rvb2x0aXAiLCJzZXRTaG93VG9vbHRpcCIsInVzZVN0YXRlIiwiZm9yRWFjaCIsImtleSIsInVzZUVmZmVjdCIsIm9uQ2xpY2siLCJyaXBwbGUiLCJSaXBwbGVFZmZlY3QiLCJhZGRSaXBwbGVFZmZlY3QiLCJjdXJyZW50IiwiaGFuZGxlTW91c2VFbnRlciIsImhhbmRsZU1vdXNlTGVhdmUiLCJ2YXJpYW50IiwiY2xzIiwiY3JlYXRlRWxlbWVudCIsInN0eWxlIiwicG9zaXRpb24iLCJkaXNwbGF5IiwiY2xhc3NOYW1lIiwib25Nb3VzZUVudGVyIiwib25Nb3VzZUxlYXZlIiwiSWNvbiIsInRvcCIsImxlZnQiLCJ0cmFuc2Zvcm0iLCJ6SW5kZXgiLCJDaGlwcyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwiZXhwb3J0cyIsInZhbHVlIl0sInNvdXJjZXMiOlsiL3RzL2NoaXAudHN4IiwiL3RzL2luZGV4LnRzeCIsIi90eXBlcy50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSxJQUFBQSxNQUFBLEdBQUFDLE9BQUE7VUFDQSxJQUFBQyxPQUFBLEdBQUFELE9BQUE7VUFDQSxJQUFBRSxNQUFBLEdBQUFGLE9BQUE7VUFLTztVQUFVLFNBQVVHLElBQUlBLENBQUNDLEtBQWdCO1lBQzVDLE1BQU07Y0FBRUMsSUFBSTtjQUFFQyxLQUFLO2NBQUVDLFFBQVE7Y0FBRUM7WUFBSSxDQUFFLEdBQUdKLEtBQUs7WUFDN0MsTUFBTUssVUFBVSxHQUFHO2NBQUUsR0FBR0w7WUFBSyxDQUFFO1lBQy9C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

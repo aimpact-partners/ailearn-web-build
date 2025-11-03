@@ -1,2 +1,243 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(e,n){"use strict";var i,t,r,s,a,l,o,u;e("txt",void 0);return{setters:[function(e){i=e}],execute:function(){t=e=>{const n=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.2"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,n))};({Bundle:r}=i);s=new r({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/home",multibundle:true},type:"txt"},n.meta.url).package("de");s.dependencies.update([]);a=new Map;a.set("./txt",{hash:3479968889,creator:function(e,n){n.txt={actions:{join:"Join",assign:"Zuweisen",create:"Erstellen",register:"Registrieren",activities:"Aktivit\xe4ten generieren",refine:"Verfeinern",imported:"Importiert",generate:"Generieren",save:"Speichern",clean:"Reinigen",activity:"Aktivit\xe4ten",update:"Dokument hochladen",edit:"Bearbeiten",delete:"L\xf6schen",cancel:"Abbrechen",next:"Weiter",back:"Zur\xfcck",link:"Link",gTooltip:"Klassenzimmer von Google importiert",import:"Importieren"},assign:{assigned:"Zugewiesen",title:{share:"Modul an Klassenr\xe4ume zuweisen",dashboard:"Zuweisungsdashboard aufrufen"},noAssigned:"Keine Klassenr\xe4ume zugewiesen",module:"Modul",messages:{copied:"Link in die Zwischenablage kopiert",assigned:"Modul wurde dem Klassenraum {classroom} zugewiesen"},item:{description:"Der Punkt hat keine Beschreibung"},actions:{dashboard:"Dashboard",copy:"Link kopieren",test:"Testen",navigate:"Navigieren",assign:{button:"Zuweisen",label:"Das Modul wurde diesem Klassenraum noch nicht zugewiesen"},createClassroom:"Klassenraum erstellen"},errors:{default:"Das Modul konnte diesem Klassenraum nicht zugewiesen werden. Bitte versuchen Sie es sp\xe4ter erneut oder kontaktieren Sie den Administrator"},empty:{share:{text:"Achtung",description:"Sie haben noch keine Klassenr\xe4ume erstellt. Sie m\xfcssen einen erstellen, um diese Aktivit\xe4t zuweisen zu k\xf6nnen.",action:"Klassenraum erstellen"},dashboard:{description:"Modul ohne Zuweisungen"}}},tour:{buttons:{nextBtnText:"Weiter",prevBtnText:"Zur\xfcck",doneBtnText:"Fertig"},teacher:{step0:{title:"Willkommen in Ihrem Profil",description:"Hier k\xf6nnen Sie Ihre Erfahrung in RVD.AI anpassen. Sie k\xf6nnen Ihre pers\xf6nlichen Informationen aktualisieren, Ihre bevorzugte Sprache angeben, Barrierefreiheitsoptionen konfigurieren und die Audiogeschwindigkeit anpassen."},community:{title:"Community",description:"Entdecken Sie unsere Sammlung von Lernmodulen, die von Experten erstellt wurden. Finden Sie eine Vielzahl von einsatzbereiten Inhalten f\xfcr Ihre Klassenr\xe4ume. Sie k\xf6nnen diese Module nach Ihren Kriterien bearbeiten und anpassen, um sie an die Bed\xfcrfnisse Ihrer Sch\xfcler anzupassen."},drafts:{title:"Modulentw\xfcrfe",description:"Arbeiten Sie an Ihren Lernmodul-Entw\xfcrfen, bis sie bereit zur Ver\xf6ffentlichung und Zuweisung zu einem Klassenraum sind. Sie werden hier gespeichert, damit Sie sie nach Bedarf bearbeiten k\xf6nnen. Beginnen Sie mit der Erstellung Ihres ersten Moduls!"},classrooms:{title:"Klassenr\xe4ume",description:"In diesem Bereich k\xf6nnen Sie Klassenr\xe4ume erstellen, in denen Sie Ihre Sch\xfcler gruppieren und ihnen die von Ihnen ver\xf6ffentlichten Lernmodule zuweisen k\xf6nnen. Organisieren Sie Ihren Unterricht effektiv und personalisieren Sie ihn. Beginnen Sie mit der Erstellung Ihrer Klassenr\xe4ume und verwandeln Sie das Bildungserlebnis!"},step3:{title:"Brauchen Sie Hilfe?",description:"Finden Sie alle Informationen in unseren Tutorials, die entwickelt wurden, um Ihnen zu helfen, das Beste aus RVD.AI herauszuholen. Lernen Sie, wie Sie Lernmodule erstellen, Ihre Klassenr\xe4ume verwalten und alle von uns angebotenen Tools nutzen k\xf6nnen. Erkunden Sie unsere Tutorials und navigieren Sie durch die Plattform!"},modules:{title:"Meine Lernmodule",description:"In diesem Abschnitt werden die Module angezeigt, die der Benutzer erstellt hat."},assignments:{title:"Meine Aufgaben",description:"Hier k\xf6nnen Sie alle Lernmodule sehen, die Ihnen innerhalb Ihrer Klassenr\xe4ume zugewiesen wurden. Diese Aufgaben enthalten den Inhalt, den Sie abschlie\xdfen m\xfcssen. Erkunden Sie Ihre Aufgaben und setzen Sie Ihren Lernweg fort!"}},student:{step0:{title:"Willkommen in Ihrem Profil",description:"Hier k\xf6nnen Sie Ihre Erfahrung in RVD.AI anpassen. Sie k\xf6nnen Ihre pers\xf6nlichen Informationen aktualisieren, Ihre bevorzugte Sprache angeben, Barrierefreiheitsoptionen konfigurieren und die Audiogeschwindigkeit anpassen."},classrooms:{title:"Klassenr\xe4ume",description:"Hier k\xf6nnen Sie alle Klassenr\xe4ume sehen, zu denen Sie geh\xf6ren. Erkunden Sie die zugewiesenen Lernmodule, \xfcberpr\xfcfen Sie den Inhalt und bleiben Sie auf dem Laufenden mit Ihrem Unterricht. Sie k\xf6nnen auch neuen Klassenr\xe4umen mit einem Code beitreten. Entdecken Sie alles, was Sie in Ihren Klassenr\xe4umen lernen k\xf6nnen!"},assignments:{title:"Meine Aufgaben",description:"Hier k\xf6nnen Sie alle Lernmodule sehen, die Ihnen innerhalb Ihrer Klassenr\xe4ume zugewiesen wurden. Diese Aufgaben enthalten den Inhalt, den Sie abschlie\xdfen m\xfcssen. Erkunden Sie Ihre Aufgaben und setzen Sie Ihren Lernweg fort!"}}},errors:{default:"Der Vorgang ist fehlgeschlagen. Bitte versuchen Sie es erneut."},title:"Willkommen!",profile:{edit:"Zu meinem Profil"},assignments:{title:"Meine Aufgaben",activities:"Meine Aktivit\xe4ten",actions:{link:"Eingang"},item:{description:"Diese Aufgabe hat keine Beschreibung oder Ziel"}},modules:{title:"Meine Lernmodule",empty:"Sie haben noch keine Lernmodule",action:"Modul ver\xf6ffentlichen",activities:"Meine Aktivit\xe4ten",items:{description:"Dieses Modul hat keine Beschreibung oder Ziel",title:"Dieses Modul hat keinen Titel"}},drafts:{title:"Meine Entw\xfcrfe",empty:{title:"Sie haben keine Entw\xfcrfe",action:"Erstellen Sie einen neuen!"},actions:{create:"Erstellen",join:"Beitreten"},items:{description:"Dieses Modul hat keine Beschreibung oder Ziel",title:"Dieser Entwurf hat keinen Titel"}},community:{title:"Community",actions:{link:"Alle anzeigen",test:"Demo",use:"Erstellen Sie Ihre eigene Version"}},classrooms:{title:"Meine Klassenr\xe4ume",empty:{description:"Gruppieren Sie Ihre Sch\xfcler in Arbeitsbereichen und weisen Sie personalisierte Lernmodule zu.",action:"Erstellen Sie Ihren ersten Klassenraum",title:"Erstellen Sie Ihren ersten Klassenraum"},actions:{create:"Erstellen",join:"Beitreten"},items:{description:"Dieser Klassenraum hat keine Beschreibung oder Ziel"}},students:{title:"Meine Sch\xfcler"},members:{children:"Meine Kinder"}}}});s.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];s.exports.process=function({require:n,prop:i,value:t}){(n||i==="txt")&&e("txt",l=n?n("./txt").txt:t)};e("__beyond_pkg",o=s);e("hmr",u=new function(){this.on=(e,n)=>s.hmr.on(e,n);this.off=(e,n)=>s.hmr.off(e,n)});s.initialise(a)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvaG9tZS50eHQuZGUuanMiLCJuYW1lcyI6WyJTeXN0ZW0iLCJyZWdpc3RlciIsIl9leHBvcnQiLCJfY29udGV4dCIsImRlcGVuZGVuY3lfMCIsImJpbXBvcnQiLCJfX0J1bmRsZSIsIl9fcGtnIiwiaW1zIiwidHh0IiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwibXVsdGlidW5kbGUiLCJ0eXBlIiwibWV0YSIsInVybCIsInBhY2thZ2UiLCJ1cGRhdGUiLCJzZXQiLCJoYXNoIiwiY3JlYXRvciIsInJlcXVpcmUiLCJleHBvcnRzIiwiYWN0aW9ucyIsImpvaW4iLCJhc3NpZ24iLCJjcmVhdGUiLCJhY3Rpdml0aWVzIiwicmVmaW5lIiwiaW1wb3J0ZWQiLCJnZW5lcmF0ZSIsInNhdmUiLCJjbGVhbiIsImFjdGl2aXR5IiwiZWRpdCIsImRlbGV0ZSIsImNhbmNlbCIsIm5leHQiLCJiYWNrIiwibGluayIsImdUb29sdGlwIiwiaW1wb3J0IiwiYXNzaWduZWQiLCJ0aXRsZSIsInNoYXJlIiwiZGFzaGJvYXJkIiwibm9Bc3NpZ25lZCIsIm1lc3NhZ2VzIiwiY29waWVkIiwiaXRlbSIsImRlc2NyaXB0aW9uIiwiY29weSIsInRlc3QiLCJuYXZpZ2F0ZSIsImJ1dHRvbiIsImxhYmVsIiwiY3JlYXRlQ2xhc3Nyb29tIiwiZXJyb3JzIiwiZGVmYXVsdCIsImVtcHR5IiwidGV4dCIsImFjdGlvbiIsInRvdXIiLCJidXR0b25zIiwibmV4dEJ0blRleHQiLCJwcmV2QnRuVGV4dCIsImRvbmVCdG5UZXh0IiwidGVhY2hlciIsInN0ZXAwIiwiY29tbXVuaXR5IiwiZHJhZnRzIiwiY2xhc3Nyb29tcyIsInN0ZXAzIiwibW9kdWxlcyIsImFzc2lnbm1lbnRzIiwic3R1ZGVudCIsInByb2ZpbGUiLCJpdGVtcyIsInVzZSIsInN0dWRlbnRzIiwibWVtYmVycyIsImNoaWxkcmVuIiwiZGVzY3JpcHRvciIsImltIiwiZnJvbSIsIm5hbWUiLCJwcm9jZXNzIiwicHJvcCIsInZhbHVlIiwidGhpcyIsIm9uIiwiZXZlbnQiLCJsaXN0ZW5lciIsIm9mZiIsImluaXRpYWxpc2UiXSwic291cmNlcyI6WyIwIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsU0FBUyxDQUFDLG1DQUFvQyxTQUFVQyxFQUFTQyxHQUN0RSxhQUVBLElBQUlDLEVBQWNDLEVBQVNDLEVBQVVDLEVBQU9DLEVBQUtDLEVBQUtDLEVBQWNDLEVBQ3BFVCxFQUFRLFdBQVksR0FDcEIsTUFBTyxDQUNMVSxRQUFTLENBQUMsU0FBVUMsR0FDbEJULEVBQWVTLENBQ2pCLEdBQ0FDLFFBQVMsV0FDUFQsRUFBVVUsSUFDUixNQUFNQyxFQUFlLElBQUlDLElBQUksQ0FBQyxDQUFDLHNCQUF1QixTQUFVLENBQUMsdUJBQXdCLFNBQVUsQ0FBQyx1QkFBd0IsU0FBVSxDQUFDLG9CQUFxQixTQUFVLENBQUMseUJBQTBCLFNBQVUsQ0FBQyxjQUFlLFNBQVUsQ0FBQyxzQkFBdUIsU0FBVSxDQUFDLHdCQUF5QixTQUFVLENBQUMscUJBQXNCLFVBQVcsQ0FBQyxvQkFBcUIsU0FBVSxDQUFDLG9CQUFxQixVQUFXLENBQUMsNkJBQThCLFNBQVUsQ0FBQyw4QkFBK0IsU0FBVSxDQUFDLHFCQUFzQixTQUFVLENBQUMsZUFBZ0IsV0FBWSxDQUFDLGlCQUFrQixXQUFZLENBQUMsa0JBQW1CLFdBQVksQ0FBQyxpQkFBa0IsVUFBVyxDQUFDLHdCQUF5QixVQUFXLENBQUMsNEJBQTZCLFVBQVcsQ0FBQyw4QkFBK0IsVUFBVyxDQUFDLHdCQUF5QixTQUFVLENBQUMseUJBQTBCLFNBQVUsQ0FBQyw0QkFBNkIsU0FBVSxDQUFDLCtCQUFnQyxTQUFVLENBQUMsK0JBQWdD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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.2"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/home",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('de');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 3479968889,
+        creator: function (require, exports) {
+          exports.txt = {
+            "actions": {
+              "join": "Join",
+              "assign": "Zuweisen",
+              "create": "Erstellen",
+              "register": "Registrieren",
+              "activities": "Aktivitäten generieren",
+              "refine": "Verfeinern",
+              "imported": "Importiert",
+              "generate": "Generieren",
+              "save": "Speichern",
+              "clean": "Reinigen",
+              "activity": "Aktivitäten",
+              "update": "Dokument hochladen",
+              "edit": "Bearbeiten",
+              "delete": "Löschen",
+              "cancel": "Abbrechen",
+              "next": "Weiter",
+              "back": "Zurück",
+              "link": "Link",
+              "gTooltip": "Klassenzimmer von Google importiert",
+              "import": "Importieren"
+            },
+            "assign": {
+              "assigned": "Zugewiesen",
+              "title": {
+                "share": "Modul an Klassenräume zuweisen",
+                "dashboard": "Zuweisungsdashboard aufrufen"
+              },
+              "noAssigned": "Keine Klassenräume zugewiesen",
+              "module": "Modul",
+              "messages": {
+                "copied": "Link in die Zwischenablage kopiert",
+                "assigned": "Modul wurde dem Klassenraum {classroom} zugewiesen"
+              },
+              "item": {
+                "description": "Der Punkt hat keine Beschreibung"
+              },
+              "actions": {
+                "dashboard": "Dashboard",
+                "copy": "Link kopieren",
+                "test": "Testen",
+                "navigate": "Navigieren",
+                "assign": {
+                  "button": "Zuweisen",
+                  "label": "Das Modul wurde diesem Klassenraum noch nicht zugewiesen"
+                },
+                "createClassroom": "Klassenraum erstellen"
+              },
+              "errors": {
+                "default": "Das Modul konnte diesem Klassenraum nicht zugewiesen werden. Bitte versuchen Sie es später erneut oder kontaktieren Sie den Administrator"
+              },
+              "empty": {
+                "share": {
+                  "text": "Achtung",
+                  "description": "Sie haben noch keine Klassenräume erstellt. Sie müssen einen erstellen, um diese Aktivität zuweisen zu können.",
+                  "action": "Klassenraum erstellen"
+                },
+                "dashboard": {
+                  "description": "Modul ohne Zuweisungen"
+                }
+              }
+            },
+            "tour": {
+              "buttons": {
+                "nextBtnText": "Weiter",
+                "prevBtnText": "Zurück",
+                "doneBtnText": "Fertig"
+              },
+              "teacher": {
+                "step0": {
+                  "title": "Willkommen in Ihrem Profil",
+                  "description": "Hier können Sie Ihre Erfahrung in RVD.AI anpassen. Sie können Ihre persönlichen Informationen aktualisieren, Ihre bevorzugte Sprache angeben, Barrierefreiheitsoptionen konfigurieren und die Audiogeschwindigkeit anpassen."
+                },
+                "community": {
+                  "title": "Community",
+                  "description": "Entdecken Sie unsere Sammlung von Lernmodulen, die von Experten erstellt wurden. Finden Sie eine Vielzahl von einsatzbereiten Inhalten für Ihre Klassenräume. Sie können diese Module nach Ihren Kriterien bearbeiten und anpassen, um sie an die Bedürfnisse Ihrer Schüler anzupassen."
+                },
+                "drafts": {
+                  "title": "Modulentwürfe",
+                  "description": "Arbeiten Sie an Ihren Lernmodul-Entwürfen, bis sie bereit zur Veröffentlichung und Zuweisung zu einem Klassenraum sind. Sie werden hier gespeichert, damit Sie sie nach Bedarf bearbeiten können. Beginnen Sie mit der Erstellung Ihres ersten Moduls!"
+                },
+                "classrooms": {
+                  "title": "Klassenräume",
+                  "description": "In diesem Bereich können Sie Klassenräume erstellen, in denen Sie Ihre Schüler gruppieren und ihnen die von Ihnen veröffentlichten Lernmodule zuweisen können. Organisieren Sie Ihren Unterricht effektiv und personalisieren Sie ihn. Beginnen Sie mit der Erstellung Ihrer Klassenräume und verwandeln Sie das Bildungserlebnis!"
+                },
+                "step3": {
+                  "title": "Brauchen Sie Hilfe?",
+                  "description": "Finden Sie alle Informationen in unseren Tutorials, die entwickelt wurden, um Ihnen zu helfen, das Beste aus RVD.AI herauszuholen. Lernen Sie, wie Sie Lernmodule erstellen, Ihre Klassenräume verwalten und alle von uns angebotenen Tools nutzen können. Erkunden Sie unsere Tutorials und navigieren Sie durch die Plattform!"
+                },
+                "modules": {
+                  "title": "Meine Lernmodule",
+                  "description": "In diesem Abschnitt werden die Module angezeigt, die der Benutzer erstellt hat."
+                },
+                "assignments": {
+                  "title": "Meine Aufgaben",
+                  "description": "Hier können Sie alle Lernmodule sehen, die Ihnen innerhalb Ihrer Klassenräume zugewiesen wurden. Diese Aufgaben enthalten den Inhalt, den Sie abschließen müssen. Erkunden Sie Ihre Aufgaben und setzen Sie Ihren Lernweg fort!"
+                }
+              },
+              "student": {
+                "step0": {
+                  "title": "Willkommen in Ihrem Profil",
+                  "description": "Hier können Sie Ihre Erfahrung in RVD.AI anpassen. Sie können Ihre persönlichen Informationen aktualisieren, Ihre bevorzugte Sprache angeben, Barrierefreiheitsoptionen konfigurieren und die Audiogeschwindigkeit anpassen."
+                },
+                "classrooms": {
+                  "title": "Klassenräume",
+                  "description": "Hier können Sie alle Klassenräume sehen, zu denen Sie gehören. Erkunden Sie die zugewiesenen Lernmodule, überprüfen Sie den Inhalt und bleiben Sie auf dem Laufenden mit Ihrem Unterricht. Sie können auch neuen Klassenräumen mit einem Code beitreten. Entdecken Sie alles, was Sie in Ihren Klassenräumen lernen können!"
+                },
+                "assignments": {
+                  "title": "Meine Aufgaben",
+                  "description": "Hier können Sie alle Lernmodule sehen, die Ihnen innerhalb Ihrer Klassenräume zugewiesen wurden. Diese Aufgaben enthalten den Inhalt, den Sie abschließen müssen. Erkunden Sie Ihre Aufgaben und setzen Sie Ihren Lernweg fort!"
+                }
+              }
+            },
+            "errors": {
+              "default": "Der Vorgang ist fehlgeschlagen. Bitte versuchen Sie es erneut."
+            },
+            "title": "Willkommen!",
+            "profile": {
+              "edit": "Zu meinem Profil"
+            },
+            "assignments": {
+              "title": "Meine Aufgaben",
+              "activities": "Meine Aktivitäten",
+              "actions": {
+                "link": "Eingang"
+              },
+              "item": {
+                "description": "Diese Aufgabe hat keine Beschreibung oder Ziel"
+              }
+            },
+            "modules": {
+              "title": "Meine Lernmodule",
+              "empty": "Sie haben noch keine Lernmodule",
+              "action": "Modul veröffentlichen",
+              "activities": "Meine Aktivitäten",
+              "items": {
+                "description": "Dieses Modul hat keine Beschreibung oder Ziel",
+                "title": "Dieses Modul hat keinen Titel"
+              }
+            },
+            "drafts": {
+              "title": "Meine Entwürfe",
+              "empty": {
+                "title": "Sie haben keine Entwürfe",
+                "action": "Erstellen Sie einen neuen!"
+              },
+              "actions": {
+                "create": "Erstellen",
+                "join": "Beitreten"
+              },
+              "items": {
+                "description": "Dieses Modul hat keine Beschreibung oder Ziel",
+                "title": "Dieser Entwurf hat keinen Titel"
+              }
+            },
+            "community": {
+              "title": "Community",
+              "actions": {
+                "link": "Alle anzeigen",
+                "test": "Demo",
+                "use": "Erstellen Sie Ihre eigene Version"
+              }
+            },
+            "classrooms": {
+              "title": "Meine Klassenräume",
+              "empty": {
+                "description": "Gruppieren Sie Ihre Schüler in Arbeitsbereichen und weisen Sie personalisierte Lernmodule zu.",
+                "action": "Erstellen Sie Ihren ersten Klassenraum",
+                "title": "Erstellen Sie Ihren ersten Klassenraum"
+              },
+              "actions": {
+                "create": "Erstellen",
+                "join": "Beitreten"
+              },
+              "items": {
+                "description": "Dieser Klassenraum hat keine Beschreibung oder Ziel"
+              }
+            },
+            "students": {
+              "title": "Meine Schüler"
+            },
+            "members": {
+              "children": "Meine Kinder"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});

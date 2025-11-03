@@ -1,2 +1,103 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle","react@18.3.1","framer-motion@10.18.0"],function(e,t){"use strict";var o,n,r,s,i,a,p,c,m,u,d;e({BaseComponent:void 0,IPUIProps:void 0});return{setters:[function(e){o=e},function(e){n=e},function(e){r=e}],execute:function(){s=e=>{const t=new Map([["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.12"],["@beyond-js/react-18-widgets","1.1.4"],["@beyond-js/reactive","2.1.0"],["@beyond-js/widgets","0.1.6"],["@floating-ui/dom","1.7.3"],["clsx","2.1.1"],["framer-motion","11.11.11"],["perfect-scrollbar","1.5.6"],["prismjs","1.29.0"],["swiper","10.3.1"],["tippy.js","6.3.7"],["@types/react","18.3.12"],["@types/react-dom","18.3.1"],["pragmate-ui","1.0.8"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,t))};({Bundle:i}=o);a=new i({module:{vspecifier:"pragmate-ui@1.0.8/base"},type:"code"},t.meta.url).package();a.dependencies.update([["react",n],["framer-motion",r]]);p=new Map;p.set("./index",{hash:2707386817,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true});t.BaseComponent=r;var o=e("react");var n=e("framer-motion");function r({as:e="div",motion:t=false,children:r,...s}){const i=t?n.motion[e]:e;return o.default.createElement(i,s,r)}}});p.set("./types",{hash:577170094,creator:function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:true})}});a.exports.descriptor=[{im:"./index",from:"BaseComponent",name:"BaseComponent"},{im:"./types",from:"IPUIProps",name:"IPUIProps"}];a.exports.process=function({require:t,prop:o,value:n}){(t||o==="BaseComponent")&&e("BaseComponent",c=t?t("./index").BaseComponent:n);(t||o==="IPUIProps")&&e("IPUIProps",m=t?t("./types").IPUIProps:n)};e("__beyond_pkg",u=a);e("hmr",d=new function(){this.on=(e,t)=>a.hmr.on(e,t);this.off=(e,t)=>a.hmr.off(e,t)});a.initialise(p)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvcHJhZ21hdGUtdWlAMS4wLjgvYmFzZS5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiZGVwZW5kZW5jeV8xIiwiZGVwZW5kZW5jeV8yIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJCYXNlQ29tcG9uZW50IiwiSVBVSVByb3BzIiwiX19iZXlvbmRfcGtnIiwiaG1yIiwic2V0dGVycyIsIl9iZXlvbmRKc0tlcm5lbDAxMTRCdW5kbGUiLCJfcmVhY3QyIiwiX2ZyYW1lck1vdGlvbjIiLCJleGVjdXRlIiwic3BlY2lmaWVyIiwiZGVwZW5kZW5jaWVzIiwiTWFwIiwiZ2xvYmFsVGhpcyIsInJlc29sdmUiLCJCdW5kbGUiLCJtb2R1bGUiLCJ2c3BlY2lmaWVyIiwidHlwZSIsIm1ldGEiLCJ1cmwiLCJwYWNrYWdlIiwidXBkYXRlIiwic2V0IiwiaGFzaCIsImNyZWF0b3IiLCJyZXF1aXJlIiwiZXhwb3J0cyIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwidmFsdWUiLCJfcmVhY3QiLCJfZnJhbWVyTW90aW9uIiwiYXMiLCJtb3Rpb24iLCJ1c2VNb3Rpb24iLCJjaGlsZHJlbiIsInJlc3RQcm9wcyIsIkVsZW1lbnQiLCJkZWZhdWx0IiwiY3JlYXRlRWxlbWVudCIsImRlc2NyaXB0b3IiLCJpbSIsImZyb20iLCJuYW1lIiwicHJvY2VzcyIsInByb3AiLCJ0aGlzIiwib24iLCJldmVudCIsImxpc3RlbmVyIiwib2ZmIiwiaW5pdGlhbGlzZSJdLCJzb3VyY2VzIjpbIjAiXSwibWFwcGluZ3MiOiJBQUFBQSxPQUFPQyxTQUFTLENBQUMsa0NBQW1DLGVBQWdCLHlCQUEwQixTQUFVQyxFQUFTQyxHQUMvRyxhQUVBLElBQUlDLEVBQWNDLEVBQWNDLEVBQWNDLEVBQVNDLEVBQVVDLEVBQU9DLEVBQUtDLEVBQWVDLEVBQVdDLEVBQWNDLEVBQ3JIWixFQUFRLENBQ05T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
+System.register(["@beyond-js/kernel@0.1.14/bundle", "react@18.3.1", "framer-motion@10.18.0"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, dependency_1, dependency_2, bimport, __Bundle, __pkg, ims, BaseComponent, IPUIProps, __beyond_pkg, hmr;
+  _export({
+    BaseComponent: void 0,
+    IPUIProps: void 0
+  });
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }, function (_react2) {
+      dependency_1 = _react2;
+    }, function (_framerMotion2) {
+      dependency_2 = _framerMotion2;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.12"], ["@beyond-js/react-18-widgets", "1.1.4"], ["@beyond-js/reactive", "2.1.0"], ["@beyond-js/widgets", "0.1.6"], ["@floating-ui/dom", "1.7.3"], ["clsx", "2.1.1"], ["framer-motion", "11.11.11"], ["perfect-scrollbar", "1.5.6"], ["prismjs", "1.29.0"], ["swiper", "10.3.1"], ["tippy.js", "6.3.7"], ["@types/react", "18.3.12"], ["@types/react-dom", "18.3.1"], ["pragmate-ui", "1.0.8"], ["@aimpact/rvd", "0.7.2"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "pragmate-ui@1.0.8/base"
+        },
+        "type": "code"
+      }, _context.meta.url).package();
+      ;
+      __pkg.dependencies.update([['react', dependency_1], ['framer-motion', dependency_2]]);
+      ims = new Map();
+      /***********************
+      INTERNAL MODULE: ./index
+      ***********************/
+      ims.set('./index', {
+        hash: 2707386817,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+          exports.BaseComponent = BaseComponent;
+          var _react = require("react");
+          var _framerMotion = require("framer-motion");
+          /*bundle*/ // Create the base component using a function with a constructor
+          function BaseComponent({
+            as = 'div',
+            motion: useMotion = false,
+            children,
+            ...restProps
+          }) {
+            // Create the element dynamically
+            const Element = useMotion ? _framerMotion.motion[as] : as;
+            return _react.default.createElement(Element, restProps, children);
+          }
+        }
+      });
+
+      /***********************
+      INTERNAL MODULE: ./types
+      ***********************/
+
+      ims.set('./types', {
+        hash: 577170094,
+        creator: function (require, exports) {
+          "use strict";
+
+          Object.defineProperty(exports, "__esModule", {
+            value: true
+          });
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./index",
+        "from": "BaseComponent",
+        "name": "BaseComponent"
+      }, {
+        "im": "./types",
+        "from": "IPUIProps",
+        "name": "IPUIProps"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'BaseComponent') && _export("BaseComponent", BaseComponent = require ? require('./index').BaseComponent : value);
+        (require || prop === 'IPUIProps') && _export("IPUIProps", IPUIProps = require ? require('./types').IPUIProps : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfcmVhY3QiLCJyZXF1aXJlIiwiX2ZyYW1lck1vdGlvbiIsIkJhc2VDb21wb25lbnQiLCJhcyIsIm1vdGlvbiIsInVzZU1vdGlvbiIsImNoaWxkcmVuIiwicmVzdFByb3BzIiwiRWxlbWVudCIsImRlZmF1bHQiLCJjcmVhdGVFbGVtZW50IiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJleHBvcnRzIiwidmFsdWUiXSwic291cmNlcyI6WyIvdHMvaW5kZXgudHN4IiwiL3R5cGVzLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBLElBQUFBLE1BQUEsR0FBQUMsT0FBQTtVQUNBLElBQUFDLGFBQUEsR0FBQUQsT0FBQTtVQVNPLFdBRFA7VUFDaUIsU0FBVUUsYUFBYUEsQ0FBa0I7WUFDekRDLEVBQUUsR0FBRyxLQUFLO1lBQ1ZDLE1BQU0sRUFBRUMsU0FBUyxHQUFHLEtBQUs7WUFDekJDLFFBQVE7WUFDUixHQUFHQztVQUFTLENBQ1c7WUFDdkI7WUFDQSxNQUFNQyxPQUFPLEdBQUdILFNBQVMsR0FBR0osYUFBQSxDQUFBRyxNQUFNLENBQUNELEVBQUUsQ0FBQyxHQUFHQSxFQUFFO1lBRTNDLE9BQU9KLE1BQUEsQ0FBQVUsT0FBSyxDQUFDQyxhQUFhLENBQUNGLE9BQU8sRUFBRUQsU0FBUyxFQUFFRCxRQUFRLENBQUM7VUFDekQ7Ozs7Ozs7Ozs7O1VDcEJBOztVQUVBSyxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtZQUNBQyxLQUFBO1VBQ0EiLCJpZ25vcmVMaXN0IjpbXX0=

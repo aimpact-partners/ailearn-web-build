@@ -1,2 +1,150 @@
-System.register(["@beyond-js/kernel@0.1.14/bundle"],function(e,a){"use strict";var t,i,r,o,s,n,d,l;e("txt",void 0);return{setters:[function(e){t=e}],execute:function(){i=e=>{const a=new Map([["@aimpact/agents-api","0.4.1"],["@aimpact/ailearn-sdk","1.2.0"],["@aimpact/ailearn-api","0.9.0"],["@aimpact/chat-sdk","1.5.5"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","1.0.9"],["@beyond-js/reactive","2.1.2"],["@beyond-js/http-suite","0.1.1"],["@beyond-js/backend","0.1.10"],["@beyond-js/events","0.0.7"],["@beyond-js/kernel","0.1.14"],["@beyond-js/pending-promise","0.0.5"],["@beyond-js/react-18-widgets","1.1.8"],["@beyond-js/widgets","1.1.2"],["@emotion/css","11.13.5"],["@emotion/react","11.14.0"],["@emotion/styled","11.14.0"],["@firebase/auth","1.10.0"],["@google-cloud/storage","7.15.2"],["@radix-ui/react-accordion","1.2.12"],["@radix-ui/react-collapsible","1.1.12"],["@radix-ui/react-icons","1.3.2"],["@radix-ui/react-select","2.2.6"],["@radix-ui/react-separator","1.1.7"],["@tiptap/extension-blockquote","3.2.0"],["@tiptap/extension-code-block","3.2.0"],["@tiptap/extension-horizontal-rule","3.2.0"],["@tiptap/extension-image","3.6.2"],["@tiptap/extension-task-item","3.2.0"],["@tiptap/extension-task-list","3.2.0"],["@tiptap/extension-underline","3.2.0"],["@tiptap/pm","3.6.2"],["@tiptap/react","3.2.0"],["@tiptap/starter-kit","3.2.0"],["apexcharts","3.54.1"],["bourbon","7.3.0"],["clsx","2.1.1"],["dayjs","1.11.13"],["dexie","3.2.7"],["dompurify","3.2.4"],["driver.js","1.3.5"],["firebase","11.6.0"],["framer-motion","10.18.0"],["gsap","3.13.0"],["highlight.js","11.11.1"],["is-mobile","4.0.0"],["js-confetti","0.12.0"],["katex","0.16.21"],["lodash","4.17.21"],["marked","5.1.2"],["marked-gfm-heading-id","3.2.0"],["marked-highlight","2.2.1"],["marked-mangle","1.1.10"],["media-suite","0.0.4"],["perfect-scrollbar","1.5.6"],["react","18.3.1"],["react-dom","18.3.1"],["react-icons","5.5.0"],["react-responsive-masonry","2.7.1"],["react-select","5.10.1"],["react-simple-wysiwyg","3.4.0"],["react-virtuoso","4.14.0"],["simplebar-react","3.3.0"],["slate","0.103.0"],["slate-react","0.110.3"],["socket.io-client","4.8.1"],["swiper","12.0.2"],["tippy.js","6.3.7"],["turndown","7.2.0"],["uuid","11.1.0"],["wavesurfer.js","7.9.4"],["yet-another-react-lightbox","3.25.0"],["zod","3.24.2"],["@beyond-js/local","0.1.3"],["@types/node","20.11.0"],["@types/react","18.3.20"],["@types/react-dom","18.3.5"],["react-is","16.13.1"],["@aimpact/ailearn-app","0.7.0"],["@aimpact/rvd","0.7.0"]]);return globalThis.bimport(globalThis.bimport.resolve(e,a))};({Bundle:r}=t);o=new r({module:{vspecifier:"@aimpact/ailearn-app@0.7.0/modules/list",multibundle:true},type:"txt"},a.meta.url).package("es");o.dependencies.update([]);s=new Map;s.set("./txt",{hash:4287880497,creator:function(e,a){a.txt={assign:{title:{share:"Asignar m\xf3dulo a aulas",dashboard:"Acceder a dashboard de la asignaci\xf3n"},assigned:"Asignado",noAssigned:"No hay aulas asignadas",module:"M\xf3dulo",messages:{copied:"Enlace copiado al portapapeles",assigned:"M\xf3dulo asignado al aula {classroom}"},item:{description:"El item no tiene descripci\xf3n"},actions:{dashboard:"Dashboard",copy:"Copiar link",test:"Probar",navigate:"Navegar",createClassroom:"Crear aula",assign:{button:"Asignar",label:"El m\xf3dulo no ha sido asignado a esta Aula"}},errors:{default:"No se ha podido asignar el m\xf3dulo a esta Aula, por favor int\xe9ntelo de nuevo m\xe1s tarde o contacte al administrador"},empty:{share:{text:"Atenci\xf3n",description:"A\xfan no posees aulas creadas, debes crear una para poder asignar esta actividad.",action:"Crear aula"},dashboard:{description:"M\xf3dulo sin asignaciones"}}},delete:{title:"Eliminar m\xf3dulo",description:"\xbfEst\xe1 seguro que desea eliminar este m\xf3dulo?",errors:{59:"El m\xf3dulo no puede ser eliminado porque ya posee datos asociados.",default:"Ocurri\xf3 un error al eliminar el m\xf3dulo."}},archive:{title:"Archivar m\xf3dulo",description:"\xbfEst\xe1 seguro que desea archivar este m\xf3dulo?",errors:{default:"Ocurri\xf3 un error al archivar el m\xf3dulo."}},empty:{general:{title:"Crea tu Primer M\xf3dulo",description:"Moderniza tu enfoque educativo al dar vida a tu primer m\xf3dulo. \xa1Desata tu creatividad, da forma a tu contenido y disfruta de la experiencia del aprendizaje! "},drafts:{title:"A\xfan no hay Borradores",description:"No tienes borradores en este momento. Comienza a crear y perfeccionar tu contenido antes de publicarlo. "},published:{title:"No hay M\xf3dulos Publicados",description:"No hay m\xf3dulos publicados disponibles. Trabaja en cada m\xf3dulo y publ\xedcalos para actualizar este listado de publicaciones. "}},errors:{default:"No se ha podido realizar la operaci\xf3n. Por favor, int\xe9ntelo de novo.",ERROR_GETTING_URL:"Error obteniendo url"},title:"Mis m\xf3dulos de aprendizaje",tabs:{drafts:"Borradores",published:"Publicados"},actions:{create:"Crear",delete:"Borrar item",use:"Crear una versi\xf3n nueva"},loading:{title:"Cargando Datos",description:"Estamos cargando sus datos. Por favor, espere un momento."},item:{description:"El m\xf3dulo no tiene una descripci\xf3n a\xfan",draftTitle:"M\xf3dulo Borrador"}}}});o.exports.descriptor=[{im:"./txt",from:"txt",name:"txt"}];o.exports.process=function({require:a,prop:t,value:i}){(a||t==="txt")&&e("txt",n=a?a("./txt").txt:i)};e("__beyond_pkg",d=o);e("hmr",l=new function(){this.on=(e,a)=>o.hmr.on(e,a);this.off=(e,a)=>o.hmr.off(e,a)});o.initialise(s)}}});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFja2FnZXMvQGFpbXBhY3QvYWlsZWFybi1hcHBAMC43LjAvbW9kdWxlcy9saXN0LnR4dC5lcy5qcyIsIm5hbWVzIjpbIlN5c3RlbSIsInJlZ2lzdGVyIiwiX2V4cG9ydCIsIl9jb250ZXh0IiwiZGVwZW5kZW5jeV8wIiwiYmltcG9ydCIsIl9fQnVuZGxlIiwiX19wa2ciLCJpbXMiLCJ0eHQiLCJfX2JleW9uZF9wa2ciLCJobXIiLCJzZXR0ZXJzIiwiX2JleW9uZEpzS2VybmVsMDExNEJ1bmRsZSIsImV4ZWN1dGUiLCJzcGVjaWZpZXIiLCJkZXBlbmRlbmNpZXMiLCJNYXAiLCJnbG9iYWxUaGlzIiwicmVzb2x2ZSIsIkJ1bmRsZSIsIm1vZHVsZSIsInZzcGVjaWZpZXIiLCJtdWx0aWJ1bmRsZSIsInR5cGUiLCJtZXRhIiwidXJsIiwicGFja2FnZSIsInVwZGF0ZSIsInNldCIsImhhc2giLCJjcmVhdG9yIiwicmVxdWlyZSIsImV4cG9ydHMiLCJhc3NpZ24iLCJ0aXRsZSIsInNoYXJlIiwiZGFzaGJvYXJkIiwiYXNzaWduZWQiLCJub0Fzc2lnbmVkIiwibWVzc2FnZXMiLCJjb3BpZWQiLCJpdGVtIiwiZGVzY3JpcHRpb24iLCJhY3Rpb25zIiwiY29weSIsInRlc3QiLCJuYXZpZ2F0ZSIsImNyZWF0ZUNsYXNzcm9vbSIsImJ1dHRvbiIsImxhYmVsIiwiZXJyb3JzIiwiZGVmYXVsdCIsImVtcHR5IiwidGV4dCIsImFjdGlvbiIsImRlbGV0ZSIsImFyY2hpdmUiLCJnZW5lcmFsIiwiZHJhZnRzIiwicHVibGlzaGVkIiwiRVJST1JfR0VUVElOR19VUkwiLCJ0YWJzIiwiY3JlYXRlIiwidXNlIiwibG9hZGluZyIsImRyYWZ0VGl0bGUiLCJkZXNjcmlwdG9yIiwiaW0iLCJmcm9tIiwibmFtZSIsInByb2Nlc3MiLCJwcm9wIiwidmFsdWUiLCJ0aGlzIiwib24iLCJldmVudCIsImxpc3RlbmVyIiwib2ZmIiwiaW5pdGlhbGlzZSJdLCJzb3VyY2VzIjpbIjAiXSwibWFwcGlu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
+System.register(["@beyond-js/kernel@0.1.14/bundle"], function (_export, _context) {
+  "use strict";
+
+  var dependency_0, bimport, __Bundle, __pkg, ims, txt, __beyond_pkg, hmr;
+  _export("txt", void 0);
+  return {
+    setters: [function (_beyondJsKernel0114Bundle) {
+      dependency_0 = _beyondJsKernel0114Bundle;
+    }],
+    execute: function () {
+      bimport = specifier => {
+        const dependencies = new Map([["@aimpact/agents-api", "0.4.1"], ["@aimpact/ailearn-sdk", "1.2.0"], ["@aimpact/ailearn-api", "0.9.0"], ["@aimpact/chat-sdk", "1.5.5"], ["@aimpact/media-manager", "1.0.0"], ["pragmate-ui", "1.0.9"], ["@beyond-js/reactive", "2.1.2"], ["@beyond-js/http-suite", "0.1.1"], ["@beyond-js/backend", "0.1.10"], ["@beyond-js/events", "0.0.7"], ["@beyond-js/kernel", "0.1.14"], ["@beyond-js/pending-promise", "0.0.5"], ["@beyond-js/react-18-widgets", "1.1.8"], ["@beyond-js/widgets", "1.1.2"], ["@emotion/css", "11.13.5"], ["@emotion/react", "11.14.0"], ["@emotion/styled", "11.14.0"], ["@firebase/auth", "1.10.0"], ["@google-cloud/storage", "7.15.2"], ["@radix-ui/react-accordion", "1.2.12"], ["@radix-ui/react-collapsible", "1.1.12"], ["@radix-ui/react-icons", "1.3.2"], ["@radix-ui/react-select", "2.2.6"], ["@radix-ui/react-separator", "1.1.7"], ["@tiptap/extension-blockquote", "3.2.0"], ["@tiptap/extension-code-block", "3.2.0"], ["@tiptap/extension-horizontal-rule", "3.2.0"], ["@tiptap/extension-image", "3.6.2"], ["@tiptap/extension-task-item", "3.2.0"], ["@tiptap/extension-task-list", "3.2.0"], ["@tiptap/extension-underline", "3.2.0"], ["@tiptap/pm", "3.6.2"], ["@tiptap/react", "3.2.0"], ["@tiptap/starter-kit", "3.2.0"], ["apexcharts", "3.54.1"], ["bourbon", "7.3.0"], ["clsx", "2.1.1"], ["dayjs", "1.11.13"], ["dexie", "3.2.7"], ["dompurify", "3.2.4"], ["driver.js", "1.3.5"], ["firebase", "11.6.0"], ["framer-motion", "10.18.0"], ["gsap", "3.13.0"], ["highlight.js", "11.11.1"], ["is-mobile", "4.0.0"], ["js-confetti", "0.12.0"], ["katex", "0.16.21"], ["lodash", "4.17.21"], ["marked", "5.1.2"], ["marked-gfm-heading-id", "3.2.0"], ["marked-highlight", "2.2.1"], ["marked-mangle", "1.1.10"], ["media-suite", "0.0.4"], ["perfect-scrollbar", "1.5.6"], ["react", "18.3.1"], ["react-dom", "18.3.1"], ["react-icons", "5.5.0"], ["react-responsive-masonry", "2.7.1"], ["react-select", "5.10.1"], ["react-simple-wysiwyg", "3.4.0"], ["react-virtuoso", "4.14.0"], ["simplebar-react", "3.3.0"], ["slate", "0.103.0"], ["slate-react", "0.110.3"], ["socket.io-client", "4.8.1"], ["swiper", "12.0.2"], ["tippy.js", "6.3.7"], ["turndown", "7.2.0"], ["uuid", "11.1.0"], ["wavesurfer.js", "7.9.4"], ["yet-another-react-lightbox", "3.25.0"], ["zod", "3.24.2"], ["@beyond-js/local", "0.1.3"], ["@types/node", "20.11.0"], ["@types/react", "18.3.20"], ["@types/react-dom", "18.3.5"], ["react-is", "16.13.1"], ["@aimpact/ailearn-app", "0.7.0"], ["@aimpact/rvd", "0.7.2"]]);
+        return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
+      };
+      ({
+        Bundle: __Bundle
+      } = dependency_0);
+      __pkg = new __Bundle({
+        "module": {
+          "vspecifier": "@aimpact/ailearn-app@0.7.0/modules/list",
+          "multibundle": true
+        },
+        "type": "txt"
+      }, _context.meta.url).package('es');
+      ;
+      __pkg.dependencies.update([]);
+      ims = new Map();
+      /*********************
+      INTERNAL MODULE: ./txt
+      *********************/
+      ims.set('./txt', {
+        hash: 4287880497,
+        creator: function (require, exports) {
+          exports.txt = {
+            "assign": {
+              "title": {
+                "share": "Asignar módulo a aulas",
+                "dashboard": "Acceder a dashboard de la asignación"
+              },
+              "assigned": "Asignado",
+              "noAssigned": "No hay aulas asignadas",
+              "module": "Módulo",
+              "messages": {
+                "copied": "Enlace copiado al portapapeles",
+                "assigned": "Módulo asignado al aula {classroom}"
+              },
+              "item": {
+                "description": "El item no tiene descripción"
+              },
+              "actions": {
+                "dashboard": "Dashboard",
+                "copy": "Copiar link",
+                "test": "Probar",
+                "navigate": "Navegar",
+                "createClassroom": "Crear aula",
+                "assign": {
+                  "button": "Asignar",
+                  "label": "El módulo no ha sido asignado a esta Aula"
+                }
+              },
+              "errors": {
+                "default": "No se ha podido asignar el módulo a esta Aula, por favor inténtelo de nuevo más tarde o contacte al administrador"
+              },
+              "empty": {
+                "share": {
+                  "text": "Atención",
+                  "description": "Aún no posees aulas creadas, debes crear una para poder asignar esta actividad.",
+                  "action": "Crear aula"
+                },
+                "dashboard": {
+                  "description": "Módulo sin asignaciones"
+                }
+              }
+            },
+            "delete": {
+              "title": "Eliminar módulo",
+              "description": "¿Está seguro que desea eliminar este módulo?",
+              "errors": {
+                "59": "El módulo no puede ser eliminado porque ya posee datos asociados.",
+                "default": "Ocurrió un error al eliminar el módulo."
+              }
+            },
+            "archive": {
+              "title": "Archivar módulo",
+              "description": "¿Está seguro que desea archivar este módulo?",
+              "errors": {
+                "default": "Ocurrió un error al archivar el módulo."
+              }
+            },
+            "empty": {
+              "general": {
+                "title": "Crea tu Primer Módulo",
+                "description": "Moderniza tu enfoque educativo al dar vida a tu primer módulo. ¡Desata tu creatividad, da forma a tu contenido y disfruta de la experiencia del aprendizaje! "
+              },
+              "drafts": {
+                "title": "Aún no hay Borradores",
+                "description": "No tienes borradores en este momento. Comienza a crear y perfeccionar tu contenido antes de publicarlo. "
+              },
+              "published": {
+                "title": "No hay Módulos Publicados",
+                "description": "No hay módulos publicados disponibles. Trabaja en cada módulo y publícalos para actualizar este listado de publicaciones. "
+              }
+            },
+            "errors": {
+              "default": "No se ha podido realizar la operación. Por favor, inténtelo de novo.",
+              "ERROR_GETTING_URL": "Error obteniendo url"
+            },
+            "title": "Mis módulos de aprendizaje",
+            "tabs": {
+              "drafts": "Borradores",
+              "published": "Publicados"
+            },
+            "actions": {
+              "create": "Crear",
+              "delete": "Borrar item",
+              "use": "Crear una versión nueva"
+            },
+            "loading": {
+              "title": "Cargando Datos",
+              "description": "Estamos cargando sus datos. Por favor, espere un momento."
+            },
+            "item": {
+              "description": "El módulo no tiene una descripción aún",
+              "draftTitle": "Módulo Borrador"
+            }
+          };
+        }
+      });
+      __pkg.exports.descriptor = [{
+        "im": "./txt",
+        "from": "txt",
+        "name": "txt"
+      }];
+      // Module exports
+      __pkg.exports.process = function ({
+        require,
+        prop,
+        value
+      }) {
+        (require || prop === 'txt') && _export("txt", txt = require ? require('./txt').txt : value);
+      };
+      _export("__beyond_pkg", __beyond_pkg = __pkg);
+      _export("hmr", hmr = new function () {
+        this.on = (event, listener) => __pkg.hmr.on(event, listener);
+        this.off = (event, listener) => __pkg.hmr.off(event, listener);
+      }());
+      __pkg.initialise(ims);
+    }
+  };
+});
