@@ -1,18 +1,1 @@
-.updating__container {
-  margin: auto;
-  display: grid;
-  place-items: center;
-  max-width: 500px;
-  text-align: center;
-  transition: opacity 0.3s ease-in-out;
-}
-.updating__container .pui-image {
-  width: 130px;
-  margin-bottom: 2rem;
-}
-.updating__container .pui-button {
-  margin-top: 2rem;
-}
-
-
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7RUFDQTs7QUFHRDtFQUNDIiwiZmlsZSI6IiJ9 */
+.updating__container{margin:auto;display:grid;place-items:center;max-width:500px;text-align:center;transition:opacity .3s ease-in-out}.updating__container .pui-image{width:130px;margin-bottom:2rem}.updating__container .pui-button{margin-top:2rem}
