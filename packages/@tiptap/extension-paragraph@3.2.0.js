@@ -1,7 +1,7 @@
-System.register(["orderedmap@2.1.1","prosemirror-model@1.25.3","prosemirror-transform@1.10.4","prosemirror-state@1.4.3","@tiptap/pm@3.6.2/state","prosemirror-view@1.40.1","@tiptap/pm@3.6.2/view","w3c-keyname@2.2.8","prosemirror-keymap@1.2.3","@tiptap/pm@3.6.2/keymap","@tiptap/pm@3.6.2/transform","@tiptap/pm@3.6.2/model","prosemirror-commands@1.7.1","@tiptap/pm@3.6.2/commands","prosemirror-schema-list@1.5.1","@tiptap/pm@3.6.2/schema-list","@tiptap/core@3.6.2"], (_exports, _context) => {
+System.register(["orderedmap@2.1.1","prosemirror-model@1.25.3","prosemirror-transform@1.10.4","@tiptap/pm@3.12.0/transform","prosemirror-state@1.4.3","prosemirror-commands@1.7.1","@tiptap/pm@3.12.0/commands","@tiptap/pm@3.12.0/state","@tiptap/pm@3.12.0/model","prosemirror-schema-list@1.5.1","@tiptap/pm@3.12.0/schema-list","prosemirror-view@1.40.1","@tiptap/pm@3.12.0/view","w3c-keyname@2.2.8","prosemirror-keymap@1.2.3","@tiptap/pm@3.12.0/keymap","@tiptap/core@3.12.0"], (_exports, _context) => {
 
 const bimport = specifier => {
-	const dependencies = new Map([["orderedmap","2.1.1"],["prosemirror-model","1.25.3"],["prosemirror-transform","1.10.4"],["prosemirror-state","1.4.3"],["@tiptap/pm","3.6.2"],["prosemirror-view","1.40.1"],["w3c-keyname","2.2.8"],["prosemirror-keymap","1.2.3"],["prosemirror-commands","1.7.1"],["prosemirror-schema-list","1.5.1"],["@tiptap/core","3.6.2"],["@tiptap/extension-paragraph","3.2.0"]]);
+	const dependencies = new Map([["orderedmap","2.1.1"],["prosemirror-model","1.25.3"],["prosemirror-transform","1.10.4"],["@tiptap/pm","3.12.0"],["prosemirror-state","1.4.3"],["prosemirror-commands","1.7.1"],["prosemirror-schema-list","1.5.1"],["prosemirror-view","1.40.1"],["w3c-keyname","2.2.8"],["prosemirror-keymap","1.2.3"],["@tiptap/core","3.12.0"],["@tiptap/extension-paragraph","3.2.0"]]);
 	return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
 };
 
@@ -9,7 +9,7 @@ const bimport = specifier => {
 var dependencies = new Map();
 var require = dependency => dependencies.get(dependency);
 return {
-setters: [dep => dependencies.set('orderedmap@2.1.1', dep), dep => dependencies.set('prosemirror-model@1.25.3', dep), dep => dependencies.set('prosemirror-transform@1.10.4', dep), dep => dependencies.set('prosemirror-state@1.4.3', dep), dep => dependencies.set('@tiptap/pm@3.6.2/state', dep), dep => dependencies.set('prosemirror-view@1.40.1', dep), dep => dependencies.set('@tiptap/pm@3.6.2/view', dep), dep => dependencies.set('w3c-keyname@2.2.8', dep), dep => dependencies.set('prosemirror-keymap@1.2.3', dep), dep => dependencies.set('@tiptap/pm@3.6.2/keymap', dep), dep => dependencies.set('@tiptap/pm@3.6.2/transform', dep), dep => dependencies.set('@tiptap/pm@3.6.2/model', dep), dep => dependencies.set('prosemirror-commands@1.7.1', dep), dep => dependencies.set('@tiptap/pm@3.6.2/commands', dep), dep => dependencies.set('prosemirror-schema-list@1.5.1', dep), dep => dependencies.set('@tiptap/pm@3.6.2/schema-list', dep), dep => dependencies.set('@tiptap/core@3.6.2', dep)],
+setters: [dep => dependencies.set('orderedmap@2.1.1', dep), dep => dependencies.set('prosemirror-model@1.25.3', dep), dep => dependencies.set('prosemirror-transform@1.10.4', dep), dep => dependencies.set('@tiptap/pm@3.12.0/transform', dep), dep => dependencies.set('prosemirror-state@1.4.3', dep), dep => dependencies.set('prosemirror-commands@1.7.1', dep), dep => dependencies.set('@tiptap/pm@3.12.0/commands', dep), dep => dependencies.set('@tiptap/pm@3.12.0/state', dep), dep => dependencies.set('@tiptap/pm@3.12.0/model', dep), dep => dependencies.set('prosemirror-schema-list@1.5.1', dep), dep => dependencies.set('@tiptap/pm@3.12.0/schema-list', dep), dep => dependencies.set('prosemirror-view@1.40.1', dep), dep => dependencies.set('@tiptap/pm@3.12.0/view', dep), dep => dependencies.set('w3c-keyname@2.2.8', dep), dep => dependencies.set('prosemirror-keymap@1.2.3', dep), dep => dependencies.set('@tiptap/pm@3.12.0/keymap', dep), dep => dependencies.set('@tiptap/core@3.12.0', dep)],
 execute: function() {
 // Prevent esbuild from considering the context to be amd
 const define = void 0;
@@ -39,7 +39,7 @@ var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
   value: true
 }), mod);
 
-// .beyond/uimport/temp/@tiptap/extension-paragraph.3.2.0.js
+// .beyond/uimport/@tiptap/extension-paragraph.3.2.0.js
 var extension_paragraph_3_2_0_exports = {};
 __export(extension_paragraph_3_2_0_exports, {
   Paragraph: () => Paragraph,
@@ -48,7 +48,7 @@ __export(extension_paragraph_3_2_0_exports, {
 module.exports = __toCommonJS(extension_paragraph_3_2_0_exports);
 
 // node_modules/@tiptap/extension-paragraph/dist/index.js
-var import_core = require("@tiptap/core@3.6.2");
+var import_core = require("@tiptap/core@3.12.0");
 var Paragraph = import_core.Node.create({
   name: "paragraph",
   priority: 1e3,
@@ -86,7 +86,7 @@ var Paragraph = import_core.Node.create({
 });
 var index_default = Paragraph;
 
-// .beyond/uimport/temp/@tiptap/extension-paragraph.3.2.0.js
+// .beyond/uimport/@tiptap/extension-paragraph.3.2.0.js
 var extension_paragraph_3_2_0_default = index_default;
 };
 
@@ -94,4 +94,4 @@ code(module, require);
 _exports(module.exports);
 }}});
 
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC90ZW1wL0B0aXB0YXAvZXh0ZW5zaW9uLXBhcmFncmFwaC4zLjIuMC5qcyIsIi4uL25vZGVfbW9kdWxlcy9AdGlwdGFwL2V4dGVuc2lvbi1wYXJhZ3JhcGgvc3JjL3BhcmFncmFwaC50cyIsIi4uL25vZGVfbW9kdWxlcy9AdGlwdGFwL2V4dGVuc2lvbi1wYXJhZ3JhcGgvc3JjL2luZGV4LnRzIl0sIm5hbWVzIjpbImV4dGVuc2lvbl9wYXJhZ3JhcGhfM18yXzBfZXhwb3J0cyIsIl9fZXhwb3J0IiwiUGFyYWdyYXBoIiwiZGVmYXVsdCIsImV4dGVuc2lvbl9wYXJhZ3JhcGhfM18yXzBfZGVmYXVsdCIsIm1vZHVsZSIsImV4cG9ydHMiLCJfX3RvQ29tbW9uSlMiLCJpbXBvcnRfY29yZSIsInJlcXVpcmUiLCJOb2RlIiwiY3JlYXRlIiwibmFtZSIsInByaW9yaXR5IiwiYWRkT3B0aW9ucyIsIkhUTUxBdHRyaWJ1dGVzIiwiZ3JvdXAiLCJjb250ZW50IiwicGFyc2VIVE1MIiwidGFnIiwicmVuZGVySFRNTCIsIm1lcmdlQXR0cmlidXRlcyIsIm9wdGlvbnMiLCJhZGRDb21tYW5kcyIsInNldFBhcmFncmFwaCIsImNvbW1hbmRzIiwic2V0Tm9kZSIsImFkZEtleWJvYXJkU2hvcnRjdXRzIiwiTW9kLUFsdC0wIiwiZWRpdG9yIiwiaW5kZXhfZGVmYXVsdCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsSUFBQUEsaUNBQUE7QUFBQUMsUUFBQSxDQUFBRCxpQ0FBQTtFQUFBRSxTQUFBLEVBQUFBLENBQUEsS0FBQUEsU0FBQTtFQUFBQyxPQUFBLEVBQUFBLENBQUEsS0FBQUM7QUFBQTtBQUFBQyxNQUFBLENBQUFDLE9BQUEsR0FBQUMsWUFBQSxDQUFBUCxpQ0FBQTs7O0FDQUEsSUFBQVEsV0FBQSxHQUFzQ0MsT0FBQTtBQTJCL0IsSUFBTVAsU0FBQSxHQUFZTSxXQUFBLENBQUFFLElBQUEsQ0FBS0MsTUFBQSxDQUF5QjtFQUNyREMsSUFBQSxFQUFNO0VBRU5DLFFBQUEsRUFBVTtFQUVWQyxXQUFBLEVBQWE7SUFDWCxPQUFPO01BQ0xDLGNBQUEsRUFBZ0IsQ0FBQztJQUNuQjtFQUNGO0VBRUFDLEtBQUEsRUFBTztFQUVQQyxPQUFBLEVBQVM7RUFFVEMsVUFBQSxFQUFZO0lBQ1YsT0FBTyxDQUFDO01BQUVDLEdBQUEsRUFBSztJQUFJLENBQUM7RUFDdEI7RUFFQUMsV0FBVztJQUFFTDtFQUFlLEdBQUc7SUFDN0IsT0FBTyxDQUFDLFNBQUtQLFdBQUEsQ0FBQWEsZUFBQSxFQUFnQixLQUFLQyxPQUFBLENBQVFQLGNBQUEsRUFBZ0JBLGNBQWMsR0FBRyxDQUFDO0VBQzlFO0VBRUFRLFlBQUEsRUFBYztJQUNaLE9BQU87TUFDTEMsWUFBQSxFQUNFQSxDQUFBLEtBQ0EsQ0FBQztRQUFFQztNQUFTLE1BQU07UUFDaEIsT0FBT0EsUUFBQSxDQUFTQyxPQUFBLENBQVEsS0FBS2QsSUFBSTtNQUNuQztJQUNKO0VBQ0Y7RUFFQWUscUJBQUEsRUFBdUI7SUFDckIsT0FBTztNQUNMLGFBQWFDLENBQUEsS0FBTSxLQUFLQyxNQUFBLENBQU9KLFFBQUEsQ0FBU0QsWUFBQSxDQUFhO0lBQ3ZEO0VBQ0Y7QUFDRixDQUFDO0FDN0RELElBQU9NLGFBQUEsR0FBUTVCLFNBQUE7OztBRkRmLElBQU9FLGlDQUFBLEdBQVEwQixhQUFBIiwiZmlsZSI6IiIsInNvdXJjZVJvb3QiOiIvYWkvYWlsZWFybi9jbGllbnQvYXBwcy9ydmQvb3V0In0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy5iZXlvbmQvdWltcG9ydC9AdGlwdGFwL2V4dGVuc2lvbi1wYXJhZ3JhcGguMy4yLjAuanMiLCIuLi9ub2RlX21vZHVsZXMvQHRpcHRhcC9leHRlbnNpb24tcGFyYWdyYXBoL3NyYy9wYXJhZ3JhcGgudHMiLCIuLi9ub2RlX21vZHVsZXMvQHRpcHRhcC9leHRlbnNpb24tcGFyYWdyYXBoL3NyYy9pbmRleC50cyJdLCJuYW1lcyI6WyJleHRlbnNpb25fcGFyYWdyYXBoXzNfMl8wX2V4cG9ydHMiLCJfX2V4cG9ydCIsIlBhcmFncmFwaCIsImRlZmF1bHQiLCJleHRlbnNpb25fcGFyYWdyYXBoXzNfMl8wX2RlZmF1bHQiLCJtb2R1bGUiLCJleHBvcnRzIiwiX190b0NvbW1vbkpTIiwiaW1wb3J0X2NvcmUiLCJyZXF1aXJlIiwiTm9kZSIsImNyZWF0ZSIsIm5hbWUiLCJwcmlvcml0eSIsImFkZE9wdGlvbnMiLCJIVE1MQXR0cmlidXRlcyIsImdyb3VwIiwiY29udGVudCIsInBhcnNlSFRNTCIsInRhZyIsInJlbmRlckhUTUwiLCJtZXJnZUF0dHJpYnV0ZXMiLCJvcHRpb25zIiwiYWRkQ29tbWFuZHMiLCJzZXRQYXJhZ3JhcGgiLCJjb21tYW5kcyIsInNldE5vZGUiLCJhZGRLZXlib2FyZFNob3J0Y3V0cyIsIk1vZC1BbHQtMCIsImVkaXRvciIsImluZGV4X2RlZmF1bHQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLElBQUFBLGlDQUFBO0FBQUFDLFFBQUEsQ0FBQUQsaUNBQUE7RUFBQUUsU0FBQSxFQUFBQSxDQUFBLEtBQUFBLFNBQUE7RUFBQUMsT0FBQSxFQUFBQSxDQUFBLEtBQUFDO0FBQUE7QUFBQUMsTUFBQSxDQUFBQyxPQUFBLEdBQUFDLFlBQUEsQ0FBQVAsaUNBQUE7OztBQ0FBLElBQUFRLFdBQUEsR0FBc0NDLE9BQUE7QUEyQi9CLElBQU1QLFNBQUEsR0FBWU0sV0FBQSxDQUFBRSxJQUFBLENBQUtDLE1BQUEsQ0FBeUI7RUFDckRDLElBQUEsRUFBTTtFQUVOQyxRQUFBLEVBQVU7RUFFVkMsV0FBQSxFQUFhO0lBQ1gsT0FBTztNQUNMQyxjQUFBLEVBQWdCLENBQUM7SUFDbkI7RUFDRjtFQUVBQyxLQUFBLEVBQU87RUFFUEMsT0FBQSxFQUFTO0VBRVRDLFVBQUEsRUFBWTtJQUNWLE9BQU8sQ0FBQztNQUFFQyxHQUFBLEVBQUs7SUFBSSxDQUFDO0VBQ3RCO0VBRUFDLFdBQVc7SUFBRUw7RUFBZSxHQUFHO0lBQzdCLE9BQU8sQ0FBQyxTQUFLUCxXQUFBLENBQUFhLGVBQUEsRUFBZ0IsS0FBS0MsT0FBQSxDQUFRUCxjQUFBLEVBQWdCQSxjQUFjLEdBQUcsQ0FBQztFQUM5RTtFQUVBUSxZQUFBLEVBQWM7SUFDWixPQUFPO01BQ0xDLFlBQUEsRUFDRUEsQ0FBQSxLQUNBLENBQUM7UUFBRUM7TUFBUyxNQUFNO1FBQ2hCLE9BQU9BLFFBQUEsQ0FBU0MsT0FBQSxDQUFRLEtBQUtkLElBQUk7TUFDbkM7SUFDSjtFQUNGO0VBRUFlLHFCQUFBLEVBQXVCO0lBQ3JCLE9BQU87TUFDTCxhQUFhQyxDQUFBLEtBQU0sS0FBS0MsTUFBQSxDQUFPSixRQUFBLENBQVNELFlBQUEsQ0FBYTtJQUN2RDtFQUNGO0FBQ0YsQ0FBQztBQzdERCxJQUFPTSxhQUFBLEdBQVE1QixTQUFBOzs7QUZEZixJQUFPRSxpQ0FBQSxHQUFRMEIsYUFBQSIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiL2FpL2FpbGVhcm4vY2xpZW50L2FwcHMvYmV0dGVyLW1pbmQvb3V0In0=
